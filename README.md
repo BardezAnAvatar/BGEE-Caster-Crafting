@@ -1,7 +1,7 @@
 # Caster Crafting
 Author: [Bardez](https://github.com/BardezAnAvatar)
 - Based off of work by:
-- [GrammarSalad](https://github.com/Grammarsalad)
+- [Grammarsalad](https://github.com/Grammarsalad)
 
 
 ## Introduction
@@ -13,7 +13,7 @@ Creative Commons Attribution 4.0 International Public License
 
 See [the license file](LICENSE.md).
 
-tl;dr: do what you will with it, credit me (Bardez) my work on the mod. GrammarSalad, too.
+tl;dr: do what you will with it, credit me (Bardez) my work on the mod. Grammarsalad, too.
 
 
 ## Credit/license for prior work
