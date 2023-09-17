@@ -1,0 +1,11 @@
+*.bak
+*.7z
+*.rar
+*.zip
+*.tar.gz
+*.exe
+.DS_Store
+package_mod.sh
+.gitignore~
+thumbs.db
+.vs/*
