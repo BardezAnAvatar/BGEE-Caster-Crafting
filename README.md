@@ -15,3 +15,7 @@ Creative Commons Attribution 4.0 International Public License
 See [the license file](LICENSE.md).
 
 tl;dr: do what you will with it, credit me (Bardez) for starting the mod. The other guys above, too.
+
+
+## Credit/license for prior work
+![image](./.markdown-assets/license-allowed.png)
