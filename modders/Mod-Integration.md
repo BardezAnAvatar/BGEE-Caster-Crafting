@@ -39,37 +39,68 @@ accept the spell mappings, metadata, and write to a shared file. This mod will r
 spell scrolls.
 
 
-# Location
-## Scrolls
-A special file, `scroll-crafting.2da` will exist in the game root folder 
+## Location
+These registrations will be stored in the game root folder 
 `./weidu-external/caster-crafting-integration/`
+
+### Scrolls
+A special file, `scroll-crafting-blacklist.2da` will exist for modders to register any scroll that 
+should be ignored from crafting systems.
+Similarly, `scroll-crafting-register.2da` will exist for modders to register any scroll that they 
+would like to register specific spells for crafting.
+
+
+### Potions
+A special file, `potion-crafting-blacklist.2da` will exist for modders to register any potion that 
+should be ignored from crafting systems.
+Similarly, `potion-crafting-spell-requirements.2da` will exist for modders to register any potion that
+they think might have complex requirements or require multiple source spells.
+Similarly, `potion-crafting-register.2da` will exist for modders to register any potion that they 
+would like to register specific metadata for crafting.
+
+
+### Wands
+A special file, `wand-crafting-blacklist.2da` will exist for modders to register any wand that 
+should be ignored from crafting systems.
+Similarly, `wand-crafting-spell-requirements.2da` will exist for modders to register any wand that
+they think might have complex requirements or require multiple source spells.
+Similarly, `wand-crafting-register.2da` will exist for modders to register any wand that they 
+would like to register specific metadata for crafting.
 
 
 # Format
 ## Scrolls
 Metadata determined as necessary for scroll crafting:
-- Spell ResRef
-- Scroll ResRef
-- Scroll tradition/type (arcane, divine, druid, protection)
-- Spell level
-- Effective caster level of the scroll
-- StrRef of spell name
-- StrRef of spell description
-- Gold cost of the scroll (optional)
-- Gold cost of extra materials for the spell (i.e.: expensive diamonds) (optional)
-- XP cost for the scroll crafting (optional)
-- Failure probability of crafting the scroll (optional)
-- Cursed? (optional)
+- `scroll-crafting-register.2da`
+    - Scroll ResRef
+    - Spell ResRef
+    - Scroll tradition/type (arcane, divine, druid, protection)
+    - Spell level
+    - Effective caster level of the scroll
+    - Gold cost of the scroll (optional)
+    - Gold cost of extra materials for the spell (i.e.: expensive diamonds) (optional)
+    - XP cost for the scroll crafting (optional)
+    - Failure probability of crafting the scroll (optional)
+    - Cursed? (optional)
 
 ## Potions
 Metadata determined as necessary for potion crafting:
-- Spell ResRef(s)
-- Potion ResRef
-- Caster level of the potion
-- Cursed? (optional)
+- `potion-crafting-spell-requirements.2da`
+    - Potion ResRef
+    - Spell ResRef(s)
+- `potion-crafting-register.2da`
+    - Caster level of the potion
+    - XP cost for the potion crafting (optional)
+    - Failure probability of crafting the potion (optional)
+    - Cursed? (optional)
 
 ## Wands
 Metadata determined as necessary for wand crafting:
-- Spell ResRef(s)
-- Wand ResRef
-- Caster level of the wand
+- `wand-crafting-spell-requirements.2da`
+    - wand ResRef
+    - Spell ResRef(s)
+- `wand-crafting-register.2da`
+    - Caster level of the wand
+    - XP cost for the wand crafting (optional)
+    - Failure probability of crafting the wand (optional)
+    - Cursed? (optional)
