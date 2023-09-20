@@ -17,6 +17,15 @@ AUTO_EVAL_STRINGS
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~ //match strings to matching *.d/*.tra files -- https://weidu.org/~thebigg/README-WeiDU.html#hevea_default184
 
 
+/****************
+*   languages   *
+****************/
+LANGUAGE
+    ~English~ 
+    ~en_US~
+        //There is a problem with using %MOD_FOLDER% here: https://forums.pocketplane.net/index.php?topic=29521.0
+        ~./mod-caster-crafting/tra/en_US/setup.tra~
+
 
 /*********************
 *   Mod Components   *
