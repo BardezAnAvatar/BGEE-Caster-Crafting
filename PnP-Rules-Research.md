@@ -1,6 +1,6 @@
-#Rules for crafting scrolls in AD&D 2E
+# Rules for crafting scrolls
 
-## PnP Rules [^1]
+## AD&D 2E PnP Rules [^1]
 1. Wizard must be level 9 to scribe scrolls
 1. Scrolls have various material costs
   - quill that can be used but once, must be esoteric and magical in nature
@@ -27,7 +27,7 @@
     1. Modify
 
 
-# Rules for crafting scrolls in D&D 3E [^2]
+## Rules for crafting scrolls in D&D 3E [^2]
 1. Caster feat available at first level
 1. Time requirement
     - 1 day per 1,000 gp in price
@@ -39,7 +39,7 @@
     - 50% of the spell's scroll cost
 
 
-# Rules for crafting scrolls in Pathfinder [^3], [^4]
+## Rules for crafting scrolls in Pathfinder [^3], [^4]
 Summary: similar to 3E, no XP cost, maybe lower scribing time
 1. Caster feat available at first level
 1. Time requirement
