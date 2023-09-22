@@ -36,4 +36,4 @@ BEGIN @0
 PRINT ~DEBUG: var `MOD_FOLDER`: %MOD_FOLDER%~
 
 //Do research stuff
-INCLUDE ~%MOD_FOLDER%/poc.tph~
+INCLUDE ~%MOD_FOLDER%/poc/poc.tph~
