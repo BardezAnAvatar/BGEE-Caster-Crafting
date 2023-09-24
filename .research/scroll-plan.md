@@ -47,3 +47,9 @@ So things I will need:
 
 ## Component: Crafting mechanism
 Compare options and as selected, install proper sub-component
+
+
+## Major Component: Spell Sharing
+Would have an item, say scribing tools, which would allow a dialog. It would allow responses
+for each party member if a mage to share spells.
+Response tree would be party member -> spell circle -> spell name -> learn spell
