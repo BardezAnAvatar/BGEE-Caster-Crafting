@@ -16,6 +16,22 @@ So things I will need:
 1. Get scroll list for base game
 1. Create a scroll registry manually for the base game
 1. Install this to the metadata dir
+1. Get spell list data
+    - Each spell that is valid in the game, and what tradition it lies with
+    - I am currently leaning towards a maintained registry-based on installed mods.
+        - Why? With Olwyn's mod, spells are not in the SP__XYYY format; spells are either not added to
+        level up screens (arcane) or they are given by way of kit abilities (druid/ranger), which also
+        get mixed up with innate abilities. When this becomes evaluated, there is no _clean_ or _good_
+        method to differentiate spells, innates, etc.
+        - Grammarsalad attempted to resolve the problem with reading _all spells_ and filtering them out.
+        While it was a valiant effort, it relied on two opcodes to identify spells, target and point
+        target; any self-buffs are missed. Further, these self-buffs rarely have all the same opcodes.
+            - I suppose we could look for opcode for displaying a portrait icon...
+            - The method also doesn't account for hidden spells (which some are granted back via kit 
+            2DAs, such as shaman spells, ranger spells in Olvyn, etc.), only somewhat for duplicates,
+            and so on.
+        - The impact of this is that I would have components to install based on detected mods:
+        a component for IWD-ification, one for Olvyn, etc. It would be a manual registry.
 
 
 ## Component: Missing Scrolls
