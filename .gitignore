@@ -9,3 +9,4 @@ package_mod.sh
 .gitignore~
 thumbs.db
 .vs/*
+~$*.xlsx
