@@ -82,6 +82,7 @@ Metadata determined as necessary for scroll crafting:
     - XP cost for the scroll crafting (optional)
     - Failure probability of crafting the scroll (optional)
     - Cursed? (optional)
+    - Learn Spell (optional)
 
 ## Potions
 Metadata determined as necessary for potion crafting:
