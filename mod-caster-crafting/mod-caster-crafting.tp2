@@ -1,0 +1,39 @@
+/* Backup folder */
+BACKUP ~./weidu-external/mod-caster-crafting/backup~ // %MOD_FOLDER% will be a literal (because it's not set yet?) so use hard-coded name
+
+/* Author */
+AUTHOR ~Bardez; support at: https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues~
+
+/* WeiDU versions newer than v203 allow tp2 level version listing in the .log for troubleshooting  */
+VERSION ~v0.0.1~
+
+//Display the readme?
+//README 
+
+//TP2 flags
+MODDER // Enable all error messages; nothing suppressed. comment this out for release version
+ASK_EVERY_COMPONENT
+AUTO_EVAL_STRINGS
+AUTO_TRA ~%MOD_FOLDER%/tra/%s~ //match strings to matching *.d/*.tra files -- https://weidu.org/~thebigg/README-WeiDU.html#hevea_default184
+
+
+/****************
+*   languages   *
+****************/
+LANGUAGE
+    ~English~ 
+    ~en_US~
+        //There is a problem with using %MOD_FOLDER% here: https://forums.pocketplane.net/index.php?topic=29521.0
+        ~./mod-caster-crafting/tra/en_US/setup.tra~
+
+
+/*********************
+*   Mod Components   *
+*********************/
+BEGIN @0 
+
+//Debugging Statements
+PRINT ~DEBUG: var `MOD_FOLDER`: %MOD_FOLDER%~
+
+//Do research stuff
+INCLUDE ~%MOD_FOLDER%/poc/poc.tph~
