@@ -1,0 +1,222 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ~spell_list_arcane~
+    BEGIN
+
+        ~SPWI101~, ~Arcane~,  ~1~, ~Grease~ => ~SPWI101~
+        ~SPWI102~, ~Arcane~,  ~1~, ~Armor~ => ~SPWI102~
+        ~SPWI103~, ~Arcane~,  ~1~, ~Burning Hands~ => ~SPWI103~
+        ~SPWI104~, ~Arcane~,  ~1~, ~Charm Person~ => ~SPWI104~
+        ~SPWI105~, ~Arcane~,  ~1~, ~Color Spray~ => ~SPWI105~
+        ~SPWI106~, ~Arcane~,  ~1~, ~Blindness~ => ~SPWI106~
+        ~SPWI107~, ~Arcane~,  ~1~, ~Friends~ => ~SPWI107~
+        ~SPWI108~, ~Arcane~,  ~1~, ~Protection from Petrification~ => ~SPWI108~
+        ~SPWI110~, ~Arcane~,  ~1~, ~Identify~ => ~SPWI110~
+        ~SPWI111~, ~Arcane~,  ~1~, ~Infravision~ => ~SPWI111~
+        ~SPWI112~, ~Arcane~,  ~1~, ~Magic Missile~ => ~SPWI112~
+        ~SPWI113~, ~Arcane~,  ~1~, ~Protection from Evil~ => ~SPWI113~
+        ~SPWI114~, ~Arcane~,  ~1~, ~Shield~ => ~SPWI114~
+        ~SPWI115~, ~Arcane~,  ~1~, ~Shocking Grasp~ => ~SPWI115~
+        ~SPWI116~, ~Arcane~,  ~1~, ~Sleep~ => ~SPWI116~
+        ~SPWI117~, ~Arcane~,  ~1~, ~Chill Touch~ => ~SPWI117~
+        ~SPWI118~, ~Arcane~,  ~1~, ~Chromatic Orb~ => ~SPWI118~
+        ~SPWI119~, ~Arcane~,  ~1~, ~Larloch's Minor Drain~ => ~SPWI119~
+        ~SPWI120~, ~Arcane~,  ~1~, ~Reflected Image~ => ~SPWI120~
+ 
+ 
+        ~SPWI123~, ~Arcane~,  ~1~, ~Find Familiar~ => ~SPWI123~
+        ~SPWI124~, ~Arcane~,  ~1~, ~Nahal's Reckless Dweomer*~ => ~SPWI124~
+        ~SPWI125~, ~Arcane~,  ~1~, ~Spook~ => ~SPWI125~
+        ~SPWI126~, ~Arcane~,  ~1~, ~Dancing Lights~ => ~SPWI126~
+        ~SPWI201~, ~Arcane~,  ~2~, ~Blur~ => ~SPWI201~
+        ~SPWI202~, ~Arcane~,  ~2~, ~Detect Evil~ => ~SPWI202~
+        ~SPWI203~, ~Arcane~,  ~2~, ~Detect Invisibility~ => ~SPWI203~
+        ~SPWI205~, ~Arcane~,  ~2~, ~Horror~ => ~SPWI205~
+        ~SPWI206~, ~Arcane~,  ~2~, ~Invisibility~ => ~SPWI206~
+        ~SPWI207~, ~Arcane~,  ~2~, ~Knock~ => ~SPWI207~
+        ~SPWI208~, ~Arcane~,  ~2~, ~Know Alignment~ => ~SPWI208~
+        ~SPWI209~, ~Arcane~,  ~2~, ~Luck~ => ~SPWI209~
+        ~SPWI210~, ~Arcane~,  ~2~, ~Resist Fear~ => ~SPWI210~
+        ~SPWI211~, ~Arcane~,  ~2~, ~Melf's Acid Arrow~ => ~SPWI211~
+        ~SPWI212~, ~Arcane~,  ~2~, ~Mirror Image~ => ~SPWI212~
+        ~SPWI213~, ~Arcane~,  ~2~, ~Stinking Cloud~ => ~SPWI213~
+        ~SPWI214~, ~Arcane~,  ~2~, ~Strength~ => ~SPWI214~
+        ~SPWI215~, ~Arcane~,  ~2~, ~Web~ => ~SPWI215~
+        ~SPWI217~, ~Arcane~,  ~2~, ~Agannazar's Scorcher~ => ~SPWI217~
+        ~SPWI218~, ~Arcane~,  ~2~, ~Ghoul Touch~ => ~SPWI218~
+        ~SPWI219~, ~Arcane~,  ~2~, ~Vocalize~ => ~SPWI219~
+        ~SPWI220~, ~Arcane~,  ~2~, ~Power Word Sleep~ => ~SPWI220~
+        ~SPWI221~, ~Arcane~,  ~2~, ~Ray of Enfeeblement~ => ~SPWI221~
+        ~SPWI222~, ~Arcane~,  ~2~, ~Chaos Shield*~ => ~SPWI222~
+        ~SPWI223~, ~Arcane~,  ~2~, ~Deafness~ => ~SPWI223~
+        ~SPWI224~, ~Arcane~,  ~2~, ~Glitterdust~ => ~SPWI224~
+        ~SPWI228~, ~Arcane~,  ~2~, ~Darkness 15' Radius~ => ~SPWI228~
+ 
+ 
+        ~SPWI301~, ~Arcane~,  ~3~, ~Clairvoyance~ => ~SPWI301~
+        ~SPWI302~, ~Arcane~,  ~3~, ~Remove Magic~ => ~SPWI302~
+        ~SPWI303~, ~Arcane~,  ~3~, ~Flame Arrow~ => ~SPWI303~
+        ~SPWI304~, ~Arcane~,  ~3~, ~Fireball~ => ~SPWI304~
+        ~SPWI305~, ~Arcane~,  ~3~, ~Haste~ => ~SPWI305~
+        ~SPWI306~, ~Arcane~,  ~3~, ~Hold Person~ => ~SPWI306~
+        ~SPWI307~, ~Arcane~,  ~3~, ~Invisibility 10' Radius~ => ~SPWI307~
+        ~SPWI308~, ~Arcane~,  ~3~, ~Lightning Bolt~ => ~SPWI308~
+        ~SPWI309~, ~Arcane~,  ~3~, ~Monster Summoning 1~ => ~SPWI309~
+        ~SPWI310~, ~Arcane~,  ~3~, ~Non-Detection~ => ~SPWI310~
+        ~SPWI311~, ~Arcane~,  ~3~, ~Protection from Normal Missiles~ => ~SPWI311~
+        ~SPWI312~, ~Arcane~,  ~3~, ~Slow~ => ~SPWI312~
+        ~SPWI313~, ~Arcane~,  ~3~, ~Skull Trap~ => ~SPWI313~
+        ~SPWI314~, ~Arcane~,  ~3~, ~Vampiric Touch~ => ~SPWI314~
+        ~SPWI315~, ~Arcane~,  ~3~, ~Wraith Form~ => ~SPWI315~
+        ~SPWI316~, ~Arcane~,  ~3~, ~Dire Charm~ => ~SPWI316~
+        ~SPWI317~, ~Arcane~,  ~3~, ~Ghost Armor~ => ~SPWI317~
+        ~SPWI318~, ~Arcane~,  ~3~, ~Minor Spell Deflection~ => ~SPWI318~
+        ~SPWI319~, ~Arcane~,  ~3~, ~Protection from Fire~ => ~SPWI319~
+        ~SPWI320~, ~Arcane~,  ~3~, ~Protection from Cold~ => ~SPWI320~
+        ~SPWI321~, ~Arcane~,  ~3~, ~Spell Thrust~ => ~SPWI321~
+        ~SPWI322~, ~Arcane~,  ~3~, ~Detect Illusion~ => ~SPWI322~
+        ~SPWI324~, ~Arcane~,  ~3~, ~Hold Undead~ => ~SPWI324~
+        ~SPWI325~, ~Arcane~,  ~3~, ~Melf's Minute Meteors~ => ~SPWI325~
+        ~SPWI326~, ~Arcane~,  ~3~, ~Dispel Magic~ => ~SPWI326~
+ 
+ 
+        ~SPWI401~, ~Arcane~,  ~4~, ~Confusion~ => ~SPWI401~
+        ~SPWI402~, ~Arcane~,  ~4~, ~Dimension Door~ => ~SPWI402~
+        ~SPWI403~, ~Arcane~,  ~4~, ~Fire Shield (Blue)~ => ~SPWI403~
+        ~SPWI404~, ~Arcane~,  ~4~, ~Ice Storm~ => ~SPWI404~
+        ~SPWI405~, ~Arcane~,  ~4~, ~Improved Invisibility~ => ~SPWI405~
+        ~SPWI406~, ~Arcane~,  ~4~, ~Minor Globe of Invulnerability~ => ~SPWI406~
+        ~SPWI407~, ~Arcane~,  ~4~, ~Monster Summoning 2~ => ~SPWI407~
+        ~SPWI408~, ~Arcane~,  ~4~, ~Stone Skin~ => ~SPWI408~
+        ~SPWI409~, ~Arcane~,  ~4~, ~Contagion~ => ~SPWI409~
+        ~SPWI410~, ~Arcane~,  ~4~, ~Remove Curse~ => ~SPWI410~
+        ~SPWI411~, ~Arcane~,  ~4~, ~Emotion: Hopelessness~ => ~SPWI411~
+        ~SPWI412~, ~Arcane~,  ~4~, ~Greater Malison~ => ~SPWI412~
+        ~SPWI413~, ~Arcane~,  ~4~, ~Otiluke's Resilient Sphere~ => ~SPWI413~
+        ~SPWI414~, ~Arcane~,  ~4~, ~Spirit Armor~ => ~SPWI414~
+        ~SPWI415~, ~Arcane~,  ~4~, ~Polymorph Other~ => ~SPWI415~
+        ~SPWI416~, ~Arcane~,  ~4~, ~Polymorph Self~ => ~SPWI416~
+        ~SPWI417~, ~Arcane~,  ~4~, ~Enchanted Weapon~ => ~SPWI417~
+        ~SPWI418~, ~Arcane~,  ~4~, ~Fire Shield (Red)~ => ~SPWI418~
+        ~SPWI419~, ~Arcane~,  ~4~, ~Secret Word~ => ~SPWI419~
+        ~SPWI420~, ~Arcane~,  ~4~, ~Minor Sequencer~ => ~SPWI420~
+        ~SPWI421~, ~Arcane~,  ~4~, ~Teleport Field~ => ~SPWI421~
+        ~SPWI423~, ~Arcane~,  ~4~, ~Spider Spawn~ => ~SPWI423~
+        ~SPWI424~, ~Arcane~,  ~4~, ~Farsight~ => ~SPWI424~
+        ~SPWI425~, ~Arcane~,  ~4~, ~Wizard Eye~ => ~SPWI425~
+ 
+ 
+        ~SPWI501~, ~Arcane~,  ~5~, ~Animate Dead~ => ~SPWI501~
+        ~SPWI502~, ~Arcane~,  ~5~, ~Cloud Kill~ => ~SPWI502~
+        ~SPWI503~, ~Arcane~,  ~5~, ~Cone of Cold~ => ~SPWI503~
+        ~SPWI504~, ~Arcane~,  ~5~, ~Monster Summoning 3~ => ~SPWI504~
+        ~SPWI505~, ~Arcane~,  ~5~, ~Shadow Door~ => ~SPWI505~
+        ~SPWI506~, ~Arcane~,  ~5~, ~Domination~ => ~SPWI506~
+        ~SPWI507~, ~Arcane~,  ~5~, ~Hold Monster~ => ~SPWI507~
+        ~SPWI508~, ~Arcane~,  ~5~, ~Chaos~ => ~SPWI508~
+        ~SPWI509~, ~Arcane~,  ~5~, ~Feeblemind~ => ~SPWI509~
+        ~SPWI510~, ~Arcane~,  ~5~, ~Spell Immunity~ => ~SPWI510~
+        ~SPWI511~, ~Arcane~,  ~5~, ~Protection from Normal Weapons~ => ~SPWI511~
+        ~SPWI512~, ~Arcane~,  ~5~, ~Protection from Electricity~ => ~SPWI512~
+        ~SPWI513~, ~Arcane~,  ~5~, ~Breach~ => ~SPWI513~
+        ~SPWI514~, ~Arcane~,  ~5~, ~Lower Resistance~ => ~SPWI514~
+        ~SPWI515~, ~Arcane~,  ~5~, ~Oracle~ => ~SPWI515~
+        ~SPWI516~, ~Arcane~,  ~5~, ~Conjure Lesser Fire Elemental~ => ~SPWI516~
+        ~SPWI517~, ~Arcane~,  ~5~, ~Protection from Acid~ => ~SPWI517~
+        ~SPWI518~, ~Arcane~,  ~5~, ~Phantom Blade~ => ~SPWI518~
+        ~SPWI519~, ~Arcane~,  ~5~, ~Spell Shield~ => ~SPWI519~
+        ~SPWI520~, ~Arcane~,  ~5~, ~Conjure Lesser Air Elemental~ => ~SPWI520~
+        ~SPWI521~, ~Arcane~,  ~5~, ~Conjure Lesser Earth Elemental~ => ~SPWI521~
+        ~SPWI522~, ~Arcane~,  ~5~, ~Minor Spell Turning~ => ~SPWI522~
+        ~SPWI523~, ~Arcane~,  ~5~, ~Sunfire~ => ~SPWI523~
+ 
+ 
+        ~SPWI601~, ~Arcane~,  ~6~, ~Invisible Stalker~ => ~SPWI601~
+        ~SPWI602~, ~Arcane~,  ~6~, ~Globe of Invulnerability~ => ~SPWI602~
+        ~SPWI603~, ~Arcane~,  ~6~, ~Tenser's Transformation~ => ~SPWI603~
+        ~SPWI604~, ~Arcane~,  ~6~, ~Flesh to Stone~ => ~SPWI604~
+        ~SPWI605~, ~Arcane~,  ~6~, ~Death Spell~ => ~SPWI605~
+        ~SPWI606~, ~Arcane~,  ~6~, ~Protection from Magical Energy~ => ~SPWI606~
+        ~SPWI607~, ~Arcane~,  ~6~, ~Mislead~ => ~SPWI607~
+        ~SPWI608~, ~Arcane~,  ~6~, ~Pierce Magic~ => ~SPWI608~
+        ~SPWI609~, ~Arcane~,  ~6~, ~True Sight~ => ~SPWI609~
+        ~SPWI611~, ~Arcane~,  ~6~, ~Protection from Magical Weapons~ => ~SPWI611~
+        ~SPWI612~, ~Arcane~,  ~6~, ~Power Word Silence~ => ~SPWI612~
+        ~SPWI613~, ~Arcane~,  ~6~, ~Improved Haste~ => ~SPWI613~
+        ~SPWI614~, ~Arcane~,  ~6~, ~Death Fog~ => ~SPWI614~
+        ~SPWI615~, ~Arcane~,  ~6~, ~Chain Lightning~ => ~SPWI615~
+        ~SPWI616~, ~Arcane~,  ~6~, ~Disintigrate~ => ~SPWI616~
+        ~SPWI617~, ~Arcane~,  ~6~, ~Contingency~ => ~SPWI617~
+        ~SPWI618~, ~Arcane~,  ~6~, ~Spell Deflection~ => ~SPWI618~
+        ~SPWI619~, ~Arcane~,  ~6~, ~Wyvern Call~ => ~SPWI619~
+        ~SPWI620~, ~Arcane~,  ~6~, ~Conjure Fire Elemental~ => ~SPWI620~
+        ~SPWI621~, ~Arcane~,  ~6~, ~Conjure Air Elemental~ => ~SPWI621~
+        ~SPWI622~, ~Arcane~,  ~6~, ~Conjure Earth Elemental~ => ~SPWI622~
+        ~SPWI623~, ~Arcane~,  ~6~, ~Carrion Summons~ => ~SPWI623~
+        ~SPWI624~, ~Arcane~,  ~6~, ~Summon Nishruu~ => ~SPWI624~
+        ~SPWI625~, ~Arcane~,  ~6~, ~Stone to Flesh~ => ~SPWI625~
+ 
+ 
+        ~SPWI701~, ~Arcane~,  ~7~, ~Spell Turning~ => ~SPWI701~
+        ~SPWI702~, ~Arcane~,  ~7~, ~Protection From The Elements~ => ~SPWI702~
+        ~SPWI703~, ~Arcane~,  ~7~, ~Project Image~ => ~SPWI703~
+        ~SPWI704~, ~Arcane~,  ~7~, ~Ruby Ray of Reversal~ => ~SPWI704~
+        ~SPWI705~, ~Arcane~,  ~7~, ~Khelben's Warding Whip~ => ~SPWI705~
+        ~SPWI707~, ~Arcane~,  ~7~, ~Cacofiend~ => ~SPWI707~
+        ~SPWI708~, ~Arcane~,  ~7~, ~Mantle~ => ~SPWI708~
+        ~SPWI710~, ~Arcane~,  ~7~, ~Spell Sequencer~ => ~SPWI710~
+        ~SPWI711~, ~Arcane~,  ~7~, ~Sphere of Chaos~ => ~SPWI711~
+        ~SPWI712~, ~Arcane~,  ~7~, ~Delayed Blast Fireball~ => ~SPWI712~
+        ~SPWI713~, ~Arcane~,  ~7~, ~Finger of Death~ => ~SPWI713~
+        ~SPWI714~, ~Arcane~,  ~7~, ~Prismatic Spray~ => ~SPWI714~
+        ~SPWI715~, ~Arcane~,  ~7~, ~Power Word, Stun~ => ~SPWI715~
+        ~SPWI716~, ~Arcane~,  ~7~, ~Mordenkainen's Sword~ => ~SPWI716~
+        ~SPWI717~, ~Arcane~,  ~7~, ~Summon Efreeti~ => ~SPWI717~
+        ~SPWI718~, ~Arcane~,  ~7~, ~Summon Djinni~ => ~SPWI718~
+        ~SPWI719~, ~Arcane~,  ~7~, ~Summon Hakeashar~ => ~SPWI719~
+        ~SPWI720~, ~Arcane~,  ~7~, ~Control Undead~ => ~SPWI720~
+        ~SPWI721~, ~Arcane~,  ~7~, ~Mass Invisibility~ => ~SPWI721~
+        ~SPWI722~, ~Arcane~,  ~7~, ~Limited Wish~ => ~SPWI722~
+        ~SPWI723~, ~Arcane~,  ~7~, ~Improved Chaos Shield*~ => ~SPWI723~
+ 
+ 
+        ~SPWI802~, ~Arcane~,  ~8~, ~Spell Deflection~ => ~SPWI802~
+        ~SPWI803~, ~Arcane~,  ~8~, ~Protection from Energy~ => ~SPWI803~
+        ~SPWI804~, ~Arcane~,  ~8~, ~Simulacrum~ => ~SPWI804~
+        ~SPWI805~, ~Arcane~,  ~8~, ~Pierce Shield~ => ~SPWI805~
+        ~SPWI806~, ~Arcane~,  ~8~, ~Summon Fiend~ => ~SPWI806~
+        ~SPWI808~, ~Arcane~,  ~8~, ~Improved Mantle~ => ~SPWI808~
+        ~SPWI809~, ~Arcane~,  ~8~, ~Spell Trigger~ => ~SPWI809~
+        ~SPWI810~, ~Arcane~,  ~8~, ~Incendiary Cloud~ => ~SPWI810~
+        ~SPWI811~, ~Arcane~,  ~8~, ~Symbol, Fear~ => ~SPWI811~
+        ~SPWI812~, ~Arcane~,  ~8~, ~Abi-Dalzim's Horrid Wilting~ => ~SPWI812~
+        ~SPWI813~, ~Arcane~,  ~8~, ~Maze~ => ~SPWI813~
+        ~SPWI815~, ~Arcane~,  ~8~, ~Power Word Blind~ => ~SPWI815~
+        ~SPWI816~, ~Arcane~,  ~8~, ~Symbol, Stun~ => ~SPWI816~
+        ~SPWI817~, ~Arcane~,  ~8~, ~Symbol, Death~ => ~SPWI817~
+        ~SPWI818~, ~Arcane~,  ~8~, ~Bigby's Clenched Fist~ => ~SPWI818~
+ 
+ 
+        ~SPWI902~, ~Arcane~,  ~9~, ~Spell Trap~ => ~SPWI902~
+        ~SPWI903~, ~Arcane~,  ~9~, ~Spellstrike~ => ~SPWI903~
+        ~SPWI905~, ~Arcane~,  ~9~, ~Gate~ => ~SPWI905~
+        ~SPWI907~, ~Arcane~,  ~9~, ~Absolute Immunity~ => ~SPWI907~
+        ~SPWI908~, ~Arcane~,  ~9~, ~Chain Contingency~ => ~SPWI908~
+        ~SPWI909~, ~Arcane~,  ~9~, ~Time Stop~ => ~SPWI909~
+        ~SPWI910~, ~Arcane~,  ~9~, ~Imprisonment~ => ~SPWI910~
+        ~SPWI911~, ~Arcane~,  ~9~, ~Meteor Swarm~ => ~SPWI911~
+        ~SPWI912~, ~Arcane~,  ~9~, ~Power Word, Kill~ => ~SPWI912~
+        ~SPWI913~, ~Arcane~,  ~9~, ~Wail of the Banshee~ => ~SPWI913~
+        ~SPWI914~, ~Arcane~,  ~9~, ~Energy Drain~ => ~SPWI914~
+        ~SPWI915~, ~Arcane~,  ~9~, ~Black Blade of Disaster~ => ~SPWI915~
+        ~SPWI916~, ~Arcane~,  ~9~, ~Shapechange~ => ~SPWI916~
+        ~SPWI917~, ~Arcane~,  ~9~, ~Freedom~ => ~SPWI917~
+        ~SPWI918~, ~Arcane~,  ~9~, ~Bigby's Crushing Hand~ => ~SPWI918~
+        ~SPWI919~, ~Arcane~,  ~9~, ~Wish~ => ~SPWI919~
+        ~SPWI920~, ~Arcane~, ~10~, ~Energy Blades~ => ~SPWI920~
+        ~SPWI921~, ~Arcane~, ~10~, ~Improved Alacrity~ => ~SPWI921~
+        ~SPWI922~, ~Arcane~, ~10~, ~Dragon's Breath~ => ~SPWI922~
+        ~SPWI923~, ~Arcane~, ~10~, ~Summon Planetar~ => ~SPWI923~
+        ~SPWI924~, ~Arcane~, ~10~, ~Summon Dark Planetar~ => ~SPWI924~
+        ~SPWI925~, ~Arcane~, ~10~, ~Comet~ => ~SPWI925~
+
+    END
