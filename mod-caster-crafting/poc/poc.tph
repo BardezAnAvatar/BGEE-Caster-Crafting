@@ -3,7 +3,7 @@
 ***********/
 
 // From the base game, get all spells from the class spell lists. Emit to a file the findings.
-INCLUDE %MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane
+INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
 
 //Sort the indicies, presumably on first key
 ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
@@ -16,3 +16,5 @@ ACTION_PHP_EACH ~spell_list_arcane~
         PRINT ~DEBUG: var `spell_list_arcane_keys_0`: %spell_list_arcane_keys_0%~
 
     END
+
+//NOTE: Confirmed that the array sorts as I expected it to.
