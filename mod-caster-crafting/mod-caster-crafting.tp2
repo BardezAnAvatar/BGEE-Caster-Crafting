@@ -1,5 +1,5 @@
 /* Backup folder */
-BACKUP ~./weidu-external/mod-caster-crafting/backup~ // %MOD_FOLDER% will be a literal (because it's not set yet?) so use hard-coded name
+BACKUP ~./weidu_external/mod-caster-crafting/backup~ // %MOD_FOLDER% will be a literal (because it's not set yet?) so use hard-coded name
 
 /* Author */
 AUTHOR ~Bardez; support at: https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues~
