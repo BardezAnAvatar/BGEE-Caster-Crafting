@@ -69,7 +69,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
                                         ~
                                             DestroyGold(%spell_list_arcane_keys_6%)
                                             AdvanceTime(100)
-                                            CreateItem(%spell_list_arcane_keys_1%)
+                                            CreateItem("%spell_list_arcane_keys_1%")
                                         ~
                                     EXIT
                                 IF ~~
