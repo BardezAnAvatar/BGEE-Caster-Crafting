@@ -8,6 +8,7 @@ INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
 //Sort the indicies, presumably on first key
 ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
 
+//Verify that it sorts on the first associative index (0)
 ACTION_PHP_EACH ~spell_list_arcane~
     AS ~spell_list_arcane_keys~ => ~value~
     BEGIN
@@ -18,3 +19,69 @@ ACTION_PHP_EACH ~spell_list_arcane~
     END
 
 //NOTE: Confirmed that the array sorts as I expected it to.
+
+//debug script
+COMPILE ~bz-debug.bs~
+
+// Now attempt to... what? make a dialog file?
+
+//level 1 spells
+APPEND_OUTER
+    ~bzcrftar.d~
+    ~~~~~EXTEND_TOP ~THALAN~ bz_caster_craft_arcane_circle_1
+    ~~~~~
+
+ACTION_PHP_EACH ~spell_list_arcane~
+    AS ~spell_list_arcane_keys~ => ~value~
+    BEGIN
+        ACTION_IF spell_list_arcane_keys_4 = 1  //Spell is level 1
+            THEN
+            BEGIN
+                APPEND_OUTER
+                    ~bzcrftar.d~
+                    ~~~~~
+                        IF ~HaveKnownSpellRES("%spell_list_arcane_keys_2%")~
+                        THEN
+                            REPLY ~%spell_list_arcane_keys_12%~
+                            GOTO bz_caster_craft_arcane_%spell_list_arcane_keys_2%
+                    ~~~~~
+            END
+    END
+
+
+//Create spell state and responses
+ACTION_PHP_EACH ~spell_list_arcane~
+    AS ~spell_list_arcane_keys~ => ~value~
+    BEGIN
+        ACTION_IF spell_list_arcane_keys_4 = 1  //Spell is level 1
+            THEN
+            BEGIN
+                APPEND_OUTER
+                    ~bzcrftar.d~
+                    ~~~~~
+                        IF ~~ 
+                        THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
+                            SAY ~You look over the spell %spell_list_arcane_keys_12% and inspect its entry in your spellbook.~
+                                IF ~~
+                                THEN 
+                                    REPLY ~~
+                                    DO 
+                                        ~
+                                            DestroyGold(%spell_list_arcane_keys_6%)
+                                            AdvanceTime(100)
+                                            CreateItem(%spell_list_arcane_keys_1%)
+                                        ~
+                                    EXIT
+                                IF ~~
+                                THEN REPLY ~[Pick another spell]~
+                                    GOTO bz_caster_craft_arcane_circle_%spell_list_arcane_keys_4%
+                                IF ~~
+                                THEN REPLY ~[Pick another spell circle]~
+                                    GOTO bz_caster_craft_arcane_qualified
+                                IF ~~
+                                THEN REPLY ~[Close your spellbook and pack up your scribe tools]~
+                                    EXIT
+                        END
+                    ~~~~~
+            END
+    END
