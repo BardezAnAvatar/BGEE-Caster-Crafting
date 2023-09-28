@@ -2,52 +2,32 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~spell_list_arcane~
     BEGIN
 
-        //[sorting Name]  [Scroll]  [Spell]   [Tradition]   [Spell Level]   [Caster Level]    [XP Cost]    [Additional]   [Failure %]  [Cursed?]   [Learn Spell?]
+        //Missing crafting time required
 
-        ~1Grease~, ~SCRL66~, ~SPWI101~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL66~
-        ~1Armor~, ~SCRL67~, ~SPWI102~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL67~
-        ~1Burning Hands~, ~SCRL68~, ~SPWI103~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL68~
-        ~1Charm Person~, ~SCRL69~, ~SPWI104~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL69~
-        ~1Color Spray~, ~SCRL70~, ~SPWI105~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL70~
-        ~1Blindness~, ~SCRL71~, ~SPWI106~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL71~
-        ~1Friends~, ~SCRL72~, ~SPWI107~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL72~
-        ~1Protection from Petrification~, ~SCRL73~, ~SPWI108~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL73~
-        ~1Identify~, ~SCRL75~, ~SPWI110~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL75~
-        ~1Infravision~, ~SCRL76~, ~SPWI111~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL76~
-        ~1Magic Missile~, ~SCRL77~, ~SPWI112~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL77~
-        ~1Protection from Evil~, ~SCRL3H, SCRL78~, ~SPWI113~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL3H, SCRL78~
-        ~1Shield~, ~SCRL79~, ~SPWI114~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL79~
-        ~1Shocking Grasp~, ~SCRL80~, ~SPWI115~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL80~
-        ~1Sleep~, ~SCRL81~, ~SPWI116~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL81~
-        ~1Chill Touch~, ~SCRL82~, ~SPWI117~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL82~
-        ~1Chromatic Orb~, ~SCRL83~, ~SPWI118~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL83~
-        ~1Larloch's Minor Drain~, ~SCRL84~, ~SPWI119~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL84~
-        ~1Reflected Image~, ~SCRL5U~, ~SPWI120~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL5U~
-        ~1Find Familiar~, ~SCRL6D~, ~SPWI123~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL6D~
-        ~1Spook~, ~SCRLA6~, ~SPWI125~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRLA6~
-        ~1Dancing Lights~, ~BDSCRL1A~, ~SPWI126~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~BDSCRL1A~
+        //[sorting Name]  [Scroll]  [Spell]   [Tradition]   [Spell Level]   [Caster Level]  [Gold Cost]     [XP Cost]    [Additional]   [Failure %]  [Cursed?]   [Learn Spell?]   [Spell Display Name]
 
-        ~2Blur~, ~SCRL85~, ~SPWI201~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL85~
-        ~2Detect Evil~, ~SCRL86~, ~SPWI202~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL86~
-        ~2Detect Invisibility~, ~SCRL87~, ~SPWI203~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL87~
-        ~2Horror~, ~SCRL89~, ~SPWI205~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL89~
-        ~2Invisibility~, ~SCRL90~, ~SPWI206~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL90~
-        ~2Knock~, ~SCRL91~, ~SPWI207~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL91~
-        ~2Know Alignment~, ~SCRL92~, ~SPWI208~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL92~
-        ~2Luck~, ~SCRL93~, ~SPWI209~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL93~
-        ~2Resist Fear~, ~SCRL94~, ~SPWI210~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL94~
-        ~2Melf's Acid Arrow~, ~SCRL95~, ~SPWI211~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL95~
-        ~2Mirror Image~, ~SCRL96~, ~SPWI212~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL96~
-        ~2Stinking Cloud~, ~SCRL97~, ~SPWI213~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL97~
-        ~2Strength~, ~SCRL98~, ~SPWI214~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL98~
-        ~2Web~, ~SCRL99~, ~SPWI215~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL99~
-        ~2Agannazar's Scorcher~, ~SCRL1B~, ~SPWI217~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL1B~
-        ~2Ghoul Touch~, ~SCRL1C~, ~SPWI218~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL1C~
-        ~2Vocalize~, ~SCRL3G~, ~SPWI219~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL3G~
-        ~2Power Word Sleep~, ~SCRL6E~, ~SPWI220~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRL6E~
-        ~2Ray of Enfeeblement~, ~SCRLAI~, ~SPWI221~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRLAI~
-        ~2Deafness~, ~SCRLA2~, ~SPWI223~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRLA2~
-        ~2Glitterdust~, ~SCRLA3~, ~SPWI224~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~SCRLA3~
-        ~2Darkness 15' Radius~, ~BDSCRL2A~, ~SPWI228~, ~Arcane~, ~2~, ~3~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~ => ~BDSCRL2A~
+        ~1Grease~, ~SCRL66~, ~SPWI101~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Grease~ => ~SCRL66~
+        ~1Armor~, ~SCRL67~, ~SPWI102~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Armor~ => ~SCRL67~
+        ~1Burning Hands~, ~SCRL68~, ~SPWI103~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Burning Hands~ => ~SCRL68~
+        ~1Charm Person~, ~SCRL69~, ~SPWI104~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Charm Person~ => ~SCRL69~
+        ~1Color Spray~, ~SCRL70~, ~SPWI105~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Color Spray~ => ~SCRL70~
+        ~1Blindness~, ~SCRL71~, ~SPWI106~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Blindness~ => ~SCRL71~
+        ~1Friends~, ~SCRL72~, ~SPWI107~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Friends~ => ~SCRL72~
+        ~1Protection from Petrification~, ~SCRL73~, ~SPWI108~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Protection from Petrification~ => ~SCRL73~
+        ~1Identify~, ~SCRL75~, ~SPWI110~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Identify~ => ~SCRL75~
+        ~1Infravision~, ~SCRL76~, ~SPWI111~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Infravision~ => ~SCRL76~
+        ~1Magic Missile~, ~SCRL77~, ~SPWI112~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Magic Missile~ => ~SCRL77~
+        ~1Protection from Evil~, ~SCRL3H, SCRL78~, ~SPWI113~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Protection from Evil~ => ~SCRL3H, SCRL78~
+        ~1Shield~, ~SCRL79~, ~SPWI114~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Shield~ => ~SCRL79~
+        ~1Shocking Grasp~, ~SCRL80~, ~SPWI115~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Shocking Grasp~ => ~SCRL80~
+        ~1Sleep~, ~SCRL81~, ~SPWI116~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Sleep~ => ~SCRL81~
+        ~1Chill Touch~, ~SCRL82~, ~SPWI117~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Chill Touch~ => ~SCRL82~
+        ~1Chromatic Orb~, ~SCRL83~, ~SPWI118~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Chromatic Orb~ => ~SCRL83~
+        ~1Larloch's Minor Drain~, ~SCRL84~, ~SPWI119~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Larloch's Minor Drain~ => ~SCRL84~
+        ~1Reflected Image~, ~SCRL5U~, ~SPWI120~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Reflected Image~ => ~SCRL5U~
+        ~1Find Familiar~, ~SCRL6D~, ~SPWI123~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Find Familiar~ => ~SCRL6D~
+        ~1Spook~, ~SCRLA6~, ~SPWI125~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Spook~ => ~SCRLA6~
+        ~1Dancing Lights~, ~BDSCRL1A~, ~SPWI126~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Dancing Lights~ => ~BDSCRL1A~
+
 
     END
