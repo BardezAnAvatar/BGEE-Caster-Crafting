@@ -2,9 +2,22 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~spell_list_arcane~
     BEGIN
 
-        //Missing crafting time required
-
-        //[sorting Name]  [Scroll]  [Spell]   [Tradition]   [Spell Level]   [Caster Level]  [Gold Cost]     [XP Cost]    [Additional]   [Failure %]  [Cursed?]   [Learn Spell?]   [Spell Display Name]
+        /*
+        [sorting Name]  
+        [Scroll]
+        [Spell]
+        [Tradition]
+        [Spell Level]
+        [Caster Level]
+        [Gold Cost]
+        [Additional Cost]
+        [Time Cost] //See: GTimes.IDS
+        [XP Cost]
+        [Failure %]
+        [Cursed?]
+        [Learn Spell?]
+        [Spell Display Name]
+        */
 
         ~1Grease~, ~SCRL66~, ~SPWI101~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Grease~ => ~SCRL66~
         ~1Armor~, ~SCRL67~, ~SPWI102~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~0~, ~15~, ~0~, ~1~, ~Armor~ => ~SCRL67~
