@@ -2,6 +2,8 @@
 * research *
 ***********/
 
+//TODO: Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
+
 // From the base game, get all spells from the class spell lists. Emit to a file the findings.
 INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
 
