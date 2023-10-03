@@ -29,6 +29,8 @@ COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
 APPEND_OUTER
     ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
+
+
 EXTEND_TOP ~THALAN~ bz_caster_craft_arcane_circle_1
     ~~~~~
 
@@ -54,8 +56,10 @@ ACTION_PHP_EACH ~spell_list_arcane~
 ACTION_PHP_EACH ~spell_list_arcane~
     AS ~spell_list_arcane_keys~ => ~value~
     BEGIN
-        //SET ~scroll_total_cost~ = (spell_list_arcane_keys_6 + spell_list_arcane_keys_7)
-        //SET ~bz_craft_time~ = (spell_list_arcane_keys_8 * 300)  //I really wanted to call the variable "timepants"
+
+        OUTER_SET scroll_total_cost = (%spell_list_arcane_keys_6% + %spell_list_arcane_keys_7%)
+        OUTER_SET bz_craft_time = %spell_list_arcane_keys_8% * 300  //I really wanted to call the variable "timepants"
+
         ACTION_IF spell_list_arcane_keys_4 = 1  //Spell is level 1
             THEN
             BEGIN
