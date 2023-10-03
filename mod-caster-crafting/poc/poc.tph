@@ -21,14 +21,13 @@ ACTION_PHP_EACH ~spell_list_arcane~
 //NOTE: Confirmed that the array sorts as I expected it to.
 
 //debug script
-COMPILE ~bz-debug.bs~
+COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
 
 // Now attempt to... what? make a dialog file?
 
 //level 1 spells
 APPEND_OUTER
-    ~bzcrftar.d~
-    ~~~~~EXTEND_TOP ~THALAN~ bz_caster_craft_arcane_circle_1
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
 
 ACTION_PHP_EACH ~spell_list_arcane~
@@ -38,7 +37,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
             THEN
             BEGIN
                 APPEND_OUTER
-                    ~bzcrftar.d~
+                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
                         IF ~HaveKnownSpellRES("%spell_list_arcane_keys_2%")~
                         THEN
