@@ -25,4 +25,4 @@
 @10032 = ~[Pick another spell]~
 
 //Descriptive Prompts
-@10050 = ~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %spell_list_arcane_keys_6% gold (plus %spell_list_arcane_keys_7% gold), and spend %spell_list_arcane_keys_8% time scribing the scroll.~
+@10050 = ~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~

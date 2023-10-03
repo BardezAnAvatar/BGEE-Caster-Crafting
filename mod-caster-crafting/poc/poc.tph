@@ -67,7 +67,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
         SAY ~You look over the spell %spell_list_arcane_keys_13% and inspect its entry in your spellbook.~
             IF ~~
             THEN 
-                REPLY @10050 //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% time scribing the scroll.~
+                REPLY @10050 //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
                 DO 
                     ~
                         DestroyGold(%scroll_total_cost%)
