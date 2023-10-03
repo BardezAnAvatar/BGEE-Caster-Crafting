@@ -30,7 +30,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~1Identify~, ~SCRL75~, ~SPWI110~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Identify~ => ~SCRL75~
         ~1Infravision~, ~SCRL76~, ~SPWI111~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Infravision~ => ~SCRL76~
         ~1Magic Missile~, ~SCRL77~, ~SPWI112~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Magic Missile~ => ~SCRL77~
-        ~1Protection from Evil~, ~SCRL3H, SCRL78~, ~SPWI113~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Protection from Evil~ => ~SCRL3H, SCRL78~
+        ~1Protection from Evil~, ~SCRL78~, ~SPWI113~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Protection from Evil~ => ~SCRL3H, SCRL78~
         ~1Shield~, ~SCRL79~, ~SPWI114~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Shield~ => ~SCRL79~
         ~1Shocking Grasp~, ~SCRL80~, ~SPWI115~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Shocking Grasp~ => ~SCRL80~
         ~1Sleep~, ~SCRL81~, ~SPWI116~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Sleep~ => ~SCRL81~
