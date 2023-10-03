@@ -56,7 +56,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
             THEN
             BEGIN
                 APPEND_OUTER
-                    ~bzcrftar.d~
+                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
                         IF ~~ 
                         THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
