@@ -29,6 +29,8 @@ COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
 APPEND_OUTER
     ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
+EXTEND_TOP ~THALAN~ bz_caster_craft_arcane_circle_1
+    ~~~~~
 
 ACTION_PHP_EACH ~spell_list_arcane~
     AS ~spell_list_arcane_keys~ => ~value~
@@ -39,10 +41,10 @@ ACTION_PHP_EACH ~spell_list_arcane~
                 APPEND_OUTER
                     ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
-                        IF ~HaveKnownSpellRES("%spell_list_arcane_keys_2%")~
-                        THEN
-                            REPLY ~%spell_list_arcane_keys_12%~
-                            GOTO bz_caster_craft_arcane_%spell_list_arcane_keys_2%
+    IF ~HaveKnownSpellRES("%spell_list_arcane_keys_2%")~
+    THEN
+        REPLY ~%spell_list_arcane_keys_13%~
+        GOTO bz_caster_craft_arcane_%spell_list_arcane_keys_2%
                     ~~~~~
             END
     END
@@ -52,35 +54,37 @@ ACTION_PHP_EACH ~spell_list_arcane~
 ACTION_PHP_EACH ~spell_list_arcane~
     AS ~spell_list_arcane_keys~ => ~value~
     BEGIN
+        //SET ~scroll_total_cost~ = (spell_list_arcane_keys_6 + spell_list_arcane_keys_7)
+        //SET ~bz_craft_time~ = (spell_list_arcane_keys_8 * 300)  //I really wanted to call the variable "timepants"
         ACTION_IF spell_list_arcane_keys_4 = 1  //Spell is level 1
             THEN
             BEGIN
                 APPEND_OUTER
                     ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
-                        IF ~~ 
-                        THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
-                            SAY ~You look over the spell %spell_list_arcane_keys_12% and inspect its entry in your spellbook.~
-                                IF ~~
-                                THEN 
+    IF ~~ 
+    THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
+        SAY ~You look over the spell %spell_list_arcane_keys_13% and inspect its entry in your spellbook.~
+            IF ~~
+            THEN 
                 REPLY @10050 //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% time scribing the scroll.~
-                                    DO 
-                                        ~
-                                            DestroyGold(%spell_list_arcane_keys_6%)
-                                            AdvanceTime(100)
-                                            CreateItem("%spell_list_arcane_keys_1%")
-                                        ~
-                                    EXIT
-                                IF ~~
+                DO 
+                    ~
+                        DestroyGold(%scroll_total_cost%)
+                        AdvanceTime(%bz_craft_time%)
+                        GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
+                    ~
+                EXIT
+            IF ~~
             THEN REPLY @10032 //~[Pick another spell]~
-                                    GOTO bz_caster_craft_arcane_circle_%spell_list_arcane_keys_4%
-                                IF ~~
+                GOTO bz_caster_craft_arcane_circle_%spell_list_arcane_keys_4%
+            IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                                    GOTO bz_caster_craft_arcane_qualified
-                                IF ~~
+                GOTO bz_caster_craft_arcane_qualified
+            IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
-                                    EXIT
-                        END
+                EXIT
+    END
                     ~~~~~
             END
     END
