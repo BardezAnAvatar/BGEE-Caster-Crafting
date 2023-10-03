@@ -11,7 +11,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Caster Level]                  // 5
         [Gold Cost]                     // 6
         [Additional Cost]               // 7
-        [Time Cost] //See: GTimes.IDS   // 8 
+        [Time Cost] //See: GTimes.IDS   // 8    time = 5 * minutes; i.e.: 1800 = 6 hours   
         [XP Cost]                       // 9
         [Failure %]                     // 10
         [Cursed?]                       // 11
