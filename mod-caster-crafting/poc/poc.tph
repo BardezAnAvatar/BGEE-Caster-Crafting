@@ -33,7 +33,7 @@ APPEND_OUTER
     ~~~~~
 
 
-EXTEND_TOP ~THALAN~ bz_caster_craft_arcane_circle_1
+EXTEND_TOP ~BZCRFTAR~ bz_caster_craft_arcane_circle_1
     ~~~~~
 
 ACTION_PHP_EACH ~spell_list_arcane~
@@ -52,6 +52,15 @@ ACTION_PHP_EACH ~spell_list_arcane~
                     ~~~~~
             END
     END
+
+APPEND_OUTER
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~~~~~
+
+END
+
+APPEND ~BZCRFTAR~
+    ~~~~~
 
 
 //Create spell state and responses
