@@ -73,13 +73,13 @@ ACTION_PHP_EACH ~spell_list_arcane~
                                         ~
                                     EXIT
                                 IF ~~
-                                THEN REPLY ~[Pick another spell]~
+            THEN REPLY @10032 //~[Pick another spell]~
                                     GOTO bz_caster_craft_arcane_circle_%spell_list_arcane_keys_4%
                                 IF ~~
-                                THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                                     GOTO bz_caster_craft_arcane_qualified
                                 IF ~~
-                                THEN REPLY ~[Close your spellbook and pack up your scribe tools]~
+            THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                                     EXIT
                         END
                     ~~~~~
