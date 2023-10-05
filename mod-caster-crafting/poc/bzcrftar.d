@@ -9,7 +9,7 @@ BEGIN ~BZCRFTAR~
     IF ~ClassLevelGT(Myself,WIZARD,8)~
     THEN BEGIN bz_caster_craft_arcane_qualified
         SAY @10001
-            + ~~ + ~~ GOTO bz_caster_craft_arcane_main_menu
+           IF ~~ THEN GOTO bz_caster_craft_arcane_main_menu
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_main_menu
