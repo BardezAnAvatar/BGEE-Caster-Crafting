@@ -68,7 +68,7 @@ COPY
 
 
 APPEND_OUTER
-    ~./%MOD_FOLDER%/poc/bzcrft3.d~
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
 APPEND ~BZCRFTAR~
     ~~~~~
@@ -90,7 +90,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
                 OUTER_SPRINT ~reply_scroll_create~ @10050   //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
 
                 APPEND_OUTER 
-                    ~./%MOD_FOLDER%/poc/bzcrft3.d~
+                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
     IF ~~ 
     THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
@@ -120,7 +120,7 @@ GiveItemCreate("%spell_list_arcane_keys_1%", Myself, 1, 0, 0)
     END
 
 APPEND_OUTER
-    ~./%MOD_FOLDER%/poc/bzcrft3.d~
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
 END
     ~~~~~
