@@ -54,7 +54,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -65,7 +65,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -76,7 +76,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -87,7 +87,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -98,7 +98,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -109,7 +109,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -120,7 +120,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -131,7 +131,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -142,7 +142,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -153,7 +153,7 @@ BEGIN ~BZCRFTAR~
         SAY @10052 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_arcane_qualified
+                GOTO bz_caster_craft_arcane_main_menu
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
