@@ -27,7 +27,7 @@ COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
 
 // Now attempt to... what? make a dialog file?
 COPY 
-    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~./%MOD_FOLDER%/poc/blank.txt~
     ~./%MOD_FOLDER%/poc/bzcrft2.d~
 
 //level 1 spells
@@ -56,8 +56,12 @@ ACTION_PHP_EACH ~spell_list_arcane~
             END
     END
 
+COPY 
+    ~./%MOD_FOLDER%/poc/blank.txt~
+    ~./%MOD_FOLDER%/poc/bzcrft3.d~
+
 APPEND_OUTER
-    ~./%MOD_FOLDER%/poc/bzcrft2.d~
+    ~./%MOD_FOLDER%/poc/bzcrft3.d~
     ~~~~~
 
 END
@@ -82,7 +86,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
                 OUTER_SPRINT ~reply_scroll_create~ @10050   //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
 
                 APPEND_OUTER 
-                    ~./%MOD_FOLDER%/poc/bzcrft2.d~
+                    ~./%MOD_FOLDER%/poc/bzcrft3.d~
                     ~~~~~
     IF ~~ 
     THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
@@ -112,3 +116,5 @@ GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
     END
 
 COMPILE ~./%MOD_FOLDER%/poc/bzcrftar.d~
+//COMPILE ~./%MOD_FOLDER%/poc/bzcrft2.d~
+//COMPILE ~./%MOD_FOLDER%/poc/bzcrft3.d~
