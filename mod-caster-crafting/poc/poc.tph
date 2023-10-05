@@ -26,16 +26,13 @@ ACTION_PHP_EACH ~spell_list_arcane~
 COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
 
 // Now attempt to... what? make a dialog file?
-COPY 
-    ~./%MOD_FOLDER%/poc/blank.txt~
-    ~./%MOD_FOLDER%/poc/bzcrft2.d~
 
 //level 1 spells
 APPEND_OUTER
-    ~./%MOD_FOLDER%/poc/bzcrft2.d~
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
-
-
+  
+  
 EXTEND_TOP ~BZCRFTAR~ bz_caster_craft_arcane_circle_1
     ~~~~~
 
@@ -46,7 +43,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
             THEN
             BEGIN
                 APPEND_OUTER
-                    ~./%MOD_FOLDER%/poc/bzcrft2.d~
+                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
     IF ~HaveKnownSpellRES("%spell_list_arcane_keys_2%")~
     THEN
@@ -56,17 +53,14 @@ ACTION_PHP_EACH ~spell_list_arcane~
             END
     END
 
+//end scroll state links
 APPEND_OUTER
-    ~./%MOD_FOLDER%/poc/bzcrft2.d~
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
 END
     ~~~~~
 
-COPY 
-    ~./%MOD_FOLDER%/poc/blank.txt~
-    ~./%MOD_FOLDER%/poc/bzcrft3.d~
-
-
+//New section for all of the scroll states
 APPEND_OUTER
     ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
