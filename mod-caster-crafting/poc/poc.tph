@@ -88,11 +88,11 @@ ACTION_PHP_EACH ~spell_list_arcane~
             THEN 
                 REPLY ~%reply_scroll_create%~ //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
                 DO 
-                    ~
-                        DestroyGold(%scroll_total_cost%)
-                        AdvanceTime(%bz_craft_time%)
-                        GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
-                    ~
+                    ~~~~~
+DestroyGold(%scroll_total_cost%)
+AdvanceTime(%bz_craft_time%)
+GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
+                    ~~~~~
                 EXIT
             IF ~~
             THEN REPLY @10032 //~[Pick another spell]~

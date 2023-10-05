@@ -51,9 +51,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_1
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -62,9 +62,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_2
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -73,9 +73,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_3
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -84,9 +84,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_4
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -95,9 +95,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_5
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -106,9 +106,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_6
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -117,9 +117,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_7
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -128,9 +128,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_8
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -139,9 +139,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_9
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
@@ -150,9 +150,9 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_10
-        SAY ~Which spell do you examine?~
+        SAY @10052 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY ~[Pick another spell circle]~
+            THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_qualified
             IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
