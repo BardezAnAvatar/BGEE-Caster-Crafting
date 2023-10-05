@@ -111,4 +111,4 @@ GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
             END
     END
 
-//COMPILE ~./%MOD_FOLDER%/poc/bzcrftar.d~
+COMPILE ~./%MOD_FOLDER%/poc/bzcrftar.d~
