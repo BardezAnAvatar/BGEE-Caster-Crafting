@@ -102,7 +102,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
                     ~
 DestroyGold(%scroll_total_cost%)
 AdvanceTime(%bz_craft_time%)
-GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
+GiveItemCreate("%spell_list_arcane_keys_1%", Myself, 1, 0, 0)
                     ~
                 EXIT
             IF ~~
