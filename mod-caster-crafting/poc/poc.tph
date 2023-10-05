@@ -56,16 +56,20 @@ ACTION_PHP_EACH ~spell_list_arcane~
             END
     END
 
+APPEND_OUTER
+    ~./%MOD_FOLDER%/poc/bzcrft2.d~
+    ~~~~~
+END
+    ~~~~~
+
 COPY 
     ~./%MOD_FOLDER%/poc/blank.txt~
     ~./%MOD_FOLDER%/poc/bzcrft3.d~
 
+
 APPEND_OUTER
     ~./%MOD_FOLDER%/poc/bzcrft3.d~
     ~~~~~
-
-END
-
 APPEND ~BZCRFTAR~
     ~~~~~
 
@@ -114,6 +118,12 @@ GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
                     ~~~~~
             END
     END
+
+APPEND_OUTER
+    ~./%MOD_FOLDER%/poc/bzcrft3.d~
+    ~~~~~
+END
+    ~~~~~
 
 COMPILE ~./%MOD_FOLDER%/poc/bzcrftar.d~
 //COMPILE ~./%MOD_FOLDER%/poc/bzcrft2.d~
