@@ -10,6 +10,7 @@ BEGIN ~BZCRFTAR~
     THEN BEGIN bz_caster_craft_arcane_qualified
         SAY @10001
            IF ~~ THEN GOTO bz_caster_craft_arcane_main_menu
+    END
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_main_menu
