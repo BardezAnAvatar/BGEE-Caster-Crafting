@@ -29,7 +29,7 @@ COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
 
 //level 1 spells
 APPEND_OUTER
-    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~./%MOD_FOLDER%/poc/bzcrft2.d~
     ~~~~~
 
 
@@ -43,7 +43,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
             THEN
             BEGIN
                 APPEND_OUTER
-                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+                    ~./%MOD_FOLDER%/poc/bzcrft2.d~
                     ~~~~~
     IF ~HaveKnownSpellRES("%spell_list_arcane_keys_2%")~
     THEN
@@ -54,7 +54,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
     END
 
 APPEND_OUTER
-    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~./%MOD_FOLDER%/poc/bzcrft2.d~
     ~~~~~
 
 END
@@ -79,7 +79,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
                 OUTER_SPRINT ~reply_scroll_create~ @10050   //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
 
                 APPEND_OUTER 
-                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+                    ~./%MOD_FOLDER%/poc/bzcrft2.d~
                     ~~~~~
     IF ~~ 
     THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
@@ -87,12 +87,12 @@ ACTION_PHP_EACH ~spell_list_arcane~
             IF ~~
             THEN 
                 REPLY ~%reply_scroll_create%~ //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
-                DO 
-                    ~~~~~
+                DO
+                    \~\~\~\~\~
 DestroyGold(%scroll_total_cost%)
 AdvanceTime(%bz_craft_time%)
 GiveItemCreate("%spell_list_arcane_keys_1%", GABBER, 1, 0, 0)
-                    ~~~~~
+                    \~\~\~\~\~
                 EXIT
             IF ~~
             THEN REPLY @10032 //~[Pick another spell]~
