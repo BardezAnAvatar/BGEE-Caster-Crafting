@@ -144,3 +144,4 @@ COPY_EXISTING ~MISC48.ITM~ ~override/bzmsckar.itm~   //arcane kit
 
 
 //TODO: Register the item in ITEMDIAL.2DA along with the strref to talk to it.
+OUTER_SET bz_scrollkit_arcane_interact_strref = RESOLVE_STR_REF @20003
