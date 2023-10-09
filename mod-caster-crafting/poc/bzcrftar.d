@@ -52,7 +52,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_1
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -63,7 +63,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_2
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -74,7 +74,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_3
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -85,7 +85,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_4
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -96,7 +96,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_5
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -107,7 +107,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_6
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -118,7 +118,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_7
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -129,7 +129,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_8
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -140,7 +140,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_9
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
@@ -151,7 +151,7 @@ BEGIN ~BZCRFTAR~
 
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_circle_10
-        SAY @10052 // ~Which spell do you examine?~
+        SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_arcane_main_menu
