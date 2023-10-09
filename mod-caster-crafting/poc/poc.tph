@@ -137,10 +137,12 @@ COPY_EXISTING ~MISC48.ITM~ ~override/bzmsckar.itm~   //arcane kit
         SAY NAME2 @20000 //Scrollmaker's Work Kit
         SAY UNIDENTIFIED_DESC @20002
         SAY IDENTIFIED_DESC @20001
-        WRITE_ASCII_TERMINATE 0x3A "BZMIKARI"   // Icon
-        WRITE_LONG 0x34 2000                    // Price
-        WRITE_LONG 0x42 10                      // Lore to Identify
-        WRITE_ASCII_TERMINATE 0x58 "BZMIKARD"   // Description Image
+        WRITE_ASCII_TERMINATE 0x3A "BZMIKARI"           // Icon
+        WRITE_LONG 0x34 2000                            // Price
+        WRITE_LONG 0x42 10                              // Lore to Identify
+        WRITE_ASCII_TERMINATE 0x58 "BZMIKARD"           // Description Image
+        READ_LONG 0x18 ~bzmsckar_flags~
+        WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
 
 
 //TODO: Register the item in ITEMDIAL.2DA along with the strref to talk to it.
