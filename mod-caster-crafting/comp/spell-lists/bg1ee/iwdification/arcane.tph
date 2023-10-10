@@ -1,0 +1,60 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ~spell_list_arcane~
+    BEGIN
+
+        /*
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        */
+
+        ~SPWI127~, ~Arcane~, ~1~ => ~SPWI127~    //Expeditious Retreat
+
+        ~SPWI225~, ~Arcane~, ~2~ => ~SPWI225~    //Snilloc's Snowball Swarm
+        ~SPWI226~, ~Arcane~, ~2~ => ~SPWI226~    //Decastave
+        ~SPWI227~, ~Arcane~, ~2~ => ~SPWI227~    //Cat's Grace
+
+        ~SPWI323~, ~Arcane~, ~3~ => ~SPWI323~    //Icelance
+        ~SPWI327~, ~Arcane~, ~3~ => ~SPWI327~    //Lance of Disruption
+
+        ~SPWI411~, ~Arcane~, ~4~ => ~SPWI411~    //Emotion: Hopelessness
+        ~SPWI422~, ~Arcane~, ~4~ => ~SPWI422~    //Beltyn's Burning Blood
+        ~SPWI426~, ~Arcane~, ~4~ => ~SPWI426~    //Emotion: Courage
+        ~SPWI427~, ~Arcane~, ~4~ => ~SPWI427~    //Emotion: Hope
+        ~SPWI428~, ~Arcane~, ~4~ => ~SPWI428~    //Emotion: Fear
+        ~SPWI429~, ~Arcane~, ~4~ => ~SPWI429~    //Mordenkainen's Force Missiles
+        ~SPWI430~, ~Arcane~, ~4~ => ~SPWI430~    //Shout
+        ~SPWI431~, ~Arcane~, ~4~ => ~SPWI431~    //Vitriolic Sphere
+        ~SPWI432~, ~Arcane~, ~4~ => ~SPWI432~    //Shadow Monsters
+
+        ~SPWI516~, ~Arcane~, ~5~ => ~SPWI516~    //Conjure Lesser Fire Elemental
+        ~SPWI520~, ~Arcane~, ~5~ => ~SPWI520~    //Conjure Lesser Air Elemental
+        ~SPWI521~, ~Arcane~, ~5~ => ~SPWI521~    //Conjure Lesser Earth Elemental
+        ~SPWI524~, ~Arcane~, ~5~ => ~SPWI524~    //Shroud of Flame
+        ~SPWI525~, ~Arcane~, ~5~ => ~SPWI525~    //Summon Shadow
+        ~SPWI526~, ~Arcane~, ~5~ => ~SPWI526~    //Conjure Lesser Water Elemental
+        ~SPWI527~, ~Arcane~, ~5~ => ~SPWI527~    //Demi-Shadow Monsters
+
+        ~SPWI610~, ~Arcane~, ~6~ => ~SPWI610~    //Monster Summoning 4
+        ~SPWI626~, ~Arcane~, ~6~ => ~SPWI626~    //Otiluke's Freezing Sphere
+        ~SPWI627~, ~Arcane~, ~6~ => ~SPWI627~    //Darts of Bone
+        ~SPWI628~, ~Arcane~, ~6~ => ~SPWI628~    //Soul Eater
+        ~SPWI629~, ~Arcane~, ~6~ => ~SPWI629~    //Trollish Fortitude
+        ~SPWI630~, ~Arcane~, ~6~ => ~SPWI630~    //Antimagic Shell
+        ~SPWI631~, ~Arcane~, ~6~ => ~SPWI631~    //Lich Touch
+        ~SPWI632~, ~Arcane~, ~6~ => ~SPWI632~    //Shades
+
+        ~SPWI706~, ~Arcane~, ~7~ => ~SPWI706~    //Acid Storm
+        ~SPWI724~, ~Arcane~, ~7~ => ~SPWI724~    //Suffocate
+        ~SPWI725~, ~Arcane~, ~7~ => ~SPWI725~    //Monster Summoning 5
+        ~SPWI727~, ~Arcane~, ~7~ => ~SPWI727~    //Malavon's Rage
+        ~SPWI728~, ~Arcane~, ~7~ => ~SPWI728~    //Seven Eyes
+
+        ~SPWI806~, ~Arcane~, ~8~ => ~SPWI806~    //Mind Blank
+        ~SPWI819~, ~Arcane~, ~8~ => ~SPWI819~    //Great Shout
+        ~SPWI820~, ~Arcane~, ~8~ => ~SPWI820~    //Iron Body
+        ~SPWI821~, ~Arcane~, ~8~ => ~SPWI821~    //Monster Summoning 6
+
+        ~SPWI901~, ~Arcane~, ~9~ => ~SPWI901~    //Monster Summoning 7
+
+    END
