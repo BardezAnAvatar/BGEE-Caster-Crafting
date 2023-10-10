@@ -3,20 +3,20 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     BEGIN
 
         /*
-        [sorting Name]          // 0
+        [sorting Name]          // 0    --get from spell
         [Scroll]                // 1
         [Spell]                 // 2
         [Tradition]             // 3
         [Spell Level]           // 4
         [Caster Level]          // 5
-        [Gold Cost]             // 6
+        [Gold Cost]             // 6    --get from scroll
         [Additional Cost]       // 7
-        [Time Cost]             // 8    bleh, just require this as hours
-        [XP Cost]               // 9
-        [Failure %]             // 10
-        [Cursed?]               // 11
-        [Learn Spell?]          // 12
-        [Spell Display Name]    // 13
+        [Time Cost]             // 8    hours -- calc from table
+        [XP Cost]               // 9    --calc from table
+        [Failure %]             // 10   --calc from table
+        [Cursed?]               // 11   --used as a seed for random cursed scroll creation
+        [Learn Spell?]          // 12   --used for missing scrolls
+        [Spell Display Name]    // 13   --get from spell
         */
 
         ~1Grease~, ~SCRL66~, ~SPWI101~, ~Arcane~, ~1~, ~1~, ~100~, ~0~, ~6~, ~0~, ~15~, ~0~, ~1~, ~Grease~ => ~SCRL66~
