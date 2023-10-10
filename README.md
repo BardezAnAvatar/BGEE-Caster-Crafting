@@ -18,3 +18,7 @@ tl;dr: do what you will with it, credit me (Bardez) my work on the mod. Grammars
 
 ## Credit/license for prior work
 ![image](./.markdown-assets/license-allowed.png)
+
+
+## Credit/License for art
+Leather kit: https://commons.wikimedia.org/wiki/File:Kit_for_blowpipe_analysis_Carl_Osterland,_Freiberg,_c._1870_II.jpg ; Gregory Tobias, sketchified filter applied

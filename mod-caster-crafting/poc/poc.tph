@@ -1,0 +1,156 @@
+/***********
+* research *
+***********/
+
+//TODO: Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
+
+// From the base game, get all spells from the class spell lists. Emit to a file the findings.
+INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
+
+//Sort the indicies, presumably on first key
+ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
+
+//Verify that it sorts on the first associative index (0)
+ACTION_PHP_EACH ~spell_list_arcane~
+    AS ~spell_list_arcane_keys~ => ~value~
+    BEGIN
+
+        //Debugging Statements
+        PRINT ~DEBUG: var `spell_list_arcane_keys_0`: %spell_list_arcane_keys_0%~
+
+    END
+
+//NOTE: Confirmed that the array sorts as I expected it to.
+
+//debug script
+COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
+
+// Now attempt to... what? make a dialog file?
+
+//level 1 spells
+APPEND_OUTER
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~~~~~
+  
+  
+EXTEND_TOP ~BZCRFTAR~ bz_caster_craft_arcane_circle_1
+    ~~~~~
+
+ACTION_PHP_EACH ~spell_list_arcane~
+    AS ~spell_list_arcane_keys~ => ~value~
+    BEGIN
+        ACTION_IF spell_list_arcane_keys_4 = 1  //Spell is level 1
+            THEN
+            BEGIN
+                APPEND_OUTER
+                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+                    ~~~~~
+    IF ~HaveKnownSpellRES("%spell_list_arcane_keys_2%")~
+    THEN
+        REPLY ~%spell_list_arcane_keys_13%~
+        GOTO bz_caster_craft_arcane_%spell_list_arcane_keys_2%
+                    ~~~~~
+            END
+    END
+
+//end scroll state links
+APPEND_OUTER
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~~~~~
+END
+    ~~~~~
+
+//New section for all of the scroll states
+APPEND_OUTER
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~~~~~
+APPEND ~BZCRFTAR~
+    ~~~~~
+
+
+//Create spell state and responses
+ACTION_PHP_EACH ~spell_list_arcane~
+    AS ~spell_list_arcane_keys~ => ~value~
+    BEGIN
+
+        OUTER_SET scroll_total_cost = (%spell_list_arcane_keys_6% + %spell_list_arcane_keys_7%)
+        OUTER_SET bz_craft_time = %spell_list_arcane_keys_8% * 300  //I really wanted to call the variable "timepants"
+
+        ACTION_IF spell_list_arcane_keys_4 = 1  //Spell is level 1
+            THEN
+            BEGIN
+
+                OUTER_SPRINT ~state_spell_entry~ @10050     //~You look over the spell %spell_list_arcane_keys_13% and inspect its entry in your spellbook.~
+                OUTER_SPRINT ~reply_scroll_create~ @10033   //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
+
+                APPEND_OUTER 
+                    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+                    ~~~~~
+    IF ~~ 
+    THEN BEGIN bz_caster_craft_arcane_%spell_list_arcane_keys_2%
+        SAY ~%state_spell_entry%~ //~You look over the spell %spell_list_arcane_keys_13% and inspect its entry in your spellbook.~
+            IF ~~
+            THEN 
+                REPLY ~%reply_scroll_create%~ //~[Scribe a scroll of %spell_list_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %spell_list_arcane_keys_8% hours scribing the scroll.~
+                DO
+                    ~
+TakePartyGold(%scroll_total_cost%)
+DestroyGold(%scroll_total_cost%)
+AdvanceTime(%bz_craft_time%)
+GiveItemCreate("%spell_list_arcane_keys_1%", Myself, 1, 0, 0)
+                    ~
+                EXIT
+            IF ~~
+            THEN REPLY @10032 //~[Pick another spell]~
+                GOTO bz_caster_craft_arcane_circle_%spell_list_arcane_keys_4%
+            IF ~~
+            THEN REPLY @10031 //~[Pick another spell circle]~
+                GOTO bz_caster_craft_arcane_qualified
+            IF ~~
+            THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
+                EXIT
+    END
+                    ~~~~~
+            END
+    END
+
+APPEND_OUTER
+    ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    ~~~~~
+END
+    ~~~~~
+
+COMPILE ~./%MOD_FOLDER%/poc/bzcrftar.d~
+    
+//NOTE: The dialog now compiles, no warnings, and I can verify in NI that it should work.
+//NOTE: The time of 1800 conflicts with some mod-custom timers in a weird way;
+    // it should compile to SIX_HOURS, I guess, but instead compiles to LK#NEERA_TIMER (also 1800)
+
+
+//TODO: Copy BAMs and shit for item
+COPY ~./%MOD_FOLDER%/poc/BZMIKARD.BAM~ ~override~    //arcane kit description BAM
+COPY ~./%MOD_FOLDER%/poc/BZMIKARI.BAM~ ~override~    //arcane kit inventory BAM
+
+//TODO: Make an item for the player to interact with
+COPY_EXISTING ~MISC48.ITM~ ~override/bzmsckar.itm~   //arcane kit
+    //Patches
+        SAY NAME1 @20000 //Scrollmaker's Work Kit
+        SAY NAME2 @20000 //Scrollmaker's Work Kit
+        SAY UNIDENTIFIED_DESC @20002
+        SAY IDENTIFIED_DESC @20001
+        WRITE_ASCII_TERMINATE 0x3A "BZMIKARI"           // Icon
+        WRITE_LONG 0x34 2000                            // Price
+        WRITE_LONG 0x42 10                              // Lore to Identify
+        WRITE_LONG 0x4C 10                              // Weight
+        WRITE_ASCII_TERMINATE 0x58 "BZMIKARD"           // Description Image
+        READ_LONG 0x18 ~bzmsckar_flags~
+        WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
+
+
+//TODO: Register the item in ITEMDIAL.2DA along with the strref to talk to it.
+OUTER_SET bz_scrollkit_arcane_interact_strref = RESOLVE_STR_REF(@20003)
+
+COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
+    //PATCHES
+        COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
+        INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCKAR %bz_scrollkit_arcane_interact_strref% BZCRFTAR~
