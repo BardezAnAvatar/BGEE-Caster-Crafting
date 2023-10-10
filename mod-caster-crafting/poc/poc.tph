@@ -141,6 +141,7 @@ COPY_EXISTING ~MISC48.ITM~ ~override/bzmsckar.itm~   //arcane kit
         WRITE_ASCII_TERMINATE 0x3A "BZMIKARI"           // Icon
         WRITE_LONG 0x34 2000                            // Price
         WRITE_LONG 0x42 10                              // Lore to Identify
+        WRITE_LONG 0x4C 10                              // Weight
         WRITE_ASCII_TERMINATE 0x58 "BZMIKARD"           // Description Image
         READ_LONG 0x18 ~bzmsckar_flags~
         WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
