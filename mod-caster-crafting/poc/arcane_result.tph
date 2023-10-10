@@ -1,5 +1,5 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY 
-    ~spell_list_arcane~
+    ~scroll_list_data_arcane~
     BEGIN
 
         /*
