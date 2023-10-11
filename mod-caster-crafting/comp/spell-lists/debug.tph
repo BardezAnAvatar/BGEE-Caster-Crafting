@@ -1,0 +1,26 @@
+/***********
+* research *
+***********/
+
+//Debugging Statements
+PRINT ~DEBUG: Spell List array~
+
+//TODO: Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
+
+// From the base game, get all spells from the class spell lists. Emit to a file the findings.
+INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
+INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/iwdification/arcane.tph~
+    //NOTE: yes, the redefinition acts as a sort of merge, as printed in debug statements
+
+//Sort the indicies, presumably on first key
+ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
+
+//Verify that it sorts on the first associative index (0)
+ACTION_PHP_EACH ~spell_list_arcane~
+    AS ~spell_list_arcane_keys~ => ~value~
+    BEGIN
+
+        //Debugging Statements
+        PRINT ~DEBUG: Spell List array: Tradition: `%spell_list_arcane_keys_1%`; Level: `%spell_list_arcane_keys_2%`; Spell Code: `%spell_list_arcane_keys_0%`~
+
+    END
