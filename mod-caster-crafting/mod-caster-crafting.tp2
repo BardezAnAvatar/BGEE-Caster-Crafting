@@ -32,7 +32,7 @@ LANGUAGE
 /*********************
 *   Mod Components   *
 *********************/
-BEGIN @0 
+BEGIN @0
 
 //Debugging Statements
 PRINT ~DEBUG: var `MOD_FOLDER`: %MOD_FOLDER%~
