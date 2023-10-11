@@ -1,0 +1,17 @@
+//TODO: OlvynSpells has a ton of install options. Make a method to check for the spell first?
+
+//Macro for (Appending the associative array)
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ~spell_list_arcane~
+    BEGIN
+
+        /*
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        */
+
+
+
+    END
