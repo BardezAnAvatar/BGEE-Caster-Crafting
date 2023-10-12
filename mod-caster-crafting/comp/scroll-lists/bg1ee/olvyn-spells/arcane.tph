@@ -126,14 +126,14 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEWI961X~, ~MEWI961~, ~Arcane~, ~9~ => ~MEWI961X~   //Teleport Step
 
 
-        ~MEWI960X~, ~MEWI960~, ~Arcane~, ~10~ => ~MEWI960X~   //Eclectic Recall
-        ~MEWI962X~, ~MEWI962~, ~Arcane~, ~10~ => ~MEWI962X~   //Necropotence
-        ~MEWI965X~, ~MEWI965~, ~Arcane~, ~10~ => ~MEWI965X~   //Rampant Lightning
+        ~MEWI960X~, ~MEWI960~, ~Arcane~, ~A~ => ~MEWI960X~   //Eclectic Recall
+        ~MEWI962X~, ~MEWI962~, ~Arcane~, ~A~ => ~MEWI962X~   //Necropotence
+        ~MEWI965X~, ~MEWI965~, ~Arcane~, ~A~ => ~MEWI965X~   //Rampant Lightning
 
         //Missing:
-        //~MEWI963X~, ~MEWI963~, ~Arcane~, ~10~ => ~MEWI963X~   //Mental Agility
-        //~MEWI964X~, ~MEWI964~, ~Arcane~, ~10~ => ~MEWI964X~   //Freezing Wave
-        //~MEWI967X~, ~MEWI967~, ~Arcane~, ~10~ => ~MEWI967X~   //Culling Thought
-        //~MEWI968X~, ~MEWI968~, ~Arcane~, ~10~ => ~MEWI968X~   //Sphere of Annihilation
+        //~MEWI963X~, ~MEWI963~, ~Arcane~, ~A~ => ~MEWI963X~   //Mental Agility
+        //~MEWI964X~, ~MEWI964~, ~Arcane~, ~A~ => ~MEWI964X~   //Freezing Wave
+        //~MEWI967X~, ~MEWI967~, ~Arcane~, ~A~ => ~MEWI967X~   //Culling Thought
+        //~MEWI968X~, ~MEWI968~, ~Arcane~, ~A~ => ~MEWI968X~   //Sphere of Annihilation
 
     END

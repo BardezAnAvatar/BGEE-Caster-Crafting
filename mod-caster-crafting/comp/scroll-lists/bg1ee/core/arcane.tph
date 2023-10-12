@@ -180,12 +180,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~~, ~SPWI124~, ~Arcane~, ~1~, ~1~, ~0~ => ~~    //Nahal's Reckless Dweomer*
         ~~, ~SPWI222~, ~Arcane~, ~2~, ~3~, ~0~ => ~~    //Chaos Shield*
         ~~, ~SPWI723~, ~Arcane~, ~7~, ~14~, ~0~ => ~~    //Improved Chaos Shield*
-        ~--HLA--~, ~SPWI920~, ~Arcane~, ~10~, ~18~, ~0~ => ~--HLA--~    //Energy Blades
-        ~--HLA--~, ~SPWI921~, ~Arcane~, ~10~, ~18~, ~0~ => ~--HLA--~    //Improved Alacrity
-        ~--HLA--~, ~SPWI922~, ~Arcane~, ~10~, ~18~, ~0~ => ~--HLA--~    //Dragon's Breath
-        ~--HLA--~, ~SPWI923~, ~Arcane~, ~10~, ~18~, ~0~ => ~--HLA--~    //Summon Planetar
-        ~--HLA--~, ~SPWI924~, ~Arcane~, ~10~, ~18~, ~0~ => ~--HLA--~    //Summon Dark Planetar
-        ~--HLA--~, ~SPWI925~, ~Arcane~, ~10~, ~18~, ~0~ => ~--HLA--~    //Comet
+        ~--HLA--~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Energy Blades
+        ~--HLA--~, ~SPWI921~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Improved Alacrity
+        ~--HLA--~, ~SPWI922~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Dragon's Breath
+        ~--HLA--~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Planetar
+        ~--HLA--~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Dark Planetar
+        ~--HLA--~, ~SPWI925~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Comet
 
         //Missing:
         ~SCRL8D~, ~SPWI701~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8D~    //Spell Turning

@@ -211,11 +211,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI918~, ~Arcane~, ~9~ => ~SPWI918~    //Bigby's Crushing Hand
         ~SPWI919~, ~Arcane~, ~9~ => ~SPWI919~    //Wish
 
-        ~SPWI920~, ~Arcane~, ~10~ => ~SPWI920~   //Energy Blades
-        ~SPWI921~, ~Arcane~, ~10~ => ~SPWI921~   //Improved Alacrity
-        ~SPWI922~, ~Arcane~, ~10~ => ~SPWI922~   //Dragon's Breath
-        ~SPWI923~, ~Arcane~, ~10~ => ~SPWI923~   //Summon Planetar
-        ~SPWI924~, ~Arcane~, ~10~ => ~SPWI924~   //Summon Dark Planetar
-        ~SPWI925~, ~Arcane~, ~10~ => ~SPWI925~   //Comet
+        ~SPWI920~, ~Arcane~, ~A~ => ~SPWI920~    //Energy Blades
+        ~SPWI921~, ~Arcane~, ~A~ => ~SPWI921~    //Improved Alacrity
+        ~SPWI922~, ~Arcane~, ~A~ => ~SPWI922~    //Dragon's Breath
+        ~SPWI923~, ~Arcane~, ~A~ => ~SPWI923~    //Summon Planetar
+        ~SPWI924~, ~Arcane~, ~A~ => ~SPWI924~    //Summon Dark Planetar
+        ~SPWI925~, ~Arcane~, ~A~ => ~SPWI925~    //Comet
 
     END

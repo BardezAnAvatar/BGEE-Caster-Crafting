@@ -167,12 +167,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEWI961~, ~Arcane~, ~9~ => ~MEWI961~   //Teleport Step
 
 
-        ~MEWI960~, ~Arcane~, ~10~ => ~MEWI960~   //Eclectic Recall
-        ~MEWI962~, ~Arcane~, ~10~ => ~MEWI962~   //Necropotence
-        ~MEWI963~, ~Arcane~, ~10~ => ~MEWI963~   //Mental Agility
-        ~MEWI964~, ~Arcane~, ~10~ => ~MEWI964~   //Freezing Wave
-        ~MEWI965~, ~Arcane~, ~10~ => ~MEWI965~   //Rampant Lightning
-        ~MEWI967~, ~Arcane~, ~10~ => ~MEWI967~   //Culling Thought
-        ~MEWI968~, ~Arcane~, ~10~ => ~MEWI968~   //Sphere of Annihilation
+        ~MEWI960~, ~Arcane~, ~A~ => ~MEWI960~   //Eclectic Recall
+        ~MEWI962~, ~Arcane~, ~A~ => ~MEWI962~   //Necropotence
+        ~MEWI963~, ~Arcane~, ~A~ => ~MEWI963~   //Mental Agility
+        ~MEWI964~, ~Arcane~, ~A~ => ~MEWI964~   //Freezing Wave
+        ~MEWI965~, ~Arcane~, ~A~ => ~MEWI965~   //Rampant Lightning
+        ~MEWI967~, ~Arcane~, ~A~ => ~MEWI967~   //Culling Thought
+        ~MEWI968~, ~Arcane~, ~A~ => ~MEWI968~   //Sphere of Annihilation
 
     END
