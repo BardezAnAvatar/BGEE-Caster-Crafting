@@ -48,6 +48,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI706~, ~Arcane~, ~7~ => ~SPWI706~    //Acid Storm
         ~SPWI724~, ~Arcane~, ~7~ => ~SPWI724~    //Suffocate
         ~SPWI725~, ~Arcane~, ~7~ => ~SPWI725~    //Monster Summoning 5
+        ~SPWI726~, ~Arcane~, ~7~ => ~SPWI726~    //Mordenkainen's Force Blade
         ~SPWI727~, ~Arcane~, ~7~ => ~SPWI727~    //Malavon's Rage
         ~SPWI728~, ~Arcane~, ~7~ => ~SPWI728~    //Seven Eyes
 
