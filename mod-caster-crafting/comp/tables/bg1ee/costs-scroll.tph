@@ -1,0 +1,27 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ~scroll_costs~
+    BEGIN
+
+        /*
+        [key]                   // 0
+        [spell-level]           // 1
+        [Tradition]             // 2
+        [Time Cost]             // 3    in hours
+        [XP Cost]               // 4
+        [Failure %]             // 5
+        */
+
+        ~1-Protection~, ~0~, ~Protection~, ~144~, ~0~, ~20~ => ~Protecc~
+
+        ~1-Arcane~, ~1~, ~Arcane~, ~24~,  ~0~, ~5~ => ~1~
+        ~2-Arcane~, ~2~, ~Arcane~, ~48~,  ~0~, ~10~ => ~1~
+        ~3-Arcane~, ~3~, ~Arcane~, ~72~,  ~0~, ~15~ => ~1~
+        ~4-Arcane~, ~4~, ~Arcane~, ~96~,  ~0~, ~20~ => ~1~
+        ~5-Arcane~, ~5~, ~Arcane~, ~120~, ~0~, ~25~ => ~1~
+        ~6-Arcane~, ~6~, ~Arcane~, ~144~, ~0~, ~30~ => ~1~
+        ~7-Arcane~, ~7~, ~Arcane~, ~168~, ~0~, ~35~ => ~1~
+        ~8-Arcane~, ~8~, ~Arcane~, ~192~, ~0~, ~40~ => ~1~
+        ~9-Arcane~, ~9~, ~Arcane~, ~216~, ~0~, ~45~ => ~1~
+        ~A-Arcane~, ~A~, ~Arcane~, ~240~, ~0~, ~50~ => ~1~
+
+    END
