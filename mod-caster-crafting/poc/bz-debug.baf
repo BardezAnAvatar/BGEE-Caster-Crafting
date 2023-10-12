@@ -165,3 +165,699 @@ THEN
         DisplayString(Myself, ~Level 1 WIZARD~)
 END
 
+
+
+
+
+
+
+IF
+    ClassLevelGT(Myself,5,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 21 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,19)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 20 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,18)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 19 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,17)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 18 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,16)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 17 BARD~)
+END
+
+
+
+IF
+    ClassLevelGT(Myself,5,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 16 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,14)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 15 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,13)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 14 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 13 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,11)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 12 BARD~)
+END
+
+IF
+    ClassLevelGT(Myself,5,10)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 11 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,9)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 10 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,8)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 9 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,7)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 8 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,6)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 7 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,5)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 6 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,4)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 5 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,3)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 4 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 3 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,1)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 2 BARD~)
+END
+
+
+IF
+    ClassLevelGT(Myself,5,0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 1 BARD~)
+END
+
+
+
+
+
+
+IF
+    ClassLevelGT(Myself,6,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 21 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,19)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 20 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,18)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 19 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,17)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 18 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,16)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 17 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 16 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,14)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 15 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,13)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 14 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 13 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,11)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 12 PALADIN~)
+END
+
+IF
+    ClassLevelGT(Myself,6,10)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 11 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,9)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 10 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,8)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 9 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,7)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 8 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,6)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 7 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,5)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 6 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,4)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 5 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,3)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 4 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 3 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,1)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 2 PALADIN~)
+END
+
+
+IF
+    ClassLevelGT(Myself,6,0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 1 PALADIN~)
+END
+
+
+
+
+
+
+
+
+
+
+IF
+    ClassLevelGT(Myself,12,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 21 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,19)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 20 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,18)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 19 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,17)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 18 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,16)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 17 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 16 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,14)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 15 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,13)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 14 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 13 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,11)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 12 RANGER~)
+END
+
+IF
+    ClassLevelGT(Myself,12,10)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 11 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,9)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 10 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,8)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 9 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,7)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 8 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,6)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 7 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,5)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 6 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,4)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 5 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,3)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 4 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 3 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,1)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 2 RANGER~)
+END
+
+
+IF
+    ClassLevelGT(Myself,12,0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 1 RANGER~)
+END
+
+
+
+
+
+
+
+
+
+
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 21 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,19)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 20 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,18)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 19 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,17)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 18 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,16)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 17 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 16 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,14)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 15 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,13)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 14 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 13 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,11)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 12 PRIEST~)
+END
+
+IF
+    ClassLevelGT(Myself,PRIEST,10)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 11 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,9)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 10 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,8)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 9 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,7)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 8 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,6)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 7 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,5)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 6 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,4)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 5 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,3)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 4 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 3 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,1)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 2 PRIEST~)
+END
+
+
+IF
+    ClassLevelGT(Myself,PRIEST,0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 1 PRIEST~)
+END
+
