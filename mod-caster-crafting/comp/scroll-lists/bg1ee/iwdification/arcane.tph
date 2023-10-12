@@ -20,7 +20,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CDIA323~, ~SPWI323~, ~Arcane~, ~3~, ~5~, ~0~ => ~CDIA323~    //Icelance
         ~CDIA327~, ~SPWI327~, ~Arcane~, ~3~, ~5~, ~0~ => ~CDIA327~    //Lance of Disruption
 
-        ~CDIA411~, ~SPWI411~, ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA411~    //Emotion: Hopelessness
         ~CDIA422~, ~SPWI422~, ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA422~    //Beltyn's Burning Blood
         ~CDIA426~, ~SPWI426~, ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA426~    //Emotion: Courage
         ~CDIA427~, ~SPWI427~, ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA427~    //Emotion: Hope
