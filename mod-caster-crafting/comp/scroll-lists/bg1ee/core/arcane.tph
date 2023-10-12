@@ -175,61 +175,65 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         //Missing scrolls for spells in BG1EE
         /*
+
+        //Never existed:
         ~~, ~SPWI124~, ~Arcane~, ~1~, ~1~, ~0~ => ~~    //Nahal's Reckless Dweomer*
         ~~, ~SPWI222~, ~Arcane~, ~2~, ~1~, ~0~ => ~~    //Chaos Shield*
         ~~, ~SPWI723~, ~Arcane~, ~7~, ~1~, ~0~ => ~~    //Improved Chaos Shield*
-        //~SCRL8D~, ~SPWI701~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8D~    //Spell Turning
-        //~SCRL8E~, ~SPWI702~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8E~    //Protection From The Elements
-        //~SCRL8F~, ~SPWI703~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8F~    //Project Image
-        //~SCRL8G~, ~SPWI704~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8G~    //Ruby Ray of Reversal
-        //~SCRL8H~, ~SPWI705~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8H~    //Khelben's Warding Whip
-        //~SCRL8J~, ~SPWI708~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8J~    //Mantle
-        //~SCRL8L~, ~SPWI710~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8L~    //Spell Sequencer
-        //~SCRL8M~, ~SPWI711~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8M~    //Sphere of Chaos
-        //~SCRL8N~, ~SPWI712~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8N~    //Delayed Blast Fireball
-        //~SCRL8O~, ~SPWI713~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8O~    //Finger of Death
-        //~SCRL8P~, ~SPWI714~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8P~    //Prismatic Spray
-        //~SCRL8Q~, ~SPWI715~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8Q~    //Power Word, Stun
-        //~SCRL8R~, ~SPWI716~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8R~    //Mordenkainen's Sword
-        //~SCRL8S~, ~SPWI717~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8S~    //Summon Efreeti
-        //~SCRL8T~, ~SPWI718~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8T~    //Summon Djinni
-        //~SCRL8U~, ~SPWI719~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8U~    //Summon Hakeashar
-        //~SCRL8V~, ~SPWI720~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8V~    //Control Undead
-        //~SCRL8W~, ~SPWI721~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8W~    //Mass Invisibility
-        //~SCRLA4~, ~SPWI722~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRLA4~    //Limited Wish
-        //~SCRL8Y~, ~SPWI803~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL8Y~    //Protection from Energy
-        //~SCRL8Z~, ~SPWI804~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL8Z~    //Simulacrum
-        //~SCRL9A~, ~SPWI805~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9A~    //Pierce Shield
-        //~SCRL9B~, ~SPWI806~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9B~    //Summon Fiend
-        //~SCRL9C~, ~SPWI808~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9C~    //Improved Mantle
-        //~SCRL9D~, ~SPWI809~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9D~    //Spell Trigger
-        //~SCRL9E~, ~SPWI810~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9E~    //Incendiary Cloud
-        //~SCRL9F~, ~SPWI811~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9F~    //Symbol, Fear
-        //~SCRL9G~, ~SPWI812~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9G~    //Abi-Dalzim's Horrid Wilting
-        //~SCRL9J~, ~SPWI815~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9J~    //Power Word Blind
-        //~SCRL9L~, ~SPWI902~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9L~    //Spell Trap
-        //~SCRL9M~, ~SPWI903~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9M~    //Spellstrike
-        //~SCRL9N~, ~SPWI905~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9N~    //Gate
-        //~SCRL9P~, ~SPWI907~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9P~    //Absolute Immunity
-        //~SCRL9Q~, ~SPWI908~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Q~    //Chain Contingency
-        //~SCRL9R~, ~SPWI909~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9R~    //Time Stop
-        //~SCRL9S~, ~SPWI910~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9S~    //Imprisonment
-        //~SCRL9T~, ~SPWI911~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9T~    //Meteor Swarm
-        //~SCRL9U~, ~SPWI912~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9U~    //Power Word, Kill
-        //~SCRL9V~, ~SPWI913~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9V~    //Wail of the Banshee
-        //~SCRL9W~, ~SPWI914~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9W~    //Energy Drain
-        //~SCRL9X~, ~SPWI915~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9X~    //Black Blade of Disaster
-        //~SCRL9Y~, ~SPWI916~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Y~    //Shapechange
-        //~SCRL9Z~, ~SPWI917~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Z~    //Freedom
-        ~~, ~SPWI816~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Symbol, Stun
-        ~~, ~SPWI817~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Symbol, Death
-        ~~, ~SPWI802~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Spell Deflection
         ~--HLA--~, ~SPWI920~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Energy Blades
         ~--HLA--~, ~SPWI921~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Improved Alacrity
         ~--HLA--~, ~SPWI922~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Dragon's Breath
         ~--HLA--~, ~SPWI923~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Summon Planetar
         ~--HLA--~, ~SPWI924~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Summon Dark Planetar
         ~--HLA--~, ~SPWI925~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Comet
+
+        //Missing:
+        ~SCRL8D~, ~SPWI701~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8D~    //Spell Turning
+        ~SCRL8E~, ~SPWI702~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8E~    //Protection From The Elements
+        ~SCRL8F~, ~SPWI703~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8F~    //Project Image
+        ~SCRL8G~, ~SPWI704~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8G~    //Ruby Ray of Reversal
+        ~SCRL8H~, ~SPWI705~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8H~    //Khelben's Warding Whip
+        ~SCRL8J~, ~SPWI708~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8J~    //Mantle
+        ~SCRL8L~, ~SPWI710~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8L~    //Spell Sequencer
+        ~SCRL8M~, ~SPWI711~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8M~    //Sphere of Chaos
+        ~SCRL8N~, ~SPWI712~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8N~    //Delayed Blast Fireball
+        ~SCRL8O~, ~SPWI713~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8O~    //Finger of Death
+        ~SCRL8P~, ~SPWI714~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8P~    //Prismatic Spray
+        ~SCRL8Q~, ~SPWI715~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8Q~    //Power Word, Stun
+        ~SCRL8R~, ~SPWI716~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8R~    //Mordenkainen's Sword
+        ~SCRL8S~, ~SPWI717~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8S~    //Summon Efreeti
+        ~SCRL8T~, ~SPWI718~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8T~    //Summon Djinni
+        ~SCRL8U~, ~SPWI719~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8U~    //Summon Hakeashar
+        ~SCRL8V~, ~SPWI720~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8V~    //Control Undead
+        ~SCRL8W~, ~SPWI721~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8W~    //Mass Invisibility
+        ~SCRLA4~, ~SPWI722~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRLA4~    //Limited Wish
+        ~SCRL8Y~, ~SPWI803~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL8Y~    //Protection from Energy
+        ~SCRL8Z~, ~SPWI804~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL8Z~    //Simulacrum
+        ~SCRL9A~, ~SPWI805~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9A~    //Pierce Shield
+        ~SCRL9B~, ~SPWI806~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9B~    //Summon Fiend
+        ~SCRL9C~, ~SPWI808~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9C~    //Improved Mantle
+        ~SCRL9D~, ~SPWI809~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9D~    //Spell Trigger
+        ~SCRL9E~, ~SPWI810~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9E~    //Incendiary Cloud
+        ~SCRL9F~, ~SPWI811~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9F~    //Symbol, Fear
+        ~SCRL9G~, ~SPWI812~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9G~    //Abi-Dalzim's Horrid Wilting
+        ~SCRL9J~, ~SPWI815~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9J~    //Power Word Blind
+        ~SCRL9L~, ~SPWI902~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9L~    //Spell Trap
+        ~SCRL9M~, ~SPWI903~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9M~    //Spellstrike
+        ~SCRL9N~, ~SPWI905~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9N~    //Gate
+        ~SCRL9P~, ~SPWI907~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9P~    //Absolute Immunity
+        ~SCRL9Q~, ~SPWI908~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Q~    //Chain Contingency
+        ~SCRL9R~, ~SPWI909~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9R~    //Time Stop
+        ~SCRL9S~, ~SPWI910~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9S~    //Imprisonment
+        ~SCRL9T~, ~SPWI911~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9T~    //Meteor Swarm
+        ~SCRL9U~, ~SPWI912~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9U~    //Power Word, Kill
+        ~SCRL9V~, ~SPWI913~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9V~    //Wail of the Banshee
+        ~SCRL9W~, ~SPWI914~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9W~    //Energy Drain
+        ~SCRL9X~, ~SPWI915~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9X~    //Black Blade of Disaster
+        ~SCRL9Y~, ~SPWI916~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Y~    //Shapechange
+        ~SCRL9Z~, ~SPWI917~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Z~    //Freedom
+        ~~, ~SPWI816~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Symbol, Stun
+        ~~, ~SPWI817~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Symbol, Death
+        ~~, ~SPWI802~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Spell Deflection
         */
 
     END
