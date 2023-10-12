@@ -1,17 +1,34 @@
 //TODO: OlvynSpells has a ton of install options. Make a method to check for the spell first?
 
 //Macro for (Appending the associative array)
-
-ACTION_DEFINE_ASSOCIATIVE_ARRAY 
-    ~spell_list_arcane~
+DEFINE_ACTION_FUNCTION ~ConditionallyAppendSpellList~
+    INT_VAR
+        ~Level~ = "-1"
+        ~RequiresEEex~ = "0"
+    STR_VAR
+        ~Tradition~ = ~~
+        ~SpellCode~ = ~~
     BEGIN
 
-        /*
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
-        */
-
-
+        ACTION_IF (NOT %RequiresEEex%) OR (%RequiresEEex% AND MOD_IS_INSTALLED ~MESpells.tp2~ ~0~)
+            BEGIN
+                
+                ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+                    ~spell_list_arcane~
+                    BEGIN
+                        %SpellCode%, %Tradition%, %Level% => %SpellCode%
+                    END
+            END
 
     END
+
+LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
+    INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI151~ END //Disruptive Surge
+LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
+    INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI152~ END //Inertia
+LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
+    INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI154~ END //Summon Kobold
+LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
+    INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI155~ END //Dimension Door
+LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
+    INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI15~ END //Jump
