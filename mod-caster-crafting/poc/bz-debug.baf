@@ -345,7 +345,7 @@ IF
     ClassLevelGT(Myself,5,20)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 21 [ClassCat5]~)
+        DisplayString(Myself, ~Level 21 `ClassCat5`~)
 END
 
 
@@ -353,7 +353,7 @@ IF
     ClassLevelGT(Myself,5,19)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 20 [ClassCat5]~)
+        DisplayString(Myself, ~Level 20 `ClassCat5`~)
 END
 
 
@@ -361,7 +361,7 @@ IF
     ClassLevelGT(Myself,5,18)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 19 [ClassCat5]~)
+        DisplayString(Myself, ~Level 19 `ClassCat5`~)
 END
 
 
@@ -369,7 +369,7 @@ IF
     ClassLevelGT(Myself,5,17)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 18 [ClassCat5]~)
+        DisplayString(Myself, ~Level 18 `ClassCat5`~)
 END
 
 
@@ -377,7 +377,7 @@ IF
     ClassLevelGT(Myself,5,16)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 17 [ClassCat5]~)
+        DisplayString(Myself, ~Level 17 `ClassCat5`~)
 END
 
 
@@ -386,7 +386,7 @@ IF
     ClassLevelGT(Myself,5,15)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 16 [ClassCat5]~)
+        DisplayString(Myself, ~Level 16 `ClassCat5`~)
 END
 
 
@@ -394,7 +394,7 @@ IF
     ClassLevelGT(Myself,5,14)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 15 [ClassCat5]~)
+        DisplayString(Myself, ~Level 15 `ClassCat5`~)
 END
 
 
@@ -402,7 +402,7 @@ IF
     ClassLevelGT(Myself,5,13)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 14 [ClassCat5]~)
+        DisplayString(Myself, ~Level 14 `ClassCat5`~)
 END
 
 
@@ -410,7 +410,7 @@ IF
     ClassLevelGT(Myself,5,12)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 13 [ClassCat5]~)
+        DisplayString(Myself, ~Level 13 `ClassCat5`~)
 END
 
 
@@ -418,14 +418,14 @@ IF
     ClassLevelGT(Myself,5,11)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 12 [ClassCat5]~)
+        DisplayString(Myself, ~Level 12 `ClassCat5`~)
 END
 
 IF
     ClassLevelGT(Myself,5,10)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 11 [ClassCat5]~)
+        DisplayString(Myself, ~Level 11 `ClassCat5`~)
 END
 
 
@@ -433,7 +433,7 @@ IF
     ClassLevelGT(Myself,5,9)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 10 [ClassCat5]~)
+        DisplayString(Myself, ~Level 10 `ClassCat5`~)
 END
 
 
@@ -441,7 +441,7 @@ IF
     ClassLevelGT(Myself,5,8)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 9 [ClassCat5]~)
+        DisplayString(Myself, ~Level 9 `ClassCat5`~)
 END
 
 
@@ -449,7 +449,7 @@ IF
     ClassLevelGT(Myself,5,7)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 8 [ClassCat5]~)
+        DisplayString(Myself, ~Level 8 `ClassCat5`~)
 END
 
 
@@ -457,7 +457,7 @@ IF
     ClassLevelGT(Myself,5,6)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 7 [ClassCat5]~)
+        DisplayString(Myself, ~Level 7 `ClassCat5`~)
 END
 
 
@@ -465,7 +465,7 @@ IF
     ClassLevelGT(Myself,5,5)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 6 [ClassCat5]~)
+        DisplayString(Myself, ~Level 6 `ClassCat5`~)
 END
 
 
@@ -473,7 +473,7 @@ IF
     ClassLevelGT(Myself,5,4)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 5 [ClassCat5]~)
+        DisplayString(Myself, ~Level 5 `ClassCat5`~)
 END
 
 
@@ -481,7 +481,7 @@ IF
     ClassLevelGT(Myself,5,3)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 4 [ClassCat5]~)
+        DisplayString(Myself, ~Level 4 `ClassCat5`~)
 END
 
 
@@ -489,7 +489,7 @@ IF
     ClassLevelGT(Myself,5,2)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 3 [ClassCat5]~)
+        DisplayString(Myself, ~Level 3 `ClassCat5`~)
 END
 
 
@@ -497,7 +497,7 @@ IF
     ClassLevelGT(Myself,5,1)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 2 [ClassCat5]~)
+        DisplayString(Myself, ~Level 2 `ClassCat5`~)
 END
 
 
@@ -505,7 +505,7 @@ IF
     ClassLevelGT(Myself,5,0)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 1 [ClassCat5]~)
+        DisplayString(Myself, ~Level 1 `ClassCat5`~)
 END
 
 
@@ -517,7 +517,7 @@ IF
     ClassLevelGT(Myself,6,20)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 21 [ClassCat6]~)
+        DisplayString(Myself, ~Level 21 `ClassCat6`~)
 END
 
 
@@ -525,7 +525,7 @@ IF
     ClassLevelGT(Myself,6,19)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 20 [ClassCat6]~)
+        DisplayString(Myself, ~Level 20 `ClassCat6`~)
 END
 
 
@@ -533,7 +533,7 @@ IF
     ClassLevelGT(Myself,6,18)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 19 [ClassCat6]~)
+        DisplayString(Myself, ~Level 19 `ClassCat6`~)
 END
 
 
@@ -541,7 +541,7 @@ IF
     ClassLevelGT(Myself,6,17)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 18 [ClassCat6]~)
+        DisplayString(Myself, ~Level 18 `ClassCat6`~)
 END
 
 
@@ -549,7 +549,7 @@ IF
     ClassLevelGT(Myself,6,16)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 17 [ClassCat6]~)
+        DisplayString(Myself, ~Level 17 `ClassCat6`~)
 END
 
 
@@ -557,7 +557,7 @@ IF
     ClassLevelGT(Myself,6,15)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 16 [ClassCat6]~)
+        DisplayString(Myself, ~Level 16 `ClassCat6`~)
 END
 
 
@@ -565,7 +565,7 @@ IF
     ClassLevelGT(Myself,6,14)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 15 [ClassCat6]~)
+        DisplayString(Myself, ~Level 15 `ClassCat6`~)
 END
 
 
@@ -573,7 +573,7 @@ IF
     ClassLevelGT(Myself,6,13)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 14 [ClassCat6]~)
+        DisplayString(Myself, ~Level 14 `ClassCat6`~)
 END
 
 
@@ -581,7 +581,7 @@ IF
     ClassLevelGT(Myself,6,12)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 13 [ClassCat6]~)
+        DisplayString(Myself, ~Level 13 `ClassCat6`~)
 END
 
 
@@ -589,14 +589,14 @@ IF
     ClassLevelGT(Myself,6,11)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 12 [ClassCat6]~)
+        DisplayString(Myself, ~Level 12 `ClassCat6`~)
 END
 
 IF
     ClassLevelGT(Myself,6,10)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 11 [ClassCat6]~)
+        DisplayString(Myself, ~Level 11 `ClassCat6`~)
 END
 
 
@@ -604,7 +604,7 @@ IF
     ClassLevelGT(Myself,6,9)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 10 [ClassCat6]~)
+        DisplayString(Myself, ~Level 10 `ClassCat6`~)
 END
 
 
@@ -612,7 +612,7 @@ IF
     ClassLevelGT(Myself,6,8)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 9 [ClassCat6]~)
+        DisplayString(Myself, ~Level 9 `ClassCat6`~)
 END
 
 
@@ -620,7 +620,7 @@ IF
     ClassLevelGT(Myself,6,7)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 8 [ClassCat6]~)
+        DisplayString(Myself, ~Level 8 `ClassCat6`~)
 END
 
 
@@ -628,7 +628,7 @@ IF
     ClassLevelGT(Myself,6,6)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 7 [ClassCat6]~)
+        DisplayString(Myself, ~Level 7 `ClassCat6`~)
 END
 
 
@@ -636,7 +636,7 @@ IF
     ClassLevelGT(Myself,6,5)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 6 [ClassCat6]~)
+        DisplayString(Myself, ~Level 6 `ClassCat6`~)
 END
 
 
@@ -644,7 +644,7 @@ IF
     ClassLevelGT(Myself,6,4)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 5 [ClassCat6]~)
+        DisplayString(Myself, ~Level 5 `ClassCat6`~)
 END
 
 
@@ -652,7 +652,7 @@ IF
     ClassLevelGT(Myself,6,3)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 4 [ClassCat6]~)
+        DisplayString(Myself, ~Level 4 `ClassCat6`~)
 END
 
 
@@ -660,7 +660,7 @@ IF
     ClassLevelGT(Myself,6,2)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 3 [ClassCat6]~)
+        DisplayString(Myself, ~Level 3 `ClassCat6`~)
 END
 
 
@@ -668,7 +668,7 @@ IF
     ClassLevelGT(Myself,6,1)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 2 [ClassCat6]~)
+        DisplayString(Myself, ~Level 2 `ClassCat6`~)
 END
 
 
@@ -676,7 +676,7 @@ IF
     ClassLevelGT(Myself,6,0)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 1 [ClassCat6]~)
+        DisplayString(Myself, ~Level 1 `ClassCat6`~)
 END
 
 
@@ -692,7 +692,7 @@ IF
     ClassLevelGT(Myself,7,20)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 21 [ClassCat7]~)
+        DisplayString(Myself, ~Level 21 `ClassCat7`~)
 END
 
 
@@ -700,7 +700,7 @@ IF
     ClassLevelGT(Myself,7,19)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 20 [ClassCat7]~)
+        DisplayString(Myself, ~Level 20 `ClassCat7`~)
 END
 
 
@@ -708,7 +708,7 @@ IF
     ClassLevelGT(Myself,7,18)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 19 [ClassCat7]~)
+        DisplayString(Myself, ~Level 19 `ClassCat7`~)
 END
 
 
@@ -716,7 +716,7 @@ IF
     ClassLevelGT(Myself,7,17)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 18 [ClassCat7]~)
+        DisplayString(Myself, ~Level 18 `ClassCat7`~)
 END
 
 
@@ -724,7 +724,7 @@ IF
     ClassLevelGT(Myself,7,16)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 17 [ClassCat7]~)
+        DisplayString(Myself, ~Level 17 `ClassCat7`~)
 END
 
 
@@ -732,7 +732,7 @@ IF
     ClassLevelGT(Myself,7,15)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 16 [ClassCat7]~)
+        DisplayString(Myself, ~Level 16 `ClassCat7`~)
 END
 
 
@@ -740,7 +740,7 @@ IF
     ClassLevelGT(Myself,7,14)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 15 [ClassCat7]~)
+        DisplayString(Myself, ~Level 15 `ClassCat7`~)
 END
 
 
@@ -748,7 +748,7 @@ IF
     ClassLevelGT(Myself,7,13)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 14 [ClassCat7]~)
+        DisplayString(Myself, ~Level 14 `ClassCat7`~)
 END
 
 
@@ -756,7 +756,7 @@ IF
     ClassLevelGT(Myself,7,12)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 13 [ClassCat7]~)
+        DisplayString(Myself, ~Level 13 `ClassCat7`~)
 END
 
 
@@ -764,14 +764,14 @@ IF
     ClassLevelGT(Myself,7,11)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 12 [ClassCat7]~)
+        DisplayString(Myself, ~Level 12 `ClassCat7`~)
 END
 
 IF
     ClassLevelGT(Myself,7,10)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 11 [ClassCat7]~)
+        DisplayString(Myself, ~Level 11 `ClassCat7`~)
 END
 
 
@@ -779,7 +779,7 @@ IF
     ClassLevelGT(Myself,7,9)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 10 [ClassCat7]~)
+        DisplayString(Myself, ~Level 10 `ClassCat7`~)
 END
 
 
@@ -787,7 +787,7 @@ IF
     ClassLevelGT(Myself,7,8)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 9 [ClassCat7]~)
+        DisplayString(Myself, ~Level 9 `ClassCat7`~)
 END
 
 
@@ -795,7 +795,7 @@ IF
     ClassLevelGT(Myself,7,7)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 8 [ClassCat7]~)
+        DisplayString(Myself, ~Level 8 `ClassCat7`~)
 END
 
 
@@ -803,7 +803,7 @@ IF
     ClassLevelGT(Myself,7,6)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 7 [ClassCat7]~)
+        DisplayString(Myself, ~Level 7 `ClassCat7`~)
 END
 
 
@@ -811,7 +811,7 @@ IF
     ClassLevelGT(Myself,7,5)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 6 [ClassCat7]~)
+        DisplayString(Myself, ~Level 6 `ClassCat7`~)
 END
 
 
@@ -819,7 +819,7 @@ IF
     ClassLevelGT(Myself,7,4)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 5 [ClassCat7]~)
+        DisplayString(Myself, ~Level 5 `ClassCat7`~)
 END
 
 
@@ -827,7 +827,7 @@ IF
     ClassLevelGT(Myself,7,3)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 4 [ClassCat7]~)
+        DisplayString(Myself, ~Level 4 `ClassCat7`~)
 END
 
 
@@ -835,7 +835,7 @@ IF
     ClassLevelGT(Myself,7,2)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 3 [ClassCat7]~)
+        DisplayString(Myself, ~Level 3 `ClassCat7`~)
 END
 
 
@@ -843,7 +843,7 @@ IF
     ClassLevelGT(Myself,7,1)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 2 [ClassCat7]~)
+        DisplayString(Myself, ~Level 2 `ClassCat7`~)
 END
 
 
@@ -851,7 +851,534 @@ IF
     ClassLevelGT(Myself,7,0)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 1 [ClassCat7]~)
+        DisplayString(Myself, ~Level 1 `ClassCat7`~)
+END
+
+
+
+
+
+
+
+
+
+
+IF
+    ClassLevelGT(Myself,8,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 21 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,19)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 20 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,18)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 19 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,17)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 18 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,16)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 17 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 16 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,14)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 15 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,13)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 14 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 13 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,11)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 12 `ClassCat8`~)
+END
+
+IF
+    ClassLevelGT(Myself,8,10)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 11 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,9)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 10 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,8)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 9 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,7)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 8 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,6)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 7 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,5)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 6 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,4)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 5 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,3)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 4 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 3 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,1)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 2 `ClassCat8`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,8,0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 1 `ClassCat8`~)
+END
+
+
+
+
+
+
+
+
+
+
+IF
+    ClassLevelGT(Myself,9,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 21 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,19)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 20 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,18)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 19 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,17)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 18 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,16)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 17 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 16 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,14)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 15 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,13)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 14 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 13 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,11)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 12 `ClassCat9`~)
+END
+
+IF
+    ClassLevelGT(Myself,9,10)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 11 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,9)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 10 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,8)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 9 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,7)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 8 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,6)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 7 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,5)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 6 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,4)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 5 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,3)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 4 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 3 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,1)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 2 `ClassCat9`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,9,0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 1 `ClassCat9`~)
+END
+
+
+
+
+
+
+
+
+
+
+
+
+IF
+    ClassLevelGT(Myself,10,20)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 21 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,19)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 20 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,18)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 19 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,17)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 18 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,16)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 17 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,15)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 16 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,14)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 15 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,13)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 14 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,12)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 13 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,11)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 12 `ClassCat10`~)
+END
+
+IF
+    ClassLevelGT(Myself,10,10)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 11 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,9)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 10 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,8)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 9 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,7)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 8 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,6)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 7 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,5)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 6 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,4)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 5 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,3)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 4 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,2)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 3 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,1)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 2 `ClassCat10`~)
+END
+
+
+IF
+    ClassLevelGT(Myself,10,0)
+THEN
+    RESPONSE #100
+        DisplayString(Myself, ~Level 1 `ClassCat10`~)
 END
 
 
@@ -869,7 +1396,7 @@ IF
     ClassLevelGT(Myself,12,20)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 21 [ClassCat12]~)
+        DisplayString(Myself, ~Level 21 `ClassCat12`~)
 END
 
 
@@ -877,7 +1404,7 @@ IF
     ClassLevelGT(Myself,12,19)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 20 [ClassCat12]~)
+        DisplayString(Myself, ~Level 20 `ClassCat12`~)
 END
 
 
@@ -885,7 +1412,7 @@ IF
     ClassLevelGT(Myself,12,18)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 19 [ClassCat12]~)
+        DisplayString(Myself, ~Level 19 `ClassCat12`~)
 END
 
 
@@ -893,7 +1420,7 @@ IF
     ClassLevelGT(Myself,12,17)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 18 [ClassCat12]~)
+        DisplayString(Myself, ~Level 18 `ClassCat12`~)
 END
 
 
@@ -901,7 +1428,7 @@ IF
     ClassLevelGT(Myself,12,16)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 17 [ClassCat12]~)
+        DisplayString(Myself, ~Level 17 `ClassCat12`~)
 END
 
 
@@ -909,7 +1436,7 @@ IF
     ClassLevelGT(Myself,12,15)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 16 [ClassCat12]~)
+        DisplayString(Myself, ~Level 16 `ClassCat12`~)
 END
 
 
@@ -917,7 +1444,7 @@ IF
     ClassLevelGT(Myself,12,14)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 15 [ClassCat12]~)
+        DisplayString(Myself, ~Level 15 `ClassCat12`~)
 END
 
 
@@ -925,7 +1452,7 @@ IF
     ClassLevelGT(Myself,12,13)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 14 [ClassCat12]~)
+        DisplayString(Myself, ~Level 14 `ClassCat12`~)
 END
 
 
@@ -933,7 +1460,7 @@ IF
     ClassLevelGT(Myself,12,12)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 13 [ClassCat12]~)
+        DisplayString(Myself, ~Level 13 `ClassCat12`~)
 END
 
 
@@ -941,14 +1468,14 @@ IF
     ClassLevelGT(Myself,12,11)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 12 [ClassCat12]~)
+        DisplayString(Myself, ~Level 12 `ClassCat12`~)
 END
 
 IF
     ClassLevelGT(Myself,12,10)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 11 [ClassCat12]~)
+        DisplayString(Myself, ~Level 11 `ClassCat12`~)
 END
 
 
@@ -956,7 +1483,7 @@ IF
     ClassLevelGT(Myself,12,9)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 10 [ClassCat12]~)
+        DisplayString(Myself, ~Level 10 `ClassCat12`~)
 END
 
 
@@ -964,7 +1491,7 @@ IF
     ClassLevelGT(Myself,12,8)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 9 [ClassCat12]~)
+        DisplayString(Myself, ~Level 9 `ClassCat12`~)
 END
 
 
@@ -972,7 +1499,7 @@ IF
     ClassLevelGT(Myself,12,7)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 8 [ClassCat12]~)
+        DisplayString(Myself, ~Level 8 `ClassCat12`~)
 END
 
 
@@ -980,7 +1507,7 @@ IF
     ClassLevelGT(Myself,12,6)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 7 [ClassCat12]~)
+        DisplayString(Myself, ~Level 7 `ClassCat12`~)
 END
 
 
@@ -988,7 +1515,7 @@ IF
     ClassLevelGT(Myself,12,5)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 6 [ClassCat12]~)
+        DisplayString(Myself, ~Level 6 `ClassCat12`~)
 END
 
 
@@ -996,7 +1523,7 @@ IF
     ClassLevelGT(Myself,12,4)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 5 [ClassCat12]~)
+        DisplayString(Myself, ~Level 5 `ClassCat12`~)
 END
 
 
@@ -1004,7 +1531,7 @@ IF
     ClassLevelGT(Myself,12,3)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 4 [ClassCat12]~)
+        DisplayString(Myself, ~Level 4 `ClassCat12`~)
 END
 
 
@@ -1012,7 +1539,7 @@ IF
     ClassLevelGT(Myself,12,2)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 3 [ClassCat12]~)
+        DisplayString(Myself, ~Level 3 `ClassCat12`~)
 END
 
 
@@ -1020,7 +1547,7 @@ IF
     ClassLevelGT(Myself,12,1)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 2 [ClassCat12]~)
+        DisplayString(Myself, ~Level 2 `ClassCat12`~)
 END
 
 
@@ -1028,6 +1555,6 @@ IF
     ClassLevelGT(Myself,12,0)
 THEN
     RESPONSE #100
-        DisplayString(Myself, ~Level 1 [ClassCat12]~)
+        DisplayString(Myself, ~Level 1 `ClassCat12`~)
 END
 
