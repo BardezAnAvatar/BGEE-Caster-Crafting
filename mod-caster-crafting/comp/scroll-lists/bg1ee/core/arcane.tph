@@ -1,0 +1,235 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ~scroll_list_arcane~
+    BEGIN
+
+        /*
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Additional Cost]       // 5
+        */
+
+        ~SCRL66~, ~SPWI101~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL66~    //Grease
+        ~SCRL67~, ~SPWI102~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL67~    //Armor
+        ~SCRL68~, ~SPWI103~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL68~    //Burning Hands
+        ~SCRL69~, ~SPWI104~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL69~    //Charm Person
+        ~SCRL70~, ~SPWI105~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL70~    //Color Spray
+        ~SCRL71~, ~SPWI106~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL71~    //Blindness
+        ~SCRL72~, ~SPWI107~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL72~    //Friends
+        ~SCRL73~, ~SPWI108~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL73~    //Protection from Petrification
+        ~SCRL75~, ~SPWI110~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL75~    //Identify
+        ~SCRL76~, ~SPWI111~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL76~    //Infravision
+        ~SCRL77~, ~SPWI112~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL77~    //Magic Missile
+        ~SCRL78~, ~SPWI113~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL78~    //Protection from Evil
+        ~SCRL79~, ~SPWI114~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL79~    //Shield
+        ~SCRL80~, ~SPWI115~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL80~    //Shocking Grasp
+        ~SCRL81~, ~SPWI116~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL81~    //Sleep
+        ~SCRL82~, ~SPWI117~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL82~    //Chill Touch
+        ~SCRL83~, ~SPWI118~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL83~    //Chromatic Orb
+        ~SCRL84~, ~SPWI119~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL84~    //Larloch's Minor Drain
+        ~SCRL5U~, ~SPWI120~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL5U~    //Reflected Image
+        ~SCRL6D~, ~SPWI123~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL6D~    //Find Familiar
+        ~SCRLA6~, ~SPWI125~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRLA6~    //Spook
+        ~BDSCRL1A~, ~SPWI126~, ~Arcane~, ~1~, ~1~, ~0~ => ~BDSCRL1A~    //Dancing Lights
+        
+
+        ~SCRL85~, ~SPWI201~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL85~    //Blur
+        ~SCRL86~, ~SPWI202~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL86~    //Detect Evil
+        ~SCRL87~, ~SPWI203~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL87~    //Detect Invisibility
+        ~SCRL89~, ~SPWI205~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL89~    //Horror
+        ~SCRL90~, ~SPWI206~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL90~    //Invisibility
+        ~SCRL91~, ~SPWI207~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL91~    //Knock
+        ~SCRL92~, ~SPWI208~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL92~    //Know Alignment
+        ~SCRL93~, ~SPWI209~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL93~    //Luck
+        ~SCRL94~, ~SPWI210~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL94~    //Resist Fear
+        ~SCRL95~, ~SPWI211~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL95~    //Melf's Acid Arrow
+        ~SCRL96~, ~SPWI212~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL96~    //Mirror Image
+        ~SCRL97~, ~SPWI213~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL97~    //Stinking Cloud
+        ~SCRL98~, ~SPWI214~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL98~    //Strength
+        ~SCRL99~, ~SPWI215~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL99~    //Web
+        ~SCRL1B~, ~SPWI217~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL1B~    //Agannazar's Scorcher
+        ~SCRL1C~, ~SPWI218~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL1C~    //Ghoul Touch
+        ~SCRL3G~, ~SPWI219~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL3G~    //Vocalize
+        ~SCRL6E~, ~SPWI220~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRL6E~    //Power Word Sleep
+        ~SCRLAI~, ~SPWI221~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRLAI~    //Ray of Enfeeblement
+        ~SCRLA2~, ~SPWI223~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRLA2~    //Deafness
+        ~SCRLA3~, ~SPWI224~, ~Arcane~, ~2~, ~1~, ~0~ => ~SCRLA3~    //Glitterdust
+        ~BDSCRL2A~, ~SPWI228~, ~Arcane~, ~2~, ~1~, ~0~ => ~BDSCRL2A~    //Darkness 15' Radius
+
+
+        ~SCRL1D~, ~SPWI301~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1D~    //Clairvoyance
+        ~SCRLA7~, ~SPWI302~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRLA7~    //Remove Magic
+        ~SCRL1F~, ~SPWI303~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1F~    //Flame Arrow
+        ~SCRL1G~, ~SPWI304~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1G~    //Fireball
+        ~SCRL1H~, ~SPWI305~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1H~    //Haste
+        ~SCRL1I~, ~SPWI306~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1I~    //Hold Person
+        ~SCRL1J~, ~SPWI307~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1J~    //Invisibility 10' Radius
+        ~SCRL1K~, ~SPWI308~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1K~    //Lightning Bolt
+        ~SCRL1L~, ~SPWI309~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1L~    //Monster Summoning 1
+        ~SCRL1M~, ~SPWI310~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1M~    //Non-Detection
+        ~SCRL1N~, ~SPWI311~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1N~    //Protection from Normal Missiles
+        ~SCRL1O~, ~SPWI312~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1O~    //Slow
+        ~SCRL1P~, ~SPWI313~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1P~    //Skull Trap
+        ~SCRL1Q~, ~SPWI314~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1Q~    //Vampiric Touch
+        ~SCRL1R~, ~SPWI315~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1R~    //Wraith Form
+        ~SCRL1S~, ~SPWI316~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1S~    //Dire Charm
+        ~SCRL1T~, ~SPWI317~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1T~    //Ghost Armor
+        ~SCRL6G~, ~SPWI318~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL6G~    //Minor Spell Deflection
+        ~SCRL6H~, ~SPWI319~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL6H~    //Protection from Fire
+        ~SCRL6I~, ~SPWI320~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL6I~    //Protection from Cold
+        ~SCRL6J~, ~SPWI321~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL6J~    //Spell Thrust
+        ~SCRL6K~, ~SPWI322~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL6K~    //Detect Illusion
+        ~SCRL6L~, ~SPWI324~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL6L~    //Hold Undead
+        ~SCRLA5~, ~SPWI325~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRLA5~    //Melf's Minute Meteors
+        ~SCRL1E~, ~SPWI326~, ~Arcane~, ~3~, ~1~, ~0~ => ~SCRL1E~    //Dispel Magic
+        
+
+        ~SCRL1U~, ~SPWI401~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1U~    //Confusion
+        ~SCRL1V~, ~SPWI402~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1V~    //Dimension Door
+        ~SCRL1W~, ~SPWI403~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1W~    //Fire Shield (Blue)
+        ~SCRL1X~, ~SPWI404~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1X~    //Ice Storm
+        ~SCRL1Y~, ~SPWI405~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1Y~    //Improved Invisibility
+        ~SCRL1Z~, ~SPWI406~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1Z~    //Minor Globe of Invulnerability
+        ~SCRL2A~, ~SPWI407~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL2A~    //Monster Summoning 2
+        ~SCRL2B~, ~SPWI408~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL2B~    //Stone Skin
+        ~SCRLA8~, ~SPWI409~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRLA8~    //Contagion
+        ~SCRL5G~, ~SPWI410~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL5G~    //Remove Curse
+        ~SCRL5H~, ~SPWI411~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL5H~    //Emotion: Hopelessness
+        ~SCRL5I~, ~SPWI412~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL5I~    //Greater Malison
+        ~SCRL5J~, ~SPWI413~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL5J~    //Otiluke's Resilient Sphere
+        ~SCRL5K~, ~SPWI414~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL5K~    //Spirit Armor
+        ~SCRL5L~, ~SPWI415~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL5L~    //Polymorph Other
+        ~SCRL5M~, ~SPWI416~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL5M~    //Polymorph Self
+        ~SCRL6M~, ~SPWI417~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL6M~    //Enchanted Weapon
+        ~SCRL6N~, ~SPWI418~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL6N~    //Fire Shield (Red)
+        ~SCRL6O~, ~SPWI419~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL6O~    //Secret Word
+        ~SCRL6P~, ~SPWI420~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL6P~    //Minor Sequencer
+        ~SCRL6F~, ~SPWI421~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL6Q~    //Teleport Field
+        ~SCRL6R~, ~SPWI423~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL6R~    //Spider Spawn
+        ~SCRLAJ~, ~SPWI424~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRLAJ~    //Farsight
+        ~SCRLA1~, ~SPWI425~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRLA1~    //Wizard Eye
+        
+
+        ~SCRL2D~, ~SPWI501~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL2D~    //Animate Dead
+        ~SCRL2E~, ~SPWI502~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL2E~    //Cloud Kill
+        ~SCRL2F~, ~SPWI503~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL2F~    //Cone of Cold
+        ~SCRL2G~, ~SPWI504~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL2G~    //Monster Summoning 3
+        ~SCRL2H~, ~SPWI505~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL2H~    //Shadow Door
+        ~SCRL5N~, ~SPWI506~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL5N~    //Domination
+        ~SCRL5O~, ~SPWI507~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL5O~    //Hold Monster
+        ~SCRL5P~, ~SPWI508~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL5P~    //Chaos
+        ~SCRL5Q~, ~SPWI509~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL5Q~    //Feeblemind
+        ~SCRL6S~, ~SPWI510~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6S~    //Spell Immunity
+        ~SCRL6T~, ~SPWI511~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6T~    //Protection from Normal Weapons
+        ~SCRL5T~, ~SPWI512~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL5T~    //Protection from Electricity
+        ~SCRL6U~, ~SPWI513~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6U~    //Breach
+        ~SCRL6V~, ~SPWI514~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6V~    //Lower Resistance
+        ~SCRL6W~, ~SPWI515~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6W~    //Oracle
+        ~SCRL6X~, ~SPWI516~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6X~    //Conjure Lesser Fire Elemental
+        ~SCRL6Y~, ~SPWI517~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6Y~    //Protection from Acid
+        ~SCRL6Z~, ~SPWI518~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL6Z~    //Phantom Blade
+        ~SCRL8X~, ~SPWI519~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL8X~    //Spell Shield
+        ~SCRL7B~, ~SPWI520~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL7B~    //Conjure Lesser Air Elemental
+        ~SCRL7C~, ~SPWI521~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL7C~    //Conjure Lesser Earth Elemental
+        ~SCRL7D~, ~SPWI522~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRL7D~    //Minor Spell Turning
+        ~SCRLAL~, ~SPWI523~, ~Arcane~, ~5~, ~1~, ~0~ => ~SCRLAL~    //Sunfire
+        
+
+        ~SCRL7E~, ~SPWI601~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7E~    //Invisible Stalker
+        ~SCRL7F~, ~SPWI602~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7F~    //Globe of Invulnerability
+        ~SCRL7G~, ~SPWI603~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7G~    //Tenser's Transformation
+        ~SCRL7H~, ~SPWI604~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7H~    //Flesh to Stone
+        ~SCRL7I~, ~SPWI605~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7I~    //Death Spell
+        ~SCRL7J~, ~SPWI606~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7J~    //Protection from Magical Energy
+        ~SCRL7K~, ~SPWI607~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7K~    //Mislead
+        ~SCRL7L~, ~SPWI608~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7L~    //Pierce Magic
+        ~SCRL7M~, ~SPWI609~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7M~    //True Sight
+        ~SCRL7O~, ~SPWI611~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7O~    //Protection from Magical Weapons
+        ~SCRL7P~, ~SPWI612~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7P~    //Power Word Silence
+        ~SCRL7Q~, ~SPWI613~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7Q~    //Improved Haste
+        ~SCRL7R~, ~SPWI614~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7R~    //Death Fog
+        ~SCRL7S~, ~SPWI615~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7S~    //Chain Lightning
+        ~SCRL7T~, ~SPWI616~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7T~    //Disintigrate
+        ~SCRL7U~, ~SPWI617~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7U~    //Contingency
+        ~SCRL7V~, ~SPWI618~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7V~    //Spell Deflection
+        ~SCRL7W~, ~SPWI619~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7W~    //Wyvern Call
+        ~SCRL7X~, ~SPWI620~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7X~    //Conjure Fire Elemental
+        ~SCRL7Y~, ~SPWI621~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7Y~    //Conjure Air Elemental
+        ~SCRL7Z~, ~SPWI622~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL7Z~    //Conjure Earth Elemental
+        ~SCRL8A~, ~SPWI623~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL8A~    //Carrion Summons
+        ~SCRL8B~, ~SPWI624~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL8B~    //Summon Nishruu
+        ~SCRL8C~, ~SPWI625~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL8C~    //Stone to Flesh
+        
+
+        ~SCRL8I~, ~SPWI707~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8I~    //Cacofiend
+        
+
+        ~SCRL9H~, ~SPWI813~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9H~    //Maze
+        ~SCRLB1~, ~SPWI818~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRLB1~    //Bigby's Clenched Fist
+
+
+        ~SCRLB2~, ~SPWI918~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRLB2~    //Bigby's Crushing Hand
+        ~SCRLB4~, ~SPWI919~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRLB4~    //Wish
+
+        //Missing scrolls for spells in BG1EE
+        /*
+        ~~, ~SPWI124~, ~Arcane~, ~1~, ~1~, ~0~ => ~~    //Nahal's Reckless Dweomer*
+        ~~, ~SPWI222~, ~Arcane~, ~2~, ~1~, ~0~ => ~~    //Chaos Shield*
+        ~~, ~SPWI723~, ~Arcane~, ~7~, ~1~, ~0~ => ~~    //Improved Chaos Shield*
+        //~SCRL8D~, ~SPWI701~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8D~    //Spell Turning
+        //~SCRL8E~, ~SPWI702~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8E~    //Protection From The Elements
+        //~SCRL8F~, ~SPWI703~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8F~    //Project Image
+        //~SCRL8G~, ~SPWI704~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8G~    //Ruby Ray of Reversal
+        //~SCRL8H~, ~SPWI705~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8H~    //Khelben's Warding Whip
+        //~SCRL8J~, ~SPWI708~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8J~    //Mantle
+        //~SCRL8L~, ~SPWI710~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8L~    //Spell Sequencer
+        //~SCRL8M~, ~SPWI711~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8M~    //Sphere of Chaos
+        //~SCRL8N~, ~SPWI712~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8N~    //Delayed Blast Fireball
+        //~SCRL8O~, ~SPWI713~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8O~    //Finger of Death
+        //~SCRL8P~, ~SPWI714~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8P~    //Prismatic Spray
+        //~SCRL8Q~, ~SPWI715~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8Q~    //Power Word, Stun
+        //~SCRL8R~, ~SPWI716~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8R~    //Mordenkainen's Sword
+        //~SCRL8S~, ~SPWI717~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8S~    //Summon Efreeti
+        //~SCRL8T~, ~SPWI718~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8T~    //Summon Djinni
+        //~SCRL8U~, ~SPWI719~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8U~    //Summon Hakeashar
+        //~SCRL8V~, ~SPWI720~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8V~    //Control Undead
+        //~SCRL8W~, ~SPWI721~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRL8W~    //Mass Invisibility
+        //~SCRLA4~, ~SPWI722~, ~Arcane~, ~7~, ~1~, ~0~ => ~SCRLA4~    //Limited Wish
+        //~SCRL8Y~, ~SPWI803~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL8Y~    //Protection from Energy
+        //~SCRL8Z~, ~SPWI804~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL8Z~    //Simulacrum
+        //~SCRL9A~, ~SPWI805~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9A~    //Pierce Shield
+        //~SCRL9B~, ~SPWI806~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9B~    //Summon Fiend
+        //~SCRL9C~, ~SPWI808~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9C~    //Improved Mantle
+        //~SCRL9D~, ~SPWI809~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9D~    //Spell Trigger
+        //~SCRL9E~, ~SPWI810~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9E~    //Incendiary Cloud
+        //~SCRL9F~, ~SPWI811~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9F~    //Symbol, Fear
+        //~SCRL9G~, ~SPWI812~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9G~    //Abi-Dalzim's Horrid Wilting
+        //~SCRL9J~, ~SPWI815~, ~Arcane~, ~8~, ~1~, ~0~ => ~SCRL9J~    //Power Word Blind
+        //~SCRL9L~, ~SPWI902~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9L~    //Spell Trap
+        //~SCRL9M~, ~SPWI903~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9M~    //Spellstrike
+        //~SCRL9N~, ~SPWI905~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9N~    //Gate
+        //~SCRL9P~, ~SPWI907~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9P~    //Absolute Immunity
+        //~SCRL9Q~, ~SPWI908~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Q~    //Chain Contingency
+        //~SCRL9R~, ~SPWI909~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9R~    //Time Stop
+        //~SCRL9S~, ~SPWI910~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9S~    //Imprisonment
+        //~SCRL9T~, ~SPWI911~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9T~    //Meteor Swarm
+        //~SCRL9U~, ~SPWI912~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9U~    //Power Word, Kill
+        //~SCRL9V~, ~SPWI913~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9V~    //Wail of the Banshee
+        //~SCRL9W~, ~SPWI914~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9W~    //Energy Drain
+        //~SCRL9X~, ~SPWI915~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9X~    //Black Blade of Disaster
+        //~SCRL9Y~, ~SPWI916~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Y~    //Shapechange
+        //~SCRL9Z~, ~SPWI917~, ~Arcane~, ~9~, ~1~, ~0~ => ~SCRL9Z~    //Freedom
+        ~~, ~SPWI816~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Symbol, Stun
+        ~~, ~SPWI817~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Symbol, Death
+        ~~, ~SPWI802~, ~Arcane~, ~8~, ~1~, ~0~ => ~~    //Spell Deflection
+        ~--HLA--~, ~SPWI920~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Energy Blades
+        ~--HLA--~, ~SPWI921~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Improved Alacrity
+        ~--HLA--~, ~SPWI922~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Dragon's Breath
+        ~--HLA--~, ~SPWI923~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Summon Planetar
+        ~--HLA--~, ~SPWI924~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Summon Dark Planetar
+        ~--HLA--~, ~SPWI925~, ~Arcane~, ~10~, ~1~, ~0~ => ~--HLA--~    //Comet
+        */
+
+    END
