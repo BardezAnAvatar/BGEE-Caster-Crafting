@@ -43,6 +43,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI630~, ~Arcane~, ~6~ => ~SPWI630~    //Antimagic Shell
         ~SPWI631~, ~Arcane~, ~6~ => ~SPWI631~    //Lich Touch
         ~SPWI632~, ~Arcane~, ~6~ => ~SPWI632~    //Shades
+        ~SPWI633~, ~Arcane~, ~6~ => ~SPWI633~    //Conjure Water Elemental
 
         ~SPWI706~, ~Arcane~, ~7~ => ~SPWI706~    //Acid Storm
         ~SPWI724~, ~Arcane~, ~7~ => ~SPWI724~    //Suffocate
