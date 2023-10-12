@@ -1,6 +1,7 @@
 //TODO: OlvynSpells has a ton of install options. Make a method to check for the spell first?
 
 //Macro for (Appending the associative array)
+/*
 DEFINE_ACTION_FUNCTION ~ConditionallyAppendSpellList~
     INT_VAR
         ~Level~ = "-1"
@@ -31,4 +32,6 @@ LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
 LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
     INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI155~ END //Dimension Door
 LAUNCH_ACTION_FUNCTION ~ConditionallyAppendSpellList~
-    INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI15~ END //Jump
+    INT_VAR ~Level~ = 1 STR_VAR ~Tradition~ = ~Arcane~ ~SpellCode~ = ~MEWI156~ END //Jump
+*/
+
