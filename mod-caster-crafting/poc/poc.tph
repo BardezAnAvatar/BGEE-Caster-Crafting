@@ -23,7 +23,7 @@ ACTION_PHP_EACH ~scroll_list_data_arcane~
 //NOTE: Confirmed that the array sorts as I expected it to.
 
 //debug script
-COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bs~
+COMPILE ~./%MOD_FOLDER%/poc/bz-debug.bcs~
 
 // Now attempt to... what? make a dialog file?
 
