@@ -44,7 +44,7 @@ EXTEND_TOP ~BZCRFTAR~ bz_caster_craft_arcane_circle_1
 ACTION_PHP_EACH ~scroll_list_data_arcane~
     AS ~scroll_list_data_arcane_keys~ => ~value~
     BEGIN
-        ACTION_IF scroll_list_data_arcane_keys_4 = 1  //Spell is level 1
+        ACTION_IF scroll_list_data_arcane_keys_4 STRING_EQUAL ~1~  //Spell is level 1
             THEN
             BEGIN
                 APPEND_OUTER
@@ -52,7 +52,7 @@ ACTION_PHP_EACH ~scroll_list_data_arcane~
                     ~~~~~
     IF ~HaveKnownSpellRES("%scroll_list_data_arcane_keys_2%")~
     THEN
-        REPLY ~%scroll_list_data_arcane_keys_13%~
+        REPLY ~%scroll_list_data_arcane_keys_11%~
         GOTO bz_caster_craft_arcane_%scroll_list_data_arcane_keys_2%
                     ~~~~~
             END
@@ -81,22 +81,22 @@ ACTION_PHP_EACH ~scroll_list_data_arcane~
         OUTER_SET scroll_total_cost = (%scroll_list_data_arcane_keys_6% + %scroll_list_data_arcane_keys_7%)
         OUTER_SET bz_craft_time = %scroll_list_data_arcane_keys_8% * 300  //I really wanted to call the variable "timepants"
 
-        ACTION_IF scroll_list_data_arcane_keys_4 = 1  //Spell is level 1
+        ACTION_IF scroll_list_data_arcane_keys_4 STRING_EQUAL ~1~  //Spell is level 1
             THEN
             BEGIN
 
-                OUTER_SPRINT ~state_spell_entry~ @10050     //~You look over the spell %scroll_list_data_arcane_keys_13% and inspect its entry in your spellbook.~
-                OUTER_SPRINT ~reply_scroll_create~ @10033   //~[Scribe a scroll of %scroll_list_data_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %scroll_list_data_arcane_keys_8% hours scribing the scroll.~
+                OUTER_SPRINT ~state_spell_entry~ @10050     //~You look over the spell %scroll_list_data_arcane_keys_11% and inspect its entry in your spellbook.~
+                OUTER_SPRINT ~reply_scroll_create~ @10033   //~[Scribe a scroll of %scroll_list_data_arcane_keys_11%. Gather materials costing %scroll_total_cost% gold, and spend %scroll_list_data_arcane_keys_8% hours scribing the scroll.~
 
                 APPEND_OUTER 
                     ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
     IF ~~ 
     THEN BEGIN bz_caster_craft_arcane_%scroll_list_data_arcane_keys_2%
-        SAY ~%state_spell_entry%~ //~You look over the spell %scroll_list_data_arcane_keys_13% and inspect its entry in your spellbook.~
+        SAY ~%state_spell_entry%~ //~You look over the spell %scroll_list_data_arcane_keys_11% and inspect its entry in your spellbook.~
             IF ~~
             THEN 
-                REPLY ~%reply_scroll_create%~ //~[Scribe a scroll of %scroll_list_data_arcane_keys_13%. Gather materials costing %scroll_total_cost% gold, and spend %scroll_list_data_arcane_keys_8% hours scribing the scroll.~
+                REPLY ~%reply_scroll_create%~ //~[Scribe a scroll of %scroll_list_data_arcane_keys_11%. Gather materials costing %scroll_total_cost% gold, and spend %scroll_list_data_arcane_keys_8% hours scribing the scroll.~
                 DO
                     ~
 TakePartyGold(%scroll_total_cost%)
