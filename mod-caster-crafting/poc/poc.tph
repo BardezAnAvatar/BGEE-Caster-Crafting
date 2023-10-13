@@ -16,7 +16,10 @@ ACTION_PHP_EACH ~scroll_list_data_arcane~
     BEGIN
 
         //Debugging Statements
-        PRINT ~DEBUG: var `scroll_list_data_arcane_keys_0`: %scroll_list_data_arcane_keys_0%~
+        PRINT ~DEBUG: scroll_list_data_arcane:
+            name:           `%scroll_list_data_arcane_keys_0%`;
+            level:          `%scroll_list_data_arcane_keys_4%`;
+            addtl. cost:    `%scroll_list_data_arcane_keys_7%`~
 
     END
 
