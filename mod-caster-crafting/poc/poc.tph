@@ -18,6 +18,8 @@ ACTION_PHP_EACH ~scroll_list_data_arcane~
         //Debugging Statements
         PRINT ~DEBUG: scroll_list_data_arcane:
             name:           `%scroll_list_data_arcane_keys_0%`;
+            spell code:     `%scroll_list_data_arcane_keys_2%`;
+            scroll code:    `%scroll_list_data_arcane_keys_3%`;
             level:          `%scroll_list_data_arcane_keys_4%`;
             addtl. cost:    `%scroll_list_data_arcane_keys_7%`~
 
