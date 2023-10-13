@@ -61,12 +61,12 @@ ACTION_PHP_EACH ~scroll_list_arcane~
         //Get the costs from the table
         LAUNCH_ACTION_FUNCTION ~bz_lookup_costs~ 
             STR_VAR
-                ~Level~ = %keys_3%
-                ~Tradition~ = %keys_2%
+                ~Level~ = ~%keys_3%~
+                ~Tradition~ = ~%keys_2%~
             RET
-                ~scroll_cost_time~
-                ~scroll_cost_xp~
-                ~scroll_cost_failure~
+                ~scroll_cost_time~ = ~time~
+                ~scroll_cost_xp~ = ~xp~
+                ~scroll_cost_failure~ = ~failure~
         END        
         
 
