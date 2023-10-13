@@ -29,8 +29,8 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
     END
     //NOTE: yes, the redefinition acts as a sort of merge, as printed in debug statements
 
-//TODO: Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
-//TODO: iterate through the Arcane list to generate the scroll-list data, then sort that data below instead
+//Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
+//iterate through the Arcane list to generate the scroll-list data, then sort that data below instead
 //RESULT:
 /*
     An associative array named "scroll_list_data_arcane" what contains these keys:
@@ -52,11 +52,13 @@ ACTION_PHP_EACH ~scroll_list_arcane~
     BEGIN
         COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
             READ_LONG NAME1 ~strref_name~           //since this is a spell file, NAME1 should be all there is
-
+        BUT_ONLY_IF_IT_CHANGES
+        
         ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
 
         COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
             READ_LONG 0x34 ~scroll_price~           //since this is a spell file, NAME1 should be all there is
+        BUT_ONLY_IF_IT_CHANGES
 
         //Get the costs from the table
         LAUNCH_ACTION_FUNCTION ~bz_lookup_costs~ 
