@@ -21,7 +21,8 @@ ACTION_PHP_EACH ~scroll_list_data_arcane~
             spell code:     `%scroll_list_data_arcane_keys_2%`;
             scroll code:    `%scroll_list_data_arcane_keys_3%`;
             level:          `%scroll_list_data_arcane_keys_4%`;
-            addtl. cost:    `%scroll_list_data_arcane_keys_7%`~
+            addtl. cost:    `%scroll_list_data_arcane_keys_7%`;
+            time cost:      `%scroll_list_data_arcane_keys_8%`~
 
     END
 
