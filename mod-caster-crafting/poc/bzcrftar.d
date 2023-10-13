@@ -44,7 +44,7 @@ BEGIN ~BZCRFTAR~
                 GOTO bz_caster_craft_arcane_circle_9
             IF ~~ 
             THEN REPLY @10019 //~10th circle~
-                GOTO bz_caster_craft_arcane_circle_10
+                GOTO bz_caster_craft_arcane_circle_A
             IF ~~ 
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
@@ -150,7 +150,7 @@ BEGIN ~BZCRFTAR~
     END
 
     IF ~~
-    THEN BEGIN bz_caster_craft_arcane_circle_10
+    THEN BEGIN bz_caster_craft_arcane_circle_A
         SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
