@@ -95,6 +95,7 @@ ACTION_PHP_EACH ~scroll_list_arcane~
 ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
 
 //Verify that it sorts on the first associative index (0)
+/*
 ACTION_PHP_EACH ~spell_list_arcane~
     AS ~spell_list_arcane_keys~ => ~value~
     BEGIN
@@ -103,3 +104,4 @@ ACTION_PHP_EACH ~spell_list_arcane~
         PRINT ~DEBUG: Spell List array: Tradition: `%spell_list_arcane_keys_1%`; Level: `%spell_list_arcane_keys_2%`; Spell Code: `%spell_list_arcane_keys_0%`~
 
     END
+*/
