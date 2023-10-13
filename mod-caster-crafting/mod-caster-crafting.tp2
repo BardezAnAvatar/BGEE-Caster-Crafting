@@ -32,10 +32,11 @@ LANGUAGE
 /*********************
 *   Mod Components   *
 *********************/
-BEGIN @0 
+BEGIN @0
 
 //Debugging Statements
 PRINT ~DEBUG: var `MOD_FOLDER`: %MOD_FOLDER%~
 
 //Do research stuff
+INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/debug.tph~
 INCLUDE ~%MOD_FOLDER%/poc/poc.tph~

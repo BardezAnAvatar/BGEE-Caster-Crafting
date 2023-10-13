@@ -15,37 +15,37 @@ BEGIN ~BZCRFTAR~
     IF ~~
     THEN BEGIN bz_caster_craft_arcane_main_menu
         SAY @10002
-            IF ~~ 
+            IF ~~
             THEN REPLY @10010 //~1st circle~
                 GOTO bz_caster_craft_arcane_circle_1
-            IF ~~ 
+            IF ~~
             THEN REPLY @10011 //~2nd circle~
                 GOTO bz_caster_craft_arcane_circle_2
-            IF ~~ 
+            IF ~~
             THEN REPLY @10012 //~3rd circle~
                 GOTO bz_caster_craft_arcane_circle_3
-            IF ~~ 
+            IF ~~
             THEN REPLY @10013 //~4th circle~
                 GOTO bz_caster_craft_arcane_circle_4
-            IF ~~ 
+            IF ~~
             THEN REPLY @10014 //~5th circle~
                 GOTO bz_caster_craft_arcane_circle_5
-            IF ~~ 
+            IF ~~
             THEN REPLY @10015 //~6th circle~
                 GOTO bz_caster_craft_arcane_circle_6
-            IF ~~ 
+            IF ~~
             THEN REPLY @10016 //~7th circle~
                 GOTO bz_caster_craft_arcane_circle_7
-            IF ~~ 
+            IF ~~
             THEN REPLY @10017 //~8th circle~
                 GOTO bz_caster_craft_arcane_circle_8
-            IF ~~ 
+            IF ~~
             THEN REPLY @10018 //~9th circle~
                 GOTO bz_caster_craft_arcane_circle_9
-            IF ~~ 
+            IF ~~
             THEN REPLY @10019 //~10th circle~
-                GOTO bz_caster_craft_arcane_circle_10
-            IF ~~ 
+                GOTO bz_caster_craft_arcane_circle_A
+            IF ~~
             THEN REPLY @10030 //~[Close your spellbook and pack up your scribe tools]~
                 EXIT
     END
@@ -150,7 +150,7 @@ BEGIN ~BZCRFTAR~
     END
 
     IF ~~
-    THEN BEGIN bz_caster_craft_arcane_circle_10
+    THEN BEGIN bz_caster_craft_arcane_circle_A
         SAY @10051 // ~Which spell do you examine?~
             IF ~~
             THEN REPLY @10031 //~[Pick another spell circle]~
