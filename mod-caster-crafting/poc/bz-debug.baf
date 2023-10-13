@@ -1,3 +1,6 @@
+//Note: ClassCat5 triggers for a Paladin
+
+
 IF
     ClassLevelGT(Myself,WIZARD,20)
 THEN
