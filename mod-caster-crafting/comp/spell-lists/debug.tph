@@ -2,8 +2,9 @@
 * research *
 ***********/
 
-//Debugging Statements
-PRINT ~DEBUG: Spell List array~
+//Include function defs.
+INCLUDE ~%MOD_FOLDER%/comp/spell-lists/_lookup-costs.tph~
+
 
 //TODO: Detect game and substitute the "bg1ee" with appropriate game path as appropriate
 
@@ -57,19 +58,16 @@ ACTION_PHP_EACH ~scroll_list_arcane~
         COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
             READ_LONG 0x34 ~scroll_price~           //since this is a spell file, NAME1 should be all there is
 
-        //TODO: Get the costs from the table
-        ACTION_PHP_EACH ~scroll_costs~
-            AS ~costs~ => ~_~
-                BEGIN
-                    //if the tradition and spell level match...
-                    ACTION_IF (%costs_2% STRING_EQUAL %keys_2% AND %costs_1% = %keys_3%)
-                    THEN
-                    BEGIN
-                        OUTER_SPRINT ~scroll_cost_time~ ~%costs_3%~
-                        OUTER_SPRINT ~scroll_cost_xp~ ~%costs_4%~
-                        OUTER_SPRINT ~scroll_cost_failure~ ~%costs_5%~
-                    END
-                END
+        //Get the costs from the table
+        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs~ 
+            STR_VAR
+                ~Level~ = %keys_3%
+                ~Tradition~ = %keys_2%
+            RET
+                ~scroll_cost_time~
+                ~scroll_cost_xp~
+                ~scroll_cost_failure~
+        END        
         
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY 

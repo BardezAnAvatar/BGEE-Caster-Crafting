@@ -1,0 +1,22 @@
+DEFINE_ACTION_FUNCTION ~bz_lookup_costs~
+    STR_VAR
+        ~Level~ = ~~
+        ~Tradition~ = ~~
+    RET
+        ~scroll_cost_time~
+        ~scroll_cost_xp~
+        ~scroll_cost_failure~
+    BEGIN
+        ACTION_PHP_EACH ~scroll_costs~
+            AS ~costs~ => ~_~
+                BEGIN
+                    //if the tradition and spell level match...
+                    ACTION_IF (%costs_2% STRING_EQUAL %Tradition% AND %costs_1% STRING_EQUAL %Level%)
+                    THEN
+                    BEGIN
+                        OUTER_SPRINT ~scroll_cost_time~ ~%costs_3%~
+                        OUTER_SPRINT ~scroll_cost_xp~ ~%costs_4%~
+                        OUTER_SPRINT ~scroll_cost_failure~ ~%costs_5%~
+                    END
+                END
+    END
