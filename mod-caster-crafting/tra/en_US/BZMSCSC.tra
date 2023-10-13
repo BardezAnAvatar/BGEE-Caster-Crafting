@@ -2,11 +2,11 @@
 
 //Initial dialog states
 @15000 = ~Your scribing kit is open before you. How do you wish to use it?~
-@15001 = ~You cannot use your scribe kit while monsters are about.~
+@15001 = ~You cannot use your scribe kit while enemies are about.~
 
 //Main Menu
 @15010 = ~Scribe a scroll.~
-@15010 = ~Copy a spell into your spellbook from your companion.~
+@15011 = ~Copy a spell into your spellbook from one of your companions.~
 
 //Common Actions
 @15030 = ~Pack up your scribe tools.~
@@ -21,17 +21,24 @@
 @15041 = ~Which spell do you examine?~
 
 //Spell circles
-@15050 = ~1st circle~
-@15051 = ~2nd circle~
-@15052 = ~3rd circle~
-@15053 = ~4th circle~
-@15054 = ~5th circle~
-@15055 = ~6th circle~
-@15056 = ~7th circle~
-@15057 = ~8th circle~
-@15058 = ~9th circle~
-@15059 = ~10th circle~
-@15060 = ~Protection~
+@15050 = ~Protection~
+@15051 = ~1st arcane circle~
+@15052 = ~2nd arcane circle~
+@15053 = ~3rd arcane circle~
+@15054 = ~4th arcane circle~
+@15055 = ~5th arcane circle~
+@15056 = ~6th arcane circle~
+@15057 = ~7th arcane circle~
+@15058 = ~8th arcane circle~
+@15059 = ~9th arcane circle~
+@15060 = ~10th arcane circle~
+@15061 = ~1st divine circle~
+@15062 = ~2nd divine circle~
+@15063 = ~3rd divine circle~
+@15064 = ~4th divine circle~
+@15065 = ~5th divine circle~
+@15066 = ~6th divine circle~
+@15067 = ~7th divine circle~
 
 //Companion spells
 @15070 = ~Whose spellbook do you copy spells from?~
