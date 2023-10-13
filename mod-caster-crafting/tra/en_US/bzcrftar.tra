@@ -1,4 +1,4 @@
-/* Reserving range 10000-19999 */
+/* Reserving range 10000-14999 */
 
 //Initial dialog states
 @10000 = ~Only an arcane caster of level 9 or higher may use these tools.~
