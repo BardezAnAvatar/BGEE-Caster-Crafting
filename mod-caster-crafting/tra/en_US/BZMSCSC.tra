@@ -1,0 +1,41 @@
+/* Reserving range 15000-19999 */
+
+//Initial dialog states
+@15000 = ~Your scribing kit is open before you. How do you wish to use it?~
+@15001 = ~You cannot use your scribe kit while monsters are about.~
+
+//Main Menu
+@15010 = ~Scribe a scroll.~
+@15010 = ~Copy a spell into your spellbook from your companion.~
+
+//Common Actions
+@15030 = ~Pack up your scribe tools.~
+@15031 = ~Go back to your scribe tools.~
+@15032 = ~Pick another spell circle.~
+@15033 = ~Pick another spell.~
+@10034 = ~\[%copy_gold_cost% gold; %copy_time% days\]Copy the spell %scroll_list_data_arcane_11% into your spellbook with %var_player%'s help.~
+@10035 = ~\[%scroll_gold_cost% gold; %scroll_time% days\]Scribe a scroll of %scroll_list_data_arcane_11%.~
+
+//Common Prompts
+@15040 = ~Which spell circle do you examine?~
+@15041 = ~Which spell do you examine?~
+
+//Spell circles
+@15050 = ~1st circle~
+@15051 = ~2nd circle~
+@15052 = ~3rd circle~
+@15053 = ~4th circle~
+@15054 = ~5th circle~
+@15055 = ~6th circle~
+@15056 = ~7th circle~
+@15057 = ~8th circle~
+@15058 = ~9th circle~
+@15059 = ~10th circle~
+@15060 = ~Protection~
+
+//Companion spells
+@15070 = ~Whose spellbook do you copy spells from?~
+
+//Protection scrolls
+@15080 = ~Which scroll of Protection do you wish to scribe?~
+@15081 = ~Pick another Protection scroll.~
