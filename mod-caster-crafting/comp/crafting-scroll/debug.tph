@@ -47,52 +47,7 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
         [Failure %]             // 10   --calc from table
         [Spell Display Name]    // 11   --get from spell
 */
-ACTION_PHP_EACH ~scroll_list_arcane~
-    AS ~keys~ => ~value~
-    BEGIN
-        COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
-            READ_LONG NAME1 ~strref_name~           //since this is a spell file, NAME1 should be all there is
-        BUT_ONLY_IF_IT_CHANGES
-        
-        ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
-
-        COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
-            READ_LONG 0x34 ~scroll_price~           //since this is a spell file, NAME1 should be all there is
-        BUT_ONLY_IF_IT_CHANGES
-
-        //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs~ 
-            STR_VAR
-                ~Level~ = ~%keys_3%~
-                ~Tradition~ = ~%keys_2%~
-            RET
-                ~scroll_cost_time~ = ~time~
-                ~scroll_cost_xp~ = ~xp~
-                ~scroll_cost_failure~ = ~failure~
-        END        
-        
-
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY 
-            ~scroll_list_data_arcane~
-            BEGIN
-                ~%keys_3%_%spell_name%~,    //sorting key of level and spell name
-                ~%keys_0%~,                 //scroll
-                ~%keys_1%~,                 //spell
-                ~%keys_2%~,                 //tradition
-                ~%keys_3%~,                 //spell level
-                ~%keys_4%~,                 //caster level
-                ~%scroll_price%~,           //cost of the scroll in the *.ITM file
-                ~%keys_5%~,                 //any additional cost
-                ~%scroll_cost_time%~,       //time to scribe (in hours)
-                ~%scroll_cost_xp%~,         //XP cost to scribe
-                ~%scroll_cost_failure%~,    //Chance of failure
-                ~%spell_name%~              //spell name for display
-                    => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
-            END
-    END
-
-//Sort the indicies, presumably on first key
-ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
+INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 
 //Verify that it sorts on the first associative index (0)
 /*
