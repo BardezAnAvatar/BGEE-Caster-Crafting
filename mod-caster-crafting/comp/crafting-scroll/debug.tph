@@ -3,7 +3,7 @@
 ***********/
 
 //Include function defs.
-INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/fn_lookup-costs.tph~
+INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/fn_lookup_costs_scroll.tph~
 
 
 //TODO: Detect game and substitute the "bg1ee" with appropriate game path as appropriate

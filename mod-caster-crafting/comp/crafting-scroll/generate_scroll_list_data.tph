@@ -12,7 +12,7 @@ ACTION_PHP_EACH ~scroll_list_arcane~
         BUT_ONLY_IF_IT_CHANGES
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs~ 
+        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~ 
             STR_VAR
                 ~Level~ = ~%keys_3%~
                 ~Tradition~ = ~%keys_2%~
