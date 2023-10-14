@@ -22,6 +22,7 @@ ACTION_PHP_EACH ~scroll_list_arcane~
                 ~scroll_cost_failure~ = ~failure~
         END        
         
+        //TODO: IFF the strref does not contain "<Invalid Strref"
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY 
             ~scroll_list_data_arcane~
