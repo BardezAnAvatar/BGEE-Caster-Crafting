@@ -17,7 +17,7 @@
 @10035 = ~\[%scroll_gold_cost% gold; %scroll_time% days\]Scribe a scroll of %scroll_list_data_arcane_11%.~
 
 //Common Prompts
-@15040 = ~Which spell circle do you examine?~
+@15040 = ~Which spell circle do you explore?~
 @15041 = ~Which spell do you examine?~
 
 //Spell circles
