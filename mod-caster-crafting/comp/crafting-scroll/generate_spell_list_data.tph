@@ -1,0 +1,49 @@
+//OUTPUT:
+/*
+    An associative array named "spell_list_data_arcane" what contains these keys:
+        [sorting Name]          // 0    --get from level and spell file/TLK
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Gold Cost]             // 4    --lookup from table
+        [Time Cost]             // 5    hours -- calc from table
+        [Spell Display Name]    // 6    --get from spell
+*/
+ACTION_PHP_EACH ~spell_list_arcane~
+    AS ~keys~ => ~value~
+    BEGIN
+        COPY_EXISTING - ~%keys_0%.spl~ ~override~       //inline only, just to read from spell
+            READ_LONG NAME1 ~strref_name~               //since this is a spell file, NAME1 should be all there is
+        BUT_ONLY_IF_IT_CHANGES
+        
+        ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
+
+        //Get the costs from the table
+        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~ 
+            STR_VAR
+                ~Level~ = ~%keys_2%~
+            RET
+                ~copy_cost_time~ = ~time~
+                ~copy_cost_gold~ = ~gold~
+        END
+
+        OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
+        
+        //TODO: IFF the strref does not contain "<Invalid Strref"
+
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+            ~spell_list_data_arcane~
+            BEGIN
+                ~%keys_2%_%spell_name%~,    //sorting key of level and spell name
+                ~%keys_0%~,                 //spell
+                ~%keys_1%~,                 //tradition
+                ~%keys_2%~,                 //spell level
+                ~%actual_copy_cost_gold%~,  //cost to copy the spell
+                ~%scroll_cost_time%~,       //time to scribe (in hours)
+                ~%spell_name%~              //spell name for display
+                    => ~%keys_0%~           //a rather arbitrary value to pick. could be name, spell code, etc.
+            END
+    END
+
+//Sort the indicies, presumably on first key
+ACTION_SORT_ARRAY_INDICES ~spell_list_data_arcane~
