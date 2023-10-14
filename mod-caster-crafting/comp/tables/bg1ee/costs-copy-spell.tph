@@ -5,7 +5,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         /*
         [spell-level]           // 0
         [Tradition]             // 1
-        [Gold Cost]             // 2
+        [Gold Cost]             // 2    NOTE: this is the cost that a scroll would have. Ultimately should be... 25% of this value
         [Time Cost]             // 3    in hours
         */
 
