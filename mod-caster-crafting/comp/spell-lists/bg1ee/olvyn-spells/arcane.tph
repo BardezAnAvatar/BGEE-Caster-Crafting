@@ -12,12 +12,6 @@ OUTER_SET ~bz_olvyn_powerful_eeex~ =
     MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
     AND INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
 
-//Debugging Statements
-PRINT ~DEBUG: Olvyn:
-    powerful:           `%bz_olvyn_powerful%`;
-    EEex:               `%bz_olvyn_eeex%`;
-    Powerful + EEex:    `%bz_olvyn_powerful_eeex%`;~
-
 
 /*******************
 *   Basic Spells   *
