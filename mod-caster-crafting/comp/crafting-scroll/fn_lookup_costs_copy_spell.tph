@@ -12,7 +12,7 @@ DEFINE_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~
             AS ~costs~ => ~_~
                 BEGIN
                     //if the spell level matches...
-                    ACTION_IF (~%costs_0%~ STRING_EQUAL ~%Level%~))
+                    ACTION_IF (~%costs_0%~ STRING_EQUAL ~%Level%~)
                     THEN
                     BEGIN
                         OUTER_SPRINT ~time~ ~%costs_3%~
