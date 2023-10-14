@@ -65,14 +65,7 @@ INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 */
 INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_spell_list_data.tph~
 
-//Verify that it sorts on the first associative index (0)
-/*
-ACTION_PHP_EACH ~spell_list_arcane~
-    AS ~spell_list_arcane_keys~ => ~value~
-    BEGIN
 
-        //Debugging Statements
-        PRINT ~DEBUG: Spell List array: Tradition: `%spell_list_arcane_keys_1%`; Level: `%spell_list_arcane_keys_2%`; Spell Code: `%spell_list_arcane_keys_0%`~
+//compile the new dialog (no edits)
+COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
 
-    END
-*/
