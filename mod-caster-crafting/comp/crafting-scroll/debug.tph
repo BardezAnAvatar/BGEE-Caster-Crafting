@@ -22,7 +22,8 @@ ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
         INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/iwdification/arcane.tph~
     END
 
-ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
+//1000 = powerful spells; 1001 = no powerful spells
+ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpells.tp2~ ~1001~)
     BEGIN
         PRINT ~DEBUG: Include Olvyn Spells~
         INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/olvyn-spells/arcane.tph~
