@@ -18,11 +18,11 @@ BEGIN ~BZMSCSC~
             //Copy Spell: non-sorcerer mages
             IF ~!Class(MYSELF, SORCERER)
 Class(MYSELF, MAGE_ALL)~
-                THEN SAY @15011 //Copy a spell into your spellbook from one of your companions.
+                THEN REPLY @15011 //Copy a spell into your spellbook from one of your companions.
                     GOTO bz_caster_craft_scribe_copy_menu
             //Copy Spell: bards
             IF ~Class(MYSELF, BARD)~
-                THEN SAY @15011 //Copy a spell into your spellbook from one of your companions.
+                THEN REPLY @15011 //Copy a spell into your spellbook from one of your companions.
                     GOTO bz_caster_craft_scribe_copy_menu
 
             //Scribe scroll: Cleric/Druid
@@ -30,7 +30,7 @@ Class(MYSELF, MAGE_ALL)~
     Class(MYSELF, CLERIC_ALL)
     Class(MYSELF, DRUID_ALL)
 LevelGT(MYSELF, 6)~
-                THEN SAY @15010 //scribe a scroll
+                THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
 
             //Scribe scroll: Mages
@@ -38,7 +38,7 @@ LevelGT(MYSELF, 6)~
 !Class(MYSELF, DRUID_ALL)
 Class(MYSELF, MAGE_ALL)
 LevelGT(MYSELF, 8)~
-                THEN SAY @15010 //scribe a scroll
+                THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
             
             //Scribe scroll: Bard
@@ -47,7 +47,7 @@ LevelGT(MYSELF, 8)~
 !Class(MYSELF, MAGE_ALL)
 Class(MYSELF, BARD_ALL)
 LevelGT(MYSELF, 9)~ 
-                THEN SAY @15010 //scribe a scroll
+                THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
 
             //Scribe scroll: Ranger
@@ -57,7 +57,7 @@ LevelGT(MYSELF, 9)~
 !Class(MYSELF, BARD_ALL)
 Class(MYSELF, RANGER_ALL)
 LevelGT(MYSELF, 11)~
-                THEN SAY @15010 //scribe a scroll
+                THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
 
             //Scribe scroll: Paladin
@@ -68,12 +68,12 @@ LevelGT(MYSELF, 11)~
 !Class(MYSELF, RANGER_ALL)
 Class(MYSELF, PALADIN_ALL)
 LevelGT(MYSELF, 14)~
-                THEN SAY @15010 //scribe a scroll
+                THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
 
             //Quit
             IF ~~ 
-                THEN SAY @15030 //Pack up
+                THEN REPLY @15030 //Pack up
                     EXIT
     END
 
