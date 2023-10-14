@@ -13,7 +13,7 @@
 @15031 = ~Go back to your scribe tools.~
 @15032 = ~Pick another spell circle.~
 @15033 = ~Pick another spell.~
-@10034 = ~\[%copy_gold_cost% gold; %copy_time% days\]Copy the spell %scroll_list_data_arcane_11% into your spellbook with %tag_PlayerN%'s help.~
+@10034 = ~\[%copy_gold_cost% gold; %copy_time% days\]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.~
 @10035 = ~\[%scroll_gold_cost% gold; %scroll_time% days\]Scribe a scroll of %scroll_list_data_arcane_11%.~
 
 //Common Prompts
@@ -44,6 +44,7 @@
 @15070 = ~Whose spellbook do you copy spells from?~
 @15071 = ~You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?~
 @15072 = ~Look at someone else's spellbook.~
+@15073 = ~You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.~
 
 //Protection scrolls
 @15080 = ~Which scroll of Protection do you wish to scribe?~
