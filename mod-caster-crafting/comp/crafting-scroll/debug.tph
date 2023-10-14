@@ -11,6 +11,7 @@ INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/fn_lookup_costs_copy_spell.tph~
 
 // From the base game, get all spells from the class spell lists. Emit to a file the findings.
 INCLUDE ~%MOD_FOLDER%/comp/tables/bg1ee/costs-scroll.tph~
+INCLUDE ~%MOD_FOLDER%/comp/tables/bg1ee/costs-copy-spell.tph~
 
 INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
 INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/core/arcane.tph~
@@ -44,12 +45,25 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
         [Caster Level]          // 5
         [Gold Cost]             // 6    --get from scroll
         [Additional Cost]       // 7
-        [Time Cost]             // 8    hours -- calc from table
-        [XP Cost]               // 9    --calc from table
-        [Failure %]             // 10   --calc from table
+        [Time Cost]             // 8    hours -- lookup from table
+        [XP Cost]               // 9    --lookup from table
+        [Failure %]             // 10   --lookup from table
         [Spell Display Name]    // 11   --get from spell
 */
 INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
+
+//OUTPUT:
+/*
+    An associative array named "spell_list_data_arcane" what contains these keys:
+        [sorting Name]          // 0    --get from level and spell file/TLK
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Gold Cost]             // 4    --lookup from table
+        [Time Cost]             // 5    hours -- lookup from table
+        [Spell Display Name]    // 6    --get from spell
+*/
+INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_spell_list_data.tph~
 
 //Verify that it sorts on the first associative index (0)
 /*
