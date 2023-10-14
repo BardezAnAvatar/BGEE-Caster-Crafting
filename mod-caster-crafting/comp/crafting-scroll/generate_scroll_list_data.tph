@@ -4,7 +4,7 @@ ACTION_PHP_EACH ~scroll_list_arcane~
         COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
             READ_LONG NAME1 ~strref_name~           //since this is a spell file, NAME1 should be all there is
         BUT_ONLY_IF_IT_CHANGES
-        
+
         ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
 
         COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
@@ -12,7 +12,7 @@ ACTION_PHP_EACH ~scroll_list_arcane~
         BUT_ONLY_IF_IT_CHANGES
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~ 
+        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
             STR_VAR
                 ~Level~ = ~%keys_3%~
                 ~Tradition~ = ~%keys_2%~
@@ -20,11 +20,9 @@ ACTION_PHP_EACH ~scroll_list_arcane~
                 ~scroll_cost_time~ = ~time~
                 ~scroll_cost_xp~ = ~xp~
                 ~scroll_cost_failure~ = ~failure~
-        END        
-        
-        //TODO: IFF the strref does not contain "<Invalid Strref"
+        END
 
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
             ~scroll_list_data_arcane~
             BEGIN
                 ~%keys_3%_%spell_name%~,    //sorting key of level and spell name

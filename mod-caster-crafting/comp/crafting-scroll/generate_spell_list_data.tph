@@ -29,8 +29,6 @@ ACTION_PHP_EACH ~spell_list_arcane~
 
         OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
         
-        //TODO: IFF the strref does not contain "<Invalid Strref"
-
         ACTION_DEFINE_ASSOCIATIVE_ARRAY 
             ~spell_list_data_arcane~
             BEGIN
