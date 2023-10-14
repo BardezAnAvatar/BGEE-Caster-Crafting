@@ -119,91 +119,98 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 /**********************
 *   Powerful Spells   *
 **********************/
-ACTION_DEFINE_ASSOCIATIVE_ARRAY 
-    ~spell_list_arcane~
-    BEGIN
-        ~MEWI551~, ~Arcane~, ~5~ => ~MEWI551~   //Life Transfer
-        ~MEWI558~, ~Arcane~, ~5~ => ~MEWI558~   //Missile of Patience
-       
-        ~MEWI855~, ~Arcane~, ~8~ => ~MEWI855~   //Omnipresence
-        ~MEWI863~, ~Arcane~, ~8~ => ~MEWI863~   //Metafireball
+ACTION_IF %bz_olvyn_powerful% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+        ~spell_list_arcane~
+        BEGIN
+            ~MEWI551~, ~Arcane~, ~5~ => ~MEWI551~   //Life Transfer
+            ~MEWI558~, ~Arcane~, ~5~ => ~MEWI558~   //Missile of Patience
+        
+            ~MEWI855~, ~Arcane~, ~8~ => ~MEWI855~   //Omnipresence
+            ~MEWI863~, ~Arcane~, ~8~ => ~MEWI863~   //Metafireball
 
-        ~MEWI955~, ~Arcane~, ~9~ => ~MEWI955~   //Mass Sequencer
-        ~MEWI957~, ~Arcane~, ~9~ => ~MEWI957~   //Executioner's Eyes
-        ~MEWI958~, ~Arcane~, ~9~ => ~MEWI958~   //Phantasmal Dragon
-        ~MEWI966~, ~Arcane~, ~9~ => ~MEWI966~   //Protection from Time Stop
+            ~MEWI955~, ~Arcane~, ~9~ => ~MEWI955~   //Mass Sequencer
+            ~MEWI957~, ~Arcane~, ~9~ => ~MEWI957~   //Executioner's Eyes
+            ~MEWI958~, ~Arcane~, ~9~ => ~MEWI958~   //Phantasmal Dragon
+            ~MEWI966~, ~Arcane~, ~9~ => ~MEWI966~   //Protection from Time Stop
 
-        ~MEWI962~, ~Arcane~, ~A~ => ~MEWI962~   //Necropotence
-        ~MEWI963~, ~Arcane~, ~A~ => ~MEWI963~   //Mental Agility
-        ~MEWI968~, ~Arcane~, ~A~ => ~MEWI968~   //Sphere of Annihilation
-    END
-
+            ~MEWI962~, ~Arcane~, ~A~ => ~MEWI962~   //Necropotence
+            ~MEWI963~, ~Arcane~, ~A~ => ~MEWI963~   //Mental Agility
+            ~MEWI968~, ~Arcane~, ~A~ => ~MEWI968~   //Sphere of Annihilation
+        END
+END
 
 /******************
 *   EEex Spells   *
 ******************/
-ACTION_DEFINE_ASSOCIATIVE_ARRAY 
-    ~spell_list_arcane~
-    BEGIN
-        ~MEWI156~, ~Arcane~, ~1~ => ~MEWI156~   //Jump
-        ~MEWI157~, ~Arcane~, ~1~ => ~MEWI157~   //Hex
-        ~MEWI158~, ~Arcane~, ~1~ => ~MEWI158~   //Reflect Attack
-        ~MEWI159~, ~Arcane~, ~1~ => ~MEWI159~   //Taunt
+ACTION_IF %bz_olvyn_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+        ~spell_list_arcane~
+        BEGIN
+            ~MEWI156~, ~Arcane~, ~1~ => ~MEWI156~   //Jump
+            ~MEWI157~, ~Arcane~, ~1~ => ~MEWI157~   //Hex
+            ~MEWI158~, ~Arcane~, ~1~ => ~MEWI158~   //Reflect Attack
+            ~MEWI159~, ~Arcane~, ~1~ => ~MEWI159~   //Taunt
 
-        ~MEWI257~, ~Arcane~, ~2~ => ~MEWI257~   //Levitate
-        ~MEWI259~, ~Arcane~, ~2~ => ~MEWI259~   //Detect Magic
-        ~MEWI260~, ~Arcane~, ~2~ => ~MEWI260~   //Far Cast
+            ~MEWI257~, ~Arcane~, ~2~ => ~MEWI257~   //Levitate
+            ~MEWI259~, ~Arcane~, ~2~ => ~MEWI259~   //Detect Magic
+            ~MEWI260~, ~Arcane~, ~2~ => ~MEWI260~   //Far Cast
 
-        ~MEWI352~, ~Arcane~, ~3~ => ~MEWI352~   //Fly
-        ~MEWI358~, ~Arcane~, ~3~ => ~MEWI358~   //Familiar Spell
-        ~MEWI359~, ~Arcane~, ~3~ => ~MEWI359~   //Throw
-        ~MEWI360~, ~Arcane~, ~3~ => ~MEWI360~   //Heightening
-        
-        ~MEWI455~, ~Arcane~, ~4~ => ~MEWI455~   //Redirect Spell
-        ~MEWI458~, ~Arcane~, ~4~ => ~MEWI458~   //Vampiric Link
-        ~MEWI459~, ~Arcane~, ~4~ => ~MEWI459~   //Recall Party
-        
-        ~MEWI552~, ~Arcane~, ~5~ => ~MEWI552~   //Steal Spells
-        ~MEWI559~, ~Arcane~, ~5~ => ~MEWI559~   //Ghostform
-        ~MEWI567~, ~Arcane~, ~5~ => ~MEWI567~   //Rewind Time
-        ~MEWI568~, ~Arcane~, ~5~ => ~MEWI568~   //Teleportation Circle
+            ~MEWI352~, ~Arcane~, ~3~ => ~MEWI352~   //Fly
+            ~MEWI358~, ~Arcane~, ~3~ => ~MEWI358~   //Familiar Spell
+            ~MEWI359~, ~Arcane~, ~3~ => ~MEWI359~   //Throw
+            ~MEWI360~, ~Arcane~, ~3~ => ~MEWI360~   //Heightening
+            
+            ~MEWI455~, ~Arcane~, ~4~ => ~MEWI455~   //Redirect Spell
+            ~MEWI458~, ~Arcane~, ~4~ => ~MEWI458~   //Vampiric Link
+            ~MEWI459~, ~Arcane~, ~4~ => ~MEWI459~   //Recall Party
+            
+            ~MEWI552~, ~Arcane~, ~5~ => ~MEWI552~   //Steal Spells
+            ~MEWI559~, ~Arcane~, ~5~ => ~MEWI559~   //Ghostform
+            ~MEWI567~, ~Arcane~, ~5~ => ~MEWI567~   //Rewind Time
+            ~MEWI568~, ~Arcane~, ~5~ => ~MEWI568~   //Teleportation Circle
 
-        ~MEWI654~, ~Arcane~, ~6~ => ~MEWI654~   //Spellshaping: Fireball
+            ~MEWI654~, ~Arcane~, ~6~ => ~MEWI654~   //Spellshaping: Fireball
 
-        ~MEWI758~, ~Arcane~, ~7~ => ~MEWI758~   //Skip Time
-        ~MEWI753~, ~Arcane~, ~7~ => ~MEWI753~   //Forcecage
-        ~MEWI755~, ~Arcane~, ~7~ => ~MEWI755~   //Death Trigger
-        ~MEWI757~, ~Arcane~, ~7~ => ~MEWI757~   //Reanimate
+            ~MEWI758~, ~Arcane~, ~7~ => ~MEWI758~   //Skip Time
+            ~MEWI753~, ~Arcane~, ~7~ => ~MEWI753~   //Forcecage
+            ~MEWI755~, ~Arcane~, ~7~ => ~MEWI755~   //Death Trigger
+            ~MEWI757~, ~Arcane~, ~7~ => ~MEWI757~   //Reanimate
 
-        ~MEWI853~, ~Arcane~, ~8~ => ~MEWI853~   //Otto's Irresistible Spin
-        ~MEWI858~, ~Arcane~, ~8~ => ~MEWI858~   //Sphere of Reversed Gravity
+            ~MEWI853~, ~Arcane~, ~8~ => ~MEWI853~   //Otto's Irresistible Spin
+            ~MEWI858~, ~Arcane~, ~8~ => ~MEWI858~   //Sphere of Reversed Gravity
 
-        ~MEWI961~, ~Arcane~, ~9~ => ~MEWI961~   //Teleport Step
+            ~MEWI961~, ~Arcane~, ~9~ => ~MEWI961~   //Teleport Step
 
-        ~MEWI967~, ~Arcane~, ~A~ => ~MEWI967~   //Culling Thought
-    END
+            ~MEWI967~, ~Arcane~, ~A~ => ~MEWI967~   //Culling Thought
+        END
+END
 
 
 /***************************
 *   Powerful EEex Spells   *
 ***************************/
-ACTION_DEFINE_ASSOCIATIVE_ARRAY 
-    ~spell_list_arcane~
-    BEGIN
-        ~MEWI256~, ~Arcane~, ~2~ => ~MEWI256~   //Specific Spell Immunity
+ACTION_IF %bz_olvyn_powerful_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+        ~spell_list_arcane~
+        BEGIN
+            ~MEWI256~, ~Arcane~, ~2~ => ~MEWI256~   //Specific Spell Immunity
 
-        ~MEWI456~, ~Arcane~, ~4~ => ~MEWI456~   //Copy Spell
+            ~MEWI456~, ~Arcane~, ~4~ => ~MEWI456~   //Copy Spell
 
-        ~MEWI562~, ~Arcane~, ~5~ => ~MEWI562~   //Critical Spell
-        ~MEWI564~, ~Arcane~, ~5~ => ~MEWI564~   //Wall of Force
+            ~MEWI562~, ~Arcane~, ~5~ => ~MEWI562~   //Critical Spell
+            ~MEWI564~, ~Arcane~, ~5~ => ~MEWI564~   //Wall of Force
 
-        //~MEWI659~, ~Arcane~, ~6~ => ~MEWI659~ //Bardic Sequencer, HLA
-        ~MEWI655~, ~Arcane~, ~6~ => ~MEWI655~   //Slaying Sequencer
-        ~MEWI660~, ~Arcane~, ~6~ => ~MEWI660~   //Create Pit
+            //~MEWI659~, ~Arcane~, ~6~ => ~MEWI659~ //Bardic Sequencer, HLA
+            ~MEWI655~, ~Arcane~, ~6~ => ~MEWI655~   //Slaying Sequencer
+            ~MEWI660~, ~Arcane~, ~6~ => ~MEWI660~   //Create Pit
 
-        ~MEWI854~, ~Arcane~, ~8~ => ~MEWI854~   //Recurring Contingency
-        ~MEWI856~, ~Arcane~, ~8~ => ~MEWI856~   //Contingency Curse
+            ~MEWI854~, ~Arcane~, ~8~ => ~MEWI854~   //Recurring Contingency
+            ~MEWI856~, ~Arcane~, ~8~ => ~MEWI856~   //Contingency Curse
 
-        ~MEWI956~, ~Arcane~, ~9~ => ~MEWI956~   //Enoll Eva's Duplication
-
-    END
+            ~MEWI956~, ~Arcane~, ~9~ => ~MEWI956~   //Enoll Eva's Duplication
+        END
+END
