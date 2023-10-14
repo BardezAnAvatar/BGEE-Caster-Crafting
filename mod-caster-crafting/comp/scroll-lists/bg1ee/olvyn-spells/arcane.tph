@@ -12,11 +12,15 @@ OUTER_SET ~bz_olvyn_powerful_eeex~ =
     MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
     AND INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
 
+OUTER_SET ~bz_olvyn_wi556~ =    //Restore original Animate Dead for wizards?
+    !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25011~) AND !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25012~)
+
 //Debugging Statements
 PRINT ~DEBUG: Olvyn:
     powerful:           `%bz_olvyn_powerful%`;
     EEex:               `%bz_olvyn_eeex%`;
-    Powerful + EEex:    `%bz_olvyn_powerful_eeex%`;~
+    Powerful + EEex:    `%bz_olvyn_powerful_eeex%`;
+    Skeleton Horde:     `%bz_olvyn_wi556%`;~
 
 
 /*******************
@@ -68,7 +72,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~MEWI554X~, ~MEWI554~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI554X~   //Ball Lightning
         ~MEWI555X~, ~MEWI555~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI555X~   //Major Mirror Image
-        ~MEWI556X~, ~MEWI556~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI556X~   //Skeleton Horde
         ~MEWI557X~, ~MEWI557~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI557X~   //Commando Conjuration
         ~MEWI560X~, ~MEWI560~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI560X~   //Slime Drop
         ~MEWI563X~, ~MEWI563~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI563X~   //Warrior Simulacrum
@@ -211,5 +214,18 @@ BEGIN
             ~MEWI856X~, ~MEWI856~, ~Arcane~, ~8~, ~16~, ~0~ => ~MEWI856X~   //Contingency Curse
 
             ~MEWI956X~, ~MEWI956~, ~Arcane~, ~9~, ~18~, ~0~ => ~MEWI956X~   //Enoll Eva's Duplication
+        END
+END
+
+
+/***************************
+*   Other exceptions   *
+***************************/
+ACTION_IF %bz_olvyn_wi556% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+        ~scroll_list_arcane~
+        BEGIN
+            ~MEWI556X~, ~MEWI556~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI556X~   //Skeleton Horde
         END
 END

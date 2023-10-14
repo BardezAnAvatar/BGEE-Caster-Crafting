@@ -8,9 +8,12 @@ OUTER_SET ~bz_olvyn_eeex~ =
         INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
         OR INSTALL_ORDER ~MESpells.tp2~ ~1001~ AFTER ~EEEX.TP2~ ~0~
     )
-OUTER_SET ~bz_olvyn_powerful_eeex~ = 
+OUTER_SET ~bz_olvyn_powerful_eeex~ =
     MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
     AND INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
+
+OUTER_SET ~bz_olvyn_wi556~ =    //Restore original Animate Dead for wizards?
+    !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25011~) AND !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25012~)
 
 
 /*******************
@@ -60,7 +63,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~MEWI554~, ~Arcane~, ~5~ => ~MEWI554~   //Ball Lightning
         ~MEWI555~, ~Arcane~, ~5~ => ~MEWI555~   //Major Mirror Image
-        ~MEWI556~, ~Arcane~, ~5~ => ~MEWI556~   //Skeleton Horde
         ~MEWI557~, ~Arcane~, ~5~ => ~MEWI557~   //Commando Conjuration
         ~MEWI560~, ~Arcane~, ~5~ => ~MEWI560~   //Slime Drop
                                                 //Baleful Teleport
@@ -206,5 +208,19 @@ BEGIN
             ~MEWI856~, ~Arcane~, ~8~ => ~MEWI856~   //Contingency Curse
 
             ~MEWI956~, ~Arcane~, ~9~ => ~MEWI956~   //Enoll Eva's Duplication
+        END
+END
+
+
+
+/***************************
+*   Other exceptions   *
+***************************/
+ACTION_IF %bz_olvyn_wi556% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+        ~spell_list_arcane~
+        BEGIN
+            ~MEWI556~, ~Arcane~, ~5~ => ~MEWI556~   //Skeleton Horde
         END
 END
