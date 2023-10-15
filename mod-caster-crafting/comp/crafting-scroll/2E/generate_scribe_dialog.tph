@@ -253,7 +253,7 @@ APPEND ~BZMSCSC~
                     ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
                     ~~~~~
     // _%PlayerN%_circle%keys_3%_%keys_1%
-    IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
+    IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%_%keys_1%
         SAY %player-circle-spell-prompt%    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
             
             IF ~PartyGoldGT(%spell-copy-cost-floor%)~
