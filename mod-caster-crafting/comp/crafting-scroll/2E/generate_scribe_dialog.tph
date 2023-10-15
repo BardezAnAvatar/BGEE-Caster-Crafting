@@ -18,9 +18,9 @@ EXTEND_TOP ~BZMSCSC~ bz_caster_craft_scribe_copy_menu
 //loop through all players
 OUTER_FOR (i = 1; i < 7; ++i)
     BEGIN
-        OUTER_TEXT_SPRINT ~PlayerN~ = ~PLAYER%i%~
-        OUTER_TEXT_SPRINT ~tag_PlayerN~ = ~<%PlayerN%>~
-        OUTER_TEXT_SPRINT ~var_PlayerN~ = ~player%i%~
+        OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
+        OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
+        OUTER_TEXT_SPRINT ~var_PlayerN~ ~player%i%~
         OUTER_SET ~i-minus-one~ = (%i% - 1)
 
         //Circles 1-6: Mages and Bards share it
@@ -50,10 +50,10 @@ END
 //loop through all players
 OUTER_FOR (i = 1; i < 7; ++i)
     BEGIN
-        OUTER_TEXT_SPRINT ~PlayerN~ = ~PLAYER%i%~
-        OUTER_TEXT_SPRINT ~tag_PlayerN~ = ~<%PlayerN%>~
-        OUTER_TEXT_SPRINT ~var_PlayerN~ = ~player%i%~
-        OUTER_SPRINT ~PlayerN-Prompt~ = @15071
+        OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
+        OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
+        OUTER_TEXT_SPRINT ~var_PlayerN~ ~player%i%~
+        OUTER_SPRINT ~PlayerN-Prompt~ @15071
 
         //Circles 1-6: Mages and Bards share it
         APPEND_OUTER
@@ -143,10 +143,10 @@ Class(%PlayerN%, MAGE_ALL)~
         OUTER_FOR (j = 1; j < 11; ++j)
             BEGIN
 
-                OUTER_TEXT_SPRINT ~player_n_spell_level~ = ~%j%~
+                OUTER_TEXT_SPRINT ~player_n_spell_level~ ~%j%~
                 ACTION_IF %j% = 10 THEN 
                 BEGIN
-                    OUTER_TEXT_SPRINT ~player_n_spell_level~ = ~A~
+                    OUTER_TEXT_SPRINT ~player_n_spell_level~ ~A~
                 END
 
                 //Create the state for _PlayerN_CircleX
