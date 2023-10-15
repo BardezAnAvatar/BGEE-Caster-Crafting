@@ -226,9 +226,9 @@ END
         //now states for each spell by player and circle and spell ID.
 
         //Debugging Statement
-        PRINT ~***************************************************
-DEBUG: PLAYER %i%, Circle %j% Spell States Starting
-***************************************************~
+        PRINT ~************************************************************
+DEBUG: `PLAYER %i%, Circle X` Specific Spell States Starting
+************************************************************~
 
         APPEND_OUTER -
             ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
