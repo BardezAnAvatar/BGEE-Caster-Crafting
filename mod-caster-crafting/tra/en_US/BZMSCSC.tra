@@ -13,8 +13,8 @@
 @15031 = ~Go back to your scribe tools.~
 @15032 = ~Pick another spell circle.~
 @15033 = ~Pick another spell.~
-@15034 = ~\[%copy_gold_cost% gold; %copy_time_days% days\]Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.~
-@15035 = ~\[%scroll_gold_cost% gold; %scroll_time% days\]Scribe a scroll of %scroll_list_data_arcane_11%.~
+@15034 = ~\[%copy_gold_cost% gold; %copy_time_days% days\] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.~
+@15035 = ~\[%scroll_gold_cost% gold; %scroll_time% days\] Scribe a scroll of %scroll_list_data_arcane_11%.~
 
 //Common Prompts
 @15040 = ~Which spell circle do you explore?~
