@@ -8,7 +8,7 @@
 
 //Copy spells response/transitions
 APPEND_OUTER
-    ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
     ~~~~~
   
   
@@ -25,7 +25,7 @@ OUTER_FOR (i = 1; i < 7; ++i)
 
         //Circles 1-6: Mages and Bards share it
         APPEND_OUTER
-            ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
             ~~~~~
 
             //%PlayerN%
@@ -40,7 +40,7 @@ OUTER_FOR (i = 1; i < 7; ++i)
 
 //end copy state links
 APPEND_OUTER
-    ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
     ~~~~~
 END
     ~~~~~
@@ -57,7 +57,7 @@ OUTER_FOR (i = 1; i < 7; ++i)
 
         //Circles 1-6: Mages and Bards share it
         APPEND_OUTER
-            ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
             ~~~~~
 APPEND ~BZMSCSC~
 
@@ -151,7 +151,7 @@ Class(%PlayerN%, MAGE_ALL)~
 
                 //Create the state for _PlayerN_CircleX
                 APPEND_OUTER
-                    ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
                     ~~~~~
     //%PlayerN%_Circle%player_n_spell_level%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%
@@ -175,7 +175,7 @@ Class(%PlayerN%, MAGE_ALL)~
                                 OUTER_SPRINT ~reply_scroll_create~ @10033   //~[Scribe a scroll of %scroll_list_data_arcane_keys_11%. Gather materials costing %scroll_total_cost% gold, and spend %scroll_list_data_arcane_keys_8% hours scribing the scroll.~
 
                                 APPEND_OUTER
-                                    ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+                                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
                                     ~~~~~
             IF ~!HaveKnownSpellRES("%keys_0%")
 !HaveKnownSpellRES("%keys_0%", %PlayerN%)~
@@ -188,7 +188,7 @@ Class(%PlayerN%, MAGE_ALL)~
                 
                 //End the state _PlayerN_CircleX
                 APPEND_OUTER
-                    ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
                     ~~~~~
 
             //closing options
@@ -213,7 +213,7 @@ Class(%PlayerN%, MAGE_ALL)~
             END
 
         APPEND_OUTER
-            ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
             ~~~~~
 END
             ~~~~~
@@ -222,7 +222,7 @@ END
         //now states for each spell by player and circle and spell ID.
 
         APPEND_OUTER
-            ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
             ~~~~~
 
 
@@ -241,7 +241,7 @@ APPEND ~BZMSCSC~
 
 
                 APPEND_OUTER
-                    ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
                     ~~~~~
     // _%PlayerN%_circle%keys_3%_%keys_1%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys1%
@@ -281,7 +281,7 @@ AdvanceTime(%keys_5%)~
 
         //Finish out the player-circle-spell states' APPEND command
         APPEND_OUTER
-            ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCSC.d~
+            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
             ~~~~~
 
 END
