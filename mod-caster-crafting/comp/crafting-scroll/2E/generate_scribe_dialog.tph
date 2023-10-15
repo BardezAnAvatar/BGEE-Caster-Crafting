@@ -299,7 +299,7 @@ END
     END
 
         //Emit the final result
-        COPY
+        COPY +  //no need to back up a .D file
             ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
             ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
 
