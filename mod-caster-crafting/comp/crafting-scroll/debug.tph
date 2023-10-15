@@ -66,8 +66,8 @@ INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_spell_list_data.tph~
 
 
-//compile the new dialog (no edits)
-//COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
-//NOTE: the dialog works in its initial state. Attempt to mutate it next...
-
+//NOTE: tested the compilation of the dialog in its initial state. Attempt to mutate it next...
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/generate_scribe_dialog.tph~
+
+//compile the new dialog (with huge mutated edits)
+COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
