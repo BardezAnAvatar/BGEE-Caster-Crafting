@@ -1,3 +1,19 @@
+//RESULT:
+/*
+    An associative array named "scroll_list_data_arcane" what contains these keys:
+        [sorting Name]          // 0    --get from spell
+        [Scroll]                // 1
+        [Spell]                 // 2
+        [Tradition]             // 3
+        [Spell Level]           // 4
+        [Caster Level]          // 5
+        [Gold Cost]             // 6    --get from scroll
+        [Additional Cost]       // 7
+        [Time Cost]             // 8    hours -- lookup from table
+        [XP Cost]               // 9    --lookup from table
+        [Failure %]             // 10   --lookup from table
+        [Spell Display Name]    // 11   --get from spell
+*/
 ACTION_PHP_EACH ~scroll_list_arcane~
     AS ~keys~ => ~value~
     BEGIN
