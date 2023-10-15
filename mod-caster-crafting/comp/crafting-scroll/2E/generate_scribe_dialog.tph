@@ -252,12 +252,12 @@ APPEND ~BZMSCSC~
                 OUTER_SPRINT ~readable_time~ ~~
                 ACTION_IF %keys_5% < 24 THEN
                 BEGIN
-                    OUTER_SET ~hours~ %keys_5%
+                    OUTER_SET ~hours~ = %keys_5%
                     OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
                 END
                 ELSE    //days
                 BEGIN
-                    OUTER_SET ~days~ %keys_5% / 24
+                    OUTER_SET ~days~ = %keys_5% / 24
                     OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
                 END
 
