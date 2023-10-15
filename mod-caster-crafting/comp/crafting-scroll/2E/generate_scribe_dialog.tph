@@ -280,6 +280,7 @@ APPEND ~BZMSCSC~
 TakePartyGold(%copy_gold_cost%)
 DestroyGold(%copy_gold_cost%)
 AdvanceTime(%copy_time_engine%)
+AddSpecialAbility("%keys_1%")
 FadeFromColor([20.0],0)
 Wait(1)~
                 EXIT
