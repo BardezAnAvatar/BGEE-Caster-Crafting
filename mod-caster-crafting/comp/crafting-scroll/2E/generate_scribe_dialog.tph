@@ -276,13 +276,16 @@ APPEND ~BZMSCSC~
             IF ~PartyGoldGT(%spell-copy-cost-floor%)~
             THEN
                 REPLY ~%player-circle-spell-action%~ //[%copy_gold_cost% gold; %copy_time_days% days] Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
-                DO ~FadeToColor([20.0],0)
+                DO ~
+//FadeToColor([20.0],0)
+//AddSpecialAbility("%keys_1%")
+ActionOverride(Myself,AddSpecialAbility("%keys_1%"))
 TakePartyGold(%copy_gold_cost%)
 DestroyGold(%copy_gold_cost%)
 AdvanceTime(%copy_time_engine%)
-AddSpecialAbility("%keys_1%")
-FadeFromColor([20.0],0)
-Wait(1)~
+//FadeFromColor([20.0],0)
+//Wait(1)
+~
                 EXIT
 
             //closing options
