@@ -264,12 +264,12 @@ APPEND ~BZMSCSC~
                 DO ~TakePartyGold(%copy_gold_cost%)
 DestroyGold(%copy_gold_cost%)
 AdvanceTime(%copy_time_engine%)~
-                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%
 
             //closing options
             IF ~~
             THEN REPLY @15033 //Pick another spell.
-                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%
 
             IF ~~
             THEN REPLY @15032 //Pick another spell circle.
