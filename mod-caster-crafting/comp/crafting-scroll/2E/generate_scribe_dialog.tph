@@ -32,7 +32,7 @@ OUTER_FOR (i = 1; i < 7; ++i)
     Class(%PlayerN%, MAGE_ALL)
     Class(%PlayerN%, BARD_ALL)
 !InPartySlot(MYSELF, %i-minus-one%)~
-            THEN REPLY ~%tag_PlayerN%~ //whomever the player name is
+            THEN REPLY ~%tag_PlayerN%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%
             ~~~~~
     END
