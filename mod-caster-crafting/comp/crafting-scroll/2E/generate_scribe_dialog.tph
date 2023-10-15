@@ -50,7 +50,8 @@ END
 OUTER_FOR (i = 1; i < 7; ++i)
     BEGIN
         //Debugging Statement
-        PRINT ~*********************************
+        PRINT ~
+********************************
 DEBUG: READY, PLAYER %i%!:
 ********************************~
 
@@ -227,7 +228,8 @@ END
         //now states for each spell by player and circle and spell ID.
 
         //Debugging Statement
-        PRINT ~************************************************************
+        PRINT ~
+************************************************************
 DEBUG: `PLAYER %i%, Circle X` Specific Spell States Starting
 ************************************************************~
 
