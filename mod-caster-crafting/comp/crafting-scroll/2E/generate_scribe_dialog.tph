@@ -67,7 +67,7 @@ APPEND ~BZMSCSC~
 
     //%PlayerN%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%
-        SAY %PlayerN-Prompt%    //You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?
+        SAY ~%PlayerN-Prompt%~    //You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?
 
             /* Circles 1-6: Mages and Bards */
             //Circle 1
@@ -185,7 +185,7 @@ DEBUG: PLAYER %i%, Circle %j%:
             IF ~!HaveKnownSpellRES("%keys_1%")
 !HaveKnownSpellRES("%keys_1%", %PlayerN%)~
             THEN 
-                REPLY ~%keys_6%~ // %keys_6%
+                REPLY ~%keys_6%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
                                     ~~~~~
                             END
@@ -256,7 +256,7 @@ APPEND ~BZMSCSC~
                     ~~~~~
     // _%PlayerN%_circle%keys_3%_%keys_1%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%_%keys_1%
-        SAY %player-circle-spell-prompt%    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
+        SAY ~%player-circle-spell-prompt%~    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
             
             IF ~PartyGoldGT(%spell-copy-cost-floor%)~
             THEN
