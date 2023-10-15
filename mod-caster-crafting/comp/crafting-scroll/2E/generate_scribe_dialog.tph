@@ -50,6 +50,11 @@ END
 //loop through all players
 OUTER_FOR (i = 1; i < 7; ++i)
     BEGIN
+        //Debugging Statements
+        PRINT ~*********************************
+            DEBUG: READY, PLAYER %i%!:
+            *******************************~
+
         OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
         OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
         OUTER_TEXT_SPRINT ~var_PlayerN~ ~player%i%~
@@ -142,6 +147,10 @@ Class(%PlayerN%, MAGE_ALL)~
         //Now I need to write all 10 circles to copy
         OUTER_FOR (j = 1; j < 11; ++j)
             BEGIN
+        //Debugging Statements
+        PRINT ~**************************************
+            DEBUG: READY, PLAYER %i%, Circle %j%:
+            *************************************~
 
                 OUTER_TEXT_SPRINT ~player_n_spell_level~ ~%j%~
                 ACTION_IF %j% = 10 THEN 
