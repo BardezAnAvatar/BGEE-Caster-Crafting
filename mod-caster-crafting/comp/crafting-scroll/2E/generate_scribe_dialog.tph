@@ -269,7 +269,7 @@ DestroyGold(%copy_gold_cost%)
 AdvanceTime(%copy_time_engine%)
 FadeFromColor([20.0],0)
 Wait(1)~
-                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%
+                EXIT
 
             //closing options
             IF ~~
