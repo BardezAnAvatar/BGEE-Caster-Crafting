@@ -263,9 +263,12 @@ APPEND ~BZMSCSC~
             IF ~PartyGoldGT(%spell-copy-cost-floor%)~
             THEN
                 REPLY ~%player-circle-spell-action%~ //[%copy_gold_cost% gold; %copy_time_days% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
-                DO ~TakePartyGold(%copy_gold_cost%)
+                DO ~FadeToColor([20.0],0)
+TakePartyGold(%copy_gold_cost%)
 DestroyGold(%copy_gold_cost%)
-AdvanceTime(%copy_time_engine%)~
+AdvanceTime(%copy_time_engine%)
+FadeFromColor([20.0],0)
+Wait(1)~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%
 
             //closing options
