@@ -243,7 +243,7 @@ APPEND ~BZMSCSC~
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
         SAY %player-circle-spell-prompt%    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
             
-            IF ~PartyGoldGT(%spell-copy-cost-floor%%)~
+            IF ~PartyGoldGT(%spell-copy-cost-floor%)~
             THEN
                 REPLY ~%player-circle-spell-action%~ //[%copy_gold_cost% gold; %copy_time% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
                 DO ~TakePartyGold(%copy_gold_cost%)
