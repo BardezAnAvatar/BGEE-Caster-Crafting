@@ -147,9 +147,10 @@ Class(%PlayerN%, MAGE_ALL)~
         OUTER_FOR (j = 1; j < 11; ++j)
             BEGIN
         //Debugging Statement
-        PRINT ~**************************************
-DEBUG: READY, PLAYER %i%, Circle %j%:
-**************************************~
+        PRINT ~
+******************************
+DEBUG: PLAYER %i%, Circle %j%:
+******************************~
 
                 OUTER_TEXT_SPRINT ~player_n_spell_level~ ~%j%~
                 ACTION_IF %j% = 10 THEN 
@@ -243,10 +244,11 @@ APPEND ~BZMSCSC~
             BEGIN
                 OUTER_SET ~spell-copy-cost-floor~ = (%keys_4% - 1)
                 OUTER_SET ~copy_gold_cost~ = %keys_4%
-                OUTER_SET ~copy_time~ = %keys_5% / 24
+                OUTER_SET ~copy_time_days~ = %keys_5% / 24
+                OUTER_SET ~copy_time_engine~ = %keys_5% * 300
 
                 OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
-                OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %copy_time% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
+                OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %copy_time_days% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
 
 
                 APPEND_OUTER -
@@ -258,10 +260,10 @@ APPEND ~BZMSCSC~
             
             IF ~PartyGoldGT(%spell-copy-cost-floor%)~
             THEN
-                REPLY ~%player-circle-spell-action%~ //[%copy_gold_cost% gold; %copy_time% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
+                REPLY ~%player-circle-spell-action%~ //[%copy_gold_cost% gold; %copy_time_days% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
                 DO ~TakePartyGold(%copy_gold_cost%)
 DestroyGold(%copy_gold_cost%)
-AdvanceTime(%keys_5%)~
+AdvanceTime(%copy_time_engine%)~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%
 
             //closing options
