@@ -2,7 +2,7 @@
 /*
     An associative array named "spell_list_data_arcane" what contains these keys:
         [sorting Name]          // 0    --get from level and spell file/TLK
-        [Spell]                 // 1
+        [Spell RESREF]          // 1
         [Tradition]             // 2
         [Spell Level]           // 3
         [Gold Cost]             // 4    --lookup from table
@@ -33,7 +33,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
             ~spell_list_data_arcane~
             BEGIN
                 ~%keys_2%_%spell_name%~,    //sorting key of level and spell name
-                ~%keys_0%~,                 //spell
+                ~%keys_0%~,                 //spell RESREF
                 ~%keys_1%~,                 //tradition
                 ~%keys_2%~,                 //spell level
                 ~%actual_copy_cost_gold%~,  //cost to copy the spell

@@ -56,7 +56,7 @@ INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 /*
     An associative array named "spell_list_data_arcane" what contains these keys:
         [sorting Name]          // 0    --get from level and spell file/TLK
-        [Spell]                 // 1
+        [Spell RESREF]          // 1
         [Tradition]             // 2
         [Spell Level]           // 3
         [Gold Cost]             // 4    --lookup from table
@@ -71,4 +71,3 @@ INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_spell_list_data.tph~
 //NOTE: the dialog works in its initial state. Attempt to mutate it next...
 
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/generate_scribe_dialog.tph~
-    
