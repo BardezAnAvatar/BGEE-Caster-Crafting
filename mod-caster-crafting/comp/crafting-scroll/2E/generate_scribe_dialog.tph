@@ -233,7 +233,7 @@ APPEND ~BZMSCSC~
                 OUTER_SET ~copy_time~ = %keys_5% / 24
 
                 OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
-                OUTER_SPRINT ~player-circle-spell-action~ @10034 //[%copy_gold_cost% gold; %copy_time% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
+                OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %copy_time% days]Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
 
 
                 APPEND_OUTER +
