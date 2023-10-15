@@ -1,5 +1,4 @@
 
-
 /*******************************
 *   ###
 *   Begin Copy Spells Stuff
@@ -52,8 +51,8 @@ OUTER_FOR (i = 1; i < 7; ++i)
     BEGIN
         //Debugging Statements
         PRINT ~*********************************
-            DEBUG: READY, PLAYER %i%!:
-            *******************************~
+DEBUG: READY, PLAYER %i%!:
+********************************~
 
         OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
         OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
@@ -149,8 +148,8 @@ Class(%PlayerN%, MAGE_ALL)~
             BEGIN
         //Debugging Statements
         PRINT ~**************************************
-            DEBUG: READY, PLAYER %i%, Circle %j%:
-            *************************************~
+DEBUG: READY, PLAYER %i%, Circle %j%:
+**************************************~
 
                 OUTER_TEXT_SPRINT ~player_n_spell_level~ ~%j%~
                 ACTION_IF %j% = 10 THEN 
