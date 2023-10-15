@@ -57,7 +57,7 @@ DEBUG: READY, PLAYER %i%!:
         OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
         OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
         OUTER_TEXT_SPRINT ~var_PlayerN~ ~player%i%~
-        OUTER_SPRINT ~PlayerN-Prompt~ @15071
+        OUTER_SPRINT ~PlayerN-Prompt~ @15071 //You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?
 
         //Circles 1-6: Mages and Bards share it
         APPEND_OUTER -
