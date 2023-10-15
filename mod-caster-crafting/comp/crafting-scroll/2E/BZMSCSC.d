@@ -136,26 +136,4 @@ LevelGT(MYSELF, 14)~
             THEN REPLY @15030 //Pack up your scribe tools.
                 EXIT
 
-    //TODO: move this into a script-appended mutation, since the triggers and such must mutate.
-    /*
-    IF ~~
-    THEN BEGIN bz_caster_craft_scribe_copy_player1
-        SAY @15040 //Which spell circle do you explore?
-
-            //TODO: write out the 10 circles, link dynamically to PlayerN in the target state name
-
-            IF ~~
-            THEN REPLY @15071 //Look at someone else's spellbook.
-                GOTO bz_caster_craft_scribe_copy_menu
-
-            IF ~~
-            THEN REPLY @15031 //Go back to your scribe tools.
-                GOTO bz_caster_craft_scribe_main_menu
-
-            IF ~~
-            THEN REPLY @15030 //Pack up your scribe tools.
-                EXIT
-    END
-    */
-
 END
