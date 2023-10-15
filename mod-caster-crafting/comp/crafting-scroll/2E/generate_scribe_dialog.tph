@@ -124,7 +124,7 @@ Class(%PlayerN%, MAGE_ALL)~
             IF ~Class(MYSELF, MAGE_ALL)
 Class(%PlayerN%, MAGE_ALL)~
             THEN REPLY @15060 //10th arcane circle
-                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle10
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circleA
 
             IF ~~
             THEN REPLY @15072 //Look at someone else's spellbook.
