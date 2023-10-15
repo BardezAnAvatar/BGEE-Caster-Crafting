@@ -49,7 +49,7 @@ END
 //loop through all players
 OUTER_FOR (i = 1; i < 7; ++i)
     BEGIN
-        //Debugging Statements
+        //Debugging Statement
         PRINT ~*********************************
 DEBUG: READY, PLAYER %i%!:
 ********************************~
@@ -146,7 +146,7 @@ Class(%PlayerN%, MAGE_ALL)~
         //Now I need to write all 10 circles to copy
         OUTER_FOR (j = 1; j < 11; ++j)
             BEGIN
-        //Debugging Statements
+        //Debugging Statement
         PRINT ~**************************************
 DEBUG: READY, PLAYER %i%, Circle %j%:
 **************************************~
@@ -224,6 +224,11 @@ END
 
 
         //now states for each spell by player and circle and spell ID.
+
+        //Debugging Statement
+        PRINT ~***************************************************
+DEBUG: PLAYER %i%, Circle %j% Spell States Starting
+***************************************************~
 
         APPEND_OUTER -
             ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
