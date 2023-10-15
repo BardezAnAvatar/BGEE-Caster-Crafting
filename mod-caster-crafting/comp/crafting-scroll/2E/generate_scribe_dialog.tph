@@ -184,7 +184,7 @@ DEBUG: PLAYER %i%, Circle %j%:
                                     ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
                                     ~~~~~
             IF ~!HaveKnownSpellRES("%keys_1%")
-!HaveKnownSpellRES("%keys_1%", %PlayerN%)~
+HaveKnownSpellRES("%keys_1%", %PlayerN%)~
             THEN 
                 REPLY ~%keys_6%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
