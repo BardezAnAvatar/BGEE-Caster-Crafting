@@ -1,6 +1,6 @@
-/***********
-* Scribing kit stuff *
-***********/
+/************************
+*   Scribing kit stuff  *
+************************/
 
 //Make a cutscene file for copying the spell into spell book
 COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/BAF/bzctbkcp.baf~
