@@ -5,9 +5,14 @@
 *   ### 
 *******************************/
 
+//Declare a blank file
+<<<<<<<< SpellbookCopy/PlayerTransitions.D
+>>>>>>>>  //empty in-memory file
+
+
 //Copy spells response/transitions
 APPEND_OUTER -
-    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+    ~SpellbookCopy/PlayerTransitions.D~
     ~~~~~
   
   
@@ -24,7 +29,7 @@ OUTER_FOR (i = 1; i < 7; ++i)
 
         //Circles 1-6: Mages and Bards share it
         APPEND_OUTER -
-            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+            ~SpellbookCopy/PlayerTransitions.D~
             ~~~~~
 
             //%PlayerN%
@@ -39,7 +44,7 @@ OUTER_FOR (i = 1; i < 7; ++i)
 
 //end copy state links
 APPEND_OUTER -
-    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+    ~SpellbookCopy/PlayerTransitions.D~
     ~~~~~
 END
     ~~~~~
@@ -55,6 +60,10 @@ OUTER_FOR (i = 1; i < 7; ++i)
 DEBUG: READY, PLAYER %i%!:
 ********************************~
 
+<<<<<<<< SpellbookCopy/Player%i%States.D
+>>>>>>>>  //empty in-memory file
+    
+
         OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
         OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
         OUTER_TEXT_SPRINT ~var_PlayerN~ ~player%i%~
@@ -62,7 +71,7 @@ DEBUG: READY, PLAYER %i%!:
 
         //Circles 1-6: Mages and Bards share it
         APPEND_OUTER -
-            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+            ~SpellbookCopy/Player%i%States.D~
             ~~~~~
 APPEND ~BZMSCSC~
 
@@ -161,7 +170,7 @@ DEBUG: PLAYER %i%, Circle %j%:
 
                 //Create the state for _PlayerN_CircleX
                 APPEND_OUTER -
-                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+                    ~SpellbookCopy/Player%i%States.D~
                     ~~~~~
     //%PlayerN%_Circle%player_n_spell_level%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%
@@ -181,7 +190,7 @@ DEBUG: PLAYER %i%, Circle %j%:
                             THEN
                             BEGIN
                                 APPEND_OUTER -
-                                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+                                    ~SpellbookCopy/Player%i%States.D~
                                     ~~~~~
             IF ~!HaveKnownSpellRES("%keys_1%")
 TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
@@ -194,7 +203,7 @@ TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
                 
                 //End the state _PlayerN_CircleX
                 APPEND_OUTER -
-                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+                    ~SpellbookCopy/Player%i%States.D~
                     ~~~~~
 
             //closing options
@@ -219,7 +228,7 @@ TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
             END
 
         APPEND_OUTER -
-            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+            ~SpellbookCopy/Player%i%States.D~
             ~~~~~
 END
             ~~~~~
@@ -234,7 +243,7 @@ DEBUG: `PLAYER %i%, Circle X` Specific Spell States Starting
 ************************************************************~
 
         APPEND_OUTER -
-            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+            ~SpellbookCopy/Player%i%States.D~
             ~~~~~
 
 
@@ -267,7 +276,7 @@ APPEND ~BZMSCSC~
 
 
                 APPEND_OUTER -
-                    ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+                    ~SpellbookCopy/Player%i%States.D~
                     ~~~~~
     // _%PlayerN%_circle%keys_3%_%keys_1%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%_%keys_1%
@@ -314,7 +323,7 @@ StartCutScene("bzctbksp")
 
         //Finish out the player-circle-spell states' APPEND command
         APPEND_OUTER -
-            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+            ~SpellbookCopy/Player%i%States.D~
             ~~~~~
 
 END
@@ -323,9 +332,17 @@ END
     END
 
         //Emit the final result
-        COPY +  //no need to back up a .D file
+        COPY + //no need to back up a .D file
             ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
             ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+                //Patches
+                APPEND_FILE TEXT ~SpellbookCopy/PlayerTransitions.D~
+                APPEND_FILE TEXT ~SpellbookCopy/Player1States.D~
+                APPEND_FILE TEXT ~SpellbookCopy/Player2States.D~
+                APPEND_FILE TEXT ~SpellbookCopy/Player3States.D~
+                APPEND_FILE TEXT ~SpellbookCopy/Player4States.D~
+                APPEND_FILE TEXT ~SpellbookCopy/Player5States.D~
+                APPEND_FILE TEXT ~SpellbookCopy/Player6States.D~
 
 
 
