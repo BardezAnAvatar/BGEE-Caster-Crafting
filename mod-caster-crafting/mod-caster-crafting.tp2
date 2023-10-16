@@ -16,7 +16,6 @@ ASK_EVERY_COMPONENT
 AUTO_EVAL_STRINGS
 AUTO_TRA ~%MOD_FOLDER%/tra/%s~ //match strings to matching *.d/*.tra files -- https://weidu.org/~thebigg/README-WeiDU.html#hevea_default184
 
-
 /****************
 *   languages   *
 ****************/
@@ -33,10 +32,19 @@ LANGUAGE
 /*********************
 *   Mod Components   *
 *********************/
-BEGIN @0 DESIGNATED 10
+BEGIN @1
+    INSTALL_BY_DEFAULT
+    FORBID_COMPONENT ~mod-caster-crafting.tp2~ 10 ~Cannot reinstall 10~ //forbid self so it doesn't re-install during uninstalls
+    DESIGNATED 10  //Pre-processing of registered data. This should always install.
+
+//Pre-processing of registered data
+INCLUDE ~%MOD_FOLDER%/registration/generate_list_data.tph~
 
 //Debugging Statements
 PRINT ~DEBUG: var `MOD_FOLDER`: %MOD_FOLDER%~
+
+
+BEGIN @2 DESIGNATED 20  //Scribe tools
 
 //Do research stuff
 INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/debug.tph~
