@@ -293,7 +293,7 @@ AdvanceTime(%copy_time_engine%)
 CreateVisualEffectObject("SPCONTIN", Myself)
 ClearAllActions()
 StartCutSceneMode()
-StartCutScene("bzctbksp")
+StartCutScene("bzctbkcp")
 ~
                 EXIT
 
