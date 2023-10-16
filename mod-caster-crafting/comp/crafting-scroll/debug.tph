@@ -13,22 +13,22 @@ INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/fn_lookup_costs_copy_spell.tph~
 INCLUDE ~%MOD_FOLDER%/comp/tables/bg1ee/costs-scroll.tph~
 INCLUDE ~%MOD_FOLDER%/comp/tables/bg1ee/costs-copy-spell.tph~
 
-INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
-INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/core/arcane.tph~
+INCLUDE ~%MOD_FOLDER%/registration/spell-lists/bg1ee/core/arcane.tph~
+INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/bg1ee/core/arcane.tph~
 
 ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
     BEGIN
         PRINT ~DEBUG: Include IWD-ification Spells~
-        INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/iwdification/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/iwdification/arcane.tph~
+        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/bg1ee/iwdification/arcane.tph~
+        INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/bg1ee/iwdification/arcane.tph~
     END
 
 //1000 = powerful spells; 1001 = no powerful spells
 ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpells.tp2~ ~1001~)
     BEGIN
         PRINT ~DEBUG: Include Olvyn Spells~
-        INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/olvyn-spells/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/olvyn-spells/arcane.tph~
+        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/bg1ee/olvyn-spells/arcane.tph~
+        INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/bg1ee/olvyn-spells/arcane.tph~
     END
     //NOTE: yes, the redefinition acts as a sort of merge, as printed in debug statements
 
