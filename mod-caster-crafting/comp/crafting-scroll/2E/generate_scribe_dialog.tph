@@ -14,8 +14,8 @@
 APPEND_OUTER -
     ~SpellbookCopy/PlayerTransitions.D~
     ~~~~~
-  
-  
+
+
 EXTEND_TOP ~BZMSCSC~ bz_caster_craft_scribe_copy_menu
     ~~~~~
 
@@ -62,7 +62,7 @@ DEBUG: READY, PLAYER %i%!:
 
 <<<<<<<< SpellbookCopy/Player%i%States.D
 >>>>>>>>  //empty in-memory file
-    
+
 
         OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
         OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
@@ -149,7 +149,7 @@ Class(%PlayerN%, MAGE_ALL)~
                 EXIT
 
     END
-            
+
             ~~~~~
 
 
@@ -200,7 +200,7 @@ TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
                                     ~~~~~
                             END
                     END
-                
+
                 //End the state _PlayerN_CircleX
                 APPEND_OUTER -
                     ~SpellbookCopy/Player%i%States.D~
