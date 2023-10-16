@@ -281,6 +281,9 @@ AddSpecialAbility("%keys_1%")
 TakePartyGold(%copy_gold_cost%)
 DestroyGold(%copy_gold_cost%)
 AdvanceTime(%copy_time_engine%)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("bzctbksp")
 ~
                 EXIT
 

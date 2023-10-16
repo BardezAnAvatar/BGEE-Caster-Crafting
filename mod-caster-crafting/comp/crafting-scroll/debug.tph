@@ -65,6 +65,8 @@ INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 */
 INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/generate_spell_list_data.tph~
 
+//Make a cutscene file for copying the spell into spell book
+COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/BAF/bzctbkcp.baf~
 
 //NOTE: tested the compilation of the dialog in its initial state. Attempt to mutate it next...
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/generate_scribe_dialog.tph~
