@@ -10,3 +10,34 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/generate_scribe_dialog.tph~
 
 //compile the new dialog (with huge mutated edits)
 COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+
+/****************************
+*   Make the scribing kit   *
+****************************/
+//Copy BAMs and shit for item
+COPY ~./%MOD_FOLDER%/poc/BZMIKARD.BAM~ ~override~    //arcane kit description BAM
+COPY ~./%MOD_FOLDER%/poc/BZMIKARI.BAM~ ~override~    //arcane kit inventory BAM
+
+//Make an item for the player to interact with
+COPY_EXISTING ~MISC48.ITM~ ~override/bzmsckar.itm~   //arcane kit
+    //Patches
+        SAY NAME1 @20000 //Scrollmaker's Work Kit
+        SAY NAME2 @20000 //Scrollmaker's Work Kit
+        SAY UNIDENTIFIED_DESC @20002
+        SAY IDENTIFIED_DESC @20001
+        WRITE_ASCII_TERMINATE 0x3A "BZMIKARI"           // Icon
+        WRITE_LONG 0x34 2000                            // Price
+        WRITE_LONG 0x42 10                              // Lore to Identify
+        WRITE_LONG 0x4C 10                              // Weight
+        WRITE_ASCII_TERMINATE 0x58 "BZMIKARD"           // Description Image
+        READ_LONG 0x18 ~bzmsckar_flags~
+        WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
+
+
+//TODO: Register the item in ITEMDIAL.2DA along with the strref to talk to it.
+OUTER_SET bz_scrollkit_arcane_interact_strref = RESOLVE_STR_REF(@20003)
+
+COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
+    //PATCHES
+        COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
+        INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCKAR %bz_scrollkit_arcane_interact_strref% BZMSCSC~
