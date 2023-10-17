@@ -1,29 +1,4 @@
-BEGIN ~BZMSCSC~
-    
-    //If you are in combat or see enemies, no usability
-    IF
-        ~OR(2)
-    ActuallyInCombat()
-    Detect([ENEMY])~
-    THEN BEGIN bz_caster_craft_scribe_enemies
-        SAY @15001  //You cannot use your scribe kit while enemies are about.
-            IF ~~ THEN EXIT
-    END
-
-    IF
-        ~!ActuallyInCombat()
-!Detect([ENEMY])~
-    THEN BEGIN bz_caster_craft_scribe_main_menu
-        SAY @15000  //Your scribing kit is open before you. How do you wish to use it?
-            //Copy Spell: non-sorcerer mages
-            IF ~!Class(MYSELF, SORCERER)
-Class(MYSELF, MAGE_ALL)~
-                THEN REPLY @15011 //Copy a spell into your spellbook from one of your companions.
-                    GOTO bz_caster_craft_scribe_copy_menu
-            //Copy Spell: bards
-            IF ~Class(MYSELF, BARD)~
-                THEN REPLY @15011 //Copy a spell into your spellbook from one of your companions.
-                    GOTO bz_caster_craft_scribe_copy_menu
+EXTEND_TOP ~BZMSCSC~ bz_caster_craft_scribe_main_menu    //Your scribing kit is open before you. How do you wish to use it?
 
             //Scribe scroll: Cleric/Druid
             IF ~OR(2)
@@ -71,69 +46,6 @@ LevelGT(MYSELF, 14)~
                 THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
 
-            //Quit
-            IF ~~ 
-                THEN REPLY @15030 //Pack up
-                    EXIT
-    END
-
-    IF ~~
-    THEN BEGIN bz_caster_craft_scribe_scroll_menu
-        SAY @15040
-            /*
-            IF ~~
-            THEN REPLY @10010 //~1st circle~
-                GOTO bz_caster_craft_arcane_circle_1
-            IF ~~
-            THEN REPLY @10011 //~2nd circle~
-                GOTO bz_caster_craft_arcane_circle_2
-            IF ~~
-            THEN REPLY @10012 //~3rd circle~
-                GOTO bz_caster_craft_arcane_circle_3
-            IF ~~
-            THEN REPLY @10013 //~4th circle~
-                GOTO bz_caster_craft_arcane_circle_4
-            IF ~~
-            THEN REPLY @10014 //~5th circle~
-                GOTO bz_caster_craft_arcane_circle_5
-            IF ~~
-            THEN REPLY @10015 //~6th circle~
-                GOTO bz_caster_craft_arcane_circle_6
-            IF ~~
-            THEN REPLY @10016 //~7th circle~
-                GOTO bz_caster_craft_arcane_circle_7
-            IF ~~
-            THEN REPLY @10017 //~8th circle~
-                GOTO bz_caster_craft_arcane_circle_8
-            IF ~~
-            THEN REPLY @10018 //~9th circle~
-                GOTO bz_caster_craft_arcane_circle_9
-            IF ~~
-            THEN REPLY @10019 //~10th circle~
-                GOTO bz_caster_craft_arcane_circle_A
-            */
-            IF ~~
-            THEN REPLY @15031 //Go back to your scribe tools.
-                GOTO bz_caster_craft_scribe_main_menu
-
-            IF ~~
-            THEN REPLY @15030 //Pack up your scribe tools.
-                EXIT
-    END
-
-    IF ~~
-    THEN BEGIN bz_caster_craft_scribe_copy_menu
-        SAY @15070 //Whose spellbook do you copy spells from?
-
-            //TODO: I need to append to this state elsewhere, to programmatically
-            //  use the same string as a basis for merging the text together.
-
-            IF ~~
-            THEN REPLY @15031 //Go back to your scribe tools.
-                GOTO bz_caster_craft_scribe_main_menu
-
-            IF ~~
-            THEN REPLY @15030 //Pack up your scribe tools.
-                EXIT
-
 END
+
+
