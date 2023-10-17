@@ -2,21 +2,31 @@
 *   Scribing kit stuff  *
 ************************/
 
-//Make a cutscene file for copying the spell into spell book
-COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/BAF/bzctbkcp.baf~
+/******************************************************************************
+*   NOTE: This file will expect prior components to have altered 
+*   BZMSCSC.D and yielded internal WeiDU strings:
+*       - SpellbookCopy/BZMSCSC.D
+*       - ScrollCreation/BZMSCSC.D
+******************************************************************************/
 
-//NOTE: tested the compilation of the dialog in its initial state. Attempt to mutate it next...
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/generate_scribe_dialog.tph~
+//Emit the final result prior to compilation
+COPY + //no need to back up a .D file
+    ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCSC.d~
+    ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCSC.d~
+        //Patches
+        APPEND_FILE TEXT ~SpellbookCopy/BZMSCSC.D~
+        APPEND_FILE TEXT ~ScrollCreation/BZMSCSC.D~
 
 //compile the new dialog (with huge mutated edits)
-COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
+COMPILE ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCSC.d~
+
 
 /****************************
 *   Make the scribing kit   *
 ****************************/
 //Copy BAMs and shit for item
-COPY ~./%MOD_FOLDER%/poc/BZMIKARD.BAM~ ~override~    //arcane kit description BAM
-COPY ~./%MOD_FOLDER%/poc/BZMIKARI.BAM~ ~override~    //arcane kit inventory BAM
+COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMIKARD.BAM~ ~override~    //arcane kit description BAM
+COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMIKARI.BAM~ ~override~    //arcane kit inventory BAM
 
 //Make an item for the player to interact with
 COPY_EXISTING ~MISC48.ITM~ ~override/bzmsckar.itm~   //arcane kit

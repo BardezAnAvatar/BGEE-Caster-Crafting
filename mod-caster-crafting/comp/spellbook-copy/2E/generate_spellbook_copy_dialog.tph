@@ -1,4 +1,3 @@
-
 /*******************************
 *   ###
 *   Begin Copy Spells Stuff
@@ -330,20 +329,21 @@ END
 
     END
 
-        //Emit the final result
-        COPY + //no need to back up a .D file
-            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
-            ~./%MOD_FOLDER%/comp/crafting-scroll/2E/BZMSCSC.d~
-                //Patches
-                APPEND_FILE TEXT ~SpellbookCopy/PlayerTransitions.D~
-                APPEND_FILE TEXT ~SpellbookCopy/Player1States.D~
-                APPEND_FILE TEXT ~SpellbookCopy/Player2States.D~
-                APPEND_FILE TEXT ~SpellbookCopy/Player3States.D~
-                APPEND_FILE TEXT ~SpellbookCopy/Player4States.D~
-                APPEND_FILE TEXT ~SpellbookCopy/Player5States.D~
-                APPEND_FILE TEXT ~SpellbookCopy/Player6States.D~
-
-
+/****************************
+*   Emit the final result   *
+****************************/
+//Merge all the SpellbookCopy/*.D files together
+COPY -
+    ~SpellbookCopy/BZMSCSC.D~
+    ~SpellbookCopy/BZMSCSC.D~
+        //Patches
+        APPEND_FILE TEXT ~SpellbookCopy/PlayerTransitions.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player1States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player2States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player3States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player4States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player5States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player6States.D~
 
 
 /*******************************
