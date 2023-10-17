@@ -33,9 +33,9 @@ LANGUAGE
 *   Mod Components   *
 *********************/
 BEGIN @1
-    INSTALL_BY_DEFAULT
-    FORBID_COMPONENT ~mod-caster-crafting.tp2~ 10 ~Cannot reinstall 10~ //forbid self so it doesn't re-install during uninstalls
-    DESIGNATED 10  //Pre-processing of registered data. This should always install.
+    INSTALL_BY_DEFAULT  //Pre-processing of registered data. This should always install.
+    //FORBID_COMPONENT ~mod-caster-crafting.tp2~ 10 ~Cannot reinstall 10~ //forbid self so it doesn't re-install during uninstalls
+    DESIGNATED 10
 
 //Pre-processing of registered data
 INCLUDE ~%MOD_FOLDER%/registration/generate_list_data.tph~
