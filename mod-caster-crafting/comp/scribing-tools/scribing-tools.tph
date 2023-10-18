@@ -29,10 +29,10 @@ COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTD.BAM~ ~override~    //arcane
 COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTI.BAM~ ~override~    //arcane kit inventory BAM
 
 //Make an item for the player to interact with
-COPY_EXISTING ~MISC48.ITM~ ~override/BZMSCST.ITM~   //arcane kit
+COPY_EXISTING ~MISC48.ITM~ ~override/BZMSCST.ITM~   //scribe kit
     //Patches
-        SAY NAME1 @20000 //Scrollmaker's Work Kit
-        SAY NAME2 @20000 //Scrollmaker's Work Kit
+        SAY NAME1 @20000 //Scribe's Tool Kit
+        SAY NAME2 @20000 //Scribe's Tool Kit
         SAY UNIDENTIFIED_DESC @20002
         SAY IDENTIFIED_DESC @20001
         WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
