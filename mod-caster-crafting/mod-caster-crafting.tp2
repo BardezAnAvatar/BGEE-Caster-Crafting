@@ -8,7 +8,7 @@ AUTHOR ~Bardez; support at: https://github.com/BardezAnAvatar/BGEE-Caster-Crafti
 VERSION ~v0.0.1~
 
 //Display the readme?
-//README 
+README ~readme-caster-crafting.md~
 
 //TP2 flags
 MODDER // Enable all error messages; nothing suppressed. comment this out for release version
