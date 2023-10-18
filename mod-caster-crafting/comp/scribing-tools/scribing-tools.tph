@@ -35,11 +35,11 @@ COPY_EXISTING ~MISC48.ITM~ ~override/BZMSCST.ITM~   //arcane kit
         SAY NAME2 @20000 //Scrollmaker's Work Kit
         SAY UNIDENTIFIED_DESC @20002
         SAY IDENTIFIED_DESC @20001
-        WRITE_ASCII_TERMINATE 0x3A "BZMISTI"           // Icon
+        WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
         WRITE_LONG 0x34 2000                            // Price
         WRITE_LONG 0x42 10                              // Lore to Identify
         WRITE_LONG 0x4C 10                              // Weight
-        WRITE_ASCII_TERMINATE 0x58 "BZMISTD"           // Description Image
+        WRITE_ASCII_TERMINATE 0x58 "BZMISTD"            // Description Image
         READ_LONG 0x18 ~bzmsckar_flags~
         WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
 
