@@ -51,3 +51,6 @@ COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
     //PATCHES
         COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
         INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCST %bz_scrollkit_arcane_interact_strref% BZMSCST~
+
+//Add the 
+INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/add-to-stores.tph~
