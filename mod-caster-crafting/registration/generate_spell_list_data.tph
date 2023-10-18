@@ -7,13 +7,15 @@
         [Spell Level]           // 3
         [Gold Cost]             // 4    --lookup from table
         [Time Cost]             // 5    hours -- calc from table
-        [Spell Display Name]    // 6    --get from spell
+        [Spell Display Name]    // 6    --get from spell/TLK
+        [Exclusion Flags]       // 7    --get from spell file
 */
 ACTION_PHP_EACH ~spell_list_arcane~
     AS ~keys~ => ~value~
     BEGIN
         COPY_EXISTING - ~%keys_0%.spl~ ~override~       //inline only, just to read from spell
             READ_LONG NAME1 ~strref_name~               //since this is a spell file, NAME1 should be all there is
+            READ_LONG 0x1E ~exclusion_flags~            //read all of the kit exclusion flags
         BUT_ONLY_IF_IT_CHANGES
         
         ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
@@ -38,7 +40,8 @@ ACTION_PHP_EACH ~spell_list_arcane~
                 ~%keys_2%~,                 //spell level
                 ~%actual_copy_cost_gold%~,  //cost to copy the spell
                 ~%copy_cost_time%~,         //time to scribe (in hours)
-                ~%spell_name%~              //spell name for display
+                ~%spell_name%~,             //spell name for display
+                ~%exclusion_flags%~         //LONG bit field for kit exclusion. SEE: Kitlist.2da, but I'mma hard code this.
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, spell code, etc.
             END
     END
