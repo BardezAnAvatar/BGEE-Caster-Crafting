@@ -4,6 +4,6 @@
 
 //scribing tools
 @10 = "Caster Crafting: Scribing Tools"
-@11 = ~A) Copy Spells from Party Member Spellbooks~
-@12 = ~B) Scribe scrolls~
-@13 = ~A) + B)~
+@11 = ~Copy Spells from Party Member Spellbooks~
+@12 = ~Scribe scrolls~
+@13 = ~Copy Spells from Party Member Spellbooks AND Scribe scrolls~
