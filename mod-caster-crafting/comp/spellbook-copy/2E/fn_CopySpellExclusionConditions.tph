@@ -1,0 +1,121 @@
+DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
+    INT_VAR
+        ~ExclusionFlags~
+    STR_VAR
+        ~SpellResRef~ = ~~
+    RET
+        ~KitExclusionTriggers~
+    BEGIN
+        OUTER_TEXT_SPRINT ~KitExclusionTriggers~ ~~
+
+        ACTION_PHP_EACH ~spell_list_arcane~
+            AS ~spell_keys~ => ~_~
+                BEGIN
+                    //if the spell RESREF matches...
+                    ACTION_IF (~%spell_keys_1%~ STRING_EQUAL ~%SpellResRef%~)
+                    THEN
+                    BEGIN
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT6) = BIT6)     //Abjurer
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_ABJURER)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT7) = BIT7)     //Conjurer
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_CONJURER)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT8) = BIT8)     //Diviner
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_DIVINER)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT9) = BIT9)     //Enchanter
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_ENCHANTER)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT10) = BIT10)   //Illusionist
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_ILLUSIONIST)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT11) = BIT11)   //Invoker
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_INVOKER)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT12) = BIT12)   //Necromancer
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_NECROMANCER)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT13) = BIT13)   //Transmuter
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_TRANSMUTER)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT14) = BIT14)   //Generalist
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, MAGESCHOOL_GENERALIST)
+!Class(Myself, BARD_ALL)
+~
+                        END
+
+                        ACTION_IF ((~%spell_keys_7%~ BAND BIT31) = BIT31)   //Wild Mage
+                        THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT
+                                ~KitExclusionTriggers~
+                                ~KitExclusionTriggers~ ^
+~!Kit(Myself, WILDMAGE)
+~
+                        END
+                    END
+                END
+
+    END
