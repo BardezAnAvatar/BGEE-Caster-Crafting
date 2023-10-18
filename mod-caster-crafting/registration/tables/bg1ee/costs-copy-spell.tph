@@ -1,0 +1,23 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ~costs_copy_spell~
+    BEGIN
+
+        /*
+        [spell-level]           // 0
+        [Tradition]             // 1
+        [Gold Cost]             // 2    NOTE: this is the cost that a scroll would have. Ultimately should be... 25% of this value
+        [Time Cost]             // 3    in hours
+        */
+
+        ~1~, ~Arcane~, ~100~,   ~1~   => ~1-Arcane~
+        ~2~, ~Arcane~, ~200~,   ~2~   => ~2-Arcane~
+        ~3~, ~Arcane~, ~300~,   ~3~   => ~3-Arcane~
+        ~4~, ~Arcane~, ~500~,   ~4~   => ~4-Arcane~
+        ~5~, ~Arcane~, ~1000~,  ~8~   => ~5-Arcane~
+        ~6~, ~Arcane~, ~2000~,  ~12~  => ~6-Arcane~
+        ~7~, ~Arcane~, ~3000~,  ~24~  => ~7-Arcane~
+        ~8~, ~Arcane~, ~4000~,  ~48~  => ~8-Arcane~
+        ~9~, ~Arcane~, ~5000~,  ~72~  => ~9-Arcane~
+        ~A~, ~Arcane~, ~20000~, ~144~ => ~A-Arcane~
+
+    END

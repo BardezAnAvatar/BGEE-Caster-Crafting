@@ -1,36 +1,3 @@
-/***********
-* research *
-***********/
-
-//Include function defs.
-INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/_lookup-costs.tph~
-
-
-//TODO: Detect game and substitute the "bg1ee" with appropriate game path as appropriate
-
-// From the base game, get all spells from the class spell lists. Emit to a file the findings.
-INCLUDE ~%MOD_FOLDER%/comp/tables/bg1ee/costs-scroll.tph~
-
-INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/core/arcane.tph~
-INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/core/arcane.tph~
-    
-ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
-    BEGIN
-        PRINT ~DEBUG: Include IWD-ification Spells~
-        INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/iwdification/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/iwdification/arcane.tph~
-    END
-
-ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
-    BEGIN
-        PRINT ~DEBUG: Include Olvyn Spells~
-        INCLUDE ~%MOD_FOLDER%/comp/spell-lists/bg1ee/olvyn-spells/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/comp/scroll-lists/bg1ee/olvyn-spells/arcane.tph~
-    END
-    //NOTE: yes, the redefinition acts as a sort of merge, as printed in debug statements
-
-//TODO: Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
-//TODO: iterate through the Arcane list to generate the scroll-list data, then sort that data below instead
 //RESULT:
 /*
     An associative array named "scroll_list_data_arcane" what contains these keys:
@@ -42,9 +9,9 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
         [Caster Level]          // 5
         [Gold Cost]             // 6    --get from scroll
         [Additional Cost]       // 7
-        [Time Cost]             // 8    hours -- calc from table
-        [XP Cost]               // 9    --calc from table
-        [Failure %]             // 10   --calc from table
+        [Time Cost]             // 8    hours -- lookup from table
+        [XP Cost]               // 9    --lookup from table
+        [Failure %]             // 10   --lookup from table
         [Spell Display Name]    // 11   --get from spell
 */
 ACTION_PHP_EACH ~scroll_list_arcane~
@@ -52,14 +19,16 @@ ACTION_PHP_EACH ~scroll_list_arcane~
     BEGIN
         COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
             READ_LONG NAME1 ~strref_name~           //since this is a spell file, NAME1 should be all there is
+        BUT_ONLY_IF_IT_CHANGES
 
         ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
 
         COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
             READ_LONG 0x34 ~scroll_price~           //since this is a spell file, NAME1 should be all there is
+        BUT_ONLY_IF_IT_CHANGES
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs~ 
+        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
             STR_VAR
                 ~Level~ = ~%keys_3%~
                 ~Tradition~ = ~%keys_2%~
@@ -67,10 +36,9 @@ ACTION_PHP_EACH ~scroll_list_arcane~
                 ~scroll_cost_time~ = ~time~
                 ~scroll_cost_xp~ = ~xp~
                 ~scroll_cost_failure~ = ~failure~
-        END        
-        
+        END
 
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
             ~scroll_list_data_arcane~
             BEGIN
                 ~%keys_3%_%spell_name%~,    //sorting key of level and spell name
@@ -91,15 +59,3 @@ ACTION_PHP_EACH ~scroll_list_arcane~
 
 //Sort the indicies, presumably on first key
 ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
-
-//Verify that it sorts on the first associative index (0)
-/*
-ACTION_PHP_EACH ~spell_list_arcane~
-    AS ~spell_list_arcane_keys~ => ~value~
-    BEGIN
-
-        //Debugging Statements
-        PRINT ~DEBUG: Spell List array: Tradition: `%spell_list_arcane_keys_1%`; Level: `%spell_list_arcane_keys_2%`; Spell Code: `%spell_list_arcane_keys_0%`~
-
-    END
-*/

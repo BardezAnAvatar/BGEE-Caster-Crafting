@@ -1,1 +1,9 @@
+//Global stuff
 @0 = "Bardez's Caster Crafting Mod"
+@1 = "Caster Crafting: Pre-processing of registered data"
+
+//scribing tools
+@10 = "Caster Crafting: Scribing Tools"
+@11 = ~Copy Spells from Party Member Spellbooks~
+@12 = ~Scribe scrolls~
+@13 = ~Copy Spells from Party Member Spellbooks AND Scribe scrolls~

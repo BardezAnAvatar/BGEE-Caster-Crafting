@@ -1,0 +1,366 @@
+/*******************************
+*   ###
+*   Begin Copy Spells Stuff
+*   ### 
+*******************************/
+
+//Include function defs.
+INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/2E/fn_CopySpellExclusionConditions.tph~
+
+//Declare a blank file
+<<<<<<<< SpellbookCopy/PlayerTransitions.D
+>>>>>>>>  //empty in-memory file
+
+
+//Copy spells response/transitions
+APPEND_OUTER -
+    ~SpellbookCopy/PlayerTransitions.D~
+    ~~~~~
+
+
+EXTEND_TOP ~BZMSCSC~ bz_caster_craft_scribe_copy_menu
+    ~~~~~
+
+//loop through all players
+OUTER_FOR (i = 1; i < 7; ++i)
+    BEGIN
+        OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
+        OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
+        OUTER_TEXT_SPRINT ~var_PlayerN~ ~player%i%~
+        OUTER_SET ~i-minus-one~ = (%i% - 1)
+
+        //Circles 1-6: Mages and Bards share it
+        APPEND_OUTER -
+            ~SpellbookCopy/PlayerTransitions.D~
+            ~~~~~
+
+            //%PlayerN%
+            IF ~OR(2)
+    Class(%PlayerN%, MAGE_ALL)
+    Class(%PlayerN%, BARD_ALL)
+!InPartySlot(MYSELF, %i-minus-one%)~
+            THEN REPLY ~%tag_PlayerN%~
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%
+            ~~~~~
+    END
+
+//end copy state links
+APPEND_OUTER -
+    ~SpellbookCopy/PlayerTransitions.D~
+    ~~~~~
+END
+    ~~~~~
+
+
+
+//loop through all players
+OUTER_FOR (i = 1; i < 7; ++i)
+    BEGIN
+        //Debugging Statement
+        PRINT ~
+********************************
+DEBUG: READY, PLAYER %i%!:
+********************************~
+
+<<<<<<<< SpellbookCopy/Player%i%States.D
+>>>>>>>>  //empty in-memory file
+
+
+        OUTER_TEXT_SPRINT ~PlayerN~ ~PLAYER%i%~
+        OUTER_TEXT_SPRINT ~tag_PlayerN~ ~<%PlayerN%>~
+        OUTER_TEXT_SPRINT ~var_PlayerN~ ~player%i%~
+        OUTER_SPRINT ~PlayerN-Prompt~ @15071 //You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?
+
+        //Circles 1-6: Mages and Bards share it
+        APPEND_OUTER -
+            ~SpellbookCopy/Player%i%States.D~
+            ~~~~~
+APPEND ~BZMSCSC~
+
+    //%PlayerN%
+    IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%
+        SAY ~%PlayerN-Prompt%~    //You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?
+
+            /* Circles 1-6: Mages and Bards */
+            //Circle 1
+            IF ~~
+            THEN REPLY @15051 //1st arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle1
+
+            //Circle 2
+            IF ~~
+            THEN REPLY @15052 //2nd arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle2
+
+            //Circle 3
+            IF ~~
+            THEN REPLY @15053 //3rd arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle3
+
+            //Circle 4
+            IF ~~
+            THEN REPLY @15054 //4th arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle4
+
+            //Circle 5
+            IF ~~
+            THEN REPLY @15055 //5th arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle5
+
+            //Circle 6
+            IF ~~
+            THEN REPLY @15056 //6th arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle6
+
+            /* Circles 7-10: Mages only */
+
+            //Circle 7
+            IF ~Class(MYSELF, MAGE_ALL)
+Class(%PlayerN%, MAGE_ALL)~
+            THEN REPLY @15057 //7th arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle7
+
+            //Circle 8
+            IF ~Class(MYSELF, MAGE_ALL)
+Class(%PlayerN%, MAGE_ALL)~
+            THEN REPLY @15058 //8th arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle8
+
+            //Circle 9
+            IF ~Class(MYSELF, MAGE_ALL)
+Class(%PlayerN%, MAGE_ALL)~
+            THEN REPLY @15059 //9th arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle9
+
+            //Circle 10
+            IF ~Class(MYSELF, MAGE_ALL)
+Class(%PlayerN%, MAGE_ALL)~
+            THEN REPLY @15060 //10th arcane circle
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circleA
+
+            IF ~~
+            THEN REPLY @15072 //Look at someone else's spellbook.
+                GOTO bz_caster_craft_scribe_copy_menu
+
+            IF ~~
+            THEN REPLY @15031 //Go back to your scribe tools.
+                GOTO bz_caster_craft_scribe_main_menu
+
+            IF ~~
+            THEN REPLY @15030 //Pack up your scribe tools.
+                EXIT
+
+    END
+
+            ~~~~~
+
+
+        //Now I need to write all 10 circles to copy
+        OUTER_FOR (j = 1; j < 11; ++j)
+            BEGIN
+        //Debugging Statement
+        PRINT ~
+******************************
+DEBUG: PLAYER %i%, Circle %j%:
+******************************~
+
+                OUTER_TEXT_SPRINT ~player_n_spell_level~ ~%j%~
+                ACTION_IF %j% = 10 THEN 
+                BEGIN
+                    OUTER_TEXT_SPRINT ~player_n_spell_level~ ~A~
+                END
+
+                //Create the state for _PlayerN_CircleX
+                APPEND_OUTER -
+                    ~SpellbookCopy/Player%i%States.D~
+                    ~~~~~
+    //%PlayerN%_Circle%player_n_spell_level%
+    IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%
+        SAY @15041    //Which spell do you examine?
+                    ~~~~~
+
+                //Do a loop and emit a list of transitions for each matching spell in the circle.
+                //  The transition will need to record the player since going up a level would go back
+                //  To the  _PlayerN_CircleX state
+                ACTION_PHP_EACH ~spell_list_data_arcane~
+                    AS ~keys~ => ~value~
+                    BEGIN
+
+                        OUTER_SET bz_craft_time = %keys_5% * 300
+                        
+                        //Get the appropriate script exclusion checks for kit based on the spell's exclusion flags
+                        LAUNCH_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
+                            INT_VAR
+                                ~ExclusionFlags~ = ~%keys_7%~
+                            RET
+                                ~CopySpellKitExclusionTriggers~ = ~KitExclusionTriggers~
+                        END
+
+                        ACTION_IF ~%keys_3%~ STRING_EQUAL ~%player_n_spell_level%~  //Spell level matches
+                            THEN
+                            BEGIN
+                                APPEND_OUTER -
+                                    ~SpellbookCopy/Player%i%States.D~
+                                    ~~~~~
+            IF ~!HaveKnownSpellRES("%keys_1%")
+%CopySpellKitExclusionTriggers%
+TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
+            THEN 
+                REPLY ~%keys_6%~
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
+                                    ~~~~~
+                            END
+                    END
+
+                //End the state _PlayerN_CircleX
+                APPEND_OUTER -
+                    ~SpellbookCopy/Player%i%States.D~
+                    ~~~~~
+
+            //closing options
+            IF ~~
+            THEN REPLY @15032 //Pick another spell circle.
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%
+
+            IF ~~
+            THEN REPLY @15072 //Look at someone else's spellbook.
+                GOTO bz_caster_craft_scribe_copy_menu
+
+            IF ~~
+            THEN REPLY @15031 //Go back to your scribe tools.
+                GOTO bz_caster_craft_scribe_main_menu
+
+            IF ~~
+            THEN REPLY @15030 //Pack up your scribe tools.
+                EXIT
+    END
+                    ~~~~~        
+
+            END
+
+        APPEND_OUTER -
+            ~SpellbookCopy/Player%i%States.D~
+            ~~~~~
+END
+            ~~~~~
+
+
+        //now states for each spell by player and circle and spell ID.
+
+        //Debugging Statement
+        PRINT ~
+************************************************************
+DEBUG: `PLAYER %i%, Circle X` Specific Spell States Starting
+************************************************************~
+
+        APPEND_OUTER -
+            ~SpellbookCopy/Player%i%States.D~
+            ~~~~~
+
+
+APPEND ~BZMSCSC~
+            ~~~~~
+
+        ACTION_PHP_EACH ~spell_list_data_arcane~
+            AS ~keys~ => ~value~
+            BEGIN
+                OUTER_SET ~spell-copy-cost-floor~ = (%keys_4% - 1)
+                OUTER_SET ~copy_gold_cost~ = %keys_4%
+                OUTER_SET ~copy_time_engine~ = %keys_5% * 300
+
+                //calculate a friendly time for display on dialog (hours vs. days)
+                OUTER_SPRINT ~readable_time~ ~~
+                ACTION_IF %keys_5% < 24 THEN
+                BEGIN
+                    OUTER_SET ~hours~ = %keys_5%
+                    OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
+                END
+                ELSE    //days
+                BEGIN
+                    OUTER_SET ~days~ = %keys_5% / 24
+                    OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
+                END
+
+
+                OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.
+                OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %readable_time%] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.
+
+
+                APPEND_OUTER -
+                    ~SpellbookCopy/Player%i%States.D~
+                    ~~~~~
+    // _%PlayerN%_circle%keys_3%_%keys_1%
+    IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%_%keys_1%
+        SAY ~%player-circle-spell-prompt%~    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
+            
+            IF ~PartyGoldGT(%spell-copy-cost-floor%)~
+            THEN
+                REPLY ~%player-circle-spell-action%~ //[%copy_gold_cost% gold; %copy_time_days% days] Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
+                DO ~
+AddSpecialAbility("%keys_1%")
+TakePartyGold(%copy_gold_cost%)
+DestroyGold(%copy_gold_cost%)
+AdvanceTime(%copy_time_engine%)
+CreateVisualEffectObject("SPCONTIN", Myself)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("bzctbkcp")~
+                EXIT
+
+            //closing options
+            IF ~~
+            THEN REPLY @15033 //Pick another spell.
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%
+
+            IF ~~
+            THEN REPLY @15032 //Pick another spell circle.
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%
+
+            IF ~~
+            THEN REPLY @15072 //Look at someone else's spellbook.
+                GOTO bz_caster_craft_scribe_copy_menu
+
+            IF ~~
+            THEN REPLY @15031 //Go back to your scribe tools.
+                GOTO bz_caster_craft_scribe_main_menu
+
+            IF ~~
+            THEN REPLY @15030 //Pack up your scribe tools.
+                EXIT
+    END
+                    ~~~~~
+            END
+
+        //Finish out the player-circle-spell states' APPEND command
+        APPEND_OUTER -
+            ~SpellbookCopy/Player%i%States.D~
+            ~~~~~
+
+END
+            ~~~~~
+
+    END
+
+/****************************
+*   Emit the final result   *
+****************************/
+//Merge all the SpellbookCopy/*.D files together
+COPY -
+    ~SpellbookCopy/BZMSCSC.D~
+    ~SpellbookCopy/BZMSCSC.D~
+        //Patches
+        APPEND_FILE TEXT ~SpellbookCopy/PlayerTransitions.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player1States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player2States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player3States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player4States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player5States.D~
+        APPEND_FILE TEXT ~SpellbookCopy/Player6States.D~
+
+
+/*******************************
+*   ###
+*   End Copy Spells Stuff
+*   ### 
+*******************************/
+

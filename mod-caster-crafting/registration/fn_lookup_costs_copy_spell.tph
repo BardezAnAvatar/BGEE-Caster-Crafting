@@ -1,0 +1,23 @@
+DEFINE_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~
+    STR_VAR
+        ~Level~ = ~~
+    RET
+        ~time~
+        ~gold~
+    BEGIN
+        OUTER_TEXT_SPRINT ~time~ ~~
+        OUTER_TEXT_SPRINT ~gold~ ~~
+
+        ACTION_PHP_EACH ~costs_copy_spell~
+            AS ~costs~ => ~_~
+                BEGIN
+                    //if the spell level matches...
+                    ACTION_IF (~%costs_0%~ STRING_EQUAL ~%Level%~)
+                    THEN
+                    BEGIN
+                        OUTER_TEXT_SPRINT ~time~ ~%costs_3%~
+                        OUTER_TEXT_SPRINT ~gold~ ~%costs_2%~
+                    END
+                END
+
+    END

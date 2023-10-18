@@ -1,0 +1,53 @@
+/* Reserving range 15000-19999 */
+
+//Initial dialog states
+@15000 = ~Your scribing kit is open before you. How do you wish to use it?~
+@15001 = ~You cannot use your scribe kit while enemies are about.~
+
+//Main Menu
+@15010 = ~Scribe a scroll.~
+@15011 = ~Copy a spell into your spellbook from one of your companions.~
+
+//Common Actions
+@15030 = ~Pack up your scribe tools.~
+@15031 = ~Go back to your scribe tools.~
+@15032 = ~Pick another spell circle.~
+@15033 = ~Pick another spell.~
+@15034 = ~\[%copy_gold_cost% gold; %readable_time%\] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.~
+@15035 = ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_list_data_arcane_11%.~
+@15037 = ~%days% days~
+@15038 = ~%hours% hours~
+
+//Common Prompts
+@15040 = ~Which spell circle do you explore?~
+@15041 = ~Which spell do you examine?~
+
+//Spell circles
+@15050 = ~Protection~
+@15051 = ~1st arcane circle~
+@15052 = ~2nd arcane circle~
+@15053 = ~3rd arcane circle~
+@15054 = ~4th arcane circle~
+@15055 = ~5th arcane circle~
+@15056 = ~6th arcane circle~
+@15057 = ~7th arcane circle~
+@15058 = ~8th arcane circle~
+@15059 = ~9th arcane circle~
+@15060 = ~10th arcane circle~
+@15061 = ~1st divine circle~
+@15062 = ~2nd divine circle~
+@15063 = ~3rd divine circle~
+@15064 = ~4th divine circle~
+@15065 = ~5th divine circle~
+@15066 = ~6th divine circle~
+@15067 = ~7th divine circle~
+
+//Companion spells
+@15070 = ~Whose spellbook do you copy spells from?~
+@15071 = ~You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?~
+@15072 = ~Look at someone else's spellbook.~
+@15073 = ~You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.~
+
+//Protection scrolls
+@15080 = ~Which scroll of Protection do you wish to scribe?~
+@15081 = ~Pick another Protection scroll.~

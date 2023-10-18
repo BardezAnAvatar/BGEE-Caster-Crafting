@@ -3,9 +3,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     BEGIN
 
         /*
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
+        [Spell]                 // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
         */
 
         ~SPWI101~, ~Arcane~, ~1~ => ~SPWI101~    //Grease
@@ -212,10 +212,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI919~, ~Arcane~, ~9~ => ~SPWI919~    //Wish
 
         ~SPWI920~, ~Arcane~, ~A~ => ~SPWI920~    //Energy Blades
-        ~SPWI921~, ~Arcane~, ~A~ => ~SPWI921~    //Improved Alacrity
         ~SPWI922~, ~Arcane~, ~A~ => ~SPWI922~    //Dragon's Breath
-        ~SPWI923~, ~Arcane~, ~A~ => ~SPWI923~    //Summon Planetar
-        ~SPWI924~, ~Arcane~, ~A~ => ~SPWI924~    //Summon Dark Planetar
         ~SPWI925~, ~Arcane~, ~A~ => ~SPWI925~    //Comet
+
+        //Missing
+        //~SPWI921~, ~Arcane~, ~A~ => ~SPWI921~    //Improved Alacrity
+        //~SPWI923~, ~Arcane~, ~A~ => ~SPWI923~    //Summon Planetar
+        //~SPWI924~, ~Arcane~, ~A~ => ~SPWI924~    //Summon Dark Planetar
 
     END

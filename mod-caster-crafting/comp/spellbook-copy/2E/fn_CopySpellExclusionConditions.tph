@@ -1,0 +1,115 @@
+/*
+*   This function will return a string containing negated Kit checks
+*       for use in script blocks based on the input `ExclusionFlags`
+*/
+
+DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
+    INT_VAR
+        ~ExclusionFlags~ = ~0~
+    RET
+        ~KitExclusionTriggers~
+    BEGIN
+        OUTER_TEXT_SPRINT ~KitExclusionTriggers~ ~~
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT6) = BIT6)     //Abjurer
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_ABJURER)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT7) = BIT7)     //Conjurer
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_CONJURER)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT8) = BIT8)     //Diviner
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_DIVINER)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT9) = BIT9)     //Enchanter
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_ENCHANTER)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT10) = BIT10)   //Illusionist
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_ILLUSIONIST)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT11) = BIT11)   //Invoker
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_INVOKER)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT12) = BIT12)   //Necromancer
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_NECROMANCER)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT13) = BIT13)   //Transmuter
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_TRANSMUTER)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT14) = BIT14)   //Generalist
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_GENERALIST)
+!Class(Myself, BARD_ALL)
+~
+        END
+
+        ACTION_IF ((~%ExclusionFlags%~ BAND BIT31) = BIT31)   //Wild Mage
+        THEN
+        BEGIN
+            OUTER_TEXT_SPRINT
+                ~KitExclusionTriggers~
+~%KitExclusionTriggers%
+!Kit(Myself, WILDMAGE)
+~
+        END
+
+    END
