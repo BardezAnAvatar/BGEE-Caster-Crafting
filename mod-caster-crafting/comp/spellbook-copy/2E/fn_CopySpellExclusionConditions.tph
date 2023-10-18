@@ -5,7 +5,7 @@
 
 DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
     INT_VAR
-        ~ExclusionFlags~
+        ~ExclusionFlags~ = ~0~
     RET
         ~KitExclusionTriggers~
     BEGIN
@@ -16,8 +16,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_ABJURER)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_ABJURER)
 ~
         END
 
@@ -26,8 +26,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_CONJURER)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_CONJURER)
 ~
         END
 
@@ -36,8 +36,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_DIVINER)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_DIVINER)
 ~
         END
 
@@ -46,8 +46,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_ENCHANTER)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_ENCHANTER)
 ~
         END
 
@@ -56,8 +56,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_ILLUSIONIST)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_ILLUSIONIST)
 ~
         END
 
@@ -66,8 +66,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_INVOKER)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_INVOKER)
 ~
         END
 
@@ -76,8 +76,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_NECROMANCER)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_NECROMANCER)
 ~
         END
 
@@ -86,8 +86,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_TRANSMUTER)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_TRANSMUTER)
 ~
         END
 
@@ -96,8 +96,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, MAGESCHOOL_GENERALIST)
+~%KitExclusionTriggers%
+!Kit(Myself, MAGESCHOOL_GENERALIST)
 !Class(Myself, BARD_ALL)
 ~
         END
@@ -107,8 +107,8 @@ DEFINE_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
         BEGIN
             OUTER_TEXT_SPRINT
                 ~KitExclusionTriggers~
-                ~KitExclusionTriggers~ ^
-~!Kit(Myself, WILDMAGE)
+~%KitExclusionTriggers%
+!Kit(Myself, WILDMAGE)
 ~
         END
 
