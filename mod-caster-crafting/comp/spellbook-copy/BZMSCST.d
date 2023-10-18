@@ -1,4 +1,4 @@
-APPEND ~BZMSCSC~
+APPEND ~BZMSCST~
     IF ~~
     THEN BEGIN bz_caster_craft_scribe_copy_menu
         SAY @15070 //Whose spellbook do you copy spells from?

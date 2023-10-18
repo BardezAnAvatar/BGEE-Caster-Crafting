@@ -1,4 +1,4 @@
-BEGIN ~BZMSCSC~
+BEGIN ~BZMSCST~
     
     //If you are in combat or see enemies, no usability
     IF

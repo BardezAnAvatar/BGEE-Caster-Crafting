@@ -18,7 +18,7 @@ APPEND_OUTER -
     ~~~~~
 
 
-EXTEND_TOP ~BZMSCSC~ bz_caster_craft_scribe_copy_menu
+EXTEND_TOP ~BZMSCST~ bz_caster_craft_scribe_copy_menu
     ~~~~~
 
 //loop through all players
@@ -75,7 +75,7 @@ DEBUG: READY, PLAYER %i%!:
         APPEND_OUTER -
             ~SpellbookCopy/Player%i%States.D~
             ~~~~~
-APPEND ~BZMSCSC~
+APPEND ~BZMSCST~
 
     //%PlayerN%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%
@@ -258,7 +258,7 @@ DEBUG: `PLAYER %i%, Circle X` Specific Spell States Starting
             ~~~~~
 
 
-APPEND ~BZMSCSC~
+APPEND ~BZMSCST~
             ~~~~~
 
         ACTION_PHP_EACH ~spell_list_data_arcane~
@@ -346,8 +346,8 @@ END
 ****************************/
 //Merge all the SpellbookCopy/*.D files together
 COPY -
-    ~SpellbookCopy/BZMSCSC.D~
-    ~SpellbookCopy/BZMSCSC.D~
+    ~SpellbookCopy/BZMSCST.D~
+    ~SpellbookCopy/BZMSCST.D~
         //Patches
         APPEND_FILE TEXT ~SpellbookCopy/PlayerTransitions.D~
         APPEND_FILE TEXT ~SpellbookCopy/Player1States.D~
