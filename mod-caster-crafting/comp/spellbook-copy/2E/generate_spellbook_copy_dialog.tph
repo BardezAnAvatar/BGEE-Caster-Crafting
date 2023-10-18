@@ -4,6 +4,9 @@
 *   ### 
 *******************************/
 
+//Include function defs.
+INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/2E/fn_CopySpellExclusionConditions.tph~
+
 //Declare a blank file
 <<<<<<<< SpellbookCopy/PlayerTransitions.D
 >>>>>>>>  //empty in-memory file
@@ -184,6 +187,14 @@ DEBUG: PLAYER %i%, Circle %j%:
                     BEGIN
 
                         OUTER_SET bz_craft_time = %keys_5% * 300
+                        
+                        //Get the appropriate script exclusion checks for kit based on the spell's exclusion flags
+                        LAUNCH_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
+                            INT_VAR
+                                ~ExclusionFlags~ = ~%keys_7%~
+                            RET
+                                ~CopySpellKitExclusionTriggers~ = ~KitExclusionTriggers~
+                        END
 
                         ACTION_IF ~%keys_3%~ STRING_EQUAL ~%player_n_spell_level%~  //Spell level matches
                             THEN
@@ -192,6 +203,7 @@ DEBUG: PLAYER %i%, Circle %j%:
                                     ~SpellbookCopy/Player%i%States.D~
                                     ~~~~~
             IF ~!HaveKnownSpellRES("%keys_1%")
+%CopySpellKitExclusionTriggers%
 TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
             THEN 
                 REPLY ~%keys_6%~
