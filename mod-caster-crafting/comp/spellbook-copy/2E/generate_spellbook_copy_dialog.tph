@@ -5,7 +5,7 @@
 *******************************/
 
 //Include function defs.
-INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/2E/fn_CopySpellExclusionConditions.tph~
+INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/%bz_edition_code%/fn_CopySpellExclusionConditions.tph~
 
 //Declare a blank file
 <<<<<<<< SpellbookCopy/PlayerTransitions.D
