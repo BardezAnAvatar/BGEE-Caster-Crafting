@@ -29,7 +29,7 @@ COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTD.BAM~ ~override~    //arcane
 COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTI.BAM~ ~override~    //arcane kit inventory BAM
 
 //Make an item for the player to interact with
-COPY_EXISTING ~MISC48.ITM~ ~override/BZMSCST.ITM~   //scribe kit
+COPY_EXISTING ~MISC01.ITM~ ~override/BZMSCST.ITM~   //scribe kit
     //Patches
         SAY NAME1 @20000 //Scribe's Tool Kit
         SAY NAME2 @20000 //Scribe's Tool Kit
