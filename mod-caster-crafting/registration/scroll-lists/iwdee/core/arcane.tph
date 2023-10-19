@@ -93,7 +93,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL1U~, ~SPWI401~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1U~        //Confusion
         ~SCRL1V~, ~SPWI402~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1V~        //Dimension Door
         ~SCRL1W~, ~SPWI403~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1W~        //Fire Shield (Blue)
-        ~SCRL1X~, ~SPWI404~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1X~        //Ice Storm
+        ~SCSTOR~, ~SPWI404~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCSTOR~        //Ice Storm
         ~SCRL1Y~, ~SPWI405~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1Y~        //Improved Invisibility
         ~SCRL1Z~, ~SPWI406~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL1Z~        //Minor Globe of Invulnerability
         ~SCRL2A~, ~SPWI407~, ~Arcane~, ~4~, ~1~, ~0~ => ~SCRL2A~        //Monster Summoning 2
@@ -178,7 +178,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL8B~, ~SPWI624~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCRL8B~        //Summon Nishruu
         ~SCSTF~, ~SPWI625~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCSTF~          //Stone to Flesh
         ~SCLICH~, ~SPWI626~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCLICH~        //Lich Touch
-        ~SCMONIV~, ~SPWI627~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCMONIV~      //Monster Summoning 4
+        ~SCMSIV~, ~SPWI627~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCMSIV~        //Monster Summoning 4
         ~SCOFS~, ~SPWI628~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCOFS~          //Otiluke's Freezing Sphere
         ~SCSHDS~, ~SPWI629~, ~Arcane~, ~6~, ~1~, ~0~ => ~SCSHDS~        //Shades
         ~SPWI618X~, ~SPWI630~, ~Arcane~, ~6~, ~1~, ~0~ => ~SPWI618X~    //Darts of Bone
