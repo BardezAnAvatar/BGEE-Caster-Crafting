@@ -10,7 +10,7 @@
 ******************************************************************************/
 
 //Emit the final result prior to compilation
-COPY + //no need to back up a .D file
+COPY
     ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
     ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
         //Patches
