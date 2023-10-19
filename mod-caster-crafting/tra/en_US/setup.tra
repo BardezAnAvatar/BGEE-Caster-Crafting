@@ -1,6 +1,6 @@
 //Global stuff
 @0 = "Bardez's Caster Crafting Mod"
-@1 = "Caster Crafting: Pre-processing of registered data"
+@1 = "Running pre-processing of registered data"
 
 //scribing tools
 @10 = "Caster Crafting: Scribing Tools"
