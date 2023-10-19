@@ -194,8 +194,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL9G~, ~SPWI812~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9G~    //Abi-Dalzim's Horrid Wilting
         ~SCRL9H~, ~SPWI813~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9H~    //Maze
         ~SCRL9J~, ~SPWI815~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9J~    //Power Word Blind
-        ~SCRLAP~, ~SPWI816~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAP~    //Symbol, Stun     //NOTE: Also `SCRLAN` but fewer references
-        ~SCRLAO~, ~SPWI817~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAO~    //Symbol, Death    //NOTE: Also `SCRLAM` but fewer references
+        ~SCRLAP~, ~SPWI816~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAP~    //Symbol, Stun     //NOTE: Also `SCRLAN` but only 1 reference
+        ~SCRLAO~, ~SPWI817~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAO~    //Symbol, Death    //NOTE: Also `SCRLAM` but only 1 reference
         ~SCRLB1~, ~SPWI818~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLB1~    //Bigby's Clenched Fist
 
 
