@@ -1,0 +1,42 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ~scroll_list_protection~
+    BEGIN
+
+        /*
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Additional Cost]       // 5
+        */
+
+        ~SCRL03~, ~SPWI517~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL03~    //Protection from Acid;             Protection from Acid Wizard spell
+        ~SCRL03~, ~SPWI803~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL03~    //Protection from Acid;             Protection from Energy Wizard spell
+        ~SCRL04~, ~SPWI320~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL04~    //Protection from Cold;             Protection from Cold Wizard spell
+        ~SCRL04~, ~SPWI403~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL04~    //Protection from Cold;             Fireshield (Blue) Wizard spell
+        ~SCRL04~, ~SPWI702~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL04~    //Protection from Cold;             Protection from the Elements Wizard spell
+        ~SCRL04~, ~SPWI803~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL04~    //Protection from Cold;             Protection from Energy Wizard spell
+        ~SCRL04~, ~SPPR210~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL04~    //Protection from Cold;             Protection from Fire and Cold Priest spell
+        ~SCRL05~, ~SPWI512~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL05~    //Protection from Electricity;      Protection from Electricity Wizard spell
+        ~SCRL05~, ~SPWI702~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL05~    //Protection from Electricity;      Protection from the Elements Wizard spell
+        ~SCRL05~, ~SPWI803~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL05~    //Protection from Electricity;      Protection from Energy Wizard spell
+        ~SCRL05~, ~SPPR407~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL05~    //Protection from Electricity;      Protection from Lightning Priest spell
+        ~SCRL06~, ~SPWI319~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL06~    //Protection from Fire;             Protection from Fire Wizard spell
+        ~SCRL06~, ~SPWI418~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL06~    //Protection from Fire;             Fireshield (Red) Wizard spell
+        ~SCRL06~, ~SPWI702~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL06~    //Protection from Fire;             Protection from the Elements Wizard spell
+        ~SCRL06~, ~SPWI803~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL06~    //Protection from Fire;             Protection from Energy Wizard spell
+        ~SCRL06~, ~SPPR210~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL06~    //Protection from Fire;             Protection from Fire and Cold Priest spell
+        ~SCRL06~, ~SPPR306~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL06~    //Protection from Fire;             Protection from Fire Priest spell
+        ~SCRL07~, ~SPWI606~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL07~    //Protection from Magic;            Protection From Magic Energy Wizard spell
+        ~SCRL07~, ~SPWI803~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL07~    //Protection from Magic;            Protection From Energy Wizard spell
+        ~SCRL07~, ~SPPR509~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL07~    //Protection from Magic;            Magic Resistance Priest spell
+        ~SCRL08~, ~SPPR404~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL08~    //Protection from Poison;           Neutralize Poison Priest spell
+        ~SCRL09~, ~SPPR413~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL09~    //Protection from Undead;           Negative Plane Protection Priest spell
+        ~SCRL09~, ~SPPR515~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL09~    //Protection from Undead;           Repulse Undead Priest spell
+
+        //Missing from IWD:EE
+        //~SCRL15~, ~SPWI108~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Protection from Petrification Wizard spell
+        //~SCRL15~, ~SPWI625~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Stone to Flesh Wizard spell
+
+    END
