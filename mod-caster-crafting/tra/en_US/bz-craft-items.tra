@@ -1,8 +1,7 @@
 /* Reserving range 20000-21000 */
-@20000 = ~Scrollmaker's Work Kit~
+@20000 = ~Scribe's Tool Kit~
 @20001 = 
-~~~~~This leather kit includes all sorts of tools necessary for the crafting of scrolls. 
-This specific kit is a travel kit, able to carry a minimal tool set and other supplies necessary for scrafting scrolls.
+~~~~~This leather kit includes all sorts of tools necessary for the scribing of scrolls and arcane spellbooks. This specific kit is a travel kit, able to carry a minimal tool set and other supplies necessary for scribing.
     
 Mundane work kits similar to these are common for journeymen and apprentices throughout the Realms.
 
@@ -15,4 +14,4 @@ Weight: 10~~~~~
 STATISTICS:
 
 Weight: 10~~~~~
-@20003 = ~Use Work Kit~
+@20003 = ~Use Scribe Kit~

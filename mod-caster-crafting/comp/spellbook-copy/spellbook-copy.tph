@@ -6,11 +6,11 @@
 
 //Copy the base states
 COPY -
-    ~SpellbookCopy/BZMSCSC.D~
-    ~SpellbookCopy/BZMSCSC.D~
+    ~SpellbookCopy/BZMSCST.D~
+    ~SpellbookCopy/BZMSCST.D~
         //Patches
-        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/spellbook-copy/BZMSCSC.d~
-        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/spellbook-copy/2E/BZMSCSC.d~
+        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/spellbook-copy/BZMSCST.d~
+        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/spellbook-copy/2E/BZMSCST.d~
 
 //Make a cutscene file for copying the spell into spell book
 COMPILE ~./%MOD_FOLDER%/comp/spellbook-copy/BAF/bzctbkcp.baf~
