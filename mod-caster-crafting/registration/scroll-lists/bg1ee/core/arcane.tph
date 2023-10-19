@@ -233,7 +233,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL9Z~, ~SPWI917~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRL9Z~    //Freedom
         ~SCRLAP~, ~SPWI816~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAP~    //Symbol, Stun     //NOTE: Also `SCRLAN` but only 1 reference
         ~SCRLAO~, ~SPWI817~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAO~    //Symbol, Death    //NOTE: Also `SCRLAM` but only 1 reference
-        ~~, ~SPWI802~, ~Arcane~, ~8~, ~16~, ~0~ => ~~    //Spell Deflection
         */
 
     END

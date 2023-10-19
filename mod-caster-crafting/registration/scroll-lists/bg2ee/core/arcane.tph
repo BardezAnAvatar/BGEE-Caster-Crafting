@@ -230,9 +230,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~--HLA--~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Planetar
         ~--HLA--~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Dark Planetar
         ~--HLA--~, ~SPWI925~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Comet
-
-        //Missing:
-        ~~, ~SPWI802~, ~Arcane~, ~8~, ~16~, ~0~ => ~~    //Spell Deflection
         */
 
     END
