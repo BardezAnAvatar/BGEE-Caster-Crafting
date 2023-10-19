@@ -217,9 +217,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRLB4~, ~SPWI919~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRLB4~    //Wish
 
 
-        //Missing scrolls for spells in BG1EE
+        //Missing scrolls for spells in BG2EE
         /*
-
         //Never existed:
         ~~, ~SPWI124~, ~Arcane~, ~1~, ~1~, ~0~ => ~~    //Nahal's Reckless Dweomer*
         ~~, ~SPWI222~, ~Arcane~, ~2~, ~3~, ~0~ => ~~    //Chaos Shield*
