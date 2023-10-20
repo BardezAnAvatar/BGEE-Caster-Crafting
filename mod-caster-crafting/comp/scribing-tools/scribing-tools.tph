@@ -28,20 +28,48 @@ COMPILE ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
 COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTD.BAM~ ~override~    //arcane kit description BAM
 COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTI.BAM~ ~override~    //arcane kit inventory BAM
 
+
+
 //Make an item for the player to interact with
-COPY_EXISTING ~MISC01.ITM~ ~override/BZMSCST.ITM~   //scribe kit
-    //Patches
-        SAY NAME1 @20000 //Scribe's Tool Kit
-        SAY NAME2 @20000 //Scribe's Tool Kit
-        SAY UNIDENTIFIED_DESC @20002
-        SAY IDENTIFIED_DESC @20001
-        WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
-        WRITE_LONG 0x34 2000                            // Price
-        WRITE_LONG 0x42 10                              // Lore to Identify
-        WRITE_LONG 0x4C 10                              // Weight
-        WRITE_ASCII_TERMINATE 0x58 "BZMISTD"            // Description Image
-        READ_LONG 0x18 ~bzmsckar_flags~
-        WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
+ACTION_IF (~bz_game_code~ STRING_EQUAL ~pstee~)
+THEN
+BEGIN
+    COPY_EXISTING ~DBOX.ITM~ ~override/BZMSCST.ITM~   //scribe kit
+        //Patches
+            SAY NAME1 @20000 //Scribe's Tool Kit
+            SAY NAME2 @20000 //Scribe's Tool Kit
+            SAY UNIDENTIFIED_DESC @20002
+            SAY IDENTIFIED_DESC @20001
+            WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
+            WRITE_LONG 0x34 2000                            // Price
+            WRITE_LONG 0x42 10                              // Lore to Identify
+            WRITE_LONG 0x4C 10                              // Weight
+            READ_LONG 0x18 ~bzmsckar_flags~
+            WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
+            WRITE_ASCII_TERMINATE 0x58 "Z_CLOTH1"           // Pick up Sound
+            WRITE_ASCII_TERMINATE 0x10 "Z_CLOTH2"           // Drop Sound
+            WRITE_LONG 0x1C 0                               // Category: Miscellaneous
+            WRITE_LONG 0x1E 
+                BIT31 BOR BIT29 BOR BIT28 BOR BIT26 BOR BIT25 BOR 
+                BIT23 BOR BIT22 BOR BIT21 BOR BIT17 BOR BIT11 // unusability flags: Not non-mages
+END
+ELSE
+BEGIN
+    COPY_EXISTING ~MISC01.ITM~ ~override/BZMSCST.ITM~   //scribe kit
+        //Patches
+            SAY NAME1 @20000 //Scribe's Tool Kit
+            SAY NAME2 @20000 //Scribe's Tool Kit
+            SAY UNIDENTIFIED_DESC @20002
+            SAY IDENTIFIED_DESC @20001
+            WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
+            WRITE_LONG 0x34 2000                            // Price
+            WRITE_LONG 0x42 10                              // Lore to Identify
+            WRITE_LONG 0x4C 10                              // Weight
+            WRITE_ASCII_TERMINATE 0x58 "BZMISTD"            // Description Image
+            READ_LONG 0x18 ~bzmsckar_flags~
+            WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
+END
+
 
 
 //Register the item in ITEMDIAL.2DA along with the strref to talk to it.
