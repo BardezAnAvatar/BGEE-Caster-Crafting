@@ -3,7 +3,7 @@
 ************************/
 
 /******************************************************************************
-*   NOTE: This file will expect prior components to have altered
+*   NOTE: This file will expect prior actions to have altered
 *   BZMSCST.D and yielded internal WeiDU strings:
 *       - SpellbookCopy/BZMSCST.D
 *       - ScrollCreation/BZMSCST.D
