@@ -15,13 +15,13 @@ Class(MYSELF, MAGE_ALL)
 LevelGT(MYSELF, 8)~
                 THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
-            
+
             //Scribe scroll: Bard
             IF ~!Class(MYSELF, CLERIC_ALL)
 !Class(MYSELF, DRUID_ALL)
 !Class(MYSELF, MAGE_ALL)
 Class(MYSELF, BARD_ALL)
-LevelGT(MYSELF, 9)~ 
+LevelGT(MYSELF, 9)~
                 THEN REPLY @15010 //scribe a scroll
                     GOTO bz_caster_craft_scribe_scroll_menu
 

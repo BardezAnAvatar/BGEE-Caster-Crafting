@@ -17,11 +17,11 @@ ACTION_PHP_EACH ~spell_list_arcane~
             READ_LONG NAME1 ~strref_name~               //since this is a spell file, NAME1 should be all there is
             READ_LONG 0x1E ~exclusion_flags~            //read all of the kit exclusion flags
         BUT_ONLY_IF_IT_CHANGES
-        
+
         ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~ 
+        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~
             STR_VAR
                 ~Level~ = ~%keys_2%~
             RET
@@ -30,8 +30,8 @@ ACTION_PHP_EACH ~spell_list_arcane~
         END
 
         OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
-        
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
             ~spell_list_data_arcane~
             BEGIN
                 ~%keys_2%_%spell_name%~,    //sorting key of level and spell name

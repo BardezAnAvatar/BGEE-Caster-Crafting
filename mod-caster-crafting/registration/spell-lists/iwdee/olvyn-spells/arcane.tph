@@ -1,7 +1,7 @@
 //  TODO: check the component selection and mod installation / order to detect EEex spells
 
 OUTER_SET ~bz_olvyn_powerful~ = (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
-OUTER_SET ~bz_olvyn_eeex~ = 
+OUTER_SET ~bz_olvyn_eeex~ =
     MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
     AND
     (
@@ -19,7 +19,7 @@ OUTER_SET ~bz_olvyn_wi556~ =    //Restore original Animate Dead for wizards?
 /*******************
 *   Basic Spells   *
 *******************/
-ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~spell_list_arcane~
     BEGIN
 
@@ -78,7 +78,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEWI657~, ~Arcane~, ~6~ => ~MEWI657~   //Mind Fog
         ~MEWI658~, ~Arcane~, ~6~ => ~MEWI658~   //Empower Familiar
 
-        
+
         //~MEWI751~, ~Arcane~, ~7~ => ~MEWI751~ //Mass Cast
         //~MEWI752~, ~Arcane~, ~7~ => ~MEWI752~ //Far Sequencer
         ~MEWI754~, ~Arcane~, ~7~ => ~MEWI754~   //Stygian Ice Storm
@@ -88,7 +88,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         //~MEWI761~, ~Arcane~, ~7~ => ~MEWI761~ //X-Ray Vision
         //~MEWI762~, ~Arcane~, ~7~ => ~MEWI762~ //Insanity
 
-        
+
         ~MEWI851~, ~Arcane~, ~8~ => ~MEWI851~   //Enhance Attribute
         ~MEWI852~, ~Arcane~, ~8~ => ~MEWI852~   //Globe of Invisibility
         ~MEWI857~, ~Arcane~, ~8~ => ~MEWI857~   //Extend Vision
@@ -117,12 +117,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 **********************/
 ACTION_IF %bz_olvyn_powerful% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~spell_list_arcane~
         BEGIN
             ~MEWI551~, ~Arcane~, ~5~ => ~MEWI551~   //Life Transfer
             ~MEWI558~, ~Arcane~, ~5~ => ~MEWI558~   //Missile of Patience
-        
+
             ~MEWI855~, ~Arcane~, ~8~ => ~MEWI855~   //Omnipresence
             ~MEWI863~, ~Arcane~, ~8~ => ~MEWI863~   //Metafireball
 
@@ -142,7 +142,7 @@ END
 ******************/
 ACTION_IF %bz_olvyn_eeex% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~spell_list_arcane~
         BEGIN
             ~MEWI156~, ~Arcane~, ~1~ => ~MEWI156~   //Jump
@@ -158,11 +158,11 @@ BEGIN
             ~MEWI358~, ~Arcane~, ~3~ => ~MEWI358~   //Familiar Spell
             ~MEWI359~, ~Arcane~, ~3~ => ~MEWI359~   //Throw
             ~MEWI360~, ~Arcane~, ~3~ => ~MEWI360~   //Heightening
-            
+
             ~MEWI455~, ~Arcane~, ~4~ => ~MEWI455~   //Redirect Spell
             ~MEWI458~, ~Arcane~, ~4~ => ~MEWI458~   //Vampiric Link
             ~MEWI459~, ~Arcane~, ~4~ => ~MEWI459~   //Recall Party
-            
+
             ~MEWI552~, ~Arcane~, ~5~ => ~MEWI552~   //Steal Spells
             ~MEWI559~, ~Arcane~, ~5~ => ~MEWI559~   //Ghostform
             ~MEWI567~, ~Arcane~, ~5~ => ~MEWI567~   //Rewind Time
@@ -190,7 +190,7 @@ END
 ***************************/
 ACTION_IF %bz_olvyn_powerful_eeex% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~spell_list_arcane~
         BEGIN
             ~MEWI256~, ~Arcane~, ~2~ => ~MEWI256~   //Specific Spell Immunity
@@ -218,7 +218,7 @@ END
 ***************************/
 ACTION_IF %bz_olvyn_wi556% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~spell_list_arcane~
         BEGIN
             ~MEWI556~, ~Arcane~, ~5~ => ~MEWI556~   //Skeleton Horde

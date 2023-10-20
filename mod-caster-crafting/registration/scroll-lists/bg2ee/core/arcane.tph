@@ -1,4 +1,4 @@
-ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~scroll_list_arcane~
     BEGIN
 
@@ -32,7 +32,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL5U~, ~SPWI120~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL5U~    //Reflected Image
         ~SCRL6D~, ~SPWI123~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL6D~    //Find Familiar
         ~SCRLA6~, ~SPWI125~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRLA6~    //Spook
-        
+
 
         ~SCRL85~, ~SPWI201~, ~Arcane~, ~2~, ~3~, ~0~ => ~SCRL85~    //Blur
         ~SCRL86~, ~SPWI202~, ~Arcane~, ~2~, ~3~, ~0~ => ~SCRL86~    //Detect Evil
@@ -82,7 +82,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL6L~, ~SPWI324~, ~Arcane~, ~3~, ~5~, ~0~ => ~SCRL6L~    //Hold Undead
         ~SCRLA5~, ~SPWI325~, ~Arcane~, ~3~, ~5~, ~0~ => ~SCRLA5~    //Melf's Minute Meteors
         ~SCRL1E~, ~SPWI326~, ~Arcane~, ~3~, ~5~, ~0~ => ~SCRL1E~    //Dispel Magic
-        
+
 
         ~SCRL1U~, ~SPWI401~, ~Arcane~, ~4~, ~7~, ~0~ => ~SCRL1U~    //Confusion
         ~SCRL1V~, ~SPWI402~, ~Arcane~, ~4~, ~7~, ~0~ => ~SCRL1V~    //Dimension Door
@@ -108,7 +108,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL6R~, ~SPWI423~, ~Arcane~, ~4~, ~7~, ~0~ => ~SCRL6R~    //Spider Spawn
         ~SCRLAJ~, ~SPWI424~, ~Arcane~, ~4~, ~7~, ~0~ => ~SCRLAJ~    //Farsight
         ~SCRLA1~, ~SPWI425~, ~Arcane~, ~4~, ~7~, ~0~ => ~SCRLA1~    //Wizard Eye
-        
+
 
         ~SCRL2D~, ~SPWI501~, ~Arcane~, ~5~, ~9~, ~0~ => ~SCRL2D~    //Animate Dead
         ~SCRL2E~, ~SPWI502~, ~Arcane~, ~5~, ~9~, ~0~ => ~SCRL2E~    //Cloud Kill
@@ -133,7 +133,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL7C~, ~SPWI521~, ~Arcane~, ~5~, ~9~, ~0~ => ~SCRL7C~    //Conjure Lesser Earth Elemental
         ~SCRL7D~, ~SPWI522~, ~Arcane~, ~5~, ~9~, ~0~ => ~SCRL7D~    //Minor Spell Turning
         ~SCRLAL~, ~SPWI523~, ~Arcane~, ~5~, ~9~, ~0~ => ~SCRLAL~    //Sunfire
-        
+
 
         ~SCRL7E~, ~SPWI601~, ~Arcane~, ~6~, ~12~, ~0~ => ~SCRL7E~    //Invisible Stalker
         ~SCRL7F~, ~SPWI602~, ~Arcane~, ~6~, ~12~, ~0~ => ~SCRL7F~    //Globe of Invulnerability
@@ -159,7 +159,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL8A~, ~SPWI623~, ~Arcane~, ~6~, ~12~, ~0~ => ~SCRL8A~    //Carrion Summons
         ~SCRL8B~, ~SPWI624~, ~Arcane~, ~6~, ~12~, ~0~ => ~SCRL8B~    //Summon Nishruu
         ~SCRL8C~, ~SPWI625~, ~Arcane~, ~6~, ~12~, ~0~ => ~SCRL8C~    //Stone to Flesh
-        
+
 
         ~SCRL8D~, ~SPWI701~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8D~    //Spell Turning
         ~SCRL8E~, ~SPWI702~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8E~    //Protection From The Elements

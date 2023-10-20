@@ -1,7 +1,7 @@
 /*******************************
 *   ###
 *   Begin Copy Spells Stuff
-*   ### 
+*   ###
 *******************************/
 
 //Include function defs.
@@ -165,7 +165,7 @@ DEBUG: PLAYER %i%, Circle %j%:
 ******************************~
 
                 OUTER_TEXT_SPRINT ~player_n_spell_level~ ~%j%~
-                ACTION_IF %j% = 10 THEN 
+                ACTION_IF %j% = 10 THEN
                 BEGIN
                     OUTER_TEXT_SPRINT ~player_n_spell_level~ ~A~
                 END
@@ -187,7 +187,7 @@ DEBUG: PLAYER %i%, Circle %j%:
                     BEGIN
 
                         OUTER_SET bz_craft_time = %keys_5% * 300
-                        
+
                         //Get the appropriate script exclusion checks for kit based on the spell's exclusion flags
                         LAUNCH_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
                             INT_VAR
@@ -205,7 +205,7 @@ DEBUG: PLAYER %i%, Circle %j%:
             IF ~!HaveKnownSpellRES("%keys_1%")
 %CopySpellKitExclusionTriggers%
 TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
-            THEN 
+            THEN
                 REPLY ~%keys_6%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
                                     ~~~~~
@@ -234,7 +234,7 @@ TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
             THEN REPLY @15030 //Pack up your scribe tools.
                 EXIT
     END
-                    ~~~~~        
+                    ~~~~~
 
             END
 
@@ -292,7 +292,7 @@ APPEND ~BZMSCST~
     // _%PlayerN%_circle%keys_3%_%keys_1%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%_%keys_1%
         SAY ~%player-circle-spell-prompt%~    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
-            
+
             IF ~PartyGoldGT(%spell-copy-cost-floor%)~
             THEN
                 REPLY ~%player-circle-spell-action%~ //[%copy_gold_cost% gold; %copy_time_days% days] Copy the spell %keys_1% into your spellbook with %tag_PlayerN%'s help.
@@ -361,6 +361,6 @@ COPY -
 /*******************************
 *   ###
 *   End Copy Spells Stuff
-*   ### 
+*   ###
 *******************************/
 

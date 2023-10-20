@@ -13,8 +13,8 @@ COMPILE ~./%MOD_FOLDER%/poc/bz-debug.baf~
 APPEND_OUTER
     ~./%MOD_FOLDER%/poc/bzcrftar.d~
     ~~~~~
-  
-  
+
+
 EXTEND_TOP ~BZCRFTAR~ bz_caster_craft_arcane_circle_1
     ~~~~~
 
@@ -65,14 +65,14 @@ ACTION_PHP_EACH ~scroll_list_data_arcane~
                 OUTER_SPRINT ~state_spell_entry~ @10050     //~You look over the spell %scroll_list_data_arcane_keys_11% and inspect its entry in your spellbook.~
                 OUTER_SPRINT ~reply_scroll_create~ @10033   //~[Scribe a scroll of %scroll_list_data_arcane_keys_11%. Gather materials costing %scroll_total_cost% gold, and spend %scroll_list_data_arcane_keys_8% hours scribing the scroll.~
 
-                APPEND_OUTER 
+                APPEND_OUTER
                     ~./%MOD_FOLDER%/poc/bzcrftar.d~
                     ~~~~~
-    IF ~~ 
+    IF ~~
     THEN BEGIN bz_caster_craft_arcane_%scroll_list_data_arcane_keys_2%
         SAY ~%state_spell_entry%~ //~You look over the spell %scroll_list_data_arcane_keys_11% and inspect its entry in your spellbook.~
             IF ~~
-            THEN 
+            THEN
                 REPLY ~%reply_scroll_create%~ //~[Scribe a scroll of %scroll_list_data_arcane_keys_11%. Gather materials costing %scroll_total_cost% gold, and spend %scroll_list_data_arcane_keys_8% hours scribing the scroll.~
                 DO
                     ~
@@ -103,7 +103,7 @@ END
     ~~~~~
 
 COMPILE ~./%MOD_FOLDER%/poc/bzcrftar.d~
-    
+
 //NOTE: The dialog now compiles, no warnings, and I can verify in NI that it should work.
 //NOTE: The time of 1800 conflicts with some mod-custom timers in a weird way;
     // it should compile to SIX_HOURS, I guess, but instead compiles to LK#NEERA_TIMER (also 1800)

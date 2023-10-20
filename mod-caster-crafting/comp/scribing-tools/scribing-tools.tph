@@ -3,7 +3,7 @@
 ************************/
 
 /******************************************************************************
-*   NOTE: This file will expect prior components to have altered 
+*   NOTE: This file will expect prior components to have altered
 *   BZMSCST.D and yielded internal WeiDU strings:
 *       - SpellbookCopy/BZMSCST.D
 *       - ScrollCreation/BZMSCST.D
@@ -49,8 +49,8 @@ BEGIN
             WRITE_ASCII_TERMINATE 0x58 "Z_CLOTH1"           // Pick up Sound
             WRITE_ASCII_TERMINATE 0x10 "Z_CLOTH2"           // Drop Sound
             WRITE_LONG 0x1C 0                               // Category: Miscellaneous
-            WRITE_LONG 0x1E 
-                BIT31 BOR BIT29 BOR BIT28 BOR BIT26 BOR BIT25 BOR 
+            WRITE_LONG 0x1E
+                BIT31 BOR BIT29 BOR BIT28 BOR BIT26 BOR BIT25 BOR
                 BIT23 BOR BIT22 BOR BIT21 BOR BIT17 BOR BIT11 // unusability flags: Not non-mages
 END
 ELSE
@@ -80,5 +80,5 @@ COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
         COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
         INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCST %bz_scrollkit_arcane_interact_strref% BZMSCST~
 
-//Add the 
+//Add the
 INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/add-to-stores.tph~

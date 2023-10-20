@@ -24,7 +24,7 @@ END
 *   languages   *
 ****************/
 LANGUAGE
-    ~English~ 
+    ~English~
     ~en_US~
         //There is a problem with using %MOD_FOLDER% here: https://forums.pocketplane.net/index.php?topic=29521.0
         ~./mod-caster-crafting/tra/en_US/setup.tra~

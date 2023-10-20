@@ -1,14 +1,14 @@
 //  TODO: check the component selection and mod installation / order to detect EEex spells
 
 OUTER_SET ~bz_olvyn_powerful~ = (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
-OUTER_SET ~bz_olvyn_eeex~ = 
+OUTER_SET ~bz_olvyn_eeex~ =
     MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
     AND
     (
         INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
         OR INSTALL_ORDER ~MESpells.tp2~ ~1001~ AFTER ~EEEX.TP2~ ~0~
     )
-OUTER_SET ~bz_olvyn_powerful_eeex~ = 
+OUTER_SET ~bz_olvyn_powerful_eeex~ =
     MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
     AND INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
 
@@ -26,7 +26,7 @@ PRINT ~DEBUG: Olvyn:
 /*******************
 *   Basic Spells   *
 *******************/
-ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~scroll_list_arcane~
     BEGIN
 
@@ -86,12 +86,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEWI657X~, ~MEWI657~, ~Arcane~, ~6~, ~12~, ~0~ => ~MEWI657X~   //Mind Fog
         ~MEWI658X~, ~MEWI658~, ~Arcane~, ~6~, ~12~, ~0~ => ~MEWI658X~   //Empower Familiar
 
-        
+
         ~MEWI754X~, ~MEWI754~, ~Arcane~, ~7~, ~14~, ~0~ => ~MEWI754X~   //Stygian Ice Storm
         ~MEWI759X~, ~MEWI759~, ~Arcane~, ~7~, ~14~, ~0~ => ~MEWI759X~   //Extraordinary Luck
         ~MEWI760X~, ~MEWI760~, ~Arcane~, ~7~, ~14~, ~0~ => ~MEWI760X~   //Lightning Stream
 
-        
+
         ~MEWI851X~, ~MEWI851~, ~Arcane~, ~8~, ~16~, ~0~ => ~MEWI851X~   //Enhance Attribute
         ~MEWI852X~, ~MEWI852~, ~Arcane~, ~8~, ~16~, ~0~ => ~MEWI852X~   //Globe of Invisibility
         ~MEWI857X~, ~MEWI857~, ~Arcane~, ~8~, ~16~, ~0~ => ~MEWI857X~   //Extend Vision
@@ -121,7 +121,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 **********************/
 ACTION_IF %bz_olvyn_powerful% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~scroll_list_arcane~
         BEGIN
             ~MEWI551X~, ~MEWI551~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI551X~   //Life Transfer
@@ -148,7 +148,7 @@ END
 ******************/
 ACTION_IF %bz_olvyn_eeex% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~scroll_list_arcane~
         BEGIN
             ~MEWI156X~, ~MEWI156~, ~Arcane~, ~1~, ~1~, ~0~ => ~MEWI156X~   //Jump
@@ -197,7 +197,7 @@ END
 ***************************/
 ACTION_IF %bz_olvyn_powerful_eeex% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~scroll_list_arcane~
         BEGIN
             ~MEWI256X~, ~MEWI256~, ~Arcane~, ~2~, ~3~, ~0~ => ~MEWI256X~   //Specific Spell Immunity
@@ -223,7 +223,7 @@ END
 ***************************/
 ACTION_IF %bz_olvyn_wi556% THEN
 BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY 
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~scroll_list_arcane~
         BEGIN
             ~MEWI556X~, ~MEWI556~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI556X~   //Skeleton Horde
