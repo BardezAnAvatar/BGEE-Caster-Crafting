@@ -4,15 +4,14 @@
 ***********************************************************************************************/
 
 
-DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_item
+DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
     INT_VAR
         cast_at_level = 1       //caster level to search on; read headers looking a header with this cast at min level
         duration      = "-1"
-        item_header   = "-1"    //the header number that should be written to
-        set_icon      = 0
+        item_header   = "-1"    //the item header number that should be written to
     STR_VAR
-        item  = null
-        spell = null
+        item  = null            //item file to write to
+        spell = null            //spell file to read from
     BEGIN
 
     ACTION_IF
@@ -66,9 +65,6 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_item
             END
             WRITE_SHORT  abil_fx_idx_off (THIS + fx_delta)         // update with previously inserted effects
             PATCH_IF index = item_header BEGIN                     // if we're in the correct header
-                PATCH_IF set_icon AND item_header BEGIN
-                    WRITE_ASCIIE (abil_fx_idx_off - 0x1c) ~%icon%~ #8  // update icon, if indicated
-                END
                 SET fx_delta += transfer_fx_num                      // update delta
                 READ_SHORT abil_fx_idx_off abil_fx_idx               // read updated index
                 WRITE_SHORT abil_fx_num_off (THIS + transfer_fx_num) // update number of effects
