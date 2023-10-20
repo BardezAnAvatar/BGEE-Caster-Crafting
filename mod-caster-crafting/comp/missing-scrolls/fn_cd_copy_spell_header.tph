@@ -7,7 +7,6 @@
 DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
     INT_VAR
         cast_at_level = 1       //caster level to search on; read headers looking a header with this cast at min level
-        duration      = "-1"
         item_header   = "-1"    //the item header number that should be written to
     STR_VAR
         item  = null            //item file to write to
@@ -76,12 +75,6 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
                     PATCH_IF ("%resref%" STRING_COMPARE_CASE "%spell%" = 0) BEGIN
                         WRITE_ASCIIE (base_fx_add + 0x14 + (0x30 * index2)) "%item%" #8 // if self-reference, update
                     END // end self-reference check
-                    PATCH_IF duration >= 0 BEGIN                                  // if custom duration set, update duration
-                        READ_LONG (base_fx_add + 0x0e + (0x30 * index2)) fx_dur
-                        PATCH_IF fx_dur > 6 BEGIN                                   // skip instant effects
-                            WRITE_LONG (base_fx_add + 0x0e + (0x30 * index2)) duration
-                        END // duration length check
-                    END // custom duration check
                 END // end new fx loop
             END // end header match check
         END // end main for loop
