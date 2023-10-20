@@ -7,3 +7,9 @@
 @11 = ~Copy Spells from Party Member Spellbooks~
 @12 = ~Scribe scrolls~
 @13 = ~Copy Spells from Party Member Spellbooks AND Scribe scrolls~
+
+//Missing scrolls
+@20 = ~Missing Spell Scrolls~
+@21 = ~Add in missing arcane spell scrolls~
+@22 = ~Add in missing priest spell scrolls~
+@23 = ~Add in missing arcane and priest spell scrolls~
