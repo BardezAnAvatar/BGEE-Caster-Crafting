@@ -29,9 +29,8 @@ COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTD.BAM~ ~override~    //arcane
 COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMISTI.BAM~ ~override~    //arcane kit inventory BAM
 
 
-
 //Make an item for the player to interact with
-ACTION_IF (~bz_game_code~ STRING_EQUAL ~pstee~)
+ACTION_IF (~%bz_game_code%~ STRING_EQUAL ~pstee~)
 THEN
 BEGIN
     COPY_EXISTING ~DBOX.ITM~ ~override/BZMSCST.ITM~   //scribe kit
