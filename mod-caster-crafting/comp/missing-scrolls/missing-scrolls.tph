@@ -8,13 +8,15 @@ COPY ~./%MOD_FOLDER%/comp/missing-scrolls/ITM/B_GE146.itm~ ~override/BZ_TEST.ITM
 
 LAUNCH_ACTION_FUNCTION ~cd_items_casting_spells~
     INT_VAR
-        cast_at_level = 1
+        cast_at_level = 10
         duration      = "-1"
         item_header   = 0
         probability   = 0
         set_icon      = 0
     STR_VAR
         item  = ~BZ_TEST~
-        spell = ~SPWI124~
+        spell = ~SPWI222~ //Chaos Shield
 END
 
+//Result: MKAY, so it will copy all of the effects out of the effect header of the spell to top-level effects of the ITM.
+//  It's not copying the whole header. BUT this is a good start.
