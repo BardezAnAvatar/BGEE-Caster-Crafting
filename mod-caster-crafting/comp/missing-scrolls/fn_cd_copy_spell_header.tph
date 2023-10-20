@@ -8,8 +8,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_item
     INT_VAR
         cast_at_level = 1       //caster level to search on; read headers looking a header with this cast at min level
         duration      = "-1"
-        item_header   = "-1"
-        probability   = 0
+        item_header   = "-1"    //the header number that should be written to
         set_icon      = 0
     STR_VAR
         item  = null
@@ -87,10 +86,6 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_item
                             WRITE_LONG (base_fx_add + 0x0e + (0x30 * index2)) duration
                         END // duration length check
                     END // custom duration check
-                    PATCH_IF probability BEGIN                                    // if custom probability set, scale probabilities
-                        WRITE_BYTE (base_fx_add + 0x12 + (0x30 * index2)) ((THIS * probability) / 100)
-                        WRITE_BYTE (base_fx_add + 0x13 + (0x30 * index2)) ((THIS * probability) / 100)
-                    END // custom probability check
                 END // end new fx loop
             END // end header match check
         END // end main for loop
