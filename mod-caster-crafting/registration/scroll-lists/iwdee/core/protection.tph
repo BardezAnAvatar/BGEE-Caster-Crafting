@@ -34,7 +34,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL08~, ~SPPR404~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL08~    //Protection from Poison;           Neutralize Poison Priest spell
         ~SCRL09~, ~SPPR413~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL09~    //Protection from Undead;           Negative Plane Protection Priest spell
         ~SCRL09~, ~SPPR515~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL09~    //Protection from Undead;           Repulse Undead Priest spell
-        ~SCRL15~, ~SPWI108~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Protection from Petrification Wizard spell
-        ~SCRL15~, ~SPWI625~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Stone to Flesh Wizard spell
+
+        //Missing from IWD:EE
+        //~SCRL15~, ~SPWI108~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Protection from Petrification Wizard spell
+        //~SCRL15~, ~SPWI625~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Stone to Flesh Wizard spell
 
     END

@@ -1,0 +1,115 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list_arcane~
+    BEGIN
+
+        /*
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Additional Cost]       // 5
+        */
+
+        ~SPWI101~, ~SPWI101~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI101~    //Chromatic Orb
+        ~SPWI102~, ~SPWI102~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI102~    //Armor
+        ~SPWI103~, ~SPWI103~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI103~    //Minor Embalming
+        ~SPWI104~, ~SPWI104~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI104~    //Fist of Iron
+        ~SPWI105~, ~SPWI105~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI105~    //Identify
+        ~SPWI107~, ~SPWI107~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI107~    //Magic Missile
+        ~SPWI108~, ~SPWI108~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI108~    //Pacify
+        ~SPWI111~, ~SPWI111~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI111~    //Shield
+        ~SPWI113~, ~SPWI113~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI113~    //Missile of Patience
+        ~SPWI114~, ~SPWI114~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI114~    //Friends
+        ~SPWI115~, ~SPWI115~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI115~    //Blindness
+
+
+        ~SPWI201~, ~SPWI201~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI201~    //Adder's Kiss
+        ~SPWI202~, ~SPWI202~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI202~    //Black-Barbed Curse
+        ~SPWI203~, ~SPWI203~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI203~    //Black-Barbed Shield
+        ~SPWI204~, ~SPWI204~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI204~    //Blood Bridge
+        ~SPWI205~, ~SPWI205~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI205~    //Greater Embalming
+        ~SPWI207~, ~SPWI207~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI207~    //Ice Knife
+        ~SPWI209~, ~SPWI209~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI209~    //Pain Mirror
+        ~SPWI211~, ~SPWI211~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI211~    //Strength
+        ~SPWI212~, ~SPWI212~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI212~    //Swarm Curse
+        ~SPWI213~, ~SPWI213~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI213~    //Horror
+        ~SPWI214~, ~SPWI214~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI214~    //Luck
+        ~SPWI215~, ~SPWI215~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI215~    //Knock
+        ~SPWI216~, ~SPWI216~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI216~    //Blur
+
+
+        ~SPWI301~, ~SPWI301~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI301~    //Ball Lightning
+        ~SPWI304~, ~SPWI304~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI304~    //Cloak of Warding
+        ~SPWI305~, ~SPWI305~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI305~    //Elysium's Tears
+        ~SPWI307~, ~SPWI307~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI307~    //Hold Undead
+        ~SPWI308~, ~SPWI308~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI308~    //Tasha's Unbearable Derisive Laughter
+        ~SPWI309~, ~SPWI309~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI309~    //Vampiric Touch
+        ~SPWI310~, ~SPWI310~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI310~    //Ax of Torment
+        ~SPWI311~, ~SPWI311~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI311~    //Zerthimon's Focus
+
+
+        ~SPWI401~, ~SPWI401~, ~Arcane~, ~4~, ~1~, ~0~ => ~SPWI401~    //Blacksphere
+        ~SPWI402~, ~SPWI402~, ~Arcane~, ~4~, ~1~, ~0~ => ~SPWI402~    //Confusion
+        ~SPWI405~, ~SPWI405~, ~Arcane~, ~4~, ~1~, ~0~ => ~SPWI405~    //Force Missiles
+        ~SPWI406~, ~SPWI406~, ~Arcane~, ~4~, ~1~, ~0~ => ~SPWI406~    //Improved Strength
+        ~SPWI408~, ~SPWI408~, ~Arcane~, ~4~, ~1~, ~0~ => ~SPWI408~    //Shroud of Shadows
+        ~SPWI409~, ~SPWI409~, ~Arcane~, ~4~, ~1~, ~0~ => ~SPWI409~    //Remove Curse
+
+
+        ~SPWI501~, ~SPWI501~, ~Arcane~, ~5~, ~1~, ~0~ => ~SPWI501~    //Cloudkill
+        ~SPWI502~, ~SPWI502~, ~Arcane~, ~5~, ~1~, ~0~ => ~SPWI502~    //Cone of Cold
+        ~SPWI504~, ~SPWI504~, ~Arcane~, ~5~, ~1~, ~0~ => ~SPWI504~    //Enoll Eva's Duplication
+        ~SPWI505~, ~SPWI505~, ~Arcane~, ~5~, ~1~, ~0~ => ~SPWI505~    //Desert Hell
+        ~SPWI506~, ~SPWI506~, ~Arcane~, ~5~, ~1~, ~0~ => ~SPWI506~    //Fire and Ice
+
+
+        ~SPWI601~, ~SPWI601~, ~Arcane~, ~6~, ~1~, ~0~ => ~SPWI601~    //Antimagic Shell
+        ~SPWI602~, ~SPWI602~, ~Arcane~, ~6~, ~1~, ~0~ => ~SPWI602~    //Globe of Invulnerability
+        ~SPWI603~, ~SPWI603~, ~Arcane~, ~6~, ~1~, ~0~ => ~SPWI603~    //Howl of Pandemonium
+        ~SPWI604~, ~SPWI604~, ~Arcane~, ~6~, ~1~, ~0~ => ~SPWI604~    //Chain Lightning Storm
+
+
+        ~SPWI701~, ~SPWI701~, ~Arcane~, ~7~, ~1~, ~0~ => ~SPWI701~    //Acid Storm
+        ~SPWI702~, ~SPWI702~, ~Arcane~, ~7~, ~1~, ~0~ => ~SPWI702~    //Blade Storm
+        ~SPWI704~, ~SPWI704~, ~Arcane~, ~7~, ~1~, ~0~ => ~SPWI704~    //Guardian Mantle
+        ~SPWI705~, ~SPWI705~, ~Arcane~, ~7~, ~1~, ~0~ => ~SPWI705~    //Stygian Ice Storm
+
+
+        ~SPWI802~, ~SPWI802~, ~Arcane~, ~8~, ~1~, ~0~ => ~SPWI802~    //Meteor Storm Bombardment
+        ~SPWI803~, ~SPWI803~, ~Arcane~, ~8~, ~1~, ~0~ => ~SPWI803~    //Deathbolt
+        ~SPWI804~, ~SPWI804~, ~Arcane~, ~8~, ~1~, ~0~ => ~SPWI804~    //Ignus' Fury
+        ~SPWI805~, ~SPWI805~, ~Arcane~, ~8~, ~1~, ~0~ => ~SPWI805~    //Power Word, Blind
+        ~SPWI807~, ~SPWI807~, ~Arcane~, ~8~, ~1~, ~0~ => ~SPWI807~    //Mechanus' Cannon
+
+
+        ~SPWI901~, ~SPWI901~, ~Arcane~, ~9~, ~1~, ~0~ => ~SPWI901~    //Celestial Host
+        ~SPWI902~, ~SPWI902~, ~Arcane~, ~9~, ~1~, ~0~ => ~SPWI902~    //Conflagration
+        ~SPWI905~, ~SPWI905~, ~Arcane~, ~9~, ~1~, ~0~ => ~SPWI905~    //Elysium's Fires
+        ~SPWI909~, ~SPWI909~, ~Arcane~, ~9~, ~1~, ~0~ => ~SPWI909~    //Power Word, Kill
+        ~SPWI912~, ~SPWI912~, ~Arcane~, ~9~, ~1~, ~0~ => ~SPWI912~    //Abyssal Fury
+        ~SPWI914~, ~SPWI914~, ~Arcane~, ~9~, ~1~, ~0~ => ~SPWI914~    //Rune of Torment
+
+
+        //Missing scrolls for spells in PST:EE
+        /*
+        //Never existed (or just weird rando items):
+        ~SPWI116~, ~SPWI116~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI116~    //Tongues of Flame
+        ~SPWI117~, ~SPWI117~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI117~    //Seeking Flames
+        ~SPWI118~, ~SPWI118~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI118~    //Scripture of Steel
+        ~SPWI119~, ~SPWI119~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI119~    //Submerge the Will
+        ~SPWI120~, ~SPWI120~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI120~    //Vilquar's Eye
+        ~SPWI121~, ~SPWI121~, ~Arcane~, ~1~, ~1~, ~0~ => ~SPWI121~    //Reign of Anger
+
+        ~SPWI217~, ~SPWI217~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI217~    //Ignus' Terror
+        ~SPWI218~, ~SPWI218~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI218~    //Infernal Orb
+        ~SPWI219~, ~SPWI219~, ~Arcane~, ~2~, ~1~, ~0~ => ~SPWI219~    //Power of One
+
+        ~SPWI312~, ~SPWI312~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI312~    //Infernal Shield
+        ~SPWI313~, ~SPWI313~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI313~    //Fiery Rain
+        ~SPWI314~, ~SPWI314~, ~Arcane~, ~3~, ~1~, ~0~ => ~SPWI314~    //Balance In All Things
+
+        ~SPWI410~, ~SPWI410~, ~Arcane~, ~4~, ~1~, ~0~ => ~SPWI410~    //Elemental Strike
+        */
+
+    END

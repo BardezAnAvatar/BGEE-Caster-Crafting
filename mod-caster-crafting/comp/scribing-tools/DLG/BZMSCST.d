@@ -1,5 +1,5 @@
 BEGIN ~BZMSCST~
-    
+
     //If you are in combat or see enemies, no usability
     IF
         ~OR(2)
@@ -17,7 +17,7 @@ BEGIN ~BZMSCST~
         SAY @15000  //Your scribing kit is open before you. How do you wish to use it?
 
             //Quit
-            IF ~~ 
+            IF ~~
                 THEN REPLY @15030 //Pack up
                     EXIT
     END

@@ -1,5 +1,5 @@
 ACTION_IF (NOT VARIABLE_IS_SET ~bz_caster_crafting_preprocessing~)
-THEN 
+THEN
 BEGIN
 
     //Debugging Statements
@@ -7,6 +7,30 @@ BEGIN
 
     //Debugging Statements
     PRINT @1
+
+    /********************
+    *   Set Game Dirs   *
+    ********************/
+    //edition
+    ACTION_IF GAME_IS ~bgee bg2ee eet iwdee pstee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_edition_code~ ~2E~ END
+
+    //game code
+    ACTION_IF GAME_IS ~bgee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~bg1ee~ END
+    ELSE
+        BEGIN ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~bg2ee~ END
+        ELSE BEGIN ACTION_IF GAME_IS ~iwdee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~iwdee~ END
+            ELSE BEGIN ACTION_IF GAME_IS ~pstee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~pstee~ END
+                ELSE BEGIN ACTION_IF GAME_IS ~iwd2~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~iwd2~ END
+                    //is this necessary? I need to figure this out...
+                    //ELSE BEGIN ACTION_IF GAME_IS ~eet~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~eet~ END
+                    //  END
+                    END
+                END
+            END
+        END
+    /*************************
+    *   END: Set Game Dirs   *
+    *************************/
 
     //Pre-processing of registered data
     INCLUDE ~%MOD_FOLDER%/registration/generate_list_data.tph~
@@ -18,7 +42,7 @@ BEGIN
     <<<<<<<< ScrollCreation/BZMSCST.D
 
     >>>>>>>>
-    
+
     //do not re-process
     OUTER_SET ~bz_caster_crafting_preprocessing~ = 1
 END

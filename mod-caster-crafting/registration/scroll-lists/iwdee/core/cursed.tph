@@ -1,0 +1,19 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~cursed_scrolls~
+    BEGIN
+
+        /*
+        [key]                   // 0
+        */
+
+        //No cursed scrolls in base game!
+        //~SCRL10~ => ~SCRL10~    //Cursed Scroll of Weakness
+        //~SCRL11~ => ~SCRL11~    //Cursed Scroll of Clumsiness
+        //~SCRL12~ => ~SCRL12~    //Cursed Scroll of Foolishness
+        //~SCRL13~ => ~SCRL13~    //Cursed Scroll of Ugliness
+        //~SCRL14~ => ~SCRL14~    //Cursed Scroll of Summon Monster
+        //~SCRL16~ => ~SCRL16~    //Cursed Scroll of Petrification
+        //~SCRL17~ => ~SCRL17~    //Cursed Scroll of Ailment
+        //~SCRL18~ => ~SCRL18~    //Cursed Scroll of Stupidity
+
+    END

@@ -32,7 +32,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL5U~, ~SPWI120~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL5U~    //Reflected Image
         ~SCRL6D~, ~SPWI123~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRL6D~    //Find Familiar
         ~SCRLA6~, ~SPWI125~, ~Arcane~, ~1~, ~1~, ~0~ => ~SCRLA6~    //Spook
-        ~BDSCRL1A~, ~SPWI126~, ~Arcane~, ~1~, ~1~, ~0~ => ~BDSCRL1A~    //Dancing Lights
 
 
         ~SCRL85~, ~SPWI201~, ~Arcane~, ~2~, ~3~, ~0~ => ~SCRL85~    //Blur
@@ -56,7 +55,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRLAI~, ~SPWI221~, ~Arcane~, ~2~, ~3~, ~0~ => ~SCRLAI~    //Ray of Enfeeblement
         ~SCRLA2~, ~SPWI223~, ~Arcane~, ~2~, ~3~, ~0~ => ~SCRLA2~    //Deafness
         ~SCRLA3~, ~SPWI224~, ~Arcane~, ~2~, ~3~, ~0~ => ~SCRLA3~    //Glitterdust
-        ~BDSCRL2A~, ~SPWI228~, ~Arcane~, ~2~, ~3~, ~0~ => ~BDSCRL2A~    //Darkness 15' Radius
 
 
         ~SCRL1D~, ~SPWI301~, ~Arcane~, ~3~, ~5~, ~0~ => ~SCRL1D~    //Clairvoyance
@@ -163,36 +161,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL8C~, ~SPWI625~, ~Arcane~, ~6~, ~12~, ~0~ => ~SCRL8C~    //Stone to Flesh
 
 
-        ~SCRL8I~, ~SPWI707~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8I~    //Cacofiend
-
-
-        ~SCRL9H~, ~SPWI813~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9H~    //Maze
-        ~SCRLB1~, ~SPWI818~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLB1~    //Bigby's Clenched Fist
-
-
-        ~SCRLB2~, ~SPWI918~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRLB2~    //Bigby's Crushing Hand
-        ~SCRLB4~, ~SPWI919~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRLB4~    //Wish
-
-        //Missing scrolls for spells in BG1EE
-        /*
-
-        //Never existed:
-        ~~, ~SPWI124~, ~Arcane~, ~1~, ~1~, ~0~ => ~~    //Nahal's Reckless Dweomer*
-        ~~, ~SPWI222~, ~Arcane~, ~2~, ~3~, ~0~ => ~~    //Chaos Shield*
-        ~~, ~SPWI723~, ~Arcane~, ~7~, ~14~, ~0~ => ~~    //Improved Chaos Shield*
-        ~--HLA--~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Energy Blades
-        ~--HLA--~, ~SPWI921~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Improved Alacrity
-        ~--HLA--~, ~SPWI922~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Dragon's Breath
-        ~--HLA--~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Planetar
-        ~--HLA--~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Dark Planetar
-        ~--HLA--~, ~SPWI925~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Comet
-
-        //Missing:
         ~SCRL8D~, ~SPWI701~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8D~    //Spell Turning
         ~SCRL8E~, ~SPWI702~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8E~    //Protection From The Elements
         ~SCRL8F~, ~SPWI703~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8F~    //Project Image
         ~SCRL8G~, ~SPWI704~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8G~    //Ruby Ray of Reversal
         ~SCRL8H~, ~SPWI705~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8H~    //Khelben's Warding Whip
+        ~SCRL8I~, ~SPWI707~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8I~    //Cacofiend
         ~SCRL8J~, ~SPWI708~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8J~    //Mantle
         ~SCRL8L~, ~SPWI710~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8L~    //Spell Sequencer
         ~SCRL8M~, ~SPWI711~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8M~    //Sphere of Chaos
@@ -207,6 +181,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL8V~, ~SPWI720~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8V~    //Control Undead
         ~SCRL8W~, ~SPWI721~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8W~    //Mass Invisibility
         ~SCRLA4~, ~SPWI722~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRLA4~    //Limited Wish
+
+
         ~SCRL8Y~, ~SPWI803~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL8Y~    //Protection from Energy
         ~SCRL8Z~, ~SPWI804~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL8Z~    //Simulacrum
         ~SCRL9A~, ~SPWI805~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9A~    //Pierce Shield
@@ -216,7 +192,13 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL9E~, ~SPWI810~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9E~    //Incendiary Cloud
         ~SCRL9F~, ~SPWI811~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9F~    //Symbol, Fear
         ~SCRL9G~, ~SPWI812~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9G~    //Abi-Dalzim's Horrid Wilting
+        ~SCRL9H~, ~SPWI813~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9H~    //Maze
         ~SCRL9J~, ~SPWI815~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9J~    //Power Word Blind
+        ~SCRLAP~, ~SPWI816~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAP~    //Symbol, Stun     //NOTE: Also `SCRLAN` but only 1 reference
+        ~SCRLAO~, ~SPWI817~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAO~    //Symbol, Death    //NOTE: Also `SCRLAM` but only 1 reference
+        ~SCRLB1~, ~SPWI818~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLB1~    //Bigby's Clenched Fist
+
+
         ~SCRL9L~, ~SPWI902~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRL9L~    //Spell Trap
         ~SCRL9M~, ~SPWI903~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRL9M~    //Spellstrike
         ~SCRL9N~, ~SPWI905~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRL9N~    //Gate
@@ -231,8 +213,22 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL9X~, ~SPWI915~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRL9X~    //Black Blade of Disaster
         ~SCRL9Y~, ~SPWI916~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRL9Y~    //Shapechange
         ~SCRL9Z~, ~SPWI917~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRL9Z~    //Freedom
-        ~SCRLAP~, ~SPWI816~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAP~    //Symbol, Stun     //NOTE: Also `SCRLAN` but only 1 reference
-        ~SCRLAO~, ~SPWI817~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLAO~    //Symbol, Death    //NOTE: Also `SCRLAM` but only 1 reference
+        ~SCRLB2~, ~SPWI918~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRLB2~    //Bigby's Crushing Hand
+        ~SCRLB4~, ~SPWI919~, ~Arcane~, ~9~, ~18~, ~0~ => ~SCRLB4~    //Wish
+
+
+        //Missing scrolls for spells in BG2EE
+        /*
+        //Never existed:
+        ~~, ~SPWI124~, ~Arcane~, ~1~, ~1~, ~0~ => ~~    //Nahal's Reckless Dweomer*
+        ~~, ~SPWI222~, ~Arcane~, ~2~, ~3~, ~0~ => ~~    //Chaos Shield*
+        ~~, ~SPWI723~, ~Arcane~, ~7~, ~14~, ~0~ => ~~   //Improved Chaos Shield*
+        ~--HLA--~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Energy Blades
+        ~--HLA--~, ~SPWI921~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Improved Alacrity
+        ~--HLA--~, ~SPWI922~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Dragon's Breath
+        ~--HLA--~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Planetar
+        ~--HLA--~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Summon Dark Planetar
+        ~--HLA--~, ~SPWI925~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Comet
         */
 
     END

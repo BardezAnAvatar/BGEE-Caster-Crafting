@@ -30,7 +30,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI123~, ~Arcane~, ~1~ => ~SPWI123~    //Find Familiar
         ~SPWI124~, ~Arcane~, ~1~ => ~SPWI124~    //Nahal's Reckless Dweomer*
         ~SPWI125~, ~Arcane~, ~1~ => ~SPWI125~    //Spook
-        ~SPWI126~, ~Arcane~, ~1~ => ~SPWI126~    //Dancing Lights
 
         ~SPWI201~, ~Arcane~, ~2~ => ~SPWI201~    //Blur
         ~SPWI202~, ~Arcane~, ~2~ => ~SPWI202~    //Detect Evil
@@ -54,7 +53,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI222~, ~Arcane~, ~2~ => ~SPWI222~    //Chaos Shield*
         ~SPWI223~, ~Arcane~, ~2~ => ~SPWI223~    //Deafness
         ~SPWI224~, ~Arcane~, ~2~ => ~SPWI224~    //Glitterdust
-        ~SPWI228~, ~Arcane~, ~2~ => ~SPWI228~    //Darkness 15' Radius
 
         ~SPWI301~, ~Arcane~, ~3~ => ~SPWI301~    //Clairvoyance
         ~SPWI302~, ~Arcane~, ~3~ => ~SPWI302~    //Remove Magic
@@ -212,12 +210,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI919~, ~Arcane~, ~9~ => ~SPWI919~    //Wish
 
         ~SPWI920~, ~Arcane~, ~A~ => ~SPWI920~    //Energy Blades
+        ~SPWI921~, ~Arcane~, ~A~ => ~SPWI921~    //Improved Alacrity
         ~SPWI922~, ~Arcane~, ~A~ => ~SPWI922~    //Dragon's Breath
+        ~SPWI923~, ~Arcane~, ~A~ => ~SPWI923~    //Summon Planetar
+        ~SPWI924~, ~Arcane~, ~A~ => ~SPWI924~    //Summon Dark Planetar
         ~SPWI925~, ~Arcane~, ~A~ => ~SPWI925~    //Comet
-
-        //Missing
-        //~SPWI921~, ~Arcane~, ~A~ => ~SPWI921~    //Improved Alacrity
-        //~SPWI923~, ~Arcane~, ~A~ => ~SPWI923~    //Summon Planetar
-        //~SPWI924~, ~Arcane~, ~A~ => ~SPWI924~    //Summon Dark Planetar
 
     END
