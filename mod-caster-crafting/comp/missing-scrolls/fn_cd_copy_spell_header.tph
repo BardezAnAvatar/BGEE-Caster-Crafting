@@ -41,7 +41,9 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
                 END
             END
         END
-        READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)    // read all effects in a massive block
+
+        //Exclusion flags
+        READ_LONG (0x1E) ~exclusion_flags~
 
         //Read the spell header in fields to write to item
         // NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
@@ -67,6 +69,12 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         READ_SHORT (base_off + 0x24) ~abil_when_drained~    //unused
         READ_SHORT (base_off + 0x26) ~abil_projectile~
 
+        // read all effects in a massive block
+        READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)
+
+        READ_LONG (0x08) ~spl_name~         //name
+        READ_LONG (0x50) ~spl_description~  //description
+
         BUT_ONLY
 
 
@@ -81,6 +89,15 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         SET global_fx_idx_off = 0x6e
         SET global_fx_num_off = 0x70
         SET abil_fx_idx = 0x00
+
+        //write the exclusion flags
+        WRITE_BYTE (0x29) ((%exclusion_flags% BAND 0xFF000000) >> 24)   //cleric byte
+        WRITE_BYTE (0x2B) ((%exclusion_flags% BAND 0x00FF0000) >> 16)   //thief byte
+        WRITE_BYTE (0x2D) ((%exclusion_flags% BAND 0x0000FF00) >> 8)    //mage byte
+        WRITE_BYTE (0x2F) ((%exclusion_flags% BAND 0x000000FF))         //warrior byte
+
+        WRITE_LONG (0x0C) (%spl_name%)          //identified name
+        WRITE_LONG (0x54) (%spl_description%)   //identified description
 
         // write the copied ability header
         LPF ~ADD_ITEM_HEADER~       // Add item header
