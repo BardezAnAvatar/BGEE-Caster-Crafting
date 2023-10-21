@@ -6,12 +6,13 @@
 
 DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
     INT_VAR
-        cast_at_level = 1       //caster level to search on; read headers looking a header with this cast at min level
-        learn_spell   = "-1"    //flag for if the spell can be learnt
+        cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
+        learn_spell   = "-1"            //flag for if the spell can be learnt
     STR_VAR
-        spell = null            //spell RESREF to read from
-        item  = null            //item RESREF to write to
-        icon  = null            //BAM RESREF to write
+        spell = null                    //spell RESREF to read from
+        item  = null                    //item RESREF to write to
+        icon_inventory = null           //BAM RESREF to write for inventory
+        icon_description = ~CSCRL01~    //BAM RESREF to write for description
     BEGIN
 
     ACTION_IF
@@ -96,8 +97,10 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         WRITE_BYTE (0x2D) ((%exclusion_flags% BAND 0x0000FF00) >> 8)    //mage byte
         WRITE_BYTE (0x2F) ((%exclusion_flags% BAND 0x000000FF))         //warrior byte
 
-        WRITE_LONG (0x0C) (%spl_name%)          //identified name
-        WRITE_LONG (0x54) (%spl_description%)   //identified description
+        WRITE_LONG (0x0C) (%spl_name%)                      //identified name
+        WRITE_LONG (0x54) (%spl_description%)               //identified description
+        WRITE_ASCII_TERMINATE (0x3A) ~%icon_inventory%~     //update the item inventory icon
+        WRITE_ASCII_TERMINATE (0x58) ~%icon_description%~   //update the item description icon
 
         // write the copied ability header
         LPF ~ADD_ITEM_HEADER~       // Add item header
