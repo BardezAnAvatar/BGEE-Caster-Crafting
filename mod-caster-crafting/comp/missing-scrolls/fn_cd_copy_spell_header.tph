@@ -11,6 +11,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
     STR_VAR
         spell = null            //spell RESREF to read from
         item  = null            //item RESREF to write to
+        icon  = null            //BAM RESREF to write
     BEGIN
 
     ACTION_IF
@@ -40,16 +41,34 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
                 END
             END
         END
-        READ_ASCII (base_off + 0x04) icon
-        READ_SHORT (base_off + 0x1e) transfer_fx_num
-        READ_SHORT (base_off + 0x20) abil_fx_idx
-
-        //NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
-        //  Need to read each field then translate it over, methinks.
-        READ_ASCII (base_off) entire_matching_ability (0x38)  //read the entire spell ability
-
         READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)    // read all effects in a massive block
+
+        //Read the spell header in fields to write to item
+        // NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
+        //      Need to read each field then translate it over, methinks.
+        //READ_ASCII (base_off) entire_matching_ability (0x38)  //read the entire spell ability
+        READ_BYTE  (base_off + 0x00) ~abil_type~
+        READ_BYTE  (base_off + 0x01) ~abil_type_flags~
+        READ_SHORT (base_off + 0x02) ~abil_location~
+        READ_ASCII (base_off + 0x04) ~abil_icon~
+        READ_BYTE  (base_off + 0x0C) ~abil_target~
+        READ_BYTE  (base_off + 0x0D) ~abil_target_count~
+        READ_SHORT (base_off + 0x0E) ~abil_range~
+        READ_SHORT (base_off + 0x10) ~abil_caster_level~
+        READ_SHORT (base_off + 0x12) ~abil_casting_speed~
+        //unused 2 bytes
+        READ_SHORT (base_off + 0x16) ~abil_dice_size~       //unused
+        READ_SHORT (base_off + 0x18) ~abil_dice_count~      //unused
+        READ_SHORT (base_off + 0x1A) ~abil_damage_bonus~    //unused
+        READ_SHORT (base_off + 0x1C) ~abil_damage_type~     //unused
+        READ_SHORT (base_off + 0x1E) transfer_fx_num
+        READ_SHORT (base_off + 0x20) abil_fx_idx
+        READ_SHORT (base_off + 0x22) ~abil_charge_count~    //unused
+        READ_SHORT (base_off + 0x24) ~abil_when_drained~    //unused
+        READ_SHORT (base_off + 0x26) ~abil_projectile~
+
         BUT_ONLY
+
 
     //Calculate the number of abilities
     OUTER_SET ~new_ability_count~ = 1
@@ -63,8 +82,44 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         SET global_fx_num_off = 0x70
         SET abil_fx_idx = 0x00
 
-        INSERT_BYTES abil_off (0x38)                                        // make space for...
-        WRITE_ASCII abil_off ~%entire_matching_ability%~                    // write the copied ability header
+        // write the copied ability header
+        LPF ~ADD_ITEM_HEADER~       // Add item header
+            INT_VAR
+                type = %abil_type%
+                required_id = 0         // Require ID to use?
+                location = 3            // Item/equpiment
+                alt_dicesize = 0
+                target = %abil_target%  // Caster
+                target_count = %abil_target_count%
+                range = %abil_range%    // range 1 ft.
+                projectile_type = 0     //No launcher
+                alt_dicenumber = 0
+                speed = 0
+                alt_damage = 0
+                thaco = 0
+                dicesize = 0
+                school = 0              //not used?
+                dicenumber = 0
+                sectype = 0             //not used?
+                damage = 0
+                damage_type = 1         // Piercing damage
+                charges = 1
+                depletion = 1           // vanishes
+                flags = 0               // no flags set
+                projectile = %abil_projectile%
+                //Animation %s
+                overhand = 34
+                backhand = 33
+                thrust = 33
+                is_bow = 0
+                is_xbow = 0
+                is_sling = 0
+                copy_header = 0
+                insert_point = ~-1~
+            STR_VAR
+                icon = ~%icon%~
+        END
+
 
         SET abil_fx_num_off = (abil_off + 0x1E)                             //how many copied effects?
         WRITE_SHORT abil_fx_num_off (transfer_fx_num)                       // update number of effects in ability

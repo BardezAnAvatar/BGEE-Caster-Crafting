@@ -1,6 +1,8 @@
 
 //include a function to
 INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/fn_cd_copy_spell_header.tph~
+INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
+
 
 LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
     INT_VAR
