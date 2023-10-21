@@ -43,20 +43,37 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         READ_ASCII (base_off + 0x04) icon
         READ_SHORT (base_off + 0x1e) transfer_fx_num
         READ_SHORT (base_off + 0x20) abil_fx_idx
-        READ_ASCII (base_off) entire_matching_ability 0x9A  //read the entire spell ability
+
+        //NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
+        //  Need to read each field then translate it over, methinks.
+        READ_ASCII (base_off) entire_matching_ability (0x38)  //read the entire spell ability
+
         READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)    // read all effects in a massive block
         BUT_ONLY
+
+    //Calculate the number of abilities
+    OUTER_SET ~new_ability_count~ = 1
+    ACTION_IF ~learn_spell~ > 0 THEN BEGIN OUTER_SET ~new_ability_count~ = 2 END
 
     COPY_EXISTING ~./%MOD_FOLDER%/comp/missing-scrolls/ITM/blank_scroll.itm~ ~override/%item%.ITM~
         READ_SHORT 0x68 abil_num
         READ_LONG  0x64 abil_off
         READ_LONG  0x6a fx_off
-        SET abil_fx_idx_off = 0x6e
-        SET abil_fx_num_off = 0x70
-        WRITE_ASCII abil_fx_idx_off ~%entire_matching_ability%~             // write the copied ability header
-        WRITE_SHORT abil_fx_num_off (transfer_fx_num)                       // update number of effects
-        WRITE_SHORT fx_off #0                                               // update number of effects
-        SET base_fx_add = (fx_off + 0x00 + (abil_fx_idx * 0x30))
+        SET global_fx_idx_off = 0x6e
+        SET global_fx_num_off = 0x70
+        SET abil_fx_idx = 0x00
+
+        INSERT_BYTES abil_off (0x38)                                        // make space for...
+        WRITE_ASCII abil_off ~%entire_matching_ability%~                    // write the copied ability header
+
+        SET abil_fx_num_off = (abil_off + 0x1E)                             //how many copied effects?
+        WRITE_SHORT abil_fx_num_off (transfer_fx_num)                       // update number of effects in ability
+
+        SET fx_off = (abil_off + 0x38)
+        WRITE_LONG 0x6a (fx_off)                                            // update new effects offset
+
+        //SET base_fx_add = (fx_off + 0x00 + (abil_fx_idx * 0x30))
+        SET base_fx_add = fx_off
         INSERT_BYTES base_fx_add (0x30 * transfer_fx_num)                   // make space for...
         WRITE_ASCIIE base_fx_add ~%transfer_effects%~                       // transferred effects
         FOR (index2 = 0 ; index2 < transfer_fx_num ; ++index2) BEGIN        // loop through newly-inserted effects
@@ -65,6 +82,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
                 WRITE_ASCIIE (base_fx_add + 0x14 + (0x30 * index2)) "%item%" #8
             END // end self-reference check
         END // end new fx loop
+        WRITE_SHORT 0x68 (%new_ability_count%)                               //Now write the effects vals
 
         BUT_ONLY
 
