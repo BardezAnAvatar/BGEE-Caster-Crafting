@@ -3,15 +3,20 @@
 INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/fn_cd_copy_spell_header.tph~
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
 
-
+//POC
 LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
     INT_VAR
         cast_at_level = 10
         learn_spell   = 0
+        usability_bard = 1
+        usability_cleric = 1
+        usability_druid = 1
+        usability_mage = 1
+        usability_paladin = 1
+        usability_ranger = 1
     STR_VAR
         item  = ~BZ_TEST~
         spell = ~SPWI222~ //Chaos Shield
 END
 
-//Result: MKAY, so it will copy all of the effects out of the effect header of the spell to top-level effects of the ITM.
-//  It's not copying the whole header. BUT this is a good start.
+//Result: Refined at this point to give decent results. More refinement is necessary.
