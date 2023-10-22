@@ -6,7 +6,7 @@
 
 
 // From the base game, get all spells from the class spell lists. Emit to a file the findings.
-INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scroll.tph~
+INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
 INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph~
 
 INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/arcane.tph~
