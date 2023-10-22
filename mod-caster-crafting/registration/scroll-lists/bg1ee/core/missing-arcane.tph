@@ -9,22 +9,23 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Spell Level]           // 3
         [Caster Level]          // 4
         [Icon: Inventory]       // 5
-        [Usability: Mage]       // 6
-        [Usability: Cleric]     // 7
-        [Usability: Druid]      // 8
-        [Usability: Bard]       // 9
-        [Usability: Paladin]    // 10
-        [Usability: Ranger]     // 11
+        [Gold: Additional cost] // 6
+        [Usability: Mage]       // 7
+        [Usability: Cleric]     // 8
+        [Usability: Druid]      // 9
+        [Usability: Bard]       // 10
+        [Usability: Paladin]    // 11
+        [Usability: Ranger]     // 12
         */
 
-        ~BZ§12401~, ~SPWI124~, ~Arcane~, ~1~, ~1~,  ~BZ§124I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§12401~   //Nahal's Reckless Dweomer*
-        ~BZ§22203~, ~SPWI222~, ~Arcane~, ~2~, ~3~,  ~BZ§222I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§22203~   //Chaos Shield*
-        ~BZ§72314~, ~SPWI723~, ~Arcane~, ~7~, ~14~, ~BZ§723I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§72314~   //Improved Chaos Shield*
+        ~BZ§12401~, ~SPWI124~, ~Arcane~, ~1~, ~1~,  ~BZ§124I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§12401~   //Nahal's Reckless Dweomer*
+        ~BZ§22203~, ~SPWI222~, ~Arcane~, ~2~, ~3~,  ~BZ§222I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§22203~   //Chaos Shield*
+        ~BZ§72314~, ~SPWI723~, ~Arcane~, ~7~, ~14~, ~BZ§723I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§72314~   //Improved Chaos Shield*
 
-        ~BZ§A2018~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~BZ§A20I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2018~   //Energy Blades
-        ~BZ§A2118~, ~SPWI921~, ~Arcane~, ~A~, ~18~, ~BZ§A21I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2118~   //Improved Alacrity
-        ~BZ§A2218~, ~SPWI922~, ~Arcane~, ~A~, ~18~, ~BZ§A22I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2218~   //Dragon's Breath
-        ~BZ§A2318~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~BZ§A23I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2318~   //Summon Planetar
-        ~BZ§A2418~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~BZ§A24I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2418~   //Summon Dark Planetar
-        ~BZ§A2518~, ~SPWI925~, ~Arcane~, ~A~, ~18~, ~BZ§A25I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2518~   //Comet
+        ~BZ§A2018~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~BZ§A20I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2018~   //Energy Blades
+        ~BZ§A2118~, ~SPWI921~, ~Arcane~, ~A~, ~18~, ~BZ§A21I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2118~   //Improved Alacrity
+        ~BZ§A2218~, ~SPWI922~, ~Arcane~, ~A~, ~18~, ~BZ§A22I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2218~   //Dragon's Breath
+        ~BZ§A2318~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~BZ§A23I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2318~   //Summon Planetar
+        ~BZ§A2418~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~BZ§A24I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2418~   //Summon Dark Planetar
+        ~BZ§A2518~, ~SPWI925~, ~Arcane~, ~A~, ~18~, ~BZ§A25I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ§A2518~   //Comet
     END
