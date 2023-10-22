@@ -68,6 +68,7 @@ Thus
 | Divine     |   5   |  F   |
 | Divine     |   6   |  G   |
 | Divine     |   7   |  H   |
+| Divine     |   Q   |  I   |
 
 **Switch statement seems to win out.**
 
