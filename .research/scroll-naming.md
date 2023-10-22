@@ -47,6 +47,28 @@ arcane = 1-10
 divine = 11-17
 nature = 18-24
 
+Thus
+| Tradition  | Level | Code |
+| ---------- | ----- | ---- |
+| Protection |   0   |  0   |
+| Arcane     |   1   |  1   |
+| Arcane     |   2   |  2   |
+| Arcane     |   3   |  3   |
+| Arcane     |   4   |  4   |
+| Arcane     |   5   |  5   |
+| Arcane     |   6   |  6   |
+| Arcane     |   7   |  7   |
+| Arcane     |   8   |  8   |
+| Arcane     |   9   |  9   |
+| Arcane     |   10  |  A   |
+| Divine     |   1   |  B   |
+| Divine     |   2   |  C   |
+| Divine     |   3   |  D   |
+| Divine     |   4   |  E   |
+| Divine     |   5   |  F   |
+| Divine     |   6   |  G   |
+| Divine     |   7   |  H   |
+
 **Switch statement seems to win out.**
 
 The result is:
