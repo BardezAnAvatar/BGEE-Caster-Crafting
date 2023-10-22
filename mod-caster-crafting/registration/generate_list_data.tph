@@ -9,6 +9,7 @@
 INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
 INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph~
 INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scroll.tph~
+INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/spell-min-caster-level.tph~
 
 INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/arcane.tph~
 INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
