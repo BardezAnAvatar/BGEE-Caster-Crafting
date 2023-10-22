@@ -8,6 +8,12 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
     INT_VAR
         cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
         learn_spell   = "-1"            //flag for if the spell can be learnt
+        usability_mage      = 0
+        usability_bard      = 0
+        usability_ranger    = 0
+        usability_paladin   = 0
+        usability_cleric    = 0
+        usability_druid     = 0
     STR_VAR
         spell = null                    //spell RESREF to read from
         item  = null                    //item RESREF to write to
@@ -83,6 +89,36 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
     OUTER_SET ~new_ability_count~ = 1
     ACTION_IF ~learn_spell~ > 0 THEN BEGIN OUTER_SET ~new_ability_count~ = 2 END
 
+    //Calculate usability flags
+    OUTER_SET ~unusabilility_flags~ = 0b01100000011111111111111111000000    //all classes unusable
+    ACTION_IF (%usability_mage%)
+    THEN BEGIN
+        OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND
+            (BNOT (BIT8 BOR BIT13 BOR BIT15 BOR BIT16 BOR BIT18 BOR BIT19)) //Mage flags
+    END
+    ACTION_IF (%usability_bard%)
+    THEN BEGIN
+        OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT6)) //Bard
+    END
+    ACTION_IF (%usability_ranger%)
+    THEN BEGIN
+        OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT21 BOR BIT10)) //Ranger
+    END
+    ACTION_IF (%usability_paladin%)
+    THEN BEGIN
+        OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT20)) //Paladin
+    END
+    ACTION_IF (%usability_druid%)
+    THEN BEGIN
+        OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT12 BOR BIT30)) //Druid
+    END
+    ACTION_IF (%usability_cleric%)
+    THEN BEGIN
+        OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND
+            (BNOT (BIT7 BOR BIT8 BOR BIT9 BOR BIT10 BOR BIT14 BOR BIT15)) //Cleric
+    END
+
+
     COPY_EXISTING ~./%MOD_FOLDER%/comp/missing-scrolls/ITM/blank_scroll.itm~ ~override/%item%.ITM~
         READ_SHORT 0x68 abil_num
         READ_LONG  0x64 abil_off
@@ -96,6 +132,8 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         WRITE_BYTE (0x2B) ((%exclusion_flags% BAND 0x00FF0000) >> 16)   //thief byte
         WRITE_BYTE (0x2D) ((%exclusion_flags% BAND 0x0000FF00) >> 8)    //mage byte
         WRITE_BYTE (0x2F) ((%exclusion_flags% BAND 0x000000FF))         //warrior byte
+
+        WRITE_LONG (0x1E) (%unusabilility_flags%)           //unusability flags
 
         WRITE_LONG (0x0C) (%spl_name%)                      //identified name
         WRITE_LONG (0x54) (%spl_description%)               //identified description
