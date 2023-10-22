@@ -1,0 +1,36 @@
+/*******************************************************************************************************
+*   This table contains the minimum caster level necessary to have access to any given type of spell   *
+*******************************************************************************************************/
+
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_min_caster_level~
+    BEGIN
+
+        /*
+        [key]                   // 0
+        [Tradition]             // 1
+        [Spell level]           // 2
+        [Min. Caster level]     // 3
+        */
+
+        ~1-Arcane~,     ~Arcane~,     ~1~,   ~1~ => ~1-Arcane~
+        ~2-Arcane~,     ~Arcane~,     ~2~,   ~3~ => ~2-Arcane~
+        ~3-Arcane~,     ~Arcane~,     ~3~,   ~5~ => ~3-Arcane~
+        ~4-Arcane~,     ~Arcane~,     ~4~,   ~7~ => ~4-Arcane~
+        ~5-Arcane~,     ~Arcane~,     ~5~,   ~9~ => ~5-Arcane~
+        ~6-Arcane~,     ~Arcane~,     ~6~,  ~12~ => ~6-Arcane~
+        ~7-Arcane~,     ~Arcane~,     ~7~,  ~14~ => ~7-Arcane~
+        ~8-Arcane~,     ~Arcane~,     ~8~,  ~16~ => ~8-Arcane~
+        ~9-Arcane~,     ~Arcane~,     ~9~,  ~18~ => ~9-Arcane~
+        ~A-Arcane~,     ~Arcane~,     ~A~,  ~18~ => ~A-Arcane~  //mage and sorcerer can get at level 18
+
+        ~1-Divine~,     ~Divine~,     ~1~,  ~1~  => ~1-Divine~
+        ~2-Divine~,     ~Divine~,     ~2~,  ~3~  => ~2-Divine~
+        ~3-Divine~,     ~Divine~,     ~3~,  ~5~  => ~3-Divine~
+        ~4-Divine~,     ~Divine~,     ~4~,  ~7~  => ~4-Divine~
+        ~5-Divine~,     ~Divine~,     ~5~,  ~9~  => ~5-Divine~
+        ~6-Divine~,     ~Divine~,     ~6~, ~12~  => ~6-Divine~
+        ~7-Divine~,     ~Divine~,     ~7~, ~14~  => ~7-Divine~
+        ~Q-Divine~,     ~Divine~,     ~Q~, ~15~  => ~Q-Divine~  //Druid can get at level 15, cleric 22
+
+    END
