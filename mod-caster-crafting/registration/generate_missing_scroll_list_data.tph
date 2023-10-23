@@ -41,7 +41,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
                 ~%keys_3%~,                 //spell level
                 ~%keys_4%~,                 //caster level
                 ~%scroll_gold%~,            //cost of the scroll in the *.ITM file
-                ~%keys_6%~,                 //inventory icon
+                ~%keys_5%~,                 //inventory icon
                 ~%keys_7%~,                 //Usability: Mage
                 ~%keys_8%~,                 //Usability: Cleric
                 ~%keys_9%~,                 //Usability: Druid
@@ -55,3 +55,27 @@ ACTION_PHP_EACH ~scroll_list_missing~
 
 //Sort the indicies, on first key
 ACTION_SORT_ARRAY_INDICES ~scroll_list_missing_data_arcane~
+
+//DEBUG
+
+ACTION_PHP_EACH ~scroll_list_missing_data_arcane~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: scroll_list_data_arcane:
+            spell code:     `%keys_1%`
+            scroll code:    `%keys_0%`
+            Tradition:      `%keys_2%`
+            level:          `%keys_3%`
+            caster level:   `%keys_4%`
+            gold cost:      `%keys_5%`
+            inv. icon:      `%keys_6%`
+            us. Mage:       `%keys_7%`
+            us. Cleric:     `%keys_8%`
+            us. Druid:      `%keys_9%`
+            us. Bard:       `%keys_10%`
+            us. Paladin:    `%keys_11%`
+            us. Ranger:     `%keys_12%`~
+    END
+
+
