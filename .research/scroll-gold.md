@@ -30,7 +30,7 @@ Furthermore, the basic ability to cast spells of the specified level:
 |   9   | 18 |
 
 There are a bunch of ways I could try to make this work for 2E, but it keeps falling short. I suspect
-that the best bet would be: { base scroll level cost } + { { Excess Caster Level } * 50 }
+that the best bet would be: { base scroll level cost } + { { Excess Caster Level } * 50 * Spell level}
 
 Based from this pattern, a level 10 scroll should be 20k.
 
