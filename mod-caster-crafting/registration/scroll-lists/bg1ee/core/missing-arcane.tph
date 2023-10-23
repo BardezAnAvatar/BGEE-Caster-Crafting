@@ -25,12 +25,14 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!22203~, ~SPWI222~, ~Arcane~, ~2~, ~1~,  ~BZ!222I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!22203~   //Chaos Shield*
         ~BZ!72314~, ~SPWI723~, ~Arcane~, ~7~, ~1~,  ~BZ!723I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!72314~   //Improved Chaos Shield*
 
-        /*
         ~BZ!A2018~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~BZ!A20I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2018~   //Energy Blades
-        //~BZ!A2118~, ~SPWI921~, ~Arcane~, ~A~, ~1~,  ~BZ!A21I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2118~   //Improved Alacrity
         ~BZ!A2218~, ~SPWI922~, ~Arcane~, ~A~, ~1~,  ~BZ!A22I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2218~   //Dragon's Breath
+        ~BZ!A2518~, ~SPWI925~, ~Arcane~, ~A~, ~1~,  ~BZ!A25I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2518~   //Comet
+
+        //Spells missing from the game:
+        /*
+        //~BZ!A2118~, ~SPWI921~, ~Arcane~, ~A~, ~1~,  ~BZ!A21I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2118~   //Improved Alacrity
         //~BZ!A2318~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~BZ!A23I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2318~   //Summon Planetar
         //~BZ!A2418~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~BZ!A24I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2418~   //Summon Dark Planetar
-        ~BZ!A2518~, ~SPWI925~, ~Arcane~, ~A~, ~1~,  ~BZ!A25I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~ => ~BZ!A2518~   //Comet
         */
     END
