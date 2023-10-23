@@ -81,5 +81,6 @@ Gross, but fits into 8 chars
 Note: I tried to use `§`; I had to encode using Windows 1252, and it _nearly worked_; Near Infinity loads, reads everything correctly.
 The game console allows me to type/copy the character, but game crashes when I try to use the character. Trying non-extant files such
 as § or Ø the game does not crash, but instead says the files do not exist.
-Note further: Using `!` works, so it isn't like the generated item files are busted. I also tried using `!` for BAMs and still used
+Note further: Using `!` works, so it isn't like the generated item files are busted. I also tried using `!` for BAMs and still used.
+Similarly, `Æ` crashes the game. I think anything over ASCII 127 might cause problems.
 the `§`. I think while I could explore further, just using `!` is probably the best solution.
