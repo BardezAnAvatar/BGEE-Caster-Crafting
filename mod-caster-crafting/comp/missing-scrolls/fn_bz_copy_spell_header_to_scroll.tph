@@ -263,7 +263,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
 
     END
     ELSE BEGIN
-        WARN ~cd_items_casting_spells: file(s) not found or invalid input~
+        WARN ~bz_copy_spell_header_to_scroll: file(s) not found or invalid input~
     END
 
 END
