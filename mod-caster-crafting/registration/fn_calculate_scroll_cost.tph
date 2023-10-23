@@ -47,7 +47,13 @@ DEFINE_ACTION_FUNCTION ~bz_calculate_scroll_cost~
             OUTER_SET ~excess_caster_level~ = (%CasterLevel% - %min_caster_level%)
         END
 
+        //get level
+        OUTER_SET ~spell_level~ = 0
+        ACTION_IF (~A~ STRING_EQUAL ~%Level%~) THEN BEGIN OUTER_SET ~spell_level~ = 10 END
+            ELSE BEGIN OUTER_SET ~spell_level~ = %Level% END
+
+
         //calculate the ultimate gold cost
-        OUTER_SET ~gold~ = (%base_gold% + %AdditionalCost% + (%excess_caster_level% * 50 * %Level%))
+        OUTER_SET ~gold~ = (%base_gold% + %AdditionalCost% + (%excess_caster_level% * 50 * %spell_level%))
 
     END
