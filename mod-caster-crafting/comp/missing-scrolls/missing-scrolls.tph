@@ -22,3 +22,25 @@ END
 */
 
 //Result: Refined at this point to give decent results. More refinement is necessary.
+
+// Loop through the missing scrolls and create them
+
+ACTION_PHP_EACH ~scroll_list_missing~
+    AS ~keys~ => ~value~
+    BEGIN
+        LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
+            INT_VAR
+                cast_at_level       = %keys_4%
+                learn_spell         = 1
+                usability_bard      = %keys_10%
+                usability_cleric    = %keys_8%
+                usability_druid     = %keys_9%
+                usability_mage      = %keys_7%
+                usability_paladin   = %keys_11%
+                usability_ranger    = %keys_12%
+            STR_VAR
+                item  = ~%keys_0%~
+                spell = ~SPWI222~ //Chaos Shield
+        END
+    END
+
