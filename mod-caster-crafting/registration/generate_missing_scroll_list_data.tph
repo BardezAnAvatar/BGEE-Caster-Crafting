@@ -63,19 +63,19 @@ ACTION_PHP_EACH ~scroll_list_missing_data_arcane~
     BEGIN
         //Debugging Statements
         PRINT ~DEBUG: scroll_list_data_arcane:
-            spell code:     `%keys_1%`
-            scroll code:    `%keys_0%`
-            Tradition:      `%keys_2%`
-            level:          `%keys_3%`
-            caster level:   `%keys_4%`
-            gold cost:      `%keys_5%`
-            inv. icon:      `%keys_6%`
-            us. Mage:       `%keys_7%`
-            us. Cleric:     `%keys_8%`
-            us. Druid:      `%keys_9%`
-            us. Bard:       `%keys_10%`
-            us. Paladin:    `%keys_11%`
-            us. Ranger:     `%keys_12%`~
+            spell code:         `%keys_1%`
+            scroll code:        `%keys_0%`
+            Tradition:          `%keys_2%`
+            level:              `%keys_3%`
+            .spl header level:  `%keys_4%`
+            gold cost:          `%keys_5%`
+            inv. icon:          `%keys_6%`
+            usability, Mage:    `%keys_7%`
+            usability, Cleric:  `%keys_8%`
+            usability, Druid:   `%keys_9%`
+            usability, Bard:    `%keys_10%`
+            usability, Paladin: `%keys_11%`
+            usability, Ranger:  `%keys_12%`~
     END
 
 
