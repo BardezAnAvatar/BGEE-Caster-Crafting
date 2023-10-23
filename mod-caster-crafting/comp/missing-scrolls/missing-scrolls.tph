@@ -3,28 +3,7 @@
 INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/fn_bz_copy_spell_header_to_scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
 
-/*
-//POC
-LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
-    INT_VAR
-        cast_at_level       = 10
-        learn_spell         = 1
-        usability_bard      = 1
-        usability_cleric    = 1
-        usability_druid     = 1
-        usability_mage      = 1
-        usability_paladin   = 1
-        usability_ranger    = 1
-    STR_VAR
-        item  = ~BZ_TEST~
-        spell = ~SPWI222~ //Chaos Shield
-END
-*/
-
-//Result: Refined at this point to give decent results. More refinement is necessary.
-
 // Loop through the missing scrolls and create them
-
 ACTION_PHP_EACH ~scroll_list_missing_data_arcane~
     AS ~keys~ => ~value~
     BEGIN
