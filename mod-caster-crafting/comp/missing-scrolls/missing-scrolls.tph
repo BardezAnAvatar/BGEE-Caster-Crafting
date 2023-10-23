@@ -3,6 +3,7 @@
 INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/fn_bz_copy_spell_header_to_scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
 
+/*
 //POC
 LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
     INT_VAR
@@ -18,5 +19,6 @@ LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
         item  = ~BZ_TEST~
         spell = ~SPWI222~ //Chaos Shield
 END
+*/
 
 //Result: Refined at this point to give decent results. More refinement is necessary.
