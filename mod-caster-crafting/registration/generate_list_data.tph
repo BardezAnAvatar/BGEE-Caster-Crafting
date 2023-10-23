@@ -72,8 +72,25 @@ INCLUDE ~%MOD_FOLDER%/registration/generate_scroll_list_data.tph~
 */
 INCLUDE ~%MOD_FOLDER%/registration/generate_spell_list_data.tph~
 
-//Sort the indicies, on first key
-ACTION_SORT_ARRAY_INDICES ~scroll_list_data_arcane~
+//OUTPUT:
+/*
+    An associative array named "scroll_list_data_arcane" what contains these keys:
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Gold Cost]             // 5
+        [Icon: Inventory]       // 6
+        [Usability: Mage]       // 7
+        [Usability: Cleric]     // 8
+        [Usability: Druid]      // 9
+        [Usability: Bard]       // 10
+        [Usability: Paladin]    // 11
+        [Usability: Ranger]     // 12
+*/
+INCLUDE ~%MOD_FOLDER%/registration/generate_missing_scroll_list_data.tph~
+
 
 //Verify that it sorts on the first associative index (0)
 ACTION_PHP_EACH ~scroll_list_data_arcane~
