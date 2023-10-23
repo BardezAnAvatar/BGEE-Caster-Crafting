@@ -25,9 +25,15 @@ END
 
 // Loop through the missing scrolls and create them
 
-ACTION_PHP_EACH ~scroll_list_missing~
+ACTION_PHP_EACH ~scroll_list_missing_data_arcane~
     AS ~keys~ => ~value~
     BEGIN
+        //copy inventory BAM
+        COPY
+            ~./%MOD_FOLDER%/comp/missing-scrolls/BAM/%keys_6%.BAM~
+            ~override~
+
+        //Make scroll
         LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
             INT_VAR
                 cast_at_level       = %keys_4%
@@ -38,9 +44,11 @@ ACTION_PHP_EACH ~scroll_list_missing~
                 usability_mage      = %keys_7%
                 usability_paladin   = %keys_11%
                 usability_ranger    = %keys_12%
+                price               = %keys_5%
             STR_VAR
                 item  = ~%keys_0%~
-                spell = ~SPWI222~ //Chaos Shield
+                spell = ~%keys_1%~
+                icon_inventory = ~%keys_6%~
         END
     END
 
