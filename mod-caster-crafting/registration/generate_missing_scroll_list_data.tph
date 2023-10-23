@@ -47,7 +47,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
                 ~%keys_9%~,                 //Usability: Druid
                 ~%keys_10%~,                //Usability: Bard
                 ~%keys_11%~,                //Usability: Paladin
-                ~%keys_12%~,                //Usability: Ranger
+                ~%keys_12%~                 //Usability: Ranger
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
             END
 
