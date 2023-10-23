@@ -76,3 +76,10 @@ The result is:
 | Prefix | item code | tradition/level | spell # | caster lvl |
 |  `BZ`  | `!`       | `A`             | `AE`    | `35`       |
 Gross, but fits into 8 chars
+
+#### Item codes
+Note: I tried to use `§`; I had to encode using Windows 1252, and it _nearly worked_; Near Infinity loads, reads everything correctly.
+The game console allows me to type/copy the character, but game crashes when I try to use the character. Trying non-extant files such
+as § or Ø the game does not crash, but instead says the files do not exist.
+Note further: Using `!` works, so it isn't like the generated item files are busted. I also tried using `!` for BAMs and still used
+the `§`. I think while I could explore further, just using `!` is probably the best solution.
