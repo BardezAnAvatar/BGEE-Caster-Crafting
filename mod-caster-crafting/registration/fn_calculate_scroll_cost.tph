@@ -4,15 +4,15 @@
 
 DEFINE_ACTION_FUNCTION ~bz_calculate_scroll_cost~
     INT_VAR
-        ~CasterLevel~ = #0
-        ~AdditionalCost~ = #0
+        ~CasterLevel~ = 0
+        ~AdditionalCost~ = 0
     STR_VAR
         ~Level~ = ~~
         ~Tradition~ = ~~
     RET
         ~gold~
     BEGIN
-        OUTER_SET ~gold~ = #0
+        OUTER_SET ~gold~ = 0
 
         //lookup the minimum caster level
         OUTER_SET ~min_caster_level~ = "-1"
@@ -28,7 +28,7 @@ DEFINE_ACTION_FUNCTION ~bz_calculate_scroll_cost~
                 END
 
         //lookup the base spell cost by level
-        OUTER_SET ~base_gold~ = #0
+        OUTER_SET ~base_gold~ = 0
         ACTION_PHP_EACH ~costs_scroll_item~
             AS ~keys~ => ~_~
                 BEGIN
@@ -41,7 +41,7 @@ DEFINE_ACTION_FUNCTION ~bz_calculate_scroll_cost~
                 END
 
         //get excess caster level
-        OUTER_SET ~excess_caster_level~ = #0
+        OUTER_SET ~excess_caster_level~ = 0
         ACTION_IF (%CasterLevel% > %min_caster_level%) THEN
         BEGIN
             OUTER_SET ~excess_caster_level~ = (%CasterLevel% - %min_caster_level%)
