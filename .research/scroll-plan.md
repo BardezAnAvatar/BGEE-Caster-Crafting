@@ -63,7 +63,8 @@ The real question is: do I _want_ to do that? In order to properly recreate this
 1. Read all of the spells that are registered as valid player spells
 1. Read their exclusion flag(s)
 1. Read HIDESPEL.2DA and remove spells from the registry
-1. Override usability flags from the spl file with HIDESPL (_except in cases where I don't want to_, (i.e.: `Malavon's Fog`)
+1. Override usability flags from the spl file with HIDESPL (_except in cases where I don't want to_,
+(i.e.: `Malavon's Corrosive Fog`)
 1. Read every kit file and scan for spells added in the kit file; check if they are in the spell registry; and add an appropriate
 usability flag for using the OpCode.
 
