@@ -70,6 +70,11 @@ usability flag for using the OpCode.
 
 That seems like a ton of work that I do not care to do.
 
+Note, IWD2: Spells have no usability exclusion flags set. They seem to rely on LISTSPLL.2DA and LISTDOMN.2DA instead,
+driving what spells are made available upon level up, etc. Reading from this file (or just using it as a registry)
+will drive usability flags in the scroll item files.
+
+
 ## Component: Caster Level Scrolls -- this is a separate mod, IMO.
 1. Take the spell list, and for each spell that appears to be a valid class spell.
 1. Find its duration headers, create scroll instances for each valid caster level
