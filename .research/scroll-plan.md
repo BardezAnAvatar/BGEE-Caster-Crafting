@@ -72,7 +72,7 @@ That seems like a ton of work that I do not care to do.
 
 Note, IWD2: Spells have no usability exclusion flags set. They seem to rely on LISTSPLL.2DA and LISTDOMN.2DA instead,
 driving what spells are made available upon level up, etc. Reading from this file (or just using it as a registry)
-will drive usability flags in the scroll item files.
+will drive usability flags in the scroll item files. Kit usability flags exist, however, for domain spells and the ilk.
 
 
 ## Component: Caster Level Scrolls -- this is a separate mod, IMO.
