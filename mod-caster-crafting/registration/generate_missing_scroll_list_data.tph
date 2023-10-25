@@ -39,7 +39,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
 
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~scroll_list_missing_data_arcane~
+            ~scroll_list_missing_data~
             BEGIN
                 ~%keys_0%~,                 //scroll
                 ~%keys_1%~,                 //spell
@@ -66,11 +66,11 @@ ACTION_PHP_EACH ~scroll_list_missing~
     END
 
 //Sort the indicies, on first key
-ACTION_SORT_ARRAY_INDICES ~scroll_list_missing_data_arcane~
+ACTION_SORT_ARRAY_INDICES ~scroll_list_missing_data~
 
 //DEBUG
 
-ACTION_PHP_EACH ~scroll_list_missing_data_arcane~
+ACTION_PHP_EACH ~scroll_list_missing_data~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements

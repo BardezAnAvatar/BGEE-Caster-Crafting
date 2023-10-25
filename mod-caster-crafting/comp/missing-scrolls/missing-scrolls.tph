@@ -4,7 +4,7 @@ INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/fn_bz_copy_spell_header_to_scroll.t
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
 
 // Loop through the missing scrolls and create them
-ACTION_PHP_EACH ~scroll_list_missing_data_arcane~
+ACTION_PHP_EACH ~scroll_list_missing_data~
     AS ~keys~ => ~value~
     BEGIN
         //copy inventory BAM
