@@ -1,19 +1,25 @@
 //RESULT:
 /*
     An associative array named "scroll_list_data_arcane" what contains these keys:
-        [Scroll]                // 0
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
-        [Caster Level]          // 4
-        [Gold Cost]             // 5    -- function to calculate
-        [Icon: Inventory]       // 6
-        [Usability: Mage]       // 7
-        [Usability: Cleric]     // 8
-        [Usability: Druid]      // 9
-        [Usability: Bard]       // 10
-        [Usability: Paladin]    // 11
-        [Usability: Ranger]     // 12
+    [Scroll]                    // 0
+    [Spell]                     // 1
+    [Tradition]                 // 2
+    [Spell Level]               // 3
+    [Caster Level]              // 4
+    [Gold Cost]                 // 5
+    [Icon: Inventory]           // 6
+    [Usability: Mage]           // 7
+    [Usability: Cleric]         // 8
+    [Usability: Druid]          // 9
+    [Usability: Bard]           // 10
+    [Usability: Paladin]        // 11
+    [Usability: Ranger]         // 12
+    [Usability: Good]           // 13
+    [Usability: ... Neutral]    // 14
+    [Usability: Evil]           // 15
+    [Usability: Lawful]         // 16
+    [Usability: Neutral ...]    // 17
+    [Usability: Chaotic]        // 18
 */
 
 ACTION_PHP_EACH ~scroll_list_missing~
@@ -47,7 +53,13 @@ ACTION_PHP_EACH ~scroll_list_missing~
                 ~%keys_9%~,                 //Usability: Druid
                 ~%keys_10%~,                //Usability: Bard
                 ~%keys_11%~,                //Usability: Paladin
-                ~%keys_12%~                 //Usability: Ranger
+                ~%keys_12%~,                //Usability: Ranger
+                ~%keys_13%~,                //Usability: Good
+                ~%keys_14%~,                //Usability: ... Neutral
+                ~%keys_15%~,                //Usability: Evil
+                ~%keys_16%~,                //Usability: Lawful
+                ~%keys_17%~,                //Usability: Neutral ...
+                ~%keys_18%~                 //Usability: Chaotic
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
             END
 
