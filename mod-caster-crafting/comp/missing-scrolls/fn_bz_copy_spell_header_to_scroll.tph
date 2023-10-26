@@ -82,7 +82,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
 
             READ_LONG (0x08) ~spl_name~         //name
             READ_LONG (0x50) ~spl_description~  //description
-
+            READ_SHORT (0x1C) ~spell_type~      //Innate/Wizard/Priest/etc.
             BUT_ONLY
 
 
@@ -114,6 +114,9 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
             OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND
                 (BNOT (BIT7 BOR BIT8 BOR BIT9 BOR BIT10 BOR BIT14 BOR BIT15)) //Cleric
         END
+
+        //kit exclusion flags work differently for priest spells. Since we already know the exclusion, and handle it elsewhere FOR ITEMS, erase them
+        ACTION_IF (%spell_type% = 2) THEN BEGIN OUTER_SET ~exclusion_flags~ = 0 END
 
 
         COPY_EXISTING ~./%MOD_FOLDER%/comp/missing-scrolls/ITM/blank_scroll.itm~ ~override/%item%.ITM~
