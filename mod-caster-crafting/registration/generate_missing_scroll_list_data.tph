@@ -1,6 +1,6 @@
 //RESULT:
 /*
-    An associative array named "scroll_list_data_arcane" what contains these keys:
+    An associative array named "scroll_list_data" what contains these keys:
     [Scroll]                    // 0
     [Spell]                     // 1
     [Tradition]                 // 2
