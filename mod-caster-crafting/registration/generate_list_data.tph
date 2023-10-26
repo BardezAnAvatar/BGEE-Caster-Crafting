@@ -13,8 +13,6 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/spell-min-caster-lev
 
 INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/arcane.tph~
 INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
-INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
-INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
 
 ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
     BEGIN
@@ -72,25 +70,6 @@ INCLUDE ~%MOD_FOLDER%/registration/generate_scroll_list_data.tph~
         [Exclusion Flags]       // 7    --get from spell file
 */
 INCLUDE ~%MOD_FOLDER%/registration/generate_spell_list_data.tph~
-
-//OUTPUT:
-/*
-    An associative array named "scroll_list_data_arcane" what contains these keys:
-        [Scroll]                // 0
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
-        [Caster Level]          // 4
-        [Gold Cost]             // 5
-        [Icon: Inventory]       // 6
-        [Usability: Mage]       // 7
-        [Usability: Cleric]     // 8
-        [Usability: Druid]      // 9
-        [Usability: Bard]       // 10
-        [Usability: Paladin]    // 11
-        [Usability: Ranger]     // 12
-*/
-INCLUDE ~%MOD_FOLDER%/registration/generate_missing_scroll_list_data.tph~
 
 
 //Verify that it sorts on the first associative index (0)

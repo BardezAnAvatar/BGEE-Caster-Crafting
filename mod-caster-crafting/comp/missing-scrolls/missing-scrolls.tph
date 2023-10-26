@@ -1,4 +1,31 @@
 
+
+
+//OUTPUT:
+/*
+    An associative array named "scroll_list_data_arcane" what contains these keys:
+        [Scroll]                    // 0
+        [Spell]                     // 1
+        [Tradition]                 // 2
+        [Spell Level]               // 3
+        [Caster Level]              // 4
+        [Gold Cost]                 // 5
+        [Icon: Inventory]           // 6
+        [Usability: Mage]           // 7
+        [Usability: Cleric]         // 8
+        [Usability: Druid]          // 9
+        [Usability: Bard]           // 10
+        [Usability: Paladin]        // 11
+        [Usability: Ranger]         // 12
+        [Usability: Good]           // 13
+        [Usability: ... Neutral]    // 14
+        [Usability: Evil]           // 15
+        [Usability: Lawful]         // 16
+        [Usability: Neutral ...]    // 17
+        [Usability: Chaotic]        // 18
+*/
+INCLUDE ~./%MOD_FOLDER%/registration/generate_missing_scroll_list_data.tph~
+
 //include a function to create a scroll from a spell
 INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/fn_bz_copy_spell_header_to_scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~

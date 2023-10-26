@@ -56,14 +56,18 @@ SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
 // Caster Crafting: Missing scrolls subcomponents
 BEGIN @21 DESIGNATED 31 // Add in missing arcane spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
 BEGIN @22 DESIGNATED 32 // Add in missing priest spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
 BEGIN @23 DESIGNATED 33 // Add in missing arcane and priest spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
 //Do research stuff
