@@ -27,7 +27,7 @@ PRINT ~DEBUG: Olvyn:
 *   Basic Spells   *
 *******************/
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~scroll_list_arcane~
+    ~scroll_list~
     BEGIN
 
         /*
@@ -122,7 +122,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 ACTION_IF %bz_olvyn_powerful% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~scroll_list_arcane~
+        ~scroll_list~
         BEGIN
             ~MEWI551X~, ~MEWI551~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI551X~   //Life Transfer
             ~MEWI558X~, ~MEWI558~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI558X~   //Missile of Patience
@@ -149,7 +149,7 @@ END
 ACTION_IF %bz_olvyn_eeex% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~scroll_list_arcane~
+        ~scroll_list~
         BEGIN
             ~MEWI156X~, ~MEWI156~, ~Arcane~, ~1~, ~1~, ~0~ => ~MEWI156X~   //Jump
             ~MEWI157X~, ~MEWI157~, ~Arcane~, ~1~, ~1~, ~0~ => ~MEWI157X~   //Hex
@@ -198,7 +198,7 @@ END
 ACTION_IF %bz_olvyn_powerful_eeex% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~scroll_list_arcane~
+        ~scroll_list~
         BEGIN
             ~MEWI256X~, ~MEWI256~, ~Arcane~, ~2~, ~3~, ~0~ => ~MEWI256X~   //Specific Spell Immunity
 
@@ -224,7 +224,7 @@ END
 ACTION_IF %bz_olvyn_wi556% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~scroll_list_arcane~
+        ~scroll_list~
         BEGIN
             ~MEWI556X~, ~MEWI556~, ~Arcane~, ~5~, ~9~, ~0~ => ~MEWI556X~   //Skeleton Horde
         END

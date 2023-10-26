@@ -70,7 +70,7 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
         THEN BEGIN
             //Append scroll list
             ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~scroll_list_arcane~
+            ~scroll_list~
             BEGIN
                 ~%keys_0%~, ~%keys_1%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~, ~0~ => ~%keys_0%~
             END

@@ -14,7 +14,7 @@
         [Failure %]             // 10   --lookup from table
         [Spell Display Name]    // 11   --get from spell
 */
-ACTION_PHP_EACH ~scroll_list_arcane~
+ACTION_PHP_EACH ~scroll_list~
     AS ~keys~ => ~value~
     BEGIN
         COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
