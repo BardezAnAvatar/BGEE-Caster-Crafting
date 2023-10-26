@@ -87,7 +87,13 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
             usability, Druid:   `%keys_9%`
             usability, Bard:    `%keys_10%`
             usability, Paladin: `%keys_11%`
-            usability, Ranger:  `%keys_12%`~
+            usability, Ranger:  `%keys_12%`
+            usability, Good:    `%keys_13%`
+            usability, Neutral: `%keys_14%`
+            usability, Evil:    `%keys_15%`
+            usability, Lawful:  `%keys_16%`
+            usability, Neutral: `%keys_17%`
+            usability, Chaotic: `%keys_18%`~
     END
 
 

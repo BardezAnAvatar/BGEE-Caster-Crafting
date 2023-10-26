@@ -93,7 +93,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
 
 
         //Calculate usability flags
-        OUTER_SET ~unusabilility_flags~ = 0b01100000011111111111111111000000    //all classes unusable
+        OUTER_SET ~unusabilility_flags~ = 0b01100000011111111111111111111111    //all classes unusable
         ACTION_IF (%usability_mage%)
         THEN BEGIN
             OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND
@@ -122,23 +122,23 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         END
         ACTION_IF (%usability_good%)
         THEN BEGIN
-            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT5)) //Good
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT2)) //Good
         END
         ACTION_IF (%usability_neutral_t%)
         THEN BEGIN
-            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT4)) // ... Neutral [Lawful/Chaotic]
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT3)) // ... Neutral [Lawful/Chaotic]
         END
         ACTION_IF (%usability_evil%)
         THEN BEGIN
-            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT3)) //Evil
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT1)) //Evil
         END
         ACTION_IF (%usability_lawful%)
         THEN BEGIN
-            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT2)) //Lawful
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT4)) //Lawful
         END
         ACTION_IF (%usability_neutral_l%)
         THEN BEGIN
-            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT1)) // Neutral... [Good/Evil]
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT5)) // Neutral... [Good/Evil]
         END
         ACTION_IF (%usability_chaotic%)
         THEN BEGIN
