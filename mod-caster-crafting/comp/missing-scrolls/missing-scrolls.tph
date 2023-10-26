@@ -12,11 +12,14 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
             ~./%MOD_FOLDER%/comp/missing-scrolls/BAM/%keys_6%.BAM~
             ~override~
 
+        OUTER_SET ~LearnSpell~ = 0
+        ACTION_IF (~%keys_2%~ STRING_EQUAL ~Arcane~) THEN BEGIN OUTER_SET ~LearnSpell~ = 1 END
+
         //Make scroll
         LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
             INT_VAR
                 cast_at_level       = %keys_4%
-                learn_spell         = 1
+                learn_spell         = %LearnSpell%
                 usability_bard      = %keys_10%
                 usability_cleric    = %keys_8%
                 usability_druid     = %keys_9%
