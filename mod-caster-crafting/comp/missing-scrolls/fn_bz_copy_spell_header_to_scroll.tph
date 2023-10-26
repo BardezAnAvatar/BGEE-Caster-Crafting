@@ -14,6 +14,12 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         usability_paladin   = 0
         usability_cleric    = 0
         usability_druid     = 0
+        usability_good      = 1
+        usability_neutral_t = 1         // ...Neutral [Lawful/Chaotic]
+        usability_evil      = 1
+        usability_lawful    = 1
+        usability_neutral_l = 1         /// Neutral... [Evil/Good]
+        usability_chaotic   = 1
         price = 0                       //price of the scroll
     STR_VAR
         spell = null                    //spell RESREF to read from
@@ -113,6 +119,30 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         THEN BEGIN
             OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND
                 (BNOT (BIT7 BOR BIT8 BOR BIT9 BOR BIT10 BOR BIT14 BOR BIT15)) //Cleric
+        END
+        ACTION_IF (%usability_good%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT5)) //Good
+        END
+        ACTION_IF (%usability_neutral_t%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT4)) // ... Neutral [Lawful/Chaotic]
+        END
+        ACTION_IF (%usability_evil%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT3)) //Evil
+        END
+        ACTION_IF (%usability_lawful%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT2)) //Lawful
+        END
+        ACTION_IF (%usability_neutral_l%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT1)) // Neutral... [Good/Evil]
+        END
+        ACTION_IF (%usability_chaotic%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT0)) //Chaotic
         END
 
         //kit exclusion flags work differently for priest spells. Since we already know the exclusion, and handle it elsewhere FOR ITEMS, erase them
