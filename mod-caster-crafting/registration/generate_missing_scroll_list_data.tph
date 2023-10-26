@@ -74,7 +74,7 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: scroll_list_data_arcane:
+        PRINT ~DEBUG: scroll_list_missing_data:
             spell code:         `%keys_1%`
             scroll code:        `%keys_0%`
             Tradition:          `%keys_2%`
