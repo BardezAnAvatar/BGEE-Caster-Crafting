@@ -32,30 +32,30 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEPR157~, ~Divine~, ~1~ => ~MEPR157~   //Searing Smite
 
         //Will not be added if B Spells is installed -- what is this?
-        ~MEPR251~, ~Divine~, ~1~ => ~MEPR251~   //Beast Sense
-        ~MEPR252~, ~Divine~, ~1~ => ~MEPR252~   //Fiery Link
-        ~MEPR253~, ~Divine~, ~1~ => ~MEPR253~   //Null Healing
-        ~MEPR254~, ~Divine~, ~1~ => ~MEPR254~   //Critical Boon
+        ~MEPR251~, ~Divine~, ~2~ => ~MEPR251~   //Beast Sense
+        ~MEPR252~, ~Divine~, ~2~ => ~MEPR252~   //Fiery Link
+        ~MEPR253~, ~Divine~, ~2~ => ~MEPR253~   //Null Healing
+        ~MEPR254~, ~Divine~, ~2~ => ~MEPR254~   //Critical Boon
 
-        ~MEPR354~, ~Divine~, ~1~ => ~MEPR354~   //Healing Curse
-        ~MEPR356~, ~Divine~, ~1~ => ~MEPR356~   //Wind Shots
+        ~MEPR354~, ~Divine~, ~3~ => ~MEPR354~   //Healing Curse
+        ~MEPR356~, ~Divine~, ~3~ => ~MEPR356~   //Wind Shots
 
-        ~MEPR451~, ~Divine~, ~1~ => ~MEPR451~   //Disarm
-        ~MEPR453~, ~Divine~, ~1~ => ~MEPR453~   //Turn Creature
-        ~MEPR454~, ~Divine~, ~1~ => ~MEPR454~   //Wall of Fire
-        ~MEPR457~, ~Divine~, ~1~ => ~MEPR457~   //Spirit Armor (for Shaman)
+        ~MEPR451~, ~Divine~, ~4~ => ~MEPR451~   //Disarm
+        ~MEPR453~, ~Divine~, ~4~ => ~MEPR453~   //Turn Creature
+        ~MEPR454~, ~Divine~, ~4~ => ~MEPR454~   //Wall of Fire
+        ~MEPR457~, ~Divine~, ~4~ => ~MEPR457~   //Spirit Armor (for Shaman)
 
-        ~MEPR553~, ~Divine~, ~1~ => ~MEPR553~   //Protection from the Elements (Nature casters)
-        ~MEPR557~, ~Divine~, ~1~ => ~MEPR557~   //Expose to the Elements
-        ~MEPR558~, ~Divine~, ~1~ => ~MEPR558~   //Sphere of Security
+        ~MEPR553~, ~Divine~, ~5~ => ~MEPR553~   //Protection from the Elements (Nature casters)
+        ~MEPR557~, ~Divine~, ~5~ => ~MEPR557~   //Expose to the Elements
+        ~MEPR558~, ~Divine~, ~5~ => ~MEPR558~   //Sphere of Security
 
-        ~MEPR652~, ~Divine~, ~1~ => ~MEPR652~   //Drown
-        ~MEPR654~, ~Divine~, ~1~ => ~MEPR654~   //Living Lightning
-        ~MEPR656~, ~Divine~, ~1~ => ~MEPR656~   //Protection From Non-Silver Weapons
-        ~MEPR657~, ~Divine~, ~1~ => ~MEPR657~   //Trial by Fire
+        ~MEPR652~, ~Divine~, ~6~ => ~MEPR652~   //Drown
+        ~MEPR654~, ~Divine~, ~6~ => ~MEPR654~   //Living Lightning
+        ~MEPR656~, ~Divine~, ~6~ => ~MEPR656~   //Protection From Non-Silver Weapons
+        ~MEPR657~, ~Divine~, ~6~ => ~MEPR657~   //Trial by Fire
 
-        ~MEPR751~, ~Divine~, ~1~ => ~MEPR751~   //Power Word, Heal
-        ~MEPR755~, ~Divine~, ~1~ => ~MEPR755~   //Enhance Attribute
+        ~MEPR751~, ~Divine~, ~7~ => ~MEPR751~   //Power Word, Heal
+        ~MEPR755~, ~Divine~, ~7~ => ~MEPR755~   //Enhance Attribute
 
         //Quest
         ~MEPR754~, ~Divine~, ~Q~ => ~MEPR754~   //Colossal Growth
@@ -63,17 +63,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEPR758~, ~Divine~, ~Q~ => ~MEPR758~   //Mass Heal
         ~MEPR766~, ~Divine~, ~Q~ => ~MEPR766~   //Contagious Fear
 
-    END
-
     //will not be installed to IWD:EE (for whatever reason)
-    ACTION_IF GAME_IS ~bgee bg2ee~
-    THEN BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list~
-            BEGIN
-                ~MEPR351~, ~Divine~, ~1~ => ~MEPR351~   //Call Water Weirds
-                ~MEPR452~, ~Divine~, ~1~ => ~MEPR452~   //Forest's Blessing
-            END
+        ~MEPR351~, ~Divine~, ~3~ => ~MEPR351~   //Call Water Weirds
+        ~MEPR452~, ~Divine~, ~4~ => ~MEPR452~   //Forest's Blessing
     END
 END
 
@@ -86,19 +78,10 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~spell_list~
         BEGIN
-            ~MEPR653~, ~Divine~, ~1~ => ~MEPR653~   //Antiharm Shell
+            ~MEPR653~, ~Divine~, ~6~ => ~MEPR653~   //Antiharm Shell
 
-            ~MEPR753~, ~Divine~, ~1~ => ~MEPR753~   //Nonrandom Zone
-            ~MEPR759~, ~Divine~, ~1~ => ~MEPR759~   //Omnipresence
-        END
-
-    ACTION_IF GAME_IS ~bgee bg2ee~
-    THEN BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list~
-            BEGIN
-                ~MEPR760~, ~Divine~, ~1~ => ~MEPR760~   //True Dispel (P)
-            END
+            ~MEPR753~, ~Divine~, ~7~ => ~MEPR753~   //Nonrandom Zone
+            ~MEPR759~, ~Divine~, ~7~ => ~MEPR759~   //Omnipresence
     END
 
 END
@@ -114,27 +97,27 @@ BEGIN
         BEGIN
             ~MEPR152~, ~Divine~, ~1~ => ~MEPR152~   //Hex
 
-            ~MEPR255~, ~Divine~, ~1~ => ~MEPR255~   //Ghostwalk
-            ~MEPR256~, ~Divine~, ~1~ => ~MEPR256~   //Detect Magic
+            ~MEPR255~, ~Divine~, ~2~ => ~MEPR255~   //Ghostwalk
+            ~MEPR256~, ~Divine~, ~2~ => ~MEPR256~   //Detect Magic
 
-            ~MEPR352~, ~Divine~, ~1~ => ~MEPR352~   //Shortening
-            ~MEPR353~, ~Divine~, ~1~ => ~MEPR353~   //Fire Curse
-            ~MEPR355~, ~Divine~, ~1~ => ~MEPR355~   //Guardian Magic
-            ~MEPR357~, ~Divine~, ~1~ => ~MEPR357~   //Fly
-            ~MEPR358~, ~Divine~, ~1~ => ~MEPR358~   //Familiar Spell
-            ~MEPR360~, ~Divine~, ~1~ => ~MEPR360~   //Recall Party
-            ~MEPR361~, ~Divine~, ~1~ => ~MEPR361~   //Steel Wind Strike
+            ~MEPR352~, ~Divine~, ~3~ => ~MEPR352~   //Shortening
+            ~MEPR353~, ~Divine~, ~3~ => ~MEPR353~   //Fire Curse
+            ~MEPR355~, ~Divine~, ~3~ => ~MEPR355~   //Guardian Magic
+            ~MEPR357~, ~Divine~, ~3~ => ~MEPR357~   //Fly
+            ~MEPR358~, ~Divine~, ~3~ => ~MEPR358~   //Familiar Spell
+            ~MEPR360~, ~Divine~, ~3~ => ~MEPR360~   //Recall Party
+            ~MEPR361~, ~Divine~, ~3~ => ~MEPR361~   //Steel Wind Strike
 
-            ~MEPR455~, ~Divine~, ~1~ => ~MEPR455~   //Piercing Shots
-            ~MEPR456~, ~Divine~, ~1~ => ~MEPR456~   //Pebbles to Boulders
+            ~MEPR455~, ~Divine~, ~4~ => ~MEPR455~   //Piercing Shots
+            ~MEPR456~, ~Divine~, ~4~ => ~MEPR456~   //Pebbles to Boulders
 
-            ~MEPR554~, ~Divine~, ~1~ => ~MEPR554~   //Ghostform
+            ~MEPR554~, ~Divine~, ~5~ => ~MEPR554~   //Ghostform
 
-            ~MEPR658~, ~Divine~, ~1~ => ~MEPR658~   //Animal Growth
-            ~MEPR659~, ~Divine~, ~1~ => ~MEPR659~   //Absolute Guard
+            ~MEPR658~, ~Divine~, ~6~ => ~MEPR658~   //Animal Growth
+            ~MEPR659~, ~Divine~, ~6~ => ~MEPR659~   //Absolute Guard
 
-            ~MEPR757~, ~Divine~, ~1~ => ~MEPR757~   //Reanimate
-            ~MEPR762~, ~Divine~, ~1~ => ~MEPR762~   //Elysium's Tears
+            ~MEPR757~, ~Divine~, ~7~ => ~MEPR757~   //Reanimate
+            ~MEPR762~, ~Divine~, ~7~ => ~MEPR762~   //Elysium's Tears
 
             ~MEPR761~, ~Divine~, ~Q~ => ~MEPR761~   //Volcanic Eruption
             ~MEPR763~, ~Divine~, ~Q~ => ~MEPR763~   //Greater Living Lightning
@@ -153,12 +136,12 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~spell_list~
         BEGIN
-            ~MEPR551~, ~Divine~, ~1~ => ~MEPR551~   //Prolongment
-            ~MEPR552~, ~Divine~, ~1~ => ~MEPR552~   //Wall of Force
-            ~MEPR555~, ~Divine~, ~1~ => ~MEPR555~   //Critical Spell
-            ~MEPR556~, ~Divine~, ~1~ => ~MEPR556~   //Barrage
+            ~MEPR551~, ~Divine~, ~5~ => ~MEPR551~   //Prolongment
+            ~MEPR552~, ~Divine~, ~5~ => ~MEPR552~   //Wall of Force
+            ~MEPR555~, ~Divine~, ~5~ => ~MEPR555~   //Critical Spell
+            ~MEPR556~, ~Divine~, ~5~ => ~MEPR556~   //Barrage
 
-            ~MEPR655~, ~Divine~, ~1~ => ~MEPR655~   //Linked Spirit
+            ~MEPR655~, ~Divine~, ~6~ => ~MEPR655~   //Linked Spirit
 
             ~MEPR765~, ~Divine~, ~Q~ => ~MEPR765~   //Spirit of Power
         END
