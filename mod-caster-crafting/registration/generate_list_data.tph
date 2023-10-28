@@ -4,7 +4,9 @@
 /   for the spells, scrolls, poitions, and wands. It's like pre-processing.
 ***************************************************************************************************/
 
-
+/*********************************************
+*   Set up mod install detection variables   *
+*********************************************/
 ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
     BEGIN
         OUTER_SET ~bz_iwdification_installed~ = 1
@@ -14,9 +16,35 @@ ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
 ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpells.tp2~ ~1001~)
     BEGIN
         OUTER_SET ~bz_OlvynSpells_installed~ = 1
+
+        OUTER_SET ~bz_olvyn_powerful~ = (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
+        OUTER_SET ~bz_olvyn_eeex~ =
+            MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
+            AND
+            (
+                INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
+                OR INSTALL_ORDER ~MESpells.tp2~ ~1001~ AFTER ~EEEX.TP2~ ~0~
+            )
+        OUTER_SET ~bz_olvyn_powerful_eeex~ =
+            MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
+            AND INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
+
+        OUTER_SET ~bz_olvyn_wi556~ =    //Restore original Animate Dead for wizards?
+            !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25011~) AND !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25012~)
+
+        //Debugging Statements
+        PRINT ~DEBUG: Olvyn:
+            powerful:           `%bz_olvyn_powerful%`;
+            EEex:               `%bz_olvyn_eeex%`;
+            Powerful + EEex:    `%bz_olvyn_powerful_eeex%`;
+            Skeleton Horde:     `%bz_olvyn_wi556%`;~
     END
 
 
+
+/*********************
+*   Include arrays   *
+*********************/
 
 // From the base game, get all spells from the class spell lists. Emit to a file the findings.
 INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
