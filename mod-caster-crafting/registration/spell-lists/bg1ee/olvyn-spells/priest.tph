@@ -63,7 +63,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEPR758~, ~Divine~, ~Q~ => ~MEPR758~   //Mass Heal
         ~MEPR766~, ~Divine~, ~Q~ => ~MEPR766~   //Contagious Fear
 
-    //will not be installed to IWD:EE (for whatever reason)
+        //will not be installed to IWD:EE (for whatever reason)
         ~MEPR351~, ~Divine~, ~3~ => ~MEPR351~   //Call Water Weirds
         ~MEPR452~, ~Divine~, ~4~ => ~MEPR452~   //Forest's Blessing
     END
@@ -82,7 +82,10 @@ BEGIN
 
             ~MEPR753~, ~Divine~, ~7~ => ~MEPR753~   //Nonrandom Zone
             ~MEPR759~, ~Divine~, ~7~ => ~MEPR759~   //Omnipresence
-    END
+
+            //will not be installed to IWD:EE (for whatever reason)
+            ~MEPR760~, ~Divine~, ~7~ => ~MEPR760~   //True Dispel (P)
+        END
 
 END
 
@@ -146,4 +149,19 @@ BEGIN
             ~MEPR765~, ~Divine~, ~Q~ => ~MEPR765~   //Spirit of Power
         END
 END
+
+
+/*************************
+*   Special Exceptions   *
+*************************/
+ACTION_IF (%bz_iwdification_installed%) THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~spell_list~
+        BEGIN
+            //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+            ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~    //Wall of Fire
+        END
+END
+
 
