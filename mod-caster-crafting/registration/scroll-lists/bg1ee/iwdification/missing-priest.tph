@@ -22,12 +22,13 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Usability: Lawful]         // 16
         [Usability: Neutral ...]    // 17
         [Usability: Chaotic]        // 18
+        [Usability: Shaman]         // 19
         */
 
         //NOTE: Spell headers have minimum caster level of 1 very often if not always, even if the minimum level is invalid to cast.
         //   The copied header therefore must be updated accordingly.
 
         //physical mirror gets screwy.
-        ~BZ!F2509~, ~SPPR525~, ~Divine~, ~1~, ~1~,  ~BZ!F25I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
+        ~BZ!F2509~, ~SPPR525~, ~Divine~, ~1~, ~1~,  ~BZ!F25I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
 
     END
