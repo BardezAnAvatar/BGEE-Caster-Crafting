@@ -5,6 +5,19 @@
 ***************************************************************************************************/
 
 
+ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
+    BEGIN
+        OUTER_SET ~bz_iwdification_installed~ = 1
+    END
+
+//1000 = powerful spells; 1001 = no powerful spells
+ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpells.tp2~ ~1001~)
+    BEGIN
+        OUTER_SET ~bz_OlvynSpells_installed~ = 1
+    END
+
+
+
 // From the base game, get all spells from the class spell lists. Emit to a file the findings.
 INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
 INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph~
@@ -14,15 +27,14 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/spell-min-caster-lev
 INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/arcane.tph~
 INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
 
-ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
+ACTION_IF (%bz_iwdification_installed%)
     BEGIN
         PRINT ~DEBUG: Include IWD-ification Spells~
         INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/iwdification/arcane.tph~
         INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/arcane.tph~
     END
 
-//1000 = powerful spells; 1001 = no powerful spells
-ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpells.tp2~ ~1001~)
+ACTION_IF (%bz_OlvynSpells_installed%)
     BEGIN
         PRINT ~DEBUG: Include Olvyn Spells~
         INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/arcane.tph~
