@@ -64,11 +64,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPPR739~, ~Divine~, ~7~ => ~SPPR739~   //Stalker
         ~SPPR740~, ~Divine~, ~7~ => ~SPPR740~   //Wither
 
-        /**************************************************
-        *   Special cases that cannot be included as-is   *
-        **************************************************/
+        /********************
+        *   Special cases   *
+        ********************/
         //special -- in-game already, moved from 613 to here
-        //~SPPR525~, ~Divine~, ~5~ => ~SPPR525~    //Physical Mirror
+        ~SPPR525~, ~Divine~, ~5~ => ~SPPR525~    //Physical Mirror
 
     END
 
@@ -80,5 +80,4 @@ ACTION_IF (NOT %bz_iwdification_installed%)
                 //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
                 ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~    //Produce Fire
             END
-
     END
