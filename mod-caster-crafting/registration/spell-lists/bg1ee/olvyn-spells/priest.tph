@@ -1,0 +1,166 @@
+OUTER_SET ~bz_olvyn_powerful~ = (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
+OUTER_SET ~bz_olvyn_eeex~ =
+    MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
+    AND
+    (
+        INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
+        OR INSTALL_ORDER ~MESpells.tp2~ ~1001~ AFTER ~EEEX.TP2~ ~0~
+    )
+OUTER_SET ~bz_olvyn_powerful_eeex~ =
+    MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
+    AND INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
+
+
+/*******************
+*   Basic Spells   *
+*******************/
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
+    BEGIN
+
+        /*
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        */
+
+        ~MEPR151~, ~Divine~, ~1~ => ~MEPR151~   //Snake's Swiftness
+        ~MEPR153~, ~Divine~, ~1~ => ~MEPR153~   //Hunter's Mark
+        ~MEPR154~, ~Divine~, ~1~ => ~MEPR154~   //Turning Weapon
+        ~MEPR155~, ~Divine~, ~1~ => ~MEPR155~   //Repulse
+        ~MEPR156~, ~Divine~, ~1~ => ~MEPR156~   //Camouflage
+        ~MEPR157~, ~Divine~, ~1~ => ~MEPR157~   //Searing Smite
+
+        //Will not be added if B Spells is installed -- what is this?
+        ~MEPR251~, ~Divine~, ~1~ => ~MEPR251~   //Beast Sense
+        ~MEPR252~, ~Divine~, ~1~ => ~MEPR252~   //Fiery Link
+        ~MEPR253~, ~Divine~, ~1~ => ~MEPR253~   //Null Healing
+        ~MEPR254~, ~Divine~, ~1~ => ~MEPR254~   //Critical Boon
+
+        ~MEPR354~, ~Divine~, ~1~ => ~MEPR354~   //Healing Curse
+        ~MEPR356~, ~Divine~, ~1~ => ~MEPR356~   //Wind Shots
+
+        ~MEPR451~, ~Divine~, ~1~ => ~MEPR451~   //Disarm
+        ~MEPR453~, ~Divine~, ~1~ => ~MEPR453~   //Turn Creature
+        ~MEPR454~, ~Divine~, ~1~ => ~MEPR454~   //Wall of Fire
+        ~MEPR457~, ~Divine~, ~1~ => ~MEPR457~   //Spirit Armor (for Shaman)
+
+        ~MEPR553~, ~Divine~, ~1~ => ~MEPR553~   //Protection from the Elements (Nature casters)
+        ~MEPR557~, ~Divine~, ~1~ => ~MEPR557~   //Expose to the Elements
+        ~MEPR558~, ~Divine~, ~1~ => ~MEPR558~   //Sphere of Security
+
+        ~MEPR652~, ~Divine~, ~1~ => ~MEPR652~   //Drown
+        ~MEPR654~, ~Divine~, ~1~ => ~MEPR654~   //Living Lightning
+        ~MEPR656~, ~Divine~, ~1~ => ~MEPR656~   //Protection From Non-Silver Weapons
+        ~MEPR657~, ~Divine~, ~1~ => ~MEPR657~   //Trial by Fire
+
+        ~MEPR751~, ~Divine~, ~1~ => ~MEPR751~   //Power Word, Heal
+        ~MEPR755~, ~Divine~, ~1~ => ~MEPR755~   //Enhance Attribute
+
+        //Quest
+        ~MEPR754~, ~Divine~, ~Q~ => ~MEPR754~   //Colossal Growth
+        ~MEPR756~, ~Divine~, ~Q~ => ~MEPR756~   //Contingent Resurrection
+        ~MEPR758~, ~Divine~, ~Q~ => ~MEPR758~   //Mass Heal
+        ~MEPR766~, ~Divine~, ~Q~ => ~MEPR766~   //Contagious Fear
+
+    END
+
+    //will not be installed to IWD:EE (for whatever reason)
+    ACTION_IF GAME_IS ~bgee bg2ee~
+    THEN BEGIN
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+            ~spell_list~
+            BEGIN
+                ~MEPR351~, ~Divine~, ~1~ => ~MEPR351~   //Call Water Weirds
+                ~MEPR452~, ~Divine~, ~1~ => ~MEPR452~   //Forest's Blessing
+            END
+    END
+END
+
+
+/**********************
+*   Powerful Spells   *
+**********************/
+ACTION_IF %bz_olvyn_powerful% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~spell_list~
+        BEGIN
+            ~MEPR653~, ~Divine~, ~1~ => ~MEPR653~   //Antiharm Shell
+
+            ~MEPR753~, ~Divine~, ~1~ => ~MEPR753~   //Nonrandom Zone
+            ~MEPR759~, ~Divine~, ~1~ => ~MEPR759~   //Omnipresence
+        END
+
+    ACTION_IF GAME_IS ~bgee bg2ee~
+    THEN BEGIN
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+            ~spell_list~
+            BEGIN
+                ~MEPR760~, ~Divine~, ~1~ => ~MEPR760~   //True Dispel (P)
+            END
+    END
+
+END
+
+
+/******************
+*   EEex Spells   *
+******************/
+ACTION_IF %bz_olvyn_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~spell_list~
+        BEGIN
+            ~MEPR152~, ~Divine~, ~1~ => ~MEPR152~   //Hex
+
+            ~MEPR255~, ~Divine~, ~1~ => ~MEPR255~   //Ghostwalk
+            ~MEPR256~, ~Divine~, ~1~ => ~MEPR256~   //Detect Magic
+
+            ~MEPR352~, ~Divine~, ~1~ => ~MEPR352~   //Shortening
+            ~MEPR353~, ~Divine~, ~1~ => ~MEPR353~   //Fire Curse
+            ~MEPR355~, ~Divine~, ~1~ => ~MEPR355~   //Guardian Magic
+            ~MEPR357~, ~Divine~, ~1~ => ~MEPR357~   //Fly
+            ~MEPR358~, ~Divine~, ~1~ => ~MEPR358~   //Familiar Spell
+            ~MEPR360~, ~Divine~, ~1~ => ~MEPR360~   //Recall Party
+            ~MEPR361~, ~Divine~, ~1~ => ~MEPR361~   //Steel Wind Strike
+
+            ~MEPR455~, ~Divine~, ~1~ => ~MEPR455~   //Piercing Shots
+            ~MEPR456~, ~Divine~, ~1~ => ~MEPR456~   //Pebbles to Boulders
+
+            ~MEPR554~, ~Divine~, ~1~ => ~MEPR554~   //Ghostform
+
+            ~MEPR658~, ~Divine~, ~1~ => ~MEPR658~   //Animal Growth
+            ~MEPR659~, ~Divine~, ~1~ => ~MEPR659~   //Absolute Guard
+
+            ~MEPR757~, ~Divine~, ~1~ => ~MEPR757~   //Reanimate
+            ~MEPR762~, ~Divine~, ~1~ => ~MEPR762~   //Elysium's Tears
+
+            ~MEPR761~, ~Divine~, ~Q~ => ~MEPR761~   //Volcanic Eruption
+            ~MEPR763~, ~Divine~, ~Q~ => ~MEPR763~   //Greater Living Lightning
+            ~MEPR764~, ~Divine~, ~Q~ => ~MEPR764~   //Tornado
+
+        END
+END
+
+
+
+/***************************
+*   Powerful EEex Spells   *
+***************************/
+ACTION_IF %bz_olvyn_powerful_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~spell_list~
+        BEGIN
+            ~MEPR551~, ~Divine~, ~1~ => ~MEPR551~   //Prolongment
+            ~MEPR552~, ~Divine~, ~1~ => ~MEPR552~   //Wall of Force
+            ~MEPR555~, ~Divine~, ~1~ => ~MEPR555~   //Critical Spell
+            ~MEPR556~, ~Divine~, ~1~ => ~MEPR556~   //Barrage
+
+            ~MEPR655~, ~Divine~, ~1~ => ~MEPR655~   //Linked Spirit
+
+            ~MEPR765~, ~Divine~, ~Q~ => ~MEPR765~   //Spirit of Power
+        END
+END
+
