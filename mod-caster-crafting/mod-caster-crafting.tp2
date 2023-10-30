@@ -36,22 +36,6 @@ LANGUAGE
 /*********************
 *   Mod Components   *
 *********************/
-// Caster Crafting: Scribing Tools subcomponents
-BEGIN @11 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
-SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
-    INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
-    INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
-
-BEGIN @12 DESIGNATED 22 // Scribe scrolls
-SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
-    INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
-
-BEGIN @13 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
-SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
-    INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
-    INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
-
-
 
 // Caster Crafting: Missing scrolls subcomponents
 BEGIN @21 DESIGNATED 31 // Add in missing arcane spell scrolls
@@ -89,6 +73,26 @@ SUBCOMPONENT @20        //  Missing Spell Scrolls
             INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/missing-priest.tph~
         END
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
+//END Missing Scrolls
+
+
+
+// Caster Crafting: Scribing Tools subcomponents
+BEGIN @11 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
+SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
+    INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
+    INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
+
+BEGIN @12 DESIGNATED 22 // Scribe scrolls
+SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
+    INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
+
+BEGIN @13 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
+SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
+    INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
+    INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
+//END scribing tools
+
 
 //Do research stuff
 //INCLUDE ~%MOD_FOLDER%/poc/poc.tph~
