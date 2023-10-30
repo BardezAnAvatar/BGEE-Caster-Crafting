@@ -40,6 +40,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEPR654~, ~Divine~, ~6~ => ~MEPR654~   //Living Lightning
         ~MEPR656~, ~Divine~, ~6~ => ~MEPR656~   //Protection From Non-Silver Weapons
         ~MEPR657~, ~Divine~, ~6~ => ~MEPR657~   //Trial by Fire
+        ~MEPR658~, ~Divine~, ~6~ => ~MEPR658~   //Conjure Earth Elemental
 
         ~MEPR751~, ~Divine~, ~7~ => ~MEPR751~   //Power Word, Heal
         ~MEPR755~, ~Divine~, ~7~ => ~MEPR755~   //Enhance Attribute
@@ -103,8 +104,8 @@ BEGIN
 
             ~MEPR554~, ~Divine~, ~5~ => ~MEPR554~   //Ghostform
 
-            ~MEPR658~, ~Divine~, ~6~ => ~MEPR658~   //Animal Growth
             ~MEPR659~, ~Divine~, ~6~ => ~MEPR659~   //Absolute Guard
+            ~MEPR660~, ~Divine~, ~6~ => ~MEPR660~   //Animal Growth
 
             ~MEPR757~, ~Divine~, ~7~ => ~MEPR757~   //Reanimate
             ~MEPR762~, ~Divine~, ~7~ => ~MEPR762~   //Elysium's Tears

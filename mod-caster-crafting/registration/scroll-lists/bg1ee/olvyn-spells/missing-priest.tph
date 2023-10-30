@@ -62,6 +62,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!G5412~, ~MEPR654~, ~Divine~, ~6~, ~12~, ~BZ!G54I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5412~   //Living Lightning
         ~BZ!G5612~, ~MEPR656~, ~Divine~, ~6~, ~1~,  ~BZ!G56I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5612~   //Protection From Non-Silver Weapons     //Shapeshifter only
         ~BZ!G5712~, ~MEPR657~, ~Divine~, ~6~, ~1~,  ~BZ!G57I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!G5712~   //Trial by Fire
+        ~BZ!G5812~, ~MEPR658~, ~Divine~, ~6~, ~1~,  ~BZ!G58I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5812~   //Consure Earth Elemental
 
         //NOTE: while Olvyn tries to start from > 50, fails to notice 751 for Priest spells (shaman) in base game. However, 751 is a Quest, and this is a lvl 7.
         ~BZ!H5114~, ~MEPR751~, ~Divine~, ~7~, ~1~,  ~BZ!H51I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5114~   //Power Word, Heal
@@ -117,7 +118,6 @@ BEGIN
 
             ~BZ!F5409~, ~MEPR554~, ~Divine~, ~5~, ~9~,  ~BZ!F54I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5409~   //Ghostform
 
-            ~BZ!G5812~, ~MEPR658~, ~Divine~, ~6~, ~1~,  ~BZ!G58I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5812~   //Consure Earth Elemental
             ~BZ!G5912~, ~MEPR659~, ~Divine~, ~6~, ~1~,  ~BZ!G59I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~BZ!G5912~   //Absolute Guard
             ~BZ!G6012~, ~MEPR660~, ~Divine~, ~6~, ~12~, ~BZ!G60I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G6012~   //Animal Growth
 
