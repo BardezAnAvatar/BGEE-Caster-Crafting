@@ -62,12 +62,32 @@ SUBCOMPONENT @20        //  Missing Spell Scrolls
 BEGIN @22 DESIGNATED 32 // Add in missing priest spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
+    ACTION_IF (%bz_iwdification_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include Missing IWD-ification Scrolls~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/missing-priest.tph~
+        END
+    ACTION_IF (%bz_OlvynSpells_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include Missing OlvynSpells Scrolls~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/missing-priest.tph~
+        END
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
 BEGIN @23 DESIGNATED 33 // Add in missing arcane and priest spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
+    ACTION_IF (%bz_iwdification_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include IWD-ification Spells~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/missing-priest.tph~
+        END
+    ACTION_IF (%bz_OlvynSpells_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include Missing OlvynSpells Scrolls~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/missing-priest.tph~
+        END
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
 //Do research stuff
