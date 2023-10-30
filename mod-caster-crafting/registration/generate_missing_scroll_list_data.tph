@@ -20,6 +20,7 @@
     [Usability: Lawful]         // 16
     [Usability: Neutral ...]    // 17
     [Usability: Chaotic]        // 18
+    [Usability: Shaman]         // 19
 */
 
 ACTION_PHP_EACH ~scroll_list_missing~
@@ -59,7 +60,8 @@ ACTION_PHP_EACH ~scroll_list_missing~
                 ~%keys_15%~,                //Usability: Evil
                 ~%keys_16%~,                //Usability: Lawful
                 ~%keys_17%~,                //Usability: Neutral ...
-                ~%keys_18%~                 //Usability: Chaotic
+                ~%keys_18%~,                //Usability: Chaotic
+                ~%keys_19%~                 //Usability: Shaman
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
             END
 
@@ -88,6 +90,7 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
             usability, Bard:    `%keys_10%`
             usability, Paladin: `%keys_11%`
             usability, Ranger:  `%keys_12%`
+            usability, Shaman:  `%keys_19%`
             usability, Good:    `%keys_13%`
             usability, Neutral: `%keys_14%`
             usability, Evil:    `%keys_15%`

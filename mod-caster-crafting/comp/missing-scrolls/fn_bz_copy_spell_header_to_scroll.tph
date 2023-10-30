@@ -230,7 +230,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
 
             //TODO: Exception for Shaman usability because of weirdness
             //  There's probably only one of these that I _need_ to have multiples on, which was the Cleric/Shaman spell: Contagious Fear (Cleric/Shaman, HLA)
-            PATCH_IF (%usability_shaman% AND NOT %usability_druid%) THEN
+            PATCH_IF (%usability_shaman% AND (NOT %usability_druid%)) THEN
             BEGIN
                 LPF ~ADD_ITEM_EFFECT~
                     INT_VAR

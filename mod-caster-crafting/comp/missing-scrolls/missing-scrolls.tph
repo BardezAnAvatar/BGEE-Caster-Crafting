@@ -51,6 +51,7 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
                 usability_mage      = %keys_7%
                 usability_paladin   = %keys_11%
                 usability_ranger    = %keys_12%
+                usability_shaman    = %keys_19%
                 usability_good      = %keys_13%
                 usability_neutral_t = %keys_14%         // ...Neutral [Lawful/Chaotic]
                 usability_evil      = %keys_15%
