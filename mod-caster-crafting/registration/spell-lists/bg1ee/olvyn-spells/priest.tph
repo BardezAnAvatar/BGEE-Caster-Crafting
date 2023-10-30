@@ -29,7 +29,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~MEPR451~, ~Divine~, ~4~ => ~MEPR451~   //Disarm
         ~MEPR453~, ~Divine~, ~4~ => ~MEPR453~   //Turn Creature
-        ~MEPR454~, ~Divine~, ~4~ => ~MEPR454~   //Wall of Fire
         ~MEPR457~, ~Divine~, ~4~ => ~MEPR457~   //Spirit Armor (for Shaman)
 
         ~MEPR553~, ~Divine~, ~5~ => ~MEPR553~   //Protection from the Elements (Nature casters)
@@ -148,6 +147,14 @@ BEGIN
         BEGIN
             //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
             ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~    //Wall of Fire
+        END
+END
+ELSE
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_missing~
+        BEGIN
+            ~MEPR454~, ~Divine~, ~4~ => ~MEPR454~    //Wall of Fire
         END
 END
 
