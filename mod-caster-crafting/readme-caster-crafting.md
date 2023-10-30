@@ -1,6 +1,6 @@
 # Caster Crafting
 
-Version: 0.1.0
+Version: 0.2.0
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
@@ -22,6 +22,7 @@ I am using the `BZ` prefix for my items. It is registered at Black Wyrm Lair: ht
 | Item Name                                           | Version |
 | --------------------------------------------------- | ------- |
 | Initial; copy spells from party members' spellbooks |  0.1.0  |
+| Generate ITMs for missing spell scrolls             |  0.2.0  |
 
 
 ## Components
