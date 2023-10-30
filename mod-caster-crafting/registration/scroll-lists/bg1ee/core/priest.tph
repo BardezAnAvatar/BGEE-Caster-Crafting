@@ -1,0 +1,32 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list~
+    BEGIN
+
+        /*
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Additional Cost]       // 5
+        */
+
+        ~SCRL56~,  ~SPPR401~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Cure Serious Wounds
+        ~SCRL58~,  ~SPPR403~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL58~  //Free Action
+        ~SCRL59~,  ~SPPR404~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL59~  //Neutralize Poison
+        ~SCRL5A~,  ~SPPR405~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL5A~  //Mental Domination
+        ~SCRL5B~,  ~SPPR406~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL5B~  //Defensive Harmony
+        ~SCRL5C~,  ~SPPR407~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL5C~  //Protection from Lightning
+        ~SCRL5D~,  ~SPPR408~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL5D~  //Protection from Evil 10' Radius
+        ~RESTORE~, ~SPPR417~, ~Divine~, ~4~, ~7~,  ~0~ => ~RESTORE~ //Lesser Restoration
+
+        ~SCRL5E~,  ~SPPR507~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL5E~  //Champion's Strength
+        ~SCRL5F~,  ~SPPR508~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL5F~  //Chaotic Commands
+
+        ~SCRLSD~,  ~SPPR713~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRLSD~  //Greater Restoration
+
+        //Missing scrolls for spells in BG1EE
+        /*
+        */
+
+    END

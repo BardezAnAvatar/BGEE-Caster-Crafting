@@ -5,10 +5,10 @@ BACKUP ~./weidu_external/mod-caster-crafting/backup~ // %MOD_FOLDER% will be a l
 AUTHOR ~Bardez; support at: https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues~
 
 /* WeiDU versions newer than v203 allow tp2 level version listing in the .log for troubleshooting  */
-VERSION ~v0.1.0~
+VERSION ~v0.2.0~
 
 //Display the readme?
-README ~readme-caster-crafting.md~
+README ~./%MOD_FOLDER%/readme-caster-crafting.md~
 
 //TP2 flags
 MODDER // Enable all error messages; nothing suppressed. comment this out for release version
@@ -36,20 +36,63 @@ LANGUAGE
 /*********************
 *   Mod Components   *
 *********************/
+
+// Caster Crafting: Missing scrolls subcomponents
+BEGIN @21 DESIGNATED 31 // Add in missing arcane spell scrolls
+SUBCOMPONENT @20        //  Missing Spell Scrolls
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
+    INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
+
+BEGIN @22 DESIGNATED 32 // Add in missing priest spell scrolls
+SUBCOMPONENT @20        //  Missing Spell Scrolls
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
+    ACTION_IF (%bz_iwdification_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include Missing IWD-ification Scrolls~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/missing-priest.tph~
+        END
+    ACTION_IF (%bz_OlvynSpells_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include Missing OlvynSpells Scrolls~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/missing-priest.tph~
+        END
+    INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
+
+BEGIN @23 DESIGNATED 33 // Add in missing arcane and priest spell scrolls
+SUBCOMPONENT @20        //  Missing Spell Scrolls
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
+    INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
+    ACTION_IF (%bz_iwdification_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include IWD-ification Spells~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/missing-priest.tph~
+        END
+    ACTION_IF (%bz_OlvynSpells_installed%)
+        BEGIN
+            PRINT ~DEBUG: Include Missing OlvynSpells Scrolls~
+            INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/missing-priest.tph~
+        END
+    INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
+//END Missing Scrolls
+
+
+
 // Caster Crafting: Scribing Tools subcomponents
-BEGIN @11 DESIGNATED 21 // A) Copy Spells from Party Member Spellbooks
+BEGIN @11 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
 SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 
-BEGIN @12 DESIGNATED 22 // B) Scribe scrolls
+BEGIN @12 DESIGNATED 22 // Scribe scrolls
 SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 
-BEGIN @13 DESIGNATED 23 // A) + B)
+BEGIN @13 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
 SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
+//END scribing tools
+
 
 //Do research stuff
 //INCLUDE ~%MOD_FOLDER%/poc/poc.tph~

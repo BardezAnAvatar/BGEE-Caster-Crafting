@@ -1,6 +1,6 @@
 //RESULT:
 /*
-    An associative array named "scroll_list_data_arcane" what contains these keys:
+    An associative array named "scroll_list_data" what contains these keys:
         [sorting Name]          // 0    --get from spell
         [Scroll]                // 1
         [Spell]                 // 2
@@ -14,7 +14,7 @@
         [Failure %]             // 10   --lookup from table
         [Spell Display Name]    // 11   --get from spell
 */
-ACTION_PHP_EACH ~scroll_list_arcane~
+ACTION_PHP_EACH ~scroll_list~
     AS ~keys~ => ~value~
     BEGIN
         COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
@@ -39,7 +39,7 @@ ACTION_PHP_EACH ~scroll_list_arcane~
         END
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~scroll_list_data_arcane~
+            ~scroll_list_data~
             BEGIN
                 ~%keys_3%_%spell_name%~,    //sorting key of level and spell name
                 ~%keys_0%~,                 //scroll

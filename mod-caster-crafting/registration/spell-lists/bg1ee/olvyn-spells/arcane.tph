@@ -1,21 +1,3 @@
-//  TODO: check the component selection and mod installation / order to detect EEex spells
-
-OUTER_SET ~bz_olvyn_powerful~ = (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~)
-OUTER_SET ~bz_olvyn_eeex~ =
-    MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
-    AND
-    (
-        INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
-        OR INSTALL_ORDER ~MESpells.tp2~ ~1001~ AFTER ~EEEX.TP2~ ~0~
-    )
-OUTER_SET ~bz_olvyn_powerful_eeex~ =
-    MOD_IS_INSTALLED ~EEEX.TP2~ ~0~
-    AND INSTALL_ORDER ~MESpells.tp2~ ~1000~ AFTER ~EEEX.TP2~ ~0~
-
-OUTER_SET ~bz_olvyn_wi556~ =    //Restore original Animate Dead for wizards?
-    !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25011~) AND !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25012~)
-
-
 /*******************
 *   Basic Spells   *
 *******************/

@@ -3,7 +3,7 @@
 ************************/
 
 /******************************************************************************
-*   NOTE: This file will expect prior components to have altered
+*   NOTE: This file will expect prior actions to have altered
 *   BZMSCST.D and yielded internal WeiDU strings:
 *       - SpellbookCopy/BZMSCST.D
 *       - ScrollCreation/BZMSCST.D
@@ -79,5 +79,5 @@ COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
         COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
         INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCST %bz_scrollkit_arcane_interact_strref% BZMSCST~
 
-//Add the
+//Add the kit to stores
 INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/add-to-stores.tph~

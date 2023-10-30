@@ -1,0 +1,116 @@
+
+//OUTPUT:
+/*
+    An associative array named "scroll_list_data" what contains these keys:
+        [Scroll]                    // 0
+        [Spell]                     // 1
+        [Tradition]                 // 2
+        [Spell Level]               // 3
+        [Caster Level]              // 4
+        [Gold Cost]                 // 5
+        [Icon: Inventory]           // 6
+        [Usability: Mage]           // 7
+        [Usability: Cleric]         // 8
+        [Usability: Druid]          // 9
+        [Usability: Bard]           // 10
+        [Usability: Paladin]        // 11
+        [Usability: Ranger]         // 12
+        [Usability: Good]           // 13
+        [Usability: ... Neutral]    // 14
+        [Usability: Evil]           // 15
+        [Usability: Lawful]         // 16
+        [Usability: Neutral ...]    // 17
+        [Usability: Chaotic]        // 18
+*/
+INCLUDE ~./%MOD_FOLDER%/registration/generate_missing_scroll_list_data.tph~
+
+//include a function to create a scroll from a spell
+INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/fn_bz_copy_spell_header_to_scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
+
+// Loop through the missing scrolls and create them
+ACTION_PHP_EACH ~scroll_list_missing_data~
+    AS ~keys~ => ~value~
+    BEGIN
+        //copy inventory BAM
+        COPY
+            ~./%MOD_FOLDER%/comp/missing-scrolls/BAM/%keys_6%.BAM~
+            ~override~
+
+        OUTER_SET ~LearnSpell~ = 0
+        ACTION_IF (~%keys_2%~ STRING_EQUAL ~Arcane~) THEN BEGIN OUTER_SET ~LearnSpell~ = 1 END
+
+        //Make scroll
+        LAUNCH_ACTION_FUNCTION ~bz_copy_spell_header_to_scroll~
+            INT_VAR
+                cast_at_level       = %keys_4%
+                learn_spell         = %LearnSpell%
+                usability_bard      = %keys_10%
+                usability_cleric    = %keys_8%
+                usability_druid     = %keys_9%
+                usability_mage      = %keys_7%
+                usability_paladin   = %keys_11%
+                usability_ranger    = %keys_12%
+                usability_shaman    = %keys_19%
+                usability_good      = %keys_13%
+                usability_neutral_t = %keys_14%         // ...Neutral [Lawful/Chaotic]
+                usability_evil      = %keys_15%
+                usability_lawful    = %keys_16%
+                usability_neutral_l = %keys_17%         /// Neutral... [Evil/Good]
+                usability_chaotic   = %keys_18%
+                price               = %keys_5%
+            STR_VAR
+                item  = ~%keys_0%~
+                spell = ~%keys_1%~
+                icon_inventory = ~%keys_6%~
+        END
+
+
+        /*****************************************
+        *   Add the scroll to the scroll lists   *
+        *****************************************/
+        //Append scroll list
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list~
+        BEGIN
+            ~%keys_0%~, ~%keys_1%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~, ~0~ => ~%keys_0%~
+        END
+
+        //Get the spell name
+        COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
+            READ_LONG NAME1 ~strref_name~           //since this is a spell file, NAME1 should be all there is
+        BUT_ONLY_IF_IT_CHANGES
+
+        ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
+
+        //Get the costs from the table
+        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
+            STR_VAR
+                ~Level~ = ~%keys_3%~
+                ~Tradition~ = ~%keys_2%~
+            RET
+                ~scroll_cost_time~ = ~time~
+                ~scroll_cost_xp~ = ~xp~
+                ~scroll_cost_failure~ = ~failure~
+        END
+
+        //Append scroll list data
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_data~
+        BEGIN
+            ~%keys_3%_%spell_name%~,    //sorting key of level and spell name
+            ~%keys_0%~,                 //scroll
+            ~%keys_1%~,                 //spell
+            ~%keys_2%~,                 //tradition
+            ~%keys_3%~,                 //spell level
+            ~%keys_4%~,                 //caster level
+            ~%keys_5%~,                 //cost of the scroll in the *.ITM file
+            ~0~,                        //any additional cost
+            ~%scroll_cost_time%~,       //time to scribe (in hours)
+            ~%scroll_cost_xp%~,         //XP cost to scribe
+            ~%scroll_cost_failure%~,    //Chance of failure
+            ~%spell_name%~              //spell name for display
+                => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
+        END
+    END
+

@@ -1,0 +1,35 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_costs~
+    BEGIN
+
+        /*
+        [key]                   // 0
+        [spell-level]           // 1
+        [Tradition]             // 2
+        [Time Cost]             // 3    in hours
+        [XP Cost]               // 4
+        [Failure %]             // 5
+        */
+
+        ~1-Protection~, ~0~, ~Protection~, ~144~, ~0~, ~20~ => ~Protecc~
+
+        ~1-Arcane~, ~1~, ~Arcane~, ~24~,  ~0~, ~5~  => ~1-Arcane~
+        ~2-Arcane~, ~2~, ~Arcane~, ~48~,  ~0~, ~10~ => ~2-Arcane~
+        ~3-Arcane~, ~3~, ~Arcane~, ~72~,  ~0~, ~15~ => ~3-Arcane~
+        ~4-Arcane~, ~4~, ~Arcane~, ~96~,  ~0~, ~20~ => ~4-Arcane~
+        ~5-Arcane~, ~5~, ~Arcane~, ~120~, ~0~, ~25~ => ~5-Arcane~
+        ~6-Arcane~, ~6~, ~Arcane~, ~144~, ~0~, ~30~ => ~6-Arcane~
+        ~7-Arcane~, ~7~, ~Arcane~, ~168~, ~0~, ~35~ => ~7-Arcane~
+        ~8-Arcane~, ~8~, ~Arcane~, ~192~, ~0~, ~40~ => ~8-Arcane~
+        ~9-Arcane~, ~9~, ~Arcane~, ~216~, ~0~, ~45~ => ~9-Arcane~
+        ~A-Arcane~, ~A~, ~Arcane~, ~240~, ~0~, ~50~ => ~A-Arcane~
+
+        ~1-Divine~, ~1~, ~Divine~, ~24~,  ~0~, ~5~  => ~1-Divine~
+        ~2-Divine~, ~2~, ~Divine~, ~48~,  ~0~, ~10~ => ~2-Divine~
+        ~3-Divine~, ~3~, ~Divine~, ~72~,  ~0~, ~15~ => ~3-Divine~
+        ~4-Divine~, ~4~, ~Divine~, ~96~,  ~0~, ~20~ => ~4-Divine~
+        ~5-Divine~, ~5~, ~Divine~, ~120~, ~0~, ~25~ => ~5-Divine~
+        ~6-Divine~, ~6~, ~Divine~, ~144~, ~0~, ~30~ => ~6-Divine~
+        ~7-Divine~, ~7~, ~Divine~, ~168~, ~0~, ~35~ => ~7-Divine~
+
+    END
