@@ -1,0 +1,177 @@
+//Output:
+/*
+[Scroll]                    // 0
+[Spell]                     // 1
+[Tradition]                 // 2
+[Spell Level]               // 3
+[Caster Level]              // 4
+[Icon: Inventory]           // 5
+[Gold: Additional cost]     // 6
+[Usability: Mage]           // 7
+[Usability: Cleric]         // 8
+[Usability: Druid]          // 9
+[Usability: Bard]           // 10
+[Usability: Paladin]        // 11
+[Usability: Ranger]         // 12
+[Usability: Good]           // 13
+[Usability: ... Neutral]    // 14
+[Usability: Evil]           // 15
+[Usability: Lawful]         // 16
+[Usability: Neutral ...]    // 17
+[Usability: Chaotic]        // 18
+[Usability: Shaman]         // 19
+*/
+
+//NOTE: Spell headers have minimum caster level of 1 very often if not always, even if the minimum level is invalid to cast.
+//   The copied header therefore must be updated accordingly.
+
+/*******************
+*   Basic Spells   *
+*******************/
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list_missing~
+    BEGIN
+
+        ~BZ!B5101~, ~MEPR151~, ~Divine~, ~1~, ~1~,  ~BZ!B51I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!B5101~   //Snake's Swiftness
+        ~BZ!B5301~, ~MEPR153~, ~Divine~, ~1~, ~1~,  ~BZ!B53I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!B5301~   //Hunter's Mark
+        ~BZ!B5401~, ~MEPR154~, ~Divine~, ~1~, ~1~,  ~BZ!B54I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!B5401~   //Turning Weapon
+        ~BZ!B5501~, ~MEPR155~, ~Divine~, ~1~, ~1~,  ~BZ!B55I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!B5501~   //Repulse
+        ~BZ!B5601~, ~MEPR156~, ~Divine~, ~1~, ~1~,  ~BZ!B56I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!B5601~   //Camouflage
+        ~BZ!B5701~, ~MEPR157~, ~Divine~, ~1~, ~1~,  ~BZ!B57I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!B5701~   //Searing Smite
+
+        ~BZ!C5103~, ~MEPR251~, ~Divine~, ~2~, ~1~,  ~BZ!C51I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!C5103~   //Beast Sense   //Will not be added if B Spells is installed -- what is this?
+        ~BZ!C5203~, ~MEPR252~, ~Divine~, ~2~, ~1~,  ~BZ!C52I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!C5203~   //Fiery Link
+        ~BZ!C5303~, ~MEPR253~, ~Divine~, ~2~, ~3~,  ~BZ!C53I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!C5303~   //Null Healing
+        ~BZ!C5403~, ~MEPR254~, ~Divine~, ~2~, ~1~,  ~BZ!C54I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!C5403~   //Critical Boon
+
+        ~BZ!D5105~, ~MEPR351~, ~Divine~, ~3~, ~1~,  ~BZ!D51I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!D5105~   //Call Water Weirds
+        ~BZ!D5405~, ~MEPR354~, ~Divine~, ~3~, ~1~,  ~BZ!D54I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!D5405~   //Healing Curse
+        ~BZ!D5605~, ~MEPR356~, ~Divine~, ~3~, ~1~,  ~BZ!D56I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!D5605~   //Wind Shots
+        ~BZ!D5905~, ~MEPR359~, ~Divine~, ~3~, ~1~,  ~BZ!D59I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!D5605~   //Wind Shots
+
+        ~BZ!E5107~, ~MEPR451~, ~Divine~, ~4~, ~1~,  ~BZ!E51I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!E5107~   //Disarm
+        ~BZ!E5207~, ~MEPR452~, ~Divine~, ~4~, ~1~,  ~BZ!E52I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5207~   //Forest's Blessing
+        ~BZ!E5307~, ~MEPR453~, ~Divine~, ~4~, ~1~,  ~BZ!E53I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!E5307~   //Turn Creature
+        ~BZ!E5707~, ~MEPR457~, ~Divine~, ~4~, ~1~,  ~BZ!E57I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5707~   //Spirit Armor
+
+        ~BZ!F5309~, ~MEPR553~, ~Divine~, ~5~, ~1~,  ~BZ!F53I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5309~   //Protection from the Elements
+        ~BZ!F5709~, ~MEPR557~, ~Divine~, ~5~, ~9~,  ~BZ!F57I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5709~   //Expose to the Elements
+        ~BZ!F5809~, ~MEPR558~, ~Divine~, ~5~, ~1~,  ~BZ!F58I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!F5809~   //Sphere of Security
+
+        ~BZ!G5212~, ~MEPR652~, ~Divine~, ~6~, ~1~,  ~BZ!G52I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5212~   //Drown
+        ~BZ!G5412~, ~MEPR654~, ~Divine~, ~6~, ~12~, ~BZ!G54I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5412~   //Living Lightning
+        ~BZ!G5612~, ~MEPR656~, ~Divine~, ~6~, ~1~,  ~BZ!G56I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5612~   //Protection From Non-Silver Weapons     //Shapeshifter only
+        ~BZ!G5712~, ~MEPR657~, ~Divine~, ~6~, ~1~,  ~BZ!G57I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!G5712~   //Trial by Fire
+        ~BZ!G5812~, ~MEPR658~, ~Divine~, ~6~, ~1~,  ~BZ!G58I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5812~   //Consure Earth Elemental
+
+        //NOTE: while Olvyn tries to start from > 50, fails to notice 751 for Priest spells (shaman) in base game. However, 751 is a Quest, and this is a lvl 7.
+        ~BZ!H5114~, ~MEPR751~, ~Divine~, ~7~, ~1~,  ~BZ!H51I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5114~   //Power Word, Heal
+        ~BZ!H5514~, ~MEPR755~, ~Divine~, ~7~, ~1~,  ~BZ!H55I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5514~   //Enhance Attribute
+
+        ~BZ!I5415~, ~MEPR754~, ~Divine~, ~Q~, ~1~,  ~BZ!I54I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!I5415~   //Colossal Growth
+        ~BZ!I5615~, ~MEPR756~, ~Divine~, ~Q~, ~1~,  ~BZ!I56I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!I5615~   //Contingent Resurrection
+        ~BZ!I5815~, ~MEPR758~, ~Divine~, ~Q~, ~1~,  ~BZ!I58I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!I5815~   //Mass Heal
+        ~BZ!I6615~, ~MEPR766~, ~Divine~, ~Q~, ~1~,  ~BZ!I66I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!I6615~   //Contagious Fear
+    END
+
+
+/**********************
+*   Powerful Spells   *
+**********************/
+ACTION_IF %bz_olvyn_powerful% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_missing~
+        BEGIN
+            ~BZ!G5312~, ~MEPR653~, ~Divine~, ~6~, ~1~, ~BZ!G53I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!G5312~   //Antiharm Shell
+
+            ~BZ!H5314~, ~MEPR753~, ~Divine~, ~7~, ~1~, ~BZ!H53I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~, ~0~, ~0~ => ~BZ!H5314~   //Nonrandom Zone
+            ~BZ!H5914~, ~MEPR759~, ~Divine~, ~7~, ~1~, ~BZ!H59I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5914~   //Omnipresence
+            ~BZ!H6014~, ~MEPR760~, ~Divine~, ~7~, ~1~, ~BZ!H60I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H6014~   //True Dispel (P)
+        END
+END
+
+
+/******************
+*   EEex Spells   *
+******************/
+ACTION_IF %bz_olvyn_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_missing~
+        BEGIN
+            ~BZ!B5201~, ~MEPR152~, ~Divine~, ~1~, ~1~,  ~BZ!B52I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!B5201~   //Hex
+
+            ~BZ!C5503~, ~MEPR255~, ~Divine~, ~2~, ~1~,  ~BZ!C55I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!C5503~   //Ghostwalk
+            ~BZ!C5603~, ~MEPR256~, ~Divine~, ~2~, ~3~,  ~BZ!C56I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!C5603~   //Detect Magic
+
+            ~BZ!D5205~, ~MEPR352~, ~Divine~, ~3~, ~1~,  ~BZ!D52I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!D5205~   //Shortening
+            ~BZ!D5305~, ~MEPR353~, ~Divine~, ~3~, ~1~,  ~BZ!D53I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!D5305~   //Fire Curse
+            ~BZ!D5505~, ~MEPR355~, ~Divine~, ~3~, ~1~,  ~BZ!D55I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!D5505~   //Guardian Magic
+            ~BZ!D5705~, ~MEPR357~, ~Divine~, ~3~, ~5~,  ~BZ!D57I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!D5705~   //Fly
+            ~BZ!D5805~, ~MEPR358~, ~Divine~, ~3~, ~1~,  ~BZ!D58I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!D5805~   //Familiar Spell     //Beastmaster Only
+            ~BZ!D6005~, ~MEPR360~, ~Divine~, ~3~, ~1~,  ~BZ!D60I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!D6005~   //Recall Party
+            ~BZ!D6105~, ~MEPR361~, ~Divine~, ~3~, ~1~,  ~BZ!D61I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!D6105~   //Steel Wind Strike
+
+            ~BZ!E5507~, ~MEPR455~, ~Divine~, ~4~, ~7~,  ~BZ!E55I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!E5507~   //Piercing Shots
+            ~BZ!E5607~, ~MEPR456~, ~Divine~, ~4~, ~7~,  ~BZ!E56I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5607~   //Pebbles to Boulders
+
+            ~BZ!F5409~, ~MEPR554~, ~Divine~, ~5~, ~9~,  ~BZ!F54I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5409~   //Ghostform
+
+            ~BZ!G6012~, ~MEPR660~, ~Divine~, ~6~, ~12~, ~BZ!G60I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G6012~   //Animal Growth
+            ~BZ!G6112~, ~MEPR661~, ~Divine~, ~6~, ~1~,  ~BZ!G61I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~BZ!G6012~   //Absolute Guard
+
+            ~BZ!H5714~, ~MEPR757~, ~Divine~, ~7~, ~1~,  ~BZ!H57I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!H5714~   //Reanimate
+            ~BZ!H6214~, ~MEPR762~, ~Divine~, ~7~, ~14~, ~BZ!H62I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H6214~   //Elysium's Tears
+
+            ~BZ!I6115~, ~MEPR761~, ~Divine~, ~Q~, ~14~, ~BZ!I61I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!I6115~   //Volcanic Eruption
+            ~BZ!I6315~, ~MEPR763~, ~Divine~, ~Q~, ~15~, ~BZ!I63I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!I6315~   //Greater Living Lightning
+            ~BZ!I6415~, ~MEPR764~, ~Divine~, ~Q~, ~1~,  ~BZ!I64I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!I6415~   //Tornado
+
+        END
+END
+
+
+
+/***************************
+*   Powerful EEex Spells   *
+***************************/
+ACTION_IF %bz_olvyn_powerful_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_missing~
+        BEGIN
+            ~BZ!F5109~, ~MEPR551~, ~Divine~, ~5~, ~1~, ~BZ!F51I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!F5109~   //Prolongment
+            ~BZ!F5209~, ~MEPR552~, ~Divine~, ~5~, ~1~, ~BZ!F52I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!F5209~   //Wall of Force
+            ~BZ!F5509~, ~MEPR555~, ~Divine~, ~5~, ~1~, ~BZ!F55I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!F5509~   //Critical Spell
+            ~BZ!F5609~, ~MEPR556~, ~Divine~, ~5~, ~9~, ~BZ!F56I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!F5609~   //Barrage
+
+            ~BZ!G5512~, ~MEPR655~, ~Divine~, ~6~, ~1~, ~BZ!G55I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5512~   //Linked Spirit
+            ~BZ!G5912~, ~MEPR659~, ~Divine~, ~6~, ~1~, ~BZ!G59I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!G5912~   //Greater Steel Wind Strike
+
+            ~BZ!I6515~, ~MEPR765~, ~Divine~, ~Q~, ~1~, ~BZ!I65I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!I6515~   //Spirit of Power
+        END
+END
+
+
+/*************************
+*   Special Exceptions   *
+*************************/
+ACTION_IF (%bz_iwdification_installed%) THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_missing~
+        BEGIN
+            //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+            ~BZ!E1807~, ~SPPR418~, ~Divine~, ~4~, ~1~, ~BZ!E54I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E1807~    //Wall of Fire
+        END
+END
+ELSE
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_missing~
+        BEGIN
+            //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+            ~BZ!E5407~, ~MEPR454~, ~Divine~, ~4~, ~1~,  ~BZ!E54I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5407~   //Wall of Fire
+        END
+END
