@@ -1,0 +1,210 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
+    BEGIN
+
+        /*
+        [Spell]                 // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
+        */
+
+        ~SPPR101~, ~Divine~, ~1~ => ~SPPR101~   //Bless
+        ~SPPR102~, ~Divine~, ~1~ => ~SPPR102~   //Command
+        ~SPPR103~, ~Divine~, ~1~ => ~SPPR103~   //Cure Light Wounds
+        ~SPPR104~, ~Divine~, ~1~ => ~SPPR104~   //Detect Evil
+        ~SPPR105~, ~Divine~, ~1~ => ~SPPR105~   //Entangle
+        ~SPPR106~, ~Divine~, ~1~ => ~SPPR106~   //Magic Stone
+        ~SPPR107~, ~Divine~, ~1~ => ~SPPR107~   //Protection From Evil
+        ~SPPR108~, ~Divine~, ~1~ => ~SPPR108~   //Remove Fear
+        ~SPPR109~, ~Divine~, ~1~ => ~SPPR109~   //Sanctuary
+        ~SPPR110~, ~Divine~, ~1~ => ~SPPR110~   //Shillelagh
+        ~SPPR111~, ~Divine~, ~1~ => ~SPPR111~   //Armor of Faith
+        ~SPPR112~, ~Divine~, ~1~ => ~SPPR112~   //Curse
+        ~SPPR113~, ~Divine~, ~1~ => ~SPPR113~   //Doom
+        ~SPPR114~, ~Divine~, ~1~ => ~SPPR114~   //Cause Light Wounds
+        ~SPPR115~, ~Divine~, ~1~ => ~SPPR115~   //Sunscorch
+        ~SPPR150~, ~Divine~, ~1~ => ~SPPR150~   //Spirit Ward
+
+        ~SPPR201~, ~Divine~, ~2~ => ~SPPR201~   //Aid
+        ~SPPR202~, ~Divine~, ~2~ => ~SPPR202~   //Barkskin
+        ~SPPR203~, ~Divine~, ~2~ => ~SPPR203~   //Chant
+        ~SPPR204~, ~Divine~, ~2~ => ~SPPR204~   //Charm Person or Mammal
+        ~SPPR205~, ~Divine~, ~2~ => ~SPPR205~   //Find Traps
+        ~SPPR206~, ~Divine~, ~2~ => ~SPPR206~   //Flame Blade
+        ~SPPR208~, ~Divine~, ~2~ => ~SPPR208~   //Hold Person
+        ~SPPR209~, ~Divine~, ~2~ => ~SPPR209~   //Know Alignment
+        ~SPPR211~, ~Divine~, ~2~ => ~SPPR211~   //Silence 15' Radius
+        ~SPPR212~, ~Divine~, ~2~ => ~SPPR212~   //Slow Poison
+        ~SPPR213~, ~Divine~, ~2~ => ~SPPR213~   //Spiritual Hammer
+        ~SPPR214~, ~Divine~, ~2~ => ~SPPR214~   //Draw Upon Holy Might
+        ~SPPR215~, ~Divine~, ~2~ => ~SPPR215~   //Goodberry
+        ~SPPR216~, ~Divine~, ~2~ => ~SPPR216~   //Resist Fire/Cold
+        ~SPPR217~, ~Divine~, ~2~ => ~SPPR217~   //Cure Moderate Wounds
+        ~SPPR218~, ~Divine~, ~2~ => ~SPPR218~   //Alicorn Lance
+        ~SPPR219~, ~Divine~, ~2~ => ~SPPR219~   //Beast Claw
+        ~SPPR220~, ~Divine~, ~2~ => ~SPPR220~   //Cause Moderate Wounds
+        ~SPPR250~, ~Divine~, ~2~ => ~SPPR250~   //Writhing Fog
+
+        ~SPPR301~, ~Divine~, ~3~ => ~SPPR301~   //Animate Dead
+        ~SPPR302~, ~Divine~, ~3~ => ~SPPR302~   //Call Lightning
+        ~SPPR303~, ~Divine~, ~3~ => ~SPPR303~   //Dispel Magic
+        ~SPPR304~, ~Divine~, ~3~ => ~SPPR304~   //Glyph of Warding
+        ~SPPR305~, ~Divine~, ~3~ => ~SPPR305~   //Hold Animal
+        ~SPPR306~, ~Divine~, ~3~ => ~SPPR306~   //Protection from Fire
+        ~SPPR307~, ~Divine~, ~3~ => ~SPPR307~   //Remove Curse
+        ~SPPR308~, ~Divine~, ~3~ => ~SPPR308~   //Remove Paralysis
+        ~SPPR309~, ~Divine~, ~3~ => ~SPPR309~   //Invisibility Purge
+        ~SPPR310~, ~Divine~, ~3~ => ~SPPR310~   //Miscast Magic
+        ~SPPR311~, ~Divine~, ~3~ => ~SPPR311~   //Rigid Thinking
+        ~SPPR312~, ~Divine~, ~3~ => ~SPPR312~   //Strength of One
+        ~SPPR313~, ~Divine~, ~3~ => ~SPPR313~   //Holy Smite
+        ~SPPR314~, ~Divine~, ~3~ => ~SPPR314~   //Unholy Blight
+        ~SPPR315~, ~Divine~, ~3~ => ~SPPR315~   //Cure Medium Wounds
+        ~SPPR316~, ~Divine~, ~3~ => ~SPPR316~   //Prayer
+        ~SPPR317~, ~Divine~, ~3~ => ~SPPR317~   //Cure Disease
+        ~SPPR318~, ~Divine~, ~3~ => ~SPPR318~   //Zone of Sweet Air
+        ~SPPR319~, ~Divine~, ~3~ => ~SPPR319~   //Summon Insects
+        ~SPPR320~, ~Divine~, ~3~ => ~SPPR320~   //Cause Disease
+        ~SPPR321~, ~Divine~, ~3~ => ~SPPR321~   //Exaltation
+        ~SPPR322~, ~Divine~, ~3~ => ~SPPR322~   //Moonblade
+        ~SPPR323~, ~Divine~, ~3~ => ~SPPR323~   //Circle of Bones
+        ~SPPR324~, ~Divine~, ~3~ => ~SPPR324~   //Spike Growth
+        ~SPPR325~, ~Divine~, ~3~ => ~SPPR325~   //Cloudburst
+        ~SPPR326~, ~Divine~, ~3~ => ~SPPR326~   //Mold Touch
+        ~SPPR327~, ~Divine~, ~3~ => ~SPPR327~   //Storm Shell
+                                                //Summon Lizard Man
+                                                //Summon Trolls
+        ~SPPR330~, ~Divine~, ~3~ => ~SPPR330~   //Cause Medium Wounds
+        ~SPPR331~, ~Divine~, ~3~ => ~SPPR331~   //Favor of Illmater
+        ~SPPR350~, ~Divine~, ~3~ => ~SPPR350~   //Spiritual Clarity
+
+        ~SPPR401~, ~Divine~, ~4~ => ~SPPR401~   //Cure Serious Wounds
+        ~SPPR402~, ~Divine~, ~4~ => ~SPPR402~   //Animal Summoning 1
+        ~SPPR403~, ~Divine~, ~4~ => ~SPPR403~   //Free Action
+        ~SPPR404~, ~Divine~, ~4~ => ~SPPR404~   //Neutralize Poison
+        ~SPPR405~, ~Divine~, ~4~ => ~SPPR405~   //Mental Domination
+        ~SPPR406~, ~Divine~, ~4~ => ~SPPR406~   //Defensive Harmony
+        ~SPPR407~, ~Divine~, ~4~ => ~SPPR407~   //Protection from Lightning
+        ~SPPR408~, ~Divine~, ~4~ => ~SPPR408~   //Protection from Evil 10' Radius
+        ~SPPR409~, ~Divine~, ~4~ => ~SPPR409~   //Death Ward
+        ~SPPR410~, ~Divine~, ~4~ => ~SPPR410~   //Call Woodland Beings
+        ~SPPR411~, ~Divine~, ~4~ => ~SPPR411~   //Poison
+        ~SPPR412~, ~Divine~, ~4~ => ~SPPR412~   //Holy Power
+        ~SPPR413~, ~Divine~, ~4~ => ~SPPR413~   //Negative Plane Protection
+        ~SPPR414~, ~Divine~, ~4~ => ~SPPR414~   //Cause Serious Wounds
+        ~SPPR415~, ~Divine~, ~4~ => ~SPPR415~   //Farsight
+        ~SPPR416~, ~Divine~, ~4~ => ~SPPR416~   //Cloak of Fear
+        ~SPPR417~, ~Divine~, ~4~ => ~SPPR417~   //Lesser Restoration
+                                                //Producer Fire
+        ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~   //Giant Insect
+        ~SPPR420~, ~Divine~, ~4~ => ~SPPR420~   //Static Charge
+        ~SPPR421~, ~Divine~, ~4~ => ~SPPR421~   //Recitation
+        ~SPPR422~, ~Divine~, ~4~ => ~SPPR422~   //Blood Rage
+        ~SPPR423~, ~Divine~, ~4~ => ~SPPR423~   //Cloud of Pestilance
+        ~SPPR424~, ~Divine~, ~4~ => ~SPPR424~   //Unfailing Endurance
+        ~SPPR425~, ~Divine~, ~4~ => ~SPPR425~   //Star Metal Cudgel
+        ~SPPR426~, ~Divine~, ~4~ => ~SPPR426~   //Smashing Wave
+        ~SPPR427~, ~Divine~, ~4~ => ~SPPR427~   //Thorn Spray
+        ~SPPR428~, ~Divine~, ~4~ => ~SPPR428~   //Wall of Moonlight
+        ~SPPR450~, ~Divine~, ~4~ => ~SPPR450~   //Spirit Fire
+
+        ~SPPR501~, ~Divine~, ~5~ => ~SPPR501~   //Animal Summoning 2
+        ~SPPR502~, ~Divine~, ~5~ => ~SPPR502~   //Cure Critical Wounds
+        ~SPPR503~, ~Divine~, ~5~ => ~SPPR503~   //Flame Strike
+        ~SPPR504~, ~Divine~, ~5~ => ~SPPR504~   //Raise Dead
+        ~SPPR505~, ~Divine~, ~5~ => ~SPPR505~   //True Seeing
+        ~SPPR506~, ~Divine~, ~5~ => ~SPPR506~   //Iron Skins
+        ~SPPR507~, ~Divine~, ~5~ => ~SPPR507~   //Champion's Strength
+        ~SPPR508~, ~Divine~, ~5~ => ~SPPR508~   //Chaotic Commands
+        ~SPPR509~, ~Divine~, ~5~ => ~SPPR509~   //Magic Resistance
+        ~SPPR510~, ~Divine~, ~5~ => ~SPPR510~   //Cause Critical Wounds
+        ~SPPR511~, ~Divine~, ~5~ => ~SPPR511~   //Slay Living
+        ~SPPR512~, ~Divine~, ~5~ => ~SPPR512~   //Greater Command
+        ~SPPR513~, ~Divine~, ~5~ => ~SPPR513~   //Righteous Magic
+        ~SPPR514~, ~Divine~, ~5~ => ~SPPR514~   //Mass Cure Light Wounds
+        ~SPPR515~, ~Divine~, ~5~ => ~SPPR515~   //Repulse Undead
+        ~SPPR516~, ~Divine~, ~5~ => ~SPPR516~   //Pixie Dust
+        ~SPPR517~, ~Divine~, ~5~ => ~SPPR517~   //Insect Plague
+        ~SPPR518~, ~Divine~, ~5~ => ~SPPR518~   //Righteous Wrath of the Faithful
+        ~SPPR519~, ~Divine~, ~5~ => ~SPPR519~   //Spike Stones
+        ~SPPR520~, ~Divine~, ~5~ => ~SPPR520~   //Shield of Lathander
+        ~SPPR521~, ~Divine~, ~5~ => ~SPPR521~   //Undead Ward
+        ~SPPR522~, ~Divine~, ~5~ => ~SPPR522~   //Animal Rage
+        ~SPPR523~, ~Divine~, ~5~ => ~SPPR523~   //Mass Cause Light Wounds
+        ~SPPR550~, ~Divine~, ~5~ => ~SPPR550~   //Recall Spirit
+
+        ~SPPR601~, ~Divine~, ~6~ => ~SPPR601~   //Arial Servant
+        ~SPPR602~, ~Divine~, ~6~ => ~SPPR602~   //Animal Summoning 3
+        ~SPPR603~, ~Divine~, ~6~ => ~SPPR603~   //Blade Barrier
+        ~SPPR604~, ~Divine~, ~6~ => ~SPPR604~   //Conjure Animals
+        ~SPPR605~, ~Divine~, ~6~ => ~SPPR605~   //Conjure Fire Elemental
+        ~SPPR606~, ~Divine~, ~6~ => ~SPPR606~   //Fire Seeds
+        ~SPPR607~, ~Divine~, ~6~ => ~SPPR607~   //Heal
+        ~SPPR608~, ~Divine~, ~6~ => ~SPPR608~   //Harm
+        ~SPPR609~, ~Divine~, ~6~ => ~SPPR609~   //False Dawn
+        ~SPPR610~, ~Divine~, ~6~ => ~SPPR610~   //Dolorous Decay
+        ~SPPR611~, ~Divine~, ~6~ => ~SPPR611~   //Wondrous Recall
+        ~SPPR612~, ~Divine~, ~6~ => ~SPPR612~   //Bolt of Glory
+        ~SPPR613~, ~Divine~, ~6~ => ~SPPR613~   //Physical Mirror
+        ~SPPR614~, ~Divine~, ~6~ => ~SPPR614~   //Sol's Searing Orb
+        ~SPPR615~, ~Divine~, ~6~ => ~SPPR615~   //Entropy Shield
+        ~SPPR616~, ~Divine~, ~6~ => ~SPPR616~   //Spiritual Wrath
+        ~SPPR618~, ~Divine~, ~6~ => ~SPPR618~   //Whirlwind
+        ~SPPR650~, ~Divine~, ~6~ => ~SPPR650~   //Spiritual Lock
+
+        ~SPPR701~, ~Divine~, ~7~ => ~SPPR701~   //Shield of the Archons
+        ~SPPR702~, ~Divine~, ~7~ => ~SPPR702~   //Conjure Earth Elemental
+        ~SPPR703~, ~Divine~, ~7~ => ~SPPR703~   //Gate
+        ~SPPR704~, ~Divine~, ~7~ => ~SPPR704~   //Nature's Beauty
+        ~SPPR705~, ~Divine~, ~7~ => ~SPPR705~   //Fire Storm
+        ~SPPR706~, ~Divine~, ~7~ => ~SPPR706~   //Symbol, Fear
+        ~SPPR707~, ~Divine~, ~7~ => ~SPPR707~   //Sunray
+        ~SPPR708~, ~Divine~, ~7~ => ~SPPR708~   //Finger of Death
+        ~SPPR709~, ~Divine~, ~7~ => ~SPPR709~   //Confusion
+        ~SPPR710~, ~Divine~, ~7~ => ~SPPR710~   //Holy Word
+        ~SPPR711~, ~Divine~, ~7~ => ~SPPR711~   //Regeneration
+        ~SPPR712~, ~Divine~, ~7~ => ~SPPR712~   //Resurrection
+        ~SPPR713~, ~Divine~, ~7~ => ~SPPR713~   //Greater Restoration
+        ~SPPR714~, ~Divine~, ~7~ => ~SPPR714~   //Symbol, Pain
+        ~SPPR715~, ~Divine~, ~7~ => ~SPPR715~   //Unholy Word
+        ~SPPR716~, ~Divine~, ~7~ => ~SPPR716~   //Symbol, Hopelessness
+        ~SPPR717~, ~Divine~, ~7~ => ~SPPR717~   //Creeping Doom
+        ~SPPR718~, ~Divine~, ~7~ => ~SPPR718~   //Symbol, Stun
+        ~SPPR719~, ~Divine~, ~7~ => ~SPPR719~   //Symbol, Death
+        ~SPPR720~, ~Divine~, ~7~ => ~SPPR720~   //Earthquake
+        ~SPPR721~, ~Divine~, ~Q~ => ~SPPR721~   //Energy Blades
+        ~SPPR722~, ~Divine~, ~Q~ => ~SPPR722~   //Storm of Vengeance
+        ~SPPR723~, ~Divine~, ~Q~ => ~SPPR723~   //Elemental Summoning
+        ~SPPR724~, ~Divine~, ~Q~ => ~SPPR724~   //Greater Elemental Summoning
+        ~SPPR725~, ~Divine~, ~Q~ => ~SPPR725~   //Globe of Blades
+        ~SPPR726~, ~Divine~, ~Q~ => ~SPPR726~   //Summon Deva
+        ~SPPR727~, ~Divine~, ~Q~ => ~SPPR727~   //Summon Fallen Deva
+        ~SPPR728~, ~Divine~, ~Q~ => ~SPPR728~   //Implosion
+        ~SPPR729~, ~Divine~, ~7~ => ~SPPR729~   //Mass Raise Dead
+        ~SPPR730~, ~Divine~, ~Q~ => ~SPPR730~   //Aura of Flaming Death
+        ~SPPR731~, ~Divine~, ~Q~ => ~SPPR731~   //Fire Elemental Transformation
+        ~SPPR732~, ~Divine~, ~Q~ => ~SPPR732~   //Fire Earth Transformation
+        ~SPPR733~, ~Divine~, ~7~ => ~SPPR733~   //Impervious Sanctity of Mind
+        ~SPPR734~, ~Divine~, ~7~ => ~SPPR734~   //Destruction
+        ~SPPR735~, ~Divine~, ~7~ => ~SPPR735~   //Greater Shield of Lathander
+        ~SPPR736~, ~Divine~, ~7~ => ~SPPR736~   //Mist of Eldath
+        ~SPPR737~, ~Divine~, ~7~ => ~SPPR737~   //Stalker
+                                                //Heavenly Inferno
+        ~SPPR739~, ~Divine~, ~7~ => ~SPPR739~   //Energy Drain
+        ~SPPR740~, ~Divine~, ~7~ => ~SPPR740~   //Wither
+        ~SPPR750~, ~Divine~, ~7~ => ~SPPR750~   //Ether Gate
+        ~SPPR751~, ~Divine~, ~Q~ => ~SPPR751~   //Ethereal Retribution
+
+
+    END
+
+
+ACTION_IF (NOT %bz_OlvynSpells_installed%)
+    BEGIN
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+            ~spell_list~
+            BEGIN
+                //looks like IWD(ification) and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+                ~SPPR419~, ~Divine~, ~4~ => ~SPPR419~    //Produce Fire
+            END
+    END
