@@ -1,0 +1,34 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list_missing~
+    BEGIN
+
+        /*
+        [Scroll]                    // 0
+        [Spell]                     // 1
+        [Tradition]                 // 2
+        [Spell Level]               // 3
+        [Caster Level]              // 4
+        [Icon: Inventory]           // 5
+        [Gold: Additional cost]     // 6
+        [Usability: Mage]           // 7
+        [Usability: Cleric]         // 8
+        [Usability: Druid]          // 9
+        [Usability: Bard]           // 10
+        [Usability: Paladin]        // 11
+        [Usability: Ranger]         // 12
+        [Usability: Good]           // 13
+        [Usability: ... Neutral]    // 14
+        [Usability: Evil]           // 15
+        [Usability: Lawful]         // 16
+        [Usability: Neutral ...]    // 17
+        [Usability: Chaotic]        // 18
+        [Usability: Shaman]         // 19
+        */
+
+        //NOTE: Spell headers have minimum caster level of 1 very often if not always, even if the minimum level is invalid to cast.
+        //   The copied header therefore must be updated accordingly.
+
+        //physical mirror gets screwy.
+        ~BZ!F2509~, ~SPPR525~, ~Divine~, ~1~, ~1~,  ~BZ!F25I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
+
+    END
