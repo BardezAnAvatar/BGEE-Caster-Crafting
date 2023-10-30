@@ -26,6 +26,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~MEPR354~, ~Divine~, ~3~ => ~MEPR354~   //Healing Curse
         ~MEPR356~, ~Divine~, ~3~ => ~MEPR356~   //Wind Shots
+        ~MEPR359~, ~Divine~, ~3~ => ~MEPR359~   //Clairvoyance
 
         ~MEPR451~, ~Divine~, ~4~ => ~MEPR451~   //Disarm
         ~MEPR453~, ~Divine~, ~4~ => ~MEPR453~   //Turn Creature
