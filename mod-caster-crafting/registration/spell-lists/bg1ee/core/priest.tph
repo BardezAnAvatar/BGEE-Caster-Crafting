@@ -133,7 +133,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPPR719~, ~Divine~, ~7~ => ~SPPR719~    //Symbol, Death
         ~SPPR720~, ~Divine~, ~7~ => ~SPPR720~    //Earthquake
         ~SPPR729~, ~Divine~, ~7~ => ~SPPR729~    //Mass Raise Dead
-        ~SPPR750~, ~Divine~, ~7~ => ~SPPR750~    //Ethereal Gate
+        ~SPPR750~, ~Divine~, ~7~ => ~SPPR750~    //Ether Gate
 
         ~SPPR721~, ~Divine~, ~Q~ => ~SPPR721~    //Energy Blades
         ~SPPR725~, ~Divine~, ~Q~ => ~SPPR725~    //Globe of Blades
