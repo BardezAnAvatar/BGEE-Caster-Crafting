@@ -1,0 +1,82 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
+    BEGIN
+
+        /*
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        */
+
+        ~SPPR116~, ~Divine~, ~1~ => ~SPPR116~   //Curse
+        ~SPPR117~, ~Divine~, ~1~ => ~SPPR117~   //Cause Light Wounds
+        ~SPPR118~, ~Divine~, ~1~ => ~SPPR118~   //Sunscorch
+
+        ~SPPR216~, ~Divine~, ~2~ => ~SPPR216~   //Cure Moderate Wounds
+        ~SPPR217~, ~Divine~, ~2~ => ~SPPR217~   //Alicorn Lance
+        ~SPPR218~, ~Divine~, ~2~ => ~SPPR218~   //Beast Claw
+        ~SPPR219~, ~Divine~, ~2~ => ~SPPR219~   //Cause Moderate Wounds
+
+        ~SPPR320~, ~Divine~, ~3~ => ~SPPR320~   //Prayer
+        ~SPPR321~, ~Divine~, ~3~ => ~SPPR321~   //Cause Disease
+        ~SPPR322~, ~Divine~, ~3~ => ~SPPR322~   //Exaltation
+        ~SPPR323~, ~Divine~, ~3~ => ~SPPR323~   //Moonblade
+        ~SPPR324~, ~Divine~, ~3~ => ~SPPR324~   //Circle of Bones
+        ~SPPR325~, ~Divine~, ~3~ => ~SPPR325~   //Spike Growth
+        ~SPPR326~, ~Divine~, ~3~ => ~SPPR326~   //Cloudburst
+        ~SPPR327~, ~Divine~, ~3~ => ~SPPR327~   //Mold Touch
+        ~SPPR328~, ~Divine~, ~3~ => ~SPPR328~   //Storm Shell
+        ~SPPR329~, ~Divine~, ~3~ => ~SPPR329~   //Cause Medium Wounds
+        ~SPPR330~, ~Divine~, ~3~ => ~SPPR330~   //Favor of Illmater
+
+        ~SPPR419~, ~Divine~, ~4~ => ~SPPR419~   //Static Charge
+        ~SPPR420~, ~Divine~, ~4~ => ~SPPR420~   //Recitation
+        ~SPPR421~, ~Divine~, ~4~ => ~SPPR421~   //Blood Rage
+        ~SPPR422~, ~Divine~, ~4~ => ~SPPR422~   //Cloud of Pestilance
+        ~SPPR423~, ~Divine~, ~4~ => ~SPPR423~   //Unfailing Endurance
+        ~SPPR424~, ~Divine~, ~4~ => ~SPPR424~   //Star Metal Cudgel
+        ~SPPR425~, ~Divine~, ~4~ => ~SPPR425~   //Smashing Wave
+        ~SPPR426~, ~Divine~, ~4~ => ~SPPR426~   //Thorn Spray
+        ~SPPR427~, ~Divine~, ~4~ => ~SPPR427~   //Wall of Moonlight
+        ~SPPR428~, ~Divine~, ~4~ => ~SPPR428~   //Cause Serious Wounds
+        ~SPPR429~, ~Divine~, ~4~ => ~SPPR429~   //Giant Insect
+
+        ~SPPR518~, ~Divine~, ~5~ => ~SPPR518~   //Righteous Wrath of the Faithful
+        ~SPPR519~, ~Divine~, ~5~ => ~SPPR519~   //Spike Stones
+        ~SPPR520~, ~Divine~, ~5~ => ~SPPR520~   //Shield of Lathander
+        ~SPPR521~, ~Divine~, ~5~ => ~SPPR521~   //Undead Ward
+        ~SPPR522~, ~Divine~, ~5~ => ~SPPR522~   //Animal Rage
+        ~SPPR523~, ~Divine~, ~5~ => ~SPPR523~   //Mass Cause Light Wounds
+        ~SPPR524~, ~Divine~, ~5~ => ~SPPR524~   //Cause Critical Wounds
+
+        ~SPPR615~, ~Divine~, ~6~ => ~SPPR615~   //Entropy Shield
+        ~SPPR616~, ~Divine~, ~6~ => ~SPPR616~   //Whirlwind
+        ~SPPR617~, ~Divine~, ~6~ => ~SPPR617~   //Spiritual Wrath
+
+        ~SPPR714~, ~Divine~, ~7~ => ~SPPR714~   //Energy Drain
+        ~SPPR733~, ~Divine~, ~7~ => ~SPPR733~   //Symbol, Pain
+        ~SPPR734~, ~Divine~, ~7~ => ~SPPR734~   //Symbol, Hopelessness
+        ~SPPR735~, ~Divine~, ~7~ => ~SPPR735~   //Impervious Sanctity of Mind
+        ~SPPR736~, ~Divine~, ~7~ => ~SPPR736~   //Destruction
+        ~SPPR737~, ~Divine~, ~7~ => ~SPPR737~   //Greater Shield of Lathander
+        ~SPPR738~, ~Divine~, ~7~ => ~SPPR738~   //Mist of Eldath
+        ~SPPR739~, ~Divine~, ~7~ => ~SPPR739~   //Stalker
+        ~SPPR740~, ~Divine~, ~7~ => ~SPPR740~   //Wither
+
+        /********************
+        *   Special cases   *
+        ********************/
+        //special -- in-game already, moved from 613 to here
+        ~SPPR525~, ~Divine~, ~5~ => ~SPPR525~    //Physical Mirror
+
+    END
+
+ACTION_IF (NOT %bz_OlvynSpells_installed%)
+    BEGIN
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+            ~spell_list~
+            BEGIN
+                //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+                ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~    //Produce Fire
+            END
+    END
