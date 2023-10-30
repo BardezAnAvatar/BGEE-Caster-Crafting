@@ -14,6 +14,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         usability_paladin   = 0
         usability_cleric    = 0
         usability_druid     = 0
+        usability_shaman    = 0
         usability_good      = 1
         usability_neutral_t = 1         // ...Neutral [Lawful/Chaotic]
         usability_evil      = 1
@@ -226,6 +227,36 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
                 END // end self-reference check
             END // end new fx loop
             WRITE_SHORT 0x68 (0x01)             //Now write the effects vals
+
+            //TODO: Exception for Shaman usability because of weirdness
+            //  There's probably only one of these that I _need_ to have multiples on, which was the Cleric/Shaman spell: Contagious Fear (Cleric/Shaman, HLA)
+            PATCH_IF (%usability_shaman% AND NOT %usability_druid%) THEN
+            BEGIN
+                LPF ~ADD_ITEM_EFFECT~
+                    INT_VAR
+                        opcode = 319            // Usability overrides
+                        target = 1              // Self
+                        timing = 1              // Instant/Permanent until death
+                        parameter1 = 21         // Shaman
+                        parameter2 = 5          // CLASS.IDS
+                        power = 1               // Allow
+                        resist_dispel = 2       // Not dispel / bypass resistance
+                        duration = 0
+                        probability1 = 100
+                        probability2 = 0
+                        dicenumber = 0
+                        dicesize = 0
+                        savingthrow = 0
+                        savebonus = 0
+                        special = "-1"          //strref for unusability flag?
+                        header = 2              // 1-indexed header number
+                        type = 3
+                        insert_point = ~-1~     // last effect to insert
+                    STR_VAR
+                        resource = ~~
+                END
+            END
+
 
             //write additional header for learning spell
             PATCH_IF (%learn_spell%) THEN
