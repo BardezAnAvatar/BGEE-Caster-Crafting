@@ -51,7 +51,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!E5107~, ~MEPR451~, ~Divine~, ~4~, ~1~,  ~BZ!E51I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!E5107~   //Disarm
         ~BZ!E5207~, ~MEPR452~, ~Divine~, ~4~, ~1~,  ~BZ!E52I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5207~   //Forest's Blessing
         ~BZ!E5307~, ~MEPR453~, ~Divine~, ~4~, ~1~,  ~BZ!E53I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~BZ!E5307~   //Turn Creature
-        ~BZ!E5407~, ~MEPR454~, ~Divine~, ~4~, ~1~,  ~BZ!E54I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5407~   //Wall of Fire
         ~BZ!E5707~, ~MEPR457~, ~Divine~, ~4~, ~1~,  ~BZ!E57I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5707~   //Spirit Armor
 
         ~BZ!F5309~, ~MEPR553~, ~Divine~, ~5~, ~1~,  ~BZ!F53I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5309~   //Protection from the Elements
@@ -163,6 +162,15 @@ BEGIN
         ~scroll_list_missing~
         BEGIN
             //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-            ~BZ!E1807~, ~SPPR418~, ~Divine~, ~4~, ~1~, ~BZ!E18I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E1807~    //Wall of Fire
+            ~BZ!E1807~, ~SPPR418~, ~Divine~, ~4~, ~1~, ~BZ!E54I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E1807~    //Wall of Fire
+        END
+END
+ELSE
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list_missing~
+        BEGIN
+            //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+            ~BZ!E5407~, ~MEPR454~, ~Divine~, ~4~, ~1~,  ~BZ!E54I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E5407~   //Wall of Fire
         END
 END
