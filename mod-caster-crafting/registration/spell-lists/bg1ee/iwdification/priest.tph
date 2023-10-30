@@ -48,7 +48,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPPR522~, ~Divine~, ~5~ => ~SPPR522~   //Animal Rage
         ~SPPR523~, ~Divine~, ~5~ => ~SPPR523~   //Mass Cause Light Wounds
         ~SPPR524~, ~Divine~, ~5~ => ~SPPR524~   //Cause Critical Wounds
-        ~SPPR524~, ~Divine~, ~5~ => ~SPPR524~   //Cause Critical Wounds
 
         ~SPPR615~, ~Divine~, ~6~ => ~SPPR615~   //Entropy Shield
         ~SPPR616~, ~Divine~, ~6~ => ~SPPR616~   //Whirlwind
