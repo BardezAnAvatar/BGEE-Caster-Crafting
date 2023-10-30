@@ -1,0 +1,18 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list~
+    BEGIN
+
+        /*
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Additional Cost]       // 5
+        */
+
+        ~SCRL56~,  ~SPPR401~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Cure Serious Wounds
+        ~SCRL61~,  ~SPPR502~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL61~  //Cure Critical Wounds
+        ~SCRL62~,  ~SPPR503~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL62~  //Flame Strike
+
+    END
