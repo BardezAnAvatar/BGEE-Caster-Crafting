@@ -104,8 +104,8 @@ BEGIN
 
             ~MEPR554~, ~Divine~, ~5~ => ~MEPR554~   //Ghostform
 
-            ~MEPR659~, ~Divine~, ~6~ => ~MEPR659~   //Absolute Guard
             ~MEPR660~, ~Divine~, ~6~ => ~MEPR660~   //Animal Growth
+            ~MEPR661~, ~Divine~, ~6~ => ~MEPR661~   //Absolute Guard
 
             ~MEPR757~, ~Divine~, ~7~ => ~MEPR757~   //Reanimate
             ~MEPR762~, ~Divine~, ~7~ => ~MEPR762~   //Elysium's Tears
@@ -133,6 +133,7 @@ BEGIN
             ~MEPR556~, ~Divine~, ~5~ => ~MEPR556~   //Barrage
 
             ~MEPR655~, ~Divine~, ~6~ => ~MEPR655~   //Linked Spirit
+            ~MEPR659~, ~Divine~, ~6~ => ~MEPR659~   //Greater Steel Strike
 
             ~MEPR765~, ~Divine~, ~Q~ => ~MEPR765~   //Spirit of Power
         END
