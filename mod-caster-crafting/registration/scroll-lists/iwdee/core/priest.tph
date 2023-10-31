@@ -45,6 +45,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~SPPR607C~, ~SPPR607~, ~Divine~, ~6~, ~12~, ~0~ => ~SCRL56~  //Heal
         ~SPPR610X~, ~SPPR603~, ~Divine~, ~6~, ~12~, ~0~ => ~SCRL56~  //Blade Barrier
+
         ~SPPR712C~, ~SPPR712~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRL56~  //Resurrection
         ~SPPR714C~, ~SPPR714~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRL56~  //Symbol, Pain
 
