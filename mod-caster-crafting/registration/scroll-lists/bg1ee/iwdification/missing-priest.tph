@@ -8,27 +8,28 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Tradition]                 // 2
         [Spell Level]               // 3
         [Caster Level]              // 4
-        [Icon: Inventory]           // 5
-        [Gold: Additional cost]     // 6
-        [Usability: Mage]           // 7
-        [Usability: Cleric]         // 8
-        [Usability: Druid]          // 9
-        [Usability: Bard]           // 10
-        [Usability: Paladin]        // 11
-        [Usability: Ranger]         // 12
-        [Usability: Good]           // 13
-        [Usability: ... Neutral]    // 14
-        [Usability: Evil]           // 15
-        [Usability: Lawful]         // 16
-        [Usability: Neutral ...]    // 17
-        [Usability: Chaotic]        // 18
-        [Usability: Shaman]         // 19
+        [Gold: Additional cost]     // 5
+        [Icon: Source BAM Path]     // 6
+        [Icon: Inventory]           // 7
+        [Usability: Mage]           // 8
+        [Usability: Cleric]         // 9
+        [Usability: Druid]          // 10
+        [Usability: Bard]           // 11
+        [Usability: Paladin]        // 12
+        [Usability: Ranger]         // 13
+        [Usability: Shaman]         // 14
+        [Usability: Good]           // 15
+        [Usability: ... Neutral]    // 16
+        [Usability: Evil]           // 17
+        [Usability: Lawful]         // 18
+        [Usability: Neutral ...]    // 19
+        [Usability: Chaotic]        // 20
         */
 
         //NOTE: Spell headers have minimum caster level of 1 very often if not always, even if the minimum level is invalid to cast.
         //   The copied header therefore must be updated accordingly.
 
-        //physical mirror gets screwy.
-        ~BZ!F2509~, ~SPPR525~, ~Divine~, ~1~, ~1~,  ~BZ!F25I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
+        //physical mirror gets a level change.
+        ~BZ!F2509~, ~SPPR525~, ~Divine~, ~1~, ~1~, ~0~, ~priest/core/Physical Mirror.BAM~, ~BZ!F25I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
 
     END
