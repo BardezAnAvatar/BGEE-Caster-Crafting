@@ -8,230 +8,233 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Tradition]                 // 2
         [Spell Level]               // 3
         [Caster Level]              // 4
-        [Icon: Inventory]           // 5
-        [Gold: Additional cost]     // 6
-        [Usability: Mage]           // 7
-        [Usability: Cleric]         // 8
-        [Usability: Druid]          // 9
-        [Usability: Bard]           // 10
-        [Usability: Paladin]        // 11
-        [Usability: Ranger]         // 12
-        [Usability: Good]           // 13
-        [Usability: ... Neutral]    // 14
-        [Usability: Evil]           // 15
-        [Usability: Lawful]         // 16
-        [Usability: Neutral ...]    // 17
-        [Usability: Chaotic]        // 18
-        [Usability: Shaman]         // 19
+        [Gold: Additional cost]     // 5
+        [Icon: Source BAM Path]     // 6
+        [Icon: Inventory]           // 7
+        [Usability: Mage]           // 8
+        [Usability: Cleric]         // 9
+        [Usability: Druid]          // 10
+        [Usability: Bard]           // 11
+        [Usability: Paladin]        // 12
+        [Usability: Ranger]         // 13
+        [Usability: Shaman]         // 14
+        [Usability: Good]           // 15
+        [Usability: ... Neutral]    // 16
+        [Usability: Evil]           // 17
+        [Usability: Lawful]         // 18
+        [Usability: Neutral ...]    // 19
+        [Usability: Chaotic]        // 20
         */
 
         //NOTE: Spell headers have minimum caster level of 1 very often if not always, even if the minimum level is invalid to cast.
         //   The copied header therefore must be updated accordingly.
 
 
-        ~BZ!B0101~, ~SPPR101~, ~Divine~, ~1~, ~1~,  ~BZ!B01I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Bless
-        ~BZ!B0201~, ~SPPR102~, ~Divine~, ~1~, ~1~,  ~BZ!B02I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~   //Command
-      //~BZ!B0301~, ~SPPR103~, ~Divine~, ~1~, ~1~,  ~BZ!B03I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Cure Light Wounds
-        ~BZ!B0401~, ~SPPR104~, ~Divine~, ~1~, ~1~,  ~BZ!B04I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Detect Evil
-      //~BZ!B0501~, ~SPPR105~, ~Divine~, ~1~, ~1~,  ~BZ!B05I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Entangle
-        ~BZ!B0601~, ~SPPR106~, ~Divine~, ~1~, ~1~,  ~BZ!B06I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Magical Stone
-        ~BZ!B0701~, ~SPPR107~, ~Divine~, ~1~, ~1~,  ~BZ!B07I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Protection From Evil
-      //~BZ!B0801~, ~SPPR108~, ~Divine~, ~1~, ~1~,  ~BZ!B08I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~   //Remove Fear
-        ~BZ!B0901~, ~SPPR109~, ~Divine~, ~1~, ~1~,  ~BZ!B09I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~   //Sanctuary
-        ~BZ!B1001~, ~SPPR110~, ~Divine~, ~1~, ~1~,  ~BZ!B10I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Shillelagh
-        ~BZ!B1101~, ~SPPR111~, ~Divine~, ~1~, ~1~,  ~BZ!B11I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Armor of Faith
-        ~BZ!B1701~, ~SPPR112~, ~Divine~, ~1~, ~1~,  ~BZ!B17I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Curse
-        ~BZ!B1301~, ~SPPR113~, ~Divine~, ~1~, ~1~,  ~BZ!B13I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Doom
-        ~BZ!B1801~, ~SPPR114~, ~Divine~, ~1~, ~1~,  ~BZ!B18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~   //Cause Light Wounds
-        ~BZ!B1901~, ~SPPR115~, ~Divine~, ~1~, ~1~,  ~BZ!B19I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Sunscorch
-        ~BZ!B5001~, ~SPPR150~, ~Divine~, ~1~, ~1~,  ~BZ!B50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Spirit Ward
+        ~BZ!B0101~, ~SPPR101~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Bless.BAM~,                                     ~BZ!B01I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Bless
+        ~BZ!B0201~, ~SPPR102~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Command.BAM~,                                   ~BZ!B02I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Command
+      //~BZ!B0301~, ~SPPR103~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Cure Light Wounds.BAM~,                         ~BZ!B03I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Cure Light Wounds
+        ~BZ!B0401~, ~SPPR104~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Detect Evil.BAM~,                               ~BZ!B04I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Detect Evil
+      //~BZ!B0501~, ~SPPR105~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Entangle.BAM~,                                  ~BZ!B05I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Entangle
+        ~BZ!B0601~, ~SPPR106~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Magical Stone.BAM~,                             ~BZ!B06I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Magical Stone
+        ~BZ!B0701~, ~SPPR107~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Protection From Evil.BAM~,                      ~BZ!B07I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Protection From Evil
+      //~BZ!B0801~, ~SPPR108~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Remove Fear.BAM~,                               ~BZ!B08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Remove Fear
+        ~BZ!B0901~, ~SPPR109~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Sanctuary.BAM~,                                 ~BZ!B09I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Sanctuary
+        ~BZ!B1001~, ~SPPR110~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Shillelagh.BAM~,                                ~BZ!B10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Shillelagh
+        ~BZ!B1101~, ~SPPR111~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Armor of Faith.BAM~,                            ~BZ!B11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Armor of Faith
+        ~BZ!B1201~, ~SPPR112~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Curse.BAM~,                                     ~BZ!B12I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Curse
+        ~BZ!B1301~, ~SPPR113~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Doom.BAM~,                                      ~BZ!B13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Doom
+        ~BZ!B1401~, ~SPPR114~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/IWDification/Cause Light Wounds.BAM~,                ~BZ!B14I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Cause Light Wounds
+        ~BZ!B1501~, ~SPPR115~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/IWDification/Sunscorch.BAM~,                         ~BZ!B15I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Sunscorch
+        ~BZ!B5001~, ~SPPR150~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Spirit Ward.BAM~,                               ~BZ!B50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~   //Spirit Ward
 
 
-      //~BZ!C0103~, ~SPPR201~, ~Divine~, ~2~, ~3~,  ~BZ!C01I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Aid
-        ~BZ!C0203~, ~SPPR202~, ~Divine~, ~2~, ~1~,  ~BZ!C02I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Barkskin
-      //~BZ!C0303~, ~SPPR203~, ~Divine~, ~2~, ~1~,  ~BZ!C03I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Chant
-        ~BZ!C0403~, ~SPPR204~, ~Divine~, ~2~, ~1~,  ~BZ!C04I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Charm Person or Mammal
-      //~BZ!C0503~, ~SPPR205~, ~Divine~, ~2~, ~1~,  ~BZ!C05I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Find Traps
-        ~BZ!C0603~, ~SPPR206~, ~Divine~, ~2~, ~1~,  ~BZ!C06I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Flame Blade
-        ~BZ!C0703~, ~SPPR215~, ~Divine~, ~2~, ~1~,  ~BZ!C07I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Goodberry
-      //~BZ!C0803~, ~SPPR208~, ~Divine~, ~2~, ~1~,  ~BZ!C08I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Hold Person
-        ~BZ!C0903~, ~SPPR209~, ~Divine~, ~2~, ~1~,  ~BZ!C09I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Know Alignment
-        ~BZ!C1003~, ~SPPR216~, ~Divine~, ~2~, ~1~,  ~BZ!C10I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Resist Fire/Cold
-      //~BZ!C1103~, ~SPPR211~, ~Divine~, ~2~, ~3~,  ~BZ!C11I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Silence 15' Radius
-      //~BZ!C1203~, ~SPPR212~, ~Divine~, ~2~, ~1~,  ~BZ!C12I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Slow Poison
-        ~BZ!C1303~, ~SPPR213~, ~Divine~, ~2~, ~1~,  ~BZ!C13I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Spiritual Hammer
-        ~BZ!C1403~, ~SPPR214~, ~Divine~, ~2~, ~1~,  ~BZ!C14I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Draw Upon Holy Might
-      //~BZ!C1603~, ~SPPR217~, ~Divine~, ~2~, ~1~,  ~BZ!C16I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Moderate Wounds
-        ~BZ!C1703~, ~SPPR218~, ~Divine~, ~2~, ~1~,  ~BZ!C17I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Alicorn
-        ~BZ!C1803~, ~SPPR219~, ~Divine~, ~2~, ~1~,  ~BZ!C18I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Beast Claw
-        ~BZ!C1903~, ~SPPR220~, ~Divine~, ~2~, ~1~,  ~BZ!C19I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cause Moderate Wounds
-        ~BZ!C5003~, ~SPPR250~, ~Divine~, ~2~, ~1~,  ~BZ!C50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Writhing Fog
+      //~BZ!C0103~, ~SPPR201~, ~Divine~, ~2~, ~3~,  ~0~, ~priest/core/Aid.BAM~,                                       ~BZ!C01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aid
+        ~BZ!C0203~, ~SPPR202~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Barkskin.BAM~,                                  ~BZ!C02I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Barkskin
+      //~BZ!C0303~, ~SPPR203~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Chant.BAM~,                                     ~BZ!C03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Chant
+        ~BZ!C0403~, ~SPPR204~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Charm Person or Mammal.BAM~,                    ~BZ!C04I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Charm Person or Mammal
+      //~BZ!C0503~, ~SPPR205~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Find Traps.BAM~,                                ~BZ!C05I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Find Traps
+        ~BZ!C0603~, ~SPPR206~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Flame Blade.BAM~,                               ~BZ!C06I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Flame Blade
+      //~BZ!C0703~, ~SPPR207~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Goodberry.BAM~,                                 ~BZ!C07I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Goodberry
+      //~BZ!C0803~, ~SPPR208~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Hold Person.BAM~,                               ~BZ!C08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Hold Person
+        ~BZ!C0903~, ~SPPR209~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Know Alignment.BAM~,                            ~BZ!C09I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Know Alignment
+      //~BZ!C1003~, ~SPPR210~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Resist Fire and Cold.BAM~,                      ~BZ!C10I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Resist Fire/Cold
+      //~BZ!C1103~, ~SPPR211~, ~Divine~, ~2~, ~3~,  ~0~, ~priest/core/Silence 15' Radius.BAM~,                        ~BZ!C11I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Silence 15' Radius
+      //~BZ!C1203~, ~SPPR212~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Slow Poison.BAM~,                               ~BZ!C12I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Slow Poison
+        ~BZ!C1303~, ~SPPR213~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Spiritual Hammer.BAM~,                          ~BZ!C13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Hammer
+        ~BZ!C1403~, ~SPPR214~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Draw Upon Holy Might.BAM~,                      ~BZ!C14I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Draw Upon Holy Might
+        ~BZ!C1503~, ~SPPR215~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Goodberry.BAM~,                                 ~BZ!C15I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Goodberry
+        ~BZ!C1603~, ~SPPR216~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Resist Fire and Cold.BAM~,                      ~BZ!C16I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Resist Fire/Cold
+      //~BZ!C1703~, ~SPPR217~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Cure Moderate Wounds.BAM~,                      ~BZ!C17I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Moderate Wounds
+        ~BZ!C1803~, ~SPPR218~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/IWDification/Alicorn.BAM~,                           ~BZ!C18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Alicorn
+        ~BZ!C1903~, ~SPPR219~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/IWDification/Beast Claw.BAM~,                        ~BZ!C19I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Beast Claw
+        ~BZ!C2003~, ~SPPR220~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/IWDification/Cause Moderate Wounds.BAM~,             ~BZ!C20I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cause Moderate Wounds
+        ~BZ!C5003~, ~SPPR250~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Writhing Fog.BAM~,                              ~BZ!C50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Writhing Fog
 
 
-        ~BZ!D0105~, ~SPPR301~, ~Divine~, ~3~, ~1~,  ~BZ!D01I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Animate Dead
-        ~BZ!D0205~, ~SPPR302~, ~Divine~, ~3~, ~1~,  ~BZ!D02I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Call Lightning
-        ~BZ!D0305~, ~SPPR303~, ~Divine~, ~3~, ~1~,  ~BZ!D03I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Dispel Magic
-      //~BZ!D0405~, ~SPPR304~, ~Divine~, ~3~, ~1~,  ~BZ!D04I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Glyph of Warding
-        ~BZ!D0505~, ~SPPR305~, ~Divine~, ~3~, ~1~,  ~BZ!D05I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Hold Animal
-      //~BZ!D0605~, ~SPPR306~, ~Divine~, ~3~, ~5~,  ~BZ!D06I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Protection from Fire
-      //~BZ!D0705~, ~SPPR307~, ~Divine~, ~3~, ~1~,  ~BZ!D07I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Remove Curse
-      //~BZ!D0805~, ~SPPR308~, ~Divine~, ~3~, ~1~,  ~BZ!D08I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Remove Paralysis
-        ~BZ!D0905~, ~SPPR309~, ~Divine~, ~3~, ~1~,  ~BZ!D09I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Invisibility Purge
-        ~BZ!D1005~, ~SPPR310~, ~Divine~, ~3~, ~1~,  ~BZ!D10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Miscast Magic
-        ~BZ!D1105~, ~SPPR311~, ~Divine~, ~3~, ~1~,  ~BZ!D11I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Rigid Thinking
-        ~BZ!D1205~, ~SPPR312~, ~Divine~, ~3~, ~1~,  ~BZ!D12I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Strength of One
-      //~BZ!D1305~, ~SPPR313~, ~Divine~, ~3~, ~1~,  ~BZ!D13I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~~    //Holy Smite
-        ~BZ!D1405~, ~SPPR314~, ~Divine~, ~3~, ~1~,  ~BZ!D14I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Unholy Blight
-        ~BZ!D1505~, ~SPPR315~, ~Divine~, ~3~, ~1~,  ~BZ!D15I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Medium Wounds
-      //~SPPR313C~, ~SPPR316~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Prayer
-      //~BZ!D1705~, ~SPPR317~, ~Divine~, ~3~, ~1~,  ~BZ!D17I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Disease
-        ~BZ!D1805~, ~SPPR318~, ~Divine~, ~3~, ~1~,  ~BZ!D18I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Zone of Sweet Air
-        ~BZ!D1905~, ~SPPR319~, ~Divine~, ~3~, ~1~,  ~BZ!D19I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Insects
-        ~BZ!D2005~, ~SPPR320~, ~Divine~, ~3~, ~1~,  ~BZ!D20I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Cause Disease
-        ~BZ!D2105~, ~SPPR321~, ~Divine~, ~3~, ~1~,  ~BZ!D21I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Exaltation
-        ~BZ!D2205~, ~SPPR322~, ~Divine~, ~3~, ~1~,  ~BZ!D22I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Moonblade
-        ~BZ!D2305~, ~SPPR323~, ~Divine~, ~3~, ~1~,  ~BZ!D23I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Circle of Bones
-        ~BZ!D2405~, ~SPPR324~, ~Divine~, ~3~, ~1~,  ~BZ!D24I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spike Growth
-        ~BZ!D2505~, ~SPPR325~, ~Divine~, ~3~, ~1~,  ~BZ!D25I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cloudburst
-        ~BZ!D2605~, ~SPPR326~, ~Divine~, ~3~, ~1~,  ~BZ!D26I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mold Touch
-        ~BZ!D2705~, ~SPPR327~, ~Divine~, ~3~, ~1~,  ~BZ!D27I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Storm Shell
-                                                                                                                                             //Summon Lizard Men
-                                                                                                                                             //Summon Trolls
-        ~BZ!D3005~, ~SPPR330~, ~Divine~, ~3~, ~1~,  ~BZ!D30I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Cause Medium Wounds
-        ~BZ!D3105~, ~SPPR331~, ~Divine~, ~3~, ~1~,  ~BZ!D31I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~~    //Favor of Ilmater
-        ~BZ!D5005~, ~SPPR350~, ~Divine~, ~3~, ~1~,  ~BZ!D50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Clarity
+        ~BZ!D0105~, ~SPPR301~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Animate Dead.BAM~,                              ~BZ!D01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animate Dead
+        ~BZ!D0205~, ~SPPR302~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Call Lightning.BAM~,                            ~BZ!D02I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Call Lightning
+        ~BZ!D0305~, ~SPPR303~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Dispel Magic.BAM~,                              ~BZ!D03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Dispel Magic
+      //~BZ!D0405~, ~SPPR304~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Glyph of Warding.BAM~,                          ~BZ!D04I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Glyph of Warding
+        ~BZ!D0505~, ~SPPR305~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Hold Animal.BAM~,                               ~BZ!D05I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Hold Animal
+      //~BZ!D0605~, ~SPPR306~, ~Divine~, ~3~, ~5~,  ~0~, ~priest/core/Protection from Fire.BAM~,                      ~BZ!D06I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Protection from Fire
+      //~BZ!D0705~, ~SPPR307~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Remove Curse.BAM~,                              ~BZ!D07I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Remove Curse
+      //~BZ!D0805~, ~SPPR308~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Remove Paralysis.BAM~,                          ~BZ!D08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Remove Paralysis
+        ~BZ!D0905~, ~SPPR309~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Invisibility Purge.BAM~,                        ~BZ!D09I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Invisibility Purge
+        ~BZ!D1005~, ~SPPR310~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Miscast Magic.BAM~,                             ~BZ!D10I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Miscast Magic
+        ~BZ!D1105~, ~SPPR311~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Rigid Thinking.BAM~,                            ~BZ!D11I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Rigid Thinking
+        ~BZ!D1205~, ~SPPR312~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Strength of One.BAM~,                           ~BZ!D12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Strength of One
+      //~BZ!D1305~, ~SPPR313~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Holy Smite.BAM~,                                ~BZ!D13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Holy Smite
+        ~BZ!D1405~, ~SPPR314~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Unholy Blight.BAM~,                             ~BZ!D14I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Unholy Blight
+        ~BZ!D1505~, ~SPPR315~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Cure Medium Wounds.BAM~,                        ~BZ!D15I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Medium Wounds
+      //~SPPR163C~, ~SPPR316~, ~Divine~, ~3~, ~5~,   ~0~ => ~SCRL56~  //Prayer
+      //~BZ!D1705~, ~SPPR317~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Cure Disease.BAM~,                              ~BZ!D17I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Disease
+        ~BZ!D1805~, ~SPPR318~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Zone of Sweet Air.BAM~,                         ~BZ!D18I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Zone of Sweet Air
+        ~BZ!D1905~, ~SPPR319~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Summon Insects.BAM~,                            ~BZ!D19I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Insects
+        ~BZ!D2005~, ~SPPR320~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Cause Disease.BAM~,                     ~BZ!D20I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cause Disease
+        ~BZ!D2105~, ~SPPR321~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Exaltation.BAM~,                        ~BZ!D21I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Exaltation
+        ~BZ!D2205~, ~SPPR322~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Moonblade.BAM~,                         ~BZ!D22I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Moonblade
+        ~BZ!D2305~, ~SPPR323~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Circle of Bones.BAM~,                   ~BZ!D23I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Circle of Bones
+        ~BZ!D2405~, ~SPPR324~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Spike Growth.BAM~,                      ~BZ!D24I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spike Growth
+        ~BZ!D2505~, ~SPPR325~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Cloudburst.BAM~,                        ~BZ!D25I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cloudburst
+        ~BZ!D2605~, ~SPPR326~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Mold Touch.BAM~,                        ~BZ!D26I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mold Touch
+        ~BZ!D2705~, ~SPPR327~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Storm Shell.BAM~,                       ~BZ!D27I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Storm Shell
+                                                                                                                                                                                                            //Summon Lizard Men
+                                                                                                                                                                                                            //Summon Trolls
+        ~BZ!D3005~, ~SPPR330~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Cause Medium Wounds.BAM~,               ~BZ!D30I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cause Medium Wounds
+        ~BZ!D3105~, ~SPPR331~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Favor of Ilmater.BAM~,                  ~BZ!D31I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Favor of Ilmater
+        ~BZ!D5005~, ~SPPR350~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Spiritual Clarity.BAM~,                         ~BZ!D50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Clarity
 
 
       //~SCRL56~,   ~SPPR401~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Cure Serious Wounds
-        ~BZ!E0207~, ~SPPR402~, ~Divine~, ~4~, ~1~,  ~BZ!E02I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 1
-        ~BZ!E0307~, ~SPPR403~, ~Divine~, ~4~, ~1~,  ~BZ!E03I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Free Action
+        ~BZ!E0207~, ~SPPR402~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Animal Summoning 1.BAM~,                        ~BZ!E02I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 1
+        ~BZ!E0307~, ~SPPR403~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Free Action.BAM~,                               ~BZ!E03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Free Action
       //~SPPR404C~, ~SPPR404~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Neutralize Poison
-        ~BZ!E0507~, ~SPPR405~, ~Divine~, ~4~, ~1~,  ~BZ!E05I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Mental Domination
-        ~BZ!E0607~, ~SPPR406~, ~Divine~, ~4~, ~1~,  ~BZ!E06I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Defensive Harmony
+        ~BZ!E0507~, ~SPPR405~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Mental Domination.BAM~,                         ~BZ!E05I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mental Domination
+        ~BZ!E0607~, ~SPPR406~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Defensive Harmony.BAM~,                         ~BZ!E06I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Defensive Harmony
         //~SPPR407C~, ~SPPR407~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Protection from Lightning
-        ~BZ!E0807~, ~SPPR408~, ~Divine~, ~4~, ~1~,  ~BZ!E08I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Protection From Evil, 10' Radius
-        ~BZ!E0907~, ~SPPR409~, ~Divine~, ~4~, ~1~,  ~BZ!E09I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Death Ward
-        ~BZ!E1007~, ~SPPR410~, ~Divine~, ~4~, ~1~,  ~BZ!E10I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Call Woodland Beings
-        ~BZ!E1107~, ~SPPR411~, ~Divine~, ~4~, ~1~,  ~BZ!E11I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Poison
-        ~BZ!E1207~, ~SPPR412~, ~Divine~, ~4~, ~1~,  ~BZ!E12I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Holy Power
-        ~BZ!E1307~, ~SPPR413~, ~Divine~, ~4~, ~1~,  ~BZ!E13I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Negative Plane Protection
-        ~BZ!E1407~, ~SPPR414~, ~Divine~, ~4~, ~1~,  ~BZ!E14I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Cause Serious Wounds
-        ~BZ!E1507~, ~SPPR415~, ~Divine~, ~4~, ~7~,  ~BZ!E15I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Farsight
-        ~BZ!E1607~, ~SPPR416~, ~Divine~, ~4~, ~1~,  ~BZ!E16I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Cloak of Fear
-        ~BZ!E1707~, ~SPPR417~, ~Divine~, ~4~, ~1~,  ~BZ!E17I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Lesser Restoration
-        ~BZ!E1807~, ~SPPR418~, ~Divine~, ~4~, ~1~,  ~BZ!E18I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Giant Insect
-                                                                                                                                             //Produce Fire, conditionally
-        ~BZ!E2007~, ~SPPR420~, ~Divine~, ~4~, ~1~,  ~BZ!E20I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Static Charge
-        ~BZ!E2107~, ~SPPR421~, ~Divine~, ~4~, ~1~,  ~BZ!E21I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Reciation
-        ~BZ!E2207~, ~SPPR422~, ~Divine~, ~4~, ~1~,  ~BZ!E22I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~0~, ~1~, ~1~, ~0~ => ~~    //Blood Rage
-        ~BZ!E2307~, ~SPPR423~, ~Divine~, ~4~, ~1~,  ~BZ!E23I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Cloud of Pestilence
-        ~BZ!E2407~, ~SPPR424~, ~Divine~, ~4~, ~1~,  ~BZ!E24I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Unfailing Endurance
-        ~BZ!E2507~, ~SPPR425~, ~Divine~, ~4~, ~1~,  ~BZ!E25I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Star Metal Cudgel
-        ~BZ!E2607~, ~SPPR426~, ~Divine~, ~4~, ~1~,  ~BZ!E26I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Smashing Wave
-        ~BZ!E2707~, ~SPPR427~, ~Divine~, ~4~, ~1~,  ~BZ!E27I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Thorn Spray
-        ~BZ!E2807~, ~SPPR428~, ~Divine~, ~4~, ~1~,  ~BZ!E28I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wall of Moonlight
-        ~BZ!E5007~, ~SPPR450~, ~Divine~, ~4~, ~1~,  ~BZ!E50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spirit Fire
+        ~BZ!E0807~, ~SPPR408~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Protection From Evil, 10' Radius.BAM~,          ~BZ!E08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Protection From Evil, 10' Radius
+        ~BZ!E0907~, ~SPPR409~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Death Ward.BAM~,                                ~BZ!E09I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Death Ward
+        ~BZ!E1007~, ~SPPR410~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Call Woodland Beings.BAM~,                      ~BZ!E10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Call Woodland Beings
+        ~BZ!E1107~, ~SPPR411~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Poison.BAM~,                                    ~BZ!E11I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Poison
+        ~BZ!E1207~, ~SPPR412~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Holy Power.BAM~,                                ~BZ!E12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Holy Power
+        ~BZ!E1307~, ~SPPR413~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Negative Plane Protection.BAM~,                 ~BZ!E13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Negative Plane Protection
+        ~BZ!E1407~, ~SPPR414~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Cause Serious Wounds.BAM~,                      ~BZ!E14I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cause Serious Wounds
+        ~BZ!E1507~, ~SPPR415~, ~Divine~, ~4~, ~7~,  ~0~, ~priest/core/Farsight.BAM~,                                  ~BZ!E15I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Farsight
+        ~BZ!E1607~, ~SPPR416~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Cloak of Fear.BAM~,                             ~BZ!E16I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cloak of Fear
+        ~BZ!E1707~, ~SPPR417~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Lesser Restoration.BAM~,                        ~BZ!E17I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Lesser Restoration
+        ~BZ!E1807~, ~SPPR418~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Giant Insect.BAM~,                              ~BZ!E18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Giant Insect
+                                                                                                                                                                                                            //Produce Fire, conditionally
+        ~BZ!E2007~, ~SPPR420~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Static Charge.BAM~,                     ~BZ!E20I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Static Charge
+        ~BZ!E2107~, ~SPPR421~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Reciation.BAM~,                         ~BZ!E21I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Reciation
+        ~BZ!E2207~, ~SPPR422~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Blood Rage.BAM~,                        ~BZ!E22I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~0~, ~1~, ~1~ => ~~    //Blood Rage
+        ~BZ!E2307~, ~SPPR423~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Cloud of Pestilence.BAM~,               ~BZ!E23I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cloud of Pestilence
+        ~BZ!E2407~, ~SPPR424~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Unfailing Endurance.BAM~,               ~BZ!E24I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Unfailing Endurance
+        ~BZ!E2507~, ~SPPR425~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Star Metal Cudgel.BAM~,                 ~BZ!E25I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Star Metal Cudgel
+        ~BZ!E2607~, ~SPPR426~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Smashing Wave.BAM~,                     ~BZ!E26I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Smashing Wave
+        ~BZ!E2707~, ~SPPR427~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Thorn Spray.BAM~,                       ~BZ!E27I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Thorn Spray
+        ~BZ!E2807~, ~SPPR428~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Wall of Moonlight.BAM~,                 ~BZ!E28I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wall of Moonlight
+        ~BZ!E5007~, ~SPPR450~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/core/Spirit Fire.BAM~,                               ~BZ!E50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spirit Fire
 
 
-        ~BZ!F0109~, ~SPPR501~, ~Divine~, ~5~, ~1~,  ~BZ!F01I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 2
-      //~BZ!F0209~, ~SPPR502~, ~Divine~, ~5~, ~1~,  ~BZ!F02I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Critical Wounds
-      //~BZ!F0309~, ~SPPR503~, ~Divine~, ~5~, ~1~,  ~BZ!F03I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Flame Strike
-      //~BZ!F0409~, ~SPPR504~, ~Divine~, ~5~, ~1~,  ~BZ!F04I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Raise Dead
-        ~BZ!F0509~, ~SPPR505~, ~Divine~, ~5~, ~1~,  ~BZ!F05I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //True Seeing
-        ~BZ!F0609~, ~SPPR506~, ~Divine~, ~5~, ~8~,  ~BZ!F06I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Iron Skins
-      //~SPPR507C~, ~SPPR507~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL56~  //Champion's Strength
-        ~BZ!F0809~, ~SPPR508~, ~Divine~, ~5~, ~1~,  ~BZ!F08I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Chaotic Commands
-        ~BZ!F0909~, ~SPPR509~, ~Divine~, ~5~, ~1~,  ~BZ!F09I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Magic Resistance
-        ~BZ!F1009~, ~SPPR510~, ~Divine~, ~5~, ~1~,  ~BZ!F10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Cause Critical Wounds
-        ~BZ!F1109~, ~SPPR511~, ~Divine~, ~5~, ~1~,  ~BZ!F11I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Slay Living
-        ~BZ!F1209~, ~SPPR512~, ~Divine~, ~5~, ~1~,  ~BZ!F12I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Greater Command
-        ~BZ!F1309~, ~SPPR513~, ~Divine~, ~5~, ~1~,  ~BZ!F13I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Righteous Magic
-        ~BZ!F1409~, ~SPPR514~, ~Divine~, ~5~, ~1~,  ~BZ!F14I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mass Cure Light Wounds
-        ~BZ!F1509~, ~SPPR515~, ~Divine~, ~5~, ~1~,  ~BZ!F15I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Repulse Undead
-        ~BZ!F1609~, ~SPPR516~, ~Divine~, ~5~, ~1~,  ~BZ!F16I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Pixie Dust
-      //~BZ!F1709~, ~SPPR517~, ~Divine~, ~5~, ~1~,  ~BZ!F17I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Insect Plague
-        ~BZ!F1809~, ~SPPR518~, ~Divine~, ~5~, ~1~,  ~BZ!F18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Righteous Wrath of the Faithful
-      //~SPPR512C~, ~SPPR519~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL56~  //Spike Stones
-        ~BZ!F2009~, ~SPPR520~, ~Divine~, ~5~, ~1~,  ~BZ!F20I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~~    //Shield of Lathander
-        ~BZ!F2109~, ~SPPR521~, ~Divine~, ~5~, ~1~,  ~BZ!F21I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Undead Ward
-        ~BZ!F2209~, ~SPPR522~, ~Divine~, ~5~, ~1~,  ~BZ!F22I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Rage
-        ~BZ!F2309~, ~SPPR523~, ~Divine~, ~5~, ~1~,  ~BZ!F23I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Mass Cause Light Wounds
-        ~BZ!F5009~, ~SPPR550~, ~Divine~, ~5~, ~1~,  ~BZ!F50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Recall Spirit
+        ~BZ!F0109~, ~SPPR501~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Animal Summoning 2.BAM~,                        ~BZ!F01I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 2
+      //~BZ!F0209~, ~SPPR502~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Cure Critical Wounds.BAM~,                      ~BZ!F02I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Critical Wounds
+      //~BZ!F0309~, ~SPPR503~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Flame Strike.BAM~,                              ~BZ!F03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Flame Strike
+      //~BZ!F0409~, ~SPPR504~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Raise Dead.BAM~,                                ~BZ!F04I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Raise Dead
+        ~BZ!F0509~, ~SPPR505~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/True Seeing.BAM~,                               ~BZ!F05I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //True Seeing
+        ~BZ!F0609~, ~SPPR506~, ~Divine~, ~5~, ~8~,  ~0~, ~priest/core/Iron Skins.BAM~,                                ~BZ!F06I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Iron Skins
+      //~SPPR507C~, ~SPPR507~, ~Divine~, ~5~, ~9~,   ~0~ => ~SCRL56~  //Champion's Strength
+        ~BZ!F0809~, ~SPPR508~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Chaotic Commands.BAM~,                          ~BZ!F08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Chaotic Commands
+        ~BZ!F0909~, ~SPPR509~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Magic Resistance.BAM~,                          ~BZ!F09I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Magic Resistance
+        ~BZ!F1009~, ~SPPR510~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Cause Critical Wounds.BAM~,                     ~BZ!F10I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cause Critical Wounds
+        ~BZ!F1109~, ~SPPR511~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Slay Living.BAM~,                               ~BZ!F11I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Slay Living
+        ~BZ!F1209~, ~SPPR512~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Greater Command.BAM~,                           ~BZ!F12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Command
+        ~BZ!F1309~, ~SPPR513~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Righteous Magic.BAM~,                           ~BZ!F13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Righteous Magic
+        ~BZ!F1409~, ~SPPR514~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Mass Cure Light Wounds.BAM~,                    ~BZ!F14I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Mass Cure Light Wounds
+        ~BZ!F1509~, ~SPPR515~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Repulse Undead.BAM~,                            ~BZ!F15I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Repulse Undead
+        ~BZ!F1609~, ~SPPR516~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Pixie Dust.BAM~,                                ~BZ!F16I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Pixie Dust
+      //~BZ!F1709~, ~SPPR517~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Insect Plague.BAM~,                             ~BZ!F17I~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Insect Plague
+        ~BZ!F1809~, ~SPPR518~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/IWDification/Righteous Wrath of the Faithful.BAM~,   ~BZ!F18I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Righteous Wrath of the Faithful
+      //~SPPR512C~, ~SPPR519~, ~Divine~, ~5~, ~9~,   ~0~ => ~SCRL56~  //Spike Stones
+        ~BZ!F2009~, ~SPPR520~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/IWDification/Shield of Lathander.BAM~,               ~BZ!F20I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Shield of Lathander
+        ~BZ!F2109~, ~SPPR521~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/IWDification/Undead Ward.BAM~,                       ~BZ!F21I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Undead Ward
+        ~BZ!F2209~, ~SPPR522~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/IWDification/Animal Rage.BAM~,                       ~BZ!F22I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Rage
+        ~BZ!F2309~, ~SPPR523~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/IWDification/Mass Cause Light Wounds.BAM~,           ~BZ!F23I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mass Cause Light Wounds
+        ~BZ!F5009~, ~SPPR550~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Recall Spirit.BAM~,                             ~BZ!F50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Recall Spirit
 
 
-        ~BZ!G0112~, ~SPPR601~, ~Divine~, ~6~, ~12~, ~BZ!G01I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Arial Servant
-        ~BZ!G0212~, ~SPPR602~, ~Divine~, ~6~, ~1~,  ~BZ!G02I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 3
-      //~BZ!G0312~, ~SPPR603~, ~Divine~, ~6~, ~1~,  ~BZ!G03I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Blade Barrier
-        ~BZ!G0412~, ~SPPR604~, ~Divine~, ~6~, ~1~,  ~BZ!G04I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Animals
-        ~BZ!G0512~, ~SPPR605~, ~Divine~, ~6~, ~12~, ~BZ!G05I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Fire Elemental
-        ~BZ!G0612~, ~SPPR606~, ~Divine~, ~6~, ~1~,  ~BZ!G06I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Seeds
-      //~BZ!G0712~, ~SPPR607~, ~Divine~, ~6~, ~1~,  ~BZ!G07I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Heal
-        ~BZ!G0812~, ~SPPR608~, ~Divine~, ~6~, ~1~,  ~BZ!G08I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Harm
-        ~BZ!G0912~, ~SPPR609~, ~Divine~, ~6~, ~1~,  ~BZ!G09I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //False Dawn
-        ~BZ!G1012~, ~SPPR610~, ~Divine~, ~6~, ~1~,  ~BZ!G10I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Dolorous Decay
-        ~BZ!G1112~, ~SPPR611~, ~Divine~, ~6~, ~1~,  ~BZ!G11I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wondrous Recall
-        ~BZ!G1212~, ~SPPR612~, ~Divine~, ~6~, ~1~,  ~BZ!G12I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Bolt of Glory
-        ~BZ!G1312~, ~SPPR613~, ~Divine~, ~6~, ~1~,  ~BZ!G13I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
-        ~BZ!G1412~, ~SPPR614~, ~Divine~, ~6~, ~1~,  ~BZ!G14I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sol's Searing Orb
-        ~BZ!G1512~, ~SPPR615~, ~Divine~, ~6~, ~1~,  ~BZ!G15I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Entropy Shield
-        ~BZ!G1712~, ~SPPR617~, ~Divine~, ~6~, ~1~,  ~BZ!G17I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Whirlwind
-        ~BZ!G1812~, ~SPPR618~, ~Divine~, ~6~, ~1~,  ~BZ!G18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Spiritual Wrath
-        ~BZ!G5012~, ~SPPR650~, ~Divine~, ~6~, ~12~, ~BZ!G50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Lock
+        ~BZ!G0112~, ~SPPR601~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Arial Servant.BAM~,                             ~BZ!G01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Arial Servant
+        ~BZ!G0212~, ~SPPR602~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Animal Summoning 3.BAM~,                        ~BZ!G02I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 3
+      //~BZ!G0312~, ~SPPR603~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Blade Barrier.BAM~,                             ~BZ!G03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Blade Barrier
+        ~BZ!G0412~, ~SPPR604~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Conjure Animals.BAM~,                           ~BZ!G04I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Animals
+        ~BZ!G0512~, ~SPPR605~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Conjure Fire Elemental.BAM~,                    ~BZ!G05I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Fire Elemental
+        ~BZ!G0612~, ~SPPR606~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Fire Seeds.BAM~,                                ~BZ!G06I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Seeds
+      //~BZ!G0712~, ~SPPR607~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Heal.BAM~,                                      ~BZ!G07I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Heal
+        ~BZ!G0812~, ~SPPR608~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Harm.BAM~,                                      ~BZ!G08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Harm
+        ~BZ!G0912~, ~SPPR609~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/False Dawn.BAM~,                                ~BZ!G09I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //False Dawn
+        ~BZ!G1012~, ~SPPR610~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Dolorous Decay.BAM~,                            ~BZ!G10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Dolorous Decay
+        ~BZ!G1112~, ~SPPR611~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Wondrous Recall.BAM~,                           ~BZ!G11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wondrous Recall
+        ~BZ!G1212~, ~SPPR612~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Bolt of Glory.BAM~,                             ~BZ!G12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Bolt of Glory
+        ~BZ!G1312~, ~SPPR613~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Physical Mirror.BAM~,                           ~BZ!G13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
+        ~BZ!G1412~, ~SPPR614~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Sol's Searing Orb.BAM~,                         ~BZ!G14I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sol's Searing Orb
+        ~BZ!G1512~, ~SPPR615~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/IWDification/Entropy Shield.BAM~,                    ~BZ!G15I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Entropy Shield
+        ~BZ!G1712~, ~SPPR617~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/IWDification/Whirlwind.BAM~,                         ~BZ!G17I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Whirlwind
+        ~BZ!G1812~, ~SPPR618~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/IWDification/Spiritual Wrath.BAM~,                   ~BZ!G18I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Wrath
+        ~BZ!G5012~, ~SPPR650~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Spiritual Lock.BAM~,                            ~BZ!G50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Lock
 
 
-        ~BZ!H0114~, ~SPPR701~, ~Divine~, ~7~, ~1~,  ~BZ!H01I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Shield of the Archons
-        ~BZ!H0214~, ~SPPR702~, ~Divine~, ~7~, ~1~,  ~BZ!H02I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Earth Elemental
-        ~BZ!H0314~, ~SPPR703~, ~Divine~, ~7~, ~1~,  ~BZ!H03I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Gate
-        ~BZ!H0414~, ~SPPR704~, ~Divine~, ~7~, ~1~,  ~BZ!H04I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Nature's Beauty
-        ~BZ!H0514~, ~SPPR705~, ~Divine~, ~7~, ~1~,  ~BZ!H05I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Storm
-        ~BZ!H0614~, ~SPPR706~, ~Divine~, ~7~, ~1~,  ~BZ!H06I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Symbol, Fear
-        ~BZ!H0714~, ~SPPR707~, ~Divine~, ~7~, ~1~,  ~BZ!H07I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sunray
-        ~BZ!H0814~, ~SPPR708~, ~Divine~, ~7~, ~1~,  ~BZ!H08I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Finger of Death
-        ~BZ!H0914~, ~SPPR709~, ~Divine~, ~7~, ~1~,  ~BZ!H09I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Confusion
-        ~BZ!H1014~, ~SPPR710~, ~Divine~, ~7~, ~1~,  ~BZ!H10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~~    //Holy Word
-        ~BZ!H1114~, ~SPPR711~, ~Divine~, ~7~, ~1~,  ~BZ!H11I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Regeneration
-      //~BZ!H1214~, ~SPPR712~, ~Divine~, ~7~, ~1~,  ~BZ!H12I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Resurrection
-        ~BZ!H1314~, ~SPPR713~, ~Divine~, ~7~, ~1~,  ~BZ!H13I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~~    //Greater Restoration
+        ~BZ!H0114~, ~SPPR701~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Shield of the Archons.BAM~,                     ~BZ!H01I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Shield of the Archons
+        ~BZ!H0214~, ~SPPR702~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Conjure Earth Elemental.BAM~,                   ~BZ!H02I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Earth Elemental
+        ~BZ!H0314~, ~SPPR703~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Gate.BAM~,                                      ~BZ!H03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Gate
+        ~BZ!H0414~, ~SPPR704~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Nature's Beauty.BAM~,                           ~BZ!H04I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Nature's Beauty
+        ~BZ!H0514~, ~SPPR705~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Fire Storm.BAM~,                                ~BZ!H05I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Storm
+        ~BZ!H0614~, ~SPPR706~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Fear.BAM~,                              ~BZ!H06I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Fear
+        ~BZ!H0714~, ~SPPR707~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Sunray.BAM~,                                    ~BZ!H07I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sunray
+        ~BZ!H0814~, ~SPPR708~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Finger of Death.BAM~,                           ~BZ!H08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Finger of Death
+        ~BZ!H0914~, ~SPPR709~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Confusion.BAM~,                                 ~BZ!H09I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Confusion
+        ~BZ!H1014~, ~SPPR710~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Holy Word.BAM~,                                 ~BZ!H10I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~0~, ~0~, ~1~, ~1~, ~1~ => ~~    //Holy Word
+        ~BZ!H1114~, ~SPPR711~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Regeneration.BAM~,                              ~BZ!H11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Regeneration
+      //~BZ!H1214~, ~SPPR712~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Resurrection.BAM~,                              ~BZ!H12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Resurrection
+        ~BZ!H1314~, ~SPPR713~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Greater Restoration.BAM~,                       ~BZ!H13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Greater Restoration
       //~SPPR714C~, ~SPPR714~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRL56~  //Symbol, Pain
-        ~BZ!H1514~, ~SPPR715~, ~Divine~, ~7~, ~1~,  ~BZ!H15I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Unholy Word
-        ~BZ!H1614~, ~SPPR716~, ~Divine~, ~7~, ~1~,  ~BZ!H16I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Symbol, Hopelessness
-        ~BZ!H1714~, ~SPPR717~, ~Divine~, ~7~, ~1~,  ~BZ!H17I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Creeping Doom
-        ~BZ!H1814~, ~SPPR718~, ~Divine~, ~7~, ~1~,  ~BZ!H18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Symbol, Stun
-        ~BZ!H1914~, ~SPPR719~, ~Divine~, ~7~, ~1~,  ~BZ!H19I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Symbol, Death
-        ~BZ!H2014~, ~SPPR720~, ~Divine~, ~7~, ~1~,  ~BZ!H20I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Earthquake
-        ~BZ!H2914~, ~SPPR729~, ~Divine~, ~7~, ~14~, ~BZ!H29I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Mass Raise Dead
-        ~BZ!H3314~, ~SPPR733~, ~Divine~, ~7~, ~1~,  ~BZ!H33I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Impervious Sanctity of the Mind
-        ~BZ!H3414~, ~SPPR734~, ~Divine~, ~7~, ~1~,  ~BZ!H34I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Destruction
-        ~BZ!H3514~, ~SPPR735~, ~Divine~, ~7~, ~1~,  ~BZ!H35I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~0~ => ~~    //Greater Shield of Lathander
-        ~BZ!H3614~, ~SPPR736~, ~Divine~, ~7~, ~1~,  ~BZ!H36I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mist of Eldath
-        ~BZ!H3714~, ~SPPR737~, ~Divine~, ~7~, ~1~,  ~BZ!H37I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Stalker
-                                                                                                                                             //Heavenly Inferno
-        ~BZ!H3914~, ~SPPR739~, ~Divine~, ~7~, ~1~,  ~BZ!H39I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~0~ => ~~    //Energy Drain
-        ~BZ!H0514~, ~SPPR705~, ~Divine~, ~7~, ~1~,  ~BZ!H05I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wither
-        ~BZ!H5014~, ~SPPR750~, ~Divine~, ~7~, ~1~,  ~BZ!H50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ether Gate
+        ~BZ!H1514~, ~SPPR715~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Unholy Word.BAM~,                               ~BZ!H15I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Unholy Word
+        ~BZ!H1614~, ~SPPR716~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Hopelessness.BAM~,                      ~BZ!H16I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Hopelessness
+        ~BZ!H1714~, ~SPPR717~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Creeping Doom.BAM~,                             ~BZ!H17I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Creeping Doom
+        ~BZ!H1814~, ~SPPR718~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Stun.BAM~,                              ~BZ!H18I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Stun
+        ~BZ!H1914~, ~SPPR719~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Death.BAM~,                             ~BZ!H19I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Death
+        ~BZ!H2014~, ~SPPR720~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Earthquake.BAM~,                                ~BZ!H20I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Earthquake
+        ~BZ!H2914~, ~SPPR729~, ~Divine~, ~7~, ~14~, ~0~, ~priest/core/Mass Raise Dead.BAM~,                           ~BZ!H29I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mass Raise Dead
+        ~BZ!H3314~, ~SPPR733~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Impervious Sanctity of the Mind.BAM~,   ~BZ!H33I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Impervious Sanctity of the Mind
+        ~BZ!H3414~, ~SPPR734~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Destruction.BAM~,                       ~BZ!H34I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Destruction
+        ~BZ!H3514~, ~SPPR735~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Greater Shield of Lathander.BAM~,       ~BZ!H35I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~0~, ~0~, ~1~, ~1~, ~1~ => ~~    //Greater Shield of Lathander
+        ~BZ!H3614~, ~SPPR736~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Mist of Eldath.BAM~,                    ~BZ!H36I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mist of Eldath
+        ~BZ!H3714~, ~SPPR737~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Stalker.BAM~,                           ~BZ!H37I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Stalker
+                                                                                                                                                                                                            //Heavenly Inferno
+        ~BZ!H3914~, ~SPPR739~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Energy Drain.BAM~,                      ~BZ!H39I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Energy Drain
+        ~BZ!H4014~, ~SPPR740~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Wither.BAM~,                            ~BZ!H40I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wither
+        ~BZ!H5014~, ~SPPR750~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Ether Gate.BAM~,                                ~BZ!H50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ether Gate
 
-        ~BZ!I2115~, ~SPPR721~, ~Divine~, ~Q~, ~14~, ~BZ!I21I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Energy Blades
-        ~BZ!I2215~, ~SPPR722~, ~Divine~, ~Q~, ~1~ , ~BZ!I22I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Storm of Vengeance
-        ~BZ!I2315~, ~SPPR723~, ~Divine~, ~Q~, ~1~ , ~BZ!I23I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Elemental Summoning
-        ~BZ!I2415~, ~SPPR724~, ~Divine~, ~Q~, ~1~,  ~BZ!I24I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Elemental Summoning
-        ~BZ!I2515~, ~SPPR725~, ~Divine~, ~Q~, ~1~,  ~BZ!I25I~, ~0~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Globe of Blades
-        ~BZ!I2615~, ~SPPR726~, ~Divine~, ~Q~, ~14~, ~BZ!I26I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Deva
-        ~BZ!I2715~, ~SPPR727~, ~Divine~, ~Q~, ~14~, ~BZ!I27I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Fallen Deva
-        ~BZ!I2815~, ~SPPR728~, ~Divine~, ~Q~, ~1~ , ~BZ!I28I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Implosion
-        ~BZ!I3015~, ~SPPR730~, ~Divine~, ~Q~, ~1~ , ~BZ!I30I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aura of Flaming Death
-        ~BZ!I3115~, ~SPPR731~, ~Divine~, ~Q~, ~1~,  ~BZ!I31I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Elemental Transformation
-        ~BZ!I3215~, ~SPPR732~, ~Divine~, ~Q~, ~1~,  ~BZ!I32I~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Earth Elemental Transformation
-        ~BZ!I5115~, ~SPPR751~, ~Divine~, ~Q~, ~1~,  ~BZ!I51I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ethereal Retribution
+        ~BZ!I2115~, ~SPPR721~, ~Divine~, ~Q~, ~14~, ~0~, ~priest/core/Energy Blades.BAM~,                             ~BZ!I21I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Energy Blades
+        ~BZ!I2215~, ~SPPR722~, ~Divine~, ~Q~, ~1~ , ~0~, ~priest/core/Storm of Vengeance.BAM~,                        ~BZ!I22I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Storm of Vengeance
+        ~BZ!I2315~, ~SPPR723~, ~Divine~, ~Q~, ~1~ , ~0~, ~priest/core/Elemental Summoning.BAM~,                       ~BZ!I23I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Elemental Summoning
+        ~BZ!I2415~, ~SPPR724~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Greater Elemental Summoning.BAM~,               ~BZ!I24I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Elemental Summoning
+        ~BZ!I2515~, ~SPPR725~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Globe of Blades.BAM~,                           ~BZ!I25I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Globe of Blades
+        ~BZ!I2615~, ~SPPR726~, ~Divine~, ~Q~, ~14~, ~0~, ~priest/core/Summon Deva.BAM~,                               ~BZ!I26I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Deva
+        ~BZ!I2715~, ~SPPR727~, ~Divine~, ~Q~, ~14~, ~0~, ~priest/core/Summon Fallen Deva.BAM~,                        ~BZ!I27I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Fallen Deva
+        ~BZ!I2815~, ~SPPR728~, ~Divine~, ~Q~, ~1~ , ~0~, ~priest/core/Implosion.BAM~,                                 ~BZ!I28I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Implosion
+        ~BZ!I3015~, ~SPPR730~, ~Divine~, ~Q~, ~1~ , ~0~, ~priest/core/Aura of Flaming Death.BAM~,                     ~BZ!I30I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aura of Flaming Death
+        ~BZ!I3115~, ~SPPR731~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Fire Elemental Transformation.BAM~,             ~BZ!I31I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Elemental Transformation
+        ~BZ!I3215~, ~SPPR732~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Earth Elemental Transformation.BAM~,            ~BZ!I32I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Earth Elemental Transformation
+        ~BZ!I5115~, ~SPPR751~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Ethereal Retribution.BAM~,                      ~BZ!I51I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ethereal Retribution
 
     END
 
 
 ACTION_IF (NOT %bz_OlvynSpells_installed%)
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
     BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list~
-            BEGIN
-                //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-                ~BZ!E1907~, ~SPPR419~, ~Divine~, ~4~, ~1~,  ~BZ!E19I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spirit Fire
-            END
+        //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+        ~BZ!E1907~, ~SPPR419~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Produce Fire.BAM~,                      ~BZ!E19I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Produce Fire
     END
+END
