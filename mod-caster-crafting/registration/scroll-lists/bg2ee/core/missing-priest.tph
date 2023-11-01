@@ -42,7 +42,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!B1001~, ~SPPR110~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Shillelagh.BAM~,                  ~BZ!B10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Shillelagh
         ~BZ!B1101~, ~SPPR111~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Armor of Faith.BAM~,              ~BZ!B11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Armor of Faith
         ~BZ!B1301~, ~SPPR113~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Doom.BAM~,                        ~BZ!B13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Doom
-      //~BZ!B1601~, ~SPPR116~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Faerie Fire.BAM~,                 ~BZ!B16I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Faerie Fire
         ~BZ!B5001~, ~SPPR150~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Spirit Ward.BAM~,                 ~BZ!B50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spirit Ward
 
 
@@ -126,7 +125,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!G1012~, ~SPPR610~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Dolorous Decay.BAM~,              ~BZ!G10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Dolorous Decay
         ~BZ!G1112~, ~SPPR611~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Wondrous Recall.BAM~,             ~BZ!G11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wondrous Recall
         ~BZ!G1212~, ~SPPR612~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Bolt of Glory.BAM~,               ~BZ!G12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Bolt of Glory
-        ~BZ!G1312~, ~SPPR613~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Physical Mirror.BAM~,             ~BZ!G13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
         ~BZ!G1412~, ~SPPR614~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Sol's Searing Orb.BAM~,           ~BZ!G14I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sol's Searing Orb
         ~BZ!G5012~, ~SPPR650~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Spiritual Lock.BAM~,              ~BZ!G50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Lock
 
@@ -167,4 +165,23 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ!I5115~, ~SPPR751~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Ethereal Retribution.BAM~,        ~BZ!I51I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ethereal Retribution
 
+        //Spells missing from the game:
+        /*
+        ~BZ!B1601~, ~SPPR116~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Faerie Fire.BAM~,                 ~BZ!B16I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Faerie Fire
+        */
     END
+
+
+
+/*************************
+*   Special Exceptions   *
+*************************/
+ACTION_IF (NOT %bz_iwdification_installed%) THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list_missing~
+    BEGIN
+        //looks like IWDification changes this spell to level 5 (525)
+        ~BZ!G1312~, ~SPPR613~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Physical Mirror.BAM~,             ~BZ!G13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
+    END
+END
