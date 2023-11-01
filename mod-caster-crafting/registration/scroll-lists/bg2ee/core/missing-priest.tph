@@ -54,7 +54,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!C0703~, ~SPPR207~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Goodberry.BAM~,                   ~BZ!C07I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Goodberry
         ~BZ!C0803~, ~SPPR208~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Hold Person.BAM~,                 ~BZ!C08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Hold Person
         ~BZ!C0903~, ~SPPR209~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Know Alignment.BAM~,              ~BZ!C09I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Know Alignment
-        ~BZ!C1003~, ~SPPR210~, ~Divine~, ~2~, ~3~,  ~0~, ~priest/core/Resist Fire/Cold.BAM~,            ~BZ!C10I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Resist Fire/Cold
+        ~BZ!C1003~, ~SPPR210~, ~Divine~, ~2~, ~3~,  ~0~, ~priest/core/Resist Fire and Cold.BAM~,        ~BZ!C10I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Resist Fire/Cold
         ~BZ!C1103~, ~SPPR211~, ~Divine~, ~2~, ~3~,  ~0~, ~priest/core/Silence 15' Radius.BAM~,          ~BZ!C11I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Silence 15' Radius
         ~BZ!C1203~, ~SPPR212~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Slow Poison.BAM~,                 ~BZ!C12I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Slow Poison
         ~BZ!C1303~, ~SPPR213~, ~Divine~, ~2~, ~1~,  ~0~, ~priest/core/Spiritual Hammer.BAM~,            ~BZ!C13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Hammer
