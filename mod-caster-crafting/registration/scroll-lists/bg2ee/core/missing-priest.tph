@@ -42,7 +42,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!B1001~, ~SPPR110~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Shillelagh.BAM~,                  ~BZ!B10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Shillelagh
         ~BZ!B1101~, ~SPPR111~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Armor of Faith.BAM~,              ~BZ!B11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Armor of Faith
         ~BZ!B1301~, ~SPPR113~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Doom.BAM~,                        ~BZ!B13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Doom
-        ~BZ!B1601~, ~SPPR116~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Faerie Fire.BAM~,                 ~BZ!B16I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Faerie Fire
         ~BZ!B5001~, ~SPPR150~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Spirit Ward.BAM~,                 ~BZ!B50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spirit Ward
 
 
@@ -152,22 +151,26 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BZ!I2115~, ~SPPR721~, ~Divine~, ~Q~, ~14~, ~0~, ~priest/core/Energy Blades.BAM~,               ~BZ!I21I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Energy Blades
-        ~BZ!I2515~, ~SPPR725~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Globe of Blades.BAM~,             ~BZ!I25I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Globe of Blades
-        ~BZ!I5115~, ~SPPR751~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Ethereal Retribution.BAM~,        ~BZ!I51I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ethereal Retribution
-
-        //Spells missing from the game:
-        /*
         ~BZ!I2215~, ~SPPR722~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Storm of Vengeance.BAM~,          ~BZ!I22I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Storm of Vengeance
         ~BZ!I2315~, ~SPPR723~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Elemental Summoning.BAM~,         ~BZ!I23I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Elemental Summoning
         ~BZ!I2415~, ~SPPR724~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Greater Elemental Summoning.BAM~, ~BZ!I24I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Elemental Summoning
+        ~BZ!I2515~, ~SPPR725~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Globe of Blades.BAM~,             ~BZ!I25I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Globe of Blades
         ~BZ!I2615~, ~SPPR726~, ~Divine~, ~Q~, ~14~, ~0~, ~priest/core/Summon Deva.BAM~,                 ~BZ!I26I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Deva
         ~BZ!I2715~, ~SPPR727~, ~Divine~, ~Q~, ~14~, ~0~, ~priest/core/Summon Fallen Deva.BAM~,          ~BZ!I27I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Summon Fallen Deva
         ~BZ!I2815~, ~SPPR728~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Implosion.BAM~,                   ~BZ!I28I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Implosion
         ~BZ!I3015~, ~SPPR730~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Aura of Flaming Death.BAM~,       ~BZ!I30I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aura of Flaming Death
         ~BZ!I3115~, ~SPPR731~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Greater Elemental Summoning.BAM~, ~BZ!I31I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Elemental Summoning
         ~BZ!I3215~, ~SPPR732~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Greater Elemental Summoning.BAM~, ~BZ!I32I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Elemental Summoning
+
+
+        ~BZ!I5115~, ~SPPR751~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Ethereal Retribution.BAM~,        ~BZ!I51I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ethereal Retribution
+
+        //Spells missing from the game:
+        /*
+        ~BZ!B1601~, ~SPPR116~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Faerie Fire.BAM~,                 ~BZ!B16I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Faerie Fire
         */
     END
+
 
 
 /*************************

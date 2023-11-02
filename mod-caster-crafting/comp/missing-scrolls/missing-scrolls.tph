@@ -2,25 +2,27 @@
 //OUTPUT:
 /*
     An associative array named "scroll_list_data" what contains these keys:
-        [Scroll]                    // 0
-        [Spell]                     // 1
-        [Tradition]                 // 2
-        [Spell Level]               // 3
-        [Caster Level]              // 4
-        [Gold Cost]                 // 5
-        [Icon: Inventory]           // 6
-        [Usability: Mage]           // 7
-        [Usability: Cleric]         // 8
-        [Usability: Druid]          // 9
-        [Usability: Bard]           // 10
-        [Usability: Paladin]        // 11
-        [Usability: Ranger]         // 12
-        [Usability: Good]           // 13
-        [Usability: ... Neutral]    // 14
-        [Usability: Evil]           // 15
-        [Usability: Lawful]         // 16
-        [Usability: Neutral ...]    // 17
-        [Usability: Chaotic]        // 18
+    [Scroll]                    // 0
+    [Spell]                     // 1
+    [Tradition]                 // 2
+    [Spell Level]               // 3
+    [Caster Level]              // 4
+    [Gold Cost]                 // 5
+    [Icon: Source BAM Path]     // 6
+    [Icon: Inventory]           // 7
+    [Usability: Mage]           // 8
+    [Usability: Cleric]         // 9
+    [Usability: Druid]          // 10
+    [Usability: Bard]           // 11
+    [Usability: Paladin]        // 12
+    [Usability: Ranger]         // 13
+    [Usability: Shaman]         // 14
+    [Usability: Good]           // 15
+    [Usability: ... Neutral]    // 16
+    [Usability: Evil]           // 17
+    [Usability: Lawful]         // 18
+    [Usability: Neutral ...]    // 19
+    [Usability: Chaotic]        // 20
 */
 INCLUDE ~./%MOD_FOLDER%/registration/generate_missing_scroll_list_data.tph~
 
@@ -34,8 +36,8 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
     BEGIN
         //copy inventory BAM
         COPY
-            ~./%MOD_FOLDER%/comp/missing-scrolls/BAM/%keys_6%.BAM~
-            ~override~
+            ~./%MOD_FOLDER%/comp/missing-scrolls/BAM/%keys_6%~
+            ~override/%keys_7%.BAM~
 
         OUTER_SET ~LearnSpell~ = 0
         ACTION_IF (~%keys_2%~ STRING_EQUAL ~Arcane~) THEN BEGIN OUTER_SET ~LearnSpell~ = 1 END
@@ -45,24 +47,24 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
             INT_VAR
                 cast_at_level       = %keys_4%
                 learn_spell         = %LearnSpell%
-                usability_bard      = %keys_10%
-                usability_cleric    = %keys_8%
-                usability_druid     = %keys_9%
-                usability_mage      = %keys_7%
-                usability_paladin   = %keys_11%
-                usability_ranger    = %keys_12%
-                usability_shaman    = %keys_19%
-                usability_good      = %keys_13%
-                usability_neutral_t = %keys_14%         // ...Neutral [Lawful/Chaotic]
-                usability_evil      = %keys_15%
-                usability_lawful    = %keys_16%
-                usability_neutral_l = %keys_17%         /// Neutral... [Evil/Good]
-                usability_chaotic   = %keys_18%
+                usability_bard      = %keys_11%
+                usability_cleric    = %keys_9%
+                usability_druid     = %keys_10%
+                usability_mage      = %keys_8%
+                usability_paladin   = %keys_12%
+                usability_ranger    = %keys_13%
+                usability_shaman    = %keys_14%
+                usability_good      = %keys_15%
+                usability_neutral_t = %keys_16%         // ...Neutral [Lawful/Chaotic]
+                usability_evil      = %keys_17%
+                usability_lawful    = %keys_18%
+                usability_neutral_l = %keys_19%         /// Neutral... [Evil/Good]
+                usability_chaotic   = %keys_20%
                 price               = %keys_5%
             STR_VAR
                 item  = ~%keys_0%~
                 spell = ~%keys_1%~
-                icon_inventory = ~%keys_6%~
+                icon_inventory = ~%keys_7%~
         END
 
 

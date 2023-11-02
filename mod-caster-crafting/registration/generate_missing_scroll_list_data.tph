@@ -7,20 +7,21 @@
     [Spell Level]               // 3
     [Caster Level]              // 4
     [Gold Cost]                 // 5
-    [Icon: Inventory]           // 6
-    [Usability: Mage]           // 7
-    [Usability: Cleric]         // 8
-    [Usability: Druid]          // 9
-    [Usability: Bard]           // 10
-    [Usability: Paladin]        // 11
-    [Usability: Ranger]         // 12
-    [Usability: Good]           // 13
-    [Usability: ... Neutral]    // 14
-    [Usability: Evil]           // 15
-    [Usability: Lawful]         // 16
-    [Usability: Neutral ...]    // 17
-    [Usability: Chaotic]        // 18
-    [Usability: Shaman]         // 19
+    [Icon: Source BAM Path]     // 6
+    [Icon: Inventory]           // 7
+    [Usability: Mage]           // 8
+    [Usability: Cleric]         // 9
+    [Usability: Druid]          // 10
+    [Usability: Bard]           // 11
+    [Usability: Paladin]        // 12
+    [Usability: Ranger]         // 13
+    [Usability: Shaman]         // 14
+    [Usability: Good]           // 15
+    [Usability: ... Neutral]    // 16
+    [Usability: Evil]           // 17
+    [Usability: Lawful]         // 18
+    [Usability: Neutral ...]    // 19
+    [Usability: Chaotic]        // 20
 */
 
 ACTION_PHP_EACH ~scroll_list_missing~
@@ -30,7 +31,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
         LAUNCH_ACTION_FUNCTION ~bz_calculate_scroll_cost~
             INT_VAR
                 ~CasterLevel~ = %keys_4%
-                ~AdditionalCost~ = %keys_6%
+                ~AdditionalCost~ = %keys_5%
             STR_VAR
                 ~Level~ = ~%keys_3%~
                 ~Tradition~ = ~%keys_2%~
@@ -48,20 +49,21 @@ ACTION_PHP_EACH ~scroll_list_missing~
                 ~%keys_3%~,                 //spell level
                 ~%keys_4%~,                 //caster level
                 ~%scroll_gold%~,            //cost of the scroll in the *.ITM file
-                ~%keys_5%~,                 //inventory icon
-                ~%keys_7%~,                 //Usability: Mage
-                ~%keys_8%~,                 //Usability: Cleric
-                ~%keys_9%~,                 //Usability: Druid
-                ~%keys_10%~,                //Usability: Bard
-                ~%keys_11%~,                //Usability: Paladin
-                ~%keys_12%~,                //Usability: Ranger
-                ~%keys_13%~,                //Usability: Good
-                ~%keys_14%~,                //Usability: ... Neutral
-                ~%keys_15%~,                //Usability: Evil
-                ~%keys_16%~,                //Usability: Lawful
-                ~%keys_17%~,                //Usability: Neutral ...
-                ~%keys_18%~,                //Usability: Chaotic
-                ~%keys_19%~                 //Usability: Shaman
+                ~%keys_6%~,                 //Source BAM Path
+                ~%keys_7%~,                 //inventory icon
+                ~%keys_8%~,                 //Usability: Mage
+                ~%keys_9%~,                 //Usability: Cleric
+                ~%keys_10%~,                //Usability: Druid
+                ~%keys_11%~,                //Usability: Bard
+                ~%keys_12%~,                //Usability: Paladin
+                ~%keys_13%~,                //Usability: Ranger
+                ~%keys_14%~,                //Usability: Shaman
+                ~%keys_15%~,                //Usability: Good
+                ~%keys_16%~,                //Usability: ... Neutral
+                ~%keys_17%~,                //Usability: Evil
+                ~%keys_18%~,                //Usability: Lawful
+                ~%keys_19%~,                //Usability: Neutral ...
+                ~%keys_20%~                 //Usability: Chaotic
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
             END
 
@@ -83,20 +85,21 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
             level:              `%keys_3%`
             .spl header level:  `%keys_4%`
             gold cost:          `%keys_5%`
-            inv. icon:          `%keys_6%`
-            usability, Mage:    `%keys_7%`
-            usability, Cleric:  `%keys_8%`
-            usability, Druid:   `%keys_9%`
-            usability, Bard:    `%keys_10%`
-            usability, Paladin: `%keys_11%`
-            usability, Ranger:  `%keys_12%`
-            usability, Shaman:  `%keys_19%`
-            usability, Good:    `%keys_13%`
-            usability, Neutral: `%keys_14%`
-            usability, Evil:    `%keys_15%`
-            usability, Lawful:  `%keys_16%`
-            usability, Neutral: `%keys_17%`
-            usability, Chaotic: `%keys_18%`~
+            BAM Path:           `%keys_6%`
+            inv. icon:          `%keys_7%`
+            usability, Mage:    `%keys_8%`
+            usability, Cleric:  `%keys_9%`
+            usability, Druid:   `%keys_10%`
+            usability, Bard:    `%keys_11%`
+            usability, Paladin: `%keys_12%`
+            usability, Ranger:  `%keys_13%`
+            usability, Shaman:  `%keys_14%`
+            usability, Good:    `%keys_15%`
+            usability, Neutral: `%keys_16%`
+            usability, Evil:    `%keys_17%`
+            usability, Lawful:  `%keys_18%`
+            usability, Neutral: `%keys_19%`
+            usability, Chaotic: `%keys_20%`~
     END
 
 

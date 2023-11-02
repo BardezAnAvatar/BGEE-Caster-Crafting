@@ -21,7 +21,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPPR110~, ~Divine~, ~1~ => ~SPPR110~    //Shillelagh
         ~SPPR111~, ~Divine~, ~1~ => ~SPPR111~    //Armor of Faith
         ~SPPR113~, ~Divine~, ~1~ => ~SPPR113~    //Doom
-        ~SPPR116~, ~Divine~, ~1~ => ~SPPR116~    //Faerie Fire
         ~SPPR150~, ~Divine~, ~1~ => ~SPPR150~    //Spirit Ward
 
         ~SPPR201~, ~Divine~, ~2~ => ~SPPR201~    //Aid
@@ -136,7 +135,16 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPPR750~, ~Divine~, ~7~ => ~SPPR750~    //Ether Gate
 
         ~SPPR721~, ~Divine~, ~Q~ => ~SPPR721~    //Energy Blades
+        ~SPPR722~, ~Divine~, ~Q~ => ~SPPR722~    //Storm of Vengeance
+        ~SPPR723~, ~Divine~, ~Q~ => ~SPPR723~    //Elemental Summoning
+        ~SPPR724~, ~Divine~, ~Q~ => ~SPPR724~    //Greater Elemental Summoning
         ~SPPR725~, ~Divine~, ~Q~ => ~SPPR725~    //Globe of Blades
+        ~SPPR726~, ~Divine~, ~Q~ => ~SPPR726~    //Summon Deva
+        ~SPPR727~, ~Divine~, ~Q~ => ~SPPR727~    //Summon Fallen Deva
+        ~SPPR728~, ~Divine~, ~Q~ => ~SPPR728~    //Implosion
+        ~SPPR730~, ~Divine~, ~Q~ => ~SPPR730~    //Aura of Flaming Death
+        ~SPPR731~, ~Divine~, ~Q~ => ~SPPR731~    //Fire Elemental Transformation
+        ~SPPR732~, ~Divine~, ~Q~ => ~SPPR732~    //Fire Earth Transformation
         ~SPPR751~, ~Divine~, ~Q~ => ~SPPR751~    //Ethereal Retribution
 
 

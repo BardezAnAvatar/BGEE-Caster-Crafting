@@ -18,8 +18,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEPR156~, ~Divine~, ~1~ => ~MEPR156~   //Camouflage
         ~MEPR157~, ~Divine~, ~1~ => ~MEPR157~   //Searing Smite
 
-        //Will not be added if B Spells is installed -- what is this?
-        ~MEPR251~, ~Divine~, ~2~ => ~MEPR251~   //Beast Sense
+        ~MEPR251~, ~Divine~, ~2~ => ~MEPR251~   //Beast Sense       //Will not be added if B Spells is installed -- what is this?
         ~MEPR252~, ~Divine~, ~2~ => ~MEPR252~   //Fiery Link
         ~MEPR253~, ~Divine~, ~2~ => ~MEPR253~   //Null Healing
         ~MEPR254~, ~Divine~, ~2~ => ~MEPR254~   //Critical Boon
@@ -50,10 +49,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEPR756~, ~Divine~, ~Q~ => ~MEPR756~   //Contingent Resurrection
         ~MEPR758~, ~Divine~, ~Q~ => ~MEPR758~   //Mass Heal
         ~MEPR766~, ~Divine~, ~Q~ => ~MEPR766~   //Contagious Fear
-
-        //will not be installed to IWD:EE (for whatever reason)
-        ~MEPR351~, ~Divine~, ~3~ => ~MEPR351~   //Call Water Weirds
-        ~MEPR452~, ~Divine~, ~4~ => ~MEPR452~   //Forest's Blessing
     END
 END
 
@@ -70,9 +65,6 @@ BEGIN
 
             ~MEPR753~, ~Divine~, ~7~ => ~MEPR753~   //Nonrandom Zone
             ~MEPR759~, ~Divine~, ~7~ => ~MEPR759~   //Omnipresence
-
-            //will not be installed to IWD:EE (for whatever reason)
-            ~MEPR760~, ~Divine~, ~7~ => ~MEPR760~   //True Dispel (P)
         END
 
 END
@@ -138,27 +130,3 @@ BEGIN
             ~MEPR765~, ~Divine~, ~Q~ => ~MEPR765~   //Spirit of Power
         END
 END
-
-
-/*************************
-*   Special Exceptions   *
-*************************/
-ACTION_IF (%bz_iwdification_installed%) THEN
-BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~spell_list~
-        BEGIN
-            //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-            ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~    //Wall of Fire
-        END
-END
-ELSE
-BEGIN
-    ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~scroll_list_missing~
-        BEGIN
-            ~MEPR454~, ~Divine~, ~4~ => ~MEPR454~    //Wall of Fire
-        END
-END
-
-

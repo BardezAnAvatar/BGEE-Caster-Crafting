@@ -8,9 +8,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Spell Level]           // 3
         */
 
-        ~SPPR117~, ~Divine~, ~1~ => ~SPPR117~   //Curse
-        ~SPPR118~, ~Divine~, ~1~ => ~SPPR118~   //Cause Light Wounds
-        ~SPPR119~, ~Divine~, ~1~ => ~SPPR119~   //Sunscorch
+        ~SPPR116~, ~Divine~, ~1~ => ~SPPR116~   //Curse
+        ~SPPR117~, ~Divine~, ~1~ => ~SPPR117~   //Cause Light Wounds
+        ~SPPR118~, ~Divine~, ~1~ => ~SPPR118~   //Sunscorch
 
         ~SPPR216~, ~Divine~, ~2~ => ~SPPR216~   //Cure Moderate Wounds
         ~SPPR217~, ~Divine~, ~2~ => ~SPPR217~   //Alicorn Lance

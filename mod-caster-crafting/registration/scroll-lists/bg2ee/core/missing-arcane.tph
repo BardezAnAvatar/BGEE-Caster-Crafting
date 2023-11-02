@@ -34,14 +34,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!72314~, ~SPWI723~, ~Arcane~, ~7~, ~1~,  ~0~, ~arcane/core/Improved-Chaos-Shield.BAM~,       ~BZ!723I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!72314~   //Improved Chaos Shield*
 
         ~BZ!A2018~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~0~, ~arcane/core/Energy-Blades.BAM~,               ~BZ!A20I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2018~   //Energy Blades
-        ~BZ!A2218~, ~SPWI922~, ~Arcane~, ~A~, ~1~,  ~0~, ~arcane/core/Dragon's-Breath.BAM~,             ~BZ!A22I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2218~   //Dragon's Breath
-        ~BZ!A2518~, ~SPWI925~, ~Arcane~, ~A~, ~1~,  ~0~, ~arcane/core/Comet.BAM~,                       ~BZ!A25I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2518~   //Comet
-
-        //Spells missing from the game:
-        /*
         ~BZ!A2118~, ~SPWI921~, ~Arcane~, ~A~, ~1~,  ~0~, ~arcane/core/Improved-Alacrity.BAM~,           ~BZ!A21I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2118~   //Improved Alacrity
+        ~BZ!A2218~, ~SPWI922~, ~Arcane~, ~A~, ~1~,  ~0~, ~arcane/core/Dragon's-Breath.BAM~,             ~BZ!A22I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2218~   //Dragon's Breath
         ~BZ!A2318~, ~SPWI923~, ~Arcane~, ~A~, ~18~, ~0~, ~arcane/core/Summon-Planetar.BAM~,             ~BZ!A23I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2318~   //Summon Planetar
         ~BZ!A2418~, ~SPWI924~, ~Arcane~, ~A~, ~18~, ~0~, ~arcane/core/Summon-Dark-Planetar.BAM~,        ~BZ!A24I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2418~   //Summon Dark Planetar
-        */
+        ~BZ!A2518~, ~SPWI925~, ~Arcane~, ~A~, ~1~,  ~0~, ~arcane/core/Comet.BAM~,                       ~BZ!A25I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2518~   //Comet
 
     END

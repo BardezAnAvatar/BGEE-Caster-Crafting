@@ -1,0 +1,52 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list~
+    BEGIN
+
+        /*
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Additional Cost]       // 5
+        */
+
+        ~SPPR103C~, ~SPPR103~, ~Divine~, ~1~, ~1~,  ~0~ => ~SCRL56~  //Cure Light Wounds
+        ~SPPR105C~, ~SPPR105~, ~Divine~, ~1~, ~2~,  ~0~ => ~SCRL56~  //Entangle
+        ~SPPR108C~, ~SPPR108~, ~Divine~, ~1~, ~1~,  ~0~ => ~SCRL56~  //Remove Fear
+
+        ~SPPR201C~, ~SPPR201~, ~Divine~, ~2~, ~3~,  ~0~ => ~SCRL56~  //Aid
+        ~SPPR203C~, ~SPPR203~, ~Divine~, ~2~, ~3~,  ~0~ => ~SCRL56~  //Chant
+        ~SPPR205C~, ~SPPR205~, ~Divine~, ~2~, ~3~,  ~0~ => ~SCRL56~  //Find Traps
+        ~SPPR208C~, ~SPPR208~, ~Divine~, ~2~, ~3~,  ~0~ => ~SCRL56~  //Hold Person
+        ~SPPR211C~, ~SPPR211~, ~Divine~, ~2~, ~3~,  ~0~ => ~SCRL56~  //Silence 15' Radius
+        ~SPPR212C~, ~SPPR212~, ~Divine~, ~2~, ~3~,  ~0~ => ~SCRL56~  //Slow Poison
+        ~SPPR214C~, ~SPPR217~, ~Divine~, ~2~, ~3~,  ~0~ => ~SCRL56~  //Cure Moderate Wounds     //Note: Item/Spell mismatch
+
+        ~SPPR304C~, ~SPPR304~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Glyph of Warding
+        ~SPPR306C~, ~SPPR306~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Protection from Fire
+        ~SPPR307C~, ~SPPR307~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Remove Curse
+        ~SPPR308C~, ~SPPR308~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Remove Paralysis
+        ~SPPR313C~, ~SPPR316~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Prayer
+        ~SPPR314C~, ~SPPR317~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Cure Disease
+        ~SPPR324X~, ~SPPR313~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Holy Smite
+        ~SPPR331X~, ~SPPR331~, ~Divine~, ~3~, ~5~,  ~0~ => ~SCRL56~  //Favor of Illmater
+
+        ~SCRL56~,   ~SPPR401~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Cure Serious Wounds
+        ~SPPR404C~, ~SPPR404~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Neutralize Poison
+        ~SPPR407C~, ~SPPR407~, ~Divine~, ~4~, ~7~,  ~0~ => ~SCRL56~  //Protection from Lightning
+
+        ~SCRL61~,   ~SPPR502~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL61~  //Cure Critical Wounds
+        ~SCRL62~,   ~SPPR503~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL62~  //Flame Strike
+        ~SPPR504C~, ~SPPR504~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL56~  //Raise Dead
+        ~SPPR507C~, ~SPPR507~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL56~  //Champion's Strength
+        ~SPPR510C~, ~SPPR517~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL56~  //Insect Plague
+        ~SPPR512C~, ~SPPR519~, ~Divine~, ~5~, ~9~,  ~0~ => ~SCRL56~  //Spike Stones
+
+        ~SPPR607C~, ~SPPR607~, ~Divine~, ~6~, ~12~, ~0~ => ~SCRL56~  //Heal
+        ~SPPR610X~, ~SPPR603~, ~Divine~, ~6~, ~12~, ~0~ => ~SCRL56~  //Blade Barrier
+
+        ~SPPR712C~, ~SPPR712~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRL56~  //Resurrection
+        ~SPPR714C~, ~SPPR714~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRL56~  //Symbol, Pain
+
+    END
