@@ -162,7 +162,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!F5009~, ~SPPR550~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Recall Spirit.BAM~,                             ~BZ!F50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Recall Spirit
 
 
-        ~BZ!G0112~, ~SPPR601~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Arial Servant.BAM~,                             ~BZ!G01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Arial Servant
+        ~BZ!G0112~, ~SPPR601~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Aerial Servant.BAM~,                             ~BZ!G01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aerial Servant
         ~BZ!G0212~, ~SPPR602~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Animal Summoning 3.BAM~,                        ~BZ!G02I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 3
       //~BZ!G0312~, ~SPPR603~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Blade Barrier.BAM~,                             ~BZ!G03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Blade Barrier
         ~BZ!G0412~, ~SPPR604~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Conjure Animals.BAM~,                           ~BZ!G04I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Animals

@@ -107,14 +107,14 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!F1109~, ~SPPR511~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Slay Living.BAM~,                 ~BZ!F11I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Slay Living
         ~BZ!F1209~, ~SPPR512~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Greater Command.BAM~,             ~BZ!F12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Command
         ~BZ!F1309~, ~SPPR513~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Righteous Magic.BAM~,             ~BZ!F13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Righteous Magic
-        ~BZ!F1409~, ~SPPR514~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Mass Cure.BAM~,                   ~BZ!F14I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mass Cure
+        ~BZ!F1409~, ~SPPR514~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Mass Cure Light Wounds.BAM~,      ~BZ!F14I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mass Cure
         ~BZ!F1509~, ~SPPR515~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Repulse Undead.BAM~,              ~BZ!F15I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Repulse Undead
         ~BZ!F1609~, ~SPPR516~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Pixie Dust.BAM~,                  ~BZ!F16I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Pixie Dust
         ~BZ!F1709~, ~SPPR517~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Insect Plague.BAM~,               ~BZ!F17I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Insect Plague
         ~BZ!F5009~, ~SPPR550~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Recall Spirit.BAM~,               ~BZ!F50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Recall Spirit
 
 
-        ~BZ!G0112~, ~SPPR601~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Arial Servant.BAM~,               ~BZ!G01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Arial Servant
+        ~BZ!G0112~, ~SPPR601~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Aerial Servant.BAM~,               ~BZ!G01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aerial Servant
         ~BZ!G0212~, ~SPPR602~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Animal Summoning 3.BAM~,          ~BZ!G02I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 3
         ~BZ!G0312~, ~SPPR603~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Blade Barrier.BAM~,               ~BZ!G03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Blade Barrier
         ~BZ!G0412~, ~SPPR604~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Conjure Animals.BAM~,             ~BZ!G04I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Animals
