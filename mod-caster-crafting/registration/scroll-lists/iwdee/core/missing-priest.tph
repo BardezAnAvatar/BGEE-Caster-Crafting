@@ -197,7 +197,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!H1314~, ~SPPR713~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Greater Restoration.BAM~,                       ~BZ!H13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Greater Restoration
       //~SPPR714C~, ~SPPR714~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRL56~  //Symbol, Pain
         ~BZ!H1514~, ~SPPR715~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Unholy Word.BAM~,                               ~BZ!H15I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~0~, ~1~, ~1~, ~1~, ~1~ => ~~    //Unholy Word
-        ~BZ!H1614~, ~SPPR716~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Hopelessness.BAM~,                      ~BZ!H16I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Hopelessness
+        ~BZ!H1614~, ~SPPR716~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/IWDification/Symbol, Hopelessness.BAM~,              ~BZ!H16I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Hopelessness
         ~BZ!H1714~, ~SPPR717~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Creeping Doom.BAM~,                             ~BZ!H17I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Creeping Doom
         ~BZ!H1814~, ~SPPR718~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Stun.BAM~,                              ~BZ!H18I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Stun
         ~BZ!H1914~, ~SPPR719~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Death.BAM~,                             ~BZ!H19I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Death
