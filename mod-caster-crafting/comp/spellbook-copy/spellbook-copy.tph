@@ -2,8 +2,6 @@
 *   Scribing kit stuff  *
 ************************/
 
-//TODO: figure out which game and use appropriate subdir accordingly
-
 //Copy the base states
 COPY -
     ~SpellbookCopy/BZMSCST.D~
