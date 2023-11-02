@@ -5,7 +5,8 @@
 //Install Cursed scrolls, random treasure table, etc.
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/install_cursed_scrolls.tph~
 
-//TODO: Make a sound file/VVC for scribing scrolls
+//Install a cutscene for scribing scrolls
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/install_cutscene.tph~
 
 //Copy the base states
 COPY -
@@ -14,10 +15,6 @@ COPY -
         //Patches
         //APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCST.d~
         APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/BZMSCST.d~
-
-//TODO: modify and use scribbling sounds
-//Make a cutscene file for making a scroll
-COMPILE ~./%MOD_FOLDER%/comp/crafting-scroll/BAF/bzctbkcp.baf~
 
 //TODO: Menu checks by class/level; make this configurable by variables
 //TODO: protection scroll menu
