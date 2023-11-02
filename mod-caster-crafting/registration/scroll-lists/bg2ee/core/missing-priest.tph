@@ -35,7 +35,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!B0301~, ~SPPR103~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Cure Light Wounds.BAM~,           ~BZ!B03I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cure Light Wounds
         ~BZ!B0401~, ~SPPR104~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Detect Evil.BAM~,                 ~BZ!B04I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Detect Evil
         ~BZ!B0501~, ~SPPR105~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Entangle.BAM~,                    ~BZ!B05I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Entangle
-        ~BZ!B0601~, ~SPPR106~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Magic Stone.BAM~,                 ~BZ!B06I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Magic Stone
+        ~BZ!B0601~, ~SPPR106~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Magical Stone.BAM~,               ~BZ!B06I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Magic Stone
         ~BZ!B0701~, ~SPPR107~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Protection From Evil.BAM~,        ~BZ!B07I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Protection From Evil
         ~BZ!B0801~, ~SPPR108~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Remove Fear.BAM~,                 ~BZ!B08I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Remove Fear
         ~BZ!B0901~, ~SPPR109~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Sanctuary.BAM~,                   ~BZ!B09I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sanctuary
