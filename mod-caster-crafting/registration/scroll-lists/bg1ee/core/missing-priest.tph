@@ -148,7 +148,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!H1914~, ~SPPR719~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Death.BAM~,               ~BZ!H19I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Death
         ~BZ!H2014~, ~SPPR720~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Earthquake.BAM~,                  ~BZ!H20I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Earthquake
         ~BZ!H2914~, ~SPPR729~, ~Divine~, ~7~, ~14~, ~0~, ~priest/core/Mass Raise Dead.BAM~,             ~BZ!H29I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Mass Raise Dead
-        ~BZ!H5014~, ~SPPR750~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Ethereal Gate.BAM~,               ~BZ!H50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ethereal Gate
+        ~BZ!H5014~, ~SPPR750~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Ether Gate.BAM~,                  ~BZ!H50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Ether Gate
 
 
         ~BZ!I2115~, ~SPPR721~, ~Divine~, ~Q~, ~14~, ~0~, ~priest/core/Energy Blades.BAM~,               ~BZ!I21I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Energy Blades
