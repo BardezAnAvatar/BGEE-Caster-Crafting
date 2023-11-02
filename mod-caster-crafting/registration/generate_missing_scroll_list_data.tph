@@ -63,7 +63,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
                 ~%keys_17%~,                //Usability: Evil
                 ~%keys_18%~,                //Usability: Lawful
                 ~%keys_19%~,                //Usability: Neutral ...
-                ~%keys_20%~,                //Usability: Chaotic
+                ~%keys_20%~                 //Usability: Chaotic
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
             END
 
