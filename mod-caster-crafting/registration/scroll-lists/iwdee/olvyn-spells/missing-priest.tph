@@ -82,10 +82,10 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~scroll_list_missing~
     BEGIN
-        ~BZ!G5312~, ~MEPR653~, ~Divine~, ~6~, ~1~, ~0~, ~priest/OlvynSpells/.ntiharm ShellBAM~,                             ~BZ!G553~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~  ~1~, ~1~, ~1~, ~1~, ~1~, ~1~,=> ~BZ!G5312~   //Antiharm Shell
+        ~BZ!G5312~, ~MEPR653~, ~Divine~, ~6~, ~1~, ~0~, ~priest/OlvynSpells/.ntiharm ShellBAM~,                             ~BZ!G553~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5312~   //Antiharm Shell
 
-        ~BZ!H5314~, ~MEPR753~, ~Divine~, ~7~, ~1~, ~0~, ~priest/OlvynSpells/.onrandom ZoneBAM~,                             ~BZ!H553~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~  ~1~, ~1~, ~1~, ~1~, ~0~, ~0~,=> ~BZ!H5314~   //Nonrandom Zone
-        ~BZ!H5914~, ~MEPR759~, ~Divine~, ~7~, ~1~, ~0~, ~priest/OlvynSpells/.mnipresenceBAM~,                               ~BZ!H559~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~  ~1~, ~1~, ~1~, ~1~, ~1~, ~1~,=> ~BZ!H5914~   //Omnipresence
+        ~BZ!H5314~, ~MEPR753~, ~Divine~, ~7~, ~1~, ~0~, ~priest/OlvynSpells/.onrandom ZoneBAM~,                             ~BZ!H553~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~0~, ~0~ => ~BZ!H5314~   //Nonrandom Zone
+        ~BZ!H5914~, ~MEPR759~, ~Divine~, ~7~, ~1~, ~0~, ~priest/OlvynSpells/.mnipresenceBAM~,                               ~BZ!H559~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5914~   //Omnipresence
     END
 END
 
