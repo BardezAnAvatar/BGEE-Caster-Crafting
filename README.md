@@ -22,3 +22,5 @@ tl;dr: do what you will with it, credit me (Bardez) my work on the mod. Grammars
 
 ## Credit/License for art
 Leather kit: https://commons.wikimedia.org/wiki/File:Kit_for_blowpipe_analysis_Carl_Osterland,_Freiberg,_c._1870_II.jpg ; Gregory Tobias, sketchified filter applied
+
+Scribbling sounds: https://www.youtube.com/watch?v=dsEKCE5w1ik; Creative Commons 0
