@@ -3,9 +3,13 @@
 *******************************************/
 
 //1
-//TODO: Copy over a scribbling sound
+//Copy over a scribbling sound
+COPY ~./%MOD_FOLDER%/comp/crafting-scroll/WAV/bzscribb.wav~ ~override/BZSCRIBB.WAV~
 
 //TODO: Make a cuscene BAF
+
+//Make a cutscene file for copying the spell into spell book
+COMPILE ~./%MOD_FOLDER%/comp/scribing-tools/BAF/bzctwrit.baf~
 
 //TODO: Make a VVC for the scroll creation
 

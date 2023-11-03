@@ -10,8 +10,5 @@ COPY -
         APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/spellbook-copy/BZMSCST.d~
         APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/spellbook-copy/%bz_edition_code%/BZMSCST.d~
 
-//Make a cutscene file for copying the spell into spell book
-COMPILE ~./%MOD_FOLDER%/comp/spellbook-copy/BAF/bzctbkcp.baf~
-
 //NOTE: tested the compilation of the dialog in its initial state. Attempt to mutate it next...
 INCLUDE ~./%MOD_FOLDER%/comp/spellbook-copy/%bz_edition_code%/generate_spellbook_copy_dialog.tph~
