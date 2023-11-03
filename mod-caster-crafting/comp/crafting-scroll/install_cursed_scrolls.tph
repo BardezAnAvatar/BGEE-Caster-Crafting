@@ -4,7 +4,73 @@
 **************************************************/
 
 //1
-//TODO: Check for IWD (missing scrolls) and install ones from BG1 & add to ~cursed_scrolls~ array
+//Check for IWD (missing scrolls) and install ones from BG1 & add to ~cursed_scrolls~ array
+ACTION_IF (GAME_IS ~iwdee~) THEN
+BEGIN
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL10.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20010
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL11.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20011
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL12.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20012
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL13.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20013
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL14.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20014
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL16.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20016
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL17.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20017
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL18.TIM~ ~override~
+        SAY NAME1 @20009
+        SAY NAME2 @20018
+	    SAY UNIDENTIFIED_DESC @20040
+	    SAY IDENTIFIED_DESC @20041
+
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~cursed_scrolls~
+    BEGIN
+        /*
+        [key]                   // 0
+        */
+        ~SCRL10~ => ~SCRL10~    //Cursed Scroll of Weakness
+        ~SCRL11~ => ~SCRL11~    //Cursed Scroll of Clumsiness
+        ~SCRL12~ => ~SCRL12~    //Cursed Scroll of Foolishness
+        ~SCRL13~ => ~SCRL13~    //Cursed Scroll of Ugliness
+        ~SCRL14~ => ~SCRL14~    //Cursed Scroll of Summon Monster
+        ~SCRL16~ => ~SCRL16~    //Cursed Scroll of Petrification
+        ~SCRL17~ => ~SCRL17~    //Cursed Scroll of Ailment
+        ~SCRL18~ => ~SCRL18~    //Cursed Scroll of Stupidity
+    END
+END
 
 //2
 //TODO: Any new cursed scrolls & add to ~cursed_scrolls~ array.
