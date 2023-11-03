@@ -2,15 +2,13 @@
 *   Make a cutscene for scribing scrolls   *
 *******************************************/
 
-//1
 //Copy over a scribbling sound
-COPY ~./%MOD_FOLDER%/comp/crafting-scroll/WAV/bzscribb.wav~ ~override/BZSCRIBB.WAV~
+COPY ~./%MOD_FOLDER%/comp/crafting-scroll/WAV/bzscribe.wav~ ~override/BZSCRIBE.WAV~
 
-//TODO: Make a cuscene BAF
+//Make a VVC for the scroll creation
+COPY_EXISTING ~SPCONTIN.VVC~ ~override/BZSCRIBE.VVC~
+    //Patches
+    WRITE_ASCII_TERMINATE 0x58 "BZSCRIBE"           // Sound resref
 
-//Make a cutscene file for copying the spell into spell book
+//Compile the scene
 COMPILE ~./%MOD_FOLDER%/comp/scribing-tools/BAF/bzctwrit.baf~
-
-//TODO: Make a VVC for the scroll creation
-
-//TODO: Compile the scene
