@@ -4,6 +4,10 @@
 **************************************************/
 
 //1
+/****************************************************************
+*   Check for IWD (missing scrolls) and install ones from BG1   *
+*   then add to ~cursed_scrolls~ array                          *
+****************************************************************/
 //Check for IWD (missing scrolls) and install ones from BG1 & add to ~cursed_scrolls~ array
 ACTION_IF (GAME_IS ~iwdee~) THEN
 BEGIN
@@ -71,6 +75,10 @@ BEGIN
         ~SCRL18~ => ~SCRL18~    //Cursed Scroll of Stupidity
     END
 END
+/***************************************************
+*   END: install missing cursed scrolls from BGs   *
+***************************************************/
+
 
 //2
 //TODO: Any new cursed scrolls & add to ~cursed_scrolls~ array.
@@ -86,5 +94,41 @@ END
 etc.
 */
 
+
 //3
-//TODO: random treasure for cursed scrolls -- read  ~cursed_scrolls~ array and add to 2DA in-game
+/*****************************************
+*   Random Treasure for cursed scrolls   *
+*****************************************/
+//Register the random treasure for cursed scrolls -- read ~cursed_scrolls~ array and add to 2DA in-game
+OUTER_SPRINT ~CursedRandom~ ~~
+OUTER_SET ~ColumnCount~ = 0
+ACTION_PHP_EACH ~cursed_scrolls~
+AS ~key~ => ~value~
+BEGIN
+    OUTER_SPRINT ~padddedValue~ ~%value%        ~
+    LAUNCH_ACTION_FUNCTION ~SUBSTRING~
+        INT_VAR
+            ~length~ = 8
+        STR_VAR
+            ~string~ = ~%padddedValue%~
+        RET
+            ~paddedResRef~ = ~substring~
+    END
+
+    OUTER_SPRINT ~CursedRandom~ ~%CursedRandom% %paddedResRef%~
+    OUTER_SET ~ColumnCount~ = (%ColumnCount% +1)
+END
+
+//fill in with asterisks
+FOR (i = %ColumnCount%; i < 40; ++i)
+BEGIN
+    OUTER_SPRINT ~CursedRandom~ ~%CursedRandom% *       ~
+END
+
+COPY_EXISTING ~RNDTRES.2DA~ ~override~
+    //PATCHES
+        COUNT_2DA_ROWS 40 ~bz_rndtres_ct~
+        INSERT_2DA_ROW %bz_rndtres_ct% 40 ~RNDCSCRL%CursedRandom%~
+/*****************************************
+*   END: Random Treasure for cursed scrolls   *
+*****************************************/
