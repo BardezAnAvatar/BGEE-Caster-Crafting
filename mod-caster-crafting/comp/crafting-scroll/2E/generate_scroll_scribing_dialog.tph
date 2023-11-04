@@ -16,12 +16,17 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/genereate_circle_
 /***********************************************
 *   Protection scroll menu and dialog states   *
 ***********************************************/
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_protection_menu.tph~
 
 /****************************************************
 *   END: Protection scroll menu and dialog states   *
 ****************************************************/
 
 
-
-//TODO: make this file
+//Copy the dialog content
+COPY -
+    ~ScrollCreation/BZMSCST.D~
+    ~ScrollCreation/BZMSCST.D~
+        //Patches
+        APPEND_FILE TEXT ~ScrollCreation/CircleProtection.D~
 
