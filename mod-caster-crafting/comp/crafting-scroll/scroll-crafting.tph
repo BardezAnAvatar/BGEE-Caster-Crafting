@@ -8,9 +8,6 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/proces_scroll_registry.tph~
 //Install Cursed scrolls, random treasure table, etc.
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/install_cursed_scrolls.tph~
 
-//Install a cutscene for scribing scrolls
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/install_cutscene.tph~
-
 //Copy the base states
 COPY -
     ~ScrollCreation/BZMSCST.D~
