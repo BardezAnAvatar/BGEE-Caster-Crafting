@@ -22,6 +22,3 @@ COPY -
 //Generate dialog options
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_scroll_scribing_dialog.tph~
 
-
-
-
