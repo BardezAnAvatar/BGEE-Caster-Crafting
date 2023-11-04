@@ -49,8 +49,8 @@ BEGIN
 END
 
 //Calculate the bounds for failure
-OUTER_SET ~bz_protection_failure_bounds_cursed~ = (100 - 1 - %bz_protection_scroll_failure%)  //use this for GT(X)
-OUTER_SET ~bz_protection_failure_bounds_success~ = (100 - %bz_protection_scroll_failure%)     //use this for LT(X)
+OUTER_SET ~bz_protection_failure_bounds_cursed~ = (99 - %bz_protection_scroll_failure%)     //use this for GT(X)
+OUTER_SET ~bz_protection_failure_bounds_success~ = (100 - %bz_protection_scroll_failure%)   //use this for LT(X)
 
 
 //isolate the unique protection scroll entries; specific scrolls, ignoring spells and thus de-duplicating
@@ -151,7 +151,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
             AS ~prot_keys~ => ~_~
             BEGIN
 
-                ACTION_IF (~%value%~ STRING_EQUAL ~prot_keys_1~) THEN
+                ACTION_IF (~%value%~ STRING_EQUAL ~%prot_keys_1%~) THEN
                 BEGIN
 
                     //Get the spell name for the Protection scroll
