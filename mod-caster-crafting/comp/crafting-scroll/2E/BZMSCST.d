@@ -58,62 +58,6 @@ APPEND ~BZMSCST~
                 GOTO bz_caster_craft_scribe_scroll_protection
 
             IF ~~
-            THEN REPLY @15051 //~1st arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_1
-            IF ~~
-            THEN REPLY @15052 //~2nd arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_2
-            IF ~~
-            THEN REPLY @15053 //~3rd arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_3
-            IF ~~
-            THEN REPLY @15054 //~4th arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_4
-            IF ~~
-            THEN REPLY @15055 //~5th arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_5
-            IF ~~
-            THEN REPLY @15056 //~6th arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_6
-            IF ~~
-            THEN REPLY @15057 //~7th arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_7
-            IF ~~
-            THEN REPLY @15058 //~8th arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_8
-            IF ~~
-            THEN REPLY @15059 //~9th arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_9
-            IF ~~
-            THEN REPLY @15060 //~10th arcane circle~
-                GOTO bz_caster_craft_scribe_scroll_arcane_circle_A
-
-            IF ~~
-            THEN REPLY @15061 //~1st divine circle~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_1
-            IF ~~
-            THEN REPLY @15062 //~2nd divine circle~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_2
-            IF ~~
-            THEN REPLY @15063 //~3rd divine circle~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_3
-            IF ~~
-            THEN REPLY @15064 //~4th divine circle~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_4
-            IF ~~
-            THEN REPLY @15065 //~5th divine circle~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_5
-            IF ~~
-            THEN REPLY @15066 //~6th divine circle~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_6
-            IF ~~
-            THEN REPLY @15067 //~7th divine circle~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_7
-            IF ~~
-            THEN REPLY @15068 //~Quest divine spells~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_Q
-
-            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END

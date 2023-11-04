@@ -19,9 +19,7 @@ COPY -
         //APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCST.d~
         APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/BZMSCST.d~
 
-//TODO: Menu checks by class/level; make this configurable by variables
-//TODO: protection scroll menu
-//TODO: make this file
+//Generate dialog options
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_scroll_scribing_dialog.tph~
 
 
