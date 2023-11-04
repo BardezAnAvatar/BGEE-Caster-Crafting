@@ -17,7 +17,7 @@ ACTION_IF (%bz_OlvynSpells_installed%)
     BEGIN
         PRINT ~DEBUG: Include Olvyn Spells~
         INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/priest.tph~
+        //There are NO scrolls for priest spells included
     END
     //NOTE: yes, the redefinition acts as a sort of merge, as printed in debug statements
 
