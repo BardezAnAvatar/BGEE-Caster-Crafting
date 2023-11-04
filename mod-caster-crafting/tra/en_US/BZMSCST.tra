@@ -52,3 +52,6 @@
 //Protection scrolls
 @15080 = ~Which scroll of Protection do you wish to scribe?~
 @15081 = ~Pick another Protection scroll.~
+@15082 = ~Which memorized spell should be used to create the scroll of %scroll_name%?~
+@15083 = ~\[%bz_scroll_cost% gold; %readable_time%\] %scroll_name%~
+@15084 = ~\[%scroll_gold_cost% gold; %readable_time%\] %spell_name%.~

@@ -1,0 +1,118 @@
+/******************************************************
+*   This script handles the Protection scroll menu    *
+*      and dialog states, transitions, and crafting   *
+******************************************************/
+
+//Declare an empty file that I can use as a buffer
+<<<<<<<< ScrollCreation/CircleProtection.D
+
+>>>>>>>>
+
+
+/********************************************
+*   Generate the transitions dynamicially   *
+********************************************/
+
+APPEND_OUTER -
+    ~ScrollCreation/CircleProtection.D~
+    ~~~~~
+
+EXTEND_TOP ~BZMSCST~
+    bz_caster_craft_scribe_scroll_protection //state number(s)
+    ~~~~~
+
+
+//Get the time needed for a protection spell. Global for all of them.
+OUTER_SET ~bz_protection_scroll_time~ = 144
+OUTER_SET ~bz_protection_scroll_failure~ = 20
+ACTION_PHP_EACH ~scroll_costs~
+    AS ~scroll_keys~ => ~value~
+    BEGIN
+        ACTION_IF (~%scroll_keys_2%~ STRING_EQUAL ~Protection~) THEN
+        BEGIN
+            OUTER_SET ~bz_protection_scroll_time~ = %scroll_keys_3%
+            OUTER_SET ~bz_protection_scroll_failure~ = %scroll_keys_5%
+        END
+    END
+
+//calculate a friendly time for display on dialog (hours vs. days)
+OUTER_SPRINT ~readable_time~ ~~
+ACTION_IF %bz_protection_scroll_time% < 24 THEN
+BEGIN
+    OUTER_SET ~hours~ = %bz_protection_scroll_time%
+    OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
+END
+ELSE    //days
+BEGIN
+    OUTER_SET ~days~ = %bz_protection_scroll_time% / 24
+    OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
+END
+
+//Calculate the bounds for failure
+OUTER_SET ~bz_protection_failure_bounds_cursed~ = (100 - 1 - %bz_protection_scroll_failure%)  //use this for GT(X)
+OUTER_SET ~bz_protection_failure_bounds_success~ = (100 - %bz_protection_scroll_failure%)     //use this for LT(X)
+
+
+//isolate the unique protection scroll entries; specific scrolls, ignoring spells and thus de-duplicating
+ACTION_PHP_EACH ~scroll_list_protection~
+    AS ~prot_keys~ => ~value~
+    BEGIN
+        ACTION_IF (NOT VARIABLE_IS_SET ~bz_protection_scrolls_deduped_%prot_keys_1%~)
+        THEN
+        BEGIN
+                ACTION_DEFINE_ASSOCIATIVE_ARRAY
+                ~bz_deduped_protection~
+                BEGIN
+                    ~%prot_keys_1%~ => ~%prot_keys_1%~
+                END
+        END
+    END
+
+
+//Generate the transitions and name the states for individual protection scrolls
+ACTION_PHP_EACH ~bz_deduped_protection~
+    AS ~prot_keys~ => ~value~
+    BEGIN
+        //Get the cost in gold for the scroll
+        COPY_EXISTING - ~%prot_keys_1%.ITM~
+            //Patches
+            READ_LONG (0x34) ~bz_scroll_cost~
+            READ_LONG NAME2 ~bz_scroll_name_STRREF~
+        BUT_ONLY_IF_IT_CHANGES
+
+	    ACTION_GET_STRREF (%bz_scroll_name_STRREF%) ~scroll_name~
+
+        OUTER_SPRINT ~protection_scroll_transition_response~ @15083 // ~\[%bz_scroll_cost% gold; %readable_time%\] %scroll_name%~
+
+        //Give the scroll a dialog option
+        APPEND_OUTER -
+            ~ScrollCreation/CircleProtection.D~
+            ~~~~~
+        IF ~~
+        THEN
+            REPLY ~%protection_scroll_transition_response%~
+            GOTO bz_caster_craft_scribe_scroll_protection_%value%
+            ~~~~~
+    END
+
+APPEND_OUTER -
+    ~ScrollCreation/CircleProtection.D~
+    ~~~~~
+
+END
+    ~~~~~
+
+/************************************************
+*  END: Generate the transitions dynamicially   *
+************************************************/
+
+
+
+
+/*****************************************************************
+*   Generate Protection scroll states and transitions to craft   *
+*****************************************************************/
+
+/**********************************************************************
+*   END: Generate Protection scroll states and transitions to craft   *
+**********************************************************************/

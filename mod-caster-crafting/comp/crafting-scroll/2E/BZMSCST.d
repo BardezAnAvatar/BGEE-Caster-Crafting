@@ -65,7 +65,7 @@ APPEND ~BZMSCST~
 
     IF ~~
     THEN BEGIN bz_caster_craft_scribe_scroll_protection
-        SAY @15041 // ~Which spell do you examine?~
+        SAY @15080 //~Which scroll of Protection do you wish to scribe?~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
