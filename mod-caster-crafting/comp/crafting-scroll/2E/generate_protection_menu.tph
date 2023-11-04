@@ -74,10 +74,10 @@ ACTION_PHP_EACH ~bz_deduped_protection~
     AS ~prot_keys~ => ~value~
     BEGIN
         //Get the cost in gold for the scroll
-        COPY_EXISTING - ~%prot_keys_1%.ITM~
+        COPY_EXISTING - ~%prot_keys_1%.ITM~ ~override~
             //Patches
             READ_LONG (0x34) ~bz_scroll_cost~
-            READ_LONG NAME2 ~bz_scroll_name_STRREF~
+            READ_LONG (0x0C) ~bz_scroll_name_STRREF~
         BUT_ONLY_IF_IT_CHANGES
 
 	    ACTION_GET_STRREF (%bz_scroll_name_STRREF%) ~scroll_name~
@@ -127,7 +127,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
     AS ~dedupe_keys~ => ~value~
     BEGIN
         //Get the cost in gold for the scroll
-        COPY_EXISTING - ~%value%.ITM~
+        COPY_EXISTING - ~%value%.ITM~ ~override~
             //Patches
             READ_LONG (0x34) ~bz_scroll_cost~
             READ_LONG NAME2 ~bz_scroll_name_STRREF~
@@ -155,7 +155,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
                 BEGIN
 
                     //Get the spell name for the Protection scroll
-                    COPY_EXISTING - ~%prot_keys_2%.SPL~
+                    COPY_EXISTING - ~%prot_keys_2%.SPL~ ~override~
                         //Patches
                         READ_LONG NAME1 ~bz_spell_name_STRREF~
                     BUT_ONLY_IF_IT_CHANGES

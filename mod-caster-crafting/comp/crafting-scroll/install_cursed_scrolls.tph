@@ -120,7 +120,7 @@ BEGIN
 END
 
 //fill in with asterisks
-FOR (i = %ColumnCount%; i < 40; ++i)
+OUTER_FOR (i = %ColumnCount%; i < 40; ++i)
 BEGIN
     OUTER_SPRINT ~CursedRandom~ ~%CursedRandom% *       ~
 END
