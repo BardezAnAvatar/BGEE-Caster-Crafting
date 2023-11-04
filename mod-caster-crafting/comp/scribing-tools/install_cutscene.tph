@@ -3,7 +3,7 @@
 *******************************************/
 
 //Copy over a scribbling sound
-COPY ~./%MOD_FOLDER%/comp/crafting-scroll/WAV/bzscribe.wav~ ~override/BZSCRIBE.WAV~
+COPY ~./%MOD_FOLDER%/comp/scribing-tools/WAV/bzscribe.wav~ ~override/BZSCRIBE.WAV~
 
 //Make a VVC for the scroll creation
 COPY_EXISTING ~SPCONTIN.VVC~ ~override/BZSCRIBE.VVC~

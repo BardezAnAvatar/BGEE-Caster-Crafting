@@ -49,6 +49,10 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
 *********************/
 //Include function defs.
 INCLUDE ~%MOD_FOLDER%/registration/fn_lookup_costs_copy_spell.tph~
+INCLUDE ~%MOD_FOLDER%/registration/fn_lookup_costs_scroll.tph~
+INCLUDE ~%MOD_FOLDER%/registration/fn_calculate_scroll_cost.tph~
+
+
 
 //OUTPUT:
 /*
