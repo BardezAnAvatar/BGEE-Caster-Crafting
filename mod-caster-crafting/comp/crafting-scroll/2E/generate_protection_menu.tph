@@ -35,6 +35,8 @@ ACTION_PHP_EACH ~scroll_costs~
         END
     END
 
+OUTER_SET ~copy_time_engine~ = %bz_protection_scroll_time% * 300
+
 //calculate a friendly time for display on dialog (hours vs. days)
 OUTER_SPRINT ~readable_time~ ~~
 ACTION_IF %bz_protection_scroll_time% < 24 THEN
@@ -170,30 +172,30 @@ RandomNumLT(100, %bz_protection_failure_bounds_success%)~   //created successful
             THEN
                 REPLY ~%protection_scroll_spell_response%~
                 DO ~
-TakePartyGold(%copy_gold_cost%)
-DestroyGold(%copy_gold_cost%)
+TakePartyGold(%bz_scroll_cost%)
+DestroyGold(%bz_scroll_cost%)
 AdvanceTime(%copy_time_engine%)
 RemoveSpellRES("%prot_keys_2%")
-GiveItemCreate(%value%)
+GiveItemCreate("%value%")
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ClearAllActions()
 StartCutSceneMode()
-StartCutScene("bzctwrit")~
+StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~HaveSpellRES("%prot_keys_2%")
 RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cursed scroll
             THEN
                 REPLY ~%protection_scroll_spell_response%~
                 DO ~
-TakePartyGold(%copy_gold_cost%)
-DestroyGold(%copy_gold_cost%)
+TakePartyGold(%bz_scroll_cost%)
+DestroyGold(%bz_scroll_cost%)
 AdvanceTime(%copy_time_engine%)
 RemoveSpellRES("%prot_keys_2%")
-GiveItemCreate(RNDCSCRL)
+GiveItemCreate("RNDCSCRL")
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ClearAllActions()
 StartCutSceneMode()
-StartCutScene("bzctwrit")~
+StartCutScene("BZCTWRIT")~
                 EXIT
                     ~~~~~
                 END
