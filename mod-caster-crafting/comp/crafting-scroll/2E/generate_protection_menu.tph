@@ -160,7 +160,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
                         READ_LONG NAME1 ~bz_spell_name_STRREF~
                     BUT_ONLY_IF_IT_CHANGES
 
-                    OUTER_SPRINT ~protection_scroll_spell_response ~ @15083 // ~\[%scroll_gold_cost% gold; %readable_time%\] %spell_name%.~
+                    OUTER_SPRINT ~protection_scroll_spell_response~ @15083 // ~\[%scroll_gold_cost% gold; %readable_time%\] %spell_name%.~
 
                     APPEND_OUTER -
                         ~ScrollCreation/CircleProtection.D~
