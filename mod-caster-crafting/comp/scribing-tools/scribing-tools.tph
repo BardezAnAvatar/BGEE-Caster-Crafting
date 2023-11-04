@@ -12,13 +12,13 @@
 //Emit the final result prior to compilation
 COPY -
     ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
-    ~Generated//BZMSCST.d~
+    ~Generated/BZMSCST.d~
         //Patches
         APPEND_FILE TEXT ~SpellbookCopy/BZMSCST.D~
         APPEND_FILE TEXT ~ScrollCreation/BZMSCST.D~
 
 //DEBUG so I can read it
-COPY -
+COPY
     ~Generated/BZMSCST.d~
     ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.DEBUG.d~
 
