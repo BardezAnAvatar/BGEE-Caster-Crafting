@@ -76,11 +76,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
 ACTION_IF (NOT %bz_OlvynSpells_installed%)
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
     BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list~
-            BEGIN
-                //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-                ~CDID418~, ~SPPR418~, ~Divine~, ~4~, ~7~, ~0~ => ~CDID418~    //Produce Fire
-            END
+        //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+        ~CDID418~, ~SPPR418~, ~Divine~, ~4~, ~7~, ~0~ => ~CDID418~    //Produce Fire
     END
+END
