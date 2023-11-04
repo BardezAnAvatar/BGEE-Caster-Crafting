@@ -74,7 +74,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
     AS ~prot_keys~ => ~value~
     BEGIN
         //Get the cost in gold for the scroll
-        COPY_EXISTING - ~%prot_keys_1%.ITM~ ~override~
+        COPY_EXISTING - ~%value%.ITM~ ~override~
             //Patches
             READ_LONG (0x34) ~bz_scroll_cost~
             READ_LONG (0x0C) ~bz_scroll_name_STRREF~
