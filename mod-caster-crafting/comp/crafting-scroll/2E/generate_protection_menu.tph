@@ -178,7 +178,7 @@ GiveItemCreate(%value%)
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ClearAllActions()
 StartCutSceneMode()
-StartCutScene("bzctwrit")~~
+StartCutScene("bzctwrit")~
                 EXIT
             IF ~HaveSpellRES("%prot_keys_2%")
 RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cursed scroll
@@ -193,7 +193,7 @@ GiveItemCreate(RNDCSCRL)
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ClearAllActions()
 StartCutSceneMode()
-StartCutScene("bzctwrit")~~
+StartCutScene("bzctwrit")~
                 EXIT
                     ~~~~~
                 END
