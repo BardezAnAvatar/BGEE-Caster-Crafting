@@ -84,7 +84,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
 
 	    ACTION_GET_STRREF (%bz_scroll_name_STRREF%) ~scroll_name~
 
-        OUTER_SPRINT ~protection_scroll_transition_response~ @15083 // ~\[%bz_scroll_cost% gold; %readable_time%\] %scroll_name%~
+        OUTER_SPRINT ~protection_scroll_transition_response~ ~%scroll_name%~
 
         //Give the scroll a dialog option
         APPEND_OUTER -
@@ -161,6 +161,8 @@ ACTION_PHP_EACH ~bz_deduped_protection~
                         //Patches
                         READ_LONG NAME1 ~bz_spell_name_STRREF~
                     BUT_ONLY_IF_IT_CHANGES
+
+	                ACTION_GET_STRREF (%bz_spell_name_STRREF%) ~spell_name~
 
                     OUTER_SPRINT ~protection_scroll_spell_response~ @15083 // ~\[%scroll_gold_cost% gold; %readable_time%\] %spell_name%.~
 
