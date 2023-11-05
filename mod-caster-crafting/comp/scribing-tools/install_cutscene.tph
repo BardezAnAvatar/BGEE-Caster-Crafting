@@ -8,7 +8,7 @@ COPY ~./%MOD_FOLDER%/comp/scribing-tools/WAV/bzscribe.wav~ ~override/BZSCRIBE.WA
 //Make a VVC for the scroll creation
 COPY_EXISTING ~SPCONTIN.VVC~ ~override/BZSCRIBE.VVC~
     //Patches
-    WRITE_ASCII_TERMINATE 0x58 "BZSCRIBE"           // Sound resref
+    WRITE_ASCII_TERMINATE 0x78 "BZSCRIBE"           // Sound resref
 
 //Compile the scene
 COMPILE ~./%MOD_FOLDER%/comp/scribing-tools/BAF/bzctwrit.baf~
