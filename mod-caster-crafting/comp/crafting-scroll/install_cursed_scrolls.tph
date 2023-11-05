@@ -3,7 +3,11 @@
 *   Any thing missing, new cursed scrolls, etc.   *
 **************************************************/
 
-//1
+
+//Include the cursed scroll list
+INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/cursed.tph~
+
+
 /****************************************************************
 *   Check for IWD (missing scrolls) and install ones from BG1   *
 *   then add to ~cursed_scrolls~ array                          *
