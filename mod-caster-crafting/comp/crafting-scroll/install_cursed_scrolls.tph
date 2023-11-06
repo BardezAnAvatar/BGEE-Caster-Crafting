@@ -131,7 +131,7 @@ END
 COPY_EXISTING ~RNDTRES.2DA~ ~override~
     //PATCHES
         COUNT_2DA_ROWS 40 ~bz_rndtres_ct~
-        INSERT_2DA_ROW %bz_rndtres_ct% 40 ~RNDCSCRL%CursedRandom%~
+        INSERT_2DA_ROW %bz_rndtres_ct% 40 ~BZSCLCUR%CursedRandom%~
 /*****************************************
 *   END: Random Treasure for cursed scrolls   *
 *****************************************/

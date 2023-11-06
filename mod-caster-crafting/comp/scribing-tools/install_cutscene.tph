@@ -12,3 +12,6 @@ COPY_EXISTING ~SPCONTIN.VVC~ ~override/BZSCRIBE.VVC~
 
 //Compile the scene
 COMPILE ~./%MOD_FOLDER%/comp/scribing-tools/BAF/bzctwrit.baf~
+
+//cursed scroll get in my inventory
+COPY ~./%MOD_FOLDER%/comp/scribing-tools/CRE/BZCSCRL.CRE~ ~override~
