@@ -84,7 +84,7 @@ END
 ***************************************************/
 
 
-//2
+
 //TODO: Any new cursed scrolls & add to ~cursed_scrolls~ array.
 /*
 - fireball centered on caster
@@ -99,7 +99,6 @@ etc.
 */
 
 
-//3
 /*****************************************
 *   Random Treasure for cursed scrolls   *
 *****************************************/
