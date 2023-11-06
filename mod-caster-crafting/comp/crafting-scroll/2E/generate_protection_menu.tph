@@ -191,8 +191,10 @@ RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cu
 TakePartyGold(%bz_scroll_cost%)
 DestroyGold(%bz_scroll_cost%)
 AdvanceTime(%copy_time_engine%)
-GiveItemCreate("RNDCSCRL", Myself, 1, 0, 0)
+CreateCreature("BZCSCRL", [-1,-1], S)
 CreateVisualEffectObject("BZSCRIBE", Myself)
+ActionOverride("BZ_CursedScrollGiver", GivePartyAllEquipment())
+ActionOverride("BZ_CursedScrollGiver", DestroySelf())
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("BZCTWRIT")~
