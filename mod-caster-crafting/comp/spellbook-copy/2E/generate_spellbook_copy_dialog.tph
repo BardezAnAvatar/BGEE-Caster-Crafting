@@ -38,7 +38,8 @@ OUTER_FOR (i = 1; i < 7; ++i)
             IF ~OR(2)
     Class(%PlayerN%, MAGE_ALL)
     Class(%PlayerN%, BARD_ALL)
-!InPartySlot(MYSELF, %i-minus-one%)~
+!InPartySlot(MYSELF, %i-minus-one%)
+!Class(%PlayerN%, SORCERER)~ //Sorcerers do not have spellbooks!
             THEN REPLY ~%tag_PlayerN%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%
             ~~~~~
