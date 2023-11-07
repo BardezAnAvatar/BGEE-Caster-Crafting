@@ -165,6 +165,9 @@ ACTION_PHP_EACH ~bz_deduped_protection~
 	                ACTION_GET_STRREF (%bz_spell_name_STRREF%) ~spell_name~
 
                     OUTER_SPRINT ~protection_scroll_spell_response~ @15035 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                    OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                    OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
+
 
                     APPEND_OUTER -
                         ~ScrollCreation/CircleProtection.D~
@@ -177,6 +180,7 @@ RandomNumLT(100, %bz_protection_failure_bounds_success%)~   //created successful
 TakePartyGold(%scroll_gold_cost%)
 DestroyGold(%scroll_gold_cost%)
 AdvanceTime(%copy_time_engine%)
+DisplayString(Myself, %elapsed_strref%)
 GiveItemCreate("%value%", Myself, 1, 0, 0)
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ClearAllActions()
@@ -191,6 +195,7 @@ RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cu
 TakePartyGold(%scroll_gold_cost%)
 DestroyGold(%scroll_gold_cost%)
 AdvanceTime(%copy_time_engine%)
+DisplayString(Myself, %elapsed_strref%)
 CreateCreature("BZCSCRL", [-1.-1], S)
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ActionOverride("BZ_CursedScrollGiver", GivePartyAllEquipment())
