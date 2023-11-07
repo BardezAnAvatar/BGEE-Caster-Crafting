@@ -16,9 +16,9 @@
 OUTER_FOR (i = 1; i < 9; ++i)
 BEGIN
     //Get the appropriate spell circle variable set up
-    OUTER_SPRINT ~divine_spell_circle~ ~0~
-    ACTION_IF (i = 8) THEN BEGIN OUTER_SPRINT ~divine_spell_circle~ ~Q~ END
-    ELSE BEGIN OUTER_SPRINT ~divine_spell_circle~ ~%i%~ END
+    OUTER_SPRINT ~spell_circle~ ~0~
+    ACTION_IF (i = 8) THEN BEGIN OUTER_SPRINT ~spell_circle~ ~Q~ END
+    ELSE BEGIN OUTER_SPRINT ~spell_circle~ ~%i%~ END
 
     //Append to the buffer for each circle
     APPEND_OUTER -
@@ -26,12 +26,12 @@ BEGIN
         ~~~~~
 
 EXTEND_TOP ~BZMSCST~
-    bz_caster_craft_scribe_scroll_divine_circle_%divine_spell_circle% //state number(s)
+    bz_caster_craft_scribe_scroll_divine_circle_%spell_circle% //state number(s)
         ~~~~~
 
     LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
         STR_VAR
-            ~Level~ = ~%divine_spell_circle%~
+            ~Level~ = ~%spell_circle%~
             ~Tradition~ = ~Divine~
         RET
             ~bz_scroll_time~ = ~time~
@@ -61,7 +61,7 @@ EXTEND_TOP ~BZMSCST~
         IF ~HaveKnownSpellRES("%keys_2%")~
         THEN
             REPLY ~%divine_scroll_transition_response%~
-            GOTO bz_caster_craft_scribe_scroll_divine_circle_%divine_spell_circle%_%keys_2%
+            GOTO bz_caster_craft_scribe_scroll_divine_circle_%spell_circle%_%keys_2%
                 ~~~~~
         END
 
@@ -96,13 +96,13 @@ APPEND ~BZMSCST~
 OUTER_FOR (i = 1; i < 9; ++i)
 BEGIN
     //Get the appropriate spell circle variable set up
-    OUTER_SPRINT ~divine_spell_circle~ ~0~
-    ACTION_IF (i = 8) THEN BEGIN OUTER_SPRINT ~divine_spell_circle~ ~Q~ END
-    ELSE BEGIN OUTER_SPRINT ~divine_spell_circle~ ~%i%~ END
+    OUTER_SPRINT ~spell_circle~ ~0~
+    ACTION_IF (i = 8) THEN BEGIN OUTER_SPRINT ~spell_circle~ ~Q~ END
+    ELSE BEGIN OUTER_SPRINT ~spell_circle~ ~%i%~ END
 
     LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
         STR_VAR
-            ~Level~ = ~%divine_spell_circle%~
+            ~Level~ = ~%spell_circle%~
             ~Tradition~ = ~Divine~
         RET
             ~bz_scroll_time~ = ~time~
@@ -137,7 +137,7 @@ BEGIN
                 ~ScrollCreation/CirclesDivine.D~
                 ~~~~~
     IF ~~
-    THEN BEGIN bz_caster_craft_scribe_scroll_divine_circle_%divine_spell_circle%_%keys_2%
+    THEN BEGIN bz_caster_craft_scribe_scroll_divine_circle_%spell_circle%_%keys_2%
         SAY ~%scroll_prompt%~
             IF ~HaveKnownSpellRES("%keys_2%")
 RandomNumLT(100, %bz_scroll_failure_bounds_success%)~   //created successfully
@@ -171,7 +171,7 @@ StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~~
             THEN REPLY @15033 // ~Pick another spell~
-                GOTO bz_caster_craft_scribe_scroll_divine_circle_%divine_spell_circle%
+                GOTO bz_caster_craft_scribe_scroll_divine_circle_%spell_circle%
             IF ~~
             THEN REPLY @15032 // ~Pick another spell circle~
                 GOTO bz_caster_craft_scribe_scroll_menu
