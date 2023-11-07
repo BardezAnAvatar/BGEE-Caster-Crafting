@@ -164,8 +164,6 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
             WRITE_BYTE (0x2D) ((%exclusion_flags% BAND 0x0000FF00) >> 8)    //mage byte
             WRITE_BYTE (0x2F) ((%exclusion_flags% BAND 0x000000FF))         //warrior byte
 
-            WRITE_LONG (0x1E) (%unusabilility_flags%)           //unusability flags
-
             WRITE_LONG (0x0C) (%spl_name%)                      //identified name
             WRITE_LONG (0x54) (%spl_description%)               //identified description
             WRITE_ASCII_TERMINATE (0x3A) ~%icon_inventory%~     //update the item inventory icon
@@ -253,7 +251,14 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
                     STR_VAR
                         resource = ~~
                 END
+
+                //OpCode 319 can ONLY restrict, not allow. So I still have to allow Druids. Moving the movability flag set down after this.
+                //See: https://forums.beamdog.com/discussion/64194/item-usability
+                SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT12 BOR BIT30)) //Druid
             END
+
+            //Set usability flags; have to wait until after the Shaman flag was set
+            WRITE_LONG (0x1E) (%unusabilility_flags%)           //unusability flags
 
 
             //write additional header for learning spell

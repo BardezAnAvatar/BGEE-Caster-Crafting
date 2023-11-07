@@ -38,7 +38,8 @@ OUTER_FOR (i = 1; i < 7; ++i)
             IF ~OR(2)
     Class(%PlayerN%, MAGE_ALL)
     Class(%PlayerN%, BARD_ALL)
-!InPartySlot(MYSELF, %i-minus-one%)~
+!InPartySlot(MYSELF, %i-minus-one%)
+!Class(%PlayerN%, SORCERER)~ //Sorcerers do not have spellbooks!
             THEN REPLY ~%tag_PlayerN%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%
             ~~~~~
@@ -284,7 +285,8 @@ APPEND ~BZMSCST~
 
                 OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.
                 OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %readable_time%] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.
-
+                OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                 APPEND_OUTER -
                     ~SpellbookCopy/Player%i%States.D~
@@ -301,6 +303,7 @@ AddSpecialAbility("%keys_1%")
 TakePartyGold(%copy_gold_cost%)
 DestroyGold(%copy_gold_cost%)
 AdvanceTime(%copy_time_engine%)
+DisplayString(Myself, %elapsed_strref%)
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ClearAllActions()
 StartCutSceneMode()

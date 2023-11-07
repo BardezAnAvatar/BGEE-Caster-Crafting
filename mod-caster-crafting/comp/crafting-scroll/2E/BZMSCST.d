@@ -70,6 +70,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -82,6 +85,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -92,6 +98,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -104,6 +113,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -114,6 +126,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -126,6 +141,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -136,6 +154,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -148,6 +169,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -158,6 +182,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -170,6 +197,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -180,6 +210,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -194,6 +227,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -204,6 +240,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -216,6 +255,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -226,6 +268,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -238,6 +283,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -248,6 +296,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
@@ -260,6 +311,9 @@ APPEND ~BZMSCST~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
             IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
+            IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT
     END
@@ -270,6 +324,9 @@ APPEND ~BZMSCST~
             IF ~~
             THEN REPLY @15032 //~[Pick another spell circle]~
                 GOTO bz_caster_craft_scribe_scroll_menu
+            IF ~~
+            THEN REPLY @15031 // ~Go back to your scribe tools.~
+                GOTO bz_caster_craft_scribe_main_menu
             IF ~~
             THEN REPLY @15030 //~Pack up your scribe tools~
                 EXIT

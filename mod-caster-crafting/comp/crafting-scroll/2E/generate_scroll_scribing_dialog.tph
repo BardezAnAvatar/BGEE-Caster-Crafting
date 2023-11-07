@@ -71,13 +71,12 @@ END
 *******************************************************/
 
 
-
 //Copy the dialog content
 COPY -
     ~ScrollCreation/BZMSCST.D~
     ~ScrollCreation/BZMSCST.D~
         //Patches
         APPEND_FILE TEXT ~ScrollCreation/CircleTransitions.D~
-        APPEND_FILE TEXT ~ScrollCreation/CircleProtection.D~
-        APPEND_FILE TEXT ~ScrollCreation/CirclesDivine.D~
         APPEND_FILE TEXT ~ScrollCreation/CirclesArcane.D~
+        APPEND_FILE TEXT ~ScrollCreation/CirclesDivine.D~
+        APPEND_FILE TEXT ~ScrollCreation/CircleProtection.D~

@@ -15,8 +15,9 @@
 @15033 = ~Pick another spell.~
 @15034 = ~\[%copy_gold_cost% gold; %readable_time%\] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.~
 @15035 = ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
-@15037 = ~%days% days~
-@15038 = ~%hours% hours~
+@15036 = ~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"; "1 days" or "1 hours" are an unfortunate side effect
+@15037 = ~%days% day(s)~
+@15038 = ~%hours% hour(s)~
 
 //Common Prompts
 @15040 = ~Which spell circle do you explore?~

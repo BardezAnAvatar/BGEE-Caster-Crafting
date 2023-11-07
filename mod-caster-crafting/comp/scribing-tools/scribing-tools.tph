@@ -14,8 +14,8 @@ COPY -
     ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
     ~Generated/BZMSCST.d~
         //Patches
-        APPEND_FILE TEXT ~SpellbookCopy/BZMSCST.D~
         APPEND_FILE TEXT ~ScrollCreation/BZMSCST.D~
+        APPEND_FILE TEXT ~SpellbookCopy/BZMSCST.D~
 
 //DEBUG so I can read it
 COPY
@@ -46,6 +46,7 @@ BEGIN
             SAY IDENTIFIED_DESC @20001
             WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
             WRITE_LONG 0x34 2000                            // Price
+            WRITE_SHORT 0x38 1                              // Stack Size
             WRITE_LONG 0x42 10                              // Lore to Identify
             WRITE_LONG 0x4C 10                              // Weight
             READ_LONG 0x18 ~bzmsckar_flags~
@@ -67,6 +68,7 @@ BEGIN
             SAY IDENTIFIED_DESC @20001
             WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
             WRITE_LONG 0x34 2000                            // Price
+            WRITE_SHORT 0x38 1                              // Stack Size
             WRITE_LONG 0x42 10                              // Lore to Identify
             WRITE_LONG 0x4C 10                              // Weight
             WRITE_ASCII_TERMINATE 0x58 "BZMISTD"            // Description Image

@@ -14,7 +14,7 @@ APPEND_OUTER -
 
 EXTEND_TOP ~BZMSCST~
     bz_caster_craft_scribe_scroll_menu //state number(s)
-    #1 //transition number; inject between 1 and 2
+    //#1 //transition number; inject between 1 and 2
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane1_bard%)
 Class(Myself, BARD_ALL)~
