@@ -142,6 +142,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!H1014~, ~SPPR710~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Holy Word.BAM~,                   ~BZ!H10I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Holy Word
         ~BZ!H1114~, ~SPPR711~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Regeneration.BAM~,                ~BZ!H11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Regeneration
         ~BZ!H1214~, ~SPPR712~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Resurrection.BAM~,                ~BZ!H12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Resurrection
+        ~BZ!H1314~, ~SPPR713~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Greater Restoration.BAM~,         ~BZ!H13I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Restoration
         ~BZ!H1514~, ~SPPR715~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Unholy Word.BAM~,                 ~BZ!H15I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Unholy Word
         ~BZ!H1714~, ~SPPR717~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Creeping Doom.BAM~,               ~BZ!H17I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Creeping Doom
         ~BZ!H1814~, ~SPPR718~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Symbol, Stun.BAM~,                ~BZ!H18I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Symbol, Stun
@@ -157,6 +158,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         //Spells missing from the game:
         /*
+        ~SCRLSD~,  ~SPPR713~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRLSD~  //Greater Restoration
         ~BZ!I2215~, ~SPPR722~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Storm of Vengeance.BAM~,          ~BZ!I22I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Storm of Vengeance
         ~BZ!I2315~, ~SPPR723~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Elemental Summoning.BAM~,         ~BZ!I23I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Elemental Summoning
         ~BZ!I2415~, ~SPPR724~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/core/Greater Elemental Summoning.BAM~, ~BZ!I24I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Greater Elemental Summoning

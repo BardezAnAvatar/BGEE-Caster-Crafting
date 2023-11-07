@@ -11,76 +11,76 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Additional Cost]       // 5
         */
 
-        ~CDIA116~, ~SPPR116~, ~Divine~, ~1~, ~1~, ~0~ => ~CDIA116~    //Curse
-        ~CDIA117~, ~SPPR117~, ~Divine~, ~1~, ~1~, ~0~ => ~CDIA117~    //Cause Light Wounds
-        ~CDIA118~, ~SPPR118~, ~Divine~, ~1~, ~1~, ~0~ => ~CDIA118~    //Sunscorch
+        ~CDID116~, ~SPPR116~, ~Divine~, ~1~, ~1~, ~0~  => ~CDID116~    //Curse
+        ~CDID117~, ~SPPR117~, ~Divine~, ~1~, ~1~, ~0~  => ~CDID117~    //Cause Light Wounds
+        ~CDID118~, ~SPPR118~, ~Divine~, ~1~, ~1~, ~0~  => ~CDID118~    //Sunscorch
 
-        ~CDIA216~, ~SPPR216~, ~Divine~, ~2~, ~3~, ~0~ => ~CDIA216~    //Cure Moderate Wounds
-        ~CDIA217~, ~SPPR217~, ~Divine~, ~2~, ~3~, ~0~ => ~CDIA217~    //Alicorn Lance
-        ~CDIA218~, ~SPPR218~, ~Divine~, ~2~, ~3~, ~0~ => ~CDIA218~    //Beast Claw
-        ~CDIA219~, ~SPPR219~, ~Divine~, ~2~, ~3~, ~0~ => ~CDIA219~    //Cause Moderate Wounds
+        ~CDID216~, ~SPPR216~, ~Divine~, ~2~, ~3~, ~0~  => ~CDID216~    //Cure Moderate Wounds
+        ~CDID217~, ~SPPR217~, ~Divine~, ~2~, ~3~, ~0~  => ~CDID217~    //Alicorn Lance
+        ~CDID218~, ~SPPR218~, ~Divine~, ~2~, ~3~, ~0~  => ~CDID218~    //Beast Claw
+        ~CDID219~, ~SPPR219~, ~Divine~, ~2~, ~3~, ~0~  => ~CDID219~    //Cause Moderate Wounds
 
-        ~CDIA320~, ~SPPR320~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA320~    //Prayer
-        ~CDIA321~, ~SPPR321~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA321~    //Cause Disease
-        ~CDIA322~, ~SPPR322~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA322~    //Exaltation
-        ~CDIA323~, ~SPPR323~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA323~    //Moonblade
-        ~CDIA324~, ~SPPR324~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA324~    //Circle of Bones
-        ~CDIA325~, ~SPPR325~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA325~    //Spike Growth
-        ~CDIA326~, ~SPPR326~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA326~    //Cloudburst
-        ~CDIA327~, ~SPPR327~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA327~    //Mold Touch
-        ~CDIA328~, ~SPPR328~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA328~    //Storm Shell
-        ~CDIA329~, ~SPPR329~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA329~    //Cause Medium Wounds
-        ~CDIA330~, ~SPPR330~, ~Divine~, ~3~, ~5~, ~0~ => ~CDIA330~    //Favor of Illmater
+        ~CDID320~, ~SPPR320~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID320~    //Prayer
+        ~CDID321~, ~SPPR321~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID321~    //Cause Disease
+        ~CDID322~, ~SPPR322~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID322~    //Exaltation
+        ~CDID323~, ~SPPR323~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID323~    //Moonblade
+        ~CDID324~, ~SPPR324~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID324~    //Circle of Bones
+        ~CDID325~, ~SPPR325~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID325~    //Spike Growth
+        ~CDID326~, ~SPPR326~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID326~    //Cloudburst
+        ~CDID327~, ~SPPR327~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID327~    //Mold Touch
+        ~CDID328~, ~SPPR328~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID328~    //Storm Shell
+        ~CDID329~, ~SPPR329~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID329~    //Cause Medium Wounds
+        ~CDID330~, ~SPPR330~, ~Divine~, ~3~, ~5~, ~0~  => ~CDID330~    //Favor of Illmater
 
-        ~CDIA419~, ~SPPR419~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA419~    //Static Charge
-        ~CDIA420~, ~SPPR420~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA420~    //Recitation
-        ~CDIA421~, ~SPPR421~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA421~    //Blood Rage
-        ~CDIA422~, ~SPPR422~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA422~    //Cloud of Pestilance
-        ~CDIA423~, ~SPPR423~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA423~    //Unfailing Endurance
-        ~CDIA424~, ~SPPR424~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA424~    //Star Metal Cudgel
-        ~CDIA425~, ~SPPR425~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA425~    //Smashing Wave
-        ~CDIA426~, ~SPPR426~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA426~    //Thorn Spray
-        ~CDIA427~, ~SPPR427~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA427~    //Wall of Moonlight
-        ~CDIA428~, ~SPPR428~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA428~    //Cause Serious Wounds
-        ~CDIA429~, ~SPPR429~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA429~    //Giant Insect
+        ~CDID419~, ~SPPR419~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID419~    //Static Charge
+        ~CDID420~, ~SPPR420~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID420~    //Recitation
+        ~CDID421~, ~SPPR421~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID421~    //Blood Rage
+        ~CDID422~, ~SPPR422~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID422~    //Cloud of Pestilance
+        ~CDID423~, ~SPPR423~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID423~    //Unfailing Endurance
+        ~CDID424~, ~SPPR424~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID424~    //Star Metal Cudgel
+        ~CDID425~, ~SPPR425~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID425~    //Smashing Wave
+        ~CDID426~, ~SPPR426~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID426~    //Thorn Spray
+        ~CDID427~, ~SPPR427~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID427~    //Wall of Moonlight
+        ~CDID428~, ~SPPR428~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID428~    //Cause Serious Wounds
+        ~CDID429~, ~SPPR429~, ~Divine~, ~4~, ~7~, ~0~  => ~CDID429~    //Giant Insect
 
-        ~CDIA518~, ~SPPR518~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA518~    //Righteous Wrath of the Faithful
-        ~CDIA519~, ~SPPR519~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA519~    //Spike Stones
-        ~CDIA520~, ~SPPR520~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA520~    //Shield of Lathander
-        ~CDIA521~, ~SPPR521~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA521~    //Undead Ward
-        ~CDIA522~, ~SPPR522~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA522~    //Animal Rage
-        ~CDIA523~, ~SPPR523~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA523~    //Mass Cause Light Wounds
-        ~CDIA524~, ~SPPR524~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA524~    //Cause Critical Wounds
+        ~CDID518~, ~SPPR518~, ~Divine~, ~5~, ~9~, ~0~  => ~CDID518~    //Righteous Wrath of the Faithful
+        ~CDID519~, ~SPPR519~, ~Divine~, ~5~, ~9~, ~0~  => ~CDID519~    //Spike Stones
+        ~CDID520~, ~SPPR520~, ~Divine~, ~5~, ~9~, ~0~  => ~CDID520~    //Shield of Lathander
+        ~CDID521~, ~SPPR521~, ~Divine~, ~5~, ~9~, ~0~  => ~CDID521~    //Undead Ward
+        ~CDID522~, ~SPPR522~, ~Divine~, ~5~, ~9~, ~0~  => ~CDID522~    //Animal Rage
+        ~CDID523~, ~SPPR523~, ~Divine~, ~5~, ~9~, ~0~  => ~CDID523~    //Mass Cause Light Wounds
+        ~CDID524~, ~SPPR524~, ~Divine~, ~5~, ~9~, ~0~  => ~CDID524~    //Cause Critical Wounds
 
-        ~CDIA615~, ~SPPR615~, ~Divine~, ~6~, ~12~, ~0~ => ~CDIA615~   //Entropy Shield
-        ~CDIA616~, ~SPPR616~, ~Divine~, ~6~, ~12~, ~0~ => ~CDIA616~   //Whirlwind
-        ~CDIA617~, ~SPPR617~, ~Divine~, ~6~, ~12~, ~0~ => ~CDIA617~   //Spiritual Wrath
+        ~CDID615~, ~SPPR615~, ~Divine~, ~6~, ~12~, ~0~ => ~CDID615~   //Entropy Shield
+        ~CDID616~, ~SPPR616~, ~Divine~, ~6~, ~12~, ~0~ => ~CDID616~   //Whirlwind
+        ~CDID617~, ~SPPR617~, ~Divine~, ~6~, ~12~, ~0~ => ~CDID617~   //Spiritual Wrath
 
-        ~CDIA714~, ~SPPR714~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA714~   //Energy Drain
-        ~CDIA733~, ~SPPR733~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA733~   //Symbol, Pain
-        ~CDIA734~, ~SPPR734~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA734~   //Symbol, Hopelessness
-        ~CDIA735~, ~SPPR735~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA735~   //Impervious Sanctity of Mind
-        ~CDIA736~, ~SPPR736~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA736~   //Destruction
-        ~CDIA737~, ~SPPR737~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA737~   //Greater Shield of Lathander
-        ~CDIA738~, ~SPPR738~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA738~   //Mist of Eldath
-        ~CDIA739~, ~SPPR739~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA739~   //Stalker
-        ~CDIA740~, ~SPPR740~, ~Divine~, ~7~, ~14~, ~0~ => ~CDIA740~   //Wither
+        ~CDID714~, ~SPPR714~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID714~   //Energy Drain
+        ~CDID733~, ~SPPR733~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID733~   //Symbol, Pain
+        ~CDID734~, ~SPPR734~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID734~   //Symbol, Hopelessness
+        ~CDID735~, ~SPPR735~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID735~   //Impervious Sanctity of Mind
+        ~CDID736~, ~SPPR736~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID736~   //Destruction
+        ~CDID737~, ~SPPR737~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID737~   //Greater Shield of Lathander
+        ~CDID738~, ~SPPR738~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID738~   //Mist of Eldath
+        ~CDID739~, ~SPPR739~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID739~   //Stalker
+        ~CDID740~, ~SPPR740~, ~Divine~, ~7~, ~14~, ~0~ => ~CDID740~   //Wither
 
 
         /********************
         *   Special cases   *
         ********************/
         //special -- in-game already, moved from 613 to here
-        ~CDIA525~, ~SPPR525~, ~Divine~, ~5~, ~9~, ~0~ => ~CDIA525~    //Physical Mirror
+        ~CDID525~, ~SPPR525~, ~Divine~, ~5~, ~9~, ~0~ => ~CDID525~    //Physical Mirror
     END
 
 
 ACTION_IF (NOT %bz_OlvynSpells_installed%)
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
     BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list~
-            BEGIN
-                //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-                ~CDIA418~, ~SPPR418~, ~Divine~, ~4~, ~7~, ~0~ => ~CDIA418~    //Produce Fire
-            END
+        //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+        ~CDID418~, ~SPPR418~, ~Divine~, ~4~, ~7~, ~0~ => ~CDID418~    //Produce Fire
     END
+END

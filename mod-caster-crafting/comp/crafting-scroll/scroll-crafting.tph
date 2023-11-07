@@ -1,0 +1,21 @@
+/****************************
+*   Scroll scribing stuff   *
+****************************/
+
+//Generate the data used to process scrolls during installation   *
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/process_scroll_registry.tph~
+
+//Install Cursed scrolls, random treasure table, etc.
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/install_cursed_scrolls.tph~
+
+//Copy the base states
+COPY -
+    ~ScrollCreation/BZMSCST.D~
+    ~ScrollCreation/BZMSCST.D~
+        //Patches
+        //APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-scroll/BZMSCST.d~
+        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/BZMSCST.d~
+
+//Generate dialog options
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_scroll_scribing_dialog.tph~
+

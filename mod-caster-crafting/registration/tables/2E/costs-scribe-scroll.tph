@@ -31,5 +31,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~5-Divine~, ~5~, ~Divine~, ~120~, ~0~, ~25~ => ~5-Divine~
         ~6-Divine~, ~6~, ~Divine~, ~144~, ~0~, ~30~ => ~6-Divine~
         ~7-Divine~, ~7~, ~Divine~, ~168~, ~0~, ~35~ => ~7-Divine~
+        ~Q-Divine~, ~Q~, ~Divine~, ~192~, ~0~, ~40~ => ~Q-Divine~
 
     END

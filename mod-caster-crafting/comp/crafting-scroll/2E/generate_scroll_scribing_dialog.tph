@@ -1,0 +1,83 @@
+/*****************************************
+*   Spell circle checks by class/level   *
+*****************************************/
+//Include vars for configuring the gatekeeping checks
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/vars_gatekeep_sicles.tph~
+
+
+//TODO: Override the defaults? read 2DA files that fuck with the progression tables?
+
+
+//Menu checks by class/level
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_circle_transitions.tph~
+/**********************************************
+*   END: Spell circle checks by class/level   *
+**********************************************/
+
+
+
+
+/***********************************************
+*   Protection scroll menu and dialog states   *
+***********************************************/
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_protection_menu.tph~
+
+/****************************************************
+*   END: Protection scroll menu and dialog states   *
+****************************************************/
+
+
+
+
+
+/**************************************************
+*   Arcane/Divine scroll menu and dialog states   *
+**************************************************/
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/fn_generate_tradition_scroll_menu.tph~
+
+//divine scrolls
+//Declare an empty file that I can use as a buffer
+<<<<<<<< ScrollCreation/CirclesDivine.D
+
+>>>>>>>>
+LAF ~bz_generate_tradition_scroll_menu~
+    INT_VAR
+        ~LevelMax~ = 8 //maximum number of spell circles
+    STR_VAR
+        ~LevelMaxChar~ = ~Q~ // Q for quest-level
+        ~CircleTradition~ = ~Divine~
+        ~BufferName~ = ~ScrollCreation/CirclesDivine.D~   //name of file to append to
+        ~StateTraditionName~ = ~divine~   //lower case name of tradition to use in state transitions and such
+        ~ScrollAnalysisPrompt~ = ~15090~
+END
+
+//Declare an empty file that I can use as a buffer
+<<<<<<<< ScrollCreation/CirclesArcane.D
+
+>>>>>>>>
+LAF ~bz_generate_tradition_scroll_menu~
+    INT_VAR
+        ~LevelMax~ =10 //maximum number of spell circles
+    STR_VAR
+        ~LevelMaxChar~ = ~A~ //A for 10-th level
+        ~CircleTradition~ = ~Arcane~
+        ~BufferName~ = ~ScrollCreation/CirclesArcane.D~   //name of file to append to
+        ~StateTraditionName~ = ~arcane~   //lower case name of tradition to use in state transitions and such
+        ~ScrollAnalysisPrompt~ = ~15100~
+END
+
+/*******************************************************
+*   END: Arcane/Divine scroll menu and dialog states   *
+*******************************************************/
+
+
+
+//Copy the dialog content
+COPY -
+    ~ScrollCreation/BZMSCST.D~
+    ~ScrollCreation/BZMSCST.D~
+        //Patches
+        APPEND_FILE TEXT ~ScrollCreation/CircleTransitions.D~
+        APPEND_FILE TEXT ~ScrollCreation/CircleProtection.D~
+        APPEND_FILE TEXT ~ScrollCreation/CirclesDivine.D~
+        APPEND_FILE TEXT ~ScrollCreation/CirclesArcane.D~

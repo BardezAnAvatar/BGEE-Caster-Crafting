@@ -10,15 +10,20 @@
 ******************************************************************************/
 
 //Emit the final result prior to compilation
-COPY
+COPY -
     ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
-    ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
+    ~Generated/BZMSCST.d~
         //Patches
         APPEND_FILE TEXT ~SpellbookCopy/BZMSCST.D~
         APPEND_FILE TEXT ~ScrollCreation/BZMSCST.D~
 
+//DEBUG so I can read it
+COPY
+    ~Generated/BZMSCST.d~
+    ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.DEBUG.d~
+
 //compile the new dialog (with huge mutated edits)
-COMPILE ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.d~
+COMPILE ~Generated/BZMSCST.d~
 
 
 /****************************
@@ -81,3 +86,6 @@ COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
 
 //Add the kit to stores
 INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/add-to-stores.tph~
+
+//Install the custscene
+INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/install_cutscene.tph~

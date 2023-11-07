@@ -6,8 +6,12 @@ DEFINE_ACTION_FUNCTION ~bz_lookup_costs_scroll~
         ~time~
         ~xp~
         ~failure~
+        ~time_engine~
+        ~time_readable~
     BEGIN
         OUTER_SPRINT ~time~ ~~
+        OUTER_SPRINT ~time_engine~ ~~
+        OUTER_SPRINT ~time_readable~ ~~
         OUTER_SPRINT ~xp~ ~~
         OUTER_SPRINT ~failure~ ~~
 
@@ -24,4 +28,18 @@ DEFINE_ACTION_FUNCTION ~bz_lookup_costs_scroll~
                     END
                 END
 
+        //calculate a friendly time for display on dialog (hours vs. days)
+        ACTION_IF %time% < 24 THEN
+        BEGIN
+            OUTER_SET ~hours~ = %time%
+            OUTER_SPRINT ~time_readable~ @15038 // `%keys_5% hours`
+        END
+        ELSE    //days
+        BEGIN
+            OUTER_SET ~days~ = %time% / 24
+            OUTER_SPRINT ~time_readable~ @15037 // `(%keys_5% / 24) days`
+        END
+
+        //calculate the in-engine time in engine clock ticks
+        OUTER_SET ~time_engine~ = %time% * 300
     END

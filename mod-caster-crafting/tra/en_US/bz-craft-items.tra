@@ -15,3 +15,20 @@ STATISTICS:
 
 Weight: 10~~~~~
 @20003 = ~Use Scribe Kit~
+
+/******************************
+*   Cursed scrolls from BG2   *
+******************************/
+@20009 = ~Protection Scroll~
+@20010 = ~Cursed Scroll of Weakness~
+@20011 = ~Cursed Scroll of Clumsiness~
+@20012 = ~Cursed Scroll of Foolishness~
+@20013 = ~Cursed Scroll of Ugliness~
+@20014 = ~Cursed Scroll of Summon Monster~
+@20016 = ~Cursed Scroll of Petrification~
+@20017 = ~Cursed Scroll of Ailment~
+@20018 = ~Cursed Scroll of Stupidity~
+
+//Protection scroll descriptions
+@20040 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud, the protective magic is released upon the target of the reader's choice. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
+@20041 = ~This scroll is cursed. It would be unwise to read it, as the effects could prove fatal.~
