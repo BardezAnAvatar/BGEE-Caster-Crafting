@@ -2,7 +2,7 @@
 *   Scroll scribing stuff   *
 ****************************/
 
-//cGenerate the data used to process scrolls during installation   *
+//Generate the data used to process scrolls during installation   *
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/process_scroll_registry.tph~
 
 //Install Cursed scrolls, random treasure table, etc.
