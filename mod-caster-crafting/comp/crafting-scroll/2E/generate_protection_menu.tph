@@ -78,7 +78,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
         //Get the cost in gold for the scroll
         COPY_EXISTING - ~%value%.ITM~ ~override~
             //Patches
-            READ_LONG (0x34) ~bz_scroll_cost~
+            READ_LONG (0x34) ~scroll_gold_cost~
             READ_LONG (0x0C) ~bz_scroll_name_STRREF~
         BUT_ONLY_IF_IT_CHANGES
 
@@ -131,7 +131,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
         //Get the cost in gold for the scroll
         COPY_EXISTING - ~%value%.ITM~ ~override~
             //Patches
-            READ_LONG (0x34) ~bz_scroll_cost~
+            READ_LONG (0x34) ~scroll_gold_cost~
             READ_LONG NAME2 ~bz_scroll_name_STRREF~
         BUT_ONLY_IF_IT_CHANGES
 
@@ -164,7 +164,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
 
 	                ACTION_GET_STRREF (%bz_spell_name_STRREF%) ~spell_name~
 
-                    OUTER_SPRINT ~protection_scroll_spell_response~ @15083 // ~\[%scroll_gold_cost% gold; %readable_time%\] %spell_name%.~
+                    OUTER_SPRINT ~protection_scroll_spell_response~ @15035 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
 
                     APPEND_OUTER -
                         ~ScrollCreation/CircleProtection.D~
@@ -174,8 +174,8 @@ RandomNumLT(100, %bz_protection_failure_bounds_success%)~   //created successful
             THEN
                 REPLY ~%protection_scroll_spell_response%~
                 DO ~
-TakePartyGold(%bz_scroll_cost%)
-DestroyGold(%bz_scroll_cost%)
+TakePartyGold(%scroll_gold_cost%)
+DestroyGold(%scroll_gold_cost%)
 AdvanceTime(%copy_time_engine%)
 GiveItemCreate("%value%", Myself, 1, 0, 0)
 CreateVisualEffectObject("BZSCRIBE", Myself)
@@ -188,8 +188,8 @@ RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cu
             THEN
                 REPLY ~%protection_scroll_spell_response%~
                 DO ~
-TakePartyGold(%bz_scroll_cost%)
-DestroyGold(%bz_scroll_cost%)
+TakePartyGold(%scroll_gold_cost%)
+DestroyGold(%scroll_gold_cost%)
 AdvanceTime(%copy_time_engine%)
 CreateCreature("BZCSCRL", [-1.-1], S)
 CreateVisualEffectObject("BZSCRIBE", Myself)

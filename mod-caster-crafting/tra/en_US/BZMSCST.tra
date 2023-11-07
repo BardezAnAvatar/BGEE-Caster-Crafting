@@ -14,7 +14,7 @@
 @15032 = ~Pick another spell circle.~
 @15033 = ~Pick another spell.~
 @15034 = ~\[%copy_gold_cost% gold; %readable_time%\] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.~
-@15035 = ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_list_data_11%.~
+@15035 = ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
 @15037 = ~%days% days~
 @15038 = ~%hours% hours~
 
@@ -53,5 +53,5 @@
 @15080 = ~Which scroll of Protection do you wish to scribe?~
 @15081 = ~Pick another Protection scroll.~
 @15082 = ~Which memorized spell should be used to create the scroll of %scroll_name%?~
-@15083 = ~\[%bz_scroll_cost% gold; %readable_time%\] %spell_name%~
-@15084 = ~\[%scroll_gold_cost% gold; %readable_time%\] %spell_name%.~
+
+//Divine Spells
