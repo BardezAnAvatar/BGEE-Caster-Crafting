@@ -32,7 +32,7 @@ EXTEND_TOP ~BZMSCST~
             LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
                 STR_VAR
                     ~Level~ = ~%spell_circle%~
-                    ~Tradition~ = ~Divine~
+                    ~Tradition~ = ~%CircleTradition%~
                 RET
                     ~bz_scroll_time~ = ~time~
                     ~bz_scroll_failure~ = ~failure~
@@ -106,7 +106,7 @@ APPEND ~BZMSCST~
             LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
                 STR_VAR
                     ~Level~ = ~%spell_circle%~
-                    ~Tradition~ = ~CircleTradition~
+                    ~Tradition~ = ~%CircleTradition%~
                 RET
                     ~bz_scroll_time~ = ~time~
                     ~bz_scroll_failure~ = ~failure~
