@@ -28,10 +28,24 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_protecti
 
 
 
+
+
+/**************************************************
+*   Arcane/Divine scroll menu and dialog states   *
+**************************************************/
+//INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_arcane_menu.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_divine_menu.tph~
+
+/*******************************************************
+*   END: Arcane/Divine scroll menu and dialog states   *
+*******************************************************/
+
+
+
 //Copy the dialog content
 COPY -
     ~ScrollCreation/BZMSCST.D~
     ~ScrollCreation/BZMSCST.D~
         //Patches
         APPEND_FILE TEXT ~ScrollCreation/CircleProtection.D~
-
+        APPEND_FILE TEXT ~ScrollCreation/CirclesDivine.D~
