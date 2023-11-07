@@ -20,7 +20,6 @@ ACTION_IF (%bz_OlvynSpells_installed%)
         INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/arcane.tph~
         //There are NO scrolls for priest spells included
     END
-    //NOTE: yes, the redefinition acts as a sort of merge, as printed in debug statements
 
 
 
