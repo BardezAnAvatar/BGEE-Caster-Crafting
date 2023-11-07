@@ -134,8 +134,8 @@ APPEND ~BZMSCST~
                             ACTION_GET_STRREF (%bz_scroll_name_STRREF%) ~scroll_name~
                             OUTER_SPRINT ~spell_name~ ~%keys_11%~
 
-                            OUTER_SPRINT ~scroll_prompt~ @15090 // ~You meditate over the spell %spell_name% and prepare its power.~
-                            OUTER_SPRINT ~scroll_response~ (AT ~ScrollAnalysisPrompt~) // e.g.: ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                            OUTER_SPRINT ~scroll_prompt~ (AT ~ScrollAnalysisPrompt~) // e.g.: ~You meditate over the spell %spell_name% and prepare its power.~
+                            OUTER_SPRINT ~scroll_response~ @15035 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
 
                             //Give the type of scroll as a dialog option
                             APPEND_OUTER -
