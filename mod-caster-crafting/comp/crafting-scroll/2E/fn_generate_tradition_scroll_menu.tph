@@ -40,7 +40,7 @@ EXTEND_TOP ~BZMSCST~
                     ~readable_time~ = ~time_readable~
             END
 
-            //Generate the transitions and name the states for individual divine scrolls
+            //Generate the transitions and name the states for individual scrolls
             ACTION_PHP_EACH ~scroll_list_data~
                 AS ~keys~ => ~value~
                 BEGIN
