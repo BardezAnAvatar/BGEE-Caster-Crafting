@@ -44,7 +44,7 @@ LAF ~bz_generate_tradition_scroll_menu~
     INT_VAR
         ~LevelMax~ = 8 //maximum number of spell circles
     STR_VAR
-        ~LevelMaxChar~ = ~Q~ //A for 10-th level or Q for quest-level
+        ~LevelMaxChar~ = ~Q~ // Q for quest-level
         ~CircleTradition~ = ~Divine~
         ~BufferName~ = ~ScrollCreation/CirclesDivine.D~   //name of file to append to
         ~StateTraditionName~ = ~divine~   //lower case name of tradition to use in state transitions and such
@@ -59,8 +59,8 @@ LAF ~bz_generate_tradition_scroll_menu~
     INT_VAR
         ~LevelMax~ =10 //maximum number of spell circles
     STR_VAR
-        ~LevelMaxChar~ = ~A~ //A for 10-th level or Q for quest-level
-        ~CircleTradition~ = ~Divine~
+        ~LevelMaxChar~ = ~A~ //A for 10-th level
+        ~CircleTradition~ = ~Arcane~
         ~BufferName~ = ~ScrollCreation/CirclesArcane.D~   //name of file to append to
         ~StateTraditionName~ = ~arcane~   //lower case name of tradition to use in state transitions and such
         ~ScrollAnalysisPrompt~ = ~15100~
