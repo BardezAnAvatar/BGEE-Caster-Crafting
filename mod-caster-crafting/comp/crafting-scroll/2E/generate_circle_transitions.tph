@@ -20,7 +20,7 @@ EXTEND_TOP ~BZMSCST~
 Class(BARD_ALL)~
         THEN REPLY @15051 //~1st arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_1
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane1_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane1_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15051 //~1st arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_1
@@ -34,7 +34,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15052 //~2nd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_2
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane2_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane2_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15052 //~2nd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_2
@@ -50,7 +50,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15053 //~3rd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_3
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane3_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane3_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15053 //~3rd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_3
@@ -64,7 +64,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15054 //~4th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_4
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane4_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane4_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15054 //~4th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_4
@@ -78,7 +78,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15055 //~5th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_5
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane5_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane5_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15055 //~5th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_5
@@ -92,7 +92,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15056 //~6th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_6
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane6_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane6_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15056 //~6th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_6
@@ -106,7 +106,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15057 //~7th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_7
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane7_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane7_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15057 //~7th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_7
@@ -120,7 +120,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15058 //~8th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_8
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane8_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane8_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15058 //~8th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_8
@@ -134,7 +134,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15059 //~9th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_9
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane9_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane9_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15059 //~9th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_9
@@ -148,7 +148,7 @@ Class(MAGE_ALL)
 Class(BARD_ALL)~
         THEN REPLY @15060 //~10th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_A
-        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcaneA_SORCERER%)
+        IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcaneA_sorcerer%)
 Class(SORCERER)~
         THEN REPLY @15060 //~10th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_A
