@@ -216,7 +216,7 @@ Class(DRUID_ALL)~
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine3_paladin%)
 Class(PALADIN_ALL)~
         THEN REPLY  @15063 //~3rd divine circle~
-            GOTO b_caster_craft_scribe_scroll_divine_circle_3
+            GOTO bz_caster_craft_scribe_scroll_divine_circle_3
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine3_ranger%)
 Class(RANGER_ALL)~
         THEN REPLY @15063 //~3rd divine circle~
