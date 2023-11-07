@@ -67,7 +67,7 @@ ACTION_IF (%bz_OlvynSpells_installed%)
     BEGIN
         PRINT ~DEBUG: Include Olvyn Spells~
         INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/iwdification/priest.tph~
+        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/priest.tph~
     END
 
 //Include lookup tables
