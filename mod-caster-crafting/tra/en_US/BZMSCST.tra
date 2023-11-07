@@ -54,4 +54,7 @@
 @15081 = ~Pick another Protection scroll.~
 @15082 = ~Which memorized spell should be used to create the scroll of %scroll_name%?~
 
-//Divine Spells
+//Divine scrolls
+@15090 = ~You meditate over the spell %spell_name% and prepare its power.~
+
+//Arcane scrolls
