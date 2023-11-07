@@ -17,144 +17,144 @@ EXTEND_TOP ~BZMSCST~
     #1 //transition number; inject between 1 and 2
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane1_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15051 //~1st arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_1
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane1_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15051 //~1st arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_1
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane1_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15051 //~1st arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_1
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane2_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15052 //~2nd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_2
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane2_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15052 //~2nd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_2
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane2_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15052 //~2nd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_2
 
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane3_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15053 //~3rd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_3
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane3_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15053 //~3rd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_3
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane3_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15053 //~3rd arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_3
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane4_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15054 //~4th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_4
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane4_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15054 //~4th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_4
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane4_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15054 //~4th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_4
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane5_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15055 //~5th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_5
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane5_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15055 //~5th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_5
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane5_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15055 //~5th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_5
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane6_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15056 //~6th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_6
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane6_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15056 //~6th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_6
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane6_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15056 //~6th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_6
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane7_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15057 //~7th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_7
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane7_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15057 //~7th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_7
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane7_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15057 //~7th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_7
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane8_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15058 //~8th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_8
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane8_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15058 //~8th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_8
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane8_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15058 //~8th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_8
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane9_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15059 //~9th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_9
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane9_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15059 //~9th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_9
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcane9_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15059 //~9th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_9
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcaneA_bard%)
-Class(BARD_ALL)~
+Class(Myself, BARD_ALL)~
         THEN REPLY @15060 //~10th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_A
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcaneA_sorcerer%)
-Class(SORCERER)~
+Class(Myself, SORCERER)~
         THEN REPLY @15060 //~10th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_A
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_arcaneA_mage%)
-Class(MAGE_ALL)
-!Class(SORCERER)~
+Class(Myself, MAGE_ALL)
+!Class(Myself, SORCERER)~
         THEN REPLY @15060 //~10th arcane circle~
             GOTO bz_caster_craft_scribe_scroll_arcane_circle_A
 
@@ -162,177 +162,185 @@ Class(MAGE_ALL)
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine1_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15061 //~1st divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_1
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine1_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15061 //~1st divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_1
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine1_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY @15061 //~1st divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_1
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine1_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15061 //~1st divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_1
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine1_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15061 //~1st divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_1
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine2_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15062 //~2nd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_2
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine2_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15062 //~2nd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_2
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine2_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY @15062 //~2nd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_2
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine2_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15062 //~2nd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_2
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine2_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15062 //~2nd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_2
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine3_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15063 //~3rd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_3
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine3_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15063 //~3rd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_3
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine3_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY  @15063 //~3rd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_3
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine3_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15063 //~3rd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_3
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine3_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15063 //~3rd divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_3
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine4_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15064 //~4th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_4
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine4_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15064 //~4th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_4
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine4_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY @15064 //~4th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_4
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine4_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15064 //~4th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_4
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine4_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15064 //~4th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_4
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine5_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15065 //~5th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_5
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine5_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15065 //~5th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_5
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine5_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY @15065 //~5th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_5
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine5_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15065 //~5th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_5
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine5_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15065 //~5th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_5
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine6_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15066 //~6th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_6
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine6_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15066 //~6th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_6
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine6_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY @15066 //~6th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_6
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine6_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15066 //~6th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_6
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine6_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15066 //~6th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_6
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine7_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15067 //~7th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_7
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine7_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15067 //~7th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_7
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine7_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY @15067 //~7th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_7
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine7_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15067 //~7th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_7
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divine7_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15067 //~7th divine circle~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_7
 
 
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divineQ_cleric%)
-Class(CLERIC_ALL)~
+Class(Myself, CLERIC_ALL)~
         THEN REPLY @15068 //~Quest divine spells~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_Q
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divineQ_druid%)
-Class(DRUID_ALL)~
+Class(Myself, DRUID_ALL)
+!Class(Myself, SHAMAN)~
         THEN REPLY @15068 //~Quest divine spells~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_Q
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divineQ_paladin%)
-Class(PALADIN_ALL)~
+Class(Myself, PALADIN_ALL)~
         THEN REPLY @15068 //~Quest divine spells~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_Q
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divineQ_ranger%)
-Class(RANGER_ALL)~
+Class(Myself, RANGER_ALL)~
         THEN REPLY @15068 //~Quest divine spells~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_Q
         IF ~LevelGT(Myself, %bz_gatekeep_levelgt_circle_divineQ_shaman%)
-Class(SHAMAN)~
+Class(Myself, SHAMAN)~
         THEN REPLY @15068 //~Quest divine spells~
             GOTO bz_caster_craft_scribe_scroll_divine_circle_Q
     ~~~~~
