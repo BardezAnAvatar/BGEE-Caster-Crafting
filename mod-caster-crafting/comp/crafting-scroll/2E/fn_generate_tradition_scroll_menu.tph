@@ -49,7 +49,7 @@ EXTEND_TOP ~BZMSCST~
                             //Get the cost in gold for the scroll
                             COPY_EXISTING - ~%keys_2%.SPL~ ~override~
                                 //Patches
-                                READ_LONG (0x0C) ~bz_spell_name_STRREF~
+                                READ_LONG (0x08) ~bz_spell_name_STRREF~
                             BUT_ONLY_IF_IT_CHANGES
 
                             ACTION_GET_STRREF (%bz_spell_name_STRREF%) ~spell_name~
