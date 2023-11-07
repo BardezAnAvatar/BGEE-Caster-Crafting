@@ -101,7 +101,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
                                                                                                                                                                                                             //Summon Lizard Men
                                                                                                                                                                                                             //Summon Trolls
         ~BZ!D3005~, ~SPPR330~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Cause Medium Wounds.BAM~,               ~BZ!D30I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Cause Medium Wounds
-        ~BZ!D3105~, ~SPPR331~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Favor of Ilmater.BAM~,                  ~BZ!D31I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Favor of Ilmater
+      //~BZ!D3105~, ~SPPR331~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/IWDification/Favor of Ilmater.BAM~,                  ~BZ!D31I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~~    //Favor of Ilmater
         ~BZ!D5005~, ~SPPR350~, ~Divine~, ~3~, ~1~,  ~0~, ~priest/core/Spiritual Clarity.BAM~,                         ~BZ!D50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Clarity
 
 
