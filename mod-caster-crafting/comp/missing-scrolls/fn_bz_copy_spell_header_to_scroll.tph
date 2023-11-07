@@ -252,7 +252,8 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
                         resource = ~~
                 END
 
-                //OpCode 319 can ONLY restrict, not allow. So I still have to allow Druids. Moving the movability flag set down after this
+                //OpCode 319 can ONLY restrict, not allow. So I still have to allow Druids. Moving the movability flag set down after this.
+                //See: https://forums.beamdog.com/discussion/64194/item-usability
                 SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT12 BOR BIT30)) //Druid
             END
 
