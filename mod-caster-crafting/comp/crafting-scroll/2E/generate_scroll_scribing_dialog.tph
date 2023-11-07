@@ -9,7 +9,7 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/vars_gatekeep_sic
 
 
 //Menu checks by class/level
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/genereate_circle_transitions.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/generate_circle_transitions.tph~
 /**********************************************
 *   END: Spell circle checks by class/level   *
 **********************************************/

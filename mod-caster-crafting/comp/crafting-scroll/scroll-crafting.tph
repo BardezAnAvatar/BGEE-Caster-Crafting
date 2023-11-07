@@ -3,7 +3,7 @@
 ****************************/
 
 //cGenerate the data used to process scrolls during installation   *
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/proces_scroll_registry.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/process_scroll_registry.tph~
 
 //Install Cursed scrolls, random treasure table, etc.
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/install_cursed_scrolls.tph~
