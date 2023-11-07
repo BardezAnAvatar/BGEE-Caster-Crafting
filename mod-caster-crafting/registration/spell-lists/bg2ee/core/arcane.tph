@@ -180,7 +180,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI803~, ~Arcane~, ~8~ => ~SPWI803~    //Protection from Energy
         ~SPWI804~, ~Arcane~, ~8~ => ~SPWI804~    //Simulacrum
         ~SPWI805~, ~Arcane~, ~8~ => ~SPWI805~    //Pierce Shield
-        ~SPWI806~, ~Arcane~, ~8~ => ~SPWI806~    //Summon Fiend
+        ~SPWI807~, ~Arcane~, ~8~ => ~SPWI807~    //Summon Fiend
         ~SPWI808~, ~Arcane~, ~8~ => ~SPWI808~    //Improved Mantle
         ~SPWI809~, ~Arcane~, ~8~ => ~SPWI809~    //Spell Trigger
         ~SPWI810~, ~Arcane~, ~8~ => ~SPWI810~    //Incendiary Cloud
