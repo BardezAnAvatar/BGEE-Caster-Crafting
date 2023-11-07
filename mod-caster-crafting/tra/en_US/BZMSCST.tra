@@ -58,3 +58,4 @@
 @15090 = ~You meditate over the spell %spell_name% and prepare its power.~
 
 //Arcane scrolls
+@15100 = ~You look over the spell %spell_name% and inspect its entry in your spellbook.~
