@@ -114,20 +114,20 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!F5009~, ~SPPR550~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/core/Recall Spirit.BAM~,               ~BZ!F50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Recall Spirit
 
 
-        ~BZ!G0112~, ~SPPR601~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Aerial Servant.BAM~,               ~BZ!G01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aerial Servant
-        ~BZ!G0212~, ~SPPR602~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Animal Summoning 3.BAM~,          ~BZ!G02I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 3
-        ~BZ!G0312~, ~SPPR603~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Blade Barrier.BAM~,               ~BZ!G03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Blade Barrier
-        ~BZ!G0412~, ~SPPR604~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Conjure Animals.BAM~,             ~BZ!G04I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Animals
-        ~BZ!G0512~, ~SPPR605~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Conjure Fire Elemental.BAM~,      ~BZ!G05I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Fire Elemental
-        ~BZ!G0612~, ~SPPR606~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Fire Seeds.BAM~,                  ~BZ!G06I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Seeds
-        ~BZ!G0712~, ~SPPR607~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Heal.BAM~,                        ~BZ!G07I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Heal
-        ~BZ!G0812~, ~SPPR608~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Harm.BAM~,                        ~BZ!G08I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Harm
-        ~BZ!G0912~, ~SPPR609~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/False Dawn.BAM~,                  ~BZ!G09I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //False Dawn
-        ~BZ!G1012~, ~SPPR610~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Dolorous Decay.BAM~,              ~BZ!G10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Dolorous Decay
-        ~BZ!G1112~, ~SPPR611~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Wondrous Recall.BAM~,             ~BZ!G11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wondrous Recall
-        ~BZ!G1212~, ~SPPR612~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Bolt of Glory.BAM~,               ~BZ!G12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Bolt of Glory
-        ~BZ!G1412~, ~SPPR614~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Sol's Searing Orb.BAM~,           ~BZ!G14I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sol's Searing Orb
-        ~BZ!G5012~, ~SPPR650~, ~Divine~, ~6~, ~12~, ~0~, ~priest/core/Spiritual Lock.BAM~,              ~BZ!G50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Lock
+        ~BZ!G0111~, ~SPPR601~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Aerial Servant.BAM~,              ~BZ!G01I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Aerial Servant
+        ~BZ!G0211~, ~SPPR602~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Animal Summoning 3.BAM~,          ~BZ!G02I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Animal Summoning 3
+        ~BZ!G0311~, ~SPPR603~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Blade Barrier.BAM~,               ~BZ!G03I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Blade Barrier
+        ~BZ!G0411~, ~SPPR604~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Conjure Animals.BAM~,             ~BZ!G04I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Animals
+        ~BZ!G0511~, ~SPPR605~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Conjure Fire Elemental.BAM~,      ~BZ!G05I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Conjure Fire Elemental
+        ~BZ!G0611~, ~SPPR606~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Fire Seeds.BAM~,                  ~BZ!G06I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Fire Seeds
+        ~BZ!G0711~, ~SPPR607~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Heal.BAM~,                        ~BZ!G07I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Heal
+        ~BZ!G0811~, ~SPPR608~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Harm.BAM~,                        ~BZ!G08I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Harm
+        ~BZ!G0911~, ~SPPR609~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/False Dawn.BAM~,                  ~BZ!G09I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //False Dawn
+        ~BZ!G1011~, ~SPPR610~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Dolorous Decay.BAM~,              ~BZ!G10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Dolorous Decay
+        ~BZ!G1111~, ~SPPR611~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Wondrous Recall.BAM~,             ~BZ!G11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Wondrous Recall
+        ~BZ!G1211~, ~SPPR612~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Bolt of Glory.BAM~,               ~BZ!G12I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Bolt of Glory
+        ~BZ!G1411~, ~SPPR614~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Sol's Searing Orb.BAM~,           ~BZ!G14I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Sol's Searing Orb
+        ~BZ!G5011~, ~SPPR650~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Spiritual Lock.BAM~,              ~BZ!G50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spiritual Lock
 
 
         ~BZ!H0114~, ~SPPR701~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/core/Shield of the Archons.BAM~,       ~BZ!H01I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Shield of the Archons
@@ -181,6 +181,6 @@ BEGIN
     ~scroll_list_missing~
     BEGIN
         //looks like IWDification changes this spell to level 5 (525)
-        ~BZ!G1312~, ~SPPR613~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Physical Mirror.BAM~,             ~BZ!G13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
+        ~BZ!G1311~, ~SPPR613~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/core/Physical Mirror.BAM~,             ~BZ!G13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
     END
 END

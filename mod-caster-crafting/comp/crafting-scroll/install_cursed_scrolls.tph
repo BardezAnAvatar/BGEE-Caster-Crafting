@@ -15,49 +15,49 @@ INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/cursed.tph~
 //Check for IWD (missing scrolls) and install ones from BG1 & add to ~cursed_scrolls~ array
 ACTION_IF (GAME_IS ~iwdee~) THEN
 BEGIN
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL10.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL10.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20010
 	    SAY UNIDENTIFIED_DESC @20040
 	    SAY IDENTIFIED_DESC @20041
 
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL11.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL11.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20011
 	    SAY UNIDENTIFIED_DESC @20040
 	    SAY IDENTIFIED_DESC @20041
 
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL12.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL12.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20012
 	    SAY UNIDENTIFIED_DESC @20040
 	    SAY IDENTIFIED_DESC @20041
 
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL13.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL13.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20013
 	    SAY UNIDENTIFIED_DESC @20040
 	    SAY IDENTIFIED_DESC @20041
 
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL14.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL14.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20014
 	    SAY UNIDENTIFIED_DESC @20040
 	    SAY IDENTIFIED_DESC @20041
 
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL16.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL16.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20016
 	    SAY UNIDENTIFIED_DESC @20040
 	    SAY IDENTIFIED_DESC @20041
 
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL17.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL17.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20017
 	    SAY UNIDENTIFIED_DESC @20040
 	    SAY IDENTIFIED_DESC @20041
 
-    COPY ~./%MOD_FOLDER/comp/crafting-scroll/%bz_edition_code%/ITM/SCRL18.TIM~ ~override~
+    COPY ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/ITM/cursed/SCRL18.ITM~ ~override~
         SAY NAME1 @20009
         SAY NAME2 @20018
 	    SAY UNIDENTIFIED_DESC @20040

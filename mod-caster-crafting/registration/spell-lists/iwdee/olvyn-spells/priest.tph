@@ -50,7 +50,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MEPR758~, ~Divine~, ~Q~ => ~MEPR758~   //Mass Heal
         ~MEPR766~, ~Divine~, ~Q~ => ~MEPR766~   //Contagious Fear
     END
-END
 
 
 /**********************
@@ -59,14 +58,13 @@ END
 ACTION_IF %bz_olvyn_powerful% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~spell_list~
-        BEGIN
-            ~MEPR653~, ~Divine~, ~6~ => ~MEPR653~   //Antiharm Shell
+    ~spell_list~
+    BEGIN
+        ~MEPR653~, ~Divine~, ~6~ => ~MEPR653~   //Antiharm Shell
 
-            ~MEPR753~, ~Divine~, ~7~ => ~MEPR753~   //Nonrandom Zone
-            ~MEPR759~, ~Divine~, ~7~ => ~MEPR759~   //Omnipresence
-        END
-
+        ~MEPR753~, ~Divine~, ~7~ => ~MEPR753~   //Nonrandom Zone
+        ~MEPR759~, ~Divine~, ~7~ => ~MEPR759~   //Omnipresence
+    END
 END
 
 
@@ -76,37 +74,36 @@ END
 ACTION_IF %bz_olvyn_eeex% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~spell_list~
-        BEGIN
-            ~MEPR152~, ~Divine~, ~1~ => ~MEPR152~   //Hex
+    ~spell_list~
+    BEGIN
+        ~MEPR152~, ~Divine~, ~1~ => ~MEPR152~   //Hex
 
-            ~MEPR255~, ~Divine~, ~2~ => ~MEPR255~   //Ghostwalk
-            ~MEPR256~, ~Divine~, ~2~ => ~MEPR256~   //Detect Magic
+        ~MEPR255~, ~Divine~, ~2~ => ~MEPR255~   //Ghostwalk
+        ~MEPR256~, ~Divine~, ~2~ => ~MEPR256~   //Detect Magic
 
-            ~MEPR352~, ~Divine~, ~3~ => ~MEPR352~   //Shortening
-            ~MEPR353~, ~Divine~, ~3~ => ~MEPR353~   //Fire Curse
-            ~MEPR355~, ~Divine~, ~3~ => ~MEPR355~   //Guardian Magic
-            ~MEPR357~, ~Divine~, ~3~ => ~MEPR357~   //Fly
-            ~MEPR358~, ~Divine~, ~3~ => ~MEPR358~   //Familiar Spell
-            ~MEPR360~, ~Divine~, ~3~ => ~MEPR360~   //Recall Party
-            ~MEPR361~, ~Divine~, ~3~ => ~MEPR361~   //Steel Wind Strike
+        ~MEPR352~, ~Divine~, ~3~ => ~MEPR352~   //Shortening
+        ~MEPR353~, ~Divine~, ~3~ => ~MEPR353~   //Fire Curse
+        ~MEPR355~, ~Divine~, ~3~ => ~MEPR355~   //Guardian Magic
+        ~MEPR357~, ~Divine~, ~3~ => ~MEPR357~   //Fly
+        ~MEPR358~, ~Divine~, ~3~ => ~MEPR358~   //Familiar Spell
+        ~MEPR360~, ~Divine~, ~3~ => ~MEPR360~   //Recall Party
+        ~MEPR361~, ~Divine~, ~3~ => ~MEPR361~   //Steel Wind Strike
 
-            ~MEPR455~, ~Divine~, ~4~ => ~MEPR455~   //Piercing Shots
-            ~MEPR456~, ~Divine~, ~4~ => ~MEPR456~   //Pebbles to Boulders
+        ~MEPR455~, ~Divine~, ~4~ => ~MEPR455~   //Piercing Shots
+        ~MEPR456~, ~Divine~, ~4~ => ~MEPR456~   //Pebbles to Boulders
 
-            ~MEPR554~, ~Divine~, ~5~ => ~MEPR554~   //Ghostform
+        ~MEPR554~, ~Divine~, ~5~ => ~MEPR554~   //Ghostform
 
-            ~MEPR660~, ~Divine~, ~6~ => ~MEPR660~   //Animal Growth
-            ~MEPR661~, ~Divine~, ~6~ => ~MEPR661~   //Absolute Guard
+        ~MEPR660~, ~Divine~, ~6~ => ~MEPR660~   //Animal Growth
+        ~MEPR661~, ~Divine~, ~6~ => ~MEPR661~   //Absolute Guard
 
-            ~MEPR757~, ~Divine~, ~7~ => ~MEPR757~   //Reanimate
-            ~MEPR762~, ~Divine~, ~7~ => ~MEPR762~   //Elysium's Tears
+        ~MEPR757~, ~Divine~, ~7~ => ~MEPR757~   //Reanimate
+        ~MEPR762~, ~Divine~, ~7~ => ~MEPR762~   //Elysium's Tears
 
-            ~MEPR761~, ~Divine~, ~Q~ => ~MEPR761~   //Volcanic Eruption
-            ~MEPR763~, ~Divine~, ~Q~ => ~MEPR763~   //Greater Living Lightning
-            ~MEPR764~, ~Divine~, ~Q~ => ~MEPR764~   //Tornado
-
-        END
+        ~MEPR761~, ~Divine~, ~Q~ => ~MEPR761~   //Volcanic Eruption
+        ~MEPR763~, ~Divine~, ~Q~ => ~MEPR763~   //Greater Living Lightning
+        ~MEPR764~, ~Divine~, ~Q~ => ~MEPR764~   //Tornado
+    END
 END
 
 
@@ -117,16 +114,16 @@ END
 ACTION_IF %bz_olvyn_powerful_eeex% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~spell_list~
-        BEGIN
-            ~MEPR551~, ~Divine~, ~5~ => ~MEPR551~   //Prolongment
-            ~MEPR552~, ~Divine~, ~5~ => ~MEPR552~   //Wall of Force
-            ~MEPR555~, ~Divine~, ~5~ => ~MEPR555~   //Critical Spell
-            ~MEPR556~, ~Divine~, ~5~ => ~MEPR556~   //Barrage
+    ~spell_list~
+    BEGIN
+        ~MEPR551~, ~Divine~, ~5~ => ~MEPR551~   //Prolongment
+        ~MEPR552~, ~Divine~, ~5~ => ~MEPR552~   //Wall of Force
+        ~MEPR555~, ~Divine~, ~5~ => ~MEPR555~   //Critical Spell
+        ~MEPR556~, ~Divine~, ~5~ => ~MEPR556~   //Barrage
 
-            ~MEPR655~, ~Divine~, ~6~ => ~MEPR655~   //Linked Spirit
-            ~MEPR659~, ~Divine~, ~6~ => ~MEPR659~   //Greater Steel Wind Strike
+        ~MEPR655~, ~Divine~, ~6~ => ~MEPR655~   //Linked Spirit
+        ~MEPR659~, ~Divine~, ~6~ => ~MEPR659~   //Greater Steel Wind Strike
 
-            ~MEPR765~, ~Divine~, ~Q~ => ~MEPR765~   //Spirit of Power
-        END
+        ~MEPR765~, ~Divine~, ~Q~ => ~MEPR765~   //Spirit of Power
+    END
 END

@@ -186,7 +186,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL8Y~, ~SPWI803~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL8Y~    //Protection from Energy
         ~SCRL8Z~, ~SPWI804~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL8Z~    //Simulacrum
         ~SCRL9A~, ~SPWI805~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9A~    //Pierce Shield
-        ~SCRL9B~, ~SPWI806~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9B~    //Summon Fiend
+        ~SCRL9B~, ~SPWI807~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9B~    //Summon Fiend
         ~SCRL9C~, ~SPWI808~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9C~    //Improved Mantle
         ~SCRL9D~, ~SPWI809~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9D~    //Spell Trigger
         ~SCRL9E~, ~SPWI810~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9E~    //Incendiary Cloud

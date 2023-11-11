@@ -57,11 +57,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!F5709~, ~MEPR557~, ~Divine~, ~5~, ~9~,  ~0~, ~priest/OlvynSpells/Expose to the Elements.BAM~,                   ~BZ!F57I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5709~   //Expose to the Elements
         ~BZ!F5809~, ~MEPR558~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/OlvynSpells/Sphere of Security.BAM~,                       ~BZ!F58I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5809~   //Sphere of Security
 
-        ~BZ!G5212~, ~MEPR652~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Drown.BAM~,                                    ~BZ!G52I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5212~   //Drown
-        ~BZ!G5412~, ~MEPR654~, ~Divine~, ~6~, ~12~, ~0~, ~priest/OlvynSpells/Living Lightning.BAM~,                         ~BZ!G54I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5412~   //Living Lightning
-        ~BZ!G5612~, ~MEPR656~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Protection From Non-Silver Weapons.BAM~,       ~BZ!G56I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5612~   //Protection From Non-Silver Weapons     //Shapeshifter only
-        ~BZ!G5712~, ~MEPR657~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Trial by Fire.BAM~,                            ~BZ!G57I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5712~   //Trial by Fire
-        ~BZ!G5812~, ~MEPR658~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Conjure Earth Elemental.BAM~,                  ~BZ!G58I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5812~   //Conjure Earth Elemental
+        ~BZ!G5211~, ~MEPR652~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Drown.BAM~,                                    ~BZ!G52I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5212~   //Drown
+        ~BZ!G5411~, ~MEPR654~, ~Divine~, ~6~, ~11~, ~0~, ~priest/OlvynSpells/Living Lightning.BAM~,                         ~BZ!G54I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5412~   //Living Lightning
+        ~BZ!G5611~, ~MEPR656~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Protection From Non-Silver Weapons.BAM~,       ~BZ!G56I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5612~   //Protection From Non-Silver Weapons     //Shapeshifter only
+        ~BZ!G5711~, ~MEPR657~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Trial by Fire.BAM~,                            ~BZ!G57I~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5712~   //Trial by Fire
+        ~BZ!G5811~, ~MEPR658~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Conjure Earth Elemental.BAM~,                  ~BZ!G58I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5812~   //Conjure Earth Elemental
 
         //NOTE: while Olvyn tries to start from > 50, fails to notice 751 for Priest spells (shaman) in base game. However, 751 is a Quest, and this is a lvl 7.
         ~BZ!H5114~, ~MEPR751~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/OlvynSpells/Power Word, Heal.BAM~,                         ~BZ!H51I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5114~   //Power Word, Heal
@@ -82,7 +82,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~scroll_list_missing~
     BEGIN
-        ~BZ!G5312~, ~MEPR653~, ~Divine~, ~6~, ~1~, ~0~, ~priest/OlvynSpells/Antiharm Shell.BAM~,                            ~BZ!G553~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5312~   //Antiharm Shell
+        ~BZ!G5311~, ~MEPR653~, ~Divine~, ~6~, ~1~, ~0~, ~priest/OlvynSpells/Antiharm Shell.BAM~,                            ~BZ!G553~, ~0~, ~1~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5312~   //Antiharm Shell
 
         ~BZ!H5314~, ~MEPR753~, ~Divine~, ~7~, ~1~, ~0~, ~priest/OlvynSpells/Nonrandom Zone.BAM~,                            ~BZ!H553~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~0~, ~0~ => ~BZ!H5314~   //Nonrandom Zone
         ~BZ!H5914~, ~MEPR759~, ~Divine~, ~7~, ~1~, ~0~, ~priest/OlvynSpells/Omnipresence.BAM~,                              ~BZ!H559~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5914~   //Omnipresence
@@ -116,8 +116,8 @@ BEGIN
 
         ~BZ!F5409~, ~MEPR554~, ~Divine~, ~5~, ~9~,  ~0~, ~priest/OlvynSpells/Ghostform.BAM~,                                ~BZ!F54I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5409~   //Ghostform
 
-        ~BZ!G6012~, ~MEPR660~, ~Divine~, ~6~, ~12~, ~0~, ~priest/OlvynSpells/Animal Growth.BAM~,                            ~BZ!G60I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G6012~   //Animal Growth
-        ~BZ!G6112~, ~MEPR661~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Absolute Guard.BAM~,                           ~BZ!G61I~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~BZ!G6012~   //Absolute Guard
+        ~BZ!G6011~, ~MEPR660~, ~Divine~, ~6~, ~11~, ~0~, ~priest/OlvynSpells/Animal Growth.BAM~,                            ~BZ!G60I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G6012~   //Animal Growth
+        ~BZ!G6111~, ~MEPR661~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Absolute Guard.BAM~,                           ~BZ!G61I~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~0~, ~1~, ~1~, ~1~ => ~BZ!G6012~   //Absolute Guard
 
         ~BZ!H5714~, ~MEPR757~, ~Divine~, ~7~, ~1~,  ~0~, ~priest/OlvynSpells/Reanimate.BAM~,                                ~BZ!H57I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~,   ~0~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H5714~   //Reanimate
         ~BZ!H6214~, ~MEPR762~, ~Divine~, ~7~, ~14~, ~0~, ~priest/OlvynSpells/Elysium's Tears.BAM~,                          ~BZ!H62I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!H6214~   //Elysium's Tears
@@ -142,8 +142,8 @@ BEGIN
         ~BZ!F5509~, ~MEPR555~, ~Divine~, ~5~, ~1~,  ~0~, ~priest/OlvynSpells/Critical Spell.BAM~,                           ~BZ!F55I~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5509~   //Critical Spell
         ~BZ!F5609~, ~MEPR556~, ~Divine~, ~5~, ~9~,  ~0~, ~priest/OlvynSpells/Barrage.BAM~,                                  ~BZ!F56I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!F5609~   //Barrage
 
-        ~BZ!G5512~, ~MEPR655~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Linked Spirit.BAM~,                            ~BZ!G55I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5512~   //Linked Spirit
-        ~BZ!G5912~, ~MEPR659~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Greater Steel Wind Strike.BAM~,                ~BZ!G59I~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5912~   //Greater Steel Wind Strike
+        ~BZ!G5511~, ~MEPR655~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Linked Spirit.BAM~,                            ~BZ!G55I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5512~   //Linked Spirit
+        ~BZ!G5911~, ~MEPR659~, ~Divine~, ~6~, ~1~,  ~0~, ~priest/OlvynSpells/Greater Steel Wind Strike.BAM~,                ~BZ!G59I~, ~0~, ~0~, ~0~, ~0~, ~1~, ~0~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!G5912~   //Greater Steel Wind Strike
 
         ~BZ!I6515~, ~MEPR765~, ~Divine~, ~Q~, ~1~,  ~0~, ~priest/OlvynSpells/Spirit of Power.BAM~,                          ~BZ!I65I~, ~0~, ~1~, ~0~, ~0~, ~0~, ~1~, ~0~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!I6515~   //Spirit of Power
     END
