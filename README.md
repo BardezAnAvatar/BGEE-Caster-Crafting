@@ -15,6 +15,9 @@ See [the license file](LICENSE.md).
 
 tl;dr: do what you will with it, credit me (Bardez) my work on the mod. Grammarsalad, too.
 
+Once exception: Don't use the wands/potion images for inginity engine mods for games that THIS mod works on. Why? I don't want the art
+assets to be used in two places and get confusing. Other games? Go nuts!
+
 
 ## Credit/license for prior work
 ![image](./.markdown-assets/license-allowed.png)
