@@ -1,0 +1,15 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~potion_list~
+    BEGIN
+
+        /*
+        [Unique Key]            // 0
+        [Potion Item Code]      // 1
+        [Required Caster Level] // 2
+        [Recipe]                // 3; these will be comma-delimited spell RESREFs
+        [Result Count]          // 4
+        */
+
+        ~POTN19-1~,    ~POTN19~, ~0~,  ~SPWI227~,           ~1~ => ~POTN19~   //Potion of Agility (18);                `Cat's Grace` Wizard spell
+
+    END
