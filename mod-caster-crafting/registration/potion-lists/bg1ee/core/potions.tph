@@ -83,7 +83,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~POTN17-0~,    ~POTN17~, ~0~,  ~SPPR317,SPPR203~,           ~1~ => ~POTN17~   //Elixer of Health;                       `Cure Disease` and `Cure Medium Wounds` Priest Spells
         ~POTN17-1~,    ~POTN17~, ~0~,  ~SPPR607~,                   ~3~ => ~POTN17~   //Elixer of Health;                       `Heal` Priest spell
-        ~POTN17-1~,    ~POTN17~, ~0~,  ~SPPR713~,                   ~4~ => ~POTN17~   //Elixer of Health;                       `Greater Restoration` Priest spell
+        ~POTN17-2~,    ~POTN17~, ~0~,  ~SPPR713~,                   ~4~ => ~POTN17~   //Elixer of Health;                       `Greater Restoration` Priest spell
 
         ~POTN18-0~,    ~POTN18~, ~0~,  ~SPWI512,SPWI511~,           ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from Electricity` and `Protection from Normal Weapons` Wizard spells
         ~POTN18-1~,    ~POTN18~, ~0~,  ~SPWI702,SPWI511~,           ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from the Elements` and `Protection from Normal Weapons` Wizard spells
@@ -124,9 +124,34 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN28-0-15~, ~POTN28~, ~15~, ~SPPR214~,                   ~3~ => ~POTN28~   //Potion of Fortitude (18);               `Draw Upon Holy Might` Priest spell
         ~POTN28-0-21~, ~POTN28~, ~21~, ~SPPR214~,                   ~4~ => ~POTN28~   //Potion of Fortitude (18);               `Draw Upon Holy Might` Priest spell
 
-        ~POTN29-1~,    ~POTN29~, ~0~,  ~SPWI722~,                   ~1~ => ~POTN29~   //Potion of Genius (18);                  `Limited Wish` Wizard spell
-        ~POTN29-2~,    ~POTN29~, ~0~,  ~SPWI919~,                   ~3~ => ~POTN29~   //Potion of Genius (18);                  `Wish` Wizard spell
+        ~POTN29-0~,    ~POTN29~, ~0~,  ~SPWI722~,                   ~1~ => ~POTN29~   //Potion of Genius (18);                  `Limited Wish` Wizard spell
+        ~POTN29-1~,    ~POTN29~, ~0~,  ~SPWI919~,                   ~3~ => ~POTN29~   //Potion of Genius (18);                  `Wish` Wizard spell
 
+        ~POTN31-0~,    ~POTN02~, ~0~,  ~SPWI512~,                   ~2~ => ~POTN02~   //Potion of Insulation;                   `Protection from Electricity` Wizard spell
+        ~POTN31-1~,    ~POTN02~, ~0~,  ~SPWI702~,                   ~1~ => ~POTN02~   //Potion of Insulation;                   `Protection from the Elements` Wizard spell
+        ~POTN31-2~,    ~POTN02~, ~0~,  ~SPWI803~,                   ~1~ => ~POTN02~   //Potion of Insulation;                   `Protection from Energy` Wizard spell
+        ~POTN31-3~,    ~POTN02~, ~0~,  ~SPPR407~,                   ~2~ => ~POTN02~   //Potion of Insulation;                   `Protection from Lightning` Priest spell
+
+        ~POTN33-0~,    ~POTN33~, ~0~,  ~SPWI406,SPWI602~,           ~1~ => ~POTN33~   //Potion of Magic Blocking;               `Globe of Invulnerability` and `Minor Globe of Invulnerability` Wizard Spells
+
+        ~POTN34-0~,    ~POTN34~, ~0~,  ~SPWI606~,                   ~2~ => ~POTN34~   //Potion of Magic Protection;             `Protection From Magic Energy` Wizard spell
+        ~POTN34-1~,    ~POTN34~, ~0~,  ~SPWI803~,                   ~1~ => ~POTN34~   //Potion of Magic Protection;             `Protection From Energy` Wizard spell
+        ~POTN34-2~,    ~POTN34~, ~20~, ~SPPR509~,                   ~2~ => ~POTN34~   //Potion of Magic Protection;             `Magic Resistance` Priest spell
+
+        ~POTN35-0~,    ~POTN35~, ~0~,  ~SPWI722~,                   ~1~ => ~POTN35~   //Potion of Magic Shielding;              `Limited Wish` Wizard spell
+        ~POTN35-1~,    ~POTN35~, ~0~,  ~SPWI919~,                   ~3~ => ~POTN35~   //Potion of Magic Shielding;              `Wish` Wizard spell
+        ~POTN35-2~,    ~POTN35~, ~0~,  ~SPWI606~,                   ~1~ => ~POTN35~   //Potion of Magic Protection;             `Protection From Magic Energy` Wizard spell
+        ~POTN35-3~,    ~POTN35~, ~0~,  ~SPWI803~,                   ~1~ => ~POTN35~   //Potion of Magic Protection;             `Protection From Energy` Wizard spell
+        ~POTN35-4~,    ~POTN35~, ~20~, ~SPPR509~,                   ~1~ => ~POTN35~   //Potion of Magic Protection;             `Magic Resistance` Priest spell
+
+        ~POTN36-0~,    ~POTN36~, ~0~,  ~SPPR205,SPWI209~,           ~1~ => ~POTN36~   //Potion of Master Thievery;              `Find Traps` Priest Spell and `Luck` Wizard Spell
+        ~POTN36-1~,    ~POTN36~, ~0~,  ~SPWI207,SPWI209~,           ~1~ => ~POTN36~   //Potion of Master Thievery;              `Knock` and `Luck` Wizard Spells
+
+        ~POTN37-0-6~,  ~POTN37~, ~9~,  ~SPPR214~,                   ~1~ => ~POTN37~   //Potion of Mind Focusing;                `Draw Upon Holy Might` Priest spell
+        ~POTN37-1~,    ~POTN37~, ~0~,  ~SPWI722~,                   ~1~ => ~POTN37~   //Potion of Mind Focusing;                `Limited Wish` Wizard spell
+        ~POTN37-2~,    ~POTN37~, ~0~,  ~SPWI919~,                   ~3~ => ~POTN37~   //Potion of Mind Focusing;                `Wish` Wizard spell
+
+        ~POTN38-0~,    ~POTN38~, ~0~,  ~SPWI108,SPWI625~,           ~1~ => ~POTN38~   //Potion of Mirrored Eyes;                `Protection from Petrification` and `Stone to Flesh` Wizard Spells
 
     END
 
