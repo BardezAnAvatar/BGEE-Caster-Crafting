@@ -85,10 +85,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN17-1~,    ~POTN17~, ~0~,  ~SPPR607~,                   ~3~ => ~POTN17~   //Elixer of Health;                       `Heal` Priest spell
         ~POTN17-1~,    ~POTN17~, ~0~,  ~SPPR713~,                   ~4~ => ~POTN17~   //Elixer of Health;                       `Greater Restoration` Priest spell
 
-        ~POTN18-0~,    ~POTN18~, ~0~,  ~SPWI512, SPWI511~,          ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from Electricity` and `Protection from Normal Weapons` Wizard spells
-        ~POTN18-1~,    ~POTN18~, ~0~,  ~SPWI702, SPWI511~,          ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from the Elements` and `Protection from Normal Weapons` Wizard spells
-        ~POTN18-2~,    ~POTN18~, ~0~,  ~SPWI803, SPWI511~,          ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from Energy` and `Protection from Normal Weapons` Wizard spells
-        ~POTN18-3~,    ~POTN18~, ~0~,  ~SPPR407, SPPR201~,          ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from Lightning` and `Aid` Priest spells
+        ~POTN18-0~,    ~POTN18~, ~0~,  ~SPWI512,SPWI511~,           ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from Electricity` and `Protection from Normal Weapons` Wizard spells
+        ~POTN18-1~,    ~POTN18~, ~0~,  ~SPWI702,SPWI511~,           ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from the Elements` and `Protection from Normal Weapons` Wizard spells
+        ~POTN18-2~,    ~POTN18~, ~0~,  ~SPWI803,SPWI511~,           ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from Energy` and `Protection from Normal Weapons` Wizard spells
+        ~POTN18-3~,    ~POTN18~, ~0~,  ~SPPR407,SPPR201~,           ~1~ => ~POTN18~   //Potion of Absorption;                   `Protection from Lightning` and `Aid` Priest spells
 
         ~POTN19-0-3~,  ~POTN19~, ~3~,  ~SPPR214~,                   ~1~ => ~POTN19~   //Potion of Agility (18);                 `Draw Upon Holy Might` Priest spell
         ~POTN19-0-6~,  ~POTN19~, ~9~,  ~SPPR214~,                   ~2~ => ~POTN19~   //Potion of Agility (18);                 `Draw Upon Holy Might` Priest spell
@@ -110,7 +110,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN22-3~,    ~POTN22~, ~0~,  ~SPWI803~,                   ~3~ => ~POTN22~   //Protection from Cold;                   `Protection from Energy` Wizard spell
         ~POTN22-4~,    ~POTN22~, ~0~,  ~SPPR210~,                   ~1~ => ~POTN22~   //Protection from Cold;                   `Protection from Fire and Cold` Priest spell
 
-        ~POTN24-0~,    ~POTN24~, ~0~,  ~SPWI102, SPWI317, SPWI414~, ~1~ => ~POTN24~   //Potion of Defense;                      `Armor`, `Ghost Armor` and `Spirit Armor` Wizard spells
+        ~POTN24-0~,    ~POTN24~, ~0~,  ~SPWI102,SPWI317,SPWI414~,   ~1~ => ~POTN24~   //Potion of Defense;                      `Armor`, `Ghost Armor` and `Spirit Armor` Wizard spells
         ~POTN24-1~,    ~POTN24~, ~16~, ~SPPR202~,                   ~1~ => ~POTN24~   //Potion of Defense;                      `Barkskin` Priest spell
 
         ~POTN26-0~,    ~POTN26~, ~0~,  ~SPWI304~,                   ~1~ => ~POTN26~   //Potion of Explosions;                   `Fireball` Wizard Spell
@@ -119,6 +119,22 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~POTN27-0~,    ~POTN27~, ~0~,  ~SPWI217~,                   ~1~ => ~POTN27~   //Potion of Fire Breath;                  `Agannazar's Scorcher` Wizard Spell
 
+        ~POTN28-0-3~,  ~POTN28~, ~3~,  ~SPPR214~,                   ~1~ => ~POTN28~   //Potion of Fortitude (18);               `Draw Upon Holy Might` Priest spell
+        ~POTN28-0-6~,  ~POTN28~, ~9~,  ~SPPR214~,                   ~2~ => ~POTN28~   //Potion of Fortitude (18);               `Draw Upon Holy Might` Priest spell
+        ~POTN28-0-15~, ~POTN28~, ~15~, ~SPPR214~,                   ~3~ => ~POTN28~   //Potion of Fortitude (18);               `Draw Upon Holy Might` Priest spell
+        ~POTN28-0-21~, ~POTN28~, ~21~, ~SPPR214~,                   ~4~ => ~POTN28~   //Potion of Fortitude (18);               `Draw Upon Holy Might` Priest spell
+
+        ~POTN29-1~,    ~POTN29~, ~0~,  ~SPWI722~,                   ~1~ => ~POTN29~   //Potion of Genius (18);                  `Limited Wish` Wizard spell
+        ~POTN29-2~,    ~POTN29~, ~0~,  ~SPWI919~,                   ~3~ => ~POTN29~   //Potion of Genius (18);                  `Wish` Wizard spell
 
 
     END
+
+ACTION_IF !(%bz_olvyn_true_strike%)
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~potion_list~
+    BEGIN
+        ~POTN30-0~,    ~POTN30~, ~0~,  ~SPWI111~,                   ~1~ => ~POTN30~   //Potion of Infravision;                  `Infravision` Wizard Spell
+    END
+END
