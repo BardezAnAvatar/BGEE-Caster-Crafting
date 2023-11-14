@@ -1,0 +1,82 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~potion_list~
+    BEGIN
+
+        /*
+        [Unique Key]            // 0
+        [Potion Item Code]      // 1
+        [Required Caster Level] // 2
+        [Recipe]                // 3; these will be comma-delimited spell RESREFs
+        [Result Count]          // 4
+        */
+
+
+        ~POTN02-0~,    ~POTN02~, ~0~,  ~SPWI319~,           ~1~ => ~POTN02~   //Potion of Fire Resistance;              `Protection from Fire` Wizard spell
+        ~POTN02-1~,    ~POTN02~, ~0~,  ~SPWI418~,           ~1~ => ~POTN02~   //Potion of Fire Resistance;              `Fireshield (Red) Wizard` spell
+        ~POTN02-2~,    ~POTN02~, ~0~,  ~SPWI702~,           ~2~ => ~POTN02~   //Potion of Fire Resistance;              `Protection from the Elements` Wizard spell
+        ~POTN02-3~,    ~POTN02~, ~0~,  ~SPWI803~,           ~2~ => ~POTN02~   //Potion of Fire Resistance;              `Protection from Energy` Wizard spell
+        ~POTN02-4~,    ~POTN02~, ~0~,  ~SPPR210~,           ~1~ => ~POTN02~   //Potion of Fire Resistance;              `Protection from Fire and Cold` Priest spell
+        ~POTN02-5~,    ~POTN02~, ~0~,  ~SPPR306~,           ~2~ => ~POTN02~   //Potion of Fire Resistance;              `Protection from Fire` Priest spell
+
+        ~POTN44-0~,    ~POTN44~, ~0~,  ~SPWI214~,           ~1~ => ~POTN44~   //Potion of Strength (18);                `Strength` Wizard spell
+        ~POTN44-1~,    ~POTN44~, ~0~,  ~SPPR312~,           ~1~ => ~POTN44~   //Potion of Strength (18);                `Strength of One` Priest spell
+        ~POTN44-2~,    ~POTN44~, ~0~,  ~SPPR412~,           ~1~ => ~POTN44~   //Potion of Strength (18);                `Holy Power` Priest spell
+        ~POTN44-3~,    ~POTN44~, ~0~,  ~SPPR507~,           ~1~ => ~POTN44~   //Potion of Strength (18);                `Champion's Strength` Priest spell
+        ~POTN44-4-3~,  ~POTN44~, ~3~,  ~SPPR214~,           ~1~ => ~POTN44~   //Potion of Strength (18);                `Draw Upon Holy Might` Priest spell
+        ~POTN44-5-3~,  ~POTN44~, ~3~,  ~SPPR513~,           ~1~ => ~POTN44~   //Potion of Strength (18);                `Righteous Magic` Priest spell
+        ~POTN44-4-6~,  ~POTN44~, ~9~,  ~SPPR214~,           ~2~ => ~POTN44~   //Potion of Strength (18);                `Draw Upon Holy Might` Priest spell
+        ~POTN44-5-6~,  ~POTN44~, ~9~,  ~SPPR513~,           ~2~ => ~POTN44~   //Potion of Strength (18);                `Righteous Magic` Priest spell
+        ~POTN44-4-15~, ~POTN44~, ~15~, ~SPPR214~,           ~3~ => ~POTN44~   //Potion of Strength (18);                `Draw Upon Holy Might` Priest spell
+        ~POTN44-5-15~, ~POTN44~, ~15~, ~SPPR513~,           ~3~ => ~POTN44~   //Potion of Strength (18);                `Righteous Magic` Priest spell
+        ~POTN44-4-21~, ~POTN44~, ~21~, ~SPPR214~,           ~4~ => ~POTN44~   //Potion of Strength (18);                `Draw Upon Holy Might` Priest spell
+        ~POTN44-5-21~, ~POTN44~, ~21~, ~SPPR513~,           ~4~ => ~POTN44~   //Potion of Strength (18);                `Righteous Magic` Priest spell
+
+        ~POTN03-0-6~,  ~POTN03~, ~6~,  ~SPPR214~,           ~1~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Draw Upon Holy Might` Priest spell
+        ~POTN03-1-6~,  ~POTN03~, ~6~,  ~SPPR513~,           ~1~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
+        ~POTN03-0-15~, ~POTN03~, ~15~, ~SPPR214~,           ~2~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Draw Upon Holy Might` Priest spell
+        ~POTN03-1-15~, ~POTN03~, ~15~, ~SPPR513~,           ~2~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
+        ~POTN03-0-24~, ~POTN03~, ~24~, ~SPPR214~,           ~3~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Draw Upon Holy Might` Priest spell
+        ~POTN03-1-24~, ~POTN03~, ~24~, ~SPPR513~,           ~3~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
+
+        ~POTN12-0-9~,  ~POTN12~, ~9~,  ~SPPR214~,           ~1~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Draw Upon Holy Might` Priest spell
+        ~POTN12-1-9~,  ~POTN12~, ~9~,  ~SPPR513~,           ~1~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Righteous Magic` Priest spell
+        ~POTN12-0-18~, ~POTN12~, ~18~, ~SPPR214~,           ~2~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Draw Upon Holy Might` Priest spell
+        ~POTN12-1-18~, ~POTN12~, ~18~, ~SPPR513~,           ~2~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Righteous Magic` Priest spell
+
+        ~POTN04-0-12~, ~POTN04~, ~12~, ~SPPR214~,           ~1~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Draw Upon Holy Might` Priest spell
+        ~POTN04-1-12~, ~POTN04~, ~12~, ~SPPR513~,           ~1~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Righteous Magic` Priest spell
+        ~POTN04-0-24~, ~POTN04~, ~24~, ~SPPR214~,           ~2~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Draw Upon Holy Might` Priest spell
+        ~POTN04-1-24~, ~POTN04~, ~24~, ~SPPR513~,           ~2~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Righteous Magic` Priest spell
+
+        ~POTN05-0~,    ~POTN05~, ~15~, ~SPPR214~,           ~1~ => ~POTN05~   //Potion of Fire Giant Strength (22);     `Draw Upon Holy Might` Priest spell
+        ~POTN05-1~,    ~POTN05~, ~15~, ~SPPR513~,           ~1~ => ~POTN05~   //Potion of Fire Giant Strength (22);     `Righteous Magic` Priest spell
+
+        ~POTN06-0~,    ~POTN06~, ~18~, ~SPPR214~,           ~1~ => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Draw Upon Holy Might` Priest spell
+        ~POTN06-1~,    ~POTN06~, ~18~, ~SPPR513~,           ~1~ => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Righteous Magic` Priest spell
+
+        ~POTN07-0~,    ~POTN07~, ~21~, ~SPPR214~,           ~1~ => ~POTN07~   //Potion of Storm Giant Strength (24);    `Draw Upon Holy Might` Priest spell
+        ~POTN07-1~,    ~POTN07~, ~21~, ~SPPR513~,           ~1~ => ~POTN07~   //Potion of Storm Giant Strength (24);    `Righteous Magic` Priest spell
+
+        ~POTN08-0~,    ~POTN08~, ~0~,  ~SPPR103~,           ~1~ => ~POTN08~   //Potion of Healing;                      `Cure Light Wounds` Priest Spell
+        ~POTN08-1~,    ~POTN08~, ~0~,  ~SPPR315~,           ~2~ => ~POTN08~   //Potion of Healing;                      `Cure Medium Wounds` Priest Spell
+        ~POTN08-2~,    ~POTN08~, ~0~,  ~SPPR401~,           ~3~ => ~POTN08~   //Potion of Healing;                      `Cure Serious Wounds` Priest Spell
+        ~POTN08-3~,    ~POTN08~, ~0~,  ~SPPR502~,           ~4~ => ~POTN08~   //Potion of Healing;                      `Cure Critical Wounds` Priest Spell
+        ~POTN08-4~,    ~POTN08~, ~0~,  ~SPPR607~,           ~6~ => ~POTN08~   //Potion of Healing;                      `Heal` Priest Spell
+
+        ~POTN09-0~,    ~POTN09~, ~0~,  ~SPWI603~,           ~1~ => ~POTN09~   //Potion of Heroism;                      `Tenser's Transformation` Wizard Spell
+        ~POTN09-1~,    ~POTN09~, ~0~,  ~SPPR412~,           ~1~ => ~POTN09~   //Potion of Heroism;                      `Holy Power` Priest Spell
+
+        ~POTN10-0~,    ~POTN10~, ~0~,  ~SPWI206~,           ~1~ => ~POTN10~   //Potion of Invisibility;                 `Invisibility` Wizard Spell
+        ~POTN10-1~,    ~POTN10~, ~0~,  ~SPWI307~,           ~2~ => ~POTN10~   //Potion of Invisibility;                 `Invisibility 10' Radius` Wizard Spell
+        ~POTN10-2~,    ~POTN10~, ~0~,  ~SPWI405~,           ~2~ => ~POTN10~   //Potion of Invisibility;                 `Improved Invisibility` Wizard Spell
+
+        ~POTN11-0~,    ~POTN11~, ~0~,  ~SPPR202,SPPR203~,   ~1~ => ~POTN11~   //Potion of Invulnerability;              `Barkskin` and `Chant` Priest Spells
+        ~POTN11-1~,    ~POTN11~, ~0~,  ~SPWI209,SPPR414~,   ~1~ => ~POTN11~   //Potion of Invulnerability;              `Luck` and `Spirit Armor` Wizard Spells
+
+        ~POTN13-0~,    ~POTN13~, ~0~,  ~SPWI304~,           ~1~ => ~POTN13~   //Oil of Fiery Burning;                   `Fireball` Wizard Spell
+        ~POTN13-1~,    ~POTN13~, ~0~,  ~SPWI304~,           ~2~ => ~POTN13~   //Oil of Fiery Burning;                   `Delayed Blast Fireball` Wizard Spell
+        ~POTN13-2~,    ~POTN13~, ~0~,  ~SPWI922~,           ~5~ => ~POTN13~   //Oil of Fiery Burning;                   `Dragon's Breath` Wizard Spell
+
+
+
+    END
