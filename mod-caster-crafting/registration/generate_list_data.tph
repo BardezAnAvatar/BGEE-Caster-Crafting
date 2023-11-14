@@ -34,6 +34,9 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
         OUTER_SET ~bz_olvyn_wi556~ =    //Restore original Animate Dead for wizards?
             !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25011~) AND !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25012~)
 
+        OUTER_SET ~bz_olvyn_true_strike~ =    //Replace Infravision with True Strike?
+            (MOD_IS_INSTALLED ~MESpells.tp2~ ~21111~)
+
         //Debugging Statements
         PRINT ~DEBUG: Olvyn:
             powerful:           `%bz_olvyn_powerful%`;
