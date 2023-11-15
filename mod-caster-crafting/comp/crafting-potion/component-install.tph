@@ -14,6 +14,8 @@
 
 >>>>>>>>
 
+
+
 //Include the potions from base game into the crafting dialog
 ACTION_IF (%bz_potions_install_allow_base_game%) THEN
 BEGIN
