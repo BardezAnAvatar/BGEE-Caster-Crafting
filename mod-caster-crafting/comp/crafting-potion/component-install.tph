@@ -6,6 +6,14 @@
 *       ~bz_potions_install_allow_spells~                        *
 *****************************************************************/
 
+//make empty files
+<<<<<<<< CorePotions/BZMSCAK.D
+
+>>>>>>>>
+<<<<<<<< SpellPotions/BZMSCAK.D
+
+>>>>>>>>
+
 //Install the item file
 INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-kit.tph~
 
