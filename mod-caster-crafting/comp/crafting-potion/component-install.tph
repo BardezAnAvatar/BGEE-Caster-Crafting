@@ -1,0 +1,10 @@
+/*****************************************************************
+*   This is the actions for installing Potion brewing/crafting   *
+*                                                                *
+*   Expected inputs:                                             *
+*       ~bz_potions_install_allow_base_game~                     *
+*       ~bz_potions_install_allow_spells~                        *
+*****************************************************************/
+
+//Install the item file
+INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-kit.tph~
