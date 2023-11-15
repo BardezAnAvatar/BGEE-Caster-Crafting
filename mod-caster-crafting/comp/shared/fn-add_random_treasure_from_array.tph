@@ -1,0 +1,47 @@
+/*************************************************************************************
+*   Iterates through a named array, and adds all of the items in it to RNDTRES.2DA   *
+*                                                                                    *
+*   Preconditions:                                                                   *
+*       - The array has fewer than 41 items                                          *
+*       - The array exists                                                           *
+*************************************************************************************/
+
+
+DEFINE_ACTION_FUNCTION ~bz_add_random_treasure_from_array~
+STR_VAR
+    ~Loot_RESREF~ = ~~
+    ~SourceArray~ = ~~  //uses the `value` in whatever array, using ACTION_PHP_EACH
+BEGIN
+
+
+    OUTER_SPRINT ~RandomLineEntry~ ~~
+    OUTER_SET ~ColumnCount~ = 0
+    ACTION_PHP_EACH ~SourceArray~
+    AS ~key~ => ~value~
+    BEGIN
+        OUTER_SPRINT ~padddedValue~ ~%value%        ~
+        LAUNCH_ACTION_FUNCTION ~SUBSTRING~
+            INT_VAR
+                ~length~ = 8
+            STR_VAR
+                ~string~ = ~%padddedValue%~
+            RET
+                ~paddedResRef~ = ~substring~
+        END
+
+        OUTER_SPRINT ~RandomLineEntry~ ~%RandomLineEntry% %paddedResRef%~
+        OUTER_SET ~ColumnCount~ = (%ColumnCount% +1)
+    END
+
+    //fill in with asterisks
+    OUTER_FOR (i = %ColumnCount%; i < 40; ++i)
+    BEGIN
+        OUTER_SPRINT ~RandomLineEntry~ ~%RandomLineEntry% *       ~
+    END
+
+    COPY_EXISTING ~RNDTRES.2DA~ ~override~
+        //PATCHES
+            COUNT_2DA_ROWS 40 ~bz_rndtres_ct~
+            INSERT_2DA_ROW %bz_rndtres_ct% 40 ~%Loot_RESREF%%RandomLineEntry%~
+
+END
