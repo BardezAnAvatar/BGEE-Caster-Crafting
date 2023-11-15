@@ -4,8 +4,8 @@
 ****************************/
 //Copy BAMs and shit for item
 //TODO:
-//COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMIAKD.BAM~ ~override~    //alchemy kit description BAM
-COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMIAKI.BAM~ ~override~    //alchemy kit inventory BAM
+//COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/BZMIAKD.BAM~ ~override~    //alchemy kit description BAM
+COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/BZMIAKI.BAM~ ~override~    //alchemy kit inventory BAM
 
 
 //Make an item for the player to interact with
