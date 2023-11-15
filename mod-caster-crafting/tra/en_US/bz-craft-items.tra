@@ -44,3 +44,13 @@ STATISTICS:
 
 Weight: 20~~~~~
 @20052 = ~Use Alchemy Kit~
+
+/****************************
+*   Names for new potions   *
+****************************/
+@20100 = ~Potion of %spell_name%~
+@20101 = ~Oil of %spell_name%~
+@20102 = ~Draught of %spell_name%~
+@20103 = ~Bomb of %spell_name%~
+//special cases :)
+@20104 = ~Lightning in a bottle~
