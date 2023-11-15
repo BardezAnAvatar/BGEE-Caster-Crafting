@@ -28,7 +28,6 @@ LANGUAGE
     ~en_US~
         //There is a problem with using %MOD_FOLDER% here: https://forums.pocketplane.net/index.php?topic=29521.0
         ~./mod-caster-crafting/tra/en_US/setup.tra~
-        ~./mod-caster-crafting/tra/en_US/bzcrftar.tra~
         ~./mod-caster-crafting/tra/en_US/BZMSCST.tra~
         ~./mod-caster-crafting/tra/en_US/bz-craft-items.tra~
 
