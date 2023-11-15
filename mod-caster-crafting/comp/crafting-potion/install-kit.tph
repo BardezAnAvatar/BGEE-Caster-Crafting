@@ -1,4 +1,31 @@
 
+
+/******************************************************************************
+*   NOTE: This file will expect prior actions to have altered
+*   BZMSCAK.D and yielded internal WeiDU strings:
+*       - CorePotions/BZMSCAK.D
+*       - SpellPotions/BZMSCAK.D
+******************************************************************************/
+
+//Emit the final result prior to compilation
+COPY -
+    ~./%MOD_FOLDER%/comp/crafting-potion/DLG/BZMSCAK.d~
+    ~Generated/BZMSCAK.d~
+        //Patches
+        APPEND_FILE TEXT ~ScrollCreation/BZMSCAK.D~
+        APPEND_FILE TEXT ~SpellbookCopy/BZMSCAK.D~
+
+//DEBUG so I can read it
+COPY
+    ~Generated/BZMSCAK.d~
+    ~./%MOD_FOLDER%/comp/crafting-potion/DLG/BZMSCAK.DEBUG.d~
+
+//compile the new dialog (with huge mutated edits)
+COMPILE ~Generated/BZMSCAK.d~
+
+
+
+
 /***************************
 *   Make the brewing kit   *
 ***************************/
