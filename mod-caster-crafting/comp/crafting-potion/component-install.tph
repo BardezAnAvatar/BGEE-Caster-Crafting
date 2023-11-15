@@ -14,6 +14,19 @@
 
 >>>>>>>>
 
+//Include the potions from base game into the crafting dialog
+ACTION_IF (%bz_potions_install_allow_base_game%) THEN
+BEGIN
+
+END
+
+//Include the potions from spells into the crafting dialog
+ACTION_IF (%bz_potions_install_allow_spells%) THEN
+BEGIN
+
+END
+
+
 //Install the item file
 INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-kit.tph~
 
