@@ -214,27 +214,27 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPIRIT-1~,    ~SPIRIT~,   ~0~,  ~SPPR607~,                   ~3~ => ~SPIRIT~  //Potion of Extra Healing;                 `Heal` Priest Spell
         ~SPIRIT-2~,    ~SPIRIT~,   ~0~,  ~SPPR713~,                   ~4~ => ~SPIRIT~  //Potion of Extra Healing;                 `Greater Restoration` Priest Spell
 
-        ~USPOT1A-0~,  ~USPOT1A~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT1A~ //Potion of Action Transference            `Wish` Wizard spell
+        ~USPOT1A-0~,   ~USPOT1A~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT1A~ //Potion of Action Transference            `Wish` Wizard spell
 
-        ~USPOT2A-1~,  ~USPOT2A~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT2A~ //Potion of Resistance;                    `Wish` Wizard spell
+        ~USPOT2A-1~,   ~USPOT2A~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT2A~ //Potion of Resistance;                    `Wish` Wizard spell
 
-        ~USPOT2B-1~,  ~USPOT2B~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT2B~ //Potion of Greater Resistance;            `Wish` Wizard spell
+        ~USPOT2B-1~,   ~USPOT2B~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT2B~ //Potion of Greater Resistance;            `Wish` Wizard spell
 
-        ~USPOT3A-1~,  ~USPOT3A~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT3A~ //Potion of Magical Resistance;            `Wish` Wizard spell
+        ~USPOT3A-1~,   ~USPOT3A~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT3A~ //Potion of Magical Resistance;            `Wish` Wizard spell
 
-        ~USPOT3B-1~,  ~USPOT3B~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT3B~ //Potion of Constitution;                  `Wish` Wizard spell
+        ~USPOT3B-1~,   ~USPOT3B~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT3B~ //Potion of Constitution;                  `Wish` Wizard spell
 
-        ~USPOT3C-1~,  ~USPOT3C~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT3C~ //Potion of Strength Transference;         `Wish` Wizard spell
+        ~USPOT3C-1~,   ~USPOT3C~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT3C~ //Potion of Strength Transference;         `Wish` Wizard spell
 
-        ~USPOT4A-1~,  ~USPOT4A~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT4A~ //Potion of Arcane Absorption;             `Wish` Wizard spell
+        ~USPOT4A-1~,   ~USPOT4A~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT4A~ //Potion of Arcane Absorption;             `Wish` Wizard spell
 
-        ~USPOT4B-1~,  ~USPOT4B~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT4B~ //Potion of Life Transference;             `Wish` Wizard spell
+        ~USPOT4B-1~,   ~USPOT4B~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT4B~ //Potion of Life Transference;             `Wish` Wizard spell
 
-        ~USPOT4C-1~,  ~USPOT4C~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT4C~ //Potion of Aura Enhancement;              `Wish` Wizard spell
+        ~USPOT4C-1~,   ~USPOT4C~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT4C~ //Potion of Aura Enhancement;              `Wish` Wizard spell
 
-        ~USPOT5A-1~,  ~USPOT5A~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT5A~ //Potion of Dissipation;                   `Wish` Wizard spell
+        ~USPOT5A-1~,   ~USPOT5A~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT5A~ //Potion of Dissipation;                   `Wish` Wizard spell
 
-        ~USPOT5B-1~,  ~USPOT5B~,   ~0~,  ~SPWI919~,                   ~1~ => ~USPOT5B~ //Potion of Holy Transference;             `Wish` Wizard spell
+        ~USPOT5B-1~,   ~USPOT5B~,  ~0~,  ~SPWI919~,                   ~1~ => ~USPOT5B~ //Potion of Holy Transference;             `Wish` Wizard spell
 
     END
 
@@ -243,6 +243,6 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~potion_list~
     BEGIN
-        ~POTN30-0~,    ~POTN30~, ~0~,  ~SPWI111~,                   ~1~ => ~POTN30~   //Potion of Infravision;                  `Infravision` Wizard Spell
+        ~POTN30-0~,    ~POTN30~,   ~0~,  ~SPWI111~,                   ~1~ => ~POTN30~   //Potion of Infravision;                  `Infravision` Wizard Spell
     END
 END
