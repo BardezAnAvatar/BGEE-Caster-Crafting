@@ -1,0 +1,65 @@
+
+/****************************
+*   Make the scribing kit   *
+****************************/
+//Copy BAMs and shit for item
+//TODO:
+//COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMIAKD.BAM~ ~override~    //alchemy kit description BAM
+COPY ~./%MOD_FOLDER%/comp/scribing-tools/BAM/BZMIAKI.BAM~ ~override~    //alchemy kit inventory BAM
+
+
+//Make an item for the player to interact with
+ACTION_IF (~%bz_game_code%~ STRING_EQUAL ~pstee~)
+THEN
+BEGIN
+    COPY_EXISTING ~DBOX.ITM~ ~override/BZMSCAK.ITM~   //scribe kit
+        //Patches
+            SAY NAME1 @20050 //Scribe's Tool Kit
+            SAY NAME2 @20050 //Scribe's Tool Kit
+            SAY UNIDENTIFIED_DESC @20002
+            SAY IDENTIFIED_DESC @20051
+            WRITE_ASCII_TERMINATE 0x3A "BZMIAKI"            // Icon
+            WRITE_LONG 0x34 2000                            // Price
+            WRITE_SHORT 0x38 1                              // Stack Size
+            WRITE_LONG 0x42 10                              // Lore to Identify
+            WRITE_LONG 0x4C 10                              // Weight
+            READ_LONG 0x18 ~bzmsckar_flags~
+            WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
+            WRITE_ASCII_TERMINATE 0x58 "Z_CLOTH1"           // Pick up Sound
+            WRITE_ASCII_TERMINATE 0x10 "Z_CLOTH2"           // Drop Sound
+            WRITE_LONG 0x1C 0                               // Category: Miscellaneous
+            WRITE_LONG 0x1E
+                BIT31 BOR BIT29 BOR BIT28 BOR BIT26 BOR BIT25 BOR
+                BIT23 BOR BIT22 BOR BIT21 BOR BIT17 BOR BIT11 // unusability flags: Not non-mages
+END
+ELSE
+BEGIN
+    COPY_EXISTING ~MISC01.ITM~ ~override/BZMSCAK.ITM~   //scribe kit
+        //Patches
+            SAY NAME1 @20050 //Scribe's Tool Kit
+            SAY NAME2 @20050 //Scribe's Tool Kit
+            SAY UNIDENTIFIED_DESC @20002
+            SAY IDENTIFIED_DESC @20051
+            WRITE_ASCII_TERMINATE 0x3A "BZMIAKI"            // Icon
+            WRITE_LONG 0x34 2000                            // Price
+            WRITE_SHORT 0x38 1                              // Stack Size
+            WRITE_LONG 0x42 10                              // Lore to Identify
+            WRITE_LONG 0x4C 20                              // Weight
+            WRITE_ASCII_TERMINATE 0x58 "BZMIAKD"            // Description Image
+            READ_LONG 0x18 ~bzmsckar_flags~
+            WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
+END
+
+
+
+//Register the item in ITEMDIAL.2DA along with the strref to talk to it.
+OUTER_SET bz_scrollkit_arcane_interact_strref = RESOLVE_STR_REF(@20052)
+
+COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
+    //PATCHES
+        COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
+        INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCST %bz_scrollkit_arcane_interact_strref% BZMSCST~
+
+//TODO:
+//Add the kit to stores
+//INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/add-to-stores.tph~
