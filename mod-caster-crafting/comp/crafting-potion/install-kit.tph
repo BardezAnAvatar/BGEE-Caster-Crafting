@@ -1,10 +1,9 @@
 
-/****************************
-*   Make the scribing kit   *
-****************************/
-//Copy BAMs and shit for item
-//TODO:
-//COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/BZMIAKD.BAM~ ~override~    //alchemy kit description BAM
+/***************************
+*   Make the brewing kit   *
+***************************/
+//Copy BAMs for item
+COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/BZMIAKD.BAM~ ~override~    //alchemy kit description BAM
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/BZMIAKI.BAM~ ~override~    //alchemy kit inventory BAM
 
 
@@ -53,12 +52,12 @@ END
 
 
 //Register the item in ITEMDIAL.2DA along with the strref to talk to it.
-OUTER_SET bz_scrollkit_arcane_interact_strref = RESOLVE_STR_REF(@20052)
+OUTER_SET bz_alchemy_kit_interact_strref = RESOLVE_STR_REF(@20052)
 
 COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
     //PATCHES
         COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
-        INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCST %bz_scrollkit_arcane_interact_strref% BZMSCST~
+        INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCAK %bz_alchemy_kit_interact_strref% BZMSCAK~
 
 //TODO:
 //Add the kit to stores
