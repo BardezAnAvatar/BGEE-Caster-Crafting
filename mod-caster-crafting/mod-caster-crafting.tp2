@@ -117,6 +117,3 @@ SUBCOMPONENT @30        //  Caster Crafting: Brew Potions
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 // END Brew Potion subcomponents
 
-
-//Do research stuff
-//INCLUDE ~%MOD_FOLDER%/poc/poc.tph~
