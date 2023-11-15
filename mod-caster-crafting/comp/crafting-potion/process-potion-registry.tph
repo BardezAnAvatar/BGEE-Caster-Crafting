@@ -1,0 +1,42 @@
+/********************************************************************************
+*   This file will go through the potion registry and generate an array named   *
+*       `` that contains all needed data for subsequent use.                    *
+********************************************************************************/
+
+
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/potions.tph~
+
+ACTION_IF (%bz_iwdification_installed%)
+BEGIN
+    PRINT ~DEBUG: Include IWD-ification Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/potions.tph~
+END
+
+
+//Expand data for processing
+ACTION_PHP_EACH ~potion_list~
+AS ~keys~ => ~value~
+BEGIN
+    //Isolate unique Potion list
+    ACTION_IF (NOT VARIABLE_IS_SET ~bz_base_game_potions_deduped_%keys_1%~)
+    THEN
+    BEGIN
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~bz_base_potions_deduped~
+        BEGIN
+            ~%keys_1%~ => ~%keys_1%~
+        END
+    END
+
+    //Get gold cost per potion & the in-game name of each potion
+    COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from potion
+        READ_LONG 0x34 ~potion_price~           //price
+        READ_LONG 0x0C ~identified_name~        //identified name
+    BUT_ONLY_IF_IT_CHANGES
+
+    //Get failure rate per potion
+    OUTER_SET ~potion_failure~ = 5
+
+
+
+END
