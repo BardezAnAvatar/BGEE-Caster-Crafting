@@ -99,20 +99,20 @@ SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
 // BEGIN Brew Potion subcomponents
 BEGIN @31 DESIGNATED 31 // Brew base game potions
 SUBCOMPONENT @30        //  Caster Crafting: Brew Potions
-    OUTER_SET ~bz_potions_install_allow_base_game~ = 1
-    OUTER_SET ~bz_potions_install_allow_spells~ = 0
+    OUTER_SET ~bz_install_allow_potions_base_game~ = 1
+    OUTER_SET ~bz_install_allow_potions_spells~ = 0
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
 BEGIN @32 DESIGNATED 32 // Brew spell potions
 SUBCOMPONENT @30        //  Caster Crafting: Brew Potions
-    OUTER_SET ~bz_potions_install_allow_base_game~ = 0
-    OUTER_SET ~bz_potions_install_allow_spells~ = 1
+    OUTER_SET ~bz_install_allow_potions_base_game~ = 0
+    OUTER_SET ~bz_install_allow_potions_spells~ = 1
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
 BEGIN @33 DESIGNATED 33 // Brew both base game and spell potions
 SUBCOMPONENT @30        //  Caster Crafting: Brew Potions
-    OUTER_SET ~bz_potions_install_allow_base_game~ = 1
-    OUTER_SET ~bz_potions_install_allow_spells~ = 1
+    OUTER_SET ~bz_install_allow_potions_base_game~ = 1
+    OUTER_SET ~bz_install_allow_potions_spells~ = 1
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 // END Brew Potion subcomponents
 

@@ -2,8 +2,8 @@
 *   This is the actions for installing Potion brewing/crafting   *
 *                                                                *
 *   Expected inputs:                                             *
-*       ~bz_potions_install_allow_base_game~                     *
-*       ~bz_potions_install_allow_spells~                        *
+*       ~bz_install_allow_potions_base_game~                     *
+*       ~bz_install_allow_potions_spells~                        *
 *****************************************************************/
 
 //make empty files
@@ -17,16 +17,19 @@
 
 
 //Include the potions from base game into the crafting dialog
-ACTION_IF (%bz_potions_install_allow_base_game%) THEN
+ACTION_IF (%bz_install_allow_potions_base_game%) THEN
 BEGIN
 
+    //TODO: Need to pre-process registry to get a list of unique potions from the base game for transition menu
+    //THEN: iterate through all recipe entries and create states and responses for crafting.
 END
 
 //Include the potions from spells into the crafting dialog
-ACTION_IF (%bz_potions_install_allow_spells%) THEN
+ACTION_IF (%bz_install_allow_potions_spells%) THEN
 BEGIN
 
 END
+
 
 
 
