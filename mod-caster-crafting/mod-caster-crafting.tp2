@@ -37,12 +37,12 @@ LANGUAGE
 *********************/
 
 // Caster Crafting: Missing scrolls subcomponents
-BEGIN @21 DESIGNATED 31 // Add in missing arcane spell scrolls
+BEGIN @21 DESIGNATED 21 // Add in missing arcane spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
-BEGIN @22 DESIGNATED 32 // Add in missing priest spell scrolls
+BEGIN @22 DESIGNATED 22 // Add in missing priest spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
     ACTION_IF (%bz_iwdification_installed%)
@@ -57,7 +57,7 @@ SUBCOMPONENT @20        //  Missing Spell Scrolls
         END
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
-BEGIN @23 DESIGNATED 33 // Add in missing arcane and priest spell scrolls
+BEGIN @23 DESIGNATED 23 // Add in missing arcane and priest spell scrolls
 SUBCOMPONENT @20        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
@@ -77,17 +77,17 @@ SUBCOMPONENT @20        //  Missing Spell Scrolls
 
 
 // Caster Crafting: Scribing Tools subcomponents
-BEGIN @11 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
+BEGIN @11 DESIGNATED 11 // Copy Spells from Party Member Spellbooks
 SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 
-BEGIN @12 DESIGNATED 22 // Scribe scrolls
+BEGIN @12 DESIGNATED 12 // Scribe scrolls
 SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/scroll-crafting.tph~
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 
-BEGIN @13 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
+BEGIN @13 DESIGNATED 13 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
 SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
     INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/scroll-crafting.tph~
