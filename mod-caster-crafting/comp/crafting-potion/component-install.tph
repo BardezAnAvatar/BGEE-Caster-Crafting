@@ -27,6 +27,10 @@ BEGIN
 END
 
 
+
+//Install the cursed potions list
+INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-cursed-potions.tph~
+
 //Install the item file
 INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-kit.tph~
 
