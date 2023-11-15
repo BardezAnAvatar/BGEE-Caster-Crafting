@@ -7,6 +7,7 @@ COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/BZMIAKD.BAM~ ~override~    //alche
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/BZMIAKI.BAM~ ~override~    //alchemy kit inventory BAM
 
 
+
 //Make an item for the player to interact with
 ACTION_IF (~%bz_game_code%~ STRING_EQUAL ~pstee~)
 THEN
@@ -59,6 +60,12 @@ COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
         COUNT_2DA_ROWS 3 ~bz_itemdial_ct~
         INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCAK %bz_alchemy_kit_interact_strref% BZMSCAK~
 
-//TODO:
+
+
 //Add the kit to stores
-//INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/add-to-stores.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-add_kit_to_stores.tph~
+
+LAUNCH_ACTION_FUNCTION ~bz_add_kit_to_stores~
+STR_VAR
+    ~Item_RESREF~ = ~BZMSCAK~
+END
