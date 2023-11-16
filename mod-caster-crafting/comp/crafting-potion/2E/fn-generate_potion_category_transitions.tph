@@ -14,7 +14,7 @@ EXTEND_TOP ~BZMSCAK~
     bz_potion_brew_core_%category_lower% //state number(s)
             ~~~~~
 
-        //isolate the unique protection scroll entries; specific scrolls, ignoring spells and thus de-duplicating
+        //isolate the unique potion entries; specific potions, ignoring spells and thus de-duplicating
         ACTION_PHP_EACH ~bz_base_potions_deduped~
             AS ~keys~ => ~value~
             BEGIN
@@ -24,7 +24,7 @@ EXTEND_TOP ~BZMSCAK~
 
                     OUTER_SPRINT ~transition_response~ ~%keys_2%~
 
-                    //Give the scroll a dialog option
+                    //Give the potion a dialog option
                     APPEND_OUTER -
                         ~CorePotions/BZMSCAK.D~
                         ~~~~~
