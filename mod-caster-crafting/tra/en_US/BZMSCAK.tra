@@ -13,16 +13,18 @@
 @30022 = ~Pick another spell circle.~
 @30023 = ~Pick another spell.~
 @30024 = ~Pick another potion.~
-@30025 = ~\[%scroll_gold_cost% gold; %readable_time%\] Brew a %potion_name%.~
-@30026 = ~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"; "1 days" or "1 hours" are an unfortunate side effect
-@30027 = ~%days% day(s)~
-@30028 = ~%hours% hour(s)~
+@30025 = ~Pick another type of potion.~
+@30026 = ~\[%scroll_gold_cost% gold; %readable_time%\] Brew a %potion_name%.~
+@30027 = ~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"; "1 days" or "1 hours" are an unfortunate side effect
+@30028 = ~%days% day(s)~
+@30029 = ~%hours% hour(s)~
 
 
 
 //Common Prompts
-@30040 = ~Which spell circle do you explore?~
-@30041 = ~Which spell do you examine?~
+@30040 = ~What kind of potion do you wish to brew?~
+@30041 = ~Which spell circle do you explore?~
+@30042 = ~Which spell do you examine?~
 
 
 //Spell circles
@@ -46,11 +48,13 @@
 @30078 = ~Quest divine spells~
 
 //Potion Groups
-@30080 = ~Cure Potions~
-@30081 = ~Defense Potions~
-@30082 = ~Enhancement Potions~
-@30083 = ~Bombs~
-@30084 = ~Poison Potions~
+@30080 = ~Arcane Potions~
+@30081 = ~Divine Potions~
+@30082 = ~Restorative Potions~
+@30083 = ~Defense Potions~
+@30084 = ~Enhancement Potions~
+@30085 = ~Bombs~
+@30086 = ~Poisons~
 
 
 //Divine scrolls
