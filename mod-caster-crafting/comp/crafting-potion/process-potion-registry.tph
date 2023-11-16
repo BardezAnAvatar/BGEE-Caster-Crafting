@@ -75,3 +75,25 @@ BEGIN
     END
 
 END
+
+
+/* DEBUG */
+ACTION_PHP_EACH ~potion_list_data~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: potion_list_data:
+            Unique Key:            `%keys_0%`
+            Potion Item Code:      `%keys_1%`
+            Required Caster Level: `%keys_2%`
+            Recipe:                `%keys_3%`
+            Result Count:          `%keys_4%`
+            XP cost:               `%keys_5%`
+            Gold Cost:             `%keys_6%`
+            Time Cost (hours):     `%keys_7%`
+            Category:              `%keys_8%`
+            Fail %:                `%keys_9%`
+            Potion Name:           `%keys_10%~
+    END
+
+
