@@ -1,3 +1,5 @@
+
+
 EXTEND_TOP ~BZMSCAK~ bz_potion_brew_main_menu    //Your alchemy kit is open before you. How do you wish to use it?
 
             //Scribe scroll: Cleric/Druid
