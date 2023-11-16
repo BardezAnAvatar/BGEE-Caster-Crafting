@@ -12,8 +12,8 @@ COPY -
     ~./%MOD_FOLDER%/comp/crafting-potion/DLG/BZMSCAK.d~
     ~Generated/BZMSCAK.d~
         //Patches
-        APPEND_FILE TEXT ~ScrollCreation/BZMSCAK.D~
-        APPEND_FILE TEXT ~SpellbookCopy/BZMSCAK.D~
+        APPEND_FILE TEXT ~CorePotions/BZMSCAK.D~
+        APPEND_FILE TEXT ~SpellPotions/BZMSCAK.D~
 
 //DEBUG so I can read it
 COPY
