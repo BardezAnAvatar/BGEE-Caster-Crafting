@@ -10,6 +10,9 @@ INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/cursed.tph~
 /*****************************************
 *   Random Treasure for cursed potions   *
 *****************************************/
+INCLUDE ~%MOD_FOLDER%/comp/shared/fn-add_random_treasure_from_array.tph~
+
+
 //Register the random treasure for cursed potions -- read ~cursed_potions~ array and add to 2DA in-game
 LAUNCH_ACTION_FUNCTION ~bz_add_random_treasure_from_array~
 STR_VAR
