@@ -22,3 +22,14 @@ Detect([ENEMY])~
                     EXIT
     END
 
+
+APPEND ~BZMSCAK~
+    IF ~~
+    THEN BEGIN bz_potion_brew_category_menu
+        SAY @30040  //~What kind of potion do you wish to brew?~
+            //Dynamic: Arcane/Divine/Various core ones depending on install otions
+
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
