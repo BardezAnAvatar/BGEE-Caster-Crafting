@@ -45,7 +45,7 @@ BEGIN
     END
 
     //Get gold cost per potion & the in-game name of each potion
-    COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from potion
+    COPY_EXISTING - ~%keys_1%.itm~ ~override~   //inline only, just to read from potion
         READ_LONG 0x34 ~potion_price~           //price
         READ_LONG 0x0C ~identified_name_STRREF~ //identified name
     BUT_ONLY_IF_IT_CHANGES
