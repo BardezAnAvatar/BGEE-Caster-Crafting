@@ -12,7 +12,7 @@ COPY -
     ~./%MOD_FOLDER%/comp/crafting-potion/DLG/BZMSCAK.d~
     ~Generated/BZMSCAK.d~
         //Patches
-        APPEND_FILE TEXT ~./%MOD_FOLDER/comp/crafting-potion/%bz_edition_code%/DLG/BZMSCAK.D~
+        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/DLG/BZMSCAK.D~
         APPEND_FILE TEXT ~CorePotions/BZMSCAK.D~
         APPEND_FILE TEXT ~SpellPotions/BZMSCAK.D~
 
