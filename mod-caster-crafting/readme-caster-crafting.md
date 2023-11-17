@@ -1,6 +1,6 @@
 # Caster Crafting
 
-Version: 0.3.2
+Version: 0.4.0
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
@@ -26,6 +26,7 @@ I am using the `BZ` prefix for my items. It is registered at Black Wyrm Lair: ht
 | Creation of spell scrolls                              |  0.3.0  |
 | Several fixes to behavior regression                   |  0.3.1  |
 | Ran installation over BG1:EE, BG2:EE and IWD:EE; fixes |  0.3.2  |
+| Creation of base game potions                          |  0.4.0  |
 
 
 ## Components
