@@ -9,20 +9,13 @@ STR_VAR
 RET_ARRAY
     ~array~
 BEGIN
-
-    <<<<<<<< Bogus.TXT
-
-    >>>>>>>>
-
-    //Force a Patch context over nothing
-    COPY - ~Bogus.TXT~ ~Bogus.TXT~
+    OUTER_PATCH ~%string%~
+    BEGIN
         SET i = 0
-        INNER_PATCH ~%string%~ BEGIN
-            REPLACE_EVALUATE ~[^,]+~
-            BEGIN
-                SPRINT $array("%i%") "%MATCH0%"
-                i += 1
-            END ~%MATCH0%~
-        END
-    BUT_ONLY_IF_IT_CHANGES
+        REPLACE_EVALUATE ~[^,]+~
+        BEGIN
+            SPRINT $array("%i%") "%MATCH0%"
+            i += 1
+        END ~%MATCH0%~
+    END
 END
