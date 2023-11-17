@@ -1,0 +1,28 @@
+/***************************************************************************************************************************
+*   Splits a string CSV into an array of items                                                                             *
+*   Reference: original taken from:                                                                                        *
+*       https://www.gibberlings3.net/forums/topic/36584-passing-arrays-to-patch-functions/?do=findComment&comment=321897   *
+***************************************************************************************************************************/
+DEFINE_ACTION_FUNCTION bz_csv_string_to_array
+STR_VAR
+    ~string~ = ""     // string with space separator
+RET_ARRAY
+    ~array~
+BEGIN
+
+    <<<<<<<< Bogus.TXT
+
+    >>>>>>>>
+
+    //Force a Patch context over nothing
+    COPY - ~Bogus.TXT~ ~Bogus.TXT~
+        SET i = 0
+        INNER_PATCH ~%string%~ BEGIN
+            REPLACE_EVALUATE ~[^,]+~
+            BEGIN
+                SPRINT $array("%i%") "%MATCH0%"
+                i += 1
+            END ~%MATCH0%~
+        END
+    BUT_ONLY_IF_IT_CHANGES
+END
