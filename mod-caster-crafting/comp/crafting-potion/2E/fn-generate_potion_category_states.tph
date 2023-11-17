@@ -149,7 +149,10 @@ OR(%i%)
 
                                 //build the transition string
                                 OUTER_SPRINT ~brew_transition_go~ @30026 //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
-                                OUTER_SPRINT ~elapsed_strref~ @30027 //~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"
+
+                                //display to log
+                                OUTER_SPRINT ~elapsed_message~ @30027 //~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"
+                                OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                                 APPEND_OUTER -
                                     ~temp/transitions_and_states.D~
