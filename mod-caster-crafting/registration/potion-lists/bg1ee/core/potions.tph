@@ -118,7 +118,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN24-1~,    ~POTN24~, ~16~, ~SPPR202~,                   ~1~, ~0~, ~8~,  ~Defense~     => ~POTN24~   //Potion of Defense;                      `Barkskin` Priest spell
 
         ~POTN26-0~,    ~POTN26~, ~0~,  ~SPWI304~,                   ~1~, ~0~, ~8~,  ~Bomb~        => ~POTN26~   //Potion of Explosions;                   `Fireball` Wizard Spell
-        ~POTN26-1~,    ~POTN26~, ~0~,  ~SPWI304~,                   ~2~, ~0~, ~8~,  ~Bomb~        => ~POTN26~   //Potion of Explosions;                   `Delayed Blast Fireball` Wizard Spell
+        ~POTN26-1~,    ~POTN26~, ~0~,  ~SPWI712~,                   ~2~, ~0~, ~8~,  ~Bomb~        => ~POTN26~   //Potion of Explosions;                   `Delayed Blast Fireball` Wizard Spell
         ~POTN26-2~,    ~POTN26~, ~0~,  ~SPWI922~,                   ~5~, ~0~, ~8~,  ~Bomb~        => ~POTN26~   //Potion of Explosions;                   `Dragon's Breath` Wizard Spell
 
         ~POTN27-0~,    ~POTN27~, ~0~,  ~SPWI217~,                   ~1~, ~0~, ~6~,  ~Bomb~        => ~POTN27~   //Potion of Fire Breath;                  `Agannazar's Scorcher` Wizard Spell
