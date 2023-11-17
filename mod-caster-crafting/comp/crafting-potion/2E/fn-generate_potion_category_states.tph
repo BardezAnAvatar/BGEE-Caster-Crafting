@@ -6,9 +6,8 @@ DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_states~
         ~category~ = ~~ //lower-cast category name to add transitions to
     BEGIN
 
-        <<<<<<<< ~temp/transitions_and_states~
-
-        >>>>>>>>
+<<<<<<<< temp/transitions_and_states.D
+>>>>>>>>
 
 
         OUTER_SPRINT ~category_lower~ ~%category%~
@@ -89,8 +88,8 @@ OR(%i%)
 
 
                                 ACTION_IF (~i~ > 1)
-                                THEN BEGIN OUTER_SPRINT ~formula~ @30050 END    //plural
-                                ELSE BEGIN OUTER_SPRINT ~formula~ @30049 END    //singular
+                                    THEN BEGIN OUTER_SPRINT ~formula~ @30050 END    //plural
+                                    ELSE BEGIN OUTER_SPRINT ~formula~ @30049 END    //singular
 
                                 //use `potion_name` and `formula` to merge dynamic text
                                 OUTER_SPRINT ~response_text~ @30045 // ~Brew %potion_name% using %formula%.~
@@ -152,7 +151,7 @@ OR(%i%)
                                 OUTER_SPRINT ~elapsed_strref~ @30027 //~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"
 
                                 APPEND_OUTER -
-                                    ~temp/transitions_and_states~
+                                    ~temp/transitions_and_states.D~
                                     ~~~~~
     IF ~~
     THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_valid
@@ -245,8 +244,8 @@ StartCutScene("BZCTPOTN")~
                                 *   END: Build potion states for formulae   *
                                 ********************************************/
 
-                            END
-                        END
+                            END //we match the current potion from de-duped list
+                        END //loop through `potion_list_data`
 
                     //Final transition options
                     APPEND_OUTER -
@@ -267,12 +266,12 @@ StartCutScene("BZCTPOTN")~
                     /**************************************************************
                     *   END: Build the individual potion states and transitions   *
                     **************************************************************/
-                END
-            END
+                END //match the category parameter
+            END //Loop through de-duped potions
 
 //Append the additional states to the end of the append. Yo, Dawg
 COPY - ~CorePotions/BZMSCAK.D~ ~CorePotions/BZMSCAK.D~
-    APPEND_FILE TEXT ~temp/transitions_and_states~
+    APPEND_FILE TEXT ~temp/transitions_and_states.D~
 
 APPEND_OUTER -
     ~CorePotions/BZMSCAK.D~
