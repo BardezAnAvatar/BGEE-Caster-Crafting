@@ -1,7 +1,7 @@
 INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-fn-csv_string_to_array.tph~
 
 
-DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
+DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_states~
     STR_VAR
         ~category~ = ~~ //lower-cast category name to add transitions to
     BEGIN
