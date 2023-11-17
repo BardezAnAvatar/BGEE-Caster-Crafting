@@ -1,0 +1,101 @@
+/********************************************************************************
+*   This file will go through the potion registry and generate an array named   *
+*       `` that contains all needed data for subsequent use.                    *
+********************************************************************************/
+
+/*
+    OUTPUT:
+
+    [Unique Key]            // 0
+    [Potion Item Code]      // 1
+    [Required Caster Level] // 2
+    [Recipe]                // 3; these will be comma-delimited spell RESREFs
+    [Result Count]          // 4
+    [XP cost]               // 5
+    [Gold Cost]             // 6
+    [Time Cost (hours)]     // 7
+    [Category]              // 8
+    [Fail %]                // 9
+    [Potion Name]           // 10
+*/
+
+
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/potions.tph~
+
+ACTION_IF (%bz_iwdification_installed%)
+BEGIN
+    PRINT ~DEBUG: Include IWD-ification Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/potions.tph~
+END
+
+
+//Expand data for processing
+ACTION_PHP_EACH ~potion_list~
+AS ~keys~ => ~value~
+BEGIN
+
+    //Get gold cost per potion & the in-game name of each potion
+    COPY_EXISTING - ~%keys_1%.itm~ ~override~   //inline only, just to read from potion
+        READ_LONG 0x34 ~potion_price~           //price
+        READ_LONG 0x0C ~identified_name_STRREF~ //identified name
+    BUT_ONLY_IF_IT_CHANGES
+
+    ACTION_GET_STRREF (%identified_name_STRREF%) ~potion_name~
+
+
+    //Isolate unique Potion list
+    ACTION_IF (NOT VARIABLE_IS_SET ~bz_base_game_potions_deduped_%keys_1%~)
+    THEN
+    BEGIN
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+            ~bz_base_potions_deduped~
+        BEGIN
+            ~%keys_1%~, ~%keys_7%~, ~%potion_name%~ => ~%keys_1%~
+        END
+    END
+
+    //Get failure rate per potion
+    OUTER_SET ~potion_failure~ = 5
+
+
+    //define the list data
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~potion_list_data~
+    BEGIN
+        ~%keys_0%~,
+        ~%keys_1%~,
+        ~%keys_2%~,
+        ~%keys_3%~,
+        ~%keys_4%~,
+        ~%keys_5%~,
+        ~%potion_price%~,
+        ~%keys_6%~,
+        ~%keys_7%~,
+        ~%potion_failure%~,
+        ~%potion_name%~
+            => ~%value%~
+    END
+
+END
+
+
+/* DEBUG */
+ACTION_PHP_EACH ~potion_list_data~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: potion_list_data:
+            Unique Key:            `%keys_0%`
+            Potion Item Code:      `%keys_1%`
+            Required Caster Level: `%keys_2%`
+            Recipe:                `%keys_3%`
+            Result Count:          `%keys_4%`
+            XP cost:               `%keys_5%`
+            Gold Cost:             `%keys_6%`
+            Time Cost (hours):     `%keys_7%`
+            Category:              `%keys_8%`
+            Fail %:                `%keys_9%`
+            Potion Name:           `%keys_10%~
+    END
+
+

@@ -183,35 +183,38 @@ DEBUG: PLAYER %i%, Circle %j%:
                 //Do a loop and emit a list of transitions for each matching spell in the circle.
                 //  The transition will need to record the player since going up a level would go back
                 //  To the  _PlayerN_CircleX state
-                ACTION_PHP_EACH ~spell_list_data_arcane~
+                ACTION_PHP_EACH ~spell_list_data~
                     AS ~keys~ => ~value~
                     BEGIN
+                        ACTION_IF (~%keys_2%~ STRING_EQUAL ~Arcane~)
+                        THEN BEGIN
 
-                        OUTER_SET bz_craft_time = %keys_5% * 300
+                            OUTER_SET bz_craft_time = %keys_5% * 300
 
-                        //Get the appropriate script exclusion checks for kit based on the spell's exclusion flags
-                        LAUNCH_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
-                            INT_VAR
-                                ~ExclusionFlags~ = ~%keys_7%~
-                            RET
-                                ~CopySpellKitExclusionTriggers~ = ~KitExclusionTriggers~
-                        END
+                            //Get the appropriate script exclusion checks for kit based on the spell's exclusion flags
+                            LAUNCH_ACTION_FUNCTION ~bz_CopySpellExclusionConditions~
+                                INT_VAR
+                                    ~ExclusionFlags~ = ~%keys_7%~
+                                RET
+                                    ~CopySpellKitExclusionTriggers~ = ~KitExclusionTriggers~
+                            END
 
-                        ACTION_IF ~%keys_3%~ STRING_EQUAL ~%player_n_spell_level%~  //Spell level matches
-                            THEN
-                            BEGIN
-                                APPEND_OUTER -
-                                    ~SpellbookCopy/Player%i%States.D~
-                                    ~~~~~
+                            ACTION_IF ~%keys_3%~ STRING_EQUAL ~%player_n_spell_level%~  //Spell level matches
+                                THEN
+                                BEGIN
+                                    APPEND_OUTER -
+                                        ~SpellbookCopy/Player%i%States.D~
+                                        ~~~~~
             IF ~!HaveKnownSpellRES("%keys_1%")
 %CopySpellKitExclusionTriggers%
 TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
             THEN
                 REPLY ~%keys_6%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
-                                    ~~~~~
-                            END
-                    END
+                                        ~~~~~
+                                END //check is spell level matches
+                        END //check if arcane
+                    END //loop through `spell_list_data`
 
                 //End the state _PlayerN_CircleX
                 APPEND_OUTER -
@@ -262,35 +265,37 @@ DEBUG: `PLAYER %i%, Circle X` Specific Spell States Starting
 APPEND ~BZMSCST~
             ~~~~~
 
-        ACTION_PHP_EACH ~spell_list_data_arcane~
+        ACTION_PHP_EACH ~spell_list_data~
             AS ~keys~ => ~value~
             BEGIN
-                OUTER_SET ~spell-copy-cost-floor~ = (%keys_4% - 1)
-                OUTER_SET ~copy_gold_cost~ = %keys_4%
-                OUTER_SET ~copy_time_engine~ = %keys_5% * 300
+                ACTION_IF (~%keys_2%~ STRING_EQUAL ~Arcane~)
+                THEN BEGIN
+                    OUTER_SET ~spell-copy-cost-floor~ = (%keys_4% - 1)
+                    OUTER_SET ~copy_gold_cost~ = %keys_4%
+                    OUTER_SET ~copy_time_engine~ = %keys_5% * 300
 
-                //calculate a friendly time for display on dialog (hours vs. days)
-                OUTER_SPRINT ~readable_time~ ~~
-                ACTION_IF %keys_5% < 24 THEN
-                BEGIN
-                    OUTER_SET ~hours~ = %keys_5%
-                    OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
-                END
-                ELSE    //days
-                BEGIN
-                    OUTER_SET ~days~ = %keys_5% / 24
-                    OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
-                END
+                    //calculate a friendly time for display on dialog (hours vs. days)
+                    OUTER_SPRINT ~readable_time~ ~~
+                    ACTION_IF %keys_5% < 24 THEN
+                    BEGIN
+                        OUTER_SET ~hours~ = %keys_5%
+                        OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
+                    END
+                    ELSE    //days
+                    BEGIN
+                        OUTER_SET ~days~ = %keys_5% / 24
+                        OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
+                    END
 
 
-                OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.
-                OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %readable_time%] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.
-                OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
-                OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
+                    OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.
+                    OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %readable_time%] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.
+                    OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                    OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
-                APPEND_OUTER -
-                    ~SpellbookCopy/Player%i%States.D~
-                    ~~~~~
+                    APPEND_OUTER -
+                        ~SpellbookCopy/Player%i%States.D~
+                        ~~~~~
     // _%PlayerN%_circle%keys_3%_%keys_1%
     IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%_%keys_1%
         SAY ~%player-circle-spell-prompt%~    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook.
@@ -331,8 +336,10 @@ StartCutScene("bzctwrit")~
             THEN REPLY @15030 //Pack up your scribe tools.
                 EXIT
     END
-                    ~~~~~
-            END
+                        ~~~~~
+
+                END //arcane check
+            END //spell_list_data loop
 
         //Finish out the player-circle-spell states' APPEND command
         APPEND_OUTER -
@@ -341,8 +348,7 @@ StartCutScene("bzctwrit")~
 
 END
             ~~~~~
-
-    END
+    END //player number loop
 
 /****************************
 *   Emit the final result   *

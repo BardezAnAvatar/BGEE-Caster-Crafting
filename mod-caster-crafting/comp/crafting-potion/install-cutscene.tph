@@ -1,0 +1,12 @@
+/*******************************************
+*   Make a cutscene for scribing scrolls   *
+*******************************************/
+
+//Copy over a scribbling sound
+COPY ~./%MOD_FOLDER%/comp/crafting-potion/WAV/BZBREW.wav~ ~override/BZBREW.WAV~
+
+//Compile the scene
+COMPILE ~./%MOD_FOLDER%/comp/crafting-potion/BAF/bzctpotn.baf~
+
+//cursed scroll get in my inventory
+COPY ~./%MOD_FOLDER%/comp/crafting-potion/CRE/BZCPOTN.CRE~ ~override~

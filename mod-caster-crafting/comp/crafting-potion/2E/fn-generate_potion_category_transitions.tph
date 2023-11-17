@@ -1,0 +1,60 @@
+DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
+    STR_VAR
+        ~category~ = ~~ //lower-cast category name to add transitions to
+    BEGIN
+
+        OUTER_SPRINT ~category_lower~ ~%category%~
+        ACTION_TO_LOWER ~category_lower~
+
+        APPEND_OUTER -
+            ~CorePotions/BZMSCAK.D~
+            ~~~~~
+
+EXTEND_TOP ~BZMSCAK~
+    bz_potion_brew_core_%category_lower% //state number(s)
+            ~~~~~
+
+        //isolate the unique potion entries; specific potions, ignoring spells and thus de-duplicating
+        ACTION_PHP_EACH ~bz_base_potions_deduped~
+            AS ~keys~ => ~value~
+            BEGIN
+                ACTION_IF (~%keys_1%~ STRING_EQUAL ~%category%~)
+                THEN
+                BEGIN
+
+                    OUTER_SPRINT ~transition_response~ ~%keys_2%~
+
+                    //Give the potion a dialog option
+                    APPEND_OUTER -
+                        ~CorePotions/BZMSCAK.D~
+                        ~~~~~
+        IF ~~
+        THEN
+            REPLY ~%transition_response%~
+            GOTO bz_potion_brew_core_%category_lower%_%value%
+                        ~~~~~
+
+                END
+            END
+
+APPEND_OUTER -
+    ~CorePotions/BZMSCAK.D~
+    ~~~~~
+END
+    ~~~~~
+
+APPEND_OUTER -
+    ~CorePotions/BZMSCAK.D~
+    ~~~~~
+
+EXTEND_TOP ~BZMSCAK~
+    bz_potion_brew_category_menu //state number(s)
+        IF ~~
+        THEN
+            REPLY ~%category%~
+            GOTO bz_potion_brew_core_%category_lower%
+END
+
+    ~~~~~
+
+    END

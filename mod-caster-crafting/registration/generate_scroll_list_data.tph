@@ -17,11 +17,7 @@
 ACTION_PHP_EACH ~scroll_list~
     AS ~keys~ => ~value~
     BEGIN
-        COPY_EXISTING - ~%keys_1%.spl~ ~override~   //inline only, just to read from spell
-            READ_LONG NAME1 ~strref_name~           //since this is a spell file, NAME1 should be all there is
-        BUT_ONLY_IF_IT_CHANGES
-
-        ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
+        OUTER_TEXT_SPRINT ~spell_name~ $spell_lookup("%keys_1%")
 
         COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
             READ_LONG 0x34 ~scroll_price~           //since this is a spell file, NAME1 should be all there is
@@ -58,4 +54,4 @@ ACTION_PHP_EACH ~scroll_list~
     END
 
 //Sort the indicies, presumably on first key
-ACTION_SORT_ARRAY_INDICES ~spell_list_arcane~
+ACTION_SORT_ARRAY_INDICES ~spell_list~

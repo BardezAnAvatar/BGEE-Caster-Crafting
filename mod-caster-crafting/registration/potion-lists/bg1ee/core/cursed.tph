@@ -1,0 +1,16 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~cursed_potions~
+    BEGIN
+
+        /*
+        [key]                   // 0
+        */
+
+        ~POTN15~ => ~POTN15~    //Red Potion
+        ~POTN16~ => ~POTN16~    //Violet Potion
+        ~POTN23~ => ~POTN23~    //"Oil of Speed"
+        ~POTN25~ => ~POTN25~    //"Potion of Healing"
+        ~POTN32~ => ~POTN32~    //"Antidote"
+        ~POTN40~ => ~POTN40~    //"Potion of Invulnerability"
+
+    END

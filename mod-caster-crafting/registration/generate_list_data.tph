@@ -34,6 +34,9 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
         OUTER_SET ~bz_olvyn_wi556~ =    //Restore original Animate Dead for wizards?
             !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25011~) AND !(MOD_IS_INSTALLED ~MESpells.tp2~ ~25012~)
 
+        OUTER_SET ~bz_olvyn_true_strike~ =    //Replace Infravision with True Strike?
+            (MOD_IS_INSTALLED ~MESpells.tp2~ ~21111~)
+
         //Debugging Statements
         PRINT ~DEBUG: Olvyn:
             powerful:           `%bz_olvyn_powerful%`;
@@ -77,7 +80,7 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph
 
 //OUTPUT:
 /*
-    An associative array named "spell_list_data_arcane" what contains these keys:
+    An associative array named "spell_list_data" what contains these keys:
         [sorting Name]          // 0    --get from level and spell file/TLK
         [Spell RESREF]          // 1
         [Tradition]             // 2
@@ -86,5 +89,10 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph
         [Time Cost]             // 5    hours -- lookup from table
         [Spell Display Name]    // 6    --get from spell
         [Exclusion Flags]       // 7    --get from spell file
+
+
+    An associative array named "spell_lookup" what contains these keys:
+        [Spell RESREF]          // 0
+        [Spell Display Name]    // value    --get from spell/TLK
 */
 INCLUDE ~%MOD_FOLDER%/registration/generate_spell_list_data.tph~

@@ -1,0 +1,24 @@
+/**************************************************
+*   Handle the installation of cursed potions     *
+*   Any thing missing, new cursed potions, etc.   *
+**************************************************/
+
+//Include the cursed scroll list
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/cursed.tph~
+
+
+/*****************************************
+*   Random Treasure for cursed potions   *
+*****************************************/
+INCLUDE ~%MOD_FOLDER%/comp/shared/fn-add_random_treasure_from_array.tph~
+
+
+//Register the random treasure for cursed potions -- read ~cursed_potions~ array and add to 2DA in-game
+LAUNCH_ACTION_FUNCTION ~bz_add_random_treasure_from_array~
+STR_VAR
+    ~Loot_RESREF~ = ~BZPTNCUR~
+    ~SourceArray~ = ~cursed_potions~  //uses the `value` in whatever array, using ACTION_PHP_EACH
+END
+/**********************************************
+*   END: Random Treasure for cursed potions   *
+**********************************************/

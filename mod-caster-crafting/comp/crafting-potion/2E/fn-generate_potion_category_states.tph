@@ -1,0 +1,289 @@
+INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-csv_string_to_array.tph~
+
+
+DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_states~
+    STR_VAR
+        ~category~ = ~~ //lower-cast category name to add transitions to
+    BEGIN
+
+<<<<<<<< temp/transitions_and_states.D
+
+>>>>>>>>
+
+
+        OUTER_SPRINT ~category_lower~ ~%category%~
+        ACTION_TO_LOWER ~category_lower~
+
+        APPEND_OUTER -
+            ~CorePotions/BZMSCAK.D~
+            ~~~~~
+
+APPEND ~BZMSCAK~
+            ~~~~~
+
+        //isolate the unique protection potion entries; specific potions, ignoring spells and thus de-duplicating
+        ACTION_PHP_EACH ~bz_base_potions_deduped~
+            AS ~keys~ => ~value~
+            BEGIN
+                ACTION_IF (~%keys_1%~ STRING_EQUAL ~%category%~)
+                THEN
+                BEGIN
+                    /*********************************************************
+                    *   Build the individual potion states and transitions   *
+                    *********************************************************/
+
+                    OUTER_TEXT_SPRINT ~potion_name~ ~%keys_2%~
+
+                    //Give the potion a dialog option
+                    APPEND_OUTER -
+                        ~CorePotions/BZMSCAK.D~
+                        ~~~~~
+    IF ~~
+    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%
+        SAY @30044 // ~Which formula do you wish to use?~
+                        ~~~~~
+
+                    //Loop through recipes list for formulae transitions
+                    ACTION_PHP_EACH ~potion_list_data~
+                        AS ~data_keys~ => ~_val~
+                        BEGIN
+                            //if the potion code matches
+                            ACTION_IF (~%value%~ STRING_EQUAL ~%data_keys_1%~)
+                            THEN BEGIN
+                                //build out all 3 conditionals
+
+                                LAUNCH_ACTION_FUNCTION ~bz_csv_string_to_array~
+                                    STR_VAR
+                                        ~string~ = ~%data_keys_3%~     // string with space separator
+                                    RET_ARRAY
+                                        ~spells_array~ = ~array~
+                                END
+
+                                //Build up the formula string & conditions
+                                OUTER_SET ~i~ = 0
+                                OUTER_TEXT_SPRINT ~spell_list~ ~~
+                                OUTER_TEXT_SPRINT ~condition_valid~ ~~
+                                OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~~
+                                ACTION_PHP_EACH ~spells_array~
+                                    AS ~spell_keys~ => ~_v~
+                                    BEGIN
+                                        //comma-separate
+                                        ACTION_IF (~i~ > 0) THEN BEGIN OUTER_TEXT_SPRINT ~spell_list~ ~%spell_list%, ~ END
+                                        OUTER_TEXT_SPRINT ~temp_spellName~ $spell_lookup("%_v%")
+                                        OUTER_TEXT_SPRINT ~spell_list~ ~%spell_list%%temp_spellName%~
+                                        OUTER_SET ~i~ = (%i% + 1)
+
+                                        //use the RESREF to check for memorized spell
+                                        OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
+HaveSpellRES("%_v%")~
+                                        //use the RESREF to check for missing memorized spell
+                                        OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~%condition_invalid_spells%
+!HaveSpellRES("%_v%")~
+                                    END
+
+                                OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %data_keys_2%)
+%condition_valid%~
+                                OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~LevelGT(MYSELF, %data_keys_2%)
+OR(%i%)
+%condition_invalid_spells%~
+                                OUTER_TEXT_SPRINT ~condition_invalid_level~ ~!LevelGT(MYSELF, %data_keys_2%)~
+
+
+                                ACTION_IF (~i~ > 1)
+                                    THEN BEGIN OUTER_SPRINT ~formula~ @30050 END    //plural
+                                    ELSE BEGIN OUTER_SPRINT ~formula~ @30049 END    //singular
+
+                                //use `potion_name` and `formula` to merge dynamic text
+                                OUTER_SPRINT ~response_text~ @30045 // ~Brew %potion_name% using %formula%.~
+
+                                APPEND_OUTER -
+                                    ~CorePotions/BZMSCAK.D~
+                                    ~~~~~
+            IF ~%condition_valid%~
+            THEN REPLY ~%response_text%~ // ~Brew %potion_name% using %formula%.~
+                GOTO bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_valid
+            IF ~%condition_invalid_level%~
+            THEN REPLY ~%response_text%~ // ~Brew %potion_name% using %formula%.~
+                GOTO bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_insufficient_level
+            IF ~%condition_invalid_spells%~
+            THEN REPLY ~%response_text%~ // ~Brew %potion_name% using %formula%.~
+                GOTO bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_not_memorized
+                                    ~~~~~
+
+
+
+                                //While I'm in this inner loop, build the 3 different destination states:
+
+
+                                /***************************************
+                                *   Build potion states for formulae   *
+                                ***************************************/
+                                OUTER_SPRINT ~prompt~ @30046 // ~You analyze the formula and prepare to brew %potion_name%.~
+
+                                //variables needed for dialog action:
+                                //  %potion_name%, %gold_cost%, %readable_time%; %quantity%
+
+                                OUTER_SET ~gold_cost~ = %data_keys_6%
+                                OUTER_SET ~gold_cost_gt~ = (%data_keys_6% - 1)
+                                OUTER_SET ~quantity~ = %data_keys_4%
+
+                                //BEGIN: Calculate times
+                                OUTER_SET ~copy_time_engine~ = %data_keys_7% * 300
+
+                                //calculate a friendly time for display on dialog (hours vs. days)
+                                OUTER_SPRINT ~readable_time~ ~~
+                                ACTION_IF %data_keys_7% < 24 THEN
+                                BEGIN
+                                    OUTER_SET ~hours~ = %data_keys_7%
+                                    OUTER_SPRINT ~readable_time~ @30029 // `%keys_5% hours`
+                                END
+                                ELSE    //days
+                                BEGIN
+                                    OUTER_SET ~days~ = %data_keys_7% / 24
+                                    OUTER_SPRINT ~readable_time~ @30028 // `(%keys_5% / 24) days`
+                                END
+                                //END calculate times
+
+
+                                OUTER_SET ~bz_potion_failure_bounds_cursed~ = (99 - %data_keys_9%)     //use this for GT(X)
+                                OUTER_SET ~bz_potion_failure_bounds_success~ = (100 - %data_keys_9%)   //use this for LT(X)
+
+                                //build the transition string
+                                OUTER_SPRINT ~brew_transition_go~ @30026 //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
+
+                                //display to log
+                                OUTER_SPRINT ~elapsed_message~ @30027 //~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"
+                                OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
+
+                                APPEND_OUTER -
+                                    ~temp/transitions_and_states.D~
+                                    ~~~~~
+    IF ~~
+    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_valid
+        SAY ~%prompt%~ // ~You analyze the formula and prepare to brew %potion_name%.~
+            //already gated other conditions prior
+            IF ~PartyGoldGT(%gold_cost_gt%)
+RandomNumLT(100, %bz_potion_failure_bounds_success%)~   //created successfully
+            THEN
+                REPLY ~%brew_transition_go%~   //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
+                DO ~
+TakePartyGold(%gold_cost%)
+DestroyGold(%gold_cost%)
+AdvanceTime(%copy_time_engine%)
+DisplayString(Myself, %elapsed_strref%)
+PlaySound("BZBREW")
+GiveItemCreate("%value%", Myself, %quantity%, 0, 0)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("BZCTPOTN")~
+                EXIT
+            IF ~PartyGoldGT(%gold_cost_gt%)
+RandomNumGT(100, %bz_potion_failure_bounds_cursed%)~    //failure, create cursed potion
+            THEN
+                REPLY ~%brew_transition_go%~   //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
+                DO ~
+TakePartyGold(%gold_cost%)
+DestroyGold(%gold_cost%)
+AdvanceTime(%copy_time_engine%)
+DisplayString(Myself, %elapsed_strref%)
+PlaySound("BZBREW")
+CreateCreature("BZCPOTN", [-1.-1], S)
+ActionOverride("BZ_CursedScrollGiver", GivePartyAllEquipment())
+ActionOverride("BZ_CursedScrollGiver", DestroySelf())
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("BZCTPOTN")~
+                EXIT
+
+
+            IF ~~
+            THEN REPLY @30030 // ~Pick another formula.~
+                GOTO bz_potion_brew_core_%category_lower%_%value%
+            IF ~~
+            THEN REPLY @30024 // ~Pick another potion.~
+                GOTO bz_potion_brew_core_%category_lower%
+            IF ~~
+            THEN REPLY @30025 // ~Pick another type of potion.~
+                GOTO bz_potion_brew_category_menu
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
+
+    IF ~~
+    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_insufficient_level
+        SAY @30047 // ~You are of insufficient level for this formula.~
+            IF ~~
+            THEN REPLY @30030 // ~Pick another formula.~
+                GOTO bz_potion_brew_core_%category_lower%_%value%
+            IF ~~
+            THEN REPLY @30024 // ~Pick another potion.~
+                GOTO bz_potion_brew_core_%category_lower%
+            IF ~~
+            THEN REPLY @30025 // ~Pick another type of potion.~
+                GOTO bz_potion_brew_category_menu
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
+
+    IF ~~
+    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_not_memorized
+        SAY @30048 // ~You do not have the spells for this formula memorized.~
+            IF ~~
+            THEN REPLY @30030 // ~Pick another formula.~
+                GOTO bz_potion_brew_core_%category_lower%_%value%
+            IF ~~
+            THEN REPLY @30024 // ~Pick another potion.~
+                GOTO bz_potion_brew_core_%category_lower%
+            IF ~~
+            THEN REPLY @30025 // ~Pick another type of potion.~
+                GOTO bz_potion_brew_category_menu
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
+                                    ~~~~~
+
+                                /********************************************
+                                *   END: Build potion states for formulae   *
+                                ********************************************/
+
+                            END //we match the current potion from de-duped list
+                        END //loop through `potion_list_data`
+
+                    //Final transition options
+                    APPEND_OUTER -
+                        ~CorePotions/BZMSCAK.D~
+                        ~~~~~
+            IF ~~
+            THEN REPLY @30024 // ~Pick another potion.~
+                GOTO bz_potion_brew_core_%category_lower%
+            IF ~~
+            THEN REPLY @30025 // ~Pick another type of potion.~
+                GOTO bz_potion_brew_category_menu
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
+                        ~~~~~
+
+                    /**************************************************************
+                    *   END: Build the individual potion states and transitions   *
+                    **************************************************************/
+                END //match the category parameter
+            END //Loop through de-duped potions
+
+//Append the additional states to the end of the append. Yo, Dawg
+COPY -
+    ~CorePotions/BZMSCAK.D~
+    ~CorePotions/BZMSCAK.D~
+        APPEND_FILE TEXT ~temp/transitions_and_states.D~
+
+APPEND_OUTER -
+    ~CorePotions/BZMSCAK.D~
+    ~~~~~
+END
+    ~~~~~
+
+    END

@@ -13,3 +13,9 @@
 @21 = ~Add in missing arcane spell scrolls~
 @22 = ~Add in missing priest spell scrolls~
 @23 = ~Add in missing arcane and priest spell scrolls~
+
+// Brewing Potions
+@30 = ~Caster Crafting: Brew Potions~
+@31 = ~Brew base game potions~
+@32 = ~Brew spell potions~
+@33 = ~Brew both base game and spell potions~

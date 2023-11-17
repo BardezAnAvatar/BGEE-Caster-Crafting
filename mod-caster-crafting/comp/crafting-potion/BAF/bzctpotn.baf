@@ -1,0 +1,12 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        CreateVisualEffectObject("PARALH", Myself)
+        Wait(2)
+        FadeToColor([20.0],0)
+        Wait(3)
+        FadeFromColor([20.0],0)
+        EndCutSceneMode()
+END

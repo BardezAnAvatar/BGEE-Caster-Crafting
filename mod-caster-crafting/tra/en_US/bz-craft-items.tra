@@ -1,4 +1,4 @@
-/* Reserving range 20000-21000 */
+/* Reserving range 20000-29999 */
 @20000 = ~Scribe's Tool Kit~
 @20001 =
 ~~~~~This leather kit includes all sorts of tools necessary for the scribing of scrolls and arcane spellbooks. This specific kit is a travel kit, able to carry a minimal tool set and other supplies necessary for scribing.
@@ -32,3 +32,25 @@ Weight: 10~~~~~
 //Protection scroll descriptions
 @20040 = ~A protection scroll is a set of magical runes imprinted on enchanted parchment. These scrolls are unique in that any class of character can read them, whether adept in magic or not. When the runes are read aloud, the protective magic is released upon the target of the reader's choice. These scrolls can have a wide variety of beneficial effects, though care should be taken with scrolls gained from suspicious sources.~
 @20041 = ~This scroll is cursed. It would be unwise to read it, as the effects could prove fatal.~
+
+//Alchemy kit
+@20050 = ~Alchemy Kit~
+@20051 =
+~~~~~This kit includes all sorts of tools necessary for the brewing of potions. This specific kit is a travel kit, able to carry a minimal tool set and other supplies necessary for brewing potions.
+
+Mundane work kits similar to these are common for journeymen and apprentices throughout the Realms.
+
+STATISTICS:
+
+Weight: 20~~~~~
+@20052 = ~Use Alchemy Kit~
+
+/****************************
+*   Names for new potions   *
+****************************/
+@20100 = ~Potion of %spell_name%~
+@20101 = ~Oil of %spell_name%~
+@20102 = ~Draught of %spell_name%~
+@20103 = ~Bomb of %spell_name%~
+//special cases :)
+@20104 = ~Lightning in a bottle~

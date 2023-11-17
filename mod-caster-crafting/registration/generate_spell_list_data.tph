@@ -1,6 +1,6 @@
 //OUTPUT:
 /*
-    An associative array named "spell_list_data_arcane" what contains these keys:
+    An associative array named "spell_list_data" what contains these keys:
         [sorting Name]          // 0    --get from level and spell file/TLK
         [Spell RESREF]          // 1
         [Tradition]             // 2
@@ -9,8 +9,12 @@
         [Time Cost]             // 5    hours -- calc from table
         [Spell Display Name]    // 6    --get from spell/TLK
         [Exclusion Flags]       // 7    --get from spell file
+
+    An associative array named "spell_lookup" what contains these keys:
+        [Spell RESREF]          // 0
+        [Spell Display Name]    // value    --get from spell/TLK
 */
-ACTION_PHP_EACH ~spell_list_arcane~
+ACTION_PHP_EACH ~spell_list~
     AS ~keys~ => ~value~
     BEGIN
         COPY_EXISTING - ~%keys_0%.spl~ ~override~       //inline only, just to read from spell
@@ -21,18 +25,28 @@ ACTION_PHP_EACH ~spell_list_arcane~
         ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~
-            STR_VAR
-                ~Level~ = ~%keys_2%~
-            RET
-                ~copy_cost_time~ = ~time~
-                ~copy_cost_gold~ = ~gold~
+
+        //you cannot copy divine spells, make it 0
+        ACTION_IF (~%keys_1%~ STRING_EQUAL "Divine") THEN
+        BEGIN
+            OUTER_SET ~copy_cost_gold~ = 0
+            OUTER_SET ~actual_copy_cost_gold~ = 0
+        END
+        ELSE    //arcane
+        BEGIN
+            LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~
+                STR_VAR
+                    ~Level~ = ~%keys_2%~
+                RET
+                    ~copy_cost_time~ = ~time~
+                    ~copy_cost_gold~ = ~gold~
+            END
+
+            OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
         END
 
-        OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
-
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list_data_arcane~
+            ~spell_list_data~
             BEGIN
                 ~%keys_2%_%spell_name%~,    //sorting key of level and spell name
                 ~%keys_0%~,                 //spell RESREF
@@ -44,7 +58,15 @@ ACTION_PHP_EACH ~spell_list_arcane~
                 ~%exclusion_flags%~         //LONG bit field for kit exclusion. SEE: Kitlist.2da, but I'mma hard code this.
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, spell code, etc.
             END
+
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+            ~spell_lookup~
+            BEGIN
+                ~%keys_0%~                  //spell RESREF
+                    => ~%spell_name%~       //spell name
+            END
+
     END
 
 //Sort the indicies, presumably on first key
-ACTION_SORT_ARRAY_INDICES ~spell_list_data_arcane~
+ACTION_SORT_ARRAY_INDICES ~spell_list_data~

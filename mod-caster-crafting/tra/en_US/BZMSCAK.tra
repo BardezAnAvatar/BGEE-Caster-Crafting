@@ -1,0 +1,73 @@
+/* Reserving range 30000-39999 */
+
+//Initial dialog states
+@30000 = ~Your alchemy kit is open before you. How do you wish to use it?~
+@30001 = ~You cannot use your alchemy kit while enemies are about.~
+
+//Main Menu
+@30010 = ~Brew a potion.~
+
+//Common Actions
+@30020 = ~Pack up your alchemy station.~
+@30021 = ~Go back to your alchemy station.~
+@30022 = ~Pick another spell circle.~
+@30023 = ~Pick another spell.~
+@30024 = ~Pick another potion.~
+@30025 = ~Pick another type of potion.~
+@30026 = ~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vial(s)]~
+@30027 = ~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"; "1 days" or "1 hours" are an unfortunate side effect
+@30028 = ~%days% day(s)~
+@30029 = ~%hours% hour(s)~
+@30030 = ~Pick another formula.~
+
+
+
+//Common Prompts
+@30040 = ~What kind of potion do you wish to brew?~
+@30041 = ~Which spell circle do you explore?~
+@30042 = ~Which spell do you examine?~
+@30043 = ~Which potion do you wish to brew?~
+@30044 = ~Which formula do you wish to use?~
+@30045 = ~Brew %potion_name% using %formula%.~
+@30046 = ~You analyze the formula and prepare to brew %potion_name%.~
+@30047 = ~You are of insufficient level for this formula.~
+@30048 = ~You do not have the spells for this formula memorized.~
+@30049 = ~the spell %spell_list%~   //singular
+@30050 = ~the spells %spell_list%~  //plural
+
+//Spell circles
+@30061 = ~1st arcane circle~
+@30062 = ~2nd arcane circle~
+@30063 = ~3rd arcane circle~
+@30064 = ~4th arcane circle~
+@30065 = ~5th arcane circle~
+@30066 = ~6th arcane circle~
+@30067 = ~7th arcane circle~
+@30068 = ~8th arcane circle~
+@30069 = ~9th arcane circle~
+@30070 = ~10th arcane circle~
+@30071 = ~1st divine circle~
+@30072 = ~2nd divine circle~
+@30073 = ~3rd divine circle~
+@30074 = ~4th divine circle~
+@30075 = ~5th divine circle~
+@30076 = ~6th divine circle~
+@30077 = ~7th divine circle~
+@30078 = ~Quest divine spells~
+
+//Potion Groups
+@30080 = ~Arcane Potions~
+@30081 = ~Divine Potions~
+@30082 = ~Restorative Potions~
+@30083 = ~Defense Potions~
+@30084 = ~Enhancement Potions~
+@30085 = ~Bombs~
+@30086 = ~Poisons~
+
+
+//Divine scrolls
+@30090 = ~You meditate over the spell %spell_name% and prepare its power.~
+
+//Arcane scrolls
+@30100 = ~You look over the spell %spell_name% and inspect its entry in your spellbook.~
+

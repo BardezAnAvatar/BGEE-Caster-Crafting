@@ -2,7 +2,7 @@
 *   Spell circle checks by class/level   *
 *****************************************/
 //Include vars for configuring the gatekeeping checks
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/vars_gatekeep_sicles.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/vars_gatekeep_circles.tph~
 
 
 //TODO: Override the defaults? read 2DA files that fuck with the progression tables?
