@@ -4,8 +4,8 @@ EXTEND_TOP ~BZMSCAK~ bz_potion_brew_main_menu    //Your alchemy kit is open befo
 
             //Scribe scroll: Cleric/Druid
             IF ~OR(2)
-    Class(MYSELF, CLERIC_ALL)
-    Class(MYSELF, DRUID_ALL)
+Class(MYSELF, CLERIC_ALL)
+Class(MYSELF, DRUID_ALL)
 LevelGT(MYSELF, 6)~
                 THEN REPLY @30010 //Brew a potion
                     GOTO bz_potion_brew_category_menu
