@@ -26,6 +26,11 @@
 @30041 = ~Which spell circle do you explore?~
 @30042 = ~Which spell do you examine?~
 @30043 = ~Which potion do you wish to brew?~
+@30044 = ~Which formula do you wish to use?~
+@30045 = ~Brew a %potion_name% using %formula%.~
+@30046 = ~You analyze the formula and prepare to brew %potion_name%.~
+@30047 = ~You are of insufficient level for this formula.~
+@30048 = ~You do not have the spells for this formula memorized.~
 
 
 //Spell circles
@@ -63,3 +68,4 @@
 
 //Arcane scrolls
 @30100 = ~You look over the spell %spell_name% and inspect its entry in your spellbook.~
+
