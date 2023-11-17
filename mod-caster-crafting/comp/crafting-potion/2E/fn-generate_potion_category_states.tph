@@ -163,8 +163,8 @@ RandomNumLT(100, %bz_potion_failure_bounds_success%)~   //created successfully
             THEN
                 REPLY ~%brew_transition_go%~   //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
                 DO ~
-TakePartyGold(%gold_cos%)
-DestroyGold(%gold_cos%)
+TakePartyGold(%gold_cost%)
+DestroyGold(%gold_cost%)
 AdvanceTime(%copy_time_engine%)
 DisplayString(Myself, %elapsed_strref%)
 PlaySound("BZBREW")
@@ -178,8 +178,8 @@ RandomNumGT(100, %bz_potion_failure_bounds_cursed%)~    //failure, create cursed
             THEN
                 REPLY ~%brew_transition_go%~   //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
                 DO ~
-TakePartyGold(%gold_cos%)
-DestroyGold(%gold_cos%)
+TakePartyGold(%gold_cost%)
+DestroyGold(%gold_cost%)
 AdvanceTime(%copy_time_engine%)
 DisplayString(Myself, %elapsed_strref%)
 PlaySound("BZBREW")
