@@ -69,7 +69,8 @@ APPEND ~BZMSCAK~
                                     BEGIN
                                         //comma-separate
                                         ACTION_IF (~i~ > 0) THEN BEGIN OUTER_TEXT_SPRINT ~spell_list~ ~%spell_list%, ~ END
-                                        OUTER_TEXT_SPRINT ~spell_list~ ~%spell_list%%_v%~
+                                        OUTER_TEXT_SPRINT ~temp_spellName~ $spell_lookup("%_v%")
+                                        OUTER_TEXT_SPRINT ~spell_list~ ~%spell_list%%temp_spellName%~
                                         OUTER_SET ~i~ = (%i% + 1)
 
                                         //use the RESREF to check for memorized spell
