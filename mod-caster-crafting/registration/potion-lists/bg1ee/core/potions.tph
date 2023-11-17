@@ -80,7 +80,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN11-1~,    ~POTN11~, ~0~,  ~SPWI209,SPPR414~,           ~1~, ~0~, ~8~,  ~Defense~     => ~POTN11~   //Potion of Invulnerability;              `Luck` and `Spirit Armor` Wizard Spells
 
         ~POTN13-0~,    ~POTN13~, ~0~,  ~SPWI304~,                   ~1~, ~0~, ~6~,  ~Bomb~        => ~POTN13~   //Oil of Fiery Burning;                   `Fireball` Wizard Spell
-        ~POTN13-1~,    ~POTN13~, ~0~,  ~SPWI304~,                   ~2~, ~0~, ~6~,  ~Bomb~        => ~POTN13~   //Oil of Fiery Burning;                   `Delayed Blast Fireball` Wizard Spell
+        ~POTN13-1~,    ~POTN13~, ~0~,  ~SPWI712~,                   ~2~, ~0~, ~6~,  ~Bomb~        => ~POTN13~   //Oil of Fiery Burning;                   `Delayed Blast Fireball` Wizard Spell
         ~POTN13-2~,    ~POTN13~, ~0~,  ~SPWI922~,                   ~5~, ~0~, ~6~,  ~Bomb~        => ~POTN13~   //Oil of Fiery Burning;                   `Dragon's Breath` Wizard Spell
 
         ~POTN13-0~,    ~POTN14~, ~0~,  ~SPWI305~,                   ~1~, ~0~, ~6~,  ~Enhancement~ => ~POTN13~   //Oil of Speed;                           `Haste` Wizard Spell
