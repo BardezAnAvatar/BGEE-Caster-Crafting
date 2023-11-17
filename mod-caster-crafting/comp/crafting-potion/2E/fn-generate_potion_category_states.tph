@@ -1,4 +1,4 @@
-INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-fn-csv_string_to_array.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-csv_string_to_array.tph~
 
 
 DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_states~
@@ -49,7 +49,7 @@ APPEND ~BZMSCAK~
                         BEGIN
                             //if the potion code matches
                             ACTION_IF (~%keys_1%~ STRING_EQUAL ~%data_key1%~)
-                            THEN
+                            THEN BEGIN
                                 //build out all 3 conditionals
 
                                 LAUNCH_ACTION_FUNCTION ~bz_csv_string_to_array~
@@ -70,7 +70,7 @@ APPEND ~BZMSCAK~
                                         //comma-separate
                                         ACTION_IF (~i~ > 0) THEN BEGIN OUTER_TEXT_SPRINT ~spell_list~ ~%spell_list%, ~ END
                                         OUTER_TEXT_SPRINT ~spell_list~ ~%spell_list%%_v%~
-                                        ~i~ += 1
+                                        OUTER_SET ~i~ = (%i% + 1)
 
                                         //use the RESREF to check for memorized spell
                                         OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
@@ -111,49 +111,49 @@ OR(%i%)
 
 
 
-                            //While I'm in this inner loop, build the 3 different destination states:
+                                //While I'm in this inner loop, build the 3 different destination states:
 
 
-                            /***************************************
-                            *   Build potion states for formulae   *
-                            ***************************************/
-                            OUTER_SPRINT ~prompt~ @30046 // ~You analyze the formula and prepare to brew %potion_name%.~
+                                /***************************************
+                                *   Build potion states for formulae   *
+                                ***************************************/
+                                OUTER_SPRINT ~prompt~ @30046 // ~You analyze the formula and prepare to brew %potion_name%.~
 
-                            //variables needed for dialog action:
-                            //  %potion_name%, %gold_cost%, %readable_time%; %quantity%
+                                //variables needed for dialog action:
+                                //  %potion_name%, %gold_cost%, %readable_time%; %quantity%
 
-                            OUTER_SET ~gold_cost~ = %data_keys_6%
-                            OUTER_SET ~gold_cost_gt~ = (%data_keys_6% - 1)
-                            OUTER_SET ~quantity~ = %data_keys_4%
+                                OUTER_SET ~gold_cost~ = %data_keys_6%
+                                OUTER_SET ~gold_cost_gt~ = (%data_keys_6% - 1)
+                                OUTER_SET ~quantity~ = %data_keys_4%
 
-                            //BEGIN: Calculate times
-                            OUTER_SET ~copy_time_engine~ = %data_keys_7% * 300
+                                //BEGIN: Calculate times
+                                OUTER_SET ~copy_time_engine~ = %data_keys_7% * 300
 
-                            //calculate a friendly time for display on dialog (hours vs. days)
-                            OUTER_SPRINT ~readable_time~ ~~
-                            ACTION_IF %data_keys_7% < 24 THEN
-                            BEGIN
-                                OUTER_SET ~hours~ = %data_keys_7%
-                                OUTER_SPRINT ~readable_time~ @30029 // `%keys_5% hours`
-                            END
-                            ELSE    //days
-                            BEGIN
-                                OUTER_SET ~days~ = %data_keys_7% / 24
-                                OUTER_SPRINT ~readable_time~ @30028 // `(%keys_5% / 24) days`
-                            END
-                            //END calculate times
+                                //calculate a friendly time for display on dialog (hours vs. days)
+                                OUTER_SPRINT ~readable_time~ ~~
+                                ACTION_IF %data_keys_7% < 24 THEN
+                                BEGIN
+                                    OUTER_SET ~hours~ = %data_keys_7%
+                                    OUTER_SPRINT ~readable_time~ @30029 // `%keys_5% hours`
+                                END
+                                ELSE    //days
+                                BEGIN
+                                    OUTER_SET ~days~ = %data_keys_7% / 24
+                                    OUTER_SPRINT ~readable_time~ @30028 // `(%keys_5% / 24) days`
+                                END
+                                //END calculate times
 
 
-                            OUTER_SET ~bz_potion_failure_bounds_cursed~ = (99 - %data_keys_9%)     //use this for GT(X)
-                            OUTER_SET ~bz_potion_failure_bounds_success~ = (100 - %data_keys_9%)   //use this for LT(X)
+                                OUTER_SET ~bz_potion_failure_bounds_cursed~ = (99 - %data_keys_9%)     //use this for GT(X)
+                                OUTER_SET ~bz_potion_failure_bounds_success~ = (100 - %data_keys_9%)   //use this for LT(X)
 
-                            //build the transition string
-                            OUTER_SPRINT ~brew_transition_go~ @30026 //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
-                            OUTER_SPRINT ~elapsed_strref~ @30027 //~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"
+                                //build the transition string
+                                OUTER_SPRINT ~brew_transition_go~ @30026 //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
+                                OUTER_SPRINT ~elapsed_strref~ @30027 //~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"
 
-                            APPEND_OUTER -
-                                ~temp/transitions_and_states~
-                                ~~~~~
+                                APPEND_OUTER -
+                                    ~temp/transitions_and_states~
+                                    ~~~~~
     IF ~~
     THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_valid
         SAY ~%prompt%~ // ~You analyze the formula and prepare to brew %potion_name%.~
@@ -239,12 +239,13 @@ StartCutScene("BZCTPOTN")~
             THEN REPLY @30020 //Pack up your alchemy station
                 EXIT
     END
-                                ~~~~~
+                                    ~~~~~
 
-                            /********************************************
-                            *   END: Build potion states for formulae   *
-                            ********************************************/
+                                /********************************************
+                                *   END: Build potion states for formulae   *
+                                ********************************************/
 
+                            END
                         END
 
                     //Final transition options
