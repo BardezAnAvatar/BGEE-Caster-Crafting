@@ -7,6 +7,7 @@ DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_states~
     BEGIN
 
 <<<<<<<< temp/transitions_and_states.D
+
 >>>>>>>>
 
 
@@ -270,8 +271,10 @@ StartCutScene("BZCTPOTN")~
             END //Loop through de-duped potions
 
 //Append the additional states to the end of the append. Yo, Dawg
-COPY - ~CorePotions/BZMSCAK.D~ ~CorePotions/BZMSCAK.D~
-    APPEND_FILE TEXT ~temp/transitions_and_states.D~
+COPY -
+    ~CorePotions/BZMSCAK.D~
+    ~CorePotions/BZMSCAK.D~
+        APPEND_FILE TEXT ~temp/transitions_and_states.D~
 
 APPEND_OUTER -
     ~CorePotions/BZMSCAK.D~
