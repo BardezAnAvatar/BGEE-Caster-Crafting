@@ -89,5 +89,10 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph
         [Time Cost]             // 5    hours -- lookup from table
         [Spell Display Name]    // 6    --get from spell
         [Exclusion Flags]       // 7    --get from spell file
+
+
+    An associative array named "spell_lookup" what contains these keys:
+        [Spell RESREF]          // 0
+        [Spell Display Name]    // value    --get from spell/TLK
 */
 INCLUDE ~%MOD_FOLDER%/registration/generate_spell_list_data.tph~

@@ -9,6 +9,10 @@
         [Time Cost]             // 5    hours -- calc from table
         [Spell Display Name]    // 6    --get from spell/TLK
         [Exclusion Flags]       // 7    --get from spell file
+
+    An associative array named "spell_lookup" what contains these keys:
+        [Spell RESREF]          // 0
+        [Spell Display Name]    // value    --get from spell/TLK
 */
 ACTION_PHP_EACH ~spell_list~
     AS ~keys~ => ~value~
@@ -44,6 +48,14 @@ ACTION_PHP_EACH ~spell_list~
                 ~%exclusion_flags%~         //LONG bit field for kit exclusion. SEE: Kitlist.2da, but I'mma hard code this.
                     => ~%keys_0%~           //a rather arbitrary value to pick. could be name, spell code, etc.
             END
+
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+            ~spell_lookup~
+            BEGIN
+                ~%keys_0%~                  //spell RESREF
+                    => ~%spell_name%~       //spell name
+            END
+
     END
 
 //Sort the indicies, presumably on first key
