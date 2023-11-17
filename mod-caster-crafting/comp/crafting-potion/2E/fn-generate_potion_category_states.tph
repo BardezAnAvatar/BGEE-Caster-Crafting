@@ -158,7 +158,7 @@ OR(%i%)
     THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_valid
         SAY ~%prompt%~ // ~You analyze the formula and prepare to brew %potion_name%.~
             //already gated other conditions prior
-            IF ~PartyGoldGT(%gold_cost_gt%)~
+            IF ~PartyGoldGT(%gold_cost_gt%)
 RandomNumLT(100, %bz_potion_failure_bounds_success%)~   //created successfully
             THEN
                 REPLY ~%brew_transition_go%~   //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
@@ -173,7 +173,7 @@ ClearAllActions()
 StartCutSceneMode()
 StartCutScene("BZCTPOTN")~
                 EXIT
-            IF ~PartyGoldGT(%gold_cost_gt%)~
+            IF ~PartyGoldGT(%gold_cost_gt%)
 RandomNumGT(100, %bz_potion_failure_bounds_cursed%)~    //failure, create cursed potion
             THEN
                 REPLY ~%brew_transition_go%~   //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
