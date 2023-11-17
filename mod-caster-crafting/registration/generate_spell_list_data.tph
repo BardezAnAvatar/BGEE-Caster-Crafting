@@ -25,15 +25,25 @@ ACTION_PHP_EACH ~spell_list~
         ACTION_GET_STRREF ~strref_name~ ~spell_name~    //convert the read STRREF to an actual string
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~
-            STR_VAR
-                ~Level~ = ~%keys_2%~
-            RET
-                ~copy_cost_time~ = ~time~
-                ~copy_cost_gold~ = ~gold~
-        END
 
-        OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
+        //you cannot copy divine spells, make it 0
+        ACTION_IF (~%keys_1%~ STRING_EQUAL "Divine") THEN
+        BEGIN
+            OUTER_SET ~copy_cost_gold~ = 0
+            OUTER_SET ~actual_copy_cost_gold~ = 0
+        END
+        ELSE    //arcane
+        BEGIN
+            LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_copy_spell~
+                STR_VAR
+                    ~Level~ = ~%keys_2%~
+                RET
+                    ~copy_cost_time~ = ~time~
+                    ~copy_cost_gold~ = ~gold~
+            END
+
+            OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
+        END
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
             ~spell_list_data~
