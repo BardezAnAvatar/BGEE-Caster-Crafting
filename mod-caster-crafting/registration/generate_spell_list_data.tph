@@ -1,6 +1,6 @@
 //OUTPUT:
 /*
-    An associative array named "spell_list_data_arcane" what contains these keys:
+    An associative array named "spell_list_data" what contains these keys:
         [sorting Name]          // 0    --get from level and spell file/TLK
         [Spell RESREF]          // 1
         [Tradition]             // 2
@@ -10,7 +10,7 @@
         [Spell Display Name]    // 6    --get from spell/TLK
         [Exclusion Flags]       // 7    --get from spell file
 */
-ACTION_PHP_EACH ~spell_list_arcane~
+ACTION_PHP_EACH ~spell_list~
     AS ~keys~ => ~value~
     BEGIN
         COPY_EXISTING - ~%keys_0%.spl~ ~override~       //inline only, just to read from spell
@@ -32,7 +32,7 @@ ACTION_PHP_EACH ~spell_list_arcane~
         OUTER_SET ~actual_copy_cost_gold~ = (%copy_cost_gold% / 4)
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list_data_arcane~
+            ~spell_list_data~
             BEGIN
                 ~%keys_2%_%spell_name%~,    //sorting key of level and spell name
                 ~%keys_0%~,                 //spell RESREF
@@ -47,4 +47,4 @@ ACTION_PHP_EACH ~spell_list_arcane~
     END
 
 //Sort the indicies, presumably on first key
-ACTION_SORT_ARRAY_INDICES ~spell_list_data_arcane~
+ACTION_SORT_ARRAY_INDICES ~spell_list_data~

@@ -183,7 +183,7 @@ DEBUG: PLAYER %i%, Circle %j%:
                 //Do a loop and emit a list of transitions for each matching spell in the circle.
                 //  The transition will need to record the player since going up a level would go back
                 //  To the  _PlayerN_CircleX state
-                ACTION_PHP_EACH ~spell_list_data_arcane~
+                ACTION_PHP_EACH ~spell_list_data~
                     AS ~keys~ => ~value~
                     BEGIN
 
@@ -262,7 +262,7 @@ DEBUG: `PLAYER %i%, Circle X` Specific Spell States Starting
 APPEND ~BZMSCST~
             ~~~~~
 
-        ACTION_PHP_EACH ~spell_list_data_arcane~
+        ACTION_PHP_EACH ~spell_list_data~
             AS ~keys~ => ~value~
             BEGIN
                 OUTER_SET ~spell-copy-cost-floor~ = (%keys_4% - 1)

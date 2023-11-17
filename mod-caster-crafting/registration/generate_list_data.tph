@@ -80,7 +80,7 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph
 
 //OUTPUT:
 /*
-    An associative array named "spell_list_data_arcane" what contains these keys:
+    An associative array named "spell_list_data" what contains these keys:
         [sorting Name]          // 0    --get from level and spell file/TLK
         [Spell RESREF]          // 1
         [Tradition]             // 2
