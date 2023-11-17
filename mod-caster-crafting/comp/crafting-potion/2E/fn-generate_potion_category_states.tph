@@ -100,13 +100,13 @@ OR(%i%)
                                     ~~~~~
             IF ~%condition_valid%~
             THEN REPLY ~%response_text%~ // ~Brew %potion_name% using %formula%.~
-                GOTO bz_potion_brew_core_%category_lower%_%value%_valid
+                GOTO bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_valid
             IF ~%condition_invalid_level%~
             THEN REPLY ~%response_text%~ // ~Brew %potion_name% using %formula%.~
-                GOTO bz_potion_brew_core_%category_lower%_%value%_insufficient_level
+                GOTO bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_insufficient_level
             IF ~%condition_invalid_spells%~
             THEN REPLY ~%response_text%~ // ~Brew %potion_name% using %formula%.~
-                GOTO bz_potion_brew_core_%category_lower%_%value%_not_memorized
+                GOTO bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_not_memorized
                                     ~~~~~
 
 
@@ -155,7 +155,7 @@ OR(%i%)
                                     ~temp/transitions_and_states.D~
                                     ~~~~~
     IF ~~
-    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_valid
+    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_valid
         SAY ~%prompt%~ // ~You analyze the formula and prepare to brew %potion_name%.~
             //already gated other conditions prior
             IF ~PartyGoldGT(%gold_cost_gt%)
@@ -207,7 +207,7 @@ StartCutScene("BZCTPOTN")~
     END
 
     IF ~~
-    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_insufficient_level
+    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_insufficient_level
         SAY @30047 // ~You are of insufficient level for this formula.~
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
@@ -224,7 +224,7 @@ StartCutScene("BZCTPOTN")~
     END
 
     IF ~~
-    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_not_memorized
+    THEN BEGIN bz_potion_brew_core_%category_lower%_%value%_%data_keys_0%_not_memorized
         SAY @30048 // ~You do not have the spells for this formula memorized.~
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
