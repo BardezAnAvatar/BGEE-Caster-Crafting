@@ -23,7 +23,7 @@ BEGIN
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/process-potion-registry.tph~
 
     //THEN: iterate through all recipe entries and create states and responses for crafting.
-
+    INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/generate-core-potion-menus.tph~
 
 END
 
