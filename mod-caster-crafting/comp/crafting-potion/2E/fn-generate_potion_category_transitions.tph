@@ -43,4 +43,16 @@ APPEND_OUTER -
 END
     ~~~~~
 
+APPEND_OUTER -
+    ~CorePotions/BZMSCAK.D~
+    ~~~~~
+
+EXTEND_TOP ~BZMSCAK~
+    bz_potion_brew_category_menu //state number(s)
+        IF ~~
+        THEN
+            REPLY ~%category%~
+            GOTO bz_potion_brew_core_%category_lower%
+    ~~~~~
+
     END
