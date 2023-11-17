@@ -48,7 +48,7 @@ APPEND ~BZMSCAK~
                         AS ~data_keys~ => ~_val~
                         BEGIN
                             //if the potion code matches
-                            ACTION_IF (~%value%~ STRING_EQUAL ~%data_key1%~)
+                            ACTION_IF (~%value%~ STRING_EQUAL ~%data_keys_1%~)
                             THEN BEGIN
                                 //build out all 3 conditionals
 
