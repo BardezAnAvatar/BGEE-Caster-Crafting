@@ -47,12 +47,7 @@ EXTEND_TOP ~BZMSCST~
                     ACTION_IF ((~%keys_4%~ STRING_EQUAL ~%spell_circle%~) AND (~%keys_3%~ STRING_EQUAL ~%CircleTradition%~))  //Spell circle matches
                         THEN BEGIN
                             //Get the cost in gold for the scroll
-                            COPY_EXISTING - ~%keys_2%.SPL~ ~override~
-                                //Patches
-                                READ_LONG (0x08) ~bz_spell_name_STRREF~
-                            BUT_ONLY_IF_IT_CHANGES
-
-                            ACTION_GET_STRREF (%bz_spell_name_STRREF%) ~spell_name~
+                            OUTER_TEXT_SPRINT ~spell_name~ $spell_lookup("%keys_2%")
 
                             OUTER_SPRINT ~scroll_transition_response~ ~%spell_name%~
 
