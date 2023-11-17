@@ -53,6 +53,8 @@ EXTEND_TOP ~BZMSCAK~
         THEN
             REPLY ~%category%~
             GOTO bz_potion_brew_core_%category_lower%
+END
+
     ~~~~~
 
     END
