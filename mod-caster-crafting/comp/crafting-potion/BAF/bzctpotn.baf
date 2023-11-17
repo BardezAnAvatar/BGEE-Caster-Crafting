@@ -5,7 +5,6 @@ THEN
         CutSceneId(Player1)
         Wait(2)
         FadeToColor([20.0],0)
-        PlaySound("BZBREW")
         CreateVisualEffectObject("PARALH", Myself)
         Wait(3)
         FadeFromColor([20.0],0)
