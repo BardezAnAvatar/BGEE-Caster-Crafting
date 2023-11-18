@@ -1,0 +1,18 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_potion_list~
+    BEGIN
+        /*
+        [Unique Key]                // 0
+        [resulting potion RESREF]   // 1
+        [Category]                  // 2
+        [Spell]                     // 3
+        [Tradition]                 // 4
+        [Spell Level]               // 5
+        [Caster Level]              // 6
+        [Gold: Additional cost]     // 7
+        [Result Count]              // 8
+        [Icon: Source BAM Path]     // 9
+        [Icon: Inventory]           // 10
+        [Icon: Description]         // 11
+        */
+    END
