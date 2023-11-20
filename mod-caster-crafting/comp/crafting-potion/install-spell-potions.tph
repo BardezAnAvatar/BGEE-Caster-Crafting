@@ -29,6 +29,7 @@ COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN120D.BAM~ ~overri
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN130D.BAM~ ~override~
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN140D.BAM~ ~override~
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ¶150D.BAM~
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/inv/BZPN032I.BAM~ ~override~
 
 COPY_EXISTING ~POTN02.ITM~ ~override/BZPOC001.ITM~
@@ -202,14 +203,14 @@ COPY_EXISTING ~POTN02.ITM~ ~override/BZPOC150.ITM~
     WRITE_ASCII_TERMINATE (0x3A) ~BZPN032I~     //update the item inventory icon
     WRITE_ASCII_TERMINATE (0x58) ~BZPN150D~   //update the item description icon
 
-COPY_EXISTING ~POTN02.ITM~ ~override/BZ¶140.ITM~
+COPY_EXISTING ~POTN02.ITM~ ~override/BZ¶150.ITM~
     //Patches
     SAY NAME1 ~PoC potion~                                       //identified name
     SAY NAME2 ~PoC potion~                                       //identified name
     SAY IDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
     SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
     WRITE_ASCII_TERMINATE (0x3A) ~BZPN032I~     //update the item inventory icon
-    WRITE_ASCII_TERMINATE (0x58) ~BZPN140D~   //update the item description icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZ¶150D~   //update the item description icon
 /*
 * END: PoC
 */
