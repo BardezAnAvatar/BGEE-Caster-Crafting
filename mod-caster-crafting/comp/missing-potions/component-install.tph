@@ -1,0 +1,5 @@
+/*************************************************************
+*   This file drives the installation of "missing" potions   *
+*   (spells which would make logical sense as potions)       *
+*   that do not exist in the game.                           *
+*************************************************************/
