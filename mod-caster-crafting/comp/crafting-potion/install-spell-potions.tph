@@ -201,6 +201,15 @@ COPY_EXISTING ~POTN02.ITM~ ~override/BZPOC150.ITM~
     SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
     WRITE_ASCII_TERMINATE (0x3A) ~BZPN032I~     //update the item inventory icon
     WRITE_ASCII_TERMINATE (0x58) ~BZPN150D~   //update the item description icon
+
+COPY_EXISTING ~POTN02.ITM~ ~override/BZ¶140.ITM~
+    //Patches
+    SAY NAME1 ~PoC potion~                                       //identified name
+    SAY NAME2 ~PoC potion~                                       //identified name
+    SAY IDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZPN032I~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZPN140D~   //update the item description icon
 /*
 * END: PoC
 */
