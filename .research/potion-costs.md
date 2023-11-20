@@ -6,6 +6,9 @@ From Pathfinder:
 
 > The price of a scroll is equal to the level of the spell × the creator’s caster level × 25 gp
 
+> The price of a wand is equal to the level of the spell × the creator’s caster level × 750 gp.
+> A wand has 50 charges when created—each charge allows the use of the wand’s spell one time. A wand that runs out of charges is just a stick.
+
 So theoretically, I could just take the scroll costs and double them.
 
 A Case study: Potion of Fire resistance. Shows up in-game as costing, roughly, 500 gold. The item file's cost is 400. I can sell it for 200.
