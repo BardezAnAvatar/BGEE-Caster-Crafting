@@ -1,5 +1,6 @@
 import os, glob, sys, time
 from gimpfu import *
+import gimpcolor
 
 def ie_inventory_shadow(file, x_offset, y_offset, outputFolder):
     #Open the file; size to 64x64; duplicate layer; make black; offset 4, 5; set opacity to 50%; save to output
@@ -27,24 +28,16 @@ def ie_inventory_shadow(file, x_offset, y_offset, outputFolder):
         print "Resized '" + filename_without_ext + "' ..."
 
         # Create new layer.
-        newLayer = pdb.gimp_layer_new(fileImage, layer.width, layer.height, 1, "Shadow", layer.opacity, layer.mode) #RGBA-IMAGE (1)
-        # the +1 adds it behind the top layer
-        fileImage.add_layer(newLayer, +1)
-
-        # Put image into the new layer.
-        pdb.gimp_edit_copy(layer)
-        floating = pdb.gimp_edit_paste(newLayer, True)
-
-        # Update the new layer.
-        newLayer.flush()
-        newLayer.merge_shadow(True)
-        newLayer.update(0, 0, newLayer.width, newLayer.height)
-        # floating to layer
-        pdb.gimp_floating_sel_to_layer(floating)
-        print "Duplicated '" + filename_without_ext + "' ..."
+        pdb.gimp_context_set_background((0,255,0))
+        newLayer = pdb.gimp_layer_new_from_visible(fileImage, fileImage, "shadow")
+        print "Created New Layer for '" + filename_without_ext + "' ..."
+        pdb.gimp_image_insert_layer(fileImage, newLayer, None, +1) # the +1 adds it behind the top layer
+        print "Inserted New Layer for '" + filename_without_ext + "' ..."
 
         #make layer black
+        pdb.gimp_drawable_desaturate(newLayer, 4) #DESATURATE-VALUE (4)
         pdb.gimp_brightness_contrast(newLayer, -127, 127)
+        pdb.gimp_drawable_threshold(newLayer, 6, 1, 1) #HISTOGRAM-RGB (6)
         print "Shadowed '" + filename_without_ext + "' ..."
 
         #move the layer
@@ -55,14 +48,15 @@ def ie_inventory_shadow(file, x_offset, y_offset, outputFolder):
         pdb.gimp_layer_set_opacity(newLayer, 50)
         print "Set Opacity on '" + filename_without_ext + "' ..."
 
-        #flatten
-        flattened = pdb.gimp_image_flatten(fileImage)
+        #merge
+        merged = pdb.gimp_image_merge_visible_layers(fileImage, 0) #EXPAND-AS-NECESSARY (0)
         print "Flattened '" + filename_without_ext + "' ..."
 
         # Export flattened image
         target = outputFolder + "/" + filename_without_ext + "-s.png"
         print "Saving '" + target + "' ..."
-        pdb.file_png_save_defaults(fileImage, flattened, target, target, run_mode=RUN_NONINTERACTIVE)
+        pdb.file_png_save_defaults(fileImage, merged, target, target, run_mode=RUN_NONINTERACTIVE)
+        #pdb.file_png_save2(fileImage, flattened, target, target, False, 9, True, False, False, True, True, False, False, run_mode=RUN_NONINTERACTIVE)
         print "Saved '" + target + "'!"
 
 
