@@ -38,13 +38,13 @@ LANGUAGE
 *********************/
 
 // Caster Crafting: Missing scrolls subcomponents
-BEGIN @21 DESIGNATED 21 // Add in missing arcane spell scrolls
-SUBCOMPONENT @20        //  Missing Spell Scrolls
+BEGIN @11 DESIGNATED 11 // Add in missing arcane spell scrolls
+SUBCOMPONENT @10        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
-BEGIN @22 DESIGNATED 22 // Add in missing priest spell scrolls
-SUBCOMPONENT @20        //  Missing Spell Scrolls
+BEGIN @12 DESIGNATED 12 // Add in missing priest spell scrolls
+SUBCOMPONENT @10        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
     ACTION_IF (%bz_iwdification_installed%)
         BEGIN
@@ -58,8 +58,8 @@ SUBCOMPONENT @20        //  Missing Spell Scrolls
         END
     INCLUDE ~%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
 
-BEGIN @23 DESIGNATED 23 // Add in missing arcane and priest spell scrolls
-SUBCOMPONENT @20        //  Missing Spell Scrolls
+BEGIN @13 DESIGNATED 13 // Add in missing arcane and priest spell scrolls
+SUBCOMPONENT @10        //  Missing Spell Scrolls
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
     INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
     ACTION_IF (%bz_iwdification_installed%)
@@ -78,18 +78,18 @@ SUBCOMPONENT @20        //  Missing Spell Scrolls
 
 
 // Caster Crafting: Scribing Tools subcomponents
-BEGIN @11 DESIGNATED 11 // Copy Spells from Party Member Spellbooks
-SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
+BEGIN @21 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
+SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 
-BEGIN @12 DESIGNATED 12 // Scribe scrolls
-SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
+BEGIN @22 DESIGNATED 22 // Scribe scrolls
+SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/scroll-crafting.tph~
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 
-BEGIN @13 DESIGNATED 13 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
-SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
+BEGIN @23 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
+SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
     INCLUDE ~%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
     INCLUDE ~%MOD_FOLDER%/comp/crafting-scroll/scroll-crafting.tph~
     INCLUDE ~%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
@@ -98,20 +98,20 @@ SUBCOMPONENT @10        //  Caster Crafting: Scribing Tools
 
 
 // BEGIN Brew Potion subcomponents
-BEGIN @31 DESIGNATED 31 // Brew base game potions
-SUBCOMPONENT @30        //  Caster Crafting: Brew Potions
+BEGIN @41 DESIGNATED 41 // Brew base game potions
+SUBCOMPONENT @40        //  Caster Crafting: Brew Potions
     OUTER_SET ~bz_install_allow_potions_base_game~ = 1
     OUTER_SET ~bz_install_allow_potions_spells~ = 0
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @32 DESIGNATED 32 // Brew spell potions
-SUBCOMPONENT @30        //  Caster Crafting: Brew Potions
+BEGIN @42 DESIGNATED 42 // Brew spell potions
+SUBCOMPONENT @40        //  Caster Crafting: Brew Potions
     OUTER_SET ~bz_install_allow_potions_base_game~ = 0
     OUTER_SET ~bz_install_allow_potions_spells~ = 1
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @33 DESIGNATED 33 // Brew both base game and spell potions
-SUBCOMPONENT @30        //  Caster Crafting: Brew Potions
+BEGIN @43 DESIGNATED 43 // Brew both base game and spell potions
+SUBCOMPONENT @40        //  Caster Crafting: Brew Potions
     OUTER_SET ~bz_install_allow_potions_base_game~ = 1
     OUTER_SET ~bz_install_allow_potions_spells~ = 1
     INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
