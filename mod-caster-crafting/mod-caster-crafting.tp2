@@ -97,6 +97,12 @@ SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
 
 
 
+// Caster Crafting: New Potions for Spells
+BEGIN @30 DESIGNATED 30 // Add in missing arcane spell scrolls
+    INCLUDE ~%MOD_FOLDER%/comp/missing-potions/component-install.tph~
+//END missing potions
+
+
 // BEGIN Brew Potion subcomponents
 BEGIN @41 DESIGNATED 41 // Brew base game potions
 SUBCOMPONENT @40        //  Caster Crafting: Brew Potions
