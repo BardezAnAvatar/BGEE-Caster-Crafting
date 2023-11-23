@@ -27,10 +27,10 @@ BEGIN
 END
 
 //Include the potions from spells into the crafting dialog
-ACTION_IF (%bz_install_allow_potions_spells%) THEN
-BEGIN
-    INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/install-spell-potions.tph~
-END
+//ACTION_IF (%bz_install_allow_potions_spells%) THEN
+//BEGIN
+//    //TBD
+//END
 
 
 

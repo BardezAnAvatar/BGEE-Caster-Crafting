@@ -3,3 +3,6 @@
 *   (spells which would make logical sense as potions)       *
 *   that do not exist in the game.                           *
 *************************************************************/
+
+
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/tinkering.tph~
