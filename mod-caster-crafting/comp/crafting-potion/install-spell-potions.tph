@@ -30,9 +30,13 @@ COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN130D.BAM~ ~overri
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN140D.BAM~ ~override~
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override~
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/inv/BZPN032I.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZaidI.BAM~
+
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/absolute-immunity.BAM~ ~override/BZaiI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZaidI.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/animal-rage.BAM~ ~override/BZarI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/antiharm-shell.BAM~ ~override/BZahsI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/antimagic-shell.BAM~ ~override/BZamsI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/armor.BAM~ ~override/BZarmI.BAM~
 
 COPY_EXISTING ~POTN02.ITM~ ~override/BZPOC001.ITM~
     //Patches
@@ -232,9 +236,35 @@ COPY_EXISTING ~POTN02.ITM~ ~override/BZar1.ITM~
     WRITE_ASCII_TERMINATE (0x3A) ~BZarI~     //update the item inventory icon
     WRITE_ASCII_TERMINATE (0x58) ~BZPN150D~   //update the item description icon
 
+COPY_EXISTING ~POTN02.ITM~ ~override/BZahs1.ITM~
+    //Patches
+    SAY NAME1 ~PoC potion~                                       //identified name
+    SAY NAME2 ~PoC potion~                                       //identified name
+    SAY IDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZahsI~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZPN150D~   //update the item description icon
+
+COPY_EXISTING ~POTN02.ITM~ ~override/BZams1.ITM~
+    //Patches
+    SAY NAME1 ~PoC potion~                                       //identified name
+    SAY NAME2 ~PoC potion~                                       //identified name
+    SAY IDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZamsI~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZPN150D~   //update the item description icon
+
+COPY_EXISTING ~POTN02.ITM~ ~override/BZarm1.ITM~
+    //Patches
+    SAY NAME1 ~PoC potion~                                       //identified name
+    SAY NAME2 ~PoC potion~                                       //identified name
+    SAY IDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZarmI~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZPN150D~   //update the item description icon
 
 //characters that work fine:
-//  { ` } [ ]
+//  { ` } [ ] =
 
 // characters that don't display BAMs but work in-engine:
 // ¶ Š ƒ §
@@ -254,6 +284,7 @@ COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~overri
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ[150D.BAM~
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ]150D.BAM~
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ=150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ@150D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ¶aidI.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZŠaidI.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ€aidI.BAM~   //creates unmovable item
@@ -265,6 +296,7 @@ COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ`aidI.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ[aidI.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ]aidI.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ=aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ@aidI.BAM~
 
 COPY_EXISTING ~POTN02.ITM~ ~override/BZ¶aid1.ITM~
     //Patches
@@ -364,6 +396,15 @@ COPY_EXISTING ~POTN02.ITM~ ~override/BZ=aid1.ITM~
     SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
     WRITE_ASCII_TERMINATE (0x3A) ~BZ=aidI~     //update the item inventory icon
     WRITE_ASCII_TERMINATE (0x58) ~BZ=150D~   //update the item description icon
+
+COPY_EXISTING ~POTN02.ITM~ ~override/BZ@aid1.ITM~
+    //Patches
+    SAY NAME1 ~PoC potion~                                       //identified name
+    SAY NAME2 ~PoC potion~                                       //identified name
+    SAY IDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZ@aidI~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZ@150D~   //update the item description icon
 /*
 * END: PoC
 */
