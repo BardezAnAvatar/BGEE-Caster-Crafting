@@ -263,14 +263,6 @@ COPY_EXISTING ~POTN02.ITM~ ~override/BZarm1.ITM~
     WRITE_ASCII_TERMINATE (0x3A) ~BZarmI~     //update the item inventory icon
     WRITE_ASCII_TERMINATE (0x58) ~BZPN150D~   //update the item description icon
 
-//characters that work fine:
-//  { ` } [ ] =
-
-// characters that don't display BAMs but work in-engine:
-// ¶ Š ƒ §
-
-//characters that create busted itms in inventory:
-// € ‡
 
 
 COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ¶150D.BAM~
