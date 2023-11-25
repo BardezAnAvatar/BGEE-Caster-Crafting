@@ -108,3 +108,15 @@ Speed: %speed%
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Displacement
+@40018 = ~Oil of Displacement~
+@40019 = ~The oil of Displacement shifts the apparent position of the applicant, such that <PRO_HESHE> appears to be several feet away from where <PRO_HESHE> actually is. Attacks against the displaced applicant have a 50% chance of missing. Any effect that dispels illusions can dispel Displacement.
+
+STATISTICS:
+
+Special: Melee attacks against applicant have 50% chance of missing
+Duration: %num_rounds% rounds
+
+Weight: 1~

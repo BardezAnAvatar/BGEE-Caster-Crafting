@@ -21,9 +21,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@O301~, ~@40008~, ~@40009~, ~MEPR156~, ~1~, ~10~, ~camoflauge.BAM~,        ~BZ@O301I~, ~BZPN130I~, ~~ => "Camoflauge"
         ~BZ@O401~, ~@40010~, ~@40011~, ~MEWI158~, ~1~,  ~4~, ~reflect-attack.BAM~,    ~BZ@O401I~, ~BZPN150I~, ~~ => "Reflect Attack"
 
-        ~BZ@O501~, ~@40012~, ~@40013~, ~MEPR255~, ~1~,  ~3~, ~ghostwalk.BAM~,         ~BZ@O501I~, ~BZPN130I~, ~~ => "Ghostwalk"
+        ~BZ@O503~, ~@40012~, ~@40013~, ~MEPR255~, ~1~,  ~3~, ~ghostwalk.BAM~,         ~BZ@O503I~, ~BZPN130I~, ~~ => "Ghostwalk"
 
-        ~BZ@O601~, ~@40014~, ~@40015~, ~MEPR356~, ~1~,  ~6~, ~wind-shots.BAM~,        ~BZ@O601I~, ~BZPN150I~, ~~ => "Wind Shots"
-        ~BZ@O701~, ~@40016~, ~@40017~, ~MEPR357~, ~1~,  ~6~, ~fly.BAM~,               ~BZ@O701I~, ~BZPN140I~, ~~ => "Fly"
+        ~BZ@O605~, ~@40014~, ~@40015~, ~MEPR356~, ~1~,  ~6~, ~wind-shots.BAM~,        ~BZ@O605I~, ~BZPN150I~, ~~ => "Wind Shots"
+        ~BZ@O705~, ~@40016~, ~@40017~, ~MEPR357~, ~5~,  ~6~, ~fly.BAM~,               ~BZ@O705I~, ~BZPN140I~, ~~ => "Fly"
+        ~BZ@O805~, ~@40018~, ~@40019~, ~MEWI353~, ~5~,  ~5~, ~displacement.BAM~,      ~BZ@O805I~, ~BZPN140I~, ~~ => "Displacement"
+
+
 
     END

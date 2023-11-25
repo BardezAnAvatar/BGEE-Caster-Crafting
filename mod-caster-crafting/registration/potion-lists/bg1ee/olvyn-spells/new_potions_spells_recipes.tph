@@ -12,18 +12,19 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~SNAKE_SWIFTNESS~,  ~BZ@O001~, ~MEPR151~, ~1~, ~1~, ~Enhancement~,  ~3~ => "Snake's Swiftness"
-        ~SEARING_SMITE~,    ~BZ@O101~, ~MEPR157~, ~1~, ~1~, ~Offense~,      ~4~ => "Searing Smite"
-        ~TURNING_WEAPON~,   ~BZ@O201~, ~MEPR154~, ~1~, ~1~, ~Offense~,      ~2~ => "Turning Weapon"
-        ~CAMOFLAUGE~,       ~BZ@O301~, ~MEPR156~, ~1~, ~1~, ~Enhancement~, ~10~ => "Camoflauge"
-        ~REFLECT_ATTTACK~,  ~BZ@O401~, ~MEWI158~, ~1~, ~1~, ~Enhancement~,  ~4~ => "Reflect Attack"
+        ~SNAKE_SWIFTNESS~,  ~BZ@O001~, ~MEPR151~,  ~1~,  ~1~, ~Enhancement~,  ~3~ => "Snake's Swiftness"
+        ~SEARING_SMITE~,    ~BZ@O101~, ~MEPR157~,  ~1~,  ~1~, ~Offense~,      ~4~ => "Searing Smite"
+        ~TURNING_WEAPON~,   ~BZ@O201~, ~MEPR154~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Turning Weapon"
+        ~CAMOFLAUGE~,       ~BZ@O301~, ~MEPR156~,  ~1~,  ~1~, ~Enhancement~, ~10~ => "Camoflauge"
+        ~REFLECT_ATTTACK~,  ~BZ@O401~, ~MEWI158~,  ~1~,  ~1~, ~Enhancement~,  ~4~ => "Reflect Attack"
 
-        ~GHOST_WALK_PR~,    ~BZ@O503~, ~MEPR255~, ~3~, ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
-        ~GHOST_WALK_WI~,    ~BZ@O503~, ~MEWI252~, ~3~, ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
-        ~WIND_SHOTS~,       ~BZ@O603~, ~MEWI252~, ~3~, ~1~, ~Offense~,      ~6~ => "Wind Shots"
-        ~WIND_SHOTS~,       ~BZ@O603~, ~MEWI252~, ~3~, ~1~, ~Offense~,      ~6~ => "Wind Shots"
+        ~GHOST_WALK_PR~,    ~BZ@O503~, ~MEPR255~,  ~3~,  ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
+        ~GHOST_WALK_WI~,    ~BZ@O503~, ~MEWI252~,  ~3~,  ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
 
-        ~FLY_PR~,           ~BZ@O705~, ~MEPR357~, ~5~, ~5~, ~Enhancement~,  ~6~ => ~Fly~
-        ~FLY_WI~,           ~BZ@O705~, ~MEWI352~, ~5~, ~5~, ~Enhancement~,  ~6~ => ~Fly~
+        ~WIND_SHOTS~,       ~BZ@O605~, ~MEWI252~,  ~3~,  ~1~, ~Offense~,      ~6~ => "Wind Shots"
+        ~WIND_SHOTS~,       ~BZ@O605~, ~MEWI252~,  ~3~,  ~1~, ~Offense~,      ~6~ => "Wind Shots"
+        ~FLY_PR~,           ~BZ@O705~, ~MEPR357~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
+        ~FLY_WI~,           ~BZ@O705~, ~MEWI352~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
+        ~DISPLACEMENT~,     ~BZ@O805~, ~MEWI353~,  ~5~,  ~1~, ~Defense~,      ~5~ => ~Displacement~
 
     END
