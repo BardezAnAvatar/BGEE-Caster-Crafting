@@ -1,0 +1,29 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_items~
+    BEGIN
+        /*
+        [resulting potion RESREF]                   // 1
+        [STRREF: Name]                              // 2
+        [STRREF: Descripton]                        // 3
+        [effect: source spell]                      // 4
+        [effect: Caster Level (NI: minimum level)]  // 3
+        [Cost: gold tier]                           // 6
+        [Icon: Source inventory BAM path]           // 7
+        [Icon: Destination inventory BAM RESREF]    // 8
+        [Icon: Description RESREF]                  // 9
+        [Unusability flags]                         // 10 special case for one or two potions; usually ~0~
+        */
+
+
+        ~BZ@O001~, ~@40002~, ~@40003~, ~MEPR151~, ~1~,  ~3~, ~snake's-swiftness.BAM~, ~BZ@O001I~, ~BZPN120I~, ~~ => "Snake's Swiftness"
+        ~BZ@O101~, ~@40004~, ~@40005~, ~MEPR157~, ~1~,  ~4~, ~searing-smite.BAM~,     ~BZ@O101I~, ~BZPN120I~, ~~ => "Searing Smite"
+        ~BZ@O201~, ~@40006~, ~@40007~, ~MEPR154~, ~1~,  ~2~, ~turning-weapon.BAM~,    ~BZ@O201I~, ~BZPN130I~, ~~ => "Turning Weapon"
+        ~BZ@O301~, ~@40008~, ~@40009~, ~MEPR156~, ~1~, ~10~, ~camoflauge.BAM~,        ~BZ@O301I~, ~BZPN130I~, ~~ => "Camoflauge"
+        ~BZ@O401~, ~@40010~, ~@40011~, ~MEWI158~, ~1~,  ~4~, ~reflect-attack.BAM~,    ~BZ@O401I~, ~BZPN150I~, ~~ => "Reflect Attack"
+
+        ~BZ@O501~, ~@40012~, ~@40013~, ~MEPR255~, ~1~,  ~3~, ~ghostwalk.BAM~,         ~BZ@O501I~, ~BZPN130I~, ~~ => "Ghostwalk"
+
+        ~BZ@O601~, ~@40014~, ~@40015~, ~MEPR356~, ~1~,  ~6~, ~wind-shots.BAM~,        ~BZ@O601I~, ~BZPN150I~, ~~ => "Wind Shots"
+        ~BZ@O701~, ~@40016~, ~@40017~, ~MEPR357~, ~1~,  ~6~, ~fly.BAM~,               ~BZ@O701I~, ~BZPN140I~, ~~ => "Fly"
+
+    END
