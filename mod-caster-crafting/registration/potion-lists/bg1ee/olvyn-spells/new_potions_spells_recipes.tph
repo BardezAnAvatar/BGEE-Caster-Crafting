@@ -1,0 +1,29 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_recipes~
+    BEGIN
+        /*
+        [Unique Key]                                // 0
+        [resulting potion RESREF]                   // 1
+        [recipe: Source Spell]                      // 2
+        [recipe: Caster Level]                      // 3
+        [recipe: Result Count]                      // 4
+        [Category]                                  // 5
+        [Cost: gold tier]                           // 6
+        */
+
+
+        ~SNAKE_SWIFTNESS~,  ~BZ@O001~, ~MEPR151~, ~1~, ~1~, ~Enhancement~,  ~3~ => "Snake's Swiftness"
+        ~SEARING_SMITE~,    ~BZ@O101~, ~MEPR157~, ~1~, ~1~, ~Offense~,      ~4~ => "Searing Smite"
+        ~TURNING_WEAPON~,   ~BZ@O201~, ~MEPR154~, ~1~, ~1~, ~Offense~,      ~2~ => "Turning Weapon"
+        ~CAMOFLAUGE~,       ~BZ@O301~, ~MEPR156~, ~1~, ~1~, ~Enhancement~, ~10~ => "Camoflauge"
+        ~REFLECT_ATTTACK~,  ~BZ@O401~, ~MEWI158~, ~1~, ~1~, ~Enhancement~,  ~4~ => "Reflect Attack"
+
+        ~GHOST_WALK_PR~,    ~BZ@O503~, ~MEPR255~, ~3~, ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
+        ~GHOST_WALK_WI~,    ~BZ@O503~, ~MEWI252~, ~3~, ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
+        ~WIND_SHOTS~,       ~BZ@O603~, ~MEWI252~, ~3~, ~1~, ~Offense~,      ~6~ => "Wind Shots"
+        ~WIND_SHOTS~,       ~BZ@O603~, ~MEWI252~, ~3~, ~1~, ~Offense~,      ~6~ => "Wind Shots"
+
+        ~FLY_PR~,           ~BZ@O705~, ~MEPR357~, ~5~, ~5~, ~Enhancement~,  ~6~ => ~Fly~
+        ~FLY_WI~,           ~BZ@O705~, ~MEWI352~, ~5~, ~5~, ~Enhancement~,  ~6~ => ~Fly~
+
+    END
