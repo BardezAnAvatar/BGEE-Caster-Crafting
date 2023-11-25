@@ -1,0 +1,110 @@
+/* Reserving range 40000-49999 */
+
+//Expeditious Retreat
+@40000 = ~Oil of Expeditious Retreat~
+@40001 = ~This oil doubles the applicant's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects, such as Haste and Slow, cannot affect the imbiber for the duration of the effect. While under the effect of this oil, the imbiber cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
+
+STATISTICS:
+
+Special: Doubles movement rate
+Duration: 3 rounds
+
+Weight: 1~
+
+
+//Snake's Swiftness
+@40002 = ~Oil of Snake's Swiftness~
+@40003 = ~This oil allows the imbiber to move and attack extremely fast for a single round. During the round, the imbiber's movement rate and attacks per round are doubled. In addition, if the imbiber is an animal, a lycanthrope, a yuan-ti, or a character shapeshifted into one such creature, it is sped up further: gaining 2 additional attacks per round and moving at the maximum possible movement rate for the duration.
+
+STATISTICS:
+
+Movement rate: doubled
+Attacks per round: doubled
+Duration: 1 round
+
+Weight: 1~
+
+
+//Searing Smite
+@40004 = ~Oil of Searing Smite~
+@40005 = ~The applicant soaks their melee weapons, imbuing it with divine fire. The next successful melee attack made on a creature within 5 rounds deals an additional %dice_count%d6 magic fire damage.
+
+STATISTICS:
+
+Damage: %dice_count%d6 magic fire damage on next melee attack
+Duration: 5 rounds or until triggered
+
+Weight: 1~
+
+
+//Turning Weapon
+@40006 = ~Oil of Turning Weapon~
+@40007 = ~The applicant coats their weapons with the power to turn undead. For the duration, whenever the applicant hits an undead creature with a melee or ranged attack, the undead is turned as if they had used Turn Undead on it.
+
+STATISTICS:
+
+Damage: %dice_count%d6 magic damage
+Duration: 2 turns (20 rounds)
+
+Weight: 1~
+
+
+//Camouflage
+@40008 = ~Oil of Camouflage~
+@40009 = ~This oil gives the applicant the ability to blend into the environment with camouflage. Whenever the applicant stands still for 2 seconds, they become effectively invisible through camouflage.
+
+STATISTICS:
+
+Special: Invisibility when still
+Duration: 1 hour
+
+Weight: 1~
+
+
+//Reflect Attack
+@40010 = ~Oil of Reflect Attack~
+@40011 = ~After applying this oil, the next instance of physical damage the applicant would receive is reflected back at the attacker, damaging them instead. If the physical damage came from a weapon, any on-hit effects of the weapon will also be reflected back at the attacker.
+
+STATISTICS:
+
+Special: Invisibility when still
+Duration: 8 hours or until hit
+
+Weight: 1~
+
+
+//Ghostwalk
+@40012 = ~Potion of Ghostwalk~
+@40013 = ~This potion makes the imbiber incorporeal for 1 round. While incorporeal, the imbiber is immune to normal weapons and can move through walls. If the imbiber is inside a wall when the effect ends, they will be pushed to the nearest inhabitable space.
+
+STATISTICS:
+
+Special: Incorporeal
+Duration: 1 round
+
+Weight: 1~
+
+
+//Wind Shots
+@40014 = ~Oil of Wind Shots~
+@40015 = ~This oil imbues the applicant's ranged weapons with the power of wind. Whenever the applicant hits a creature with a missile attack, that creature must Save vs. Breath at -2 or be blown back for several seconds.
+
+STATISTICS:
+
+Special: Missile attacks blow back enemies
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
+
+
+//Fly
+@40016 = ~Potion of Fly~
+@40017 = ~This wondrous potiom gives the imbiber the power to fly. For the duration, the imbiber can fly over normally impassable objects such as houses, walls, and rivers, but only as long as the creature is outdoors. The creature is also unaffected by ground-based spells such as Grease, Web, Entangle, and Earthquake.
+
+STATISTICS:
+
+Special: Flight
+Speed: %speed%
+Duration: %num_rounds% rounds
+
+Weight: 1~
