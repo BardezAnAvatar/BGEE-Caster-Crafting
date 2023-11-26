@@ -15,14 +15,17 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~BZ@I001~, ~@40100~, ~@40101~, ~SPWI127~,  ~1~,  ~2~, ~expeditious-retreat.BAM~,                        ~BZ@I001I~, ~BZPN120I~, ~~ => "Expeditious Retreat"
+        ~BZ@I001~, ~@40100~, ~@40101~, ~SPWI127~,  ~1~,  ~2~, ~expeditious-retreat.BAM~,                        ~BZ@I001I~, ~BZPN120D~, ~~ => "Expeditious Retreat"
 
 
-        ~BZ@I103~, ~@40102~, ~@40103~, ~SPPR218~,  ~1~,  ~5~, ~beast-claw.BAM~,                                 ~BZ@I103I~, ~BZPN026I~, ~~ => "Beast Claw"
-        ~BZ@I203~, ~@40104~, ~@40105~, ~SPWI227~,  ~1~,  ~4~, ~cat's-grace.BAM~                                 ~BZ@I203I~, ~BZPN100I~, ~~ => "Cat's Grace"
-        ~BZ@I303~, ~@40106~, ~@40107~, ~SPPR216~,  ~1~,  ~3~, ~cure-moderate-wounds.BAM~                        ~BZ@I303I~, ~BZPN070I~, ~~ => "Cure Moderate Wounds"
-        ~BZ@I403~, ~@40108~, ~@40109~, ~SPWI226~,  ~1~,  ~3~, ~decastave.BAM~                                   ~BZ@I403I~, ~BZPN019I~, ~~ => "Decastave"
-        ~BZ@I503~, ~@40110~, ~@40111~, ~SPWI225~,  ~1~,  ~3~, ~snilloc's-snowball-swarm.BAM~                    ~BZ@I503I~, ~BZPN013I~, ~~ => "Snilloc's Snowball Swarm"
+        ~BZ@I103~, ~@40102~, ~@40103~, ~SPPR218~,  ~1~,  ~5~, ~beast-claw.BAM~,                                 ~BZ@I103I~, ~BZPN026D~, ~~ => "Beast Claw"
+        ~BZ@I203~, ~@40104~, ~@40105~, ~SPWI227~,  ~1~,  ~4~, ~cat's-grace.BAM~                                 ~BZ@I203I~, ~BZPN100D~, ~~ => "Cat's Grace"
+        ~BZ@I303~, ~@40106~, ~@40107~, ~SPPR216~,  ~1~,  ~3~, ~cure-moderate-wounds.BAM~                        ~BZ@I303I~, ~BZPN070D~, ~~ => "Cure Moderate Wounds"
+        ~BZ@I403~, ~@40108~, ~@40109~, ~SPWI226~,  ~1~,  ~3~, ~decastave.BAM~                                   ~BZ@I403I~, ~BZPN019D~, ~~ => "Decastave"
+        ~BZ@I503~, ~@40110~, ~@40111~, ~SPWI225~,  ~1~,  ~3~, ~snilloc's-snowball-swarm.BAM~                    ~BZ@I503I~, ~BZPN013D~, ~~ => "Snilloc's Snowball Swarm"
+
+
+        ~BZ@I605~, ~@40112~, ~@40113~, ~SPPR322~,  ~1~,  ~7~, ~moonblade.BAM~                                   ~BZ@I605I~, ~BZPN058D~, ~~ => "Moonblade"
 
 
     END

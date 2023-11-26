@@ -433,3 +433,17 @@ Range: 40 ft.
 Area of Effect: 15-ft. radius
 
 Weight: 1~
+
+
+//Moonblade
+@40112 = ~Oil of Moonblade~
+@40113 = ~When poured, this oil forms into a silent, weightless sword-like construct made of moonlight that extends four feet from the applicant's hand. The moonblade is considered a +4 weapon for determining what creatures it can hit, though the bonus does not apply to attack rolls made with it. In addition, due to the insubstantial nature of the moonblade, melee bonuses from Strength do not apply.
+
+The strike of a moonblade drains a target's vitality, inflicting 1d12+4 points of magic damage, plus an additional 1d12 points to undead, who are particularly susceptible. A successful strike also temporarily scrambles magic, causing any spells the target casts in the next round to fail.
+
+STATISTICS:
+
+Special: Creates a magical +4 sword in hands
+Duration: 2 turns (20 rounds)
+
+Weight: 1~
