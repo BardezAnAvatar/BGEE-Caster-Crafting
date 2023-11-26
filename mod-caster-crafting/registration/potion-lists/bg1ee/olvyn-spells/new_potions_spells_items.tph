@@ -44,5 +44,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OH09~, ~@40036~, ~@40037~, ~MESOS05~, ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,        ~BZ@OH09I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Poison"
 //End Manual
         ~BZ@OI09~, ~@40038~, ~@40039~, ~MEWI559~, ~9~, ~10~, ~ghostform.BAM~,                               ~BZ@OI09I~, ~BZPN120I~, ~~ => "Ghostform"
+        ~BZ@OJ09~, ~@40040~, ~@40041~, ~MEWI566~, ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,               ~BZ@OJ09I~, ~BZPN120I~, ~~ => "Gedlee's Electric Barrier"
 
     END

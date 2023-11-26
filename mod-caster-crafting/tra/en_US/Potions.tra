@@ -258,3 +258,16 @@ Special: incorporeal
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Gedlee's Electric Barrier
+@40040 = ~Potion of Electric Barrier~
+@40041 = ~This potion protects the imbiber with a shield of electricity. The imbiber gains +50% Electricity Resistance, and creatures that hit the imbiber with an attack or spell in melee take 1d10+3 electricity damage and must Save vs. Polymorph or be stunned for 1 round.
+
+STATISTICS:
+
+Special: Electrical shield
+Electricity Resistance: +50%
+Duration: %num_rounds% rounds
+
+Weight: 1~

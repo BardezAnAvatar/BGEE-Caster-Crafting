@@ -37,5 +37,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPHERE_OF_SECURITY_PETRIFICATION~, ~BZ@OG09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Petrification"
         ~SPHERE_OF_SECURITY_POISON~,        ~BZ@OH09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Poison"
         ~GHOSTFORM~,                        ~BZ@OI09~, ~MEWI559~,  ~9~,  ~1~, ~Defense~,     ~10~ => "Ghostform"
+        ~GEDLEE'S_ELECTRIC_BARRIER~,        ~BZ@OJ09~, ~MEWI566~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Gedlee's Electric Barrier"
 
     END
