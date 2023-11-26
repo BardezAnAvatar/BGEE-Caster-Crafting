@@ -461,3 +461,16 @@ Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Recitation
+@40116 = ~Potion of Recitation~
+@40117 = ~The imbiber gains a +2 bonus to their attack rolls and Saving Throws. Recitation does not nullify a Prayer spell; the effects are cumulative.
+
+STATISTICS:
+
+Attack rolls: +2 bonus
+Saving throws: +2 bonus
+Duration: %num_rounds% rounds
+
+Weight: 1~

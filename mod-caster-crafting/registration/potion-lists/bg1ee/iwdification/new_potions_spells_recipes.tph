@@ -26,4 +26,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPIKE_GROWTH~,                         ~BZ@I705~, ~SPPR325~,  ~5~,  ~1~, ~Offense~,      ~6~ => "Spike Growth"
 
 
+        ~RECITATION~,                           ~BZ@I807~, ~SPPR420~,  ~5~,  ~1~, ~Offense~,      ~8~ => "Recitation"
+
+
     END
