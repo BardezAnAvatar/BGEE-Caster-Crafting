@@ -15,6 +15,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~EXPEDITIOUS_RETREAT~,                  ~BZ@I001~, ~SPWI127~,  ~1~,  ~1~, ~Enhancement~,  ~2~ => "Expeditious Retreat"
 
 
-        ~EXPEDITIOUS_RETREAT~,                  ~BZ@I103~, ~SPPR218~,  ~1~,  ~1~, ~Offense~,      ~5~ => "Beast Claw"
-        ~CAT'S_GRACE~,                          ~BZ@I203~, ~SPWI227~,  ~1~,  ~1~, ~Enhancement~,  ~4~ => "Cat's Grace"
+        ~EXPEDITIOUS_RETREAT~,                  ~BZ@I103~, ~SPPR218~,  ~3~,  ~1~, ~Offense~,      ~5~ => "Beast Claw"
+        ~CAT'S_GRACE~,                          ~BZ@I203~, ~SPWI227~,  ~3~,  ~1~, ~Enhancement~,  ~4~ => "Cat's Grace"
+        ~CURE_MODERATE_WOUNDS~,                 ~BZ@I303~, ~SPPR216~,  ~3~,  ~1~, ~Cure~,         ~3~ => "Cure Moderate Wounds"
     END

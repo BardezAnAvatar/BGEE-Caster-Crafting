@@ -398,4 +398,13 @@ Duration: %num_hours% hours
 
 Weight: 1~
 
+
+//Cure Moderate Wounds
+@40106 = ~Potion of Moderate Healing~
+@40107 = ~When wholly consumed, this potion restores 11 Hit Points to the imbiber. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 11 Hit Points.
+
 Weight: 1~
