@@ -234,7 +234,7 @@ STATISTICS:
 
 AC: +2 bonus
 Saving Throws: +2 bonus
-Special: Immune to poison and neutralizes any poison already affecting the target
+Special: Immune to poison and neutralizes any poison already affecting the applicant
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -389,7 +389,7 @@ Weight: 1~
 
 //Cat's Grace
 @40104 = ~Potion of Cat's Grace~
-@40105 = ~This potion magically increases the imbiber's Dexterity. The amount depends on the imbiber's class: Rogues gain 1d8 points, warriors and wizards gain 1d6 points, and priests gain 1d4 points. If a character has more than one class, the larger die is used. Cat's Grace cannot raise a target's Dexterity past 20.
+@40105 = ~This potion magically increases the imbiber's Dexterity. The amount depends on the imbiber's class: Rogues gain 1d8 points, warriors and wizards gain 1d6 points, and priests gain 1d4 points. If a character has more than one class, the larger die is used. Cat's Grace cannot raise Dexterity past 20.
 
 STATISTICS:
 
@@ -474,3 +474,25 @@ Saving throws: +2 bonus
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Blood Rage
+@40118 = ~Potion of Blood Rage~
+@40119 = ~While under Blood Rage, the imbiber goes Berserk, and is immune to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, and related effects. In addition, the imbiber gains +2 to hit, +3 to damage, +2 to Strength, +10 to maximum Hit Points, and +2 to <PRO_HISHER> movement rate.
+
+The Berserk state has several disadvantages, however: They attack the nearest creature until that creature is dead, then moving on to the next target. The Hit Points of the imbiber are masked for the duration of the effect, and the imbiber cannot benefit from any effect that heals Hit Points. At the end of the potion's duration, the imbiber becomes fatigued and <PRO_HISHER> Strength drops to 3 for 2 turns.
+
+STATISTICS:
+
+Special: Berserk (attacks nearest creature; immune to charm, sleep, fear, hold, stunning, confusion, emotion, Symbol spells, and related effects)
+Attack rolls: +2 bonus
+Damage rolls: +3 bonus
+Strength: +2 bonus
+Hit Points: +10 bonus to maximum Hit Points
+Movement rate: +2 bonus
+Duration: 2 turns (20 rounds)
+
+Weight: 1
+
+Not Usable By:
+ - Lawful alignments~

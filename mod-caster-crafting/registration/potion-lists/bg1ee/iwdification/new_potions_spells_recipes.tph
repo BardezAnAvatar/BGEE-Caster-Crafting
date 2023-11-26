@@ -27,6 +27,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~RECITATION~,                           ~BZ@I807~, ~SPPR420~,  ~5~,  ~1~, ~Offense~,      ~8~ => "Recitation"
+        ~BLOOD_RAGE~,                           ~BZ@I907~, ~SPPR421~,  ~5~,  ~1~, ~Offense~,      ~8~ => "Blood Rage"
 
 
     END
