@@ -26,8 +26,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPIKE_GROWTH~,                         ~BZ@I705~, ~SPPR325~,  ~5~,  ~1~, ~Offense~,      ~6~ => "Spike Growth"
 
 
-        ~RECITATION~,                           ~BZ@I807~, ~SPPR420~,  ~5~,  ~1~, ~Offense~,      ~8~ => "Recitation"
-        ~BLOOD_RAGE~,                           ~BZ@I907~, ~SPPR421~,  ~5~,  ~1~, ~Offense~,      ~8~ => "Blood Rage"
+        ~RECITATION~,                           ~BZ@I807~, ~SPPR420~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Recitation"
+        ~BLOOD_RAGE~,                           ~BZ@I907~, ~SPPR421~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Blood Rage"
+        ~CLOUD_OF_PESTILENCE~,                  ~BZ@IA07~, ~SPPR422~,  ~7~,  ~1~, ~Bomb~,         ~8~ => "Cloud of Pestilence"
 
 
     END

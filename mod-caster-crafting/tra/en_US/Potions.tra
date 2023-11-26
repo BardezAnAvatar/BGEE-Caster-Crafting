@@ -348,7 +348,6 @@ Weight: 1~
 
 STATISTICS:
 
-Casting Time: -10
 Duration: 1 turn (10 rounds)
 Area of Effect: 60-ft. radius
 Saving Throw: Paralysis at -6 negates
@@ -496,3 +495,21 @@ Weight: 1
 
 Not Usable By:
  - Lawful alignments~
+
+
+//Cloud of Pestilence
+@40120 = ~Bomb of Pestilence~
+@40121 = ~This bomb transforms the air around its impact in a 12-ft. radius into sickening, grayish mists. Non-living creatures are immune to the effects of the cloud. For every round of exposure to the disease-ridden air, a creature must save vs. Breath or suffer 3 points of magic damage, blindness, and the loss of 3 points of Strength and Dexterity. The blindness and ability score penalties last 1 turn.
+
+STATISTICS:
+
+Damage: 3 magic damage
+Strength:   -3
+Dexteryity: -3
+Special: Blindness
+Range: 40 ft.
+Area of Effect: 12-ft. radius
+Saving Throw: Breath for half damage
+Duration: 4 rounds
+
+Weight: 1~
