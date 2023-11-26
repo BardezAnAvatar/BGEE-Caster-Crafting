@@ -190,3 +190,17 @@ Cold Resistance: +50%
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Sphere of Security: Protection from Electricity
+@40030 = ~Oil of Security: Protection from Electricity~
+@40031 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains electricity protection as if from a scroll of Protection from Electricity.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Electricity Resistance: +50%
+Duration: %num_rounds% rounds
+
+Weight: 1~
