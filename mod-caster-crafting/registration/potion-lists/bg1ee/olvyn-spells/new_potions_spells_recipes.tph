@@ -28,4 +28,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~DISPLACEMENT~,     ~BZ@O805~, ~MEWI353~,  ~5~,  ~1~, ~Defense~,      ~5~ => ~Displacement~
         ~LEGEND_LORE~,      ~BZ@O905~, ~MEWI356~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Legend Lore~
 
+        ~PIERCING_SHOTS~,   ~BZ@1007~, ~MEPR455~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Piercing Shots"
+
     END

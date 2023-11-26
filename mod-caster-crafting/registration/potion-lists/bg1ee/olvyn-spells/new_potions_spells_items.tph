@@ -28,5 +28,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@O805~, ~@40018~, ~@40019~, ~MEWI353~, ~5~,  ~5~, ~displacement.BAM~,      ~BZ@O805I~, ~BZPN140I~, ~~ => "Displacement"
         ~BZ@O905~, ~@40020~, ~@40021~, ~MEWI356~, ~5~,  ~5~, ~legend-lore.BAM~,       ~BZ@O905I~, ~BZPN130I~, ~~ => "Legend Lore"
 
+        ~BZ@1007~, ~@40022~, ~@40023~, ~MEPR455~, ~7~,  ~8~, ~piercing-shots.BAM~,    ~BZ@1007I~, ~BZPN120I~, ~~ => "Piercing Shots"
+
 
     END

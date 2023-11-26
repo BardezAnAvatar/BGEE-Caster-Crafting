@@ -132,3 +132,15 @@ Lore: +100
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Piercing Shots
+@40022 = ~Oil of Piercing Shots~
+@40023 = ~This oil allows the applicant's missile attacks to pierce through creatures. For the duration, any arrow, bolt, bullet, dart, dagger, or axe launched or thrown by the applicant will pierce through creatures in a line, dealing the attack's damage (as well as any on-hit effects) to each creature.
+
+STATISTICS:
+
+Special: Missle weapon attacks hit in a row
+Duration: %num_rounds% rounds
+
+Weight: 1~
