@@ -59,4 +59,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OP18~, ~@40052~, ~@40053~, ~MEWI963~, ~18~, ~20~, ~mental-agility.BAM~,                             ~BZ@OP18I~, ~BZPN140I~, ~~ => "Mental Agility"
 
 
+        ~BZ@OQ15~, ~@40054~, ~@40055~, ~MEPR754~, ~15~, ~20~, ~colossal-growth.BAM~,                            ~BZ@OQ15I~, ~BZPN120I~, ~~ => "Colossal Growth"
+
     END

@@ -348,3 +348,17 @@ Casting Time: -10
 Duration: 1 hour
 
 Weight: 1~
+
+
+//Colossal Growth
+@40054 = ~Bomb of Colossal Growth~
+@40055 = ~This bomb causes enormous vines to burst forth from the ground throughout the area of effect. Enemies within 60 feet of the impact must Save vs. Paralysis at -6 each round or be immobilized, completely entangled by giant vines. Even large creatures such as giants and dragons can be entangled this way.
+
+STATISTICS:
+
+Casting Time: -10
+Duration: 1 turn (10 rounds)
+Area of Effect: 60-ft. radius
+Saving Throw: Paralysis at -6 negates
+
+Weight: 1~
