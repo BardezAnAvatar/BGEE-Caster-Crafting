@@ -30,5 +30,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PIERCING_SHOTS~,           ~BZ@1007~, ~MEPR455~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Piercing Shots"
 
         ~EXPOSE_TO_THE_ELEMENTS~,   ~BZ@1109~, ~MEPR557~   ~9~,  ~1~, ~Bomb~,        ~10~ => "Expose to the Elements"
+        ~SPHERE_OF_SECURITY_ACID~,  ~BZ@1209~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Acid"
 
     END

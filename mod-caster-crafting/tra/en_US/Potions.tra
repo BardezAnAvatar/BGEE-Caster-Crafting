@@ -162,3 +162,17 @@ Saving Throw: None
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Sphere of Security: Protection from Acid
+@40026 = ~Oil of Security: Protection from Acid~
+@40027 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains acid protection as if from a scroll of Protection from Acid.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Acid Resistance: +50%
+Duration: %num_rounds% rounds
+
+Weight: 1~
