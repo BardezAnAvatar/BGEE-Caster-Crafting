@@ -246,3 +246,15 @@ Special: Immune to poison and neutralizes any poison already affecting the targe
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Ghostform
+@40038 = ~Potion of Ghostform~
+@40039 = ~This potion turns the imbiber incorporeal for a short period of time. While incorporeal, the imbiber is immune to non-magical weapons, but is still tangible enough to be able to attack and cast spells. The caster can also move through walls while incorporeal (unlike the Fly spell, this also works indoors). Simply click on a point to move to, and the caster will float to that point, bypassing normally impassable obstacles in the way.
+
+STATISTICS:
+
+Special: incorporeal
+Duration: %num_rounds% rounds
+
+Weight: 1~

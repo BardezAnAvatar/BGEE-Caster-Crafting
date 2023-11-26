@@ -36,5 +36,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPHERE_OF_SECURITY_FIRE~,          ~BZ@OF09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Fire"
         ~SPHERE_OF_SECURITY_PETRIFICATION~, ~BZ@OG09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Petrification"
         ~SPHERE_OF_SECURITY_POISON~,        ~BZ@OH09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Poison"
+        ~GHOSTFORM~,                        ~BZ@OI09~, ~MEWI559~,  ~9~,  ~1~, ~Defense~,     ~10~ => "Ghostform"
 
     END
