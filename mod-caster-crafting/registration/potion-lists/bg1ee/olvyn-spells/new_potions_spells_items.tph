@@ -28,11 +28,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@O805~, ~@40018~, ~@40019~, ~MEWI353~, ~5~,  ~5~, ~displacement.BAM~,                    ~BZ@O805I~, ~BZPN140I~, ~~ => "Displacement"
         ~BZ@O905~, ~@40020~, ~@40021~, ~MEWI356~, ~5~,  ~5~, ~legend-lore.BAM~,                     ~BZ@O905I~, ~BZPN130I~, ~~ => "Legend Lore"
 
-        ~BZ@1007~, ~@40022~, ~@40023~, ~MEPR455~, ~7~,  ~8~, ~piercing-shots.BAM~,                  ~BZ@1007I~, ~BZPN120I~, ~~ => "Piercing Shots"
+        ~BZ@OA07~, ~@40022~, ~@40023~, ~MEPR455~, ~7~,  ~8~, ~piercing-shots.BAM~,                  ~BZ@OA07I~, ~BZPN120I~, ~~ => "Piercing Shots"
 
-        ~BZ@1109~, ~@40024~, ~@40025~, ~MEPR557~, ~9~, ~10~, ~expose-to-the-elements.BAM~,          ~BZ@1109I~, ~BZPN120I~, ~~ => "Expose to the Elements"
+        ~BZ@OB09~, ~@40024~, ~@40025~, ~MEPR557~, ~9~, ~10~, ~expose-to-the-elements.BAM~,          ~BZ@OB09I~, ~BZPN120I~, ~~ => "Expose to the Elements"
 //NOTE: manually create these
-        ~BZ@1209~, ~@40026~, ~@40027~, ~MESOS04~, ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,  ~BZ@1209I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Acid"
-        ~BZ@1309~, ~@40028~, ~@40029~, ~MESOS02~, ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,  ~BZ@1309I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Cold"
+        ~BZ@OC09~, ~@40026~, ~@40027~, ~MESOS04~, ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,  ~BZ@OC09I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Acid"
+        ~BZ@OD09~, ~@40028~, ~@40029~, ~MESOS02~, ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,  ~BZ@OD09I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Cold"
 
     END
