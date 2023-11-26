@@ -385,3 +385,17 @@ Special: Rake attack, 2x/round
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Cat's Grace
+@40104 = ~Potion of Cat's Grace~
+@40105 = ~This potion magically increases the imbiber's Dexterity. The amount depends on the imbiber's class: Rogues gain 1d8 points, warriors and wizards gain 1d6 points, and priests gain 1d4 points. If a character has more than one class, the larger die is used. Cat's Grace cannot raise a target's Dexterity past 20.
+
+STATISTICS:
+
+Dexterity bonus
+Duration: %num_hours% hours
+
+Weight: 1~
+
+Weight: 1~
