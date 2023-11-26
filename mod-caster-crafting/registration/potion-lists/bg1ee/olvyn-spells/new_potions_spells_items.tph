@@ -26,7 +26,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@O605~, ~@40014~, ~@40015~, ~MEPR356~, ~1~,  ~6~, ~wind-shots.BAM~,        ~BZ@O605I~, ~BZPN150I~, ~~ => "Wind Shots"
         ~BZ@O705~, ~@40016~, ~@40017~, ~MEPR357~, ~5~,  ~6~, ~fly.BAM~,               ~BZ@O705I~, ~BZPN140I~, ~~ => "Fly"
         ~BZ@O805~, ~@40018~, ~@40019~, ~MEWI353~, ~5~,  ~5~, ~displacement.BAM~,      ~BZ@O805I~, ~BZPN140I~, ~~ => "Displacement"
-
+        ~BZ@O905~, ~@40020~, ~@40021~, ~MEWI356~, ~5~,  ~5~, ~legend-lore.BAM~,       ~BZ@O905I~, ~BZPN130I~, ~~ => "Legend Lore"
 
 
     END

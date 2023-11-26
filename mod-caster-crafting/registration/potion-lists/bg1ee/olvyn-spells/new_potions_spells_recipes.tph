@@ -26,5 +26,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~FLY_PR~,           ~BZ@O705~, ~MEPR357~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
         ~FLY_WI~,           ~BZ@O705~, ~MEWI352~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
         ~DISPLACEMENT~,     ~BZ@O805~, ~MEWI353~,  ~5~,  ~1~, ~Defense~,      ~5~ => ~Displacement~
+        ~LEGEND_LORE~,      ~BZ@O905~, ~MEWI356~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Legend Lore~
 
     END

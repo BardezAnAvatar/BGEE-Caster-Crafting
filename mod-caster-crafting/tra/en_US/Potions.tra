@@ -120,3 +120,15 @@ Special: Melee attacks against applicant have 50% chance of missing
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Legend Lore
+@40020 = ~Draught of Lengendary Lore~
+@40021 = ~This potion temporarily increases the lore of the imbiber, allowing <PRO_HIMHER> to identify multiple magical items. For the duration, the imbiber's lore is increased by 100.
+
+STATISTICS:
+
+Lore: +100
+Duration: %num_rounds% rounds
+
+Weight: 1~
