@@ -1,0 +1,23 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_items~
+    BEGIN
+        /*
+        [resulting potion RESREF]                   // 1
+        [STRREF: Name]                              // 2
+        [STRREF: Descripton]                        // 3
+        [effect: source spell]                      // 4
+        [effect: Caster Level (NI: minimum level)]  // 3
+        [Cost: gold tier]                           // 6
+        [Icon: Source inventory BAM path]           // 7
+        [Icon: Destination inventory BAM RESREF]    // 8
+        [Icon: Description RESREF]                  // 9
+        [Unusability flags]                         // 10 special case for one or two potions; usually ~0~
+        */
+
+
+        ~BZ@I001~, ~@40100~, ~@40101~, ~SPWI127~,  ~1~,  ~2~, ~expeditious-retreat.BAM~,                        ~BZ@I001I~, ~BZPN120I~, ~~ => "Expeditious Retreat"
+
+
+
+
+    END

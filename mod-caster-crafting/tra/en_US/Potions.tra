@@ -1,17 +1,9 @@
 /* Reserving range 40000-49999 */
 
-//Expeditious Retreat
-@40000 = ~Oil of Expeditious Retreat~
-@40001 = ~This oil doubles the applicant's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects, such as Haste and Slow, cannot affect the imbiber for the duration of the effect. While under the effect of this oil, the imbiber cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
 
-STATISTICS:
-
-Special: Doubles movement rate
-Duration: 3 rounds
-
-Weight: 1~
-
-
+/**************************
+*   OlvynSpells Potions   *
+**************************/
 //Snake's Swiftness
 @40002 = ~Oil of Snake's Swiftness~
 @40003 = ~This oil allows the imbiber to move and attack extremely fast for a single round. During the round, the imbiber's movement rate and attacks per round are doubled. In addition, if the imbiber is an animal, a lycanthrope, a yuan-ti, or a character shapeshifted into one such creature, it is sped up further: gaining 2 additional attacks per round and moving at the maximum possible movement rate for the duration.
@@ -360,5 +352,23 @@ Casting Time: -10
 Duration: 1 turn (10 rounds)
 Area of Effect: 60-ft. radius
 Saving Throw: Paralysis at -6 negates
+
+Weight: 1~
+
+
+
+
+
+/***************************
+*   Icewind Dale Potions   *
+***************************/
+//Expeditious Retreat
+@40100 = ~Oil of Expeditious Retreat~
+@40101 = ~This oil doubles the applicant's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects, such as Haste and Slow, cannot affect the imbiber for the duration of the effect. While under the effect of this oil, the imbiber cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
+
+STATISTICS:
+
+Special: Doubles movement rate
+Duration: 3 rounds
 
 Weight: 1~
