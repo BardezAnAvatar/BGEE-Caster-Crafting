@@ -46,5 +46,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~ATTAIN_PERFECTION~,                    ~BZ@ON18~, ~MEWI953~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Attain Perfection"
 
         ~ECLECTIC_RECALL~,                      ~BZ@OO18~, ~MEWI960~, ~18~,  ~1~, ~Enhancement~, ~20~ => "Eclectic Recall"
+        ~MENTAL_AGILITY~,                       ~BZ@OP18~, ~MEWI963~, ~18~,  ~1~, ~Enhancement~, ~20~ => "Mental Agility"
 
     END

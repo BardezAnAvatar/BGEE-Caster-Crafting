@@ -336,3 +336,15 @@ Special: Recall spells
 Duration: Instant
 
 Weight: 1~
+
+
+//Mental Agility
+@40052 = ~Potion of Mental Agility~
+@40053 = ~This potion drastically shortens the time necessary to cast spells. The imbiber's casting time is reduced by 10 for the duration. Mental Agility cannot be combined with Improved Alacrity.
+
+STATISTICS:
+
+Casting Time: -10
+Duration: 1 hour
+
+Weight: 1~
