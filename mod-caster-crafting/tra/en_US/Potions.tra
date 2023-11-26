@@ -447,3 +447,17 @@ Special: Creates a magical +4 sword in hands
 Duration: 2 turns (20 rounds)
 
 Weight: 1~
+
+
+//Spike Growth
+@40114 = ~Bomb of Spike Growth~
+@40115 = ~This bomb transforms the terrain surrounding the impact into spiky plants. Any creature entering the area takes 1d4 points of piercing damage and 1d4 points of slashing damage every round until the spell expires.
+
+STATISTICS:
+
+Damage: 1d4 piercing, 1d4 slashing per round
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
