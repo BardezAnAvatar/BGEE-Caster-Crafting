@@ -144,3 +144,21 @@ Special: Missle weapon attacks hit in a row
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Expose to the Elements
+@40024 = ~Bomb of Elemental Exposure~
+@40025 = ~This bomb increases the harm that extreme conditions do to the target's body. It lowers the target's resistance to fire, magic fire, cold, magic cold and electricity damage by 75%. There is no Saving Throw, but Magic Resistance can still prevent the effects.
+
+STATISTICS:
+
+Fire Resistance: -75%
+Magical Fire Resistance: -75%
+Cold Resistance: -75%
+Magical Cold Resistance: -75%
+Electricity Resistance: -75%
+Area of Effect: 1 creature
+Saving Throw: None
+Duration: %num_rounds% rounds
+
+Weight: 1~
