@@ -42,4 +42,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~ANTIHARM_SHELL~,                       ~BZ@OK11~, ~MEPR653~, ~11~,  ~1~, ~Defense~,     ~12~ => "Antiharm Shell"
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,    ~BZ@OL11~, ~MEPR656~, ~11~,  ~1~, ~Defense~,     ~14~ => "Protection From Non-Silver Weapons"
 
+        ~PERFECT_INVISIBILITY~,                 ~BZ@OM18~, ~MEWI951~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Perfect Invisibility"
+
     END

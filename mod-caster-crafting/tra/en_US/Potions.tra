@@ -295,3 +295,13 @@ Special: Immune to Non-Silver Weapons
 Duration: 4 rounds
 
 Weight: 1~
+
+
+//Perfect Invisibility
+@40046 = ~Potion of Perfect Invisibility~
+@40047 = ~This potion confers perfect invisibility to the imbiber. While under the effect of Perfect Invisibility, the imbiber can attack, cast a spell or otherwise interact with another creature or object while remaining completely invisible. However, Perfect Invisibility can still be dispelled by effects that would dispel regular invisibility, such as True Sight or Dispel Magic. Barring such removal, the spell will last for 3 rounds.
+
+Special: Invisibility, perfect
+Duration: 3 rounds
+
+Weight: 1~
