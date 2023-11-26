@@ -45,4 +45,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PERFECT_INVISIBILITY~,                 ~BZ@OM18~, ~MEWI951~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Perfect Invisibility"
         ~ATTAIN_PERFECTION~,                    ~BZ@ON18~, ~MEWI953~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Attain Perfection"
 
+        ~ECLECTIC_RECALL~,                      ~BZ@OO18~, ~MEWI960~, ~18~,  ~1~, ~Enhancement~, ~20~ => "Eclectic Recall"
+
     END
