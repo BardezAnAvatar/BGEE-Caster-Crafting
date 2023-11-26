@@ -31,6 +31,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@I807~, ~@40116~, ~@40117~, ~SPPR420~,  ~1~,  ~8~, ~recitation.BAM~                                  ~BZ@I807I~, ~BZPN070D~, ~~      => "Recitation"
         ~BZ@I907~, ~@40118~, ~@40119~, ~SPPR421~,  ~1~,  ~8~, ~blood-rage.BAM~                                  ~BZ@I907I~, ~BZPN032D~, BIT4    => "Blood Rage"
         ~BZ@IA07~, ~@40120~, ~@40121~, ~SPPR422~,  ~1~,  ~8~, ~cloud-of-pestilence.BAM~                         ~BZ@IA07I~, ~BZPN013D~, ~~      => "Cloud of Pestilence"
+        ~BZ@IB07~, ~@40122~, ~@40123~, ~SPWI426~,  ~1~,  ~8~, ~emotion-courage.BAM~                             ~BZ@IB07I~, ~BZPN040D~, ~~      => "Emotion: Courage"
 
 
     END

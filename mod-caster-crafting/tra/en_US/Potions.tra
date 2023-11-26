@@ -513,3 +513,18 @@ Saving Throw: Breath for half damage
 Duration: 4 rounds
 
 Weight: 1~
+
+
+//Emotion: Courage
+@40122 = ~Potion of Courage~
+@40123 = ~This potion creates the emotion of courage within the imbiber, gaining +1 to hit, +3 to their damage rolls, and +5 temporary Hit Points (which can put them above their maximum Hit Points). This potion nullifies all fear effects within the area of effect at the time of casting.
+
+STATISTICS:
+
+Special: removes fear
+Attack rolls: +1 bonus
+Damage rolls: +3 bonus
+Hit Points: +5 temporary Hit Points
+Duration: 1 hour
+
+Weight: 1~
