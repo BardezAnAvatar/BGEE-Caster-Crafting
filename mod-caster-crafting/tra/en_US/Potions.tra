@@ -420,3 +420,16 @@ Special: Creates a magical +1 staff in hands
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Snilloc's Snowball Swarm
+@40110 = ~Bomb of Snilloc's Snowball Swarm~
+@40111 = ~A flurry of snowballs will erupt from the point of impact. These snowballs will hit everything within the area of effect, doing %dice_count%d3 points of cold damage. Against fire-using or fire-dwelling creatures, it inflicts %dice_count%d6 points of cold damage instead.
+
+STATISTICS:
+
+Damage: %dice_count%d3 (%dice_count%d6 vs. fire-using or fire-dwelling creatures) cold; Save vs. Spell for half
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+
+Weight: 1~

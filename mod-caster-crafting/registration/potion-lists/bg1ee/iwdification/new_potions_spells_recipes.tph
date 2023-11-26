@@ -19,6 +19,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CAT'S_GRACE~,                          ~BZ@I203~, ~SPWI227~,  ~3~,  ~1~, ~Enhancement~,  ~4~ => "Cat's Grace"
         ~CURE_MODERATE_WOUNDS~,                 ~BZ@I303~, ~SPPR216~,  ~3~,  ~1~, ~Cure~,         ~3~ => "Cure Moderate Wounds"
         ~DECASTAVE~,                            ~BZ@I403~, ~SPWI226~,  ~3~,  ~1~, ~Offense~,      ~4~ => "Decastave"
+        ~SNILLOC'S_SNOWBALL_SWARM~,             ~BZ@I503~, ~SPWI225~,  ~3~,  ~1~, ~Bomb~,         ~4~ => "Snilloc's Snowball Swarm"
 
 
     END
