@@ -176,3 +176,17 @@ Acid Resistance: +50%
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Sphere of Security: Protection from Cold
+@40028 = ~Oil of Security: Protection from Cold~
+@40029 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains cold protection as if from a scroll of Protection from Cold.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Cold Resistance: +50%
+Duration: %num_rounds% rounds
+
+Weight: 1~

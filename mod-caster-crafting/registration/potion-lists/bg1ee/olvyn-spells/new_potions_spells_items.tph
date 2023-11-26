@@ -33,5 +33,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1109~, ~@40024~, ~@40025~, ~MEPR557~, ~9~, ~10~, ~expose-to-the-elements.BAM~,          ~BZ@1109I~, ~BZPN120I~, ~~ => "Expose to the Elements"
 //NOTE: manually create these
         ~BZ@1209~, ~@40026~, ~@40027~, ~MESOS04~, ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,  ~BZ@1209I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Acid"
+        ~BZ@1309~, ~@40028~, ~@40029~, ~MESOS02~, ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,  ~BZ@1309I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Cold"
 
     END
