@@ -271,3 +271,17 @@ Electricity Resistance: +50%
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Antiharm Shell
+@40042 = ~Potion of Antiharm~
+@40043 = ~For the duration, the imbiber is immune to damage but cannot deal any damage. The imbiber can still move, attack, and cast spells, but any damage those attacks or spells would deal is prevented.
+
+STATISTICS:
+
+Special: Immune to damage but cannot deal any damage.
+Duration: %num_rounds% rounds
+
+Weight: 1~
+
+

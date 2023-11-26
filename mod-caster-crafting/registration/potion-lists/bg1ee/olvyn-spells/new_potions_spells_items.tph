@@ -15,35 +15,38 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~BZ@O001~, ~@40002~, ~@40003~, ~MEPR151~, ~1~,  ~3~, ~snake's-swiftness.BAM~,                       ~BZ@O001I~, ~BZPN120I~, ~~ => "Snake's Swiftness"
-        ~BZ@O101~, ~@40004~, ~@40005~, ~MEPR157~, ~1~,  ~4~, ~searing-smite.BAM~,                           ~BZ@O101I~, ~BZPN120I~, ~~ => "Searing Smite"
-        ~BZ@O201~, ~@40006~, ~@40007~, ~MEPR154~, ~1~,  ~2~, ~turning-weapon.BAM~,                          ~BZ@O201I~, ~BZPN130I~, ~~ => "Turning Weapon"
-        ~BZ@O301~, ~@40008~, ~@40009~, ~MEPR156~, ~1~, ~10~, ~camoflauge.BAM~,                              ~BZ@O301I~, ~BZPN130I~, ~~ => "Camoflauge"
-        ~BZ@O401~, ~@40010~, ~@40011~, ~MEWI158~, ~1~,  ~4~, ~reflect-attack.BAM~,                          ~BZ@O401I~, ~BZPN150I~, ~~ => "Reflect Attack"
+        ~BZ@O001~, ~@40002~, ~@40003~, ~MEPR151~,  ~1~,  ~3~, ~snake's-swiftness.BAM~,                       ~BZ@O001I~, ~BZPN120I~, ~~ => "Snake's Swiftness"
+        ~BZ@O101~, ~@40004~, ~@40005~, ~MEPR157~,  ~1~,  ~4~, ~searing-smite.BAM~,                           ~BZ@O101I~, ~BZPN120I~, ~~ => "Searing Smite"
+        ~BZ@O201~, ~@40006~, ~@40007~, ~MEPR154~,  ~1~,  ~2~, ~turning-weapon.BAM~,                          ~BZ@O201I~, ~BZPN130I~, ~~ => "Turning Weapon"
+        ~BZ@O301~, ~@40008~, ~@40009~, ~MEPR156~,  ~1~, ~10~, ~camoflauge.BAM~,                              ~BZ@O301I~, ~BZPN130I~, ~~ => "Camoflauge"
+        ~BZ@O401~, ~@40010~, ~@40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                          ~BZ@O401I~, ~BZPN150I~, ~~ => "Reflect Attack"
 
 
-        ~BZ@O503~, ~@40012~, ~@40013~, ~MEPR255~, ~1~,  ~3~, ~ghostwalk.BAM~,                               ~BZ@O503I~, ~BZPN130I~, ~~ => "Ghostwalk"
+        ~BZ@O503~, ~@40012~, ~@40013~, ~MEPR255~,  ~1~,  ~3~, ~ghostwalk.BAM~,                               ~BZ@O503I~, ~BZPN130I~, ~~ => "Ghostwalk"
 
 
-        ~BZ@O605~, ~@40014~, ~@40015~, ~MEPR356~, ~1~,  ~6~, ~wind-shots.BAM~,                              ~BZ@O605I~, ~BZPN150I~, ~~ => "Wind Shots"
-        ~BZ@O705~, ~@40016~, ~@40017~, ~MEPR357~, ~5~,  ~6~, ~fly.BAM~,                                     ~BZ@O705I~, ~BZPN140I~, ~~ => "Fly"
-        ~BZ@O805~, ~@40018~, ~@40019~, ~MEWI353~, ~5~,  ~5~, ~displacement.BAM~,                            ~BZ@O805I~, ~BZPN140I~, ~~ => "Displacement"
-        ~BZ@O905~, ~@40020~, ~@40021~, ~MEWI356~, ~5~,  ~5~, ~legend-lore.BAM~,                             ~BZ@O905I~, ~BZPN130I~, ~~ => "Legend Lore"
+        ~BZ@O605~, ~@40014~, ~@40015~, ~MEPR356~,  ~1~,  ~6~, ~wind-shots.BAM~,                              ~BZ@O605I~, ~BZPN150I~, ~~ => "Wind Shots"
+        ~BZ@O705~, ~@40016~, ~@40017~, ~MEPR357~,  ~5~,  ~6~, ~fly.BAM~,                                     ~BZ@O705I~, ~BZPN140I~, ~~ => "Fly"
+        ~BZ@O805~, ~@40018~, ~@40019~, ~MEWI353~,  ~5~,  ~5~, ~displacement.BAM~,                            ~BZ@O805I~, ~BZPN140I~, ~~ => "Displacement"
+        ~BZ@O905~, ~@40020~, ~@40021~, ~MEWI356~,  ~5~,  ~5~, ~legend-lore.BAM~,                             ~BZ@O905I~, ~BZPN130I~, ~~ => "Legend Lore"
 
 
-        ~BZ@OA07~, ~@40022~, ~@40023~, ~MEPR455~, ~7~,  ~8~, ~piercing-shots.BAM~,                          ~BZ@OA07I~, ~BZPN120I~, ~~ => "Piercing Shots"
+        ~BZ@OA07~, ~@40022~, ~@40023~, ~MEPR455~,  ~7~,  ~8~, ~piercing-shots.BAM~,                          ~BZ@OA07I~, ~BZPN120I~, ~~ => "Piercing Shots"
 
 
-        ~BZ@OB09~, ~@40024~, ~@40025~, ~MEPR557~, ~9~, ~10~, ~expose-to-the-elements.BAM~,                  ~BZ@OB09I~, ~BZPN120I~, ~~ => "Expose to the Elements"
+        ~BZ@OB09~, ~@40024~, ~@40025~, ~MEPR557~,  ~9~, ~10~, ~expose-to-the-elements.BAM~,                  ~BZ@OB09I~, ~BZPN120I~, ~~ => "Expose to the Elements"
 //NOTE: manually create these
-        ~BZ@OC09~, ~@40026~, ~@40027~, ~MESOS04~, ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,          ~BZ@OC09I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Acid"
-        ~BZ@OD09~, ~@40028~, ~@40029~, ~MESOS02~, ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,          ~BZ@OD09I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Cold"
-        ~BZ@OE09~, ~@40030~, ~@40031~, ~MESOS03~, ~9~,  ~9~, ~sphere-of-protection-from-electricity.BAM~,   ~BZ@OE09I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Electricity"
-        ~BZ@OF09~, ~@40032~, ~@40033~, ~MESOS01~, ~9~,  ~9~, ~sphere-of-protection-from-fire.BAM~,          ~BZ@OF09I~, ~BZPN130I~, ~~ => "Sphere of Security: Protection from Fire"
-        ~BZ@OG09~, ~@40034~, ~@40035~, ~MESOS06~, ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~, ~BZ@OG09I~, ~BZPN005I~, ~~ => "Sphere of Security: Protection from Petrification"
-        ~BZ@OH09~, ~@40036~, ~@40037~, ~MESOS05~, ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,        ~BZ@OH09I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Poison"
+        ~BZ@OC09~, ~@40026~, ~@40027~, ~MESOS04~,  ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,          ~BZ@OC09I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Acid"
+        ~BZ@OD09~, ~@40028~, ~@40029~, ~MESOS02~,  ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,          ~BZ@OD09I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Cold"
+        ~BZ@OE09~, ~@40030~, ~@40031~, ~MESOS03~,  ~9~,  ~9~, ~sphere-of-protection-from-electricity.BAM~,   ~BZ@OE09I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Electricity"
+        ~BZ@OF09~, ~@40032~, ~@40033~, ~MESOS01~,  ~9~,  ~9~, ~sphere-of-protection-from-fire.BAM~,          ~BZ@OF09I~, ~BZPN130I~, ~~ => "Sphere of Security: Protection from Fire"
+        ~BZ@OG09~, ~@40034~, ~@40035~, ~MESOS06~,  ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~, ~BZ@OG09I~, ~BZPN005I~, ~~ => "Sphere of Security: Protection from Petrification"
+        ~BZ@OH09~, ~@40036~, ~@40037~, ~MESOS05~,  ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,        ~BZ@OH09I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Poison"
 //End Manual
-        ~BZ@OI09~, ~@40038~, ~@40039~, ~MEWI559~, ~9~, ~10~, ~ghostform.BAM~,                               ~BZ@OI09I~, ~BZPN120I~, ~~ => "Ghostform"
-        ~BZ@OJ09~, ~@40040~, ~@40041~, ~MEWI566~, ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,               ~BZ@OJ09I~, ~BZPN120I~, ~~ => "Gedlee's Electric Barrier"
+        ~BZ@OI09~, ~@40038~, ~@40039~, ~MEWI559~,  ~9~, ~10~, ~ghostform.BAM~,                               ~BZ@OI09I~, ~BZPN120I~, ~~ => "Ghostform"
+        ~BZ@OJ09~, ~@40040~, ~@40041~, ~MEWI566~,  ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,               ~BZ@OJ09I~, ~BZPN120I~, ~~ => "Gedlee's Electric Barrier"
+
+
+        ~BZ@OK11~, ~@40040~, ~@40041~, ~MEPR653~, ~11~, ~12~, ~antiharm-shell.BAM~,                          ~BZ@OK11I~, ~BZPN150I~, ~~ => "Antiharm Shell"
 
     END

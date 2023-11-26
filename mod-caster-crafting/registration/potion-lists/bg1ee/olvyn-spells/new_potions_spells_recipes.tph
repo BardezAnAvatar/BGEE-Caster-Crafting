@@ -39,4 +39,5 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~GHOSTFORM~,                        ~BZ@OI09~, ~MEWI559~,  ~9~,  ~1~, ~Defense~,     ~10~ => "Ghostform"
         ~GEDLEE'S_ELECTRIC_BARRIER~,        ~BZ@OJ09~, ~MEWI566~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Gedlee's Electric Barrier"
 
+        ~ANTIHARM_SHELL~,                   ~BZ@OK11~, ~MEPR653~, ~11~,  ~1~, ~Defense~,     ~12~ => "Antiharm Shell"
     END
