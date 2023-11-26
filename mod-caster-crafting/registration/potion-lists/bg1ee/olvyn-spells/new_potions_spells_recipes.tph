@@ -43,5 +43,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,    ~BZ@OL11~, ~MEPR656~, ~11~,  ~1~, ~Defense~,     ~14~ => "Protection From Non-Silver Weapons"
 
         ~PERFECT_INVISIBILITY~,                 ~BZ@OM18~, ~MEWI951~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Perfect Invisibility"
+        ~ATTAIN_PERFECTION~,                    ~BZ@ON18~, ~MEWI953~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Attain Perfection"
 
     END

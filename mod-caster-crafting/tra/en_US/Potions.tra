@@ -305,3 +305,18 @@ Special: Invisibility, perfect
 Duration: 3 rounds
 
 Weight: 1~
+
+
+//Attain Perfection
+@40048 = ~Potion of Attained Perfection~
+@40049 = ~This potion temporarily makes the imbiber perfect in every way. For 1 hour, the imbiber's Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma are all set to 25.
+
+Strength:     25
+Dexterity:    25
+Constitution: 25
+Intelligence: 25
+Wisdom:       25
+Charisma:     25
+Duration: 1 hour
+
+Weight: 1~
