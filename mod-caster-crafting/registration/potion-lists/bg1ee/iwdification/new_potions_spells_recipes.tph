@@ -13,4 +13,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~EXPEDITIOUS_RETREAT~,                  ~BZ@I001~, ~SPWI127~,  ~1~,  ~1~, ~Enhancement~,  ~2~ => "Expeditious Retreat"
+
+
+        ~EXPEDITIOUS_RETREAT~,                  ~BZ@I101~, ~SPPR218~,  ~1~,  ~1~, ~Offense~,      ~5~ => "Beast Claw"
     END

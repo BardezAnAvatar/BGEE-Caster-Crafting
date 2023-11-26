@@ -372,3 +372,16 @@ Special: Doubles movement rate
 Duration: 3 rounds
 
 Weight: 1~
+
+
+//Beast Claw
+@40102 = ~Potion of Beast Claw~
+@40103 = ~This potion transforms the imbiber's arms into the claws of a mighty beast, giving the imbiber 18/72 Strength and the ability to rake an opponent for 2d4 (plus Strength bonus) points of slashing damage. The imbiber can attack twice per round with the beast claws, with a +2 bonus to hit.
+
+STATISTICS:
+
+Strength: 18/72
+Special: Rake attack, 2x/round
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
