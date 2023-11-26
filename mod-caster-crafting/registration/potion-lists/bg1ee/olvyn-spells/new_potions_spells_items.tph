@@ -37,5 +37,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OE09~, ~@40030~, ~@40031~, ~MESOS03~, ~9~,  ~9~, ~sphere-of-protection-from-electricity.BAM~,   ~BZ@OE09I~, ~BZPN140I~, ~~ => "Sphere of Security: Protection from Electricity"
         ~BZ@OF09~, ~@40032~, ~@40033~, ~MESOS01~, ~9~,  ~9~, ~sphere-of-protection-from-fire.BAM~,          ~BZ@OF09I~, ~BZPN130I~, ~~ => "Sphere of Security: Protection from Fire"
         ~BZ@OG09~, ~@40034~, ~@40035~, ~MESOS06~, ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~, ~BZ@OG09I~, ~BZPN005I~, ~~ => "Sphere of Security: Protection from Petrification"
+        ~BZ@OH09~, ~@40036~, ~@40037~, ~MESOS05~, ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,        ~BZ@OH09I~, ~BZPN150I~, ~~ => "Sphere of Security: Protection from Poison"
 
     END

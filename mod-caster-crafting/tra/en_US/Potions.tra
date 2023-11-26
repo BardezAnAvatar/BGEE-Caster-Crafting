@@ -232,3 +232,17 @@ Special: Immune to petrification
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Sphere of Security: Protection from Poison
+@40036 = ~Oil of Security: Protection from Poison~
+@40037 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains protection from poisons as if from a scroll of Protection from Poison.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Special: Immune to poison and neutralizes any poison already affecting the target
+Duration: %num_rounds% rounds
+
+Weight: 1~
