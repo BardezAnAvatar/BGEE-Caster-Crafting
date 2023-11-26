@@ -242,7 +242,7 @@ Weight: 1~
 
 //Ghostform
 @40038 = ~Potion of Ghostform~
-@40039 = ~This potion turns the imbiber incorporeal for a short period of time. While incorporeal, the imbiber is immune to non-magical weapons, but is still tangible enough to be able to attack and cast spells. The caster can also move through walls while incorporeal (unlike the Fly spell, this also works indoors). Simply click on a point to move to, and the caster will float to that point, bypassing normally impassable obstacles in the way.
+@40039 = ~This potion turns the imbiber incorporeal for a short period of time. While incorporeal, the imbiber is immune to non-magical weapons, but is still tangible enough to be able to attack and cast spells. The imbiber can also move through walls while incorporeal (unlike the Fly spell, this also works indoors). Simply click on a point to move to, and the imbiber will float to that point, bypassing normally impassable obstacles in the way.
 
 STATISTICS:
 
@@ -406,5 +406,17 @@ Weight: 1~
 STATISTICS:
 
 Special: Restores 11 Hit Points.
+
+Weight: 1~
+
+
+//Decastave
+@40108 = ~Oil of Decastave~
+@40109 = ~When poured, this oil forms into a staff of force in the applicant's hands. It is treated as a magical weapon, doing 1d6 Hit Points of damage per hit, and it can hit creatures that require +1 weapons to hit. It is a staff, however, so if the applicant does not have a proficiency in staff weapons, then the Decastave is used at a penalty. The staff also has the power to drain a target of 1d2 Hit Points on every strike. These Hit Points are added to the applicant's, but they can only heal damage the applicant has taken; they will not raise <PRO_HISHER> Hit Points beyond <PRO_HISHER> normal maximum.
+
+STATISTICS:
+
+Special: Creates a magical +1 staff in hands
+Duration: %num_rounds% rounds
 
 Weight: 1~

@@ -21,6 +21,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@I103~, ~@40102~, ~@40103~, ~SPPR218~,  ~1~,  ~5~, ~beast-claw.BAM~,                                 ~BZ@I103I~, ~BZPN026I~, ~~ => "Beast Claw"
         ~BZ@I203~, ~@40104~, ~@40105~, ~SPWI227~,  ~1~,  ~4~, ~cat's-grace.BAM~                                 ~BZ@I203I~, ~BZPN100I~, ~~ => "Cat's Grace"
         ~BZ@I303~, ~@40106~, ~@40107~, ~SPPR216~,  ~1~,  ~3~, ~cure-moderate-wounds.BAM~                        ~BZ@I303I~, ~BZPN070I~, ~~ => "Cure Moderate Wounds"
+        ~BZ@I403~, ~@40108~, ~@40109~, ~SPWI226~,  ~1~,  ~3~, ~decastave.BAM~                                   ~BZ@I403I~, ~BZPN019I~, ~~ => "Decastave"
 
 
     END

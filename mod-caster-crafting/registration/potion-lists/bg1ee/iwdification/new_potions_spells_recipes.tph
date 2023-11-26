@@ -18,4 +18,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~EXPEDITIOUS_RETREAT~,                  ~BZ@I103~, ~SPPR218~,  ~3~,  ~1~, ~Offense~,      ~5~ => "Beast Claw"
         ~CAT'S_GRACE~,                          ~BZ@I203~, ~SPWI227~,  ~3~,  ~1~, ~Enhancement~,  ~4~ => "Cat's Grace"
         ~CURE_MODERATE_WOUNDS~,                 ~BZ@I303~, ~SPPR216~,  ~3~,  ~1~, ~Cure~,         ~3~ => "Cure Moderate Wounds"
+        ~DECASTAVE~,                            ~BZ@I403~, ~SPWI226~,  ~3~,  ~1~, ~Offense~,      ~4~ => "Decastave"
+
+
     END
