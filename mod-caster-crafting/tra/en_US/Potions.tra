@@ -279,9 +279,19 @@ Weight: 1~
 
 STATISTICS:
 
-Special: Immune to damage but cannot deal any damage.
-Duration: %num_rounds% rounds
+Special: Immune to damage but cannot deal any damage
+Duration: 6 rounds
 
 Weight: 1~
 
 
+//Protection From Non-Silver Weapons
+@40044 = ~Oil of Protection From Non-Silver Weapons~
+@40045 = ~This oil confers complete invulnerability to all non-silver weapons.
+
+STATISTICS:
+
+Special: Immune to Non-Silver Weapons
+Duration: 4 rounds
+
+Weight: 1~

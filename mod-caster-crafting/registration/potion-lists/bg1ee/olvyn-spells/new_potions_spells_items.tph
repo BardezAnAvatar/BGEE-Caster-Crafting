@@ -47,6 +47,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OJ09~, ~@40040~, ~@40041~, ~MEWI566~,  ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,               ~BZ@OJ09I~, ~BZPN120I~, ~~ => "Gedlee's Electric Barrier"
 
 
-        ~BZ@OK11~, ~@40040~, ~@40041~, ~MEPR653~, ~11~, ~12~, ~antiharm-shell.BAM~,                          ~BZ@OK11I~, ~BZPN150I~, ~~ => "Antiharm Shell"
+        ~BZ@OK11~, ~@40042~, ~@40043~, ~MEPR653~, ~11~, ~12~, ~antiharm-shell.BAM~,                          ~BZ@OK11I~, ~BZPN150I~, ~~ => "Antiharm Shell"
+        ~BZ@OL11~, ~@40044~, ~@40045~, ~MEPR656~, ~11~, ~14~, ~protection-from-non-silver-weapons.BAM~,      ~BZ@OL11I~, ~BZPN140I~, ~~ => "Protection From Non-Silver Weapons"
 
     END
