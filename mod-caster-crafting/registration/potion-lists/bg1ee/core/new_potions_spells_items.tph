@@ -24,6 +24,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0601~, ~@40212~, ~@40213~, ~SPWI102~,  ~1~,  ~2~, ~armor.BAM~,                                      ~BZ@0601I~, ~BZPN008D~, ~~      => "Armor"
         ~BZ@0701~, ~@40214~, ~@40215~, ~SPWI107~,  ~1~,  ~2~, ~friends.BAM~,                                    ~BZ@0701I~, ~BZPN005D~, ~~      => "Friends"
         ~BZ@0801~, ~@40216~, ~@40217~, ~SPWI108~,  ~1~,  ~2~, ~protection-from-petrification.BAM~,              ~BZ@0801I~, ~BZPN040D~, ~~      => "Protection From Petrification"
+        ~BZ@0901~, ~@40218~, ~@40219~, ~SPWI113~,  ~1~,  ~2~, ~protection-from-evil.BAM~,                       ~BZ@0901I~, ~BZPN080D~, ~~      => "Protection From Evil"
 
 
     END
