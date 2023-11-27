@@ -44,4 +44,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~TROLLISH_FORTITUDE~,                   ~BZ@IJ12~, ~SPWI629~, ~12~,  ~1~, ~Cure~,        ~10~ => "Trollish Fortitude"
 
 
+        ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,      ~BZ@IK14~, ~SPPR735~, ~14~,  ~1~, ~Defense~,     ~10~ => "Impervious Sanctity of Mind"
+
+
+
     END

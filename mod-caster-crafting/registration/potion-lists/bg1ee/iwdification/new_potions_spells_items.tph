@@ -45,4 +45,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@II12~, ~@40136~, ~@40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~                             ~BZ@II12I~, ~BZPN100D~, ~~      => "Antimagic Shell"
         ~BZ@IJ12~, ~@40138~, ~@40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~                          ~BZ@IJ12I~, ~BZPN005D~, ~~      => "Trollish Fortitude"
 
+
+        ~BZ@IK14~, ~@40140~, ~@40141~, ~SPPR735~,  ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~             ~BZ@IK14I~, ~BZPN110D~, ~~      => "Impervious Sanctity of Mind"
+
+
     END

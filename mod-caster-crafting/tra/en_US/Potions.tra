@@ -641,3 +641,15 @@ Special: Regenerate 5 Hit Points per round
 Duration: 2 turns (20 rounds)
 
 Weight: 1~
+
+
+//Impervious Sanctity of Mind
+@40140 = ~Potion of Impervious Sanctity of Mind~
+@40141 = ~This potion steels the caster's mind against any outside influence. Charm, confusion, fear, feeblemindedness, hold, sleep, maze, berserk, and intoxication will not affect the imbiber for the potion's duration.
+
+STATISTICS:
+
+Special: Immune to charm, confusion, fear, feeblemindedness, hold, sleep, maze, berserk, and intoxication
+Duration: %num_turns% turns (%num_rounds% rounds)
+
+Weight: 1~
