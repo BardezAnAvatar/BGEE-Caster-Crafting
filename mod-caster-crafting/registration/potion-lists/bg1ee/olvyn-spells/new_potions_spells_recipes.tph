@@ -35,6 +35,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~PERFECT_INVISIBILITY~,                 ~BZ@OM18~, ~MEWI951~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Perfect Invisibility"
         ~ATTAIN_PERFECTION~,                    ~BZ@ON18~, ~MEWI953~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Attain Perfection"
+        ~FRIENDS_MEWI953~,                      ~BZ@0701~, ~MEWI953~,  ~1~,  ~5~, ~Enhancement~,  ~2~ => "Friends"
 
         ~ECLECTIC_RECALL~,                      ~BZ@OO18~, ~MEWI960~, ~18~,  ~1~, ~Enhancement~, ~20~ => "Eclectic Recall"
         ~MENTAL_AGILITY~,                       ~BZ@OP18~, ~MEWI963~, ~18~,  ~1~, ~Enhancement~, ~20~ => "Mental Agility"
