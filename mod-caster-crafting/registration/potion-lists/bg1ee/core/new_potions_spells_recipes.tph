@@ -12,15 +12,19 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~BLESS~,                                ~BZ@0001~, ~SPPR101~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Bless"
-        ~ENTANGLE~,                             ~BZ@0101~, ~SPPR105~,  ~1~,  ~1~, ~Bomb~,         ~3~ => "Entangle"
-        ~SANCTUARY~,                            ~BZ@0201~, ~SPPR109~,  ~1~,  ~1~, ~Defense~,      ~4~ => "Sanctuary"
-        ~ARMOR_OF_FAITH~,                       ~BZ@0301~, ~SPPR111~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Armor of Faith"
-        ~SPIRIT_WARD~,                          ~BZ@0401~, ~SPPR150~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Spirit Ward"
-        ~GREASE~,                               ~BZ@0501~, ~SPWI101~,  ~1~,  ~1~, ~Bomb~,         ~2~ => "Grease"
-        ~ARMOR~,                                ~BZ@0601~, ~SPWI102~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Armor"
-        ~FRIENDS~,                              ~BZ@0701~, ~SPWI107~,  ~1~,  ~1~, ~Enhancement~,  ~2~ => "Friends"
-        ~PROTECTION_FROM_PETRIFICATION~,        ~BZ@0801~, ~SPWI108~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Protection From Petrification"
+        ~BLESS~,                                    ~BZ@0001~, ~SPPR101~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Bless"
+        ~ENTANGLE~,                                 ~BZ@0101~, ~SPPR105~,  ~1~,  ~1~, ~Bomb~,         ~3~ => "Entangle"
+        ~SANCTUARY~,                                ~BZ@0201~, ~SPPR109~,  ~1~,  ~1~, ~Defense~,      ~4~ => "Sanctuary"
+        ~ARMOR_OF_FAITH~,                           ~BZ@0301~, ~SPPR111~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Armor of Faith"
+        ~SPIRIT_WARD~,                              ~BZ@0401~, ~SPPR150~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Spirit Ward"
+        ~GREASE~,                                   ~BZ@0501~, ~SPWI101~,  ~1~,  ~1~, ~Bomb~,         ~2~ => "Grease"
+        ~ARMOR~,                                    ~BZ@0601~, ~SPWI102~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Armor"
+        ~FRIENDS~,                                  ~BZ@0701~, ~SPWI107~,  ~1~,  ~1~, ~Enhancement~,  ~2~ => "Friends"
+        ~PROTECTION_FROM_PETRIFICATION~,            ~BZ@0801~, ~SPWI108~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Protection From Petrification"
+        ~PROTECTION_FROM_PETRIFICATION_SPCL941~,    ~BZ@0801~, ~SPCL941~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Protection From Petrification"
+        ~PROTECTION_FROM_PETRIFICATION_SPWI853~,    ~BZ@0801~, ~SPWI853~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Protection From Petrification"
+        ~PROTECTION_FROM_PETRIFICATION_SPWI806~,    ~BZ@0801~, ~SPWI806~,  ~1~,  ~5~, ~Defense~,      ~2~ => "Protection From Petrification"
+        ~PROTECTION_FROM_PETRIFICATION_SPWI820~,    ~BZ@0801~, ~SPWI820~,  ~1~,  ~3~, ~Defense~,      ~2~ => "Protection From Petrification"
 
 
     END
