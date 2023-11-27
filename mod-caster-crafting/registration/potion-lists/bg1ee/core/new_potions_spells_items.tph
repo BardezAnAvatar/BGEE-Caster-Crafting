@@ -31,6 +31,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0D03~, ~@40226~, ~@40227~, ~SPPR202~,  ~1~,  ~4~, ~barkskin.BAM~,                                   ~BZ@0D03I~, ~BZPN019D~, ~~      => "Barkskin"
         ~BZ@0E03~, ~@40228~, ~@40229~, ~SPPR203~,  ~1~,  ~5~, ~chant.BAM~,                                      ~BZ@0E03I~, ~BZPN058D~, ~~      => "Chant"
         ~BZ@0F03~, ~@40230~, ~@40231~, ~SPPR205~,  ~1~,  ~4~, ~find-traps.BAM~,                                 ~BZ@0F03I~, ~BZPN090D~, ~~      => "Find Traps"
+        ~BZ@0G03~, ~@40232~, ~@40233~, ~SPPR210~,  ~1~,  ~5~, ~resist-fire-and-cold.BAM~,                       ~BZ@0G03I~, ~BZPN005D~, ~~      => "Resist Fire and Cold"
 
 
     END

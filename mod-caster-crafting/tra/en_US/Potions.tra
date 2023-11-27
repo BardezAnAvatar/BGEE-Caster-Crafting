@@ -920,3 +920,16 @@ Special: Find traps in immediate area
 Duration: 3 turns (30 rounds)
 
 Weight: 1~
+
+
+//Resist Fire and Cold
+@40232 = ~Potion of Resist Fire and Cold~
+@40233 = ~This potion causes the imbiber's body to be toughened to withstand heat and cold; all damage sustained by fire or cold is reduced by 50%.
+
+STATISTICS:
+
+Fire resistance: +50% (mundane or magical)
+Cold resistance: +50% (mundane or magical)
+Duration: %num_rounds% rounds
+
+Weight: 1~

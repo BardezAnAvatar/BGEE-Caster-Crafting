@@ -43,7 +43,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~AID~,                                      ~BZ@0C03~, ~SPPR201~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Aid"
         ~BARKSKIN~,                                 ~BZ@0D03~, ~SPPR202~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Barkskin"
         ~CHANT~,                                    ~BZ@0E03~, ~SPPR203~,  ~2~,  ~1~, ~Offense~,      ~5~ => "Chant"
-        ~FIND_TRAPS~,                               ~BZ@0F03~, ~SPPR205~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Chant"
+        ~FIND_TRAPS~,                               ~BZ@0F03~, ~SPPR205~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Find Traps"
+        ~RESIST_FIRE_AND_COLD~,                     ~BZ@0G03~, ~SPPR210~,  ~2~,  ~1~, ~Defense~,      ~5~ => "Resist Fire and Cold"
 
 
     END
