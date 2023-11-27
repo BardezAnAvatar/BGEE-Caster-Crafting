@@ -42,4 +42,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@IH09~, ~@40134~, ~@40135~, ~SPPR519~,  ~1~, ~10~, ~spike-stones.BAM~                                ~BZ@IH09I~, ~BZPN013D~, ~~      => "Spike Stones"
 
 
+        ~BZ@II12~, ~@40136~, ~@40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~                             ~BZ@II12I~, ~BZPN100D~, ~~      => "Antimagic Shell"
+
     END

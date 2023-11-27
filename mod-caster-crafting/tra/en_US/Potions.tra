@@ -615,3 +615,17 @@ Saving Throw: Spell or be slowed
 Duration: 12 rounds
 
 Weight: 1~
+
+
+//Antimagic Shell
+@40136 = ~Potion of Antimagic Shell~
+@40137 = ~This potion causes an invisible barrier to form around the imbiber that moves with <PRO_HIMHER>. This barrier makes the imbiber immune to any magical attacks, but it prevents <PRO_HIMHER> from casting spells.
+
+Antimagic Shell also dispels deafness and feeblemindedness in the caster.
+
+STATISTICS:
+
+Special: Immune to magic; cannot cast spells; removed feeblemindedness and deafness
+Duration: %num_turns% turns (%num_rounds% rounds)
+
+Weight: 1~

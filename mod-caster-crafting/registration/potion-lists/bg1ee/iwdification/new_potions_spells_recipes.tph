@@ -39,4 +39,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SHIELD_OF_LATHANDER~,                  ~BZ@IG09~, ~SPPR520~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Shield of Lathander"
         ~SPIKE_STONES~,                         ~BZ@IH09~, ~SPPR519~,  ~9~,  ~1~, ~Bomb~,        ~10~ => "Spike Stones"
 
+
+        ~ANTIMAGIC_SHELL~,                      ~BZ@II12~, ~SPWI630~, ~12~,  ~1~, ~Defense~,     ~12~ => "Antimagic Shell"
+
+
     END
