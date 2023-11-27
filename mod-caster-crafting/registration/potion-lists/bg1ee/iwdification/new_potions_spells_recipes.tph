@@ -34,4 +34,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~UNFAILING_ENDURANCE~,                  ~BZ@ID07~, ~SPPR423~,  ~7~,  ~1~, ~Cure~,         ~8~ => "Unfailing Endurance"
 
 
+        ~ANIMAL_RAGE~,                          ~BZ@IE09~, ~SPPR522~,  ~9~,  ~1~, ~Offense~,      ~9~ => "Animal Rage"
+
+
     END

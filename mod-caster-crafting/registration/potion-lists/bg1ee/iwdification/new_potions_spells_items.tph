@@ -36,4 +36,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@ID07~, ~@40126~, ~@40127~, ~SPPR423~,  ~1~,  ~8~, ~unfailing-endurance.BAM~                         ~BZ@ID07I~, ~BZPN001D~, ~~      => "Unfailing Endurance"
 
 
+        ~BZ@IE09~, ~@40128~, ~@40129~, ~SPPR522~,  ~1~,  ~9~, ~animal-rage.BAM~                                 ~BZ@IE09I~, ~BZPN110D~, ~~      => "Animal Rage"
+
+
     END

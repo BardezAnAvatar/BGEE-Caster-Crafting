@@ -555,3 +555,21 @@ Special: removes fatigue
 Duration: Instant
 
 Weight: 1~
+
+
+//Animal Rage
+@40128 = ~Potion of Animal Rage~
+@40129 = ~This spell imbues the imbiber creature with animal ferocity. The imbiber gains a Strength score of 19, +20 Hit Points, +20% movement rate, and a +2 bonus to all Saving Throws. The imbiber loses the ability to cast spells while Animal Rage is in effect; when enemies are within sight, <PRO_HESHE> immediately attacks in melee, using whatever is in hand. While this spell is in effect, there is a 5% chance per round that the target will go berserk, attacking friend and foe alike.
+
+STATISTICS:
+
+Strength: 19
+Hit Points: +20 temporary Hit Points
+Movement Rate: +20%
+Saving throws: +2 bonus
+Special: Loses spellcasting; Rage (attacks nearest enemy creature); 5% Berserk instead of Rage (attacks nearest creature, friend or foe)
+Duration: 15 rounds
+
+Weight: 1~
+
+Weight: 1~
