@@ -773,3 +773,18 @@ Saving Throws: +3 bonus vs. Enchantment spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Grease
+@40210 = ~Grease Bomb~
+@40211 = ~This bomb covers the surface around the impace with a slippery layer of a fatty, greasy nature. Any creature in the area must save vs. Spell at +2 or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Spell again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
+
+STATISTICS:
+
+Special: Slip and fall prone (save vs. Spell at +2 to remain upright)
+Movement: 20%
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: %num_rounds% rounds
+
+Weight: 1~

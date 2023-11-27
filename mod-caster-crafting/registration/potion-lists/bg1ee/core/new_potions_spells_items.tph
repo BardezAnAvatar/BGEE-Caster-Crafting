@@ -20,6 +20,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0201~, ~@40204~, ~@40205~, ~SPPR109~,  ~1~,  ~4~, ~sanctuary.BAM~,                                  ~BZ@0201I~, ~BZPN008D~, ~~      => "Sanctuary"
         ~BZ@0301~, ~@40206~, ~@40207~, ~SPPR111~,  ~1~,  ~2~, ~armor-of-faith.BAM~,                             ~BZ@0301I~, ~BZPN032D~, ~~      => "Armor of Faith"
         ~BZ@0401~, ~@40208~, ~@40209~, ~SPPR150~,  ~1~,  ~2~, ~spirit-ward.BAM~,                                ~BZ@0401I~, ~BZPN019D~, ~~      => "Spirit Ward"
+        ~BZ@0501~, ~@40210~, ~@40211~, ~SPWI101~,  ~1~,  ~2~, ~grease.BAM~,                                     ~BZ@0501I~, ~BZPN013D~, ~~      => "Grease"
 
 
     END

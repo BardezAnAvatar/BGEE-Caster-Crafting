@@ -16,7 +16,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~ENTANGLE~,                             ~BZ@0101~, ~SPPR105~,  ~1~,  ~1~, ~Bomb~,         ~3~ => "Entangle"
         ~SANCTUARY~,                            ~BZ@0201~, ~SPPR109~,  ~1~,  ~1~, ~Defense~,      ~4~ => "Sanctuary"
         ~ARMOR_OF_FAITH~,                       ~BZ@0301~, ~SPPR111~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Armor of Faith"
-        ~SPIRIT_WARD~,                          ~BZ@0301~, ~SPPR150~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Spirit Ward"
+        ~SPIRIT_WARD~,                          ~BZ@0401~, ~SPPR150~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Spirit Ward"
+        ~GREASE~,                               ~BZ@0501~, ~SPWI101~,  ~1~,  ~1~, ~Bomb~,         ~2~ => "Grease"
 
 
     END
