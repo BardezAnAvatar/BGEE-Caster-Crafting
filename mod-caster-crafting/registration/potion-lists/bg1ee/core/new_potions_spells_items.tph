@@ -22,6 +22,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0401~, ~@40208~, ~@40209~, ~SPPR150~,  ~1~,  ~2~, ~spirit-ward.BAM~,                                ~BZ@0401I~, ~BZPN019D~, ~~      => "Spirit Ward"
         ~BZ@0501~, ~@40210~, ~@40211~, ~SPWI101~,  ~1~,  ~2~, ~grease.BAM~,                                     ~BZ@0501I~, ~BZPN013D~, ~~      => "Grease"
         ~BZ@0601~, ~@40212~, ~@40213~, ~SPWI102~,  ~1~,  ~2~, ~armor.BAM~,                                      ~BZ@0601I~, ~BZPN008D~, ~~      => "Armor"
+        ~BZ@0701~, ~@40214~, ~@40215~, ~SPWI107~,  ~1~,  ~2~, ~friends.BAM~,                                    ~BZ@0701I~, ~BZPN005D~, ~~      => "Friends"
 
 
     END

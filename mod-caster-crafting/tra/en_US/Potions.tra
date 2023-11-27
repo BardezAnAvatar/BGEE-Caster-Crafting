@@ -800,3 +800,15 @@ Base AC: 6
 Duration: 9 hours
 
 Weight: 1~
+
+
+//Friends
+@40214 = ~Potion of Friends~
+@40215 = ~This potion causes the imbiber to temporarily gain 6 points of Charisma. Those who view the imbiber tend to be very impressed with <PRO_HIMHER> and make an effort to be <PRO_HISHER> friends and help <PRO_HIMHER>, as appropriate to the situation.
+
+STATISTICS:
+
+Charisma: +6
+Duration: %num_rounds% rounds
+
+Weight: 1~
