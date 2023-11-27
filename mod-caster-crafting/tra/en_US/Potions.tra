@@ -849,3 +849,17 @@ Special: Immunity to Magic Missile spell
 Duration: 1 hour
 
 Weight: 1~
+
+
+//Sleep
+@40222 = ~Sleep Bomb~
+@40223 = ~This bomb causes a comatose slumber to come upon one or more enemies around its impact. All creatures in the area of effect must make a Saving Throw vs. Spell or fall asleep. Attacks against sleeping opponents never miss, though they will wake upon taking damage.
+
+STATISTICS:
+
+Special: Sleep (Saving vs. Spell negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 5 rounds
+
+Weight: 1~
