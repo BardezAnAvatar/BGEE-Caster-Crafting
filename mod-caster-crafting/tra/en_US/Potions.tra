@@ -760,3 +760,16 @@ Missile Resistance: +%magnitude%\% bonus
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Spirit Ward
+@40208 = ~Potion of Spirit Ward~
+@40209 = ~This potion surrounds the imbiber with a magical barrier at a distance of one foot. Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking the imbiber. In addition, the imbiber gains a +3 bonus to Saving Throws against all spells that belong to the Enchantment school.
+
+STATISTICS:
+
+Special: Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking
+Saving Throws: +3 bonus vs. Enchantment spells
+Duration: %num_rounds% rounds
+
+Weight: 1~
