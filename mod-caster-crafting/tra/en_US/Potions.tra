@@ -728,3 +728,17 @@ Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Sanctuary
+@40204 = ~Potion of Sanctuary~
+@40205 = ~This potion causess all of the imbier's opponents to ignore <PRO_HISHER> existence as if <PRO_HESHE> were invisible. While protected by this effect, the imbiber cannot take direct offensive action without breaking the spell, but may use non-attack spells or otherwise act in any way that does not violate the prohibition against offensive action. This allows the imbiber to heal wounds, for example. The imbiber cannot cast spells on other creatures without ending the potion's effect.
+
+STATISTICS:
+
+Special: Sanctuary (imbiber protected and cannot attack or be attacked)
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
+
+Weight: 1~

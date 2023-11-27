@@ -14,6 +14,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BLESS~,                                ~BZ@0001~, ~SPPR101~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Bless"
         ~ENTANGLE~,                             ~BZ@0101~, ~SPPR105~,  ~1~,  ~1~, ~Bomb~,         ~3~ => "Entangle"
+        ~SANCTUARY~,                            ~BZ@0201~, ~SPPR109~,  ~1~,  ~1~, ~Defense~,      ~4~ => "Sanctuary"
 
 
     END
