@@ -45,6 +45,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,      ~BZ@IK14~, ~SPPR735~, ~14~,  ~1~, ~Defense~,     ~10~ => "Impervious Sanctity of Mind"
+        ~GREATER_SHIELD_OF_LATHANDER~,          ~BZ@IL14~, ~SPPR737~, ~14~,  ~1~, ~Defense~,     ~14~ => "Greater Shield of Lathander"
 
 
 

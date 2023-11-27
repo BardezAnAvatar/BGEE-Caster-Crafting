@@ -653,3 +653,19 @@ Special: Immune to charm, confusion, fear, feeblemindedness, hold, sleep, maze, 
 Duration: %num_turns% turns (%num_rounds% rounds)
 
 Weight: 1~
+
+
+//Greater Shield of Lathander
+@40142 = ~Potion of Greater Shield of Lathander~
+@40143 = ~This potion grants the imbiber 100% Magic Resistance and immunity to damage for the duration of its effects..
+
+STATISTICS:
+
+Magic Resistance: 100%
+Special: Immune to damage
+Duration: 3 rounds
+
+Weight: 1
+
+Not Usable By:
+ - Evil alignments~
