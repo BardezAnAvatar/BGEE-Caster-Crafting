@@ -16,18 +16,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SEARING_SMITE~,                        ~BZ@O101~, ~MEPR157~,  ~1~,  ~1~, ~Offense~,      ~4~ => "Searing Smite"
         ~TURNING_WEAPON~,                       ~BZ@O201~, ~MEPR154~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Turning Weapon"
         ~CAMOFLAUGE~,                           ~BZ@O301~, ~MEPR156~,  ~1~,  ~1~, ~Enhancement~, ~10~ => "Camoflauge"
-        ~REFLECT_ATTTACK~,                      ~BZ@O401~, ~MEWI158~,  ~1~,  ~1~, ~Enhancement~,  ~4~ => "Reflect Attack"
-
-        ~GHOST_WALK_PR~,                        ~BZ@O503~, ~MEPR255~,  ~3~,  ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
-        ~GHOST_WALK_WI~,                        ~BZ@O503~, ~MEWI252~,  ~3~,  ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
 
         ~WIND_SHOTS~,                           ~BZ@O605~, ~MEWI252~,  ~3~,  ~1~, ~Offense~,      ~6~ => "Wind Shots"
-        ~FLY_PR~,                               ~BZ@O705~, ~MEPR357~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
-        ~FLY_WI~,                               ~BZ@O705~, ~MEWI352~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
         ~DISPLACEMENT~,                         ~BZ@O805~, ~MEWI353~,  ~5~,  ~1~, ~Defense~,      ~5~ => ~Displacement~
         ~LEGEND_LORE~,                          ~BZ@O905~, ~MEWI356~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Legend Lore~
-
-        ~PIERCING_SHOTS~,                       ~BZ@OA07~, ~MEPR455~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Piercing Shots"
 
         ~EXPOSE_TO_THE_ELEMENTS~,               ~BZ@OB09~, ~MEPR557~   ~9~,  ~1~, ~Bomb~,        ~10~ => "Expose to the Elements"
         ~SPHERE_OF_SECURITY_ACID~,              ~BZ@OC09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Acid"
@@ -36,10 +28,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPHERE_OF_SECURITY_FIRE~,              ~BZ@OF09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Fire"
         ~SPHERE_OF_SECURITY_PETRIFICATION~,     ~BZ@OG09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Petrification"
         ~SPHERE_OF_SECURITY_POISON~,            ~BZ@OH09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Poison"
-        ~GHOSTFORM~,                            ~BZ@OI09~, ~MEWI559~,  ~9~,  ~1~, ~Defense~,     ~10~ => "Ghostform"
         ~GEDLEE'S_ELECTRIC_BARRIER~,            ~BZ@OJ09~, ~MEWI566~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Gedlee's Electric Barrier"
 
-        ~ANTIHARM_SHELL~,                       ~BZ@OK11~, ~MEPR653~, ~11~,  ~1~, ~Defense~,     ~12~ => "Antiharm Shell"
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,    ~BZ@OL11~, ~MEPR656~, ~11~,  ~1~, ~Defense~,     ~14~ => "Protection From Non-Silver Weapons"
 
         ~PERFECT_INVISIBILITY~,                 ~BZ@OM18~, ~MEWI951~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Perfect Invisibility"
@@ -51,6 +41,42 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~COLOSSAL_GROWTH~,                      ~BZ@OQ18~, ~MEPR754~, ~15~,  ~1~, ~Bomb~,        ~20~ => "Colossal Growth"
     END
+
+
+/**********************
+*   Powerful Spells   *
+**********************/
+ACTION_IF %bz_olvyn_powerful% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_items~
+    BEGIN
+        ~ANTIHARM_SHELL~,                       ~BZ@OK11~, ~MEPR653~, ~11~,  ~1~, ~Defense~,     ~12~ => "Antiharm Shell"
+    END
+END
+
+
+/******************
+*   EEex Spells   *
+******************/
+ACTION_IF %bz_olvyn_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_items~
+    BEGIN
+        ~REFLECT_ATTTACK~,                      ~BZ@O401~, ~MEWI158~,  ~1~,  ~1~, ~Enhancement~,  ~4~ => "Reflect Attack"
+
+        ~GHOST_WALK_PR~,                        ~BZ@O503~, ~MEPR255~,  ~3~,  ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
+        ~GHOST_WALK_WI~,                        ~BZ@O503~, ~MEWI252~,  ~3~,  ~1~, ~Enhancement~,  ~3~ => "Ghostwalk"
+
+        ~FLY_PR~,                               ~BZ@O705~, ~MEPR357~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
+        ~FLY_WI~,                               ~BZ@O705~, ~MEWI352~,  ~5~,  ~1~, ~Enhancement~,  ~5~ => ~Fly~
+
+        ~PIERCING_SHOTS~,                       ~BZ@OA07~, ~MEPR455~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Piercing Shots"
+
+        ~GHOSTFORM~,                            ~BZ@OI09~, ~MEWI559~,  ~9~,  ~1~, ~Defense~,     ~10~ => "Ghostform"
+    END
+END
 
 
 ACTION_IF (~bz_olvyn_true_strike~)

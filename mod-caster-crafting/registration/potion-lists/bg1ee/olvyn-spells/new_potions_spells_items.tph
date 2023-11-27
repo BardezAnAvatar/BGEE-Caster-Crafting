@@ -19,19 +19,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@O101~, ~@40004~, ~@40005~, ~MEPR157~,  ~1~,  ~4~, ~searing-smite.BAM~,                              ~BZ@O101I~, ~BZPN120D~, ~~ => "Searing Smite"
         ~BZ@O201~, ~@40006~, ~@40007~, ~MEPR154~,  ~1~,  ~2~, ~turning-weapon.BAM~,                             ~BZ@O201I~, ~BZPN130D~, ~~ => "Turning Weapon"
         ~BZ@O301~, ~@40008~, ~@40009~, ~MEPR156~,  ~1~, ~10~, ~camoflauge.BAM~,                                 ~BZ@O301I~, ~BZPN130D~, ~~ => "Camoflauge"
-        ~BZ@O401~, ~@40010~, ~@40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                             ~BZ@O401I~, ~BZPN150D~, ~~ => "Reflect Attack"
-
-
-        ~BZ@O503~, ~@40012~, ~@40013~, ~MEPR255~,  ~1~,  ~3~, ~ghostwalk.BAM~,                                  ~BZ@O503I~, ~BZPN130D~, ~~ => "Ghostwalk"
 
 
         ~BZ@O605~, ~@40014~, ~@40015~, ~MEPR356~,  ~1~,  ~6~, ~wind-shots.BAM~,                                 ~BZ@O605I~, ~BZPN150D~, ~~ => "Wind Shots"
-        ~BZ@O705~, ~@40016~, ~@40017~, ~MEPR357~,  ~5~,  ~6~, ~fly.BAM~,                                        ~BZ@O705I~, ~BZPN140D~, ~~ => "Fly"
         ~BZ@O805~, ~@40018~, ~@40019~, ~MEWI353~,  ~5~,  ~5~, ~displacement.BAM~,                               ~BZ@O805I~, ~BZPN140D~, ~~ => "Displacement"
         ~BZ@O905~, ~@40020~, ~@40021~, ~MEWI356~,  ~5~,  ~5~, ~legend-lore.BAM~,                                ~BZ@O905I~, ~BZPN130D~, ~~ => "Legend Lore"
-
-
-        ~BZ@OA07~, ~@40022~, ~@40023~, ~MEPR455~,  ~7~,  ~8~, ~piercing-shots.BAM~,                             ~BZ@OA07I~, ~BZPN120D~, ~~ => "Piercing Shots"
 
 
         ~BZ@OB09~, ~@40024~, ~@40025~, ~MEPR557~,  ~9~, ~10~, ~expose-to-the-elements.BAM~,                     ~BZ@OB09I~, ~BZPN120D~, ~~ => "Expose to the Elements"
@@ -43,11 +35,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OG09~, ~@40034~, ~@40035~, ~MESOS06~,  ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~,    ~BZ@OG09I~, ~BZPN005D~, ~~ => "Sphere of Security: Protection from Petrification"
         ~BZ@OH09~, ~@40036~, ~@40037~, ~MESOS05~,  ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,           ~BZ@OH09I~, ~BZPN150D~, ~~ => "Sphere of Security: Protection from Poison"
 //End Manual
-        ~BZ@OI09~, ~@40038~, ~@40039~, ~MEWI559~,  ~9~, ~10~, ~ghostform.BAM~,                                  ~BZ@OI09I~, ~BZPN120D~, ~~ => "Ghostform"
         ~BZ@OJ09~, ~@40040~, ~@40041~, ~MEWI566~,  ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,                  ~BZ@OJ09I~, ~BZPN120D~, ~~ => "Gedlee's Electric Barrier"
 
 
-        ~BZ@OK11~, ~@40042~, ~@40043~, ~MEPR653~, ~11~, ~12~, ~antiharm-shell.BAM~,                             ~BZ@OK11I~, ~BZPN150D~, ~~ => "Antiharm Shell"
         ~BZ@OL11~, ~@40044~, ~@40045~, ~MEPR656~, ~11~, ~14~, ~protection-from-non-silver-weapons.BAM~,         ~BZ@OL11I~, ~BZPN140D~, ~~ => "Protection From Non-Silver Weapons"
 
 
@@ -62,6 +52,40 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OQ15~, ~@40054~, ~@40055~, ~MEPR754~, ~15~, ~20~, ~colossal-growth.BAM~,                            ~BZ@OQ15I~, ~BZPN120D~, ~~ => "Colossal Growth"
 
     END
+
+
+/**********************
+*   Powerful Spells   *
+**********************/
+ACTION_IF %bz_olvyn_powerful% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_items~
+    BEGIN
+        ~BZ@OK11~, ~@40042~, ~@40043~, ~MEPR653~, ~11~, ~12~, ~antiharm-shell.BAM~,                             ~BZ@OK11I~, ~BZPN150D~, ~~ => "Antiharm Shell"
+    END
+END
+
+
+/******************
+*   EEex Spells   *
+******************/
+ACTION_IF %bz_olvyn_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_items~
+    BEGIN
+        ~BZ@O401~, ~@40010~, ~@40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                             ~BZ@O401I~, ~BZPN150D~, ~~ => "Reflect Attack"
+
+        ~BZ@O503~, ~@40012~, ~@40013~, ~MEPR255~,  ~1~,  ~3~, ~ghostwalk.BAM~,                                  ~BZ@O503I~, ~BZPN130D~, ~~ => "Ghostwalk"
+
+        ~BZ@O705~, ~@40016~, ~@40017~, ~MEPR357~,  ~5~,  ~6~, ~fly.BAM~,                                        ~BZ@O705I~, ~BZPN140D~, ~~ => "Fly"
+
+        ~BZ@OA07~, ~@40022~, ~@40023~, ~MEPR455~,  ~7~,  ~8~, ~piercing-shots.BAM~,                             ~BZ@OA07I~, ~BZPN120D~, ~~ => "Piercing Shots"
+
+        ~BZ@OI09~, ~@40038~, ~@40039~, ~MEWI559~,  ~9~, ~10~, ~ghostform.BAM~,                                  ~BZ@OI09I~, ~BZPN120D~, ~~ => "Ghostform"
+    END
+END
 
 
 ACTION_IF (~bz_olvyn_true_strike~)
