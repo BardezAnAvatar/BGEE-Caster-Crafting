@@ -33,6 +33,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@IA07~, ~@40120~, ~@40121~, ~SPPR422~,  ~1~,  ~8~, ~cloud-of-pestilence.BAM~                         ~BZ@IA07I~, ~BZPN013D~, ~~      => "Cloud of Pestilence"
         ~BZ@IB07~, ~@40122~, ~@40123~, ~SPWI426~,  ~1~,  ~8~, ~emotion-courage.BAM~                             ~BZ@IB07I~, ~BZPN040D~, ~~      => "Emotion: Courage"
         ~BZ@IC07~, ~@40124~, ~@40125~, ~SPWI427~,  ~1~,  ~8~, ~emotion-hope.BAM~                                ~BZ@IC07I~, ~BZPN049D~, ~~      => "Emotion: Hope"
+        ~BZ@ID07~, ~@40126~, ~@40127~, ~SPPR423~,  ~1~,  ~8~, ~unfailing-endurance.BAM~                         ~BZ@ID07I~, ~BZPN001D~, ~~      => "Unfailing Endurance"
 
 
     END

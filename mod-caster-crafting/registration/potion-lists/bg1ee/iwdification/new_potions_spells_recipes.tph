@@ -31,6 +31,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CLOUD_OF_PESTILENCE~,                  ~BZ@IA07~, ~SPPR422~,  ~7~,  ~1~, ~Bomb~,         ~8~ => "Cloud of Pestilence"
         ~EMOTION_COURAGE~,                      ~BZ@IB07~, ~SPWI426~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Courage"
         ~EMOTION_HOPE~,                         ~BZ@IC07~, ~SPWI427~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Hope"
+        ~UNFAILING_ENDURANCE~,                  ~BZ@ID07~, ~SPPR423~,  ~7~,  ~1~, ~Cure~,         ~8~ => "Unfailing Endurance"
 
 
     END

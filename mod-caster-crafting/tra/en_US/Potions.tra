@@ -543,3 +543,15 @@ Damage rolls: +2 bonus
 Duration: 1 hour
 
 Weight: 1~
+
+
+//Unfailing Endurance
+@40126 = ~Tonic of Unfailing Endurance~
+@40127 = ~This potion restores the stamina of the imbiber, eliminating any fatigue.
+
+STATISTICS:
+
+Special: removes fatigue
+Duration: Instant
+
+Weight: 1~
