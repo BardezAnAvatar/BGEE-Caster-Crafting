@@ -20,6 +20,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~GREASE~,                               ~BZ@0501~, ~SPWI101~,  ~1~,  ~1~, ~Bomb~,         ~2~ => "Grease"
         ~ARMOR~,                                ~BZ@0601~, ~SPWI102~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Armor"
         ~FRIENDS~,                              ~BZ@0701~, ~SPWI107~,  ~1~,  ~1~, ~Enhancement~,  ~2~ => "Friends"
+        ~PROTECTION_FROM_PETRIFICATION~,        ~BZ@0801~, ~SPWI108~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Protection From Petrification"
 
 
     END
