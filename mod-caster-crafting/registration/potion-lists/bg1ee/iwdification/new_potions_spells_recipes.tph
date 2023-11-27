@@ -29,7 +29,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~RECITATION~,                           ~BZ@I807~, ~SPPR420~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Recitation"
         ~BLOOD_RAGE~,                           ~BZ@I907~, ~SPPR421~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Blood Rage"
         ~CLOUD_OF_PESTILENCE~,                  ~BZ@IA07~, ~SPPR422~,  ~7~,  ~1~, ~Bomb~,         ~8~ => "Cloud of Pestilence"
-        ~EMOTION_COURAGE~,                      ~BZ@IB07~, ~SPWI426~,  ~7~,  ~1~, ~Enhancement~,  ~8~ => "Emotion: Courage"
+        ~EMOTION_COURAGE~,                      ~BZ@IB07~, ~SPWI426~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Courage"
+        ~EMOTION_HOPE~,                         ~BZ@IC07~, ~SPWI427~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Hope"
 
 
     END

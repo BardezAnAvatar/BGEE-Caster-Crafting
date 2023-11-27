@@ -528,3 +528,18 @@ Hit Points: +5 temporary Hit Points
 Duration: 1 hour
 
 Weight: 1~
+
+
+//Emotion: Hope
+@40124 = ~Potion of Hope~
+@40125 = ~This potion creates the emotion of hope within the imbiber, gain a morale boost and +2 on their Saving Throws, attack rolls, and damage rolls. This spell nullifies all hopelessness effects within the area of effect at the time of casting.
+
+STATISTICS:
+
+Special: removes hopelessness
+Saving throws: +2 bonus
+Attack rolls: +2 bonus
+Damage rolls: +2 bonus
+Duration: 1 hour
+
+Weight: 1~
