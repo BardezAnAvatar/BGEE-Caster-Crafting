@@ -1,0 +1,18 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_recipes~
+    BEGIN
+        /*
+        [Unique Key]                                // 0
+        [resulting potion RESREF]                   // 1
+        [recipe: Source Spell]                      // 2
+        [recipe: Caster Level]                      // 3
+        [recipe: Result Count]                      // 4
+        [Category]                                  // 5
+        [Cost: gold tier]                           // 6
+        */
+
+
+        ~BLESS~,                                ~BZ@0001~, ~SPPR101~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Bless"
+
+
+    END

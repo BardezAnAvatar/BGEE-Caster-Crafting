@@ -703,3 +703,14 @@ Weight: 1~
 /****************************
 *   Baldur's Gate Potions   *
 ****************************/
+@40200 = ~Potion of Bless~
+@40201 = ~This potion raises the morale of the imbiber by +1. Furthermore, it raises their attack and damage rolls by +1.
+
+STATISTICS:
+
+Morale: +1 bonus
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
