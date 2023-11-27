@@ -62,3 +62,13 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OQ15~, ~@40054~, ~@40055~, ~MEPR754~, ~15~, ~20~, ~colossal-growth.BAM~,                            ~BZ@OQ15I~, ~BZPN120D~, ~~ => "Colossal Growth"
 
     END
+
+
+ACTION_IF (~bz_olvyn_true_strike~)
+THEN BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_items~
+    BEGIN
+        ~BZ@OR01~, ~@40056~, ~@40057~, ~SPWI111~,  ~1~,  ~2~, ~true-strike.BAM~,                                ~BZ@OR01I~, ~BZPN049D~, ~~ => "True Strike"
+    END
+END

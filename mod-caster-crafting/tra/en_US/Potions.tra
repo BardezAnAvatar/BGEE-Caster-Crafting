@@ -355,6 +355,18 @@ Saving Throw: Paralysis at -6 negates
 Weight: 1~
 
 
+//True Strike
+@40056 = "Potion of True Strike"
+@40057 = ~This potion gives the imbiber incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration. For the duration, the imbiber gains a +20 bonus to THAC0.
+
+STATISTICS:
+
+THAC0: +20 bonus
+Duration: 9 seconds
+
+Weight: 1~
+
+
 
 
 
@@ -683,3 +695,11 @@ Area of Effect: 7-ft. radius
 Duration: Instant
 
 Weight: 1~
+
+
+
+
+
+/****************************
+*   Baldur's Gate Potions   *
+****************************/

@@ -51,3 +51,13 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~COLOSSAL_GROWTH~,                      ~BZ@OQ18~, ~MEPR754~, ~15~,  ~1~, ~Bomb~,        ~20~ => "Colossal Growth"
     END
+
+
+ACTION_IF (~bz_olvyn_true_strike~)
+THEN BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_spells_recipes~
+    BEGIN
+        ~TRUE_STRIKE~,                          ~BZ@OQ18~, ~SPWI111~,  ~1~,  ~1~, ~Offense~,      ~2~ => "True Strike"
+    END
+END
