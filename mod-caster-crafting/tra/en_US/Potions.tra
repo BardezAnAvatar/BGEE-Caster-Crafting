@@ -891,3 +891,20 @@ Saving Throws: +1 bonus (except vs. Spell)
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Chant
+@40228 = ~Potion of Chant~
+@40229 = ~This potion grants the imbiber a +1 bonus to attack rolls, minimum damage rolls, and Saving Throws. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1.
+
+For example, a 6d6 fireball will do 6d5 damage, and a flaming long sword that deals 1d8+2 slashing plus 1d3 fire damage will deal 1d8+2 slashing plus 1d2 fire damage instead.
+
+STATISTICS:
+
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Saving Throws: +1 bonus
+Special: dice rolled against imbiber (outside a weapon's base damage) are reduced by 1 size
+Duration: %num_rounds% rounds
+
+Weight: 1~

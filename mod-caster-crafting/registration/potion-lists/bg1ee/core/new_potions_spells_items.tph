@@ -27,8 +27,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0901~, ~@40218~, ~@40219~, ~SPWI113~,  ~1~,  ~1~, ~protection-from-evil.BAM~,                       ~BZ@0901I~, ~BZPN080D~, ~~      => "Protection From Evil"
         ~BZ@0A01~, ~@40220~, ~@40221~, ~SPWI114~,  ~1~,  ~2~, ~shield.BAM~,                                     ~BZ@0A01I~, ~BZPN070D~, ~~      => "Shield"
         ~BZ@0B01~, ~@40222~, ~@40223~, ~SPWI116~,  ~1~,  ~2~, ~sleep.BAM~,                                      ~BZ@0B01I~, ~BZPN013D~, ~~      => "Sleep"
-        ~BZ@0C01~, ~@40224~, ~@40225~, ~SPPR201~,  ~1~,  ~4~, ~aid.BAM~,                                        ~BZ@0C01I~, ~BZPN026D~, ~~      => "Aid"
-        ~BZ@0D01~, ~@40226~, ~@40227~, ~SPPR202~,  ~1~,  ~4~, ~barkskin.BAM~,                                   ~BZ@0D01I~, ~BZPN019D~, ~~      => "Barkskin"
+        ~BZ@0C03~, ~@40224~, ~@40225~, ~SPPR201~,  ~1~,  ~4~, ~aid.BAM~,                                        ~BZ@0C03I~, ~BZPN026D~, ~~      => "Aid"
+        ~BZ@0D03~, ~@40226~, ~@40227~, ~SPPR202~,  ~1~,  ~4~, ~barkskin.BAM~,                                   ~BZ@0D03I~, ~BZPN019D~, ~~      => "Barkskin"
+        ~BZ@0E03~, ~@40228~, ~@40229~, ~SPPR203~,  ~1~,  ~5~, ~chant.BAM~,                                      ~BZ@0E03I~, ~BZPN058D~, ~~      => "Chant"
 
 
     END

@@ -40,8 +40,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SLEEP~,                                    ~BZ@0B01~, ~SPWI116~,  ~1~,  ~1~, ~Bomb~,         ~2~ => "Sleep"
         ~SLEEP_SPWI213~,                            ~BZ@0B01~, ~SPWI213~,  ~3~,  ~2~, ~Bomb~,         ~2~ => "Sleep"
         ~SLEEP_SPWI411~,                            ~BZ@0B01~, ~SPWI411~,  ~7~,  ~3~, ~Bomb~,         ~2~ => "Sleep"
-        ~AID~,                                      ~BZ@0C01~, ~SPPR201~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Aid"
-        ~BARKSKIN~,                                 ~BZ@0D01~, ~SPPR202~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Barkskin"
+        ~AID~,                                      ~BZ@0C03~, ~SPPR201~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Aid"
+        ~BARKSKIN~,                                 ~BZ@0D03~, ~SPPR202~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Barkskin"
+        ~CHANT~,                                    ~BZ@0E03~, ~SPPR203~,  ~2~,  ~1~, ~Offense~,      ~4~ => "ChAnt"
 
 
     END
