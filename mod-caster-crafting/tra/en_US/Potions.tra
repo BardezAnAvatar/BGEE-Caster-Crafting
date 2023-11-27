@@ -878,3 +878,16 @@ Hit Points: +1d8 temporary Hit Points
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Barkskin
+@40226 = ~Oil of Barkskin~
+@40227 = ~Upon application, this oil causes skin to become as tough as bark, increasing its base Armor Class to %base_AC%. In addition, Saving Throws (except magic) gain a +1 bonus.
+
+STATISTICS:
+
+Base AC: %base_AC%
+Saving Throws: +1 bonus (except vs. Spell)
+Duration: %num_rounds% rounds
+
+Weight: 1~
