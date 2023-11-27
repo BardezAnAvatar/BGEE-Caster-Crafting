@@ -13,6 +13,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BLESS~,                                    ~BZ@0001~, ~SPPR101~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Bless"
+        ~BLESS_SPPR201~,                            ~BZ@0001~, ~SPPR101~,  ~1~,  ~1~, ~Offense~,      ~2~ => "Bless"
         ~ENTANGLE~,                                 ~BZ@0101~, ~SPPR105~,  ~1~,  ~1~, ~Bomb~,         ~3~ => "Entangle"
         ~SANCTUARY~,                                ~BZ@0201~, ~SPPR109~,  ~1~,  ~1~, ~Defense~,      ~4~ => "Sanctuary"
         ~ARMOR_OF_FAITH~,                           ~BZ@0301~, ~SPPR111~,  ~1~,  ~1~, ~Defense~,      ~2~ => "Armor of Faith"
@@ -39,6 +40,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SLEEP~,                                    ~BZ@0B01~, ~SPWI116~,  ~1~,  ~1~, ~Bomb~,         ~2~ => "Sleep"
         ~SLEEP_SPWI213~,                            ~BZ@0B01~, ~SPWI213~,  ~1~,  ~2~, ~Bomb~,         ~2~ => "Sleep"
         ~SLEEP_SPWI411~,                            ~BZ@0B01~, ~SPWI411~,  ~1~,  ~3~, ~Bomb~,         ~2~ => "Sleep"
+        ~AID~,                                      ~BZ@0C01~, ~SPPR201~,  ~1~,  ~1~, ~Offense~,      ~4~ => "Aid"
 
 
     END

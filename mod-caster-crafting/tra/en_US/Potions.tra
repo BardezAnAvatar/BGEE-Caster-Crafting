@@ -863,3 +863,18 @@ Area of Effect: 15-ft. radius
 Duration: 5 rounds
 
 Weight: 1~
+
+
+//Aid
+@40224 = ~Potion of Aid~
+@40225 = ~This potion raises the morale of the imbiber by +1. Furthermore, it raises their attack and damage rolls by +1, and 1d8 additional Hit Points for the duration.
+
+STATISTICS:
+
+Morale: +1 bonus
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Hit Points: +1d8 temporary Hit Points
+Duration: %num_rounds% rounds
+
+Weight: 1~
