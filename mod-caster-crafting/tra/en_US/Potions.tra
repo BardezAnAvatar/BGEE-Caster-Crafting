@@ -600,3 +600,18 @@ Weight: 1
 
 Not Usable By:
  - Evil alignments~
+
+
+//Spike Stones
+@40134 = ~Bomb of Spike Stones~
+@40135 = ~This bomb warps the surrounding rock, reshaping the terrain into spiked projections that blend into the background. Any creature entering the area takes 2d4 Hit Points of piercing damage per round and must make a Save vs. Spell or have its movement rate reduced by 30%.
+
+STATISTICS:
+
+Damage: 2d4 Hit Points of piercing damage / round
+Range: 40 ft.
+Area of Effect: 8-ft. radius
+Saving Throw: Spell or be slowed
+Duration: 12 rounds
+
+Weight: 1~
