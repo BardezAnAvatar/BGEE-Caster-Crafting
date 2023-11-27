@@ -621,11 +621,23 @@ Weight: 1~
 @40136 = ~Potion of Antimagic Shell~
 @40137 = ~This potion causes an invisible barrier to form around the imbiber that moves with <PRO_HIMHER>. This barrier makes the imbiber immune to any magical attacks, but it prevents <PRO_HIMHER> from casting spells.
 
-Antimagic Shell also dispels deafness and feeblemindedness in the caster.
+Antimagic Shell also dispels deafness and feeblemindedness in the imbiber.
 
 STATISTICS:
 
 Special: Immune to magic; cannot cast spells; removed feeblemindedness and deafness
 Duration: %num_turns% turns (%num_rounds% rounds)
+
+Weight: 1~
+
+
+//Trollish Fortitude
+@40138 = ~Potion of Trollish Fortitude~
+@40139 = ~This spell imbues the imbiber with the resilience of a troll, allowing them to regenerate 5 Hit Points per round up to <PRO_HISHER> maximum Hit Points.
+
+STATISTICS:
+
+Special: Regenerate 5 Hit Points per round
+Duration: 2 turns (20 rounds)
 
 Weight: 1~

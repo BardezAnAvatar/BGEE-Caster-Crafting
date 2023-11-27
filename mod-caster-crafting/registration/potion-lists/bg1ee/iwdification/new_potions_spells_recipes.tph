@@ -41,6 +41,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~ANTIMAGIC_SHELL~,                      ~BZ@II12~, ~SPWI630~, ~12~,  ~1~, ~Defense~,     ~12~ => "Antimagic Shell"
+        ~TROLLISH_FORTITUDE~,                   ~BZ@IJ12~, ~SPWI629~, ~12~,  ~1~, ~Cure~,        ~10~ => "Trollish Fortitude"
 
 
     END
