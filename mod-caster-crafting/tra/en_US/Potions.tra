@@ -572,4 +572,16 @@ Duration: 15 rounds
 
 Weight: 1~
 
+
+//Righteous Wrath of the Faithful
+@40130 = ~Potion of Righteous Wrath of the Faithful~
+@40131 = ~This potion bestows a form of divine madness upon the imbiber, improving their combat skills. The imbiber gains a +1 to attack rolls and Saving Throws, plus 8 bonus Hit Points for the duration of the spell (these Hit Points can take a target beyond <PRO_HISHER> Hit Point maximum). Anyone affected by Righteous Wrath of the Faithful will suffer fatigue when the spell wears off.
+
+STATISTICS:
+
+Attack rolls: +1 bonus
+Saving throws: +1 bonus
+Hit Points: +8 temporary Hit Points
+Duration: %num_rounds% rounds
+
 Weight: 1~

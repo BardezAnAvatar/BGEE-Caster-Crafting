@@ -35,6 +35,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~ANIMAL_RAGE~,                          ~BZ@IE09~, ~SPPR522~,  ~9~,  ~1~, ~Offense~,      ~9~ => "Animal Rage"
+        ~RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,      ~BZ@IF09~, ~SPPR518~,  ~9~,  ~1~, ~Offense~,      ~9~ => "Righteous Wrath of the Faithful"
 
 
     END
