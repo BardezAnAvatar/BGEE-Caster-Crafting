@@ -48,6 +48,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ@IK14~, ~@40140~, ~@40141~, ~SPPR735~,  ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~             ~BZ@IK14I~, ~BZPN110D~, ~~      => "Impervious Sanctity of Mind"
         ~BZ@IL14~, ~@40142~, ~@40143~, ~SPPR737~,  ~1~, ~14~, ~greater-shield-of-lathander.BAM~                 ~BZ@IL14I~, ~BZPN140D~, BIT1    => "Greater Shield of Lathander"
+        ~BZ@IM14~, ~@40144~, ~@40145~, ~SPPR738~,  ~1~, ~13~, ~mist-of-eldath.BAM~                              ~BZ@IM14I~, ~BZPN090D~, ~~      => "Mist of Eldath"
 
 
     END

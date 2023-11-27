@@ -669,3 +669,17 @@ Weight: 1
 
 Not Usable By:
  - Evil alignments~
+
+
+//Mist of Eldath
+@40144 = ~Bottle of Eldath's Mist~
+@40145 = ~Upon impact, the area of effect is blanketed with a silver-blue mist. Any creature within the mist will be cured of disease and poison and healed 25 Hit Points.
+
+STATISTICS:
+
+Special: Cures poison and disease and heals 25 Hit Points
+Range: 40 ft.
+Area of Effect: 7-ft. radius
+Duration: Instant
+
+Weight: 1~
