@@ -741,4 +741,22 @@ Duration: 1 turn (10 rounds)
 
 Weight: 1~
 
+
+//Armor of Faith
+@40206 = ~Oil of Armor of Faith~
+@40207 = ~The imbiber receives significant protection against melee and magical attacks, protected from %magnitude%\% of damage.
+
+STATISTICS:
+
+Fire Resistance: +%magnitude%\% bonus
+Cold Resistance: +%magnitude%\% bonus
+Acid Resistance: +%magnitude%\% bonus
+Electricity Resistance: +%magnitude%\% bonus
+Magic Damage Resistance: +%magnitude%\% bonus
+Slashing Resistance: +%magnitude%\% bonus
+Crushing Resistance: +%magnitude%\% bonus
+Piercing Resistance: +%magnitude%\% bonus
+Missile Resistance: +%magnitude%\% bonus
+Duration: %num_rounds% rounds
+
 Weight: 1~
