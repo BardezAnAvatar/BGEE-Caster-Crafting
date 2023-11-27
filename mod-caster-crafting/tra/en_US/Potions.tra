@@ -788,3 +788,15 @@ Area of Effect: 15-ft. radius
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Armor
+@40212 = ~Potion of Armor~
+@40213 = ~The imbiber is granted a magical force that acts as scale mail armor (AC 6). It is cumulative with Dexterity bonuses to Armor Class and, in the case of Fighter/Mages, with the shield bonus.
+
+STATISTICS:
+
+Base AC: 6
+Duration: 9 hours
+
+Weight: 1~
