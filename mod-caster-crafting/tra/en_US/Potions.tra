@@ -585,3 +585,18 @@ Hit Points: +8 temporary Hit Points
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+// Shield of Lathander
+@40132 = ~Potion of Shield of Lathander~
+@40133 = ~This spell grants the imbiber immunity to damage for the duration of the spell.
+
+STATISTICS:
+
+Special: Immune to damage
+Duration: 2 rounds
+
+Weight: 1
+
+Not Usable By:
+ - Evil alignments~
