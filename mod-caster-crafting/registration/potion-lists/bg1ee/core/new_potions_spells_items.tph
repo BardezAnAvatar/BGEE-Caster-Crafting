@@ -16,6 +16,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BZ@0001~, ~@40200~, ~@40201~, ~SPPR101~,  ~1~,  ~2~, ~bless.BAM~,                                      ~BZ@0001I~, ~BZPN001D~, ~~      => "Bless"
+        ~BZ@0101~, ~@40202~, ~@40203~, ~SPPR105~,  ~1~,  ~3~, ~entangle.BAM~,                                   ~BZ@0101I~, ~BZPN013D~, ~~      => "Entangle"
 
 
     END

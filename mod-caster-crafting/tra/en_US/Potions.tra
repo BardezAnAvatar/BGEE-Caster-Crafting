@@ -714,3 +714,17 @@ Damage rolls: +1 bonus
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Entangle
+@40202 = ~Bomb of Entangle~
+@40203 = ~This bomb causes plants in the area of effect to entangle everyone within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration if they fail a Save vs. Spell. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+
+STATISTICS:
+
+Special: Entangles creatues in area of effect; Save vs. Spell to avoid entanglement
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
