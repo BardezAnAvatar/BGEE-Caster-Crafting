@@ -836,3 +836,16 @@ Special: Evil creatures' attack rolls are -2; cannot be targeted by summoned dem
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Shield
+@40220 = ~Oil of Shield~
+@40221 = ~When poured, this oil dissolves into a translucent barrier in front of the applicant. It sets the applicant's Armor Class to 4 against all melee weapons, and 2 against missile weapons. It also grants the applicant immunity from the spell Magic Missile.
+
+STATISTICS:
+
+AC: 4 vs. melee; 2 vs. missile
+Special: Immunity to Magic Missile spell
+Duration: 1 hour
+
+Weight: 1~

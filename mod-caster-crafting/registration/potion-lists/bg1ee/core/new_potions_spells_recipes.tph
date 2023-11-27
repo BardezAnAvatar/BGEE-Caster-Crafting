@@ -30,6 +30,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PROTECTION_FROM_EVIL_SPCL213~,             ~BZ@0901~, ~SPCL213~,  ~1~,  ~1~, ~Defense~,      ~1~ => "Protection From Evil"
         ~PROTECTION_FROM_EVIL_SPCL233~,             ~BZ@0901~, ~SPCL233~,  ~1~,  ~4~, ~Defense~,      ~1~ => "Protection From Evil"
         ~PROTECTION_FROM_EVIL_SPPR408~,             ~BZ@0901~, ~SPPR408~,  ~1~,  ~4~, ~Defense~,      ~1~ => "Protection From Evil"
+        ~SHIELD~,                                   ~BZ@0A01~, ~SPWI114~,  ~1~,  ~1~, ~Defense~,      ~1~ => "Shield"
+        ~SHIELD_SPPR615~,                           ~BZ@0A01~, ~SPWI114~,  ~1~,  ~3~, ~Defense~,      ~1~ => "Shield"
 
 
     END
