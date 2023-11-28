@@ -1035,3 +1035,15 @@ Special: Immune to fear, panic
 Duration: 3 rounds
 
 Weight: 1~
+
+
+//Mirror Image
+@40248 = ~Oil of Mirror Image~
+@40249 = ~When this oil is applied, the applicant shimmers and causes %magnitude% exact duplicates of <PRO_HIMHER>self to come into being around <PRO_HIMHER>. These images do exactly what the applicant does. Since the effect causes a blurring and slight distortion, it is impossible for opponents to be certain which are the illusions and which is real. When an image is struck by a melee or missile attack —magical or otherwise— it disappears, but any other existing images remain intact until they are struck. However, it is important to note that this will not protect the applicant against every attack, as it is possible for an enemy to choose the real caster amongst all the images.
+
+STATISTICS:
+
+Special: %magnitude% mirror images
+Duration: %num_rounds% rounds
+
+Weight: 1~

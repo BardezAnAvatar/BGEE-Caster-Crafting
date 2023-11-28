@@ -59,6 +59,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~RESIST_FEAR_SPPR108~,                      ~BZ@0N01~, ~SPPR108~,  ~1~,  ~1~, ~Enhancement~,  ~4~ => "Resist Fear"
         ~RESIST_FEAR_SPCL222~,                      ~BZ@0N01~, ~SPCL222~,  ~1~,  ~1~, ~Enhancement~,  ~4~ => "Resist Fear"
         ~RESIST_FEAR_SPWI806~,                      ~BZ@0N01~, ~SPWI210~,  ~2~,  ~5~, ~Enhancement~,  ~4~ => "Resist Fear"
+        ~MIRROR_IMAGE~,                             ~BZ@0O03~, ~SPWI212~,  ~2~,  ~1~, ~Defense~,      ~4~ => "Mirror Image"
+        ~MIRROR_IMAGE_SPDM106~,                     ~BZ@0O03~, ~SPDM106~,  ~1~,  ~1~, ~Defense~,      ~4~ => "Mirror Image"
 
 
     END
