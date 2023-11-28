@@ -1230,3 +1230,15 @@ Special: Prevents detection via magical divination.
 Duration: 4 hours
 
 Weight: 1~
+
+
+//Protection From Normal Missiles
+@40276 = ~Oil of Protection From Normal Missiles~
+@40277 = ~This oil provides total invulnerability to non-magical hurled and launched missiles such as arrows, bolts, bullets, darts, throwing axes, and throwing daggers. Note, however, that this potion does not convey any protection from such magical attacks as Fireball, Lightning Bolt, or Magic Missile, nor does it protect against magical missiles such as arrows +1.
+
+STATISTICS:
+
+Special: Immune to non-magical missile damage
+Duration: 4 hours
+
+Weight: 1~

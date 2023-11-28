@@ -99,5 +99,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
       //~FIREBALL_SPWI712~,                         ~BZ@1005~, ~SPWI712~,  ~1~,  ~5~, ~Bomb~,         ~6~ => "Fireball"
       //~FIREBALL_SPWI922~,                         ~BZ@1005~, ~SPWI712~,  ~1~, ~10~, ~Bomb~,         ~6~ => "Fireball"
         ~NON_DETECTION~,                            ~BZ@1105~, ~SPWI310~,  ~1~,  ~1~, ~Enhancement~,  ~6~ => "Non-Detection"
+        ~PROTECTION_FROM_NORMAL_MISSILES~,          ~BZ@1205~, ~SPWI310~,  ~1~,  ~1~, ~Defense~,      ~6~ => "Protection From Normal Missiles"
 
     END
