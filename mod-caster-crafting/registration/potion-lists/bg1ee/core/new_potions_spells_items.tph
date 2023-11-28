@@ -77,6 +77,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1J07~, ~@40310~, ~@40311~, ~SPWI413~,  ~1~,  ~8~, ~otiluke's-resilient-sphere.BAM~                  ~BZ@1J07I~, ~BZPN058D~, ~~      => "Otiluke's Resilient Sphere"
         ~BZ@1K07~, ~@40312~, ~@40313~, ~SPWI414~,  ~1~,  ~7~, ~spirit-armor.BAM~                                ~BZ@1K07I~, ~BZPN070D~, ~~      => "Spirit Armor"
         ~BZ@1L07~, ~@40314~, ~@40315~, ~SPWI417~,  ~1~,  ~8~, ~enchanted-weapon.BAM~                            ~BZ@1L07I~, ~BZPN040D~, ~~      => "Enchanted Weapon"
+        ~BZ@1M07~, ~@40316~, ~@40317~, ~SPWI418~,  ~1~,  ~8~, ~fire-shield-red.BAM~                             ~BZ@1M07I~, ~BZPN040D~, ~~      => "Fireshield (Red)"
 
 
     END

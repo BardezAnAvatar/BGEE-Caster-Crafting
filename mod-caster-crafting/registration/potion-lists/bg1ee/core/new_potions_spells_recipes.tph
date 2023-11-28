@@ -127,5 +127,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~OTILUKE'S_RESILIENT_SPHERE~,               ~BZ@1J07~, ~SPWI413~,  ~1~,  ~1~, ~Bomb~,         ~8~ => "Otiluke's Resilient Sphere"
         ~SPIRIT_ARMOR~,                             ~BZ@1K07~, ~SPWI414~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Spirit Armor"
         ~ENCHANTED_WEAPON~,                         ~BZ@1L07~, ~SPWI417~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Enchanted Weapon"
+        ~FIRE_SHIELD_RED~,                          ~BZ@1M07~, ~SPWI418~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Fireshield (Red)"
 
     END

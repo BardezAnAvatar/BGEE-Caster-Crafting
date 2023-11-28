@@ -1496,3 +1496,17 @@ Special: weapons hit as if +3 enchanted weapons
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Fireshield (Red)
+@40316 = ~Oil of Red Fireshield~
+@40317 = ~This oil, when poured in a circle, ignites into shield of brilliant flame which protects the user from fire damage. This shield not only grants the user 50% Fire Resistance, but also protects the applicant from attacks made within a 5-ft. radius around the caster. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 fire damage.
+
+STATISTICS:
+
+Damage: 1d8+2 fire
+Fire Resistance: +50% (mundane or magical)
+Area of Effect: 5-ft. radius
+Duration: %num_rounds% rounds
+
+Weight: 1~
