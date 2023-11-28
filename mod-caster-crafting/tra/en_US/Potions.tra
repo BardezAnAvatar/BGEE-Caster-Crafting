@@ -1378,3 +1378,15 @@ Area of Effect: 15-ft. radius
 Duration: Instant
 
 Weight: 1~
+
+
+//Fireshield (Blue)
+@40300 = ~Oil of Blue Fireshield~
+@40301 = ~This oil, when poured in a circle, ignites into shield of icy flame which protects the user from cold damage. This shield not only grants the user 50% Cold Resistance, but also protects the applicant from attacks made within a 5-ft. radius around the caster. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 cold damage.
+
+Damage: 1d8+2 cold
+Cold Resistance: +50% (mundane or magical)
+Area of Effect: 5-ft. radius
+Duration: %num_rounds% rounds
+
+Weight: 1~

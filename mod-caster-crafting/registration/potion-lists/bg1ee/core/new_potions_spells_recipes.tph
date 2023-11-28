@@ -117,5 +117,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~LESSER_RESTORATION~,                       ~BZ@1C07~, ~SPPR417~,  ~1~,  ~1~, ~Cure~,         ~7~ => "Lesser Restoration"
         ~LESSER_RESTORATION_SPPR713~,               ~BZ@1C07~, ~SPPR713~,  ~1~,  ~2~, ~Cure~,         ~7~ => "Lesser Restoration"
         ~SPIRIT_FIRE~,                              ~BZ@1D07~, ~SPPR450~,  ~1~,  ~1~, ~Bomb~,         ~8~ => "Spirit Fire"
+        ~FIRE_SHIELD_BLUE~,                         ~BZ@1E07~, ~SPWI403~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Fireshield (Blue)"
 
     END
