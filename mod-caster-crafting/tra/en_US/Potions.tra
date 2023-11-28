@@ -975,3 +975,15 @@ Saving Throws: +1 bonus
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Detect Invisibility
+@40240 = ~Potion of Detect Invisibility~
+@40241 = ~The imbiber is able to see clearly any objects or beings that are invisible, as well as any that are astral, ethereal, or out of phase. In addition, this potion enables the imbiber to detect hidden or concealed creatures (e.g., Thieves hiding in shadows, halflings in underbrush, and so on).
+
+STATISTICS:
+
+Special: Imbiber sees invisibility clearly
+Duration: 4 turns (40 rounds)
+
+Weight: 1~

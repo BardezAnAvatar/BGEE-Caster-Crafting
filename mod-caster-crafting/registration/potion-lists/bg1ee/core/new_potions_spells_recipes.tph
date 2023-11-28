@@ -50,6 +50,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~WRITHING_FOG~,                             ~BZ@0I03~, ~SPPR250~,  ~2~,  ~1~, ~Bomb~,         ~5~ => "Writhing Fog"
         ~BLUR~,                                     ~BZ@0J03~, ~SPWI201~,  ~2~,  ~1~, ~Defense~,      ~4~ => "Blur"
         ~BLUR_SPDM102~,                             ~BZ@0J03~, ~SPDM102~,  ~2~,  ~1~, ~Defense~,      ~4~ => "Blur"
+        ~DETECT_INVISIBILITY~,                      ~BZ@0K03~, ~SPWI203~,  ~2~,  ~1~, ~Enhancement~,  ~3~ => "Detect Invisibility"
+        ~DETECT_INVISIBILITY_SPPR505~,              ~BZ@0K03~, ~SPPR505~,  ~2~,  ~3~, ~Enhancement~,  ~3~ => "Detect Invisibility"
+        ~DETECT_INVISIBILITY_SPWI609~,              ~BZ@0K03~, ~SPWI609~,  ~2~,  ~3~, ~Enhancement~,  ~3~ => "Detect Invisibility"
 
 
     END
