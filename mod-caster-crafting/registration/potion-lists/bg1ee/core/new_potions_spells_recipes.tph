@@ -121,5 +121,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~IMPROVED_INVISIBILITY~,                    ~BZ@1F07~, ~SPWI405~,  ~1~,  ~1~, ~Enhancement~,  ~8~ => "Improved Invisibility"
         ~MINOR_GLOBE_OF_INVULNERABILITY~,           ~BZ@1G07~, ~SPWI406~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Minor Globe of Invulnerability"
         ~MINOR_GLOBE_OF_INVULNERABILITY_SPWI602~,   ~BZ@1G07~, ~SPWI602~,  ~1~,  ~2~, ~Defense~,      ~8~ => "Minor Globe of Invulnerability"
+        ~STONESKIN~,                                ~BZ@1H07~, ~SPWI408~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Stoneskin"
+        ~STONESKIN_SPPR506~,                        ~BZ@1H07~, ~SPPR506~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Stoneskin"
 
     END

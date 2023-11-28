@@ -1425,3 +1425,17 @@ Special: Immune to opponent's 1st-, 2nd-, and 3rd-level spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Stoneskin
+@40306 = ~Potion of Stoneskin~
+@40307 = ~Upon drinking this potion, an outer skin of stone will move up from the ground, completely covering the imbiber. The effect of this is to protect the imbiber from physical attacks such as melee weapons and projectiles.  The skins will remain on the imbiber until <PRO_HESHE> is affected by a Dispel Magic, all of the skins are removed due to physical attacks, or the spell duration expires.
+
+It is important to note that this will not protect the wizard from any magical attacks, such as Fireball.
+
+STATISTICS:
+
+Special: %magnitude% stone skins providing immunity to non-magical damage
+Duration: 12 hours
+
+Weight: 1~

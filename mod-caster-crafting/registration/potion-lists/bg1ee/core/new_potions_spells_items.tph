@@ -72,6 +72,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1E07~, ~@40300~, ~@40301~, ~SPWI403~,  ~1~,  ~7~, ~fire-shield-blue.BAM~                            ~BZ@1E07I~, ~BZPN080D~, ~~      => "Fireshield (Blue)"
         ~BZ@1F07~, ~@40302~, ~@40303~, ~SPWI405~,  ~1~,  ~8~, ~improved-invisibility.BAM~                       ~BZ@1F07I~, ~BZPN080D~, ~~      => "Improved Invisibility"
         ~BZ@1G07~, ~@40304~, ~@40305~, ~SPWI406~,  ~1~,  ~8~, ~minor-globe-of-invulnerability.BAM~              ~BZ@1G07I~, ~BZPN070D~, ~~      => "Minor Globe of Invulnerability"
+        ~BZ@1H07~, ~@40306~, ~@40307~, ~SPWI408~,  ~1~,  ~8~, ~stoneskin.BAM~                                   ~BZ@1H07I~, ~BZPN032D~, ~~      => "Stoneskin"
 
 
 
