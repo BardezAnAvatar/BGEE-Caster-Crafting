@@ -51,6 +51,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0V05~, ~@40262~, ~@40263~, ~SPPR307~,  ~1~,  ~5~, ~remove-curse.BAM~                                ~BZ@0V05I~, ~BZPN070D~, ~~      => "Remove Curse"
         ~BZ@0W05~, ~@40264~, ~@40265~, ~SPPR312~,  ~1~,  ~6~, ~strength-of-one.BAM~                             ~BZ@0W05I~, ~BZPN080D~, ~~      => "Strength of One"
         ~BZ@0X05~, ~@40266~, ~@40267~, ~SPPR315~,  ~1~,  ~5~, ~cure-medium-wounds.BAM~                          ~BZ@0X05I~, ~BZPN080D~, ~~      => "Cure Medium Wounds"
+        ~BZ@0Y05~, ~@40268~, ~@40269~, ~SPPR317~,  ~1~,  ~5~, ~cure-disease.BAM~                                ~BZ@0Y05I~, ~BZPN001D~, ~~      => "Cure Disease"
 
 
 

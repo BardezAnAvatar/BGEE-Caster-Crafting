@@ -1167,3 +1167,14 @@ STATISTICS:
 Special: Restores 14 Hit Points.
 
 Weight: 1~
+
+
+//Cure Disease
+@40268 = ~Potion of Cure Disease~
+@40269 = ~This potion will cure almost any disease. The cure is permanent, but does not grant the imbiber of the spell immunity from further afflictions. Blindness, deafness, and feeblemind are also cured with this spell. Some magically created diseases may not be curable by this spell.
+
+STATISTICS:
+
+Special: Removes disease, blindness, deafness, and feeblemindedness.
+
+Weight: 1~
