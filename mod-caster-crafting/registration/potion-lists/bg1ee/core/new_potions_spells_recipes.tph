@@ -126,5 +126,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~GREATER_MALISON~,                          ~BZ@1I07~, ~SPWI412~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Greater Malison"
         ~OTILUKE'S_RESILIENT_SPHERE~,               ~BZ@1J07~, ~SPWI413~,  ~1~,  ~1~, ~Bomb~,         ~8~ => "Otiluke's Resilient Sphere"
         ~SPIRIT_ARMOR~,                             ~BZ@1K07~, ~SPWI414~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Spirit Armor"
+        ~ENCHANTED_WEAPON~,                         ~BZ@1L07~, ~SPWI417~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Enchanted Weapon"
 
     END

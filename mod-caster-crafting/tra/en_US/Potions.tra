@@ -1484,3 +1484,15 @@ Special: Imbiber takes 2d4 damage after duration
 Duration: 2 hours
 
 Weight: 1~
+
+
+//Enchanted Weapon
+@40314 = ~Oil of Enchanted Weapon~
+@40315 = ~When this oil is applied, it enchants any weapons that the applicant currently wields; those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.
+
+STATISTICS:
+
+Special: weapons hit as if +3 enchanted weapons
+Duration: %num_rounds% rounds
+
+Weight: 1~
