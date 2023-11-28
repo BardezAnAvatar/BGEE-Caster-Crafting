@@ -47,6 +47,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0S03~, ~@40256~, ~@40257~, ~SPWI219~,  ~1~,  ~4~, ~vocalize.BAM~                                    ~BZ@0S03I~, ~BZPN019D~, ~~      => "Vocalize"
 
         ~BZ@0T05~, ~@40258~, ~@40259~, ~SPPR303~,  ~1~,  ~7~, ~dispel-magic.BAM~                                ~BZ@0T05I~, ~BZPN005D~, ~~      => "Dispel Magic"
+        ~BZ@0U05~, ~@40260~, ~@40261~, ~SPWI319~,  ~1~,  ~5~, ~protection-from-fire.BAM~                        ~BZ@0U05I~, ~BZPN008D~, ~~      => "Protection From Fire"
 
 
 

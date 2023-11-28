@@ -30,6 +30,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPHERE_OF_SECURITY_POISON~,                ~BZ@OH09~, ~MEPR558~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Sphere of Security: Protection from Poison"
         ~GEDLEE'S_ELECTRIC_BARRIER~,                ~BZ@OJ09~, ~MEWI566~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Gedlee's Electric Barrier"
         ~ARMOR_SPWI414~,                            ~BZ@0601~, ~MEPR457~,  ~1~,  ~3~, ~Defense~,      ~2~ => "Armor"
+        ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ@0T05~, ~MEPR553~,  ~1~,  ~2~, ~Defense~,      ~5~ => "Protection From Fire"
 
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,        ~BZ@OL11~, ~MEPR656~, ~11~,  ~1~, ~Defense~,     ~14~ => "Protection From Non-Silver Weapons"
 

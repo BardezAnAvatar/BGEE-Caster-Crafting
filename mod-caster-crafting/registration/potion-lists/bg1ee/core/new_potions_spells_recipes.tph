@@ -76,6 +76,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~DISPLE_MAGIC_SPCL231~,                     ~BZ@0T05~, ~SPCL231~,  ~1~,  ~1~, ~Bomb~,         ~7~ => "Dispel Magic"
         ~DISPLE_MAGIC_SPIN112~,                     ~BZ@0T05~, ~SPIN112~,  ~1~,  ~1~, ~Bomb~,         ~7~ => "Dispel Magic"
         ~DISPLE_MAGIC_SPWI302~,                     ~BZ@0T05~, ~SPWI302~,  ~1~,  ~1~, ~Bomb~,         ~7~ => "Dispel Magic"
+        ~PROTECTION_FROM_FIRE_SPWI319~,             ~BZ@0T05~, ~SPWI319~,  ~1~,  ~1~, ~Defense~,      ~5~ => "Protection From Fire"
+        ~PROTECTION_FROM_FIRE_SPPR306~,             ~BZ@0T05~, ~SPPR306~,  ~1~,  ~1~, ~Defense~,      ~5~ => "Protection From Fire"
+        ~PROTECTION_FROM_FIRE_SPCL721~,             ~BZ@0T05~, ~SPCL721~,  ~1~,  ~1~, ~Defense~,      ~5~ => "Protection From Fire"
+        ~PROTECTION_FROM_FIRE_SPWI702~,             ~BZ@0T05~, ~SPWI702~, ~14~,  ~3~, ~Defense~,      ~5~ => "Protection From Fire"
+        ~PROTECTION_FROM_FIRE_SPWI803~,             ~BZ@0T05~, ~SPWI803~, ~14~,  ~3~, ~Defense~,      ~5~ => "Protection From Fire"
 
 
     END

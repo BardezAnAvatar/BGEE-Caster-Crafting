@@ -1119,3 +1119,16 @@ Area of Effect: 15-ft. radius
 Duration: Instant
 
 Weight: 1~
+
+
+//Protection From Fire
+@40260 = ~Potion of Protection From Fire~
+@40261 = ~This potion it confers complete invulnerability to normal fires (torches, bonfires, oil fires, and the like); and 50% to exposure to magical fire sources (fiery dragon breath, hell hound or pyrohydra breath, spells such as Burning Hands, Fireball, Fire Seeds, Fire Storm, Flame Strike, Meteor Swarm, and so on).
+
+STATISTICS:
+
+Fire resistance: +100%
+Magical fire resistance: +50%
+Duration: %num_rounds% rounds
+
+Weight: 1~
