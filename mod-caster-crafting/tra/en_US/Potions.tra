@@ -1267,3 +1267,16 @@ Base AC: 2
 Duration: 1 hours
 
 Weight: 1~
+
+
+//Protection From Cold
+@40282 = ~Potion of Protection From Cold~
+@40283 = ~This potion confers complete invulnerability to normal cold attacks and partial protection from exposure to magical cold such as an icy dragon's breath, spells such as Cone of Cold, etc., absorbing 50% of all the damage dealt by such magical sources.
+
+STATISTICS:
+
+Cold resistance: +100%
+Magical cold resistance: +50%
+Duration: %num_turns turns (%num_rounds% rounds)
+
+Weight: 1~

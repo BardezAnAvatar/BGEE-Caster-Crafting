@@ -101,7 +101,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~NON_DETECTION~,                            ~BZ@1105~, ~SPWI310~,  ~1~,  ~1~, ~Enhancement~,  ~6~ => "Non-Detection"
         ~PROTECTION_FROM_NORMAL_MISSILES~,          ~BZ@1205~, ~SPWI310~,  ~1~,  ~1~, ~Defense~,      ~6~ => "Protection From Normal Missiles"
         ~WRAITHFORM~,                               ~BZ@1305~, ~SPWI315~,  ~1~,  ~1~, ~Defense~,      ~6~ => "Wraithform"
-        ~GHOST_ARMOR~,                              ~BZ@1305~, ~SPWI317~,  ~1~,  ~1~, ~Defense~,      ~6~ => "Ghost Armor"
-        ~GHOST_ARMOR_SPWI414~,                      ~BZ@1305~, ~SPWI414~,  ~1~,  ~2~, ~Defense~,      ~6~ => "Ghost Armor"
+        ~GHOST_ARMOR~,                              ~BZ@1405~, ~SPWI317~,  ~1~,  ~1~, ~Defense~,      ~6~ => "Ghost Armor"
+        ~GHOST_ARMOR_SPWI414~,                      ~BZ@1405~, ~SPWI414~,  ~1~,  ~2~, ~Defense~,      ~6~ => "Ghost Armor"
+        ~PROTECTION_FROM_COLD~,                     ~BZ@1505~, ~SPWI320~,  ~1~,  ~1~, ~Defense~,      ~6~ => "Protection From Cold"
 
     END
