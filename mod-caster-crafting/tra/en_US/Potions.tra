@@ -1328,3 +1328,15 @@ HP: +%magnitude% temporary hit points
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Negative Plane Protection
+@40292 = ~Philter of Negative Plane Protection~
+@40293 = ~This potion provies partial protection from undead monsters with Negative Energy Plane connections (such as vampires), and certain weapons and spells that drain energy levels.
+
+A protected creature struck by a negative energy attack is protected against any form of level draining for the duration of the potion's effect. The protected creature suffers only normal Hit Point damage from the attack and does not suffer any drain of experience.
+
+Special: Protected from level drain
+Duration: 8 hours
+
+Weight: 1~

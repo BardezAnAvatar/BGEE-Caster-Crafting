@@ -112,5 +112,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~FREE_ACTION~,                              ~BZ@1707~, ~SPPR403~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Free Action"
         ~DEATH_WARD~,                               ~BZ@1807~, ~SPPR409~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Death Ward"
         ~HOLY_POWER~,                               ~BZ@1907~, ~SPPR412~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Holy Power"
+        ~NEGATIVE_PLANE_PROTECTION~,                ~BZ@1A07~, ~SPPR413~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Negative Plane Protection"
 
     END
