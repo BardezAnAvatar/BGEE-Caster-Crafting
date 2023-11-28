@@ -54,14 +54,15 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0Y05~, ~@40268~, ~@40269~, ~SPPR317~,  ~1~,  ~6~, ~cure-disease.BAM~                                ~BZ@0Y05I~, ~BZPN001D~, ~~      => "Cure Disease"
         ~BZ@0Z05~, ~@40270~, ~@40271~, ~SPPR318~,  ~1~,  ~7~, ~zone-of-sweet-air.BAM~                           ~BZ@0Z05I~, ~BZPN026D~, ~~      => "Zone of Sweet Air"
 //oil of fiery burning, really, until levels implemented
-      //~BZ@1001~, ~@40272~, ~@40273~, ~SPWI304~,  ~1~,  ~6~, ~fireball.BAM~,                                   ~BZ@1001I~, ~BZPN100D~, ~~      => "Fireball"
-        ~BZ@1101~, ~@40274~, ~@40275~, ~SPWI310~,  ~1~,  ~5~, ~non-detection.BAM~,                              ~BZ@1101I~, ~BZPN090D~, ~~      => "Non-Detection"
-        ~BZ@1201~, ~@40276~, ~@40277~, ~SPWI311~,  ~1~,  ~5~, ~protection-from-normal-missiles.BAM~,            ~BZ@1201I~, ~BZPN090D~, ~~      => "Protection From Normal Missiles"
-        ~BZ@1301~, ~@40278~, ~@40279~, ~SPWI315~,  ~1~,  ~7~, ~wraithform.BAM~,                                 ~BZ@1301I~, ~BZPN049D~, ~~      => "Wraithform"
-        ~BZ@1401~, ~@40280~, ~@40281~, ~SPWI317~,  ~1~,  ~5~, ~ghost-armor.BAM~,                                ~BZ@1401I~, ~BZPN058D~, ~~      => "Ghost Armor"
-        ~BZ@1501~, ~@40282~, ~@40283~, ~SPWI320~,  ~1~,  ~5~, ~protection-from-cold.BAM~,                       ~BZ@1501I~, ~BZPN100D~, ~~      => "Protection From Cold"
+      //~BZ@1005~, ~@40272~, ~@40273~, ~SPWI304~,  ~1~,  ~6~, ~fireball.BAM~,                                   ~BZ@1005I~, ~BZPN100D~, ~~      => "Fireball"
+        ~BZ@1105~, ~@40274~, ~@40275~, ~SPWI310~,  ~1~,  ~5~, ~non-detection.BAM~,                              ~BZ@1105I~, ~BZPN090D~, ~~      => "Non-Detection"
+        ~BZ@1205~, ~@40276~, ~@40277~, ~SPWI311~,  ~1~,  ~5~, ~protection-from-normal-missiles.BAM~,            ~BZ@1205I~, ~BZPN090D~, ~~      => "Protection From Normal Missiles"
+        ~BZ@1305~, ~@40278~, ~@40279~, ~SPWI315~,  ~1~,  ~7~, ~wraithform.BAM~,                                 ~BZ@1305I~, ~BZPN049D~, ~~      => "Wraithform"
+        ~BZ@1405~, ~@40280~, ~@40281~, ~SPWI317~,  ~1~,  ~5~, ~ghost-armor.BAM~,                                ~BZ@1405I~, ~BZPN058D~, ~~      => "Ghost Armor"
+        ~BZ@1505~, ~@40282~, ~@40283~, ~SPWI320~,  ~1~,  ~5~, ~protection-from-cold.BAM~,                       ~BZ@1505I~, ~BZPN100D~, ~~      => "Protection From Cold"
 
-        ~BZ@1601~, ~@40284~, ~@40285~, ~SPPR401~,  ~1~,  ~7~, ~cure-serious-wounds.BAM~                         ~BZ@1605I~, ~BZPN032D~, ~~      => "Cure Serious Wounds"
+        ~BZ@1607~, ~@40284~, ~@40285~, ~SPPR401~,  ~1~,  ~7~, ~cure-serious-wounds.BAM~                         ~BZ@1607I~, ~BZPN032D~, ~~      => "Cure Serious Wounds"
+        ~BZ@1707~, ~@40286~, ~@40287~, ~SPPR403~,  ~1~,  ~8~, ~free-action.BAM~                                 ~BZ@1707I~, ~BZPN001D~, ~~      => "Free Action"
 
 
 

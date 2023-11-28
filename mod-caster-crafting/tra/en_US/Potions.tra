@@ -1292,3 +1292,15 @@ Special: Restores 17 Hit Points.
 Duration: Instant
 
 Weight: 1~
+
+
+//Free Action
+@40286 = ~Philter of Free Action~
+@40287 = ~This potion caused to imbiber to become immune to anything that affects <PRO_HISHER> movement. This includes the effects of Web, Hold Person, Grease, and Entangle.
+
+STATISTICS:
+
+Special: Immune to holding effects or changes to movement rate
+Duration: %num_rounds% rounds
+
+Weight: 1~

@@ -109,5 +109,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CURE_SERIOUS_WOUNDS_SPPR507~,              ~BZ@1607~, ~SPPR507~,  ~1~,  ~2~, ~Cure~,         ~7~ => "Cure Serious Wounds"
         ~CURE_SERIOUS_WOUNDS_SPPR607~,              ~BZ@1607~, ~SPP6507~,  ~1~,  ~3~, ~Cure~,         ~7~ => "Cure Serious Wounds"
         ~CURE_SERIOUS_WOUNDS_SPPR713~,              ~BZ@1607~, ~SPPR713~,  ~1~,  ~3~, ~Cure~,         ~7~ => "Cure Serious Wounds"
+        ~FREE_ACTION~,                              ~BZ@1707~, ~SPPR403~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Free Action"
 
     END
