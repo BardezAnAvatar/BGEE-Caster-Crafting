@@ -70,6 +70,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1C07~, ~@40296~, ~@40297~, ~SPPR417~,  ~1~,  ~7~, ~lesser-restoration.BAM~                          ~BZ@1C07I~, ~BZPN049D~, ~~      => "Lesser Restoration"
         ~BZ@1D07~, ~@40298~, ~@40299~, ~SPPR450~,  ~1~,  ~8~, ~spirit-fire.BAM~                                 ~BZ@1D07I~, ~BZPN013D~, ~~      => "Spirit Fire"
         ~BZ@1E07~, ~@40300~, ~@40301~, ~SPWI403~,  ~1~,  ~7~, ~fire-shield-blue.BAM~                            ~BZ@1E07I~, ~BZPN080D~, ~~      => "Fireshield (Blue)"
+        ~BZ@1F07~, ~@40302~, ~@40303~, ~SPWI405~,  ~1~,  ~8~, ~improved-invisibility.BAM~                       ~BZ@1F07I~, ~BZPN080D~, ~~      => "Improved Invisibility"
 
 
 
