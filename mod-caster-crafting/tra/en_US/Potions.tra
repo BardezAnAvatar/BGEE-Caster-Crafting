@@ -1439,3 +1439,16 @@ Special: %magnitude% stone skins providing immunity to non-magical damage
 Duration: 12 hours
 
 Weight: 1~
+
+
+//Greater Malison
+@40308 = ~Bomb of Greater Malison~
+@40309 = ~This bomb adversely affects all the Saving Throws of hostile creatures within the area of effect from the impact. Opponents under the influence of this spell make all Saving Throws at a penalty of -4.
+
+STATISTICS:
+
+Saving Throws: -4 penalty
+Area of Effect: 15-ft. radius
+Duration: %num_rounds% rounds
+
+Weight: 1~

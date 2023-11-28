@@ -123,5 +123,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MINOR_GLOBE_OF_INVULNERABILITY_SPWI602~,   ~BZ@1G07~, ~SPWI602~,  ~1~,  ~2~, ~Defense~,      ~8~ => "Minor Globe of Invulnerability"
         ~STONESKIN~,                                ~BZ@1H07~, ~SPWI408~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Stoneskin"
         ~STONESKIN_SPPR506~,                        ~BZ@1H07~, ~SPPR506~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Stoneskin"
+        ~GREATER_MALISON~,                          ~BZ@1I07~, ~SPWI412~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Greater Malison"
 
     END
