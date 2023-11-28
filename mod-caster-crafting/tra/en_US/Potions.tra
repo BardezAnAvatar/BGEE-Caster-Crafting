@@ -1089,3 +1089,15 @@ Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Vocalize
+@40256 = ~Draught of Vocalize~
+@40257 = ~The imbiber can cast spells with a verbal component without having to make any noise. Effectively, this spell cancels the effects of Silence and makes the recipient immune to it for the duration.
+
+STATISTICS:
+
+Special: Can cast spells without speech (bypassing silence, deafness, etc.)
+Duration: 1 turn (10 rounds)
+
+Weight: 1~

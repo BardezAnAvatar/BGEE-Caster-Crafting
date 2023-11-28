@@ -43,6 +43,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0P03~, ~@40250~, ~@40251~, ~SPWI213~,  ~1~,  ~4~, ~stinking-cloud.BAM~                              ~BZ@0P03I~, ~BZPN090D~, ~~      => "Stinking Cloud"
         ~BZ@0Q03~, ~@40252~, ~@40253~, ~SPWI214~,  ~1~,  ~4~, ~strength.BAM~                                    ~BZ@0Q03I~, ~BZPN110D~, ~~      => "Strength"
         ~BZ@0R03~, ~@40254~, ~@40255~, ~SPWI215~,  ~1~,  ~4~, ~web.BAM~                                         ~BZ@0R03I~, ~BZPN090D~, ~~      => "Web"
+        ~BZ@0S03~, ~@40256~, ~@40257~, ~SPWI219~,  ~1~,  ~4~, ~vocalize.BAM~                                    ~BZ@0S03I~, ~BZPN019D~, ~~      => "Vocalize"
 
 
     END
