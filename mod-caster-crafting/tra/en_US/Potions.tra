@@ -1255,3 +1255,15 @@ Special: Immune to non-magical damage
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Ghost Armor
+@40280 = ~Oil of Ghost Armor~
+@40281 = ~This oil dissolves into a magical field of force that serves as if it were field plate armor (AC 2). It is cumulative with Dexterity bonuses to Armor Class and, in the case of Fighter/Mages, with the shield's bonus. The effect does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration expires.
+
+STATISTICS:
+
+Base AC: 2
+Duration: 1 hours
+
+Weight: 1~

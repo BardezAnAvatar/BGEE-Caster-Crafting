@@ -58,6 +58,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1101~, ~@40274~, ~@40275~, ~SPWI310~,  ~1~,  ~5~, ~non-detection.BAM~,                              ~BZ@1101I~, ~BZPN090D~, ~~      => "Non-Detection"
         ~BZ@1201~, ~@40276~, ~@40277~, ~SPWI311~,  ~1~,  ~5~, ~protection-from-normal-missiles.BAM~,            ~BZ@1201I~, ~BZPN090D~, ~~      => "Protection From Normal Missiles"
         ~BZ@1301~, ~@40278~, ~@40279~, ~SPWI315~,  ~1~,  ~7~, ~wraithform.BAM~,                                 ~BZ@1301I~, ~BZPN049D~, ~~      => "Wraithform"
+        ~BZ@1401~, ~@40280~, ~@40281~, ~SPWI317~,  ~1~,  ~5~, ~ghost-armor.BAM~,                                ~BZ@1301I~, ~BZPN058D~, ~~      => "Ghost Armor"
 
 
 
