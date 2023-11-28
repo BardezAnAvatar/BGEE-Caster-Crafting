@@ -12,42 +12,42 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~EXPEDITIOUS_RETREAT~,                  ~BZ@I001~, ~SPWI127~,  ~1~,  ~1~, ~Enhancement~,  ~2~ => "Expeditious Retreat"
+        ~EXPEDITIOUS_RETREAT~,                      ~BZ@I001~, ~SPWI127~,  ~1~,  ~1~, ~Enhancement~,  ~2~ => "Expeditious Retreat"
 
 
-        ~EXPEDITIOUS_RETREAT~,                  ~BZ@I103~, ~SPPR218~,  ~3~,  ~1~, ~Offense~,      ~5~ => "Beast Claw"
-        ~CAT'S_GRACE~,                          ~BZ@I203~, ~SPWI227~,  ~3~,  ~1~, ~Enhancement~,  ~4~ => "Cat's Grace"
-        ~CURE_MODERATE_WOUNDS~,                 ~BZ@I303~, ~SPPR216~,  ~3~,  ~1~, ~Cure~,         ~3~ => "Cure Moderate Wounds"
-        ~DECASTAVE~,                            ~BZ@I403~, ~SPWI226~,  ~3~,  ~1~, ~Offense~,      ~4~ => "Decastave"
-        ~SNILLOC'S_SNOWBALL_SWARM~,             ~BZ@I503~, ~SPWI225~,  ~3~,  ~1~, ~Bomb~,         ~4~ => "Snilloc's Snowball Swarm"
+        ~EXPEDITIOUS_RETREAT~,                      ~BZ@I103~, ~SPPR218~,  ~3~,  ~1~, ~Offense~,      ~5~ => "Beast Claw"
+        ~CAT'S_GRACE~,                              ~BZ@I203~, ~SPWI227~,  ~3~,  ~1~, ~Enhancement~,  ~4~ => "Cat's Grace"
+        ~CURE_MODERATE_WOUNDS~,                     ~BZ@I303~, ~SPPR216~,  ~3~,  ~1~, ~Cure~,         ~3~ => "Cure Moderate Wounds"
+        ~DECASTAVE~,                                ~BZ@I403~, ~SPWI226~,  ~3~,  ~1~, ~Offense~,      ~4~ => "Decastave"
+        ~SNILLOC'S_SNOWBALL_SWARM~,                 ~BZ@I503~, ~SPWI225~,  ~3~,  ~1~, ~Bomb~,         ~4~ => "Snilloc's Snowball Swarm"
 
 
-        ~MOONBLADE~,                            ~BZ@I605~, ~SPPR322~,  ~5~,  ~1~, ~Offense~,      ~7~ => "Moonblade"
-        ~SPIKE_GROWTH~,                         ~BZ@I705~, ~SPPR325~,  ~5~,  ~1~, ~Offense~,      ~6~ => "Spike Growth"
+        ~MOONBLADE~,                                ~BZ@I605~, ~SPPR322~,  ~5~,  ~1~, ~Offense~,      ~7~ => "Moonblade"
+        ~SPIKE_GROWTH~,                             ~BZ@I705~, ~SPPR325~,  ~5~,  ~1~, ~Offense~,      ~6~ => "Spike Growth"
 
 
-        ~RECITATION~,                           ~BZ@I807~, ~SPPR420~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Recitation"
-        ~BLOOD_RAGE~,                           ~BZ@I907~, ~SPPR421~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Blood Rage"
-        ~CLOUD_OF_PESTILENCE~,                  ~BZ@IA07~, ~SPPR422~,  ~7~,  ~1~, ~Bomb~,         ~8~ => "Cloud of Pestilence"
-        ~EMOTION_COURAGE~,                      ~BZ@IB07~, ~SPWI426~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Courage"
-        ~EMOTION_HOPE~,                         ~BZ@IC07~, ~SPWI427~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Hope"
-        ~UNFAILING_ENDURANCE~,                  ~BZ@ID07~, ~SPPR423~,  ~7~,  ~1~, ~Cure~,         ~8~ => "Unfailing Endurance"
+        ~RECITATION~,                               ~BZ@I807~, ~SPPR420~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Recitation"
+        ~BLOOD_RAGE~,                               ~BZ@I907~, ~SPPR421~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Blood Rage"
+        ~CLOUD_OF_PESTILENCE~,                      ~BZ@IA07~, ~SPPR422~,  ~7~,  ~1~, ~Bomb~,         ~8~ => "Cloud of Pestilence"
+        ~EMOTION_COURAGE~,                          ~BZ@IB07~, ~SPWI426~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Courage"
+        ~EMOTION_HOPE~,                             ~BZ@IC07~, ~SPWI427~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Emotion: Hope"
+        ~UNFAILING_ENDURANCE~,                      ~BZ@ID07~, ~SPPR423~,  ~7~,  ~1~, ~Cure~,         ~8~ => "Unfailing Endurance"
 
 
-        ~ANIMAL_RAGE~,                          ~BZ@IE09~, ~SPPR522~,  ~9~,  ~1~, ~Offense~,      ~9~ => "Animal Rage"
-        ~RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,      ~BZ@IF09~, ~SPPR518~,  ~9~,  ~1~, ~Offense~,      ~9~ => "Righteous Wrath of the Faithful"
-        ~SHIELD_OF_LATHANDER~,                  ~BZ@IG09~, ~SPPR520~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Shield of Lathander"
-        ~SPIKE_STONES~,                         ~BZ@IH09~, ~SPPR519~,  ~9~,  ~1~, ~Bomb~,        ~10~ => "Spike Stones"
+        ~ANIMAL_RAGE~,                              ~BZ@IE09~, ~SPPR522~,  ~9~,  ~1~, ~Offense~,      ~9~ => "Animal Rage"
+        ~RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,          ~BZ@IF09~, ~SPPR518~,  ~9~,  ~1~, ~Offense~,      ~9~ => "Righteous Wrath of the Faithful"
+        ~SHIELD_OF_LATHANDER~,                      ~BZ@IG09~, ~SPPR520~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Shield of Lathander"
+        ~SPIKE_STONES~,                             ~BZ@IH09~, ~SPPR519~,  ~9~,  ~1~, ~Bomb~,        ~10~ => "Spike Stones"
 
 
-        ~ANTIMAGIC_SHELL~,                      ~BZ@II12~, ~SPWI630~, ~12~,  ~1~, ~Defense~,     ~12~ => "Antimagic Shell"
-        ~TROLLISH_FORTITUDE~,                   ~BZ@IJ12~, ~SPWI629~, ~12~,  ~1~, ~Cure~,        ~10~ => "Trollish Fortitude"
+        ~ANTIMAGIC_SHELL~,                          ~BZ@II12~, ~SPWI630~, ~12~,  ~1~, ~Defense~,     ~12~ => "Antimagic Shell"
+        ~TROLLISH_FORTITUDE~,                       ~BZ@IJ12~, ~SPWI629~, ~12~,  ~1~, ~Cure~,        ~10~ => "Trollish Fortitude"
 
 
-        ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,      ~BZ@IK14~, ~SPPR735~, ~14~,  ~1~, ~Defense~,     ~10~ => "Impervious Sanctity of Mind"
-        ~GREATER_SHIELD_OF_LATHANDER~,          ~BZ@IL14~, ~SPPR737~, ~14~,  ~1~, ~Defense~,     ~14~ => "Greater Shield of Lathander"
-        ~MIST_OF_ELDATH~,                       ~BZ@IM14~, ~SPPR738~, ~14~,  ~1~, ~Bomb~,        ~13~ => "Mist of Eldath"
-
+        ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,          ~BZ@IK14~, ~SPPR735~, ~14~,  ~1~, ~Defense~,     ~10~ => "Impervious Sanctity of Mind"
+        ~GREATER_SHIELD_OF_LATHANDER~,              ~BZ@IL14~, ~SPPR737~, ~14~,  ~1~, ~Defense~,     ~14~ => "Greater Shield of Lathander"
+        ~MIST_OF_ELDATH~,                           ~BZ@IM14~, ~SPPR738~, ~14~,  ~1~, ~Bomb~,        ~13~ => "Mist of Eldath"
+        ~RESIST_FEAR_SPPR735~,                      ~BZ@0N01~, ~SPPR735~,  ~1~,  ~3~, ~Enhancement~,  ~4~ => "Resist Fear"
 
 
     END

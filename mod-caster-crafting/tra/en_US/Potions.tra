@@ -1023,3 +1023,15 @@ Special: dice rolled against imbiber (outside a weapon's base damage) are reduce
 Duration: 3 rounds
 
 Weight: 1~
+
+
+//Resist Fear
+@40246 = ~Philter of Resist Fear~
+@40247 = ~This potion instills courage in the imbiber, raising their morale to its highest. The imbiber's morale will gradually reset to normal as the duration runs out. If the imbiber is affected by magical fear, they will regain their composure.
+
+STATISTICS:
+
+Special: Immune to fear, panic
+Duration: 3 rounds
+
+Weight: 1~
