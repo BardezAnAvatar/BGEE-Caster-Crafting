@@ -33,6 +33,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0F03~, ~@40230~, ~@40231~, ~SPPR205~,  ~1~,  ~4~, ~find-traps.BAM~,                                 ~BZ@0F03I~, ~BZPN090D~, ~~      => "Find Traps"
         ~BZ@0G03~, ~@40232~, ~@40233~, ~SPPR210~,  ~1~,  ~5~, ~resist-fire-and-cold.BAM~,                       ~BZ@0G03I~, ~BZPN005D~, ~~      => "Resist Fire and Cold"
         ~BZ@0H03~, ~@40234~, ~@40235~, ~SPPR214~,  ~1~,  ~5~, ~draw-upon-holy-might.BAM~,                       ~BZ@0H03I~, ~BZPN040D~, ~~      => "Draw Upon Holy Might"
+        ~BZ@0I03~, ~@40236~, ~@40237~, ~SPPR250~,  ~1~,  ~5~, ~writhing-fog.BAM~,                               ~BZ@0I03I~, ~BZPN013D~, ~~      => "Writhing Fog"
 
 
     END

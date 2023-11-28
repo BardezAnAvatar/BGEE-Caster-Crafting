@@ -936,14 +936,29 @@ Weight: 1~
 
 
 //Draw Upon Holy Might
-@40235 = ~Draught of Draw Upon Holy Might~
-@40236 = ~This potion grants %magnitude_points% of Strength, Constitution, and Dexterity to the imbiber
+@40234 = ~Draught of Draw Upon Holy Might~
+@40235 = ~This potion grants %magnitude_points% of Strength, Constitution, and Dexterity to the imbiber
 
 STATISTICS:
 
 Strength:     +%magnitude% bonus
 Dexterity:    +%magnitude% bonus
 Constitution: +%magnitude% bonus
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
+
+
+//Writhing Fog
+@40236 = ~Writhing Fog Bomb~
+@40237 = ~This bomb conjures a cloud of writhing fog that chills and hinders anyone within its area. Creatures in the fog take 1d3 points of cold damage per round. In addition, there is a 20% chance that they must save vs. Death or be slowed for 1 round. Creatures immune to cold damage do not suffer any adverse effects from this spell.
+
+STATISTICS:
+
+Damage: 1d3 cold
+Special: 20% chance slowed for 1 round (must save vs. Death negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~

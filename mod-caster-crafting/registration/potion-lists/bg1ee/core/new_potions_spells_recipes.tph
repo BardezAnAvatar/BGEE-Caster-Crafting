@@ -47,6 +47,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~RESIST_FIRE_AND_COLD~,                     ~BZ@0G03~, ~SPPR210~,  ~2~,  ~1~, ~Defense~,      ~5~ => "Resist Fire and Cold"
         ~DRAW_UPON_HOLY_MIGHT~,                     ~BZ@0H03~, ~SPPR214~,  ~2~,  ~1~, ~Enhancement~,  ~5~ => "Draw Upon Holy Might"
         ~DRAW_UPON_HOLY_MIGHT_SPIN103~,             ~BZ@0H03~, ~SPIN103~,  ~1~,  ~1~, ~Enhancement~,  ~5~ => "Draw Upon Holy Might"
+        ~WRITHING_FOG~,                             ~BZ@0I03~, ~SPPR250~,  ~2~,  ~1~, ~Bomb~,         ~5~ => "Writhing Fog"
 
 
     END
