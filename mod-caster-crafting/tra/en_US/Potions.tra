@@ -1144,3 +1144,15 @@ Special: Remove curse on imbiber
 Duration: Instant
 
 Weight: 1~
+
+
+//Strength of One
+@40264 = ~Phial of Strength of One~
+@40265 = ~The imbiber is given a Strength score of 18/75. If the imbiber has a Strength score higher than 18/75 (either naturally, or through a magical item), then <PRO_HISHER> Strength is lowered to 18/75.
+
+STATISTICS:
+
+Strength: 18/75
+Duration: 1 turn (10 rounds)
+
+Weight: 1~

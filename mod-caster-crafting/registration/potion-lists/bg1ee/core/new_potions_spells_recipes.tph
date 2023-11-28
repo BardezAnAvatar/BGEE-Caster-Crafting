@@ -83,6 +83,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PROTECTION_FROM_FIRE_SPWI803~,             ~BZ@0U05~, ~SPWI803~, ~14~,  ~3~, ~Defense~,      ~5~ => "Protection From Fire"
         ~REMOVE_CURSE_SPPR307~,                     ~BZ@0V05~, ~SPPR307~,  ~1~,  ~1~, ~Cure~,         ~5~ => "Remove Curse"
         ~REMOVE_CURSE_SPWI410~,                     ~BZ@0V05~, ~SPWI410~,  ~1~,  ~1~, ~Cure~,         ~5~ => "Remove Curse"
+        ~STRENGTH_OF_ONE~,                          ~BZ@0W05~, ~SPPR312~,  ~1~,  ~1~, ~Enhancement~,  ~5~ => "Strength of One"
 
 
     END
