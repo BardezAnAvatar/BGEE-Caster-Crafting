@@ -1242,3 +1242,16 @@ Special: Immune to non-magical missile damage
 Duration: 4 hours
 
 Weight: 1~
+
+
+//Wraithform
+@40278 = ~Potion of Wraithform~
+@40279 = ~The imbiber and all of <PRO_HISHER> gear become insubstantial, subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The imbiber also gains 25% resistance to magic damage. While in wraithform, the imbiber cannot cast either arcane or divine spells.
+
+STATISTICS:
+
+Magic Resistance: +25%
+Special: Immune to non-magical damage
+Duration: %num_rounds% rounds
+
+Weight: 1~
