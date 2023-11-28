@@ -1047,3 +1047,17 @@ Special: %magnitude% mirror images
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Stinking Cloud
+@40250 = ~Bomb of Stinking Cloud~
+@40251 = ~Upon impact, this bomb releases a billowing mass of nauseous vapors. Any creature caught within the cloud must roll a successful Saving Throw vs. Poison at +2 or be sent reeling and fall down for 1d2 rounds. Those who make successful Saving Throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A Dispel Magic will remove the nausea on a particular character, but if they remain in the cloud, then they are still subject to its effects.
+
+STATISTICS:
+
+Special: fall prone for 1d2 rounds (save vs. Poison at +2 negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+
+Weight: 1~

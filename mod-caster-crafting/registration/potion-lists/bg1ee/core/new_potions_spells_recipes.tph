@@ -61,6 +61,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~RESIST_FEAR_SPWI806~,                      ~BZ@0N01~, ~SPWI210~,  ~2~,  ~5~, ~Enhancement~,  ~4~ => "Resist Fear"
         ~MIRROR_IMAGE~,                             ~BZ@0O03~, ~SPWI212~,  ~2~,  ~1~, ~Defense~,      ~4~ => "Mirror Image"
         ~MIRROR_IMAGE_SPDM106~,                     ~BZ@0O03~, ~SPDM106~,  ~1~,  ~1~, ~Defense~,      ~4~ => "Mirror Image"
+        ~STINKING_CLOUD~,                           ~BZ@0P03~, ~SPWI213~,  ~1~,  ~1~, ~Bomb~,         ~4~ => "Stinking Cloud"
 
 
     END
