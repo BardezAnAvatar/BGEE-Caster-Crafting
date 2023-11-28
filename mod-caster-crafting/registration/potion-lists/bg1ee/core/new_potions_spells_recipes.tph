@@ -83,7 +83,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PROTECTION_FROM_FIRE_SPWI803~,             ~BZ@0U05~, ~SPWI803~, ~14~,  ~3~, ~Defense~,      ~5~ => "Protection From Fire"
         ~REMOVE_CURSE_SPPR307~,                     ~BZ@0V05~, ~SPPR307~,  ~1~,  ~1~, ~Cure~,         ~5~ => "Remove Curse"
         ~REMOVE_CURSE_SPWI410~,                     ~BZ@0V05~, ~SPWI410~,  ~1~,  ~1~, ~Cure~,         ~5~ => "Remove Curse"
-        ~STRENGTH_OF_ONE~,                          ~BZ@0W05~, ~SPPR312~,  ~1~,  ~1~, ~Enhancement~,  ~5~ => "Strength of One"
+        ~STRENGTH_OF_ONE~,                          ~BZ@0W05~, ~SPPR312~,  ~1~,  ~1~, ~Enhancement~,  ~6~ => "Strength of One"
+        ~CURE_MEDIUM_WOUNDS~,                       ~BZ@0X05~, ~SPPR315~,  ~1~,  ~1~, ~Cure~,         ~5~ => "Cure Medium Wounds"
+        ~CURE_MEDIUM_WOUNDS_SPPR507~,               ~BZ@0X05~, ~SPPR507~,  ~1~,  ~2~, ~Cure~,         ~5~ => "Cure Medium Wounds"
+        ~CURE_MEDIUM_WOUNDS_SPPR607~,               ~BZ@0X05~, ~SPP6507~,  ~1~,  ~4~, ~Cure~,         ~5~ => "Cure Medium Wounds"
+        ~CURE_MEDIUM_WOUNDS_SPPR713~,               ~BZ@0X05~, ~SPPR713~,  ~1~,  ~4~, ~Cure~,         ~5~ => "Cure Medium Wounds"
 
 
     END

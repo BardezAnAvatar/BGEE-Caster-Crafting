@@ -1156,3 +1156,14 @@ Strength: 18/75
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Cure Medium Wounds
+@40266 = ~Potion of Medium Healing~
+@40267 = ~When wholly consumed, this potion restores 14 Hit Points to the imbiber. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 14 Hit Points.
+
+Weight: 1~

@@ -50,6 +50,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0U05~, ~@40260~, ~@40261~, ~SPWI319~,  ~1~,  ~5~, ~protection-from-fire.BAM~                        ~BZ@0U05I~, ~BZPN008D~, ~~      => "Protection From Fire"
         ~BZ@0V05~, ~@40262~, ~@40263~, ~SPPR307~,  ~1~,  ~5~, ~remove-curse.BAM~                                ~BZ@0V05I~, ~BZPN070D~, ~~      => "Remove Curse"
         ~BZ@0W05~, ~@40264~, ~@40265~, ~SPPR312~,  ~1~,  ~6~, ~strength-of-one.BAM~                             ~BZ@0W05I~, ~BZPN080D~, ~~      => "Strength of One"
+        ~BZ@0X05~, ~@40266~, ~@40267~, ~SPPR315~,  ~1~,  ~5~, ~cure-medium-wounds.BAM~                          ~BZ@0X05I~, ~BZPN080D~, ~~      => "Cure Medium Wounds"
 
 
 
