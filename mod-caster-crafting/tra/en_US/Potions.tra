@@ -1316,3 +1316,15 @@ Special: Immune to death magic
 Duration: %num_turns turns (%num_rounds% rounds)
 
 Weight: 1~
+
+
+//Holy Power
+@40290 = ~Potion of Holy Power~
+@40291 = ~This potion gives the imbiber the strength and skill of a Fighter of level %magnitude%. The imbiber's Strength score is set to 18/00 —even if it is normally higher— <PRO_HISHER> THAC0 becomes that of a Fighter and <PRO_HESHE> gains %magnitude% temporary Hit Points. This will last for the duration of the spell or until dispelled.
+
+Strength: 18/00
+THAC0: +%magnitude2% bonus
+HP: +%magnitude% temporary hit points
+Duration: %num_rounds% rounds
+
+Weight: 1~
