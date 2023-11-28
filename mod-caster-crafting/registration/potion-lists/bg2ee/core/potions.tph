@@ -86,6 +86,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN13-0~,    ~POTN14~, ~0~,  ~SPWI305~,                   ~1~, ~0~, ~6~,  ~Enhancement~ => ~POTN13~   //Oil of Speed;                           `Haste` Wizard Spell
 
         ~POTN17-0~,    ~POTN17~, ~0~,  ~SPPR317,SPPR203~,           ~1~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Cure Disease` and `Cure Medium Wounds` Priest Spells
+        ~POTN17-P404~, ~POTN17~, ~0~,  ~SPPR404~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Neutralize Poison` Priest spell
         ~POTN17-1~,    ~POTN17~, ~0~,  ~SPPR607~,                   ~3~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Heal` Priest spell
         ~POTN17-2~,    ~POTN17~, ~0~,  ~SPPR713~,                   ~4~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Greater Restoration` Priest spell
 

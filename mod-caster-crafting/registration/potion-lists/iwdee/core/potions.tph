@@ -87,6 +87,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN13-0~,    ~POTN14~,   ~0~,  ~SPWI305~,                   ~1~, ~0~, ~6~,  ~Enhancement~ => ~POTN13~   //Oil of Speed;                           `Haste` Wizard Spell
 
         ~POTN17-0~,    ~POTN17~,   ~0~,  ~SPPR317,SPPR203~,           ~1~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Cure Disease` and `Cure Medium Wounds` Priest Spells
+        ~POTN17-P404~, ~POTN17~,   ~0~,  ~SPPR404~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Neutralize Poison` Priest spell
         ~POTN17-1~,    ~POTN17~,   ~0~,  ~SPPR607~,                   ~3~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Heal` Priest spell
         ~POTN17-2~,    ~POTN17~,   ~0~,  ~SPPR713~,                   ~4~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Greater Restoration` Priest spell
 
@@ -190,10 +191,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 //IWD specifics
         ~ADISEASE-0~,  ~ADISEASE~, ~0~,  ~SPPR317~,                   ~1~, ~0~, ~12~, ~Cure~        => ~ADISEASE~ //Mummy's Tea;                            `Curse Disease` Priest Spell
-        ~ADISEASE-1~,  ~ADISEASE~, ~0~,  ~SPPR607~,                   ~2~, ~0~, ~12~, ~Cure~        => ~ADISEASE~ //Mummy's Tea;                            `Heal` Priest Spell
+        ~ADISEASE-1~,  ~ADISEASE~, ~0~,  ~SPPR607~,                   ~3~, ~0~, ~12~, ~Cure~        => ~ADISEASE~ //Mummy's Tea;                            `Heal` Priest Spell
         ~ADISEASE-2~,  ~ADISEASE~, ~0~,  ~SPPR713~,                   ~4~, ~0~, ~12~, ~Cure~        => ~ADISEASE~ //Mummy's Tea;                            `Greater Restoration` Priest Spell
+        ~ADISEASE-4~,  ~ADISEASE~, ~0~,  ~SPPR404~,                   ~2~, ~0~,  ~4~, ~Cure~        => ~ADISEASE~ //Mummy's Tea;                            `Neutralize Poison` Priest spell
 
-        ~FLAMOIL-0~,   ~FLAMOIL~,  ~0~,  ~SPWI103~,                   ~1~, ~0~, ~6~,  ~Bomb~        => ~FLAMOIL~  //Flaming Oil;                            `Burning Hands` Wizard Spell
+        ~FLAMOIL-0~,   ~FLAMOIL~,  ~0~,  ~SPWI103~,                   ~1~, ~0~,  ~6~, ~Bomb~        => ~FLAMOIL~  //Flaming Oil;                            `Burning Hands` Wizard Spell
 
         ~CHANCE-0~,    ~CHANCE~,   ~0~,  ~SPPR101,SPPR307,SPWI209~,   ~1~, ~0~, ~24~  ~Enhancement~ => ~CHANCE~   //Oil of Second Chances;                  `Bless` and `Remove Curse` Priest Spells and `Luck` Wizard Spell
         ~CHANCE-1~,    ~CHANCE~,   ~0~,  ~SPPR101,SPWI410,SPWI209~,   ~1~, ~0~, ~24~  ~Enhancement~ => ~CHANCE~   //Oil of Second Chances;                  `Bless` Priest Spell and `Luck` and `Remove Curse`  Wizard Spell
@@ -205,13 +207,13 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~EXTHEAL-2~,   ~EXTHEAL~,  ~0~,  ~SPPR607~,                   ~3~, ~0~, ~6~,  ~Cure~        => ~EXTHEAL~  //Potion of Extra Healing;                `Heal` Priest Spell
         ~EXTHEAL-3~,   ~EXTHEAL~,  ~0~,  ~SPPR713~,                   ~4~, ~0~, ~6~,  ~Cure~        => ~EXTHEAL~  //Potion of Extra Healing;                `Greater Restoration` Priest Spell
 
-        ~PNULL-0~,     ~PNULL~,    ~0~,  ~SPPR303~,                   ~1~, ~0~, ~6~,  ~Cure~         => ~PNULL~    //Oil of Null Effect;                     `Dispel Magic` Priest Spell
-        ~PNULL-1~,     ~PNULL~,    ~0~,  ~SPWI323~,                   ~1~, ~0~, ~6~,  ~Cure~         => ~PNULL~    //Oil of Null Effect;                     `Dispel Magic` Wizard Spell
+        ~PNULL-0~,     ~PNULL~,    ~0~,  ~SPPR303~,                   ~1~, ~0~, ~6~,  ~Cure~         => ~PNULL~   //Oil of Null Effect;                     `Dispel Magic` Priest Spell
+        ~PNULL-1~,     ~PNULL~,    ~0~,  ~SPWI323~,                   ~1~, ~0~, ~6~,  ~Cure~         => ~PNULL~   //Oil of Null Effect;                     `Dispel Magic` Wizard Spell
 
-        ~SERPSCA-0~,   ~SERPSCA~,  ~0~,  ~SPPR202~,                   ~1~, ~0~, ~10~, ~Defense~      => ~SERPSCA~  //Oil of the Serpent's Scales;            `Barkskin` Priest Spell
-        ~SERPSCA-1~,   ~SERPSCA~,  ~0~,  ~SPWI102~,                   ~1~, ~0~, ~10~, ~Defense~      => ~SERPSCA~  //Oil of the Serpent's Scales;            `Armor` Wizard Spell
-        ~SERPSCA-2~,   ~SERPSCA~,  ~0~,  ~SPWI317~,                   ~1~, ~0~, ~10~, ~Defense~      => ~SERPSCA~  //Oil of the Serpent's Scales;            `Ghost Armor` Wizard Spell
-        ~SERPSCA-3~,   ~SERPSCA~,  ~0~,  ~SPWI414~,                   ~2~, ~0~, ~10~, ~Defense~      => ~SERPSCA~  //Oil of the Serpent's Scales;            `Spirit Armor` Wizard Spell
+        ~SERPSCA-0~,   ~SERPSCA~,  ~0~,  ~SPPR202~,                   ~1~, ~0~, ~10~, ~Defense~      => ~SERPSCA~ //Oil of the Serpent's Scales;            `Barkskin` Priest Spell
+        ~SERPSCA-1~,   ~SERPSCA~,  ~0~,  ~SPWI102~,                   ~1~, ~0~, ~10~, ~Defense~      => ~SERPSCA~ //Oil of the Serpent's Scales;            `Armor` Wizard Spell
+        ~SERPSCA-2~,   ~SERPSCA~,  ~0~,  ~SPWI317~,                   ~1~, ~0~, ~10~, ~Defense~      => ~SERPSCA~ //Oil of the Serpent's Scales;            `Ghost Armor` Wizard Spell
+        ~SERPSCA-3~,   ~SERPSCA~,  ~0~,  ~SPWI414~,                   ~2~, ~0~, ~10~, ~Defense~      => ~SERPSCA~ //Oil of the Serpent's Scales;            `Spirit Armor` Wizard Spell
 
         ~SPIRIT-0~,    ~SPIRIT~,   ~0~,  ~SPPR502~,                   ~1~, ~0~, ~6~,  ~Cure~         => ~SPIRIT~  //Potion of Extra Healing;                 `Cure Critical Wounds` Priest Spell
         ~SPIRIT-1~,    ~SPIRIT~,   ~0~,  ~SPPR607~,                   ~3~, ~0~, ~6~,  ~Cure~         => ~SPIRIT~  //Potion of Extra Healing;                 `Heal` Priest Spell
