@@ -1075,3 +1075,17 @@ Strength: 18/+50
 Duration: %num_turns% turns (%num_rounds% rounds)
 
 Weight: 1~
+
+
+//Web
+@40254 = ~Web Bomb~
+@40255 = ~This bomb impacts, releasing web-like substance covering a maximum area of about 15 ft. in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Anyone in the area must roll a Saving Throw vs. Spell with a -2 penalty. If the Saving Throw is successful, then the creature is free to move out of the area. A failed Saving Throw means the creature is stuck in the webs unable to move. Each round that a creature remains in the web, it must make a Saving Throw or be unable to move.
+
+STATISTICS:
+
+Special: Held (save vs. Spell at -2 negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+
+Weight: 1~

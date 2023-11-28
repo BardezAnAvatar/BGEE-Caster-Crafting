@@ -67,6 +67,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~STRENGTH_SPPR507~,                         ~BZ@0Q03~, ~STPR507~,  ~9~,  ~2~, ~Enhancement~,  ~4~ => "Strength"
         ~STRENGTH_SPPR513~,                         ~BZ@0Q03~, ~STPR513~,  ~9~,  ~2~, ~Enhancement~,  ~4~ => "Strength"
         ~STRENGTH_SPWI820~,                         ~BZ@0Q03~, ~SPWI820~, ~16~,  ~3~, ~Enhancement~,  ~4~ => "Strength"
+        ~WEB~,                                      ~BZ@0R03~, ~SPWI215~,  ~1~,  ~1~, ~Bomb~,         ~4~ => "Web"
 
 
     END
