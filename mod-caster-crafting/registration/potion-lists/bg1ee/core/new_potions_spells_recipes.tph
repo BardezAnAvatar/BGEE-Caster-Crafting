@@ -94,6 +94,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CURE_DISEASE_BHAAL1A~,                     ~BZ@0Y05~, ~BHAAL1A~,  ~1~,  ~2~, ~Cure~,         ~6~ => "Cure Disease"
         ~CURE_DISEASE_SPPR404~,                     ~BZ@0Y05~, ~SPPR404~,  ~1~,  ~2~, ~Cure~,         ~6~ => "Cure Disease"
         ~ZONE_OF_SWEET_AIR~,                        ~BZ@0Z05~, ~SPPR318~,  ~1~,  ~1~, ~Cure~,         ~7~ => "Zone of Sweet Air"
+//oil of fiery burning, really, until levels implemented
+      //~FIREBALL~,                                 ~BZ@1005~, ~SPWI304~,  ~1~,  ~1~, ~Bomb~,         ~6~ => "Fireball"
+      //~FIREBALL_SPWI712~,                         ~BZ@1005~, ~SPWI712~,  ~1~,  ~5~, ~Bomb~,         ~6~ => "Fireball"
+      //~FIREBALL_SPWI922~,                         ~BZ@1005~, ~SPWI712~,  ~1~, ~10~, ~Bomb~,         ~6~ => "Fireball"
 
 
     END

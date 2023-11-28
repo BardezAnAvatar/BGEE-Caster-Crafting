@@ -1204,3 +1204,17 @@ Special: Removes cloud vapor effects.
 Duration: Instant
 
 Weight: 1~
+
+
+//Fireball
+@40272 = ~Fire Bomb~
+@40273 = ~This bomb blossoms into a fireball upon impact, dealing %magnitude%d6 damage to those in the blast radius. Creatures who roll successful Saving Throws manage to dodge, fall flat, or roll aside the blast, each receiving only half damage.
+
+STATISTICS:
+
+Damage: %magnitide%d6 (Save vs. Spell for half)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: Instant
+
+Weight: 1~

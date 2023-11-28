@@ -53,6 +53,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0X05~, ~@40266~, ~@40267~, ~SPPR315~,  ~1~,  ~5~, ~cure-medium-wounds.BAM~                          ~BZ@0X05I~, ~BZPN080D~, ~~      => "Cure Medium Wounds"
         ~BZ@0Y05~, ~@40268~, ~@40269~, ~SPPR317~,  ~1~,  ~6~, ~cure-disease.BAM~                                ~BZ@0Y05I~, ~BZPN001D~, ~~      => "Cure Disease"
         ~BZ@0Z05~, ~@40270~, ~@40271~, ~SPPR318~,  ~1~,  ~7~, ~zone-of-sweet-air.BAM~                           ~BZ@0Z05I~, ~BZPN026D~, ~~      => "Zone of Sweet Air"
+//oil of fiery burning, really, until levels implemented
+        ~BZ@1001~, ~@40272~, ~@40273~, ~SPWI304~,  ~1~,  ~6~, ~fireball.BAM~,                                   ~BZ@1001I~, ~BZPN100D~, ~~      => "Fireball"
 
 
 
