@@ -31,6 +31,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~GEDLEE'S_ELECTRIC_BARRIER~,                ~BZ@OJ09~, ~MEWI566~,  ~9~,  ~1~, ~Defense~,      ~9~ => "Gedlee's Electric Barrier"
         ~ARMOR_SPWI414~,                            ~BZ@0601~, ~MEPR457~,  ~1~,  ~3~, ~Defense~,      ~2~ => "Armor"
         ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ@0T05~, ~MEPR553~,  ~1~,  ~2~, ~Defense~,      ~5~ => "Protection From Fire"
+        ~SPIRIT_ARMOR_MEPR457~,                     ~BZ@1K07~, ~MEPR457~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Spirit Armor"
 
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,        ~BZ@OL11~, ~MEPR656~, ~11~,  ~1~, ~Defense~,     ~14~ => "Protection From Non-Silver Weapons"
 

@@ -75,7 +75,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1H07~, ~@40306~, ~@40307~, ~SPWI408~,  ~1~,  ~8~, ~stoneskin.BAM~                                   ~BZ@1H07I~, ~BZPN032D~, ~~      => "Stoneskin"
         ~BZ@1I07~, ~@40308~, ~@40309~, ~SPWI412~,  ~1~,  ~8~, ~greater-malison.BAM~                             ~BZ@1I07I~, ~BZPN100D~, ~~      => "Greater Malison"
         ~BZ@1J07~, ~@40310~, ~@40311~, ~SPWI413~,  ~1~,  ~8~, ~otiluke's-resilient-sphere.BAM~                  ~BZ@1J07I~, ~BZPN058D~, ~~      => "Otiluke's Resilient Sphere"
-
+        ~BZ@1K07~, ~@40312~, ~@40313~, ~SPWI414~,  ~1~,  ~7~, ~spirit-armor.BAM~                                ~BZ@1K07I~, ~BZPN070D~, ~~      => "Spirit Armor"
 
 
     END
