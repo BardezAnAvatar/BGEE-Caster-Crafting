@@ -1304,3 +1304,15 @@ Special: Immune to holding effects or changes to movement rate
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Death Ward
+@40288 = ~Draught of Death Ward~
+@40289 = ~This potion protects the imbiber from all forms of death magic for the duration of the spell. This includes, but is not limited to: Disintegrate; Power Word, Kill; Death Spell; and Finger of Death.
+
+STATISTICS:
+
+Special: Immune to death magic
+Duration: %num_turns turns (%num_rounds% rounds)
+
+Weight: 1~

@@ -63,6 +63,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ@1607~, ~@40284~, ~@40285~, ~SPPR401~,  ~1~,  ~7~, ~cure-serious-wounds.BAM~                         ~BZ@1607I~, ~BZPN032D~, ~~      => "Cure Serious Wounds"
         ~BZ@1707~, ~@40286~, ~@40287~, ~SPPR403~,  ~1~,  ~8~, ~free-action.BAM~                                 ~BZ@1707I~, ~BZPN001D~, ~~      => "Free Action"
+        ~BZ@1807~, ~@40286~, ~@40287~, ~SPPR409~,  ~1~,  ~7~, ~death-ward.BAM~                                  ~BZ@1807I~, ~BZPN040D~, ~~      => "Death Ward"
 
 
 
