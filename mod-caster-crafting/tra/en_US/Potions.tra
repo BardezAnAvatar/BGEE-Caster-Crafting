@@ -1165,6 +1165,7 @@ Weight: 1~
 STATISTICS:
 
 Special: Restores 14 Hit Points.
+Duration: Instant
 
 Weight: 1~
 
@@ -1176,5 +1177,18 @@ Weight: 1~
 STATISTICS:
 
 Special: Removes disease, blindness, deafness, and feeblemindedness.
+Duration: Instant
+
+Weight: 1~
+
+
+//Zone of Sweet Air
+@40270 = ~Bottled Sweet Air~
+@40271 = ~When unstoppered, this potion repels all noxious elements from poisonous vapors (including magically created vapors such as Cloudkill). This spell will dismiss all clouds in the entire area that the activator is currently in.
+
+STATISTICS:
+
+Special: Removes cloud vapor effects.
+Duration: Instant
 
 Weight: 1~
