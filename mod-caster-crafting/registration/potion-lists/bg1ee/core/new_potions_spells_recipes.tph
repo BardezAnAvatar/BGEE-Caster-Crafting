@@ -124,5 +124,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~STONESKIN~,                                ~BZ@1H07~, ~SPWI408~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Stoneskin"
         ~STONESKIN_SPPR506~,                        ~BZ@1H07~, ~SPPR506~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Stoneskin"
         ~GREATER_MALISON~,                          ~BZ@1I07~, ~SPWI412~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Greater Malison"
+        ~OTILUKE'S_RESILIENT_SPHERE~,               ~BZ@1J07~, ~SPWI413~,  ~1~,  ~1~, ~Bomb~,         ~8~ => "Otiluke's Resilient Sphere"
 
     END
