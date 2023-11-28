@@ -53,6 +53,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~DETECT_INVISIBILITY~,                      ~BZ@0K03~, ~SPWI203~,  ~2~,  ~1~, ~Enhancement~,  ~3~ => "Detect Invisibility"
         ~DETECT_INVISIBILITY_SPPR505~,              ~BZ@0K03~, ~SPPR505~,  ~2~,  ~3~, ~Enhancement~,  ~3~ => "Detect Invisibility"
         ~DETECT_INVISIBILITY_SPWI609~,              ~BZ@0K03~, ~SPWI609~,  ~2~,  ~3~, ~Enhancement~,  ~3~ => "Detect Invisibility"
+        ~KNOCK~,                                    ~BZ@0L03~, ~SPWI207~,  ~2~,  ~1~, ~Bomb~,         ~4~ => "Knock"
 
 
     END

@@ -36,6 +36,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0I03~, ~@40236~, ~@40237~, ~SPPR250~,  ~1~,  ~5~, ~writhing-fog.BAM~,                               ~BZ@0I03I~, ~BZPN013D~, ~~      => "Writhing Fog"
         ~BZ@0J03~, ~@40238~, ~@40239~, ~SPWI201~,  ~1~,  ~4~, ~blur.BAM~,                                       ~BZ@0J03I~, ~BZPN040D~, ~~      => "Blur"
         ~BZ@0K03~, ~@40240~, ~@40241~, ~SPWI203~,  ~1~,  ~3~, ~detect-invisibility.BAM~,                        ~BZ@0K03I~, ~BZPN058D~, ~~      => "Detect Invisibility"
+        ~BZ@0L03~, ~@40242~, ~@40243~, ~SPWI207~,  ~1~,  ~4~, ~knock.BAM~,                                      ~BZ@0L03I~, ~BZPN070D~, ~~      => "Knock"
 
 
     END

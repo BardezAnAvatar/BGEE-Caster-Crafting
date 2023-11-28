@@ -987,3 +987,15 @@ Special: Imbiber sees invisibility clearly
 Duration: 4 turns (40 rounds)
 
 Weight: 1~
+
+
+//Knock
+@40242 = ~Oil of Knock~
+@40243 = ~When applied, this oil opens locked, held, or wizard-locked doors. It opens secret doors as well as locked boxes or chests. It does not raise barred gates or similar impediments.
+
+STATISTICS:
+
+Special: Unlocks any single lock
+Duration: Instant
+
+Weight: 1~
