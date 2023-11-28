@@ -1132,3 +1132,15 @@ Magical fire resistance: +50%
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Remove Curse
+@40262 = ~Draught of Remove Curse~
+@40263 = ~This potion is usually able to remove a curse on a person. Note that this potion does not remove the curse from a cursed shield, weapon, or suit of armor, although it typically enables the person afflicted with any such cursed item to get rid of it.
+
+STATISTICS:
+
+Special: Remove curse on imbiber
+Duration: Instant
+
+Weight: 1~
