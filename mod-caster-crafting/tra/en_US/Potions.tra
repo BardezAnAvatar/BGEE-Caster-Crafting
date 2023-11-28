@@ -962,3 +962,16 @@ Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Blur
+@40238 = ~Oil of Blur~
+@40239 = ~When applied, this oil causes the outline of the applicant's form to become blurred, shifting, and wavering. This distortion causes all missile and melee attacks against the applicant to be made with a -3 penalty. The applicant also gains a +1 bonus to all of <PRO_HISHER> Saving Throws.
+
+STATISTICS:
+
+AC: +3 bonus
+Saving Throws: +1 bonus
+Duration: %num_rounds% rounds
+
+Weight: 1~
