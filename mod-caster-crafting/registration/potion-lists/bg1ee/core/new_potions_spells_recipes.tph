@@ -114,5 +114,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~HOLY_POWER~,                               ~BZ@1907~, ~SPPR412~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Holy Power"
         ~NEGATIVE_PLANE_PROTECTION~,                ~BZ@1A07~, ~SPPR413~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Negative Plane Protection"
         ~CLOAK_OF_FEAR~,                            ~BZ@1B07~, ~SPPR416~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Cloak of Fear"
+        ~LESSER_RESTORATION~,                       ~BZ@1C07~, ~SPPR417~,  ~1~,  ~1~, ~Cure~,         ~7~ => "Lesser Restoration"
+        ~LESSER_RESTORATION_SPPR713~,               ~BZ@1C07~, ~SPPR713~,  ~1~,  ~2~, ~Cure~,         ~7~ => "Lesser Restoration"
 
     END

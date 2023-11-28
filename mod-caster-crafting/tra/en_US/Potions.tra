@@ -1350,3 +1350,17 @@ Special: nearby creatures flee in panic (save vs. Spell negates)
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Lesser Restoration
+@40296 = ~Potion of Lesser Restoration~
+@40297 = ~This potion causes the life energy level of the imbiber to raise. This reverses any previous level drain of the creature by a force or monster.
+
+The effects of the potion are very draining, as it will cause a day's worth of fatigue almost instantaneously.
+
+STATISTICS:
+
+Special: Removes level drain; causes fatigue
+Duration: Instant
+
+Weight: 1~
