@@ -68,6 +68,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1A07~, ~@40292~, ~@40293~, ~SPPR413~,  ~1~,  ~7~, ~negative-plane-protection.BAM~                   ~BZ@1A07I~, ~BZPN070D~, ~~      => "Negative Plane Protection"
         ~BZ@1B07~, ~@40294~, ~@40295~, ~SPPR416~,  ~1~,  ~8~, ~cloak-of-fear.BAM~                               ~BZ@1B07I~, ~BZPN080D~, ~~      => "Cloak of Fear"
         ~BZ@1C07~, ~@40296~, ~@40297~, ~SPPR417~,  ~1~,  ~7~, ~lesser-restoration.BAM~                          ~BZ@1C07I~, ~BZPN049D~, ~~      => "Lesser Restoration"
+        ~BZ@1D07~, ~@40298~, ~@40299~, ~SPPR450~,  ~1~,  ~7~, ~spirit-fire.BAM~                                 ~BZ@1D07I~, ~BZPN013D~, ~~      => "Spirit Fire"
 
 
 

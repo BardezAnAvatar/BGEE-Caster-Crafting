@@ -1364,3 +1364,17 @@ Special: Removes level drain; causes fatigue
 Duration: Instant
 
 Weight: 1~
+
+
+//Spirit Fire
+@40298 = ~Bomb of Spirit Fire~
+@40299 = ~This bomb causes spirit world energies to form; it explodes into a burst of ghostly, azure flames, which deliver %magnitude%d4 points of magic damage. There is also a 33% chance that every enemy within the area of effect will be afflicted by the Doom spell (-2 penalty to Saving Throws and attack rolls for 1 turn). A successful Save vs. Spell halves the damage and negates the Doom effect. Spirits, fey creatures, elementals, and spectral undead take double damage.
+
+STATISTICS:
+
+Damage: %magnitide%d4 magic (Save vs. Spell for half); 33% chance of Doom (-2 attack roll and saving throw penalty for 1 turn)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: Instant
+
+Weight: 1~
