@@ -129,4 +129,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~ENCHANTED_WEAPON~,                         ~BZ@1L07~, ~SPWI417~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Enchanted Weapon"
         ~FIRE_SHIELD_RED~,                          ~BZ@1M07~, ~SPWI418~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Fireshield (Red)"
 
+        ~TRUE_SIGHT~,                               ~BZ@1N09~, ~SPPR505~,  ~1~,  ~1~, ~Enhancement~, ~10~ => "True Sight"
+        ~TRUE_SIGHT_SPWI609~,                       ~BZ@1N09~, ~SPWI609~,  ~1~,  ~1~, ~Enhancement~, ~10~ => "True Sight"
+
+
     END

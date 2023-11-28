@@ -79,5 +79,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1L07~, ~@40314~, ~@40315~, ~SPWI417~,  ~1~,  ~8~, ~enchanted-weapon.BAM~                            ~BZ@1L07I~, ~BZPN040D~, ~~      => "Enchanted Weapon"
         ~BZ@1M07~, ~@40316~, ~@40317~, ~SPWI418~,  ~1~,  ~8~, ~fire-shield-red.BAM~                             ~BZ@1M07I~, ~BZPN040D~, ~~      => "Fireshield (Red)"
 
+        ~BZ@1N09~, ~@40318~, ~@40319~, ~SPPR505~,  ~1~, ~10~, ~true-sight.BAM~                                  ~BZ@1N09I~, ~BZPN040D~, ~~      => "True Sight"
+
 
     END

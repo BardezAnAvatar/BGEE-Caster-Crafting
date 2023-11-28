@@ -1510,3 +1510,18 @@ Area of Effect: 5-ft. radius
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//True Sight
+@40318 = ~Philter of True Sight~
+@40319 = ~This potion allows the imbiber perfect sight each round within 120 ft.; all hostile Illusion/Phantasm spells in the area of effect will be dispelled.
+
+The spells that are affected by this are Reflected Image, Invisibility, Mirror Image, Non-Detection, Improved Invisibility, Shadow Door, Mislead, Project Image, and Simulacrum. The area of effect is roughly a 120-ft. radius around the imbiber. The target's Magic Resistance, if any, does not come into effect with this spell. This spell only affects enemies; thus, it is unable to dispel the invisibility from a party member.
+
+STATISTICS:
+
+Special: Dispels hostile illusions 1/round
+Area of Effect: 120-ft. radius
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
