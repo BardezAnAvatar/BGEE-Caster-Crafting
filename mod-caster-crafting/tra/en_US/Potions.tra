@@ -1218,3 +1218,15 @@ Area of Effect: 15-ft. radius
 Duration: Instant
 
 Weight: 1~
+
+
+//Non-Detection
+@40274 = ~Potion of Non-Detection~
+@40275 = ~This potion makes the imbiber undetectable by divination spells such as Clairaudience, Clairvoyance, Locate Object, ESP, and detect spells including Invisibility Purge. It also prevents location by such magical items as crystal balls and ESP medallions. It does not affect the Know Alignment spell.
+
+STATISTICS:
+
+Special: Prevents detection via magical divination.
+Duration: 4 hours
+
+Weight: 1~

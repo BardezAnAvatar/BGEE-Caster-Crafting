@@ -55,6 +55,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0Z05~, ~@40270~, ~@40271~, ~SPPR318~,  ~1~,  ~7~, ~zone-of-sweet-air.BAM~                           ~BZ@0Z05I~, ~BZPN026D~, ~~      => "Zone of Sweet Air"
 //oil of fiery burning, really, until levels implemented
         ~BZ@1001~, ~@40272~, ~@40273~, ~SPWI304~,  ~1~,  ~6~, ~fireball.BAM~,                                   ~BZ@1001I~, ~BZPN100D~, ~~      => "Fireball"
+        ~BZ@1101~, ~@40274~, ~@40275~, ~SPWI310~,  ~1~,  ~5~, ~non-detection.BAM~,                              ~BZ@1101I~, ~BZPN090D~, ~~      => "Non-Detection"
 
 
 
