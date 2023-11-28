@@ -1280,3 +1280,15 @@ Magical cold resistance: +50%
 Duration: %num_turns turns (%num_rounds% rounds)
 
 Weight: 1~
+
+
+//Cure Serious Wounds
+@40284 = ~Potion of Modest Healing~
+@40285 = ~When wholly consumed, this potion restores 17 Hit Points to the imbiber. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 17 Hit Points.
+Duration: Instant
+
+Weight: 1~

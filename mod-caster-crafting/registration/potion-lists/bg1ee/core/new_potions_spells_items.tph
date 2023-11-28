@@ -61,6 +61,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1401~, ~@40280~, ~@40281~, ~SPWI317~,  ~1~,  ~5~, ~ghost-armor.BAM~,                                ~BZ@1401I~, ~BZPN058D~, ~~      => "Ghost Armor"
         ~BZ@1501~, ~@40282~, ~@40283~, ~SPWI320~,  ~1~,  ~5~, ~protection-from-cold.BAM~,                       ~BZ@1501I~, ~BZPN100D~, ~~      => "Protection From Cold"
 
+        ~BZ@1601~, ~@40284~, ~@40285~, ~SPPR401~,  ~1~,  ~7~, ~cure-serious-wounds.BAM~                         ~BZ@1605I~, ~BZPN032D~, ~~      => "Cure Serious Wounds"
+
 
 
     END

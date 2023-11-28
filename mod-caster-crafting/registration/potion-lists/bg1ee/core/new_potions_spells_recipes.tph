@@ -105,4 +105,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~GHOST_ARMOR_SPWI414~,                      ~BZ@1405~, ~SPWI414~,  ~1~,  ~2~, ~Defense~,      ~6~ => "Ghost Armor"
         ~PROTECTION_FROM_COLD~,                     ~BZ@1505~, ~SPWI320~,  ~1~,  ~1~, ~Defense~,      ~6~ => "Protection From Cold"
 
+        ~CURE_SERIOUS_WOUNDS~,                      ~BZ@1607~, ~SPPR401~,  ~1~,  ~1~, ~Cure~,         ~7~ => "Cure Serious Wounds"
+        ~CURE_SERIOUS_WOUNDS_SPPR507~,              ~BZ@1607~, ~SPPR507~,  ~1~,  ~2~, ~Cure~,         ~7~ => "Cure Serious Wounds"
+        ~CURE_SERIOUS_WOUNDS_SPPR607~,              ~BZ@1607~, ~SPP6507~,  ~1~,  ~3~, ~Cure~,         ~7~ => "Cure Serious Wounds"
+        ~CURE_SERIOUS_WOUNDS_SPPR713~,              ~BZ@1607~, ~SPPR713~,  ~1~,  ~3~, ~Cure~,         ~7~ => "Cure Serious Wounds"
+
     END
