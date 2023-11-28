@@ -41,6 +41,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@0N01~, ~@40246~, ~@40247~, ~SPWI210~,  ~1~,  ~4~, ~resist-fear.BAM~,                                ~BZ@0N01I~, ~BZPN110D~, ~~      => "Resist Fear"
         ~BZ@0O03~, ~@40248~, ~@40249~, ~SPWI212~,  ~1~,  ~4~, ~mirror-image.BAM~,                               ~BZ@0O03I~, ~BZPN110D~, ~~      => "Mirror Image"
         ~BZ@0P03~, ~@40250~, ~@40251~, ~SPWI213~,  ~1~,  ~4~, ~stinking-cloud.BAM~                              ~BZ@0P03I~, ~BZPN090D~, ~~      => "Stinking Cloud"
+        ~BZ@0Q03~, ~@40252~, ~@40253~, ~SPWI214~,  ~1~,  ~4~, ~strength.BAM~                                    ~BZ@0Q03I~, ~BZPN110D~, ~~      => "Strength"
 
 
     END

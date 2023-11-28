@@ -1061,3 +1061,17 @@ Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Strength
+@40252 = ~Potion of Strength~
+@40253 = ~This potion sets the Strength of the imbiber to 18 and then adds a +50% bonus on top of this. The imbiber receives any strength bonuses appropriate.
+
+For example, if a character has between 18/50 and 18/00 Strength, then <PRO_HISHER> Strength will just be set to 18/00. If a character has a Strength between 18/01 and 18/50, then <PRO_HISHER> Strength will become 18/50 + original percentage. If <PRO_HISHER> Strength is less than 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.
+
+STATISTICS:
+
+Strength: 18/+50
+Duration: %num_turns% turns (%num_rounds% rounds)
+
+Weight: 1~
