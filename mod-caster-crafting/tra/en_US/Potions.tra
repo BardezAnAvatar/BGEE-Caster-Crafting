@@ -999,3 +999,27 @@ Special: Unlocks any single lock
 Duration: Instant
 
 Weight: 1~
+
+
+//Luck
+@40244 = ~Potion of Luck~
+@40245 = ~The imbiber gains extraordinary luck for the next 3 rounds, receiving a +1 bonus to <PRO_HISHER> Saving Throws, attack rolls, and minimum damage/healing rolls as well as +5% to all thieving skills. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1.
+
+For example, a 6d6 fireball will do 6d5 damage, and a flaming long sword that deals 1d8+2 slashing plus 1d3 fire damage will deal 1d8+2 slashing plus 1d2 fire damage instead.
+
+STATISTICS:
+
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Saving Throws: +1 bonus
+Find Traps: +5%
+Set Traps: +5%
+Pick Pockets: +5%
+Open Locks: +5%
+Move Silently: +5%
+Hide In Shadows: +5%
+Detect Illusions: +5%
+Special: dice rolled against imbiber (outside a weapon's base damage) are reduced by 1 size
+Duration: 3 rounds
+
+Weight: 1~
