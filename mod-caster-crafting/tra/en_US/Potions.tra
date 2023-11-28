@@ -1322,6 +1322,8 @@ Weight: 1~
 @40290 = ~Potion of Holy Power~
 @40291 = ~This potion gives the imbiber the strength and skill of a Fighter of level %magnitude%. The imbiber's Strength score is set to 18/00 —even if it is normally higher— <PRO_HISHER> THAC0 becomes that of a Fighter and <PRO_HESHE> gains %magnitude% temporary Hit Points. This will last for the duration of the spell or until dispelled.
 
+STATISTICS:
+
 Strength: 18/00
 THAC0: +%magnitude2% bonus
 HP: +%magnitude% temporary hit points
@@ -1336,6 +1338,8 @@ Weight: 1~
 
 A protected creature struck by a negative energy attack is protected against any form of level draining for the duration of the potion's effect. The protected creature suffers only normal Hit Point damage from the attack and does not suffer any drain of experience.
 
+STATISTICS:
+
 Special: Protected from level drain
 Duration: 8 hours
 
@@ -1345,6 +1349,8 @@ Weight: 1~
 //Cloak of Fear
 @40294 = ~Phial of Fear~
 @40295 = ~This potion cloaks the imbiber with an aura of fear in a 5-ft. radius. All creatures that enter the cloak's area of effect must make a Save vs. Spell or flee in panic for 1 round. The aura does not affect undead creatures.
+
+STATISTICS:
 
 Special: nearby creatures flee in panic (save vs. Spell negates)
 Duration: 1 turn (10 rounds)
@@ -1384,6 +1390,8 @@ Weight: 1~
 @40300 = ~Oil of Blue Fireshield~
 @40301 = ~This oil, when poured in a circle, ignites into shield of icy flame which protects the user from cold damage. This shield not only grants the user 50% Cold Resistance, but also protects the applicant from attacks made within a 5-ft. radius around the caster. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 cold damage.
 
+STATISTICS:
+
 Damage: 1d8+2 cold
 Cold Resistance: +50% (mundane or magical)
 Area of Effect: 5-ft. radius
@@ -1397,6 +1405,8 @@ Weight: 1~
 @40303 = ~This potion renders the imbiber invisible. The imbiber is able to attack by missile discharge, melee combat, or spellcasting while remaining unseen. However, telltale traces —a shimmering— allow an observant opponent to attack the invisible spell imbiber. These traces are only noticeable when specifically looked for (after the invisible character has made <PRO_HISHER> presence known). Attacks against the invisible character suffer a -4 penalty to attack rolls, and the invisible character's Saving Throws are made with a +4 bonus.
 
 Note: After making an attack, the imbiber is no longer completely invisible and can be targeted by opponents.
+
+STATISTICS:
 
 Special: Invisible, may attack and remain partially hidden
 
