@@ -933,3 +933,17 @@ Cold resistance: +50% (mundane or magical)
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Draw Upon Holy Might
+@40235 = ~Draught of Draw Upon Holy Might~
+@40236 = ~This potion grants %magnitude_points% of Strength, Constitution, and Dexterity to the imbiber
+
+STATISTICS:
+
+Strength:     +%magnitude% bonus
+Dexterity:    +%magnitude% bonus
+Constitution: +%magnitude% bonus
+Duration: 1 turn (10 rounds)
+
+Weight: 1~

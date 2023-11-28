@@ -45,6 +45,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CHANT~,                                    ~BZ@0E03~, ~SPPR203~,  ~2~,  ~1~, ~Offense~,      ~5~ => "Chant"
         ~FIND_TRAPS~,                               ~BZ@0F03~, ~SPPR205~,  ~2~,  ~1~, ~Offense~,      ~4~ => "Find Traps"
         ~RESIST_FIRE_AND_COLD~,                     ~BZ@0G03~, ~SPPR210~,  ~2~,  ~1~, ~Defense~,      ~5~ => "Resist Fire and Cold"
+        ~DRAW_UPON_HOLY_MIGHT~,                     ~BZ@0H03~, ~SPPR214~,  ~2~,  ~1~, ~Enhancement~,  ~5~ => "Draw Upon Holy Might"
+        ~DRAW_UPON_HOLY_MIGHT_SPIN103~,             ~BZ@0H03~, ~SPIN103~,  ~1~,  ~1~, ~Enhancement~,  ~5~ => "Draw Upon Holy Might"
 
 
     END
