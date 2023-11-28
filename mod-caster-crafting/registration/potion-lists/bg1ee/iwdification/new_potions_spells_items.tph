@@ -25,6 +25,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@I503~, ~@40110~, ~@40111~, ~SPWI225~,  ~1~,  ~3~, ~snilloc's-snowball-swarm.BAM~                    ~BZ@I503I~, ~BZPN013D~, ~~      => "Snilloc's Snowball Swarm"
 
 
+        ~BZ@IN05~, ~@40146~, ~@40147~, ~SPPR320~,  ~1~,  ~5~, ~exaltation.BAM~                                  ~BZ@IN05I~, ~BZPN032D~, ~~      => "Exaltation"
         ~BZ@I605~, ~@40112~, ~@40113~, ~SPPR322~,  ~1~,  ~7~, ~moonblade.BAM~                                   ~BZ@I605I~, ~BZPN058D~, ~~      => "Moonblade"
         ~BZ@I705~, ~@40114~, ~@40115~, ~SPPR325~,  ~1~,  ~6~, ~spike-growth.BAM~                                ~BZ@I705I~, ~BZPN049D~, ~~      => "Spike Growth"
 

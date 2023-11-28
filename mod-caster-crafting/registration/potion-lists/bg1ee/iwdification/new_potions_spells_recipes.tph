@@ -25,6 +25,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~MOONBLADE~,                                ~BZ@I605~, ~SPPR322~,  ~5~,  ~1~, ~Offense~,      ~7~ => "Moonblade"
         ~SPIKE_GROWTH~,                             ~BZ@I705~, ~SPPR325~,  ~5~,  ~1~, ~Offense~,      ~6~ => "Spike Growth"
+        ~EXALTATION~,                               ~BZ@IN05~, ~SPPR320~,  ~5~,  ~1~, ~Defense~,      ~6~ => "Exaltation"
+        ~EXALTATION_SPPR735~,                       ~BZ@IN05~, ~SPPR735~,  ~5~,  ~2~, ~Defense~,      ~6~ => "Exaltation"
 
 
         ~RECITATION~,                               ~BZ@I807~, ~SPPR420~,  ~7~,  ~1~, ~Offense~,      ~8~ => "Recitation"

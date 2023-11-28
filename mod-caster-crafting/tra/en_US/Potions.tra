@@ -697,6 +697,18 @@ Duration: Instant
 Weight: 1~
 
 
+//Exaltation
+@40146 = ~Potion of Exaltation~
+@40147 = ~the recipient is protected against spells and other attacks that cause fear, sleep, feeblemindedness, unconsciousness, intoxication, berserk and confused states of mind effects for the duration.
+
+STATISTICS:
+
+Special: Immune to confusion, fear, sleep, feeblemindedness, unconsciousness, intoxication, berserk, and confusion
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
+
+
 
 
 
