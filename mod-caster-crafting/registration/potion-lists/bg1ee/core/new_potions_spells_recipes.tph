@@ -113,5 +113,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~DEATH_WARD~,                               ~BZ@1807~, ~SPPR409~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Death Ward"
         ~HOLY_POWER~,                               ~BZ@1907~, ~SPPR412~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Holy Power"
         ~NEGATIVE_PLANE_PROTECTION~,                ~BZ@1A07~, ~SPPR413~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Negative Plane Protection"
+        ~CLOAK_OF_FEAR~,                            ~BZ@1B07~, ~SPPR416~,  ~1~,  ~1~, ~Offense~,      ~8~ => "Cloak of Fear"
 
     END

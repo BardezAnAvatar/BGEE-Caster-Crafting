@@ -66,6 +66,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1807~, ~@40288~, ~@40289~, ~SPPR409~,  ~1~,  ~7~, ~death-ward.BAM~                                  ~BZ@1807I~, ~BZPN040D~, ~~      => "Death Ward"
         ~BZ@1907~, ~@40290~, ~@40291~, ~SPPR412~,  ~1~,  ~8~, ~holy-power.BAM~                                  ~BZ@1907I~, ~BZPN049D~, ~~      => "Holy Power"
         ~BZ@1A07~, ~@40292~, ~@40293~, ~SPPR413~,  ~1~,  ~7~, ~negative-plane-protection.BAM~                   ~BZ@1A07I~, ~BZPN070D~, ~~      => "Negative Plane Protection"
+        ~BZ@1B07~, ~@40294~, ~@40295~, ~SPPR416~,  ~1~,  ~8~, ~cloak-of-fear.BAM~                               ~BZ@1B07I~, ~BZPN080D~, ~~      => "Cloak of Fear"
 
 
 

@@ -1340,3 +1340,13 @@ Special: Protected from level drain
 Duration: 8 hours
 
 Weight: 1~
+
+
+//Cloak of Fear
+@40294 = ~Phial of Fear~
+@40295 = ~This potion cloaks the imbiber with an aura of fear in a 5-ft. radius. All creatures that enter the cloak's area of effect must make a Save vs. Spell or flee in panic for 1 round. The aura does not affect undead creatures.
+
+Special: nearby creatures flee in panic (save vs. Spell negates)
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
