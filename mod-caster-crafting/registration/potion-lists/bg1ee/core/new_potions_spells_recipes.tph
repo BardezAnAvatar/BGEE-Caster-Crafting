@@ -168,5 +168,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPELL_DEFLECTION~,                         ~BZ@2F12~, ~SPWI618~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Spell Deflection"
         ~SPELL_DEFLECTION_SPPR701~,                 ~BZ@2F12~, ~SPPR701~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Spell Deflection"
 
+        ~NATURE'S_BEAUTY~,                          ~BZ@2G14~, ~SPPR704~,  ~1~,  ~1~, ~Enhancement~, ~14~ => "Nature's Beauty"
+
 
     END
