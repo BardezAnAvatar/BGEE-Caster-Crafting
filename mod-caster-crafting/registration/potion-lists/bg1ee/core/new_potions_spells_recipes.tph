@@ -181,5 +181,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPELL_TRAP~,                               ~BZ@2N18~, ~SPWI902~,  ~1~,  ~1~, ~Defense~,     ~18~ => "Spell Trap"
         ~ABSOLUTE_IMMUNITY~,                        ~BZ@2O18~, ~SPWI907~,  ~1~,  ~1~, ~Defense~,     ~20~ => "Absolute Immunity"
 
+        ~IMPROVED_ALACRITY~,                        ~BZ@2P18~, ~SPWI921~,  ~1~,  ~1~, ~Enhancement~, ~20~ => "Improved Alacrity"
+
 
     END

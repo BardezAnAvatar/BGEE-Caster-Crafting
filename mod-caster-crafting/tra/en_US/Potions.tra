@@ -2038,3 +2038,15 @@ Special: Immunity to weapons of +5 or lower enchantment
 Duration: 5 rounds
 
 Weight: 1~
+
+
+//Improved Alacrity
+@40394 = ~Philter of Improved Alacrity~
+@40395 = ~This concotion essentially erases the pause between casting spells. When cast, the imbiber can begin casting a new spell the instant <PRO_HESHE> is finished casting <PRO_HISHER> current spell. The effect lasts for 2 rounds.
+
+STATISTICS:
+
+Special: Cleansed spellcasting aura for the duration
+Duration: 2 rounds
+
+Weight: 1~

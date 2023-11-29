@@ -122,5 +122,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2N18~, ~@40390~, ~@40391~, ~SPWI902~,  ~1~, ~18~, ~spell-trap.BAM~,                                 ~BZ@2N18I~, ~BZPN080D~, ~~      => "Spell Trap"
         ~BZ@2O18~, ~@40392~, ~@40393~, ~SPWI907~,  ~1~, ~20~, ~absolute-immunity.BAM~,                          ~BZ@2O18I~, ~BZPN070D~, ~~      => "Absolute Immunity"
 
+        ~BZ@2P18~, ~@40394~, ~@40395~, ~SPWI921~,  ~1~, ~20~, ~improved-alacrity.BAM~,                          ~BZ@2P18I~, ~BZPN110D~, ~~      => "Improved Alacrity"
+
 
     END
