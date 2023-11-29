@@ -1576,3 +1576,15 @@ Special: illusion grants Improved Invisibility
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Spell Immunity: Abjuration
+@40228 = ~Potion of Immunity to Abjuration~
+@40229 = ~This potion grants the imbiber protection from Abjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: immunity to Abjuration spells
+Duration: %num_rounds% rounds
+
+Weight: 1~
