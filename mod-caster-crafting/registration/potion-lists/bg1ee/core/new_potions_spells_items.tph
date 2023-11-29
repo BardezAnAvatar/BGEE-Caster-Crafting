@@ -98,5 +98,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2309~, ~@40350~, ~@40351~, ~SPWI518~,  ~1~, ~10~, ~phantom-blade.BAM~,                              ~BZ@2309I~, ~BZPN110D~, ~~      => "Phantom Blade"
         ~BZ@2409~, ~@40352~, ~@40353~, ~SPWI522~,  ~1~, ~10~, ~minor-spell-turning.BAM~,                        ~BZ@2409I~, ~BZPN058D~, ~~      => "Minor Spell Turning"
 
+        ~BZ@2511~, ~@40354~, ~@40355~, ~SPPR607~,  ~1~, ~12~, ~heal.BAM~,                                       ~BZ@2511I~, ~BZPN110D~, ~~      => "Heal"
+
 
     END

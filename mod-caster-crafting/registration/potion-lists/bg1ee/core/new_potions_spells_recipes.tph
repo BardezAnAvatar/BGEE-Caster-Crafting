@@ -152,5 +152,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MINOR_SPELL_TURNING~,                      ~BZ@2409~, ~SPWI522~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Minor Spell Turning"
         ~MINOR_SPELL_TURNING_SPWI701~,              ~BZ@2409~, ~SPWI701~,  ~1~,  ~2~, ~Defense~,     ~10~ => "Minor Spell Turning"
 
+        ~HEAL~,                                     ~BZ@2511~, ~SPPR607~,  ~1~,  ~1~, ~Cure~,        ~12~ => "Heal"
+        ~HEAL_SPPR713~,                             ~BZ@2511~, ~SPPR713~,  ~1~,  ~2~, ~Cure~,        ~12~ => "Heal"
+
 
     END

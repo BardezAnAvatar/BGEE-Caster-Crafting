@@ -1737,3 +1737,15 @@ Special: Reflects up to 4 levels' worth of spells back at original caster
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Heal
+@40354 = ~Tonic of Heal~
+@40355 = ~This tonic wipes away disease and injury in the imbiber. It completely cures all disease and blindness and heals all points of damage suffered due to wounds or injury. It also dispels a Feeblemind spell and cures those mental disorders caused by spells or injury to the brain. Naturally, the effects can be negated by later wounds, injuries, and diseases.
+
+STATISTICS:
+
+Special: Restores HP to maximum, cures poison, disease, blindness, feeblemindedness, deafness, insanity
+Duration: Instant
+
+Weight: 1~
