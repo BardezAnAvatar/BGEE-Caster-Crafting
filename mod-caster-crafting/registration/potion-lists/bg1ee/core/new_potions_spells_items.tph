@@ -86,7 +86,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1R09~, ~@40326~, ~@40327~, ~SPWI505~,  ~1~,  ~9~, ~shadow-door.BAM~                                 ~BZ@1R09I~, ~BZPN001D~, ~~      => "Shadow Door"
         ~BZ@1S09~, ~@40328~, ~@40329~, ~SPWI590~,  ~1~, ~10~, ~spell-immunity-abjuration.BAM~                   ~BZ@1S09I~, ~BZPN001D~, ~~      => "Spell Immunity: Abjuration"
         ~BZ@1T09~, ~@40330~, ~@40331~, ~SPWI597~,  ~1~, ~10~, ~spell-immunity-alteration.BAM~                   ~BZ@1T09I~, ~BZPN080D~, ~~      => "Spell Immunity: Alteration"
-        ~BZ@1U09~, ~@40332~, ~@40333~, ~SPWI591~,  ~1~, ~10~, ~spell-immunity-conjuration.BAM~                  ~BZ@1T09I~, ~BZPN080D~, ~~      => "Spell Immunity: Conjuration"
+        ~BZ@1U09~, ~@40332~, ~@40333~, ~SPWI591~,  ~1~, ~10~, ~spell-immunity-conjuration.BAM~                  ~BZ@1U09I~, ~BZPN080D~, ~~      => "Spell Immunity: Conjuration"
+        ~BZ@1V09~, ~@40334~, ~@40335~, ~SPWI592~,  ~1~, ~10~, ~spell-immunity-divination.BAM~                   ~BZ@1V09I~, ~BZPN019D~, ~~      => "Spell Immunity: Divination"
 
 
     END
