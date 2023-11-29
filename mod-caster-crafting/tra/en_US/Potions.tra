@@ -1579,8 +1579,8 @@ Weight: 1~
 
 
 //Spell Immunity: Abjuration
-@40228 = ~Potion of Immunity to Abjuration~
-@40229 = ~This potion grants the imbiber protection from Abjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+@40328 = ~Potion of Immunity to Abjuration~
+@40329 = ~This potion grants the imbiber protection from Abjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
 
 STATISTICS:
 
@@ -1591,8 +1591,8 @@ Weight: 1~
 
 
 //Spell Immunity: Alteration
-@40230 = ~Potion of Immunity to Alteration~
-@40231 = ~This potion grants the imbiber protection from Alteration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+@40330 = ~Potion of Immunity to Alteration~
+@40331 = ~This potion grants the imbiber protection from Alteration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
 
 STATISTICS:
 
@@ -1603,8 +1603,8 @@ Weight: 1~
 
 
 //Spell Immunity: Conjuration
-@40232 = ~Potion of Immunity to Conjuration~
-@40233 = ~This potion grants the imbiber protection from Conjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+@40332 = ~Potion of Immunity to Conjuration~
+@40333 = ~This potion grants the imbiber protection from Conjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
 
 STATISTICS:
 
@@ -1615,8 +1615,8 @@ Weight: 1~
 
 
 //Spell Immunity: Divination
-@40234 = ~Potion of Immunity to Divination~
-@40235 = ~This potion grants the imbiber protection from Divination. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+@40334 = ~Potion of Immunity to Divination~
+@40335 = ~This potion grants the imbiber protection from Divination. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
 
 STATISTICS:
 
@@ -1627,12 +1627,24 @@ Weight: 1~
 
 
 //Spell Immunity: Enchantment
-@40236 = ~Potion of Immunity to Enchantment~
-@40237 = ~This potion grants the imbiber protection from Enchantment. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+@40336 = ~Potion of Immunity to Enchantment~
+@40337 = ~This potion grants the imbiber protection from Enchantment. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
 
 STATISTICS:
 
 Special: immunity to Enchantment spells
+Duration: %num_rounds% rounds
+
+Weight: 1~
+
+
+//Spell Immunity: Evocation
+@40338 = ~Potion of Immunity to Evocation~
+@40339 = ~This potion grants the imbiber protection from Evocation. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: immunity to Evocation spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
