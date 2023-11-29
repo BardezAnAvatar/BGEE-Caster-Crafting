@@ -1660,3 +1660,15 @@ Special: immunity to Illusion spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Spell Immunity: Necromancy
+@40342 = ~Potion of Immunity to Necromancy~
+@40343 = ~This potion grants the imbiber protection from Necromancy. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: immunity to Necromancy spells
+Duration: %num_rounds% rounds
+
+Weight: 1~
