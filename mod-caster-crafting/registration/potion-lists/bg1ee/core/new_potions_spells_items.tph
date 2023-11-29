@@ -119,5 +119,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2L16~, ~@40386~, ~@40387~, ~SPWI803~,  ~1~, ~15~, ~protection-from-energy.BAM~,                     ~BZ@2L16I~, ~BZPN005D~, ~~      => "Protection From Energy"
         ~BZ@2M16~, ~@40388~, ~@40389~, ~SPWI808~,  ~1~, ~16~, ~improved-mantle.BAM~,                            ~BZ@2M16I~, ~BZPN100D~, ~~      => "Improved Mantle"
 
+        ~BZ@2N18~, ~@40390~, ~@40391~, ~SPWI902~,  ~1~, ~18~, ~spell-trap.BAM~,                                 ~BZ@2N18I~, ~BZPN080D~, ~~      => "Spell Trap"
+
 
     END

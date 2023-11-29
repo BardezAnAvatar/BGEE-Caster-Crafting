@@ -1747,7 +1747,7 @@ This spell will not protect the applicant from Dispel Magic, but will not be dis
 
 STATISTICS:
 
-Special: Reflects up to 4 levels' worth of spells back at original caster
+Special: Reflects up to 4 levels worth of spells back at original caster
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -2010,3 +2010,18 @@ Special: Immunity to weapons of +3 or lower enchantment
 Duration: 4 rounds
 
 Weight: 1~
+
+
+//Spell Trap
+@40390 = ~Draught of Spell Trap~
+@40391 = ~This concotion creates a barrier of magical protection around the imbiber. Every spell that hits the barrier is absorbed by the power of the spell trap —— making the imbiber recall a previously cast spell. The spell trap provides 30 levels of protection (i.e., ten Flame Arrows or five Fingers of Death). The spell trap can absorb any level of spell, from one to nine.
+
+For example, if a wizard shields <PRO_HIMHER>self with Spell Trap and is then hit by a Flame Arrow (3rd-level spell), <PRO_HESHE> gets three spell levels back—<PRO_HESHE> will regain one spell up to 3rd level in power.
+
+STATISTICS:
+
+Special: Absorbs 30 levels worth of spells, restoring cast memorized spells worth the absorbed spell's level
+Duration: 18 rounds
+
+Weight: 1~
+
