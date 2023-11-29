@@ -154,6 +154,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~HEAL~,                                     ~BZ@2511~, ~SPPR607~,  ~1~,  ~1~, ~Cure~,        ~12~ => "Heal"
         ~HEAL_SPPR713~,                             ~BZ@2511~, ~SPPR713~,  ~1~,  ~2~, ~Cure~,        ~12~ => "Heal"
+        ~WONDROUS_RECALL~,                          ~BZ@2611~, ~SPPR611~,  ~1~,  ~1~, ~Enhancement~, ~12~ => "Wondrous Recall"
 
 
     END

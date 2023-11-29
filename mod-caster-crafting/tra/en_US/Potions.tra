@@ -1749,3 +1749,15 @@ Special: Restores HP to maximum, cures poison, disease, blindness, feeblemindedn
 Duration: Instant
 
 Weight: 1~
+
+
+//Wondrous Recall
+@40356 = ~Potion of Wondrous Recall~
+@40357 = ~This potion restores back to memory 2 spells that have been previously cast. If no spells have been cast yet, nothing happens. Wondrous Recall cannot recall 6th-level or higher spells.
+
+STATISTICS:
+
+Special: Restores to memorization 3 spells of level 5 or lower
+Duration: Instant
+
+Weight: 1~

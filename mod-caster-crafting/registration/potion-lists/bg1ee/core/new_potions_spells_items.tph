@@ -99,6 +99,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2409~, ~@40352~, ~@40353~, ~SPWI522~,  ~1~, ~10~, ~minor-spell-turning.BAM~,                        ~BZ@2409I~, ~BZPN058D~, ~~      => "Minor Spell Turning"
 
         ~BZ@2511~, ~@40354~, ~@40355~, ~SPPR607~,  ~1~, ~12~, ~heal.BAM~,                                       ~BZ@2511I~, ~BZPN110D~, ~~      => "Heal"
+        ~BZ@2611~, ~@40356~, ~@40357~, ~SPPR611~,  ~1~, ~12~, ~wondrous-recall.BAM~,                            ~BZ@2611I~, ~BZPN100D~, ~~      => "Wondrous Recall"
 
 
     END
