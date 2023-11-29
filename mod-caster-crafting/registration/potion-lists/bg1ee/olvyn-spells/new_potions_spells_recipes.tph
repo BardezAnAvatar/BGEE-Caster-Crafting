@@ -57,6 +57,7 @@ BEGIN
     ~new_potions_spells_items~
     BEGIN
         ~ANTIHARM_SHELL~,                           ~BZ@OK11~, ~MEPR653~, ~11~,  ~1~, ~Defense~,     ~12~ => "Antiharm Shell"
+        ~PROTECTION_FROM_MAGIC_ENERGY_MEPR653~,     ~BZ@2A12~, ~MEPR653~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Protection From Magic Energy"
 
         ~DISPLE_MAGIC_MEWI760~,                     ~BZ@0T05~, ~MEWI760~, ~14~,  ~3~, ~Bomb~,         ~7~ => "Dispel Magic"
     END

@@ -1810,3 +1810,15 @@ Special: spellcasting disabled
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Protection From Magic Energy
+@40364 = ~Philter of Protection From Magic Energy~
+@40365 = ~This potion confers 100% invulnerability to all magic-based attacks such as Magic Missile or Abi-Dalzim's Horrid Wilting. This effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Magic Damage Resistance: 100%
+Duration: %num_turns% (%num_rounds% rounds)
+
+Weight: 1~
