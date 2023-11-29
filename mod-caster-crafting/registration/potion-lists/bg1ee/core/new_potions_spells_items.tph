@@ -104,6 +104,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2812~, ~@40360~, ~@40361~, ~SPWI602~,  ~1~, ~12~, ~globe-of-invulnerability.BAM~,                   ~BZ@2812I~, ~BZPN001D~, ~~      => "Globe of Invulnerability"
         ~BZ@2912~, ~@40362~, ~@40363~, ~SPWI603~,  ~1~, ~16~, ~tenser's-transformation.BAM~,                    ~BZ@2912I~, ~BZPN019D~, ~~      => "Tenser's Transformation"
         ~BZ@2A12~, ~@40364~, ~@40365~, ~SPWI606~,  ~1~, ~13~, ~protection-from-magic-energy.BAM~,               ~BZ@2A12I~, ~BZPN026D~, ~~      => "Protection From Magic Energy"
+        ~BZ@2B12~, ~@40366~, ~@40367~, ~SPWI611~,  ~1~, ~12~, ~protection-from-magical-weapons.BAM~,            ~BZ@2B12I~, ~BZPN049D~, ~~      => "Protection From Magical Weapons"
 
 
     END

@@ -1320,7 +1320,9 @@ Weight: 1~
 
 //Holy Power
 @40290 = ~Potion of Holy Power~
-@40291 = ~This potion gives the imbiber the strength and skill of a Fighter of level %magnitude%. The imbiber's Strength score is set to 18/00 —even if it is normally higher— <PRO_HISHER> THAC0 becomes that of a Fighter and <PRO_HESHE> gains %magnitude% temporary Hit Points. This will last for the duration of the spell or until dispelled.
+@40291 = ~This potion gives the imbiber the strength and skill of a Fighter of level %magnitude%. The imbiber's Strength score is set to 18/00 —even if it is normally higher— <PRO_HISHER> THAC0 becomes that of a Fighter and <PRO_HESHE> gains %magnitude% temporary Hit Points.
+
+This will last for the duration of the spell or until dispelled.
 
 STATISTICS:
 
@@ -1797,7 +1799,7 @@ Weight: 1~
 
 //Tenser's Transformation
 @40362 = ~Tincture of Tenser's Transformation~
-@40363 = ~This potion causes the imbiber to become a berserk Fighter: <PRO_HISHER> Hit Points double, and all damage <PRO_HESHE> sustains is first detracted from this magically-gained life; <PRO_HISHER> Armor Class gains a +4 bonus (up to a maximum Armor Class of -10); <PRO_HESHE> gains a THAC0 set to +%magnitude%; each attack also receives a +2 bonus to hit and damage rolls. The effect lasts for the duration of the spell or until dispelled.
+@40363 = ~This potion causes the imbiber to become a berserk Fighter: <PRO_HISHER> Hit Points double, and all damage <PRO_HESHE> sustains is first detracted from this magically-gained life; <PRO_HISHER> Armor Class gains a +4 bonus (up to a maximum Armor Class of -10); <PRO_HESHE> gains a THAC0 set to +%magnitude%; each attack also receives a +2 bonus to hit and damage rolls.
 
 STATISTICS:
 
@@ -1814,11 +1816,25 @@ Weight: 1~
 
 //Protection From Magic Energy
 @40364 = ~Philter of Protection From Magic Energy~
-@40365 = ~This potion confers 100% invulnerability to all magic-based attacks such as Magic Missile or Abi-Dalzim's Horrid Wilting. This effect lasts for the duration of the spell or until dispelled.
+@40365 = ~This potion confers 100% invulnerability to all magic-based attacks such as Magic Missile or Abi-Dalzim's Horrid Wilting.
 
 STATISTICS:
 
 Magic Damage Resistance: 100%
 Duration: %num_turns% (%num_rounds% rounds)
+
+Weight: 1~
+
+
+//Protection From Magical Weapons
+@40366 = ~Potion of Protection From Magical Weapons~
+@40367 = ~This potion confers complete invulnerability to all magical weapons. This includes weapons that are blessed or enchanted. The attacks of powerful monsters are also considered magical weapons.
+
+This effect is mutually exclusive with Protection From Normal Weapons as well as anyone protected by Mantle, Improved Mantle, or Absolute Immunity.
+
+STATISTICS:
+
+Special: Immunity to magical weapons
+Duration: 3 rounds
 
 Weight: 1~
