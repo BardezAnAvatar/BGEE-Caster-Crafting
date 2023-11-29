@@ -1943,3 +1943,16 @@ Duration: %num_rounds% rounds
 
 Weight: 1~
 
+
+//Protection From The Elements
+@40382 = ~Philter of Protection From The Elements~
+@40383 = ~This potion confers 75% resistance to fire, cold, and electricity —whether magical or non magical— from spells, weapons, wands, breath weapons, etc.
+
+STATISTICS:
+
+Fire Resistance: +75% bonus (mundane or magical)
+Cold Resistance: +75% bonus (mundane or magical)
+Electricity Resistance: +75% bonus
+Duration: %num_rounds% rounds
+
+Weight: 1~

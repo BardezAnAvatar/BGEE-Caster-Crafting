@@ -171,6 +171,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~NATURE'S_BEAUTY~,                          ~BZ@2G14~, ~SPPR704~,  ~1~,  ~1~, ~Enhancement~, ~14~ => "Nature's Beauty"
         ~GREATER_RESTORATION~,                      ~BZ@2H14~, ~SPPR713~,  ~1~,  ~1~, ~Cure~,        ~14~ => "Greater Restoration"
         ~SPELL_TURNING~,                            ~BZ@2I14~, ~SPWI701~,  ~1~,  ~1~, ~Defense~,     ~14~ => "Spell Turning"
+        ~PROTECTION_FROM_THE_ELEMENTS~,             ~BZ@2J14~, ~SPWI702~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Protection From The Elements"
 
 
     END
