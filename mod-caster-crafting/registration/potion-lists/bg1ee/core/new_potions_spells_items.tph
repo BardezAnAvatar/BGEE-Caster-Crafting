@@ -111,6 +111,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2F12~, ~@40374~, ~@40375~, ~SPWI618~,  ~1~, ~13~, ~spell-deflection.BAM~,                           ~BZ@2F12I~, ~BZPN070D~, ~~      => "Spell Deflection"
 
         ~BZ@2G14~, ~@40376~, ~@40377~, ~SPPR704~,  ~1~, ~14~, ~nature's-beauty.BAM~,                            ~BZ@2G14I~, ~BZPN058D~, ~~      => "Nature's Beauty"
+        ~BZ@2H14~, ~@40378~, ~@40379~, ~SPPR713~,  ~1~, ~14~, ~greater-restoration.BAM~,                        ~BZ@2H14I~, ~BZPN090D~, ~~      => "Greater Restoration"
 
 
     END

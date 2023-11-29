@@ -1913,3 +1913,16 @@ Special: Charms humanoids viewing applicant (save vs. Spell at -3 penalty)
 Duration: 12 rounds
 
 Weight: 1~
+
+
+//Greater Restoration
+@40378 = ~Phial of Greater Restoration~
+@40379 = ~This potion raises the life energy level of the imbiber. This reverses any previous life energy level drain of the creature by a force or monster. It will also restore the Intelligence score of a creature affected by the Feeblemind spell and negate any form of insanity, such as confusion or berserk. It fully heals the target and cures any diseases or poisons. The effects of this potion are very draining on the imbiber, and <PRO_HESHE> will likely require rest immediately afterward.
+
+STATISTICS:
+
+Hit Points: Fully healed
+Special: Cures diseases, poison, and blindness; removes insanity, confusion, and berserk; removes level drain; removes Intelligence drain; causes fatigue
+Duration: Instant
+
+Weight: 1~
