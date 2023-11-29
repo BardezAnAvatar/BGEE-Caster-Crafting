@@ -1551,3 +1551,16 @@ Special: immune to magical commands, stun, paralysis, hold
 Duration: %num_turns% (%num_rounds% rounds)
 
 Weight: 1~
+
+
+//Righteous Magic
+@40324 = ~Potion of Righteous Magic~
+@40325 = ~This potion adds %magnitude% temporary Hit Points, adds %magnitude2% points of Strength, and causes every successful hit to inflict maximum damage.
+
+STATISTICS:
+
+Strength: +%magnitude2% bonus
+HP: +%magnitude% temporary hit points
+Duration: %num_rounds% rounds
+
+Weight: 1~

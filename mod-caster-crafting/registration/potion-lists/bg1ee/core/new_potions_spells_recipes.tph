@@ -133,6 +133,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~TRUE_SIGHT_SPWI609~,                       ~BZ@1N09~, ~SPWI609~,  ~1~,  ~1~, ~Enhancement~, ~10~ => "True Sight"
         ~CHAMPION'S_STRENGTH~,                      ~BZ@1O09~, ~SPPR507~,  ~1~,  ~1~, ~Offense~,     ~14~ => "Champion's Strength"
         ~CHAOTIC_COMMANDS~,                         ~BZ@1P09~, ~SPPR508~,  ~1~,  ~1~, ~Defense~,      ~9~ => "Chaotic Commands"
+        ~RIGHTEOUS_MAGIC~,                          ~BZ@1Q09~, ~SPPR513~,  ~1~,  ~1~, ~Offense~,     ~10~ => "Righteous Magic"
 
 
     END
