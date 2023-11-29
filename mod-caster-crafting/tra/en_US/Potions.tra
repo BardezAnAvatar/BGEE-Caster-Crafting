@@ -1838,3 +1838,19 @@ Special: Immunity to magical weapons
 Duration: 3 rounds
 
 Weight: 1~
+
+
+//Improved Haste
+@40368 = ~Elixir of Improved Haste~
+@40369 = ~The imbiber functions at double its normal movement and attack rates and receives a +2 bonus to its initiative.
+
+Thus, a creature moving at 6 and attacking twice per round would move at 12 and attack four times per round. Spellcasting and spell effects are not sped up.
+
+STATISTICS:
+
+Movement speed: doubled
+Attacks per round: doubled
+Special: negates Slow status
+Duration: %num_rounds% rounds
+
+Weight: 1~

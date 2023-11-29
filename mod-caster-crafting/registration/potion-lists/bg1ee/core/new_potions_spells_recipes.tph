@@ -161,6 +161,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~TENSER'S_TRANSFORMATION~,                  ~BZ@2912~, ~SPWI603~,  ~1~,  ~1~, ~Offense~,     ~16~ => "Tenser's Transformation"
         ~PROTECTION_FROM_MAGIC_ENERGY~,             ~BZ@2A12~, ~SPWI606~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Protection From Magic Energy"
         ~PROTECTION_FROM_MAGICAL_WEAPONS~,          ~BZ@2B12~, ~SPWI611~,  ~1~,  ~1~, ~Defense~,     ~12~ => "Protection From Magical Weapons"
+        ~IMPROVED_HASTE~,                           ~BZ@2C12~, ~SPWI613~,  ~1~,  ~1~, ~Offense~,     ~12~ => "Improved Haste"
 
 
     END
