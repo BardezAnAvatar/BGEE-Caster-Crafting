@@ -183,5 +183,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~IMPROVED_ALACRITY~,                        ~BZ@2P18~, ~SPWI921~,  ~1~,  ~1~, ~Enhancement~, ~20~ => "Improved Alacrity"
 
+        ~AURA_OF_FLAMING_DEATH~,                    ~BZ@2Q15~, ~SPPR730~,  ~1~,  ~1~, ~Defense~,     ~18~ => "Aura of Flaming Death"
+
 
     END

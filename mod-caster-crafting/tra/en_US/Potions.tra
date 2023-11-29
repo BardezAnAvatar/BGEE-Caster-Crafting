@@ -2050,3 +2050,19 @@ Special: Cleansed spellcasting aura for the duration
 Duration: 2 rounds
 
 Weight: 1~
+
+
+//Aura of Flaming Death
+@40396 = ~Aura of Flaming Death Mixture~
+@40397 = ~This mixture causes the applicant to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the user 90% Fire Resistance and an AC bonus of 4, but also protects <PRO_HIMHER> from attacks made within a 5-ft. radius. An opponent that hits the caster with any weapons or spells within this radius suffers 2d10+2 fire damage. In addition, the intense heat protects the applicant from all non-magical weapons, melee or missile.
+
+STATISTICS:
+
+AC: +4 bonus
+Fire Resistance: +90%
+Special: Immunity to non-magical weapons
+Damage: 2d10+2 fire
+Area of Effect: 5-ft. radius
+Duration: %num_rounds% rounds
+
+Weight: 1~

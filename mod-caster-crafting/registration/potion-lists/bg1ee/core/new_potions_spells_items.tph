@@ -124,5 +124,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ@2P18~, ~@40394~, ~@40395~, ~SPWI921~,  ~1~, ~20~, ~improved-alacrity.BAM~,                          ~BZ@2P18I~, ~BZPN110D~, ~~      => "Improved Alacrity"
 
+        ~BZ@2Q15~, ~@40396~, ~@40397~, ~SPPR730~,  ~1~, ~16~, ~aura-of-flaming-death.BAM~,                      ~BZ@2Q15I~, ~BZPN090D~, ~~      => "Aura of Flaming Death"
+
 
     END
