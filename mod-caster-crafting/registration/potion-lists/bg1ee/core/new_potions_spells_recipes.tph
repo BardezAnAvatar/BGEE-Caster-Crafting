@@ -147,6 +147,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PROTECTION_FROM_NORMAL_WEAPONS~,           ~BZ@2009~, ~SPWI511~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Protection From Normal Weapons"
         ~PROTECTION_FROM_ELECTRICITY~,              ~BZ@2109~, ~SPWI512~,  ~1~,  ~1~, ~Defense~,      ~9~ => "Protection From Electricity"
         ~PROTECTION_FROM_ELECTRICITY_SPPR407~,      ~BZ@2109~, ~SPPR407~,  ~1~,  ~1~, ~Defense~,      ~9~ => "Protection From Electricity"
+        ~PROTECTION_FROM_ACID~,                     ~BZ@2209~, ~SPWI517~,  ~1~,  ~1~, ~Defense~,      ~9~ => "Protection From Acid"
 
 
     END

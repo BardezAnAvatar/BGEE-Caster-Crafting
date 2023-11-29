@@ -94,6 +94,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1Z09~, ~@40342~, ~@40343~, ~SPWI596~,  ~1~, ~10~, ~spell-immunity-necromancy.BAM~,                  ~BZ@1Z09I~, ~BZPN100D~, ~~      => "Spell Immunity: Necromancy"
         ~BZ@2009~, ~@40344~, ~@40345~, ~SPWI511~,  ~1~, ~10~, ~protection-from-normal-weapons.BAM~,             ~BZ@2009I~, ~BZPN001D~, ~~      => "Protection From Normal Weapons"
         ~BZ@2109~, ~@40346~, ~@40347~, ~SPWI512~,  ~1~, ~10~, ~protection-from-electricity.BAM~,                ~BZ@2109I~, ~BZPN008D~, ~~      => "Protection From Electricity"
+        ~BZ@2209~, ~@40348~, ~@40349~, ~SPWI517~,  ~1~, ~10~, ~protection-from-acid.BAM~,                       ~BZ@2209I~, ~BZPN008D~, ~~      => "Protection From Acid"
 
 
     END

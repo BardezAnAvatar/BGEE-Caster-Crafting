@@ -1695,3 +1695,15 @@ Special: Immunity to electricity
 Duration: %num_turns% (%num_rounds% rounds)
 
 Weight: 1~
+
+
+//Protection From Acid
+@40348 = ~Potion of Protection From Acid~
+@40349 = ~This poition confers complete invulnerability to all acid-based attacks, whether magical or non-magical, such as Acid Arrow or a creature's special attacks.
+
+STATISTICS:
+
+Special: Immunity to acid
+Duration: %num_turns% (%num_rounds% rounds)
+
+Weight: 1~
