@@ -1672,3 +1672,14 @@ Special: immunity to Necromancy spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+//Protection From Normal Weapons
+@40344 = ~Potion of Protection From Normal Weapons~
+@40345 = ~This potion confers complete invulnerability to all non-magical weapons. This does not include weapons that are blessed or enchanted. This effect is mutally exclusive with protection from magical weapons.
+
+STATISTICS:
+
+Special: immunity to non-magical weapons
+Duration: %num_rounds% rounds
+
+Weight: 1~

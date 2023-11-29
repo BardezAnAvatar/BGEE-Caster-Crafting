@@ -144,6 +144,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPELL_IMMUNITY_EVOCATION~,                 ~BZ@1X09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Evocation"
         ~SPELL_IMMUNITY_ILLUSION~,                  ~BZ@1Y09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Illusion"
         ~SPELL_IMMUNITY_NECROMANCY~,                ~BZ@1Z09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Necromancy"
+        ~PROTECTION_FROM_NORMAL_WEAPONS~,           ~BZ@2009~, ~SPWI511~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Protection From Normal Weapons"
 
 
     END
