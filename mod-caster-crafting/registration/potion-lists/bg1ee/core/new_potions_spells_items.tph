@@ -108,6 +108,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2C12~, ~@40368~, ~@40369~, ~SPWI613~,  ~1~, ~12~, ~improved-haste.BAM~,                             ~BZ@2C12I~, ~BZPN049D~, ~~      => "Improved Haste"
         ~BZ@2D12~, ~@40370~, ~@40371~, ~SPWI614~,  ~1~, ~12~, ~death-fog.BAM~,                                  ~BZ@2D12I~, ~BZPN040D~, ~~      => "Death Fog"
         ~BZ@2E12~, ~@40372~, ~@40373~, ~SPWI615~,  ~1~, ~12~, ~chain-lightning.BAM~,                            ~BZ@2E12I~, ~BZPN013D~, ~~      => "Chain Lightning"
+        ~BZ@2F12~, ~@40374~, ~@40375~, ~SPWI618~,  ~1~, ~13~, ~spell-deflection.BAM~,                           ~BZ@2F12I~, ~BZPN070D~, ~~      => "Spell Deflection"
 
 
     END

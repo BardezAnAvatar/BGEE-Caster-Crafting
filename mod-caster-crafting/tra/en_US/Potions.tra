@@ -1874,8 +1874,28 @@ Weight: 1~
 @40372 = ~Bottled Lightning~
 @40373 = ~This bomb releases a burst of electrical energy at a single target; once the bolt strikes the initial target, the electricity then jumps to the next nearest foe, losing a small amount of energy with each additional strike until it is expended. The bolt initially inflicts %magnitude%d6 Hit Points of electrical damage. Each jump the bolt makes reduces the damage by 1d6. Each creature that is hit is allowed a Save vs. Spell for half damage.
 
+STATISTICS:
+
 Damage: %%magnitude%d6 electricity
 Special: jumps to next nearest foe, dealing 1d6 less damage
 Duration: Instantaneous
+
+Weight: 1~
+
+
+//Spell Deflection
+@40374 = ~Oil of Spell Deflection~
+@40375 = ~This oil causes any spells cast against the applicant to be absorbed and consumed, up to a total of 10 spell levels. As long as there are levels remaining, the spell will be absorbed.
+
+The absorbed spells including spells cast from scrolls and innate spell-like abilities, but excludes area effects that are not centered directly upon the applicant or area effects that are stationary, such as Cloudkill and Stinking Cloud.
+
+For example, if there is only 1 level left and a 3rd-level spell is cast at the applicant, the spell will be absorbed while canceling the spell deflection.
+
+This spell will not protect the caster from Dispel Magic, but it will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+
+Special: absorbs (negates) up to 10 spell levels of spells cast at the applicant
+Duration: %num_rounds%
 
 Weight: 1~

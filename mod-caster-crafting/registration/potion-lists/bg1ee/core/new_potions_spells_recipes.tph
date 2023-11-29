@@ -164,6 +164,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~IMPROVED_HASTE~,                           ~BZ@2C12~, ~SPWI613~,  ~1~,  ~1~, ~Offense~,     ~12~ => "Improved Haste"
         ~DEATH_FOG~,                                ~BZ@2D12~, ~SPWI614~,  ~1~,  ~1~, ~Bomb~,        ~12~ => "Death Fog"
         ~CHAIN_LIGHTNING~,                          ~BZ@2E12~, ~SPWI615~,  ~1~,  ~1~, ~Bomb~,        ~12~ => "Chain Lightning"
+        ~SPELL_DEFLECTION~,                         ~BZ@2F12~, ~SPWI618~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Spell Deflection"
+        ~SPELL_DEFLECTION_SPPR701~,                 ~BZ@2F12~, ~SPPR701~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Spell Deflection"
 
 
     END
