@@ -96,6 +96,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2109~, ~@40346~, ~@40347~, ~SPWI512~,  ~1~,  ~9~, ~protection-from-electricity.BAM~,                ~BZ@2109I~, ~BZPN008D~, ~~      => "Protection From Electricity"
         ~BZ@2209~, ~@40348~, ~@40349~, ~SPWI517~,  ~1~,  ~9~, ~protection-from-acid.BAM~,                       ~BZ@2209I~, ~BZPN008D~, ~~      => "Protection From Acid"
         ~BZ@2309~, ~@40350~, ~@40351~, ~SPWI518~,  ~1~, ~10~, ~phantom-blade.BAM~,                              ~BZ@2309I~, ~BZPN110D~, ~~      => "Phantom Blade"
+        ~BZ@2409~, ~@40352~, ~@40353~, ~SPWI522~,  ~1~, ~10~, ~minor-spell-turning.BAM~,                        ~BZ@2409I~, ~BZPN058D~, ~~      => "Minor Spell Turning"
 
 
     END

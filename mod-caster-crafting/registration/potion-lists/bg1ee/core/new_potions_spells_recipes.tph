@@ -149,6 +149,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PROTECTION_FROM_ELECTRICITY_SPPR407~,      ~BZ@2109~, ~SPPR407~,  ~1~,  ~1~, ~Defense~,      ~9~ => "Protection From Electricity"
         ~PROTECTION_FROM_ACID~,                     ~BZ@2209~, ~SPWI517~,  ~1~,  ~1~, ~Defense~,      ~9~ => "Protection From Acid"
         ~PHANTOM_BLADE~,                            ~BZ@2309~, ~SPWI518~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Phantom Blade"
+        ~MINOR_SPELL_TURNING~,                      ~BZ@2409~, ~SPWI522~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Minor Spell Turning"
+        ~MINOR_SPELL_TURNING_SPWI701~,              ~BZ@2409~, ~SPWI701~,  ~1~,  ~2~, ~Defense~,     ~10~ => "Minor Spell Turning"
 
 
     END
