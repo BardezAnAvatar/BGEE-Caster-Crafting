@@ -80,6 +80,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1M07~, ~@40316~, ~@40317~, ~SPWI418~,  ~1~,  ~8~, ~fire-shield-red.BAM~                             ~BZ@1M07I~, ~BZPN040D~, ~~      => "Fireshield (Red)"
 
         ~BZ@1N09~, ~@40318~, ~@40319~, ~SPPR505~,  ~1~, ~10~, ~true-sight.BAM~                                  ~BZ@1N09I~, ~BZPN040D~, ~~      => "True Sight"
+        ~BZ@1O09~, ~@40320~, ~@40321~, ~SPPR507~,  ~1~, ~14~, ~champion's-strength.BAM~                         ~BZ@1O09I~, ~BZPN049D~, ~~      => "Champion's Strength"
 
 
     END

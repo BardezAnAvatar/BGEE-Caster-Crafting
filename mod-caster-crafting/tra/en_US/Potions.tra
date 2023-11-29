@@ -1525,3 +1525,17 @@ Area of Effect: 120-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Champion's Strength
+@40320 = ~Potion of Champion's Strength~
+@40321 = ~The imbiber's Strength is set to 25 for the duration of the effect, and gains %magnitude% bonus to THAC0. There is a drawback: the imbiber loses the ability to cast any spells during this time.
+
+STATISTICS:
+
+Strength: 25
+THAC0: +%magnitude% bonus
+Special: spellcasting disabled
+Duration: %num_rounds% rounds
+
+Weight: 1~

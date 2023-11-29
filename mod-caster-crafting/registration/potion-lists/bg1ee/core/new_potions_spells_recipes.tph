@@ -131,6 +131,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~TRUE_SIGHT~,                               ~BZ@1N09~, ~SPPR505~,  ~1~,  ~1~, ~Enhancement~, ~10~ => "True Sight"
         ~TRUE_SIGHT_SPWI609~,                       ~BZ@1N09~, ~SPWI609~,  ~1~,  ~1~, ~Enhancement~, ~10~ => "True Sight"
+        ~CHAMPION'S_STRENGTH~,                      ~BZ@1O09~, ~SPPR507~,  ~1~,  ~1~, ~Offense~,     ~14~ => "Champion's Strength"
 
 
     END
