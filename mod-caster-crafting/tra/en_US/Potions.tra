@@ -1896,6 +1896,6 @@ This spell will not protect the caster from Dispel Magic, but it will not be dis
 STATISTICS:
 
 Special: absorbs (negates) up to 10 spell levels of spells cast at the applicant
-Duration: %num_rounds%
+Duration: %num_rounds% rounds
 
 Weight: 1~
