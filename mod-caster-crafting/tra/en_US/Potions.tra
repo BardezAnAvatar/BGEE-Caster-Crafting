@@ -1707,3 +1707,17 @@ Special: Immunity to acid
 Duration: %num_turns% (%num_rounds% rounds)
 
 Weight: 1~
+
+
+//Phantom Blade
+@40350 = ~Oil of Phantom Blade~
+@40351 = ~When poured, this oil forms into a translucent, shadow-like, weightless area of magical force extending from the applicant's hand. The silent, blade-shaped construct's cutting edges inflict damage just as those of a real sword do. This sword can only be used by the applicant and remains in <PRO_HISHER> hand for the duration or until dispelled.
+
+The phantom blade acts as a +3 magical sword in terms of to-hit and damage bonuses as well as the type of creatures it can hit. However, due to its etheric nature, it causes an extra +10 damage against undead creatures.
+
+STATISTICS:
+
+Special: Creates a magical +3 sword in hands (1d8+3 slashing; +10 more vs. undead)
+Duration: %num_rounds% rounds
+
+Weight: 1~
