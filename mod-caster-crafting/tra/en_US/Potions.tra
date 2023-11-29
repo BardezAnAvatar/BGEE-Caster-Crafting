@@ -1564,3 +1564,15 @@ HP: +%magnitude% temporary hit points
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Shadow Door
+@40326 = ~Potion of Shadow Door~
+@40327 = ~This potion creates the illusion of a door nearby the imbiber; the illusion permits the imbiber to appear to step through this "door" and disappear. In reality, <PRO_HESHE> has darted aside and can flee, totally invisible (as per the Improved Invisibility spell), for the duration.
+
+STATISTICS:
+
+Special: illusion grants Improved Invisibility
+Duration: %num_rounds% rounds
+
+Weight: 1~

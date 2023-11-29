@@ -83,6 +83,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1O09~, ~@40320~, ~@40321~, ~SPPR507~,  ~1~, ~14~, ~champion's-strength.BAM~                         ~BZ@1O09I~, ~BZPN049D~, ~~      => "Champion's Strength"
         ~BZ@1P09~, ~@40322~, ~@40323~, ~SPPR508~,  ~1~,  ~9~, ~chaotic-commands.BAM~                            ~BZ@1P09I~, ~BZPN032D~, ~~      => "Chaotic Commands"
         ~BZ@1Q09~, ~@40324~, ~@40325~, ~SPPR513~,  ~1~, ~10~, ~righteous-magic.BAM~                             ~BZ@1Q09I~, ~BZPN100D~, ~~      => "Righteous Magic"
+        ~BZ@1R09~, ~@40326~, ~@40327~, ~SPWI505~,  ~1~,  ~9~, ~shadow-door.BAM~                                 ~BZ@1R09I~, ~BZPN001D~, ~~      => "Shadow Door"
 
 
     END

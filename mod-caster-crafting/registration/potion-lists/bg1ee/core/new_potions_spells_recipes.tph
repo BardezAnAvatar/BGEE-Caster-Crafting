@@ -119,6 +119,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPIRIT_FIRE~,                              ~BZ@1D07~, ~SPPR450~,  ~1~,  ~1~, ~Bomb~,         ~8~ => "Spirit Fire"
         ~FIRE_SHIELD_BLUE~,                         ~BZ@1E07~, ~SPWI403~,  ~1~,  ~1~, ~Defense~,      ~7~ => "Fireshield (Blue)"
         ~IMPROVED_INVISIBILITY~,                    ~BZ@1F07~, ~SPWI405~,  ~1~,  ~1~, ~Enhancement~,  ~8~ => "Improved Invisibility"
+        ~IMPROVED_INVISIBILITY_SPWI505~,            ~BZ@1F07~, ~SPWI505~,  ~1~,  ~1~, ~Enhancement~,  ~8~ => "Improved Invisibility"
         ~MINOR_GLOBE_OF_INVULNERABILITY~,           ~BZ@1G07~, ~SPWI406~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Minor Globe of Invulnerability"
         ~MINOR_GLOBE_OF_INVULNERABILITY_SPWI602~,   ~BZ@1G07~, ~SPWI602~,  ~1~,  ~2~, ~Defense~,      ~8~ => "Minor Globe of Invulnerability"
         ~STONESKIN~,                                ~BZ@1H07~, ~SPWI408~,  ~1~,  ~1~, ~Defense~,      ~8~ => "Stoneskin"
@@ -134,6 +135,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CHAMPION'S_STRENGTH~,                      ~BZ@1O09~, ~SPPR507~,  ~1~,  ~1~, ~Offense~,     ~14~ => "Champion's Strength"
         ~CHAOTIC_COMMANDS~,                         ~BZ@1P09~, ~SPPR508~,  ~1~,  ~1~, ~Defense~,      ~9~ => "Chaotic Commands"
         ~RIGHTEOUS_MAGIC~,                          ~BZ@1Q09~, ~SPPR513~,  ~1~,  ~1~, ~Offense~,     ~10~ => "Righteous Magic"
+        ~SHADOW_DOOR~,                              ~BZ@1R09~, ~SPWI505~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Shadow Door"
 
 
     END
