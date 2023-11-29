@@ -2025,3 +2025,16 @@ Duration: 18 rounds
 
 Weight: 1~
 
+
+//Absolute Immunity
+@40392 = ~Tincture of Absolute Immunity~
+@40393 = ~This brew confers complete invulnerability to all weapons except for those of greater than +5 enchantment.
+
+It is important to note that this spell does not work in combination with Protection From Magical Weapons.
+
+STATISTICS:
+
+Special: Immunity to weapons of +5 or lower enchantment
+Duration: 5 rounds
+
+Weight: 1~

@@ -179,6 +179,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~IMPROVED_MANTLE~,                          ~BZ@2M16~, ~SPWI808~,  ~1~,  ~1~, ~Defense~,     ~16~ => "Improved Mantle"
 
         ~SPELL_TRAP~,                               ~BZ@2N18~, ~SPWI902~,  ~1~,  ~1~, ~Defense~,     ~18~ => "Spell Trap"
+        ~ABSOLUTE_IMMUNITY~,                        ~BZ@2O18~, ~SPWI907~,  ~1~,  ~1~, ~Defense~,     ~20~ => "Absolute Immunity"
 
 
     END
