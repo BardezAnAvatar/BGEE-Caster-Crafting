@@ -1649,3 +1649,14 @@ Duration: %num_rounds% rounds
 
 Weight: 1~
 
+
+//Spell Immunity: Illusion
+@40340 = ~Potion of Immunity to Illusion~
+@40341 = ~This potion grants the imbiber protection from Illusion. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: immunity to Illusion spells
+Duration: %num_rounds% rounds
+
+Weight: 1~

@@ -90,6 +90,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1V09~, ~@40334~, ~@40335~, ~SPWI592~,  ~1~, ~10~, ~spell-immunity-divination.BAM~                   ~BZ@1V09I~, ~BZPN019D~, ~~      => "Spell Immunity: Divination"
         ~BZ@1W09~, ~@40336~, ~@40337~, ~SPWI593~,  ~1~, ~10~, ~spell-immunity-enchantment.BAM~                  ~BZ@1W09I~, ~BZPN090D~, ~~      => "Spell Immunity: Enchantment"
         ~BZ@1X09~, ~@40338~, ~@40339~, ~SPWI595~,  ~1~, ~10~, ~spell-immunity-evocation.BAM~                    ~BZ@1X09I~, ~BZPN032D~, ~~      => "Spell Immunity: Evocation"
+        ~BZ@1Y09~, ~@40340~, ~@40339~, ~SPWI594~,  ~1~, ~10~, ~spell-immunity-illusion.BAM~                     ~BZ@1Y09I~, ~BZPN058D~, ~~      => "Spell Immunity: Illusion"
 
 
     END
