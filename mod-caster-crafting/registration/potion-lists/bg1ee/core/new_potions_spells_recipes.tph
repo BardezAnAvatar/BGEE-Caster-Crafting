@@ -176,6 +176,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~MANTLE_SPWI808~,                           ~BZ@2K14~, ~SPWI808~,  ~1~,  ~2~, ~Defense~,     ~14~ => "Mantle"
 
         ~PROTECTION_FROM_ENERGY~,                   ~BZ@2L14~, ~SPWI803~,  ~1~,  ~1~, ~Defense~,     ~15~ => "Protection From Energy"
+        ~IMPROVED_MANTLE~,                          ~BZ@2M14~, ~SPWI808~,  ~1~,  ~1~, ~Defense~,     ~16~ => "Improved Mantle"
 
 
     END

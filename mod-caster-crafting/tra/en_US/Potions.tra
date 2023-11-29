@@ -1986,3 +1986,15 @@ Magical Damage Resistance: +75%
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Improved Mantle
+@40388 = ~Mixture of Improved Mantle~
+@40389 = ~This potion confers complete invulnerability to all weapons of +3 or lower enchantment. This potion will not work in conjunction with Protection From Magical Weapons.
+
+STATISTICS:
+
+Special: Immunity to weapons of +3 or lower enchantment
+Duration: 4 rounds
+
+Weight: 1~
