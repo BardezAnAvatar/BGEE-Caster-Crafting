@@ -1539,3 +1539,15 @@ Special: spellcasting disabled
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Chaotic Commands
+@40322 = ~Concotion of Chaotic Commands~
+@40323 = ~This potion renders the imbiber immune to magical commands. Suggestion, Charm, Domination, Command, Sleep, Maze, and Confusion are all spells that fit into this category. It also protects the target from Psionic Blast.
+
+STATISTICS:
+
+Special: immune to magical commands, stun, paralysis, hold
+Duration: %num_turns% (%num_rounds% rounds)
+
+Weight: 1~
