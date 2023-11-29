@@ -106,6 +106,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2A12~, ~@40364~, ~@40365~, ~SPWI606~,  ~1~, ~13~, ~protection-from-magic-energy.BAM~,               ~BZ@2A12I~, ~BZPN026D~, ~~      => "Protection From Magic Energy"
         ~BZ@2B12~, ~@40366~, ~@40367~, ~SPWI611~,  ~1~, ~12~, ~protection-from-magical-weapons.BAM~,            ~BZ@2B12I~, ~BZPN049D~, ~~      => "Protection From Magical Weapons"
         ~BZ@2C12~, ~@40368~, ~@40369~, ~SPWI613~,  ~1~, ~12~, ~improved-haste.BAM~,                             ~BZ@2C12I~, ~BZPN049D~, ~~      => "Improved Haste"
+        ~BZ@2D12~, ~@40370~, ~@40371~, ~SPWI614~,  ~1~, ~12~, ~death-fog.BAM~,                                  ~BZ@2D12I~, ~BZPN040D~, ~~      => "Death Fog"
 
 
     END

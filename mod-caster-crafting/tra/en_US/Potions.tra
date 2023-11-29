@@ -1854,3 +1854,17 @@ Special: negates Slow status
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Death Fog
+@40370 = ~Death Fog Bomb~
+@40371 = ~This bomb creates an area of solid fog around the impact that has the additional property of being highly acidic. Creatures in the effect suffer 8 points of acid damage for each round they are exposed to the vapors of the Death Fog; it will also instantly kill all summoned creatures, regardless of their Hit Dice and immunities.
+
+STATISTICS:
+
+Damage: 8 acid damage/round
+Special: Kills summoned creatures (regardless of level)
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+
+Weight: 1~
