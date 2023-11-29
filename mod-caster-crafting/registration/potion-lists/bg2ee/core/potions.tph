@@ -67,8 +67,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN08-4~,    ~POTN08~, ~0~,  ~SPPR607~,                   ~6~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Heal` Priest Spell
         ~POTN08-5~,    ~POTN08~, ~0~,  ~SPPR713~,                   ~6~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Greater Restoration` Priest Spell
 
-        ~POTN09-0~,    ~POTN09~, ~0~,  ~SPWI603~,                   ~1~, ~0~, ~48~, ~Enhancement~ => ~POTN09~   //Potion of Heroism;                      `Tenser's Transformation` Wizard Spell
-        ~POTN09-1~,    ~POTN09~, ~0~,  ~SPPR412~,                   ~1~, ~0~, ~48~, ~Enhancement~ => ~POTN09~   //Potion of Heroism;                      `Holy Power` Priest Spell
+        ~POTN09-0~,    ~POTN09~, ~0~,  ~SPWI603~,                   ~1~, ~0~, ~48~, ~Offense~     => ~POTN09~   //Potion of Heroism;                      `Tenser's Transformation` Wizard Spell
+        ~POTN09-1~,    ~POTN09~, ~0~,  ~SPPR412~,                   ~1~, ~0~, ~48~, ~Offense~     => ~POTN09~   //Potion of Heroism;                      `Holy Power` Priest Spell
 
         ~POTN10-0~,    ~POTN10~, ~0~,  ~SPWI206~,                   ~1~, ~0~, ~4~,  ~Enhancement~ => ~POTN10~   //Potion of Invisibility;                 `Invisibility` Wizard Spell
         ~POTN10-1~,    ~POTN10~, ~0~,  ~SPWI307~,                   ~2~, ~0~, ~4~,  ~Enhancement~ => ~POTN10~   //Potion of Invisibility;                 `Invisibility 10' Radius` Wizard Spell
@@ -83,7 +83,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN13-1~,    ~POTN13~, ~0~,  ~SPWI712~,                   ~2~, ~0~, ~6~,  ~Bomb~        => ~POTN13~   //Oil of Fiery Burning;                   `Delayed Blast Fireball` Wizard Spell
         ~POTN13-2~,    ~POTN13~, ~0~,  ~SPWI922~,                   ~5~, ~0~, ~6~,  ~Bomb~        => ~POTN13~   //Oil of Fiery Burning;                   `Dragon's Breath` Wizard Spell
 
-        ~POTN13-0~,    ~POTN14~, ~0~,  ~SPWI305~,                   ~1~, ~0~, ~6~,  ~Enhancement~ => ~POTN13~   //Oil of Speed;                           `Haste` Wizard Spell
+        ~POTN13-0~,    ~POTN14~, ~0~,  ~SPWI305~,                   ~1~, ~0~, ~6~,  ~Offense~     => ~POTN13~   //Oil of Speed;                           `Haste` Wizard Spell
+        ~POTN13-1~,    ~POTN14~, ~0~,  ~SPRA301~,                   ~1~, ~0~, ~6~,  ~Offense~     => ~POTN13~   //Oil of Speed;                           `Haste` Ranger Spell
+        ~POTN13-2~,    ~POTN14~, ~0~,  ~SPWI613~,                   ~2~, ~0~, ~6~,  ~Offense~     => ~POTN13~   //Oil of Speed;                           `Improved Haste` Wizard Spell
 
         ~POTN17-0~,    ~POTN17~, ~0~,  ~SPPR317,SPPR203~,           ~1~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Cure Disease` and `Cure Medium Wounds` Priest Spells
         ~POTN17-P404~, ~POTN17~, ~0~,  ~SPPR404~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Neutralize Poison` Priest spell
