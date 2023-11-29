@@ -116,5 +116,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2J14~, ~@40382~, ~@40383~, ~SPWI702~,  ~1~, ~13~, ~protection-from-the-elements.BAM~,               ~BZ@2J14I~, ~BZPN058D~, ~~      => "Protection From The Elements"
         ~BZ@2K14~, ~@40384~, ~@40385~, ~SPWI708~,  ~1~, ~14~, ~mantle.BAM~,                                     ~BZ@2K14I~, ~BZPN026D~, ~~      => "Mantle"
 
+        ~BZ@2L14~, ~@40386~, ~@40387~, ~SPWI803~,  ~1~, ~15~, ~protection-from-energy.BAM~,                     ~BZ@2L14I~, ~BZPN005D~, ~~      => "Protection From Energy"
+
 
     END

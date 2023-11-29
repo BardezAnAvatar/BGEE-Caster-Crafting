@@ -1969,3 +1969,20 @@ Duration: 4 rounds
 
 Weight: 1~
 
+
+//Protection From Energy
+@40386 = ~Elixir of Protection From Energy~
+@40387 = ~This elixir confers 75% immunity against all energy attacks —such as fire, cold, acid, magic, and electricity, whether from magical or non-magical sources— such as spells, weapons, wands, breath weapons, etc.
+
+Any physical damage, such as piercing, crushing, or slashing will get through.
+
+STATISTICS:
+
+Acid Resistance: +75%
+Fire Resistance: +75% (mundane or magical)
+Cold Resistance: +75% (mundane or magical)
+Electricity Resistance: +75%
+Magical Damage Resistance: +75%
+Duration: %num_rounds% rounds
+
+Weight: 1~
