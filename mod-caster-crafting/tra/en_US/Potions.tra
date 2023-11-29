@@ -1600,3 +1600,15 @@ Special: immunity to Alteration spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Spell Immunity: Conjuration
+@40232 = ~Potion of Immunity to Conjuration~
+@40233 = ~This potion grants the imbiber protection from Conjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: immunity to Conjuration spells
+Duration: %num_rounds% rounds
+
+Weight: 1~

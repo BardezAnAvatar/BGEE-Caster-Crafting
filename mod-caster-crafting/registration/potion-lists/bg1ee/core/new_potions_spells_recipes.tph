@@ -138,6 +138,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SHADOW_DOOR~,                              ~BZ@1R09~, ~SPWI505~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Shadow Door"
         ~SPELL_IMMUNITY_ABJURATION~,                ~BZ@1S09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Abjuration"
         ~SPELL_IMMUNITY_ALTERATION~,                ~BZ@1T09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Alteration"
+        ~SPELL_IMMUNITY_CONJURATION~,               ~BZ@1U09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Conjuration"
 
 
     END
