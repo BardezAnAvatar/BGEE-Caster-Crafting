@@ -1572,7 +1572,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: illusion grants Improved Invisibility
+Special: Illusion grants Improved Invisibility
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1584,7 +1584,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Abjuration spells
+Special: Immunity to Abjuration spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1596,7 +1596,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Alteration spells
+Special: Immunity to Alteration spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1608,7 +1608,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Conjuration spells
+Special: Immunity to Conjuration spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1620,7 +1620,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Divination spells
+Special: Immunity to Divination spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1632,7 +1632,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Enchantment spells
+Special: Immunity to Enchantment spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1644,7 +1644,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Evocation spells
+Special: Immunity to Evocation spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1656,7 +1656,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Illusion spells
+Special: Immunity to Illusion spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1668,7 +1668,7 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to Necromancy spells
+Special: Immunity to Necromancy spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
@@ -1679,7 +1679,19 @@ Weight: 1~
 
 STATISTICS:
 
-Special: immunity to non-magical weapons
+Special: Immunity to non-magical weapons
 Duration: %num_rounds% rounds
+
+Weight: 1~
+
+
+//Protection From Electricity
+@40346 = ~Potion of Protection From Electricity~
+@40347 = ~This poition confers complete invulnerability to all electrical attacks, whether magical or non-magical, such as Lightning Bolt or certain breath weapons.
+
+STATISTICS:
+
+Special: Immunity to electricity
+Duration: %num_turns% (%num_rounds% rounds)
 
 Weight: 1~
