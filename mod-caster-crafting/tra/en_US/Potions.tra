@@ -1876,7 +1876,7 @@ Weight: 1~
 
 STATISTICS:
 
-Damage: %%magnitude%d6 electricity
+Damage: %magnitude%d6 electricity
 Special: jumps to next nearest foe, dealing 1d6 less damage
 Duration: Instantaneous
 
