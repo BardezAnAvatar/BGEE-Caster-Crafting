@@ -1588,3 +1588,15 @@ Special: immunity to Abjuration spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Spell Immunity: Alteration
+@40230 = ~Potion of Immunity to Alteration~
+@40231 = ~This potion grants the imbiber protection from Alteration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: immunity to Alteration spells
+Duration: %num_rounds% rounds
+
+Weight: 1~

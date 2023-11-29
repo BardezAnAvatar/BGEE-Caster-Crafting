@@ -137,6 +137,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~RIGHTEOUS_MAGIC~,                          ~BZ@1Q09~, ~SPPR513~,  ~1~,  ~1~, ~Offense~,     ~10~ => "Righteous Magic"
         ~SHADOW_DOOR~,                              ~BZ@1R09~, ~SPWI505~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Shadow Door"
         ~SPELL_IMMUNITY_ABJURATION~,                ~BZ@1S09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Abjuration"
+        ~SPELL_IMMUNITY_ALTERATION~,                ~BZ@1T09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Alteration"
 
 
     END
