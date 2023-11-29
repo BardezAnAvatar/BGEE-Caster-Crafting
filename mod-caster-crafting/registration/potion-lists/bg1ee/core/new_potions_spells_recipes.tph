@@ -172,6 +172,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~GREATER_RESTORATION~,                      ~BZ@2H14~, ~SPPR713~,  ~1~,  ~1~, ~Cure~,        ~14~ => "Greater Restoration"
         ~SPELL_TURNING~,                            ~BZ@2I14~, ~SPWI701~,  ~1~,  ~1~, ~Defense~,     ~14~ => "Spell Turning"
         ~PROTECTION_FROM_THE_ELEMENTS~,             ~BZ@2J14~, ~SPWI702~,  ~1~,  ~1~, ~Defense~,     ~13~ => "Protection From The Elements"
+        ~MANTLE~,                                   ~BZ@2K14~, ~SPWI708~,  ~1~,  ~1~, ~Defense~,     ~14~ => "Mantle"
+        ~MANTLE_SPWI808~,                           ~BZ@2K14~, ~SPWI808~,  ~1~,  ~2~, ~Defense~,     ~14~ => "Mantle"
 
 
     END

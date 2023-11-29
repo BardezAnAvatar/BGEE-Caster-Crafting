@@ -1956,3 +1956,16 @@ Electricity Resistance: +75% bonus
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Mantle
+@40384 = ~Mixture of Mantle~
+@40385 = ~This potion confers complete invulnerability to all weapons of +2 or lower enchantment. This potion will not work in conjunction with Protection From Magical Weapons.
+
+STATISTICS:
+
+Special: Immunity to weapons of +2 or lower enchantment
+Duration: 4 rounds
+
+Weight: 1~
+
