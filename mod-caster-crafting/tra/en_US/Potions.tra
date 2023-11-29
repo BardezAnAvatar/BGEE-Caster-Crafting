@@ -1793,3 +1793,20 @@ Special: Immune to opponent's 1st-, 2nd-, 3rd-, and 4th-level spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Tenser's Transformation
+@40362 = ~Tincture of Tenser's Transformation~
+@40363 = ~This potion causes the imbiber to become a berserk Fighter: <PRO_HISHER> Hit Points double, and all damage <PRO_HESHE> sustains is first detracted from this magically-gained life; <PRO_HISHER> Armor Class gains a +4 bonus (up to a maximum Armor Class of -10); <PRO_HESHE> gains a THAC0 set to +%magnitude%; each attack also receives a +2 bonus to hit and damage rolls. The effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Hit Points: doubled
+AC: +4 bonus (to a minimum AC of -10)
+THAC0: set to %magnitude%
+Attack rolls: +2 bonus
+Damage rolls: +2 bonus
+Special: spellcasting disabled
+Duration: %num_rounds% rounds
+
+Weight: 1~

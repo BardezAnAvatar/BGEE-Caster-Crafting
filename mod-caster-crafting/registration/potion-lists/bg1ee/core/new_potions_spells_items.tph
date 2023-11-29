@@ -102,6 +102,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@2611~, ~@40356~, ~@40357~, ~SPPR611~,  ~1~, ~12~, ~wondrous-recall.BAM~,                            ~BZ@2611I~, ~BZPN100D~, ~~      => "Wondrous Recall"
         ~BZ@2711~, ~@40358~, ~@40359~, ~SPPR615~,  ~1~, ~12~, ~entropy-shield.BAM~,                             ~BZ@2711I~, ~BZPN100D~, ~~      => "Entropy Shield"
         ~BZ@2812~, ~@40360~, ~@40361~, ~SPWI602~,  ~1~, ~12~, ~globe-of-invulnerability.BAM~,                   ~BZ@2812I~, ~BZPN001D~, ~~      => "Globe of Invulnerability"
+        ~BZ@2912~, ~@40362~, ~@40363~, ~SPWI603~,  ~1~, ~16~, ~tenser's-transformation.BAM~,                    ~BZ@2912I~, ~BZPN019D~, ~~      => "Tenser's Transformation"
 
 
     END

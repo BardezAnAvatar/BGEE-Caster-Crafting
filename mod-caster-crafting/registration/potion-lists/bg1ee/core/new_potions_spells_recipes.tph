@@ -156,8 +156,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~HEAL~,                                     ~BZ@2511~, ~SPPR607~,  ~1~,  ~1~, ~Cure~,        ~12~ => "Heal"
         ~HEAL_SPPR713~,                             ~BZ@2511~, ~SPPR713~,  ~1~,  ~2~, ~Cure~,        ~12~ => "Heal"
         ~WONDROUS_RECALL~,                          ~BZ@2611~, ~SPPR611~,  ~1~,  ~1~, ~Enhancement~, ~12~ => "Wondrous Recall"
-        ~ENTROPY_SHIELD~,                           ~BZ@2711~, ~SPPR615~,  ~1~,  ~1~, ~Defense~    , ~12~ => "Entropy Shield"
-        ~GLOBE_OF_INVULNERABILITY~,                 ~BZ@2812~, ~SPPR602~,  ~1~,  ~1~, ~Defense~    , ~12~ => "Globe of Invulnerability"
+        ~ENTROPY_SHIELD~,                           ~BZ@2711~, ~SPPR615~,  ~1~,  ~1~, ~Defense~,     ~12~ => "Entropy Shield"
+        ~GLOBE_OF_INVULNERABILITY~,                 ~BZ@2812~, ~SPPR602~,  ~1~,  ~1~, ~Defense~,     ~12~ => "Globe of Invulnerability"
+        ~TENSER'S_TRANSFORMATION~,                  ~BZ@2912~, ~SPPR603~,  ~1~,  ~1~, ~Offense~,     ~16~ => "Tenser's Transformation"
 
 
     END
