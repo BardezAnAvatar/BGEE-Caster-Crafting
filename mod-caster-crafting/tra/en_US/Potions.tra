@@ -1624,3 +1624,15 @@ Special: immunity to Divination spells
 Duration: %num_rounds% rounds
 
 Weight: 1~
+
+
+//Spell Immunity: Enchantment
+@40236 = ~Potion of Immunity to Enchantment~
+@40237 = ~This potion grants the imbiber protection from Enchantment. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: immunity to Enchantment spells
+Duration: %num_rounds% rounds
+
+Weight: 1~

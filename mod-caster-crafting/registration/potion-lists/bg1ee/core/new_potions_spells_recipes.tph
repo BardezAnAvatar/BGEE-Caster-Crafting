@@ -140,6 +140,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPELL_IMMUNITY_ALTERATION~,                ~BZ@1T09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Alteration"
         ~SPELL_IMMUNITY_CONJURATION~,               ~BZ@1U09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Conjuration"
         ~SPELL_IMMUNITY_DIVINATION~,                ~BZ@1V09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Divination"
+        ~SPELL_IMMUNITY_ENCHANTMENT~,               ~BZ@1W09~, ~SPWI510~,  ~1~,  ~1~, ~Defense~,     ~10~ => "Spell Immunity: Enchantment"
 
 
     END
