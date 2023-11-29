@@ -163,6 +163,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~PROTECTION_FROM_MAGICAL_WEAPONS~,          ~BZ@2B12~, ~SPWI611~,  ~1~,  ~1~, ~Defense~,     ~12~ => "Protection From Magical Weapons"
         ~IMPROVED_HASTE~,                           ~BZ@2C12~, ~SPWI613~,  ~1~,  ~1~, ~Offense~,     ~12~ => "Improved Haste"
         ~DEATH_FOG~,                                ~BZ@2D12~, ~SPWI614~,  ~1~,  ~1~, ~Bomb~,        ~12~ => "Death Fog"
+        ~CHAIN_LIGHTNING~,                          ~BZ@2E12~, ~SPWI615~,  ~1~,  ~1~, ~Bomb~,        ~12~ => "Chain Lightning"
 
 
     END

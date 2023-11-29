@@ -1868,3 +1868,14 @@ Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
 
 Weight: 1~
+
+
+//Chain Lightning
+@40372 = ~Bottled Lightning~
+@40373 = ~This bomb releases a burst of electrical energy at a single target; once the bolt strikes the initial target, the electricity then jumps to the next nearest foe, losing a small amount of energy with each additional strike until it is expended. The bolt initially inflicts %magnitude%d6 Hit Points of electrical damage. Each jump the bolt makes reduces the damage by 1d6. Each creature that is hit is allowed a Save vs. Spell for half damage.
+
+Damage: %%magnitude%d6 electricity
+Special: jumps to next nearest foe, dealing 1d6 less damage
+Duration: Instantaneous
+
+Weight: 1~
