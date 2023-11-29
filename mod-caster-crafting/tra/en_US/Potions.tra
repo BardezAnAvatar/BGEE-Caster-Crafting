@@ -367,6 +367,18 @@ Duration: 9 seconds
 Weight: 1~
 
 
+//Extend Vision
+@40058 = ~Exilir of Extend Vision~
+@40059 = ~This elixir allows the imbiber to see much farther than <PRO_HESHE> could see before. The imbiber will be able to see creatures that are too far away to return the gaze. More importantly, the imbiber can target those creatures with spells and ranged attacks from far away. Extend Vision also makes the imbiber immune to blindness.
+
+STATISTICS:
+
+Special: doubles visual range; able to target spells beyond normal sight range
+Duration: 8 hours
+
+Weight: 1~
+
+
 
 
 

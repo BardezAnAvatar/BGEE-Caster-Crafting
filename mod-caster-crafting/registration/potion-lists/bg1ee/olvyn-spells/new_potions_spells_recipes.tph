@@ -37,6 +37,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,        ~BZ@OL11~, ~MEPR656~, ~11~,  ~1~, ~Defense~,     ~14~ => "Protection From Non-Silver Weapons"
 
+        ~EXTEND_VISION~,                            ~BZ@OS16~, ~MEWI857~, ~16~,  ~1~, ~Enhancement~, ~15~ => "Extend Vision"
+
         ~PERFECT_INVISIBILITY~,                     ~BZ@OM18~, ~MEWI951~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Perfect Invisibility"
         ~ATTAIN_PERFECTION~,                        ~BZ@ON18~, ~MEWI953~, ~18~,  ~1~, ~Enhancement~, ~18~ => "Attain Perfection"
         ~FRIENDS_MEWI953~,                          ~BZ@0701~, ~MEWI953~,  ~1~,  ~5~, ~Enhancement~,  ~2~ => "Friends"
@@ -94,6 +96,6 @@ THEN BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_recipes~
     BEGIN
-        ~TRUE_STRIKE~,                          ~BZ@OQ18~, ~SPWI111~,  ~1~,  ~1~, ~Offense~,      ~2~ => "True Strike"
+        ~TRUE_STRIKE~,                              ~BZ@OR01~, ~SPWI111~,  ~1~,  ~1~, ~Offense~,      ~2~ => "True Strike"
     END
 END
