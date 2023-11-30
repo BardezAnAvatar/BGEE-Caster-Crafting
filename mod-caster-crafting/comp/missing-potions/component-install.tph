@@ -6,4 +6,10 @@
 
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/process-potion-registry.tph~
 
+//TODO: remove
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/tinkering.tph~
+
+
+//TODO: create items via an include script for building them all out
+
+//TODO: add to stores?
