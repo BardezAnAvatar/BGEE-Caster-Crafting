@@ -66,6 +66,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN08-3~,    ~POTN08~, ~0~,  ~SPPR502~,                   ~4~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Cure Critical Wounds` Priest Spell
         ~POTN08-4~,    ~POTN08~, ~0~,  ~SPPR607~,                   ~6~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Heal` Priest Spell
         ~POTN08-5~,    ~POTN08~, ~0~,  ~SPPR713~,                   ~6~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Greater Restoration` Priest Spell
+        ~POTN08-6~,    ~POTN08~, ~0~,  ~SPIN101~,                   ~1~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Cure Light Wounds` Innate ability
 
         ~POTN09-0~,    ~POTN09~, ~0~,  ~SPWI603~,                   ~1~, ~0~, ~48~, ~Offense~     => ~POTN09~   //Potion of Heroism;                      `Tenser's Transformation` Wizard Spell
         ~POTN09-1~,    ~POTN09~, ~0~,  ~SPPR412~,                   ~1~, ~0~, ~48~, ~Offense~     => ~POTN09~   //Potion of Heroism;                      `Holy Power` Priest Spell
@@ -91,6 +92,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN17-P404~, ~POTN17~, ~0~,  ~SPPR404~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Neutralize Poison` Priest spell
         ~POTN17-1~,    ~POTN17~, ~0~,  ~SPPR607~,                   ~3~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Heal` Priest spell
         ~POTN17-2~,    ~POTN17~, ~0~,  ~SPPR713~,                   ~4~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Greater Restoration` Priest spell
+        ~POTN17-3~,    ~POTN17~, ~0~,  ~BHAAL1A~,                   ~5~, ~0~, ~4~,  ~Cure~        => ~POTN17~   //Elixer of Health;                       `Mass Healing` Bhaalspawn ability
 
         ~POTN18-0~,    ~POTN18~, ~0~,  ~SPWI512,SPWI511~,           ~1~, ~0~, ~8~,  ~Defense~     => ~POTN18~   //Potion of Absorption;                   `Protection from Electricity` and `Protection from Normal Weapons` Wizard spells
         ~POTN18-1~,    ~POTN18~, ~0~,  ~SPWI702,SPWI511~,           ~1~, ~0~, ~8~,  ~Defense~     => ~POTN18~   //Potion of Absorption;                   `Protection from the Elements` and `Protection from Normal Weapons` Wizard spells
