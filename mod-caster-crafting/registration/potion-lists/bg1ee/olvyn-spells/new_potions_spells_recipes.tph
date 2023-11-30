@@ -19,7 +19,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~DISPLACEMENT~,                             ~BZ@O805~, ~MEWI353~,  ~5~,  ~1~ => ~Displacement~
         ~LEGEND_LORE~,                              ~BZ@O905~, ~MEWI356~,  ~5~,  ~1~ => ~Legend Lore~
 
-        ~EXPOSE_TO_THE_ELEMENTS~,                   ~BZ@OB09~, ~MEPR557~   ~9~,  ~1~ => "Expose to the Elements"
+        ~EXPOSE_TO_THE_ELEMENTS~,                   ~BZ@OB09~, ~MEPR557~,  ~9~,  ~1~ => "Expose to the Elements"
         ~SPHERE_OF_SECURITY_ACID~,                  ~BZ@OC09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Acid"
         ~SPHERE_OF_SECURITY_COLD~,                  ~BZ@OD09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Cold"
         ~SPHERE_OF_SECURITY_ELECTRICITY~,           ~BZ@OE09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Electricity"

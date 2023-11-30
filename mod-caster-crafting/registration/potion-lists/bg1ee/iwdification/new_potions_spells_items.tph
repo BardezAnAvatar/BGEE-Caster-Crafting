@@ -19,38 +19,38 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BZ@I103~, ~Offense~,       ~2~, ~@40102~, ~@40103~, ~SPPR218~,  ~1~,  ~5~, ~beast-claw.BAM~,                                 ~BZ@I103I~, ~BZPN026D~, ~~      => "Beast Claw"
-        ~BZ@I203~, ~Enhancement~,   ~2~, ~@40104~, ~@40105~, ~SPWI227~,  ~1~,  ~4~, ~cat's-grace.BAM~                                 ~BZ@I203I~, ~BZPN100D~, ~~      => "Cat's Grace"
-        ~BZ@I303~, ~Cure~,          ~2~, ~@40106~, ~@40107~, ~SPPR216~,  ~1~,  ~3~, ~cure-moderate-wounds.BAM~                        ~BZ@I303I~, ~BZPN070D~, ~~      => "Cure Moderate Wounds"
-        ~BZ@I403~, ~Offense~,       ~2~, ~@40108~, ~@40109~, ~SPWI226~,  ~1~,  ~3~, ~decastave.BAM~                                   ~BZ@I403I~, ~BZPN019D~, ~~      => "Decastave"
-        ~BZ@I503~, ~Bomb~,          ~2~, ~@40110~, ~@40111~, ~SPWI225~,  ~1~,  ~3~, ~snilloc's-snowball-swarm.BAM~                    ~BZ@I503I~, ~BZPN013D~, ~~      => "Snilloc's Snowball Swarm"
+        ~BZ@I203~, ~Enhancement~,   ~2~, ~@40104~, ~@40105~, ~SPWI227~,  ~1~,  ~4~, ~cat's-grace.BAM~,                                ~BZ@I203I~, ~BZPN100D~, ~~      => "Cat's Grace"
+        ~BZ@I303~, ~Cure~,          ~2~, ~@40106~, ~@40107~, ~SPPR216~,  ~1~,  ~3~, ~cure-moderate-wounds.BAM~,                       ~BZ@I303I~, ~BZPN070D~, ~~      => "Cure Moderate Wounds"
+        ~BZ@I403~, ~Offense~,       ~2~, ~@40108~, ~@40109~, ~SPWI226~,  ~1~,  ~3~, ~decastave.BAM~,                                  ~BZ@I403I~, ~BZPN019D~, ~~      => "Decastave"
+        ~BZ@I503~, ~Bomb~,          ~2~, ~@40110~, ~@40111~, ~SPWI225~,  ~1~,  ~3~, ~snilloc's-snowball-swarm.BAM~,                   ~BZ@I503I~, ~BZPN013D~, ~~      => "Snilloc's Snowball Swarm"
 
 
-        ~BZ@IN05~, ~Offense~,       ~3~, ~@40146~, ~@40147~, ~SPPR320~,  ~1~,  ~5~, ~exaltation.BAM~                                  ~BZ@IN05I~, ~BZPN032D~, ~~      => "Exaltation"
-        ~BZ@I605~, ~Offense~,       ~3~, ~@40112~, ~@40113~, ~SPPR322~,  ~1~,  ~7~, ~moonblade.BAM~                                   ~BZ@I605I~, ~BZPN058D~, ~~      => "Moonblade"
-        ~BZ@I705~, ~Defense~,       ~3~, ~@40114~, ~@40115~, ~SPPR325~,  ~1~,  ~6~, ~spike-growth.BAM~                                ~BZ@I705I~, ~BZPN049D~, ~~      => "Spike Growth"
+        ~BZ@IN05~, ~Offense~,       ~3~, ~@40146~, ~@40147~, ~SPPR320~,  ~1~,  ~5~, ~exaltation.BAM~,                                 ~BZ@IN05I~, ~BZPN032D~, ~~      => "Exaltation"
+        ~BZ@I605~, ~Offense~,       ~3~, ~@40112~, ~@40113~, ~SPPR322~,  ~1~,  ~7~, ~moonblade.BAM~,                                  ~BZ@I605I~, ~BZPN058D~, ~~      => "Moonblade"
+        ~BZ@I705~, ~Defense~,       ~3~, ~@40114~, ~@40115~, ~SPPR325~,  ~1~,  ~6~, ~spike-growth.BAM~,                               ~BZ@I705I~, ~BZPN049D~, ~~      => "Spike Growth"
 
 
-        ~BZ@I807~, ~Offense~,       ~4~, ~@40116~, ~@40117~, ~SPPR420~,  ~1~,  ~8~, ~recitation.BAM~                                  ~BZ@I807I~, ~BZPN070D~, ~~      => "Recitation"
-        ~BZ@I907~, ~Offense~,       ~4~, ~@40118~, ~@40119~, ~SPPR421~,  ~1~,  ~8~, ~blood-rage.BAM~                                  ~BZ@I907I~, ~BZPN032D~, BIT4    => "Blood Rage"
-        ~BZ@IA07~, ~Bomb~,          ~4~, ~@40120~, ~@40121~, ~SPPR422~,  ~1~,  ~8~, ~cloud-of-pestilence.BAM~                         ~BZ@IA07I~, ~BZPN013D~, ~~      => "Cloud of Pestilence"
-        ~BZ@IB07~, ~Offense~,       ~4~, ~@40122~, ~@40123~, ~SPWI426~,  ~1~,  ~8~, ~emotion-courage.BAM~                             ~BZ@IB07I~, ~BZPN040D~, ~~      => "Emotion: Courage"
-        ~BZ@IC07~, ~Offense~,       ~4~, ~@40124~, ~@40125~, ~SPWI427~,  ~1~,  ~8~, ~emotion-hope.BAM~                                ~BZ@IC07I~, ~BZPN049D~, ~~      => "Emotion: Hope"
-        ~BZ@ID07~, ~Cure~,          ~4~, ~@40126~, ~@40127~, ~SPPR423~,  ~1~,  ~8~, ~unfailing-endurance.BAM~                         ~BZ@ID07I~, ~BZPN001D~, ~~      => "Unfailing Endurance"
+        ~BZ@I807~, ~Offense~,       ~4~, ~@40116~, ~@40117~, ~SPPR420~,  ~1~,  ~8~, ~recitation.BAM~,                                 ~BZ@I807I~, ~BZPN070D~, ~~      => "Recitation"
+        ~BZ@I907~, ~Offense~,       ~4~, ~@40118~, ~@40119~, ~SPPR421~,  ~1~,  ~8~, ~blood-rage.BAM~,                                 ~BZ@I907I~, ~BZPN032D~, BIT4    => "Blood Rage"
+        ~BZ@IA07~, ~Bomb~,          ~4~, ~@40120~, ~@40121~, ~SPPR422~,  ~1~,  ~8~, ~cloud-of-pestilence.BAM~,                        ~BZ@IA07I~, ~BZPN013D~, ~~      => "Cloud of Pestilence"
+        ~BZ@IB07~, ~Offense~,       ~4~, ~@40122~, ~@40123~, ~SPWI426~,  ~1~,  ~8~, ~emotion-courage.BAM~,                            ~BZ@IB07I~, ~BZPN040D~, ~~      => "Emotion: Courage"
+        ~BZ@IC07~, ~Offense~,       ~4~, ~@40124~, ~@40125~, ~SPWI427~,  ~1~,  ~8~, ~emotion-hope.BAM~,                               ~BZ@IC07I~, ~BZPN049D~, ~~      => "Emotion: Hope"
+        ~BZ@ID07~, ~Cure~,          ~4~, ~@40126~, ~@40127~, ~SPPR423~,  ~1~,  ~8~, ~unfailing-endurance.BAM~,                        ~BZ@ID07I~, ~BZPN001D~, ~~      => "Unfailing Endurance"
 
 
-        ~BZ@IE09~, ~Offense~,       ~5~, ~@40128~, ~@40129~, ~SPPR522~,  ~1~,  ~9~, ~animal-rage.BAM~                                 ~BZ@IE09I~, ~BZPN110D~, ~~      => "Animal Rage"
-        ~BZ@IF09~, ~Offense~,       ~5~, ~@40130~, ~@40131~, ~SPPR518~,  ~1~,  ~9~, ~righteous-wrath-of-the-faithful.BAM~             ~BZ@IF09I~, ~BZPN110D~, ~~      => "Righteous Wrath of the Faithful"
-        ~BZ@IG09~, ~Defense~,       ~5~, ~@40132~, ~@40133~, ~SPPR520~,  ~1~,  ~9~, ~shield-of-lathander.BAM~                         ~BZ@IG09I~, ~BZPN019D~, BIT1    => "Shield of Lathander"
-        ~BZ@IH09~, ~Bomb~,          ~5~, ~@40134~, ~@40135~, ~SPPR519~,  ~1~, ~10~, ~spike-stones.BAM~                                ~BZ@IH09I~, ~BZPN013D~, ~~      => "Spike Stones"
+        ~BZ@IE09~, ~Offense~,       ~5~, ~@40128~, ~@40129~, ~SPPR522~,  ~1~,  ~9~, ~animal-rage.BAM~,                                ~BZ@IE09I~, ~BZPN110D~, ~~      => "Animal Rage"
+        ~BZ@IF09~, ~Offense~,       ~5~, ~@40130~, ~@40131~, ~SPPR518~,  ~1~,  ~9~, ~righteous-wrath-of-the-faithful.BAM~,            ~BZ@IF09I~, ~BZPN110D~, ~~      => "Righteous Wrath of the Faithful"
+        ~BZ@IG09~, ~Defense~,       ~5~, ~@40132~, ~@40133~, ~SPPR520~,  ~1~,  ~9~, ~shield-of-lathander.BAM~,                        ~BZ@IG09I~, ~BZPN019D~, BIT1    => "Shield of Lathander"
+        ~BZ@IH09~, ~Bomb~,          ~5~, ~@40134~, ~@40135~, ~SPPR519~,  ~1~, ~10~, ~spike-stones.BAM~,                               ~BZ@IH09I~, ~BZPN013D~, ~~      => "Spike Stones"
 
 
-        ~BZ@II12~, ~Defense~,       ~6~, ~@40136~, ~@40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~                             ~BZ@II12I~, ~BZPN100D~, ~~      => "Antimagic Shell"
-        ~BZ@IJ12~, ~Cure~,          ~6~, ~@40138~, ~@40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~                          ~BZ@IJ12I~, ~BZPN005D~, ~~      => "Trollish Fortitude"
+        ~BZ@II12~, ~Defense~,       ~6~, ~@40136~, ~@40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~,                            ~BZ@II12I~, ~BZPN100D~, ~~      => "Antimagic Shell"
+        ~BZ@IJ12~, ~Cure~,          ~6~, ~@40138~, ~@40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~,                         ~BZ@IJ12I~, ~BZPN005D~, ~~      => "Trollish Fortitude"
 
 
-        ~BZ@IK14~, ~Defense~,       ~7~, ~@40140~, ~@40141~, ~SPPR735~,  ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~             ~BZ@IK14I~, ~BZPN110D~, ~~      => "Impervious Sanctity of Mind"
-        ~BZ@IL14~, ~Defense~,       ~7~, ~@40142~, ~@40143~, ~SPPR737~,  ~1~, ~14~, ~greater-shield-of-lathander.BAM~                 ~BZ@IL14I~, ~BZPN140D~, BIT1    => "Greater Shield of Lathander"
-        ~BZ@IM14~, ~Bomb~,          ~7~, ~@40144~, ~@40145~, ~SPPR738~,  ~1~, ~13~, ~mist-of-eldath.BAM~                              ~BZ@IM14I~, ~BZPN090D~, ~~      => "Mist of Eldath"
+        ~BZ@IK14~, ~Defense~,       ~7~, ~@40140~, ~@40141~, ~SPPR735~,  ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~,            ~BZ@IK14I~, ~BZPN110D~, ~~      => "Impervious Sanctity of Mind"
+        ~BZ@IL14~, ~Defense~,       ~7~, ~@40142~, ~@40143~, ~SPPR737~,  ~1~, ~14~, ~greater-shield-of-lathander.BAM~,                ~BZ@IL14I~, ~BZPN140D~, BIT1    => "Greater Shield of Lathander"
+        ~BZ@IM14~, ~Bomb~,          ~7~, ~@40144~, ~@40145~, ~SPPR738~,  ~1~, ~13~, ~mist-of-eldath.BAM~,                             ~BZ@IM14I~, ~BZPN090D~, ~~      => "Mist of Eldath"
 
 
     END
