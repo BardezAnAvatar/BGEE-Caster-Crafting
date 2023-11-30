@@ -1,0 +1,24 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~potion_list~
+    BEGIN
+
+        /*
+        [Unique Key]            // 0
+        [Potion Item Code]      // 1
+        [Required Caster Level] // 2
+        [Recipe]                // 3; these will be comma-delimited spell RESREFs
+        [Result Count]          // 4
+        [XP cost]               // 5
+        [Time Cost (hours)]     // 6
+        [Category]              // 7
+        */
+
+        ~POTN17-4~,    ~POTN20~, ~0~,  ~MEPR758~,                   ~5~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Elixer of Health;                       `Mass Heal` Priest spell
+
+        ~POTN20-6~,    ~POTN20~, ~0~,  ~MEPR758~,                   ~6~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Mass Heal` Priest spell
+
+        ~POTN52-3~,    ~POTN52~, ~0~,  ~MEPR758~,                   ~4~, ~0~, ~6~,  ~Cure~        => ~POTN52~   //Potion of Extra Healing;                `Mass Heal` Priest spell
+
+        ~POTN55-3~,    ~POTN55~, ~0~,  ~MEPR758~,                   ~3~, ~0~, ~12~, ~Cure~        => ~POTN55~   //Potion of Superior Healing;             `Mass Heal` Priest spell
+
+    END
