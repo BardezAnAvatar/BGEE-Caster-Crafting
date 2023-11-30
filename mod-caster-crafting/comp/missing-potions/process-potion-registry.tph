@@ -1,0 +1,22 @@
+/**********************************************************************************
+*   This file will process the registry of potions directly crated from spells.   *
+**********************************************************************************/
+
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/new_potions_spells_items.tph~
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/new_potions_spells_recipes.tph~
+
+ACTION_IF (%bz_iwdification_installed%)
+BEGIN
+    PRINT ~DEBUG: Include IWD-ification New Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/new_potions_spells_items.tph~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/new_potions_spells_recipes.tph~
+END
+
+ACTION_IF (%bz_OlvynSpells_installed%)
+BEGIN
+    PRINT ~DEBUG: Include OlvynSpells New Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/new_potions_spells_items.tph~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/new_potions_spells_recipes.tph~
+END
+
+//TODO: Make a map of recipes + potions, so I can emit to ~potion_list~ for the dialog

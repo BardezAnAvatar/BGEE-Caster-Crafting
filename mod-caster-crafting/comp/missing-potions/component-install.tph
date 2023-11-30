@@ -4,5 +4,6 @@
 *   that do not exist in the game.                           *
 *************************************************************/
 
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/process-potion-registry.tph~
 
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/tinkering.tph~
