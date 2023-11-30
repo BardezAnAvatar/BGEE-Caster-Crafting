@@ -13,6 +13,11 @@
 ACTION_PHP_EACH ~new_potions_spells_items~
     AS ~keys~ => ~value~
     BEGIN
+        PRINT ~DEBUG: Olvyn:
+            Value:      `%value%`;
+            SRC BAM:    `%keys_8%`;
+            Dest BAM:   `%keys_9%`;
+            DESC BAM:   `%keys_10%`;~
 
         /****************
         *   Copy BAMs   *
