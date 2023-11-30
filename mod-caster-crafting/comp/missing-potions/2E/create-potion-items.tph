@@ -63,13 +63,12 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 TODO:
                     %duration%;
                         NEW
-                %speed%
+                %magnitude%
                     Fly
-                %dice_count%:
                     Snilloc's
                     Searing Smite
-                %magnitude%
                     Armor of Faith
+                    Barkskin
                     Draw Upon Holy Might
                     Mirror Image
                     Fireball
@@ -83,10 +82,6 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 %magnitude2%
                     Holy Power
                     Righteous Magic
-                %magnitude_points% --remove!
-                    Draw Upon Holy Might
-                %base_AC%
-                    Barkskin
         */
         /*************************************
         *    END: Item Description Strings   *

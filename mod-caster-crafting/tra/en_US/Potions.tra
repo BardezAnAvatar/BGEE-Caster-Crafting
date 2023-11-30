@@ -20,11 +20,11 @@ Weight: 1~
 
 //Searing Smite
 @40004 = ~Oil of Searing Smite~
-@40005 = ~The applicant soaks their melee weapons, imbuing it with divine fire. The next successful melee attack made on a creature within 5 rounds deals an additional %dice_count%d6 magic fire damage.
+@40005 = ~The applicant soaks their melee weapons, imbuing it with divine fire. The next successful melee attack made on a creature within 5 rounds deals an additional %magnitude%d6 magic fire damage.
 
 STATISTICS:
 
-Damage: %dice_count%d6 magic fire damage on next melee attack
+Damage: %magnitude%d6 magic fire damage on next melee attack
 Duration: 5 rounds or until triggered
 Target: 1 creature
 
@@ -37,7 +37,7 @@ Weight: 1~
 
 STATISTICS:
 
-Damage: %dice_count%d6 magic damage
+Damage: %magnitude%d6 magic damage
 Duration: 2 turns (20 rounds)
 Target: 1 creature
 
@@ -103,7 +103,7 @@ Weight: 1~
 STATISTICS:
 
 Special: Flight
-Speed: %speed%
+Speed: %magnitude%
 Duration: %num_rounds% rounds
 Target: Self
 
@@ -480,11 +480,11 @@ Weight: 1~
 
 //Snilloc's Snowball Swarm
 @40110 = ~Bomb of Snilloc's Snowball Swarm~
-@40111 = ~A flurry of snowballs will erupt from the point of impact. These snowballs will hit everything within the area of effect, doing %dice_count%d3 points of cold damage. Against fire-using or fire-dwelling creatures, it inflicts %dice_count%d6 points of cold damage instead.
+@40111 = ~A flurry of snowballs will erupt from the point of impact. These snowballs will hit everything within the area of effect, doing %magnitude%d3 points of cold damage. Against fire-using or fire-dwelling creatures, it inflicts %magnitude%d6 points of cold damage instead.
 
 STATISTICS:
 
-Damage: %dice_count%d3 (%dice_count%d6 vs. fire-using or fire-dwelling creatures) cold; Save vs. Spell for half
+Damage: %magnitude%d3 (%magnitude%d6 vs. fire-using or fire-dwelling creatures) cold; Save vs. Spell for half
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Target: Point
@@ -971,11 +971,11 @@ Weight: 1~
 
 //Barkskin
 @40226 = ~Oil of Barkskin~
-@40227 = ~Upon application, this oil causes skin to become as tough as bark, increasing its base Armor Class to %base_AC%. In addition, Saving Throws (except magic) gain a +1 bonus.
+@40227 = ~Upon application, this oil causes skin to become as tough as bark, increasing its base Armor Class to %magnitude%. In addition, Saving Throws (except magic) gain a +1 bonus.
 
 STATISTICS:
 
-Base AC: %base_AC%
+Base AC: %magnitude%
 Saving Throws: +1 bonus (except vs. Spell)
 Duration: %num_rounds% rounds
 Target: 1 creature
@@ -1030,7 +1030,7 @@ Weight: 1~
 
 //Draw Upon Holy Might
 @40234 = ~Draught of Draw Upon Holy Might~
-@40235 = ~This potion grants %magnitude_points% of Strength, Constitution, and Dexterity to the imbiber
+@40235 = ~This potion grants %magnitude% of Strength, Constitution, and Dexterity to the imbiber
 
 STATISTICS:
 
