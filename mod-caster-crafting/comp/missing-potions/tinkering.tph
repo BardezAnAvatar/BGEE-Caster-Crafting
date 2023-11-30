@@ -10,33 +10,33 @@
 *   PoC
 */
 //description image
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN001D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN005D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN008D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN013D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN019D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN026D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN032D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN040D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN049D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN058D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN070D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN080D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN090D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN100D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN110D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN120D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN130D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN140D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/inv/BZPN032I.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN001D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN005D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN008D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN013D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN019D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN026D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN032D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN040D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN049D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN058D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN070D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN080D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN090D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN100D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN110D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN120D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN130D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN140D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/spell-turning.BAM~        ~override/BZPN032I.BAM~
 
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/absolute-immunity.BAM~ ~override/BZaiI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZaidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/animal-rage.BAM~ ~override/BZarI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/antiharm-shell.BAM~ ~override/BZahsI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/antimagic-shell.BAM~ ~override/BZamsI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/armor.BAM~ ~override/BZarmI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/absolute-immunity.BAM~    ~override/BZaiI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~                  ~override/BZaidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/animal-rage.BAM~          ~override/BZarI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/antiharm-shell.BAM~       ~override/BZahsI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/antimagic-shell.BAM~      ~override/BZamsI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/armor.BAM~                ~override/BZarmI.BAM~
 
 COPY_EXISTING ~POTN02.ITM~ ~override/BZPOC001.ITM~
     //Patches
@@ -265,30 +265,30 @@ COPY_EXISTING ~POTN02.ITM~ ~override/BZarm1.ITM~
 
 
 
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ¶150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZŠ150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ€150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZƒ150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ‡150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ{150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ`150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ}150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ[150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ]150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ=150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/crafting-potion/BAM/potions/desc/BZPN150D.BAM~ ~override/BZ@150D.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ¶aidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZŠaidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ€aidI.BAM~   //creates unmovable item
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZƒaidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ‡aidI.BAM~   //creates unmovable item
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ{aidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ}aidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ`aidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ[aidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ]aidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ=aidI.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/aid.BAM~ ~override/BZ@aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ¶150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZŠ150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ€150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZƒ150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ‡150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ{150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ`150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ}150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ[150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ]150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ=150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/BZPN150D.BAM~ ~override/BZ@150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ¶aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZŠaidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ€aidI.BAM~   //creates unmovable item
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZƒaidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ‡aidI.BAM~   //creates unmovable item
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ{aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ}aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ`aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ[aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ]aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ=aidI.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/aid.BAM~ ~override/BZ@aidI.BAM~
 
 COPY_EXISTING ~POTN02.ITM~ ~override/BZ¶aid1.ITM~
     //Patches
