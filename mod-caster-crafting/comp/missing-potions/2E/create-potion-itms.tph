@@ -1,0 +1,31 @@
+/****************************************************************
+*   This file will handle the creation of *.ITM resources       *
+*       for the new potions I want to create. It will be        *
+*       driven off of my registry metadata, with exception      *
+*       cases created more explicitly.                          *
+*                                                               *
+*   Precondition:                                               *
+*       - Associative array ~new_potions_spells_items~ exists   *
+*       and is populated                                        *
+****************************************************************/
+
+
+ACTION_PHP_EACH ~scroll_list_missing_data~
+    AS ~keys~ => ~value~
+    BEGIN
+
+        //copy inventory BAM
+        COPY
+            ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/%keys_8%~
+            ~override/%keys_9%.BAM~
+
+        //copy description BAM
+        ACTION_IF NOT FILE_EXISTS ~./override/%keys_10%.BAM~
+        THEN BEGIN
+            COPY
+                ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/%keys_10%.BAM~
+                ~override/%keys_10%.BAM~
+        END
+
+
+    END
