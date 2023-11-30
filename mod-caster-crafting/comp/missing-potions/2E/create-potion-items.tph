@@ -10,10 +10,13 @@
 ****************************************************************/
 
 
-ACTION_PHP_EACH ~scroll_list_missing_data~
+ACTION_PHP_EACH ~new_potions_spells_items~
     AS ~keys~ => ~value~
     BEGIN
 
+        /****************
+        *   Copy BAMs   *
+        ****************/
         //copy inventory BAM
         COPY
             ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/%keys_8%~
@@ -26,6 +29,9 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
                 ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/%keys_10%.BAM~
                 ~override/%keys_10%.BAM~
         END
+        /*********************
+        *   END: Copy BAMs   *
+        *********************/
 
 
     END
