@@ -2,18 +2,18 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_items~
     BEGIN
         /*
-        [resulting potion RESREF]                   // 1
-        [Category]                                  // 2
-        [Original Spell Level (for sorting/org.)    // 3
-        [STRREF: Name]                              // 4
-        [STRREF: Descripton]                        // 3
-        [effect: source spell]                      // 6
-        [effect: Caster Level (NI: minimum level)]  // 7
-        [Cost: gold tier]                           // 8
-        [Icon: Source inventory BAM path]           // 9
-        [Icon: Destination inventory BAM RESREF]    // 10
-        [Icon: Description RESREF]                  // 11
-        [Unusability flags]                         // 12 special case for one or two potions; usually `~~`
+        [resulting potion RESREF]                   // 0
+        [Category]                                  // 1
+        [Original Spell Level (for sorting/org.)    // 2
+        [STRREF: Name]                              // 3
+        [STRREF: Descripton]                        // 4
+        [effect: source spell]                      // 5
+        [effect: Caster Level (NI: minimum level)]  // 6
+        [Cost: gold tier]                           // 7
+        [Icon: Source inventory BAM path]           // 8
+        [Icon: Destination inventory BAM RESREF]    // 9
+        [Icon: Description RESREF]                  // 10
+        [Unusability flags]                         // 11 special case for one or two potions; usually `~~`
         */
 
 
