@@ -39,4 +39,68 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         *********************/
 
 
+
+        /********************************
+        *    BEGIN: Read Source Spell   *
+        ********************************/
+        //Read the extended header for copying
+        //Read the duration for description
+        //Read the specified op code for magnitide?
+        //Read the specified op code for magnitude2?
+        //Read the specified op code for dice_count?
+        //TODO: after reading duration, emit a value that does days; hours; turns (rounds);rounds; seconds; instant
+        /******************************
+        *    END: Read Source Spell   *
+        ******************************/
+
+
+
+        /***************************************
+        *    BEGIN: Item Description Strings   *
+        ***************************************/
+        /*
+            Expect these values variables:
+                TODO:
+                    %duration%;
+                        NEW
+                %speed%
+                    Fly
+                %dice_count%:
+                    Snilloc's
+                    Searing Smite
+                %magnitude%
+                    Armor of Faith
+                    Draw Upon Holy Might
+                    Mirror Image
+                    Fireball
+                    Holy Power
+                    Spirit Fire
+                    Stoneskin
+                    Champion's Strength
+                    Righteous Magic
+                    Tenser's Transformation
+                    Chain Lightning
+                %magnitude2%
+                    Holy Power
+                    Righteous Magic
+                %magnitude_points% --remove!
+                    Draw Upon Holy Might
+                %base_AC%
+                    Barkskin
+        */
+        /*************************************
+        *    END: Item Description Strings   *
+        *************************************/
+
+
+
+        /******************************
+        *    BEGIN: Create ITM file   *
+        ******************************/
+        //TODO: Copy item base
+        //Apply header
+        // Is it Targeting self, a point, or an opponent?
+        /****************************
+        *    END: Create ITM file   *
+        ****************************/
     END
