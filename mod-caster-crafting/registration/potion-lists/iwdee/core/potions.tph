@@ -153,6 +153,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN34-0~,    ~POTN34~,   ~0~,  ~SPWI606~,                   ~2~, ~0~, ~24~, ~Defense~     => ~POTN34~   //Potion of Magic Protection;             `Protection From Magic Energy` Wizard spell
         ~POTN34-1~,    ~POTN34~,   ~0~,  ~SPWI803~,                   ~1~, ~0~, ~24~, ~Defense~     => ~POTN34~   //Potion of Magic Protection;             `Protection From Energy` Wizard spell
         ~POTN34-2~,    ~POTN34~,   ~20~, ~SPPR509~,                   ~2~, ~0~, ~24~, ~Defense~     => ~POTN34~   //Potion of Magic Protection;             `Magic Resistance` Priest spell
+        ~POTN34-3~,    ~POTN34~,   ~20~, ~SPPR737~,                   ~2~, ~0~, ~24~, ~Defense~     => ~POTN34~   //Potion of Magic Protection;             `Greater Shield of Lathander` Priest spell
 
         ~POTN35-0~,    ~POTN35~,   ~0~,  ~SPWI722~,                   ~1~, ~0~, ~24~, ~Defense~     => ~POTN35~   //Potion of Magic Shielding;              `Limited Wish` Wizard spell
         ~POTN35-1~,    ~POTN35~,   ~0~,  ~SPWI919~,                   ~3~, ~0~, ~24~, ~Defense~     => ~POTN35~   //Potion of Magic Shielding;              `Wish` Wizard spell
