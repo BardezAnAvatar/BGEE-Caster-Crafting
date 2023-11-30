@@ -35,6 +35,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN44-5-21~, ~POTN44~,   ~21~, ~SPPR513~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Righteous Magic` Priest spell
         ~POTN44-6~,    ~POTN44~,   ~21~, ~SPPR522~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Animal Rage` Priest spell
         ~POTN44-7~,    ~POTN44~,   ~16~, ~SPWI820~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Iron Body` Wizard spell
+        ~POTN44-8~,    ~POTN44~,   ~9~,  ~SPPR507~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Champion's Strength` Priest spell
 
         ~POTN03-0-6~,  ~POTN03~,   ~6~,  ~SPPR214~,                   ~1~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Draw Upon Holy Might` Priest spell
         ~POTN03-1-6~,  ~POTN03~,   ~6~,  ~SPPR513~,                   ~1~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
@@ -44,30 +45,36 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN03-1-24~, ~POTN03~,   ~24~, ~SPPR513~,                   ~3~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
         ~POTN03-6~,    ~POTN03~,   ~21~, ~SPPR522~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Animal Rage` Priest spell
         ~POTN03-7~,    ~POTN03~,   ~21~, ~SPWI820~,                   ~3~, ~0~, ~8~,  ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Iron Body` Wizard spell
+        ~POTN03-8~,    ~POTN03~,   ~9~,  ~SPPR507~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Champion's Strength` Priest spell
 
         ~POTN12-0-9~,  ~POTN12~,   ~9~,  ~SPPR214~,                   ~1~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Draw Upon Holy Might` Priest spell
         ~POTN12-1-9~,  ~POTN12~,   ~9~,  ~SPPR513~,                   ~1~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Righteous Magic` Priest spell
         ~POTN12-0-18~, ~POTN12~,   ~18~, ~SPPR214~,                   ~2~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Draw Upon Holy Might` Priest spell
         ~POTN12-1-18~, ~POTN12~,   ~18~, ~SPPR513~,                   ~2~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Righteous Magic` Priest spell
         ~POTN12-2~,    ~POTN12~,   ~16~, ~SPWI820~,                   ~2~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Iron Body` Wizard spell
+        ~POTN12-3~,    ~POTN12~,   ~9~,  ~SPPR507~,                   ~2~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Champion's Strength` Priest spell
 
         ~POTN04-0-12~, ~POTN04~,   ~12~, ~SPPR214~,                   ~1~, ~0~, ~14~, ~Enhancement~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Draw Upon Holy Might` Priest spell
         ~POTN04-1-12~, ~POTN04~,   ~12~, ~SPPR513~,                   ~1~, ~0~, ~14~, ~Enhancement~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Righteous Magic` Priest spell
         ~POTN04-0-24~, ~POTN04~,   ~24~, ~SPPR214~,                   ~2~, ~0~, ~14~, ~Enhancement~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Draw Upon Holy Might` Priest spell
         ~POTN04-1-24~, ~POTN04~,   ~24~, ~SPPR513~,                   ~2~, ~0~, ~14~, ~Enhancement~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Righteous Magic` Priest spell
         ~POTN04-2~,    ~POTN04~,   ~16~, ~SPWI820~,                   ~2~, ~0~, ~14~, ~Enhancement~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Iron Body` Wizard spell
+        ~POTN04-3~,    ~POTN04~,   ~9~,  ~SPPR507~,                   ~2~, ~0~, ~14~, ~Enhancement~ => ~POTN04~   //Potion of Frost Giant Strength (21);    `Champion's Strength` Priest spell
 
         ~POTN05-0~,    ~POTN05~,   ~15~, ~SPPR214~,                   ~1~, ~0~, ~16~, ~Enhancement~ => ~POTN05~   //Potion of Fire Giant Strength (22);     `Draw Upon Holy Might` Priest spell
         ~POTN05-1~,    ~POTN05~,   ~15~, ~SPPR513~,                   ~1~, ~0~, ~16~, ~Enhancement~ => ~POTN05~   //Potion of Fire Giant Strength (22);     `Righteous Magic` Priest spell
         ~POTN05-2~,    ~POTN05~,   ~16~, ~SPWI820~,                   ~1~, ~0~, ~16~, ~Enhancement~ => ~POTN05~   //Potion of Fire Giant Strength (22);     `Iron Body` Wizard spell
+        ~POTN05-3~,    ~POTN05~,   ~9~,  ~SPPR507~,                   ~1~, ~0~, ~16~, ~Enhancement~ => ~POTN05~   //Potion of Fire Giant Strength (22);     `Champion's Strength` Priest spell
 
         ~POTN06-0~,    ~POTN06~,   ~18~, ~SPPR214~,                   ~1~, ~0~, ~18~, ~Enhancement~ => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Draw Upon Holy Might` Priest spell
         ~POTN06-1~,    ~POTN06~,   ~18~, ~SPPR513~,                   ~1~, ~0~, ~18~, ~Enhancement~ => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Righteous Magic` Priest spell
         ~POTN06-2~,    ~POTN06~,   ~16~, ~SPWI820~,                   ~1~, ~0~, ~18~, ~Enhancement~ => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Iron Body` Wizard spell
+        ~POTN06-3~,    ~POTN06~,   ~9~,  ~SPPR507~,                   ~1~, ~0~, ~18~, ~Enhancement~ => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Champion's Strength` Priest spell
 
         ~POTN07-0~,    ~POTN07~,   ~21~, ~SPPR214~,                   ~1~, ~0~, ~24~, ~Enhancement~ => ~POTN07~   //Potion of Storm Giant Strength (24);    `Draw Upon Holy Might` Priest spell
         ~POTN07-1~,    ~POTN07~,   ~21~, ~SPPR513~,                   ~1~, ~0~, ~24~, ~Enhancement~ => ~POTN07~   //Potion of Storm Giant Strength (24);    `Righteous Magic` Priest spell
         ~POTN07-2~,    ~POTN07~,   ~16~, ~SPWI820~,                   ~1~, ~0~, ~24~, ~Enhancement~ => ~POTN07~   //Potion of Storm Giant Strength (24);    `Iron Body` Wizard spell
+        ~POTN07-3~,    ~POTN07~,   ~9~,  ~SPPR507~,                   ~1~, ~0~, ~24~, ~Enhancement~ => ~POTN07~   //Potion of Storm Giant Strength (24);    `Champion's Strength` Priest spell
 
         ~POTN08-0~,    ~POTN08~,   ~0~,  ~SPPR103~,                   ~1~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Cure Light Wounds` Priest Spell
         ~POTN08-6~,    ~POTN08~,   ~0~,  ~SPPR217~,                   ~2~, ~0~, ~2~,  ~Cure~        => ~POTN08~   //Potion of Healing;                      `Cure Moderate Wounds` Priest Spell
