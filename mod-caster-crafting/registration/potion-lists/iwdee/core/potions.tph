@@ -33,6 +33,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN44-5-15~, ~POTN44~,   ~15~, ~SPPR513~,                   ~3~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Righteous Magic` Priest spell
         ~POTN44-4-21~, ~POTN44~,   ~21~, ~SPPR214~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Draw Upon Holy Might` Priest spell
         ~POTN44-5-21~, ~POTN44~,   ~21~, ~SPPR513~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Righteous Magic` Priest spell
+        ~POTN44-6~,    ~POTN44~,   ~21~, ~SPPR522~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN44~   //Potion of Strength (18);                `Animal Rage` Priest spell
 
         ~POTN03-0-6~,  ~POTN03~,   ~6~,  ~SPPR214~,                   ~1~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Draw Upon Holy Might` Priest spell
         ~POTN03-1-6~,  ~POTN03~,   ~6~,  ~SPPR513~,                   ~1~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
@@ -40,6 +41,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN03-1-15~, ~POTN03~,   ~15~, ~SPPR513~,                   ~2~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
         ~POTN03-0-24~, ~POTN03~,   ~24~, ~SPPR214~,                   ~3~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Draw Upon Holy Might` Priest spell
         ~POTN03-1-24~, ~POTN03~,   ~24~, ~SPPR513~,                   ~3~, ~0~, ~10~, ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Righteous Magic` Priest spell
+        ~POTN03-6~,    ~POTN03~,   ~21~, ~SPPR522~,                   ~4~, ~0~, ~8~,  ~Enhancement~ => ~POTN03~   //Potion of Hill Giant Strength (19);     `Animal Rage` Priest spell
 
         ~POTN12-0-9~,  ~POTN12~,   ~9~,  ~SPPR214~,                   ~1~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Draw Upon Holy Might` Priest spell
         ~POTN12-1-9~,  ~POTN12~,   ~9~,  ~SPPR513~,                   ~1~, ~0~, ~12~, ~Enhancement~ => ~POTN12~   //Potion of Stone Giant Strength (20);    `Righteous Magic` Priest spell
