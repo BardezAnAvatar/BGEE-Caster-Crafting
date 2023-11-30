@@ -105,6 +105,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN20-0~,    ~POTN20~, ~0~,  ~SPPR404~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Neutralize Poison` Priest spell
         ~POTN20-1~,    ~POTN20~, ~0~,  ~SPPR607~,                   ~2~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Heal` Priest spell
         ~POTN20-2~,    ~POTN20~, ~0~,  ~SPPR713~,                   ~4~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Greater Restoration` Priest spell
+        ~POTN20-3~,    ~POTN20~, ~0~,  ~SPPR212~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Slow Poison` Priest spell
+        ~POTN20-4~,    ~POTN20~, ~0~,  ~SPIN102~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Slow Poison` Innate ability
+        ~POTN20-5~,    ~POTN20~, ~0~,  ~BHAAL1A~,                   ~5~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Mass Healing` Bhaalspawn ability
 
         ~POTN21-0~,    ~POTN21~, ~0~,  ~SPPR350~,                   ~2~, ~0~, ~6~,  ~Enhancement~ => ~POTN21~   //Potion of Clarity;                      `Spiritual Clarity` Priest spell
         ~POTN21-1~,    ~POTN21~, ~0~,  ~SPPR508~,                   ~1~, ~0~, ~6~,  ~Enhancement~ => ~POTN21~   //Potion of Clarity;                      `Chaotic Commands` Priest spell
