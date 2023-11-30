@@ -13,6 +13,7 @@ STATISTICS:
 Movement rate: doubled
 Attacks per round: doubled
 Duration: 1 round
+Target: 1 creature
 
 Weight: 1~
 
@@ -25,6 +26,7 @@ STATISTICS:
 
 Damage: %dice_count%d6 magic fire damage on next melee attack
 Duration: 5 rounds or until triggered
+Target: 1 creature
 
 Weight: 1~
 
@@ -37,6 +39,7 @@ STATISTICS:
 
 Damage: %dice_count%d6 magic damage
 Duration: 2 turns (20 rounds)
+Target: 1 creature
 
 Weight: 1~
 
@@ -49,6 +52,7 @@ STATISTICS:
 
 Special: Invisibility when still
 Duration: 1 hour
+Target: 1 creature
 
 Weight: 1~
 
@@ -61,6 +65,7 @@ STATISTICS:
 
 Special: Invisibility when still
 Duration: 8 hours or until hit
+Target: 1 creature
 
 Weight: 1~
 
@@ -73,6 +78,7 @@ STATISTICS:
 
 Special: Incorporeal
 Duration: 1 round
+Target: Self
 
 Weight: 1~
 
@@ -85,6 +91,7 @@ STATISTICS:
 
 Special: Missile attacks blow back enemies
 Duration: 1 turn (10 rounds)
+Target: 1 creature
 
 Weight: 1~
 
@@ -98,6 +105,7 @@ STATISTICS:
 Special: Flight
 Speed: %speed%
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -110,6 +118,7 @@ STATISTICS:
 
 Special: Melee attacks against applicant have 50% chance of missing
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -122,6 +131,7 @@ STATISTICS:
 
 Lore: +100
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -134,6 +144,7 @@ STATISTICS:
 
 Special: Missle weapon attacks hit in a row
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -149,9 +160,9 @@ Magical Fire Resistance: -75%
 Cold Resistance: -75%
 Magical Cold Resistance: -75%
 Electricity Resistance: -75%
-Area of Effect: 1 creature
 Saving Throw: None
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -166,6 +177,7 @@ AC: +2 bonus
 Saving Throws: +2 bonus
 Acid Resistance: +50%
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -180,6 +192,7 @@ AC: +2 bonus
 Saving Throws: +2 bonus
 Cold Resistance: +50%
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -194,6 +207,7 @@ AC: +2 bonus
 Saving Throws: +2 bonus
 Electricity Resistance: +50%
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -208,6 +222,7 @@ AC: +2 bonus
 Saving Throws: +2 bonus
 Fire Resistance: +50%
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -222,6 +237,7 @@ AC: +2 bonus
 Saving Throws: +2 bonus
 Special: Immune to petrification
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -236,6 +252,7 @@ AC: +2 bonus
 Saving Throws: +2 bonus
 Special: Immune to poison and neutralizes any poison already affecting the applicant
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -248,6 +265,7 @@ STATISTICS:
 
 Special: incorporeal
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -261,6 +279,7 @@ STATISTICS:
 Special: Electrical shield
 Electricity Resistance: +50%
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -273,6 +292,7 @@ STATISTICS:
 
 Special: Immune to damage but cannot deal any damage
 Duration: 6 rounds
+Target: Self
 
 Weight: 1~
 
@@ -285,6 +305,7 @@ STATISTICS:
 
 Special: Immune to Non-Silver Weapons
 Duration: 4 rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -297,6 +318,7 @@ STATISTICS:
 
 Special: Invisibility, perfect
 Duration: 3 rounds
+Target: Self
 
 Weight: 1~
 
@@ -314,6 +336,7 @@ Intelligence: 25
 Wisdom:       25
 Charisma:     25
 Duration: 1 hour
+Target: Self
 
 Weight: 1~
 
@@ -326,6 +349,7 @@ STATISTICS:
 
 Special: Recall spells
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -338,6 +362,7 @@ STATISTICS:
 
 Casting Time: -10
 Duration: 1 hour
+Target: Self
 
 Weight: 1~
 
@@ -351,6 +376,7 @@ STATISTICS:
 Duration: 1 turn (10 rounds)
 Area of Effect: 60-ft. radius
 Saving Throw: Paralysis at -6 negates
+Target: Point
 
 Weight: 1~
 
@@ -363,6 +389,7 @@ STATISTICS:
 
 THAC0: +20 bonus
 Duration: 9 seconds
+Target: Self
 
 Weight: 1~
 
@@ -375,6 +402,7 @@ STATISTICS:
 
 Special: doubles visual range; able to target spells beyond normal sight range
 Duration: 8 hours
+Target: Self
 
 Weight: 1~
 
@@ -393,6 +421,7 @@ STATISTICS:
 
 Special: Doubles movement rate
 Duration: 3 rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -406,6 +435,7 @@ STATISTICS:
 Strength: 18/72
 Special: Rake attack, 2x/round
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -418,6 +448,7 @@ STATISTICS:
 
 Dexterity bonus
 Duration: %num_hours% hours
+Target: Self
 
 Weight: 1~
 
@@ -429,6 +460,7 @@ Weight: 1~
 STATISTICS:
 
 Special: Restores 11 Hit Points.
+Target: Self
 
 Weight: 1~
 
@@ -441,6 +473,7 @@ STATISTICS:
 
 Special: Creates a magical +1 staff in hands
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -454,6 +487,7 @@ STATISTICS:
 Damage: %dice_count%d3 (%dice_count%d6 vs. fire-using or fire-dwelling creatures) cold; Save vs. Spell for half
 Range: 40 ft.
 Area of Effect: 15-ft. radius
+Target: Point
 
 Weight: 1~
 
@@ -468,6 +502,7 @@ STATISTICS:
 
 Special: Creates a magical +4 sword in hands
 Duration: 2 turns (20 rounds)
+Target: 1 creature
 
 Weight: 1~
 
@@ -482,6 +517,7 @@ Damage: 1d4 piercing, 1d4 slashing per round
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
+Target: Point
 
 Weight: 1~
 
@@ -495,6 +531,7 @@ STATISTICS:
 Attack rolls: +2 bonus
 Saving throws: +2 bonus
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -514,6 +551,7 @@ Strength: +2 bonus
 Hit Points: +10 bonus to maximum Hit Points
 Movement rate: +2 bonus
 Duration: 2 turns (20 rounds)
+Target: Self
 
 Weight: 1
 
@@ -535,6 +573,7 @@ Range: 40 ft.
 Area of Effect: 12-ft. radius
 Saving Throw: Breath for half damage
 Duration: 4 rounds
+Target: Point
 
 Weight: 1~
 
@@ -550,6 +589,7 @@ Attack rolls: +1 bonus
 Damage rolls: +3 bonus
 Hit Points: +5 temporary Hit Points
 Duration: 1 hour
+Target: Self
 
 Weight: 1~
 
@@ -565,6 +605,7 @@ Saving throws: +2 bonus
 Attack rolls: +2 bonus
 Damage rolls: +2 bonus
 Duration: 1 hour
+Target: Self
 
 Weight: 1~
 
@@ -577,6 +618,7 @@ STATISTICS:
 
 Special: removes fatigue
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -593,6 +635,7 @@ Movement Rate: +20%
 Saving throws: +2 bonus
 Special: Loses spellcasting; Rage (attacks nearest enemy creature); 5% Berserk instead of Rage (attacks nearest creature, friend or foe)
 Duration: 15 rounds
+Target: Self
 
 Weight: 1~
 
@@ -607,6 +650,7 @@ Attack rolls: +1 bonus
 Saving throws: +1 bonus
 Hit Points: +8 temporary Hit Points
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -619,6 +663,7 @@ STATISTICS:
 
 Special: Immune to damage
 Duration: 2 rounds
+Target: Self
 
 Weight: 1
 
@@ -637,6 +682,7 @@ Range: 40 ft.
 Area of Effect: 8-ft. radius
 Saving Throw: Spell or be slowed
 Duration: 12 rounds
+Target: Point
 
 Weight: 1~
 
@@ -651,6 +697,7 @@ STATISTICS:
 
 Special: Immune to magic; cannot cast spells; removed feeblemindedness and deafness
 Duration: %num_turns% turns (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -663,6 +710,7 @@ STATISTICS:
 
 Special: Regenerate 5 Hit Points per round
 Duration: 2 turns (20 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -675,6 +723,7 @@ STATISTICS:
 
 Special: Immune to charm, confusion, fear, feeblemindedness, hold, sleep, maze, berserk, and intoxication
 Duration: %num_turns% turns (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -688,6 +737,7 @@ STATISTICS:
 Magic Resistance: 100%
 Special: Immune to damage
 Duration: 3 rounds
+Target: Self
 
 Weight: 1
 
@@ -705,6 +755,7 @@ Special: Cures poison and disease and heals 25 Hit Points
 Range: 40 ft.
 Area of Effect: 7-ft. radius
 Duration: Instant
+Target: Point
 
 Weight: 1~
 
@@ -717,6 +768,7 @@ STATISTICS:
 
 Special: Immune to confusion, fear, sleep, feeblemindedness, unconsciousness, intoxication, berserk, and confusion
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -736,6 +788,7 @@ Morale: +1 bonus
 Attack rolls: +1 bonus
 Damage rolls: +1 bonus
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -750,6 +803,7 @@ Special: Entangles creatues in area of effect; Save vs. Spell to avoid entanglem
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
+Target: Point
 
 Weight: 1~
 
@@ -762,6 +816,7 @@ STATISTICS:
 
 Special: Sanctuary (imbiber protected and cannot attack or be attacked)
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -782,6 +837,7 @@ Crushing Resistance: +%magnitude%\% bonus
 Piercing Resistance: +%magnitude%\% bonus
 Missile Resistance: +%magnitude%\% bonus
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -795,6 +851,7 @@ STATISTICS:
 Special: Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking
 Saving Throws: +3 bonus vs. Enchantment spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -810,6 +867,7 @@ Movement: 20%
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: %num_rounds% rounds
+Target: Point
 
 Weight: 1~
 
@@ -822,6 +880,7 @@ STATISTICS:
 
 Base AC: 6
 Duration: 9 hours
+Target: Self
 
 Weight: 1~
 
@@ -834,6 +893,7 @@ STATISTICS:
 
 Charisma: +6
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -846,6 +906,7 @@ STATISTICS:
 
 Special: Immune to petrification
 Duration: 1 hour
+Target: Self
 
 Weight: 1~
 
@@ -858,6 +919,7 @@ STATISTICS:
 
 Special: Evil creatures' attack rolls are -2; cannot be targeted by summoned demons
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -871,6 +933,7 @@ STATISTICS:
 AC: 4 vs. melee; 2 vs. missile
 Special: Immunity to Magic Missile spell
 Duration: 1 hour
+Target: 1 creature
 
 Weight: 1~
 
@@ -885,6 +948,7 @@ Special: Sleep (Saving vs. Spell negates)
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: 5 rounds
+Target: Point
 
 Weight: 1~
 
@@ -900,6 +964,7 @@ Attack rolls: +1 bonus
 Damage rolls: +1 bonus
 Hit Points: +1d8 temporary Hit Points
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -913,6 +978,7 @@ STATISTICS:
 Base AC: %base_AC%
 Saving Throws: +1 bonus (except vs. Spell)
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -930,6 +996,7 @@ Damage rolls: +1 bonus
 Saving Throws: +1 bonus
 Special: dice rolled against imbiber (outside a weapon's base damage) are reduced by 1 size
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -942,6 +1009,7 @@ STATISTICS:
 
 Special: Find traps in immediate area
 Duration: 3 turns (30 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -955,6 +1023,7 @@ STATISTICS:
 Fire resistance: +50% (mundane or magical)
 Cold resistance: +50% (mundane or magical)
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -969,6 +1038,7 @@ Strength:     +%magnitude% bonus
 Dexterity:    +%magnitude% bonus
 Constitution: +%magnitude% bonus
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -984,6 +1054,7 @@ Special: 20% chance slowed for 1 round (must save vs. Death negates)
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
+Target: Point
 
 Weight: 1~
 
@@ -997,6 +1068,7 @@ STATISTICS:
 AC: +3 bonus
 Saving Throws: +1 bonus
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1009,6 +1081,7 @@ STATISTICS:
 
 Special: Imbiber sees invisibility clearly
 Duration: 4 turns (40 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1021,6 +1094,7 @@ STATISTICS:
 
 Special: Unlocks any single lock
 Duration: Instant
+Target: 1 chest
 
 Weight: 1~
 
@@ -1045,6 +1119,7 @@ Hide In Shadows: +5%
 Detect Illusions: +5%
 Special: dice rolled against imbiber (outside a weapon's base damage) are reduced by 1 size
 Duration: 3 rounds
+Target: Self
 
 Weight: 1~
 
@@ -1057,6 +1132,7 @@ STATISTICS:
 
 Special: Immune to fear, panic
 Duration: 3 rounds
+Target: Self
 
 Weight: 1~
 
@@ -1069,6 +1145,7 @@ STATISTICS:
 
 Special: %magnitude% mirror images
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1083,6 +1160,7 @@ Special: fall prone for 1d2 rounds (save vs. Poison at +2 negates)
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
+Target: Point
 
 Weight: 1~
 
@@ -1097,6 +1175,7 @@ STATISTICS:
 
 Strength: 18/+50
 Duration: %num_turns% turns (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1111,6 +1190,7 @@ Special: Held (save vs. Spell at -2 negates)
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
+Target: Point
 
 Weight: 1~
 
@@ -1123,6 +1203,7 @@ STATISTICS:
 
 Special: Can cast spells without speech (bypassing silence, deafness, etc.)
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1141,6 +1222,7 @@ Special: Dispels magical effects
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: Instant
+Target: Point
 
 Weight: 1~
 
@@ -1154,6 +1236,7 @@ STATISTICS:
 Fire resistance: +100%
 Magical fire resistance: +50%
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1166,6 +1249,7 @@ STATISTICS:
 
 Special: Remove curse on imbiber
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1178,6 +1262,7 @@ STATISTICS:
 
 Strength: 18/75
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1190,6 +1275,7 @@ STATISTICS:
 
 Special: Restores 14 Hit Points.
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1202,6 +1288,7 @@ STATISTICS:
 
 Special: Removes disease, blindness, deafness, and feeblemindedness.
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1214,6 +1301,7 @@ STATISTICS:
 
 Special: Removes cloud vapor effects.
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1228,6 +1316,7 @@ Damage: %magnitide%d6 (Save vs. Spell for half)
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: Instant
+Target: Point
 
 Weight: 1~
 
@@ -1240,6 +1329,7 @@ STATISTICS:
 
 Special: Prevents detection via magical divination.
 Duration: 4 hours
+Target: Self
 
 Weight: 1~
 
@@ -1252,6 +1342,7 @@ STATISTICS:
 
 Special: Immune to non-magical missile damage
 Duration: 4 hours
+Target: 1 creature
 
 Weight: 1~
 
@@ -1265,6 +1356,7 @@ STATISTICS:
 Magic Resistance: +25%
 Special: Immune to non-magical damage
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1277,6 +1369,7 @@ STATISTICS:
 
 Base AC: 2
 Duration: 1 hours
+Target: 1 creature
 
 Weight: 1~
 
@@ -1290,6 +1383,7 @@ STATISTICS:
 Cold resistance: +100%
 Magical cold resistance: +50%
 Duration: %num_turns turns (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1302,6 +1396,7 @@ STATISTICS:
 
 Special: Restores 17 Hit Points.
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1314,6 +1409,7 @@ STATISTICS:
 
 Special: Immune to holding effects or changes to movement rate
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1326,6 +1422,7 @@ STATISTICS:
 
 Special: Immune to death magic
 Duration: %num_turns turns (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1342,6 +1439,7 @@ Strength: 18/00
 THAC0: +%magnitude2% bonus
 HP: +%magnitude% temporary hit points
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1356,6 +1454,7 @@ STATISTICS:
 
 Special: Protected from level drain
 Duration: 8 hours
+Target: Self
 
 Weight: 1~
 
@@ -1368,6 +1467,7 @@ STATISTICS:
 
 Special: nearby creatures flee in panic (save vs. Spell negates)
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1382,6 +1482,7 @@ STATISTICS:
 
 Special: Removes level drain; causes fatigue
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1396,6 +1497,7 @@ Damage: %magnitide%d4 magic (Save vs. Spell for half); 33% chance of Doom (-2 at
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: Instant
+Target: Point
 
 Weight: 1~
 
@@ -1410,6 +1512,7 @@ Damage: 1d8+2 cold
 Cold Resistance: +50% (mundane or magical)
 Area of Effect: 5-ft. radius
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1423,8 +1526,8 @@ Note: After making an attack, the imbiber is no longer completely invisible and 
 STATISTICS:
 
 Special: Invisible, may attack and remain partially hidden
-
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1437,6 +1540,7 @@ STATISTICS:
 
 Special: Immune to opponent's 1st-, 2nd-, and 3rd-level spells
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1451,6 +1555,7 @@ STATISTICS:
 
 Special: %magnitude% stone skins providing immunity to non-magical damage
 Duration: 12 hours
+Target: Self
 
 Weight: 1~
 
@@ -1464,6 +1569,7 @@ STATISTICS:
 Saving Throws: -4 penalty
 Area of Effect: 15-ft. radius
 Duration: %num_rounds% rounds
+Target: Point
 
 Weight: 1~
 
@@ -1477,8 +1583,9 @@ Hence, the creature caught inside the globe is completely safe from all attacks,
 STATISTICS:
 
 Special: Immune to damage; cannot attack (save vs. Spell negates)
-Area of Effect: 1 Creature
+Area of Effect: 1 creature
 Duration: 1 turn (10 rounds)
+Target: 1 creature
 
 Weight: 1~
 
@@ -1497,6 +1604,7 @@ Base AC: 1
 Saveing Throws: +3 bonus to save vs. Spell
 Special: Imbiber takes 2d4 damage after duration
 Duration: 2 hours
+Target: 1 creature
 
 Weight: 1~
 
@@ -1509,6 +1617,7 @@ STATISTICS:
 
 Special: weapons hit as if +3 enchanted weapons
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1523,6 +1632,7 @@ Damage: 1d8+2 fire
 Fire Resistance: +50% (mundane or magical)
 Area of Effect: 5-ft. radius
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1538,6 +1648,7 @@ STATISTICS:
 Special: Dispels hostile illusions 1/round
 Area of Effect: 120-ft. radius
 Duration: 1 turn (10 rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1552,6 +1663,7 @@ Strength: 25
 THAC0: +%magnitude% bonus
 Special: spellcasting disabled
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1564,6 +1676,7 @@ STATISTICS:
 
 Special: immune to magical commands, stun, paralysis, hold
 Duration: %num_turns% (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1577,6 +1690,7 @@ STATISTICS:
 Strength: +%magnitude2% bonus
 HP: +%magnitude% temporary hit points
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1589,6 +1703,7 @@ STATISTICS:
 
 Special: Illusion grants Improved Invisibility
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1601,6 +1716,7 @@ STATISTICS:
 
 Special: Immunity to Abjuration spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1613,6 +1729,7 @@ STATISTICS:
 
 Special: Immunity to Alteration spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1625,6 +1742,7 @@ STATISTICS:
 
 Special: Immunity to Conjuration spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1637,6 +1755,7 @@ STATISTICS:
 
 Special: Immunity to Divination spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1649,6 +1768,7 @@ STATISTICS:
 
 Special: Immunity to Enchantment spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1661,6 +1781,7 @@ STATISTICS:
 
 Special: Immunity to Evocation spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1673,6 +1794,7 @@ STATISTICS:
 
 Special: Immunity to Illusion spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1685,6 +1807,7 @@ STATISTICS:
 
 Special: Immunity to Necromancy spells
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1696,6 +1819,7 @@ STATISTICS:
 
 Special: Immunity to non-magical weapons
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1708,6 +1832,7 @@ STATISTICS:
 
 Special: Immunity to electricity
 Duration: %num_turns% (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1720,6 +1845,7 @@ STATISTICS:
 
 Special: Immunity to acid
 Duration: %num_turns% (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1734,6 +1860,7 @@ STATISTICS:
 
 Special: Creates a magical +3 sword in hands (1d8+3 slashing; +10 more vs. undead)
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1750,6 +1877,7 @@ STATISTICS:
 
 Special: Reflects up to 4 levels worth of spells back at original caster
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1762,6 +1890,7 @@ STATISTICS:
 
 Special: Restores HP to maximum, cures poison, disease, blindness, feeblemindedness, deafness, insanity
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1774,6 +1903,7 @@ STATISTICS:
 
 Special: Restores to memorization 3 spells of level 5 or lower
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1792,6 +1922,7 @@ Cold Resistance: +50% bonus
 Electricity Resistance: +50% bonus
 Special: Immune to Flamestrike; immune to missile attacks (both physical and magical)
 Duration: Instant
+Target: 1 creature
 
 Weight: 1~
 
@@ -1806,6 +1937,7 @@ STATISTICS:
 
 Special: Immune to opponent's 1st-, 2nd-, 3rd-, and 4th-level spells
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1823,6 +1955,7 @@ Attack rolls: +2 bonus
 Damage rolls: +2 bonus
 Special: spellcasting disabled
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1835,6 +1968,7 @@ STATISTICS:
 
 Magic Damage Resistance: 100%
 Duration: %num_turns% (%num_rounds% rounds)
+Target: Self
 
 Weight: 1~
 
@@ -1849,6 +1983,7 @@ STATISTICS:
 
 Special: Immunity to magical weapons
 Duration: 3 rounds
+Target: Self
 
 Weight: 1~
 
@@ -1865,6 +2000,7 @@ Movement speed: doubled
 Attacks per round: doubled
 Special: negates Slow status
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1879,6 +2015,7 @@ Damage: 8 acid damage/round
 Special: Kills summoned creatures (regardless of level)
 Area of Effect: 15-ft. radius
 Duration: 1 turn (10 rounds)
+Target: Point
 
 Weight: 1~
 
@@ -1892,6 +2029,7 @@ STATISTICS:
 Damage: %magnitude%d6 electricity
 Special: jumps to next nearest foe, dealing 1d6 less damage
 Duration: Instantaneous
+Target: 1 creature
 
 Weight: 1~
 
@@ -1910,6 +2048,7 @@ STATISTICS:
 
 Special: absorbs (negates) up to 10 spell levels of spells cast at the applicant
 Duration: %num_rounds% rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1924,6 +2063,7 @@ STATISTICS:
 
 Special: Charms humanoids viewing applicant (save vs. Spell at -3 penalty)
 Duration: 12 rounds
+Target: 1 creature
 
 Weight: 1~
 
@@ -1937,6 +2077,7 @@ STATISTICS:
 Hit Points: Fully healed
 Special: Cures diseases, poison, and blindness; removes insanity, confusion, and berserk; removes level drain; removes Intelligence drain; causes fatigue
 Duration: Instant
+Target: Self
 
 Weight: 1~
 
@@ -1953,6 +2094,7 @@ STATISTICS:
 
 Special: reflects up to 12 spell levels of spells cast at the applicant to the original caster
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1967,6 +2109,7 @@ Fire Resistance: +75% bonus (mundane or magical)
 Cold Resistance: +75% bonus (mundane or magical)
 Electricity Resistance: +75% bonus
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -1979,6 +2122,7 @@ STATISTICS:
 
 Special: Immunity to weapons of +2 or lower enchantment
 Duration: 4 rounds
+Target: Self
 
 Weight: 1~
 
@@ -1997,6 +2141,7 @@ Cold Resistance: +75% (mundane or magical)
 Electricity Resistance: +75%
 Magical Damage Resistance: +75%
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
 
@@ -2009,6 +2154,7 @@ STATISTICS:
 
 Special: Immunity to weapons of +3 or lower enchantment
 Duration: 4 rounds
+Target: Self
 
 Weight: 1~
 
@@ -2023,6 +2169,7 @@ STATISTICS:
 
 Special: Absorbs 30 levels worth of spells, restoring cast memorized spells worth the absorbed spell's level
 Duration: 18 rounds
+Target: Self
 
 Weight: 1~
 
@@ -2037,6 +2184,7 @@ STATISTICS:
 
 Special: Immunity to weapons of +5 or lower enchantment
 Duration: 5 rounds
+Target: Self
 
 Weight: 1~
 
@@ -2049,6 +2197,7 @@ STATISTICS:
 
 Special: Cleansed spellcasting aura for the duration
 Duration: 2 rounds
+Target: Self
 
 Weight: 1~
 
@@ -2065,5 +2214,6 @@ Special: Immunity to non-magical weapons
 Damage: 2d10+2 fire
 Area of Effect: 5-ft. radius
 Duration: %num_rounds% rounds
+Target: Self
 
 Weight: 1~
