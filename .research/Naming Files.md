@@ -15,12 +15,14 @@ are ignored when loading (some?) assets.
 
 ## Results
 1. characters that work fine:
+    - `!`
     - `{`
     - `` ` ``
     - `}`
     - `[`
     - `]`
     - `=`
+    - `@`
 1. characters that don't display BAMs but work when spawned in CLUA console:
     - `¶`
     - `Š`
