@@ -2,6 +2,7 @@
 *   This file will process the registry of potions directly crated from spells.   *
 **********************************************************************************/
 
+PRINT ~DEBUG: Include Core New Potion Recipes~
 INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/new_potions_spells_items.tph~
 INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/new_potions_spells_recipes.tph~
 
