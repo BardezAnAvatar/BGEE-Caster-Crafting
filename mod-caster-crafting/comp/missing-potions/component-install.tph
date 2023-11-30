@@ -5,6 +5,7 @@
 *************************************************************/
 
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/process-potion-registry.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/create-potion-items.tph~
 
 //TODO: remove
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/tinkering.tph~
