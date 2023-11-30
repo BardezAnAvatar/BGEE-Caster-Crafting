@@ -46,6 +46,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~ECLECTIC_RECALL~,                          ~BZ@OO18~, ~MEWI960~, ~18~,  ~1~, ~Enhancement~, ~20~ => "Eclectic Recall"
         ~MENTAL_AGILITY~,                           ~BZ@OP18~, ~MEWI963~, ~18~,  ~1~, ~Enhancement~, ~20~ => "Mental Agility"
+        ~CHAIN_LIGHTNING_MEWI965~,                  ~BZ@2E12~, ~MEWI965~,  ~1~,  ~3~, ~Bomb~,        ~12~ => "Chain Lightning"
 
 
         ~COLOSSAL_GROWTH~,                          ~BZ@OQ18~, ~MEPR754~, ~15~,  ~1~, ~Bomb~,        ~20~ => "Colossal Growth"
