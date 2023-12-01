@@ -17,7 +17,7 @@ INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_bz_read_spell_
 ACTION_PHP_EACH ~new_potions_spells_items~
     AS ~keys~ => ~value~
     BEGIN
-        PRINT ~DEBUG: Olvyn:
+        PRINT ~DEBUG: Spell-Potion Entry:
             Value:      `%value%`;
             SRC BAM:    `%keys_10%`;
             Dest BAM:   `%keys_11%`;
