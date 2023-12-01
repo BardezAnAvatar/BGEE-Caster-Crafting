@@ -15,24 +15,24 @@ ACTION_PHP_EACH ~new_potions_spells_items~
     BEGIN
         PRINT ~DEBUG: Olvyn:
             Value:      `%value%`;
-            SRC BAM:    `%keys_9%`;
-            Dest BAM:   `%keys_10%`;
-            DESC BAM:   `%keys_11%`;~
+            SRC BAM:    `%keys_10%`;
+            Dest BAM:   `%keys_11%`;
+            DESC BAM:   `%keys_12%`;~
 
         /****************
         *   Copy BAMs   *
         ****************/
         //copy inventory BAM
         COPY
-            ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/%keys_9%~
-            ~override/%keys_10%.BAM~
+            ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/%keys_10%~
+            ~override/%keys_11%.BAM~
 
         //copy description BAM
-        ACTION_IF NOT FILE_EXISTS ~./override/%keys_11%.BAM~
+        ACTION_IF NOT FILE_EXISTS ~./override/%keys_12%.BAM~
         THEN BEGIN
             COPY
-                ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/%keys_11%.BAM~
-                ~override/%keys_11%.BAM~
+                ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/%keys_12%.BAM~
+                ~override/%keys_12%.BAM~
         END
         /*********************
         *   END: Copy BAMs   *
