@@ -40,7 +40,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ@0C03~, ~1~, ~Offense~,       ~2~, ~Caster~,  ~@40224~, ~@40225~, ~SPPR201~,  ~1~,  ~4~, ~aid.BAM~,                                   ~BZ@0C03I~, ~BZPN026D~, ~~,     ~129~, ~0xE~, ~~, ~~, ~~, ~~ => "Aid"
         ~BZ@0D03~, ~1~, ~Offense~,       ~2~, ~Actor~,   ~@40226~, ~@40227~, ~SPPR202~,  ~1~,  ~4~, ~barkskin.BAM~,                              ~BZ@0D03I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~0~, ~0x4~, ~~, ~~ => "Barkskin"
-        ~BZ@0E03~, ~1~, ~Offense~,       ~2~, ~Caster~,  ~@40228~, ~@40229~, ~SPPR203D~  ~1~,  ~5~, ~chant.BAM~,                                 ~BZ@0E03I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Chant"
+        ~BZ@0E03~, ~1~, ~Offense~,       ~2~, ~Caster~,  ~@40228~, ~@40229~, ~SPPR203D~, ~1~,  ~5~, ~chant.BAM~,                                 ~BZ@0E03I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Chant"
         ~BZ@0F03~, ~1~, ~Offense~,       ~2~, ~Caster~,  ~@40230~, ~@40231~, ~SPPR205~,  ~1~,  ~4~, ~find-traps.BAM~,                            ~BZ@0F03I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Find Traps"
         ~BZ@0G03~, ~1~, ~Defense~,       ~2~, ~Caster~,  ~@40232~, ~@40233~, ~SPPR210~,  ~1~,  ~5~, ~resist-fire-and-cold.BAM~,                  ~BZ@0G03I~, ~BZPN005D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Resist Fire and Cold"
         ~BZ@0H03~, ~1~, ~Enhancement~,   ~2~, ~Caster~,  ~@40234~, ~@40235~, ~SPPR214~,  ~1~,  ~5~, ~draw-upon-holy-might.BAM~,                  ~BZ@0H03I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~132~, ~0x4~, ~~, ~~ => "Draw Upon Holy Might"
@@ -84,7 +84,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@1G07~, ~1~, ~Defense~,       ~4~, ~Actor~,   ~@40304~, ~@40305~, ~SPWI406~,  ~1~,  ~8~, ~minor-globe-of-invulnerability.BAM~,        ~BZ@1G07I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Minor Globe of Invulnerability"
         ~BZ@1H07~, ~1~, ~Defense~,       ~4~, ~Caster~,  ~@40306~, ~@40307~, ~SPWI408~,  ~1~,  ~8~, ~stoneskin.BAM~,                             ~BZ@1H07I~, ~BZPN032D~, ~~,     ~218~, ~0xE~, ~218~, ~0x4~, ~~, ~~ => "Stoneskin"
         ~BZ@1I07~, ~1~, ~Bomb~,          ~4~, ~Point~,   ~@40308~, ~@40309~, ~SPWI412~,  ~1~,  ~8~, ~greater-malison.BAM~,                       ~BZ@1I07I~, ~BZPN100D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Greater Malison"
-        ~BZ@1J07~, ~1~, ~Bomb~,          ~4~, ~Actor~,   ~@40310~, ~@40311~, ~SPWI413A~  ~1~,  ~8~, ~otiluke's-resilient-sphere.BAM~,            ~BZ@1J07I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Otiluke's Resilient Sphere"
+        ~BZ@1J07~, ~1~, ~Bomb~,          ~4~, ~Actor~,   ~@40310~, ~@40311~, ~SPWI413A~, ~1~,  ~8~, ~otiluke's-resilient-sphere.BAM~,            ~BZ@1J07I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Otiluke's Resilient Sphere"
         ~BZ@1K07~, ~1~, ~Defense~,       ~4~, ~Actor~,   ~@40312~, ~@40313~, ~SPWI414~,  ~1~,  ~7~, ~spirit-armor.BAM~,                          ~BZ@1K07I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spirit Armor"
         ~BZ@1L07~, ~1~, ~Offense~,       ~4~, ~Actor~,   ~@40314~, ~@40315~, ~SPWI417~,  ~1~,  ~8~, ~enchanted-weapon.BAM~,                      ~BZ@1L07I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Enchanted Weapon"
         ~BZ@1M07~, ~1~, ~Defense~,       ~4~, ~Actor~,   ~@40316~, ~@40317~, ~SPWI418~,  ~1~,  ~8~, ~fire-shield-red.BAM~,                       ~BZ@1M07I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Fireshield (Red)"
