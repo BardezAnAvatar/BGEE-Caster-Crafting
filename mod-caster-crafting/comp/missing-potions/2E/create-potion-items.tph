@@ -21,7 +21,15 @@ ACTION_PHP_EACH ~new_potions_spells_items~
             Value:      `%value%`;
             SRC BAM:    `%keys_10%`;
             Dest BAM:   `%keys_11%`;
-            DESC BAM:   `%keys_12%`;~
+            DESC BAM:   `%keys_12%`;
+
+            Duration_Opcode:    `%keys_14%`
+            Duration_Offset:    `%keys_15%`
+            Magnitude_Opcode:   `%keys_16%`
+            Magnitude_Offset:   `%keys_17%`
+            Magnitude2_Opcode:  `%keys_18%`
+            Magnitude2_Offset:  `%keys_19%`
+        ~
 
         /****************
         *   Copy BAMs   *
