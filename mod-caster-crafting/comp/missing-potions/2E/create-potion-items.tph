@@ -102,6 +102,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         /***********************************************
         *   BEGIN: Calculate strings for description   *
         ***********************************************/
+
         //After reading duration, emit a value that does days; hours; turns (rounds);rounds; seconds; instant
         ACTION_IF (spl_duration = 0) THEN BEGIN OUTER_SPRINT duration @49910 END
 
@@ -147,6 +148,31 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         OUTER_SET magnitude = ~%spl_magnitude%~
         OUTER_SET magnitude2 = ~%spl_magnitude2%~
 
+
+        /*
+            Expect these values variables:
+                %duration%;
+                    [X] very common
+                %magnitude%
+                    [X] Fly
+                    [X] Snilloc's
+                    [X] Armor of Faith
+                    [X] Barkskin
+                    [X] Draw Upon Holy Might
+                    [X] Mirror Image
+                    [X] Fireball
+                    [X] Holy Power
+                    [X] Spirit Fire
+                    [X] Stoneskin
+                    [X] Champion's Strength
+                    [X] Righteous Magic
+                    [X] Tenser's Transformation
+                    [X] Chain Lightning
+                %magnitude2%
+                    [X] Holy Power
+                    [X] Righteous Magic
+        */
+
         OUTER_SPRINT identified_name (AT "keys_5")
         OUTER_SPRINT identified_description (AT "keys_6")
 
@@ -162,39 +188,6 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         /*********************************************
         *   END: Calculate strings for description   *
         *********************************************/
-
-
-
-        /***************************************
-        *    BEGIN: Item Description Strings   *
-        ***************************************/
-        /*
-            Expect these values variables:
-                TODO:
-                    %duration%;
-                        NEW
-                %magnitude%
-                    ? Fly
-                    ? Snilloc's
-                    X Armor of Faith
-                    X Barkskin
-                    X Draw Upon Holy Might
-                    X Mirror Image
-                    X Fireball
-                    X Holy Power
-                    X Spirit Fire
-                    X Stoneskin
-                    X Champion's Strength
-                    X Righteous Magic
-                    X Tenser's Transformation
-                    X Chain Lightning
-                %magnitude2%
-                    X Holy Power
-                    X Righteous Magic
-        */
-        /*************************************
-        *    END: Item Description Strings   *
-        *************************************/
 
 
 
