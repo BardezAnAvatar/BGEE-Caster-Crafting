@@ -49,7 +49,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BZ@IE09~, ~1~, ~Offense~,       ~5~, ~Caster~,  ~@40128~, ~@40129~, ~SPPR522~,  ~1~,  ~9~, ~animal-rage.BAM~,                           ~BZ@IE09I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Animal Rage"
-        ~BZ@IF09~, ~1~, ~Offense~,       ~5~, ~Caster~,  ~@40130~, ~@40131~, ~SPPR518A~  ~1~,  ~9~, ~righteous-wrath-of-the-faithful.BAM~,       ~BZ@IF09I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Righteous Wrath of the Faithful"
+        ~BZ@IF09~, ~1~, ~Offense~,       ~5~, ~Caster~,  ~@40130~, ~@40131~, ~SPPR518A~, ~1~,  ~9~, ~righteous-wrath-of-the-faithful.BAM~,       ~BZ@IF09I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Righteous Wrath of the Faithful"
         ~BZ@IG09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~@40132~, ~@40133~, ~SPPR520~,  ~1~,  ~9~, ~shield-of-lathander.BAM~,                   ~BZ@IG09I~, ~BZPN019D~, 0b10   , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Shield of Lathander"
         ~BZ@IH09~, ~1~, ~Bomb~,          ~5~, ~Point~,   ~@40134~, ~@40135~, ~SPPR519~,  ~1~, ~10~, ~spike-stones.BAM~,                          ~BZ@IH09I~, ~BZPN013D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Spike Stones"
 
