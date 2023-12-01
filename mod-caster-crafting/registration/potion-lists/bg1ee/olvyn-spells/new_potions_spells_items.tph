@@ -75,7 +75,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_items~
     BEGIN
-        ~BZ@OK11~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~@40042~, ~@40043~, ~MEPR653~, ~11~, ~12~, ~antiharm-shell.BAM~,                           ~BZ@OK11I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antiharm Shell"
+        ~BZ@OK11~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~@40042~, ~@40043~, ~MEPR653~,  ~1~, ~12~, ~antiharm-shell.BAM~,                           ~BZ@OK11I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antiharm Shell"
     END
 END
 
