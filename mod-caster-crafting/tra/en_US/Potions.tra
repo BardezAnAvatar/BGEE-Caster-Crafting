@@ -1436,7 +1436,7 @@ This will last for the duration of the spell or until dispelled.
 STATISTICS:
 
 Strength: 18/00
-THAC0: +%magnitude2% bonus
+Base THAC0: %magnitude2%
 HP: +%magnitude% temporary hit points
 Duration: %num_rounds% rounds
 Target: Self

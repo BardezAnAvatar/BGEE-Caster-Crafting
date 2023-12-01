@@ -66,23 +66,23 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     %duration%;
                         NEW
                 %magnitude%
-                    X Fly
-                    X Snilloc's
-                    Armor of Faith
-                    Barkskin
-                    Draw Upon Holy Might
-                    Mirror Image
-                    Fireball
-                    Holy Power
-                    Spirit Fire
-                    Stoneskin
-                    Champion's Strength
-                    Righteous Magic
-                    Tenser's Transformation
-                    Chain Lightning
+                    ? Fly
+                    ? Snilloc's
+                    X Armor of Faith
+                    X Barkskin
+                    X Draw Upon Holy Might
+                    X Mirror Image
+                    X Fireball
+                    X Holy Power
+                    X Spirit Fire
+                    X Stoneskin
+                    X Champion's Strength
+                    X Righteous Magic
+                    X Tenser's Transformation
+                    X Chain Lightning
                 %magnitude2%
-                    Holy Power
-                    Righteous Magic
+                    X Holy Power
+                    X Righteous Magic
         */
         /*************************************
         *    END: Item Description Strings   *
@@ -112,6 +112,14 @@ ACTION_PHP_EACH ~new_potions_spells_items~
             Find Traps
             Fly
             Snilloc's Snowball
+            Tenser's Transformation
+
+            sphere-of-protection-from-acid
+            sphere-of-protection-from-cold
+            sphere-of-protection-from-electricity
+            sphere-of-protection-from-fire
+            sphere-of-protection-from-petrification
+            sphere-of-protection-from-poison
         */
         /****************************
         *    END: Hard-coded ITMs   *
