@@ -66,9 +66,8 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     %duration%;
                         NEW
                 %magnitude%
-                    Fly
-                    Snilloc's
-                    Searing Smite
+                    X Fly
+                    X Snilloc's
                     Armor of Faith
                     Barkskin
                     Draw Upon Holy Might
@@ -111,6 +110,8 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         //TODO: ITMs that automation won't work for:
         /*
             Find Traps
+            Fly
+            Snilloc's Snowball
         */
         /****************************
         *    END: Hard-coded ITMs   *

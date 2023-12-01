@@ -20,11 +20,11 @@ Weight: 1~
 
 //Searing Smite
 @40004 = ~Oil of Searing Smite~
-@40005 = ~The applicant soaks their melee weapons, imbuing it with divine fire. The next successful melee attack made on a creature within 5 rounds deals an additional %magnitude%d6 magic fire damage.
+@40005 = ~The applicant soaks their melee weapons, imbuing it with divine fire. The next successful melee attack made on a creature within 5 rounds deals an additional 3d6 magic fire damage.
 
 STATISTICS:
 
-Damage: %magnitude%d6 magic fire damage on next melee attack
+Damage: 3d6 magic fire damage on next melee attack
 Duration: 5 rounds or until triggered
 Target: 1 creature
 
