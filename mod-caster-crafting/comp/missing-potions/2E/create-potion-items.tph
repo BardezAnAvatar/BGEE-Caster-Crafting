@@ -125,7 +125,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                         OUTER_SET duration_turns = (spl_duration / 60)
                         OUTER_SET duration_rounds = (duration_turns / 10)
                         ACTION_IF (duration_turns > 1) THEN BEGIN OUTER_SPRINT duration @49905 END
-                        ELSE BEGIN OUTER_SPRINT duration = @49904 END
+                        ELSE BEGIN OUTER_SPRINT duration @49904 END
                     END
                     ELSE BEGIN  //rounds
                         ACTION_IF ((spl_duration MODULO 6) = 0) THEN
