@@ -1328,7 +1328,7 @@ Weight: 1~
 
 STATISTICS:
 
-Damage: %magnitide%d6 (Save vs. Spell for half)
+Damage: %magnitude%d6 (Save vs. Spell for half)
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: Instant
@@ -1509,7 +1509,7 @@ Weight: 1~
 
 STATISTICS:
 
-Damage: %magnitide%d4 magic (Save vs. Spell for half); 33% chance of Doom (-2 attack roll and saving throw penalty for 1 turn)
+Damage: %magnitude%d4 magic (Save vs. Spell for half); 33% chance of Doom (-2 attack roll and saving throw penalty for 1 turn)
 Range: 40 ft.
 Area of Effect: 15-ft. radius
 Duration: Instant
