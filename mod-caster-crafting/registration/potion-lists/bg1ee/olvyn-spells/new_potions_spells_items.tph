@@ -48,21 +48,21 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OJ09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~@40040~, ~@40041~, ~MEWI566~,  ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,                ~BZ@OJ09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Gedlee's Electric Barrier"
 
 
-        ~BZ@OL11~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~@40044~, ~@40045~, ~MEPR656~, ~11~, ~14~, ~protection-from-non-silver-weapons.BAM~,       ~BZ@OL11I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Non-Silver Weapons"
+        ~BZ@OL11~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~@40044~, ~@40045~, ~MEPR656~,  ~1~, ~14~, ~protection-from-non-silver-weapons.BAM~,       ~BZ@OL11I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Non-Silver Weapons"
 
 
         ~BZ@OS16~, ~1~, ~Enhancement~,   ~8~, ~Caster~,  ~@40058~, ~@40059~, ~MEWI857~,  ~1~, ~15~, ~extend-vision.BAM~,                            ~BZ@OS16I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Extend Vision"
 
 
-        ~BZ@OM18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~@40046~, ~@40047~, ~MEWI951~, ~18~, ~18~, ~perfect-invisibility.BAM~,                     ~BZ@OM18I~, ~BZPN120D~, ~~,  ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Perfect Invisibility"
-        ~BZ@ON18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~@40048~, ~@40049~, ~MEWI953~, ~18~, ~18~, ~attain-perfection.BAM~,                        ~BZ@ON18I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Attain Perfection"
+        ~BZ@OM18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~@40046~, ~@40047~, ~MEWI951~,  ~1~, ~18~, ~perfect-invisibility.BAM~,                     ~BZ@OM18I~, ~BZPN120D~, ~~,  ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Perfect Invisibility"
+        ~BZ@ON18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~@40048~, ~@40049~, ~MEWI953~,  ~1~, ~18~, ~attain-perfection.BAM~,                        ~BZ@ON18I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Attain Perfection"
 
 
-        ~BZ@OO18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~@40050~, ~@40051~, ~MEWI960~, ~18~, ~20~, ~eclectic-recall.BAM~,                          ~BZ@OO18I~, ~BZPN150D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Eclectic Recall"
-        ~BZ@OP18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~@40052~, ~@40053~, ~MEWI963~, ~18~, ~20~, ~mental-agility.BAM~,                           ~BZ@OP18I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mental Agility"
+        ~BZ@OO18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~@40050~, ~@40051~, ~MEWI960~,  ~1~, ~20~, ~eclectic-recall.BAM~,                          ~BZ@OO18I~, ~BZPN150D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Eclectic Recall"
+        ~BZ@OP18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~@40052~, ~@40053~, ~MEWI963~,  ~1~, ~20~, ~mental-agility.BAM~,                           ~BZ@OP18I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mental Agility"
 
 
-        ~BZ@OQ15~, ~1~, ~Bomb~,          ~Q~, ~Point~,   ~@40054~, ~@40055~, ~MEPR754~, ~15~, ~20~, ~colossal-growth.BAM~,                          ~BZ@OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
+        ~BZ@OQ15~, ~1~, ~Bomb~,          ~Q~, ~Point~,   ~@40054~, ~@40055~, ~MEPR754~,  ~1~, ~20~, ~colossal-growth.BAM~,                          ~BZ@OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
 
     END
 
