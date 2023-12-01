@@ -1,0 +1,79 @@
+/***********************************************************************************************
+*   Source: Based on `cd_items_casting_spells` provided by CamDawg
+*   https://github.com/Gibberlings3/iwdfixpack/blob/master/iwdfixpack/lib/functions.tpa#L218
+***********************************************************************************************/
+
+
+DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
+    INT_VAR
+        cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
+        duration_opcode = 142           //opcode of the effect blocks to search to get the duration from
+        duration_offset = 0xE           //offset within the header's effect matching opcode to read from
+        magnitude_opcode = 0            //opcode of the effect blocks to search to get the magnitude from
+        magnitude_offset = 0x4          //offset within the header's effect matching opcode to read from
+        magnitude2_opcode = 0           //opcode of the effect blocks to search to get the magnitude2 from
+        magnitude2_offset = 0x4         //offset within the header's effect matching opcode to read from
+    STR_VAR
+        spell = null                    //spell RESREF to read from
+    RET
+        duration
+        magnitude
+        magnitude2
+        abil_projectile
+        abil_range
+        abil_target_count
+        transfer_effects_count
+        transfer_effects
+
+    BEGIN
+
+    ACTION_IF
+        FILE_EXISTS_IN_GAME ~%spell%.SPL~
+    BEGIN
+
+        COPY_EXISTING ~%spell%.SPL~ ~override~
+            READ_SHORT 0x68 abil_num
+            READ_LONG  0x64 abil_off
+            READ_LONG  0x6a fx_off
+            PATCH_IF ((abil_num = 1) OR (cast_at_level = 1))
+            BEGIN
+                SET base_off = abil_off
+            END
+            ELSE BEGIN
+                FOR (index = 1 ; index < abil_num ; ++index)    // skip first ability
+                BEGIN
+                    READ_SHORT (abil_off + 0x10 + (index * 0x28)) min_lev
+                    PATCH_IF min_lev = cast_at_level BEGIN
+                        SET base_off = (abil_off + 0x00 + (index * 0x28))
+                        SET index = abil_num // kill loop
+                END
+                PATCH_IF min_lev < cast_at_level BEGIN
+                    SET base_off = (abil_off + 0x00 + ((index - 1) * 0x28))
+                    SET index = abil_num // kill loop
+                    END
+                END
+            END
+
+            //Read the spell header in fields to write to item
+            // NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
+            //      Need to read each field then translate it over, methinks.
+            //READ_ASCII (base_off) entire_matching_ability (0x38)  //read the entire spell ability
+            READ_BYTE  (base_off + 0x00) ~abil_type~
+            READ_BYTE  (base_off + 0x0C) ~abil_target~
+            READ_BYTE  (base_off + 0x0D) ~abil_target_count~
+            READ_SHORT (base_off + 0x0E) ~abil_range~
+            READ_SHORT (base_off + 0x1E) transfer_fx_num
+            READ_SHORT (base_off + 0x20) abil_fx_idx
+            READ_SHORT (base_off + 0x26) ~abil_projectile~
+
+            // read all effects in a massive block
+            READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)
+            BUT_ONLY
+
+    END
+    ELSE BEGIN
+        WARN ~fn_bz_read_spell_header_for_potion: file(s) not found or invalid input
+            Spell:  %spell%.SPL~
+    END
+
+END
