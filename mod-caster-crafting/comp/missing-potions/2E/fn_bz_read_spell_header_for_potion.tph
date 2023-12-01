@@ -87,9 +87,9 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
         OUTER_SET read_duration = 1
         OUTER_SET read_magnitude = 1
         OUTER_SET read_magnitude2 = 1
-        ACTION_IF (~%duration_opcode%~ STRING_EQUAL null) THEN BEGIN OUTER_SET read_duration = 0 END
-        ACTION_IF (~%magnitude_opcode%~ STRING_EQUAL null) THEN BEGIN OUTER_SET read_magnitude = 0 END
-        ACTION_IF (~%magnitude2_opcode%~ STRING_EQUAL null) THEN BEGIN OUTER_SET read_magnitude2 = 0 END
+        ACTION_IF ((~%duration_opcode%~ STRING_EQUAL null)   OR (~%duration_opcode%~ STRING_EQUAL ~~))   THEN BEGIN OUTER_SET read_duration = 0 END
+        ACTION_IF ((~%magnitude_opcode%~ STRING_EQUAL null)  OR (~%magnitude_opcode%~ STRING_EQUAL ~~))  THEN BEGIN OUTER_SET read_magnitude = 0 END
+        ACTION_IF ((~%magnitude2_opcode%~ STRING_EQUAL null) OR (~%magnitude2_opcode%~ STRING_EQUAL ~~)) THEN BEGIN OUTER_SET read_magnitude2 = 0 END
 
         OUTER_SET terminate_loop = (0x30 * transfer_fx_num)
 
@@ -100,7 +100,7 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
             BEGIN
                 SET start_offset = (index * 0x30)
                 READ_SHORT (start_offset + 0) opcode
-                PATCH_IF (read_duation) THEN BEGIN
+                PATCH_IF (read_duration) THEN BEGIN
                     READ_LONG (start_offset + %duration_offset%) duration
                     SET read_duration = 0
                 END
