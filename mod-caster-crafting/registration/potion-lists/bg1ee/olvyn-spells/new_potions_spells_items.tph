@@ -7,8 +7,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Category]                                  // 2
         [Original Spell Level (for sorting/org.)    // 3
         [Target Type]                               // 4
-        [STRREF: Name]                              // 5
-        [STRREF: Descripton]                        // 6
+        [TRA: Identified Name]                      // 5
+        [TRA: Identified Descripton]                // 6
         [effect: source spell]                      // 7
         [effect: Caster Level (NI: minimum level)]  // 8
         [Cost: gold tier]                           // 9
@@ -25,44 +25,44 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~BZ@O001~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~@40002~, ~@40003~, ~MEPR151~,  ~1~,  ~3~, ~snake's-swiftness.BAM~,                        ~BZ@O001I~, ~BZPN120D~, ~~, ~317~, ~0xE~, ~~, ~~, ~~, ~~ => "Snake's Swiftness"
-        ~BZ@O101~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~@40004~, ~@40005~, ~MEPR157~,  ~1~,  ~4~, ~searing-smite.BAM~,                            ~BZ@O101I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Searing Smite"
-        ~BZ@O201~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~@40006~, ~@40007~, ~MEPR154~,  ~1~,  ~2~, ~turning-weapon.BAM~,                           ~BZ@O201I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Turning Weapon"
-        ~BZ@O301~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~@40008~, ~@40009~, ~MEPR156~,  ~1~, ~10~, ~camoflauge.BAM~,                               ~BZ@O301I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Camoflauge"
+        ~BZ@O001~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40002~, ~40003~, ~MEPR151~,  ~1~,  ~3~, ~snake's-swiftness.BAM~,                        ~BZ@O001I~, ~BZPN120D~, ~~, ~317~, ~0xE~, ~~, ~~, ~~, ~~ => "Snake's Swiftness"
+        ~BZ@O101~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~40004~, ~40005~, ~MEPR157~,  ~1~,  ~4~, ~searing-smite.BAM~,                            ~BZ@O101I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Searing Smite"
+        ~BZ@O201~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~40006~, ~40007~, ~MEPR154~,  ~1~,  ~2~, ~turning-weapon.BAM~,                           ~BZ@O201I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Turning Weapon"
+        ~BZ@O301~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40008~, ~40009~, ~MEPR156~,  ~1~, ~10~, ~camoflauge.BAM~,                               ~BZ@O301I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Camoflauge"
 
 
-        ~BZ@O605~, ~1~, ~Offense~,       ~3~, ~Actor~,   ~@40014~, ~@40015~, ~MEPR356~,  ~1~,  ~6~, ~wind-shots.BAM~,                               ~BZ@O605I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Wind Shots"
-        ~BZ@O805~, ~1~, ~Defense~,       ~3~, ~Actor~,   ~@40018~, ~@40019~, ~MEWI353~,  ~5~,  ~5~, ~displacement.BAM~,                             ~BZ@O805I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Displacement"
-        ~BZ@O905~, ~1~, ~Enhancement~,   ~3~, ~Caster~,  ~@40020~, ~@40021~, ~MEWI356~,  ~5~,  ~5~, ~legend-lore.BAM~,                              ~BZ@O905I~, ~BZPN130D~, ~~,  ~21~, ~0xE~, ~~, ~~, ~~, ~~ => "Legend Lore"
+        ~BZ@O605~, ~1~, ~Offense~,       ~3~, ~Actor~,   ~40014~, ~40015~, ~MEPR356~,  ~1~,  ~6~, ~wind-shots.BAM~,                               ~BZ@O605I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Wind Shots"
+        ~BZ@O805~, ~1~, ~Defense~,       ~3~, ~Actor~,   ~40018~, ~40019~, ~MEWI353~,  ~5~,  ~5~, ~displacement.BAM~,                             ~BZ@O805I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Displacement"
+        ~BZ@O905~, ~1~, ~Enhancement~,   ~3~, ~Caster~,  ~40020~, ~40021~, ~MEWI356~,  ~5~,  ~5~, ~legend-lore.BAM~,                              ~BZ@O905I~, ~BZPN130D~, ~~,  ~21~, ~0xE~, ~~, ~~, ~~, ~~ => "Legend Lore"
 
 
-        ~BZ@OB09~, ~1~, ~Bomb~,          ~5~, ~Actor~,   ~@40024~, ~@40025~, ~MEPR557~,  ~9~, ~10~, ~expose-to-the-elements.BAM~,                   ~BZ@OB09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Expose to the Elements"
+        ~BZ@OB09~, ~1~, ~Bomb~,          ~5~, ~Actor~,   ~40024~, ~40025~, ~MEPR557~,  ~9~, ~10~, ~expose-to-the-elements.BAM~,                   ~BZ@OB09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Expose to the Elements"
 //NOTE: manually create these
-        ~BZ@OC09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~@40026~, ~@40027~, ~MESOS04~,  ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,           ~BZ@OC09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Acid"
-        ~BZ@OD09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~@40028~, ~@40029~, ~MESOS02~,  ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,           ~BZ@OD09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Cold"
-        ~BZ@OE09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~@40030~, ~@40031~, ~MESOS03~,  ~9~,  ~9~, ~sphere-of-protection-from-electricity.BAM~,    ~BZ@OE09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Electricity"
-        ~BZ@OF09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~@40032~, ~@40033~, ~MESOS01~,  ~9~,  ~9~, ~sphere-of-protection-from-fire.BAM~,           ~BZ@OF09I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Fire"
-        ~BZ@OG09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~@40034~, ~@40035~, ~MESOS06~,  ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~,  ~BZ@OG09I~, ~BZPN005D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Petrification"
-        ~BZ@OH09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~@40036~, ~@40037~, ~MESOS05~,  ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,         ~BZ@OH09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Poison"
+        ~BZ@OC09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40026~, ~40027~, ~MESOS04~,  ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,           ~BZ@OC09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Acid"
+        ~BZ@OD09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40028~, ~40029~, ~MESOS02~,  ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,           ~BZ@OD09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Cold"
+        ~BZ@OE09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40030~, ~40031~, ~MESOS03~,  ~9~,  ~9~, ~sphere-of-protection-from-electricity.BAM~,    ~BZ@OE09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Electricity"
+        ~BZ@OF09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40032~, ~40033~, ~MESOS01~,  ~9~,  ~9~, ~sphere-of-protection-from-fire.BAM~,           ~BZ@OF09I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Fire"
+        ~BZ@OG09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40034~, ~40035~, ~MESOS06~,  ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~,  ~BZ@OG09I~, ~BZPN005D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Petrification"
+        ~BZ@OH09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40036~, ~40037~, ~MESOS05~,  ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,         ~BZ@OH09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Poison"
 //End Manual
-        ~BZ@OJ09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~@40040~, ~@40041~, ~MEWI566~,  ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,                ~BZ@OJ09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Gedlee's Electric Barrier"
+        ~BZ@OJ09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40040~, ~40041~, ~MEWI566~,  ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,                ~BZ@OJ09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Gedlee's Electric Barrier"
 
 
-        ~BZ@OL11~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~@40044~, ~@40045~, ~MEPR656~,  ~1~, ~14~, ~protection-from-non-silver-weapons.BAM~,       ~BZ@OL11I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Non-Silver Weapons"
+        ~BZ@OL11~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~40044~, ~40045~, ~MEPR656~,  ~1~, ~14~, ~protection-from-non-silver-weapons.BAM~,       ~BZ@OL11I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Non-Silver Weapons"
 
 
-        ~BZ@OS16~, ~1~, ~Enhancement~,   ~8~, ~Caster~,  ~@40058~, ~@40059~, ~MEWI857~,  ~1~, ~15~, ~extend-vision.BAM~,                            ~BZ@OS16I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Extend Vision"
+        ~BZ@OS16~, ~1~, ~Enhancement~,   ~8~, ~Caster~,  ~40058~, ~40059~, ~MEWI857~,  ~1~, ~15~, ~extend-vision.BAM~,                            ~BZ@OS16I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Extend Vision"
 
 
-        ~BZ@OM18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~@40046~, ~@40047~, ~MEWI951~,  ~1~, ~18~, ~perfect-invisibility.BAM~,                     ~BZ@OM18I~, ~BZPN120D~, ~~,  ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Perfect Invisibility"
-        ~BZ@ON18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~@40048~, ~@40049~, ~MEWI953~,  ~1~, ~18~, ~attain-perfection.BAM~,                        ~BZ@ON18I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Attain Perfection"
+        ~BZ@OM18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~40046~, ~40047~, ~MEWI951~,  ~1~, ~18~, ~perfect-invisibility.BAM~,                     ~BZ@OM18I~, ~BZPN120D~, ~~,  ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Perfect Invisibility"
+        ~BZ@ON18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~40048~, ~40049~, ~MEWI953~,  ~1~, ~18~, ~attain-perfection.BAM~,                        ~BZ@ON18I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Attain Perfection"
 
 
-        ~BZ@OO18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~@40050~, ~@40051~, ~MEWI960~,  ~1~, ~20~, ~eclectic-recall.BAM~,                          ~BZ@OO18I~, ~BZPN150D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Eclectic Recall"
-        ~BZ@OP18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~@40052~, ~@40053~, ~MEWI963~,  ~1~, ~20~, ~mental-agility.BAM~,                           ~BZ@OP18I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mental Agility"
+        ~BZ@OO18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~40050~, ~40051~, ~MEWI960~,  ~1~, ~20~, ~eclectic-recall.BAM~,                          ~BZ@OO18I~, ~BZPN150D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Eclectic Recall"
+        ~BZ@OP18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~40052~, ~40053~, ~MEWI963~,  ~1~, ~20~, ~mental-agility.BAM~,                           ~BZ@OP18I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mental Agility"
 
 
-        ~BZ@OQ15~, ~1~, ~Bomb~,          ~Q~, ~Point~,   ~@40054~, ~@40055~, ~MEPR754~,  ~1~, ~20~, ~colossal-growth.BAM~,                          ~BZ@OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
+        ~BZ@OQ15~, ~1~, ~Bomb~,          ~Q~, ~Point~,   ~40054~, ~40055~, ~MEPR754~,  ~1~, ~20~, ~colossal-growth.BAM~,                          ~BZ@OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
 
     END
 
@@ -75,7 +75,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_items~
     BEGIN
-        ~BZ@OK11~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~@40042~, ~@40043~, ~MEPR653~,  ~1~, ~12~, ~antiharm-shell.BAM~,                           ~BZ@OK11I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antiharm Shell"
+        ~BZ@OK11~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~40042~, ~40043~, ~MEPR653~,  ~1~, ~12~, ~antiharm-shell.BAM~,                           ~BZ@OK11I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antiharm Shell"
     END
 END
 
@@ -88,15 +88,15 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_items~
     BEGIN
-        ~BZ@O401~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~@40010~, ~@40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                           ~BZ@O401I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Reflect Attack"
+        ~BZ@O401~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40010~, ~40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                           ~BZ@O401I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Reflect Attack"
 
-        ~BZ@O503~, ~1~, ~Enhancement~,   ~2~, ~Caster~,  ~@40012~, ~@40013~, ~MEPR255~,  ~1~,  ~3~, ~ghostwalk.BAM~,                                ~BZ@O503I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Ghostwalk"
+        ~BZ@O503~, ~1~, ~Enhancement~,   ~2~, ~Caster~,  ~40012~, ~40013~, ~MEPR255~,  ~1~,  ~3~, ~ghostwalk.BAM~,                                ~BZ@O503I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Ghostwalk"
 
-        ~BZ@O705~, ~0~, ~Enhancement~,   ~3~, ~Caster~,  ~@40016~, ~@40017~, ~MEPR357~,  ~5~,  ~6~, ~fly.BAM~,                                      ~BZ@O705I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Fly"
+        ~BZ@O705~, ~0~, ~Enhancement~,   ~3~, ~Caster~,  ~40016~, ~40017~, ~MEPR357~,  ~5~,  ~6~, ~fly.BAM~,                                      ~BZ@O705I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Fly"
 
-        ~BZ@OA07~, ~1~, ~Offense~,       ~4~, ~Actor~,   ~@40022~, ~@40023~, ~MEPR455~,  ~7~,  ~8~, ~piercing-shots.BAM~,                           ~BZ@OA07I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Piercing Shots"
+        ~BZ@OA07~, ~1~, ~Offense~,       ~4~, ~Actor~,   ~40022~, ~40023~, ~MEPR455~,  ~7~,  ~8~, ~piercing-shots.BAM~,                           ~BZ@OA07I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Piercing Shots"
 
-        ~BZ@OI09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~@40038~, ~@40039~, ~MEWI559~,  ~9~, ~10~, ~ghostform.BAM~,                                ~BZ@OI09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Ghostform"
+        ~BZ@OI09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40038~, ~40039~, ~MEWI559~,  ~9~, ~10~, ~ghostform.BAM~,                                ~BZ@OI09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Ghostform"
     END
 END
 
@@ -106,6 +106,6 @@ THEN BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_items~
     BEGIN
-        ~BZ@OR01~, ~1~, ~Offense~,       ~1~, ~Caster~,  ~@40056~, ~@40057~, ~SPWI111~,  ~1~,  ~2~, ~true-strike.BAM~,                              ~BZ@OR01I~, ~BZPN049D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "True Strike"
+        ~BZ@OR01~, ~1~, ~Offense~,       ~1~, ~Caster~,  ~40056~, ~40057~, ~SPWI111~,  ~1~,  ~2~, ~true-strike.BAM~,                              ~BZ@OR01I~, ~BZPN049D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "True Strike"
     END
 END
