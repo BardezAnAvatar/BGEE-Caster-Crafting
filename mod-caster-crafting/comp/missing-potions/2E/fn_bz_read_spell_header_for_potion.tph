@@ -100,15 +100,15 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
             BEGIN
                 SET start_offset = (index * 0x30)
                 READ_SHORT (start_offset + 0) opcode
-                PATCH_IF (read_duration) THEN BEGIN
+                PATCH_IF (read_duration AND (opcode = duration_opcode)) THEN BEGIN
                     READ_LONG (start_offset + %duration_offset%) duration
                     SET read_duration = 0
                 END
-                PATCH_IF (read_magnitude) THEN BEGIN
+                PATCH_IF ((read_magnitude) AND (opcode = magnitude_opcode)) THEN BEGIN
                     READ_LONG (start_offset + %magnitude_offset%) magnitude
                     SET read_magnitude = 0
                 END
-                PATCH_IF (read_magnitude2) THEN BEGIN
+                PATCH_IF ((read_magnitude2) AND (opcode = magnitude2_opcode)) THEN BEGIN
                     READ_LONG (start_offset + %magnitude2_offset%) magnitude2
                     SET read_magnitude2 = 0
                 END
