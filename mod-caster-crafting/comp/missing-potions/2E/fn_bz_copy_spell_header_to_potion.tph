@@ -9,63 +9,35 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_potion
         cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
         usability_override = 0          //for some weird "cannot be used by lawful" spells
         price = 0                       //price of the potion
+        STRREF_identified_name = 0      //STRREF for identified name
+        STRREF_identified_desc = 0      //STRREF for identified description
+        ~ability_projectile~            //Which projectile the spell/potion uses
+        ~ability_range~                 //range it can be thrown
+        ~ability_target_count~          //targets affected
+        ~transfer_effects_count~        //number of affects being added
     STR_VAR
-        spell = null                    //spell RESREF to read from
+        spell = null                    //original spell RESREF tha was read from
         item  = null                    //item RESREF to write to
         icon_inventory = null           //BAM RESREF to write for inventory
         icon_description = null         //BAM RESREF to write for description
+        bin_effects_copied = null       //copied binary of effects read from spell
+        target_type = null              //Type of target for ability
     BEGIN
 
     ACTION_IF
-        FILE_EXISTS_IN_GAME ~%spell%.SPL~ AND
         NOT FILE_EXISTS_IN_GAME ~%item%.ITM~
     BEGIN
-
-        COPY_EXISTING ~%spell%.SPL~ ~override~
-            READ_SHORT 0x68 abil_num
-            READ_LONG  0x64 abil_off
-            READ_LONG  0x6a fx_off
-            PATCH_IF ((abil_num = 1) OR (cast_at_level = 1))
-            BEGIN
-                SET base_off = abil_off
-            END
-            ELSE BEGIN
-                FOR (index = 1 ; index < abil_num ; ++index)    // skip first ability
-                BEGIN
-                    READ_SHORT (abil_off + 0x10 + (index * 0x28)) min_lev
-                    PATCH_IF min_lev = cast_at_level BEGIN
-                        SET base_off = (abil_off + 0x00 + (index * 0x28))
-                        SET index = abil_num // kill loop
-                END
-                PATCH_IF min_lev < cast_at_level BEGIN
-                    SET base_off = (abil_off + 0x00 + ((index - 1) * 0x28))
-                    SET index = abil_num // kill loop
-                    END
-                END
-            END
-
-            //Read the spell header in fields to write to item
-            // NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
-            //      Need to read each field then translate it over, methinks.
-            //READ_ASCII (base_off) entire_matching_ability (0x38)  //read the entire spell ability
-            READ_BYTE  (base_off + 0x00) ~abil_type~
-            READ_BYTE  (base_off + 0x0C) ~abil_target~
-            READ_BYTE  (base_off + 0x0D) ~abil_target_count~
-            READ_SHORT (base_off + 0x0E) ~abil_range~
-            READ_SHORT (base_off + 0x1E) transfer_fx_num
-            READ_SHORT (base_off + 0x20) abil_fx_idx
-            READ_SHORT (base_off + 0x26) ~abil_projectile~
-
-            // read all effects in a massive block
-            READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)
-
-            READ_LONG (0x08) ~spl_name~         //name
-            READ_LONG (0x50) ~spl_description~  //description
-            BUT_ONLY
 
         OUTER_SET ~unusabilility_flags~ = 0
         ACTION_IF (~usability_override~ > 0) THEN BEGIN OUTER_SET ~unusabilility_flags~ = %usability_override% END
 
+        OUTER_SET target = "-1"
+        ACTION_MATCH ~%target_type%~
+        WITH
+            ~Caster~ BEGIN OUTER_SET target = 5 END //self
+            ~Point~  BEGIN OUTER_SET target = 4 END //any point within range
+            ~Actor~  BEGIN OUTER_SET target = 1 END //living creature
+        END
 
         COPY ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/ITM/blank_potion.itm~ ~override/%item%.ITM~
             READ_SHORT 0x68 abil_num
@@ -76,37 +48,37 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_potion
             SET abil_fx_idx = 0x00
 
             WRITE_LONG (0x1E) (%unusabilility_flags%)           //unusability flags
-            WRITE_LONG (0x0C) (%spl_name%)                      //identified name
-            WRITE_LONG (0x54) (%spl_description%)               //identified description
+            WRITE_LONG (0x0C) (%STRREF_identified_name%)        //identified name
+            WRITE_LONG (0x54) (%STRREF_identified_desc%)        //identified description
             WRITE_ASCII_TERMINATE (0x3A) ~%icon_inventory%~     //update the item inventory icon
             WRITE_ASCII_TERMINATE (0x58) ~%icon_description%~   //update the item description icon
             WRITE_LONG (0x34) (%price%)                         //set the price
 
             // write the copied ability header
-            LPF ~ADD_ITEM_HEADER~           // Add item header
+            LPF ~ADD_ITEM_HEADER~   // Add item header
                 INT_VAR
-                    type = 3                // potions use `Magic`
-                    required_id = 0         // Require ID to use?
-                    location = 3            // Item/equipment
+                    type = 3                    // potions use `Magic`
+                    required_id = 0             // Require ID to use?
+                    location = 3                // Item/equipment
                     alt_dicesize = 0
-                    target = %abil_target%  // target?
-                    target_count = %abil_target_count%
-                    range = %abil_range%    // range
-                    projectile_type = 0     // No launcher
+                    target = %target%           // target type
+                    target_count = %ability_target_count%
+                    range = %ability_range%     // range
+                    projectile_type = 0         // No launcher
                     alt_dicenumber = 0
                     speed = 0
                     alt_damage = 0
                     thaco = 0
                     dicesize = 0
-                    school = 0              // not used?
+                    school = 0                  // not used?
                     dicenumber = 0
-                    sectype = 0             // not used?
+                    sectype = 0                 // not used?
                     damage = 0
-                    damage_type = 1         // Piercing damage
+                    damage_type = 1             // Piercing damage
                     charges = 1
-                    depletion = 1           // vanishes
-                    flags = 0               // no flags set
-                    projectile = %abil_projectile%
+                    depletion = 1               // vanishes
+                    flags = 0                   // no flags set
+                    projectile = %ability_projectile%
                     //Animation %s
                     overhand = 34
                     backhand = 33
@@ -115,35 +87,38 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_potion
                     is_xbow = 0
                     is_sling = 0
                     copy_header = 0
-                    insert_point = ~-1~
+                    insert_point = ~-1~ //at the end
                 STR_VAR
                     icon = ~%icon_inventory%~
             END
 
-            SET abil_fx_num_off = (abil_off + 0x1E)                             //how many copied effects?
-            WRITE_SHORT abil_fx_num_off (transfer_fx_num)                       // update number of effects in ability
+            SET abil_fx_num_off = (abil_off + 0x1E)                             // What offset are abilities at presently?
+            WRITE_SHORT abil_fx_num_off (transfer_effects_count)                // update number of effects in the new ability
 
             SET fx_off = (abil_off + 0x38)
             WRITE_LONG 0x6a (fx_off)                                            // update new effects offset
 
-            //SET base_fx_add = (fx_off + 0x00 + (abil_fx_idx * 0x30))
-            SET base_fx_add = fx_off
-            INSERT_BYTES base_fx_add (0x30 * transfer_fx_num)                   // make space for...
-            WRITE_ASCIIE base_fx_add ~%transfer_effects%~                       // transferred effects
-            FOR (index2 = 0 ; index2 < transfer_fx_num ; ++index2) BEGIN        // loop through newly-inserted effects
-                READ_ASCII (base_fx_add + 0x14 + (0x30 * index2)) resref
+            SET base_fx_add = fx_off    //making some assumptions about an empty file
+            INSERT_BYTES base_fx_add (0x30 * transfer_effects_count)            // make space for...
+            WRITE_ASCIIE base_fx_add ~%bin_effects_copied%~                     // transferred effects, binary
+
+            //Loop through the effects, looking for a RESREF of %spell% (i.e.: don't allow the same spell twice)
+            FOR (index2 = 0 ; index2 < transfer_effects_count ; ++index2) BEGIN // loop through newly-inserted effects
+                SET index_offset = (0x30 * index2)
+                READ_ASCII (base_fx_add + index_offset + 0x14) resref 8 NULL
                 PATCH_IF ("%resref%" STRING_COMPARE_CASE "%spell%" = 0) BEGIN   // if self-reference, update (i.e.: immune to re-casting spell?)
-                    WRITE_ASCIIE (base_fx_add + 0x14 + (0x30 * index2)) "%item%" #8
+                    WRITE_ASCII_TERMINATE (base_fx_add + index_offset + 0x14) "%item%"
                 END // end self-reference check
             END // end new fx loop
-            WRITE_SHORT 0x68 (0x01)             //Now write the effects vals
+
+            //Register a new ability in the item file
+            WRITE_SHORT 0x68 (abil_num + 1)             //Now write the effects vals
 
             BUT_ONLY
 
     END
     ELSE BEGIN
         WARN ~bz_copy_spell_header_to_potion: file(s) not found or invalid input
-            Spell:  %spell%.SPL
             Item:   %item%.ITM~
     END
 
