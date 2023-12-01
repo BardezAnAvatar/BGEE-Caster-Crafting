@@ -1,6 +1,22 @@
 /* Reserving range 40000-49999 */
 
 
+/****************
+*   Durations   *
+****************/
+@49900 = ~%duration_days% day~
+@49901 = ~%duration_days% days~
+@49902 = ~%duration_hours% hour~
+@49903 = ~%duration_hours% hours~
+@49904 = ~%duration_turns% turn (%duration_rounds% rounds)~
+@49905 = ~%duration_turns% turns (%duration_rounds% rounds)~
+@49906 = ~%duration_round% round~
+@49907 = ~%duration_round% rounds~
+@49908 = ~%duration_seconds% second~
+@49909 = ~%duration_seconds% seconds~
+@49910 = ~Instant~
+
+
 /**************************
 *   OlvynSpells Potions   *
 **************************/
