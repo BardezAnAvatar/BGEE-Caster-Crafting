@@ -3,7 +3,6 @@
 *   https://github.com/Gibberlings3/iwdfixpack/blob/master/iwdfixpack/lib/functions.tpa#L218
 ***********************************************************************************************/
 
-
 DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
     INT_VAR
         cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
@@ -40,17 +39,6 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
         FILE_EXISTS_IN_GAME ~%spell%.SPL~
     BEGIN
 
-        PRINT ~DEBUG: reading %spell%.SPL
-        cast_at_level:      `%cast_at_level%`
-        spell:              `%spell%`
-        duration_opcode:    `%duration_opcode%`
-        duration_offset:    `%duration_offset%`
-        magnitude_opcode:   `%magnitude_opcode%`
-        magnitude_offset:   `%magnitude_offset%`
-        magnitude2_opcode:  `%magnitude2_opcode%`
-        magnitude2_offset:  `%magnitude2_offset%`
-        ~
-
         COPY_EXISTING ~%spell%.SPL~ ~override~
             READ_SHORT 0x68 abil_num
             READ_LONG  0x64 abil_off
@@ -83,7 +71,7 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
                 END
             END
 
-            //Debug WTF
+            //Debug result
             PATCH_PRINT ~DEBUG:
                 Best Level Match:       %best_min_lvl_match%
                 Header offset detected: %base_off%
