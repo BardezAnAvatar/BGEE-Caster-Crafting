@@ -7,25 +7,34 @@
 DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
     INT_VAR
         cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
-        duration_opcode = 142           //opcode of the effect blocks to search to get the duration from
-        duration_offset = 0xE           //offset within the header's effect matching opcode to read from
-        magnitude_opcode = 0            //opcode of the effect blocks to search to get the magnitude from
-        magnitude_offset = 0x4          //offset within the header's effect matching opcode to read from
-        magnitude2_opcode = 0           //opcode of the effect blocks to search to get the magnitude2 from
-        magnitude2_offset = 0x4         //offset within the header's effect matching opcode to read from
     STR_VAR
         spell = null                    //spell RESREF to read from
+        duration_opcode =   null        //opcode of the effect blocks to search to get the duration from
+        duration_offset =   null        //offset within the header's effect matching opcode to read from
+        magnitude_opcode =  null        //opcode of the effect blocks to search to get the magnitude from
+        magnitude_offset =  null        //offset within the header's effect matching opcode to read from
+        magnitude2_opcode = null        //opcode of the effect blocks to search to get the magnitude2 from
+        magnitude2_offset = null        //offset within the header's effect matching opcode to read from
     RET
-        duration
-        magnitude
-        magnitude2
-        abil_projectile
-        abil_range
-        abil_target_count
-        transfer_effects_count
-        transfer_effects
+        ~duration~
+        ~magnitude~
+        ~magnitude2~
+        ~ability_projectile~
+        ~abil_range~
+        ~abil_target_count~
+        ~transfer_effects_count~
+        ~transfer_effects~
 
     BEGIN
+        //return value defaults
+        OUTER_SET duration = 0
+        OUTER_SET magnitude = 0
+        OUTER_SET magnitude2 = 0
+        OUTER_SET ability_projectile = 1 //none
+        OUTER_SET ability_range = 0
+        OUTER_SET ability_target_count = 0
+        OUTER_SET transfer_effects_count = 0
+        OUTER_TEXT_SPRINT transfer_effects = ~~
 
     ACTION_IF
         FILE_EXISTS_IN_GAME ~%spell%.SPL~
@@ -69,6 +78,48 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
             // read all effects in a massive block
             READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)
             BUT_ONLY
+
+        /**************************************************************************************
+        *   BEGIN: Read the variables from the spell header/effects to emit to descriptions   *
+        **************************************************************************************/
+
+        //Loop through the copied effects in a loop. Look for the opcodes specified, read them if necessary
+        OUTER_SET read_duration = 1
+        OUTER_SET read_magnitude = 1
+        OUTER_SET read_magnitude2 = 1
+        ACTION_IF (~%duration_opcode%~ STRING_EQUAL null) THEN BEGIN OUTER_SET read_duration = 0 END
+        ACTION_IF (~%magnitude_opcode%~ STRING_EQUAL null) THEN BEGIN OUTER_SET read_magnitude = 0 END
+        ACTION_IF (~%magnitude2_opcode%~ STRING_EQUAL null) THEN BEGIN OUTER_SET read_magnitude2 = 0 END
+
+        OUTER_SET terminate_loop = (0x30 * transfer_fx_num)
+
+        //Set a PATCH context to read the already-read effects
+        OUTER_PATCH ~%transfer_effects%~
+            FOR (index = 0; index < transfer_fx_num; ++index)
+            BEGIN
+                SET start_offset = (index * 0x30)
+                READ_SHORT (start_offset + 0) opcode
+                PATCH_IF (read_duation) THEN BEGIN
+                    READ_LONG (start_offset + %duration_offset%) duration
+                END
+                PATCH_IF (read_magnitude) THEN BEGIN
+                    READ_LONG (start_offset + %duration_offset%) magnitude
+                END
+                PATCH_IF (read_magnitude2) THEN BEGIN
+                    READ_LONG (start_offset + %duration_offset%) magnitude2
+                END
+            END
+
+        /************************************************************************************
+        *   END: Read the variables from the spell header/effects to emit to descriptions   *
+        ************************************************************************************/
+
+        //Set output variables
+        OUTER_SET ability_projectile = %abil_projectile%
+        OUTER_SET ability_range = %abil_range%
+        OUTER_SET ability_target_count = %abil_target_count%
+        OUTER_SET transfer_effects_count = %transfer_fx_num%
+
 
     END
     ELSE BEGIN
