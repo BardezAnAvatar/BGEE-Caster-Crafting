@@ -9,7 +9,11 @@
 *       and is populated                                        *
 ****************************************************************/
 
+//function defs
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_bz_read_spell_header_for_potion.tph~
 
+
+//loop through all of the new potions from spells metadata
 ACTION_PHP_EACH ~new_potions_spells_items~
     AS ~keys~ => ~value~
     BEGIN
@@ -43,6 +47,40 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         /********************************
         *    BEGIN: Read Source Spell   *
         ********************************/
+        LAUNCH_ACTION_FUNCTION ~fn_bz_read_spell_header_for_potion~
+            INT_VAR
+                cast_at_level = %keys_8%        //caster level to search on; read headers looking a header with this cast at min level
+            STR_VAR
+                spell = %keys_7%                //spell RESREF to read from
+                duration_opcode =   %keys_14%   //opcode of the effect blocks to search to get the duration from
+                duration_offset =   %keys_15%   //offset within the header's effect matching opcode to read from
+                magnitude_opcode =  %keys_16%   //opcode of the effect blocks to search to get the magnitude from
+                magnitude_offset =  %keys_17%   //offset within the header's effect matching opcode to read from
+                magnitude2_opcode = %keys_18%   //opcode of the effect blocks to search to get the magnitude2 from
+                magnitude2_offset = %keys_19%   //offset within the header's effect matching opcode to read from
+            RET
+                spl_duration = ~duration~
+                spl_magnitude = ~magnitude~
+                spl_magnitude2 = ~magnitude2~
+                spl_ability_projectile = ~ability_projectile~
+                spl_abil_range = ~abil_range~
+                spl_abil_target_count = ~abil_target_count~
+                spl_transfer_effects_count = ~transfer_effects_count~
+                spl_transfer_effects = ~transfer_effects~
+        END
+
+        PRINT ~DEBUG: Read values:
+            DURATION:               %spl_duration%
+            MAGNITUDE:              %spl_magnitude%
+            MAGNITUDE2:             %spl_magnitude2%
+            PROJECTILE:             %spl_ability_projectile%
+            RANGE:                  %spl_abil_range%
+            TARGET COUNT:           %spl_abil_target_count%
+            COPIED EFFECT COUNT:    %spl_transfer_effects_count%
+            COPIED EFFECT BIN:      %spl_transfer_effects%
+        ~
+
+
         //Read the extended header for copying
         //Read the duration for description
             //if the specified opcode is missing or the opcode is empty, should be "0"
