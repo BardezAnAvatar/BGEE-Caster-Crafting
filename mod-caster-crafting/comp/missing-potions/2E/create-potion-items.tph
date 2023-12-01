@@ -45,9 +45,11 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         ********************************/
         //Read the extended header for copying
         //Read the duration for description
+            //if the specified opcode is missing or the opcode is empty, should be "0"
+            //clouds and such have no SPL duration, but their projectiles do:
+                //The total duration is generally Frequency * # Repetitions. Frerquency is in ticks; 100 = 1 round (different time scale :-/ )
         //Read the specified op code for magnitide?
         //Read the specified op code for magnitude2?
-        //Read the specified op code for dice_count?
         //TODO: after reading duration, emit a value that does days; hours; turns (rounds);rounds; seconds; instant
         /******************************
         *    END: Read Source Spell   *
@@ -99,5 +101,18 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         //All headers are magical. Use the target metadata for the target flag.
         /****************************
         *    END: Create ITM file   *
+        ****************************/
+
+
+
+        /******************************
+        *    BEGIN: Hard-coded ITMs   *
+        ******************************/
+        //TODO: ITMs that automation won't work for:
+        /*
+            Find Traps
+        */
+        /****************************
+        *    END: Hard-coded ITMs   *
         ****************************/
     END
