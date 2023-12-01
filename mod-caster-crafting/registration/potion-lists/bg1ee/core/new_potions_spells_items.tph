@@ -109,7 +109,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ@2511~, ~Cure~,          ~6~, ~Caster~,  ~@40354~, ~@40355~, ~SPPR607~,  ~1~, ~12~, ~heal.BAM~,                                  ~BZ@2511I~, ~BZPN110D~, ~~,     ~0~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Heal"
         ~BZ@2611~, ~Enhancement~,   ~6~, ~Caster~,  ~@40356~, ~@40357~, ~SPPR611~,  ~1~, ~12~, ~wondrous-recall.BAM~,                       ~BZ@2611I~, ~BZPN100D~, ~~,     ~0~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Wondrous Recall"
-        ~BZ@2711~, ~Defense~,       ~6~, ~Actor~,   ~@40358~, ~@40359~, ~SPPR615~,  ~1~, ~12~, ~entropy-shield.BAM~,                        ~BZ@2711I~, ~BZPN100D~, ~~,     ~0~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Entropy Shield"
         ~BZ@2812~, ~Defense~,       ~6~, ~Actor~,   ~@40360~, ~@40361~, ~SPWI602~,  ~1~, ~12~, ~globe-of-invulnerability.BAM~,              ~BZ@2812I~, ~BZPN001D~, ~~,     ~0~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Globe of Invulnerability"
         ~BZ@2912~, ~Offense~,       ~6~, ~Caster~,  ~@40362~, ~@40363~, ~SPWI603~,  ~1~, ~16~, ~tenser's-transformation.BAM~,               ~BZ@2912I~, ~BZPN019D~, ~~,     ~0~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Tenser's Transformation"
         ~BZ@2A12~, ~Defense~,       ~6~, ~Caster~,  ~@40364~, ~@40365~, ~SPWI606~,  ~1~, ~13~, ~protection-from-magic-energy.BAM~,          ~BZ@2A12I~, ~BZPN026D~, ~~,     ~0~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Magic Energy"

@@ -52,6 +52,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@IH09~, ~Bomb~,          ~5~, ~Point~,   ~@40134~, ~@40135~, ~SPPR519~,  ~1~, ~10~, ~spike-stones.BAM~,                          ~BZ@IH09I~, ~BZPN013D~, ~~     ,  ~1~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Spike Stones"
 
 
+        ~BZ@2711~, ~Defense~,       ~6~, ~Actor~,   ~@40358~, ~@40359~, ~SPPR615~,  ~1~, ~12~, ~entropy-shield.BAM~,                        ~BZ@2711I~, ~BZPN100D~, ~~     ,  ~0~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Entropy Shield"
         ~BZ@II12~, ~Defense~,       ~6~, ~Caster~,  ~@40136~, ~@40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~,                       ~BZ@II12I~, ~BZPN100D~, ~~     ,  ~0~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antimagic Shell"
         ~BZ@IJ12~, ~Cure~,          ~6~, ~Caster~,  ~@40138~, ~@40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~,                    ~BZ@IJ12I~, ~BZPN005D~, ~~     ,  ~0~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Trollish Fortitude"
 
