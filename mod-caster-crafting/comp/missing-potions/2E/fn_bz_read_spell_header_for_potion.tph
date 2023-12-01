@@ -34,7 +34,7 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
         OUTER_SET ability_range = 0
         OUTER_SET ability_target_count = 0
         OUTER_SET transfer_effects_count = 0
-        OUTER_TEXT_SPRINT transfer_effects = ~~
+        OUTER_TEXT_SPRINT ~transfer_effects~ ~~
 
     ACTION_IF
         FILE_EXISTS_IN_GAME ~%spell%.SPL~
@@ -95,6 +95,7 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
 
         //Set a PATCH context to read the already-read effects
         OUTER_PATCH ~%transfer_effects%~
+        BEGIN
             FOR (index = 0; index < transfer_fx_num; ++index)
             BEGIN
                 SET start_offset = (index * 0x30)
@@ -112,6 +113,7 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
                     SET read_magnitude2 = 0
                 END
             END
+        END
 
         /************************************************************************************
         *   END: Read the variables from the spell header/effects to emit to descriptions   *
