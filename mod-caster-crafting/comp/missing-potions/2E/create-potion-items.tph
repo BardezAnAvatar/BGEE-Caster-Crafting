@@ -13,15 +13,21 @@
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_bz_read_spell_header_for_potion.tph~
 
 
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   Iterating through registry of spells that can be made into potions...   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
+
 //loop through all of the new potions from spells metadata
 ACTION_PHP_EACH ~new_potions_spells_items~
     AS ~keys~ => ~value~
     BEGIN
         PRINT ~DEBUG: Spell-Potion Entry:
-            Value:              `%value%`;
-            SRC BAM:            `%keys_10%`;
-            Dest BAM:           `%keys_11%`;
-            DESC BAM:           `%keys_12%`;
+            Value:              `%value%`
+            SRC BAM:            `%keys_10%`
+            Dest BAM:           `%keys_11%`
+            DESC BAM:           `%keys_12%`
             Caster Level:       `%keys_8%`
             Duration_Opcode:    `%keys_14%`
             Duration_Offset:    `%keys_15%`
@@ -87,19 +93,75 @@ ACTION_PHP_EACH ~new_potions_spells_items~
             COPIED EFFECT COUNT:    %spl_transfer_effects_count%
             COPIED EFFECT BIN:      %spl_transfer_effects%
         ~
-
-
-        //Read the extended header for copying
-        //Read the duration for description
-            //if the specified opcode is missing or the opcode is empty, should be "0"
-            //clouds and such have no SPL duration, but their projectiles do:
-                //The total duration is generally Frequency * # Repetitions. Frerquency is in ticks; 100 = 1 round (different time scale :-/ )
-        //Read the specified op code for magnitide?
-        //Read the specified op code for magnitude2?
-        //TODO: after reading duration, emit a value that does days; hours; turns (rounds);rounds; seconds; instant
         /******************************
         *    END: Read Source Spell   *
         ******************************/
+
+
+
+        /***********************************************
+        *   BEGIN: Calculate strings for description   *
+        ***********************************************/
+        //After reading duration, emit a value that does days; hours; turns (rounds);rounds; seconds; instant
+        ACTION_IF (spl_duration = 0) THEN BEGIN OUTER_SPRINT duration @49910 END
+
+        ELSE BEGIN  //days
+            ACTION_IF ((spl_duration MODULO 7200) = 0) THEN
+            BEGIN
+                OUTER_SET duration_days = (spl_duration / 7200)
+                ACTION_IF (duration_days > 1) THEN BEGIN OUTER_SPRINT duration @49901 END
+                ELSE BEGIN OUTER_SPRINT duration @49900 END
+            END
+            ELSE BEGIN  //hours
+                ACTION_IF ((spl_duration MODULO 300) = 0) THEN
+                BEGIN
+                    OUTER_SET duration_hours = (spl_duration / 300)
+                    ACTION_IF (duration_hours > 1) THEN BEGIN OUTER_SPRINT duration @49903 END
+                    ELSE BEGIN OUTER_SPRINT duration @49902 END
+                END
+                ELSE BEGIN  //turns
+                    ACTION_IF ((spl_duration MODULO 60) = 0) THEN
+                    BEGIN
+                        OUTER_SET duration_turns = (spl_duration / 60)
+                        OUTER_SET duration_rounds = (duration_turns / 10)
+                        ACTION_IF (duration_turns > 1) THEN BEGIN OUTER_SPRINT duration @49905 END
+                        ELSE BEGIN OUTER_SPRINT duration = @49904 END
+                    END
+                    ELSE BEGIN  //rounds
+                        ACTION_IF ((spl_duration MODULO 6) = 0) THEN
+                        BEGIN
+                            OUTER_SET duration_rounds = (duration_turns / 6)
+                            ACTION_IF (duration_rounds > 1) THEN BEGIN OUTER_SPRINT duration @49907 END
+                            ELSE BEGIN OUTER_SPRINT duration @49906 END
+                        END
+                        ELSE BEGIN  //seconds
+                            OUTER_SET duration_seconds = spl_duration
+                            ACTION_IF (duration_seconds > 1) THEN BEGIN OUTER_SPRINT duration @49909 END
+                            ELSE BEGIN OUTER_SPRINT duration @49908 END
+                        END //seconds
+                    END //rounds
+                END //turns
+            END //hours
+        END //days
+
+        OUTER_SET magnitude = ~%spl_magnitude%~
+        OUTER_SET magnitude2 = ~%spl_magnitude2%~
+
+        OUTER_SPRINT identified_name (AT "keys_5")
+        OUTER_SPRINT identified_description (AT "keys_6")
+
+        OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%identified_name%~)
+        OUTER_SET identified_description_STRREF = RESOLVE_STR_REF(~%identified_description%~)
+
+        PRINT ~DEBUG: Result descriptions:
+            identified_name_STRREF:         `%identified_name_STRREF%`
+            identified_description_STRREF:  `%identified_description_STRREF%`
+            identified_name:                `%identified_name%`
+            identified_description:         `%identified_description%`
+        ~
+        /*********************************************
+        *   END: Calculate strings for description   *
+        *********************************************/
 
 
 
