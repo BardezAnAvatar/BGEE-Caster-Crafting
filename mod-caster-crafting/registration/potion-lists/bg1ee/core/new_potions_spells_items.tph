@@ -134,7 +134,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
       //BG1 lacks HLAs sometimes
       //~BZ@2P18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~@40394~, ~@40395~, ~SPWI921~,  ~1~, ~20~, ~improved-alacrity.BAM~,                     ~BZ@2P18I~, ~BZPN110D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Improved Alacrity"
 
-        ~BZ@2Q15~, ~1~, ~Defense~,       ~Q~, ~Caster~,  ~@40396~, ~@40397~, ~SPPR730~,  ~1~, ~16~, ~aura-of-flaming-death.BAM~,                 ~BZ@2Q15I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Aura of Flaming Death"
+      //~BZ@2Q15~, ~1~, ~Defense~,       ~Q~, ~Caster~,  ~@40396~, ~@40397~, ~SPPR730~,  ~1~, ~16~, ~aura-of-flaming-death.BAM~,                 ~BZ@2Q15I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Aura of Flaming Death"
 
 
     END
