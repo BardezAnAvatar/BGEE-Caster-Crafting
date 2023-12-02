@@ -6,7 +6,6 @@
 
 DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
     INT_VAR
-        cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
         usability_override = 0          //for some weird "cannot be used by lawful" spells
         price = 0                       //price of the potion
         STRREF_identified_name = 0      //STRREF for identified name
