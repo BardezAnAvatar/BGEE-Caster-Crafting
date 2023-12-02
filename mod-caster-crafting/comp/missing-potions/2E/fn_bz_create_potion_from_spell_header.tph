@@ -36,6 +36,7 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
             ~Caster~ BEGIN OUTER_SET target = 5 END //self
             ~Point~  BEGIN OUTER_SET target = 4 END //any point within range
             ~Actor~  BEGIN OUTER_SET target = 1 END //living creature
+            DEFAULT
         END
 
         COPY ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/ITM/blank_potion.itm~ ~override/%item%.ITM~
