@@ -2,12 +2,6 @@ ACTION_IF (NOT VARIABLE_IS_SET ~bz_caster_crafting_preprocessing~)
 THEN
 BEGIN
 
-    //Debugging Statements
-    PRINT ~DEBUG: var `MOD_FOLDER`: %MOD_FOLDER%~
-
-    //Debugging Statements
-    PRINT @1
-
     /********************
     *   Set Game Dirs   *
     ********************/
