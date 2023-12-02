@@ -195,11 +195,30 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         /******************************
         *    BEGIN: Create ITM file   *
         ******************************/
-        //TODO: Copy item base
-        //Apply header
-        // Is it Targeting self, a point, or an opponent?
+        ACTION_IF (keys_1) THEN //If generate automatically/using generic code
+        BEGIN
+            OUTER_SET potion_cost = $costs_potion_tier(keys_9)
 
-        //All headers are magical. Use the target metadata for the target flag.
+            LAUNCH_ACTION_FUNCTION ~fn_bz_create_potion_from_spell_header~
+                INT_VAR
+                    usability_override = keys_13                            //for some weird "cannot be used by lawful" spells
+                    price = potion_cost                                     //price of the potion
+                    STRREF_identified_name = identified_name_STRREF         //STRREF for identified name
+                    STRREF_identified_desc = identified_description_STRREF  //STRREF for identified description
+                    ability_projectile = spl_ability_projectile             //Which projectile the spell/potion uses
+                    ability_range = spl_abil_range                          //range it can be thrown
+                    ability_target_count = spl_abil_target_count            //targets affected
+                    transfer_effects_count = spl_transfer_effects_count     //number of affects being added
+                STR_VAR
+                    spell = ~%keys_7%~                              //original spell RESREF tha was read from
+                    item  = ~%keys_0%~                              //item RESREF to write to
+                    icon_inventory = ~%keys_11%~                    //BAM RESREF to write for inventory
+                    icon_description = ~%keys_12%~                  //BAM RESREF to write for description
+                    bin_effects_copied = ~%spl_transfer_effects%~   //copied binary of effects read from spell
+                    target_type = ~%keys_4%~                        //Type of target for ability
+                BEGIN
+            END
+        END
         /****************************
         *    END: Create ITM file   *
         ****************************/
