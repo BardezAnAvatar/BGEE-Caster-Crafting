@@ -56,7 +56,7 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
             // write the copied ability header
             LPF ~ADD_ITEM_HEADER~   // Add item header
                 INT_VAR
-                    type = 3                    // potions use `Magic`
+                    type = 3                    // All potions use `Magic`
                     required_id = 0             // Require ID to use?
                     location = 3                // Item/equipment
                     alt_dicesize = 0
