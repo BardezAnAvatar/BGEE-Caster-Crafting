@@ -216,7 +216,6 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     icon_description = ~%keys_12%~                  //BAM RESREF to write for description
                     bin_effects_copied = ~%spl_transfer_effects%~   //copied binary of effects read from spell
                     target_type = ~%keys_4%~                        //Type of target for ability
-                BEGIN
             END
         END
         /****************************
