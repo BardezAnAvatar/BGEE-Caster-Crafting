@@ -78,8 +78,8 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 spl_magnitude = ~magnitude~
                 spl_magnitude2 = ~magnitude2~
                 spl_ability_projectile = ~ability_projectile~
-                spl_abil_range = ~abil_range~
-                spl_abil_target_count = ~abil_target_count~
+                spl_abil_range = ~ability_range~
+                spl_abil_target_count = ~ability_target_count~
                 spl_transfer_effects_count = ~transfer_effects_count~
                 spl_transfer_effects = ~transfer_effects~
         END
@@ -89,8 +89,8 @@ ACTION_PHP_EACH ~new_potions_spells_items~
             MAGNITUDE:              %spl_magnitude%
             MAGNITUDE2:             %spl_magnitude2%
             PROJECTILE:             %spl_ability_projectile%
-            RANGE:                  %spl_abil_range%
-            TARGET COUNT:           %spl_abil_target_count%
+            RANGE:                  %spl_ability_range%
+            TARGET COUNT:           %spl_ability_target_count%
             COPIED EFFECT COUNT:    %spl_transfer_effects_count%
             COPIED EFFECT BIN:      %spl_transfer_effects%
         ~

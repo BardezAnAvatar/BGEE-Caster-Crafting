@@ -19,8 +19,8 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
         ~magnitude~
         ~magnitude2~
         ~ability_projectile~
-        ~abil_range~
-        ~abil_target_count~
+        ~ability_range~
+        ~ability_target_count~
         ~transfer_effects_count~
         ~transfer_effects~
 
