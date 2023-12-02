@@ -28,7 +28,11 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
     BEGIN
 
         OUTER_SET ~unusabilility_flags~ = 0
-        ACTION_IF (~usability_override~ > 0) THEN BEGIN OUTER_SET ~unusabilility_flags~ = %usability_override% END
+        ACTION_IF (NOT ((~%usability_override%~ STRING_EQUAL null) OR (~%usability_override%~ STRING_EQUAL ~~)))
+            THEN BEGIN
+                PRINT ~I shouldn't be here!!~
+                OUTER_SET ~unusabilility_flags~ = ~%usability_override%~
+            END
 
         OUTER_SET target = "-1"
         ACTION_MATCH ~%target_type%~
