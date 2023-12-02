@@ -208,7 +208,6 @@ ACTION_PHP_EACH ~new_potions_spells_items~
 
             LAUNCH_ACTION_FUNCTION ~fn_bz_create_potion_from_spell_header~
                 INT_VAR
-                    usability_override = keys_13                            //for some weird "cannot be used by lawful" spells
                     price = potion_cost                                     //price of the potion
                     STRREF_identified_name = identified_name_STRREF         //STRREF for identified name
                     STRREF_identified_desc = identified_description_STRREF  //STRREF for identified description
@@ -223,6 +222,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     icon_description = ~%keys_12%~                  //BAM RESREF to write for description
                     bin_effects_copied = ~%spl_transfer_effects%~   //copied binary of effects read from spell
                     target_type = ~%keys_4%~                        //Type of target for ability
+                    usability_override = ~%keys_13%~                //for some weird "cannot be used by lawful" spells
             END
         END
         /****************************

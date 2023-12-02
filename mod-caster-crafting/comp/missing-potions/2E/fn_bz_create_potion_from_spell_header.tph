@@ -6,14 +6,13 @@
 
 DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
     INT_VAR
-        usability_override = 0          //for some weird "cannot be used by lawful" spells
         price = 0                       //price of the potion
         STRREF_identified_name = 0      //STRREF for identified name
         STRREF_identified_desc = 0      //STRREF for identified description
-        ~ability_projectile~            //Which projectile the spell/potion uses
-        ~ability_range~                 //range it can be thrown
-        ~ability_target_count~          //targets affected
-        ~transfer_effects_count~        //number of affects being added
+        ability_projectile = 0          //Which projectile the spell/potion uses
+        ability_range = 0               //range it can be thrown
+        ability_target_count = 0        //targets affected
+        transfer_effects_count = 0      //number of affects being added
     STR_VAR
         spell = null                    //original spell RESREF tha was read from
         item  = null                    //item RESREF to write to
@@ -21,6 +20,7 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
         icon_description = null         //BAM RESREF to write for description
         bin_effects_copied = null       //copied binary of effects read from spell
         target_type = null              //Type of target for ability
+        usability_override = null       //for some weird "cannot be used by lawful" spells
     BEGIN
 
     ACTION_IF
