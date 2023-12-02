@@ -104,7 +104,7 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
             //Loop through the effects, looking for a RESREF of %spell% (i.e.: don't allow the same spell twice)
             FOR (index2 = 0 ; index2 < transfer_effects_count ; ++index2) BEGIN // loop through newly-inserted effects
                 SET index_offset = (0x30 * index2)
-                READ_ASCII (base_fx_add + index_offset + 0x14) resref 8 NULL
+                READ_ASCII (base_fx_add + index_offset + 0x14) resref (8) NULL
                 PATCH_IF ("%resref%" STRING_COMPARE_CASE "%spell%" = 0) BEGIN   // if self-reference, update (i.e.: immune to re-casting spell?)
                     WRITE_ASCII_TERMINATE (base_fx_add + index_offset + 0x14) "%item%"
                 END // end self-reference check
