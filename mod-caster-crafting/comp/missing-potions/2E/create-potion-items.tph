@@ -256,13 +256,13 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_remove_projectile~ STR_VAR item = ~%keys_0%~ END END
             ~mirror-image.BAM~ ~ghost-armor.BAM~ ~fire-shield-blue.BAM~
             ~minor-globe-of-invulnerability.BAM~ ~globe-of-invulnerability.BAM~ ~phantom-blade.BAM~
-            ~minor-spell-turning.BAM~ ~expeditious-retreat.BAM~ ~moonblade.BAM~
+            ~minor-spell-turning.BAM~ ~moonblade.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END END
             ~wondrous-recall-arcane.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_effects_restore_spells_arcane~ STR_VAR item = ~%keys_0%~ END END
             ~exaltation.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_remove_immunity_to_caster~ STR_VAR item = ~%keys_0%~ END END
-            ~entropy-shield.BAM~ ~fire-shield-red.BAM~
+            ~entropy-shield.BAM~ ~fire-shield-red.BAM~ ~expeditious-retreat.BAM~
                 BEGIN
                     LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END
                     LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 1 STR_VAR item = ~%keys_0%~ END
