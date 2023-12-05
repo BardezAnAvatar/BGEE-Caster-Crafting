@@ -1,0 +1,18 @@
+/***********************************************************************************************
+*   This function will patch the first ITM header to set its range to 1
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_patch_range
+    INT_VAR
+        range = 1
+    STR_VAR
+        item = null                    //item resref to update
+BEGIN
+
+    COPY_EXISTING ~%item%.ITM~ ~override~
+        //PATCHES
+        READ_LONG   (0x64) abilities_offset
+        WRITE_SHORT (abilities_offset + 0x0E) (range)   //Set the range to 1 (required for touch range)
+    BUT_ONLY_IF_IT_CHANGES
+
+END //function
