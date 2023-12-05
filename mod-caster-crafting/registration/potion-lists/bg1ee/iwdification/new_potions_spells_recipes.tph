@@ -41,13 +41,14 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPIKE_STONES~,                             ~BZ@IH09~, ~SPPR519~,  ~9~,  ~1~ => "Spike Stones"
 
 
-        ~ANTIMAGIC_SHELL~,                          ~BZ@II12~, ~SPWI630~, ~12~,  ~1~ => "Antimagic Shell"
-        ~TROLLISH_FORTITUDE~,                       ~BZ@IJ12~, ~SPWI629~, ~12~,  ~1~ => "Trollish Fortitude"
+        ~ENTROPY_SHIELD~,                           ~BZ@II11~, ~SPPR615~,  ~1~,  ~1~ => "Entropy Shield"
+        ~ANTIMAGIC_SHELL~,                          ~BZ@IJ11~, ~SPWI630~, ~12~,  ~1~ => "Antimagic Shell"
+        ~TROLLISH_FORTITUDE~,                       ~BZ@IK11~, ~SPWI629~, ~12~,  ~1~ => "Trollish Fortitude"
 
 
-        ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,          ~BZ@IK14~, ~SPPR735~, ~14~,  ~1~ => "Impervious Sanctity of Mind"
-        ~GREATER_SHIELD_OF_LATHANDER~,              ~BZ@IL14~, ~SPPR737~, ~14~,  ~1~ => "Greater Shield of Lathander"
-        ~MIST_OF_ELDATH~,                           ~BZ@IM14~, ~SPPR738~, ~14~,  ~1~ => "Mist of Eldath"
+        ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,          ~BZ@IL14~, ~SPPR735~, ~14~,  ~1~ => "Impervious Sanctity of Mind"
+        ~GREATER_SHIELD_OF_LATHANDER~,              ~BZ@IM14~, ~SPPR737~, ~14~,  ~1~ => "Greater Shield of Lathander"
+        ~MIST_OF_ELDATH~,                           ~BZ@IN14~, ~SPPR738~, ~14~,  ~1~ => "Mist of Eldath"
         ~RESIST_FEAR_SPPR735~,                      ~BZ@0N01~, ~SPPR735~,  ~1~,  ~3~ => "Resist Fear"
 
 

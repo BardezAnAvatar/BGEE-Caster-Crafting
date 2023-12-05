@@ -156,7 +156,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~HEAL_SPPR713~,                             ~BZ@2511~, ~SPPR713~,  ~1~,  ~2~ => "Heal"
         ~WONDROUS_RECALL~,                          ~BZ@2611~, ~SPPR611~,  ~1~,  ~1~ => "Wondrous Recall"
         ~WONDROUS_RECALL_ARCANE~,                   ~BZ@2711~, ~SPPR611~,  ~1~,  ~1~ => "Wondrous Recall"
-        ~ENTROPY_SHIELD~,                           ~BZ@2711~, ~SPPR615~,  ~1~,  ~1~ => "Entropy Shield"
         ~GLOBE_OF_INVULNERABILITY~,                 ~BZ@2812~, ~SPWI602~,  ~1~,  ~1~ => "Globe of Invulnerability"
         ~TENSER'S_TRANSFORMATION~,                  ~BZ@2912~, ~SPWI603~,  ~1~,  ~1~ => "Tenser's Transformation"
         ~PROTECTION_FROM_MAGIC_ENERGY~,             ~BZ@2A12~, ~SPWI606~,  ~1~,  ~1~ => "Protection From Magic Energy"
