@@ -5,7 +5,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Remove Fear: affects party
 - [X] Mirror Image targeting someone else: affects caster
     - Looks like the ability targets actor, but effects all target self. Fix.
-- [] Strength of one: affects party
+- [X] Strength of one: affects party
 - [X] Ghost armor oil: affects caster, not target
 - [X] Oil of fireshield (both blue/red): affect caster, not target
 - [X] Oil of minor globe of invulnerability: affects caster, not target
@@ -20,6 +20,7 @@ Fixes:
         - Bless
         - Chant
         - Remove Fear
+        - Strength of One
     - Re-set Effect Targets:
         - Mirror Image
         - Ghost Armor
