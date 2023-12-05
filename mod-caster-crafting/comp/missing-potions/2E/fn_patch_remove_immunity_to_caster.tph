@@ -1,0 +1,26 @@
+/***********************************************************************************************
+*   This function will patch certain ITM header abilities to remove the `Immunity to resource`
+*       opcode targeting the caster
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_patch_remove_immunity_to_caster
+    STR_VAR
+        item = null                    //item resref to update
+BEGIN
+
+    COPY_EXISTING ~%item%.ITM~ ~override~
+        //PATCHES
+        LAUNCH_PATCH_FUNCTION ~DELETE_EFFECT~
+            INT_VAR
+                check_globals = 0           //no, it is not a global (equipped) effect
+                check_headers = 1           //yes, this is an ability effect
+                header = 0                  //remove from the first ability header
+                multi_match = 1             //remove only the first matching effect
+                match_opcode = 324          //remove the `Immunity to resource and message` opcode
+                match_parameter2 = 43       //match on "source" (i.e.: the caster of the effect, AKA the imbiber)
+            STR_VAR
+                match_resource = ~%item%~   //match on the resource
+        END
+    BUT_ONLY_IF_IT_CHANGES
+
+END //function
