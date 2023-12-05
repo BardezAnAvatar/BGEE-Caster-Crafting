@@ -12,7 +12,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Oil of Minor Spell Turning: affects caster, not target
 - [X] Wondrous Recall has no effect at all? just animation? on a bard
 - [X] Oil of globe of invulnerability: affects caster, not target
-- [] Nature's Beauty: has no effect on target or caster
+- [X] Nature's Beauty: has no effect on target or caster
 
 Fixes:
     - Remove Projectile:
@@ -38,3 +38,5 @@ Results:
     - [X] Wondrous Recall has no effect at all?
         - No, it only affects priest spells. This is irritating to me, since the spell desc. does not mention priest spells at all, and it appears like it should work for cleric/mage multis, but it obviously won't.
         - I think I will 'fix' by making it two different potions.
+    - [X] Nature's Beauty seems to work; I don't know what I was expecting but it seems to affect caster or target just
+        fine and do the according effects. /shrug ?
