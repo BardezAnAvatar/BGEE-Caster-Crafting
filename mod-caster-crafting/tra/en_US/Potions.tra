@@ -789,6 +789,25 @@ Target: Self
 Weight: 1~
 
 
+//Entropy Shield
+@40148 = ~Extract of Entropy Shield~
+@40149 = ~This oil surrounds the applicant with a defensive maelstrom of energy that blocks or deflects many attacks. This gives the applicant a +6 bonus to Armor Class, a +2 bonus to Saving Throws, and +50% resistance to electricity, fire, cold, and acid. The applicant is also immune to Flamestrike and all missile-based attacks, including missiles created by spells such as Magic Missile.
+
+STATISTICS:
+
+AC: +6 bonus
+Saving Throws: +2 bonus
+Acid Resistance: +50% bonus
+Fire Resistance: +50% bonus
+Cold Resistance: +50% bonus
+Electricity Resistance: +50% bonus
+Special: Immune to Flamestrike; immune to missile attacks (both physical and magical)
+Duration: Instant
+Target: 1 creature
+
+Weight: 1~
+
+
 
 
 
@@ -1920,25 +1939,6 @@ STATISTICS:
 Special: Restores to memorization 3 spells of level 5 or lower
 Duration: Instant
 Target: Self
-
-Weight: 1~
-
-
-//Entropy Shield
-@40358 = ~Extract of Entropy Shield~
-@40359 = ~This oil surrounds the applicant with a defensive maelstrom of energy that blocks or deflects many attacks. This gives the applicant a +6 bonus to Armor Class, a +2 bonus to Saving Throws, and +50% resistance to electricity, fire, cold, and acid. The applicant is also immune to Flamestrike and all missile-based attacks, including missiles created by spells such as Magic Missile.
-
-STATISTICS:
-
-AC: +6 bonus
-Saving Throws: +2 bonus
-Acid Resistance: +50% bonus
-Fire Resistance: +50% bonus
-Cold Resistance: +50% bonus
-Electricity Resistance: +50% bonus
-Special: Immune to Flamestrike; immune to missile attacks (both physical and magical)
-Duration: Instant
-Target: 1 creature
 
 Weight: 1~
 

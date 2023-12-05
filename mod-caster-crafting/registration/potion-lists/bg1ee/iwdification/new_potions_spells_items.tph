@@ -54,14 +54,14 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@IH09~, ~1~, ~Bomb~,          ~5~, ~Point~,   ~40134~, ~40135~, ~SPPR519~,  ~1~, ~10~, ~spike-stones.BAM~,                          ~BZ@IH09I~, ~BZPN013D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Spike Stones"
 
 
-        ~BZ@2711~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~40358~, ~40359~, ~SPPR615~,  ~1~, ~12~, ~entropy-shield.BAM~,                        ~BZ@2711I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Entropy Shield"
-        ~BZ@II12~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~40136~, ~40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~,                       ~BZ@II12I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antimagic Shell"
-        ~BZ@IJ12~, ~1~, ~Cure~,          ~6~, ~Caster~,  ~40138~, ~40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~,                    ~BZ@IJ12I~, ~BZPN005D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Trollish Fortitude"
+        ~BZ@II11~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~40148~, ~40149~, ~SPPR615~,  ~1~, ~12~, ~entropy-shield.BAM~,                        ~BZ@II11I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Entropy Shield"
+        ~BZ@IJ11~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~40136~, ~40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~,                       ~BZ@IJ11I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antimagic Shell"
+        ~BZ@IK11~, ~1~, ~Cure~,          ~6~, ~Caster~,  ~40138~, ~40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~,                    ~BZ@IK11I~, ~BZPN005D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Trollish Fortitude"
 
 
-        ~BZ@IK14~, ~1~, ~Defense~,       ~7~, ~Caster~,  ~40140~, ~40141~, ~SPPR735~,  ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~,       ~BZ@IK14I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Impervious Sanctity of Mind"
-        ~BZ@IL14~, ~1~, ~Defense~,       ~7~, ~Caster~,  ~40142~, ~40143~, ~SPPR737~,  ~1~, ~14~, ~greater-shield-of-lathander.BAM~,           ~BZ@IL14I~, ~BZPN140D~, 0b10   , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Greater Shield of Lathander"
-        ~BZ@IM14~, ~1~, ~Bomb~,          ~7~, ~Point~,   ~40144~, ~40145~, ~SPPR738~,  ~1~, ~13~, ~mist-of-eldath.BAM~,                        ~BZ@IM14I~, ~BZPN090D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Mist of Eldath"
+        ~BZ@IL14~, ~1~, ~Defense~,       ~7~, ~Caster~,  ~40140~, ~40141~, ~SPPR735~,  ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~,       ~BZ@IL14I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Impervious Sanctity of Mind"
+        ~BZ@IM14~, ~1~, ~Defense~,       ~7~, ~Caster~,  ~40142~, ~40143~, ~SPPR737~,  ~1~, ~14~, ~greater-shield-of-lathander.BAM~,           ~BZ@IM14I~, ~BZPN140D~, 0b10   , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Greater Shield of Lathander"
+        ~BZ@IN14~, ~1~, ~Bomb~,          ~7~, ~Point~,   ~40144~, ~40145~, ~SPPR738~,  ~1~, ~13~, ~mist-of-eldath.BAM~,                        ~BZ@IN14I~, ~BZPN090D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Mist of Eldath"
 
 
     END
