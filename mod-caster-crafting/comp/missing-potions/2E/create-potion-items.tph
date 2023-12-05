@@ -18,6 +18,7 @@ INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_effects_
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_remove_immunity_to_caster.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_range.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_override_magnitide_snilloc.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_override_magnitide_fly.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-potion.tph~
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
@@ -122,6 +123,9 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         WITH
             ~snilloc's-snowball-swarm.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_snilloc~ INT_VAR cast_at_level = ~%keys_8%~ STR_VAR spell = ~%keys_7%~ RET spl_magnitude = ~magnitude~ END END
+            DEFAULT
+            ~fly.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_fly~ INT_VAR cast_at_level = ~%keys_8%~ STR_VAR spell = ~%keys_7%~ RET spl_magnitude = ~magnitude~ END END
             DEFAULT
         END
         /******************************
