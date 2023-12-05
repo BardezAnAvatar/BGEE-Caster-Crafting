@@ -21,34 +21,34 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SNILLOC'S_SNOWBALL_SWARM~,                 ~BZ@I503~, ~SPWI225~,  ~3~,  ~1~ => "Snilloc's Snowball Swarm"
 
 
-        ~MOONBLADE~,                                ~BZ@I605~, ~SPPR322~,  ~5~,  ~1~ => "Moonblade"
-        ~SPIKE_GROWTH~,                             ~BZ@I705~, ~SPPR325~,  ~5~,  ~1~ => "Spike Growth"
-        ~EXALTATION~,                               ~BZ@IN05~, ~SPPR320~,  ~5~,  ~1~ => "Exaltation"
-        ~EXALTATION_SPPR735~,                       ~BZ@IN05~, ~SPPR735~,  ~5~,  ~2~ => "Exaltation"
+        ~EXALTATION~,                               ~BZ@I605~, ~SPPR320~,  ~5~,  ~1~ => "Exaltation"
+        ~EXALTATION_SPPR735~,                       ~BZ@I605~, ~SPPR735~,  ~5~,  ~2~ => "Exaltation"
+        ~MOONBLADE~,                                ~BZ@I705~, ~SPPR322~,  ~5~,  ~1~ => "Moonblade"
+        ~SPIKE_GROWTH~,                             ~BZ@I805~, ~SPPR325~,  ~5~,  ~1~ => "Spike Growth"
 
 
-        ~RECITATION~,                               ~BZ@I807~, ~SPPR420~,  ~7~,  ~1~ => "Recitation"
-        ~BLOOD_RAGE~,                               ~BZ@I907~, ~SPPR421~,  ~7~,  ~1~ => "Blood Rage"
-        ~CLOUD_OF_PESTILENCE~,                      ~BZ@IA07~, ~SPPR422~,  ~7~,  ~1~ => "Cloud of Pestilence"
-        ~EMOTION_COURAGE~,                          ~BZ@IB07~, ~SPWI426~,  ~7~,  ~1~ => "Emotion: Courage"
-        ~EMOTION_HOPE~,                             ~BZ@IC07~, ~SPWI427~,  ~7~,  ~1~ => "Emotion: Hope"
-        ~UNFAILING_ENDURANCE~,                      ~BZ@ID07~, ~SPPR423~,  ~7~,  ~1~ => "Unfailing Endurance"
+        ~RECITATION~,                               ~BZ@I907~, ~SPPR420~,  ~7~,  ~1~ => "Recitation"
+        ~BLOOD_RAGE~,                               ~BZ@IA07~, ~SPPR421~,  ~7~,  ~1~ => "Blood Rage"
+        ~CLOUD_OF_PESTILENCE~,                      ~BZ@IB07~, ~SPPR422~,  ~7~,  ~1~ => "Cloud of Pestilence"
+        ~EMOTION_COURAGE~,                          ~BZ@IC07~, ~SPWI426~,  ~7~,  ~1~ => "Emotion: Courage"
+        ~EMOTION_HOPE~,                             ~BZ@ID07~, ~SPWI427~,  ~7~,  ~1~ => "Emotion: Hope"
+        ~UNFAILING_ENDURANCE~,                      ~BZ@IE07~, ~SPPR423~,  ~7~,  ~1~ => "Unfailing Endurance"
 
 
-        ~ANIMAL_RAGE~,                              ~BZ@IE09~, ~SPPR522~,  ~9~,  ~1~ => "Animal Rage"
-        ~RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,          ~BZ@IF09~, ~SPPR518~,  ~9~,  ~1~ => "Righteous Wrath of the Faithful"
-        ~SHIELD_OF_LATHANDER~,                      ~BZ@IG09~, ~SPPR520~,  ~9~,  ~1~ => "Shield of Lathander"
-        ~SPIKE_STONES~,                             ~BZ@IH09~, ~SPPR519~,  ~9~,  ~1~ => "Spike Stones"
+        ~ANIMAL_RAGE~,                              ~BZ@IF09~, ~SPPR522~,  ~9~,  ~1~ => "Animal Rage"
+        ~RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,          ~BZ@IG09~, ~SPPR518~,  ~9~,  ~1~ => "Righteous Wrath of the Faithful"
+        ~SHIELD_OF_LATHANDER~,                      ~BZ@IH09~, ~SPPR520~,  ~9~,  ~1~ => "Shield of Lathander"
+        ~SPIKE_STONES~,                             ~BZ@II09~, ~SPPR519~,  ~9~,  ~1~ => "Spike Stones"
 
 
-        ~ENTROPY_SHIELD~,                           ~BZ@II11~, ~SPPR615~,  ~1~,  ~1~ => "Entropy Shield"
-        ~ANTIMAGIC_SHELL~,                          ~BZ@IJ11~, ~SPWI630~, ~12~,  ~1~ => "Antimagic Shell"
-        ~TROLLISH_FORTITUDE~,                       ~BZ@IK11~, ~SPWI629~, ~12~,  ~1~ => "Trollish Fortitude"
+        ~ENTROPY_SHIELD~,                           ~BZ@IJ11~, ~SPPR615~,  ~1~,  ~1~ => "Entropy Shield"
+        ~ANTIMAGIC_SHELL~,                          ~BZ@IK11~, ~SPWI630~, ~12~,  ~1~ => "Antimagic Shell"
+        ~TROLLISH_FORTITUDE~,                       ~BZ@IL11~, ~SPWI629~, ~12~,  ~1~ => "Trollish Fortitude"
 
 
-        ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,          ~BZ@IL14~, ~SPPR735~, ~14~,  ~1~ => "Impervious Sanctity of Mind"
-        ~GREATER_SHIELD_OF_LATHANDER~,              ~BZ@IM14~, ~SPPR737~, ~14~,  ~1~ => "Greater Shield of Lathander"
-        ~MIST_OF_ELDATH~,                           ~BZ@IN14~, ~SPPR738~, ~14~,  ~1~ => "Mist of Eldath"
+        ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,          ~BZ@IM14~, ~SPPR735~, ~14~,  ~1~ => "Impervious Sanctity of Mind"
+        ~GREATER_SHIELD_OF_LATHANDER~,              ~BZ@IN14~, ~SPPR737~, ~14~,  ~1~ => "Greater Shield of Lathander"
+        ~MIST_OF_ELDATH~,                           ~BZ@IO14~, ~SPPR738~, ~14~,  ~1~ => "Mist of Eldath"
         ~RESIST_FEAR_SPPR735~,                      ~BZ@0N01~, ~SPPR735~,  ~1~,  ~3~ => "Resist Fear"
 
 
