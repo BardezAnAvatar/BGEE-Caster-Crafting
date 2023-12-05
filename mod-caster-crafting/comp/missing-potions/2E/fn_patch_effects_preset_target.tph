@@ -11,8 +11,8 @@ BEGIN
         //PATCHES
         READ_LONG   (0x64) abilities_offset
         READ_LONG   (0x6A) effects_offset
-        READ_SHORT   (abilities_offset + 0x20) first_effect_index
-        READ_SHORT   (abilities_offset + 0x1E) number_header_effects
+        READ_SHORT  (abilities_offset + 0x20) first_effect_index
+        READ_SHORT  (abilities_offset + 0x1E) number_header_effects
         SET final_effect_index = first_effect_index + number_header_effects
         FOR (index = first_effect_index; index < final_effect_index; ++index)
         BEGIN
