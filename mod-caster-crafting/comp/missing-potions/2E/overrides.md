@@ -15,7 +15,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Nature's Beauty: has no effect on target or caster
 - [X] Potion Exhaltation: has no affect on bard
 - [X] Recitation apparently has no effect
-- [ ] Entropy Shield: affects caster, also has range that should be touch
+- [X] Entropy Shield: affects caster, not target; also has range that should be touch
 
 Fixes:
     - Remove Projectile:
@@ -32,6 +32,7 @@ Fixes:
         - Globe of Invulnerability
         - Phantom Blade
         - Minor Spell Turning
+        - Entropy Shield
     - Restore Wizard Spells
         - Wondrous Recall (arcane)
 
