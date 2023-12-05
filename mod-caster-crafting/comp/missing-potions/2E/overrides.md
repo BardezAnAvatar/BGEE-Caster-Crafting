@@ -1,8 +1,6 @@
 Several potions do not work "out of the box" as I would expect:
 
 - [X] Bless: affects party
-- [] Entangle does nothing
-    - This may be due to olvyn or IWD: only affects enemies?
 - [X] Chant: affects party
 - [X] Remove Fear: affects party
 - [] Mirror Image targeting someone else: affects caster
@@ -20,3 +18,7 @@ Fixes:
     - Bless: remove projectile
     - Chant: remove projectile
     - Remove Fear: remove projectile
+
+Results:
+    - [X] Entangle does nothing
+        - This only affects enemies with whatever mod I added in, so I was expecting other results. Working as intended after spawining in a ton of Bandits to test against.
