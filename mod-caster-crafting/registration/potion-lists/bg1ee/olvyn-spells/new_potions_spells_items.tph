@@ -28,7 +28,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@O001~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40002~, ~40003~, ~MEPR151~,  ~1~,  ~3~, ~snake's-swiftness.BAM~,                        ~BZ@O001I~, ~BZPN120D~, ~~, ~317~, ~0xE~, ~~, ~~, ~~, ~~ => "Snake's Swiftness"
         ~BZ@O101~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~40004~, ~40005~, ~MEPR157~,  ~1~,  ~4~, ~searing-smite.BAM~,                            ~BZ@O101I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Searing Smite"
         ~BZ@O201~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~40006~, ~40007~, ~MEPR154~,  ~1~,  ~2~, ~turning-weapon.BAM~,                           ~BZ@O201I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Turning Weapon"
-        ~BZ@O301~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40008~, ~40009~, ~MEPR156~,  ~1~, ~10~, ~camoflauge.BAM~,                               ~BZ@O301I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Camoflauge"
+        ~BZ@O301~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40008~, ~40009~, ~MEPR156~,  ~1~,  ~4~, ~camoflauge.BAM~,                               ~BZ@O301I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Camoflauge"
 
 
         ~BZ@O605~, ~1~, ~Offense~,       ~3~, ~Actor~,   ~40014~, ~40015~, ~MEPR356~,  ~1~,  ~6~, ~wind-shots.BAM~,                               ~BZ@O605I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Wind Shots"
