@@ -267,6 +267,8 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END
                     LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 1 STR_VAR item = ~%keys_0%~ END
                 END
+            ~knock.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 1 STR_VAR item = ~%keys_0%~ END END
             DEFAULT
         END
         //TODO: Create ITMs that automation won't work for:
