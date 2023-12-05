@@ -104,6 +104,19 @@ ACTION_PHP_EACH ~new_potions_spells_items~
             COPIED EFFECT BIN:      %spl_transfer_effects%
         ~
 
+
+        //TODO: Get magnitudes that automation won't work for:
+        /*
+            Fly
+
+            sphere-of-protection-from-acid
+            sphere-of-protection-from-cold
+            sphere-of-protection-from-electricity
+            sphere-of-protection-from-fire
+            sphere-of-protection-from-petrification
+            sphere-of-protection-from-poison
+        */
+
         //Exception cases where the description's magnitude doesn't quite square with the above method
         ACTION_MATCH ~%keys_10%~
         WITH
@@ -271,18 +284,6 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 END
             DEFAULT
         END
-        //TODO: Create ITMs that automation won't work for:
-        /*
-            Fly
-            Snilloc's Snowball
-
-            sphere-of-protection-from-acid
-            sphere-of-protection-from-cold
-            sphere-of-protection-from-electricity
-            sphere-of-protection-from-fire
-            sphere-of-protection-from-petrification
-            sphere-of-protection-from-poison
-        */
         /****************************
         *    END: Hard-coded ITMs   *
         ****************************/
