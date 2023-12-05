@@ -64,7 +64,7 @@ Weight: 1~
 
 //Camouflage
 @40008 = ~Oil of Camouflage~
-@40009 = ~This oil gives the applicant the ability to blend into the environment with camouflage. Whenever the applicant stands still for 2 seconds, they become effectively invisible through camouflage.
+@40009 = ~This oil gives the applicant the ability to blend into the environment with camouflage. Whenever the applicant stands still for 2 seconds, they become effectively invisible through camouflage. The applicant remains invisible so long as <PRO_HESHE> is still; <PRO_HESHE> will become visible again upon moving, attacking, etc.
 
 STATISTICS:
 
