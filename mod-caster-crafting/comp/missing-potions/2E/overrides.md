@@ -13,7 +13,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Wondrous Recall has no effect at all? just animation? on a bard
 - [X] Oil of globe of invulnerability: affects caster, not target
 - [X] Nature's Beauty: has no effect on target or caster
-- [ ] Potion Exhaltation: has no affect on bard
+- [X] Potion Exhaltation: has no affect on bard
 
 Fixes:
     - Remove Projectile:
@@ -41,5 +41,5 @@ Results:
         - I think I will 'fix' by making it two different potions.
     - [X] Nature's Beauty seems to work; I don't know what I was expecting but it seems to affect caster or target just
         fine and do the according effects. /shrug ?
-    - [ ] Potion Exhaltation: has no affect on bard
+    - [X] Potion Exhaltation: has no affect on bard
         - "Any one creature other than the priest" is the source of my problem. The effect opcode 324 makes the caster (the imbiber) immune, and needs to be removed.
