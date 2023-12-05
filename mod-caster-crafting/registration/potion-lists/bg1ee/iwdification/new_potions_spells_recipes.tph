@@ -21,7 +21,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SNILLOC'S_SNOWBALL_SWARM~,                 ~BZ@I503~, ~SPWI225~,  ~3~,  ~1~ => "Snilloc's Snowball Swarm"
 
 
-        ~EXALTATION~,                               ~BZ@I605~, ~SPPR320~,  ~5~,  ~1~ => "Exaltation"
+        ~EXALTATION~,                               ~BZ@I605~, ~SPPR322~,  ~5~,  ~1~ => "Exaltation"
         ~EXALTATION_SPPR735~,                       ~BZ@I605~, ~SPPR735~,  ~5~,  ~2~ => "Exaltation"
         ~MOONBLADE~,                                ~BZ@I705~, ~SPPR322~,  ~5~,  ~1~ => "Moonblade"
         ~SPIKE_GROWTH~,                             ~BZ@I805~, ~SPPR325~,  ~5~,  ~1~ => "Spike Growth"
