@@ -7,7 +7,7 @@ Several potions do not work "out of the box" as I would expect:
     - Looks like the ability targets actor, but effects all target self. Fix.
 - [] Strength of one: affects party
 - [X] Ghost armor oil: affects caster, not target
-- [] Oil of fireshield (both blue/red): affect caster, not target
+- [X] Oil of fireshield (both blue/red): affect caster, not target
 - [] Oil of minor globe of invulnerability: affects caster, not target
 - [] Oil of phantom blade: affects caster, not target
 - [] Oil of Minor spell Turning: affects caster, not target
@@ -23,6 +23,8 @@ Fixes:
     - Re-set Effect Targets:
         - Mirror Image
         - Ghost Armor
+        - Fireshield (Blue)
+        - Fireshield (Red)
 
 Results:
     - [X] Entangle does nothing
