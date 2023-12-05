@@ -16,6 +16,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Potion Exhaltation: has no affect on bard
 - [X] Recitation apparently has no effect
 - [X] Entropy Shield: affects caster, not target; also has range that should be touch
+- [ ] Turning Weapon: does not work if there are not turn undead levels (paladin/cleric)
 
 Fixes:
     - Remove Projectile:
@@ -48,3 +49,5 @@ Results:
         - "Any one creature other than the priest" is the source of my problem. The effect opcode 324 makes the caster (the imbiber) immune, and needs to be removed.
     - [X] Recitation apparently has no effect
         - Was applying the bad spell, not the good spell
+    - [ ] Turning Weapon: does not work if there are not turn undead levels (paladin/cleric), per IESDP on the opcode
+        - Need to give the potion an immunity to resource and message for classes != { Cleric, Paladin }
