@@ -4,6 +4,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Chant: affects party
 - [X] Remove Fear: affects party
 - [] Mirror Image targeting someone else: affects caster
+    - Looks like the ability targets actor, but effects all target self. Fix.s
 - [] Strength of one: affects party
 - [] Ghost armor oil: affects caster, not target
 - [] Oil of fireshield (both blue/red): affect caster, not target
@@ -15,9 +16,12 @@ Several potions do not work "out of the box" as I would expect:
 - [] Nature's Beauty: has no effect on target or caster
 
 Fixes:
-    - Bless: remove projectile
-    - Chant: remove projectile
-    - Remove Fear: remove projectile
+    - Remove Projectile:
+        - Bless
+        - Chant
+        - Remove Fear
+    - Re-set Effect Targets:
+        - Mirror Image
 
 Results:
     - [X] Entangle does nothing
