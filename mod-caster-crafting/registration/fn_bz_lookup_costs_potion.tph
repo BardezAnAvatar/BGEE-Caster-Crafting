@@ -3,13 +3,19 @@ DEFINE_ACTION_FUNCTION ~fn_bz_lookup_costs_potion~
         tier = 0
     RET
         cost
+        lore
     BEGIN
         OUTER_SET cost = "-1"
+        OUTER_SET lore = "-1"
 
         ACTION_PHP_EACH ~costs_potion_tier~
             AS ~keys~ => ~value~
                 BEGIN
                     //if the tradition and spell level match...
-                    ACTION_IF (~%keys_0%~ = tier) THEN BEGIN OUTER_SET cost = value END
+                    ACTION_IF (~%keys_0%~ = tier) THEN
+                    BEGIN
+                        OUTER_SET cost = value
+                        OUTER_SET lore = ~%keys_2%~
+                    END
                 END
     END

@@ -205,6 +205,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     tier = ~%keys_9%~
                 RET
                     potion_cost = cost
+                    potion_lore = lore
             END
 
             LAUNCH_ACTION_FUNCTION ~fn_bz_create_potion_from_spell_header~

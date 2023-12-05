@@ -7,6 +7,7 @@
 DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
     INT_VAR
         price = 0                       //price of the potion
+        lore = 0                        //lore to identify the potion
         STRREF_identified_name = 0      //STRREF for identified name
         STRREF_identified_desc = 0      //STRREF for identified description
         ability_projectile = 0          //Which projectile the spell/potion uses
@@ -53,6 +54,7 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
 
             WRITE_LONG (0x1E) (%unusabilility_flags%)           //unusability flags
             WRITE_LONG (0x0C) (%STRREF_identified_name%)        //identified name
+            WRITE_LONG (0x42) (%lore%)                          //lore to identify
             WRITE_LONG (0x54) (%STRREF_identified_desc%)        //identified description
             WRITE_ASCII_TERMINATE (0x3A) ~%icon_inventory%~     //update the item inventory icon
             WRITE_ASCII_TERMINATE (0x58) ~%icon_description%~   //update the item description icon
