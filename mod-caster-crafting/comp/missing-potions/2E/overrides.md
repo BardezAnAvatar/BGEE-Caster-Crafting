@@ -8,11 +8,11 @@ Several potions do not work "out of the box" as I would expect:
 - [] Strength of one: affects party
 - [X] Ghost armor oil: affects caster, not target
 - [X] Oil of fireshield (both blue/red): affect caster, not target
-- [] Oil of minor globe of invulnerability: affects caster, not target
+- [X] Oil of minor globe of invulnerability: affects caster, not target
 - [] Oil of phantom blade: affects caster, not target
 - [] Oil of Minor spell Turning: affects caster, not target
 - [] Wondrous Recall has no effect at all? just animation? on a bard
-- [] Oil of globe of invulnerability: affects caster, not target
+- [X] Oil of globe of invulnerability: affects caster, not target
 - [] Nature's Beauty: has no effect on target or caster
 
 Fixes:
@@ -25,6 +25,8 @@ Fixes:
         - Ghost Armor
         - Fireshield (Blue)
         - Fireshield (Red)
+        - Minor Globe of Invulnerability
+        - Globe of Invulnerability
 
 Results:
     - [X] Entangle does nothing
