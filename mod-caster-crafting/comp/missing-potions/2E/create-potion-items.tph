@@ -251,7 +251,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_effects_restore_spells_arcane~ STR_VAR item = ~%keys_0%~ END END
             DEFAULT
         END
-        //TODO: ITMs that automation won't work for:
+        //TODO: Create ITMs that automation won't work for:
         /*
             Find Traps
             Fly
