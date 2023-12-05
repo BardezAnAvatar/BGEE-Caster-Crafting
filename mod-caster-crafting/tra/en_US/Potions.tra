@@ -1038,7 +1038,7 @@ Weight: 1~
 
 //Find Traps
 @40230 = ~Philter of Find Traps~
-@40231 = ~This potion opens the mind of the imbiber; all traps —concealed normally or magically— of magical or mechanical nature become apparent to <PRO_HIMHER>. The imbiber must stop to concentrate 1/per round to observe surroundings.
+@40231 = ~This potion opens the mind of the imbiber; all traps —concealed normally or magically— of mechanical or magical nature become apparent to <PRO_HIMHER>. The imbiber must stop to concentrate 1/per round to observe surroundings.
 
 STATISTICS:
 
