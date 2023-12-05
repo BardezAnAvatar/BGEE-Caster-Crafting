@@ -1,0 +1,28 @@
+/***********************************************************************************************
+*   This function will patch certain ITM header abilities to set the effect to a preset target
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_patch_effects_restore_spells_arcane
+    STR_VAR
+        item = null                    //item resref to update
+BEGIN
+
+    COPY_EXISTING ~%item%.ITM~ ~override~
+        //PATCHES
+        READ_LONG   (0x64) abilities_offset
+        READ_LONG   (0x6A) effects_offset
+        READ_SHORT  (abilities_offset + 0x20) first_effect_index
+        READ_SHORT  (abilities_offset + 0x1E) number_header_effects
+        SET final_effect_index = first_effect_index + number_header_effects
+        FOR (index = first_effect_index; index < final_effect_index; ++index)
+        BEGIN
+            SET effect_offset = (effects_offset + (index * 0x30))
+            READ_SHORT (effects_offset) opcode
+            PATCH_IF (opcode = 261) THEN //restore spells opcodes only
+            BEGIN
+                WRITE_LONG (effect_offset + 0x08) (0)   //write "0": set the spells restored to be wizard spells (0)
+            END
+        END
+    BUT_ONLY_IF_IT_CHANGES
+
+END //function
