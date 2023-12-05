@@ -55,8 +55,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BZ@IJ11~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~40148~, ~40149~, ~SPPR615~,  ~1~, ~12~, ~entropy-shield.BAM~,                        ~BZ@IJ11I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Entropy Shield"
-        ~BZ@IK11~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~40136~, ~40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~,                       ~BZ@IK11I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antimagic Shell"
-        ~BZ@IL11~, ~1~, ~Cure~,          ~6~, ~Caster~,  ~40138~, ~40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~,                    ~BZ@IL11I~, ~BZPN005D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Trollish Fortitude"
+        ~BZ@IK12~, ~1~, ~Defense~,       ~6~, ~Caster~,  ~40136~, ~40137~, ~SPWI630~,  ~1~, ~12~, ~antimagic-shell.BAM~,                       ~BZ@IK12I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antimagic Shell"
+        ~BZ@IL12~, ~1~, ~Cure~,          ~6~, ~Caster~,  ~40138~, ~40139~, ~SPWI629~,  ~1~, ~10~, ~trollish-fortitude.BAM~,                    ~BZ@IL12I~, ~BZPN005D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Trollish Fortitude"
 
 
         ~BZ@IM14~, ~1~, ~Defense~,       ~7~, ~Caster~,  ~40140~, ~40141~, ~SPPR735~,  ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~,       ~BZ@IM14I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Impervious Sanctity of Mind"
