@@ -244,6 +244,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_remove_projectile~ STR_VAR item = ~%keys_0%~ END END
             ~mirror-image.BAM~ ~ghost-armor.BAM~ ~fire-shield-red.BAM~ ~fire-shield-blue.BAM~
             ~minor-globe-of-invulnerability.BAM~ ~globe-of-invulnerability.BAM~ ~phantom-blade.BAM~
+            ~minor-spell-turning.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END END
             DEFAULT
         END
