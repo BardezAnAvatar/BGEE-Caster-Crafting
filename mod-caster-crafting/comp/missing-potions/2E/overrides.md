@@ -17,6 +17,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Recitation apparently has no effect
 - [X] Entropy Shield: affects caster, not target; also has range that should be touch
 - [X] Turning Weapon: does not work if there are not turn undead levels (paladin/cleric)
+- [X] Wind Shots: oil doesn't work
 
 Fixes:
     - Remove Projectile:
@@ -51,3 +52,5 @@ Results:
         - Was applying the bad spell, not the good spell
     - [X] Turning Weapon: does not work if there are not turn undead levels (paladin/cleric), per IESDP on the opcode
         - Need to give the potion an immunity to resource and message for classes != { Cleric, Paladin }
+    - [X] Wind Shots: oil doesn't work
+        - Seems like the resref updates cause the break, since the EFF doesn't exist for the potion; restore the original EFF ResRef
