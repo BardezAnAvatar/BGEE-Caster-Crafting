@@ -14,7 +14,7 @@ Several potions do not work "out of the box" as I would expect:
 - [X] Oil of globe of invulnerability: affects caster, not target
 - [X] Nature's Beauty: has no effect on target or caster
 - [X] Potion Exhaltation: has no affect on bard
-- [ ] Recitation apparently has no effect
+- [X] Recitation apparently has no effect
 - [ ] Entropy Shield: affects caster, also has range that should be touch
 
 Fixes:
@@ -45,5 +45,5 @@ Results:
         fine and do the according effects. /shrug ?
     - [X] Potion Exhaltation: has no affect on bard
         - "Any one creature other than the priest" is the source of my problem. The effect opcode 324 makes the caster (the imbiber) immune, and needs to be removed.
-    - [ ] Recitation apparently has no effect
+    - [X] Recitation apparently has no effect
         - Was applying the bad spell, not the good spell

@@ -40,7 +40,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@I805~, ~1~, ~Bomb~,          ~3~, ~Point~,   ~40114~, ~40115~, ~SPPR325~,  ~1~,  ~6~, ~spike-growth.BAM~,                          ~BZ@I805I~, ~BZPN049D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Spike Growth"
 
 
-        ~BZ@I907~, ~1~, ~Offense~,       ~4~, ~Caster~,  ~40116~, ~40117~, ~#RECITEB~, ~1~,  ~8~, ~recitation.BAM~,                            ~BZ@I907I~, ~BZPN070D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Recitation"
+        ~BZ@I907~, ~1~, ~Offense~,       ~4~, ~Caster~,  ~40116~, ~40117~, ~#RECITEG~, ~1~,  ~8~, ~recitation.BAM~,                            ~BZ@I907I~, ~BZPN070D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Recitation"
         ~BZ@IA07~, ~1~, ~Offense~,       ~4~, ~Caster~,  ~40118~, ~40119~, ~SPPR421~,  ~1~,  ~8~, ~blood-rage.BAM~,                            ~BZ@IA07I~, ~BZPN032D~, 0b10000, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Blood Rage"
         ~BZ@IB07~, ~1~, ~Bomb~,          ~4~, ~Point~,   ~40120~, ~40121~, ~SPPR422~,  ~1~,  ~8~, ~cloud-of-pestilence.BAM~,                   ~BZ@IB07I~, ~BZPN013D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Cloud of Pestilence"
         ~BZ@IC07~, ~1~, ~Offense~,       ~4~, ~Caster~,  ~40122~, ~40123~, ~SPWI426~,  ~1~,  ~8~, ~emotion-courage.BAM~,                       ~BZ@IC07I~, ~BZPN040D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Emotion: Courage"
