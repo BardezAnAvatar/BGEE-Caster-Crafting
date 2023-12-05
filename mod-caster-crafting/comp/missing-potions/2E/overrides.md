@@ -33,3 +33,6 @@ Fixes:
 Results:
     - [X] Entangle does nothing
         - This only affects enemies with whatever mod I added in, so I was expecting other results. Working as intended after spawining in a ton of Bandits to test against.
+    - [] Wondrous Recall has no effect at all?
+        - No, it only affects priest spells. This is irritating to me, since the spell desc. does not mention priest spells at all, and it appears like it should work for cleric/mage multis, but it obviously won't.
+        - I think I will 'fix' by making it two different potions.

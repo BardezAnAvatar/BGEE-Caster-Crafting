@@ -1931,12 +1931,25 @@ Weight: 1~
 
 
 //Wondrous Recall
-@40356 = ~Potion of Wondrous Recall~
-@40357 = ~This potion restores back to memory 2 spells that have been previously cast. If no spells have been cast yet, nothing happens. Wondrous Recall cannot recall 6th-level or higher spells.
+@40356 = ~Potion of Wondrous Divine Recall~
+@40357 = ~This potion restores back to memory 2 divine spells that have been previously cast. If no spells have been cast yet, nothing happens. Wondrous Recall cannot recall 6th-level or higher spells.
 
 STATISTICS:
 
-Special: Restores to memorization 3 spells of level 5 or lower
+Special: Restores to memorization 2 priest spells of level 5 or lower
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Wondrous Recall
+@40358 = ~Potion of Wondrous Arcane Recall~
+@40359 = ~This potion restores back to memory 2 arcane spells that have been previously cast. If no spells have been cast yet, nothing happens. Wondrous Recall cannot recall 6th-level or higher spells.
+
+STATISTICS:
+
+Special: Restores to memorization 2 arcane spells of level 5 or lower
 Duration: Instant
 Target: Self
 
