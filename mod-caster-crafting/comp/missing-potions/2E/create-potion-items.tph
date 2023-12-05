@@ -253,7 +253,6 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         END
         //TODO: Create ITMs that automation won't work for:
         /*
-            Find Traps
             Fly
             Snilloc's Snowball
 
