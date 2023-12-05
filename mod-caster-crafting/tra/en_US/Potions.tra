@@ -51,6 +51,8 @@ Weight: 1~
 @40006 = ~Oil of Turning Weapon~
 @40007 = ~The applicant coats their weapons with the power to turn undead. For the duration, whenever the applicant hits an undead creature with a melee or ranged attack, the undead is turned as if they had used Turn Undead on it.
 
+This oil is only effective on creatures already possessing the ability to turn undead.
+
 STATISTICS:
 
 Damage: %magnitude%d6 magic damage
