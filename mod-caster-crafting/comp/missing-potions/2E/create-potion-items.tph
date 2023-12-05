@@ -12,6 +12,7 @@
 //function defs
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_bz_read_spell_header_for_potion.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_bz_create_potion_from_spell_header.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%//fn_patch_remove_projectile.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-potion.tph~
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
