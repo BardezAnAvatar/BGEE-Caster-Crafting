@@ -2,6 +2,7 @@ Several potions do not work "out of the box" as I would expect:
 
 - [X] Bless: affects party
 - [] Entangle does nothing
+    - This may be due to olvyn or IWD: only affects enemies?
 - [X] Chant: affects party
 - [X] Remove Fear: affects party
 - [] Mirror Image targeting someone else: affects caster
