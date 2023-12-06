@@ -1,14 +1,14 @@
 /***********************************************************************************************
-*   This function will patch certain ITM header abilities to remove the `Immunity to resource`
-*       opcode targeting the caster
+*   This function will patch certain ITM header abilities to add the `Immunity to resource`
+*       targeting the item for the specified class
 ***********************************************************************************************/
 
 DEFINE_ACTION_FUNCTION fn_patch_add_immunity_to_resource
     INT_VAR
-        class = "-1"                      //Which class?
-        seconds = "-1"                    //how long?
+        class = "-1"        //Which class?
+        seconds = "-1"      //how long?
     STR_VAR
-        item = null                     //item resref to update
+        item = null         //item resref to update
 BEGIN
 
     COPY_EXISTING ~%item%.ITM~ ~override~
