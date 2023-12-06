@@ -69,7 +69,8 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~potion_list_data~
     BEGIN
-        ~%keys_0%~,
+
+        ~%keys_7%_0_%keys_0%~,
         ~%keys_1%~,
         ~%keys_2%~,
         ~%keys_3%~,
