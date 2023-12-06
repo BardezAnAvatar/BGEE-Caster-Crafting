@@ -108,7 +108,7 @@ DEFINE_ACTION_FUNCTION fn_override_magnitide_snilloc
 
     END
     ELSE BEGIN
-        WARN ~fn_bz_read_spell_header_for_potion: file(s) not found or invalid input
+        WARN ~fn_override_magnitide_snilloc: file(s) not found or invalid input
             Spell:  %spell%.SPL~
     END
 
