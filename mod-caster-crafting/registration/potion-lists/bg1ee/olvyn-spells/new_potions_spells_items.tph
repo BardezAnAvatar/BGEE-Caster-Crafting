@@ -49,18 +49,18 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ@OL11~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~40044~, ~40045~, ~MEPR656~,  ~1~, ~14~, ~protection-from-non-silver-weapons.BAM~,       ~BZ@OL11I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Non-Silver Weapons"
 
 
-        ~BZ@OS16~, ~1~, ~Enhancement~,   ~8~, ~Caster~,  ~40058~, ~40059~, ~MEWI857~,  ~1~, ~15~, ~extend-vision.BAM~,                            ~BZ@OS16I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Extend Vision"
+        ~BZ@OM16~, ~1~, ~Enhancement~,   ~8~, ~Caster~,  ~40058~, ~40059~, ~MEWI857~,  ~1~, ~15~, ~extend-vision.BAM~,                            ~BZ@OS16I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Extend Vision"
 
 
-        ~BZ@OM18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~40046~, ~40047~, ~MEWI951~,  ~1~, ~18~, ~perfect-invisibility.BAM~,                     ~BZ@OM18I~, ~BZPN120D~, ~~,  ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Perfect Invisibility"
-        ~BZ@ON18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~40048~, ~40049~, ~MEWI953~,  ~1~, ~18~, ~attain-perfection.BAM~,                        ~BZ@ON18I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Attain Perfection"
+        ~BZ@ON18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~40046~, ~40047~, ~MEWI951~,  ~1~, ~18~, ~perfect-invisibility.BAM~,                     ~BZ@OM18I~, ~BZPN120D~, ~~,  ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Perfect Invisibility"
+        ~BZ@OO18~, ~1~, ~Enhancement~,   ~9~, ~Caster~,  ~40048~, ~40049~, ~MEWI953~,  ~1~, ~18~, ~attain-perfection.BAM~,                        ~BZ@ON18I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Attain Perfection"
 
 
-        ~BZ@OO18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~40050~, ~40051~, ~MEWI960~,  ~1~, ~20~, ~eclectic-recall.BAM~,                          ~BZ@OO18I~, ~BZPN150D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Eclectic Recall"
-        ~BZ@OP18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~40052~, ~40053~, ~MEWI963~,  ~1~, ~20~, ~mental-agility.BAM~,                           ~BZ@OP18I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mental Agility"
+        ~BZ@OP18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~40050~, ~40051~, ~MEWI960~,  ~1~, ~20~, ~eclectic-recall.BAM~,                          ~BZ@OO18I~, ~BZPN150D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Eclectic Recall"
+        ~BZ@OQ18~, ~1~, ~Enhancement~,   ~A~, ~Caster~,  ~40052~, ~40053~, ~MEWI963~,  ~1~, ~20~, ~mental-agility.BAM~,                           ~BZ@OP18I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mental Agility"
 
 
-        ~BZ@OQ15~, ~1~, ~Bomb~,          ~Q~, ~Point~,   ~40054~, ~40055~, ~MEPR754~,  ~1~, ~20~, ~colossal-growth.BAM~,                          ~BZ@OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
+        ~BZ@OR15~, ~1~, ~Bomb~,          ~Q~, ~Point~,   ~40054~, ~40055~, ~MEPR754~,  ~1~, ~20~, ~colossal-growth.BAM~,                          ~BZ@OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
 
     END
 
@@ -104,6 +104,6 @@ THEN BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_items~
     BEGIN
-        ~BZ@OR01~, ~1~, ~Offense~,       ~1~, ~Caster~,  ~40056~, ~40057~, ~SPWI111~,  ~1~,  ~2~, ~true-strike.BAM~,                              ~BZ@OR01I~, ~BZPN049D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "True Strike"
+        ~BZ@OS01~, ~1~, ~Offense~,       ~1~, ~Caster~,  ~40056~, ~40057~, ~SPWI111~,  ~1~,  ~2~, ~true-strike.BAM~,                              ~BZ@OR01I~, ~BZPN049D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "True Strike"
     END
 END
