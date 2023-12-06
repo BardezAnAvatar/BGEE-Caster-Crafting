@@ -36,6 +36,7 @@ ACTION_SORT_ARRAY_INDICES ~new_potions_items_categories~
 
 
 /* DEBUG */
+/*
 ACTION_PHP_EACH ~new_potions_items_categories~
     AS ~keys~ => ~value~
     BEGIN
@@ -48,3 +49,4 @@ ACTION_PHP_EACH ~new_potions_items_categories~
             Potion Name:           `%keys_4%`
             Value:                 `%value%`~
     END
+*/

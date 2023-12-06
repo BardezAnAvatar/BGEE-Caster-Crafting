@@ -72,10 +72,12 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
             END
 
             //Debug result
+            /*
             PATCH_PRINT ~DEBUG:
                 Best Level Match:       %best_min_lvl_match%
                 Header offset detected: %base_off%
             ~
+            */
 
             //Read the spell header in fields to write to item
             // NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
