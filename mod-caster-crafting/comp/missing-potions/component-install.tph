@@ -4,10 +4,10 @@
 *   that do not exist in the game.                           *
 *************************************************************/
 
+//process the registered data
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/process-potion-registry.tph~
+
+//Generate items via an include script for building them all out
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/create-potion-items.tph~
-
-
-//TODO: create items via an include script for building them all out
 
 //TODO: add to stores?
