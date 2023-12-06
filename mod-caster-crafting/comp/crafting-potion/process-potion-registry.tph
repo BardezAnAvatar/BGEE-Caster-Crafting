@@ -87,6 +87,12 @@ BEGIN
 END
 
 
+
+//Sort the indicies (on first key)
+ACTION_SORT_ARRAY_INDICES ~potion_list_data~
+
+
+
 /* DEBUG */
 ACTION_PHP_EACH ~potion_list_data~
     AS ~keys~ => ~value~
