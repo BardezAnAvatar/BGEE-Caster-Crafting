@@ -27,7 +27,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPHERE_OF_SECURITY_PETRIFICATION~,         ~BZ@OG09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Petrification"
         ~SPHERE_OF_SECURITY_POISON~,                ~BZ@OH09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Poison"
         ~GEDLEE'S_ELECTRIC_BARRIER~,                ~BZ@OJ09~, ~MEWI566~,  ~9~,  ~1~ => "Gedlee's Electric Barrier"
-        ~ARMOR_SPWI414~,                            ~BZ@0601~, ~MEPR457~,  ~1~,  ~3~ => "Armor"
+        ~ARMOR_SPWI414~,                            ~BZ@0701~, ~MEPR457~,  ~1~,  ~3~ => "Armor"
         ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ@0T05~, ~MEPR553~,  ~1~,  ~2~ => "Protection From Fire"
         ~SPIRIT_ARMOR_MEPR457~,                     ~BZ@1K07~, ~MEPR457~,  ~1~,  ~1~ => "Spirit Armor"
 
