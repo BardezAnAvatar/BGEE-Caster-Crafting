@@ -74,8 +74,12 @@ BEGIN
     END //iterating through new potion recipes
 END //iterating through new potions
 
+
+
 //Sort the indicies (on first key)
 ACTION_SORT_ARRAY_INDICES ~potion_list_data~
+
+
 
 /* DEBUG */
 ACTION_PHP_EACH ~potion_list_data~
