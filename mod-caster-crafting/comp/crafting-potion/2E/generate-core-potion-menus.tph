@@ -22,7 +22,12 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potio
 
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
 STR_VAR
-    ~category~ = ~Cure~
+    ~category~ = ~Bomb~
+END
+
+LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
+STR_VAR
+    ~category~ = ~Enhancement~
 END
 
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
@@ -37,12 +42,7 @@ END
 
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
 STR_VAR
-    ~category~ = ~Enhancement~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Bomb~
+    ~category~ = ~Cure~
 END
 
 
@@ -52,7 +52,12 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potio
 
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
 STR_VAR
-    ~category~ = ~Cure~
+    ~category~ = ~Bomb~
+END
+
+LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
+STR_VAR
+    ~category~ = ~Enhancement~
 END
 
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
@@ -67,10 +72,5 @@ END
 
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
 STR_VAR
-    ~category~ = ~Enhancement~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Bomb~
+    ~category~ = ~Cure~
 END
