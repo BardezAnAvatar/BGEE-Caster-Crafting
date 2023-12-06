@@ -81,12 +81,14 @@ HaveSpellRES("%_v%")~
 !HaveSpellRES("%_v%")~
                                     END //~spells_array~
 
-                                OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %data_keys_2%)
+                                OUTER_SET level_minus_one = (data_keys_2 - 1)
+
+                                OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %level_minus_one%)
 %condition_valid%~
-                                OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~LevelGT(MYSELF, %data_keys_2%)
+                                OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~LevelGT(MYSELF, %level_minus_one%)
 OR(%i%)
 %condition_invalid_spells%~
-                                OUTER_TEXT_SPRINT ~condition_invalid_level~ ~!LevelGT(MYSELF, %data_keys_2%)~
+                                OUTER_TEXT_SPRINT ~condition_invalid_level~ ~!LevelGT(MYSELF, %level_minus_one%)~
 
 
                                 ACTION_IF (~i~ > 1)
