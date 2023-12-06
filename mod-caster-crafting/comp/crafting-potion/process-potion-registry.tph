@@ -61,6 +61,8 @@ BEGIN
         BEGIN
             ~%keys_7%_0_%keys_1%~, ~%keys_1%~, ~%keys_7%~, ~0~, ~%potion_name%~ => ~%keys_1%~
         END
+
+        OUTER_SET ~bz_base_game_potions_deduped_%keys_1%~ = 1
     END
 
     //Get failure rate per potion
