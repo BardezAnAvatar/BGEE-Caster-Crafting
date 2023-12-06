@@ -1,0 +1,32 @@
+/***************************************************************************************
+*   This file will iterate through the potion registry for "missing" potions derived   *
+*       from spells and create an associative array with primary key of sorting        *
+*       nature, the category, the potion resref, original spell level, and its name    *
+***************************************************************************************/
+
+/*
+    OUTPUT: ~new_potions_items_categories~
+
+    [Sorting Key]               // 0
+    [Potion Item RESREF]        // 1
+    [Category]                  // 2
+    [originaling Spell level]   // 3
+    [Potion Name]               // 4
+*/
+
+PRINT ~Generating an index of new potions for creation dialog~
+
+
+ACTION_PHP_EACH ~new_potions_spells_items~
+AS ~keys~ => ~value~
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~new_potions_items_categories~
+    BEGIN
+        ~%keys_2%_%keys_3%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_3%~, ~%potion_name%~ => ~%keys_1%~
+    END
+END //iterating through new potions
+
+
+//Sort the indicies (on first key)
+ACTION_SORT_ARRAY_INDICES ~new_potions_items_categories~
