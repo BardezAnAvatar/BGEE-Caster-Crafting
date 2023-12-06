@@ -311,6 +311,8 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_8 STR_VAR item = ~%keys_0%~ spell = ~MESOS06~ END END
             ~sphere-of-protection-from-poison.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_8 STR_VAR item = ~%keys_0%~ spell = ~MESOS05~ END END
+            ~colossal-growth.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 40 STR_VAR item = ~%keys_0%~ END END
             DEFAULT
         END
         /****************************
