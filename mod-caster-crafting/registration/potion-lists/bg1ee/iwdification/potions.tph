@@ -21,7 +21,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~POTN_STR_21-2~, ~POTN04~, ~16~, ~SPWI820~,                   ~2~, ~0~, ~14~, ~Enhancement~      => ~POTN04~   //Potion of Frost Giant Strength (21);    `Iron Body` Wizard spell
 
-        ~POTN_STR_23-2~, ~POTN05~, ~16~, ~SPWI820~,                   ~1~, ~0~, ~16~, ~Enhancement~      => ~POTN05~   //Potion of Fire Giant Strength (22);     `Iron Body` Wizard spell
+        ~POTN_STR_22-2~, ~POTN05~, ~16~, ~SPWI820~,                   ~1~, ~0~, ~16~, ~Enhancement~      => ~POTN05~   //Potion of Fire Giant Strength (22);     `Iron Body` Wizard spell
 
         ~POTN_STR_23-2~, ~POTN06~, ~16~, ~SPWI820~,                   ~1~, ~0~, ~18~, ~Enhancement~      => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Iron Body` Wizard spell
 
