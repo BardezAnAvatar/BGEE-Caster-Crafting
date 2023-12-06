@@ -10,7 +10,7 @@
     [Sorting Key]               // 0
     [Potion Item RESREF]        // 1
     [Category]                  // 2
-    [originaling Spell level]   // 3
+    [originating Spell level]   // 3
     [Potion Name]               // 4
 */
 
