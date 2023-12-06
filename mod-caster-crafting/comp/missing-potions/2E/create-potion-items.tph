@@ -224,9 +224,9 @@ ACTION_PHP_EACH ~new_potions_spells_items~
 
 
 
-        /******************************
-        *    BEGIN: Hard-coded ITMs   *
-        ******************************/
+        /**************************
+        *    BEGIN: ITM Patches   *
+        **************************/
         ACTION_MATCH ~%keys_10%~
         WITH
             ~bless.BAM~ ~chant.BAM~ ~resist-fear.BAM~ ~strength-of-one.BAM~ ~recitation.BAM~ ~ghostwalk.BAM~
@@ -253,19 +253,19 @@ ACTION_PHP_EACH ~new_potions_spells_items~
             ~turning-weapon.BAM~
                 BEGIN
                     LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 5 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Bard
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 11 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Druid
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 2 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Fighter
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 16 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Fighter/Druid
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 7 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Fighter/Mage
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 10 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Fighter/Mage/Thief
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 9 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Fighter/Thief
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 1 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Mage
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 13 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Mage/Thief
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 20 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Monk
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 12 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Ranger
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 19 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Sorcerer
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 4 seconds = spl_duration STR_VAR item = ~%keys_0%~ END //Thief
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 5 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Bard
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 11 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Druid
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 2 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Fighter
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 16 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Fighter/Druid
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 7 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Fighter/Mage
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 10 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Fighter/Mage/Thief
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 9 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Fighter/Thief
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 1 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Mage
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 13 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Mage/Thief
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 20 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Monk
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 12 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Ranger
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 19 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Sorcerer
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 4 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Thief
                 END
             ~sphere-of-protection-from-acid.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_8 STR_VAR item = ~%keys_0%~ spell = ~MESOS04~ END END
@@ -283,7 +283,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 40 STR_VAR item = ~%keys_0%~ END END
             DEFAULT
         END
-        /****************************
-        *    END: Hard-coded ITMs   *
-        ****************************/
+        /************************
+        *    END: ITM Patches   *
+        ************************/
     END
