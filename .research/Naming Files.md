@@ -22,7 +22,8 @@ are ignored when loading (some?) assets.
     - `[`
     - `]`
     - `=`
-    - `@`
+1. Characters that work fine from console and seem to be OK, but run into errors with scripts:
+    - `@` (creating via dialog scripts errors out)
 1. characters that don't display BAMs but work when spawned in CLUA console:
     - `¶`
     - `Š`
