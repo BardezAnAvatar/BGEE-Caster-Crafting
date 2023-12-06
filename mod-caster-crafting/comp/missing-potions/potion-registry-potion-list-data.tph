@@ -1,0 +1,94 @@
+/***************************************************************************************
+*   This file will iterate through the potion registry for "missing" potions derived   *
+*       from spells and create an associative array of `potion_list_data` used to      *
+*       emit dialog for crafting at a later component stage.                           *
+***************************************************************************************/
+
+/*
+    OUTPUT: ~potion_list_data~
+
+    [Sortable Unique Key]   // 0
+    [Potion Item Code]      // 1
+    [Required Caster Level] // 2
+    [Recipe]                // 3; these will be comma-delimited spell RESREFs
+    [Result Count]          // 4
+    [XP cost]               // 5
+    [Gold Cost]             // 6
+    [Time Cost (hours)]     // 7
+    [Category]              // 8
+    [Fail %]                // 9
+    [Potion Name]           // 10
+*/
+
+PRINT ~Generating an index of potion creation recipe data necessary for creation dialog~
+
+
+ACTION_PHP_EACH ~new_potions_spells_items~
+AS ~cat_keys~ => ~cat_value~
+BEGIN
+
+    ACTION_PHP_EACH ~new_potions_spells_recipes~
+    AS ~keys~ => ~value~
+    BEGIN
+        ACTION_IF (~%cat_keys_0%~ STRING_EQUAL ~%keys_1%~) THEN  //if the potion code is a match
+        BEGIN
+            LAUNCH_ACTION_FUNCTION fn_bz_lookup_costs_potion
+                INT_VAR
+                    tier = ~%cat_keys_9%~
+                RET
+                    potion_cost = cost
+                    potion_lore = lore
+                    potion_xp = xp
+                    potion_time = time
+            END //cost lookup
+
+            //total gold cost for recipe
+            OUTER_SET recipe_total_gold = (potion_cost * keys_4)
+
+            OUTER_SET fail_percent = (2 * cat_keys_9)
+            OUTER_SPRINT identified_name (AT "cat_keys_5")
+
+            //Emit the associative array
+            ACTION_DEFINE_ASSOCIATIVE_ARRAY
+                ~potion_list_data~
+            BEGIN
+
+                ~%cat_keys_2%_%cat_keys_3%_%cat_keys_0%_%keys_0%~,  //unique key
+                ~%cat_keys_0%~,         //resref
+                ~%keys_3%~,             //caster lvl required
+                ~%keys_2%~,             //spell resref(s)
+                ~%keys_4%~,             //result count
+                ~%potion_xp%~,          //XP cost
+                ~%recipe_total_gold%~   //gold cost
+                ~%potion_time%~,        //time cost (hours)
+                ~%cat_keys_2%~,         //Category
+                ~%fail_percent%~,       //failure rate
+                ~%identified_name%~     //potion name
+                    => ~%cat_keys_0%~
+
+            END //potion_list_data output
+        END //found a recipe matching a potion
+    END //iterating through new potion recipes
+END //iterating through new potions
+
+//Sort the indicies (on first key)
+ACTION_SORT_ARRAY_INDICES ~potion_list_data~
+
+/* DEBUG */
+ACTION_PHP_EACH ~potion_list_data~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: potion_list_data:
+            Unique Key:            `%keys_0%`
+            Potion Item Code:      `%keys_1%`
+            Required Caster Level: `%keys_2%`
+            Recipe:                `%keys_3%`
+            Result Count:          `%keys_4%`
+            XP cost:               `%keys_5%`
+            Gold Cost:             `%keys_6%`
+            Time Cost (hours):     `%keys_7%`
+            Category:              `%keys_8%`
+            Fail %:                `%keys_9%`
+            Potion Name:           `%keys_10%~
+    END
