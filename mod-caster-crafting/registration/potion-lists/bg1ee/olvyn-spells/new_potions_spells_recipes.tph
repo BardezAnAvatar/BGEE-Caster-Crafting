@@ -62,7 +62,7 @@ BEGIN
         ~ANTIHARM_SHELL~,                           ~BZ@OK11~, ~MEPR653~, ~11~,  ~1~ => "Antiharm Shell"
         ~PROTECTION_FROM_MAGIC_ENERGY_MEPR653~,     ~BZ@2A12~, ~MEPR653~,  ~1~,  ~1~ => "Protection From Magic Energy"
 
-        ~DISPLE_MAGIC_MEWI760~,                     ~BZ@0T05~, ~MEWI760~, ~14~,  ~3~ => "Dispel Magic"
+        ~DISPEL_MAGIC_MEWI760~,                     ~BZ@0T05~, ~MEWI760~, ~14~,  ~3~ => "Dispel Magic"
     END
 END
 
