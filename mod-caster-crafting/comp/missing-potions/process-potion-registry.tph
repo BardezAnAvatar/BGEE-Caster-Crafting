@@ -20,4 +20,6 @@ BEGIN
     INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/new_potions_spells_recipes.tph~
 END
 
+//TODO: Make an associative array of the potions to their category and their spell level for ordering (so I know which potions go in which categories for navigating menu)
+
 //TODO: Make a map of recipes + potions, so I can emit to ~potion_list~ for the dialog
