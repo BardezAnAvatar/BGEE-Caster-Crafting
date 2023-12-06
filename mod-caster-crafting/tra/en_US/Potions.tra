@@ -55,7 +55,7 @@ This oil is only effective on creatures already possessing the ability to turn u
 
 STATISTICS:
 
-Damage: %magnitude%d6 magic damage
+Special: Turn Undead (as per the class ability) upon landing hits against undead for the duration.
 Duration: 2 turns (20 rounds)
 Target: 1 creature
 
