@@ -23,4 +23,4 @@ END
 //Make an associative array of the potions to their category and their spell level for ordering (so I know which potions go in which categories for navigating menu)
 INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/potion-registry-category-list.tph~
 
-//TODO: Make a map of recipes + potions, so I can emit to ~potion_list~ for the dialog
+//TODO: Make a map of recipes + potions, so I can emit to ~potion_list_data~ for the dialog
