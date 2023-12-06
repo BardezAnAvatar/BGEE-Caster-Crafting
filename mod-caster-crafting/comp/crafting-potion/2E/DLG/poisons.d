@@ -2,7 +2,7 @@
 APPEND ~BZMSCAK~
 
     IF ~~
-    THEN BEGIN bz_potion_brew_core_poison
+    THEN BEGIN bz_potion_brew_poison
         SAY @30043  //~Which potion do you wish to brew?~
             //Dynamic list of the potion registry for transitions
 

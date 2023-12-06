@@ -1,7 +1,7 @@
 
 APPEND ~BZMSCAK~
     IF ~~
-    THEN BEGIN bz_potion_brew_core_cure
+    THEN BEGIN bz_potion_brew_cure
         SAY @30043  //~Which potion do you wish to brew?~
             //Dynamic list of the potion registry for transitions
 
@@ -14,7 +14,7 @@ APPEND ~BZMSCAK~
     END
 
     IF ~~
-    THEN BEGIN bz_potion_brew_core_defense
+    THEN BEGIN bz_potion_brew_defense
         SAY @30043  //~Which potion do you wish to brew?~
             //Dynamic list of the potion registry for transitions
 
@@ -27,7 +27,7 @@ APPEND ~BZMSCAK~
     END
 
     IF ~~
-    THEN BEGIN bz_potion_brew_core_offense
+    THEN BEGIN bz_potion_brew_offense
         SAY @30043  //~Which potion do you wish to brew?~
             //Dynamic list of the potion registry for transitions
 
@@ -40,7 +40,7 @@ APPEND ~BZMSCAK~
     END
 
     IF ~~
-    THEN BEGIN bz_potion_brew_core_enhancement
+    THEN BEGIN bz_potion_brew_enhancement
         SAY @30043  //~Which potion do you wish to brew?~
             //Dynamic list of the potion registry for transitions
 
@@ -53,7 +53,7 @@ APPEND ~BZMSCAK~
     END
 
     IF ~~
-    THEN BEGIN bz_potion_brew_core_bomb
+    THEN BEGIN bz_potion_brew_bomb
         SAY @30043  //~Which potion do you wish to brew?~
             //Dynamic list of the potion registry for transitions
 
