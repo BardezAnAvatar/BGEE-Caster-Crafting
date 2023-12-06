@@ -26,7 +26,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~new_potions_items_categories~
     BEGIN
-        ~%keys_2%_%keys_3%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_3%~, ~%potion_name%~ => ~%keys_1%~
+        ~%keys_2%_%keys_3%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_3%~, ~%potion_name%~ => ~%keys_0%~
     END
 END //iterating through new potions
 
@@ -45,5 +45,6 @@ ACTION_PHP_EACH ~new_potions_items_categories~
             Potion Item Code:      `%keys_1%`
             Category:              `%keys_2%`
             Original spell Level:  `%keys_3%`
-            Potion Name:           `%keys_4%`~
+            Potion Name:           `%keys_4%`
+            Value:                 `%value%`~
     END
