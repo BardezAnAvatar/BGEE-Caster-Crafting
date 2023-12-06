@@ -32,6 +32,9 @@ PRINT ~
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ~
 
+//used for sphere of security
+COPY ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/SPL/BZ@EMPTY~ ~override~
+
 //loop through all of the new potions from spells metadata
 ACTION_PHP_EACH ~new_potions_spells_items~
     AS ~keys~ => ~value~
