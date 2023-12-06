@@ -4,7 +4,7 @@
 ********************************************************************************/
 
 /*
-    OUTPUT:
+    OUTPUT: ~potion_list_data~
 
     [Unique Key]            // 0
     [Potion Item Code]      // 1
@@ -17,6 +17,13 @@
     [Category]              // 8
     [Fail %]                // 9
     [Potion Name]           // 10
+
+
+    OUTPUT: ~bz_base_potions_deduped~
+
+    [Potion Item Code]      // 0
+    [Category]              // 1
+    [Potion Name]           // 2
 */
 
 
