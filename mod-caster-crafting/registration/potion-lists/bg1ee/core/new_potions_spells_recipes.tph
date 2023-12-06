@@ -90,7 +90,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CURE_DISEASE~,                             ~BZ@0Y05~, ~SPPR317~,  ~1~,  ~1~ => "Cure Disease"
         ~CURE_DISEASE_SPPR607~,                     ~BZ@0Y05~, ~SPPR607~,  ~1~,  ~2~ => "Cure Disease"
         ~CURE_DISEASE_SPPR713~,                     ~BZ@0Y05~, ~SPPR713~,  ~1~,  ~2~ => "Cure Disease"
-        ~CURE_DISEASE_BHAAL1A~,                     ~BZ@0Y05~, ~BHAAL1A~,  ~1~,  ~2~ => "Cure Disease"
+      //~CURE_DISEASE_BHAAL1A~,                     ~BZ@0Y05~, ~BHAAL1A~,  ~1~,  ~2~ => "Cure Disease"
         ~CURE_DISEASE_SPPR404~,                     ~BZ@0Y05~, ~SPPR404~,  ~1~,  ~2~ => "Cure Disease"
         ~ZONE_OF_SWEET_AIR~,                        ~BZ@0Z05~, ~SPPR318~,  ~1~,  ~1~ => "Zone of Sweet Air"
 //oil of fiery burning, really, until levels implemented
