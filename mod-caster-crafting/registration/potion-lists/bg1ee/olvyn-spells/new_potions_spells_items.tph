@@ -37,14 +37,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BZ@OB09~, ~1~, ~Bomb~,          ~5~, ~Actor~,   ~40024~, ~40025~, ~MEPR557~,  ~9~, ~10~, ~expose-to-the-elements.BAM~,                   ~BZ@OB09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Expose to the Elements"
-//NOTE: manually create these
-        ~BZ@OC09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40026~, ~40027~, ~MESOS04~,  ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,           ~BZ@OC09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Acid"
-        ~BZ@OD09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40028~, ~40029~, ~MESOS02~,  ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,           ~BZ@OD09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Cold"
-        ~BZ@OE09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40030~, ~40031~, ~MESOS03~,  ~9~,  ~9~, ~sphere-of-protection-from-electricity.BAM~,    ~BZ@OE09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Electricity"
-        ~BZ@OF09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40032~, ~40033~, ~MESOS01~,  ~9~,  ~9~, ~sphere-of-protection-from-fire.BAM~,           ~BZ@OF09I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Fire"
-        ~BZ@OG09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40034~, ~40035~, ~MESOS06~,  ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~,  ~BZ@OG09I~, ~BZPN005D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Petrification"
-        ~BZ@OH09~, ~0~, ~Defense~,       ~5~, ~Actor~,   ~40036~, ~40037~, ~MESOS05~,  ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,         ~BZ@OH09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Poison"
-//End Manual
+        ~BZ@OC09~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40026~, ~40027~, ~BZ@EMPTY~, ~9~,  ~9~, ~sphere-of-protection-from-acid.BAM~,           ~BZ@OC09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Acid"
+        ~BZ@OD09~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40028~, ~40029~, ~BZ@EMPTY~, ~9~,  ~9~, ~sphere-of-protection-from-cold.BAM~,           ~BZ@OD09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Cold"
+        ~BZ@OE09~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40030~, ~40031~, ~BZ@EMPTY~, ~9~,  ~9~, ~sphere-of-protection-from-electricity.BAM~,    ~BZ@OE09I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Electricity"
+        ~BZ@OF09~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40032~, ~40033~, ~BZ@EMPTY~, ~9~,  ~9~, ~sphere-of-protection-from-fire.BAM~,           ~BZ@OF09I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Fire"
+        ~BZ@OG09~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40034~, ~40035~, ~BZ@EMPTY~, ~9~,  ~9~, ~sphere-of-protection-from-petrification.BAM~,  ~BZ@OG09I~, ~BZPN005D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Petrification"
+        ~BZ@OH09~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40036~, ~40037~, ~BZ@EMPTY~, ~9~,  ~9~, ~sphere-of-protection-from-poison.BAM~,         ~BZ@OH09I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Sphere of Security: Protection from Poison"
         ~BZ@OJ09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40040~, ~40041~, ~MEWI566~,  ~9~,  ~9~, ~gedlee's-electric-barrier.BAM~,                ~BZ@OJ09I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Gedlee's Electric Barrier"
 
 

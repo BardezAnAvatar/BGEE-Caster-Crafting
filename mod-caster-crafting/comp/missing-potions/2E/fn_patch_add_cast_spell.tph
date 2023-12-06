@@ -1,0 +1,34 @@
+/***********************************************************************************************
+*   This function will patch certain ITM header abilities to remove the `Immunity to resource`
+*       opcode targeting the caster
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_patch_add_cast_spell
+    INT_VAR
+        caster_level = "-1"     //what level to cast as?
+    STR_VAR
+        item = null             //item resref to update
+        spell = null            //item resref to update
+BEGIN
+
+    COPY_EXISTING ~%item%.ITM~ ~override~
+        //PATCHES
+        LAUNCH_PATCH_FUNCTION ~ADD_ITEM_EFFECT~
+            INT_VAR
+                opcode = 146                //`Cast spell` opcode
+                target = 2                  // preset target
+                timing = 0                  //Instant/duration
+                parameter1 = caster_level   //caster level specified
+                parameter2 = 2              //cast instantly at the specified level
+                power = 0                   //level 1 spell effect
+                resist_dispel = 3           //Dispel/Bypass
+                duration = 0                //Instant
+                savingthrow = 0             //no save
+                header = 1                  //which item ability header?
+                insert_point = 0            //where to insert?
+            STR_VAR
+                resource = ~%spell%~        //item RESREF
+        END
+    BUT_ONLY_IF_IT_CHANGES
+
+END //function
