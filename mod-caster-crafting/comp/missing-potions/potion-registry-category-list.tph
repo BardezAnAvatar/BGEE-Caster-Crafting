@@ -30,3 +30,17 @@ END //iterating through new potions
 
 //Sort the indicies (on first key)
 ACTION_SORT_ARRAY_INDICES ~new_potions_items_categories~
+
+
+/* DEBUG */
+ACTION_PHP_EACH ~new_potions_items_categories~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: new_potions_items_categories:
+            Unique Key:            `%keys_0%`
+            Potion Item Code:      `%keys_1%`
+            Category:              `%keys_2%`
+            Original spell Level:  `%keys_3%`
+            Potion Name:           `%keys_4%`~
+    END
