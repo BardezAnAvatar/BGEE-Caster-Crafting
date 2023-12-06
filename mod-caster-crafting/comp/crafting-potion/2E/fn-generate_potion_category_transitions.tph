@@ -15,14 +15,14 @@ EXTEND_TOP ~BZMSCAK~
             ~~~~~
 
         //isolate the unique potion entries; specific potions, ignoring spells and thus de-duplicating
-        ACTION_PHP_EACH ~bz_base_potions_deduped~
+        ACTION_PHP_EACH ~new_potions_items_categories~
             AS ~keys~ => ~value~
             BEGIN
-                ACTION_IF (~%keys_1%~ STRING_EQUAL ~%category%~)
+                ACTION_IF (~%keys_2%~ STRING_EQUAL ~%category%~)
                 THEN
                 BEGIN
 
-                    OUTER_SPRINT ~transition_response~ ~%keys_2%~
+                    OUTER_SPRINT ~transition_response~ ~%keys_4%~
 
                     //Give the potion a dialog option
                     APPEND_OUTER -
@@ -33,9 +33,8 @@ EXTEND_TOP ~BZMSCAK~
             REPLY ~%transition_response%~
             GOTO bz_potion_brew_core_%category_lower%_%value%
                         ~~~~~
-
-                END
-            END
+                END //comparison
+            END //iterate through categories
 
 APPEND_OUTER -
     ~CorePotions/BZMSCAK.D~
@@ -57,4 +56,4 @@ END
 
     ~~~~~
 
-    END
+    END //function

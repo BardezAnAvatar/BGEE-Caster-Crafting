@@ -19,11 +19,13 @@
     [Potion Name]           // 10
 
 
-    OUTPUT: ~bz_base_potions_deduped~
+    OUTPUT: ~new_potions_items_categories~
 
-    [Potion Item Code]      // 0
-    [Category]              // 1
-    [Potion Name]           // 2
+    [Sorting Key]               // 0
+    [Potion Item RESREF]        // 1
+    [Category]                  // 2
+    [originating Spell level]   // 3
+    [Potion Name]               // 4
 */
 
 
@@ -55,9 +57,9 @@ BEGIN
     THEN
     BEGIN
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~bz_base_potions_deduped~
+            ~new_potions_items_categories~
         BEGIN
-            ~%keys_1%~, ~%keys_7%~, ~%potion_name%~ => ~%keys_1%~
+            ~%keys_7%_0_%keys_1%~, ~%keys_1%~, ~%keys_7%~, ~0~, ~%potion_name%~ => ~%keys_1%~
         END
     END
 
@@ -89,6 +91,7 @@ END
 
 
 //Sort the indicies (on first key)
+ACTION_SORT_ARRAY_INDICES ~new_potions_items_categories~
 ACTION_SORT_ARRAY_INDICES ~potion_list_data~
 
 
