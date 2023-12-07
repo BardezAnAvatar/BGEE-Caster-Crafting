@@ -93,7 +93,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ#1O09~, ~1~, ~Offense~,       ~5~, ~Caster~,  ~40320~, ~40321~, ~SPPR507~,  ~1~, ~14~, ~champion's-strength.BAM~,                   ~BZ#1O09I~, ~BZPN049D~, ~~,     ~142~, ~0xE~, ~54~, ~0x4~, ~~, ~~ => "Champion's Strength"
         ~BZ#1P09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40322~, ~40323~, ~SPPR508~,  ~1~,  ~9~, ~chaotic-commands.BAM~,                      ~BZ#1P09I~, ~BZPN032D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Chaotic Commands"
         ~BZ#1Q09~, ~1~, ~Offense~,       ~5~, ~Caster~,  ~40324~, ~40325~, ~SPPR513~,  ~1~, ~10~, ~righteous-magic.BAM~,                       ~BZ#1Q09I~, ~BZPN100D~, ~~,     ~142~, ~0xE~, ~18~, ~0x4~, ~44~, ~0x4~ => "Righteous Magic"
-        ~BZ#1R09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40326~, ~40327~, ~SPWI505~,  ~1~,  ~9~, ~shadow-door.BAM~,                           ~BZ#1R09I~, ~BZPN001D~, ~~,      ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Shadow Door"
+        ~BZ#1R09~, ~1~, ~Enhancement~,   ~5~, ~Caster~,  ~40326~, ~40327~, ~SPWI505~,  ~1~,  ~9~, ~shadow-door.BAM~,                           ~BZ#1R09I~, ~BZPN001D~, ~~,      ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Shadow Door"
         ~BZ#1S09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40328~, ~40329~, ~SPWI590~,  ~1~, ~10~, ~spell-immunity-abjuration.BAM~,             ~BZ#1S09I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Abjuration"
         ~BZ#1T09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40330~, ~40331~, ~SPWI597~,  ~1~, ~10~, ~spell-immunity-alteration.BAM~,             ~BZ#1T09I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Alteration"
         ~BZ#1U09~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40332~, ~40333~, ~SPWI591~,  ~1~, ~10~, ~spell-immunity-conjuration.BAM~,            ~BZ#1U09I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Conjuration"
@@ -105,7 +105,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ#2009~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40344~, ~40345~, ~SPWI511~,  ~1~, ~10~, ~protection-from-normal-weapons.BAM~,        ~BZ#2009I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Normal Weapons"
         ~BZ#2109~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40346~, ~40347~, ~SPWI512~,  ~1~,  ~9~, ~protection-from-electricity.BAM~,           ~BZ#2109I~, ~BZPN008D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Electricity"
         ~BZ#2209~, ~1~, ~Defense~,       ~5~, ~Caster~,  ~40348~, ~40349~, ~SPWI517~,  ~1~,  ~9~, ~protection-from-acid.BAM~,                  ~BZ#2209I~, ~BZPN008D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Acid"
-        ~BZ#2309~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40350~, ~40351~, ~SPWI518~,  ~1~, ~10~, ~phantom-blade.BAM~,                         ~BZ#2309I~, ~BZPN110D~, ~~,     ~111~, ~0xE~, ~~, ~~, ~~, ~~ => "Phantom Blade"
+        ~BZ#2309~, ~1~, ~Offense~,       ~5~, ~Actor~,   ~40350~, ~40351~, ~SPWI518~,  ~1~, ~10~, ~phantom-blade.BAM~,                         ~BZ#2309I~, ~BZPN110D~, ~~,     ~111~, ~0xE~, ~~, ~~, ~~, ~~ => "Phantom Blade"
         ~BZ#2409~, ~1~, ~Defense~,       ~5~, ~Actor~,   ~40352~, ~40353~, ~SPWI522~,  ~1~, ~10~, ~minor-spell-turning.BAM~,                   ~BZ#2409I~, ~BZPN058D~, ~~,     ~233~, ~0xE~, ~~, ~~, ~~, ~~ => "Minor Spell Turning"
 
         ~BZ#2511~, ~1~, ~Cure~,          ~6~, ~Caster~,  ~40354~, ~40355~, ~SPPR607~,  ~1~, ~12~, ~heal.BAM~,                                  ~BZ#2511I~, ~BZPN110D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Heal"

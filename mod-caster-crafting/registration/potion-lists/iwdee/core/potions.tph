@@ -188,7 +188,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~POTN41-0~,    ~POTN41~,   ~0~,  ~SPPR205,SPPR201,SPWI209~,   ~1~, ~0~, ~24~, ~Enhancement~ => ~POTN41~   //Potion of Power;                        `Aid` and `Find Traps` Priest Spells and `Luck` Wizard Spell
 
-        ~POTN42-0~,    ~POTN42~,   ~0~,  ~SPPR711~,                   ~2~, ~0~, ~10~, ~Enhancement~ => ~POTN42~   //Potion of Regeneration;                 `Regeneration` Priest spell
+        ~POTN42-0~,    ~POTN42~,   ~0~,  ~SPPR711~,                   ~2~, ~0~, ~10~, ~Cure~        => ~POTN42~   //Potion of Regeneration;                 `Regeneration` Priest spell
         ~POTN42-1~,    ~POTN42~,   ~0~,  ~SPWI632~,                   ~3~, ~0~, ~10~, ~Enhancement~ => ~POTN42~   //Potion of Regeneration;                 `Trollish Fortitude` Wizard spell
 
         ~POTN43-0~,    ~POTN43~,   ~0~,  ~SPWI722~,                   ~1~, ~0~, ~10~, ~Enhancement~ => ~POTN43~   //Potion of Insight (18);                 `Limited Wish` Wizard spell
