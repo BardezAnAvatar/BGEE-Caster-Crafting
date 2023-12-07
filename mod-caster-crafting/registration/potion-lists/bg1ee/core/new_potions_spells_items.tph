@@ -27,7 +27,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ#0001~, ~1~, ~Offense~,       ~1~, ~Caster~,  ~40200~, ~40201~, ~SPPR101~,  ~1~,  ~2~, ~bless.BAM~,                                 ~BZ#0001I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Bless"
         ~BZ#0101~, ~1~, ~Bomb~,          ~1~, ~Point~,   ~40202~, ~40203~, ~SPPR105~,  ~1~,  ~3~, ~entangle.BAM~,                              ~BZ#0101I~, ~BZPN013D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Entangle"
-        ~BZ#0201~, ~1~, ~Enhancement~,   ~1~, ~Caster~,  ~40246~, ~40247~, ~SPWI210~,  ~1~,  ~4~, ~resist-fear.BAM~,                           ~BZ#0201I~, ~BZPN110D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Resist Fear"
+        ~BZ#0201~, ~1~, ~Defense~,       ~1~, ~Caster~,  ~40246~, ~40247~, ~SPWI210~,  ~1~,  ~4~, ~resist-fear.BAM~,                           ~BZ#0201I~, ~BZPN110D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Resist Fear"
         ~BZ#0301~, ~1~, ~Defense~,       ~1~, ~Caster~,  ~40204~, ~40205~, ~SPPR109~,  ~1~,  ~4~, ~sanctuary.BAM~,                             ~BZ#0301I~, ~BZPN008D~, ~~,     ~153~, ~0xE~, ~~, ~~, ~~, ~~ => "Sanctuary"
         ~BZ#0401~, ~1~, ~Defense~,       ~1~, ~Actor~,   ~40206~, ~40207~, ~SPPR111~,  ~1~,  ~2~, ~armor-of-faith.BAM~,                        ~BZ#0401I~, ~BZPN032D~, ~~,     ~142~, ~0xE~, ~30~, ~0x4~, ~~, ~~ => "Armor of Faith"
         ~BZ#0501~, ~1~, ~Defense~,       ~1~, ~Caster~,  ~40208~, ~40209~, ~SPPR150~,  ~1~,  ~2~, ~spirit-ward.BAM~,                           ~BZ#0501I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spirit Ward"
@@ -40,9 +40,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ#0C01~, ~1~, ~Bomb~,          ~1~, ~Point~,   ~40222~, ~40223~, ~SPWI116~,  ~1~,  ~2~, ~sleep.BAM~,                                 ~BZ#0C01I~, ~BZPN013D~, ~~,      ~39~, ~0xE~, ~~, ~~, ~~, ~~ => "Sleep"
 
         ~BZ#0D03~, ~1~, ~Offense~,       ~2~, ~Caster~,  ~40224~, ~40225~, ~SPPR201~,  ~1~,  ~4~, ~aid.BAM~,                                   ~BZ#0D03I~, ~BZPN026D~, ~~,     ~129~, ~0xE~, ~~, ~~, ~~, ~~ => "Aid"
-        ~BZ#0E03~, ~1~, ~Offense~,       ~2~, ~Actor~,   ~40226~, ~40227~, ~SPPR202~,  ~1~,  ~4~, ~barkskin.BAM~,                              ~BZ#0E03I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~0~, ~0x4~, ~~, ~~ => "Barkskin"
+        ~BZ#0E03~, ~1~, ~Defense~,       ~2~, ~Actor~,   ~40226~, ~40227~, ~SPPR202~,  ~1~,  ~4~, ~barkskin.BAM~,                              ~BZ#0E03I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~0~, ~0x4~, ~~, ~~ => "Barkskin"
         ~BZ#0F03~, ~1~, ~Offense~,       ~2~, ~Caster~,  ~40228~, ~40229~, ~SPPR203D~, ~1~,  ~5~, ~chant.BAM~,                                 ~BZ#0F03I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Chant"
-        ~BZ#0G03~, ~1~, ~Offense~,       ~2~, ~Caster~,  ~40230~, ~40231~, ~SPPR205~,  ~1~,  ~4~, ~find-traps.BAM~,                            ~BZ#0G03I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Find Traps"
+        ~BZ#0G03~, ~1~, ~Enhancement~,   ~2~, ~Caster~,  ~40230~, ~40231~, ~SPPR205~,  ~1~,  ~4~, ~find-traps.BAM~,                            ~BZ#0G03I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Find Traps"
         ~BZ#0H03~, ~1~, ~Defense~,       ~2~, ~Caster~,  ~40232~, ~40233~, ~SPPR210~,  ~1~,  ~5~, ~resist-fire-and-cold.BAM~,                  ~BZ#0H03I~, ~BZPN005D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Resist Fire and Cold"
         ~BZ#0I03~, ~1~, ~Enhancement~,   ~2~, ~Caster~,  ~40234~, ~40235~, ~SPPR214~,  ~1~,  ~5~, ~draw-upon-holy-might.BAM~,                  ~BZ#0I03I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~132~, ~0x4~, ~~, ~~ => "Draw Upon Holy Might"
         ~BZ#0J03~, ~1~, ~Bomb~,          ~2~, ~Point~,   ~40236~, ~40237~, ~SPPR250~,  ~1~,  ~5~, ~writhing-fog.BAM~,                          ~BZ#0J03I~, ~BZPN013D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Writhing Fog"
@@ -120,7 +120,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ#2E12~, ~1~, ~Bomb~,          ~6~, ~Actor~,   ~40372~, ~40373~, ~SPWI615~,  ~1~, ~12~, ~chain-lightning.BAM~,                       ~BZ#2E12I~, ~BZPN013D~, ~~,        ~~,    ~~, ~12~, ~0x1C~, ~~, ~~ => "Chain Lightning"
         ~BZ#2F12~, ~1~, ~Defense~,       ~6~, ~Actor~,   ~40374~, ~40375~, ~SPWI618~,  ~1~, ~13~, ~spell-deflection.BAM~,                      ~BZ#2F12I~, ~BZPN070D~, ~~,     ~233~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Deflection"
 
-        ~BZ#2G14~, ~1~, ~Enhancement~,   ~7~, ~Actor~,   ~40376~, ~40377~, ~SPPR704~,  ~1~, ~14~, ~nature's-beauty.BAM~,                       ~BZ#2G14I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Nature's Beauty"
+        ~BZ#2G14~, ~1~, ~Offense~,       ~7~, ~Actor~,   ~40376~, ~40377~, ~SPPR704~,  ~1~, ~14~, ~nature's-beauty.BAM~,                       ~BZ#2G14I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Nature's Beauty"
         ~BZ#2H14~, ~1~, ~Cure~,          ~7~, ~Caster~,  ~40378~, ~40379~, ~SPPR713~,  ~1~, ~14~, ~greater-restoration.BAM~,                   ~BZ#2H14I~, ~BZPN090D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Greater Restoration"
         ~BZ#2I14~, ~1~, ~Defense~,       ~7~, ~Caster~,  ~40380~, ~40381~, ~SPWI701~,  ~1~, ~14~, ~spell-turning.BAM~,                         ~BZ#2I14I~, ~BZPN032D~, ~~,     ~233~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Turning"
         ~BZ#2J14~, ~1~, ~Defense~,       ~7~, ~Caster~,  ~40382~, ~40383~, ~SPWI702~,  ~1~, ~13~, ~protection-from-the-elements.BAM~,          ~BZ#2J14I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From The Elements"

@@ -120,10 +120,10 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN20-4~,         ~POTN20~, ~0~,  ~SPIN102~,                   ~1~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Slow Poison` Innate ability
       //~POTN20-5~,         ~POTN20~, ~0~,  ~BHAAL1A~,                   ~5~, ~0~, ~4~,  ~Cure~        => ~POTN20~   //Andidote;                               `Mass Healing` Bhaalspawn ability
 
-        ~POTN21-0~,         ~POTN21~, ~0~,  ~SPPR350~,                   ~2~, ~0~, ~6~,  ~Enhancement~ => ~POTN21~   //Potion of Clarity;                      `Spiritual Clarity` Priest spell
-        ~POTN21-1~,         ~POTN21~, ~0~,  ~SPPR508~,                   ~1~, ~0~, ~6~,  ~Enhancement~ => ~POTN21~   //Potion of Clarity;                      `Chaotic Commands` Priest spell
-        ~POTN21-2~,         ~POTN21~, ~0~,  ~SPPR607~,                   ~3~, ~0~, ~6~,  ~Enhancement~ => ~POTN21~   //Potion of Clarity;                      `Heal` Priest spell
-        ~POTN21-3~,         ~POTN21~, ~0~,  ~SPPR713~,                   ~3~, ~0~, ~6~,  ~Enhancement~ => ~POTN21~   //Potion of Clarity;                      `Greater Restoration` Priest spell
+        ~POTN21-0~,         ~POTN21~, ~0~,  ~SPPR350~,                   ~2~, ~0~, ~6~,  ~Defense~     => ~POTN21~   //Potion of Clarity;                      `Spiritual Clarity` Priest spell
+        ~POTN21-1~,         ~POTN21~, ~0~,  ~SPPR508~,                   ~1~, ~0~, ~6~,  ~Defense~     => ~POTN21~   //Potion of Clarity;                      `Chaotic Commands` Priest spell
+        ~POTN21-2~,         ~POTN21~, ~0~,  ~SPPR607~,                   ~3~, ~0~, ~6~,  ~Defense~     => ~POTN21~   //Potion of Clarity;                      `Heal` Priest spell
+        ~POTN21-3~,         ~POTN21~, ~0~,  ~SPPR713~,                   ~3~, ~0~, ~6~,  ~Defense~     => ~POTN21~   //Potion of Clarity;                      `Greater Restoration` Priest spell
 
         ~POTN22-0~,         ~POTN22~, ~0~,  ~SPWI320~,                   ~1~, ~0~, ~8~,  ~Defense~     => ~POTN22~   //Protection from Cold;                   `Protection from Cold` Wizard spell
         ~POTN22-1~,         ~POTN22~, ~0~,  ~SPWI403~,                   ~1~, ~0~, ~8~,  ~Defense~     => ~POTN22~   //Protection from Cold;                   `Fireshield (Blue)` Wizard spell
@@ -184,7 +184,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN43-1~,         ~POTN43~, ~0~,  ~SPWI919~,                   ~3~, ~0~, ~10~, ~Enhancement~ => ~POTN43~   //Potion of Insight (18);                 `Wish` Wizard spell
         ~POTN43-2~,         ~POTN43~, ~0~,  ~SPPR505,SPWI322~,           ~1~, ~0~, ~10~, ~Enhancement~ => ~POTN43~   //Potion of Insight (18);                 `True Seeing` Priest Spell and `Detect Illusion` Wizard Spell
 
-        ~POTN45-0~,         ~POTN45~, ~0~,  ~SPPR403~,                   ~1~, ~0~, ~10~, ~Enhancement~ => ~POTN45~   //Potion of Free Action;                  `Free Action` Priest spell
+        ~POTN45-0~,         ~POTN45~, ~0~,  ~SPPR403~,                   ~1~, ~0~, ~10~, ~Defense~     => ~POTN45~   //Potion of Free Action;                  `Free Action` Priest spell
 
         ~POTN46-0~,         ~POTN46~, ~0~,  ~SPPR202~,                   ~1~, ~0~, ~10~, ~Defense~     => ~POTN46~   //Potion of Stone Form;                   `Barkskin` Priest spell
         ~POTN46-1~,         ~POTN46~, ~0~,  ~SPWI408~,                   ~1~, ~0~, ~10~, ~Defense~     => ~POTN46~   //Potion of Stone Form;                   `Stoneskin` Wizard spell

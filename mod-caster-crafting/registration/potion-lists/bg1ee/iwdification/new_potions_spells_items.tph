@@ -35,7 +35,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ#I503~, ~1~, ~Bomb~,          ~2~, ~Point~,   ~40110~, ~40111~, ~SPWI225~,  ~1~,  ~3~, ~snilloc's-snowball-swarm.BAM~,              ~BZ#I503I~, ~BZPN013D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Snilloc's Snowball Swarm"
 
 
-        ~BZ#I605~, ~1~, ~Offense~,       ~3~, ~Caster~,  ~40146~, ~40147~, ~SPPR322~,  ~1~,  ~5~, ~exaltation.BAM~,                            ~BZ#I605I~, ~BZPN032D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Exaltation"
+        ~BZ#I605~, ~1~, ~Defense~,       ~3~, ~Caster~,  ~40146~, ~40147~, ~SPPR322~,  ~1~,  ~5~, ~exaltation.BAM~,                            ~BZ#I605I~, ~BZPN032D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Exaltation"
         ~BZ#I705~, ~1~, ~Offense~,       ~3~, ~Actor~,   ~40112~, ~40113~, ~SPPR323~,  ~1~,  ~7~, ~moonblade.BAM~,                             ~BZ#I705I~, ~BZPN058D~, ~~     , ~111~, ~0xE~, ~~, ~~, ~~, ~~ => "Moonblade"
         ~BZ#I805~, ~1~, ~Bomb~,          ~3~, ~Point~,   ~40114~, ~40115~, ~SPPR325~,  ~1~,  ~6~, ~spike-growth.BAM~,                          ~BZ#I805I~, ~BZPN049D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Spike Growth"
 

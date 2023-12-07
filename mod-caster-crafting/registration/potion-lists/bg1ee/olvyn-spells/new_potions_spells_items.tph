@@ -25,7 +25,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~BZ#O001~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40002~, ~40003~, ~MEPR151~,  ~1~,  ~3~, ~snake's-swiftness.BAM~,                        ~BZ#O001I~, ~BZPN120D~, ~~, ~317~, ~0xE~, ~~, ~~, ~~, ~~ => "Snake's Swiftness"
+        ~BZ#O001~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~40002~, ~40003~, ~MEPR151~,  ~1~,  ~3~, ~snake's-swiftness.BAM~,                        ~BZ#O001I~, ~BZPN120D~, ~~, ~317~, ~0xE~, ~~, ~~, ~~, ~~ => "Snake's Swiftness"
         ~BZ#O101~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~40004~, ~40005~, ~MEPR157~,  ~1~,  ~4~, ~searing-smite.BAM~,                            ~BZ#O101I~, ~BZPN120D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Searing Smite"
         ~BZ#O201~, ~1~, ~Offense~,       ~1~, ~Actor~,   ~40006~, ~40007~, ~MEPR154~,  ~1~,  ~2~, ~turning-weapon.BAM~,                           ~BZ#O201I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Turning Weapon"
         ~BZ#O301~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40008~, ~40009~, ~MEPR156~,  ~1~,  ~4~, ~camoflauge.BAM~,                               ~BZ#O301I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Camoflauge"
@@ -86,7 +86,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~new_potions_spells_items~
     BEGIN
-        ~BZ#O401~, ~1~, ~Enhancement~,   ~1~, ~Actor~,   ~40010~, ~40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                           ~BZ#O401I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Reflect Attack"
+        ~BZ#O401~, ~1~, ~Defense~,       ~1~, ~Actor~,   ~40010~, ~40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                           ~BZ#O401I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Reflect Attack"
 
         ~BZ#O503~, ~1~, ~Enhancement~,   ~2~, ~Caster~,  ~40012~, ~40013~, ~MEPR255~,  ~1~,  ~3~, ~ghostwalk.BAM~,                                ~BZ#O503I~, ~BZPN130D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Ghostwalk"
 
