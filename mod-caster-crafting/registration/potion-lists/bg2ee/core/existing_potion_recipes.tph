@@ -1,5 +1,5 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~potion_list~
+    ~existing_potion_recipes~
     BEGIN
 
         /*
@@ -212,7 +212,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 ACTION_IF !(%bz_olvyn_true_strike%)
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~potion_list~
+    ~existing_potion_recipes~
     BEGIN
         ~POTN30-0~,    ~POTN30~, ~0~,  ~SPWI111~,                   ~1~, ~0~,  ~4~  => ~POTN30~   //Potion of Infravision;                  `Infravision` Wizard Spell
     END

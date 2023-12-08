@@ -31,12 +31,19 @@
 */
 
 
-INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/potions.tph~
+PRINT ~Include Base Game Existing Potion Recipes~
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potion_recipes.tph~
 
 ACTION_IF (%bz_iwdification_installed%)
 BEGIN
-    PRINT ~DEBUG: Include IWD-ification Potion Recipes~
-    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/potions.tph~
+    PRINT ~Include IWD-ification Existing Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/existing_potion_recipes.tph~
+END
+
+ACTION_IF (%bz_OlvynSpells_installed%)
+BEGIN
+    PRINT ~Include OlvynSpells Existing Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/existing_potion_recipes.tph~
 END
 
 
@@ -68,7 +75,7 @@ BEGIN
 
 
     //Expand data for processing
-    ACTION_PHP_EACH ~potion_list~
+    ACTION_PHP_EACH ~existing_potion_recipes~
     AS ~keys~ => ~value~
     BEGIN
         ACTION_IF (~%cat_keys_0%~ STRING_EQUAL ~%keys_1%~) THEN  //if the potion code is a match
@@ -95,7 +102,7 @@ BEGIN
                 ~%value%~
             END //define array
         END //if matches
-    END //loop ~potion_list~
+    END //loop ~existing_potion_recipes~
 END //loop
 
 
