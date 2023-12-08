@@ -4,7 +4,6 @@
 *   NOTE: This file will expect prior actions to have altered
 *   BZMSCAK.D and yielded internal WeiDU strings:
 *       - CorePotions/BZMSCAK.D
-*       - SpellPotions/BZMSCAK.D
 ******************************************************************************/
 
 //Emit the final result prior to compilation
@@ -14,7 +13,6 @@ COPY -
         //Patches
         APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/DLG/BZMSCAK.D~
         APPEND_FILE TEXT ~CorePotions/BZMSCAK.D~
-        APPEND_FILE TEXT ~SpellPotions/BZMSCAK.D~
 
 //DEBUG so I can read it
 COPY
