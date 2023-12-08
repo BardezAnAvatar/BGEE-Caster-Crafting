@@ -5,7 +5,7 @@ BEGIN ~BZMSCAK~
         ~OR(2)
     ActuallyInCombat()
 Detect([ENEMY])~
-    THEN BEGIN bz_potion_brew_enemies
+    THEN BEGIN bz_craftingkit_enemies
         SAY @30001  //You cannot use your alchemy kit while enemies are about.
             IF ~~ THEN EXIT
     END
@@ -13,7 +13,7 @@ Detect([ENEMY])~
     IF
         ~!ActuallyInCombat()
 !Detect([ENEMY])~
-    THEN BEGIN bz_potion_brew_main_menu
+    THEN BEGIN bz_craftingkit_main_menu
         SAY @30000  //Your alchemy kit is open before you. How do you wish to use it?
 
             //Quit
