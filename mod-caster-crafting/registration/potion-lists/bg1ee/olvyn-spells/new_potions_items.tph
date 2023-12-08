@@ -1,5 +1,5 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~new_potions_spells_items~
+    ~new_potions_items~
     BEGIN
         /*
         [resulting potion RESREF]                   // 0
@@ -71,7 +71,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 ACTION_IF %bz_olvyn_powerful% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~new_potions_spells_items~
+    ~new_potions_items~
     BEGIN
         ~BZ#OK11~, ~1~, ~Defense~,       ~Physical Immunity~,   ~6~, ~Caster~,  ~40042~, ~40043~, ~MEPR653~,  ~1~, ~12~, ~antiharm-shell.BAM~,                           ~BZ#OK11I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antiharm Shell"
     END
@@ -84,7 +84,7 @@ END
 ACTION_IF %bz_olvyn_eeex% THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~new_potions_spells_items~
+    ~new_potions_items~
     BEGIN
         ~BZ#O401~, ~1~, ~Defense~,       ~Physical Immunity~,   ~1~, ~Actor~,   ~40010~, ~40011~, ~MEWI158~,  ~1~,  ~4~, ~reflect-attack.BAM~,                           ~BZ#O401I~, ~BZPN150D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Reflect Attack"
 
@@ -102,7 +102,7 @@ END
 ACTION_IF (~bz_olvyn_true_strike~)
 THEN BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~new_potions_spells_items~
+    ~new_potions_items~
     BEGIN
         ~BZ#OS01~, ~1~, ~Offense~,       ~Attack Bonus~,        ~1~, ~Caster~,  ~40056~, ~40057~, ~SPWI111~,  ~1~,  ~2~, ~true-strike.BAM~,                              ~BZ#OR01I~, ~BZPN049D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "True Strike"
     END

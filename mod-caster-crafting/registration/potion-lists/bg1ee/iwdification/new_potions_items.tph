@@ -1,5 +1,5 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~new_potions_spells_items~
+    ~new_potions_items~
     BEGIN
         /*
         [resulting potion RESREF]                   // 0

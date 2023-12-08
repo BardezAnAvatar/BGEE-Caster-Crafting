@@ -17,7 +17,7 @@
 PRINT ~Generating an index of new potions for creation dialog~
 
 
-ACTION_PHP_EACH ~new_potions_spells_items~
+ACTION_PHP_EACH ~new_potions_items~
 AS ~keys~ => ~value~
 BEGIN
 

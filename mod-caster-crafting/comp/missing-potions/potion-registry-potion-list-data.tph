@@ -26,7 +26,7 @@ INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
 PRINT ~Generating an index of potion creation recipe data necessary for creation dialog~
 
 
-ACTION_PHP_EACH ~new_potions_spells_items~
+ACTION_PHP_EACH ~new_potions_items~
 AS ~cat_keys~ => ~cat_value~
 BEGIN
 
