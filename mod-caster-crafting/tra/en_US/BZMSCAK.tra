@@ -35,39 +35,60 @@
 @30049 = ~the spell %spell_list%~   //singular
 @30050 = ~the spells %spell_list%~  //plural
 
-//Spell circles
-@30061 = ~1st arcane circle~
-@30062 = ~2nd arcane circle~
-@30063 = ~3rd arcane circle~
-@30064 = ~4th arcane circle~
-@30065 = ~5th arcane circle~
-@30066 = ~6th arcane circle~
-@30067 = ~7th arcane circle~
-@30068 = ~8th arcane circle~
-@30069 = ~9th arcane circle~
-@30070 = ~10th arcane circle~
-@30071 = ~1st divine circle~
-@30072 = ~2nd divine circle~
-@30073 = ~3rd divine circle~
-@30074 = ~4th divine circle~
-@30075 = ~5th divine circle~
-@30076 = ~6th divine circle~
-@30077 = ~7th divine circle~
-@30078 = ~Quest divine spells~
 
-//Potion Groups
-@30080 = ~Arcane Potions~
-@30081 = ~Divine Potions~
-@30082 = ~Restorative Potions~
-@30083 = ~Defense Potions~
-@30084 = ~Enhancement Potions~
-@30085 = ~Bombs~
-@30086 = ~Poisons~
+//Potion Categories
+@30060 = ~Bombs~
+@30061 = ~Curatives~
+@30062 = ~Defensive Potions~
+@30063 = ~Offensive Potions~
+@30064 = ~Enhanced Abilities~
+@30065 = ~Poisons~
 
-
-//Divine scrolls
-@30090 = ~You meditate over the spell %spell_name% and prepare its power.~
-
-//Arcane scrolls
-@30100 = ~You look over the spell %spell_name% and inspect its entry in your spellbook.~
-
+//Potion Sub-Categories
+//Bombs
+@30080 = ~Direct Damage~
+@30081 = ~Lower Defenses~
+@30082 = ~Restorative~
+@30083 = ~Restrictive~
+@30084 = ~Status Attack~
+@30085 = ~Utility~
+//Cures
+@30086 = ~Healing~
+@30087 = ~Regeneration~
+@30088 = ~Restorative~
+//Defense
+@30089 = ~Armor~
+@30090 = ~Avoidance~
+@30091 = ~Damage Resistance~
+@30092 = ~Damaging Shield~
+@30093 = ~Energy Resistance~
+@30094 = ~Magic Resistance~
+@30095 = ~Mental Defense~
+@30096 = ~Physical Immunity~
+@30097 = ~Protection~
+@30098 = ~Spell Defense~
+@30099 = ~Spell Immunity~
+@30100 = ~Status Immunity~
+//Enhancement
+@30101 = ~Casting Boost~
+@30102 = ~Detection~
+@30103 = ~Invisibility~
+@30104 = ~Movement~
+@30105 = ~Recall~
+@30106 = ~Skill Boost~
+@30107 = ~Stat Boost~
+@30108 = ~Stat Boost: Strength~
+@30109 = ~Stat Increase~
+@30110 = ~Stat Transfer~
+//Offense
+@30111 = ~Attack Bonus~
+@30112 = ~Damage Boost~
+@30113 = ~Extra Effects~
+@30114 = ~Haste~
+@30115 = ~Magic Weapon~
+@30116 = ~Mental Attack~
+//Poisons
+@30117 = ~Fatal~
+@30118 = ~Intoxication~
+@30119 = ~Slow~
+@30120 = ~Tradeoff~
