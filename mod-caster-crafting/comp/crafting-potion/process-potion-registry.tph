@@ -15,8 +15,9 @@
     [Gold Cost]             // 6
     [Time Cost (hours)]     // 7
     [Category]              // 8
-    [Fail %]                // 9
-    [Potion Name]           // 10
+    [SubCategory]           // 9
+    [Fail %]                // 10
+    [Potion Name]           // 11
 
 
     OUTPUT: ~new_potions_items_categories~
@@ -24,8 +25,9 @@
     [Sorting Key]               // 0
     [Potion Item RESREF]        // 1
     [Category]                  // 2
-    [originating Spell level]   // 3
-    [Potion Name]               // 4
+    [SubCategory]               // 3
+    [originating Spell level]   // 4
+    [Potion Name]               // 5
 */
 
 
@@ -39,56 +41,62 @@ END
 
 
 //Expand data for processing
-ACTION_PHP_EACH ~potion_list~
-AS ~keys~ => ~value~
+ACTION_PHP_EACH ~existing_potions_categories~
+AS ~cat_keys~ => ~cat_value~
 BEGIN
 
     //Get gold cost per potion & the in-game name of each potion
-    COPY_EXISTING - ~%keys_1%.itm~ ~override~   //inline only, just to read from potion
-        READ_LONG 0x34 ~potion_price~           //price
-        READ_LONG 0x0C ~identified_name_STRREF~ //identified name
+    COPY_EXISTING - ~%cat_value%.itm~ ~override~    //inline only, just to read from potion
+        READ_LONG 0x34 ~potion_price~               //price
+        READ_LONG 0x0C ~identified_name_STRREF~     //identified name
     BUT_ONLY_IF_IT_CHANGES
 
     ACTION_GET_STRREF (%identified_name_STRREF%) ~potion_name~
 
-
-    //Isolate unique Potion list
-    ACTION_IF (NOT VARIABLE_IS_SET ~bz_base_game_potions_deduped_%keys_1%~)
-    THEN
-    BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~new_potions_items_categories~
-        BEGIN
-            ~%keys_7%_0_%keys_1%~, ~%keys_1%~, ~%keys_7%~, ~0~, ~%potion_name%~ => ~%keys_1%~
-        END
-
-        OUTER_SET ~bz_base_game_potions_deduped_%keys_1%~ = 1
-    END
-
-    //Get failure rate per potion
-    OUTER_SET ~potion_failure~ = 5
-
-
-    //define the list data
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~potion_list_data~
+        ~new_potions_items_categories~
     BEGIN
-
-        ~%keys_7%_0_%keys_0%~,
-        ~%keys_1%~,
-        ~%keys_2%~,
-        ~%keys_3%~,
-        ~%keys_4%~,
-        ~%keys_5%~,
-        ~%potion_price%~,
-        ~%keys_6%~,
-        ~%keys_7%~,
-        ~%potion_failure%~,
+        ~%cat_keys_1%_%cat_keys_2%_0_%cat_value%~,
+        ~%value%~,
+        ~%cat_keys_1%~,
+        ~%cat_keys_2%~,
+        ~%cat_keys_3%~,
         ~%potion_name%~
-            => ~%value%~
-    END
+            =>
+        ~%cat_value%~
+    END //define array
 
-END
+
+    //Expand data for processing
+    ACTION_PHP_EACH ~potion_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        ACTION_IF (~%cat_keys_0%~ STRING_EQUAL ~%keys_1%~) THEN  //if the potion code is a match
+        BEGIN
+            //Get failure rate per potion
+            OUTER_SET ~potion_failure~ = 5
+
+            //define the list data
+            ACTION_DEFINE_ASSOCIATIVE_ARRAY
+                ~potion_list_data~
+            BEGIN
+                ~%keys_7%_0_%keys_0%~,
+                ~%keys_1%~,
+                ~%keys_2%~,
+                ~%keys_3%~,
+                ~%keys_4%~,
+                ~%keys_5%~,
+                ~%potion_price%~,
+                ~%keys_6%~,
+                ~%cat_keys_1%~,
+                ~%potion_failure%~,
+                ~%potion_name%~
+                    =>
+                ~%value%~
+            END //define array
+        END //if matches
+    END //loop ~potion_list~
+END //loop
 
 
 
@@ -129,8 +137,9 @@ ACTION_PHP_EACH ~new_potions_items_categories~
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Category:              `%keys_2%`
-            Original spell Level:  `%keys_3%`
-            Potion Name:           `%keys_4%`
+            SubCategory:           `%keys_3%`
+            Original spell Level:  `%keys_4%`
+            Potion Name:           `%keys_5%`
             Value:                 `%value%`~
     END
 */
