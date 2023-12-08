@@ -47,7 +47,7 @@ APPEND_OUTER -
     ~~~~~
 
 EXTEND_TOP ~BZMSCAK~
-    bz_potion_category_menu //state number(s)
+    bz_potion_main_menu //state number(s)
         IF ~~
         THEN
             REPLY ~%category%~
