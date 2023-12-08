@@ -45,15 +45,15 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         ****************/
         //copy inventory BAM
         COPY
-            ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/%keys_10%~
-            ~override/%keys_11%.BAM~
+            ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/%keys_11%~
+            ~override/%keys_12%.BAM~
 
         //copy description BAM
-        ACTION_IF NOT FILE_EXISTS ~./override/%keys_12%.BAM~
+        ACTION_IF NOT FILE_EXISTS ~./override/%keys_13%.BAM~
         THEN BEGIN
             COPY
-                ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/%keys_12%.BAM~
-                ~override/%keys_12%.BAM~
+                ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/%keys_13%.BAM~
+                ~override/%keys_13%.BAM~
         END
         /*********************
         *   END: Copy BAMs   *
@@ -66,15 +66,15 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         ********************************/
         LAUNCH_ACTION_FUNCTION ~fn_bz_read_spell_header_for_potion~
             INT_VAR
-                cast_at_level       = ~%keys_8%~    //caster level to search on; read headers looking a header with this cast at min level
+                cast_at_level       = ~%keys_9%~    //caster level to search on; read headers looking a header with this cast at min level
             STR_VAR
-                spell               = ~%keys_7%~    //spell RESREF to read from
-                duration_opcode     = ~%keys_14%~   //opcode of the effect blocks to search to get the duration from
-                duration_offset     = ~%keys_15%~   //offset within the header's effect matching opcode to read from
-                magnitude_opcode    = ~%keys_16%~   //opcode of the effect blocks to search to get the magnitude from
-                magnitude_offset    = ~%keys_17%~   //offset within the header's effect matching opcode to read from
-                magnitude2_opcode   = ~%keys_18%~   //opcode of the effect blocks to search to get the magnitude2 from
-                magnitude2_offset   = ~%keys_19%~   //offset within the header's effect matching opcode to read from
+                spell               = ~%keys_8%~    //spell RESREF to read from
+                duration_opcode     = ~%keys_15%~   //opcode of the effect blocks to search to get the duration from
+                duration_offset     = ~%keys_16%~   //offset within the header's effect matching opcode to read from
+                magnitude_opcode    = ~%keys_17%~   //opcode of the effect blocks to search to get the magnitude from
+                magnitude_offset    = ~%keys_18%~   //offset within the header's effect matching opcode to read from
+                magnitude2_opcode   = ~%keys_19%~   //opcode of the effect blocks to search to get the magnitude2 from
+                magnitude2_offset   = ~%keys_20%~   //offset within the header's effect matching opcode to read from
             RET
                 spl_duration = ~duration~
                 spl_magnitude = ~magnitude~
@@ -87,12 +87,12 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         END
 
         //Exception cases where the description's magnitude doesn't quite square with the above method
-        ACTION_MATCH ~%keys_10%~
+        ACTION_MATCH ~%keys_11~
         WITH
             ~snilloc's-snowball-swarm.BAM~
-                BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_snilloc~ INT_VAR cast_at_level = ~%keys_8%~ STR_VAR spell = ~%keys_7%~ RET spl_magnitude = ~magnitude~ END END
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_snilloc~ INT_VAR cast_at_level = ~%keys_9%~ STR_VAR spell = ~%keys_8%~ RET spl_magnitude = ~magnitude~ END END
             ~fly.BAM~
-                BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_fly~ INT_VAR cast_at_level = ~%keys_8%~ STR_VAR spell = ~%keys_7%~ RET spl_magnitude = ~magnitude~ END END
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_fly~ INT_VAR cast_at_level = ~%keys_9%~ STR_VAR spell = ~%keys_8%~ RET spl_magnitude = ~magnitude~ END END
             DEFAULT
         END
         /******************************
@@ -175,8 +175,8 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     [X] Righteous Magic
         */
 
-        OUTER_SPRINT identified_name (AT "keys_5")
-        OUTER_SPRINT identified_description (AT "keys_6")
+        OUTER_SPRINT identified_name (AT "keys_6")
+        OUTER_SPRINT identified_description (AT "keys_7")
 
         OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%identified_name%~)
         OUTER_SET identified_description_STRREF = RESOLVE_STR_REF(~%identified_description%~)
@@ -193,7 +193,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         BEGIN
             LAUNCH_ACTION_FUNCTION fn_bz_lookup_costs_potion
                 INT_VAR
-                    tier = ~%keys_9%~
+                    tier = ~%keys_10%~
                 RET
                     potion_cost = cost
                     potion_lore = lore
@@ -217,13 +217,13 @@ ACTION_PHP_EACH ~new_potions_spells_items~
                     ability_target_count = spl_abil_target_count            //targets affected
                     transfer_effects_count = spl_transfer_effects_count     //number of affects being added
                 STR_VAR
-                    spell = ~%keys_7%~                              //original spell RESREF tha was read from
+                    spell = ~%keys_8%~                              //original spell RESREF tha was read from
                     item  = ~%keys_0%~                              //item RESREF to write to
-                    icon_inventory = ~%keys_11%~                    //BAM RESREF to write for inventory
-                    icon_description = ~%keys_12%~                  //BAM RESREF to write for description
+                    icon_inventory = ~%keys_12%~                    //BAM RESREF to write for inventory
+                    icon_description = ~%keys_13%~                  //BAM RESREF to write for description
                     bin_effects_copied = ~%spl_transfer_effects%~   //copied binary of effects read from spell
-                    target_type = ~%keys_4%~                        //Type of target for ability
-                    usability_override = ~%keys_13%~                //for some weird "cannot be used by lawful" spells
+                    target_type = ~%keys_5%~                        //Type of target for ability
+                    usability_override = ~%keys_14%~                //for some weird "cannot be used by lawful" spells
             END
         END
         /****************************
@@ -235,7 +235,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
         /**************************
         *    BEGIN: ITM Patches   *
         **************************/
-        ACTION_MATCH ~%keys_10%~
+        ACTION_MATCH ~%keys_11%~
         WITH
             ~bless.BAM~ ~chant.BAM~ ~resist-fear.BAM~ ~strength-of-one.BAM~ ~recitation.BAM~ ~ghostwalk.BAM~
                 BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_remove_projectile~ STR_VAR item = ~%keys_0%~ END END
@@ -256,7 +256,7 @@ ACTION_PHP_EACH ~new_potions_spells_items~
             ~wind-shots.BAM~
                 BEGIN
                     LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END
-                    LAUNCH_ACTION_FUNCTION ~fn_patch_replace_ranged_hit_eff_resref~ STR_VAR item = ~%keys_0%~ eff_resref = ~%keys_7%~ END
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_replace_ranged_hit_eff_resref~ STR_VAR item = ~%keys_0%~ eff_resref = ~%keys_8%~ END
                 END
             ~turning-weapon.BAM~
                 BEGIN

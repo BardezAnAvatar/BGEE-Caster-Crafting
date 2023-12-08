@@ -26,7 +26,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~new_potions_items_categories~
     BEGIN
-        ~%keys_2%_%keys_3%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_3%~, ~%potion_name%~ => ~%keys_0%~
+        ~%keys_2%_%keys_4%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_4%~, ~%potion_name%~ => ~%keys_0%~
     END
 END //iterating through new potions
 
