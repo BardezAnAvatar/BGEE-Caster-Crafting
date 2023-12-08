@@ -30,7 +30,7 @@ ACTION_PHP_EACH ~new_potions_items~
 AS ~cat_keys~ => ~cat_value~
 BEGIN
 
-    ACTION_PHP_EACH ~new_potions_spells_recipes~
+    ACTION_PHP_EACH ~new_potions_recipes~
     AS ~keys~ => ~value~
     BEGIN
         ACTION_IF (~%cat_keys_0%~ STRING_EQUAL ~%keys_1%~) THEN  //if the potion code is a match

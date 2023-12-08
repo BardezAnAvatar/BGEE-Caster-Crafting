@@ -4,20 +4,20 @@
 
 PRINT ~DEBUG: Include Core New Potion Recipes~
 INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/new_potions_items.tph~
-INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/new_potions_spells_recipes.tph~
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/new_potions_recipes.tph~
 
 ACTION_IF (%bz_iwdification_installed%)
 BEGIN
     PRINT ~DEBUG: Include IWD-ification New Potion Recipes~
     INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/new_potions_items.tph~
-    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/new_potions_spells_recipes.tph~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/new_potions_recipes.tph~
 END
 
 ACTION_IF (%bz_OlvynSpells_installed%)
 BEGIN
     PRINT ~DEBUG: Include OlvynSpells New Potion Recipes~
     INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/new_potions_items.tph~
-    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/new_potions_spells_recipes.tph~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/new_potions_recipes.tph~
 END
 
 //Make an associative array of the potions to their category and their spell level for ordering (so I know which potions go in which categories for navigating menu)
