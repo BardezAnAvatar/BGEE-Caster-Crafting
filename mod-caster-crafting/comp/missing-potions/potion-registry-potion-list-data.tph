@@ -1,6 +1,6 @@
 /***************************************************************************************
 *   This file will iterate through the potion registry for "missing" potions derived   *
-*       from spells and create an associative array of `potion_list_data` used to      *
+*       from spells and create an associative array of `potion_recipe_data` used to    *
 *       emit dialog for crafting at a later component stage.                           *
 ***************************************************************************************/
 //includes
@@ -8,7 +8,7 @@ INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-potion.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
 
 /*
-    OUTPUT: ~potion_list_data~
+    OUTPUT: ~potion_recipe_data~
 
     [Sortable Unique Key]   // 0
     [Potion Item Code]      // 1
@@ -53,7 +53,7 @@ BEGIN
 
             //Emit the associative array
             ACTION_DEFINE_ASSOCIATIVE_ARRAY
-                ~potion_list_data~
+                ~potion_recipe_data~
             BEGIN
 
                 ~%cat_keys_2%_%cat_keys_4%_%cat_keys_0%_%keys_0%~,  //unique key
@@ -69,7 +69,7 @@ BEGIN
                 ~%identified_name%~     //potion name
                     => ~%cat_keys_0%~
 
-            END //potion_list_data output
+            END //potion_recipe_data output
         END //found a recipe matching a potion
     END //iterating through new potion recipes
 END //iterating through new potions
@@ -77,17 +77,17 @@ END //iterating through new potions
 
 
 //Sort the indicies (on first key)
-ACTION_SORT_ARRAY_INDICES ~potion_list_data~
+ACTION_SORT_ARRAY_INDICES ~potion_recipe_data~
 
 
 
 /* DEBUG */
 /*
-ACTION_PHP_EACH ~potion_list_data~
+ACTION_PHP_EACH ~potion_recipe_data~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: potion_list_data:
+        PRINT ~DEBUG: potion_recipe_data:
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Required Caster Level: `%keys_2%`

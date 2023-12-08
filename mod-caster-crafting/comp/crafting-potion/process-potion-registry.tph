@@ -4,7 +4,7 @@
 ********************************************************************************/
 
 /*
-    OUTPUT: ~potion_list_data~
+    OUTPUT: ~potion_recipe_data~
 
     [Unique Key]            // 0
     [Potion Item Code]      // 1
@@ -85,7 +85,7 @@ BEGIN
 
             //define the list data
             ACTION_DEFINE_ASSOCIATIVE_ARRAY
-                ~potion_list_data~
+                ~potion_recipe_data~
             BEGIN
                 ~%keys_7%_0_%keys_0%~,
                 ~%keys_1%~,
@@ -109,17 +109,17 @@ END //loop
 
 //Sort the indicies (on first key)
 ACTION_SORT_ARRAY_INDICES ~new_potions_items_categories~
-ACTION_SORT_ARRAY_INDICES ~potion_list_data~
+ACTION_SORT_ARRAY_INDICES ~potion_recipe_data~
 
 
 
 /* DEBUG */
 /*
-ACTION_PHP_EACH ~potion_list_data~
+ACTION_PHP_EACH ~potion_recipe_data~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: potion_list_data:
+        PRINT ~DEBUG: potion_recipe_data:
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Required Caster Level: `%keys_2%`

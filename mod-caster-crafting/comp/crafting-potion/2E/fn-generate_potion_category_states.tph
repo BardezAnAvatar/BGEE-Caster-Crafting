@@ -44,7 +44,7 @@ APPEND ~BZMSCAK~
                         ~~~~~
 
                     //Loop through recipes list for formulae transitions
-                    ACTION_PHP_EACH ~potion_list_data~
+                    ACTION_PHP_EACH ~potion_recipe_data~
                         AS ~data_keys~ => ~_val~
                         BEGIN
                             //if the potion code matches
@@ -252,7 +252,7 @@ StartCutScene("BZCTPOTN")~
                                 ********************************************/
 
                             END //we match the current potion from de-duped list
-                        END //loop through `potion_list_data`
+                        END //loop through `potion_recipe_data`
 
                     //Final transition options
                     APPEND_OUTER -

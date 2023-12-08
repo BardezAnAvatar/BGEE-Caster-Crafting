@@ -1,10 +1,10 @@
-/*********************************************************************
-*   This file will iterate over the potion_list_data array and add   *
-*       appropriate transitions and menus to the dialog file.        *
-*                                                                    *
-*   Preconditions:                                                   *
-*       Array `potion_list_data` exists and is populated             *
-*********************************************************************/
+/***********************************************************************
+*   This file will iterate over the potion_recipe_data array and add   *
+*       appropriate transitions and menus to the dialog file.          *
+*                                                                      *
+*   Preconditions:                                                     *
+*       Array `potion_recipe_data` exists and is populated             *
+***********************************************************************/
 
 
 COPY -
