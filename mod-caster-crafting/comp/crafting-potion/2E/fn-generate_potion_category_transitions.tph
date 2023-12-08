@@ -11,7 +11,7 @@ DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
             ~~~~~
 
 EXTEND_TOP ~BZMSCAK~
-    ~bz_potion_brew_%category_lower%~ //state number(s)
+    ~bz_potion_%category_lower%~ //state number(s)
             ~~~~~
 
         //isolate the unique potion entries; specific potions, ignoring spells and thus de-duplicating
@@ -31,7 +31,7 @@ EXTEND_TOP ~BZMSCAK~
         IF ~~
         THEN
             REPLY ~%transition_response%~
-            GOTO ~bz_potion_brew_%category_lower%_%value%~
+            GOTO ~bz_potion_%category_lower%_%value%~
                         ~~~~~
                 END //comparison
             END //iterate through categories
@@ -47,11 +47,11 @@ APPEND_OUTER -
     ~~~~~
 
 EXTEND_TOP ~BZMSCAK~
-    bz_potion_brew_category_menu //state number(s)
+    bz_potion_category_menu //state number(s)
         IF ~~
         THEN
             REPLY ~%category%~
-            GOTO bz_potion_brew_%category_lower%
+            GOTO bz_potion_%category_lower%
 END
 
     ~~~~~

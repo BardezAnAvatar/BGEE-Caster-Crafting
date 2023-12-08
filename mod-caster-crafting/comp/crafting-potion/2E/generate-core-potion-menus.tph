@@ -11,7 +11,7 @@ COPY -
     ~CorePotions/BZMSCAK.D~
     ~CorePotions/BZMSCAK.D~
         //Patches
-        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/DLG/core-potions.d~
+        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/DLG/potion_categories.d~
 
 
 

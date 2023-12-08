@@ -8,7 +8,7 @@ Class(MYSELF, CLERIC_ALL)
 Class(MYSELF, DRUID_ALL)
 LevelGT(MYSELF, 6)~
                 THEN REPLY @30010 //Brew a potion
-                    GOTO bz_potion_brew_category_menu
+                    GOTO bz_potion_category_menu
 
             //Scribe scroll: Mages
             IF ~!Class(MYSELF, CLERIC_ALL)
@@ -16,7 +16,7 @@ LevelGT(MYSELF, 6)~
 Class(MYSELF, MAGE_ALL)
 LevelGT(MYSELF, 8)~
                 THEN REPLY @30010 //Brew a potion
-                    GOTO bz_potion_brew_category_menu
+                    GOTO bz_potion_category_menu
 
             //Scribe scroll: Bard
             IF ~!Class(MYSELF, CLERIC_ALL)
@@ -25,7 +25,7 @@ LevelGT(MYSELF, 8)~
 Class(MYSELF, BARD_ALL)
 LevelGT(MYSELF, 9)~
                 THEN REPLY @30010 //Brew a potion
-                    GOTO bz_potion_brew_category_menu
+                    GOTO bz_potion_category_menu
 
             //Scribe scroll: Ranger
             IF ~!Class(MYSELF, CLERIC_ALL)
@@ -35,7 +35,7 @@ LevelGT(MYSELF, 9)~
 Class(MYSELF, RANGER_ALL)
 LevelGT(MYSELF, 11)~
                 THEN REPLY @30010 //Brew a potion
-                    GOTO bz_potion_brew_category_menu
+                    GOTO bz_potion_category_menu
 
             //Scribe scroll: Paladin
             IF ~!Class(MYSELF, CLERIC_ALL)
@@ -46,6 +46,6 @@ LevelGT(MYSELF, 11)~
 Class(MYSELF, PALADIN_ALL)
 LevelGT(MYSELF, 14)~
                 THEN REPLY @30010 //Brew a potion
-                    GOTO bz_potion_brew_category_menu
+                    GOTO bz_potion_category_menu
 
 END
