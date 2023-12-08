@@ -6,7 +6,9 @@ DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_states~
         ~category~ = ~~ //lower-cast category name to add transitions to
     BEGIN
 
-<<<<<<<< temp/transitions_and_states.D
+        OUTER_TEXT_SPRINT temp_file_name = ~temp/transitions_and_states_%category%.D~
+
+<<<<<<<< %temp_file_name%
 
 >>>>>>>>
 
@@ -158,7 +160,7 @@ OR(%i%)
                                 OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                                 APPEND_OUTER -
-                                    ~temp/transitions_and_states.D~
+                                    ~%temp_file_name%~
                                     ~~~~~
     IF ~~
     THEN BEGIN ~bz_potion_brew_%data_keys_0%_valid~
@@ -280,7 +282,7 @@ StartCutScene("BZCTPOTN")~
 COPY -
     ~CorePotions/BZMSCAK.D~
     ~CorePotions/BZMSCAK.D~
-        APPEND_FILE TEXT ~temp/transitions_and_states.D~
+        APPEND_FILE TEXT ~%temp_file_name%~
 
 APPEND_OUTER -
     ~CorePotions/BZMSCAK.D~
