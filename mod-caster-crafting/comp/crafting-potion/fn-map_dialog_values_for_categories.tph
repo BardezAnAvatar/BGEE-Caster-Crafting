@@ -1,0 +1,354 @@
+/*************************************************************************************************************
+*   This function will isolate potion categories and subcategories into an array that can be iterated over   *
+*************************************************************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-map_dialog_values_for_categories~
+BEGIN
+    //Expand data for processing
+    ACTION_PHP_EACH ~existing_potions_categories~
+    AS ~cat_keys~ => ~cat_value~
+    BEGIN
+        //Isolate a list of categories/subcats
+        ACTION_IF (NOT VARIABLE_IS_SET ~bz_cat_%cat_keys_2%_sub_%cat_keys_3%~) THEN
+        BEGIN
+        END
+            //values for category
+            ACTION_MATCH ~%cat_keys_2%~
+            WITH
+                ~Bomb~
+                BEGIN
+                    OUTER_SET index = 0
+                    OUTER_SPRINT ~category~ @30060
+                    OUTER_TEXT_SPRINT ~cat_code~ ~bomb~
+                END
+                ~Cure~
+                BEGIN
+                    OUTER_SET index = 1
+                    OUTER_SPRINT ~category~ @30061
+                    OUTER_TEXT_SPRINT ~cat_code~ ~cure~
+                END
+                ~Defense~
+                BEGIN
+                    OUTER_SET index = 2
+                    OUTER_SPRINT ~category~ @30062
+                    OUTER_TEXT_SPRINT ~cat_code~ ~defense~
+                END
+                ~Offense~
+                BEGIN
+                    OUTER_SET index = 3
+                    OUTER_SPRINT ~category~ @30063
+                    OUTER_TEXT_SPRINT ~cat_code~ ~offense~
+                END
+                ~Enhancement~
+                BEGIN
+                    OUTER_SET index = 4
+                    OUTER_SPRINT ~category~ @30064
+                    OUTER_TEXT_SPRINT ~cat_code~ ~enhancement~
+                END
+                DEFAULT
+                    OUTER_SET index = "-1"
+            END //match statement
+
+
+            ACTION_IF (index > "-1") AND (NOT VARIABLE_IS_SET ~bz_cat_%cat_keys_2%~) THEN
+            BEGIN
+                ACTION_DEFINE_ASSOCIATIVE_ARRAY ~potion_category_list~
+                BEGIN
+                    ~%index%~, ~%cat_keys_2%~, ~%cat_code%~, ~%category%~ => ~%cat_code%_%index%~
+                END
+            END //category var not set and index >= 0
+            OUTER_SET ~bz_cat_%cat_keys_2%~ = 1
+
+
+            //values for sub-category
+            ACTION_MATCH ~%cat_keys_3%~
+            WITH
+                ~Damage~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~00~
+                    OUTER_SPRINT ~subcategory~ @30080
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~damage~
+                END
+                ~Lower Defenses~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~01~
+                    OUTER_SPRINT ~subcategory~ @30081
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~lower_defense~
+                END
+                ~Restorative~ WHEN (~%cat_keys_2%~ STRING_EQUAL ~Bomb~)
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~02~
+                    OUTER_SPRINT ~subcategory~ @30082
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~restorative~
+                END
+                ~Restrictive~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~03~
+                    OUTER_SPRINT ~subcategory~ @30083
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~restrictive~
+                END
+                ~Status Attack~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~04~
+                    OUTER_SPRINT ~subcategory~ @30084
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~status_attack~
+                END
+                ~Utility~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~05~
+                    OUTER_SPRINT ~subcategory~ @30085
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~utility~
+                END
+
+
+
+                ~Healing~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~00~
+                    OUTER_SPRINT ~subcategory~ @30086
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~healing~
+                END
+                ~Regeneration~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~01~
+                    OUTER_SPRINT ~subcategory~ @30087
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~regeneration~
+                END
+                ~Restorative~ WHEN (~%cat_keys_2%~ STRING_EQUAL ~Cure~)
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~02~
+                    OUTER_SPRINT ~subcategory~ @30088
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~restorative~
+                END
+
+
+
+                ~Armor~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~00~
+                    OUTER_SPRINT ~subcategory~ @30089
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~armor~
+                END
+                ~Avoidance~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~01~
+                    OUTER_SPRINT ~subcategory~ @30090
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~avoidance~
+                END
+                ~Damage Resistance~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~02~
+                    OUTER_SPRINT ~subcategory~ @30091
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~damage_resistance~
+                END
+                ~Damaging Shield~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~03~
+                    OUTER_SPRINT ~subcategory~ @30092
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~damaging_shield~
+                END
+                ~Energy Resistance~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~04~
+                    OUTER_SPRINT ~subcategory~ @30093
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~energy_resistance~
+                END
+                ~Magic Resistance~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~05~
+                    OUTER_SPRINT ~subcategory~ @30094
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~magic_resistance~
+                END
+                ~Mental Defense~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~06~
+                    OUTER_SPRINT ~subcategory~ @30095
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~mental_defense~
+                END
+                ~Physical Immunity~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~07~
+                    OUTER_SPRINT ~subcategory~ @30096
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~physical_immunity~
+                END
+                ~Protection~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~08~
+                    OUTER_SPRINT ~subcategory~ @30097
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~protection~
+                END
+                ~Spell Defense~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~09~
+                    OUTER_SPRINT ~subcategory~ @30098
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~spell_defense~
+                END
+                ~Spell Immunity~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~10~
+                    OUTER_SPRINT ~subcategory~ @30099
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~spell_immunity~
+                END
+                ~Status Immunity~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~11~
+                    OUTER_SPRINT ~subcategory~ @30100
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~status_immunity~
+                END
+
+
+
+                ~Casting Boost~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~00~
+                    OUTER_SPRINT ~subcategory~ @30101
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~casting_boost~
+                END
+                ~Detection~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~01~
+                    OUTER_SPRINT ~subcategory~ @30102
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~detection~
+                END
+                ~Invisibility~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~02~
+                    OUTER_SPRINT ~subcategory~ @30103
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~invisibility~
+                END
+                ~Movement~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~03~
+                    OUTER_SPRINT ~subcategory~ @30104
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~movement~
+                END
+                ~Recall~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~04~
+                    OUTER_SPRINT ~subcategory~ @30105
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~recall~
+                END
+                ~Skill Boost~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~05~
+                    OUTER_SPRINT ~subcategory~ @30106
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~skill_boost~
+                END
+                ~Stat Boost~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~06~
+                    OUTER_SPRINT ~subcategory~ @30107
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~stat_boost~
+                END
+                ~Stat Boost: Strength~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~07~
+                    OUTER_SPRINT ~subcategory~ @30108
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~stat_boost_strength~
+                END
+                ~Stat Increase~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~08~
+                    OUTER_SPRINT ~subcategory~ @30109
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~stat_increase~
+                END
+                ~Stat Transfer~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~09~
+                    OUTER_SPRINT ~subcategory~ @30110
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~stat_transfer~
+                END
+
+
+
+                ~Attack Bonus~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~00~
+                    OUTER_SPRINT ~subcategory~ @30111
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~attack_bonus~
+                END
+                ~Damage Boost~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~01~
+                    OUTER_SPRINT ~subcategory~ @30112
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~damage_boost~
+                END
+                ~Extra Effects~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~02~
+                    OUTER_SPRINT ~subcategory~ @30113
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~extra_effects~
+                END
+                ~Haste~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~03~
+                    OUTER_SPRINT ~subcategory~ @30114
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~Haste~
+                END
+                ~Magic Weapon~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~04~
+                    OUTER_SPRINT ~subcategory~ @30115
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~magic_weapon~
+                END
+                ~Mental Attack~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~05~
+                    OUTER_SPRINT ~subcategory~ @30116
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~mental_attack~
+                END
+
+
+
+                ~Fatal~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~00~
+                    OUTER_SPRINT ~subcategory~ @30117
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~fatal~
+                END
+                ~Intoxication~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~01~
+                    OUTER_SPRINT ~subcategory~ @30118
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~intoxication~
+                END
+                ~Slow~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~02~
+                    OUTER_SPRINT ~subcategory~ @30119
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~slow~
+                END
+                ~Tradeoff~
+                BEGIN
+                    OUTER_TEXT_SPRINT index2 ~03~
+                    OUTER_SPRINT ~subcategory~ @30120
+                    OUTER_TEXT_SPRINT ~cat_sub_code~ ~tradeoff~
+                END
+
+
+
+                DEFAULT
+                    OUTER_SET index2 = "-1"
+            END //match statement
+
+
+
+            ACTION_IF (index2 > "-1") AND (NOT VARIABLE_IS_SET ~bz_cat_%cat_keys_2%_sub_%cat_keys_3%~) THEN
+            BEGIN
+                ACTION_DEFINE_ASSOCIATIVE_ARRAY ~potion_subcategory_list~
+                BEGIN
+                    ~%index%-%index2%~,
+                    ~%cat_keys_2%~, ~%cat_keys_3%~,
+                    ~%cat_code%~, ~%cat_sub_code%~,
+                    ~%category%~, ~%subcategory%~,
+                    ~%index%~, ~%index2%~
+                        =>
+                    ~%cat_code%-%index%-%cat_sub_code%-%index2%~
+                END
+            END //subcategory var not set and index >= 0
+            OUTER_SET ~bz_cat_%cat_keys_2%_sub_%cat_keys_3%~ = 1
+
+
+
+        END //subcategory var not set
+    END //foreach ~existing_potions_categories~
+END //function

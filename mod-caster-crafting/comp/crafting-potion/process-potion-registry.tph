@@ -33,6 +33,8 @@
 
 PRINT ~Include Base Game Existing Potion Recipes~
 INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potion_recipes.tph~
+INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/fn-map_dialog_values_for_categories.tph~
+
 
 ACTION_IF (%bz_iwdification_installed%)
 BEGIN
@@ -60,6 +62,7 @@ BEGIN
 
     ACTION_GET_STRREF (%identified_name_STRREF%) ~potion_name~
 
+    //categories list
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~new_potions_items_categories~
     BEGIN
@@ -106,10 +109,17 @@ BEGIN
 END //loop
 
 
+//Calculate a categories array
+LAUNCH_ACTION_FUNCTION ~fn-map_dialog_values_for_categories~
+END
+
+
 
 //Sort the indicies (on first key)
 ACTION_SORT_ARRAY_INDICES ~new_potions_items_categories~
 ACTION_SORT_ARRAY_INDICES ~potion_recipe_data~
+ACTION_SORT_ARRAY_INDICES ~potion_category_list~
+ACTION_SORT_ARRAY_INDICES ~potion_subcategory_list~
 
 
 
@@ -147,6 +157,43 @@ ACTION_PHP_EACH ~new_potions_items_categories~
             SubCategory:           `%keys_3%`
             Original spell Level:  `%keys_4%`
             Potion Name:           `%keys_5%`
+            Value:                 `%value%`~
+    END
+*/
+
+
+/* DEBUG */
+/*
+ACTION_PHP_EACH ~potion_category_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: new_potions_items_categories:
+            Unique Key:            `%keys_0%`
+            Category:              `%keys_1%`
+            Category Code:         `%keys_2%`
+            Category Name (TRA):   `%keys_3%`
+            Value:                 `%value%`~
+    END
+*/
+
+
+/* DEBUG */
+/*
+ACTION_PHP_EACH ~potion_subcategory_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: new_potions_items_categories:
+            Unique Key:            `%keys_0%`
+            Category:              `%keys_1%`
+            SubCategory:           `%keys_2%`
+            Category Code:         `%keys_3%`
+            SubCategory Code:      `%keys_4%`
+            Category Name (TRA):   `%keys_5%`
+            Category Name (TRA):   `%keys_6%`
+            Category Index:        `%keys_7%`
+            SubCategory Index:     `%keys_8%`
             Value:                 `%value%`~
     END
 */
