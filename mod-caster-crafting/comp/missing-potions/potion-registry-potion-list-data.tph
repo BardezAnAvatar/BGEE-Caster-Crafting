@@ -66,6 +66,7 @@ BEGIN
                 ~%recipe_total_gold%~,  //gold cost
                 ~%potion_time%~,        //time cost (hours)
                 ~%cat_keys_2%~,         //Category
+                ~%cat_keys_3%~,         //SubCategory
                 ~%fail_percent%~,       //failure rate
                 ~%identified_name%~     //potion name
                     => ~%cat_keys_0%~
