@@ -15,7 +15,7 @@ APPEND_OUTER - ~Potions/CategoryMenus.D~
     ~~~~~
 
 EXTEND_TOP ~BZMSCAK~
-    ~bz_potion_main_menu~ //state number(s)
+    ~bz-potion-main_menu~ //state number(s)
     ~~~~~
 
 //inject transitions for each category
@@ -27,7 +27,7 @@ BEGIN
         IF ~~
         THEN
             REPLY ~%keys_3%~
-            GOTO ~bz_potion_%keys_2%~
+            GOTO ~bz-potion-%keys_2%~
 
         ~~~~~
 END
@@ -56,7 +56,7 @@ BEGIN
     APPEND_OUTER - ~Potions/CategoryMenus.D~
         ~~~~~
     IF ~~
-    THEN BGEIN ~bz_potion_%keys_2%~
+    THEN BGEIN ~bz-potion-%keys_2%~
         SAY ~%keys_3%~
             //inject transitions to subcategory states
         ~~~~~
@@ -71,7 +71,7 @@ BEGIN
             IF ~~
             THEN
                 REPLY ~%subkeys_6%~
-                GOTO ~bz_potion_%keys_2%-%subkeys_4%~
+                GOTO ~bz-potion-%keys_2%-%subkeys_4%~
 
                 ~~~~~
         END //category matches
@@ -83,7 +83,7 @@ BEGIN
 
             IF ~~
             THEN REPLY @30025 // ~Pick another type of potion.~
-                GOTO bz_potion_category_menu
+                GOTO ~bz-potion-category_menu~
             IF ~~
             THEN REPLY @30020 //Pack up your alchemy station
                 EXIT
@@ -99,17 +99,17 @@ BEGIN
     APPEND_OUTER - ~Potions/CategoryMenus.D~
         ~~~~~
     IF ~~
-    THEN BGEIN ~bz_potion_%subkeys_3%-%subkeys_4%~
+    THEN BGEIN ~bz-potion-%subkeys_3%-%subkeys_4%~
         SAY @30043 // ~Which potion do you wish to brew?~
             //inject transitions to subcategory states
 
 
             IF ~~
             THEN REPLY @30022 // ~Pick another sub-category of potion.~
-                GOTO ~bz_potion_%subkeys_3%~
+                GOTO ~bz-potion-%subkeys_3%~
             IF ~~
             THEN REPLY @30025 // ~Pick another type of potion.~
-                GOTO ~bz_potion_main_menu~
+                GOTO ~bz-potion-main_menu~
             IF ~~
             THEN REPLY @30020 //Pack up your alchemy station
                 EXIT

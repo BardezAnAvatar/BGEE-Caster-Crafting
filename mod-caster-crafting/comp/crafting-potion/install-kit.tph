@@ -19,10 +19,10 @@ COPY
     ~Generated/BZMSCAK.d~
     ~./%MOD_FOLDER%/comp/crafting-potion/DLG/BZMSCAK.DEBUG.d~
 
-/*
+
 PRINT ~DEBUG: Pause for debugging~
 ACTION_READLN ~bogus~
-*/
+
 
 //compile the new dialog (with huge mutated edits)
 COMPILE ~Generated/BZMSCAK.d~
