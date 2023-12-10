@@ -10,7 +10,7 @@ INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
 /*
     OUTPUT: ~potion_recipe_data~
 
-    [Sortable Unique Key]   // 0
+    [Unique Key]            // 0
     [Potion Item Code]      // 1
     [Required Caster Level] // 2
     [Recipe]                // 3; these will be comma-delimited spell RESREFs
@@ -19,8 +19,9 @@ INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
     [Gold Cost]             // 6
     [Time Cost (hours)]     // 7
     [Category]              // 8
-    [Fail %]                // 9
-    [Potion Name]           // 10
+    [SubCategory]           // 9
+    [Fail %]                // 10
+    [Potion Name]           // 11
 */
 
 PRINT ~Generating an index of potion creation recipe data necessary for creation dialog~
