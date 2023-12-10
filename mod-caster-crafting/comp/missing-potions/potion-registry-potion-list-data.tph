@@ -56,7 +56,7 @@ BEGIN
                 ~potion_recipe_data~
             BEGIN
 
-                ~%cat_keys_2%_%cat_keys_4%_%cat_keys_0%_%keys_0%~,  //unique key
+                ~%cat_keys_2%-%cat_keys_4%-%cat_keys_0%-%keys_0%~,  //unique key
                 ~%cat_keys_0%~,         //resref
                 ~%keys_3%~,             //caster lvl required
                 ~%keys_2%~,             //spell resref(s)
