@@ -130,11 +130,12 @@ ACTION_SORT_ARRAY_INDICES ~potion_subcategory_list~
 
 /* DEBUG */
 /*
+PRINT ~DEBUG: potion_recipe_data:~
 ACTION_PHP_EACH ~potion_recipe_data~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: potion_recipe_data:
+        PRINT ~-Potion Recipe Record:
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Required Caster Level: `%keys_2%`
@@ -144,8 +145,9 @@ ACTION_PHP_EACH ~potion_recipe_data~
             Gold Cost:             `%keys_6%`
             Time Cost (hours):     `%keys_7%`
             Category:              `%keys_8%`
-            Fail %:                `%keys_9%`
-            Potion Name:           `%keys_10%~
+            SubCategory:           `%keys_9%`
+            Fail %:                `%keys_10%`
+            Potion Name:           `%keys_11%~
     END
 */
 
