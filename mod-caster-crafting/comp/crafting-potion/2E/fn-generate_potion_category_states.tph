@@ -149,8 +149,8 @@ OR(%i%)
                                 //END calculate times
 
 
-                                OUTER_SET ~bz_potion_failure_bounds_cursed~ = (99 - %data_keys_9%)     //use this for GT(X)
-                                OUTER_SET ~bz_potion_failure_bounds_success~ = (100 - %data_keys_9%)   //use this for LT(X)
+                                OUTER_SET ~bz_potion_failure_bounds_cursed~ = (99 - %data_keys_10%)     //use this for GT(X)
+                                OUTER_SET ~bz_potion_failure_bounds_success~ = (100 - %data_keys_10%)   //use this for LT(X)
 
                                 //build the transition string
                                 OUTER_SPRINT ~brew_transition_go~ @30026 //~Brew %potion_name% [spend %gold_cost% gold; %readable_time%; yield %quantity% vials]~
