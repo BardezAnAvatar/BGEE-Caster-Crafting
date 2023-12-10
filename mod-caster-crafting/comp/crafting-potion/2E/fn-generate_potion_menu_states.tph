@@ -83,7 +83,7 @@ APPEND ~BZMSCAK~
 
             IF ~~
             THEN REPLY @30025 // ~Pick another type of potion.~
-                GOTO ~bz-potion-category_menu~
+                GOTO ~bz-potion-main_menu~
             IF ~~
             THEN REPLY @30020 //Pack up your alchemy station
                 EXIT
