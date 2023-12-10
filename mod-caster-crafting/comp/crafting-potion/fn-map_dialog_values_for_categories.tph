@@ -2,6 +2,9 @@
 *   This function will isolate potion categories and subcategories into an array that can be iterated over   *
 *************************************************************************************************************/
 DEFINE_ACTION_FUNCTION ~fn-map_dialog_values_for_categories~
+RET_ARRAY
+    ~categories~
+    ~subcategories~
 BEGIN
     //Expand data for processing
     ACTION_PHP_EACH ~existing_potions_categories~
@@ -50,7 +53,7 @@ BEGIN
 
             ACTION_IF (index > "-1") AND (NOT VARIABLE_IS_SET ~bz_cat_%cat_keys_2%~) THEN
             BEGIN
-                ACTION_DEFINE_ASSOCIATIVE_ARRAY ~potion_category_list~
+                ACTION_DEFINE_ASSOCIATIVE_ARRAY ~categories~
                 BEGIN
                     ~%index%~, ~%cat_keys_2%~, ~%cat_code%~, ~%category%~ => ~%cat_code%_%index%~
                 END
@@ -333,7 +336,7 @@ BEGIN
 
             ACTION_IF (index2 > "-1") AND (NOT VARIABLE_IS_SET ~bz_cat_%cat_keys_2%_sub_%cat_keys_3%~) THEN
             BEGIN
-                ACTION_DEFINE_ASSOCIATIVE_ARRAY ~potion_subcategory_list~
+                ACTION_DEFINE_ASSOCIATIVE_ARRAY ~subcategories~
                 BEGIN
                     ~%index%-%index2%~,
                     ~%cat_keys_2%~, ~%cat_keys_3%~,

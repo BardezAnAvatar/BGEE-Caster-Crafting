@@ -111,6 +111,9 @@ END //loop
 
 //Calculate a categories array
 LAUNCH_ACTION_FUNCTION ~fn-map_dialog_values_for_categories~
+    RET_ARRAY
+    ~potion_category_list~ = ~categories~
+    ~potion_subcategory_list~ = ~subcategories~
 END
 
 
