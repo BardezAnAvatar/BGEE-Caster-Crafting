@@ -5,23 +5,24 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [resulting potion RESREF]                   // 0
         [Create Automatically]                      // 1
         [Category]                                  // 2
-        [Original Spell Level (for sorting/org.)    // 3
-        [Target Type]                               // 4
-        [TRA: Identified Name]                      // 5
-        [TRA: Identified Descripton]                // 6
-        [effect: source spell]                      // 7
-        [effect: Caster Level (NI: minimum level)]  // 8
-        [Cost: gold tier]                           // 9
-        [Icon: Source inventory BAM path]           // 10
-        [Icon: Destination inventory BAM RESREF]    // 11
-        [Icon: Description RESREF]                  // 12
-        [Unusability flags]                         // 13 special case for one or two potions; usually `~~`
-        [Opcode: Duration]                          // 14
-        [Offset: Duration]                          // 15
-        [Opcode: Magnitude]                         // 16
-        [Offset: Magnitude]                         // 17
-        [Opcode: Magnitude2]                        // 18
-        [Offset: Magnitude2]                        // 19
+        [SubCategory]                               // 3
+        [Original Spell Level (for sorting/org.)    // 4
+        [Target Type]                               // 5
+        [TRA: Identified Name]                      // 6
+        [TRA: Identified Descripton]                // 7
+        [effect: source spell]                      // 8
+        [effect: Caster Level (NI: minimum level)]  // 9
+        [Cost: gold tier]                           // 10
+        [Icon: Source inventory BAM path]           // 11
+        [Icon: Destination inventory BAM RESREF]    // 12
+        [Icon: Description RESREF]                  // 13
+        [Unusability flags]                         // 14 special case for one or two potions; usually `~~`
+        [Opcode: Duration]                          // 15
+        [Offset: Duration]                          // 16
+        [Opcode: Magnitude]                         // 17
+        [Offset: Magnitude]                         // 18
+        [Opcode: Magnitude2]                        // 19
+        [Offset: Magnitude2]                        // 20
         */
 
 
