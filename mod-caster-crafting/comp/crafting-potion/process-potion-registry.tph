@@ -168,11 +168,12 @@ ACTION_PHP_EACH ~potion_categories~
 
 /* DEBUG */
 
+PRINT ~DEBUG: potion_category_list:~
 ACTION_PHP_EACH ~potion_category_list~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: potion_category_list:
+        PRINT ~-Category Record:
             Unique Key:            `%keys_0%`
             Category:              `%keys_1%`
             Category Code:         `%keys_2%`
@@ -184,11 +185,12 @@ ACTION_PHP_EACH ~potion_category_list~
 
 /* DEBUG */
 
+PRINT ~DEBUG: potion_subcategory_list:~
 ACTION_PHP_EACH ~potion_subcategory_list~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: potion_subcategory_list:
+        PRINT ~-Subcategory Record:
             Unique Key:                 `%keys_0%`
             Category:                   `%keys_1%`
             SubCategory:                `%keys_2%`
