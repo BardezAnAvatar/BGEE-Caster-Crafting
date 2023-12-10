@@ -31,7 +31,7 @@ EXTEND_TOP ~BZMSCAK~
         IF ~~
         THEN
             REPLY ~%transition_response%~
-            GOTO ~bz-potion-%category_lower%_%value%~
+            GOTO ~bz-potion-%category_lower%-%value%~
                         ~~~~~
                 END //comparison
             END //iterate through categories

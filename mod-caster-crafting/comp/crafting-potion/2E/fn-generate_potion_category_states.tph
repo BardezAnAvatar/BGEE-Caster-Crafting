@@ -41,7 +41,7 @@ APPEND ~BZMSCAK~
                         ~CorePotions/BZMSCAK.D~
                         ~~~~~
     IF ~~
-    THEN BEGIN ~bz-potion-%category_lower%_%value%~
+    THEN BEGIN ~bz-potion-%category_lower%-%value%~
         SAY @30044 // ~Which formula do you wish to use?~
                         ~~~~~
 
@@ -202,7 +202,7 @@ StartCutScene("BZCTPOTN")~
 
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
-                GOTO ~bz-potion-%category_lower%_%value%~
+                GOTO ~bz-potion-%category_lower%-%value%~
             IF ~~
             THEN REPLY @30024 // ~Pick another potion.~
                 GOTO ~bz-potion-%category_lower%~
@@ -219,7 +219,7 @@ StartCutScene("BZCTPOTN")~
         SAY @30047 // ~You are of insufficient level for this formula.~
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
-                GOTO ~bz-potion-%category_lower%_%value%~
+                GOTO ~bz-potion-%category_lower%-%value%~
             IF ~~
             THEN REPLY @30024 // ~Pick another potion.~
                 GOTO ~bz-potion-%category_lower%~
@@ -236,7 +236,7 @@ StartCutScene("BZCTPOTN")~
         SAY @30048 // ~You do not have the spells for this formula memorized.~
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
-                GOTO ~bz-potion-%category_lower%_%value%~
+                GOTO ~bz-potion-%category_lower%-%value%~
             IF ~~
             THEN REPLY @30024 // ~Pick another potion.~
                 GOTO ~bz-potion-%category_lower%~
