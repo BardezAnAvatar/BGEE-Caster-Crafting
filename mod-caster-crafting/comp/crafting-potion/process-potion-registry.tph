@@ -32,6 +32,7 @@
 
 
 PRINT ~Include Base Game Existing Potion Recipes~
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potions.tph~
 INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potion_recipes.tph~
 INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/fn-map_dialog_values_for_categories.tph~
 
@@ -166,28 +167,28 @@ ACTION_PHP_EACH ~new_potions_items_categories~
 
 
 /* DEBUG */
-/*
+
 ACTION_PHP_EACH ~potion_category_list~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: new_potions_items_categories:
+        PRINT ~DEBUG: potion_category_list:
             Unique Key:            `%keys_0%`
             Category:              `%keys_1%`
             Category Code:         `%keys_2%`
             Category Name (TRA):   `%keys_3%`
             Value:                 `%value%`~
     END
-*/
+
 
 
 /* DEBUG */
-/*
+
 ACTION_PHP_EACH ~potion_subcategory_list~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: new_potions_items_categories:
+        PRINT ~DEBUG: potion_subcategory_list:
             Unique Key:                 `%keys_0%`
             Category:                   `%keys_1%`
             SubCategory:                `%keys_2%`
@@ -199,4 +200,4 @@ ACTION_PHP_EACH ~potion_subcategory_list~
             SubCategory Index:          `%keys_8%`
             Value:                      `%value%`~
     END
-*/
+
