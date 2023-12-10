@@ -67,7 +67,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~potion_categories~
     BEGIN
-        ~%cat_keys_1%_%cat_keys_2%_0_%cat_value%~,
+        ~%cat_keys_1%-%cat_keys_2%-0-%cat_value%~,
         ~%value%~,
         ~%cat_keys_1%~,
         ~%cat_keys_2%~,
@@ -91,7 +91,7 @@ BEGIN
             ACTION_DEFINE_ASSOCIATIVE_ARRAY
                 ~potion_recipe_data~
             BEGIN
-                ~%keys_7%_0_%keys_0%~,
+                ~%keys_7%-0-%keys_0%~,
                 ~%keys_1%~,
                 ~%keys_2%~,
                 ~%keys_3%~,
