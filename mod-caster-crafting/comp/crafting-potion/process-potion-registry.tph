@@ -20,7 +20,7 @@
     [Potion Name]           // 11
 
 
-    OUTPUT: ~new_potions_items_categories~
+    OUTPUT: ~potion_categories~
 
     [Sorting Key]               // 0
     [Potion Item RESREF]        // 1
@@ -65,7 +65,7 @@ BEGIN
 
     //categories list
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~new_potions_items_categories~
+        ~potion_categories~
     BEGIN
         ~%cat_keys_1%_%cat_keys_2%_0_%cat_value%~,
         ~%value%~,
@@ -120,7 +120,7 @@ END
 
 
 //Sort the indicies (on first key)
-ACTION_SORT_ARRAY_INDICES ~new_potions_items_categories~
+ACTION_SORT_ARRAY_INDICES ~potion_categories~
 ACTION_SORT_ARRAY_INDICES ~potion_recipe_data~
 ACTION_SORT_ARRAY_INDICES ~potion_category_list~
 ACTION_SORT_ARRAY_INDICES ~potion_subcategory_list~
@@ -150,11 +150,11 @@ ACTION_PHP_EACH ~potion_recipe_data~
 
 /* DEBUG */
 /*
-ACTION_PHP_EACH ~new_potions_items_categories~
+ACTION_PHP_EACH ~potion_categories~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: new_potions_items_categories:
+        PRINT ~DEBUG: potion_categories:
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Category:              `%keys_2%`

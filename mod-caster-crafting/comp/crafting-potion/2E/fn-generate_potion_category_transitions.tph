@@ -15,7 +15,7 @@ EXTEND_TOP ~BZMSCAK~
             ~~~~~
 
         //isolate the unique potion entries; specific potions, ignoring spells and thus de-duplicating
-        ACTION_PHP_EACH ~new_potions_items_categories~
+        ACTION_PHP_EACH ~potion_categories~
             AS ~keys~ => ~value~
             BEGIN
                 ACTION_IF (~%keys_2%~ STRING_EQUAL ~%category%~)
