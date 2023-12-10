@@ -185,15 +185,15 @@ ACTION_PHP_EACH ~potion_subcategory_list~
     BEGIN
         //Debugging Statements
         PRINT ~DEBUG: new_potions_items_categories:
-            Unique Key:            `%keys_0%`
-            Category:              `%keys_1%`
-            SubCategory:           `%keys_2%`
-            Category Code:         `%keys_3%`
-            SubCategory Code:      `%keys_4%`
-            Category Name (TRA):   `%keys_5%`
-            Category Name (TRA):   `%keys_6%`
-            Category Index:        `%keys_7%`
-            SubCategory Index:     `%keys_8%`
-            Value:                 `%value%`~
+            Unique Key:                 `%keys_0%`
+            Category:                   `%keys_1%`
+            SubCategory:                `%keys_2%`
+            Category Code:              `%keys_3%`
+            SubCategory Code:           `%keys_4%`
+            Category Name (TRA):        `%keys_5%`
+            Sub Category Name (TRA):    `%keys_6%`
+            Category Index:             `%keys_7%`
+            SubCategory Index:          `%keys_8%`
+            Value:                      `%value%`~
     END
 */

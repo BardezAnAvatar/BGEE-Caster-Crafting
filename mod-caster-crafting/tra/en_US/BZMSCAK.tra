@@ -10,7 +10,7 @@
 //Common Actions
 @30020 = ~Pack up your alchemy station.~
 @30021 = ~Go back to your alchemy station.~
-@30022 = ~Pick another spell circle.~
+@30022 = ~Pick another sub-category of potion.~
 @30023 = ~Pick another spell.~
 @30024 = ~Pick another potion.~
 @30025 = ~Pick another type of potion.~

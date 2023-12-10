@@ -6,20 +6,32 @@
 *       Array `potion_recipe_data` exists and is populated             *
 ***********************************************************************/
 
+//internal 'file' for category menus to append to
+<<<<<<<< Potions/CategoryMenus.D
+
+>>>>>>>>
+
+//Function includes
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_transitions.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_states.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_menu_states.tph~
+
+//Invoce the fn_generate_potion_menu_states Func.
+LAUNCH_ACTION_FUNCTION ~fn-generate_potion_menu_states~
+END
+
 
 COPY -
     ~CorePotions/BZMSCAK.D~
     ~CorePotions/BZMSCAK.D~
         //Patches
-        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/DLG/potion_categories.d~
+        APPEND_FILE TEXT ~Potions/CategoryMenus.D~
 
 
 
 /***************************************************
 *   Generate the potion transitions dynamicially   *
 ***************************************************/
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_transitions.tph~
-
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
 STR_VAR
     ~category~ = ~Bomb~
@@ -46,9 +58,6 @@ STR_VAR
 END
 
 
-
-
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_states.tph~
 
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
 STR_VAR
