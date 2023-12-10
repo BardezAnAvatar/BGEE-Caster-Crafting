@@ -21,7 +21,7 @@ ACTION_PHP_EACH ~new_potions_items~
 AS ~keys~ => ~value~
 BEGIN
 
-    OUTER_SPRINT potion_name (AT "keys_5")
+    OUTER_SPRINT potion_name (AT "keys_6")
 
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~new_potions_items_categories~
