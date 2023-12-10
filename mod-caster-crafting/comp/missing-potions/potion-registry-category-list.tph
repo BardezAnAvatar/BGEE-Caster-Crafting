@@ -10,8 +10,9 @@
     [Sorting Key]               // 0
     [Potion Item RESREF]        // 1
     [Category]                  // 2
-    [originating Spell level]   // 3
-    [Potion Name]               // 4
+    [SubCategory]               // 3
+    [originating Spell level]   // 4
+    [Potion Name]               // 5
 */
 
 PRINT ~Generating an index of new potions for creation dialog~
@@ -26,7 +27,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~potion_categories~
     BEGIN
-        ~%keys_2%_%keys_4%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_4%~, ~%potion_name%~ => ~%keys_0%~
+        ~%keys_2%_%keys_4%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~, ~%potion_name%~ => ~%keys_0%~
     END
 END //iterating through new potions
 
@@ -45,8 +46,9 @@ ACTION_PHP_EACH ~potion_categories~
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Category:              `%keys_2%`
-            Original spell Level:  `%keys_3%`
-            Potion Name:           `%keys_4%`
+            SubCategory:           `%keys_3%`
+            Original spell Level:  `%keys_4%`
+            Potion Name:           `%keys_5%`
             Value:                 `%value%`~
     END
 */
