@@ -7,7 +7,7 @@ RET_ARRAY
     ~subcategories~
 BEGIN
     //Expand data for processing
-    ACTION_PHP_EACH ~existing_potions_categories~
+    ACTION_PHP_EACH ~existing_potions~
     AS ~cat_keys~ => ~cat_value~
     BEGIN
         //Isolate a list of categories/subcats
@@ -352,5 +352,5 @@ BEGIN
 
 
         END //subcategory var not set
-    END //foreach ~existing_potions_categories~
+    END //foreach ~existing_potions~
 END //function

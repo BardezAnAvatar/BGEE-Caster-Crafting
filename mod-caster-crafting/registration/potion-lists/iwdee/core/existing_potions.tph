@@ -1,5 +1,5 @@
 /*
-    OUTPUT: ~existing_potions_categories~
+    OUTPUT: ~existing_potions~
 
     [UID]                       // 0
     [Category]                  // 1
@@ -10,7 +10,7 @@
     [Potion Item RESREF]        // value
 */
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~existing_potions_categories~
+    ~existing_potions~
     BEGIN
 
         ~POTN02~,           ~Defense~,      ~Energy Resistance~,    ~0~ => ~POTN02~     //Potion of Fire Resistance

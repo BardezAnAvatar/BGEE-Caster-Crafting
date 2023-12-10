@@ -51,7 +51,7 @@ END
 
 
 //Expand data for processing
-ACTION_PHP_EACH ~existing_potions_categories~
+ACTION_PHP_EACH ~existing_potions~
 AS ~cat_keys~ => ~cat_value~
 BEGIN
 
