@@ -10,7 +10,6 @@ BEGIN
         //Isolate a list of categories/subcats
         ACTION_IF (NOT VARIABLE_IS_SET ~bz_cat_%cat_keys_2%_sub_%cat_keys_3%~) THEN
         BEGIN
-        END
             //values for category
             ACTION_MATCH ~%cat_keys_2%~
             WITH
