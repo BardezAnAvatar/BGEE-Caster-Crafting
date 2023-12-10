@@ -91,7 +91,7 @@ BEGIN
             ACTION_DEFINE_ASSOCIATIVE_ARRAY
                 ~potion_recipe_data~
             BEGIN
-                ~%keys_7%-0-%keys_0%~,
+                ~%cat_keys_1%-0-%keys_0%~,
                 ~%keys_1%~,
                 ~%keys_2%~,
                 ~%keys_3%~,
@@ -100,6 +100,7 @@ BEGIN
                 ~%potion_price%~,
                 ~%keys_6%~,
                 ~%cat_keys_1%~,
+                ~%cat_keys_2%~,
                 ~%potion_failure%~,
                 ~%potion_name%~
                     =>
