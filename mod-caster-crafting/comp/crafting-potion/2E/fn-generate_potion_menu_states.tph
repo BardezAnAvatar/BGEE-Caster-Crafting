@@ -56,7 +56,7 @@ APPEND ~BZMSCAK~
         APPEND_OUTER - ~Potions/CategoryMenus.D~
             ~~~~~
     IF ~~
-    THEN BGEIN ~bz-potion-%keys_2%~
+    THEN BEGIN ~bz-potion-%keys_2%~
         SAY ~%keys_3%~
             //inject transitions to subcategory states
             ~~~~~
@@ -100,7 +100,7 @@ APPEND ~BZMSCAK~
         APPEND_OUTER - ~Potions/CategoryMenus.D~
             ~~~~~
     IF ~~
-    THEN BGEIN ~bz-potion-%subkeys_3%-%subkeys_4%~
+    THEN BEGIN ~bz-potion-%subkeys_3%-%subkeys_4%~
         SAY @30043 // ~Which potion do you wish to brew?~
             //inject transitions to subcategory states
 
