@@ -37,12 +37,13 @@ ACTION_SORT_ARRAY_INDICES ~potion_categories~
 
 
 /* DEBUG */
-/*
+
+PRINT ~DEBUG: potion_categories:~
 ACTION_PHP_EACH ~potion_categories~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: potion_categories:
+        PRINT ~-Category Record:
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Category:              `%keys_2%`
@@ -51,4 +52,4 @@ ACTION_PHP_EACH ~potion_categories~
             Potion Name:           `%keys_5%`
             Value:                 `%value%`~
     END
-*/
+
