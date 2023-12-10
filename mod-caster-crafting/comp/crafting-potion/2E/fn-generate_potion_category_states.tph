@@ -6,7 +6,7 @@ DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_states~
         ~category~ = ~~ //lower-cast category name to add transitions to
     BEGIN
 
-        OUTER_TEXT_SPRINT temp_file_name = ~temp/transitions_and_states_%category%.D~
+        OUTER_TEXT_SPRINT temp_file_name ~temp/transitions_and_states_%category%.D~
 
 <<<<<<<< %temp_file_name%
 
