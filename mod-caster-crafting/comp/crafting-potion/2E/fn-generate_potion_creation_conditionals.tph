@@ -18,6 +18,7 @@ DEFINE_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
         ~condition_invalid_level~
         ~condition_invalid_gold~
         ~response_text~
+        ~formula~
 BEGIN
     //Initialize return variables
     OUTER_TEXT_SPRINT ~condition_valid~ ~~
