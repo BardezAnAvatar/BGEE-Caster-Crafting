@@ -125,7 +125,7 @@ StartCutScene("BZCTPOTN")~
     END
 
     IF ~~
-    THEN BEGIN ~bz-potion-%state_prefix_recipe%_insufficient_gold~
+    THEN BEGIN ~bz-potion-%state_prefix_recipe%-insufficient_gold~
         SAY @30042 // ~You have insufficient gold to brew this potion.~
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
@@ -145,7 +145,7 @@ StartCutScene("BZCTPOTN")~
     END
 
     IF ~~
-    THEN BEGIN ~bz-potion-%state_prefix_recipe%_insufficient_level~
+    THEN BEGIN ~bz-potion-%state_prefix_recipe%-insufficient_level~
         SAY @30047 // ~You are of insufficient level for this formula.~
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
@@ -165,7 +165,7 @@ StartCutScene("BZCTPOTN")~
     END
 
     IF ~~
-    THEN BEGIN ~bz-potion-%state_prefix_recipe%_not_memorized~
+    THEN BEGIN ~bz-potion-%state_prefix_recipe%-not_memorized~
         SAY @30048 // ~You do not have the spells for this formula memorized.~
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
