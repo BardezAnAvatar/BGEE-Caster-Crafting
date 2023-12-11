@@ -49,6 +49,8 @@ BEGIN
     OUTER_TEXT_SPRINT ~spell_list~ ~~
     OUTER_TEXT_SPRINT ~condition_valid~ ~~
     OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~~
+    OUTER_SET gold_minus_one = (rec_2 - 1)
+    OUTER_SET level_minus_one = (rec_2 - 1)
 
     ACTION_PHP_EACH ~spells_array~
         AS ~spell_keys~ => ~_v~
@@ -61,22 +63,24 @@ BEGIN
 
             //use the RESREF to check for memorized spell
             OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
-HaveSpellRES("%_v%")~
+HaveSpellRES("%_v%")
+PartyGoldGT(%gold_minus_one%)~
             //use the RESREF to check for missing memorized spell
             OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~%condition_invalid_spells%
 !HaveSpellRES("%_v%")~
         END //~spells_array~
 
-    OUTER_SET level_minus_one = (rec_2 - 1)
 
     OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %level_minus_one%)
 %condition_valid%~
-    OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~LevelGT(MYSELF, %level_minus_one%)
+
+    OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~PartyGoldLT(%cost_gold%)~
+    OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~PartyGoldGT(%gold_minus_one%)
+LevelGT(MYSELF, %level_minus_one%)
 OR(%i%)
 %condition_invalid_spells%~
-    OUTER_TEXT_SPRINT ~condition_invalid_level~ ~!LevelGT(MYSELF, %level_minus_one%)~
-
-    OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~PartyGoldGT(%cost_gold%)~
+    OUTER_TEXT_SPRINT ~condition_invalid_level~ ~PartyGoldGT(%gold_minus_one%)
+!LevelGT(MYSELF, %level_minus_one%)~
 
 
     ACTION_IF (~i~ > 1)
