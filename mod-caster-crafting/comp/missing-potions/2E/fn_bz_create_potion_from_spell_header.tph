@@ -124,8 +124,7 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
 
     END
     ELSE BEGIN
-        WARN ~bz_copy_spell_header_to_potion: file(s) not found or invalid input
-            Item:   %item%.ITM~
+        WARN ~WARN: fn_bz_create_potion_from_spell_header: file `%item%.ITM` already exists~
     END
 
 END
