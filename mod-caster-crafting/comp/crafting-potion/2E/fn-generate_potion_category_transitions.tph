@@ -7,7 +7,7 @@ DEFINE_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
         ACTION_TO_LOWER ~category_lower~
 
         APPEND_OUTER -
-            ~Potions/BZMSCAK.D~
+            ~Potions/Transitions.D~
             ~~~~~
 
 EXTEND_TOP ~BZMSCAK~
@@ -26,7 +26,7 @@ EXTEND_TOP ~BZMSCAK~
 
                     //Give the potion a dialog option
                     APPEND_OUTER -
-                        ~Potions/BZMSCAK.D~
+                        ~Potions/Transitions.D~
                         ~~~~~
         IF ~~
         THEN
@@ -37,13 +37,13 @@ EXTEND_TOP ~BZMSCAK~
             END //iterate through categories
 
 APPEND_OUTER -
-    ~Potions/BZMSCAK.D~
+    ~Potions/Transitions.D~
     ~~~~~
 END
     ~~~~~
 
 APPEND_OUTER -
-    ~Potions/BZMSCAK.D~
+    ~Potions/Transitions.D~
     ~~~~~
 
 EXTEND_TOP ~BZMSCAK~

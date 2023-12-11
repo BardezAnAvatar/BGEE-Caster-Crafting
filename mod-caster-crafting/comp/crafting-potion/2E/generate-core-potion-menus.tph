@@ -18,6 +18,9 @@
 <<<<<<<< Potions/CraftingStates.D
 
 >>>>>>>>
+<<<<<<<< Potions/Transitions.D
+
+>>>>>>>>
 
 
 
@@ -70,5 +73,6 @@ COPY -
     ~Potions/BZMSCAK.D~
     ~Potions/BZMSCAK.D~
         //Patches
-        APPEND_FILE TEXT ~Potions/PotionStates.D~
         APPEND_FILE TEXT ~Potions/CategoryMenus.D~
+        APPEND_FILE TEXT ~Potions/PotionStates.D~
+        APPEND_FILE TEXT ~Potions/Transitions.D~
