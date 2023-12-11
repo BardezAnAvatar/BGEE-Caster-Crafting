@@ -22,7 +22,7 @@ EXTEND_TOP ~BZMSCAK~
                 THEN
                 BEGIN
 
-                    OUTER_SPRINT ~transition_response~ ~%keys_4%~
+                    OUTER_SPRINT ~transition_response~ ~%keys_5%~
 
                     //Give the potion a dialog option
                     APPEND_OUTER -
