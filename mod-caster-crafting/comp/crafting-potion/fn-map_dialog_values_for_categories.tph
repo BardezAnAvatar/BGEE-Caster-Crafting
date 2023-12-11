@@ -1,6 +1,31 @@
 /*************************************************************************************************************
 *   This function will isolate potion categories and subcategories into an array that can be iterated over   *
 *************************************************************************************************************/
+
+/*
+    OUTPUT: ~categories~
+
+    [Unique Key: ]          // 0 -- Integer to sort the categories
+    [Category]              // 1
+    [Category Code]         // 2
+    [Category TRA Text]     // 3
+    [Value]                 //   [cat_code]_[index]
+
+
+    OUTPUT: ~subcategories~
+
+    [Unique Key: ]          // 0 -- `[Category sorting index]-[Subcategory sorting index]`
+    [Category]              // 1
+    [SubCategory]           // 2
+    [Category Code]         // 3
+    [SubCategory Code]      // 4
+    [Category TRA Text]     // 5
+    [SubCategory TRA Text]  // 6
+    [Value]                 //   `[cat_code]-[index]-[subcat_code]-[index2]`
+*/
+
+
+
 DEFINE_ACTION_FUNCTION ~fn-map_dialog_values_for_categories~
 RET_ARRAY
     ~categories~
