@@ -12,8 +12,8 @@ DEFINE_ACTION_FUNCTION ~fn-generate_potion_creation_states~
     STR_VAR
         ~potion_name~ = null
         ~potion_RESREF~ = null
-        ~category~ = null
-        ~subcategory~ = null
+        ~categoryCode~ = null
+        ~subcategoryCode~ = null
         ~recipe_UID~ = null
     RET
         ~state_markup~

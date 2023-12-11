@@ -118,8 +118,8 @@ APPEND ~BZMSCAK~
                                     STR_VAR
                                         ~potion_name~ = ~%potion_identified_name%~
                                         ~potion_RESREF~ = ~%pot_1%~
-                                        ~category~ = ~%cat_1%~
-                                        ~subcategory~ = ~%sub_2%~
+                                        ~categoryCode~ = ~%cat_2%~
+                                        ~subcategoryCode~ = ~%sub_4%~
                                         ~recipe_UID~ = ~%rec_0%~
                                     RET
                                         ~state_markup~
