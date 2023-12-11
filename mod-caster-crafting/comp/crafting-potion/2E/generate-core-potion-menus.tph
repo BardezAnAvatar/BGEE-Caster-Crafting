@@ -54,31 +54,7 @@ PRINT ~
 !   INFO: Adding Potion Recipes ...   !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ~
-//transitions
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Bomb~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Enhancement~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Defense~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Offense~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Cure~
-END
+//TODO
 
 
 
