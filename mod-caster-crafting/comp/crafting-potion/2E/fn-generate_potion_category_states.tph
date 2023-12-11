@@ -24,7 +24,7 @@ APPEND ~BZMSCAK~
             ~~~~~
 
         //isolate the unique protection potion entries; specific potions, ignoring spells and thus de-duplicating
-        ACTION_PHP_EACH ~potion_categories~
+        ACTION_PHP_EACH ~potion_definitions~
             AS ~keys~ => ~value~
             BEGIN
                 ACTION_IF (~%keys_2%~ STRING_EQUAL ~%category%~)

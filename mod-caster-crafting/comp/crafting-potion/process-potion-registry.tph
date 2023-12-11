@@ -20,7 +20,7 @@
     [Potion Name]           // 11
 
 
-    OUTPUT: ~potion_categories~
+    OUTPUT: ~potion_definitions~
 
     [Sorting Key]               // 0
     [Potion Item RESREF]        // 1
@@ -65,7 +65,7 @@ BEGIN
 
     //categories list
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~potion_categories~
+        ~potion_definitions~
     BEGIN
         ~%cat_keys_1%-%cat_keys_2%-0-%cat_value%~,
         ~%value%~,
@@ -121,7 +121,7 @@ END
 
 
 //Sort the indicies (on first key)
-ACTION_SORT_ARRAY_INDICES ~potion_categories~
+ACTION_SORT_ARRAY_INDICES ~potion_definitions~
 ACTION_SORT_ARRAY_INDICES ~potion_recipe_data~
 ACTION_SORT_ARRAY_INDICES ~potion_category_list~
 ACTION_SORT_ARRAY_INDICES ~potion_subcategory_list~
@@ -153,7 +153,7 @@ ACTION_PHP_EACH ~potion_recipe_data~
 
 /* DEBUG */
 /*
-ACTION_PHP_EACH ~potion_categories~
+ACTION_PHP_EACH ~potion_definitions~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements

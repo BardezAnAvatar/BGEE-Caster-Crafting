@@ -7,7 +7,7 @@ RET_ARRAY
     ~subcategories~
 BEGIN
     //Expand data for processing
-    ACTION_PHP_EACH ~potion_categories~
+    ACTION_PHP_EACH ~potion_definitions~
     AS ~cat_keys~ => ~cat_value~
     BEGIN
         //Isolate a list of categories/subcats

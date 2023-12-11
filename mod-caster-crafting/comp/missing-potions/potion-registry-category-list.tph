@@ -5,7 +5,7 @@
 ***************************************************************************************/
 
 /*
-    OUTPUT: ~potion_categories~
+    OUTPUT: ~potion_definitions~
 
     [Sorting Key]               // 0
     [Potion Item RESREF]        // 1
@@ -25,7 +25,7 @@ BEGIN
     OUTER_SPRINT potion_name (AT "keys_6")
 
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~potion_categories~
+        ~potion_definitions~
     BEGIN
         ~%keys_2%_%keys_4%_%keys_0%~, ~%keys_0%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~, ~%potion_name%~ => ~%keys_0%~
     END
@@ -33,13 +33,13 @@ END //iterating through new potions
 
 
 //Sort the indicies (on first key)
-ACTION_SORT_ARRAY_INDICES ~potion_categories~
+ACTION_SORT_ARRAY_INDICES ~potion_definitions~
 
 
 /* DEBUG */
 /*
 PRINT ~DEBUG: potion_categories:~
-ACTION_PHP_EACH ~potion_categories~
+ACTION_PHP_EACH ~potion_definitions~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
