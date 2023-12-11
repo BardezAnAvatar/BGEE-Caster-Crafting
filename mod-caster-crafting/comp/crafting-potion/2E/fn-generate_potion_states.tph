@@ -70,7 +70,7 @@ APPEND ~BZMSCAK~
                                         ~cost_gold~ = ~%rec_6%~
                                     STR_VAR
                                         ~recipe~ = ~%rec_3%~     // string with space separator
-                                        ~potion_name~ = ~potion_identified_name~
+                                        ~potion_name~ = ~%potion_identified_name%~
                                     RET
                                         ~response_condition_valid~ = ~condition_valid~
                                         ~response_condition_invalid_spells~ = ~condition_invalid_spells~
@@ -90,7 +90,7 @@ APPEND ~BZMSCAK~
                                         ~cost_hours~ = "-1"
                                         ~chance_failure~ = "-1"
                                     STR_VAR
-                                        ~potion_name~ = ~potion_identified_name~
+                                        ~potion_name~ = ~%potion_identified_name%~
                                         ~potion_RESREF~ = ~%pot_1%~
                                         ~category~ = ~%cat_1%~
                                         ~subcategory~ = ~%sub_2%~
