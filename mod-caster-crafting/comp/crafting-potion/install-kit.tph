@@ -49,15 +49,15 @@ BEGIN
             SAY NAME2 @20050 //Scribe's Tool Kit
             SAY UNIDENTIFIED_DESC @20002
             SAY IDENTIFIED_DESC @20051
-            WRITE_ASCII_TERMINATE 0x3A "BZMIAKI"            // Icon
+            WRITE_ASCII 0x3A "BZMIAKI" (8)                  // Icon
             WRITE_LONG 0x34 2000                            // Price
             WRITE_SHORT 0x38 1                              // Stack Size
             WRITE_LONG 0x42 10                              // Lore to Identify
             WRITE_LONG 0x4C 10                              // Weight
             READ_LONG 0x18 ~bzmsckar_flags~
             WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
-            WRITE_ASCII_TERMINATE 0x58 "Z_CLOTH1"           // Pick up Sound
-            WRITE_ASCII_TERMINATE 0x10 "Z_CLOTH2"           // Drop Sound
+            WRITE_ASCII 0x58 "Z_CLOTH1" (8)                 // Pick up Sound
+            WRITE_ASCII 0x10 "Z_CLOTH2" (8)                 // Drop Sound
             WRITE_LONG 0x1C 0                               // Category: Miscellaneous
             WRITE_LONG 0x1E
                 BIT31 BOR BIT29 BOR BIT28 BOR BIT26 BOR BIT25 BOR
@@ -71,12 +71,12 @@ BEGIN
             SAY NAME2 @20050 //Scribe's Tool Kit
             SAY UNIDENTIFIED_DESC @20002
             SAY IDENTIFIED_DESC @20051
-            WRITE_ASCII_TERMINATE 0x3A "BZMIAKI"            // Icon
+            WRITE_ASCII 0x3A "BZMIAKI" (8)                  // Icon
             WRITE_LONG 0x34 2000                            // Price
             WRITE_SHORT 0x38 1                              // Stack Size
             WRITE_SHORT 0x42 10                             // Lore to Identify
             WRITE_LONG 0x4C 20                              // Weight
-            WRITE_ASCII_TERMINATE 0x58 "BZMIAKD"            // Description Image
+            WRITE_ASCII 0x58 "BZMIAKD" (8)                  // Description Image
             READ_LONG 0x18 ~bzmsckar_flags~
             WRITE_LONG 0x18 (%bzmsckar_flags% BOR BIT11)    //set conversible
 END

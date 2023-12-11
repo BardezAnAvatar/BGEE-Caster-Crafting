@@ -22,7 +22,7 @@ BEGIN
             READ_SHORT (effect_offset) opcode
             PATCH_IF (opcode == 249) THEN
             BEGIN
-                WRITE_ASCII_TERMINATE (effect_offset + 0x14) ~%eff_resref%~
+                WRITE_ASCII (effect_offset + 0x14) ~%eff_resref%~ (8)
             END
         END
     BUT_ONLY_IF_IT_CHANGES
