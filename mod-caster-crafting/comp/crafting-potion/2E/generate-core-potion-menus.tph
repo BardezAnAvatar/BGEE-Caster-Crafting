@@ -39,6 +39,13 @@ COPY -
 /***************************************************
 *   Generate the potion transitions dynamicially   *
 ***************************************************/
+
+//states
+LAUNCH_ACTION_FUNCTION ~fn-generate_potion_states~
+END
+
+
+//transitions
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
 STR_VAR
     ~category~ = ~Bomb~
@@ -64,29 +71,3 @@ STR_VAR
     ~category~ = ~Cure~
 END
 
-
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Bomb~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Enhancement~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Defense~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Offense~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Cure~
-END
