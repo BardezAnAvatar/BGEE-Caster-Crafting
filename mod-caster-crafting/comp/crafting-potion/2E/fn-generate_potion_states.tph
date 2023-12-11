@@ -28,12 +28,17 @@ APPEND ~BZMSCAK~
             AS ~sub~ => ~sv~
         BEGIN
 
+            PRINT ~DEBUG: Attempting Match on Category and Subcategory: %cat_1%, %sub_1%~
+
             ACTION_IF (~%cat_1%~ STR_EQ ~%sub_1%~) THEN
             BEGIN
 
                 ACTION_PHP_EACH ~potion_definitions~
                     AS ~pot~ => ~pv~
                 BEGIN
+
+                    PRINT ~DEBUG: Attempting Match on Category and Subcategory: cat: %cat_1%, subcat: %sub_2% <==> cat: %pot_2%, subcat: %pot_3%~
+
 
                     //if a potion def matches the category and subcategory
                     ACTION_IF ((~%pot_2%~ STR_EQ ~%cat_1%~) AND (~%pot_3%~ STR_EQ ~%sub_2%~)) THEN
