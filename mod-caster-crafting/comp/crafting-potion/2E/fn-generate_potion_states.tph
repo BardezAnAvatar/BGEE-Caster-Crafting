@@ -68,7 +68,7 @@ APPEND ~BZMSCAK~
 
 
 
-                                //build out all 3 conditionals
+                                //build out all conditionals
 
                                 LAUNCH_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
                                     INT_VAR
@@ -84,6 +84,27 @@ APPEND ~BZMSCAK~
                                         ~response~ = ~response_text~
                                         ~recipe_formula~ = ~formula~
                                 END //~fn-generate_potion_creation_conditionals~ call
+
+
+                                APPEND_OUTER -
+                                    ~Potions/PotionStates.D~
+                                    ~~~~~
+            IF ~%response_condition_valid%~
+            THEN REPLY ~%response_text%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_valid~
+            IF ~%response_condition_invalid_gold%~
+            THEN REPLY ~%response_text%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_insufficient_gold~
+            IF ~%response_condition_invalid_level%~
+            THEN REPLY ~%response_text%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_insufficient_level~
+            IF ~%response_condition_invalid_spells%~
+            THEN REPLY ~%response_text%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_not_memorized~
+
+
+                                    ~~~~~
+
 
 
 
