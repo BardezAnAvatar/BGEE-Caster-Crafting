@@ -70,7 +70,7 @@ OR(%i%)
 %condition_invalid_spells%~
     OUTER_TEXT_SPRINT ~condition_invalid_level~ ~!LevelGT(MYSELF, %level_minus_one%)~
 
-    OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~PartyGoldGT(%cost_gold%)~)
+    OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~PartyGoldGT(%cost_gold%)~
 
 
     ACTION_IF (~i~ > 1)
