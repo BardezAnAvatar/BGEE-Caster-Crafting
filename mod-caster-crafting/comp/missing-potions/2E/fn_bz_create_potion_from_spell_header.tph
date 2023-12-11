@@ -52,13 +52,13 @@ DEFINE_ACTION_FUNCTION fn_bz_create_potion_from_spell_header
             SET global_fx_num_off = 0x70
             SET abil_fx_idx = 0x00
 
-            WRITE_LONG (0x1E) (%unusabilility_flags%)           //unusability flags
-            WRITE_LONG (0x0C) (%STRREF_identified_name%)        //identified name
-            WRITE_LONG (0x42) (%lore%)                          //lore to identify
-            WRITE_LONG (0x54) (%STRREF_identified_desc%)        //identified description
+            WRITE_LONG  (0x1E) (%unusabilility_flags%)          //unusability flags
+            WRITE_LONG  (0x0C) (%STRREF_identified_name%)       //identified name
+            WRITE_SHORT (0x42) (%lore%)                         //lore to identify
+            WRITE_LONG  (0x54) (%STRREF_identified_desc%)       //identified description
             WRITE_ASCII_TERMINATE (0x3A) ~%icon_inventory%~     //update the item inventory icon
             WRITE_ASCII_TERMINATE (0x58) ~%icon_description%~   //update the item description icon
-            WRITE_LONG (0x34) (%price%)                         //set the price
+            WRITE_LONG  (0x34) (%price%)                        //set the price
 
             // write the copied ability header
             LPF ~ADD_ITEM_HEADER~   // Add item header
