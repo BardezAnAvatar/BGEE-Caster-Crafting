@@ -6,6 +6,8 @@
 *       Array `potion_recipe_data` exists and is populated             *
 ***********************************************************************/
 
+
+
 //internal 'file' for category menus to append to
 <<<<<<<< Potions/CategoryMenus.D
 
@@ -17,22 +19,12 @@
 
 >>>>>>>>
 
+
+
 //Function includes
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_transitions.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_menu_category_states.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_states.tph~
-
-//Invoce the fn_generate_potion_menu_states Func.
-LAUNCH_ACTION_FUNCTION ~fn-generate_potion_menu_states~
-END
-
-
-COPY -
-    ~Potions/BZMSCAK.D~
-    ~Potions/BZMSCAK.D~
-        //Patches
-        APPEND_FILE TEXT ~Potions/PotionStates.D~
-        APPEND_FILE TEXT ~Potions/CategoryMenus.D~
 
 
 
@@ -43,6 +35,7 @@ COPY -
 //states
 LAUNCH_ACTION_FUNCTION ~fn-generate_potion_states~
 END
+
 
 
 //transitions
@@ -71,3 +64,11 @@ STR_VAR
     ~category~ = ~Cure~
 END
 
+
+
+COPY -
+    ~Potions/BZMSCAK.D~
+    ~Potions/BZMSCAK.D~
+        //Patches
+        APPEND_FILE TEXT ~Potions/PotionStates.D~
+        APPEND_FILE TEXT ~Potions/CategoryMenus.D~
