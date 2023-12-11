@@ -14,7 +14,7 @@
 @30023 = ~Pick another spell.~
 @30024 = ~Pick another potion.~
 @30025 = ~Pick another type of potion.~
-@30026 = ~Brew %potion_name% \[spend %gold_cost% gold; %readable_time%; yield %quantity% vial(s)\]~
+@30026 = ~Brew %potion_name% \[spend %cost_gold% gold; %readable_time%; yield %quantity% vial(s)\]~
 @30027 = ~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"; "1 days" or "1 hours" are an unfortunate side effect
 @30028 = ~%days% day(s)~
 @30029 = ~%hours% hour(s)~

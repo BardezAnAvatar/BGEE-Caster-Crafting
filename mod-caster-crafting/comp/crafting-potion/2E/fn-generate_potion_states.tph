@@ -121,10 +121,10 @@ APPEND ~BZMSCAK~
                                 //Build potion states for formulae
                                 LAUNCH_ACTION_FUNCTION ~fn-generate_potion_creation_states~
                                     INT_VAR
-                                        ~cost_gold~ = "-1"
-                                        ~quantity~ = "-1"
-                                        ~cost_hours~ = "-1"
-                                        ~chance_failure~ = "-1"
+                                        ~cost_gold~ = ~%rec_6%~
+                                        ~quantity~ =  ~%rec_4%~
+                                        ~cost_hours~ = ~%rec_7%~
+                                        ~chance_failure~ = ~%rec_10%~
                                     STR_VAR
                                         ~potion_name~ = ~%potion_identified_name%~
                                         ~potion_RESREF~ = ~%pot_1%~
