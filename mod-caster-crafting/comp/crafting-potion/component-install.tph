@@ -2,8 +2,7 @@
 *   This is the actions for installing Potion brewing/crafting   *
 *                                                                *
 *   Expected inputs:                                             *
-*       ~bz_install_allow_potions_base_game~                     *
-*       ~bz_install_allow_potions_spells~                        *
+*       ~bz_install_allow_potions~                               *
 *****************************************************************/
 
 //make empty files
@@ -14,10 +13,10 @@
 
 
 //Include the potions from base game into the crafting dialog
-ACTION_IF (%bz_install_allow_potions_base_game%) THEN
+ACTION_IF (%bz_install_allow_potions%) THEN
 BEGIN
     //Need to pre-process registry to get a list of unique potions from the base game for transition menu
-    INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/process-potion-registry.tph~
+    INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/process-potion-registry.tph~
 
     //THEN: iterate through all recipe entries and create states and responses for crafting.
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/generate-core-potion-menus.tph~
@@ -33,10 +32,10 @@ END
 
 
 //Install the cursed potions list
-INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-cursed-potions.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/install-cursed-potions.tph~
 
 //Install the item file
-INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-kit.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/install-kit.tph~
 
 //cutscene install
-INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/install-cutscene.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/install-cutscene.tph~
