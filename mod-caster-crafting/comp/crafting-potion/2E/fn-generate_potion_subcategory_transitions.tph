@@ -9,7 +9,7 @@ BEGIN
             ~~~~~
 
 EXTEND_TOP ~BZMSCAK~
-    ~bz-potion-%subkeys_3%-%subkeys_4%~ //state identifier
+    ~bz-potion-%sub_3%-%sub_4%~ //state identifier
             ~~~~~
 
 
@@ -27,7 +27,7 @@ EXTEND_TOP ~BZMSCAK~
         IF ~~
         THEN
             REPLY ~%keys_5%~
-            GOTO ~bz-potion-%subkeys_3%-%subkeys_4%-%value%~
+            GOTO ~bz-potion-%sub_3%-%sub_4%-%value%~
                         ~~~~~
                 END //comparison
             END //iterate through ~potion_definitions~
