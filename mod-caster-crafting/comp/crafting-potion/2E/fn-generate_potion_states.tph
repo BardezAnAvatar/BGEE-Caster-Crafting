@@ -91,16 +91,16 @@ APPEND ~BZMSCAK~
                                     ~~~~~
             IF ~%response_condition_valid%~
             THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
-                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_valid~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-valid~
             IF ~%response_condition_invalid_gold%~
             THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
-                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_insufficient_gold~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-insufficient_gold~
             IF ~%response_condition_invalid_level%~
             THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
-                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_insufficient_level~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-insufficient_level~
             IF ~%response_condition_invalid_spells%~
             THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
-                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%_not_memorized~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-not_memorized~
 
 
                                     ~~~~~
