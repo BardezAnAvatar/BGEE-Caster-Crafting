@@ -68,7 +68,7 @@ BEGIN
         ~potion_definitions~
     BEGIN
         ~%cat_keys_1%-%cat_keys_2%-0-%cat_value%~,
-        ~%value%~,
+        ~%cat_value%~,
         ~%cat_keys_1%~,
         ~%cat_keys_2%~,
         ~%cat_keys_3%~,
