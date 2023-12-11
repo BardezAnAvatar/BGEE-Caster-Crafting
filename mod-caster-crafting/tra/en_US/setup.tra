@@ -20,5 +20,5 @@
 // Crafting Station
 @40 = ~Caster Crafting: Crafting Station~
 @41 = ~Brew potions~
-@42 = ~Craft wands~
-@43 = ~Both brew potions and craft wands~
+@42 = ~Craft wands (Not yet implemented)~
+@43 = ~Both brew potions and craft wands (Not yet implemented)~
