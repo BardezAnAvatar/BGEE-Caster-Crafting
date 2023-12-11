@@ -1,0 +1,150 @@
+/***********************************************************************************************
+*   Source: Based on `cd_items_casting_spells` provided by CamDawg
+*   https://github.com/Gibberlings3/iwdfixpack/blob/master/iwdfixpack/lib/functions.tpa#L218
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
+    INT_VAR
+        cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
+    STR_VAR
+        spell = null                    //spell RESREF to read from
+        duration_opcode =   null        //opcode of the effect blocks to search to get the duration from
+        duration_offset =   null        //offset within the header's effect matching opcode to read from
+        magnitude_opcode =  null        //opcode of the effect blocks to search to get the magnitude from
+        magnitude_offset =  null        //offset within the header's effect matching opcode to read from
+        magnitude2_opcode = null        //opcode of the effect blocks to search to get the magnitude2 from
+        magnitude2_offset = null        //offset within the header's effect matching opcode to read from
+    RET
+        ~duration~
+        ~magnitude~
+        ~magnitude2~
+        ~ability_projectile~
+        ~ability_range~
+        ~ability_target_count~
+        ~transfer_effects_count~
+        ~transfer_effects~
+
+    BEGIN
+        //return value defaults
+        OUTER_SET duration = 0
+        OUTER_SET magnitude = 0
+        OUTER_SET magnitude2 = 0
+        OUTER_SET ability_projectile = 1 //none
+        OUTER_SET ability_range = 0
+        OUTER_SET ability_target_count = 0
+        OUTER_SET transfer_effects_count = 0
+        OUTER_TEXT_SPRINT ~transfer_effects~ ~~
+
+    ACTION_IF
+        FILE_EXISTS_IN_GAME ~%spell%.SPL~
+    BEGIN
+
+        COPY_EXISTING ~%spell%.SPL~ ~override~
+            READ_SHORT 0x68 abil_num
+            READ_LONG  0x64 abil_off
+            READ_LONG  0x6a fx_off
+            SET best_min_lvl_match = 1
+            PATCH_IF ((abil_num = 1) OR (cast_at_level = 1))
+            BEGIN
+                SET base_off = abil_off
+                READ_SHORT (abil_off + 0x10) best_min_lvl_match
+            END
+            ELSE
+            BEGIN
+                FOR (index = 1 ; index < abil_num ; ++index)    // skip first ability
+                BEGIN
+                    READ_SHORT (abil_off + (index * 0x28) + 0x10) min_lev
+
+                    PATCH_IF min_lev = cast_at_level
+                    BEGIN
+                        SET base_off = (abil_off + (index * 0x28))
+                        SET index = abil_num // kill loop
+                        SET best_min_lvl_match = min_lev    //perfect match
+                    END
+                    ELSE
+                    BEGIN
+                        PATCH_IF ((min_lev > best_min_lvl_match) AND (min_lev < cast_at_level))
+                        BEGIN
+                            SET base_off = (abil_off + ((index - 1) * 0x28))
+                        END
+                    END
+                END
+            END
+
+            //Debug result
+            /*
+            PATCH_PRINT ~DEBUG:
+                Best Level Match:       %best_min_lvl_match%
+                Header offset detected: %base_off%
+            ~
+            */
+
+            //Read the spell header in fields to write to item
+            // NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
+            //      Need to read each field then translate it over, methinks.
+            //READ_ASCII (base_off) entire_matching_ability (0x38)  //read the entire spell ability
+            READ_BYTE  (base_off + 0x00) ~abil_type~
+            READ_BYTE  (base_off + 0x0C) ~abil_target~
+            READ_BYTE  (base_off + 0x0D) ~abil_target_count~
+            READ_SHORT (base_off + 0x0E) ~abil_range~
+            READ_SHORT (base_off + 0x1E) transfer_fx_num
+            READ_SHORT (base_off + 0x20) abil_fx_idx
+            READ_SHORT (base_off + 0x26) ~abil_projectile~
+
+            // read all effects in a massive block
+            READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)
+            BUT_ONLY
+
+        /**************************************************************************************
+        *   BEGIN: Read the variables from the spell header/effects to emit to descriptions   *
+        **************************************************************************************/
+
+        //Loop through the copied effects in a loop. Look for the opcodes specified, read them if necessary
+        OUTER_SET read_duration = 1
+        OUTER_SET read_magnitude = 1
+        OUTER_SET read_magnitude2 = 1
+        ACTION_IF ((~%duration_opcode%~ STRING_EQUAL null)   OR (~%duration_opcode%~ STRING_EQUAL ~~))   THEN BEGIN OUTER_SET read_duration = 0 END
+        ACTION_IF ((~%magnitude_opcode%~ STRING_EQUAL null)  OR (~%magnitude_opcode%~ STRING_EQUAL ~~))  THEN BEGIN OUTER_SET read_magnitude = 0 END
+        ACTION_IF ((~%magnitude2_opcode%~ STRING_EQUAL null) OR (~%magnitude2_opcode%~ STRING_EQUAL ~~)) THEN BEGIN OUTER_SET read_magnitude2 = 0 END
+
+        OUTER_SET terminate_loop = (0x30 * transfer_fx_num)
+
+        //Set a PATCH context to read the already-read effects
+        OUTER_PATCH ~%transfer_effects%~
+        BEGIN
+            FOR (index = 0; index < transfer_fx_num; ++index)
+            BEGIN
+                SET start_offset = (index * 0x30)
+                READ_SHORT (start_offset + 0) opcode
+                PATCH_IF (read_duration AND (opcode = duration_opcode)) THEN BEGIN
+                    READ_LONG (start_offset + %duration_offset%) duration
+                    SET read_duration = 0
+                END
+                PATCH_IF ((read_magnitude) AND (opcode = magnitude_opcode)) THEN BEGIN
+                    READ_LONG (start_offset + %magnitude_offset%) magnitude
+                    SET read_magnitude = 0
+                END
+                PATCH_IF ((read_magnitude2) AND (opcode = magnitude2_opcode)) THEN BEGIN
+                    READ_LONG (start_offset + %magnitude2_offset%) magnitude2
+                    SET read_magnitude2 = 0
+                END
+            END
+        END
+
+        /************************************************************************************
+        *   END: Read the variables from the spell header/effects to emit to descriptions   *
+        ************************************************************************************/
+
+        //Set output variables
+        OUTER_SET ability_projectile = %abil_projectile%
+        OUTER_SET ability_range = %abil_range%
+        OUTER_SET ability_target_count = %abil_target_count%
+        OUTER_SET transfer_effects_count = %transfer_fx_num%
+
+
+    END
+    ELSE BEGIN
+        WARN ~WARN: fn_bz_read_spell_header_for_potion: file %spell%.SPL` not found~
+    END
+
+END

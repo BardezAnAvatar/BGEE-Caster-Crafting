@@ -1,0 +1,185 @@
+/************************************************************************
+*   This function will generate the potion creation states &            *
+*       transitions necessary for the potion creation dialog            *
+************************************************************************/
+//includes
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_creation_conditionals.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_creation_states.tph~
+
+
+
+DEFINE_ACTION_FUNCTION ~fn-generate_potion_states~
+BEGIN
+
+    /**********************************
+    *   Write out all potion states   *
+    **********************************/
+    APPEND_OUTER - ~Potions/PotionStates.D~
+        ~~~~~
+
+APPEND ~BZMSCAK~
+        ~~~~~
+    APPEND_OUTER - ~Potions/CraftingStates.D~
+        ~~~~~
+
+APPEND ~BZMSCAK~
+        ~~~~~
+
+    ACTION_PHP_EACH ~potion_category_list~
+        AS ~cat~ => ~cv~
+    BEGIN
+
+        ACTION_PHP_EACH ~potion_subcategory_list~
+            AS ~sub~ => ~sv~
+        BEGIN
+
+            //PRINT ~DEBUG: Attempting Match on Category and Subcategory: %cat_1%, %sub_1%~
+
+            ACTION_IF (~%cat_1%~ STR_EQ ~%sub_1%~) THEN
+            BEGIN
+
+                ACTION_PHP_EACH ~potion_definitions~
+                    AS ~pot~ => ~pv~
+                BEGIN
+
+                    //PRINT ~DEBUG: Attempting Match on Category and Subcategory: cat: %cat_1%, subcat: %sub_2% <==> cat: %pot_2%, subcat: %pot_3%~
+
+
+                    //if a potion def matches the category and subcategory
+                    ACTION_IF ((~%pot_2%~ STR_EQ ~%cat_1%~) AND (~%pot_3%~ STR_EQ ~%sub_2%~)) THEN
+                    BEGIN
+
+                        OUTER_TEXT_SPRINT ~potion_identified_name~ ~%pot_5%~
+
+
+                        //Give the potion a dialog state
+                        APPEND_OUTER - ~Potions/PotionStates.D~
+                            ~~~~~
+
+    IF ~~
+    THEN BEGIN ~bz-potion-%cat_2%-%sub_4%-%pot_1%~ // %pot_5%
+        SAY @30044 // ~Which formula do you wish to use?~
+            //Recipe responses
+                            ~~~~~
+
+                        /*********************************************************************************************************
+                        *   Write out transitions between states and the crafting states (valid, invalid, fail, success, etc.)   *
+                        *********************************************************************************************************/
+                        ACTION_PHP_EACH ~potion_recipe_data~
+                            AS ~rec~ => ~rv~
+                        BEGIN
+                            //if a potion def matches the category and subcategory
+                            ACTION_IF (~%pot_1%~ STR_EQ ~%rec_1%~) THEN
+                            BEGIN
+
+
+
+                                //build out all conditionals
+
+                                LAUNCH_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
+                                    INT_VAR
+                                        ~cost_gold~ = ~%rec_6%~
+                                    STR_VAR
+                                        ~recipe~ = ~%rec_3%~     // string with space separator
+                                        ~potion_name~ = ~%potion_identified_name%~
+                                    RET
+                                        ~response_condition_valid~ = ~condition_valid~
+                                        ~response_condition_invalid_spells~ = ~condition_invalid_spells~
+                                        ~response_condition_invalid_level~ = ~condition_invalid_level~
+                                        ~response_condition_invalid_gold~ = ~condition_invalid_gold~
+                                        ~response~ = ~response_text~
+                                        ~recipe_formula~ = ~formula~
+                                END //~fn-generate_potion_creation_conditionals~ call
+
+
+                                APPEND_OUTER -
+                                    ~Potions/PotionStates.D~
+                                    ~~~~~
+
+            IF ~%response_condition_valid%~
+            THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-%rec_0%-valid~
+
+            IF ~%response_condition_invalid_gold%~
+            THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-%rec_0%-insufficient_gold~
+
+            IF ~%response_condition_invalid_level%~
+            THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-%rec_0%-insufficient_level~
+
+            IF ~%response_condition_invalid_spells%~
+            THEN REPLY ~%response%~ // ~Brew %potion_identified_name% using %recipe_formula%.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%-%pot_1%-%rec_0%-not_memorized~
+
+
+                                    ~~~~~
+
+
+
+
+                                //Build potion states for formulae
+                                LAUNCH_ACTION_FUNCTION ~fn-generate_potion_creation_states~
+                                    INT_VAR
+                                        ~cost_gold~ = ~%rec_6%~
+                                        ~quantity~ =  ~%rec_4%~
+                                        ~cost_hours~ = ~%rec_7%~
+                                        ~chance_failure~ = ~%rec_10%~
+                                    STR_VAR
+                                        ~potion_name~ = ~%potion_identified_name%~
+                                        ~potion_RESREF~ = ~%pot_1%~
+                                        ~categoryCode~ = ~%cat_2%~
+                                        ~subcategoryCode~ = ~%sub_4%~
+                                        ~recipe_UID~ = ~%rec_0%~
+                                    RET
+                                        ~state_markup~
+                                END //~fn-generate_potion_creation_conditionals~ call
+
+
+
+                                APPEND_OUTER - ~Potions/CraftingStates.D~ ~%state_markup%~
+
+
+
+                            END //matching recipe to potion
+                        END //looping through the potion recipes
+
+
+                        APPEND_OUTER - ~Potions/PotionStates.D~
+                            ~~~~~
+            IF ~~
+            THEN REPLY @30024 // ~Pick another potion.~
+                GOTO ~bz-potion-%cat_2%-%sub_4%~
+            IF ~~
+            THEN REPLY @30022 // ~Pick another sub-category of potion.~
+                GOTO ~bz-potion-%cat_2%~
+            IF ~~
+            THEN REPLY @30025 // ~Pick another type of potion.~
+                GOTO ~bz-potion-main_menu~
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
+                            ~~~~~
+
+
+                    END // matching categories
+                END //~potion_subcategory_list~ loop
+            END // matching categories
+        END //~potion_subcategory_list~ loop
+    END // ~potion_category_list~ loop
+
+    //END the `APPEND ~BZMSCAK~` statement
+    APPEND_OUTER - ~Potions/PotionStates.D~
+        ~~~~~
+END
+
+        ~~~~~
+
+    //END the `APPEND ~BZMSCAK~` statement
+    APPEND_OUTER - ~Potions/CraftingStates.D~
+        ~~~~~
+END
+
+        ~~~~~
+END //function def.

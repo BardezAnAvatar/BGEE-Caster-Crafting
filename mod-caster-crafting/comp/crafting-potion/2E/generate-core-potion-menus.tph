@@ -1,66 +1,58 @@
-/*********************************************************************
-*   This file will iterate over the potion_list_data array and add   *
-*       appropriate transitions and menus to the dialog file.        *
-*                                                                    *
-*   Preconditions:                                                   *
-*       Array `potion_list_data` exists and is populated             *
-*********************************************************************/
+/***********************************************************************
+*   This file will iterate over the potion_recipe_data array and add   *
+*       appropriate transitions and menus to the dialog file.          *
+*                                                                      *
+*   Preconditions:                                                     *
+*       Array `potion_recipe_data` exists and is populated             *
+***********************************************************************/
+
+
+
+//internal 'file' for category menus to append to
+<<<<<<<< Potions/CategoryMenus.D
+
+>>>>>>>>
+<<<<<<<< Potions/PotionStates.D
+
+>>>>>>>>
+<<<<<<<< Potions/CraftingStates.D
+
+>>>>>>>>
+<<<<<<<< Potions/Transitions.D
+
+>>>>>>>>
+
+
+
+//Function includes
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_menu_category_states.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_states.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_subcategory_transitions.tph~
+
+
+
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   INFO: Building Potion Dialog...   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
+//states
+LAUNCH_ACTION_FUNCTION ~fn-generate_potion_menu_category_states~
+END
+
+LAUNCH_ACTION_FUNCTION ~fn-generate_potion_states~
+END
+
+LAUNCH_ACTION_FUNCTION ~fn-generate_potion_subcategory_transitions~
+END
+
 
 
 COPY -
-    ~CorePotions/BZMSCAK.D~
-    ~CorePotions/BZMSCAK.D~
+    ~Potions/BZMSCAK.D~
+    ~Potions/BZMSCAK.D~
         //Patches
-        APPEND_FILE TEXT ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/DLG/core-potions.d~
-
-
-
-/***************************************************
-*   Generate the potion transitions dynamicially   *
-***************************************************/
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_transitions.tph~
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Defense~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Enhancement~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Cure~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
-STR_VAR
-    ~category~ = ~Bomb~
-END
-
-
-
-
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_states.tph~
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Defense~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Enhancement~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Cure~
-END
-
-LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_states~
-STR_VAR
-    ~category~ = ~Bomb~
-END
+        APPEND_FILE TEXT ~Potions/CategoryMenus.D~
+        APPEND_FILE TEXT ~Potions/PotionStates.D~
+        APPEND_FILE TEXT ~Potions/CraftingStates.D~
+        APPEND_FILE TEXT ~Potions/Transitions.D~

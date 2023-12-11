@@ -166,8 +166,8 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
 
             WRITE_LONG (0x0C) (%spl_name%)                      //identified name
             WRITE_LONG (0x54) (%spl_description%)               //identified description
-            WRITE_ASCII_TERMINATE (0x3A) ~%icon_inventory%~     //update the item inventory icon
-            WRITE_ASCII_TERMINATE (0x58) ~%icon_description%~   //update the item description icon
+            WRITE_ASCII (0x3A) ~%icon_inventory%~   (8)         //update the item inventory icon
+            WRITE_ASCII (0x58) ~%icon_description%~ (8)         //update the item description icon
             WRITE_LONG (0x34) (%price%)                         //set the price
 
             // write the copied ability header
@@ -330,7 +330,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
 
     END
     ELSE BEGIN
-        WARN ~bz_copy_spell_header_to_scroll: file(s) not found or invalid input
+        WARN ~WARN: bz_copy_spell_header_to_scroll: file(s) not found or invalid input
             Spell:  %spell%.SPL
             Item:   %item%.ITM~
     END

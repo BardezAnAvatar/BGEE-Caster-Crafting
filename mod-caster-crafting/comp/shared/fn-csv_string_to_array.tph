@@ -3,7 +3,7 @@
 *   Reference: original taken from:                                                                                        *
 *       https://www.gibberlings3.net/forums/topic/36584-passing-arrays-to-patch-functions/?do=findComment&comment=321897   *
 ***************************************************************************************************************************/
-DEFINE_ACTION_FUNCTION bz_csv_string_to_array
+DEFINE_ACTION_FUNCTION fn-csv_string_to_array
 STR_VAR
     ~string~ = ""     // string with space separator
 RET_ARRAY

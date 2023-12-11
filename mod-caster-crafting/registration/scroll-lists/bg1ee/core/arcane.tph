@@ -163,10 +163,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL8C~, ~SPWI625~, ~Arcane~, ~6~, ~12~, ~0~ => ~SCRL8C~    //Stone to Flesh
 
 
-        ~SCRL8I~, ~SPWI707~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8I~    //Cacofiend
-
-
-        ~SCRL9H~, ~SPWI813~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9H~    //Maze
         ~SCRLB1~, ~SPWI818~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRLB1~    //Bigby's Clenched Fist
 
 
@@ -180,6 +176,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~~, ~SPWI124~, ~Arcane~, ~1~, ~1~, ~0~ => ~~    //Nahal's Reckless Dweomer*
         ~~, ~SPWI222~, ~Arcane~, ~2~, ~3~, ~0~ => ~~    //Chaos Shield*
         ~~, ~SPWI723~, ~Arcane~, ~7~, ~14~, ~0~ => ~~    //Improved Chaos Shield*
+        ~SCRL8I~,  ~SPWI707~, ~Arcane~, ~7~, ~14~, ~0~ => ~SCRL8I~     //Cacofiend
+        ~SCRL9H~,  ~SPWI813~, ~Arcane~, ~8~, ~16~, ~0~ => ~SCRL9H~     //Maze
         ~--HLA--~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Energy Blades
         ~--HLA--~, ~SPWI921~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Improved Alacrity
         ~--HLA--~, ~SPWI922~, ~Arcane~, ~A~, ~18~, ~0~ => ~--HLA--~    //Dragon's Breath

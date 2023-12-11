@@ -1,0 +1,24 @@
+/***********************************************************************************************
+*   This function will patch certain ITM header abilities to set the effect to a preset target
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_patch_effects_preset_target
+    STR_VAR
+        item = null                    //item resref to update
+BEGIN
+
+    COPY_EXISTING ~%item%.ITM~ ~override~
+        //PATCHES
+        READ_LONG   (0x64) abilities_offset
+        READ_LONG   (0x6A) effects_offset
+        READ_SHORT  (abilities_offset + 0x20) first_effect_index
+        READ_SHORT  (abilities_offset + 0x1E) number_header_effects
+        SET final_effect_index = first_effect_index + number_header_effects
+        FOR (index = first_effect_index; index < final_effect_index; ++index)
+        BEGIN
+            SET effect_offset = (effects_offset + (index * 0x30))
+            WRITE_SHORT (effect_offset + 0x02) (2)   //write "2": set the target to be `preset target`
+        END
+    BUT_ONLY_IF_IT_CHANGES
+
+END //function

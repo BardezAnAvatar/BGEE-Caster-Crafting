@@ -1,0 +1,297 @@
+/****************************************************************
+*   This file will handle the creation of *.ITM resources       *
+*       for the new potions I want to create. It will be        *
+*       driven off of my registry metadata, with exception      *
+*       cases created more explicitly.                          *
+*                                                               *
+*   Precondition:                                               *
+*       - Associative array ~new_potions_items~ exists          *
+*       and is populated                                        *
+****************************************************************/
+
+//function defs
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_bz_read_spell_header_for_potion.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_bz_create_potion_from_spell_header.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_remove_projectile.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_effects_preset_target.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_effects_restore_spells_arcane.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_remove_immunity_to_caster.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_add_immunity_to_resource.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_add_cast_spell.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_range.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_patch_replace_ranged_hit_eff_resref.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_override_magnitide_snilloc.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/fn_override_magnitide_fly.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-potion.tph~
+INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
+
+
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   Iterating through registry of spells that can be made into potions...   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
+
+//used for sphere of security
+COPY ~./%MOD_FOLDER%/comp/missing-potions/%bz_edition_code%/SPL/BZ#EMPTY.SPL~ ~override~
+
+//loop through all of the new potions from spells metadata
+ACTION_PHP_EACH ~new_potions_items~
+    AS ~keys~ => ~value~
+    BEGIN
+        /****************
+        *   Copy BAMs   *
+        ****************/
+        //copy inventory BAM
+        COPY
+            ~./%MOD_FOLDER%/comp/missing-potions/BAM/inv/%keys_11%~
+            ~override/%keys_12%.BAM~
+
+        //copy description BAM
+        ACTION_IF NOT FILE_EXISTS ~./override/%keys_13%.BAM~
+        THEN BEGIN
+            COPY
+                ~./%MOD_FOLDER%/comp/missing-potions/BAM/desc/%keys_13%.BAM~
+                ~override/%keys_13%.BAM~
+        END
+        /*********************
+        *   END: Copy BAMs   *
+        *********************/
+
+
+
+        /********************************
+        *    BEGIN: Read Source Spell   *
+        ********************************/
+        LAUNCH_ACTION_FUNCTION ~fn_bz_read_spell_header_for_potion~
+            INT_VAR
+                cast_at_level       = ~%keys_9%~    //caster level to search on; read headers looking a header with this cast at min level
+            STR_VAR
+                spell               = ~%keys_8%~    //spell RESREF to read from
+                duration_opcode     = ~%keys_15%~   //opcode of the effect blocks to search to get the duration from
+                duration_offset     = ~%keys_16%~   //offset within the header's effect matching opcode to read from
+                magnitude_opcode    = ~%keys_17%~   //opcode of the effect blocks to search to get the magnitude from
+                magnitude_offset    = ~%keys_18%~   //offset within the header's effect matching opcode to read from
+                magnitude2_opcode   = ~%keys_19%~   //opcode of the effect blocks to search to get the magnitude2 from
+                magnitude2_offset   = ~%keys_20%~   //offset within the header's effect matching opcode to read from
+            RET
+                spl_duration = ~duration~
+                spl_magnitude = ~magnitude~
+                spl_magnitude2 = ~magnitude2~
+                spl_ability_projectile = ~ability_projectile~
+                spl_abil_range = ~ability_range~
+                spl_abil_target_count = ~ability_target_count~
+                spl_transfer_effects_count = ~transfer_effects_count~
+                spl_transfer_effects = ~transfer_effects~
+        END
+
+        //Exception cases where the description's magnitude doesn't quite square with the above method
+        ACTION_MATCH ~%keys_11~
+        WITH
+            ~snilloc's-snowball-swarm.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_snilloc~ INT_VAR cast_at_level = ~%keys_9%~ STR_VAR spell = ~%keys_8%~ RET spl_magnitude = ~magnitude~ END END
+            ~fly.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_override_magnitide_fly~ INT_VAR cast_at_level = ~%keys_9%~ STR_VAR spell = ~%keys_8%~ RET spl_magnitude = ~magnitude~ END END
+            DEFAULT
+        END
+        /******************************
+        *    END: Read Source Spell   *
+        ******************************/
+
+
+
+        /***********************************************
+        *   BEGIN: Calculate strings for description   *
+        ***********************************************/
+
+        //After reading duration, emit a value that does days; hours; turns (rounds);rounds; seconds; instant
+        ACTION_IF (spl_duration = 0) THEN BEGIN OUTER_SPRINT duration @49910 END
+
+        ELSE BEGIN  //days
+            ACTION_IF ((spl_duration MODULO 7200) = 0) THEN
+            BEGIN
+                OUTER_SET duration_days = (spl_duration / 7200)
+                ACTION_IF (duration_days > 1) THEN BEGIN OUTER_SPRINT duration @49901 END
+                ELSE BEGIN OUTER_SPRINT duration @49900 END
+            END
+            ELSE BEGIN  //hours
+                ACTION_IF ((spl_duration MODULO 300) = 0) THEN
+                BEGIN
+                    OUTER_SET duration_hours = (spl_duration / 300)
+                    ACTION_IF (duration_hours > 1) THEN BEGIN OUTER_SPRINT duration @49903 END
+                    ELSE BEGIN OUTER_SPRINT duration @49902 END
+                END
+                ELSE BEGIN  //turns
+                    ACTION_IF ((spl_duration MODULO 60) = 0) THEN
+                    BEGIN
+                        OUTER_SET duration_turns = (spl_duration / 60)
+                        OUTER_SET duration_rounds = (duration_turns * 10)
+                        ACTION_IF (duration_turns > 1) THEN BEGIN OUTER_SPRINT duration @49905 END
+                        ELSE BEGIN OUTER_SPRINT duration @49904 END
+                    END
+                    ELSE BEGIN  //rounds
+                        ACTION_IF ((spl_duration MODULO 6) = 0) THEN
+                        BEGIN
+                            OUTER_SET duration_rounds = (spl_duration / 6)
+                            ACTION_IF (duration_rounds > 1) THEN BEGIN OUTER_SPRINT duration @49907 END
+                            ELSE BEGIN OUTER_SPRINT duration @49906 END
+                        END
+                        ELSE BEGIN  //seconds
+                            OUTER_SET duration_seconds = spl_duration
+                            ACTION_IF (duration_seconds > 1) THEN BEGIN OUTER_SPRINT duration @49909 END
+                            ELSE BEGIN OUTER_SPRINT duration @49908 END
+                        END //seconds
+                    END //rounds
+                END //turns
+            END //hours
+        END //days
+
+        OUTER_SET magnitude = ~%spl_magnitude%~
+        OUTER_SET magnitude2 = ~%spl_magnitude2%~
+
+
+        /*
+            Expect these values variables:
+                %duration%;
+                    [X] very common
+                %magnitude%
+                    [X] Fly
+                    [X] Snilloc's
+                    [X] Armor of Faith
+                    [X] Barkskin
+                    [X] Draw Upon Holy Might
+                    [X] Mirror Image
+                    [X] Fireball
+                    [X] Holy Power
+                    [X] Spirit Fire
+                    [X] Stoneskin
+                    [X] Champion's Strength
+                    [X] Righteous Magic
+                    [X] Tenser's Transformation
+                    [X] Chain Lightning
+                %magnitude2%
+                    [X] Holy Power
+                    [X] Righteous Magic
+        */
+
+        OUTER_SPRINT identified_name (AT "keys_6")
+        OUTER_SPRINT identified_description (AT "keys_7")
+
+        OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%identified_name%~)
+        OUTER_SET identified_description_STRREF = RESOLVE_STR_REF(~%identified_description%~)
+        /*********************************************
+        *   END: Calculate strings for description   *
+        *********************************************/
+
+
+
+        /******************************
+        *    BEGIN: Create ITM file   *
+        ******************************/
+        ACTION_IF (keys_1) THEN //If generate automatically/using generic code
+        BEGIN
+            LAUNCH_ACTION_FUNCTION fn_bz_lookup_costs_potion
+                INT_VAR
+                    tier = ~%keys_10%~
+                RET
+                    potion_cost = cost
+                    potion_lore = lore
+            END
+
+            /*
+            PRINT ~DEBUG: Cost lookups:
+                Cost:   %potion_cost%
+                Lore:   %potion_lore%
+            ~
+            */
+
+            LAUNCH_ACTION_FUNCTION ~fn_bz_create_potion_from_spell_header~
+                INT_VAR
+                    price = potion_cost                                     //price of the potion
+                    lore = potion_lore                                      //lore to identify the potion
+                    STRREF_identified_name = identified_name_STRREF         //STRREF for identified name
+                    STRREF_identified_desc = identified_description_STRREF  //STRREF for identified description
+                    ability_projectile = spl_ability_projectile             //Which projectile the spell/potion uses
+                    ability_range = spl_abil_range                          //range it can be thrown
+                    ability_target_count = spl_abil_target_count            //targets affected
+                    transfer_effects_count = spl_transfer_effects_count     //number of affects being added
+                STR_VAR
+                    spell = ~%keys_8%~                              //original spell RESREF tha was read from
+                    item  = ~%keys_0%~                              //item RESREF to write to
+                    icon_inventory = ~%keys_12%~                    //BAM RESREF to write for inventory
+                    icon_description = ~%keys_13%~                  //BAM RESREF to write for description
+                    bin_effects_copied = ~%spl_transfer_effects%~   //copied binary of effects read from spell
+                    target_type = ~%keys_5%~                        //Type of target for ability
+                    usability_override = ~%keys_14%~                //for some weird "cannot be used by lawful" spells
+            END
+        END
+        /****************************
+        *    END: Create ITM file   *
+        ****************************/
+
+
+
+        /**************************
+        *    BEGIN: ITM Patches   *
+        **************************/
+        ACTION_MATCH ~%keys_11%~
+        WITH
+            ~bless.BAM~ ~chant.BAM~ ~resist-fear.BAM~ ~strength-of-one.BAM~ ~recitation.BAM~ ~ghostwalk.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_remove_projectile~ STR_VAR item = ~%keys_0%~ END END
+            ~mirror-image.BAM~ ~ghost-armor.BAM~ ~fire-shield-blue.BAM~ ~minor-globe-of-invulnerability.BAM~
+            ~globe-of-invulnerability.BAM~ ~phantom-blade.BAM~ ~minor-spell-turning.BAM~ ~moonblade.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END END
+            ~wondrous-recall-arcane.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_effects_restore_spells_arcane~ STR_VAR item = ~%keys_0%~ END END
+            ~exaltation.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_remove_immunity_to_caster~ STR_VAR item = ~%keys_0%~ END END
+            ~knock.BAM~ ~snake's-swiftness.BAM~ ~displacement.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 1 STR_VAR item = ~%keys_0%~ END END
+            ~entropy-shield.BAM~ ~fire-shield-red.BAM~ ~expeditious-retreat.BAM~
+                BEGIN
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 1 STR_VAR item = ~%keys_0%~ END
+                END
+            ~wind-shots.BAM~
+                BEGIN
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_replace_ranged_hit_eff_resref~ STR_VAR item = ~%keys_0%~ eff_resref = ~%keys_8%~ END
+                END
+            ~turning-weapon.BAM~
+                BEGIN
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_effects_preset_target~ STR_VAR item = ~%keys_0%~ END
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 5 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Bard
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 11 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Druid
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 2 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Fighter
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 16 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Fighter/Druid
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 7 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Fighter/Mage
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 10 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Fighter/Mage/Thief
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 9 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Fighter/Thief
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 1 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Mage
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 13 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Mage/Thief
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 20 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Monk
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 12 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Ranger
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 19 seconds = spl_duration STR_VAR item = ~%keys_0%~ END  //Sorcerer
+                    LAUNCH_ACTION_FUNCTION ~fn_patch_add_immunity_to_resource~ INT_VAR class = 4 seconds = spl_duration STR_VAR item = ~%keys_0%~ END   //Thief
+                END
+            ~sphere-of-protection-from-acid.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_9 STR_VAR item = ~%keys_0%~ spell = ~MESOS04~ END END
+            ~sphere-of-protection-from-cold.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_9 STR_VAR item = ~%keys_0%~ spell = ~MESOS02~ END END
+            ~sphere-of-protection-from-electricity.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_9 STR_VAR item = ~%keys_0%~ spell = ~MESOS03~ END END
+            ~sphere-of-protection-from-fire.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_9 STR_VAR item = ~%keys_0%~ spell = ~MESOS01~ END END
+            ~sphere-of-protection-from-petrification.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_9 STR_VAR item = ~%keys_0%~ spell = ~MESOS06~ END END
+            ~sphere-of-protection-from-poison.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_add_cast_spell~ INT_VAR caster_level = keys_9 STR_VAR item = ~%keys_0%~ spell = ~MESOS05~ END END
+            ~colossal-growth.BAM~
+                BEGIN LAUNCH_ACTION_FUNCTION ~fn_patch_range~ INT_VAR range = 40 STR_VAR item = ~%keys_0%~ END END
+            DEFAULT
+        END
+        /************************
+        *    END: ITM Patches   *
+        ************************/
+    END

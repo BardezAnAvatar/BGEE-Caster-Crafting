@@ -1,0 +1,119 @@
+/***********************************************************************************************
+*   Function to read the magnitide for fly spell. The Magnitide is stored in EEex opcode
+*       and not in the first-found effect, so this needs custom detection.
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_override_magnitide_fly
+    INT_VAR
+        cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
+    STR_VAR
+        spell = null                    //spell RESREF to read from
+    RET
+        ~magnitude~
+
+    BEGIN
+        //return value defaults
+        OUTER_SET magnitude = 0
+
+    ACTION_IF
+        FILE_EXISTS_IN_GAME ~%spell%.SPL~
+    BEGIN
+
+        COPY_EXISTING ~%spell%.SPL~ ~override~
+            READ_SHORT 0x68 abil_num
+            READ_LONG  0x64 abil_off
+            READ_LONG  0x6a fx_off
+            SET best_min_lvl_match = 1
+            PATCH_IF ((abil_num = 1) OR (cast_at_level = 1))
+            BEGIN
+                SET base_off = abil_off
+                READ_SHORT (abil_off + 0x10) best_min_lvl_match
+            END
+            ELSE
+            BEGIN
+                FOR (index = 1 ; index < abil_num ; ++index)    // skip first ability
+                BEGIN
+                    READ_SHORT (abil_off + (index * 0x28) + 0x10) min_lev
+
+                    PATCH_IF min_lev = cast_at_level
+                    BEGIN
+                        SET base_off = (abil_off + (index * 0x28))
+                        SET index = abil_num // kill loop
+                        SET best_min_lvl_match = min_lev    //perfect match
+                    END
+                    ELSE
+                    BEGIN
+                        PATCH_IF ((min_lev > best_min_lvl_match) AND (min_lev < cast_at_level))
+                        BEGIN
+                            SET base_off = (abil_off + ((index - 1) * 0x28))
+                        END
+                    END
+                END
+            END
+
+            //Debug result
+            /*
+            PATCH_PRINT ~DEBUG:
+                Best Level Match:       %best_min_lvl_match%
+                Header offset detected: %base_off%
+            ~
+            */
+
+            //Read the spell header in fields to write to item
+            // NOTE: the two ability structures differ too much. Spell ability is smaller than item ability headers.
+            //      Need to read each field then translate it over, methinks.
+            //READ_ASCII (base_off) entire_matching_ability (0x38)  //read the entire spell ability
+            READ_BYTE  (base_off + 0x00) ~abil_type~
+            READ_BYTE  (base_off + 0x0C) ~abil_target~
+            READ_BYTE  (base_off + 0x0D) ~abil_target_count~
+            READ_SHORT (base_off + 0x0E) ~abil_range~
+            READ_SHORT (base_off + 0x1E) transfer_fx_num
+            READ_SHORT (base_off + 0x20) abil_fx_idx
+            READ_SHORT (base_off + 0x26) ~abil_projectile~
+
+            // read all effects in a massive block
+            READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)
+            BUT_ONLY
+
+        /**************************************************************************************
+        *   BEGIN: Read the variables from the spell header/effects to emit to descriptions   *
+        **************************************************************************************/
+
+        //Loop through the copied effects in a loop. Look for the opcodes specified, read them if necessary
+        OUTER_SET read_magnitude = 1
+        OUTER_SET magnitude_opcode = 401        //EEex stat opcode
+        OUTER_SET magnitude_offset = 0x4        //offset to read from
+        OUTER_SET magnitude_stat_offset = 0x2C  //stat field
+
+        OUTER_SET terminate_loop = (0x30 * transfer_fx_num)
+
+        //Set a PATCH context to read the already-read effects
+        OUTER_PATCH ~%transfer_effects%~
+        BEGIN
+            FOR (index = 0; index < transfer_fx_num; ++index)
+            BEGIN
+                SET start_offset = (index * 0x30)
+                READ_SHORT (start_offset + 0) opcode
+                PATCH_IF ((read_magnitude) AND (opcode = magnitude_opcode)) THEN
+                BEGIN
+                    READ_LONG (start_offset + magnitude_stat_offset) stat_updated
+                    PATCH_IF (stat_updated == 640) THEN  //Which stat is being altered (flying speed)
+                    BEGIN
+                        READ_LONG (start_offset + magnitude_offset) magnitude
+                        SET read_magnitude = 0
+                    END
+                END
+            END
+        END
+
+        /************************************************************************************
+        *   END: Read the variables from the spell header/effects to emit to descriptions   *
+        ************************************************************************************/
+
+
+    END
+    ELSE BEGIN
+        WARN ~WARN: fn_override_magnitide_fly: file `%spell%.SPL` not found~
+    END
+
+END

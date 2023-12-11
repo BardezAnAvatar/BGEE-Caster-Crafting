@@ -1,0 +1,130 @@
+/************************************************************************
+*   This function will generate the category and sub-category states    *
+*        necessary for the potion creation dialog                       *
+************************************************************************/
+
+
+DEFINE_ACTION_FUNCTION ~fn-generate_potion_menu_category_states~
+BEGIN
+
+    /**************************************************
+    *   Potion Main Menu: Transitions to categories   *
+    **************************************************/
+    //Extend the top state transitions for the main menu
+    APPEND_OUTER - ~Potions/CategoryMenus.D~
+        ~~~~~
+
+EXTEND_TOP ~BZMSCAK~
+    ~bz-potion-main_menu~ //state number(s)
+        ~~~~~
+
+    //inject transitions for each category
+    ACTION_PHP_EACH ~potion_category_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        APPEND_OUTER - ~Potions/CategoryMenus.D~
+            ~~~~~
+        IF ~~
+        THEN
+            REPLY ~%keys_3%~
+            GOTO ~bz-potion-%keys_2%~
+
+            ~~~~~
+    END
+
+    APPEND_OUTER - ~Potions/CategoryMenus.D~
+        ~~~~~
+END
+
+        ~~~~~
+
+
+    /*****************************
+    *   Potion Category states   *
+    *****************************/
+    APPEND_OUTER - ~Potions/CategoryMenus.D~
+        ~~~~~
+
+APPEND ~BZMSCAK~
+        ~~~~~
+
+    //Iterate over categories to create their states
+    ACTION_PHP_EACH ~potion_category_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Create a Category state
+        APPEND_OUTER - ~Potions/CategoryMenus.D~
+            ~~~~~
+    IF ~~
+    THEN BEGIN ~bz-potion-%keys_2%~
+        SAY ~%keys_3%~
+            //inject transitions to subcategory states
+            ~~~~~
+
+        ACTION_PHP_EACH ~potion_subcategory_list~
+        AS ~subkeys~ => ~subvalue~
+        BEGIN
+            ACTION_IF (~%keys_2%~ STRING_EQUAL ~%subkeys_3%~) THEN
+            BEGIN
+                APPEND_OUTER - ~Potions/CategoryMenus.D~
+                    ~~~~~
+            IF ~~
+            THEN
+                REPLY ~%subkeys_6%~
+                GOTO ~bz-potion-%keys_2%-%subkeys_4%~
+
+                    ~~~~~
+            END //category matches
+        END //iterate through ~potion_subcategory_list~
+
+        APPEND_OUTER - ~Potions/CategoryMenus.D~
+            ~~~~~
+
+
+            IF ~~
+            THEN REPLY @30025 // ~Pick another type of potion.~
+                GOTO ~bz-potion-main_menu~
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
+
+            ~~~~~
+    END //end ~potion_category_list~ loop
+
+
+    //Iterate over subcategories to create their states
+    ACTION_PHP_EACH ~potion_subcategory_list~
+    AS ~subkeys~ => ~subvalue~
+    BEGIN
+        APPEND_OUTER - ~Potions/CategoryMenus.D~
+            ~~~~~
+    IF ~~
+    THEN BEGIN ~bz-potion-%subkeys_3%-%subkeys_4%~
+        SAY @30043 // ~Which potion do you wish to brew?~
+            //inject transitions to subcategory states
+
+
+            IF ~~
+            THEN REPLY @30022 // ~Pick another sub-category of potion.~
+                GOTO ~bz-potion-%subkeys_3%~
+            IF ~~
+            THEN REPLY @30025 // ~Pick another type of potion.~
+                GOTO ~bz-potion-main_menu~
+            IF ~~
+            THEN REPLY @30020 //Pack up your alchemy station
+                EXIT
+    END
+            ~~~~~
+    END //iterate through ~potion_subcategory_list~
+
+
+
+    //END the `APPEND ~BZMSCAK~` statement
+    APPEND_OUTER - ~Potions/CategoryMenus.D~
+        ~~~~~
+END
+
+        ~~~~~
+
+END //function definition

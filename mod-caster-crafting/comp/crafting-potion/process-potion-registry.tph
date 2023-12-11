@@ -4,7 +4,7 @@
 ********************************************************************************/
 
 /*
-    OUTPUT:
+    OUTPUT: ~potion_recipe_data~
 
     [Unique Key]            // 0
     [Potion Item Code]      // 1
@@ -15,76 +15,127 @@
     [Gold Cost]             // 6
     [Time Cost (hours)]     // 7
     [Category]              // 8
-    [Fail %]                // 9
-    [Potion Name]           // 10
+    [SubCategory]           // 9
+    [Fail %]                // 10
+    [Potion Name]           // 11
+
+
+    OUTPUT: ~potion_definitions~
+
+    [Sorting Key]               // 0
+    [Potion Item RESREF]        // 1
+    [Category]                  // 2
+    [SubCategory]               // 3
+    [originating Spell level]   // 4
+    [Potion Name]               // 5
 */
 
 
-INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/potions.tph~
+PRINT ~Include Base Game Existing Potion Recipes~
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potions.tph~
+INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potion_recipes.tph~
+INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/fn-map_dialog_values_for_categories.tph~
+
 
 ACTION_IF (%bz_iwdification_installed%)
 BEGIN
-    PRINT ~DEBUG: Include IWD-ification Potion Recipes~
-    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/potions.tph~
+    PRINT ~Include IWD-ification Existing Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/existing_potion_recipes.tph~
+END
+
+ACTION_IF (%bz_OlvynSpells_installed%)
+BEGIN
+    PRINT ~Include OlvynSpells Existing Potion Recipes~
+    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/existing_potion_recipes.tph~
 END
 
 
 //Expand data for processing
-ACTION_PHP_EACH ~potion_list~
-AS ~keys~ => ~value~
+ACTION_PHP_EACH ~existing_potions~
+AS ~cat_keys~ => ~cat_value~
 BEGIN
 
     //Get gold cost per potion & the in-game name of each potion
-    COPY_EXISTING - ~%keys_1%.itm~ ~override~   //inline only, just to read from potion
-        READ_LONG 0x34 ~potion_price~           //price
-        READ_LONG 0x0C ~identified_name_STRREF~ //identified name
+    COPY_EXISTING - ~%cat_value%.itm~ ~override~    //inline only, just to read from potion
+        READ_LONG 0x34 ~potion_price~               //price
+        READ_LONG 0x0C ~identified_name_STRREF~     //identified name
     BUT_ONLY_IF_IT_CHANGES
 
     ACTION_GET_STRREF (%identified_name_STRREF%) ~potion_name~
 
-
-    //Isolate unique Potion list
-    ACTION_IF (NOT VARIABLE_IS_SET ~bz_base_game_potions_deduped_%keys_1%~)
-    THEN
-    BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~bz_base_potions_deduped~
-        BEGIN
-            ~%keys_1%~, ~%keys_7%~, ~%potion_name%~ => ~%keys_1%~
-        END
-    END
-
-    //Get failure rate per potion
-    OUTER_SET ~potion_failure~ = 5
-
-
-    //define the list data
+    //categories list
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~potion_list_data~
+        ~potion_definitions~
     BEGIN
-        ~%keys_0%~,
-        ~%keys_1%~,
-        ~%keys_2%~,
-        ~%keys_3%~,
-        ~%keys_4%~,
-        ~%keys_5%~,
-        ~%potion_price%~,
-        ~%keys_6%~,
-        ~%keys_7%~,
-        ~%potion_failure%~,
+        ~%cat_keys_1%-%cat_keys_2%-0-%cat_value%~,
+        ~%cat_value%~,
+        ~%cat_keys_1%~,
+        ~%cat_keys_2%~,
+        ~%cat_keys_3%~,
         ~%potion_name%~
-            => ~%value%~
-    END
+            =>
+        ~%cat_value%~
+    END //define array
 
+
+    //Expand data for processing
+    ACTION_PHP_EACH ~existing_potion_recipes~
+    AS ~keys~ => ~value~
+    BEGIN
+        ACTION_IF (~%cat_keys_0%~ STRING_EQUAL ~%keys_1%~) THEN  //if the potion code is a match
+        BEGIN
+            //Get failure rate per potion
+            OUTER_SET ~potion_failure~ = 5
+
+            //define the list data
+            ACTION_DEFINE_ASSOCIATIVE_ARRAY
+                ~potion_recipe_data~
+            BEGIN
+                ~%cat_keys_1%-0-%keys_0%~,
+                ~%keys_1%~,
+                ~%keys_2%~,
+                ~%keys_3%~,
+                ~%keys_4%~,
+                ~%keys_5%~,
+                ~%potion_price%~,
+                ~%keys_6%~,
+                ~%cat_keys_1%~,
+                ~%cat_keys_2%~,
+                ~%potion_failure%~,
+                ~%potion_name%~
+                    =>
+                ~%value%~
+            END //define array
+        END //if matches
+    END //loop ~existing_potion_recipes~
+END //loop
+
+
+//Calculate a categories array
+LAUNCH_ACTION_FUNCTION ~fn-map_dialog_values_for_categories~
+    RET_ARRAY
+    ~potion_category_list~ = ~categories~
+    ~potion_subcategory_list~ = ~subcategories~
 END
 
 
+
+//Sort the indicies (on first key)
+ACTION_SORT_ARRAY_INDICES ~potion_definitions~
+ACTION_SORT_ARRAY_INDICES ~potion_recipe_data~
+ACTION_SORT_ARRAY_INDICES ~potion_category_list~
+ACTION_SORT_ARRAY_INDICES ~potion_subcategory_list~
+
+
+
 /* DEBUG */
-ACTION_PHP_EACH ~potion_list_data~
+/*
+PRINT ~DEBUG: potion_recipe_data:~
+ACTION_PHP_EACH ~potion_recipe_data~
     AS ~keys~ => ~value~
     BEGIN
         //Debugging Statements
-        PRINT ~DEBUG: potion_list_data:
+        PRINT ~-Potion Recipe Record:
             Unique Key:            `%keys_0%`
             Potion Item Code:      `%keys_1%`
             Required Caster Level: `%keys_2%`
@@ -94,8 +145,64 @@ ACTION_PHP_EACH ~potion_list_data~
             Gold Cost:             `%keys_6%`
             Time Cost (hours):     `%keys_7%`
             Category:              `%keys_8%`
-            Fail %:                `%keys_9%`
-            Potion Name:           `%keys_10%~
+            SubCategory:           `%keys_9%`
+            Fail %:                `%keys_10%`
+            Potion Name:           `%keys_11%~
     END
+*/
+
+/* DEBUG */
+/*
+ACTION_PHP_EACH ~potion_definitions~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~DEBUG: potion_categories:
+            Unique Key:            `%keys_0%`
+            Potion Item Code:      `%keys_1%`
+            Category:              `%keys_2%`
+            SubCategory:           `%keys_3%`
+            Original spell Level:  `%keys_4%`
+            Potion Name:           `%keys_5%`
+            Value:                 `%value%`~
+    END
+*/
 
 
+/* DEBUG */
+/*
+PRINT ~DEBUG: potion_category_list:~
+ACTION_PHP_EACH ~potion_category_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~-Category Record:
+            Unique Key:            `%keys_0%`
+            Category:              `%keys_1%`
+            Category Code:         `%keys_2%`
+            Category Name (TRA):   `%keys_3%`
+            Value:                 `%value%`~
+    END
+*/
+
+
+/* DEBUG */
+/*
+PRINT ~DEBUG: potion_subcategory_list:~
+ACTION_PHP_EACH ~potion_subcategory_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~-Subcategory Record:
+            Unique Key:                 `%keys_0%`
+            Category:                   `%keys_1%`
+            SubCategory:                `%keys_2%`
+            Category Code:              `%keys_3%`
+            SubCategory Code:           `%keys_4%`
+            Category Name (TRA):        `%keys_5%`
+            Sub Category Name (TRA):    `%keys_6%`
+            Category Index:             `%keys_7%`
+            SubCategory Index:          `%keys_8%`
+            Value:                      `%value%`~
+    END
+*/

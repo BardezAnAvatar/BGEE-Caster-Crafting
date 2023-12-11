@@ -1,0 +1,44 @@
+DEFINE_ACTION_FUNCTION ~fn-generate_potion_subcategory_transitions~
+BEGIN
+
+    ACTION_PHP_EACH ~potion_subcategory_list~
+        AS ~sub~ => ~sv~
+    BEGIN
+
+        APPEND_OUTER - ~Potions/Transitions.D~
+            ~~~~~
+
+EXTEND_TOP ~BZMSCAK~
+    ~bz-potion-%sub_3%-%sub_4%~ //state identifier
+            ~~~~~
+
+
+        //isolate the unique potion entries; specific potions
+        ACTION_PHP_EACH ~potion_definitions~
+            AS ~keys~ => ~value~
+            BEGIN
+                ACTION_IF ((~%keys_2%~ STRING_EQUAL ~%sub_1%~) AND (~%keys_3%~ STRING_EQUAL ~%sub_2%~))
+                THEN
+                BEGIN
+
+                    //Give the potion a dialog option
+                    APPEND_OUTER - ~Potions/Transitions.D~
+                        ~~~~~
+        IF ~~
+        THEN
+            REPLY ~%keys_5%~
+            GOTO ~bz-potion-%sub_3%-%sub_4%-%value%~
+                        ~~~~~
+                END //comparison
+            END //iterate through ~potion_definitions~
+
+
+        APPEND_OUTER -
+            ~Potions/Transitions.D~
+            ~~~~~
+END
+
+            ~~~~~
+
+    END //iterating through ~potion_subcategory_list~
+END // ~fn-generate_potion_subcategory_transitions~ func. def.

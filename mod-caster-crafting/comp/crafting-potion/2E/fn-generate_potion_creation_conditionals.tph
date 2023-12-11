@@ -1,0 +1,95 @@
+/****************************************************************************************************************
+*   This function will build out 3 strings used for state/response conditions for crafting dialog transitions   *
+*                                                                                                               *
+*   PreConditions:                                                                                              *
+*   An associative array named "spell_lookup" what contains these keys:                                         *
+*       [Spell RESREF]          // 0                                                                            *
+*       [Spell Display Name]    // value    --get from spell/TLK                                                *
+****************************************************************************************************************/
+
+//includes
+INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-csv_string_to_array.tph~
+
+
+
+DEFINE_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
+    INT_VAR
+        ~cost_gold~ = "-1"
+    STR_VAR
+        ~recipe~ = null
+        ~potion_name~ = null
+    RET
+        ~condition_valid~
+        ~condition_invalid_spells~
+        ~condition_invalid_level~
+        ~condition_invalid_gold~
+        ~response_text~
+        ~formula~
+BEGIN
+    //Initialize return variables
+    OUTER_TEXT_SPRINT ~condition_valid~ ~~
+    OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~~
+    OUTER_TEXT_SPRINT ~condition_invalid_level~ ~~
+    OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~~
+    OUTER_TEXT_SPRINT ~response_text~ ~~
+
+
+
+    //build out all 3 conditionals
+
+    LAUNCH_ACTION_FUNCTION ~fn-csv_string_to_array~
+        STR_VAR
+            ~string~ = ~%recipe%~     // string with space separator
+        RET_ARRAY
+            ~spells_array~ = ~array~
+    END //~fn-csv_string_to_array~ call
+
+    //Build up the formula string & conditions
+    OUTER_SET ~i~ = 0
+    OUTER_TEXT_SPRINT ~recipe_spell_list~ ~~
+    OUTER_TEXT_SPRINT ~condition_valid~ ~~
+    OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~~
+    OUTER_SET gold_minus_one = (cost_gold - 1)
+    OUTER_SET level_minus_one = (rec_2 - 1)
+
+    ACTION_PHP_EACH ~spells_array~
+        AS ~spell_keys~ => ~_v~
+        BEGIN
+            //comma-separate
+            ACTION_IF (~i~ > 0) THEN BEGIN OUTER_TEXT_SPRINT ~recipe_spell_list~ ~%recipe_spell_list%, ~ END
+            OUTER_TEXT_SPRINT ~temp_spellName~ $spell_lookup("%_v%")
+            OUTER_TEXT_SPRINT ~recipe_spell_list~ ~%recipe_spell_list%%temp_spellName%~
+            OUTER_SET ~i~ = (%i% + 1)
+
+            //use the RESREF to check for memorized spell
+            OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
+HaveSpellRES("%_v%")
+PartyGoldGT(%gold_minus_one%)~
+            //use the RESREF to check for missing memorized spell
+            OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~%condition_invalid_spells%
+!HaveSpellRES("%_v%")~
+        END //~spells_array~
+
+
+    OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %level_minus_one%)
+%condition_valid%~
+
+    OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~PartyGoldLT(%cost_gold%)~
+    OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~PartyGoldGT(%gold_minus_one%)
+LevelGT(MYSELF, %level_minus_one%)
+OR(%i%)
+%condition_invalid_spells%~
+    OUTER_TEXT_SPRINT ~condition_invalid_level~ ~PartyGoldGT(%gold_minus_one%)
+!LevelGT(MYSELF, %level_minus_one%)~
+
+
+    ACTION_IF (~i~ > 1)
+        THEN BEGIN OUTER_SPRINT ~formula~ @30050 END    //plural
+        ELSE BEGIN OUTER_SPRINT ~formula~ @30049 END    //singular
+
+    //use `potion_name` and `formula` to merge dynamic text
+    OUTER_SPRINT ~response_text~ @30045 // ~Brew %potion_name% using %formula%.~
+
+
+
+END //function definition

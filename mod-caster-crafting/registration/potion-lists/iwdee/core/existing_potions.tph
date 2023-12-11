@@ -1,0 +1,79 @@
+/*
+    OUTPUT: ~existing_potions~
+
+    [UID]                       // 0
+    [Category]                  // 1
+    [SubCategory]               // 2
+    [originating Spell level]   // 3
+                                // 5: //not putting name in the registry. Get from ITM files due to translations, etc.
+        =>
+    [Potion Item RESREF]        // value
+*/
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~existing_potions~
+    BEGIN
+
+        ~POTN02~,           ~Defense~,      ~Energy Resistance~,    ~0~ => ~POTN02~     //Potion of Fire Resistance
+        ~________STR18~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN44~     //Potion of Strength (18)
+        ~________STR19~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN03~     //Potion of Hill Giant Strength (19)
+        ~________STR20~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN12~     //Potion of Stone Giant Strength (20)
+        ~________STR21~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN04~     //Potion of Frost Giant Strength (21)
+        ~________STR22~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN05~     //Potion of Fire Giant Strength (22)
+        ~________STR23~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN06~     //Potion of Cloud Giant Strength (23)
+        ~________STR24~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN07~     //Potion of Storm Giant Strength (24)
+        ~POTN08~,           ~Cure~,         ~Healing~,              ~0~ => ~POTN08~     //Potion of Healing
+        ~POTN09~,           ~Offense~,      ~Attack Bonus~,         ~0~ => ~POTN09~     //Potion of Heroism
+        ~POTN10~,           ~Enhancement~,  ~Invisibility~,         ~0~ => ~POTN10~     //Potion of Invisibility
+        ~POTN11~,           ~Defense~,      ~Armor~,                ~0~ => ~POTN11~     //Potion of Invulnerability
+        ~POTN13~,           ~Bomb~,         ~Damage~,               ~0~ => ~POTN13~     //Oil of Fiery Burning
+        ~POTN14~,           ~Offense~,      ~Haste~,                ~0~ => ~POTN13~     //Oil of Speed
+        ~POTN17~,           ~Cure~,         ~Restorative~,          ~0~ => ~POTN17~     //Elixer of Health
+        ~POTN18~,           ~Defense~,      ~Energy Resistance~,    ~0~ => ~POTN18~     //Potion of Absorption
+        ~POTN19~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN19~     //Potion of Agility (18)
+        ~POTN20~,           ~Cure~,         ~Restorative~,          ~0~ => ~POTN20~     //Andidote
+        ~POTN21~,           ~Defense~,      ~Mental Defense~,       ~0~ => ~POTN21~     //Potion of Clarity
+        ~POTN22~,           ~Defense~,      ~Energy Resistance~,    ~0~ => ~POTN22~     //Protection from Cold
+        ~POTN24~,           ~Defense~,      ~Armor~,                ~0~ => ~POTN24~     //Potion of Defense
+        ~POTN26~,           ~Bomb~,         ~Damage~,               ~0~ => ~POTN26~     //Potion of Explosions
+        ~POTN27~,           ~Bomb~,         ~Damage~,               ~0~ => ~POTN27~     //Potion of Fire Breath
+        ~POTN28~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN28~     //Potion of Fortitude (18)
+        ~POTN29~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN29~     //Potion of Genius (18)
+        ~POTN30~,           ~Enhancement~,  ~Detection~,            ~0~ => ~POTN30~     //Potion of Infravision
+        ~POTN31~,           ~Defense~,      ~Energy Resistance~,    ~0~ => ~POTN31~     //Potion of Insulation
+        ~POTN33~,           ~Defense~,      ~Spell Immunity~,       ~0~ => ~POTN33~     //Potion of Magic Blocking
+        ~POTN34~,           ~Defense~,      ~Magic Resistance~,     ~0~ => ~POTN34~     //Potion of Magic Protection
+        ~POTN35~,           ~Defense~,      ~Damage Resistance~,    ~0~ => ~POTN35~     //Potion of Magic Shielding
+        ~POTN36~,           ~Enhancement~,  ~Skill Boost~,          ~0~ => ~POTN36~     //Potion of Master Thievery
+        ~POTN37~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN37~     //Potion of Mind Focusing
+        ~POTN38~,           ~Defense~,      ~Status Immunity~,      ~0~ => ~POTN38~     //Potion of Mirrored Eyes
+        ~POTN39~,           ~Enhancement~,  ~Skill Boost~,          ~0~ => ~POTN39~     //Potion of Perception
+        ~POTN41~,           ~Enhancement~,  ~Skill Boost~,          ~0~ => ~POTN41~     //Potion of Power
+        ~POTN42~,           ~Cure~,         ~Regeneration~,         ~0~ => ~POTN42~     //Potion of Regeneration
+        ~POTN43~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN43~     //Potion of Insight (18)
+        ~POTN45~,           ~Defense~,      ~Status Immunity~,      ~0~ => ~POTN45~     //Potion of Free Action
+        ~POTN46~,           ~Defense~,      ~Armor~,                ~0~ => ~POTN46~     //Potion of Stone Form
+        ~POTN52~,           ~Cure~,         ~Healing~,              ~0~ => ~POTN52~     //Potion of Extra Healing
+        ~POTN55~,           ~Cure~,         ~Healing~,              ~0~ => ~POTN55~     //Potion of Superior Healing
+        ~POTN60~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN60~     //Potion of Persuasiveness
+//IWD specifics
+        ~ADISEASE~,         ~Cure~,         ~Restorative~,          ~0~ => ~ADISEASE~   //Mummy's Tea
+        ~FLAMOIL~,          ~Bomb~,         ~Damage~,               ~0~ => ~FLAMOIL~    //Flaming Oil
+        ~CHANCE~,           ~Offense~,      ~Damage Boost~,         ~0~ => ~CHANCE~     //Oil of Second Chances
+        ~EXTHEAL~,          ~Cure~,         ~Healing~,              ~0~ => ~EXTHEAL~    //Potion of Extra Healing
+        ~PNULL~,            ~Cure~,         ~Restorative~,          ~0~ => ~PNULL~      //Oil of Null Effect
+        ~SERPSCA~,          ~Defense~,      ~Armor~,                ~0~ => ~SERPSCA~    //Oil of the Serpent's Scales
+        ~SPIRIT~,           ~Cure~,         ~Healing~,              ~0~ => ~SPIRIT~     //Spirit Essence
+        ~USPOT1A~,          ~Enhancement~,  ~Stat Transfer~,        ~0~ => ~USPOT1A~    //Potion of Action Transferenc
+        ~USPOT2A~,          ~Enhancement~,  ~Stat Increase~,        ~0~ => ~USPOT2A~    //Potion of Resistance
+        ~USPOT2B~,          ~Enhancement~,  ~Stat Increase~,        ~0~ => ~USPOT2B~    //Potion of Greater Resistance
+        ~USPOT3A~,          ~Enhancement~,  ~Stat Increase~,        ~0~ => ~USPOT3A~    //Potion of Magical Resistance
+        ~USPOT3B~,          ~Enhancement~,  ~Stat Increase~,        ~0~ => ~USPOT3B~    //Potion of Constitution
+        ~USPOT3C~,          ~Enhancement~,  ~Stat Transfer~,        ~0~ => ~USPOT3C~    //Potion of Strength Transference
+        ~USPOT4A~,          ~Enhancement~,  ~Stat Increase~,        ~0~ => ~USPOT4A~    //Potion of Arcane Absorption
+        ~USPOT4B~,          ~Enhancement~,  ~Stat Transfer~,        ~0~ => ~USPOT4B~    //Potion of Life Transference
+        ~USPOT4C~,          ~Enhancement~,  ~Stat Increase~,        ~0~ => ~USPOT4C~    //Potion of Aura Enhancement
+        ~USPOT5A~,          ~Enhancement~,  ~Stat Increase~,        ~0~ => ~USPOT5A~    //Potion of Dissipation
+        ~USPOT5B~,          ~Enhancement~,  ~Stat Transfer~,        ~0~ => ~USPOT5B~    //Potion of Holy Transference
+
+
+    END

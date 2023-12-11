@@ -1,0 +1,34 @@
+/***********************************************************************************************
+*   This function will patch certain ITM header abilities to add the `Immunity to resource`
+*       targeting the item for the specified class
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_patch_add_immunity_to_resource
+    INT_VAR
+        class = "-1"        //Which class?
+        seconds = "-1"      //how long?
+    STR_VAR
+        item = null         //item resref to update
+BEGIN
+
+    COPY_EXISTING ~%item%.ITM~ ~override~
+        //PATCHES
+        LAUNCH_PATCH_FUNCTION ~ADD_ITEM_EFFECT~
+            INT_VAR
+                opcode = 324                //`Immunity to resource and message` opcode
+                target = 2                  // preset target
+                timing = 0                  //Instant/duration
+                parameter1 = class          //class provided
+                parameter2 = 105            //get class from parameter1
+                power = 1                   //level 1 spell effect
+                resist_dispel = 3           //Dispel/Bypass
+                duration = seconds
+                savingthrow = 0             //no save
+                header = 1                  //which item ability header?
+                insert_point = 0            //where to insert?
+            STR_VAR
+                resource = ~%item%~         //item RESREF
+        END
+    BUT_ONLY_IF_IT_CHANGES
+
+END //function

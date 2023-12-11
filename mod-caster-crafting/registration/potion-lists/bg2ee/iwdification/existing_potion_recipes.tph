@@ -1,0 +1,36 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~existing_potion_recipes~
+    BEGIN
+
+        /*
+        [Unique Key]            // 0
+        [Potion Item Code]      // 1
+        [Required Caster Level] // 2
+        [Recipe]                // 3; these will be comma-delimited spell RESREFs
+        [Result Count]          // 4
+        [XP cost]               // 5
+        [Time Cost (hours)]     // 6
+        */
+
+        ~POTN44-7~,    ~POTN44~, ~16~, ~SPWI820~,                   ~4~, ~0~,  ~8~  => ~POTN44~   //Potion of Strength (18);                `Iron Body` Wizard spell
+
+        ~POTN03-7~,    ~POTN03~, ~16~, ~SPWI820~,                   ~3~, ~0~,  ~8~  => ~POTN03~   //Potion of Hill Giant Strength (19);     `Iron Body` Wizard spell
+
+        ~POTN12-2~,    ~POTN12~, ~16~, ~SPWI820~,                   ~2~, ~0~, ~12~  => ~POTN12~   //Potion of Stone Giant Strength (20);    `Iron Body` Wizard spell
+
+        ~POTN04-2~,    ~POTN04~, ~16~, ~SPWI820~,                   ~2~, ~0~, ~14~  => ~POTN04~   //Potion of Frost Giant Strength (21);    `Iron Body` Wizard spell
+
+        ~POTN05-2~,    ~POTN05~, ~16~, ~SPWI820~,                   ~1~, ~0~, ~16~  => ~POTN05~   //Potion of Fire Giant Strength (22);     `Iron Body` Wizard spell
+
+        ~POTN06-2~,    ~POTN06~, ~16~, ~SPWI820~,                   ~1~, ~0~, ~18~  => ~POTN06~   //Potion of Cloud Giant Strength (23);    `Iron Body` Wizard spell
+
+        ~POTN07-2~,    ~POTN07~, ~16~, ~SPWI820~,                   ~1~, ~0~, ~24~  => ~POTN07~   //Potion of Storm Giant Strength (24);    `Iron Body` Wizard spell
+
+        ~POTN19-1~,    ~POTN19~, ~0~,  ~SPWI227~,                   ~1~, ~0~,  ~8~  => ~POTN19~   //Potion of Agility (18);                 `Cat's Grace` Wizard spell
+
+        ~POTN28-1~,    ~POTN28~, ~0~,  ~SPWI629~,                   ~1~, ~0~,  ~8~  => ~POTN28~   //Potion of Fortitude (18);               `Trollish Fortitude` Wizard spell
+
+        ~POTN34-3~,    ~POTN34~, ~20~, ~SPPR737~,                   ~2~, ~0~, ~24~  => ~POTN34~   //Potion of Magic Protection;             `Greater Shield of Lathander` Priest spell
+
+        ~POTN42-1~,    ~POTN42~, ~0~,  ~SPWI629~,                   ~3~, ~0~,  ~8~  => ~POTN42~   //Potion of Regeneration;                 `Trollish Fortitude` Wizard spell
+    END

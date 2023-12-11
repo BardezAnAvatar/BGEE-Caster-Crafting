@@ -1,0 +1,16 @@
+/***********************************************************************************************
+*   This function will patch certain ITM headers to remove the projectile
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn_patch_remove_projectile
+    STR_VAR
+        item = null                    //item resref to update
+BEGIN
+
+    COPY_EXISTING ~%item%.ITM~ ~override~
+        //PATCHES
+        READ_LONG   (0x64) abilities_offset
+        WRITE_SHORT (abilities_offset + 0x2A) (1)   //write "1" (projectile value indicating `None`)
+    BUT_ONLY_IF_IT_CHANGES
+
+END //function

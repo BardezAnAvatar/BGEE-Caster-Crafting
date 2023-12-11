@@ -1,0 +1,2251 @@
+/* Reserving range 40000-49999 */
+
+
+/****************
+*   Durations   *
+****************/
+@49900 = ~%duration_days% day~
+@49901 = ~%duration_days% days~
+@49902 = ~%duration_hours% hour~
+@49903 = ~%duration_hours% hours~
+@49904 = ~%duration_turns% turn (%duration_rounds% rounds)~
+@49905 = ~%duration_turns% turns (%duration_rounds% rounds)~
+@49906 = ~%duration_rounds% round~
+@49907 = ~%duration_rounds% rounds~
+@49908 = ~%duration_seconds% second~
+@49909 = ~%duration_seconds% seconds~
+@49910 = ~Instant~
+
+
+/**************************
+*   OlvynSpells Potions   *
+**************************/
+//Snake's Swiftness
+@40002 = ~Oil of Snake's Swiftness~
+@40003 = ~This oil allows the imbiber to move and attack extremely fast for a single round. During the round, the imbiber's movement rate and attacks per round are doubled. In addition, if the imbiber is an animal, a lycanthrope, a yuan-ti, or a character shapeshifted into one such creature, it is sped up further: gaining 2 additional attacks per round and moving at the maximum possible movement rate for the duration.
+
+STATISTICS:
+
+Movement rate: doubled
+Attacks per round: doubled
+Duration: 1 round
+Target: 1 creature
+
+Weight: 1~
+
+
+//Searing Smite
+@40004 = ~Oil of Searing Smite~
+@40005 = ~The applicant soaks their melee weapons, imbuing it with divine fire. The next successful melee attack made on a creature within 5 rounds deals an additional 3d6 magic fire damage.
+
+STATISTICS:
+
+Damage: 3d6 magic fire damage on next melee attack
+Duration: 5 rounds or until triggered
+Target: 1 creature
+
+Weight: 1~
+
+
+//Turning Weapon
+@40006 = ~Oil of Turning Weapon~
+@40007 = ~The applicant coats their weapons with the power to turn undead. For the duration, whenever the applicant hits an undead creature with a melee or ranged attack, the undead is turned as if they had used Turn Undead on it.
+
+This oil is only effective on creatures already possessing the ability to turn undead.
+
+STATISTICS:
+
+Special: Turn Undead (as per the class ability) upon landing hits against undead for the duration.
+Duration: 2 turns (20 rounds)
+Target: 1 creature
+
+Weight: 1~
+
+
+//Camouflage
+@40008 = ~Oil of Camouflage~
+@40009 = ~This oil gives the applicant the ability to blend into the environment with camouflage. Whenever the applicant stands still for 2 seconds, they become effectively invisible through camouflage. The applicant remains invisible so long as <PRO_HESHE> is still; <PRO_HESHE> will become visible again upon moving, attacking, etc.
+
+STATISTICS:
+
+Special: Invisibility when still
+Duration: 1 hour
+Target: 1 creature
+
+Weight: 1~
+
+
+//Reflect Attack
+@40010 = ~Oil of Reflect Attack~
+@40011 = ~After applying this oil, the next instance of physical damage the applicant would receive is reflected back at the attacker, damaging them instead. If the physical damage came from a weapon, any on-hit effects of the weapon will also be reflected back at the attacker.
+
+STATISTICS:
+
+Special: Reflects the next successful attack back to the attacker
+Duration: 8 hours or until hit
+Target: 1 creature
+
+Weight: 1~
+
+
+//Ghostwalk
+@40012 = ~Potion of Ghostwalk~
+@40013 = ~This potion makes the imbiber incorporeal for 1 round. While incorporeal, the imbiber is immune to normal weapons and can move through walls. If the imbiber is inside a wall when the effect ends, they will be pushed to the nearest inhabitable space.
+
+STATISTICS:
+
+Special: Incorporeal
+Duration: 1 round
+Target: Self
+
+Weight: 1~
+
+
+//Wind Shots
+@40014 = ~Oil of Wind Shots~
+@40015 = ~This oil imbues the applicant's ranged weapons with the power of wind. Whenever the applicant hits a creature with a missile attack, that creature must Save vs. Breath at -2 or be blown back for several seconds.
+
+STATISTICS:
+
+Special: Missile attacks blow back enemies
+Duration: 1 turn (10 rounds)
+Target: 1 creature
+
+Weight: 1~
+
+
+//Fly
+@40016 = ~Potion of Fly~
+@40017 = ~This wondrous potiom gives the imbiber the power to fly. For the duration, the imbiber can fly over normally impassable objects such as houses, walls, and rivers, but only as long as the creature is outdoors. The creature is also unaffected by ground-based spells such as Grease, Web, Entangle, and Earthquake.
+
+STATISTICS:
+
+Special: Flight
+Speed: %magnitude%
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Displacement
+@40018 = ~Oil of Displacement~
+@40019 = ~The oil of Displacement shifts the apparent position of the applicant, such that <PRO_HESHE> appears to be several feet away from where <PRO_HESHE> actually is. Attacks against the displaced applicant have a 50% chance of missing. Any effect that dispels illusions can dispel Displacement.
+
+STATISTICS:
+
+Special: Melee attacks against applicant have 50% chance of missing
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Legend Lore
+@40020 = ~Draught of Lengendary Lore~
+@40021 = ~This potion temporarily increases the lore of the imbiber, allowing <PRO_HIMHER> to identify multiple magical items. For the duration, the imbiber's lore is increased by 100.
+
+STATISTICS:
+
+Lore: +100
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Piercing Shots
+@40022 = ~Oil of Piercing Shots~
+@40023 = ~This oil allows the applicant's missile attacks to pierce through creatures. For the duration, any arrow, bolt, bullet, dart, dagger, or axe launched or thrown by the applicant will pierce through creatures in a line, dealing the attack's damage (as well as any on-hit effects) to each creature.
+
+STATISTICS:
+
+Special: Missle weapon attacks hit in a row
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Expose to the Elements
+@40024 = ~Bomb of Elemental Exposure~
+@40025 = ~This bomb increases the harm that extreme conditions do to the target's body. It lowers the target's resistance to fire, magic fire, cold, magic cold and electricity damage by 75%. There is no Saving Throw, but Magic Resistance can still prevent the effects.
+
+STATISTICS:
+
+Fire Resistance: -75%
+Magical Fire Resistance: -75%
+Cold Resistance: -75%
+Magical Cold Resistance: -75%
+Electricity Resistance: -75%
+Saving Throw: None
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Sphere of Security: Protection from Acid
+@40026 = ~Oil of Security: Protection from Acid~
+@40027 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains acid protection as if from a scroll of Protection from Acid.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Acid Resistance: +50%
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Sphere of Security: Protection from Cold
+@40028 = ~Oil of Security: Protection from Cold~
+@40029 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains cold protection as if from a scroll of Protection from Cold.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Cold Resistance: +50%
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Sphere of Security: Protection from Electricity
+@40030 = ~Oil of Security: Protection from Electricity~
+@40031 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains electricity protection as if from a scroll of Protection from Electricity.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Electricity Resistance: +50%
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Sphere of Security: Protection from Fire
+@40032 = ~Oil of Security: Protection from Fire~
+@40033 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains fire protection as if from a scroll of Protection from Fire.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Fire Resistance: +50%
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Sphere of Security: Protection from Petrification
+@40034 = ~Oil of Security: Protection from Petrification~
+@40035 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains protection from petrification as if from a scroll of Protection from Petrification.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Special: Immune to petrification
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Sphere of Security: Protection from Poison
+@40036 = ~Oil of Security: Protection from Poison~
+@40037 = ~This oil grants a +2 bonus to AC and saving throws to the applicant. In addition, the applicant gains protection from poisons as if from a scroll of Protection from Poison.
+
+STATISTICS:
+
+AC: +2 bonus
+Saving Throws: +2 bonus
+Special: Immune to poison and neutralizes any poison already affecting the applicant
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Ghostform
+@40038 = ~Potion of Ghostform~
+@40039 = ~This potion turns the imbiber incorporeal for a short period of time. While incorporeal, the imbiber is immune to non-magical weapons, but is still tangible enough to be able to attack and cast spells. The imbiber can also move through walls while incorporeal (unlike the Fly spell, this also works indoors). Simply click on a point to move to, and the imbiber will float to that point, bypassing normally impassable obstacles in the way.
+
+STATISTICS:
+
+Special: incorporeal
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Gedlee's Electric Barrier
+@40040 = ~Potion of Electric Barrier~
+@40041 = ~This potion protects the imbiber with a shield of electricity. The imbiber gains +50% Electricity Resistance, and creatures that hit the imbiber with an attack or spell in melee take 1d10+3 electricity damage and must Save vs. Polymorph or be stunned for 1 round.
+
+STATISTICS:
+
+Special: Electrical shield
+Electricity Resistance: +50%
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Antiharm Shell
+@40042 = ~Potion of Antiharm~
+@40043 = ~For the duration, the imbiber is immune to damage but cannot deal any damage. The imbiber can still move, attack, and cast spells, but any damage those attacks or spells would deal is prevented.
+
+STATISTICS:
+
+Special: Immune to damage but cannot deal any damage
+Duration: 6 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Non-Silver Weapons
+@40044 = ~Oil of Protection From Non-Silver Weapons~
+@40045 = ~This oil confers complete invulnerability to all non-silver weapons.
+
+STATISTICS:
+
+Special: Immune to Non-Silver Weapons
+Duration: 4 rounds
+Target: 1 creature
+
+Weight: 1~
+
+
+//Perfect Invisibility
+@40046 = ~Potion of Perfect Invisibility~
+@40047 = ~This potion confers perfect invisibility to the imbiber. While under the effect of Perfect Invisibility, the imbiber can attack, cast a spell or otherwise interact with another creature or object while remaining completely invisible. However, Perfect Invisibility can still be dispelled by effects that would dispel regular invisibility, such as True Sight or Dispel Magic. Barring such removal, the spell will last for 3 rounds.
+
+STATISTICS:
+
+Special: Invisibility, perfect
+Duration: 3 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Attain Perfection
+@40048 = ~Potion of Attained Perfection~
+@40049 = ~This potion temporarily makes the imbiber perfect in every way. For 1 hour, the imbiber's Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma are all set to 25.
+
+STATISTICS:
+
+Strength: 25
+Dexterity: 25
+Constitution: 25
+Intelligence: 25
+Wisdom: 25
+Charisma: 25
+Duration: 1 hour
+Target: Self
+
+Weight: 1~
+
+
+//Eclectic Recall
+@40050 = ~Draught of Eclectic Recall~
+@40051 = ~This potion restores spells the imbiber has cast previously, so that the spells may be cast again. Up to eight spells are restored (all 6th-level or lower), no more than one per school of magic. Eclectic Recall prioritizes restoring higher-level spells over lower-level spells.
+
+STATISTICS:
+
+Special: Recall spells
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Mental Agility
+@40052 = ~Potion of Mental Agility~
+@40053 = ~This potion drastically shortens the time necessary to cast spells. The imbiber's casting time is reduced by 10 for the duration. Mental Agility cannot be combined with Improved Alacrity.
+
+STATISTICS:
+
+Casting Time: -10
+Duration: 1 hour
+Target: Self
+
+Weight: 1~
+
+
+//Colossal Growth
+@40054 = ~Bomb of Colossal Growth~
+@40055 = ~This bomb causes enormous vines to burst forth from the ground throughout the area of effect. Enemies within 60 feet of the impact must Save vs. Paralysis at -6 each round or be immobilized, completely entangled by giant vines. Even large creatures such as giants and dragons can be entangled this way.
+
+STATISTICS:
+
+Duration: 1 turn (10 rounds)
+Range: 40 ft.
+Area of Effect: 60-ft. radius
+Saving Throw: Paralysis at -6 negates
+Target: Point
+
+Weight: 1~
+
+
+//True Strike
+@40056 = "Potion of True Strike"
+@40057 = ~This potion gives the imbiber incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration. For the duration, the imbiber gains a +20 bonus to THAC0.
+
+STATISTICS:
+
+THAC0: +20 bonus
+Duration: 9 seconds
+Target: Self
+
+Weight: 1~
+
+
+//Extend Vision
+@40058 = ~Exilir of Extend Vision~
+@40059 = ~This elixir allows the imbiber to see much farther than <PRO_HESHE> could see before. The imbiber will be able to see creatures that are too far away to return the gaze. More importantly, the imbiber can target those creatures with spells and ranged attacks from far away. Extend Vision also makes the imbiber immune to blindness.
+
+STATISTICS:
+
+Special: doubles visual range; able to target spells beyond normal sight range
+Duration: 8 hours
+Target: Self
+
+Weight: 1~
+
+
+
+
+
+/***************************
+*   Icewind Dale Potions   *
+***************************/
+//Expeditious Retreat
+@40100 = ~Oil of Expeditious Retreat~
+@40101 = ~This oil doubles the applicant's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects, such as Haste and Slow, cannot affect the imbiber for the duration of the effect. While under the effect of this oil, the imbiber cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
+
+STATISTICS:
+
+Special: Doubles movement rate
+Duration: 3 rounds
+Target: 1 creature
+
+Weight: 1~
+
+
+//Beast Claw
+@40102 = ~Potion of Beast Claw~
+@40103 = ~This potion transforms the imbiber's arms into the claws of a mighty beast, giving the imbiber 18/72 Strength and the ability to rake an opponent for 2d4 (plus Strength bonus) points of slashing damage. The imbiber can attack twice per round with the beast claws, with a +2 bonus to hit.
+
+STATISTICS:
+
+Strength: 18/72
+Special: Rake attack, 2x/round
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Cat's Grace
+@40104 = ~Potion of Cat's Grace~
+@40105 = ~This potion magically increases the imbiber's Dexterity. The amount depends on the imbiber's class: Rogues gain 1d8 points, warriors and wizards gain 1d6 points, and priests gain 1d4 points. If a character has more than one class, the larger die is used. Cat's Grace cannot raise Dexterity past 20.
+
+STATISTICS:
+
+Dexterity bonus
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Cure Moderate Wounds
+@40106 = ~Potion of Moderate Healing~
+@40107 = ~When wholly consumed, this potion restores 11 Hit Points to the imbiber. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 11 Hit Points.
+Target: Self
+
+Weight: 1~
+
+
+//Decastave
+@40108 = ~Oil of Decastave~
+@40109 = ~When poured, this oil forms into a staff of force in the applicant's hands. It is treated as a magical weapon, doing 1d6 Hit Points of damage per hit, and it can hit creatures that require +1 weapons to hit. It is a staff, however, so if the applicant does not have a proficiency in staff weapons, then the Decastave is used at a penalty. The staff also has the power to drain a target of 1d2 Hit Points on every strike. These Hit Points are added to the applicant's, but they can only heal damage the applicant has taken; they will not raise <PRO_HISHER> Hit Points beyond <PRO_HISHER> normal maximum.
+
+STATISTICS:
+
+Special: Creates a magical +1 staff in hands
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Snilloc's Snowball Swarm
+@40110 = ~Bomb of Snilloc's Snowball Swarm~
+@40111 = ~A flurry of snowballs will erupt from the point of impact. These snowballs will hit everything within the area of effect, doing %magnitude%d3 points of cold damage. Against fire-using or fire-dwelling creatures, it inflicts %magnitude%d6 points of cold damage instead.
+
+STATISTICS:
+
+Damage: %magnitude%d3 (%magnitude%d6 vs. fire-using or fire-dwelling creatures) cold; Save vs. Spell for half
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Target: Point
+
+Weight: 1~
+
+
+//Moonblade
+@40112 = ~Oil of Moonblade~
+@40113 = ~When poured, this oil forms into a silent, weightless sword-like construct made of moonlight that extends four feet from the applicant's hand. The moonblade is considered a +4 weapon for determining what creatures it can hit, though the bonus does not apply to attack rolls made with it. In addition, due to the insubstantial nature of the moonblade, melee bonuses from Strength do not apply.
+
+The strike of a moonblade drains a target's vitality, inflicting 1d12+4 points of magic damage, plus an additional 1d12 points to undead, who are particularly susceptible. A successful strike also temporarily scrambles magic, causing any spells the target casts in the next round to fail.
+
+STATISTICS:
+
+Special: Creates a magical +4 sword in hands
+Duration: 2 turns (20 rounds)
+Target: 1 creature
+
+Weight: 1~
+
+
+//Spike Growth
+@40114 = ~Bomb of Spike Growth~
+@40115 = ~This bomb transforms the terrain surrounding the impact into spiky plants. Any creature entering the area takes 1d4 points of piercing damage and 1d4 points of slashing damage every round until the spell expires.
+
+STATISTICS:
+
+Damage: 1d4 piercing, 1d4 slashing per round
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+Target: Point
+
+Weight: 1~
+
+
+//Recitation
+@40116 = ~Potion of Recitation~
+@40117 = ~The imbiber gains a +2 bonus to their attack rolls and Saving Throws. Recitation does not nullify a Prayer spell; the effects are cumulative.
+
+STATISTICS:
+
+Attack rolls: +2 bonus
+Saving throws: +2 bonus
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Blood Rage
+@40118 = ~Potion of Blood Rage~
+@40119 = ~While under Blood Rage, the imbiber goes Berserk, and is immune to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, and related effects. In addition, the imbiber gains +2 to hit, +3 to damage, +2 to Strength, +10 to maximum Hit Points, and +2 to <PRO_HISHER> movement rate.
+
+The Berserk state has several disadvantages, however: They attack the nearest creature until that creature is dead, then moving on to the next target. The Hit Points of the imbiber are masked for the duration of the effect, and the imbiber cannot benefit from any effect that heals Hit Points. At the end of the potion's duration, the imbiber becomes fatigued and <PRO_HISHER> Strength drops to 3 for 2 turns.
+
+STATISTICS:
+
+Special: Berserk (attacks nearest creature; immune to charm, sleep, fear, hold, stunning, confusion, emotion, Symbol spells, and related effects)
+Attack rolls: +2 bonus
+Damage rolls: +3 bonus
+Strength: +2 bonus
+Hit Points: +10 bonus to maximum Hit Points
+Movement rate: +2 bonus
+Duration: 2 turns (20 rounds)
+Target: Self
+
+Weight: 1
+
+Not Usable By:
+ - Lawful alignments~
+
+
+//Cloud of Pestilence
+@40120 = ~Bomb of Pestilence~
+@40121 = ~This bomb transforms the air around its impact in a 12-ft. radius into sickening, grayish mists. Non-living creatures are immune to the effects of the cloud. For every round of exposure to the disease-ridden air, a creature must save vs. Breath or suffer 3 points of magic damage, blindness, and the loss of 3 points of Strength and Dexterity. The blindness and ability score penalties last 1 turn.
+
+STATISTICS:
+
+Damage: 3 magic damage
+Strength:   -3
+Dexteryity: -3
+Special: Blindness
+Range: 40 ft.
+Area of Effect: 12-ft. radius
+Saving Throw: Breath for half damage
+Duration: 4 rounds
+Target: Point
+
+Weight: 1~
+
+
+//Emotion: Courage
+@40122 = ~Potion of Courage~
+@40123 = ~This potion creates the emotion of courage within the imbiber, gaining +1 to hit, +3 to their damage rolls, and +5 temporary Hit Points (which can put them above their maximum Hit Points). This potion nullifies all fear effects within the area of effect at the time of casting.
+
+STATISTICS:
+
+Special: removes fear
+Attack rolls: +1 bonus
+Damage rolls: +3 bonus
+Hit Points: +5 temporary Hit Points
+Duration: 1 hour
+Target: Self
+
+Weight: 1~
+
+
+//Emotion: Hope
+@40124 = ~Potion of Hope~
+@40125 = ~This potion creates the emotion of hope within the imbiber, gain a morale boost and +2 on their Saving Throws, attack rolls, and damage rolls. This spell nullifies all hopelessness effects within the area of effect at the time of casting.
+
+STATISTICS:
+
+Special: removes hopelessness
+Saving throws: +2 bonus
+Attack rolls: +2 bonus
+Damage rolls: +2 bonus
+Duration: 1 hour
+Target: Self
+
+Weight: 1~
+
+
+//Unfailing Endurance
+@40126 = ~Tonic of Unfailing Endurance~
+@40127 = ~This potion restores the stamina of the imbiber, eliminating any fatigue.
+
+STATISTICS:
+
+Special: removes fatigue
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Animal Rage
+@40128 = ~Potion of Animal Rage~
+@40129 = ~This spell imbues the imbiber creature with animal ferocity. The imbiber gains a Strength score of 19, +20 Hit Points, +20% movement rate, and a +2 bonus to all Saving Throws. The imbiber loses the ability to cast spells while Animal Rage is in effect; when enemies are within sight, <PRO_HESHE> immediately attacks in melee, using whatever is in hand. While this spell is in effect, there is a 5% chance per round that the target will go berserk, attacking friend and foe alike.
+
+STATISTICS:
+
+Strength: 19
+Hit Points: +20 temporary Hit Points
+Movement Rate: +20%
+Saving throws: +2 bonus
+Special: Loses spellcasting; Rage (attacks nearest enemy creature); 5% Berserk instead of Rage (attacks nearest creature, friend or foe)
+Duration: 15 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Righteous Wrath of the Faithful
+@40130 = ~Potion of Righteous Wrath of the Faithful~
+@40131 = ~This potion bestows a form of divine madness upon the imbiber, improving their combat skills. The imbiber gains a +1 to attack rolls and Saving Throws, plus 8 bonus Hit Points for the duration of the spell (these Hit Points can take a target beyond <PRO_HISHER> Hit Point maximum). Anyone affected by Righteous Wrath of the Faithful will suffer fatigue when the spell wears off.
+
+STATISTICS:
+
+Attack rolls: +1 bonus
+Saving throws: +1 bonus
+Hit Points: +8 temporary Hit Points
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+// Shield of Lathander
+@40132 = ~Potion of Shield of Lathander~
+@40133 = ~This spell grants the imbiber immunity to damage for the duration of the spell.
+
+STATISTICS:
+
+Special: Immune to damage
+Duration: 2 rounds
+Target: Self
+
+Weight: 1
+
+Not Usable By:
+ - Evil alignments~
+
+
+//Spike Stones
+@40134 = ~Bomb of Spike Stones~
+@40135 = ~This bomb warps the surrounding rock, reshaping the terrain into spiked projections that blend into the background. Any creature entering the area takes 2d4 Hit Points of piercing damage per round and must make a Save vs. Spell or have its movement rate reduced by 30%.
+
+STATISTICS:
+
+Damage: 2d4 Hit Points of piercing damage / round
+Range: 40 ft.
+Area of Effect: 8-ft. radius
+Saving Throw: Spell or be slowed
+Duration: 12 rounds
+Target: Point
+
+Weight: 1~
+
+
+//Antimagic Shell
+@40136 = ~Potion of Antimagic Shell~
+@40137 = ~This potion causes an invisible barrier to form around the imbiber that moves with <PRO_HIMHER>. This barrier makes the imbiber immune to any magical attacks, but it prevents <PRO_HIMHER> from casting spells.
+
+Antimagic Shell also dispels deafness and feeblemindedness in the imbiber.
+
+STATISTICS:
+
+Special: Immune to magic; cannot cast spells; removed feeblemindedness and deafness
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Trollish Fortitude
+@40138 = ~Potion of Trollish Fortitude~
+@40139 = ~This spell imbues the imbiber with the resilience of a troll, allowing them to regenerate 5 Hit Points per round up to <PRO_HISHER> maximum Hit Points.
+
+STATISTICS:
+
+Special: Regenerate 5 Hit Points per round
+Duration: 2 turns (20 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Impervious Sanctity of Mind
+@40140 = ~Potion of Impervious Sanctity of Mind~
+@40141 = ~This potion steels the caster's mind against any outside influence. Charm, confusion, fear, feeblemindedness, hold, sleep, maze, berserk, and intoxication will not affect the imbiber for the potion's duration.
+
+STATISTICS:
+
+Special: Immune to charm, confusion, fear, feeblemindedness, hold, sleep, maze, berserk, and intoxication
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Greater Shield of Lathander
+@40142 = ~Potion of Greater Shield of Lathander~
+@40143 = ~This potion grants the imbiber 100% Magic Resistance and immunity to damage for the duration of its effects..
+
+STATISTICS:
+
+Magic Resistance: 100%
+Special: Immune to damage
+Duration: 3 rounds
+Target: Self
+
+Weight: 1
+
+Not Usable By:
+ - Evil alignments~
+
+
+//Mist of Eldath
+@40144 = ~Bottle of Eldath's Mist~
+@40145 = ~Upon impact, the area of effect is blanketed with a silver-blue mist. Any creature within the mist will be cured of disease and poison and healed 25 Hit Points.
+
+STATISTICS:
+
+Special: Cures poison and disease and heals 25 Hit Points
+Range: 40 ft.
+Area of Effect: 7-ft. radius
+Duration: Instant
+Target: Point
+
+Weight: 1~
+
+
+//Exaltation
+@40146 = ~Potion of Exaltation~
+@40147 = ~The imbiber of this potion is protected against spells and other attacks that cause fear, sleep, feeblemindedness, unconsciousness, intoxication, berserk and confused states of mind effects for the duration.
+
+STATISTICS:
+
+Special: Immune to confusion, fear, sleep, feeblemindedness, unconsciousness, intoxication, berserk, and confusion
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Entropy Shield
+@40148 = ~Extract of Entropy Shield~
+@40149 = ~This oil surrounds the applicant with a defensive maelstrom of energy that blocks or deflects many attacks. This gives the applicant a +6 bonus to Armor Class, a +2 bonus to Saving Throws, and +50% resistance to electricity, fire, cold, and acid. The applicant is also immune to Flamestrike and all missile-based attacks, including missiles created by spells such as Magic Missile.
+
+STATISTICS:
+
+AC: +6 bonus
+Saving Throws: +2 bonus
+Acid Resistance: +50% bonus
+Fire Resistance: +50% bonus
+Cold Resistance: +50% bonus
+Electricity Resistance: +50% bonus
+Special: Immune to Flamestrike; immune to missile attacks (both physical and magical)
+Duration: Instant
+Target: 1 creature
+
+Weight: 1~
+
+
+
+
+
+/****************************
+*   Baldur's Gate Potions   *
+****************************/
+@40200 = ~Potion of Bless~
+@40201 = ~This potion raises the morale of the imbiber by +1. Furthermore, it raises their attack and damage rolls by +1.
+
+STATISTICS:
+
+Morale: +1 bonus
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Entangle
+@40202 = ~Bomb of Entangle~
+@40203 = ~This bomb causes plants in the area of effect to entangle everyone within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration if they fail a Save vs. Spell. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+
+STATISTICS:
+
+Special: Entangles creatues in area of effect; Save vs. Spell to avoid entanglement
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+Target: Point
+
+Weight: 1~
+
+
+//Sanctuary
+@40204 = ~Potion of Sanctuary~
+@40205 = ~This potion causess all of the imbiber's opponents to ignore <PRO_HISHER> existence as if <PRO_HESHE> were invisible. While protected by this effect, the imbiber cannot take direct offensive action without breaking the spell, but may use non-attack spells or otherwise act in any way that does not violate the prohibition against offensive action. This allows the imbiber to heal wounds, for example. The imbiber cannot cast spells on other creatures without ending the potion's effect.
+
+STATISTICS:
+
+Special: Sanctuary (imbiber protected and cannot attack or be attacked)
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Armor of Faith
+@40206 = ~Oil of Armor of Faith~
+@40207 = ~The applicant receives significant protection against melee and magical attacks, protected from %magnitude%\% of damage.
+
+STATISTICS:
+
+Fire Resistance: +%magnitude%\% bonus
+Cold Resistance: +%magnitude%\% bonus
+Acid Resistance: +%magnitude%\% bonus
+Electricity Resistance: +%magnitude%\% bonus
+Magic Damage Resistance: +%magnitude%\% bonus
+Slashing Resistance: +%magnitude%\% bonus
+Crushing Resistance: +%magnitude%\% bonus
+Piercing Resistance: +%magnitude%\% bonus
+Missile Resistance: +%magnitude%\% bonus
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Spirit Ward
+@40208 = ~Potion of Spirit Ward~
+@40209 = ~This potion surrounds the imbiber with a magical barrier at a distance of one foot. Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking the imbiber. In addition, the imbiber gains a +3 bonus to Saving Throws against all spells that belong to the Enchantment school.
+
+STATISTICS:
+
+Special: Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking
+Saving Throws: +3 bonus vs. Enchantment spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Grease
+@40210 = ~Grease Bomb~
+@40211 = ~This bomb covers the surface around the impact with a slippery layer of a fatty, greasy nature. Any creature in the area must save vs. Spell at +2 or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Spell again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
+
+STATISTICS:
+
+Special: Slip and fall prone (save vs. Spell at +2 to remain upright)
+Movement: 20%
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: %duration%
+Target: Point
+
+Weight: 1~
+
+
+//Armor
+@40212 = ~Potion of Armor~
+@40213 = ~The imbiber is granted a magical force that acts as scale mail armor (AC 6). It is cumulative with Dexterity bonuses to Armor Class and, in the case of Fighter/Mages, with the shield bonus.
+
+STATISTICS:
+
+Base AC: 6
+Duration: 9 hours
+Target: Self
+
+Weight: 1~
+
+
+//Friends
+@40214 = ~Potion of Friends~
+@40215 = ~This potion causes the imbiber to temporarily gain 6 points of Charisma. Those who view the imbiber tend to be very impressed with <PRO_HIMHER> and make an effort to be <PRO_HISHER> friends and help <PRO_HIMHER>, as appropriate to the situation.
+
+STATISTICS:
+
+Charisma: +6
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Petrification
+@40216 = ~Potion of Protection From Petrification~
+@40217 = ~This potion grants the imbiber immunity to all petrification attacks. This includes basilisk and medusa gaze, cursed scrolls of petrification, etc.
+
+STATISTICS:
+
+Special: Immune to petrification
+Duration: 1 hour
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Evil
+@40218 = ~Potion of Protection From Evil~
+@40219 = ~This potion creates a magical barrier around the imbiber at a distance of one foot. The barrier moves with the imbiber and has two major effects: First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Second, summoned demons cannot target the protected creature.
+
+STATISTICS:
+
+Special: Evil creatures' attack rolls are -2; cannot be targeted by summoned demons
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Shield
+@40220 = ~Oil of Shield~
+@40221 = ~When poured, this oil dissolves into a translucent barrier in front of the applicant. It sets the applicant's Armor Class to 4 against all melee weapons, and 2 against missile weapons. It also grants the applicant immunity from the spell Magic Missile.
+
+STATISTICS:
+
+AC: 4 vs. melee; 2 vs. missile
+Special: Immunity to Magic Missile spell
+Duration: 1 hour
+Target: 1 creature
+
+Weight: 1~
+
+
+//Sleep
+@40222 = ~Sleep Bomb~
+@40223 = ~This bomb causes a comatose slumber to come upon one or more enemies around its impact. All creatures in the area of effect must make a Saving Throw vs. Spell or fall asleep. Attacks against sleeping opponents never miss, though they will wake upon taking damage.
+
+STATISTICS:
+
+Special: Sleep (Saving vs. Spell negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 5 rounds
+Target: Point
+
+Weight: 1~
+
+
+//Aid
+@40224 = ~Potion of Aid~
+@40225 = ~This potion raises the morale of the imbiber by +1. Furthermore, it raises their attack and damage rolls by +1, and 1d8 additional Hit Points for the duration.
+
+STATISTICS:
+
+Morale: +1 bonus
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Hit Points: +1d8 temporary Hit Points
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Barkskin
+@40226 = ~Oil of Barkskin~
+@40227 = ~Upon application, this oil causes skin to become as tough as bark, increasing its base Armor Class to %magnitude%. In addition, Saving Throws (except magic) gain a +1 bonus.
+
+STATISTICS:
+
+Base AC: %magnitude%
+Saving Throws: +1 bonus (except vs. Spell)
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Chant
+@40228 = ~Potion of Chant~
+@40229 = ~This potion grants the imbiber a +1 bonus to attack rolls, minimum damage rolls, and Saving Throws. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1.
+
+For example, a 6d6 fireball will do 6d5 damage, and a flaming long sword that deals 1d8+2 slashing plus 1d3 fire damage will deal 1d8+2 slashing plus 1d2 fire damage instead.
+
+STATISTICS:
+
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Saving Throws: +1 bonus
+Special: dice rolled against imbiber (outside a weapon's base damage) are reduced by 1 size
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Find Traps
+@40230 = ~Philter of Find Traps~
+@40231 = ~This potion opens the mind of the imbiber; all traps —concealed normally or magically— of mechanical or magical nature become apparent to <PRO_HIMHER>. The imbiber must stop to concentrate 1/per round to observe surroundings.
+
+STATISTICS:
+
+Special: Find traps in immediate area
+Duration: 3 turns (30 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Resist Fire and Cold
+@40232 = ~Potion of Resist Fire and Cold~
+@40233 = ~This potion causes the imbiber's body to be toughened to withstand heat and cold; all damage sustained by fire or cold is reduced by 50%.
+
+STATISTICS:
+
+Fire resistance: +50% (mundane or magical)
+Cold resistance: +50% (mundane or magical)
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Draw Upon Holy Might
+@40234 = ~Draught of Draw Upon Holy Might~
+@40235 = ~This potion grants %magnitude% of Strength, Constitution, and Dexterity to the imbiber
+
+STATISTICS:
+
+Strength:     +%magnitude% bonus
+Dexterity:    +%magnitude% bonus
+Constitution: +%magnitude% bonus
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Writhing Fog
+@40236 = ~Writhing Fog Bomb~
+@40237 = ~This bomb conjures a cloud of writhing fog that chills and hinders anyone within its area. Creatures in the fog take 1d3 points of cold damage per round. In addition, there is a 20% chance that they must save vs. Death or be slowed for 1 round. Creatures immune to cold damage do not suffer any adverse effects from this spell.
+
+STATISTICS:
+
+Damage: 1d3 cold
+Special: 20% chance slowed for 1 round (must save vs. Death negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+Target: Point
+
+Weight: 1~
+
+
+//Blur
+@40238 = ~Oil of Blur~
+@40239 = ~When applied, this oil causes the outline of the applicant's form to become blurred, shifting, and wavering. This distortion causes all missile and melee attacks against the applicant to be made with a -3 penalty. The applicant also gains a +1 bonus to all of <PRO_HISHER> Saving Throws.
+
+STATISTICS:
+
+AC: +3 bonus
+Saving Throws: +1 bonus
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Detect Invisibility
+@40240 = ~Potion of Detect Invisibility~
+@40241 = ~The imbiber is able to see clearly any objects or beings that are invisible, as well as any that are astral, ethereal, or out of phase. In addition, this potion enables the imbiber to detect hidden or concealed creatures (e.g., Thieves hiding in shadows, halflings in underbrush, and so on).
+
+STATISTICS:
+
+Special: Imbiber sees invisibility clearly
+Duration: 4 turns (40 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Knock
+@40242 = ~Oil of Knock~
+@40243 = ~When applied, this oil opens locked, held, or wizard-locked doors. It opens secret doors as well as locked boxes or chests. It does not raise barred gates or similar impediments.
+
+STATISTICS:
+
+Special: Unlocks any single lock
+Duration: Instant
+Target: 1 chest
+
+Weight: 1~
+
+
+//Luck
+@40244 = ~Potion of Luck~
+@40245 = ~The imbiber gains extraordinary luck for the next 3 rounds, receiving a +1 bonus to <PRO_HISHER> Saving Throws, attack rolls, and minimum damage/healing rolls as well as +5% to all thieving skills. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1.
+
+For example, a 6d6 fireball will do 6d5 damage, and a flaming long sword that deals 1d8+2 slashing plus 1d3 fire damage will deal 1d8+2 slashing plus 1d2 fire damage instead.
+
+STATISTICS:
+
+Attack rolls: +1 bonus
+Damage rolls: +1 bonus
+Saving Throws: +1 bonus
+Find Traps: +5%
+Set Traps: +5%
+Pick Pockets: +5%
+Open Locks: +5%
+Move Silently: +5%
+Hide In Shadows: +5%
+Detect Illusions: +5%
+Special: dice rolled against imbiber (outside a weapon's base damage) are reduced by 1 size
+Duration: 3 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Resist Fear
+@40246 = ~Philter of Resist Fear~
+@40247 = ~This potion instills courage in the imbiber, raising their morale to its highest. The imbiber's morale will gradually reset to normal as the duration runs out. If the imbiber is affected by magical fear, they will regain their composure.
+
+STATISTICS:
+
+Special: Immune to fear, panic
+Duration: 3 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Mirror Image
+@40248 = ~Oil of Mirror Image~
+@40249 = ~When this oil is applied, the applicant shimmers and causes %magnitude% exact duplicates of <PRO_HIMHER>self to come into being around <PRO_HIMHER>. These images do exactly what the applicant does. Since the effect causes a blurring and slight distortion, it is impossible for opponents to be certain which are the illusions and which is real. When an image is struck by a melee or missile attack —magical or otherwise— it disappears, but any other existing images remain intact until they are struck. However, it is important to note that this will not protect the applicant against every attack, as it is possible for an enemy to choose the real caster amongst all the images.
+
+STATISTICS:
+
+Special: %magnitude% mirror images
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Stinking Cloud
+@40250 = ~Bomb of Stinking Cloud~
+@40251 = ~Upon impact, this bomb releases a billowing mass of nauseous vapors. Any creature caught within the cloud must roll a successful Saving Throw vs. Poison at +2 or be sent reeling and fall down for 1d2 rounds. Those who make successful Saving Throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A Dispel Magic will remove the nausea on a particular character, but if they remain in the cloud, then they are still subject to its effects.
+
+STATISTICS:
+
+Special: fall prone for 1d2 rounds (save vs. Poison at +2 negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+Target: Point
+
+Weight: 1~
+
+
+//Strength
+@40252 = ~Potion of Strength~
+@40253 = ~This potion sets the Strength of the imbiber to 18 and then adds a +50% bonus on top of this. The imbiber receives any strength bonuses appropriate.
+
+For example, if a character has between 18/50 and 18/00 Strength, then <PRO_HISHER> Strength will just be set to 18/00. If a character has a Strength between 18/01 and 18/50, then <PRO_HISHER> Strength will become 18/50 + original percentage. If <PRO_HISHER> Strength is less than 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.
+
+STATISTICS:
+
+Strength: 18/+50
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Web
+@40254 = ~Web Bomb~
+@40255 = ~This bomb impacts, releasing web-like substance covering a maximum area of about 15 ft. in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Anyone in the area must roll a Saving Throw vs. Spell with a -2 penalty. If the Saving Throw is successful, then the creature is free to move out of the area. A failed Saving Throw means the creature is stuck in the webs unable to move. Each round that a creature remains in the web, it must make a Saving Throw or be unable to move.
+
+STATISTICS:
+
+Special: Held (save vs. Spell at -2 negates)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+Target: Point
+
+Weight: 1~
+
+
+//Vocalize
+@40256 = ~Draught of Vocalize~
+@40257 = ~The imbiber can cast spells with a verbal component without having to make any noise. Effectively, this spell cancels the effects of Silence and makes the recipient immune to it for the duration.
+
+STATISTICS:
+
+Special: Can cast spells without speech (bypassing silence, deafness, etc.)
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Dispel Magic
+@40258 = ~Dispelling Grenade~
+@40259 = ~This bomb removes magical effects upon anyone within the area. This includes effects given from spells, potions and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Turning and Spell Deflection.
+
+The base chance of successfully dispelling is 50%. For every level that this bomb exceeds the original caster level, the chance of success increases by 5%. For every level that this bomb is below the original caster level, the chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 5% chance of success or failure. Thus, if the bomb is 10 levels higher than the magic it is trying to dispel, there is only a 5% chance of failure. Similarly if the bomb is 4 levels lower than the magic it is trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the target is 5 or more levels higher than the bomb.
+
+Note: While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect.
+
+STATISTICS:
+
+Special: Dispels magical effects
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: Instant
+Target: Point
+
+Weight: 1~
+
+
+//Protection From Fire
+@40260 = ~Potion of Protection From Fire~
+@40261 = ~This potion it confers complete invulnerability to normal fires (torches, bonfires, oil fires, and the like); and 50% to exposure to magical fire sources (fiery dragon breath, hell hound or pyrohydra breath, spells such as Burning Hands, Fireball, Fire Seeds, Fire Storm, Flame Strike, Meteor Swarm, and so on).
+
+STATISTICS:
+
+Fire resistance: +100%
+Magical fire resistance: +50%
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Remove Curse
+@40262 = ~Draught of Remove Curse~
+@40263 = ~This potion is usually able to remove a curse on a person. Note that this potion does not remove the curse from a cursed shield, weapon, or suit of armor, although it typically enables the person afflicted with any such cursed item to get rid of it.
+
+STATISTICS:
+
+Special: Remove curse on imbiber
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Strength of One
+@40264 = ~Phial of Strength of One~
+@40265 = ~The imbiber is given a Strength score of 18/75. If the imbiber has a Strength score higher than 18/75 (either naturally, or through a magical item), then <PRO_HISHER> Strength is lowered to 18/75.
+
+STATISTICS:
+
+Strength: 18/75
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Cure Medium Wounds
+@40266 = ~Potion of Medium Healing~
+@40267 = ~When wholly consumed, this potion restores 14 Hit Points to the imbiber. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 14 Hit Points.
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Cure Disease
+@40268 = ~Potion of Cure Disease~
+@40269 = ~This potion will cure almost any disease. The cure is permanent, but does not grant the imbiber of the spell immunity from further afflictions. Blindness, deafness, and feeblemind are also cured with this spell. Some magically created diseases may not be curable by this spell.
+
+STATISTICS:
+
+Special: Removes disease, blindness, deafness, and feeblemindedness.
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Zone of Sweet Air
+@40270 = ~Bottled Sweet Air~
+@40271 = ~When unstoppered, this potion repels all noxious elements from poisonous vapors (including magically created vapors such as Cloudkill). This spell will dismiss all clouds in the entire area that the activator is currently in.
+
+STATISTICS:
+
+Special: Removes cloud vapor effects.
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Fireball
+@40272 = ~Fire Bomb~
+@40273 = ~This bomb blossoms into a fireball upon impact, dealing %magnitude%d6 damage to those in the blast radius. Creatures who roll successful Saving Throws manage to dodge, fall flat, or roll aside the blast, each receiving only half damage.
+
+STATISTICS:
+
+Damage: %magnitude%d6 (Save vs. Spell for half)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: Instant
+Target: Point
+
+Weight: 1~
+
+
+//Non-Detection
+@40274 = ~Potion of Non-Detection~
+@40275 = ~This potion makes the imbiber undetectable by divination spells such as Clairaudience, Clairvoyance, Locate Object, ESP, and detect spells including Invisibility Purge. It also prevents location by such magical items as crystal balls and ESP medallions. It does not affect the Know Alignment spell.
+
+STATISTICS:
+
+Special: Prevents detection via magical divination.
+Duration: 4 hours
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Normal Missiles
+@40276 = ~Oil of Protection From Normal Missiles~
+@40277 = ~This oil provides total invulnerability to non-magical hurled and launched missiles such as arrows, bolts, bullets, darts, throwing axes, and throwing daggers. Note, however, that this potion does not convey any protection from such magical attacks as Fireball, Lightning Bolt, or Magic Missile, nor does it protect against magical missiles such as arrows +1.
+
+STATISTICS:
+
+Special: Immune to non-magical missile damage
+Duration: 4 hours
+Target: 1 creature
+
+Weight: 1~
+
+
+//Wraithform
+@40278 = ~Potion of Wraithform~
+@40279 = ~The imbiber and all of <PRO_HISHER> gear become insubstantial, subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The imbiber also gains 25% resistance to magic damage. While in wraithform, the imbiber cannot cast either arcane or divine spells.
+
+STATISTICS:
+
+Magic Resistance: +25%
+Special: Immune to non-magical damage
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Ghost Armor
+@40280 = ~Oil of Ghost Armor~
+@40281 = ~This oil dissolves into a magical field of force that serves as if it were field plate armor (AC 2). It is cumulative with Dexterity bonuses to Armor Class and, in the case of Fighter/Mages, with the shield's bonus. The effect does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration expires.
+
+STATISTICS:
+
+Base AC: 2
+Duration: 1 hours
+Target: 1 creature
+
+Weight: 1~
+
+
+//Protection From Cold
+@40282 = ~Potion of Protection From Cold~
+@40283 = ~This potion confers complete invulnerability to normal cold attacks and partial protection from exposure to magical cold such as an icy dragon's breath, spells such as Cone of Cold, etc., absorbing 50% of all the damage dealt by such magical sources.
+
+STATISTICS:
+
+Cold resistance: +100%
+Magical cold resistance: +50%
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Cure Serious Wounds
+@40284 = ~Potion of Modest Healing~
+@40285 = ~When wholly consumed, this potion restores 17 Hit Points to the imbiber. The effect is instantaneous and the potion is destroyed in the process.
+
+STATISTICS:
+
+Special: Restores 17 Hit Points.
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Free Action
+@40286 = ~Philter of Free Action~
+@40287 = ~This potion caused to imbiber to become immune to anything that affects <PRO_HISHER> movement. This includes the effects of Web, Hold Person, Grease, and Entangle.
+
+STATISTICS:
+
+Special: Immune to holding effects or changes to movement rate
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Death Ward
+@40288 = ~Draught of Death Ward~
+@40289 = ~This potion protects the imbiber from all forms of death magic for the duration of the spell. This includes, but is not limited to: Disintegrate; Power Word, Kill; Death Spell; and Finger of Death.
+
+STATISTICS:
+
+Special: Immune to death magic
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Holy Power
+@40290 = ~Potion of Holy Power~
+@40291 = ~This potion gives the imbiber the strength and skill of a Fighter of level %magnitude%. The imbiber's Strength score is set to 18/00 —even if it is normally higher— <PRO_HISHER> THAC0 becomes that of a Fighter and <PRO_HESHE> gains %magnitude% temporary Hit Points.
+
+This will last for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Strength: 18/00
+Base THAC0: %magnitude2%
+HP: +%magnitude% temporary hit points
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Negative Plane Protection
+@40292 = ~Philter of Negative Plane Protection~
+@40293 = ~This potion provies partial protection from undead monsters with Negative Energy Plane connections (such as vampires), and certain weapons and spells that drain energy levels.
+
+A protected creature struck by a negative energy attack is protected against any form of level draining for the duration of the potion's effect. The protected creature suffers only normal Hit Point damage from the attack and does not suffer any drain of experience.
+
+STATISTICS:
+
+Special: Protected from level drain
+Duration: 8 hours
+Target: Self
+
+Weight: 1~
+
+
+//Cloak of Fear
+@40294 = ~Phial of Fear~
+@40295 = ~This potion cloaks the imbiber with an aura of fear in a 5-ft. radius. All creatures that enter the cloak's area of effect must make a Save vs. Spell or flee in panic for 1 round. The aura does not affect undead creatures.
+
+STATISTICS:
+
+Special: nearby creatures flee in panic (save vs. Spell negates)
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Lesser Restoration
+@40296 = ~Potion of Lesser Restoration~
+@40297 = ~This potion causes the life energy level of the imbiber to raise. This reverses any previous level drain of the creature by a force or monster.
+
+The effects of the potion are very draining, as it will cause a day's worth of fatigue almost instantaneously.
+
+STATISTICS:
+
+Special: Removes level drain; causes fatigue
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Spirit Fire
+@40298 = ~Bomb of Spirit Fire~
+@40299 = ~This bomb causes spirit world energies to form; it explodes into a burst of ghostly, azure flames, which deliver %magnitude%d4 points of magic damage. There is also a 33% chance that every enemy within the area of effect will be afflicted by the Doom spell (-2 penalty to Saving Throws and attack rolls for 1 turn). A successful Save vs. Spell halves the damage and negates the Doom effect. Spirits, fey creatures, elementals, and spectral undead take double damage.
+
+STATISTICS:
+
+Damage: %magnitude%d4 magic (Save vs. Spell for half); 33% chance of Doom (-2 attack roll and saving throw penalty for 1 turn)
+Range: 40 ft.
+Area of Effect: 15-ft. radius
+Duration: Instant
+Target: Point
+
+Weight: 1~
+
+
+//Fireshield (Blue)
+@40300 = ~Oil of Blue Fireshield~
+@40301 = ~This oil, when poured in a circle, ignites into shield of icy flame which protects the user from cold damage. This shield not only grants the user 50% Cold Resistance, but also protects the applicant from attacks made within a 5-ft. radius around the caster. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 cold damage.
+
+STATISTICS:
+
+Damage: 1d8+2 cold
+Cold Resistance: +50% (mundane or magical)
+Area of Effect: 5-ft. radius
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Improved Invisibility
+@40302 = ~Potion of Improved Invisibility~
+@40303 = ~This potion renders the imbiber invisible. The imbiber is able to attack by missile discharge, melee combat, or spellcasting while remaining unseen. However, telltale traces —a shimmering— allow an observant opponent to attack the invisible spell imbiber. These traces are only noticeable when specifically looked for (after the invisible character has made <PRO_HISHER> presence known). Attacks against the invisible character suffer a -4 penalty to attack rolls, and the invisible character's Saving Throws are made with a +4 bonus.
+
+Note: After making an attack, the imbiber is no longer completely invisible and can be targeted by opponents.
+
+STATISTICS:
+
+Special: Invisible, may attack and remain partially hidden
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Minor Globe of Invulnerability
+@40304 = ~Oil of Minor Invulnerability Globe~
+@40305 = ~When applied, this oil creates a faintly shimmering magical sphere around the applicant that prevents any 1st-, 2nd-, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the Minor Globe of Invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Spells of 4th level or higher are not affected by the globe.
+
+STATISTICS:
+
+Special: Immune to opponent's 1st-, 2nd-, and 3rd-level spells
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Stoneskin
+@40306 = ~Potion of Stoneskin~
+@40307 = ~Upon drinking this potion, an outer skin of stone will move up from the ground, completely covering the imbiber. The effect of this is to protect the imbiber from physical attacks such as melee weapons and projectiles.  The skins will remain on the imbiber until <PRO_HESHE> is affected by a Dispel Magic, all of the skins are removed due to physical attacks, or the spell duration expires.
+
+It is important to note that this will not protect the wizard from any magical attacks, such as Fireball.
+
+STATISTICS:
+
+Special: %magnitude% stone skins providing immunity to non-magical damage
+Duration: 12 hours
+Target: Self
+
+Weight: 1~
+
+
+//Greater Malison
+@40308 = ~Bomb of Greater Malison~
+@40309 = ~This bomb adversely affects all the Saving Throws of hostile creatures within the area of effect from the impact. Opponents under the influence of this spell make all Saving Throws at a penalty of -4.
+
+STATISTICS:
+
+Saving Throws: -4 penalty
+Area of Effect: 15-ft. radius
+Duration: %duration%
+Target: Point
+
+Weight: 1~
+
+
+//Otiluke's Resilient Sphere
+@40310 = ~Flask of Otiluke's Resilient Sphere~
+@40311 = ~A globe of shimmering force encloses the target creature if it fails to Save vs. Spell. The resilient sphere will contain its subject for the duration of the spell. The sphere is completely immune to all damage; in fact, the only method of removing the sphere is a successful Dispel Magic.
+
+Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.
+
+STATISTICS:
+
+Special: Immune to damage; cannot attack (save vs. Spell negates)
+Area of Effect: 1 creature
+Duration: 1 turn (10 rounds)
+Target: 1 creature
+
+Weight: 1~
+
+
+//Spirit Armor
+@40312 = ~Oil of Spirit Armor~
+@40313 = ~This oil creates a corporeal barrier around the applicant's body for the duration of the effect. This oil, however, actually taps in to the target's life force in order to create the barrier. The armor itself is weightless and does not hinder movement or spellcasting at all.
+
+The spirit armor does not work cumulatively with any other armor; however, Dexterity bonuses still apply as well as magic rings and shields. While in effect, the Armor Class of the applicant will be set to 1, as if <PRO_HESHE> were wearing full plate. Also, due to the magical nature of the spell, <PRO_HESHE> will also receive a +3 bonus to Save vs. Spell.
+
+There is a danger, however, as when the spell runs out, the external portion of the spirit is temporarily lost, inflicting 2d4 points of damage upon the applicant unless the creature makes a Saving Throw vs. Spell.
+
+STATISTICS:
+
+Base AC: 1
+Saveing Throws: +3 bonus to save vs. Spell
+Special: Imbiber takes 2d4 damage after duration
+Duration: 2 hours
+Target: 1 creature
+
+Weight: 1~
+
+
+//Enchanted Weapon
+@40314 = ~Oil of Enchanted Weapon~
+@40315 = ~When this oil is applied, it enchants any weapons that the applicant currently wields; those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.
+
+STATISTICS:
+
+Special: weapons hit as if +3 enchanted weapons
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Fireshield (Red)
+@40316 = ~Oil of Red Fireshield~
+@40317 = ~This oil, when poured in a circle, ignites into shield of brilliant flame which protects the user from fire damage. This shield not only grants the user 50% Fire Resistance, but also protects the applicant from attacks made within a 5-ft. radius around the caster. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 fire damage.
+
+STATISTICS:
+
+Damage: 1d8+2 fire
+Fire Resistance: +50% (mundane or magical)
+Area of Effect: 5-ft. radius
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//True Sight
+@40318 = ~Philter of True Sight~
+@40319 = ~This potion allows the imbiber perfect sight each round within 120 ft.; all hostile Illusion/Phantasm spells in the area of effect will be dispelled.
+
+The spells that are affected by this are Reflected Image, Invisibility, Mirror Image, Non-Detection, Improved Invisibility, Shadow Door, Mislead, Project Image, and Simulacrum. The area of effect is roughly a 120-ft. radius around the imbiber. The target's Magic Resistance, if any, does not come into effect with this spell. This spell only affects enemies; thus, it is unable to dispel the invisibility from a party member.
+
+STATISTICS:
+
+Special: Dispels hostile illusions 1/round
+Area of Effect: 120-ft. radius
+Duration: 1 turn (10 rounds)
+Target: Self
+
+Weight: 1~
+
+
+//Champion's Strength
+@40320 = ~Potion of Champion's Strength~
+@40321 = ~The imbiber's Strength is set to 25 for the duration of the effect, and gains %magnitude% bonus to THAC0. There is a drawback: the imbiber loses the ability to cast any spells during this time.
+
+STATISTICS:
+
+Strength: 25
+THAC0: +%magnitude% bonus
+Special: spellcasting disabled
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Chaotic Commands
+@40322 = ~Concotion of Chaotic Commands~
+@40323 = ~This potion renders the imbiber immune to magical commands. Suggestion, Charm, Domination, Command, Sleep, Maze, and Confusion are all spells that fit into this category. It also protects the target from Psionic Blast.
+
+STATISTICS:
+
+Special: immune to magical commands, stun, paralysis, hold
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Righteous Magic
+@40324 = ~Potion of Righteous Magic~
+@40325 = ~This potion adds %magnitude% temporary Hit Points, adds %magnitude2% points of Strength, and causes every successful hit to inflict maximum damage.
+
+STATISTICS:
+
+Strength: +%magnitude2% bonus
+HP: +%magnitude% temporary hit points
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Shadow Door
+@40326 = ~Potion of Shadow Door~
+@40327 = ~This potion creates the illusion of a door nearby the imbiber; the illusion permits the imbiber to appear to step through this "door" and disappear. In reality, <PRO_HESHE> has darted aside and can flee, totally invisible (as per the Improved Invisibility spell), for the duration.
+
+STATISTICS:
+
+Special: Illusion grants Improved Invisibility
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Abjuration
+@40328 = ~Potion of Immunity to Abjuration~
+@40329 = ~This potion grants the imbiber protection from Abjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Abjuration spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Alteration
+@40330 = ~Potion of Immunity to Alteration~
+@40331 = ~This potion grants the imbiber protection from Alteration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Alteration spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Conjuration
+@40332 = ~Potion of Immunity to Conjuration~
+@40333 = ~This potion grants the imbiber protection from Conjuration. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Conjuration spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Divination
+@40334 = ~Potion of Immunity to Divination~
+@40335 = ~This potion grants the imbiber protection from Divination. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Divination spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Enchantment
+@40336 = ~Potion of Immunity to Enchantment~
+@40337 = ~This potion grants the imbiber protection from Enchantment. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Enchantment spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Evocation
+@40338 = ~Potion of Immunity to Evocation~
+@40339 = ~This potion grants the imbiber protection from Evocation. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Evocation spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Illusion
+@40340 = ~Potion of Immunity to Illusion~
+@40341 = ~This potion grants the imbiber protection from Illusion. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Illusion spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Spell Immunity: Necromancy
+@40342 = ~Potion of Immunity to Necromancy~
+@40343 = ~This potion grants the imbiber protection from Necromancy. All spells of this school will not be able to harm or aid the caster for the duration of this spell.
+
+STATISTICS:
+
+Special: Immunity to Necromancy spells
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+//Protection From Normal Weapons
+@40344 = ~Potion of Protection From Normal Weapons~
+@40345 = ~This potion confers complete invulnerability to all non-magical weapons. This does not include weapons that are blessed or enchanted. This effect is mutally exclusive with protection from magical weapons.
+
+STATISTICS:
+
+Special: Immunity to non-magical weapons
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Electricity
+@40346 = ~Potion of Protection From Electricity~
+@40347 = ~This poition confers complete invulnerability to all electrical attacks, whether magical or non-magical, such as Lightning Bolt or certain breath weapons.
+
+STATISTICS:
+
+Special: Immunity to electricity
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Acid
+@40348 = ~Potion of Protection From Acid~
+@40349 = ~This poition confers complete invulnerability to all acid-based attacks, whether magical or non-magical, such as Acid Arrow or a creature's special attacks.
+
+STATISTICS:
+
+Special: Immunity to acid
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Phantom Blade
+@40350 = ~Oil of Phantom Blade~
+@40351 = ~When poured, this oil forms into a translucent, shadow-like, weightless area of magical force extending from the applicant's hand. The silent, blade-shaped construct's cutting edges inflict damage just as those of a real sword do. This sword can only be used by the applicant and remains in <PRO_HISHER> hand for the duration or until dispelled.
+
+The phantom blade acts as a +3 magical sword in terms of to-hit and damage bonuses as well as the type of creatures it can hit. However, due to its etheric nature, it causes an extra +10 damage against undead creatures.
+
+STATISTICS:
+
+Special: Creates a magical +3 sword in hands (1d8+3 slashing; +10 more vs. undead)
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Minor Spell Turning
+@40352 = ~Oil of Minor Spell Turning~
+@40353 = ~This oil causes the spells cast against the applicant to rebound upon the original caster. This affects a total of 4 spell levels, including spells cast from scrolls and innate spell-like abilities.
+
+This effect excludes the following: area effects that are not centered directly upon the applicant, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud. As long as the spell is cast directly at the applicant, it will be reflected back upon the caster. This spell will only affect up to 4th-level spells, but as long as there are levels remaining, a spell will be reflected. For example, if there is only 1 level left and a 3rd-level spell is cast at the wizard, the spell will be reflected while canceling the Spell Turning.
+
+This spell will not protect the applicant from Dispel Magic, but will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+
+Special: Reflects up to 4 levels worth of spells back at original caster
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Heal
+@40354 = ~Tonic of Heal~
+@40355 = ~This tonic wipes away disease and injury in the imbiber. It completely cures all disease and blindness and heals all points of damage suffered due to wounds or injury. It also dispels a Feeblemind spell and cures those mental disorders caused by spells or injury to the brain. Naturally, the effects can be negated by later wounds, injuries, and diseases.
+
+STATISTICS:
+
+Special: Restores HP to maximum, cures poison, disease, blindness, feeblemindedness, deafness, insanity
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Wondrous Recall
+@40356 = ~Potion of Wondrous Divine Recall~
+@40357 = ~This potion restores back to memory 2 divine spells that have been previously cast. If no such spells have been cast yet, nothing happens. Wondrous Recall cannot recall 6th-level or higher spells.
+
+STATISTICS:
+
+Special: Restores to memorization 2 priest spells of level 5 or lower
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Wondrous Recall
+@40358 = ~Potion of Wondrous Arcane Recall~
+@40359 = ~This potion restores back to memory 2 arcane spells that have been previously cast. If no such spells have been cast yet, nothing happens. Wondrous Recall cannot recall 6th-level or higher spells.
+
+STATISTICS:
+
+Special: Restores to memorization 2 arcane spells of level 5 or lower
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Globe of Invulnerability
+@40360 = ~Oil of Invulnerability Globe~
+@40361 = ~When applied, this oil creates an immobile, faintly shimmering magical sphere around the applicant that prevents any 1st-, 2nd-, 3rd-, or 4th-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the Globe of Invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe.
+
+Spells of 5th level or higher are not affected by the globe, and magical attacks of 5th-level or higher, such as Spellstrike and Pierce Magic, can bring it down.
+
+STATISTICS:
+
+Special: Immune to opponent's 1st-, 2nd-, 3rd-, and 4th-level spells
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Tenser's Transformation
+@40362 = ~Tincture of Tenser's Transformation~
+@40363 = ~This potion causes the imbiber to become a berserk Fighter: <PRO_HISHER> Hit Points double, and all damage <PRO_HESHE> sustains is first detracted from this magically-gained life; <PRO_HISHER> Armor Class gains a +4 bonus (up to a maximum Armor Class of -10); <PRO_HESHE> gains a THAC0 set to +%magnitude%; each attack also receives a +2 bonus to hit and damage rolls.
+
+STATISTICS:
+
+Hit Points: doubled
+AC: +4 bonus (to a minimum AC of -10)
+THAC0: set to %magnitude%
+Attack rolls: +2 bonus
+Damage rolls: +2 bonus
+Special: spellcasting disabled
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Magic Energy
+@40364 = ~Philter of Protection From Magic Energy~
+@40365 = ~This potion confers 100% invulnerability to all magic-based attacks such as Magic Missile or Abi-Dalzim's Horrid Wilting.
+
+STATISTICS:
+
+Magic Damage Resistance: 100%
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Magical Weapons
+@40366 = ~Potion of Protection From Magical Weapons~
+@40367 = ~This potion confers complete invulnerability to all magical weapons. This includes weapons that are blessed or enchanted. The attacks of powerful monsters are also considered magical weapons.
+
+This effect is mutually exclusive with Protection From Normal Weapons as well as anyone protected by Mantle, Improved Mantle, or Absolute Immunity.
+
+STATISTICS:
+
+Special: Immunity to magical weapons
+Duration: 3 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Improved Haste
+@40368 = ~Elixir of Improved Haste~
+@40369 = ~The imbiber functions at double its normal movement and attack rates and receives a +2 bonus to its initiative.
+
+Thus, a creature moving at 6 and attacking twice per round would move at 12 and attack four times per round. Spellcasting and spell effects are not sped up.
+
+STATISTICS:
+
+Movement speed: doubled
+Attacks per round: doubled
+Special: negates Slow status
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Death Fog
+@40370 = ~Death Fog Bomb~
+@40371 = ~This bomb creates an area of solid fog around the impact that has the additional property of being highly acidic. Creatures in the effect suffer 8 points of acid damage for each round they are exposed to the vapors of the Death Fog; it will also instantly kill all summoned creatures, regardless of their Hit Dice and immunities.
+
+STATISTICS:
+
+Damage: 8 acid damage/round
+Special: Kills summoned creatures (regardless of level)
+Area of Effect: 15-ft. radius
+Duration: 1 turn (10 rounds)
+Target: Point
+
+Weight: 1~
+
+
+//Chain Lightning
+@40372 = ~Bottled Lightning~
+@40373 = ~This bomb releases a burst of electrical energy at a single target; once the bolt strikes the initial target, the electricity then jumps to the next nearest foe, losing a small amount of energy with each additional strike until it is expended. The bolt initially inflicts %magnitude%d6 Hit Points of electrical damage. Each jump the bolt makes reduces the damage by 1d6. Each creature that is hit is allowed a Save vs. Spell for half damage.
+
+STATISTICS:
+
+Damage: %magnitude%d6 electricity
+Special: jumps to next nearest foe, dealing 1d6 less damage
+Duration: Instantaneous
+Target: 1 creature
+
+Weight: 1~
+
+
+//Spell Deflection
+@40374 = ~Oil of Spell Deflection~
+@40375 = ~This oil causes any spells cast against the applicant to be absorbed and consumed, up to a total of 10 spell levels. As long as there are levels remaining, the spell will be absorbed.
+
+The absorbed spells including spells cast from scrolls and innate spell-like abilities, but excludes area effects that are not centered directly upon the applicant or area effects that are stationary, such as Cloudkill and Stinking Cloud.
+
+For example, if there is only 1 level left and a 3rd-level spell is cast at the applicant, the spell will be absorbed while canceling the spell deflection.
+
+This spell will not protect the caster from Dispel Magic, but it will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+
+Special: absorbs (negates) up to 10 spell levels of spells cast at the applicant
+Duration: %duration%
+Target: 1 creature
+
+Weight: 1~
+
+
+//Nature's Beauty
+@40376 = ~Balm of Nature's Beauty~
+@40377 = ~The applicant appears to undergo a remarkable transformation and becomes the very ideal of beauty: For a male, this is usually a nymph; for a female, it varies.
+
+As with a nymph, any humanoid or animal viewing the disguised applicant must make a Save vs. Spell with a -3 penalty or be charmed by the caster for 12 rounds. Blind creatures are unaffected by this spell, as are non-humanoid, non-animal creatures. Elves and half-elves have a chance to resist the effect.
+
+STATISTICS:
+
+Special: Charms humanoids viewing applicant (save vs. Spell at -3 penalty)
+Duration: 12 rounds
+Target: 1 creature
+
+Weight: 1~
+
+
+//Greater Restoration
+@40378 = ~Phial of Greater Restoration~
+@40379 = ~This potion raises the life energy level of the imbiber. This reverses any previous life energy level drain of the creature by a force or monster. It will also restore the Intelligence score of a creature affected by the Feeblemind spell and negate any form of insanity, such as confusion or berserk. It fully heals the target and cures any diseases or poisons. The effects of this potion are very draining on the imbiber, and <PRO_HESHE> will likely require rest immediately afterward.
+
+STATISTICS:
+
+Hit Points: Fully healed
+Special: Cures diseases, poison, and blindness; removes insanity, confusion, and berserk; removes level drain; removes Intelligence drain; causes fatigue
+Duration: Instant
+Target: Self
+
+Weight: 1~
+
+
+//Spell Turning
+@40380 = ~Draught of Spell Turning~
+@40381 = ~This powerful draught causes the spells cast against the imbiber to rebound upon the original caster. This affects a total of 12 spell levels, including spells cast from scrolls and innate spell-like abilities. As long as the spell is cast directly at the wizard, it will be reflected back upon the caster as long as there are levels remaining.
+
+This effect excludes the following: area effects that are not centered directly upon the imbiber, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud.
+
+For example, if there is only 1 level left and a 3rd-level spell is cast at the imbiber, the spell will be reflected while canceling the Spell Turning. This will not protect the caster from Dispel Magic, but it will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+
+Special: reflects up to 12 spell levels of spells cast at the applicant to the original caster
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Protection From The Elements
+@40382 = ~Philter of Protection From The Elements~
+@40383 = ~This potion confers 75% resistance to fire, cold, and electricity —whether magical or non magical— from spells, weapons, wands, breath weapons, etc.
+
+STATISTICS:
+
+Fire Resistance: +75% bonus (mundane or magical)
+Cold Resistance: +75% bonus (mundane or magical)
+Electricity Resistance: +75% bonus
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Mantle
+@40384 = ~Mixture of Mantle~
+@40385 = ~This potion confers complete invulnerability to all weapons of +2 or lower enchantment. This potion will not work in conjunction with Protection From Magical Weapons.
+
+STATISTICS:
+
+Special: Immunity to weapons of +2 or lower enchantment
+Duration: 4 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Protection From Energy
+@40386 = ~Elixir of Protection From Energy~
+@40387 = ~This elixir confers 75% immunity against all energy attacks —such as fire, cold, acid, magic, and electricity, whether from magical or non-magical sources— such as spells, weapons, wands, breath weapons, etc.
+
+Any physical damage, such as piercing, crushing, or slashing will get through.
+
+STATISTICS:
+
+Acid Resistance: +75%
+Fire Resistance: +75% (mundane or magical)
+Cold Resistance: +75% (mundane or magical)
+Electricity Resistance: +75%
+Magical Damage Resistance: +75%
+Duration: %duration%
+Target: Self
+
+Weight: 1~
+
+
+//Improved Mantle
+@40388 = ~Mixture of Improved Mantle~
+@40389 = ~This potion confers complete invulnerability to all weapons of +3 or lower enchantment. This potion will not work in conjunction with Protection From Magical Weapons.
+
+STATISTICS:
+
+Special: Immunity to weapons of +3 or lower enchantment
+Duration: 4 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Spell Trap
+@40390 = ~Draught of Spell Trap~
+@40391 = ~This concotion creates a barrier of magical protection around the imbiber. Every spell that hits the barrier is absorbed by the power of the spell trap —— making the imbiber recall a previously cast spell. The spell trap provides 30 levels of protection (i.e., ten Flame Arrows or five Fingers of Death). The spell trap can absorb any level of spell, from one to nine.
+
+For example, if a wizard shields <PRO_HIMHER>self with Spell Trap and is then hit by a Flame Arrow (3rd-level spell), <PRO_HESHE> gets three spell levels back—<PRO_HESHE> will regain one spell up to 3rd level in power.
+
+STATISTICS:
+
+Special: Absorbs 30 levels worth of spells, restoring cast memorized spells worth the absorbed spell's level
+Duration: 18 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Absolute Immunity
+@40392 = ~Tincture of Absolute Immunity~
+@40393 = ~This brew confers complete invulnerability to all weapons except for those of greater than +5 enchantment.
+
+It is important to note that this spell does not work in combination with Protection From Magical Weapons.
+
+STATISTICS:
+
+Special: Immunity to weapons of +5 or lower enchantment
+Duration: 5 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Improved Alacrity
+@40394 = ~Philter of Improved Alacrity~
+@40395 = ~This concotion essentially erases the pause between casting spells. When cast, the imbiber can begin casting a new spell the instant <PRO_HESHE> is finished casting <PRO_HISHER> current spell. The effect lasts for 2 rounds.
+
+STATISTICS:
+
+Special: Cleansed spellcasting aura for the duration
+Duration: 2 rounds
+Target: Self
+
+Weight: 1~
+
+
+//Aura of Flaming Death
+@40396 = ~Aura of Flaming Death Mixture~
+@40397 = ~This mixture causes the applicant to be enveloped by an aura of intense flame that both injures opponents and protects the caster from damage. This shield not only grants the user 90% Fire Resistance and an AC bonus of 4, but also protects <PRO_HIMHER> from attacks made within a 5-ft. radius. An opponent that hits the caster with any weapons or spells within this radius suffers 2d10+2 fire damage. In addition, the intense heat protects the applicant from all non-magical weapons, melee or missile.
+
+STATISTICS:
+
+AC: +4 bonus
+Fire Resistance: +90%
+Special: Immunity to non-magical weapons
+Damage: 2d10+2 fire
+Area of Effect: 5-ft. radius
+Duration: %duration%
+Target: Self
+
+Weight: 1~

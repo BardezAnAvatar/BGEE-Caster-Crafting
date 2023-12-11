@@ -2,20 +2,23 @@
 @0 = "Bardez's Caster Crafting Mod"
 @1 = "Running pre-processing of registered data"
 
-//scribing tools
-@10 = "Caster Crafting: Scribing Tools"
-@11 = ~Copy Spells from Party Member Spellbooks~
-@12 = ~Scribe scrolls~
-@13 = ~Copy Spells from Party Member Spellbooks AND Scribe scrolls~
-
 //Missing scrolls
-@20 = ~Missing Spell Scrolls~
-@21 = ~Add in missing arcane spell scrolls~
-@22 = ~Add in missing priest spell scrolls~
-@23 = ~Add in missing arcane and priest spell scrolls~
+@10 = ~Missing Spell Scrolls~
+@11 = ~Add in missing arcane spell scrolls~
+@12 = ~Add in missing priest spell scrolls~
+@13 = ~Add in missing arcane and priest spell scrolls~
 
-// Brewing Potions
-@30 = ~Caster Crafting: Brew Potions~
-@31 = ~Brew base game potions~
-@32 = ~Brew spell potions~
-@33 = ~Brew both base game and spell potions~
+//scribing tools
+@20 = "Caster Crafting: Scribing Tools"
+@21 = ~Copy Spells from Party Member Spellbooks~
+@22 = ~Scribe scrolls~
+@23 = ~Copy Spells from Party Member Spellbooks AND Scribe scrolls~
+
+//Missing Potions
+@30 = ~Potions for existing Spells~
+
+// Crafting Station
+@40 = ~Caster Crafting: Crafting Station~
+@41 = ~Brew potions~
+@42 = ~Craft wands (Not yet implemented)~
+@43 = ~Both brew potions and craft wands (Not yet implemented)~
