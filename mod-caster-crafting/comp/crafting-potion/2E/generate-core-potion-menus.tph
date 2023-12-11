@@ -19,7 +19,6 @@
 
 //Function includes
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_transitions.tph~
-INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_category_states.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_menu_category_states.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potion_states.tph~
 
