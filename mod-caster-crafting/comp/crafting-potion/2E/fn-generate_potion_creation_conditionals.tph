@@ -49,7 +49,7 @@ BEGIN
     OUTER_TEXT_SPRINT ~spell_list~ ~~
     OUTER_TEXT_SPRINT ~condition_valid~ ~~
     OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~~
-    OUTER_SET gold_minus_one = (rec_2 - 1)
+    OUTER_SET gold_minus_one = (cost_gold - 1)
     OUTER_SET level_minus_one = (rec_2 - 1)
 
     ACTION_PHP_EACH ~spells_array~
