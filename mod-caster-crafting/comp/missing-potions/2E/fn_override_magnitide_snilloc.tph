@@ -108,8 +108,7 @@ DEFINE_ACTION_FUNCTION fn_override_magnitide_snilloc
 
     END
     ELSE BEGIN
-        WARN ~fn_override_magnitide_snilloc: file(s) not found or invalid input
-            Spell:  %spell%.SPL~
+        WARN ~WARN: fn_override_magnitide_snilloc: file `%spell%.SPL` not found~
     END
 
 END

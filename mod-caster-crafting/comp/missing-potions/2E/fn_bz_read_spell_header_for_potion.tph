@@ -144,8 +144,7 @@ DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
 
     END
     ELSE BEGIN
-        WARN ~fn_bz_read_spell_header_for_potion: file(s) not found or invalid input
-            Spell:  %spell%.SPL~
+        WARN ~WARN: fn_bz_read_spell_header_for_potion: file %spell%.SPL` not found~
     END
 
 END

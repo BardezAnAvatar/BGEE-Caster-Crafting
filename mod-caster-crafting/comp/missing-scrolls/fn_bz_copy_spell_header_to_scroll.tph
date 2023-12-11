@@ -330,7 +330,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
 
     END
     ELSE BEGIN
-        WARN ~bz_copy_spell_header_to_scroll: file(s) not found or invalid input
+        WARN ~WARN: bz_copy_spell_header_to_scroll: file(s) not found or invalid input
             Spell:  %spell%.SPL
             Item:   %item%.ITM~
     END

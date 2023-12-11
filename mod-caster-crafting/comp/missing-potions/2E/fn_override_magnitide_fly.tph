@@ -113,8 +113,7 @@ DEFINE_ACTION_FUNCTION fn_override_magnitide_fly
 
     END
     ELSE BEGIN
-        WARN ~fn_override_magnitide_fly: file(s) not found or invalid input
-            Spell:  %spell%.SPL~
+        WARN ~WARN: fn_override_magnitide_fly: file `%spell%.SPL` not found~
     END
 
 END
