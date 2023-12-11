@@ -43,7 +43,7 @@ APPEND ~BZMSCAK~
 
 
                         //Give the potion a dialog state
-                        APPEND_OUTER - ~CorePotions/PotionStates.D~
+                        APPEND_OUTER - ~Potions/PotionStates.D~
                             ~~~~~
     IF ~~
     THEN BEGIN ~bz-potion-%cat_2%-%sub_4%-%pot_1%~
@@ -109,7 +109,7 @@ APPEND ~BZMSCAK~
                         END //looping through the potion recipes
 
 
-                        APPEND_OUTER - ~CorePotions/PotionStates.D~
+                        APPEND_OUTER - ~Potions/PotionStates.D~
                             ~~~~~
             IF ~~
             THEN REPLY @30022 // ~Pick another sub-category of potion.~
