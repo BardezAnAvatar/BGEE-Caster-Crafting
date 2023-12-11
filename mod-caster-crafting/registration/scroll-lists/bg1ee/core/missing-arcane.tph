@@ -31,7 +31,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~BZ!12401~, ~SPWI124~, ~Arcane~, ~1~, ~1~,  ~0~, ~arcane/core/Nahal's-Reckless-Dweomer.BAM~,    ~BZ!124I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!12401~   //Nahal's Reckless Dweomer*
         ~BZ!22203~, ~SPWI222~, ~Arcane~, ~2~, ~1~,  ~0~, ~arcane/core/Chaos-Shield.BAM~,                ~BZ!222I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!22203~   //Chaos Shield*
+        ~BZ!70714~, ~SPWI707~, ~Arcane~, ~7~, ~1~,  ~0~, ~arcane/core/Cacofiend.BAM~,                   ~BZ!707I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!70714~   //Improved Chaos Shield*
         ~BZ!72314~, ~SPWI723~, ~Arcane~, ~7~, ~1~,  ~0~, ~arcane/core/Improved-Chaos-Shield.BAM~,       ~BZ!723I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!72314~   //Improved Chaos Shield*
+        ~BZ!81316~, ~SPWI813~, ~Arcane~, ~8~, ~1~,  ~0~, ~arcane/core/Maze.BAM~,                        ~BZ!813I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!81314~   //Maze
 
         ~BZ!A2018~, ~SPWI920~, ~Arcane~, ~A~, ~18~, ~0~, ~arcane/core/Energy-Blades.BAM~,               ~BZ!A20I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2018~   //Energy Blades
         ~BZ!A2218~, ~SPWI922~, ~Arcane~, ~A~, ~1~,  ~0~, ~arcane/core/Dragon's-Breath.BAM~,             ~BZ!A22I~, ~1~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!A2218~   //Dragon's Breath
