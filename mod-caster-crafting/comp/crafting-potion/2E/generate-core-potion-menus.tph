@@ -54,4 +54,5 @@ COPY -
         //Patches
         APPEND_FILE TEXT ~Potions/CategoryMenus.D~
         APPEND_FILE TEXT ~Potions/PotionStates.D~
+        APPEND_FILE TEXT ~Potions/CraftingStates.D~
         APPEND_FILE TEXT ~Potions/Transitions.D~
