@@ -69,6 +69,7 @@ BEGIN
 
     OUTER_TEXT_SPRINT ~state_markup~
         ~~~~~
+
     IF ~~
     THEN BEGIN ~bz-potion-%state_prefix_recipe%-valid~
         SAY ~%prompt%~ // ~You analyze the formula and prepare to brew %potion_name%.~
@@ -88,6 +89,7 @@ ClearAllActions()
 StartCutSceneMode()
 StartCutScene("BZCTPOTN")~
                 EXIT
+
             IF ~PartyGoldGT(%cost_gold_gt%)
 RandomNumGT(100, %bz_potion_failure_bounds_cursed%)~    //failure, create cursed potion
             THEN
@@ -182,6 +184,8 @@ StartCutScene("BZCTPOTN")~
             THEN REPLY @30020 //Pack up your alchemy station
                 EXIT
     END
+
+
         ~~~~~
 
     /********************************************
