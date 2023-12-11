@@ -19,6 +19,11 @@ BEGIN
 
 APPEND ~BZMSCAK~
         ~~~~~
+    APPEND_OUTER - ~Potions/CraftingStates.D~
+        ~~~~~
+
+APPEND ~BZMSCAK~
+        ~~~~~
 
     ACTION_PHP_EACH ~potion_category_list~
         AS ~cat~ => ~cv~
@@ -161,6 +166,13 @@ APPEND ~BZMSCAK~
 
     //END the `APPEND ~BZMSCAK~` statement
     APPEND_OUTER - ~Potions/PotionStates.D~
+        ~~~~~
+END
+
+        ~~~~~
+
+    //END the `APPEND ~BZMSCAK~` statement
+    APPEND_OUTER - ~Potions/CraftingStates.D~
         ~~~~~
 END
 
