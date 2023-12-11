@@ -62,10 +62,10 @@ BEGIN
     OUTER_SPRINT ~elapsed_message~ @30027 //~%readable_time% have elapsed.~ //i.e.: "2 days have elapsed"
     OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
-    OUTER_TEXT_SPRINT ~state_prefix_recipe~         ~%category%-%subcategory%-%potion_RESREF%-%recipe_UID%~
-    OUTER_TEXT_SPRINT ~state_prefix_potion~         ~%category%-%subcategory%-%potion_RESREF%~
-    OUTER_TEXT_SPRINT ~state_prefix_subcategory~    ~%category%-%subcategory%~
-    OUTER_TEXT_SPRINT ~state_prefix_category~       ~%category%~
+    OUTER_TEXT_SPRINT ~state_prefix_recipe~         ~%categoryCode%-%subcategoryCode%-%potion_RESREF%-%recipe_UID%~
+    OUTER_TEXT_SPRINT ~state_prefix_potion~         ~%categoryCode%-%subcategoryCode%-%potion_RESREF%~
+    OUTER_TEXT_SPRINT ~state_prefix_subcategory~    ~%categoryCode%-%subcategoryCode%~
+    OUTER_TEXT_SPRINT ~state_prefix_category~       ~%categoryCode%~
 
     OUTER_TEXT_SPRINT ~state_markup~
         ~~~~~
