@@ -25,7 +25,7 @@
 //Common Prompts
 @30040 = ~What kind of potion do you wish to brew?~
 @30041 = ~What sub-category of potion do you wish to brew?~
-
+@30042 = ~You have insufficient gold to brew this potion.~
 @30043 = ~Which potion do you wish to brew?~
 @30044 = ~Which formula do you wish to use?~
 @30045 = ~Brew %potion_name% using %formula%.~
