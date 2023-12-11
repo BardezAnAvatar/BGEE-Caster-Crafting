@@ -17,8 +17,8 @@
 //Missing Potions
 @30 = ~Potions for existing Spells~
 
-// Brewing Potions
-@40 = ~Caster Crafting: Brew Potions~
-@41 = ~Brew base game potions~
-@42 = ~Brew spell potions~
-@43 = ~Brew both base game and spell potions~
+// Crafting Station
+@40 = ~Caster Crafting: Crafting Station~
+@41 = ~Brew potions~
+@42 = ~Craft wands~
+@43 = ~Both brew potions and craft wands~
