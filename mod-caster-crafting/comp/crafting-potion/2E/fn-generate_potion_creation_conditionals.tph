@@ -6,6 +6,12 @@
 *       [Spell RESREF]          // 0                                                                            *
 *       [Spell Display Name]    // value    --get from spell/TLK                                                *
 ****************************************************************************************************************/
+
+//includes
+INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-csv_string_to_array.tph~
+
+
+
 DEFINE_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
     INT_VAR
         ~cost_gold~ = "-1"
@@ -31,12 +37,12 @@ BEGIN
 
     //build out all 3 conditionals
 
-    LAUNCH_ACTION_FUNCTION ~bz_csv_string_to_array~
+    LAUNCH_ACTION_FUNCTION ~fn-csv_string_to_array~
         STR_VAR
             ~string~ = ~%recipe%~     // string with space separator
         RET_ARRAY
             ~spells_array~ = ~array~
-    END //~bz_csv_string_to_array~ call
+    END //~fn-csv_string_to_array~ call
 
     //Build up the formula string & conditions
     OUTER_SET ~i~ = 0
