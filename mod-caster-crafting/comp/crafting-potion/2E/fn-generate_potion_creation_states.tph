@@ -106,7 +106,6 @@ StartCutSceneMode()
 StartCutScene("BZCTPOTN")~
                 EXIT
 
-
             IF ~~
             THEN REPLY @30030 // ~Pick another formula.~
                 GOTO ~bz-potion-%state_prefix_potion%~
