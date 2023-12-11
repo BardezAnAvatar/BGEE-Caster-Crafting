@@ -170,7 +170,7 @@ ACTION_PHP_EACH ~potion_definitions~
 
 
 /* DEBUG */
-
+/*
 PRINT ~DEBUG: potion_category_list:~
 ACTION_PHP_EACH ~potion_category_list~
     AS ~keys~ => ~value~
@@ -183,11 +183,11 @@ ACTION_PHP_EACH ~potion_category_list~
             Category Name (TRA):   `%keys_3%`
             Value:                 `%value%`~
     END
-
+*/
 
 
 /* DEBUG */
-
+/*
 PRINT ~DEBUG: potion_subcategory_list:~
 ACTION_PHP_EACH ~potion_subcategory_list~
     AS ~keys~ => ~value~
@@ -205,4 +205,4 @@ ACTION_PHP_EACH ~potion_subcategory_list~
             SubCategory Index:          `%keys_8%`
             Value:                      `%value%`~
     END
-
+*/
