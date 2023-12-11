@@ -31,10 +31,11 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/%bz_edition_code%/fn-generate_potio
 
 
 
-/***************************************************
-*   Generate the potion transitions dynamicially   *
-***************************************************/
-
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   INFO: Building Potion Dialog...   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
 //states
 LAUNCH_ACTION_FUNCTION ~fn-generate_potion_menu_category_states~
 END
@@ -44,6 +45,11 @@ END
 
 
 
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   INFO: Adding Potion Recipes ...   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
 //transitions
 LAUNCH_ACTION_FUNCTION ~bz_generate_potion_category_transitions~
 STR_VAR
