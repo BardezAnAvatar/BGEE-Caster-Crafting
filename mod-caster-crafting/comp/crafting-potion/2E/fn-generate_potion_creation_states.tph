@@ -172,10 +172,10 @@ StartCutScene("BZCTPOTN")~
             THEN REPLY @30030 // ~Pick another formula.~
                 GOTO ~bz-potion-%state_prefix_potion%~
             IF ~~
-            THEN REPLY @30022 // ~Pick another sub-category of potion.~
+            THEN REPLY @30024 // ~Pick another potion.~
                 GOTO ~bz-potion-%state_prefix_subcategory%~
             IF ~~
-            THEN REPLY @30024 // ~Pick another potion.~
+            THEN REPLY @30022 // ~Pick another sub-category of potion.~
                 GOTO ~bz-potion-%state_prefix_category%~
             IF ~~
             THEN REPLY @30025 // ~Pick another type of potion.~

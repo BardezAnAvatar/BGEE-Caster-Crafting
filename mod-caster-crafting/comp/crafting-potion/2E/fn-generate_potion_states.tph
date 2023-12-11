@@ -148,10 +148,10 @@ APPEND ~BZMSCAK~
                         APPEND_OUTER - ~Potions/PotionStates.D~
                             ~~~~~
             IF ~~
-            THEN REPLY @30022 // ~Pick another sub-category of potion.~
+            THEN REPLY @30024 // ~Pick another potion.~
                 GOTO ~bz-potion-%cat_2%-%sub_4%~
             IF ~~
-            THEN REPLY @30024 // ~Pick another potion.~
+            THEN REPLY @30022 // ~Pick another sub-category of potion.~
                 GOTO ~bz-potion-%cat_2%~
             IF ~~
             THEN REPLY @30025 // ~Pick another type of potion.~
