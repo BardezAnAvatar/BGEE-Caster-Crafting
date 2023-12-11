@@ -69,7 +69,7 @@ BEGIN
             WRITE_ASCII_TERMINATE 0x3A "BZMISTI"            // Icon
             WRITE_LONG 0x34 2000                            // Price
             WRITE_SHORT 0x38 1                              // Stack Size
-            WRITE_LONG 0x42 10                              // Lore to Identify
+            WRITE_SHORT 0x42 10                             // Lore to Identify
             WRITE_LONG 0x4C 10                              // Weight
             WRITE_ASCII_TERMINATE 0x58 "BZMISTD"            // Description Image
             READ_LONG 0x18 ~bzmsckar_flags~
