@@ -32,8 +32,8 @@
 @30046 = ~You analyze the formula and prepare to brew %potion_name%.~
 @30047 = ~You are of insufficient level for this formula.~
 @30048 = ~You do not have the spells for this formula memorized.~
-@30049 = ~the spell %spell_list%~   //singular
-@30050 = ~the spells %spell_list%~  //plural
+@30049 = ~the spell %recipe_spell_list%~   //singular
+@30050 = ~the spells %recipe_spell_list%~  //plural
 
 
 //Potion Categories

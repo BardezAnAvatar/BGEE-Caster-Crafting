@@ -1,0 +1,22 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
+    BEGIN
+
+        /*
+        [Spell]                 // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
+        */
+
+
+        ~SPIN101~, ~Innate~, ~1~ => ~SPIN101~    //Cure Light Wounds
+        ~SPIN102~, ~Innate~, ~1~ => ~SPIN102~    //Slow Poison
+        ~SPIN103~, ~Innate~, ~1~ => ~SPIN103~    //Draw Upon Holy Might
+        ~SPIN112~, ~Innate~, ~1~ => ~SPIN112~    //Dispel Magic
+        ~SPCL213~, ~Class~,  ~1~ => ~SPCL213~    //Protection From Evil
+        ~SPCL222~, ~Class~,  ~1~ => ~SPCL222~    //Remove Fear
+        ~SPCL233~, ~Class~,  ~1~ => ~SPCL233~    //Protection From Evil, 10' Radius
+        ~SPCL721~, ~Class~,  ~1~ => ~SPCL721~    //Storm Shield
+        ~SPCL941~, ~Class~,  ~1~ => ~SPCL941~    //Favored of the Spirits
+
+    END
