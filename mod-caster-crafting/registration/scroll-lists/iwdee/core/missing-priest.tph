@@ -232,7 +232,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 ACTION_IF (NOT %bz_OlvynSpells_installed%)
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~spell_list~
+    ~scroll_list_missing~
     BEGIN
         //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
         ~BZ!E1907~, ~SPPR419~, ~Divine~, ~4~, ~1~,  ~0~, ~priest/IWDification/Produce Fire.BAM~,                      ~BZ!E19I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Produce Fire
