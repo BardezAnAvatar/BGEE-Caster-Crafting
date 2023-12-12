@@ -68,7 +68,7 @@ ACTION_IF (%bz_OlvynSpells_installed%)
     END
 
 //Create the `SpellResRefLookup` Associative array, key => RESREF
-INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/generate-Spell_ResRef_Lookup.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/generate-Spell_ResRef_Lookup.tph~
 
 ACTION_IF (%bz_iwdification_installed%)
     BEGIN
@@ -78,7 +78,7 @@ ACTION_IF (%bz_iwdification_installed%)
     END
 
 //Append to the `SpellResRefLookup` Associative array, key (IDS entry) => RESREF
-INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/generate-Spell_ResRef_Lookup=IWD.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/generate-Spell_ResRef_Lookup-IWD.tph~
 
 
 //Include lookup tables
