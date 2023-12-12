@@ -31,3 +31,5 @@ Leather kit: https://commons.wikimedia.org/wiki/File:Kit_for_blowpipe_analysis_C
 Scribbling sounds: https://www.youtube.com/watch?v=dsEKCE5w1ik ; Creative Commons 0
 
 Alchemy kit: https://openverse.org/image/e957f3aa-271e-4add-a5cc-c50f35b1c865?q=alchemy%20table -- "Antique pharmacy and equipment" by prague.czech.photo is licensed under [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/).
+
+Brewing sound: [Bubbles 003](https://pixabay.com/sound-effects/bubbles-003-6397/). licensed from Pixabay under its [Content License Summary](https://pixabay.com/service/license-summary/) This sound was given a multi-layered mix effect
