@@ -5,7 +5,7 @@ BEGIN
 
     ACTION_DEFINE_ASSOCIATIVE_ARRAY ~SpellResRefLookup~
     BEGIN
-        ~%keys_0~ => ~%keys_0~
+        ~%keys_0%~ => ~%keys_0%~
     END
 
 END //loop through ~spell_list~
