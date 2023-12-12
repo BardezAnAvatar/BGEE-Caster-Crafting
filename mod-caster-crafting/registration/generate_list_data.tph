@@ -67,7 +67,7 @@ ACTION_IF (%bz_OlvynSpells_installed%)
         INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/priest.tph~
     END
 
-//Create the `SpellResRefLookup` Associative array, key => RESREF
+//Create the `SpellResRefLookup` Associative array, key => RESREF; DO THIS BEFORE EXPANDING INTO IWDification
 INCLUDE ~./%MOD_FOLDER%/registration/generate-Spell_ResRef_Lookup.tph~
 
 ACTION_IF (%bz_iwdification_installed%)
