@@ -6,12 +6,14 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.
 INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
 INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/priest.tph~
 INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/protection.tph~
+INCLUDE ~%MOD_FOLDER%/registration/fn-fix_scroll_list_iwd_itm_resref.tph~
 
 ACTION_IF (%bz_iwdification_installed%)
     BEGIN
         PRINT ~DEBUG: Include IWD-ification Scrolls~
         INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/arcane.tph~
         INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/priest.tph~
+        LAUNCH_ACTION_FUNCTION ~fn-fix_scroll_list_iwd_itm_resref~ END
     END
 
 ACTION_IF (%bz_OlvynSpells_installed%)

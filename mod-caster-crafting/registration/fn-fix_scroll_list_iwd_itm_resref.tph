@@ -1,0 +1,55 @@
+/*********************************************************************************
+*   Iterate through array ~scroll_list_iwd` and generate ~scroll_list~ from it   *
+*       by getting IWD spell refs and replacing the name                         *
+*********************************************************************************/
+/* Output: */
+/*
+[Scroll]                // 0
+[Spell]                 // 1
+[Tradition]             // 2
+[Spell Level]           // 3
+[Caster Level]          // 4
+[Additional Cost]       // 5
+*/
+DEFINE_ACTION_FUNCTION ~fn-fix_scroll_list_iwd_itm_resref~
+BEGIN
+
+    /***************************************
+    *   Take the IWD registry and fix it   *
+    ***************************************/
+    ACTION_PHP_EACH ~scroll_list_iwd~
+        AS ~keys~ => ~value~
+    BEGIN
+        //lookup the spell's ResRef from the identifier in the array
+        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~ STR_VAR ~identifier~ = ~%keys_0%~ RET ~spell_resref~ = ~resref~ END
+
+        ACTION_MATCH ~%keys_1%~
+        WITH
+            ~Divine~
+            BEGIN
+                OUTER_TEXT_SPRINT ~prefix_existing~ ~SPPR~
+                OUTER_TEXT_SPRINT ~prefix_new~ ~CDID~
+            END
+            ~ARCANE~
+            BEGIN
+                OUTER_TEXT_SPRINT ~prefix_existing~ ~SPWI~
+                OUTER_TEXT_SPRINT ~prefix_new~ ~CDIA~
+            END
+            DEFAULT
+        END //end match statement
+
+        //Strip the first 4 characters of the spell resref:
+        OUTER_TEXT_SPRINT ~itm_resref~ ~spell_resref~
+        OUTER_PATCH ~itm_resref~
+            REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%prefix_existing%~ ~%prefix_new%~
+
+
+        ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~scroll_list~
+        BEGIN
+            ~%itm_resref%~, ~%keys_0%~, ~%keys_1%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~ => ~%value%~
+        END //scroll list array append
+
+    END //corrective item match lop
+
+END //end function definition
