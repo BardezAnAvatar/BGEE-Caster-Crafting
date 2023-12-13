@@ -13,7 +13,7 @@ ACTION_IF (%bz_iwdification_installed%)
         PRINT ~DEBUG: Include IWD-ification Scrolls~
         INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/arcane.tph~
         INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/priest.tph~
-        LAUNCH_ACTION_FUNCTION ~fn-fix_scroll_list_iwd_itm_resref~ RET_ARRAY ~spl_fix~ = ~spell_list_fix~ END
+        LAUNCH_ACTION_FUNCTION ~fn-fix_scroll_list_iwd_itm_resref~ RET_ARRAY ~spl_fix~ = ~scroll_list_fix~ END
         INCLUDE ~./%MOD_FOLDER%/registration/append_spell_list_iwd.tph~
     END
 
