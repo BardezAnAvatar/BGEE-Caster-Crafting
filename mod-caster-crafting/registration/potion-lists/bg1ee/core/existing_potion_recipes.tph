@@ -6,7 +6,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Unique Key]            // 0
         [Potion Item Code]      // 1
         [Required Caster Level] // 2
-        [Recipe]                // 3; these will be comma-delimited spell RESREFs
+        [Recipe]                // 3; these will be comma-delimited spell RESREFs/identifiers
         [Result Count]          // 4
         [XP cost]               // 5
         [Time Cost (hours)]     // 6
