@@ -10,67 +10,67 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Additional Cost]       // 4
         */
 
-        ~CLERIC_CURSE~,                              ~Divine~, ~1~, ~1~, ~0~  => ~CDID116~    //Curse
-        ~CLERIC_CAUSE_LIGHT_WOUNDS~,                 ~Divine~, ~1~, ~1~, ~0~  => ~CDID117~    //Cause Light Wounds
-        ~CLERIC_SUNSCORCH~,                          ~Divine~, ~1~, ~1~, ~0~  => ~CDID118~    //Sunscorch
+        ~CLERIC_CURSE~,                              ~Divine~, ~1~, ~1~, ~0~  => ~CLERIC_CURSE~                             //Curse
+        ~CLERIC_CAUSE_LIGHT_WOUNDS~,                 ~Divine~, ~1~, ~1~, ~0~  => ~CLERIC_CAUSE_LIGHT_WOUNDS~                //Cause Light Wounds
+        ~CLERIC_SUNSCORCH~,                          ~Divine~, ~1~, ~1~, ~0~  => ~CLERIC_SUNSCORCH~                         //Sunscorch
 
-        ~CLERIC_CURE_MODERATE_WOUNDS~,               ~Divine~, ~2~, ~3~, ~0~  => ~CDID216~    //Cure Moderate Wounds
-        ~CLERIC_ALICORN_LANCE~,                      ~Divine~, ~2~, ~3~, ~0~  => ~CDID217~    //Alicorn Lance
-        ~CLERIC_BEAST_CLAW~,                         ~Divine~, ~2~, ~3~, ~0~  => ~CDID218~    //Beast Claw
-        ~CLERIC_CAUSE_MODERATE_WOUNDS~,              ~Divine~, ~2~, ~3~, ~0~  => ~CDID219~    //Cause Moderate Wounds
+        ~CLERIC_CURE_MODERATE_WOUNDS~,               ~Divine~, ~2~, ~3~, ~0~  => ~CLERIC_CURE_MODERATE_WOUNDS~              //Cure Moderate Wounds
+        ~CLERIC_ALICORN_LANCE~,                      ~Divine~, ~2~, ~3~, ~0~  => ~CLERIC_ALICORN_LANCE~                     //Alicorn Lance
+        ~CLERIC_BEAST_CLAW~,                         ~Divine~, ~2~, ~3~, ~0~  => ~CLERIC_BEAST_CLAW~                        //Beast Claw
+        ~CLERIC_CAUSE_MODERATE_WOUNDS~,              ~Divine~, ~2~, ~3~, ~0~  => ~CLERIC_CAUSE_MODERATE_WOUNDS~             //Cause Moderate Wounds
 
-        ~CLERIC_PRAYER~,                             ~Divine~, ~3~, ~5~, ~0~  => ~CDID320~    //Prayer
-        ~CLERIC_CAUSE_DISEASE~,                      ~Divine~, ~3~, ~5~, ~0~  => ~CDID321~    //Cause Disease
-        ~CLERIC_EXALTATION~,                         ~Divine~, ~3~, ~5~, ~0~  => ~CDID322~    //Exaltation
-        ~CLERIC_MOONBLADE~,                          ~Divine~, ~3~, ~5~, ~0~  => ~CDID323~    //Moonblade
-        ~CLERIC_CIRCLE_OF_BONES~,                    ~Divine~, ~3~, ~5~, ~0~  => ~CDID324~    //Circle of Bones
-        ~CLERIC_SPIKE_GROWTH~,                       ~Divine~, ~3~, ~5~, ~0~  => ~CDID325~    //Spike Growth
-        ~CLERIC_CLOUDBURST~,                         ~Divine~, ~3~, ~5~, ~0~  => ~CDID326~    //Cloudburst
-        ~CLERIC_MOLD_TOUCH~,                         ~Divine~, ~3~, ~5~, ~0~  => ~CDID327~    //Mold Touch
-        ~CLERIC_STORM_SHELL~,                        ~Divine~, ~3~, ~5~, ~0~  => ~CDID328~    //Storm Shell
-        ~CLERIC_CAUSE_MEDIUM_WOUNDS~,                ~Divine~, ~3~, ~5~, ~0~  => ~CDID329~    //Cause Medium Wounds
-        ~CLERIC_FAVOR_OF_ILMATER~,                   ~Divine~, ~3~, ~5~, ~0~  => ~CDID330~    //Favor of Illmater
+        ~CLERIC_PRAYER~,                             ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_PRAYER~                            //Prayer
+        ~CLERIC_CAUSE_DISEASE~,                      ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_CAUSE_DISEASE~                     //Cause Disease
+        ~CLERIC_EXALTATION~,                         ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_EXALTATION~                        //Exaltation
+        ~CLERIC_MOONBLADE~,                          ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_MOONBLADE~                         //Moonblade
+        ~CLERIC_CIRCLE_OF_BONES~,                    ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_CIRCLE_OF_BONES~                   //Circle of Bones
+        ~CLERIC_SPIKE_GROWTH~,                       ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_SPIKE_GROWTH~                      //Spike Growth
+        ~CLERIC_CLOUDBURST~,                         ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_CLOUDBURST~                        //Cloudburst
+        ~CLERIC_MOLD_TOUCH~,                         ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_MOLD_TOUCH~                        //Mold Touch
+        ~CLERIC_STORM_SHELL~,                        ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_STORM_SHELL~                       //Storm Shell
+        ~CLERIC_CAUSE_MEDIUM_WOUNDS~,                ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_CAUSE_MEDIUM_WOUNDS~               //Cause Medium Wounds
+        ~CLERIC_FAVOR_OF_ILMATER~,                   ~Divine~, ~3~, ~5~, ~0~  => ~CLERIC_FAVOR_OF_ILMATER~                  //Favor of Illmater
 
-        ~CLERIC_STATIC_CHARGE~,                      ~Divine~, ~4~, ~7~, ~0~  => ~CDID419~    //Static Charge
-        ~CLERIC_RECITATION~,                         ~Divine~, ~4~, ~7~, ~0~  => ~CDID420~    //Recitation
-        ~CLERIC_BLOOD_RAGE~,                         ~Divine~, ~4~, ~7~, ~0~  => ~CDID421~    //Blood Rage
-        ~CLERIC_CLOUD_OF_PESTILENCE~,                ~Divine~, ~4~, ~7~, ~0~  => ~CDID422~    //Cloud of Pestilance
-        ~CLERIC_UNFAILING_ENDURANCE~,                ~Divine~, ~4~, ~7~, ~0~  => ~CDID423~    //Unfailing Endurance
-        ~CLERIC_STAR_METAL_CUDGEL~,                  ~Divine~, ~4~, ~7~, ~0~  => ~CDID424~    //Star Metal Cudgel
-        ~CLERIC_SMASHING_WAVE~,                      ~Divine~, ~4~, ~7~, ~0~  => ~CDID425~    //Smashing Wave
-        ~CLERIC_THORN_SPRAY~,                        ~Divine~, ~4~, ~7~, ~0~  => ~CDID426~    //Thorn Spray
-        ~CLERIC_WALL_OF_MOONLIGHT~,                  ~Divine~, ~4~, ~7~, ~0~  => ~CDID427~    //Wall of Moonlight
-        ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~,           ~Divine~, ~4~, ~7~, ~0~  => ~CDID428~    //Cause Serious Wounds
-        ~CLERIC_GIANT_INSECT~,                       ~Divine~, ~4~, ~7~, ~0~  => ~CDID429~    //Giant Insect
+        ~CLERIC_STATIC_CHARGE~,                      ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_STATIC_CHARGE~                     //Static Charge
+        ~CLERIC_RECITATION~,                         ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_RECITATION~                        //Recitation
+        ~CLERIC_BLOOD_RAGE~,                         ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_BLOOD_RAGE~                        //Blood Rage
+        ~CLERIC_CLOUD_OF_PESTILENCE~,                ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_CLOUD_OF_PESTILENCE~               //Cloud of Pestilance
+        ~CLERIC_UNFAILING_ENDURANCE~,                ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_UNFAILING_ENDURANCE~               //Unfailing Endurance
+        ~CLERIC_STAR_METAL_CUDGEL~,                  ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_STAR_METAL_CUDGEL~                 //Star Metal Cudgel
+        ~CLERIC_SMASHING_WAVE~,                      ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_SMASHING_WAVE~                     //Smashing Wave
+        ~CLERIC_THORN_SPRAY~,                        ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_THORN_SPRAY~                       //Thorn Spray
+        ~CLERIC_WALL_OF_MOONLIGHT~,                  ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_WALL_OF_MOONLIGHT~                 //Wall of Moonlight
+        ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~,           ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~          //Cause Serious Wounds
+        ~CLERIC_GIANT_INSECT~,                       ~Divine~, ~4~, ~7~, ~0~  => ~CLERIC_GIANT_INSECT~                      //Giant Insect
 
-        ~CLERIC_RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,    ~Divine~, ~5~, ~9~, ~0~  => ~CDID518~    //Righteous Wrath of the Faithful
-        ~CLERIC_SPIKE_STONES~,                       ~Divine~, ~5~, ~9~, ~0~  => ~CDID519~    //Spike Stones
-        ~CLERIC_SHIELD_OF_LATHANDER~,                ~Divine~, ~5~, ~9~, ~0~  => ~CDID520~    //Shield of Lathander
-        ~CLERIC_UNDEAD_WARD~,                        ~Divine~, ~5~, ~9~, ~0~  => ~CDID521~    //Undead Ward
-        ~CLERIC_ANIMAL_RAGE~,                        ~Divine~, ~5~, ~9~, ~0~  => ~CDID522~    //Animal Rage
-        ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~,            ~Divine~, ~5~, ~9~, ~0~  => ~CDID523~    //Mass Cause Light Wounds
-        ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~,          ~Divine~, ~5~, ~9~, ~0~  => ~CDID524~    //Cause Critical Wounds
+        ~CLERIC_RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,    ~Divine~, ~5~, ~9~, ~0~  => ~CLERIC_RIGHTEOUS_WRATH_OF_THE_FAITHFUL~   //Righteous Wrath of the Faithful
+        ~CLERIC_SPIKE_STONES~,                       ~Divine~, ~5~, ~9~, ~0~  => ~CLERIC_SPIKE_STONES~                      //Spike Stones
+        ~CLERIC_SHIELD_OF_LATHANDER~,                ~Divine~, ~5~, ~9~, ~0~  => ~CLERIC_SHIELD_OF_LATHANDER~               //Shield of Lathander
+        ~CLERIC_UNDEAD_WARD~,                        ~Divine~, ~5~, ~9~, ~0~  => ~CLERIC_UNDEAD_WARD~                       //Undead Ward
+        ~CLERIC_ANIMAL_RAGE~,                        ~Divine~, ~5~, ~9~, ~0~  => ~CLERIC_ANIMAL_RAGE~                       //Animal Rage
+        ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~,            ~Divine~, ~5~, ~9~, ~0~  => ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~           //Mass Cause Light Wounds
+        ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~,          ~Divine~, ~5~, ~9~, ~0~  => ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~         //Cause Critical Wounds
 
-        ~CLERIC_ENTROPY_SHIELD~,                     ~Divine~, ~6~, ~12~, ~0~ => ~CDID615~   //Entropy Shield
-        ~CLERIC_WHIRLWIND~,                          ~Divine~, ~6~, ~12~, ~0~ => ~CDID616~   //Whirlwind
-        ~CLERIC_SPIRITUAL_WRATH~,                    ~Divine~, ~6~, ~12~, ~0~ => ~CDID617~   //Spiritual Wrath
+        ~CLERIC_ENTROPY_SHIELD~,                     ~Divine~, ~6~, ~12~, ~0~ => ~CLERIC_ENTROPY_SHIELD~                    //Entropy Shield
+        ~CLERIC_WHIRLWIND~,                          ~Divine~, ~6~, ~12~, ~0~ => ~CLERIC_WHIRLWIND~                         //Whirlwind
+        ~CLERIC_SPIRITUAL_WRATH~,                    ~Divine~, ~6~, ~12~, ~0~ => ~CLERIC_SPIRITUAL_WRATH~                   //Spiritual Wrath
 
-        ~CLERIC_ENERGY_DRAIN~,                       ~Divine~, ~7~, ~14~, ~0~ => ~CDID714~   //Energy Drain
-        ~CLERIC_SYMBOL_PAIN~,                        ~Divine~, ~7~, ~14~, ~0~ => ~CDID733~   //Symbol, Pain
-        ~CLERIC_SYMBOL_HOPELESSNESS~,                ~Divine~, ~7~, ~14~, ~0~ => ~CDID734~   //Symbol, Hopelessness
-        ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~,        ~Divine~, ~7~, ~14~, ~0~ => ~CDID735~   //Impervious Sanctity of Mind
-        ~CLERIC_DESTRUCTION~,                        ~Divine~, ~7~, ~14~, ~0~ => ~CDID736~   //Destruction
-        ~CLERIC_GREATER_SHIELD_OF_LATHANDER~,        ~Divine~, ~7~, ~14~, ~0~ => ~CDID737~   //Greater Shield of Lathander
-        ~CLERIC_MIST_OF_ELDATH~,                     ~Divine~, ~7~, ~14~, ~0~ => ~CDID738~   //Mist of Eldath
-        ~CLERIC_STALKER~,                            ~Divine~, ~7~, ~14~, ~0~ => ~CDID739~   //Stalker
-        ~CLERIC_WITHER~,                             ~Divine~, ~7~, ~14~, ~0~ => ~CDID740~   //Wither
+        ~CLERIC_ENERGY_DRAIN~,                       ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_ENERGY_DRAIN~                      //Energy Drain
+        ~CLERIC_SYMBOL_PAIN~,                        ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_SYMBOL_PAIN~                       //Symbol, Pain
+        ~CLERIC_SYMBOL_HOPELESSNESS~,                ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_SYMBOL_HOPELESSNESS~               //Symbol, Hopelessness
+        ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~,        ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~       //Impervious Sanctity of Mind
+        ~CLERIC_DESTRUCTION~,                        ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_DESTRUCTION~                       //Destruction
+        ~CLERIC_GREATER_SHIELD_OF_LATHANDER~,        ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_GREATER_SHIELD_OF_LATHANDER~       //Greater Shield of Lathander
+        ~CLERIC_MIST_OF_ELDATH~,                     ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_MIST_OF_ELDATH~                    //Mist of Eldath
+        ~CLERIC_STALKER~,                            ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_STALKER~                           //Stalker
+        ~CLERIC_WITHER~,                             ~Divine~, ~7~, ~14~, ~0~ => ~CLERIC_WITHER~                            //Wither
 
 
         /********************
         *   Special cases   *
         ********************/
         //special -- in-game already, moved from 613 to here
-        ~CLERIC_PHYSICAL_MIRROR~,                    ~Divine~, ~5~, ~9~, ~0~ => ~CDID525~    //Physical Mirror
+        ~CLERIC_PHYSICAL_MIRROR~,                    ~Divine~, ~5~,  ~9~, ~0~ => ~CLERIC_PHYSICAL_MIRROR~                   //Physical Mirror
     END
 
 
@@ -80,6 +80,6 @@ BEGIN
     ~scroll_list_iwd~
     BEGIN
         //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-        ~CLERIC_PRODUCE_FIRE~,                       ~Divine~, ~4~, ~7~, ~0~ => ~CDID418~    //Produce Fire
+        ~CLERIC_PRODUCE_FIRE~,                       ~Divine~, ~4~,  ~7~, ~0~ => ~CLERIC_PRODUCE_FIRE~                      //Produce Fire
     END
 END
