@@ -36,7 +36,7 @@ ACTION_IF (%bz_OlvynSpells_installed%)
         [Additional Cost]       // 5
 */
 /* DEBUG */
-
+/*
 PRINT ~DEBUG: scroll_list:~
 ACTION_PHP_EACH ~scroll_list~
     AS ~keys~ => ~value~
@@ -51,7 +51,7 @@ ACTION_PHP_EACH ~scroll_list~
             Additional Cost:  `%keys_5%`
             Value:            `%value%`~
     END
-
+*/
 
 //Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
 //iterate through the Arcane list to generate the scroll-list data, then sort that data below instead
