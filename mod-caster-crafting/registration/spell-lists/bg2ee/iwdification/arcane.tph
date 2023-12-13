@@ -17,7 +17,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~WIZARD_ICELANCE~,                          ~Arcane~, ~3~ => ~WIZARD_ICELANCE~                          //Icelance
         ~WIZARD_LANCE_OF_DISRUPTION~,               ~Arcane~, ~3~ => ~WIZARD_LANCE_OF_DISRUPTION~               //Lance of Disruption
 
-        ~WIZARD_EMOTION_HOPELESSNESS~,              ~Arcane~, ~4~ => ~WIZARD_EMOTION_HOPELESSNESS~              //Emotion: Hopelessness
         ~WIZARD_BELTYNS_BURNING_BLOOD~,             ~Arcane~, ~4~ => ~WIZARD_BELTYNS_BURNING_BLOOD~             //Beltyn's Burning Blood
         ~WIZARD_EMOTION_COURAGE~,                   ~Arcane~, ~4~ => ~WIZARD_EMOTION_COURAGE~                   //Emotion: Courage
         ~WIZARD_EMOTION_HOPE~,                      ~Arcane~, ~4~ => ~WIZARD_EMOTION_HOPE~                      //Emotion: Hope

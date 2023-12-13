@@ -30,6 +30,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         //   The copied header therefore must be updated accordingly.
 
         //physical mirror gets a level change.
-        ~BZ!F2509~, ~SPPR525~, ~Divine~, ~1~, ~1~, ~0~, ~priest/core/Physical Mirror.BAM~, ~BZ!F25I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
+        ~BZ!F2509~, ~CLERIC_PHYSICAL_MIRROR~, ~Divine~, ~1~, ~1~, ~0~, ~priest/core/Physical Mirror.BAM~, ~BZ!F25I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Physical Mirror
 
     END
