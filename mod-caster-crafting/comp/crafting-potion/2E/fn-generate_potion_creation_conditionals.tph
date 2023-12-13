@@ -9,7 +9,7 @@
 
 //includes
 INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-csv_string_to_array.tph~
-
+INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 
 
 DEFINE_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
@@ -34,9 +34,6 @@ BEGIN
     OUTER_TEXT_SPRINT ~response_text~ ~~
 
 
-
-    //build out all 3 conditionals
-
     LAUNCH_ACTION_FUNCTION ~fn-csv_string_to_array~
         STR_VAR
             ~string~ = ~%recipe%~     // string with space separator
@@ -54,21 +51,27 @@ BEGIN
 
     ACTION_PHP_EACH ~spells_array~
         AS ~spell_keys~ => ~_v~
-        BEGIN
-            //comma-separate
-            ACTION_IF (~i~ > 0) THEN BEGIN OUTER_TEXT_SPRINT ~recipe_spell_list~ ~%recipe_spell_list%, ~ END
-            OUTER_TEXT_SPRINT ~temp_spellName~ $spell_lookup("%_v%")
-            OUTER_TEXT_SPRINT ~recipe_spell_list~ ~%recipe_spell_list%%temp_spellName%~
-            OUTER_SET ~i~ = (%i% + 1)
+    BEGIN
 
-            //use the RESREF to check for memorized spell
-            OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
-HaveSpellRES("%_v%")
+        //lookup the spell's ResRef from the identifier in the array
+        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~ STR_VAR ~identifier~ = ~%_v%~ RET ~spell_resref~ = ~resref~ END
+
+        //comma-separate
+        ACTION_IF (~i~ > 0) THEN BEGIN OUTER_TEXT_SPRINT ~recipe_spell_list~ ~%recipe_spell_list%, ~ END
+        OUTER_TEXT_SPRINT ~temp_spellName~ $spell_lookup("%spell_resref%")
+        OUTER_TEXT_SPRINT ~recipe_spell_list~ ~%recipe_spell_list%%temp_spellName%~
+        OUTER_SET ~i~ = (%i% + 1)
+
+        //use the RESREF to check for memorized spell
+        OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
+HaveSpellRES("%spell_resref%")
 PartyGoldGT(%gold_minus_one%)~
-            //use the RESREF to check for missing memorized spell
-            OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~%condition_invalid_spells%
-!HaveSpellRES("%_v%")~
-        END //~spells_array~
+
+        //use the RESREF to check for missing memorized spell
+        OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~%condition_invalid_spells%
+!HaveSpellRES("%spell_resref%")~
+
+    END //~spells_array~
 
 
     OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %level_minus_one%)
@@ -89,7 +92,6 @@ OR(%i%)
 
     //use `potion_name` and `formula` to merge dynamic text
     OUTER_SPRINT ~response_text~ @30045 // ~Brew %potion_name% using %formula%.~
-
 
 
 END //function definition

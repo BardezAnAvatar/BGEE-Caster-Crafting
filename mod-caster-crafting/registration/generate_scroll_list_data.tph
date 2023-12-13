@@ -14,10 +14,18 @@
         [Failure %]             // 10   --lookup from table
         [Spell Display Name]    // 11   --get from spell
 */
+
+//includes
+INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
+
 ACTION_PHP_EACH ~scroll_list~
     AS ~keys~ => ~value~
     BEGIN
-        OUTER_TEXT_SPRINT ~spell_name~ $spell_lookup("%keys_1%")
+
+        //lookup the spell's ResRef from the identifier in the array
+        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~ STR_VAR ~identifier~ = ~%keys_1%~ RET ~spell_resref~ = ~resref~ END
+
+        OUTER_TEXT_SPRINT ~spell_name~ $spell_lookup("%spell_resref%")
 
         COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
             READ_LONG 0x34 ~scroll_price~           //since this is a spell file, NAME1 should be all there is
@@ -39,7 +47,7 @@ ACTION_PHP_EACH ~scroll_list~
             BEGIN
                 ~%keys_3%_%spell_name%~,    //sorting key of level and spell name
                 ~%keys_0%~,                 //scroll
-                ~%keys_1%~,                 //spell
+                ~%spell_resref%~,           //spell
                 ~%keys_2%~,                 //tradition
                 ~%keys_3%~,                 //spell level
                 ~%keys_4%~,                 //caster level

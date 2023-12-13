@@ -24,6 +24,9 @@ INCLUDE ~./%MOD_FOLDER%/registration/fn_bz_lookup_costs_potion.tph~
     [Potion Name]           // 11
 */
 
+//includes
+INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
+
 PRINT ~Generating an index of potion creation recipe data necessary for creation dialog~
 
 
@@ -34,6 +37,7 @@ BEGIN
     ACTION_PHP_EACH ~new_potions_recipes~
     AS ~keys~ => ~value~
     BEGIN
+
         ACTION_IF (~%cat_keys_0%~ STRING_EQUAL ~%keys_1%~) THEN  //if the potion code is a match
         BEGIN
             LAUNCH_ACTION_FUNCTION fn_bz_lookup_costs_potion
@@ -46,6 +50,9 @@ BEGIN
                     potion_time = time
             END //cost lookup
 
+            //lookup the spell's ResRef from the identifier in the array
+            LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~ STR_VAR ~identifier~ = ~%cat_keys_0%~ RET ~spell_resref~ = ~resref~ END
+
             //total gold cost for recipe
             OUTER_SET recipe_total_gold = (potion_cost * keys_4)
 
@@ -57,8 +64,8 @@ BEGIN
                 ~potion_recipe_data~
             BEGIN
 
-                ~%cat_keys_2%-%cat_keys_4%-%cat_keys_0%-%keys_0%~,  //unique key
-                ~%cat_keys_0%~,         //resref
+                ~%cat_keys_2%-%cat_keys_4%-%spell_resref%-%keys_0%~,  //unique key
+                ~%spell_resref%~,       //resref
                 ~%keys_3%~,             //caster lvl required
                 ~%keys_2%~,             //spell resref(s)
                 ~%keys_4%~,             //result count
@@ -69,7 +76,7 @@ BEGIN
                 ~%cat_keys_3%~,         //SubCategory
                 ~%fail_percent%~,       //failure rate
                 ~%identified_name%~     //potion name
-                    => ~%cat_keys_0%~
+                    => ~%spell_resref%~
 
             END //potion_recipe_data output
         END //found a recipe matching a potion

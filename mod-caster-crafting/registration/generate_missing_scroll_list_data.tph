@@ -24,9 +24,16 @@
     [Usability: Chaotic]        // 20
 */
 
+//includes
+INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
+
 ACTION_PHP_EACH ~scroll_list_missing~
     AS ~keys~ => ~value~
     BEGIN
+
+        //lookup the spell's ResRef from the identifier in the array
+        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~ STR_VAR ~identifier~ = ~%keys_1%~ RET ~spell_resref~ = ~resref~ END
+
         //calculate the gold cost
         LAUNCH_ACTION_FUNCTION ~bz_calculate_scroll_cost~
             INT_VAR
@@ -44,7 +51,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
             ~scroll_list_missing_data~
             BEGIN
                 ~%keys_0%~,                 //scroll
-                ~%keys_1%~,                 //spell
+                ~%spell_resref%~,           //spell
                 ~%keys_2%~,                 //tradition
                 ~%keys_3%~,                 //spell level
                 ~%keys_4%~,                 //caster level
@@ -73,7 +80,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
 ACTION_SORT_ARRAY_INDICES ~scroll_list_missing_data~
 
 //DEBUG
-
+/*
 ACTION_PHP_EACH ~scroll_list_missing_data~
     AS ~keys~ => ~value~
     BEGIN
@@ -101,5 +108,4 @@ ACTION_PHP_EACH ~scroll_list_missing_data~
             usability, Neutral: `%keys_19%`
             usability, Chaotic: `%keys_20%`~
     END
-
-
+*/
