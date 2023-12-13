@@ -14,7 +14,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BLESS_SPPR320~,                            ~BZ#0001~, ~SPPR101~,  ~1~,  ~2~ => "Bless"
 
 
-        ~EXPEDITIOUS_RETREAT~,                      ~BZ#I103~, ~SPPR218~,  ~3~,  ~1~ => "Beast Claw"
+        ~BEAST_CLAW~,                               ~BZ#I103~, ~SPPR218~,  ~3~,  ~1~ => "Beast Claw"
         ~CAT'S_GRACE~,                              ~BZ#I203~, ~SPWI227~,  ~3~,  ~1~ => "Cat's Grace"
         ~CURE_MODERATE_WOUNDS~,                     ~BZ#I303~, ~SPPR216~,  ~3~,  ~1~ => "Cure Moderate Wounds"
         ~DECASTAVE~,                                ~BZ#I403~, ~SPWI226~,  ~3~,  ~1~ => "Decastave"
