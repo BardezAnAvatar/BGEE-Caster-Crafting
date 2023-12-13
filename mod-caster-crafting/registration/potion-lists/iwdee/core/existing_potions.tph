@@ -13,6 +13,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~existing_potions~
     BEGIN
 
+
         ~POTN02~,           ~Defense~,      ~Energy Resistance~,    ~0~ => ~POTN02~     //Potion of Fire Resistance
         ~________STR18~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN44~     //Potion of Strength (18)
         ~________STR19~,    ~Enhancement~,  ~Stat Boost: Strength~, ~0~ => ~POTN03~     //Potion of Hill Giant Strength (19)
@@ -54,7 +55,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN46~,           ~Defense~,      ~Armor~,                ~0~ => ~POTN46~     //Potion of Stone Form
         ~POTN52~,           ~Cure~,         ~Healing~,              ~0~ => ~POTN52~     //Potion of Extra Healing
         ~POTN55~,           ~Cure~,         ~Healing~,              ~0~ => ~POTN55~     //Potion of Superior Healing
-        ~POTN60~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN60~     //Potion of Persuasiveness
 //IWD specifics
         ~ADISEASE~,         ~Cure~,         ~Restorative~,          ~0~ => ~ADISEASE~   //Mummy's Tea
         ~FLAMOIL~,          ~Bomb~,         ~Damage~,               ~0~ => ~FLAMOIL~    //Flaming Oil
