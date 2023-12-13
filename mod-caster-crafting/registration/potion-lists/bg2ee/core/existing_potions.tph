@@ -55,7 +55,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN46~,           ~Defense~,      ~Armor~,                ~0~ => ~POTN46~     //Potion of Stone Form;
         ~POTN52~,           ~Cure~,         ~Healing~,              ~0~ => ~POTN52~     //Potion of Extra Healing;
         ~POTN55~,           ~Cure~,         ~Healing~,              ~0~ => ~POTN55~     //Potion of Superior Healing;
-        ~POTN60~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN60~     //Potion of Persuasiveness;
+      //~POTN60~,           ~Enhancement~,  ~Stat Boost~,           ~0~ => ~POTN60~     //Potion of Persuasiveness;
         ~OHDPOTN1~,         ~Enhancement~,  ~Detection~,            ~0~ => ~OHDPOTN1~   //Potion of Clairvoyance;
 
     END

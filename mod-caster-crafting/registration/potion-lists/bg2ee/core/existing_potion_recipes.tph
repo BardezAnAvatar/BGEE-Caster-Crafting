@@ -198,7 +198,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN55-1~,    ~POTN55~, ~0~,  ~SPPR607~,                   ~2~, ~0~, ~12~  => ~POTN55~   //Potion of Superior Healing;             `Heal` Priest Spell
         ~POTN55-2~,    ~POTN55~, ~0~,  ~SPPR713~,                   ~3~, ~0~, ~12~  => ~POTN55~   //Potion of Superior Healing;             `Greater Restoration` Priest Spell
 
-        ~POTN60-0~,    ~POTN60~, ~0~,  ~SPWI107~,                   ~1~, ~0~, ~10~  => ~POTN60~   //Potion of Persuasiveness;               `Friends` Wizard Spell
+      //~POTN60-0~,    ~POTN60~,   ~0~,  ~SPWI107~,                 ~1~, ~0~, ~10~  => ~POTN60~   //Potion of Persuasiveness;               `Friends` Wizard Spell
 
         ~OHPTON1-0~,   ~OHDPOTN1~, ~0~,  ~SPWI203~,                 ~1~, ~0~,  ~8~  => ~OHDPOTN1~ //Potion of Clairvoyance;                 `Detect Invisibility` Wizard Spell
         ~OHPTON1-1~,   ~OHDPOTN1~, ~0~,  ~SPWI322~,                 ~2~, ~0~,  ~8~  => ~OHDPOTN1~ //Potion of Clairvoyance;                 `Detect Illusion` Wizard Spell
