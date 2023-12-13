@@ -11,10 +11,10 @@ RET
 BEGIN
     OUTER_TEXT_SPRINT ~resref~ ~%identifier%~       //presume that the identifier is a RESREF already and just return that
 
-    ACTION_PHP_EACH ~scroll_costs~
+    ACTION_PHP_EACH ~SpellResRefLookup~
         AS ~keys~ => ~value~
     BEGIN
-        //if the tradition and spell level match...
+        //if the key matches the provided identifier, and they are not both RESREFs:
         ACTION_IF (~%keys_0%~ STRING_EQUAL ~%identifier%~) THEN
         BEGIN
             OUTER_TEXT_SPRINT ~resref~ ~%value%~    //replace the identifier with a RESREF
