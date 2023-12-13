@@ -1,0 +1,142 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_items~
+    BEGIN
+        /*
+        [resulting potion RESREF]                   // 0
+        [Create Automatically]                      // 1
+        [Category]                                  // 2
+        [SubCategory]                               // 3
+        [Original Spell Level (for sorting/org.)    // 4
+        [Target Type]                               // 5
+        [TRA: Identified Name]                      // 6
+        [TRA: Identified Descripton]                // 7
+        [effect: source spell]                      // 8
+        [effect: Caster Level (NI: minimum level)]  // 9
+        [Cost: gold tier]                           // 10
+        [Icon: Source inventory BAM path]           // 11
+        [Icon: Destination inventory BAM RESREF]    // 12
+        [Icon: Description RESREF]                  // 13
+        [Unusability flags]                         // 14 special case for one or two potions; usually `~~`
+        [Opcode: Duration]                          // 15
+        [Offset: Duration]                          // 16
+        [Opcode: Magnitude]                         // 17
+        [Offset: Magnitude]                         // 18
+        [Opcode: Magnitude2]                        // 19
+        [Offset: Magnitude2]                        // 20
+        */
+
+
+        ~BZ#0001~, ~1~, ~Offense~,      ~Damage Boost~,         ~1~, ~Caster~,  ~40200~, ~40201~, ~SPPR101~,  ~1~,  ~2~, ~bless.BAM~,                                 ~BZ#0001I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Bless"
+        ~BZ#0101~, ~1~, ~Bomb~,         ~Restrictive~,          ~1~, ~Point~,   ~40202~, ~40203~, ~SPPR105~,  ~1~,  ~3~, ~entangle.BAM~,                              ~BZ#0101I~, ~BZPN013D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Entangle"
+        ~BZ#0201~, ~1~, ~Defense~,      ~Mental Defense~,       ~1~, ~Caster~,  ~40246~, ~40247~, ~SPWI210~,  ~1~,  ~4~, ~resist-fear.BAM~,                           ~BZ#0201I~, ~BZPN110D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Resist Fear"
+        ~BZ#0301~, ~1~, ~Defense~,      ~Avoidance~,            ~1~, ~Caster~,  ~40204~, ~40205~, ~SPPR109~,  ~1~,  ~4~, ~sanctuary.BAM~,                             ~BZ#0301I~, ~BZPN008D~, ~~,     ~153~, ~0xE~, ~~, ~~, ~~, ~~ => "Sanctuary"
+        ~BZ#0401~, ~1~, ~Defense~,      ~Damage Resistance~,    ~1~, ~Actor~,   ~40206~, ~40207~, ~SPPR111~,  ~1~,  ~2~, ~armor-of-faith.BAM~,                        ~BZ#0401I~, ~BZPN032D~, ~~,     ~142~, ~0xE~, ~30~, ~0x4~, ~~, ~~ => "Armor of Faith"
+        ~BZ#0501~, ~1~, ~Defense~,      ~Avoidance~,            ~1~, ~Caster~,  ~40208~, ~40209~, ~SPPR150~,  ~1~,  ~2~, ~spirit-ward.BAM~,                           ~BZ#0501I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spirit Ward"
+        ~BZ#0601~, ~1~, ~Bomb~,         ~Restrictive~,          ~1~, ~Point~,   ~40210~, ~40211~, ~SPWI101~,  ~1~,  ~2~, ~grease.BAM~,                                ~BZ#0601I~, ~BZPN013D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Grease"
+        ~BZ#0701~, ~1~, ~Defense~,      ~Armor~,                ~1~, ~Caster~,  ~40212~, ~40213~, ~SPWI102~,  ~1~,  ~2~, ~armor.BAM~,                                 ~BZ#0701I~, ~BZPN008D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Armor"
+        ~BZ#0801~, ~1~, ~Enhancement~,  ~Stat Boost~,           ~1~, ~Caster~,  ~40214~, ~40215~, ~SPWI107~,  ~1~,  ~2~, ~friends.BAM~,                               ~BZ#0801I~, ~BZPN005D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Friends"
+        ~BZ#0901~, ~1~, ~Defense~,      ~Status Immunity~,      ~1~, ~Caster~,  ~40216~, ~40217~, ~SPWI108~,  ~1~,  ~2~, ~protection-from-petrification.BAM~,         ~BZ#0901I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Petrification"
+        ~BZ#0A01~, ~1~, ~Defense~,      ~Avoidance~,            ~1~, ~Caster~,  ~40218~, ~40219~, ~SPWI113~,  ~1~,  ~1~, ~protection-from-evil.BAM~,                  ~BZ#0A01I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Evil"
+        ~BZ#0B01~, ~1~, ~Defense~,      ~Armor~,                ~1~, ~Actor~,   ~40220~, ~40221~, ~SPWI114~,  ~1~,  ~2~, ~shield.BAM~,                                ~BZ#0B01I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Shield"
+        ~BZ#0C01~, ~1~, ~Bomb~,         ~Restrictive~,          ~1~, ~Point~,   ~40222~, ~40223~, ~SPWI116~,  ~1~,  ~2~, ~sleep.BAM~,                                 ~BZ#0C01I~, ~BZPN013D~, ~~,      ~39~, ~0xE~, ~~, ~~, ~~, ~~ => "Sleep"
+
+        ~BZ#0D03~, ~1~, ~Offense~,      ~Damage Boost~,         ~2~, ~Caster~,  ~40224~, ~40225~, ~SPPR201~,  ~1~,  ~4~, ~aid.BAM~,                                   ~BZ#0D03I~, ~BZPN026D~, ~~,     ~129~, ~0xE~, ~~, ~~, ~~, ~~ => "Aid"
+        ~BZ#0E03~, ~1~, ~Defense~,      ~Armor~,                ~2~, ~Actor~,   ~40226~, ~40227~, ~SPPR202~,  ~1~,  ~4~, ~barkskin.BAM~,                              ~BZ#0E03I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~0~, ~0x4~, ~~, ~~ => "Barkskin"
+        ~BZ#0F03~, ~1~, ~Offense~,      ~Damage Boost~,         ~2~, ~Caster~,  ~40228~, ~40229~, ~SPPR203D~, ~1~,  ~5~, ~chant.BAM~,                                 ~BZ#0F03I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Chant"
+        ~BZ#0G03~, ~1~, ~Enhancement~,  ~Detection~,            ~2~, ~Caster~,  ~40230~, ~40231~, ~SPPR205~,  ~1~,  ~4~, ~find-traps.BAM~,                            ~BZ#0G03I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Find Traps"
+        ~BZ#0H03~, ~1~, ~Defense~,      ~Energy Resistance~,    ~2~, ~Caster~,  ~40232~, ~40233~, ~SPPR210~,  ~1~,  ~5~, ~resist-fire-and-cold.BAM~,                  ~BZ#0H03I~, ~BZPN005D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Resist Fire and Cold"
+        ~BZ#0I03~, ~1~, ~Enhancement~,  ~Stat Boost~,           ~2~, ~Caster~,  ~40234~, ~40235~, ~SPPR214~,  ~1~,  ~5~, ~draw-upon-holy-might.BAM~,                  ~BZ#0I03I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~132~, ~0x4~, ~~, ~~ => "Draw Upon Holy Might"
+        ~BZ#0J03~, ~1~, ~Bomb~,         ~Damage~,               ~2~, ~Point~,   ~40236~, ~40237~, ~SPPR250~,  ~1~,  ~5~, ~writhing-fog.BAM~,                          ~BZ#0J03I~, ~BZPN013D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Writhing Fog"
+        ~BZ#0K03~, ~1~, ~Defense~,      ~Avoidance~,            ~2~, ~Actor~,   ~40238~, ~40239~, ~SPWI201~,  ~1~,  ~4~, ~blur.BAM~,                                  ~BZ#0K03I~, ~BZPN040D~, ~~,      ~65~, ~0xE~, ~~, ~~, ~~, ~~ => "Blur"
+        ~BZ#0L03~, ~1~, ~Enhancement~,  ~Detection~,            ~2~, ~Caster~,  ~40240~, ~40241~, ~SPWI203~,  ~1~,  ~3~, ~detect-invisibility.BAM~,                   ~BZ#0L03I~, ~BZPN058D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Detect Invisibility"
+        ~BZ#0M03~, ~1~, ~Bomb~,         ~Utility~,              ~2~, ~Actor~,   ~40242~, ~40243~, ~SPWI207~,  ~1~,  ~4~, ~knock.BAM~,                                 ~BZ#0M03I~, ~BZPN070D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Knock"
+        ~BZ#0N03~, ~1~, ~Enhancement~,  ~Skill Boost~,          ~2~, ~Caster~,  ~40244~, ~40245~, ~SPWI209~,  ~1~,  ~4~, ~luck.BAM~,                                  ~BZ#0N03I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Luck"
+        ~BZ#0O03~, ~1~, ~Defense~,      ~Physical Immunity~,    ~2~, ~Actor~,   ~40248~, ~40249~, ~SPWI212~,  ~1~,  ~4~, ~mirror-image.BAM~,                          ~BZ#0O03I~, ~BZPN110D~, ~~,     ~119~, ~0xE~, ~119~, ~0x4~, ~~, ~~ => "Mirror Image"
+        ~BZ#0P03~, ~1~, ~Bomb~,         ~Restrictive~,          ~2~, ~Point~,   ~40250~, ~40251~, ~SPWI213~,  ~1~,  ~4~, ~stinking-cloud.BAM~,                        ~BZ#0P03I~, ~BZPN090D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Stinking Cloud"
+        ~BZ#0Q03~, ~1~, ~Enhancement~,  ~Stat Boost: Strength~, ~2~, ~Caster~,  ~40252~, ~40253~, ~SPWI214~,  ~1~,  ~4~, ~strength.BAM~,                              ~BZ#0Q03I~, ~BZPN110D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Strength"
+        ~BZ#0R03~, ~1~, ~Bomb~,         ~Restrictive~,          ~2~, ~Point~,   ~40254~, ~40255~, ~SPWI215~,  ~1~,  ~4~, ~web.BAM~,                                   ~BZ#0R03I~, ~BZPN090D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Web"
+        ~BZ#0S03~, ~1~, ~Enhancement~,  ~Casting Boost~,        ~2~, ~Caster~,  ~40256~, ~40257~, ~SPWI219~,  ~1~,  ~4~, ~vocalize.BAM~,                              ~BZ#0S03I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Vocalize"
+
+        ~BZ#0T05~, ~1~, ~Bomb~,         ~Utility~,              ~3~, ~Point~,   ~40258~, ~40259~, ~SPPR303~,  ~1~,  ~7~, ~dispel-magic.BAM~,                          ~BZ#0T05I~, ~BZPN005D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Dispel Magic"
+        ~BZ#0U05~, ~1~, ~Defense~,      ~Energy Resistance~,    ~3~, ~Caster~,  ~40260~, ~40261~, ~SPWI319~,  ~1~,  ~5~, ~protection-from-fire.BAM~,                  ~BZ#0U05I~, ~BZPN008D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Fire"
+        ~BZ#0V05~, ~1~, ~Cure~,         ~Restorative~,          ~3~, ~Caster~,  ~40262~, ~40263~, ~SPPR307~,  ~1~,  ~5~, ~remove-curse.BAM~,                          ~BZ#0V05I~, ~BZPN070D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Remove Curse"
+        ~BZ#0W05~, ~1~, ~Enhancement~,  ~Stat Boost: Strength~, ~3~, ~Caster~,  ~40264~, ~40265~, ~SPPR312~,  ~1~,  ~6~, ~strength-of-one.BAM~,                       ~BZ#0W05I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Strength of One"
+        ~BZ#0X05~, ~1~, ~Cure~,         ~Healing~,              ~3~, ~Caster~,  ~40266~, ~40267~, ~SPPR315~,  ~1~,  ~5~, ~cure-medium-wounds.BAM~,                    ~BZ#0X05I~, ~BZPN080D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Cure Medium Wounds"
+        ~BZ#0Y05~, ~1~, ~Cure~,         ~Restorative~,          ~3~, ~Caster~,  ~40268~, ~40269~, ~SPPR317~,  ~1~,  ~6~, ~cure-disease.BAM~,                          ~BZ#0Y05I~, ~BZPN001D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Cure Disease"
+        ~BZ#0Z05~, ~1~, ~Cure~,         ~Restorative~,          ~3~, ~Caster~,  ~40270~, ~40271~, ~SPPR318~,  ~1~,  ~7~, ~zone-of-sweet-air.BAM~,                     ~BZ#0Z05I~, ~BZPN026D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Zone of Sweet Air"
+//oil of fiery burning, really, until levels implemented
+      //~BZ#1005~, ~1~, ~Bomb~,         ~Damage~,               ~3~, ~Point~,   ~40272~, ~40273~, ~SPWI304~,  ~1~,  ~6~, ~fireball.BAM~,                              ~BZ#1005I~, ~BZPN100D~, ~~,        ~~,    ~~, ~12~, ~0x1C~, ~~, ~~ => "Fireball"
+        ~BZ#1105~, ~1~, ~Enhancement~,  ~Invisibility~,         ~3~, ~Caster~,  ~40274~, ~40275~, ~SPWI310~,  ~1~,  ~5~, ~non-detection.BAM~,                         ~BZ#1105I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Non-Detection"
+        ~BZ#1205~, ~1~, ~Defense~,      ~Physical Immunity~,    ~3~, ~Actor~,   ~40276~, ~40277~, ~SPWI311~,  ~1~,  ~5~, ~protection-from-normal-missiles.BAM~,       ~BZ#1205I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Normal Missiles"
+        ~BZ#1305~, ~1~, ~Defense~,      ~Physical Immunity~,    ~3~, ~Caster~,  ~40278~, ~40279~, ~SPWI315~,  ~1~,  ~7~, ~wraithform.BAM~,                            ~BZ#1305I~, ~BZPN049D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Wraithform"
+        ~BZ#1405~, ~1~, ~Defense~,      ~Armor~,                ~3~, ~Actor~,   ~40280~, ~40281~, ~SPWI317~,  ~1~,  ~5~, ~ghost-armor.BAM~,                           ~BZ#1405I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Ghost Armor"
+        ~BZ#1505~, ~1~, ~Defense~,      ~Energy Resistance~,    ~3~, ~Caster~,  ~40282~, ~40283~, ~SPWI320~,  ~1~,  ~5~, ~protection-from-cold.BAM~,                  ~BZ#1505I~, ~BZPN100D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Cold"
+
+        ~BZ#1607~, ~1~, ~Cure~,         ~Healing~,              ~4~, ~Caster~,  ~40284~, ~40285~, ~SPPR401~,  ~1~,  ~7~, ~cure-serious-wounds.BAM~,                   ~BZ#1607I~, ~BZPN032D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Cure Serious Wounds"
+        ~BZ#1707~, ~1~, ~Defense~,      ~Status Immunity~,      ~4~, ~Caster~,  ~40286~, ~40287~, ~SPPR403~,  ~1~,  ~8~, ~free-action.BAM~,                           ~BZ#1707I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Free Action"
+        ~BZ#1807~, ~1~, ~Defense~,      ~Spell Immunity~,       ~4~, ~Caster~,  ~40288~, ~40289~, ~SPPR409~,  ~1~,  ~7~, ~death-ward.BAM~,                            ~BZ#1807I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Death Ward"
+        ~BZ#1907~, ~1~, ~Offense~,      ~Attack Bonus~,         ~4~, ~Caster~,  ~40290~, ~40291~, ~SPPR412~,  ~1~,  ~8~, ~holy-power.BAM~,                            ~BZ#1907I~, ~BZPN049D~, ~~,     ~142~, ~0xE~, ~18~, ~0x4~, ~54~, ~0x4~ => "Holy Power"
+        ~BZ#1A07~, ~1~, ~Defense~,      ~Status Immunity~,      ~4~, ~Caster~,  ~40292~, ~40293~, ~SPPR413~,  ~1~,  ~7~, ~negative-plane-protection.BAM~,             ~BZ#1A07I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Negative Plane Protection"
+        ~BZ#1B07~, ~1~, ~Offense~,      ~Mental Attack~,        ~4~, ~Caster~,  ~40294~, ~40295~, ~SPPR416~,  ~1~,  ~8~, ~cloak-of-fear.BAM~,                         ~BZ#1B07I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Cloak of Fear"
+        ~BZ#1C07~, ~1~, ~Cure~,         ~Restorative~,          ~4~, ~Caster~,  ~40296~, ~40297~, ~SPPR417~,  ~1~,  ~7~, ~lesser-restoration.BAM~,                    ~BZ#1C07I~, ~BZPN049D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Lesser Restoration"
+        ~BZ#1D07~, ~1~, ~Bomb~,         ~Damage~,               ~4~, ~Point~,   ~40298~, ~40299~, ~SPPR450~,  ~1~,  ~8~, ~spirit-fire.BAM~,                           ~BZ#1D07I~, ~BZPN013D~, ~~,        ~~,    ~~, ~12~, ~0x1C~, ~~, ~~ => "Spirit Fire"
+        ~BZ#1E07~, ~1~, ~Defense~,      ~Damaging Shield~,      ~4~, ~Actor~,   ~40300~, ~40301~, ~SPWI403~,  ~1~,  ~7~, ~fire-shield-blue.BAM~,                      ~BZ#1E07I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Fireshield (Blue)"
+        ~BZ#1F07~, ~1~, ~Enhancement~,  ~Invisibility~,         ~4~, ~Caster~,  ~40302~, ~40303~, ~SPWI405~,  ~1~,  ~8~, ~improved-invisibility.BAM~,                 ~BZ#1F07I~, ~BZPN080D~, ~~,      ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Improved Invisibility"
+        ~BZ#1G07~, ~1~, ~Defense~,      ~Spell Immunity~,       ~4~, ~Actor~,   ~40304~, ~40305~, ~SPWI406~,  ~1~,  ~8~, ~minor-globe-of-invulnerability.BAM~,        ~BZ#1G07I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Minor Globe of Invulnerability"
+        ~BZ#1H07~, ~1~, ~Defense~,      ~Physical Immunity~,    ~4~, ~Caster~,  ~40306~, ~40307~, ~SPWI408~,  ~1~,  ~8~, ~stoneskin.BAM~,                             ~BZ#1H07I~, ~BZPN032D~, ~~,     ~218~, ~0xE~, ~218~, ~0x4~, ~~, ~~ => "Stoneskin"
+        ~BZ#1I07~, ~1~, ~Bomb~,         ~Lower Defenses~,       ~4~, ~Point~,   ~40308~, ~40309~, ~SPWI412~,  ~1~,  ~8~, ~greater-malison.BAM~,                       ~BZ#1I07I~, ~BZPN100D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Greater Malison"
+        ~BZ#1J07~, ~1~, ~Bomb~,         ~Restrictive~,          ~4~, ~Actor~,   ~40310~, ~40311~, ~SPWI413A~, ~1~,  ~8~, ~otiluke's-resilient-sphere.BAM~,            ~BZ#1J07I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Otiluke's Resilient Sphere"
+        ~BZ#1K07~, ~1~, ~Defense~,      ~Armor~,                ~4~, ~Actor~,   ~40312~, ~40313~, ~SPWI414~,  ~1~,  ~7~, ~spirit-armor.BAM~,                          ~BZ#1K07I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spirit Armor"
+        ~BZ#1L07~, ~1~, ~Offense~,      ~Magic Weapon~,         ~4~, ~Actor~,   ~40314~, ~40315~, ~SPWI417~,  ~1~,  ~8~, ~enchanted-weapon.BAM~,                      ~BZ#1L07I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Enchanted Weapon"
+        ~BZ#1M07~, ~1~, ~Defense~,      ~Damaging Shield~,      ~4~, ~Actor~,   ~40316~, ~40317~, ~SPWI418~,  ~1~,  ~8~, ~fire-shield-red.BAM~,                       ~BZ#1M07I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Fireshield (Red)"
+
+        ~BZ#1N09~, ~1~, ~Enhancement~,  ~Detection~,            ~5~, ~Caster~,  ~40318~, ~40319~, ~SPPR505~,  ~1~, ~10~, ~true-sight.BAM~,                            ~BZ#1N09I~, ~BZPN040D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "True Sight"
+        ~BZ#1O09~, ~1~, ~Offense~,      ~Attack Bonus~,         ~5~, ~Caster~,  ~40320~, ~40321~, ~SPPR507~,  ~1~, ~14~, ~champion's-strength.BAM~,                   ~BZ#1O09I~, ~BZPN049D~, ~~,     ~142~, ~0xE~, ~54~, ~0x4~, ~~, ~~ => "Champion's Strength"
+        ~BZ#1P09~, ~1~, ~Defense~,      ~Mental Defense~,       ~5~, ~Caster~,  ~40322~, ~40323~, ~SPPR508~,  ~1~,  ~9~, ~chaotic-commands.BAM~,                      ~BZ#1P09I~, ~BZPN032D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Chaotic Commands"
+        ~BZ#1Q09~, ~1~, ~Offense~,      ~Damage Boost~,         ~5~, ~Caster~,  ~40324~, ~40325~, ~SPPR513~,  ~1~, ~10~, ~righteous-magic.BAM~,                       ~BZ#1Q09I~, ~BZPN100D~, ~~,     ~142~, ~0xE~, ~18~, ~0x4~, ~44~, ~0x4~ => "Righteous Magic"
+        ~BZ#1R09~, ~1~, ~Enhancement~,  ~Invisibility~,         ~5~, ~Caster~,  ~40326~, ~40327~, ~SPWI505~,  ~1~,  ~9~, ~shadow-door.BAM~,                           ~BZ#1R09I~, ~BZPN001D~, ~~,      ~20~, ~0xE~, ~~, ~~, ~~, ~~ => "Shadow Door"
+        ~BZ#1S09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40328~, ~40329~, ~SPWI590~,  ~1~, ~10~, ~spell-immunity-abjuration.BAM~,             ~BZ#1S09I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Abjuration"
+        ~BZ#1T09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40330~, ~40331~, ~SPWI597~,  ~1~, ~10~, ~spell-immunity-alteration.BAM~,             ~BZ#1T09I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Alteration"
+        ~BZ#1U09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40332~, ~40333~, ~SPWI591~,  ~1~, ~10~, ~spell-immunity-conjuration.BAM~,            ~BZ#1U09I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Conjuration"
+        ~BZ#1V09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40334~, ~40335~, ~SPWI592~,  ~1~, ~10~, ~spell-immunity-divination.BAM~,             ~BZ#1V09I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Divination"
+        ~BZ#1W09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40336~, ~40337~, ~SPWI593~,  ~1~, ~10~, ~spell-immunity-enchantment.BAM~,            ~BZ#1W09I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Enchantment"
+        ~BZ#1X09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40338~, ~40339~, ~SPWI595~,  ~1~, ~10~, ~spell-immunity-evocation.BAM~,              ~BZ#1X09I~, ~BZPN032D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Evocation"
+        ~BZ#1Y09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40340~, ~40341~, ~SPWI594~,  ~1~, ~10~, ~spell-immunity-illusion.BAM~,               ~BZ#1Y09I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Illusion"
+        ~BZ#1Z09~, ~1~, ~Defense~,      ~Spell Immunity~,       ~5~, ~Caster~,  ~40342~, ~40343~, ~SPWI596~,  ~1~, ~10~, ~spell-immunity-necromancy.BAM~,             ~BZ#1Z09I~, ~BZPN100D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Immunity: Necromancy"
+        ~BZ#2009~, ~1~, ~Defense~,      ~Physical Immunity~,    ~5~, ~Caster~,  ~40344~, ~40345~, ~SPWI511~,  ~1~, ~10~, ~protection-from-normal-weapons.BAM~,        ~BZ#2009I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Normal Weapons"
+        ~BZ#2109~, ~1~, ~Defense~,      ~Energy Resistance~,    ~5~, ~Caster~,  ~40346~, ~40347~, ~SPWI512~,  ~1~,  ~9~, ~protection-from-electricity.BAM~,           ~BZ#2109I~, ~BZPN008D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Electricity"
+        ~BZ#2209~, ~1~, ~Defense~,      ~Energy Resistance~,    ~5~, ~Caster~,  ~40348~, ~40349~, ~SPWI517~,  ~1~,  ~9~, ~protection-from-acid.BAM~,                  ~BZ#2209I~, ~BZPN008D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Acid"
+        ~BZ#2309~, ~1~, ~Offense~,      ~Magic Weapon~,         ~5~, ~Actor~,   ~40350~, ~40351~, ~SPWI518~,  ~1~, ~10~, ~phantom-blade.BAM~,                         ~BZ#2309I~, ~BZPN110D~, ~~,     ~111~, ~0xE~, ~~, ~~, ~~, ~~ => "Phantom Blade"
+        ~BZ#2409~, ~1~, ~Defense~,      ~Spell Defense~,        ~5~, ~Actor~,   ~40352~, ~40353~, ~SPWI522~,  ~1~, ~10~, ~minor-spell-turning.BAM~,                   ~BZ#2409I~, ~BZPN058D~, ~~,     ~233~, ~0xE~, ~~, ~~, ~~, ~~ => "Minor Spell Turning"
+
+        ~BZ#2511~, ~1~, ~Cure~,         ~Healing~,              ~6~, ~Caster~,  ~40354~, ~40355~, ~SPPR607~,  ~1~, ~12~, ~heal.BAM~,                                  ~BZ#2511I~, ~BZPN110D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Heal"
+        ~BZ#2611~, ~1~, ~Enhancement~,  ~Recall~,               ~6~, ~Caster~,  ~40356~, ~40357~, ~SPPR611~,  ~1~, ~12~, ~wondrous-recall.BAM~,                       ~BZ#2611I~, ~BZPN100D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Wondrous Recall"
+        ~BZ#2711~, ~1~, ~Enhancement~,  ~Recall~,               ~6~, ~Caster~,  ~40358~, ~40359~, ~SPPR611~,  ~1~, ~12~, ~wondrous-recall-arcane.BAM~,                ~BZ#2711I~, ~BZPN130D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Wondrous Recall"
+        ~BZ#2812~, ~1~, ~Defense~,      ~Spell Immunity~,       ~6~, ~Actor~,   ~40360~, ~40361~, ~SPWI602~,  ~1~, ~12~, ~globe-of-invulnerability.BAM~,              ~BZ#2812I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Globe of Invulnerability"
+        ~BZ#2912~, ~1~, ~Offense~,      ~Damage Boost~,         ~6~, ~Caster~,  ~40362~, ~40363~, ~SPWI603~,  ~1~, ~20~, ~tenser's-transformation.BAM~,               ~BZ#2912I~, ~BZPN019D~, ~~,     ~142~, ~0xE~, ~54~, ~0x4~, ~~, ~~ => "Tenser's Transformation"
+        ~BZ#2A12~, ~1~, ~Defense~,      ~Magic Resistance~,     ~6~, ~Caster~,  ~40364~, ~40365~, ~SPWI606~,  ~1~, ~13~, ~protection-from-magic-energy.BAM~,          ~BZ#2A12I~, ~BZPN026D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Magic Energy"
+        ~BZ#2B12~, ~1~, ~Defense~,      ~Physical Immunity~,    ~6~, ~Caster~,  ~40366~, ~40367~, ~SPWI611~,  ~1~, ~12~, ~protection-from-magical-weapons.BAM~,       ~BZ#2B12I~, ~BZPN049D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Magical Weapons"
+        ~BZ#2C12~, ~1~, ~Offense~,      ~Haste~,                ~6~, ~Caster~,  ~40368~, ~40369~, ~SPWI613~,  ~1~, ~12~, ~improved-haste.BAM~,                        ~BZ#2C12I~, ~BZPN049D~, ~~,      ~16~, ~0xE~, ~~, ~~, ~~, ~~ => "Improved Haste"
+        ~BZ#2D12~, ~1~, ~Bomb~,         ~Damage~,               ~6~, ~Point~,   ~40370~, ~40371~, ~SPWI614~,  ~1~, ~12~, ~death-fog.BAM~,                             ~BZ#2D12I~, ~BZPN040D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Death Fog"
+        ~BZ#2E12~, ~1~, ~Bomb~,         ~Damage~,               ~6~, ~Actor~,   ~40372~, ~40373~, ~SPWI615~,  ~1~, ~12~, ~chain-lightning.BAM~,                       ~BZ#2E12I~, ~BZPN013D~, ~~,        ~~,    ~~, ~12~, ~0x1C~, ~~, ~~ => "Chain Lightning"
+        ~BZ#2F12~, ~1~, ~Defense~,      ~Spell Defense~,        ~6~, ~Actor~,   ~40374~, ~40375~, ~SPWI618~,  ~1~, ~13~, ~spell-deflection.BAM~,                      ~BZ#2F12I~, ~BZPN070D~, ~~,     ~233~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Deflection"
+
+        ~BZ#2G14~, ~1~, ~Offense~,      ~Mental Attack~,        ~7~, ~Actor~,   ~40376~, ~40377~, ~SPPR704~,  ~1~, ~14~, ~nature's-beauty.BAM~,                       ~BZ#2G14I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Nature's Beauty"
+        ~BZ#2H14~, ~1~, ~Cure~,         ~Restorative~,          ~7~, ~Caster~,  ~40378~, ~40379~, ~SPPR713~,  ~1~, ~14~, ~greater-restoration.BAM~,                   ~BZ#2H14I~, ~BZPN090D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Greater Restoration"
+        ~BZ#2I14~, ~1~, ~Defense~,      ~Spell Defense~,        ~7~, ~Caster~,  ~40380~, ~40381~, ~SPWI701~,  ~1~, ~14~, ~spell-turning.BAM~,                         ~BZ#2I14I~, ~BZPN032D~, ~~,     ~233~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Turning"
+        ~BZ#2J14~, ~1~, ~Defense~,      ~Energy Resistance~,    ~7~, ~Caster~,  ~40382~, ~40383~, ~SPWI702~,  ~1~, ~13~, ~protection-from-the-elements.BAM~,          ~BZ#2J14I~, ~BZPN058D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From The Elements"
+        ~BZ#2K14~, ~1~, ~Defense~,      ~Physical Immunity~,    ~7~, ~Caster~,  ~40384~, ~40385~, ~SPWI708~,  ~1~, ~14~, ~mantle.BAM~,                                ~BZ#2K14I~, ~BZPN026D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mantle"
+
+        ~BZ#2L16~, ~1~, ~Defense~,      ~Energy Resistance~,    ~8~, ~Caster~,  ~40386~, ~40387~, ~SPWI803~,  ~1~, ~15~, ~protection-from-energy.BAM~,                ~BZ#2L16I~, ~BZPN005D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Energy"
+        ~BZ#2M16~, ~1~, ~Defense~,      ~Physical Immunity~,    ~8~, ~Caster~,  ~40388~, ~40389~, ~SPWI808~,  ~1~, ~16~, ~improved-mantle.BAM~,                       ~BZ#2M16I~, ~BZPN100D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Improved Mantle"
+
+        ~BZ#2N18~, ~1~, ~Defense~,      ~Spell Defense~,        ~9~, ~Caster~,  ~40390~, ~40391~, ~SPWI902~,  ~1~, ~18~, ~spell-trap.BAM~,                            ~BZ#2N18I~, ~BZPN080D~, ~~,     ~282~, ~0xE~, ~~, ~~, ~~, ~~ => "Spell Trap"
+        ~BZ#2O18~, ~1~, ~Defense~,      ~Physical Immunity~,    ~9~, ~Caster~,  ~40392~, ~40393~, ~SPWI907~,  ~1~, ~20~, ~absolute-immunity.BAM~,                     ~BZ#2O18I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Absolute Immunity"
+
+      //BG1 lacks HLAs sometimes
+      //~BZ#2P18~, ~1~, ~Enhancement~,  ~Casting Boost~,        ~A~, ~Caster~,  ~40394~, ~40395~, ~SPWI921~,  ~1~, ~20~, ~improved-alacrity.BAM~,                     ~BZ#2P18I~, ~BZPN110D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Improved Alacrity"
+
+      //~BZ#2Q15~, ~1~, ~Defense~,      ~Damaging Shield~,      ~Q~, ~Caster~,  ~40396~, ~40397~, ~SPPR730~,  ~1~, ~16~, ~aura-of-flaming-death.BAM~,                 ~BZ#2Q15I~, ~BZPN090D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Aura of Flaming Death"
+
+
+    END
