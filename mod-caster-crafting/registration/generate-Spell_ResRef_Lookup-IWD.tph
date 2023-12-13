@@ -7,10 +7,9 @@ COPY_EXISTING - ~SPELL.IDS~ ~override~
             READ_2DA_ENTRY_FORMER IDS_SPELLS i 0 crappy_id
             //PATCH_PRINT ~IDS Spell ID: %crappy_id%~
             READ_2DA_ENTRY_FORMER IDS_SPELLS i 1 identifier
-            //PATCH_PRINT ~IDS Identifier: %identifier%~
 
             //Perform a Match statement for the IDS identifier of IWD spells
-            PATCH_MATCH identifier
+            PATCH_MATCH ~%identifier%~
             WITH
                 /*****************************
                 *   Priest Spells from IWD   *
