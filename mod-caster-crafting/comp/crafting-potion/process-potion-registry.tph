@@ -6,18 +6,18 @@
 /*
     OUTPUT: ~potion_recipe_data~
 
-    [Unique Key]            // 0
-    [Potion Item Code]      // 1
-    [Required Caster Level] // 2
-    [Recipe]                // 3; these will be comma-delimited spell RESREFs
-    [Result Count]          // 4
-    [XP cost]               // 5
-    [Gold Cost]             // 6
-    [Time Cost (hours)]     // 7
-    [Category]              // 8
-    [SubCategory]           // 9
-    [Fail %]                // 10
-    [Potion Name]           // 11
+    [Unique Key]                // 0
+    [Potion Item Code]          // 1
+    [Required Caster Level]     // 2
+    [Recipe]                    // 3; these will be comma-delimited spell RESREFs
+    [Result Count]              // 4
+    [XP cost]                   // 5
+    [Gold Cost]                 // 6
+    [Time Cost (hours)]         // 7
+    [Category]                  // 8
+    [SubCategory]               // 9
+    [Fail %]                    // 10
+    [Potion Name]               // 11
 
 
     OUTPUT: ~potion_definitions~
