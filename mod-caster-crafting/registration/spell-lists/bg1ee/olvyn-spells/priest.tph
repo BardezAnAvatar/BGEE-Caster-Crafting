@@ -6,9 +6,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     BEGIN
 
         /*
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
+        [Spell]                 // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
         */
 
         ~MEPR151~, ~Divine~, ~1~ => ~MEPR151~   //Snake's Swiftness

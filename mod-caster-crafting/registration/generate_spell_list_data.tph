@@ -14,10 +14,27 @@
         [Spell RESREF]          // 0
         [Spell Display Name]    // value    --get from spell/TLK
 */
+
+//includes
+INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
+
+
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   Generating array containing RESREF and in-game spell name   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
+
+
 ACTION_PHP_EACH ~spell_list~
     AS ~keys~ => ~value~
     BEGIN
-        COPY_EXISTING - ~%keys_0%.spl~ ~override~       //inline only, just to read from spell
+
+        //lookup the spell's ResRef from the identifier in the array
+        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~ STR_VAR ~identifier~ = ~%keys_0%~ RET ~spell_resref~ = ~resref~ END
+
+
+        COPY_EXISTING - ~%spell_resref%.spl~ ~override~ //inline only, just to read from spell
             READ_LONG NAME1 ~strref_name~               //since this is a spell file, NAME1 should be all there is
             READ_LONG 0x1E ~exclusion_flags~            //read all of the kit exclusion flags
         BUT_ONLY_IF_IT_CHANGES
@@ -49,20 +66,20 @@ ACTION_PHP_EACH ~spell_list~
             ~spell_list_data~
             BEGIN
                 ~%keys_2%_%spell_name%~,    //sorting key of level and spell name
-                ~%keys_0%~,                 //spell RESREF
+                ~%spell_resref%~,           //spell RESREF
                 ~%keys_1%~,                 //tradition
                 ~%keys_2%~,                 //spell level
                 ~%actual_copy_cost_gold%~,  //cost to copy the spell
                 ~%copy_cost_time%~,         //time to scribe (in hours)
                 ~%spell_name%~,             //spell name for display
                 ~%exclusion_flags%~         //LONG bit field for kit exclusion. SEE: Kitlist.2da, but I'mma hard code this.
-                    => ~%keys_0%~           //a rather arbitrary value to pick. could be name, spell code, etc.
+                    => ~%spell_resref%~     //a rather arbitrary value to pick. could be name, spell code, etc.
             END
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
             ~spell_lookup~
             BEGIN
-                ~%keys_0%~                  //spell RESREF
+                ~%spell_resref%~            //spell RESREF
                     => ~%spell_name%~       //spell name
             END
 

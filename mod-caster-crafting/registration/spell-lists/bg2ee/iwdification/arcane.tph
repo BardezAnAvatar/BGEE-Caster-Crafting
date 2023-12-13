@@ -3,60 +3,59 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     BEGIN
 
         /*
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
+        [Spell]                 // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
         */
 
-        ~SPWI126~, ~Arcane~, ~1~ => ~SPWI126~    //Expeditious Retreat
+        ~WIZARD_EXPEDITIOUS_RETREAT~,               ~Arcane~, ~1~ => ~WIZARD_EXPEDITIOUS_RETREAT~               //Expeditious Retreat
 
-        ~SPWI225~, ~Arcane~, ~2~ => ~SPWI225~    //Snilloc's Snowball Swarm
-        ~SPWI226~, ~Arcane~, ~2~ => ~SPWI226~    //Decastave
-        ~SPWI227~, ~Arcane~, ~2~ => ~SPWI227~    //Cat's Grace
+        ~WIZARD_SNILLOCS_SNOWBALL_SWARM~,           ~Arcane~, ~2~ => ~WIZARD_SNILLOCS_SNOWBALL_SWARM~           //Snilloc's Snowball Swarm
+        ~WIZARD_DECASTAVE~,                         ~Arcane~, ~2~ => ~WIZARD_DECASTAVE~                         //Decastave
+        ~WIZARD_CATS_GRACE~,                        ~Arcane~, ~2~ => ~WIZARD_CATS_GRACE~                        //Cat's Grace
 
-        ~SPWI323~, ~Arcane~, ~3~ => ~SPWI323~    //Icelance
-        ~SPWI327~, ~Arcane~, ~3~ => ~SPWI327~    //Lance of Disruption
+        ~WIZARD_ICELANCE~,                          ~Arcane~, ~3~ => ~WIZARD_ICELANCE~                          //Icelance
+        ~WIZARD_LANCE_OF_DISRUPTION~,               ~Arcane~, ~3~ => ~WIZARD_LANCE_OF_DISRUPTION~               //Lance of Disruption
 
-        ~SPWI411~, ~Arcane~, ~4~ => ~SPWI411~    //Emotion: Hopelessness
-        ~SPWI422~, ~Arcane~, ~4~ => ~SPWI422~    //Beltyn's Burning Blood
-        ~SPWI426~, ~Arcane~, ~4~ => ~SPWI426~    //Emotion: Courage
-        ~SPWI427~, ~Arcane~, ~4~ => ~SPWI427~    //Emotion: Hope
-        ~SPWI428~, ~Arcane~, ~4~ => ~SPWI428~    //Emotion: Fear
-        ~SPWI429~, ~Arcane~, ~4~ => ~SPWI429~    //Mordenkainen's Force Missiles
-        ~SPWI430~, ~Arcane~, ~4~ => ~SPWI430~    //Shout
-        ~SPWI431~, ~Arcane~, ~4~ => ~SPWI431~    //Vitriolic Sphere
-        ~SPWI432~, ~Arcane~, ~4~ => ~SPWI432~    //Shadow Monsters
+        ~WIZARD_BELTYNS_BURNING_BLOOD~,             ~Arcane~, ~4~ => ~WIZARD_BELTYNS_BURNING_BLOOD~             //Beltyn's Burning Blood
+        ~WIZARD_EMOTION_COURAGE~,                   ~Arcane~, ~4~ => ~WIZARD_EMOTION_COURAGE~                   //Emotion: Courage
+        ~WIZARD_EMOTION_HOPE~,                      ~Arcane~, ~4~ => ~WIZARD_EMOTION_HOPE~                      //Emotion: Hope
+        ~WIZARD_EMOTION_FEAR~,                      ~Arcane~, ~4~ => ~WIZARD_EMOTION_FEAR~                      //Emotion: Fear
+        ~WIZARD_MORDENKAINENS_FORCE_MISSILES~,      ~Arcane~, ~4~ => ~WIZARD_MORDENKAINENS_FORCE_MISSILES~      //Mordenkainen's Force Missiles
+        ~WIZARD_SHOUT~,                             ~Arcane~, ~4~ => ~WIZARD_SHOUT~                             //Shout
+        ~WIZARD_VITRIOLIC_SPHERE~,                  ~Arcane~, ~4~ => ~WIZARD_VITRIOLIC_SPHERE~                  //Vitriolic Sphere
+        ~WIZARD_SHADOW_MONSTERS~,                   ~Arcane~, ~4~ => ~WIZARD_SHADOW_MONSTERS~                   //Shadow Monsters
 
-        ~SPWI516~, ~Arcane~, ~5~ => ~SPWI516~    //Conjure Lesser Fire Elemental
-        ~SPWI520~, ~Arcane~, ~5~ => ~SPWI520~    //Conjure Lesser Air Elemental
-        ~SPWI521~, ~Arcane~, ~5~ => ~SPWI521~    //Conjure Lesser Earth Elemental
-        ~SPWI524~, ~Arcane~, ~5~ => ~SPWI524~    //Shroud of Flame
-        ~SPWI525~, ~Arcane~, ~5~ => ~SPWI525~    //Summon Shadow
-        ~SPWI526~, ~Arcane~, ~5~ => ~SPWI526~    //Conjure Lesser Water Elemental
-        ~SPWI527~, ~Arcane~, ~5~ => ~SPWI527~    //Demi-Shadow Monsters
+        ~WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL~,     ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL~     //Conjure Lesser Fire Elemental
+        ~WIZARD_CONJURE_LESSER_AIR_ELEMENTAL~,      ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_AIR_ELEMENTAL~      //Conjure Lesser Air Elemental
+        ~WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL~,    ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL~    //Conjure Lesser Earth Elemental
+        ~WIZARD_SHROUD_OF_FLAME~,                   ~Arcane~, ~5~ => ~WIZARD_SHROUD_OF_FLAME~                   //Shroud of Flame
+        ~WIZARD_SUMMON_SHADOW~,                     ~Arcane~, ~5~ => ~WIZARD_SUMMON_SHADOW~                     //Summon Shadow
+        ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~,    ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~    //Conjure Lesser Water Elemental
+        ~WIZARD_DEMI_SHADOW_MONSTERS~,              ~Arcane~, ~5~ => ~WIZARD_DEMI_SHADOW_MONSTERS~              //Demi-Shadow Monsters
 
-        ~SPWI610~, ~Arcane~, ~6~ => ~SPWI610~    //Monster Summoning 4
-        ~SPWI626~, ~Arcane~, ~6~ => ~SPWI626~    //Otiluke's Freezing Sphere
-        ~SPWI627~, ~Arcane~, ~6~ => ~SPWI627~    //Darts of Bone
-        ~SPWI628~, ~Arcane~, ~6~ => ~SPWI628~    //Soul Eater
-        ~SPWI629~, ~Arcane~, ~6~ => ~SPWI629~    //Trollish Fortitude
-        ~SPWI630~, ~Arcane~, ~6~ => ~SPWI630~    //Antimagic Shell
-        ~SPWI631~, ~Arcane~, ~6~ => ~SPWI631~    //Lich Touch
-        ~SPWI632~, ~Arcane~, ~6~ => ~SPWI632~    //Shades
-        ~SPWI633~, ~Arcane~, ~6~ => ~SPWI633~    //Conjure Water Elemental
+        ~WIZARD_MONSTER_SUMMONING_4~,               ~Arcane~, ~6~ => ~WIZARD_MONSTER_SUMMONING_4~               //Monster Summoning 4
+        ~WIZARD_OTILUKES_FREEZING_SPHERE~,          ~Arcane~, ~6~ => ~WIZARD_OTILUKES_FREEZING_SPHERE~          //Otiluke's Freezing Sphere
+        ~WIZARD_DARTS_OF_BONE~,                     ~Arcane~, ~6~ => ~WIZARD_DARTS_OF_BONE~                     //Darts of Bone
+        ~WIZARD_SOUL_EATER~,                        ~Arcane~, ~6~ => ~WIZARD_SOUL_EATER~                        //Soul Eater
+        ~WIZARD_TROLLISH_FORTITUDE~,                ~Arcane~, ~6~ => ~WIZARD_TROLLISH_FORTITUDE~                //Trollish Fortitude
+        ~WIZARD_ANTIMAGIC_SHELL~,                   ~Arcane~, ~6~ => ~WIZARD_ANTIMAGIC_SHELL~                   //Antimagic Shell
+        ~WIZARD_LICH_TOUCH~,                        ~Arcane~, ~6~ => ~WIZARD_LICH_TOUCH~                        //Lich Touch
+        ~WIZARD_SHADES~,                            ~Arcane~, ~6~ => ~WIZARD_SHADES~                            //Shades
+        ~WIZARD_CONJURE_WATER_ELEMENTAL~,           ~Arcane~, ~6~ => ~WIZARD_CONJURE_WATER_ELEMENTAL~           //Conjure Water Elemental
 
-        ~SPWI706~, ~Arcane~, ~7~ => ~SPWI706~    //Acid Storm
-        ~SPWI724~, ~Arcane~, ~7~ => ~SPWI724~    //Suffocate
-        ~SPWI725~, ~Arcane~, ~7~ => ~SPWI725~    //Monster Summoning 5
-        ~SPWI726~, ~Arcane~, ~7~ => ~SPWI726~    //Mordenkainen's Force Blade
-        ~SPWI727~, ~Arcane~, ~7~ => ~SPWI727~    //Malavon's Rage
-        ~SPWI728~, ~Arcane~, ~7~ => ~SPWI728~    //Seven Eyes
+        ~WIZARD_ACID_STORM~,                        ~Arcane~, ~7~ => ~WIZARD_ACID_STORM~                        //Acid Storm
+        ~WIZARD_SUFFOCATE~,                         ~Arcane~, ~7~ => ~WIZARD_SUFFOCATE~                         //Suffocate
+        ~WIZARD_MONSTER_SUMMONING_5~,               ~Arcane~, ~7~ => ~WIZARD_MONSTER_SUMMONING_5~               //Monster Summoning 5
+        ~WIZARD_MORDENKAINENS_SWORD_IWD~,           ~Arcane~, ~7~ => ~WIZARD_MORDENKAINENS_SWORD_IWD~           //Mordenkainen's Force Blade
+        ~WIZARD_MALAVONS_RAGE~,                     ~Arcane~, ~7~ => ~WIZARD_MALAVONS_RAGE~                     //Malavon's Rage
+        ~WIZARD_SEVEN_EYES~,                        ~Arcane~, ~7~ => ~WIZARD_SEVEN_EYES~                        //Seven Eyes
 
-        ~SPWI806~, ~Arcane~, ~8~ => ~SPWI806~    //Mind Blank
-        ~SPWI819~, ~Arcane~, ~8~ => ~SPWI819~    //Great Shout
-        ~SPWI820~, ~Arcane~, ~8~ => ~SPWI820~    //Iron Body
-        ~SPWI821~, ~Arcane~, ~8~ => ~SPWI821~    //Monster Summoning 6
+        ~WIZARD_MIND_BLANK~,                        ~Arcane~, ~8~ => ~WIZARD_MIND_BLANK~                        //Mind Blank
+        ~WIZARD_GREAT_SHOUT~,                       ~Arcane~, ~8~ => ~WIZARD_GREAT_SHOUT~                       //Great Shout
+        ~WIZARD_IRON_BODY~,                         ~Arcane~, ~8~ => ~WIZARD_IRON_BODY~                         //Iron Body
+        ~WIZARD_MONSTER_SUMMONING_6~,               ~Arcane~, ~8~ => ~WIZARD_MONSTER_SUMMONING_6~               //Monster Summoning 6
 
-        ~SPWI901~, ~Arcane~, ~9~ => ~SPWI901~    //Monster Summoning 7
+        ~WIZARD_MONSTER_SUMMONING_7~,               ~Arcane~, ~9~ => ~WIZARD_MONSTER_SUMMONING_7~               //Monster Summoning 7
 
     END

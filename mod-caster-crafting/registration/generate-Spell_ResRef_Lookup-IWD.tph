@@ -1,0 +1,80 @@
+
+//Read Spell.IDS
+COPY_EXISTING - ~SPELL.IDS~ ~override~
+    READ_2DA_ENTRIES_NOW IDS_SPELLS 2
+        //Iterate through the IDS spells, and look for IWD assets:
+        FOR (i = 1; i < IDS_SPELLS; ++i) BEGIN     //ignore the first row: `IDS V1.0`
+            READ_2DA_ENTRY_FORMER IDS_SPELLS i 0 crappy_id
+            READ_2DA_ENTRY_FORMER IDS_SPELLS i 1 identifier
+
+            //Perform a Match statement for the IDS identifier of IWD spells
+            PATCH_MATCH ~%identifier%~
+            WITH
+                /*****************************
+                *   Priest Spells from IWD   *
+                *****************************/
+                //Level 1:
+                ~CLERIC_CURSE~ ~CLERIC_CAUSE_LIGHT_WOUNDS~ ~CLERIC_SUNSCORCH~
+                //Level 2:
+                ~CLERIC_CURE_MODERATE_WOUNDS~ ~CLERIC_ALICORN_LANCE~ ~CLERIC_BEAST_CLAW~ ~CLERIC_CAUSE_MODERATE_WOUNDS~
+                //Level 3:
+                ~CLERIC_PRAYER~ ~CLERIC_CAUSE_DISEASE~ ~CLERIC_EXALTATION~ ~CLERIC_MOONBLADE~
+                ~CLERIC_CIRCLE_OF_BONES~ ~CLERIC_SPIKE_GROWTH~ ~CLERIC_CLOUDBURST~ ~CLERIC_MOLD_TOUCH~
+                ~CLERIC_STORM_SHELL~ ~CLERIC_CAUSE_MEDIUM_WOUNDS~ ~CLERIC_FAVOR_OF_ILMATER~
+                //Level 4:
+                ~CLERIC_STATIC_CHARGE~ ~CLERIC_RECITATION~ ~CLERIC_BLOOD_RAGE~ ~CLERIC_CLOUD_OF_PESTILENCE~
+                ~CLERIC_UNFAILING_ENDURANCE~ ~CLERIC_STAR_METAL_CUDGEL~ ~CLERIC_SMASHING_WAVE~ ~CLERIC_THORN_SPRAY~
+                ~CLERIC_WALL_OF_MOONLIGHT~ ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~ ~CLERIC_GIANT_INSECT~
+                ~CLERIC_PRODUCE_FIRE~
+                //Level 5:
+                ~CLERIC_RIGHTEOUS_WRATH_OF_THE_FAITHFUL~ ~CLERIC_SPIKE_STONES~ ~CLERIC_SHIELD_OF_LATHANDER~
+                ~CLERIC_UNDEAD_WARD~ ~CLERIC_ANIMAL_RAGE~ ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~ ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~
+                ~CLERIC_PHYSICAL_MIRROR~
+                //Level 6:
+                ~CLERIC_ENTROPY_SHIELD~ ~CLERIC_WHIRLWIND~ ~CLERIC_SPIRITUAL_WRATH~
+                //Level 7:
+                ~CLERIC_ENERGY_DRAIN~ ~CLERIC_SYMBOL_PAIN~ ~CLERIC_SYMBOL_HOPELESSNESS~ ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~
+                ~CLERIC_DESTRUCTION~ ~CLERIC_GREATER_SHIELD_OF_LATHANDER~ ~CLERIC_MIST_OF_ELDATH~ ~CLERIC_STALKER~ ~CLERIC_WITHER~
+                BEGIN
+                    //On match, inject into SpellResRefLookup array the IDS entry to the spell ResRef
+                    SPRINT ~spell_prefix~ ~SPPR~
+                    SET ~spell_suffix~ = (crappy_id - 1000)
+                    SPRINT $SpellResRefLookup("%identifier%") "%spell_prefix%%spell_suffix%"
+                END
+                /*****************************
+                *   Arcane Spells from IWD   *
+                *****************************/
+                //Level 1:
+                ~WIZARD_EXPEDITIOUS_RETREAT~
+                //Level 2:
+                ~WIZARD_SNILLOCS_SNOWBALL_SWARM~ ~WIZARD_DECASTAVE~ ~WIZARD_CATS_GRACE~
+                //Level 3:
+                ~WIZARD_ICELANCE~ ~WIZARD_LANCE_OF_DISRUPTION~
+                //Level 4:
+                ~WIZARD_EMOTION_HOPELESSNESS~ ~WIZARD_BELTYNS_BURNING_BLOOD~ ~WIZARD_EMOTION_COURAGE~ ~WIZARD_EMOTION_HOPE~
+                ~WIZARD_EMOTION_FEAR~ ~WIZARD_MORDENKAINENS_FORCE_MISSILES~ ~WIZARD_SHOUT~ ~WIZARD_VITRIOLIC_SPHERE~
+                ~WIZARD_SHADOW_MONSTERS~
+                //Level 5:
+                ~WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL~ ~WIZARD_CONJURE_LESSER_AIR_ELEMENTAL~ ~WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL~
+                ~WIZARD_SHROUD_OF_FLAME~ ~WIZARD_SUMMON_SHADOW~ ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~ ~WIZARD_DEMI_SHADOW_MONSTERS~
+                //Level 6:
+                ~WIZARD_MONSTER_SUMMONING_4~ ~WIZARD_OTILUKES_FREEZING_SPHERE~ ~WIZARD_DARTS_OF_BONE~ ~WIZARD_SOUL_EATER~
+                ~WIZARD_TROLLISH_FORTITUDE~ ~WIZARD_ANTIMAGIC_SHELL~ ~WIZARD_LICH_TOUCH~ ~WIZARD_SHADES~ ~WIZARD_CONJURE_WATER_ELEMENTAL~
+                //Level 7:
+                ~WIZARD_ACID_STORM~ ~WIZARD_SUFFOCATE~ ~WIZARD_MONSTER_SUMMONING_5~
+                ~WIZARD_MORDENKAINENS_SWORD_IWD~ ~WIZARD_MALAVONS_RAGE~ ~WIZARD_SEVEN_EYES~
+                //Level 8:
+                ~WIZARD_MIND_BLANK~ ~WIZARD_GREAT_SHOUT~ ~WIZARD_IRON_BODY~ ~WIZARD_MONSTER_SUMMONING_6~
+                //Level 9:
+                ~WIZARD_MONSTER_SUMMONING_7~
+                BEGIN
+                    //On match, inject into SpellResRefLookup array the IDS entry to the spell ResRef
+                    SPRINT ~spell_prefix~ ~SPWI~
+                    SET ~spell_suffix~ = (crappy_id - 2000)
+                    SPRINT $SpellResRefLookup("%identifier%") "%spell_prefix%%spell_suffix%"
+                END
+                DEFAULT
+            END
+        END
+    BUT_ONLY_IF_IT_CHANGES
+

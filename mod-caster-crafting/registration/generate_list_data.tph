@@ -51,31 +51,58 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
 *   Include arrays   *
 *********************/
 //Include function defs.
-INCLUDE ~%MOD_FOLDER%/registration/fn_lookup_costs_copy_spell.tph~
-INCLUDE ~%MOD_FOLDER%/registration/fn_lookup_costs_scroll.tph~
-INCLUDE ~%MOD_FOLDER%/registration/fn_calculate_scroll_cost.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn_lookup_costs_copy_spell.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn_lookup_costs_scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn_calculate_scroll_cost.tph~
 
 //Include spell lists
-INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/arcane.tph~
-INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/innate.tph~
-INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/priest.tph~
-
-ACTION_IF (%bz_iwdification_installed%)
-    BEGIN
-        PRINT ~DEBUG: Include IWD-ification Spells~
-        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/iwdification/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/iwdification/priest.tph~
-    END
+INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/arcane.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/innate.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/core/priest.tph~
 
 ACTION_IF (%bz_OlvynSpells_installed%)
     BEGIN
         PRINT ~DEBUG: Include Olvyn Spells~
-        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/priest.tph~
+        INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/arcane.tph~
+        INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/olvyn-spells/priest.tph~
     END
 
+//Create the `SpellResRefLookup` Associative array, key => RESREF; DO THIS BEFORE EXPANDING INTO IWDification
+INCLUDE ~./%MOD_FOLDER%/registration/generate-Spell_ResRef_Lookup.tph~
+
+ACTION_IF (%bz_iwdification_installed%)
+    BEGIN
+        PRINT ~DEBUG: Include IWD-ification Spells~
+        INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/iwdification/arcane.tph~
+        INCLUDE ~./%MOD_FOLDER%/registration/spell-lists/%bz_game_code%/iwdification/priest.tph~
+    END
+
+//Append to the `SpellResRefLookup` Associative array, key (IDS entry) => RESREF
+INCLUDE ~./%MOD_FOLDER%/registration/generate-Spell_ResRef_Lookup-IWD.tph~
+
+
 //Include lookup tables
-INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph~
+//OUTPUT:
+/*
+    An associative array named "SpellResRefLookup" that contains teh following keys:
+        [Key]           // 0    RESREF for base game and olvynspells; IDS script name for IWD
+            =>
+        [RESREF]        // value RESREF that exists in game
+*/
+
+/* DEBUG */
+/*
+PRINT ~DEBUG: SpellResRefLookup:~
+ACTION_PHP_EACH ~SpellResRefLookup~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~-Spell Lookup Record:
+            Unique Key:     `%keys_0%`
+            Value:          `%value%`~
+    END
+*/
 
 
 
@@ -96,4 +123,4 @@ INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph
         [Spell RESREF]          // 0
         [Spell Display Name]    // value    --get from spell/TLK
 */
-INCLUDE ~%MOD_FOLDER%/registration/generate_spell_list_data.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/generate_spell_list_data.tph~

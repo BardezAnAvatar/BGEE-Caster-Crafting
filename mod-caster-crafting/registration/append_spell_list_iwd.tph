@@ -1,0 +1,12 @@
+/****************************************************************************************
+*   This file will iterate through ~spl_fix~ and append its contents to ~scroll_list~   *
+****************************************************************************************/
+ACTION_PHP_EACH ~spl_fix~
+    AS ~keys~ => ~value~
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~scroll_list~
+    BEGIN
+        ~%keys_0%~, ~%keys_1%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~, ~%keys_5%~ => ~%value%~
+    END //scroll list array append
+END

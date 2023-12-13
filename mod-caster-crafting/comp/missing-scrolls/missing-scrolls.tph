@@ -1,8 +1,8 @@
 
 //include tables for lookup
-INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
-INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scroll.tph~
-INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/spell-min-caster-level.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/spell-min-caster-level.tph~
 
 
 //OUTPUT:

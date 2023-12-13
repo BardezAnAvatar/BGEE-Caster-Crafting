@@ -1,0 +1,25 @@
+/***********************************************************
+*   This function will look up the spell RESREF from the   *
+*       ~SpellResRefLookup~ array using the provided       *
+*       identifier                                         *
+***********************************************************/
+DEFINE_ACTION_FUNCTION ~fn-lookup_spell_resref~
+STR_VAR
+    ~identifier~ = ~~
+RET
+    ~resref~
+BEGIN
+    OUTER_TEXT_SPRINT ~resref~ ~%identifier%~       //presume that the identifier is a RESREF already and just return that
+
+    ACTION_PHP_EACH ~SpellResRefLookup~
+        AS ~keys~ => ~value~
+    BEGIN
+        //if the key matches the provided identifier, and they are not both RESREFs:
+        ACTION_IF ((~%keys_0%~ STRING_EQUAL ~%identifier%~) AND NOT (~%identifier%~ STRING_EQUAL ~%value%~)) THEN
+        BEGIN
+            OUTER_TEXT_SPRINT ~resref~ ~%value%~    //replace the identifier with a RESREF
+
+            //PRINT ~replaced identifier `%identifier%` with resref `%value%`~
+        END
+    END
+END
