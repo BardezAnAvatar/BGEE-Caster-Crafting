@@ -1,14 +1,13 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~scroll_list~
+    ~scroll_list_iwd~
     BEGIN
 
         /*
-        [Scroll]                // 0
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
-        [Caster Level]          // 4
-        [Additional Cost]       // 5
+        [Spell]                 // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
+        [Caster Level]          // 3
+        [Additional Cost]       // 4
         */
 
         ~CDIA127~, ~WIZARD_EXPEDITIOUS_RETREAT~,                ~Arcane~, ~1~, ~1~, ~0~ => ~CDIA127~    //Expeditious Retret
