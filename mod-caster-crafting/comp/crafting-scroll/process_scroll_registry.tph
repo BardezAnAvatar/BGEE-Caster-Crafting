@@ -13,7 +13,8 @@ ACTION_IF (%bz_iwdification_installed%)
         PRINT ~DEBUG: Include IWD-ification Scrolls~
         INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/arcane.tph~
         INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/priest.tph~
-        LAUNCH_ACTION_FUNCTION ~fn-fix_scroll_list_iwd_itm_resref~ END
+        LAUNCH_ACTION_FUNCTION ~fn-fix_scroll_list_iwd_itm_resref~ RET_ARRAY ~spl_fix~ = ~spell_list_fix~ END
+        INCLUDE ~./%MOD_FOLDER%/registration/append_spell_list_iwd.tph~
     END
 
 ACTION_IF (%bz_OlvynSpells_installed%)
@@ -23,6 +24,33 @@ ACTION_IF (%bz_OlvynSpells_installed%)
         //There are NO scrolls for priest spells included
     END
 
+
+//OUTPUT:
+/*
+    An associative array named "scroll_list what contains these keys:
+        [Scroll]                // 0
+        [Spell]                 // 1
+        [Tradition]             // 2
+        [Spell Level]           // 3
+        [Caster Level]          // 4
+        [Additional Cost]       // 5
+*/
+/* DEBUG */
+
+PRINT ~DEBUG: scroll_list:~
+ACTION_PHP_EACH ~scroll_list~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~-Scroll Record:
+            Scroll:           `%keys_0%`
+            Spell:            `%keys_1%`
+            Tradition:        `%keys_2%`
+            Spell Level:      `%keys_3%`
+            Unique Key:       `%keys_4%`
+            Additional Cost:  `%keys_5%`
+            Value:            `%value%`~
+    END
 
 
 //Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
@@ -62,8 +90,9 @@ ACTION_PHP_EACH ~scroll_list_data~
         //Debugging Statements
         PRINT ~DEBUG: scroll_list_data:
             name:           `%scroll_list_data_keys_0%`;
+            scroll code:    `%scroll_list_data_keys_1%`;
             spell code:     `%scroll_list_data_keys_2%`;
-            scroll code:    `%scroll_list_data_keys_3%`;
+            tradition:      `%scroll_list_data_keys_3%`;
             level:          `%scroll_list_data_keys_4%`;
             addtl. cost:    `%scroll_list_data_keys_7%`;
             time cost:      `%scroll_list_data_keys_8%`~
