@@ -83,6 +83,7 @@ ACTION_SORT_ARRAY_INDICES ~scroll_list_data~
 
 //DEBUG!
 //Verify that it sorts on the first associative index (0)
+/*
 ACTION_PHP_EACH ~scroll_list_data~
     AS ~scroll_list_data_keys~ => ~value~
     BEGIN
@@ -98,3 +99,4 @@ ACTION_PHP_EACH ~scroll_list_data~
             time cost:      `%scroll_list_data_keys_8%`~
 
     END
+*/
