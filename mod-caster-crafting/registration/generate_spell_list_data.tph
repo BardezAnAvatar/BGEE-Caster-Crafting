@@ -19,6 +19,13 @@
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 
 
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   Generating array containing RESREF and in-game spell name   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
+
+
 ACTION_PHP_EACH ~spell_list~
     AS ~keys~ => ~value~
     BEGIN
