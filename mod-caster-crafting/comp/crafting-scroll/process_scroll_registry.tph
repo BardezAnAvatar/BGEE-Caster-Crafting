@@ -1,25 +1,25 @@
 /********************************************************************
 *   Generate the data used to process scrolls during installation   *
 ********************************************************************/
-INCLUDE ~%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
 
-INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
-INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/priest.tph~
-INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/protection.tph~
-INCLUDE ~%MOD_FOLDER%/registration/fn-fix_scroll_list_iwd_itm_resref.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/priest.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/protection.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-fix_scroll_list_iwd_itm_resref.tph~
 
 ACTION_IF (%bz_iwdification_installed%)
     BEGIN
         PRINT ~DEBUG: Include IWD-ification Scrolls~
-        INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/arcane.tph~
-        INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/priest.tph~
+        INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/arcane.tph~
+        INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/priest.tph~
         LAUNCH_ACTION_FUNCTION ~fn-fix_scroll_list_iwd_itm_resref~ END
     END
 
 ACTION_IF (%bz_OlvynSpells_installed%)
     BEGIN
         PRINT ~DEBUG: Include Olvyn Spells~
-        INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/arcane.tph~
+        INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/arcane.tph~
         //There are NO scrolls for priest spells included
     END
 
@@ -43,7 +43,7 @@ ACTION_IF (%bz_OlvynSpells_installed%)
         [Failure %]             // 10   --lookup from table
         [Spell Display Name]    // 11   --get from spell
 */
-INCLUDE ~%MOD_FOLDER%/registration/generate_scroll_list_data.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/generate_scroll_list_data.tph~
 
 //Sort the indicies (on first key)
 ACTION_SORT_ARRAY_INDICES ~scroll_list_data~

@@ -32,21 +32,21 @@
 
 
 PRINT ~Include Base Game Existing Potion Recipes~
-INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potions.tph~
-INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potion_recipes.tph~
-INCLUDE ~%MOD_FOLDER%/comp/crafting-potion/fn-map_dialog_values_for_categories.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potions.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/core/existing_potion_recipes.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/fn-map_dialog_values_for_categories.tph~
 
 
 ACTION_IF (%bz_iwdification_installed%)
 BEGIN
     PRINT ~Include IWD-ification Existing Potion Recipes~
-    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/existing_potion_recipes.tph~
+    INCLUDE ~./%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/iwdification/existing_potion_recipes.tph~
 END
 
 ACTION_IF (%bz_OlvynSpells_installed%)
 BEGIN
     PRINT ~Include OlvynSpells Existing Potion Recipes~
-    INCLUDE ~%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/existing_potion_recipes.tph~
+    INCLUDE ~./%MOD_FOLDER%/registration/potion-lists/%bz_game_code%/olvyn-spells/existing_potion_recipes.tph~
 END
 
 

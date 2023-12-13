@@ -5,7 +5,7 @@
 
 
 //Include the cursed scroll list
-INCLUDE ~%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/cursed.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/cursed.tph~
 
 
 /****************************************************************
