@@ -11,7 +11,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Additional Cost]       // 5
         */
 
-        ~CDIA126~, ~WIZARD_EXPEDITIOUS_RETREAT~,                ~Arcane~, ~1~, ~1~, ~0~ => ~CDIA126~    //Expeditious Retret
+        ~CDIA127~, ~WIZARD_EXPEDITIOUS_RETREAT~,                ~Arcane~, ~1~, ~1~, ~0~ => ~CDIA127~    //Expeditious Retret
 
         ~CDIA225~, ~WIZARD_SNILLOCS_SNOWBALL_SWARM~,            ~Arcane~, ~2~, ~3~, ~0~ => ~CDIA225~    //Snilloc's Snowball Swarm
         ~CDIA226~, ~WIZARD_DECASTAVE~,                          ~Arcane~, ~2~, ~3~, ~0~ => ~CDIA226~    //Decastave
