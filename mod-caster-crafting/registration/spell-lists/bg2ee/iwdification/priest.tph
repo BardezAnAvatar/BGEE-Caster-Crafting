@@ -8,75 +8,75 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Spell Level]           // 2
         */
 
-        ~SPPR116~, ~Divine~, ~1~ => ~SPPR116~   //Curse
-        ~SPPR117~, ~Divine~, ~1~ => ~SPPR117~   //Cause Light Wounds
-        ~SPPR118~, ~Divine~, ~1~ => ~SPPR118~   //Sunscorch
+        ~CLERIC_CURSE~,                             ~Divine~, ~1~ => ~CLERIC_CURSE~                             //Curse
+        ~CLERIC_CAUSE_LIGHT_WOUNDS~,                ~Divine~, ~1~ => ~CLERIC_CAUSE_LIGHT_WOUNDS~                //Cause Light Wounds
+        ~CLERIC_SUNSCORCH~,                         ~Divine~, ~1~ => ~CLERIC_SUNSCORCH~                         //Sunscorch
 
-        ~SPPR216~, ~Divine~, ~2~ => ~SPPR216~   //Cure Moderate Wounds
-        ~SPPR217~, ~Divine~, ~2~ => ~SPPR217~   //Alicorn Lance
-        ~SPPR218~, ~Divine~, ~2~ => ~SPPR218~   //Beast Claw
-        ~SPPR219~, ~Divine~, ~2~ => ~SPPR219~   //Cause Moderate Wounds
+        ~CLERIC_CURE_MODERATE_WOUNDS~,              ~Divine~, ~2~ => ~CLERIC_CURE_MODERATE_WOUNDS~              //Cure Moderate Wounds
+        ~CLERIC_ALICORN_LANCE~,                     ~Divine~, ~2~ => ~CLERIC_ALICORN_LANCE~                     //Alicorn Lance
+        ~CLERIC_BEAST_CLAW~,                        ~Divine~, ~2~ => ~CLERIC_BEAST_CLAW~                        //Beast Claw
+        ~CLERIC_CAUSE_MODERATE_WOUNDS~,             ~Divine~, ~2~ => ~CLERIC_CAUSE_MODERATE_WOUNDS~             //Cause Moderate Wounds
 
-        ~SPPR320~, ~Divine~, ~3~ => ~SPPR320~   //Prayer
-        ~SPPR321~, ~Divine~, ~3~ => ~SPPR321~   //Cause Disease
-        ~SPPR322~, ~Divine~, ~3~ => ~SPPR322~   //Exaltation
-        ~SPPR323~, ~Divine~, ~3~ => ~SPPR323~   //Moonblade
-        ~SPPR324~, ~Divine~, ~3~ => ~SPPR324~   //Circle of Bones
-        ~SPPR325~, ~Divine~, ~3~ => ~SPPR325~   //Spike Growth
-        ~SPPR326~, ~Divine~, ~3~ => ~SPPR326~   //Cloudburst
-        ~SPPR327~, ~Divine~, ~3~ => ~SPPR327~   //Mold Touch
-        ~SPPR328~, ~Divine~, ~3~ => ~SPPR328~   //Storm Shell
-        ~SPPR329~, ~Divine~, ~3~ => ~SPPR329~   //Cause Medium Wounds
-        ~SPPR330~, ~Divine~, ~3~ => ~SPPR330~   //Favor of Illmater
+        ~CLERIC_PRAYER~,                            ~Divine~, ~3~ => ~CLERIC_PRAYER~                            //Prayer
+        ~CLERIC_CAUSE_DISEASE~,                     ~Divine~, ~3~ => ~CLERIC_CAUSE_DISEASE~                     //Cause Disease
+        ~CLERIC_EXALTATION~,                        ~Divine~, ~3~ => ~CLERIC_EXALTATION~                        //Exaltation
+        ~CLERIC_MOONBLADE~,                         ~Divine~, ~3~ => ~CLERIC_MOONBLADE~                         //Moonblade
+        ~CLERIC_CIRCLE_OF_BONES~,                   ~Divine~, ~3~ => ~CLERIC_CIRCLE_OF_BONES~                   //Circle of Bones
+        ~CLERIC_SPIKE_GROWTH~,                      ~Divine~, ~3~ => ~CLERIC_SPIKE_GROWTH~                      //Spike Growth
+        ~CLERIC_CLOUDBURST~,                        ~Divine~, ~3~ => ~CLERIC_CLOUDBURST~                        //Cloudburst
+        ~CLERIC_MOLD_TOUCH~,                        ~Divine~, ~3~ => ~CLERIC_MOLD_TOUCH~                        //Mold Touch
+        ~CLERIC_STORM_SHELL~,                       ~Divine~, ~3~ => ~CLERIC_STORM_SHELL~                       //Storm Shell
+        ~CLERIC_CAUSE_MEDIUM_WOUNDS~,               ~Divine~, ~3~ => ~CLERIC_CAUSE_MEDIUM_WOUNDS~               //Cause Medium Wounds
+        ~CLERIC_FAVOR_OF_ILMATER~,                  ~Divine~, ~3~ => ~CLERIC_FAVOR_OF_ILMATER~                  //Favor of Illmater
 
-        ~SPPR419~, ~Divine~, ~4~ => ~SPPR419~   //Static Charge
-        ~SPPR420~, ~Divine~, ~4~ => ~SPPR420~   //Recitation
-        ~SPPR421~, ~Divine~, ~4~ => ~SPPR421~   //Blood Rage
-        ~SPPR422~, ~Divine~, ~4~ => ~SPPR422~   //Cloud of Pestilance
-        ~SPPR423~, ~Divine~, ~4~ => ~SPPR423~   //Unfailing Endurance
-        ~SPPR424~, ~Divine~, ~4~ => ~SPPR424~   //Star Metal Cudgel
-        ~SPPR425~, ~Divine~, ~4~ => ~SPPR425~   //Smashing Wave
-        ~SPPR426~, ~Divine~, ~4~ => ~SPPR426~   //Thorn Spray
-        ~SPPR427~, ~Divine~, ~4~ => ~SPPR427~   //Wall of Moonlight
-        ~SPPR428~, ~Divine~, ~4~ => ~SPPR428~   //Cause Serious Wounds
-        ~SPPR429~, ~Divine~, ~4~ => ~SPPR429~   //Giant Insect
+        ~CLERIC_STATIC_CHARGE~,                     ~Divine~, ~4~ => ~CLERIC_STATIC_CHARGE~                     //Static Charge
+        ~CLERIC_RECITATION~,                        ~Divine~, ~4~ => ~CLERIC_RECITATION~                        //Recitation
+        ~CLERIC_BLOOD_RAGE~,                        ~Divine~, ~4~ => ~CLERIC_BLOOD_RAGE~                        //Blood Rage
+        ~CLERIC_CLOUD_OF_PESTILENCE~,               ~Divine~, ~4~ => ~CLERIC_CLOUD_OF_PESTILENCE~               //Cloud of Pestilance
+        ~CLERIC_UNFAILING_ENDURANCE~,               ~Divine~, ~4~ => ~CLERIC_UNFAILING_ENDURANCE~               //Unfailing Endurance
+        ~CLERIC_STAR_METAL_CUDGEL~,                 ~Divine~, ~4~ => ~CLERIC_STAR_METAL_CUDGEL~                 //Star Metal Cudgel
+        ~CLERIC_SMASHING_WAVE~,                     ~Divine~, ~4~ => ~CLERIC_SMASHING_WAVE~                     //Smashing Wave
+        ~CLERIC_THORN_SPRAY~,                       ~Divine~, ~4~ => ~CLERIC_THORN_SPRAY~                       //Thorn Spray
+        ~CLERIC_WALL_OF_MOONLIGHT~,                 ~Divine~, ~4~ => ~CLERIC_WALL_OF_MOONLIGHT~                 //Wall of Moonlight
+        ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~,          ~Divine~, ~4~ => ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~          //Cause Serious Wounds
+        ~CLERIC_GIANT_INSECT~,                      ~Divine~, ~4~ => ~CLERIC_GIANT_INSECT~                      //Giant Insect
 
-        ~SPPR518~, ~Divine~, ~5~ => ~SPPR518~   //Righteous Wrath of the Faithful
-        ~SPPR519~, ~Divine~, ~5~ => ~SPPR519~   //Spike Stones
-        ~SPPR520~, ~Divine~, ~5~ => ~SPPR520~   //Shield of Lathander
-        ~SPPR521~, ~Divine~, ~5~ => ~SPPR521~   //Undead Ward
-        ~SPPR522~, ~Divine~, ~5~ => ~SPPR522~   //Animal Rage
-        ~SPPR523~, ~Divine~, ~5~ => ~SPPR523~   //Mass Cause Light Wounds
-        ~SPPR524~, ~Divine~, ~5~ => ~SPPR524~   //Cause Critical Wounds
+        ~CLERIC_RIGHTEOUS_WRATH_OF_THE_FAITHFUL~,   ~Divine~, ~5~ => ~CLERIC_RIGHTEOUS_WRATH_OF_THE_FAITHFUL~   //Righteous Wrath of the Faithful
+        ~CLERIC_SPIKE_STONES~,                      ~Divine~, ~5~ => ~CLERIC_SPIKE_STONES~                      //Spike Stones
+        ~CLERIC_SHIELD_OF_LATHANDER~,               ~Divine~, ~5~ => ~CLERIC_SHIELD_OF_LATHANDER~               //Shield of Lathander
+        ~CLERIC_UNDEAD_WARD~,                       ~Divine~, ~5~ => ~CLERIC_UNDEAD_WARD~                       //Undead Ward
+        ~CLERIC_ANIMAL_RAGE~,                       ~Divine~, ~5~ => ~CLERIC_ANIMAL_RAGE~                       //Animal Rage
+        ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~,           ~Divine~, ~5~ => ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~           //Mass Cause Light Wounds
+        ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~,         ~Divine~, ~5~ => ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~         //Cause Critical Wounds
 
-        ~SPPR615~, ~Divine~, ~6~ => ~SPPR615~   //Entropy Shield
-        ~SPPR616~, ~Divine~, ~6~ => ~SPPR616~   //Whirlwind
-        ~SPPR617~, ~Divine~, ~6~ => ~SPPR617~   //Spiritual Wrath
+        ~CLERIC_ENTROPY_SHIELD~,                    ~Divine~, ~6~ => ~CLERIC_ENTROPY_SHIELD~                    //Entropy Shield
+        ~CLERIC_WHIRLWIND~,                         ~Divine~, ~6~ => ~CLERIC_WHIRLWIND~                         //Whirlwind
+        ~CLERIC_SPIRITUAL_WRATH~,                   ~Divine~, ~6~ => ~CLERIC_SPIRITUAL_WRATH~                   //Spiritual Wrath
 
-        ~SPPR714~, ~Divine~, ~7~ => ~SPPR714~   //Energy Drain
-        ~SPPR733~, ~Divine~, ~7~ => ~SPPR733~   //Symbol, Pain
-        ~SPPR734~, ~Divine~, ~7~ => ~SPPR734~   //Symbol, Hopelessness
-        ~SPPR735~, ~Divine~, ~7~ => ~SPPR735~   //Impervious Sanctity of Mind
-        ~SPPR736~, ~Divine~, ~7~ => ~SPPR736~   //Destruction
-        ~SPPR737~, ~Divine~, ~7~ => ~SPPR737~   //Greater Shield of Lathander
-        ~SPPR738~, ~Divine~, ~7~ => ~SPPR738~   //Mist of Eldath
-        ~SPPR739~, ~Divine~, ~7~ => ~SPPR739~   //Stalker
-        ~SPPR740~, ~Divine~, ~7~ => ~SPPR740~   //Wither
+        ~CLERIC_ENERGY_DRAIN~,                      ~Divine~, ~7~ => ~CLERIC_ENERGY_DRAIN~                      //Energy Drain
+        ~CLERIC_SYMBOL_PAIN~,                       ~Divine~, ~7~ => ~CLERIC_SYMBOL_PAIN~                       //Symbol, Pain
+        ~CLERIC_SYMBOL_HOPELESSNESS~,               ~Divine~, ~7~ => ~CLERIC_SYMBOL_HOPELESSNESS~               //Symbol, Hopelessness
+        ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~,       ~Divine~, ~7~ => ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~       //Impervious Sanctity of Mind
+        ~CLERIC_DESTRUCTION~,                       ~Divine~, ~7~ => ~CLERIC_DESTRUCTION~                       //Destruction
+        ~CLERIC_GREATER_SHIELD_OF_LATHANDER~,       ~Divine~, ~7~ => ~CLERIC_GREATER_SHIELD_OF_LATHANDER~       //Greater Shield of Lathander
+        ~CLERIC_MIST_OF_ELDATH~,                    ~Divine~, ~7~ => ~CLERIC_MIST_OF_ELDATH~                    //Mist of Eldath
+        ~CLERIC_STALKER~,                           ~Divine~, ~7~ => ~CLERIC_STALKER~                           //Stalker
+        ~CLERIC_WITHER~,                            ~Divine~, ~7~ => ~CLERIC_WITHER~                            //Wither
 
         /********************
         *   Special cases   *
         ********************/
         //special -- in-game already, moved from 613 to here
-        ~SPPR525~, ~Divine~, ~5~ => ~SPPR525~    //Physical Mirror
+        ~CLERIC_PHYSICAL_MIRROR~,                   ~Divine~, ~5~ => ~CLERIC_PHYSICAL_MIRROR~                   //Physical Mirror
 
     END
 
 ACTION_IF (NOT %bz_OlvynSpells_installed%)
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~spell_list~
     BEGIN
-        ACTION_DEFINE_ASSOCIATIVE_ARRAY
-            ~spell_list~
-            BEGIN
-                //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-                ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~    //Produce Fire
-            END
+        //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
+        ~CLERIC_PRODUCE_FIRE~,                      ~Divine~, ~4~ => ~CLERIC_PRODUCE_FIRE~                      //Produce Fire
     END
+END
