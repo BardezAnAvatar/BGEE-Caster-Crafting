@@ -41,8 +41,9 @@ BEGIN
         //Strip the first 4 characters of the spell resref:
         OUTER_TEXT_SPRINT ~itm_resref~ ~spell_resref~
         OUTER_PATCH ~itm_resref~
+        BEGIN
             REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%prefix_existing%~ ~%prefix_new%~
-
+        END
 
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~scroll_list~
