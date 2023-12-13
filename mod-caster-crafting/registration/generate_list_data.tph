@@ -83,6 +83,26 @@ INCLUDE ~./%MOD_FOLDER%/registration/generate-Spell_ResRef_Lookup-IWD.tph~
 
 //Include lookup tables
 INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph~
+//OUTPUT:
+/*
+    An associative array named "SpellResRefLookup" that contains teh following keys:
+        [Key]           // 0    RESREF for base game and olvynspells; IDS script name for IWD
+            =>
+        [RESREF]        // value RESREF that exists in game
+*/
+
+/* DEBUG */
+/*
+PRINT ~DEBUG: SpellResRefLookup:~
+ACTION_PHP_EACH ~SpellResRefLookup~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~-Spell Lookup Record:
+            Unique Key:     `%keys_0%`
+            Value:          `%value%`~
+    END
+*/
 
 
 
