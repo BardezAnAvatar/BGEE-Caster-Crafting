@@ -32,7 +32,7 @@ BEGIN
                 OUTER_TEXT_SPRINT ~prefix_existing~ ~SPPR~
                 OUTER_TEXT_SPRINT ~prefix_new~ ~CDID~
             END
-            ~ARCANE~
+            ~Arcane~
             BEGIN
                 OUTER_TEXT_SPRINT ~prefix_existing~ ~SPWI~
                 OUTER_TEXT_SPRINT ~prefix_new~ ~CDIA~
@@ -41,8 +41,8 @@ BEGIN
         END //end match statement
 
         //Strip the first 4 characters of the spell resref:
-        OUTER_TEXT_SPRINT ~itm_resref~ ~spell_resref~
-        OUTER_PATCH ~itm_resref~
+        OUTER_TEXT_SPRINT ~itm_resref~ ~%spell_resref%~
+        OUTER_PATCH_SAVE ~new_itm_resref~ ~%itm_resref%~
         BEGIN
             REPLACE_TEXTUALLY CASE_INSENSITIVE EXACT_MATCH ~%prefix_existing%~ ~%prefix_new%~
         END
@@ -50,7 +50,7 @@ BEGIN
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~scroll_list_fix~
         BEGIN
-            ~%itm_resref%~, ~%keys_0%~, ~%keys_1%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~ => ~%value%~
+            ~%new_itm_resref%~, ~%keys_0%~, ~%keys_1%~, ~%keys_2%~, ~%keys_3%~, ~%keys_4%~ => ~%new_itm_resref%~
         END //scroll list array append
 
     END //corrective item match lop
