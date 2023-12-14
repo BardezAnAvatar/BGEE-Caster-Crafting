@@ -168,11 +168,13 @@ ACTION_PHP_EACH ~bz_deduped_protection~
                     OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
                     OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
+                    OUTER_SET gold_minus_one = (scroll_gold_cost - 1)
 
                     APPEND_OUTER -
                         ~ScrollCreation/CircleProtection.D~
                         ~~~~~
             IF ~HaveKnownSpellRES("%prot_keys_2%")
+PartyGoldGT(%gold_minus_one%)
 RandomNumLT(100, %bz_protection_failure_bounds_success%)~   //created successfully
             THEN
                 REPLY ~%protection_scroll_spell_response%~
@@ -188,6 +190,7 @@ StartCutSceneMode()
 StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~HaveKnownSpellRES("%prot_keys_2%")
+PartyGoldGT(%gold_minus_one%)
 RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cursed scroll
             THEN
                 REPLY ~%protection_scroll_spell_response%~

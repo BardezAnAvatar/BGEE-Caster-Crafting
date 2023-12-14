@@ -134,6 +134,8 @@ APPEND ~BZMSCST~
                             OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
                             OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
+                            OUTER_SET gold_minus_one = (scroll_gold_cost - 1)
+
                             //Give the type of scroll as a dialog option
                             APPEND_OUTER -
                                 ~%BufferName%~
@@ -142,6 +144,7 @@ APPEND ~BZMSCST~
     THEN BEGIN bz_caster_craft_scribe_scroll_%StateTraditionName%_circle_%spell_circle%_%keys_2%
         SAY ~%scroll_prompt%~
             IF ~HaveKnownSpellRES("%keys_2%")
+PartyGoldGT(%gold_minus_one%)
 RandomNumLT(100, %bz_scroll_failure_bounds_success%)~   //created successfully
             THEN
                 REPLY ~%scroll_response%~
@@ -157,6 +160,7 @@ StartCutSceneMode()
 StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~HaveKnownSpellRES("%keys_2%")
+PartyGoldGT(%gold_minus_one%)
 RandomNumGT(100, %bz_scroll_failure_bounds_cursed%)~    //failure, create cursed scroll
             THEN
                 REPLY ~%scroll_response%~
