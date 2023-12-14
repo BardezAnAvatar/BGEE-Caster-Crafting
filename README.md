@@ -1,4 +1,4 @@
-# Caster Crafting
+# Caster Crafting: A Mod to Make Items for BGEE, BG2EE, EET, and IWDEE
 Author: [Bardez](https://github.com/BardezAnAvatar)
 - Based off of work by:
     - [Grammarsalad](https://github.com/Grammarsalad)
