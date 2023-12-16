@@ -49,6 +49,7 @@
 @15071 = ~You study %tag_PlayerN%'s spellbook. Which spell circle do you explore?~
 @15072 = ~Look at someone else's spellbook.~
 @15073 = ~You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.~
+@15074 = ~You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook. You realize that you lack the %copy_gold_cost% necessary to copy this spell.~
 
 //Protection scrolls
 @15080 = ~Which scroll of Protection do you wish to scribe?~
