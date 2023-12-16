@@ -16,7 +16,7 @@ BEGIN
 
     OUTER_SPRINT ~RandomLineEntry~ ~~
     OUTER_SET ~ColumnCount~ = 0
-    ACTION_PHP_EACH ~SourceArray~
+    ACTION_PHP_EACH ~%SourceArray%~
     AS ~key~ => ~value~
     BEGIN
         OUTER_SPRINT ~padddedValue~ ~%value%        ~

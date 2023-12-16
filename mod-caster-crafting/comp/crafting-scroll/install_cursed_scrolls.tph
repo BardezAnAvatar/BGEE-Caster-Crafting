@@ -85,53 +85,17 @@ END
 
 
 
-//TODO: Any new cursed scrolls & add to ~cursed_scrolls~ array.
-/*
-- fireball centered on caster
-- destroy gold
-- negative experience
-- level drain
-- exhaustion
-- drunkenness
-- confusion
-- lower movement speed
-etc.
-*/
-
-
 /*****************************************
 *   Random Treasure for cursed scrolls   *
 *****************************************/
+INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-add_random_treasure_from_array.tph~
+
 //Register the random treasure for cursed scrolls -- read ~cursed_scrolls~ array and add to 2DA in-game
-OUTER_SPRINT ~CursedRandom~ ~~
-OUTER_SET ~ColumnCount~ = 0
-ACTION_PHP_EACH ~cursed_scrolls~
-AS ~key~ => ~value~
-BEGIN
-    OUTER_SPRINT ~padddedValue~ ~%value%        ~
-    LAUNCH_ACTION_FUNCTION ~SUBSTRING~
-        INT_VAR
-            ~length~ = 8
-        STR_VAR
-            ~string~ = ~%padddedValue%~
-        RET
-            ~paddedResRef~ = ~substring~
-    END
-
-    OUTER_SPRINT ~CursedRandom~ ~%CursedRandom% %paddedResRef%~
-    OUTER_SET ~ColumnCount~ = (%ColumnCount% +1)
+LAUNCH_ACTION_FUNCTION ~bz_add_random_treasure_from_array~
+STR_VAR
+    ~Loot_RESREF~ = ~BZSCLCUR~
+    ~SourceArray~ = ~cursed_scrolls~  //uses the `value` in whatever array, using ACTION_PHP_EACH
 END
-
-//fill in with asterisks
-OUTER_FOR (i = %ColumnCount%; i < 40; ++i)
-BEGIN
-    OUTER_SPRINT ~CursedRandom~ ~%CursedRandom% *       ~
-END
-
-COPY_EXISTING ~RNDTRES.2DA~ ~override~
-    //PATCHES
-        COUNT_2DA_ROWS 40 ~bz_rndtres_ct~
-        INSERT_2DA_ROW %bz_rndtres_ct% 40 ~BZSCLCUR%CursedRandom%~
 /*****************************************
 *   END: Random Treasure for cursed scrolls   *
 *****************************************/
