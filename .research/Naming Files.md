@@ -13,6 +13,12 @@ I tried again later, and found that _when using `C:CreateItem("")` properly, ite
 For example: I could create an item, but its BAM RESREF for icons would not display with matching names, as if the Extended ASCII tables
 are ignored when loading (some?) assets.
 
+Per IESDP:
+> Scripts can handle RES filenames with +, Dialogs and the console cannot. Same with the ~, `, ', @, $, ^, and & characters, maybe some more.
+
+This indicates that `+`, `~`, `` ` ``, `'`, `@`, `$`, `^`, `&` are invalid characters (See #2 below)
+
+
 ## Results
 1. characters that work fine:
     - `!`
@@ -24,6 +30,13 @@ are ignored when loading (some?) assets.
     - `=`
 1. Characters that work fine from console and seem to be OK, but run into errors with scripts:
     - `@` (creating via dialog scripts errors out)
+    - `+` (from IESDP)
+    - `~` (from IESDP)
+    - `'` (from IESDP)
+    - `$` (from IESDP)
+    - `^` (from IESDP)
+    - `&` (from IESDP)
+    - `` ` `` (from IESDP)
 1. characters that don't display BAMs but work when spawned in CLUA console:
     - `¶`
     - `Š`

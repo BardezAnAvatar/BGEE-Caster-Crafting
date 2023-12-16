@@ -202,15 +202,28 @@ DEBUG: PLAYER %i%, Circle %j%:
                             ACTION_IF ~%keys_3%~ STRING_EQUAL ~%player_n_spell_level%~  //Spell level matches
                                 THEN
                                 BEGIN
+
+                                    OUTER_SET ~spell-copy-cost-floor~ = (%keys_4% - 1)
+                                    OUTER_SET ~copy_gold_cost~ = %keys_4%
+
                                     APPEND_OUTER -
                                         ~SpellbookCopy/Player%i%States.D~
                                         ~~~~~
-            IF ~!HaveKnownSpellRES("%keys_1%")
+            IF ~PartyGoldGT(%spell-copy-cost-floor%)
+!HaveKnownSpellRES("%keys_1%")
 %CopySpellKitExclusionTriggers%
 TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
             THEN
                 REPLY ~%keys_6%~
                 GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%
+
+            IF ~PartyGoldLT(%copy_gold_cost%)
+!HaveKnownSpellRES("%keys_1%")
+%CopySpellKitExclusionTriggers%
+TriggerOverride(%PlayerN%, HaveKnownSpellRES("%keys_1%"))~
+            THEN
+                REPLY ~%keys_6%~
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%player_n_spell_level%_%keys_1%_nogold
                                         ~~~~~
                                 END //check is spell level matches
                         END //check if arcane
@@ -289,6 +302,7 @@ APPEND ~BZMSCST~
 
 
                     OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.
+                    OUTER_SPRINT ~player-circle-spell-prompt-no-gold~ @15074 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook. You realize that you lack the %copy_gold_cost% necessary to copy this spell.~
                     OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %readable_time%] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.
                     OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
                     OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
@@ -314,6 +328,32 @@ ClearAllActions()
 StartCutSceneMode()
 StartCutScene("bzctwrit")~
                 EXIT
+
+            //closing options
+            IF ~~
+            THEN REPLY @15033 //Pick another spell.
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%
+
+            IF ~~
+            THEN REPLY @15032 //Pick another spell circle.
+                GOTO bz_caster_craft_scribe_copy_%var_PlayerN%
+
+            IF ~~
+            THEN REPLY @15072 //Look at someone else's spellbook.
+                GOTO bz_caster_craft_scribe_copy_menu
+
+            IF ~~
+            THEN REPLY @15031 //Go back to your scribe tools.
+                GOTO bz_caster_craft_scribe_main_menu
+
+            IF ~~
+            THEN REPLY @15030 //Pack up your scribe tools.
+                EXIT
+    END
+
+    // _%PlayerN%_circle%keys_3%_%keys_1%_nogold
+    IF ~~ THEN BEGIN bz_caster_craft_scribe_copy_%var_PlayerN%_circle%keys_3%_%keys_1%_nogold
+        SAY ~%player-circle-spell-prompt-no-gold%~    //You look over the spell %keys_1% and inspect its entry in %tag_PlayerN%'s spellbook. You realize that you lack the %copy_gold_cost% necessary to copy this spell.~
 
             //closing options
             IF ~~

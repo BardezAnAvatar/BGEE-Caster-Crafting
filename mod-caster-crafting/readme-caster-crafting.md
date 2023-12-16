@@ -1,6 +1,6 @@
 # Caster Crafting
 
-Version: 0.6.1
+Version: 0.6.2
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
@@ -30,6 +30,7 @@ I am using the `BZ` prefix for my items. It is registered at Black Wyrm Lair: ht
 | Creation of "missing" potions derived from spells         |  0.5.0  |
 | Correcting the registry/detection of IWD-ification assets |  0.6.0  |
 | Expanding potion brewing into BG2:EE and IWD:EE           |  0.6.1  |
+| Bugfix: Gold was not checked before crafting scrolls      |  0.6.2  |
 
 
 ## Components
