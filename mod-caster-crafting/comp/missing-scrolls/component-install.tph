@@ -3,7 +3,7 @@
 *                                                                 *
 *   Expected variables populated:                                 *
 *       - ~bz-missing_scrolls-arcane~                             *
-*       -~bz-missing_scrolls-priest~                              *
+*       - ~bz-missing_scrolls-priest~                             *
 ******************************************************************/
 
 ACTION_IF (~%bz-missing_scrolls-arcane%~) THEN
