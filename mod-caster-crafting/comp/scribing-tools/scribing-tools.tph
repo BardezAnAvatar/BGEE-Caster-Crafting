@@ -87,7 +87,13 @@ COPY_EXISTING ~ITEMDIAL.2DA~ ~override~
         INSERT_2DA_ROW %bz_itemdial_ct% 3 ~BZMSCST %bz_scrollkit_arcane_interact_strref% BZMSCST~
 
 //Add the kit to stores
-INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/add-to-stores.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/fn-add_kit_to_stores.tph~
+
+LAUNCH_ACTION_FUNCTION ~bz_add_kit_to_stores~
+STR_VAR
+    ~Item_RESREF~ = ~BZMSCST~
+END
+
 
 //Install the custscene
 INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/install_cutscene.tph~
