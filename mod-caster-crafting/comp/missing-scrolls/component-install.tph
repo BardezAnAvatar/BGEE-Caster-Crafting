@@ -1,0 +1,32 @@
+/******************************************************************
+*   Main installation entrypoint for missing scrolls component.   *
+*                                                                 *
+*   Expected variables populated:                                 *
+*       - ~bz-missing_scrolls-arcane~                             *
+*       -~bz-missing_scrolls-priest~                              *
+******************************************************************/
+
+ACTION_IF (~%bz-missing_scrolls-arcane%~) THEN
+BEGIN
+    PRINT ~Including Missing Arcane Scrolls~
+    INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-arcane.tph~
+END
+
+
+ACTION_IF (~%bz-missing_scrolls-priest%~) THEN
+BEGIN
+    INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/missing-priest.tph~
+    ACTION_IF (%bz_iwdification_installed%)
+        BEGIN
+            PRINT ~Including Missing IWD-ification Divine Scrolls~
+            INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/missing-priest.tph~
+        END
+    ACTION_IF (%bz_OlvynSpells_installed%)
+        BEGIN
+            PRINT ~Including Missing OlvynSpells Divine Scrolls~
+            INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/missing-priest.tph~
+        END
+END
+
+
+INCLUDE ~./%MOD_FOLDER%/comp/missing-scrolls/missing-scrolls.tph~
