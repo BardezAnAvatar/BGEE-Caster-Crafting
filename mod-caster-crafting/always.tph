@@ -50,6 +50,53 @@ BEGIN
     ~
 
     INCLUDE ~./%MOD_FOLDER%/registration/read-min-spellcaster-level.tph~
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_min_casterlevels~
+        RET_ARRAY
+            ~bz_min_caster_levels~ = class_levels
+            ~bz_min_tradition_levels~ = tradition_levels
+    END
+
+    PRINT ~DEBUG: bz_min_caster_levels:~
+    ACTION_PHP_EACH ~bz_min_caster_levels~
+        AS ~keys~ => ~value~
+        BEGIN
+            //Debugging Statements
+            PRINT ~- Min Caster Level Record:
+                Class:      `%keys_0%`
+                Level 1:    `%keys_1%`
+                Level 2:    `%keys_2%`
+                Level 3:    `%keys_3%`
+                Level 4:    `%keys_4%`
+                Level 5:    `%keys_5%`
+                Level 6:    `%keys_6%`
+                Level 7:    `%keys_7%`
+                Level 8:    `%keys_8%`
+                Level 9:    `%keys_9%`
+                Level A:    `%keys_10%`
+                Level Q:    `%keys_11%`
+                Value:      `%value%`~
+        END
+
+    PRINT ~DEBUG: bz_min_tradition_levels:~
+    ACTION_PHP_EACH ~bz_min_tradition_levels~
+        AS ~keys~ => ~value~
+        BEGIN
+            //Debugging Statements
+            PRINT ~- Tradition Min Caster Level Record:
+                Class:      `%keys_0%`
+                Level 1:    `%keys_1%`
+                Level 2:    `%keys_2%`
+                Level 3:    `%keys_3%`
+                Level 4:    `%keys_4%`
+                Level 5:    `%keys_5%`
+                Level 6:    `%keys_6%`
+                Level 7:    `%keys_7%`
+                Level 8:    `%keys_8%`
+                Level 9:    `%keys_9%`
+                Level A:    `%keys_10%`
+                Level Q:    `%keys_11%`
+                Value:      `%value%`~
+        END
 
 
     //do not re-process
