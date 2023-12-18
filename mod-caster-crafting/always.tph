@@ -2,6 +2,12 @@ ACTION_IF (NOT VARIABLE_IS_SET ~bz_caster_crafting_preprocessing~)
 THEN
 BEGIN
 
+    PRINT ~
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !   Detecting installed mods   !
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ~
+
     /********************
     *   Set Game Dirs   *
     ********************/
@@ -36,6 +42,12 @@ BEGIN
     <<<<<<<< ScrollCreation/BZMSCST.D
 
     >>>>>>>>
+
+    PRINT ~
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !   Detecting minimum caster levels   !
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ~
 
     INCLUDE ~./%MOD_FOLDER%/registration/read-min-spellcaster-level.tph~
 
