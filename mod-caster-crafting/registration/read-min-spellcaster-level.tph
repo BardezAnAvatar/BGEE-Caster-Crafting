@@ -1,0 +1,223 @@
+/*********************************************************************************************
+*   This file will read the various MXSPLyyy.2DA files to identify the earliest level that   *
+*       casters gain access to spells, thereby identifying minimum caster levels.            *
+*********************************************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+    STR_VAR
+        ~2DA~ = null
+    RET_ARRAY
+        levels
+BEGIN
+    OUTER_SET $levels(1) = 9999
+    OUTER_SET $levels(2) = 9999
+    OUTER_SET $levels(3) = 9999
+    OUTER_SET $levels(4) = 9999
+    OUTER_SET $levels(5) = 9999
+    OUTER_SET $levels(6) = 9999
+    OUTER_SET $levels(7) = 9999
+    OUTER_SET $levels(8) = 9999
+    OUTER_SET $levels(9) = 9999
+    OUTER_SET $levels(A) = 9999
+    COPY_EXISTING - ~%2DA%.2DA~ ~bogus/%2DA%.2DA~
+    //PATCHES
+        READ_2DA_ENTRIES_NOW spell_progression 4
+        SET current_circle = 0
+        FOR (i = 0; i < spell_progression; ++i)
+        BEGIN
+            READ_2DA_ENTRY_FORMER spell_progression i (0) spell_level
+            READ_2DA_ENTRY_FORMER spell_progression i (1 + current_circle) count
+            PATCH_IF (count > 0) THEN
+            BEGIN
+                current_circle++
+                SET $level(~%current_circle%~) = spell_level
+            END
+        END
+        BUT_ONLY_IF_IT_CHANGES
+END
+
+DEFINE_ACTION_FUNCTION ~fn-read_class_min_casterlevels~
+    RET_ARRAY
+        ~class_levels~
+        ~tradition_levels~
+BEGIN
+    OUTER_SET ~min_arcane_1~ = 9999
+    OUTER_SET ~min_arcane_2~ = 9999
+    OUTER_SET ~min_arcane_3~ = 9999
+    OUTER_SET ~min_arcane_4~ = 9999
+    OUTER_SET ~min_arcane_5~ = 9999
+    OUTER_SET ~min_arcane_6~ = 9999
+    OUTER_SET ~min_arcane_7~ = 9999
+    OUTER_SET ~min_arcane_8~ = 9999
+    OUTER_SET ~min_arcane_9~ = 9999
+    OUTER_SET ~min_arcane_A~ = 9999
+
+    OUTER_SET ~min_nature_1~ = 9999
+    OUTER_SET ~min_nature_2~ = 9999
+    OUTER_SET ~min_nature_3~ = 9999
+    OUTER_SET ~min_nature_4~ = 9999
+    OUTER_SET ~min_nature_5~ = 9999
+    OUTER_SET ~min_nature_6~ = 9999
+    OUTER_SET ~min_nature_7~ = 9999
+    OUTER_SET ~min_nature_Q~ = 9999
+
+    OUTER_SET ~min_divine_1~ = 9999
+    OUTER_SET ~min_divine_2~ = 9999
+    OUTER_SET ~min_divine_3~ = 9999
+    OUTER_SET ~min_divine_4~ = 9999
+    OUTER_SET ~min_divine_5~ = 9999
+    OUTER_SET ~min_divine_6~ = 9999
+    OUTER_SET ~min_divine_7~ = 9999
+    OUTER_SET ~min_divine_Q~ = 9999
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLBRD"
+        RET_ARRAY
+            bard = levels
+    END
+    ACTION_IF ($bard(1) < min_arcane_1) THEN BEGIN OUTER_SET ~min_arcane_1~ = $bard(1) END
+    ACTION_IF ($bard(2) < min_arcane_2) THEN BEGIN OUTER_SET ~min_arcane_2~ = $bard(2) END
+    ACTION_IF ($bard(3) < min_arcane_3) THEN BEGIN OUTER_SET ~min_arcane_3~ = $bard(3) END
+    ACTION_IF ($bard(4) < min_arcane_4) THEN BEGIN OUTER_SET ~min_arcane_4~ = $bard(4) END
+    ACTION_IF ($bard(5) < min_arcane_5) THEN BEGIN OUTER_SET ~min_arcane_5~ = $bard(5) END
+    ACTION_IF ($bard(6) < min_arcane_6) THEN BEGIN OUTER_SET ~min_arcane_6~ = $bard(6) END
+    ACTION_IF ($bard(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $bard(7) END
+    ACTION_IF ($bard(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $bard(8) END
+    ACTION_IF ($bard(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $bard(9) END
+    ACTION_IF ($bard(~A~) < min_arcane_A) THEN BEGIN OUTER_SET ~min_arcane_A~ = $bard(A) END
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLSRC"
+        RET_ARRAY
+            sorcerer = levels
+    END
+    ACTION_IF ($sorcerer(1) < min_arcane_1) THEN BEGIN OUTER_SET ~min_arcane_1~ = $sorcerer(1) END
+    ACTION_IF ($sorcerer(2) < min_arcane_2) THEN BEGIN OUTER_SET ~min_arcane_2~ = $sorcerer(2) END
+    ACTION_IF ($sorcerer(3) < min_arcane_3) THEN BEGIN OUTER_SET ~min_arcane_3~ = $sorcerer(3) END
+    ACTION_IF ($sorcerer(4) < min_arcane_4) THEN BEGIN OUTER_SET ~min_arcane_4~ = $sorcerer(4) END
+    ACTION_IF ($sorcerer(5) < min_arcane_5) THEN BEGIN OUTER_SET ~min_arcane_5~ = $sorcerer(5) END
+    ACTION_IF ($sorcerer(6) < min_arcane_6) THEN BEGIN OUTER_SET ~min_arcane_6~ = $sorcerer(6) END
+    ACTION_IF ($sorcerer(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $sorcerer(7) END
+    ACTION_IF ($sorcerer(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $sorcerer(8) END
+    ACTION_IF ($sorcerer(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $sorcerer(9) END
+    ACTION_IF ($sorcerer(~A~) < min_arcane_A) THEN BEGIN OUTER_SET ~min_arcane_A~ = $sorcerer(A) END
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLWIZ"
+        RET_ARRAY
+            wizard = levels
+    END
+    ACTION_IF ($wizard(1) < min_arcane_1) THEN BEGIN OUTER_SET ~min_arcane_1~ = $wizard(1) END
+    ACTION_IF ($wizard(2) < min_arcane_2) THEN BEGIN OUTER_SET ~min_arcane_2~ = $wizard(2) END
+    ACTION_IF ($wizard(3) < min_arcane_3) THEN BEGIN OUTER_SET ~min_arcane_3~ = $wizard(3) END
+    ACTION_IF ($wizard(4) < min_arcane_4) THEN BEGIN OUTER_SET ~min_arcane_4~ = $wizard(4) END
+    ACTION_IF ($wizard(5) < min_arcane_5) THEN BEGIN OUTER_SET ~min_arcane_5~ = $wizard(5) END
+    ACTION_IF ($wizard(6) < min_arcane_6) THEN BEGIN OUTER_SET ~min_arcane_6~ = $wizard(6) END
+    ACTION_IF ($wizard(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $wizard(7) END
+    ACTION_IF ($wizard(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $wizard(8) END
+    ACTION_IF ($wizard(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $wizard(9) END
+    ACTION_IF ($wizard(~A~) < min_arcane_A) THEN BEGIN OUTER_SET ~min_arcane_A~ = $wizard(A) END
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLDRU"
+        RET_ARRAY
+            druid = levels
+    END
+    ACTION_IF ($druid(1) < min_nature_1) THEN BEGIN OUTER_SET ~min_nature_1~ = $druid(1) END
+    ACTION_IF ($druid(2) < min_nature_2) THEN BEGIN OUTER_SET ~min_nature_2~ = $druid(2) END
+    ACTION_IF ($druid(3) < min_nature_3) THEN BEGIN OUTER_SET ~min_nature_3~ = $druid(3) END
+    ACTION_IF ($druid(4) < min_nature_4) THEN BEGIN OUTER_SET ~min_nature_4~ = $druid(4) END
+    ACTION_IF ($druid(5) < min_nature_5) THEN BEGIN OUTER_SET ~min_nature_5~ = $druid(5) END
+    ACTION_IF ($druid(6) < min_nature_6) THEN BEGIN OUTER_SET ~min_nature_6~ = $druid(6) END
+    ACTION_IF ($druid(7) < min_nature_7) THEN BEGIN OUTER_SET ~min_nature_7~ = $druid(7) END
+    ACTION_IF ($druid(~Q~) < min_nature_Q) THEN BEGIN OUTER_SET ~min_nature_Q~ = $druid(~Q~) END
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLSHM"
+        RET_ARRAY
+            shaman = levels
+    END
+    ACTION_IF ($shaman(1) < min_nature_1) THEN BEGIN OUTER_SET ~min_nature_1~ = $shaman(1) END
+    ACTION_IF ($shaman(2) < min_nature_2) THEN BEGIN OUTER_SET ~min_nature_2~ = $shaman(2) END
+    ACTION_IF ($shaman(3) < min_nature_3) THEN BEGIN OUTER_SET ~min_nature_3~ = $shaman(3) END
+    ACTION_IF ($shaman(4) < min_nature_4) THEN BEGIN OUTER_SET ~min_nature_4~ = $shaman(4) END
+    ACTION_IF ($shaman(5) < min_nature_5) THEN BEGIN OUTER_SET ~min_nature_5~ = $shaman(5) END
+    ACTION_IF ($shaman(6) < min_nature_6) THEN BEGIN OUTER_SET ~min_nature_6~ = $shaman(6) END
+    ACTION_IF ($shaman(7) < min_nature_7) THEN BEGIN OUTER_SET ~min_nature_7~ = $shaman(7) END
+    ACTION_IF ($shaman(~Q~) < min_nature_Q) THEN BEGIN OUTER_SET ~min_nature_Q~ = $shaman(~Q~) END
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLRAN"
+        RET_ARRAY
+            ranger = levels
+    END
+    ACTION_IF ($ranger(1) < min_nature_1) THEN BEGIN OUTER_SET ~min_nature_1~ = $ranger(1) END
+    ACTION_IF ($ranger(2) < min_nature_2) THEN BEGIN OUTER_SET ~min_nature_2~ = $ranger(2) END
+    ACTION_IF ($ranger(3) < min_nature_3) THEN BEGIN OUTER_SET ~min_nature_3~ = $ranger(3) END
+    ACTION_IF ($ranger(4) < min_nature_4) THEN BEGIN OUTER_SET ~min_nature_4~ = $ranger(4) END
+    ACTION_IF ($ranger(5) < min_nature_5) THEN BEGIN OUTER_SET ~min_nature_5~ = $ranger(5) END
+    ACTION_IF ($ranger(6) < min_nature_6) THEN BEGIN OUTER_SET ~min_nature_6~ = $ranger(6) END
+    ACTION_IF ($ranger(7) < min_nature_7) THEN BEGIN OUTER_SET ~min_nature_7~ = $ranger(7) END
+    ACTION_IF ($ranger(~Q~) < min_nature_Q) THEN BEGIN OUTER_SET ~min_nature_Q~ = $ranger(~Q~) END
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLPRS"
+        RET_ARRAY
+            cleric = levels
+    END
+    ACTION_IF ($cleric(1) < min_divine_1) THEN BEGIN OUTER_SET ~min_divine_1~ = $cleric(1) END
+    ACTION_IF ($cleric(2) < min_divine_2) THEN BEGIN OUTER_SET ~min_divine_2~ = $cleric(2) END
+    ACTION_IF ($cleric(3) < min_divine_3) THEN BEGIN OUTER_SET ~min_divine_3~ = $cleric(3) END
+    ACTION_IF ($cleric(4) < min_divine_4) THEN BEGIN OUTER_SET ~min_divine_4~ = $cleric(4) END
+    ACTION_IF ($cleric(5) < min_divine_5) THEN BEGIN OUTER_SET ~min_divine_5~ = $cleric(5) END
+    ACTION_IF ($cleric(6) < min_divine_6) THEN BEGIN OUTER_SET ~min_divine_6~ = $cleric(6) END
+    ACTION_IF ($cleric(7) < min_divine_7) THEN BEGIN OUTER_SET ~min_divine_7~ = $cleric(7) END
+    ACTION_IF ($cleric(~A~) < min_divine_Q) THEN BEGIN OUTER_SET ~min_divine_Q~ = $cleric(~Q~) END
+
+    LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        STR_VAR
+            ~2DA~ = "MXSPLPRS"
+        RET_ARRAY
+            paladin = levels
+    END
+    ACTION_IF ($paladin(1) < min_divine_1) THEN BEGIN OUTER_SET ~min_divine_1~ = $paladin(1) END
+    ACTION_IF ($paladin(2) < min_divine_2) THEN BEGIN OUTER_SET ~min_divine_2~ = $paladin(2) END
+    ACTION_IF ($paladin(3) < min_divine_3) THEN BEGIN OUTER_SET ~min_divine_3~ = $paladin(3) END
+    ACTION_IF ($paladin(4) < min_divine_4) THEN BEGIN OUTER_SET ~min_divine_4~ = $paladin(4) END
+    ACTION_IF ($paladin(5) < min_divine_5) THEN BEGIN OUTER_SET ~min_divine_5~ = $paladin(5) END
+    ACTION_IF ($paladin(6) < min_divine_6) THEN BEGIN OUTER_SET ~min_divine_6~ = $paladin(6) END
+    ACTION_IF ($paladin(7) < min_divine_7) THEN BEGIN OUTER_SET ~min_divine_7~ = $paladin(7) END
+    ACTION_IF ($paladin(~Q~) < min_divine_Q) THEN BEGIN OUTER_SET ~min_divine_Q~ = $paladin(~Q~) END
+
+
+
+    //emit results
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY ~class_levels~
+    BEGIN
+        ~cleric~, $cleric(1), $cleric(2), $cleric(3), $cleric(4), $cleric(5), $cleric(6), $cleric(7), $cleric(8), $cleric(9), $cleric("A"), $cleric("Q") => "cleric"
+        ~paladin~, $paladin(1), $paladin(2), $paladin(3), $paladin(4), $paladin(5), $paladin(6), $paladin(7), $paladin(8), $paladin(9), $paladin("A"), $paladin("Q") => "paladin"
+
+        ~druid~, $druid(1), $druid(2), $druid(3), $druid(4), $druid(5), $druid(6), $druid(7), $druid(8), $druid(9), $druid("A"), $druid("Q") => "druid"
+        ~shaman~, $shaman(1), $shaman(2), $shaman(3), $shaman(4), $shaman(5), $shaman(6), $shaman(7), $shaman(8), $shaman(9), $shaman("A"), $shaman("Q") => "shaman"
+        ~ranger~, $ranger(1), $ranger(2), $ranger(3), $ranger(4), $ranger(5), $ranger(6), $ranger(7), $ranger(8), $ranger(9), $ranger("A"), $ranger("Q") => "ranger"
+
+        ~wizard~, $wizard(1), $wizard(2), $wizard(3), $wizard(4), $wizard(5), $wizard(6), $wizard(7), $wizard(8), $wizard(9), $wizard("A"), $wizard("Q") => "wizard"
+        ~sorcerer~, $sorcerer(1), $sorcerer(2), $sorcerer(3), $sorcerer(4), $sorcerer(5), $sorcerer(6), $sorcerer(7), $sorcerer(8), $sorcerer(9), $sorcerer("A"), $sorcerer("Q") => "sorcerer"
+        ~bard~, $bard(1), $bard(2), $bard(3), $bard(4), $bard(5), $bard(6), $bard(7), $bard(8), $bard(9), $bard("A"), $bard("Q") => "bard"
+
+    END
+
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY ~tradition_levels~
+    BEGIN
+        ~Arcane~, min_arcane_1, min_arcane_2, min_arcane_3, min_arcane_4, min_arcane_5, min_arcane_6, min_arcane_7, min_arcane_8, min_arcane_9, min_arcane_A, 9999 => ~Arcane~
+        ~Divine~, min_divine_1, min_divine_2, min_divine_3, min_divine_4, min_divine_5, min_divine_6, min_divine_7, min_divine_8, min_divine_9, 9999, min_divine_Q => ~Divine~
+        ~Nature~, min_nature_1, min_nature_2, min_nature_3, min_nature_4, min_nature_5, min_nature_6, min_nature_7, min_nature_8, min_nature_9, 9999, min_nature_Q => ~Nature~
+    END
+
+END
