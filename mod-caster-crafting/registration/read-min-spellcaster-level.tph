@@ -200,16 +200,16 @@ BEGIN
     //emit results
     ACTION_DEFINE_ASSOCIATIVE_ARRAY ~class_levels~
     BEGIN
-        ~cleric~, $cleric(1), $cleric(2), $cleric(3), $cleric(4), $cleric(5), $cleric(6), $cleric(7), $cleric(8), $cleric(9), $cleric("A"), $cleric("Q") => "cleric"
-        ~paladin~, $paladin(1), $paladin(2), $paladin(3), $paladin(4), $paladin(5), $paladin(6), $paladin(7), $paladin(8), $paladin(9), $paladin("A"), $paladin("Q") => "paladin"
+        ~cleric~, $cleric(1), $cleric(2), $cleric(3), $cleric(4), $cleric(5), $cleric(6), $cleric(7), 9999, 9999, 9999, $cleric("Q") => "cleric"
+        ~paladin~, $paladin(1), $paladin(2), $paladin(3), $paladin(4), $paladin(5), $paladin(6), $paladin(7), 9999, 9999, 9999, $paladin("Q") => "paladin"
 
-        ~druid~, $druid(1), $druid(2), $druid(3), $druid(4), $druid(5), $druid(6), $druid(7), $druid(8), $druid(9), $druid("A"), $druid("Q") => "druid"
-        ~shaman~, $shaman(1), $shaman(2), $shaman(3), $shaman(4), $shaman(5), $shaman(6), $shaman(7), $shaman(8), $shaman(9), $shaman("A"), $shaman("Q") => "shaman"
-        ~ranger~, $ranger(1), $ranger(2), $ranger(3), $ranger(4), $ranger(5), $ranger(6), $ranger(7), $ranger(8), $ranger(9), $ranger("A"), $ranger("Q") => "ranger"
+        ~druid~, $druid(1), $druid(2), $druid(3), $druid(4), $druid(5), $druid(6), $druid(7), 9999, 9999, 9999, $druid("Q") => "druid"
+        ~shaman~, $shaman(1), $shaman(2), $shaman(3), $shaman(4), $shaman(5), $shaman(6), $shaman(7), 9999, 9999, 9999, $shaman("Q") => "shaman"
+        ~ranger~, $ranger(1), $ranger(2), $ranger(3), $ranger(4), $ranger(5), $ranger(6), $ranger(7), 9999, 9999, 9999, $ranger("Q") => "ranger"
 
-        ~wizard~, $wizard(1), $wizard(2), $wizard(3), $wizard(4), $wizard(5), $wizard(6), $wizard(7), $wizard(8), $wizard(9), $wizard("A"), $wizard("Q") => "wizard"
-        ~sorcerer~, $sorcerer(1), $sorcerer(2), $sorcerer(3), $sorcerer(4), $sorcerer(5), $sorcerer(6), $sorcerer(7), $sorcerer(8), $sorcerer(9), $sorcerer("A"), $sorcerer("Q") => "sorcerer"
-        ~bard~, $bard(1), $bard(2), $bard(3), $bard(4), $bard(5), $bard(6), $bard(7), $bard(8), $bard(9), $bard("A"), $bard("Q") => "bard"
+        ~wizard~, $wizard(1), $wizard(2), $wizard(3), $wizard(4), $wizard(5), $wizard(6), $wizard(7), $wizard(8), $wizard(9), $wizard("A"), 9999 => "wizard"
+        ~sorcerer~, $sorcerer(1), $sorcerer(2), $sorcerer(3), $sorcerer(4), $sorcerer(5), $sorcerer(6), $sorcerer(7), $sorcerer(8), $sorcerer(9), $sorcerer("A"), 9999=> "sorcerer"
+        ~bard~, $bard(1), $bard(2), $bard(3), $bard(4), $bard(5), $bard(6), $bard(7), $bard(8), $bard(9), $bard("A"), 9999 => "bard"
 
     END
 
