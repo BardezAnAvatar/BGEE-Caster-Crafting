@@ -28,7 +28,7 @@ BEGIN
             READ_2DA_ENTRY_FORMER spell_progression i (1 + current_circle) count
             PATCH_IF (count > 0) THEN
             BEGIN
-                current_circle++
+                SET current_circle = (current_circle + 1)
                 SET $level(~%current_circle%~) = spell_level
             END
         END
