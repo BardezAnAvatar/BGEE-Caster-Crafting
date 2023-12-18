@@ -37,6 +37,9 @@ BEGIN
 
     >>>>>>>>
 
+    INCLUDE ~./%MOD_FOLDER%/registration/read-min-spellcaster-level.tph~
+
+
     //do not re-process
     OUTER_SET ~bz_caster_crafting_preprocessing~ = 1
 END
