@@ -81,8 +81,6 @@ BEGIN
     OUTER_SET ~min_divine_Q~ = 9999
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
-        INT_VAR
-            max_col = 10
         STR_VAR
             ~2DA~ = "MXSPLBRD"
         RET_ARRAY
