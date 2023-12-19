@@ -2,91 +2,121 @@
 *   Gatekeep the caster levels so as to declutter the menu   *
 *************************************************************/
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane1_bard~       = 1
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane1_mage~       = 0
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane1_sorcerer~   = 0
+//NOTE: I'm blindly assigning `9999` as the "you don't get to cast this level" value
+ACTION_PHP_EACH ~bz_min_caster_levels~
+    AS ~keys~ => ~value~
+BEGIN
+    ACTION_MATCH ~%keys_1%~
+    WITH
+        ~mage~ ~bard~ ~sorcerer~
+        BEGIN
+            OUTER_SET ~gatekeep_tradition~ = ~arcane~
+        END
+        ~cleric~ ~paladin~ ~druid~ ~ranger~ ~shaman~
+        BEGIN
+            OUTER_SET ~gatekeep_tradition~ = ~divine~
+        END
+        DEFAULT
+    END
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane2_bard~       = 3
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane2_mage~       = 2
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane2_sorcerer~   = 3
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%1_%keys_0%~ = ~%keys_1%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%2_%keys_0%~ = ~%keys_2%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%3_%keys_0%~ = ~%keys_3%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%4_%keys_0%~ = ~%keys_4%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%5_%keys_0%~ = ~%keys_5%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%6_%keys_0%~ = ~%keys_6%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%7_%keys_0%~ = ~%keys_7%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%8_%keys_0%~ = ~%keys_8%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%9_%keys_0%~ = ~%keys_9%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%A_%keys_0%~ = ~%keys_10%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%Q_%keys_0%~ = ~%keys_11%~
+END
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane3_bard~       = 6
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane3_mage~       = 4
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane3_sorcerer~   = 5
+PRINT ~bz_gatekeep_levelgt_circle_arcane1_bard: %bz_gatekeep_levelgt_circle_arcane1_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane1_mage: %bz_gatekeep_levelgt_circle_arcane1_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane1_sorcerer: %bz_gatekeep_levelgt_circle_arcane1_sorcerer%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane4_bard~       = 9
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane4_mage~       = 6
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane4_sorcerer~   = 7
+PRINT ~bz_gatekeep_levelgt_circle_arcane2_bard: %bz_gatekeep_levelgt_circle_arcane2_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane2_mage: %bz_gatekeep_levelgt_circle_arcane2_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane2_sorcerer: %bz_gatekeep_levelgt_circle_arcane2_sorcerer%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane5_bard~       = 12
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane5_mage~       = 8
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane5_sorcerer~   = 9
+PRINT ~bz_gatekeep_levelgt_circle_arcane3_bard: %bz_gatekeep_levelgt_circle_arcane3_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane3_mage: %bz_gatekeep_levelgt_circle_arcane3_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane3_sorcerer: %bz_gatekeep_levelgt_circle_arcane3_sorcerer%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane6_bard~       = 15
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane6_mage~       = 11
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane6_sorcerer~   = 11
+PRINT ~bz_gatekeep_levelgt_circle_arcane4_bard: %bz_gatekeep_levelgt_circle_arcane4_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane4_mage: %bz_gatekeep_levelgt_circle_arcane4_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane4_sorcerer: %bz_gatekeep_levelgt_circle_arcane4_sorcerer%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane7_bard~       = 9999    //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane7_mage~       = 13
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane7_sorcerer~   = 13
+PRINT ~bz_gatekeep_levelgt_circle_arcane5_bard: %bz_gatekeep_levelgt_circle_arcane5_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane5_mage: %bz_gatekeep_levelgt_circle_arcane5_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane5_sorcerer: %bz_gatekeep_levelgt_circle_arcane5_sorcerer%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane8_bard~       = 9999    //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane8_mage~       = 15
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane8_sorcerer~   = 15
+PRINT ~bz_gatekeep_levelgt_circle_arcane6_bard: %bz_gatekeep_levelgt_circle_arcane6_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane6_mage: %bz_gatekeep_levelgt_circle_arcane6_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane6_sorcerer: %bz_gatekeep_levelgt_circle_arcane6_sorcerer%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane9_bard~       = 9999    //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane9_mage~       = 17
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcane9_sorcerer~   = 17
+PRINT ~bz_gatekeep_levelgt_circle_arcane7_bard: %bz_gatekeep_levelgt_circle_arcane7_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane7_mage: %bz_gatekeep_levelgt_circle_arcane7_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane7_sorcerer: %bz_gatekeep_levelgt_circle_arcane7_sorcerer%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcaneA_bard~       = 9999    //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcaneA_mage~       = 17
-OUTER_SET ~bz_gatekeep_levelgt_circle_arcaneA_sorcerer~   = 17
+PRINT ~bz_gatekeep_levelgt_circle_arcane8_bard: %bz_gatekeep_levelgt_circle_arcane8_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane8_mage: %bz_gatekeep_levelgt_circle_arcane8_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane8_sorcerer: %bz_gatekeep_levelgt_circle_arcane8_sorcerer%~
+
+PRINT ~bz_gatekeep_levelgt_circle_arcane9_bard: %bz_gatekeep_levelgt_circle_arcane9_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane9_mage: %bz_gatekeep_levelgt_circle_arcane9_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcane9_sorcerer: %bz_gatekeep_levelgt_circle_arcane9_sorcerer%~
+
+PRINT ~bz_gatekeep_levelgt_circle_arcaneA_bard: %bz_gatekeep_levelgt_circle_arcaneA_bard%~
+PRINT ~bz_gatekeep_levelgt_circle_arcaneA_mage: %bz_gatekeep_levelgt_circle_arcaneA_mage%~
+PRINT ~bz_gatekeep_levelgt_circle_arcaneA_sorcerer: %bz_gatekeep_levelgt_circle_arcaneA_sorcerer%~
 
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine1_cleric~     = 0
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine1_druid~      = 0
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine1_paladin~    = 8
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine1_ranger~     = 7
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine1_shaman~     = 0
+PRINT ~bz_gatekeep_levelgt_circle_divine1_cleric: %bz_gatekeep_levelgt_circle_divine1_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divine1_druid: %bz_gatekeep_levelgt_circle_divine1_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divine1_paladin: %bz_gatekeep_levelgt_circle_divine1_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divine1_ranger: %bz_gatekeep_levelgt_circle_divine1_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divine1_shaman: %bz_gatekeep_levelgt_circle_divine1_shaman%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine2_cleric~     = 2
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine2_druid~      = 2
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine2_paladin~    = 10
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine2_ranger~     = 9
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine2_shaman~     = 3
+PRINT ~bz_gatekeep_levelgt_circle_divine2_cleric: %bz_gatekeep_levelgt_circle_divine2_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divine2_druid: %bz_gatekeep_levelgt_circle_divine2_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divine2_paladin: %bz_gatekeep_levelgt_circle_divine2_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divine2_ranger: %bz_gatekeep_levelgt_circle_divine2_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divine2_shaman: %bz_gatekeep_levelgt_circle_divine2_shaman%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine3_cleric~     = 4
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine3_druid~      = 4
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine3_paladin~    = 12
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine3_ranger~     = 11
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine3_shaman~     = 5
+PRINT ~bz_gatekeep_levelgt_circle_divine3_cleric: %bz_gatekeep_levelgt_circle_divine3_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divine3_druid: %bz_gatekeep_levelgt_circle_divine3_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divine3_paladin: %bz_gatekeep_levelgt_circle_divine3_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divine3_ranger: %bz_gatekeep_levelgt_circle_divine3_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divine3_shaman: %bz_gatekeep_levelgt_circle_divine3_shaman%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine4_cleric~     = 6
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine4_druid~      = 6
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine4_paladin~    = 14
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine4_ranger~     = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine4_shaman~     = 7
+PRINT ~bz_gatekeep_levelgt_circle_divine4_cleric: %bz_gatekeep_levelgt_circle_divine4_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divine4_druid: %bz_gatekeep_levelgt_circle_divine4_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divine4_paladin: %bz_gatekeep_levelgt_circle_divine4_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divine4_ranger: %bz_gatekeep_levelgt_circle_divine4_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divine4_shaman: %bz_gatekeep_levelgt_circle_divine4_shaman%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine5_cleric~     = 8
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine5_druid~      = 8
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine5_paladin~    = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine5_ranger~     = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine5_shaman~     = 9
+PRINT ~bz_gatekeep_levelgt_circle_divine5_cleric: %bz_gatekeep_levelgt_circle_divine5_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divine5_druid: %bz_gatekeep_levelgt_circle_divine5_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divine5_paladin: %bz_gatekeep_levelgt_circle_divine5_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divine5_ranger: %bz_gatekeep_levelgt_circle_divine5_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divine5_shaman: %bz_gatekeep_levelgt_circle_divine5_shaman%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine6_cleric~     = 10
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine6_druid~      = 10
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine6_paladin~    = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine6_ranger~     = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine6_shaman~     = 11
+PRINT ~bz_gatekeep_levelgt_circle_divine6_cleric: %bz_gatekeep_levelgt_circle_divine6_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divine6_druid: %bz_gatekeep_levelgt_circle_divine6_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divine6_paladin: %bz_gatekeep_levelgt_circle_divine6_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divine6_ranger: %bz_gatekeep_levelgt_circle_divine6_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divine6_shaman: %bz_gatekeep_levelgt_circle_divine6_shaman%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine7_cleric~     = 13
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine7_druid~      = 13
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine7_paladin~    = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine7_ranger~     = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divine7_shaman~     = 13
+PRINT ~bz_gatekeep_levelgt_circle_divine7_cleric: %bz_gatekeep_levelgt_circle_divine7_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divine7_druid: %bz_gatekeep_levelgt_circle_divine7_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divine7_paladin: %bz_gatekeep_levelgt_circle_divine7_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divine7_ranger: %bz_gatekeep_levelgt_circle_divine7_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divine7_shaman: %bz_gatekeep_levelgt_circle_divine7_shaman%~
 
-OUTER_SET ~bz_gatekeep_levelgt_circle_divineQ_cleric~     = 13
-OUTER_SET ~bz_gatekeep_levelgt_circle_divineQ_druid~      = 13
-OUTER_SET ~bz_gatekeep_levelgt_circle_divineQ_paladin~    = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divineQ_ranger~     = 9999  //invalid
-OUTER_SET ~bz_gatekeep_levelgt_circle_divineQ_shaman~     = 13
+PRINT ~bz_gatekeep_levelgt_circle_divineQ_cleric: %bz_gatekeep_levelgt_circle_divineQ_cleric%~
+PRINT ~bz_gatekeep_levelgt_circle_divineQ_druid: %bz_gatekeep_levelgt_circle_divineQ_druid%~
+PRINT ~bz_gatekeep_levelgt_circle_divineQ_paladin: %bz_gatekeep_levelgt_circle_divineQ_paladin%~
+PRINT ~bz_gatekeep_levelgt_circle_divineQ_ranger: %bz_gatekeep_levelgt_circle_divineQ_ranger%~
+PRINT ~bz_gatekeep_levelgt_circle_divineQ_shaman: %bz_gatekeep_levelgt_circle_divineQ_shaman%~
