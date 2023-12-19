@@ -118,17 +118,17 @@ BEGIN
         STR_VAR
             ~2DA~ = "MXSPLWIZ"
         RET_ARRAY
-            wizard = levels
+            mage = levels
     END
-    ACTION_IF ($wizard(1) < min_arcane_1) THEN BEGIN OUTER_SET ~min_arcane_1~ = $wizard(1) END
-    ACTION_IF ($wizard(2) < min_arcane_2) THEN BEGIN OUTER_SET ~min_arcane_2~ = $wizard(2) END
-    ACTION_IF ($wizard(3) < min_arcane_3) THEN BEGIN OUTER_SET ~min_arcane_3~ = $wizard(3) END
-    ACTION_IF ($wizard(4) < min_arcane_4) THEN BEGIN OUTER_SET ~min_arcane_4~ = $wizard(4) END
-    ACTION_IF ($wizard(5) < min_arcane_5) THEN BEGIN OUTER_SET ~min_arcane_5~ = $wizard(5) END
-    ACTION_IF ($wizard(6) < min_arcane_6) THEN BEGIN OUTER_SET ~min_arcane_6~ = $wizard(6) END
-    ACTION_IF ($wizard(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $wizard(7) END
-    ACTION_IF ($wizard(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $wizard(8) END
-    ACTION_IF ($wizard(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $wizard(9) END
+    ACTION_IF ($mage(1) < min_arcane_1) THEN BEGIN OUTER_SET ~min_arcane_1~ = $mage(1) END
+    ACTION_IF ($mage(2) < min_arcane_2) THEN BEGIN OUTER_SET ~min_arcane_2~ = $mage(2) END
+    ACTION_IF ($mage(3) < min_arcane_3) THEN BEGIN OUTER_SET ~min_arcane_3~ = $mage(3) END
+    ACTION_IF ($mage(4) < min_arcane_4) THEN BEGIN OUTER_SET ~min_arcane_4~ = $mage(4) END
+    ACTION_IF ($mage(5) < min_arcane_5) THEN BEGIN OUTER_SET ~min_arcane_5~ = $mage(5) END
+    ACTION_IF ($mage(6) < min_arcane_6) THEN BEGIN OUTER_SET ~min_arcane_6~ = $mage(6) END
+    ACTION_IF ($mage(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $mage(7) END
+    ACTION_IF ($mage(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $mage(8) END
+    ACTION_IF ($mage(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $mage(9) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -212,7 +212,7 @@ BEGIN
         ~shaman~, ~%shaman_1%~, ~%shaman_2%~, ~%shaman_3%~, ~%shaman_4%~, ~%shaman_5%~, ~%shaman_6%~, ~%shaman_7%~, 9999, 9999, 9999, ~%shaman_7%~ => "shaman"
         ~ranger~, ~%ranger_1%~, ~%ranger_2%~, ~%ranger_3%~, ~%ranger_4%~, ~%ranger_5%~, ~%ranger_6%~, ~%ranger_7%~, 9999, 9999, 9999, ~%ranger_7%~ => "ranger"
 
-        ~wizard~, ~%wizard_1%~, ~%wizard_2%~, ~%wizard_3%~, ~%wizard_4%~, ~%wizard_5%~, ~%wizard_6%~, ~%wizard_7%~, ~%wizard_8%~, ~%wizard_9%~, ~%wizard_9%~, 9999 => "wizard"
+        ~mage~, ~%mage_1%~, ~%mage_2%~, ~%mage_3%~, ~%mage_4%~, ~%mage_5%~, ~%mage_6%~, ~%mage_7%~, ~%mage_8%~, ~%mage_9%~, ~%mage_9%~, 9999 => "mage"
         ~sorcerer~, ~%sorcerer_1%~, ~%sorcerer_2%~, ~%sorcerer_3%~, ~%sorcerer_4%~, ~%sorcerer_5%~, ~%sorcerer_6%~, ~%sorcerer_7%~, ~%sorcerer_8%~, ~%sorcerer_9%~, ~%sorcerer_9%~, 9999=> "sorcerer"
         ~bard~, ~%bard_1%~, ~%bard_2%~, ~%bard_3%~, ~%bard_4%~, ~%bard_5%~, ~%bard_6%~, ~%bard_7%~, ~%bard_8%~, ~%bard_9%~, ~%bard_9%~, 9999 => "bard"
 
