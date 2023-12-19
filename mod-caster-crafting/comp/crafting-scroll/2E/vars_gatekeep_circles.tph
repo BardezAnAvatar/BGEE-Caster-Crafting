@@ -6,15 +6,16 @@
 ACTION_PHP_EACH ~bz_min_caster_levels~
     AS ~keys~ => ~value~
 BEGIN
-    ACTION_MATCH ~%keys_1%~
+
+    ACTION_MATCH ~%keys_0%~
     WITH
         ~mage~ ~bard~ ~sorcerer~
         BEGIN
-            OUTER_SET ~gatekeep_tradition~ = ~arcane~
+            OUTER_TEXT_SPRINT ~gatekeep_tradition~ ~arcane~
         END
         ~cleric~ ~paladin~ ~druid~ ~ranger~ ~shaman~
         BEGIN
-            OUTER_SET ~gatekeep_tradition~ = ~divine~
+            OUTER_TEXT_SPRINT ~gatekeep_tradition~ ~divine~
         END
         DEFAULT
     END
