@@ -1,6 +1,6 @@
 # Caster Crafting
 
-Version: 0.6.2
+Version: 0.6.3
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
@@ -19,18 +19,19 @@ I am using the `BZ` prefix for my items. It is registered at Black Wyrm Lair: ht
 
 
 ## Change Log
-| Item Name                                                 | Version |
-| --------------------------------------------------------- | ------- |
-| Initial; copy spells from party members' spellbooks       |  0.1.0  |
-| Generate ITMs for missing spell scrolls                   |  0.2.0  |
-| Creation of spell scrolls                                 |  0.3.0  |
-| Several fixes to behavior regression                      |  0.3.1  |
-| Ran installation over BG1:EE, BG2:EE and IWD:EE; fixes    |  0.3.2  |
-| Creation of base game potions                             |  0.4.0  |
-| Creation of "missing" potions derived from spells         |  0.5.0  |
-| Correcting the registry/detection of IWD-ification assets |  0.6.0  |
-| Expanding potion brewing into BG2:EE and IWD:EE           |  0.6.1  |
-| Bugfix: Gold was not checked before crafting scrolls      |  0.6.2  |
+| Item Name                                                   | Version |
+| ----------------------------------------------------------- | ------- |
+| Initial; copy spells from party members' spellbooks         |  0.1.0  |
+| Generate ITMs for missing spell scrolls                     |  0.2.0  |
+| Creation of spell scrolls                                   |  0.3.0  |
+| Several fixes to behavior regression                        |  0.3.1  |
+| Ran installation over BG1:EE, BG2:EE and IWD:EE; fixes      |  0.3.2  |
+| Creation of base game potions                               |  0.4.0  |
+| Creation of "missing" potions derived from spells           |  0.5.0  |
+| Correcting the registry/detection of IWD-ification assets   |  0.6.0  |
+| Expanding potion brewing into BG2:EE and IWD:EE             |  0.6.1  |
+| Bugfix: Gold was not checked before crafting scrolls        |  0.6.2  |
+| Compatibility: check 2DA for minimum class level for spells |  0.6.3  |
 
 
 ## Components
