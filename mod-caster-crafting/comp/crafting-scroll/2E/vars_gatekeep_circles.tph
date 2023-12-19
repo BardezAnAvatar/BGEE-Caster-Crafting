@@ -20,17 +20,17 @@ BEGIN
         DEFAULT
     END
 
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%1_%keys_0%~ = ~%keys_1%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%2_%keys_0%~ = ~%keys_2%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%3_%keys_0%~ = ~%keys_3%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%4_%keys_0%~ = ~%keys_4%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%5_%keys_0%~ = ~%keys_5%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%6_%keys_0%~ = ~%keys_6%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%7_%keys_0%~ = ~%keys_7%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%8_%keys_0%~ = ~%keys_8%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%9_%keys_0%~ = ~%keys_9%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%A_%keys_0%~ = ~%keys_10%~
-    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%Q_%keys_0%~ = ~%keys_11%~
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%1_%keys_0%~ = (~%keys_1%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%2_%keys_0%~ = (~%keys_2%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%3_%keys_0%~ = (~%keys_3%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%4_%keys_0%~ = (~%keys_4%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%5_%keys_0%~ = (~%keys_5%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%6_%keys_0%~ = (~%keys_6%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%7_%keys_0%~ = (~%keys_7%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%8_%keys_0%~ = (~%keys_8%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%9_%keys_0%~ = (~%keys_9%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%A_%keys_0%~ = (~%keys_10%~ - 1)
+    OUTER_SET ~bz_gatekeep_levelgt_circle_%gatekeep_tradition%Q_%keys_0%~ = (~%keys_11%~ - 1)
 END
 
 PRINT ~bz_gatekeep_levelgt_circle_arcane1_bard: %bz_gatekeep_levelgt_circle_arcane1_bard%~
