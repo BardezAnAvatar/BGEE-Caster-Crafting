@@ -19,7 +19,9 @@ BEGIN
     OUTER_SET $levels("9") = 9999
     COPY_EXISTING - ~%2DA%.2DA~ ~bogus/%2DA%.2DA~
     //PATCHES
-        READ_2DA_ENTRIES_NOW spell_progression 4
+        COUNT_2DA_COLS num_columns //how many levels does the class support?
+        //PATCH_PRINT ~2DA: %2DA%; num_columns: %num_columns%~
+        READ_2DA_ENTRIES_NOW spell_progression num_columns
         SET current_circle = 0
         FOR (i = 0; i < spell_progression; ++i)
         BEGIN
@@ -186,7 +188,7 @@ BEGIN
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
-            ~2DA~ = "MXSPLPRS"
+            ~2DA~ = "MXSPLPAL"
         RET_ARRAY
             paladin = levels
     END
