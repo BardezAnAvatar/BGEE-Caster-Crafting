@@ -65,8 +65,7 @@ BEGIN
 
         //use the RESREF to check for memorized spell
         OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
-HaveSpellRES("%spell_resref%")
-PartyGoldGT(%gold_minus_one%)~
+HaveSpellRES("%spell_resref%")~
 
         //use the RESREF to check for missing memorized spell
         OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~%condition_invalid_spells%
@@ -76,7 +75,8 @@ PartyGoldGT(%gold_minus_one%)~
 
 
     OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %level_minus_one%)
-%condition_valid%~
+%condition_valid%
+PartyGoldGT(%gold_minus_one%)~
 
     OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~PartyGoldLT(%cost_gold%)~
     OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~PartyGoldGT(%gold_minus_one%)
