@@ -15,6 +15,7 @@ INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 DEFINE_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
     INT_VAR
         ~cost_gold~ = "-1"
+        ~minimum_level~ = ~-1~
     STR_VAR
         ~recipe~ = null
         ~potion_name~ = null
@@ -47,7 +48,7 @@ BEGIN
     OUTER_TEXT_SPRINT ~condition_valid~ ~~
     OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~~
     OUTER_SET gold_minus_one = (cost_gold - 1)
-    OUTER_SET level_minus_one = (rec_2 - 1)
+    OUTER_SET level_minus_one = (minimum_level - 1)
 
     ACTION_PHP_EACH ~spells_array~
         AS ~spell_keys~ => ~_v~

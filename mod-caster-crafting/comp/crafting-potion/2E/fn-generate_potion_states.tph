@@ -79,6 +79,7 @@ APPEND ~BZMSCAK~
                                 LAUNCH_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
                                     INT_VAR
                                         ~cost_gold~ = ~%rec_6%~
+                                        ~minimum_level~ = ~%rec_2%~
                                     STR_VAR
                                         ~recipe~ = ~%rec_3%~     // string with space separator
                                         ~potion_name~ = ~%potion_identified_name%~
