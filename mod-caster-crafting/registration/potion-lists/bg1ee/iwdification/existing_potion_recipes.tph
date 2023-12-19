@@ -26,11 +26,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~POTN_STR_24-2~, ~POTN07~, ~16~, ~WIZARD_IRON_BODY~,                    ~1~, ~0~, ~24~    => ~POTN07~   //Potion of Storm Giant Strength (24);    `Iron Body` Wizard spell
 
-        ~POTN19-1~,      ~POTN19~, ~0~,  ~WIZARD_CATS_GRACE~,                   ~1~, ~0~,  ~8~    => ~POTN19~   //Potion of Agility (18);                 `Cat's Grace` Wizard spell
+        ~POTN19-1~,      ~POTN19~,  ~3~, ~WIZARD_CATS_GRACE~,                   ~1~, ~0~,  ~8~    => ~POTN19~   //Potion of Agility (18);                 `Cat's Grace` Wizard spell
 
-        ~POTN28-1~,      ~POTN28~, ~0~,  ~WIZARD_TROLLISH_FORTITUDE~,           ~1~, ~0~,  ~8~    => ~POTN28~   //Potion of Fortitude (18);               `Trollish Fortitude` Wizard spell
+        ~POTN28-1~,      ~POTN28~, ~12~, ~WIZARD_TROLLISH_FORTITUDE~,           ~1~, ~0~,  ~8~    => ~POTN28~   //Potion of Fortitude (18);               `Trollish Fortitude` Wizard spell
 
         ~POTN34-3~,      ~POTN34~, ~20~, ~CLERIC_GREATER_SHIELD_OF_LATHANDER~,  ~2~, ~0~, ~24~    => ~POTN34~   //Potion of Magic Protection;             `Greater Shield of Lathander` Priest spell
 
-        ~POTN42-1~,      ~POTN42~, ~0~,  ~WIZARD_TROLLISH_FORTITUDE~,           ~3~, ~0~,  ~8~    => ~POTN42~   //Potion of Regeneration;                 `Trollish Fortitude` Wizard spell
+        ~POTN42-1~,      ~POTN42~, ~12~, ~WIZARD_TROLLISH_FORTITUDE~,           ~3~, ~0~,  ~8~    => ~POTN42~   //Potion of Regeneration;                 `Trollish Fortitude` Wizard spell
     END
