@@ -16,8 +16,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CAMOFLAUGE~,                               ~BZ#O301~, ~MEPR156~,  ~1~,  ~1~ => "Camoflauge"
 
         ~WIND_SHOTS~,                               ~BZ#O605~, ~MEWI252~,  ~3~,  ~1~ => "Wind Shots"
+
         ~DISPLACEMENT~,                             ~BZ#O805~, ~MEWI353~,  ~5~,  ~1~ => ~Displacement~
         ~LEGEND_LORE~,                              ~BZ#O905~, ~MEWI356~,  ~5~,  ~1~ => ~Legend Lore~
+
+        ~ARMOR_MEPR457~,                            ~BZ#0701~, ~MEPR457~,  ~7~,  ~3~ => "Armor"
+        ~SPIRIT_ARMOR_MEPR457~,                     ~BZ#1K07~, ~MEPR457~,  ~7~,  ~1~ => "Spirit Armor"
 
         ~EXPOSE_TO_THE_ELEMENTS~,                   ~BZ#OB09~, ~MEPR557~,  ~9~,  ~1~ => "Expose to the Elements"
         ~SPHERE_OF_SECURITY_ACID~,                  ~BZ#OC09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Acid"
@@ -27,11 +31,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPHERE_OF_SECURITY_PETRIFICATION~,         ~BZ#OG09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Petrification"
         ~SPHERE_OF_SECURITY_POISON~,                ~BZ#OH09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Poison"
         ~GEDLEE'S_ELECTRIC_BARRIER~,                ~BZ#OJ09~, ~MEWI566~,  ~9~,  ~1~ => "Gedlee's Electric Barrier"
-        ~ARMOR_MEPR457~,                            ~BZ#0701~, ~MEPR457~,  ~1~,  ~3~ => "Armor"
-        ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ#0T05~, ~MEPR553~,  ~1~,  ~2~ => "Protection From Fire"
-        ~SPIRIT_ARMOR_MEPR457~,                     ~BZ#1K07~, ~MEPR457~,  ~1~,  ~1~ => "Spirit Armor"
-
-        ~PROTECTION_FROM_THE_ELEMENTS_MEPR553~,     ~BZ#2J14~, ~MEPR553~,  ~1~,  ~1~ => "Protection From The Elements"
+        ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ#0T05~, ~MEPR553~,  ~9~,  ~2~ => "Protection From Fire"
+        ~PROTECTION_FROM_THE_ELEMENTS_MEPR553~,     ~BZ#2J14~, ~MEPR553~,  ~9~,  ~1~ => "Protection From The Elements"
 
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,        ~BZ#OL11~, ~MEPR656~, ~11~,  ~1~ => "Protection From Non-Silver Weapons"
 
@@ -39,12 +40,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~PERFECT_INVISIBILITY~,                     ~BZ#ON18~, ~MEWI951~, ~18~,  ~1~ => "Perfect Invisibility"
         ~ATTAIN_PERFECTION~,                        ~BZ#OO18~, ~MEWI953~, ~18~,  ~1~ => "Attain Perfection"
-        ~FRIENDS_MEWI953~,                          ~BZ#0701~, ~MEWI953~,  ~1~,  ~5~ => "Friends"
-        ~STRENGTH_MEWI953~,                         ~BZ#0Q03~, ~MEWI953~,  ~1~,  ~3~ => "Strength"
+        ~FRIENDS_MEWI953~,                          ~BZ#0701~, ~MEWI953~, ~18~,  ~5~ => "Friends"
+        ~STRENGTH_MEWI953~,                         ~BZ#0Q03~, ~MEWI953~, ~18~,  ~3~ => "Strength"
 
         ~ECLECTIC_RECALL~,                          ~BZ#OP18~, ~MEWI960~, ~18~,  ~1~ => "Eclectic Recall"
         ~MENTAL_AGILITY~,                           ~BZ#OQ18~, ~MEWI963~, ~18~,  ~1~ => "Mental Agility"
-        ~CHAIN_LIGHTNING_MEWI965~,                  ~BZ#2E12~, ~MEWI965~,  ~1~,  ~3~ => "Chain Lightning"
+        ~CHAIN_LIGHTNING_MEWI965~,                  ~BZ#2E12~, ~MEWI965~, ~18~,  ~3~ => "Chain Lightning"
 
 
         ~COLOSSAL_GROWTH~,                          ~BZ#OR18~, ~MEPR754~, ~15~,  ~1~ => "Colossal Growth"
@@ -60,7 +61,7 @@ BEGIN
     ~new_potions_recipes~
     BEGIN
         ~ANTIHARM_SHELL~,                           ~BZ#OK11~, ~MEPR653~, ~11~,  ~1~ => "Antiharm Shell"
-        ~PROTECTION_FROM_MAGIC_ENERGY_MEPR653~,     ~BZ#2A12~, ~MEPR653~,  ~1~,  ~1~ => "Protection From Magic Energy"
+        ~PROTECTION_FROM_MAGIC_ENERGY_MEPR653~,     ~BZ#2A12~, ~MEPR653~, ~11~,  ~1~ => "Protection From Magic Energy"
 
         ~DISPEL_MAGIC_MEWI760~,                     ~BZ#0T05~, ~MEWI760~, ~14~,  ~3~ => "Dispel Magic"
     END
