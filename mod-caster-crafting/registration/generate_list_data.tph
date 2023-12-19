@@ -46,6 +46,12 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
     END
 
 
+PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   Detecting installed spells   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+~
+
 
 /*********************
 *   Include arrays   *

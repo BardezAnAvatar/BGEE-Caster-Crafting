@@ -15,6 +15,7 @@ INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 DEFINE_ACTION_FUNCTION ~fn-generate_potion_creation_conditionals~
     INT_VAR
         ~cost_gold~ = "-1"
+        ~minimum_level~ = ~-1~
     STR_VAR
         ~recipe~ = null
         ~potion_name~ = null
@@ -47,7 +48,7 @@ BEGIN
     OUTER_TEXT_SPRINT ~condition_valid~ ~~
     OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~~
     OUTER_SET gold_minus_one = (cost_gold - 1)
-    OUTER_SET level_minus_one = (rec_2 - 1)
+    OUTER_SET level_minus_one = (minimum_level - 1)
 
     ACTION_PHP_EACH ~spells_array~
         AS ~spell_keys~ => ~_v~
@@ -64,8 +65,7 @@ BEGIN
 
         //use the RESREF to check for memorized spell
         OUTER_TEXT_SPRINT ~condition_valid~ ~%condition_valid%
-HaveSpellRES("%spell_resref%")
-PartyGoldGT(%gold_minus_one%)~
+HaveSpellRES("%spell_resref%")~
 
         //use the RESREF to check for missing memorized spell
         OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~%condition_invalid_spells%
@@ -75,7 +75,8 @@ PartyGoldGT(%gold_minus_one%)~
 
 
     OUTER_TEXT_SPRINT ~condition_valid~ ~LevelGT(MYSELF, %level_minus_one%)
-%condition_valid%~
+%condition_valid%
+PartyGoldGT(%gold_minus_one%)~
 
     OUTER_TEXT_SPRINT ~condition_invalid_gold~ ~PartyGoldLT(%cost_gold%)~
     OUTER_TEXT_SPRINT ~condition_invalid_spells~ ~PartyGoldGT(%gold_minus_one%)
