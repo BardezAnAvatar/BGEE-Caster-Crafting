@@ -8,28 +8,33 @@ DEFINE_ACTION_FUNCTION ~fn-read_class_spell_2DA~
     RET_ARRAY
         levels
 BEGIN
-    OUTER_SET $levels(1) = 9999
-    OUTER_SET $levels(2) = 9999
-    OUTER_SET $levels(3) = 9999
-    OUTER_SET $levels(4) = 9999
-    OUTER_SET $levels(5) = 9999
-    OUTER_SET $levels(6) = 9999
-    OUTER_SET $levels(7) = 9999
-    OUTER_SET $levels(8) = 9999
-    OUTER_SET $levels(9) = 9999
-    OUTER_SET $levels(A) = 9999
+    OUTER_SET $levels("1") = 9999
+    OUTER_SET $levels("2") = 9999
+    OUTER_SET $levels("3") = 9999
+    OUTER_SET $levels("4") = 9999
+    OUTER_SET $levels("5") = 9999
+    OUTER_SET $levels("6") = 9999
+    OUTER_SET $levels("7") = 9999
+    OUTER_SET $levels("8") = 9999
+    OUTER_SET $levels("9") = 9999
     COPY_EXISTING - ~%2DA%.2DA~ ~bogus/%2DA%.2DA~
     //PATCHES
         READ_2DA_ENTRIES_NOW spell_progression 4
         SET current_circle = 0
         FOR (i = 0; i < spell_progression; ++i)
         BEGIN
-            READ_2DA_ENTRY_FORMER spell_progression i (0) spell_level
-            READ_2DA_ENTRY_FORMER spell_progression i (1 + current_circle) count
-            PATCH_IF (count > 0) THEN
-            BEGIN
-                SET current_circle = (current_circle + 1)
-                SET $level(~%current_circle%~) = spell_level
+            PATCH_TRY //some classes will not go past 3 spell levels
+                READ_2DA_ENTRY_FORMER spell_progression i (0) class_level
+                READ_2DA_ENTRY_FORMER spell_progression i (1 + current_circle) count
+                //PATCH_PRINT ~%2DA%.2DA; class_level: %class_level%; count: %count%; current_circle: %current_circle%~
+                PATCH_IF (count > 0) THEN
+                BEGIN
+                    SET current_circle = (current_circle + 1)
+                    SET $levels(~%current_circle%~) = class_level
+                END
+            WITH
+                DEFAULT
+                    //PATCH_PRINT ~Caught an error: 2DA file: %2DA%, iteration %i%~
             END
         END
         BUT_ONLY_IF_IT_CHANGES
@@ -58,6 +63,8 @@ BEGIN
     OUTER_SET ~min_nature_5~ = 9999
     OUTER_SET ~min_nature_6~ = 9999
     OUTER_SET ~min_nature_7~ = 9999
+    OUTER_SET ~min_nature_8~ = 9999
+    OUTER_SET ~min_nature_9~ = 9999
     OUTER_SET ~min_nature_Q~ = 9999
 
     OUTER_SET ~min_divine_1~ = 9999
@@ -67,9 +74,13 @@ BEGIN
     OUTER_SET ~min_divine_5~ = 9999
     OUTER_SET ~min_divine_6~ = 9999
     OUTER_SET ~min_divine_7~ = 9999
+    OUTER_SET ~min_divine_8~ = 9999
+    OUTER_SET ~min_divine_9~ = 9999
     OUTER_SET ~min_divine_Q~ = 9999
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
+        INT_VAR
+            max_col = 10
         STR_VAR
             ~2DA~ = "MXSPLBRD"
         RET_ARRAY
@@ -84,7 +95,6 @@ BEGIN
     ACTION_IF ($bard(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $bard(7) END
     ACTION_IF ($bard(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $bard(8) END
     ACTION_IF ($bard(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $bard(9) END
-    ACTION_IF ($bard(~A~) < min_arcane_A) THEN BEGIN OUTER_SET ~min_arcane_A~ = $bard(A) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -101,7 +111,6 @@ BEGIN
     ACTION_IF ($sorcerer(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $sorcerer(7) END
     ACTION_IF ($sorcerer(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $sorcerer(8) END
     ACTION_IF ($sorcerer(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $sorcerer(9) END
-    ACTION_IF ($sorcerer(~A~) < min_arcane_A) THEN BEGIN OUTER_SET ~min_arcane_A~ = $sorcerer(A) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -118,7 +127,6 @@ BEGIN
     ACTION_IF ($wizard(7) < min_arcane_7) THEN BEGIN OUTER_SET ~min_arcane_7~ = $wizard(7) END
     ACTION_IF ($wizard(8) < min_arcane_8) THEN BEGIN OUTER_SET ~min_arcane_8~ = $wizard(8) END
     ACTION_IF ($wizard(9) < min_arcane_9) THEN BEGIN OUTER_SET ~min_arcane_9~ = $wizard(9) END
-    ACTION_IF ($wizard(~A~) < min_arcane_A) THEN BEGIN OUTER_SET ~min_arcane_A~ = $wizard(A) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -133,7 +141,6 @@ BEGIN
     ACTION_IF ($druid(5) < min_nature_5) THEN BEGIN OUTER_SET ~min_nature_5~ = $druid(5) END
     ACTION_IF ($druid(6) < min_nature_6) THEN BEGIN OUTER_SET ~min_nature_6~ = $druid(6) END
     ACTION_IF ($druid(7) < min_nature_7) THEN BEGIN OUTER_SET ~min_nature_7~ = $druid(7) END
-    ACTION_IF ($druid(~Q~) < min_nature_Q) THEN BEGIN OUTER_SET ~min_nature_Q~ = $druid(~Q~) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -148,7 +155,6 @@ BEGIN
     ACTION_IF ($shaman(5) < min_nature_5) THEN BEGIN OUTER_SET ~min_nature_5~ = $shaman(5) END
     ACTION_IF ($shaman(6) < min_nature_6) THEN BEGIN OUTER_SET ~min_nature_6~ = $shaman(6) END
     ACTION_IF ($shaman(7) < min_nature_7) THEN BEGIN OUTER_SET ~min_nature_7~ = $shaman(7) END
-    ACTION_IF ($shaman(~Q~) < min_nature_Q) THEN BEGIN OUTER_SET ~min_nature_Q~ = $shaman(~Q~) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -163,7 +169,6 @@ BEGIN
     ACTION_IF ($ranger(5) < min_nature_5) THEN BEGIN OUTER_SET ~min_nature_5~ = $ranger(5) END
     ACTION_IF ($ranger(6) < min_nature_6) THEN BEGIN OUTER_SET ~min_nature_6~ = $ranger(6) END
     ACTION_IF ($ranger(7) < min_nature_7) THEN BEGIN OUTER_SET ~min_nature_7~ = $ranger(7) END
-    ACTION_IF ($ranger(~Q~) < min_nature_Q) THEN BEGIN OUTER_SET ~min_nature_Q~ = $ranger(~Q~) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -178,7 +183,6 @@ BEGIN
     ACTION_IF ($cleric(5) < min_divine_5) THEN BEGIN OUTER_SET ~min_divine_5~ = $cleric(5) END
     ACTION_IF ($cleric(6) < min_divine_6) THEN BEGIN OUTER_SET ~min_divine_6~ = $cleric(6) END
     ACTION_IF ($cleric(7) < min_divine_7) THEN BEGIN OUTER_SET ~min_divine_7~ = $cleric(7) END
-    ACTION_IF ($cleric(~A~) < min_divine_Q) THEN BEGIN OUTER_SET ~min_divine_Q~ = $cleric(~Q~) END
 
     LAUNCH_ACTION_FUNCTION ~fn-read_class_spell_2DA~
         STR_VAR
@@ -193,31 +197,30 @@ BEGIN
     ACTION_IF ($paladin(5) < min_divine_5) THEN BEGIN OUTER_SET ~min_divine_5~ = $paladin(5) END
     ACTION_IF ($paladin(6) < min_divine_6) THEN BEGIN OUTER_SET ~min_divine_6~ = $paladin(6) END
     ACTION_IF ($paladin(7) < min_divine_7) THEN BEGIN OUTER_SET ~min_divine_7~ = $paladin(7) END
-    ACTION_IF ($paladin(~Q~) < min_divine_Q) THEN BEGIN OUTER_SET ~min_divine_Q~ = $paladin(~Q~) END
 
 
 
-    //emit results
+    //emit results~
     ACTION_DEFINE_ASSOCIATIVE_ARRAY ~class_levels~
     BEGIN
-        ~cleric~, $cleric(1), $cleric(2), $cleric(3), $cleric(4), $cleric(5), $cleric(6), $cleric(7), 9999, 9999, 9999, $cleric("Q") => "cleric"
-        ~paladin~, $paladin(1), $paladin(2), $paladin(3), $paladin(4), $paladin(5), $paladin(6), $paladin(7), 9999, 9999, 9999, $paladin("Q") => "paladin"
+        ~cleric~, ~%cleric_1%~, ~%cleric_2%~, ~%cleric_3%~, ~%cleric_4%~, ~%cleric_5%~, ~%cleric_6%~, ~%cleric_7%~, 9999, 9999, 9999, ~%cleric_7%~ => "cleric"
+        ~paladin~, ~%paladin_1%~, ~%paladin_2%~, ~%paladin_3%~, ~%paladin_4%~, ~%paladin_5%~, ~%paladin_6%~, ~%paladin_7%~, 9999, 9999, 9999, ~%paladin_7%~ => "paladin"
 
-        ~druid~, $druid(1), $druid(2), $druid(3), $druid(4), $druid(5), $druid(6), $druid(7), 9999, 9999, 9999, $druid("Q") => "druid"
-        ~shaman~, $shaman(1), $shaman(2), $shaman(3), $shaman(4), $shaman(5), $shaman(6), $shaman(7), 9999, 9999, 9999, $shaman("Q") => "shaman"
-        ~ranger~, $ranger(1), $ranger(2), $ranger(3), $ranger(4), $ranger(5), $ranger(6), $ranger(7), 9999, 9999, 9999, $ranger("Q") => "ranger"
+        ~druid~, ~%druid_1%~, ~%druid_2%~, ~%druid_3%~, ~%druid_4%~, ~%druid_5%~, ~%druid_6%~, ~%druid_7%~, 9999, 9999, 9999, ~%druid_7%~ => "druid"
+        ~shaman~, ~%shaman_1%~, ~%shaman_2%~, ~%shaman_3%~, ~%shaman_4%~, ~%shaman_5%~, ~%shaman_6%~, ~%shaman_7%~, 9999, 9999, 9999, ~%shaman_7%~ => "shaman"
+        ~ranger~, ~%ranger_1%~, ~%ranger_2%~, ~%ranger_3%~, ~%ranger_4%~, ~%ranger_5%~, ~%ranger_6%~, ~%ranger_7%~, 9999, 9999, 9999, ~%ranger_7%~ => "ranger"
 
-        ~wizard~, $wizard(1), $wizard(2), $wizard(3), $wizard(4), $wizard(5), $wizard(6), $wizard(7), $wizard(8), $wizard(9), $wizard("A"), 9999 => "wizard"
-        ~sorcerer~, $sorcerer(1), $sorcerer(2), $sorcerer(3), $sorcerer(4), $sorcerer(5), $sorcerer(6), $sorcerer(7), $sorcerer(8), $sorcerer(9), $sorcerer("A"), 9999=> "sorcerer"
-        ~bard~, $bard(1), $bard(2), $bard(3), $bard(4), $bard(5), $bard(6), $bard(7), $bard(8), $bard(9), $bard("A"), 9999 => "bard"
+        ~wizard~, ~%wizard_1%~, ~%wizard_2%~, ~%wizard_3%~, ~%wizard_4%~, ~%wizard_5%~, ~%wizard_6%~, ~%wizard_7%~, ~%wizard_8%~, ~%wizard_9%~, ~%wizard_9%~, 9999 => "wizard"
+        ~sorcerer~, ~%sorcerer_1%~, ~%sorcerer_2%~, ~%sorcerer_3%~, ~%sorcerer_4%~, ~%sorcerer_5%~, ~%sorcerer_6%~, ~%sorcerer_7%~, ~%sorcerer_8%~, ~%sorcerer_9%~, ~%sorcerer_9%~, 9999=> "sorcerer"
+        ~bard~, ~%bard_1%~, ~%bard_2%~, ~%bard_3%~, ~%bard_4%~, ~%bard_5%~, ~%bard_6%~, ~%bard_7%~, ~%bard_8%~, ~%bard_9%~, ~%bard_9%~, 9999 => "bard"
 
     END
 
     ACTION_DEFINE_ASSOCIATIVE_ARRAY ~tradition_levels~
     BEGIN
-        ~Arcane~, min_arcane_1, min_arcane_2, min_arcane_3, min_arcane_4, min_arcane_5, min_arcane_6, min_arcane_7, min_arcane_8, min_arcane_9, min_arcane_A, 9999 => ~Arcane~
-        ~Divine~, min_divine_1, min_divine_2, min_divine_3, min_divine_4, min_divine_5, min_divine_6, min_divine_7, min_divine_8, min_divine_9, 9999, min_divine_Q => ~Divine~
-        ~Nature~, min_nature_1, min_nature_2, min_nature_3, min_nature_4, min_nature_5, min_nature_6, min_nature_7, min_nature_8, min_nature_9, 9999, min_nature_Q => ~Nature~
+        ~Arcane~, ~%min_arcane_1%~, ~%min_arcane_2%~, ~%min_arcane_3%~, ~%min_arcane_4%~, ~%min_arcane_5%~, ~%min_arcane_6%~, ~%min_arcane_7%~, ~%min_arcane_8%~, ~%min_arcane_9%~, ~%min_arcane_9%~, 9999 => ~Arcane~
+        ~Divine~, ~%min_divine_1%~, ~%min_divine_2%~, ~%min_divine_3%~, ~%min_divine_4%~, ~%min_divine_5%~, ~%min_divine_6%~, ~%min_divine_7%~, ~%min_divine_8%~, ~%min_divine_9%~, 9999, ~%min_divine_7%~ => ~Divine~
+        ~Nature~, ~%min_nature_1%~, ~%min_nature_2%~, ~%min_nature_3%~, ~%min_nature_4%~, ~%min_nature_5%~, ~%min_nature_6%~, ~%min_nature_7%~, ~%min_nature_8%~, ~%min_nature_9%~, 9999, ~%min_nature_7%~ => ~Nature~
     END
 
 END
