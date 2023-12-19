@@ -56,6 +56,7 @@ BEGIN
             ~bz_min_tradition_levels~ = tradition_levels
     END
 
+    /*
     PRINT ~DEBUG: bz_min_caster_levels:~
     ACTION_PHP_EACH ~bz_min_caster_levels~
         AS ~keys~ => ~value~
@@ -76,7 +77,9 @@ BEGIN
                 Level Q:    `%keys_11%`
                 Value:      `%value%`~
         END
+    */
 
+    /*
     PRINT ~DEBUG: bz_min_tradition_levels:~
     ACTION_PHP_EACH ~bz_min_tradition_levels~
         AS ~keys~ => ~value~
@@ -97,7 +100,7 @@ BEGIN
                 Level Q:    `%keys_11%`
                 Value:      `%value%`~
         END
-
+    */
 
     //do not re-process
     OUTER_SET ~bz_caster_crafting_preprocessing~ = 1
