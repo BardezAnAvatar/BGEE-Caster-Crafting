@@ -1,0 +1,14 @@
+//TODO: iterate through spell list; check for multiple headers (excluding whacky mod headers)
+
+//IFF multiple headers with level < 51:
+    // read the scroll name
+    //read the scroll description
+    //add a dynamic caster level text to the description
+    //append caster level to the identified name
+    // siterate through each header
+    //read the minimum caster level
+    //IFF the minimum caster level > the required min. caster level to cast the spell:
+        //evaluate the identified name
+        //evaluate the descrition
+        //create a scroll using the current header, name, desc
+
