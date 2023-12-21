@@ -13,3 +13,7 @@ Resize: `ie_inventory_resize.run('C:/Projects/Game Mods/Baldur\'s Gate/Caster Cr
 
 Enter: `import sys;sys.path=[gimp.directory+'/plug-ins']+sys.path;import ie_inventory_shadow;`
 Shadow: `ie_inventory_shadow.run('C:/Projects/Game Mods/Baldur\'s Gate/Caster Crafting/.assets/potions/separated/exported/BAM-Ready/inventory', '5', '4', 'C:/temp/BAM/out')`
+
+
+Enter: `import sys;sys.path=[gimp.directory+'/plug-ins']+sys.path;import ie_item_level_overlay`
+overlay: `ie_item_level_overlay.run('C:/Projects/Game Mods/Baldur\'s Gate/Caster Crafting/.assets/scrolls/levelled/src/scrolls/Priest 6', 'C:/Projects/Game Mods/Baldur\'s Gate/Caster Crafting/.assets/scrolls/levelled/overlay', 'C:/temp/BAM/out')`
