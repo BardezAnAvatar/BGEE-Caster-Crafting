@@ -27,6 +27,9 @@ def ie_item_level_overlay(icon, overlayDirectory, outputDirectory):
         fileImage = pdb.gimp_file_load(icon, icon, run_mode=RUN_NONINTERACTIVE)
         print "Opened '" + filename_without_ext + "' ..."
 
+        # Convert the image to RGB; lose the palette crap
+        pdb.gimp_image_convert_rgb(fileImage)
+
         #check dimensions
         width = pdb.gimp_image_width(fileImage)
         height = pdb.gimp_image_height(fileImage)
