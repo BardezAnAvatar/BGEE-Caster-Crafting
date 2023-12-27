@@ -144,28 +144,31 @@ Function CompressBam
     & $PathPsBam $params
 }
 
-Write-Host "Generating BAMs ..." -ForegroundColor red
-
-
-#iterate through all of the input DIR PNGs
-$pngFiles = Get-ChildItem $DirInputPng -Filter *.png
-foreach ($file in $pngFiles)
+Function Main
 {
-    $bamName = "$($file.Basename).BAM"
+    Write-Host "Generating BAMs ..." -ForegroundColor red
 
-    Write-Host "Generating $bamName from $file ..." -ForegroundColor blue
-    #generate BAM
-    GenerateBam -PathBammer $Bammer -DirOutput $DirOutputTemp -RolledFrame $RolledFrame -SpellFrame $file.FullName -BamName $bamName
+    #iterate through all of the input DIR PNGs
+    $pngFiles = Get-ChildItem $DirInputPng -Filter *.png
+    foreach ($file in $pngFiles)
+    {
+        $bamName = "$($file.Basename).BAM"
+
+        Write-Host "Generating $bamName from $file ..." -ForegroundColor blue
+        #generate BAM
+        GenerateBam -PathBammer $Bammer -DirOutput $DirOutputTemp -RolledFrame $RolledFrame -SpellFrame $file.FullName -BamName $bamName
+    }
+
+    Write-Host "Optimizing BAMs ..." -ForegroundColor red
+
+    #iterate through all temp dir BAMs
+    $bamFiles = Get-ChildItem $DirOutputTemp -Filter *.BAM
+    foreach($file in $bamFiles)
+    {
+        Write-Host "Optimizing $bamName ..." -ForegroundColor orange
+        #compress BAM
+        CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
+    }
 }
 
-Write-Host "Optimizing BAMs ..." -ForegroundColor red
-
-
-#iterate through all temp dir BAMs
-$bamFiles = Get-ChildItem $DirOutputTemp -Filter *.BAM
-foreach($file in $bamFiles)
-{
-    Write-Host "Optimizing $bamName ..." -ForegroundColor orange
-    #compress BAM
-    CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
-}
+Main
