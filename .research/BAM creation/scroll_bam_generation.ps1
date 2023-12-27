@@ -70,8 +70,8 @@ Function GenerateBamD
     )
 
     $bamd =@"
-frame f00000 $RolledFrame $RolledCenterX $RolledCenterY
-frame f00001 $SpellFrame 0 0
+frame f00000 `"$RolledFrame`" $RolledCenterX $RolledCenterY
+frame f00001 `"$SpellFrame`" 0 0
 
 sequence f00000 f00001
 "@
