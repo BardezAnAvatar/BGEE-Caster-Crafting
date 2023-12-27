@@ -158,10 +158,14 @@ foreach ($file in $pngFiles)
     GenerateBam -PathBammer $Bammer -DirOutput $DirOutputTemp -RolledFrame $RolledFrame -SpellFrame $file.FullName -BamName $bamName
 }
 
+Write-Host "Optimizing BAMs ..." -ForegroundColor red
+
+
 #iterate through all temp dir BAMs
 $bamFiles = Get-ChildItem $DirOutputTemp -Filter *.BAM
 foreach($file in $bamFiles)
 {
+    Write-Host "Optimizing $bamName ..." -ForegroundColor orange
     #compress BAM
     CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
 }
