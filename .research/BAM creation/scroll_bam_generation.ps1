@@ -146,6 +146,8 @@ Function CompressBam
 
 Function Main
 {
+    $start = Get-Date
+
     Write-Host "Generating BAMs ..." -ForegroundColor red
 
     #iterate through all of the input DIR PNGs
@@ -172,6 +174,12 @@ Function Main
         #this locked up my processor and OS, so... WAIT
         Start-Sleep -Milliseconds 20
     }
+
+    $end = Get-Date
+
+    $duration = $end - $start
+
+    Write-Host "Script duration: $duration ..." -ForegroundColor Yellow
 }
 
 Main
