@@ -165,7 +165,7 @@ Function Main
     $bamFiles = Get-ChildItem $DirOutputTemp -Filter *.BAM
     foreach($file in $bamFiles)
     {
-        Write-Host "Optimizing $bamName ..." -ForegroundColor orange
+        Write-Host "Optimizing $bamName ..." -ForegroundColor Magenta
         #compress BAM
         CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
 
