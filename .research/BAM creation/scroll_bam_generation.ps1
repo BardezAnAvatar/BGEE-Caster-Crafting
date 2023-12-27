@@ -109,3 +109,24 @@ Function GenerateBam
     #Invoke Bammer
     & '{PathBammer} -input {DirOutput}\temp.bamd -output {DirOutput}\{BamName}'
 }
+
+#this function will take a file in the temp dir and compress it using PS-BAM
+Function CompressBam
+{
+    param(
+        [Parameter(Mandatory, ParameterSetName="PathPsBam")]
+        [string]$PathPsBam,
+
+        [Parameter(Mandatory, ParameterSetName="DirInput")]
+        [string]$DirInput,
+
+        [Parameter(Mandatory, ParameterSetName="DirOutput")]
+        [string]$DirOutput,
+
+        [Parameter(Mandatory, ParameterSetName="BamName")]
+        [string]$BamName
+    )
+
+    #invoke PS-BAM
+    & "{PathPsBam} --CompressionProfile `"Recommended`" --DebugLevelL 1 --DebugLevelP 2 --DebugLevelS 1 --LogFile `"{DirOutput}\{BamName}.log`" --OutPath `"{DirOutput}`" --Save `"BAM`" `"{DirInput}\{BamName}`""
+}
