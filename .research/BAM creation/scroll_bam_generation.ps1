@@ -2,9 +2,7 @@
 .SYNOPSIS
     This script will mix Infinity Engine scroll PNG files into best-compression BAM files
 .DESCRIPTION
-    This script will run through an input directory, joining `RolledFrame` and individual *.png files in `DirInputPng` via `Bammer`,
-    which will be output to `DirOutputTemp`. Subsequently, all such *.BAM files will be iterated over in `DirOutputTemp` and compressed
-    via `PsBam` executable and emitted into the `DirOutputBam` directory
+    This script will run through an input directory, joining `RolledFrame` and individual *.png files in `DirInputPng` via `Bammer`, which will be output to `DirOutputTemp`. Subsequently, all such *.BAM files will be iterated over in `DirOutputTemp` and compressed via `PsBam` executable and emitted into the `DirOutputBam` directory
 .PARAMETER Bammer
     The path to the `Bammer` executable on disk.
     Acquire from: https://www.gibberlings3.net/forums/topic/34567-using-bammer-to-create-and-edit-bams/#comment-305963
