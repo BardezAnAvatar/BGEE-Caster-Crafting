@@ -32,22 +32,22 @@
     Date:   December 26, 2023
 #>
 param(
-    [Parameter(Mandatory, ParameterSetName="Bammer")]
+    [Parameter(Mandatory)]
     [string]$Bammer,
 
-    [Parameter(Mandatory, ParameterSetName="PsBam")]
+    [Parameter(Mandatory)]
     [string]$PsBam,
 
-    [Parameter(Mandatory, ParameterSetName="RolledFrame")]
+    [Parameter(Mandatory)]
     [string]$RolledFrame,
 
-    [Parameter(Mandatory, ParameterSetName="DirInputPng")]
+    [Parameter(Mandatory)]
     [string]$DirInputPng,
 
-    [Parameter(Mandatory, ParameterSetName="DirOutputTemp")]
+    [Parameter(Mandatory)]
     [string]$DirOutputTemp,
 
-    [Parameter(Mandatory, ParameterSetName="DirOutputBam")]
+    [Parameter(Mandatory)]
     [string]$DirOutputBam
 )
 
@@ -56,16 +56,16 @@ param(
 Function GenerateBamD
 {
     param(
-        [Parameter(Mandatory, ParameterSetName="RolledFrame")]
+        [Parameter(Mandatory)]
         [string]$RolledFrame,
 
-        [Parameter(Mandatory, ParameterSetName="SpellFrame")]
+        [Parameter(Mandatory)]
         [string]$SpellFrame,
 
-        [Parameter(Mandatory, ParameterSetName="RolledCenterX")]
+        [Parameter(Mandatory)]
         [string]$RolledCenterX,
 
-        [Parameter(Mandatory, ParameterSetName="RolledCenterY")]
+        [Parameter(Mandatory)]
         [string]$RolledCenterY
     )
 
@@ -82,19 +82,19 @@ sequence f00000 f00001
 Function GenerateBam
 {
     param(
-        [Parameter(Mandatory, ParameterSetName="PathBammer")]
+        [Parameter(Mandatory)]
         [string]$PathBammer,
 
-        [Parameter(Mandatory, ParameterSetName="DirOutput")]
+        [Parameter(Mandatory)]
         [string]$DirOutput,
 
-        [Parameter(Mandatory, ParameterSetName="RolledFrame")]
+        [Parameter(Mandatory)]
         [string]$RolledFrame,
 
-        [Parameter(Mandatory, ParameterSetName="SpellFrame")]
+        [Parameter(Mandatory)]
         [string]$SpellFrame,
 
-        [Parameter(Mandatory, ParameterSetName="BamName")]
+        [Parameter(Mandatory)]
         [string]$BamName
     )
 
@@ -112,16 +112,16 @@ Function GenerateBam
 Function CompressBam
 {
     param(
-        [Parameter(Mandatory, ParameterSetName="PathPsBam")]
+        [Parameter(Mandatory)]
         [string]$PathPsBam,
 
-        [Parameter(Mandatory, ParameterSetName="DirInput")]
+        [Parameter(Mandatory)]
         [string]$DirInput,
 
-        [Parameter(Mandatory, ParameterSetName="DirOutput")]
+        [Parameter(Mandatory)]
         [string]$DirOutput,
 
-        [Parameter(Mandatory, ParameterSetName="BamName")]
+        [Parameter(Mandatory)]
         [string]$BamName
     )
 
