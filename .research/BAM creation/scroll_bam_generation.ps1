@@ -168,6 +168,9 @@ Function Main
         Write-Host "Optimizing $bamName ..." -ForegroundColor orange
         #compress BAM
         CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
+
+        #this locked up my processor and OS, so... WAIT
+        Start-Sleep -Milliseconds 20
     }
 }
 
