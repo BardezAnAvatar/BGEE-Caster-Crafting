@@ -100,12 +100,17 @@ Function GenerateBam
 
     #Get the BAM-D content
     $bamd = GenerateBamD $RolledFrame $SpellFrame 20 15
+    $bamd = $bamd.Replace("\", "/") #apparently Bammer needs this syntax?
 
     #Write the file
     Set-Content -Path "$DirOutput\temp.bamd" -Value $bamd
 
     #Invoke Bammer
-    & "`"$PathBammer`" -input `"$DirOutput\temp.bamd`" -output `"$DirOutput\$BamName`""
+    $params = @(
+        "-input", "`"$DirOutput\temp.bamd`"",
+        "-output", "`"$DirOutput\$BamName`""
+        )
+    & $PathBammer $params
 }
 
 #this function will take a file in the temp dir and compress it using PS-BAM
@@ -126,7 +131,17 @@ Function CompressBam
     )
 
     #invoke PS-BAM
-    & "`"$PathPsBam`" --CompressionProfile `"Recommended`" --DebugLevelL 1 --DebugLevelP 2 --DebugLevelS 1 --LogFile `"$DirOutput\$BamName.log`" --OutPath `"$DirOutput`" --Save `"BAM`" `"$DirInput\$BamName`""
+    $params = @(
+        "--CompressionProfile", "`"Recommended`"",
+        "--DebugLevelL", "1",
+        "--DebugLevelP", "2",
+        "--DebugLevelS", "1",
+        "--LogFile", "`"$DirOutput\$BamName.log`"",
+        "--OutPath", "`"$DirOutput`"",
+        "--Save", "`"BAM`"",
+        "`"$DirInput\$BamName`""
+        )
+    & $PathPsBam $params
 }
 
 
