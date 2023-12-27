@@ -70,8 +70,8 @@ Function GenerateBamD
     )
 
     $bamd =@"
-frame f00000 {RolledFrame} {RolledCenterX} {RolledCenterY}
-frame f00001 {SpellFrame} 0 0
+frame f00000 {$RolledFrame} {$RolledCenterX} {$RolledCenterY}
+frame f00001 {$SpellFrame} 0 0
 
 sequence f00000 f00001
 "@
@@ -102,10 +102,10 @@ Function GenerateBam
     $bamd = GenerateBamD $RolledFrame $SpellFrame 20 15
 
     #Write the file
-    Set-Content -Path '{DirOutput}\temp.bamd' -Value $bamd
+    Set-Content -Path "{$DirOutput}\temp.bamd" -Value $bamd
 
     #Invoke Bammer
-    & '{PathBammer} -input {DirOutput}\temp.bamd -output {DirOutput}\{BamName}'
+    & "{$PathBammer} -input {$DirOutput}\temp.bamd -output {$DirOutput}\{$BamName}"
 }
 
 #this function will take a file in the temp dir and compress it using PS-BAM
@@ -126,7 +126,7 @@ Function CompressBam
     )
 
     #invoke PS-BAM
-    & "{PathPsBam} --CompressionProfile `"Recommended`" --DebugLevelL 1 --DebugLevelP 2 --DebugLevelS 1 --LogFile `"{DirOutput}\{BamName}.log`" --OutPath `"{DirOutput}`" --Save `"BAM`" `"{DirInput}\{BamName}`""
+    & "{$PathPsBam} --CompressionProfile `"Recommended`" --DebugLevelL 1 --DebugLevelP 2 --DebugLevelS 1 --LogFile `"{$DirOutput}\{$BamName}.log`" --OutPath `"{$DirOutput}`" --Save `"BAM`" `"{$DirInput}\{$BamName}`""
 }
 
 
@@ -134,7 +134,7 @@ Function CompressBam
 $pngFiles = Get-ChildItem $DirInputPng -Filter *.png
 foreach ($file in $pngFiles)
 {
-    $bamName = "{file.Basename}.BAM"
+    $bamName = "{$file.Basename}.BAM"
 
     #generate BAM
     GenerateBam -PathBammer $Bammer -DirOutput $DirOutputTemp -RolledFrame $RolledFrame -SpellFrame $file.FullName -BamName $bamName
