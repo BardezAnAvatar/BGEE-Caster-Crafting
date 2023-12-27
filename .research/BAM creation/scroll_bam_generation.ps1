@@ -128,3 +128,22 @@ Function CompressBam
     #invoke PS-BAM
     & "{PathPsBam} --CompressionProfile `"Recommended`" --DebugLevelL 1 --DebugLevelP 2 --DebugLevelS 1 --LogFile `"{DirOutput}\{BamName}.log`" --OutPath `"{DirOutput}`" --Save `"BAM`" `"{DirInput}\{BamName}`""
 }
+
+
+#iterate through all of the input DIR PNGs
+$pngFiles = Get-ChildItem $DirInputPng -Filter *.png
+foreach ($file in $pngFiles)
+{
+    $bamName = "{file.Basename}.BAM"
+
+    #generate BAM
+    GenerateBam -PathBammer $Bammer -DirOutput $DirOutputTemp -RolledFrame $RolledFrame -SpellFrame $file.FullName -BamName $bamName
+}
+
+#iterate through all temp dir BAMs
+$bamFiles = Get-ChildItem $DirOutputTemp -Filter *.BAM
+foreach($file in $bamFiles)
+{
+    #compress BAM
+    CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
+}
