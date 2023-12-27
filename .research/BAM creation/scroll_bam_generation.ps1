@@ -144,6 +144,8 @@ Function CompressBam
     & $PathPsBam $params
 }
 
+Write-Host "Generating BAMs ..." -ForegroundColor red
+
 
 #iterate through all of the input DIR PNGs
 $pngFiles = Get-ChildItem $DirInputPng -Filter *.png
@@ -151,6 +153,7 @@ foreach ($file in $pngFiles)
 {
     $bamName = "$($file.Basename).BAM"
 
+    Write-Host "Generating $bamName from $file ..." -ForegroundColor blue
     #generate BAM
     GenerateBam -PathBammer $Bammer -DirOutput $DirOutputTemp -RolledFrame $RolledFrame -SpellFrame $file.FullName -BamName $bamName
 }
