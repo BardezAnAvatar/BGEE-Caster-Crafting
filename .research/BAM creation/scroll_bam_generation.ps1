@@ -134,7 +134,7 @@ Function CompressBam
 $pngFiles = Get-ChildItem $DirInputPng -Filter *.png
 foreach ($file in $pngFiles)
 {
-    $bamName = "$file.Basename.BAM"
+    $bamName = "$($file.Basename).BAM"
 
     #generate BAM
     GenerateBam -PathBammer $Bammer -DirOutput $DirOutputTemp -RolledFrame $RolledFrame -SpellFrame $file.FullName -BamName $bamName
