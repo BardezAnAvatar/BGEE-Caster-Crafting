@@ -80,3 +80,32 @@ sequence f00000 f00001
 
     return $bamd
 }
+
+Function GenerateBam
+{
+    param(
+        [Parameter(Mandatory, ParameterSetName="PathBammer")]
+        [string]$PathBammer,
+
+        [Parameter(Mandatory, ParameterSetName="DirOutput")]
+        [string]$DirOutput,
+
+        [Parameter(Mandatory, ParameterSetName="RolledFrame")]
+        [string]$RolledFrame,
+
+        [Parameter(Mandatory, ParameterSetName="SpellFrame")]
+        [string]$SpellFrame,
+
+        [Parameter(Mandatory, ParameterSetName="BamName")]
+        [string]$BamName
+    )
+
+    #Get the BAM-D content
+    $bamd = GenerateBamD $RolledFrame $SpellFrame 20 15
+
+    #Write the file
+    Set-Content -Path '{DirOutput}\temp.bamd' -Value $bamd
+
+    #Invoke Bammer
+    & '{PathBammer} -input {DirOutput}\temp.bamd -output {DirOutput}\{BamName}'
+}
