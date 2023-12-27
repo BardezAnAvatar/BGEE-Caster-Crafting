@@ -105,7 +105,7 @@ Function GenerateBam
     Set-Content -Path "$DirOutput\temp.bamd" -Value $bamd
 
     #Invoke Bammer
-    & "$PathBammer -input `"$DirOutput\temp.bamd`" -output `"$DirOutput\$BamName"
+    & "`"$PathBammer`" -input `"$DirOutput\temp.bamd`" -output `"$DirOutput\$BamName`""
 }
 
 #this function will take a file in the temp dir and compress it using PS-BAM
@@ -126,7 +126,7 @@ Function CompressBam
     )
 
     #invoke PS-BAM
-    & "$PathPsBam --CompressionProfile `"Recommended`" --DebugLevelL 1 --DebugLevelP 2 --DebugLevelS 1 --LogFile `"$DirOutput\$BamName.log`" --OutPath `"$DirOutput`" --Save `"BAM`" `"$DirInput\$BamName`""
+    & "`"$PathPsBam`" --CompressionProfile `"Recommended`" --DebugLevelL 1 --DebugLevelP 2 --DebugLevelS 1 --LogFile `"$DirOutput\$BamName.log`" --OutPath `"$DirOutput`" --Save `"BAM`" `"$DirInput\$BamName`""
 }
 
 
