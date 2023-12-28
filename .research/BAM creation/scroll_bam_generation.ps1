@@ -164,7 +164,7 @@ Function Main
     Write-Host "Optimizing BAMs ..." -ForegroundColor red
 
     #iterate through all temp dir BAMs
-    $bamFiles = Get-ChildItem $DirOutputTemp -Filter "*.BAM -and -notlike *.bamd"
+    $bamFiles = Get-ChildItem $DirOutputTemp | Where-Object { $_.Name -like "*.BAM" -and $_.Name -notlike "*.bamd" }
     foreach($file in $bamFiles)
     {
         Write-Host "Optimizing $bamName ..." -ForegroundColor Magenta
