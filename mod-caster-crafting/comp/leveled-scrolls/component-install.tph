@@ -13,4 +13,4 @@
         //create a scroll using the current header, name, desc
 
 
-INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/tinker.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/tinker.tph~
