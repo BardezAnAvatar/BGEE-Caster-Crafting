@@ -1,0 +1,14 @@
+/*********************************************************************
+*   This function will iterate through the registered spell list,    *
+*       check for spells with headers between min_caster_level and   *
+*       51, and if any are found, create a new scroll copying its    *
+*       spell ability header for the new scroll                      *
+*                                                                    *
+*   Prerequisites:                                                   *
+*       - ~spell_list~ is populated.                                 *
+*       - ~spell_min_caster_level~ is populated                      *
+*********************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
+BEGIN
+
+END
