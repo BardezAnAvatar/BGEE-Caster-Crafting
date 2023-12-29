@@ -4,7 +4,7 @@
 ***********************************************************************************************/
 
 
-DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
+DEFINE_ACTION_FUNCTION ~fn-bz_copy_spell_header_to_scroll~
     INT_VAR
         cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
         learn_spell   = "-1"            //flag for if the spell can be learnt
@@ -150,7 +150,7 @@ DEFINE_ACTION_FUNCTION bz_copy_spell_header_to_scroll
         ACTION_IF (%spell_type% = 2) THEN BEGIN OUTER_SET ~exclusion_flags~ = 0 END
 
 
-        COPY_EXISTING ~./%MOD_FOLDER%/comp/missing-scrolls/ITM/blank_scroll.itm~ ~override/%item%.ITM~
+        COPY_EXISTING ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/ITM/blank_scroll.itm~ ~override/%item%.ITM~
             READ_SHORT 0x68 abil_num
             READ_LONG  0x64 abil_off
             READ_LONG  0x6a fx_off
