@@ -60,6 +60,13 @@ SUBCOMPONENT @10        //  Missing Spell Scrolls
 
 
 
+// Leveled Scrolls: craft scrolls at higher caster levels
+BEGIN @50 DESIGNATED 50 //~Leveled Scrolls: craft scrolls at higher caster levels~
+    INCLUDE ~./%MOD_FOLDER%/comp/levelled-scrolls/component-install.tph~
+//END missing potions
+
+
+
 // Caster Crafting: Scribing Tools subcomponents
 BEGIN @21 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
 SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
