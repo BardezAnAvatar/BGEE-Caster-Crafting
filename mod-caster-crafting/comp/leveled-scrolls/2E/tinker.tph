@@ -1,0 +1,33 @@
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_copy_spell_header_to_scroll.tph~
+
+
+
+//copy inventory BAM
+COPY
+    ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/BAM/number/arcane/fireball-10.bam~
+    ~override/BZ!30410.BAM~
+
+//Make Fireball scroll
+LAUNCH_ACTION_FUNCTION ~fn-bz_copy_spell_header_to_scroll~
+    INT_VAR
+        cast_at_level       = 10
+        learn_spell         = ~SPWI304~
+        usability_bard      = 1
+        usability_cleric    = 0
+        usability_druid     = 0
+        usability_mage      = 1
+        usability_paladin   = 0
+        usability_ranger    = 0
+        usability_shaman    = 0
+        usability_good      = 1
+        usability_neutral_t = 1         // ...Neutral [Lawful/Chaotic]
+        usability_evil      = 1
+        usability_lawful    = 1
+        usability_neutral_l = 1         /// Neutral... [Evil/Good]
+        usability_chaotic   = 1
+        price               = 600
+    STR_VAR
+        item  = ~BZ!30410~
+        spell = ~SPWI304~
+        icon_inventory = ~BZ!30410~
+END
