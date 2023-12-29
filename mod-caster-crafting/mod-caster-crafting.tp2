@@ -62,7 +62,7 @@ SUBCOMPONENT @10        //  Missing Spell Scrolls
 
 // Leveled Scrolls: craft scrolls at higher caster levels
 BEGIN @50 DESIGNATED 50 //~Leveled Scrolls: craft scrolls at higher caster levels~
-    INCLUDE ~./%MOD_FOLDER%/comp/levelled-scrolls/component-install.tph~
+    INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/component-install.tph~
 //END missing potions
 
 
