@@ -4,14 +4,14 @@ INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_copy_spell_header_to
 
 //copy inventory BAM
 COPY
-    ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/BAM/number/arcane/fireball-10.bam~
+    ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/BAM/en_us/number/arcane/fireball-10.bam~
     ~override/BZ!30410.BAM~
 
 //Make Fireball scroll
 LAUNCH_ACTION_FUNCTION ~fn-bz_copy_spell_header_to_scroll~
     INT_VAR
         cast_at_level       = 10
-        learn_spell         = ~SPWI304~
+        learn_spell         = 1
         usability_bard      = 1
         usability_cleric    = 0
         usability_druid     = 0
