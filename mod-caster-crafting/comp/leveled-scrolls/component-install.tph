@@ -12,3 +12,5 @@
         //evaluate the descrition
         //create a scroll using the current header, name, desc
 
+
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/tinker.tph~
