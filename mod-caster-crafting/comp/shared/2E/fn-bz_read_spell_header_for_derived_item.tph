@@ -1,9 +1,12 @@
 /***********************************************************************************************
 *   Source: Based on `cd_items_casting_spells` provided by CamDawg
 *   https://github.com/Gibberlings3/iwdfixpack/blob/master/iwdfixpack/lib/functions.tpa#L218
+*
+*   This function will read a spell, loop through its headers and identify the caster level
+*       and read its effects and return it for creating an item from it
 ***********************************************************************************************/
 
-DEFINE_ACTION_FUNCTION fn_bz_read_spell_header_for_potion
+DEFINE_ACTION_FUNCTION fn-bz_read_spell_header_for_derived_item
     INT_VAR
         cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
     STR_VAR
