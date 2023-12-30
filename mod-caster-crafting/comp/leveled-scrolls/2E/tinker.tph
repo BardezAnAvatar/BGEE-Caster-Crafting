@@ -1,4 +1,6 @@
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_copy_spell_header_to_scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_spell_header.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_render_item_text.tph~
 
 
 
@@ -7,17 +9,71 @@ COPY
     ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/BAM/en_us/number/arcane/fireball-10.bam~
     ~override/BZ!30410.BAM~
 
-//Make Fireball scroll
-LAUNCH_ACTION_FUNCTION ~fn-bz_copy_spell_header_to_scroll~
+//read fireball spell
+LAUNCH_ACTION_FUNCTION ~fn-bz_read_spell_header_for_derived_item~
     INT_VAR
-        cast_at_level       = 10
-        learn_spell         = 1
+        cast_at_level       = 10         //caster level to search on; read headers looking a header with this cast at min level
+    STR_VAR
+        spell               = ~SPWI304~  //spell RESREF to read from
+        duration_opcode     = null       //opcode of the effect blocks to search to get the duration from
+        duration_offset     = null       //offset within the header's effect matching opcode to read from
+        magnitude_opcode    = ~12~       //opcode of the effect blocks to search to get the magnitude from
+        magnitude_offset    = ~0x1C~     //offset within the header's effect matching opcode to read from
+        magnitude2_opcode   = null       //opcode of the effect blocks to search to get the magnitude2 from
+        magnitude2_offset   = null       //offset within the header's effect matching opcode to read from
+    RET
+        spl_duration = ~duration~
+        spl_magnitude = ~magnitude~
+        spl_magnitude2 = ~magnitude2~
+        spl_ability_projectile = ~ability_projectile~
+        spl_abil_range = ~ability_range~
+        spl_abil_target = ~ability_target~
+        spl_abil_target_count = ~ability_target_count~
+        spl_transfer_effects_count = ~%transfer_effects_count~
+        spl_transfer_effects = ~transfer_effects~
+END
+
+
+LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
+    INT_VAR
+        caster_level = 10
+        spl_duration = spl_duration
+        tra_name = 50000
+        tra_description = 50001
+    STR_VAR
+        magnitude = ~%spl_magnitude%~
+        magnitude2 = ~%spl_magnitude2%~
+    RET
+        ~scrl_name~ = ~identified_name~
+        ~scrl_desc~ = ~identified_description~
+END
+
+
+
+OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%scrl_name%~)
+OUTER_SET identified_desc_STRREF = RESOLVE_STR_REF(~%scrl_desc%~)
+
+
+
+//write fireball scroll
+LAUNCH_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
+    INT_VAR
+        price = 600                                             //price of the scroll
+        lore = 0                                                //lore to identify the scroll
+        STRREF_identified_name = identified_name_STRREF         //STRREF for identified name
+        STRREF_identified_desc = identified_desc_STRREF         //STRREF for identified description
+        ability_projectile = %spl_ability_projectile%           //Which projectile the spell/scroll uses
+        ability_range = %spl_abil_range%                        //range it can be thrown
+        ability_target_count = %spl_abil_target_count%          //targets affected
+        transfer_effects_count = %spl_transfer_effects_count%   //number of affects being added
+        target_type = %spl_abil_target%                         //Type of target for ability
+        learn_spell   = 1                                       //flag for if the spell can be learnt
+        usability_mage      = 1
         usability_bard      = 1
+        usability_ranger    = 0
+        usability_paladin   = 0
         usability_cleric    = 0
         usability_druid     = 0
-        usability_mage      = 1
-        usability_paladin   = 0
-        usability_ranger    = 0
         usability_shaman    = 0
         usability_good      = 1
         usability_neutral_t = 1         // ...Neutral [Lawful/Chaotic]
@@ -25,9 +81,10 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_copy_spell_header_to_scroll~
         usability_lawful    = 1
         usability_neutral_l = 1         /// Neutral... [Evil/Good]
         usability_chaotic   = 1
-        price               = 600
     STR_VAR
-        item  = ~BZ!30410~
-        spell = ~SPWI304~
-        icon_inventory = ~BZ!30410~
+        spell = ~SPWI304~               //original spell RESREF tha was read from
+        item  = ~BZ!30410~              //item RESREF to write to
+        icon_inventory = ~BZ!30410~     //BAM RESREF to write for inventory
+        icon_description = ~CSCRL01~    //BAM RESREF to write for description
+        bin_effects_copied = ~%transfer_effects%~   //copied binary of effects read from spell
 END
