@@ -15,6 +15,7 @@ DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
         ability_target_count = 0        //targets affected
         transfer_effects_count = 0      //number of affects being added
         target_type = 0                 //Type of target for ability
+        spell_type = 0                  //type of spell: Special (0); Wizard(1); Priest (2); Psionic (3); Innate(4); Bard Song(5)
         learn_spell   = "-1"            //flag for if the spell can be learnt
         usability_mage      = 0
         usability_bard      = 0
