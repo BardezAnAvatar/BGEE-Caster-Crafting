@@ -99,7 +99,10 @@ DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
         //kit exclusion flags work differently for priest spells. Since we already know the exclusion, and handle it elsewhere FOR ITEMS, erase them
         ACTION_IF (%spell_type% = 2) THEN BEGIN OUTER_SET ~exclusion_flags~ = 0 END
 
-        COPY ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/ITM/blank_scroll.itm~ ~override/%item%.ITM~
+        COPY
+            ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/ITM/blank_scroll.itm~
+            ~override/%item%.ITM~
+
             READ_SHORT 0x68 abil_num
             READ_LONG  0x64 abil_off
             READ_LONG  0x6a fx_off
@@ -121,7 +124,7 @@ DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
             WRITE_LONG  (0x34) (%price%)                        //set the price
 
             // write the copied ability header
-            LPF ~ADD_ITEM_HEADER~   // Add item header
+            LPF ~ADD_ITEM_HEADER~               // Add item header
                 INT_VAR
                     type = 3                    // All scrolls use `Magic`
                     required_id = 0             // Require ID to use?
