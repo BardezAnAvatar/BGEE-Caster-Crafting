@@ -29,7 +29,7 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_read_spell_header_for_derived_item~
         spl_abil_range = ~ability_range~
         spl_abil_target = ~ability_target~
         spl_abil_target_count = ~ability_target_count~
-        spl_transfer_effects_count = ~%transfer_effects_count~
+        spl_transfer_effects_count = ~transfer_effects_count~
         spl_transfer_effects = ~transfer_effects~
 END
 
