@@ -1,0 +1,287 @@
+/***********************************************************************************************
+*   Source: Based on `cd_items_casting_spells` provided by CamDawg
+*   https://github.com/Gibberlings3/iwdfixpack/blob/master/iwdfixpack/lib/functions.tpa#L218
+***********************************************************************************************/
+
+
+DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
+    INT_VAR
+        price = 0                       //price of the scroll
+        lore = 0                        //lore to identify the scroll
+        STRREF_identified_name = 0      //STRREF for identified name
+        STRREF_identified_desc = 0      //STRREF for identified description
+        ability_projectile = 0          //Which projectile the spell/scroll uses
+        ability_range = 0               //range it can be thrown
+        ability_target_count = 0        //targets affected
+        transfer_effects_count = 0      //number of affects being added
+        target_type = 0                 //Type of target for ability
+        learn_spell   = "-1"            //flag for if the spell can be learnt
+        usability_mage      = 0
+        usability_bard      = 0
+        usability_ranger    = 0
+        usability_paladin   = 0
+        usability_cleric    = 0
+        usability_druid     = 0
+        usability_shaman    = 0
+        usability_good      = 1
+        usability_neutral_t = 1         // ...Neutral [Lawful/Chaotic]
+        usability_evil      = 1
+        usability_lawful    = 1
+        usability_neutral_l = 1         /// Neutral... [Evil/Good]
+        usability_chaotic   = 1
+    STR_VAR
+        spell = null                    //original spell RESREF tha was read from
+        item  = null                    //item RESREF to write to
+        icon_inventory = null           //BAM RESREF to write for inventory
+        icon_description = null         //BAM RESREF to write for description
+        bin_effects_copied = null       //copied binary of effects read from spell
+    BEGIN
+
+    ACTION_IF
+        NOT FILE_EXISTS_IN_GAME ~%item%.ITM~
+    BEGIN
+
+        //Calculate usability flags
+        OUTER_SET ~unusabilility_flags~ = 0b01100000011111111111111111111111    //all classes unusable
+        ACTION_IF (%usability_mage%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND
+                (BNOT (BIT8 BOR BIT13 BOR BIT15 BOR BIT16 BOR BIT18 BOR BIT19)) //Mage flags
+        END
+        ACTION_IF (%usability_bard%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT6)) //Bard
+        END
+        ACTION_IF (%usability_ranger%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT21 BOR BIT10)) //Ranger
+        END
+        ACTION_IF (%usability_paladin%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT20)) //Paladin
+        END
+        ACTION_IF (%usability_druid%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT12 BOR BIT30)) //Druid
+        END
+        ACTION_IF (%usability_cleric%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND
+                (BNOT (BIT7 BOR BIT8 BOR BIT9 BOR BIT10 BOR BIT14 BOR BIT15)) //Cleric
+        END
+        ACTION_IF (%usability_good%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT2)) //Good
+        END
+        ACTION_IF (%usability_neutral_t%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT3)) // ... Neutral [Lawful/Chaotic]
+        END
+        ACTION_IF (%usability_evil%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT1)) //Evil
+        END
+        ACTION_IF (%usability_lawful%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT4)) //Lawful
+        END
+        ACTION_IF (%usability_neutral_l%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT5)) // Neutral... [Good/Evil]
+        END
+        ACTION_IF (%usability_chaotic%)
+        THEN BEGIN
+            OUTER_SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT0)) //Chaotic
+        END
+
+        //kit exclusion flags work differently for priest spells. Since we already know the exclusion, and handle it elsewhere FOR ITEMS, erase them
+        ACTION_IF (%spell_type% = 2) THEN BEGIN OUTER_SET ~exclusion_flags~ = 0 END
+
+        COPY ~./%MOD_FOLDER%/comp/missing-scrolls/%bz_edition_code%/ITM/blank_scroll.itm~ ~override/%item%.ITM~
+            READ_SHORT 0x68 abil_num
+            READ_LONG  0x64 abil_off
+            READ_LONG  0x6a fx_off
+            SET global_fx_idx_off = 0x6e
+            SET global_fx_num_off = 0x70
+            SET abil_fx_idx = 0x00
+
+            WRITE_BYTE (0x29) ((%exclusion_flags% BAND 0xFF000000) >> 24)   //cleric byte
+            WRITE_BYTE (0x2B) ((%exclusion_flags% BAND 0x00FF0000) >> 16)   //thief byte
+            WRITE_BYTE (0x2D) ((%exclusion_flags% BAND 0x0000FF00) >> 8)    //mage byte
+            WRITE_BYTE (0x2F) ((%exclusion_flags% BAND 0x000000FF))         //warrior byte
+
+            WRITE_LONG  (0x0C) (%STRREF_identified_name%)       //identified name
+            WRITE_SHORT (0x42) (%lore%)                         //lore to identify
+            WRITE_LONG  (0x54) (%STRREF_identified_desc%)       //identified description
+            WRITE_ASCII (0x3A) ~%icon_inventory%~   (8)         //update the item inventory icon
+            WRITE_ASCII (0x58) ~%icon_description%~ (8)         //update the item description icon
+            WRITE_LONG  (0x34) (%price%)                        //set the price
+
+            // write the copied ability header
+            LPF ~ADD_ITEM_HEADER~   // Add item header
+                INT_VAR
+                    type = 3                    // All scrolls use `Magic`
+                    required_id = 0             // Require ID to use?
+                    location = 3                // Item/equipment
+                    alt_dicesize = 0
+                    target = %target%           // target type
+                    target_count = %ability_target_count%
+                    range = %ability_range%     // range
+                    projectile_type = 0         // No launcher
+                    alt_dicenumber = 0
+                    speed = 0
+                    alt_damage = 0
+                    thaco = 0
+                    dicesize = 0
+                    school = 0                  // not used?
+                    dicenumber = 0
+                    sectype = 0                 // not used?
+                    damage = 0
+                    damage_type = 1             // Piercing damage
+                    charges = 1
+                    depletion = 1               // vanishes
+                    flags = 0                   // no flags set
+                    projectile = %ability_projectile%
+                    //Animation %s
+                    overhand = 34
+                    backhand = 33
+                    thrust = 33
+                    is_bow = 0
+                    is_xbow = 0
+                    is_sling = 0
+                    copy_header = 0
+                    insert_point = ~-1~ //at the end
+                STR_VAR
+                    icon = ~%icon_inventory%~
+            END
+
+            SET abil_fx_num_off = (abil_off + 0x1E)                             // What offset are abilities at presently?
+            WRITE_SHORT abil_fx_num_off (transfer_effects_count)                // update number of effects in the new ability
+
+            SET fx_off = (abil_off + 0x38)
+            WRITE_LONG 0x6a (fx_off)                                            // update new effects offset
+
+            SET base_fx_add = fx_off    //making some assumptions about an empty file
+            INSERT_BYTES base_fx_add (0x30 * transfer_effects_count)            // make space for...
+            WRITE_ASCIIE base_fx_add ~%bin_effects_copied%~                     // transferred effects, binary
+
+            //Loop through the effects, looking for a RESREF of %spell% (i.e.: don't allow the same spell twice)
+            FOR (index2 = 0 ; index2 < transfer_effects_count ; ++index2) BEGIN // loop through newly-inserted effects
+                SET index_offset = (0x30 * index2)
+                READ_ASCII (base_fx_add + index_offset + 0x14) resref (8) NULL
+                PATCH_IF ("%resref%" STRING_COMPARE_CASE "%spell%" = 0) BEGIN   // if self-reference, update (i.e.: immune to re-casting spell?)
+                    WRITE_ASCII (base_fx_add + index_offset + 0x14) "%item%" (8)
+                END // end self-reference check
+            END // end new fx loop
+
+            //Register a new ability in the item file
+            WRITE_SHORT 0x68 (abil_num + 1)             //Now write the effects vals
+
+            //TODO: Exception for Shaman usability because of weirdness
+            //  There's probably only one of these that I _need_ to have multiples on, which was the Cleric/Shaman spell: Contagious Fear (Cleric/Shaman, HLA)
+            PATCH_IF (%usability_shaman% AND (NOT %usability_druid%)) THEN
+            BEGIN
+                LPF ~ADD_ITEM_EQEFFECT~
+                    INT_VAR
+                        opcode = 319            // Usability overrides
+                        target = 1              // Self
+                        timing = 1              // Instant/Permanent until death
+                        parameter1 = 21         // Shaman
+                        parameter2 = 5          // CLASS.IDS
+                        power = 1               // Allow
+                        resist_dispel = 2       // Not dispel / bypass resistance
+                        duration = 0
+                        probability1 = 100
+                        probability2 = 0
+                        dicenumber = 0
+                        dicesize = 0
+                        savingthrow = 0
+                        savebonus = 0
+                        special = "-1"          //strref for unusability flag?
+                        insert_point = ~-1~     // last effect to insert
+                    STR_VAR
+                        resource = ~~
+                END
+
+                //OpCode 319 can ONLY restrict, not allow. So I still have to allow Druids. Moving the movability flag set down after this.
+                //See: https://forums.beamdog.com/discussion/64194/item-usability
+                SET ~unusabilility_flags~ = %unusabilility_flags% BAND (BNOT (BIT12 BOR BIT30)) //Druid
+            END
+
+            //Set usability flags; have to wait until after the Shaman flag was set
+            WRITE_LONG (0x1E) (%unusabilility_flags%)           //unusability flags
+
+
+            //write additional header for learning spell
+            PATCH_IF (%learn_spell%) THEN
+            BEGIN
+                LPF ~ADD_ITEM_HEADER~           // Add item header
+                    INT_VAR
+                        type = 3                // Scrolls use `Magic`
+                        required_id = 0         // Require ID to use?
+                        location = 3            // Item/equpiment
+                        alt_dicesize = 0
+                        target = 5              // Caster
+                        target_count = 0
+                        range = 1               // range 1 ft.
+                        projectile_type = 0     // No launcher
+                        alt_dicenumber = 0
+                        speed = 0
+                        alt_damage = 0
+                        thaco = 0
+                        dicesize = 0
+                        school = 0              // not used?
+                        dicenumber = 0
+                        sectype = 0             // not used?
+                        damage = 0
+                        damage_type = 1         // Piercing damage
+                        charges = 1
+                        depletion = 1           // vanishes
+                        flags = 0               // no flags set
+                        projectile = %abil_projectile%
+                        //Animation %s
+                        overhand = 34
+                        backhand = 33
+                        thrust = 33
+                        is_bow = 0
+                        is_xbow = 0
+                        is_sling = 0
+                        copy_header = 0
+                        insert_point = ~-1~
+                    STR_VAR
+                        icon = ~%icon_inventory%~
+                END
+
+                LPF ~ADD_ITEM_EFFECT~
+                    INT_VAR
+                        opcode = 147            // Learn spell
+                        target = 1              // Self
+                        timing = 1              // Instant/Permanent until death
+                        parameter1 = 1
+                        parameter2 = 0
+                        power = 0
+                        resist_dispel = 2       // Not dispel / bypass resistance
+                        duration = 0
+                        probability1 = 100
+                        probability2 = 0
+                        dicenumber = 0
+                        dicesize = 0
+                        savingthrow = 0
+                        savebonus = 0
+                        special = 0
+                        header = 2              // 1-indexed header number
+                        type = 3
+                        insert_point = ~-1~     // last effect to insert
+                    STR_VAR
+                        resource = ~%spell%~    // spell to learn
+                END
+            END
+
+            BUT_ONLY
+
+    END
+    ELSE BEGIN
+        WARN ~WARN: fn-bz_create_scroll_from_spell_header: file `%item%.ITM` already exists~
+    END
+
+END
