@@ -126,7 +126,7 @@ DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
                     required_id = 0             // Require ID to use?
                     location = 3                // Item/equipment
                     alt_dicesize = 0
-                    target = %target%           // target type
+                    target = %target_type%      // target type
                     target_count = %ability_target_count%
                     range = %ability_range%     // range
                     projectile_type = 0         // No launcher
