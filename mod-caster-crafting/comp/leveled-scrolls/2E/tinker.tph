@@ -88,5 +88,5 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
         item  = ~BZ!30410~              //item RESREF to write to
         icon_inventory = ~BZ!30410~     //BAM RESREF to write for inventory
         icon_description = ~CSCRL01~    //BAM RESREF to write for description
-        bin_effects_copied = ~%transfer_effects%~   //copied binary of effects read from spell
+        bin_effects_copied = ~%spl_transfer_effects%~   //copied binary of effects read from spell
 END
