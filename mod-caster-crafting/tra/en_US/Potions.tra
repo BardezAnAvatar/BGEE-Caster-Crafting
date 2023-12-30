@@ -2,7 +2,7 @@
 
 
 /****************
-*   Durations   *
+*   Durations   *   TODO: move
 ****************/
 @49900 = ~%duration_days% day~
 @49901 = ~%duration_days% days~
