@@ -25,6 +25,7 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_read_spell_header_for_derived_item~
         spl_duration = ~duration~
         spl_magnitude = ~magnitude~
         spl_magnitude2 = ~magnitude2~
+        spl_type = ~spell_type~
         spl_ability_projectile = ~ability_projectile~
         spl_abil_range = ~ability_range~
         spl_abil_target = ~ability_target~
@@ -67,7 +68,7 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
         ability_target_count = %spl_abil_target_count%          //targets affected
         transfer_effects_count = %spl_transfer_effects_count%   //number of affects being added
         target_type = %spl_abil_target%                         //Type of target for ability
-        spell_type = 1                                          //Wizard (1)
+        spell_type = %spl_type%                                 //Wizard (1), etc
         learn_spell = 1                                         //flag for if the spell can be learnt
         usability_mage      = 1
         usability_bard      = 1
