@@ -34,7 +34,6 @@ INCLUDE ~./%MOD_FOLDER%/registration/generate_missing_scroll_list_data.tph~
 
 //include a function to create a scroll from a spell
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_copy_spell_header_to_scroll.tph~
-INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
 
 // Loop through the missing scrolls and create them
 ACTION_PHP_EACH ~scroll_list_missing_data~
