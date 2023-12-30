@@ -107,6 +107,7 @@ DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
             SET global_fx_num_off = 0x70
             SET abil_fx_idx = 0x00
 
+            //write the exclusion flags
             WRITE_BYTE (0x29) ((%exclusion_flags% BAND 0xFF000000) >> 24)   //cleric byte
             WRITE_BYTE (0x2B) ((%exclusion_flags% BAND 0x00FF0000) >> 16)   //thief byte
             WRITE_BYTE (0x2D) ((%exclusion_flags% BAND 0x0000FF00) >> 8)    //mage byte
@@ -163,6 +164,7 @@ DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
             SET fx_off = (abil_off + 0x38)
             WRITE_LONG 0x6a (fx_off)                                            // update new effects offset
 
+            //SET base_fx_add = (fx_off + 0x00 + (abil_fx_idx * 0x30))
             SET base_fx_add = fx_off    //making some assumptions about an empty file
             INSERT_BYTES base_fx_add (0x30 * transfer_effects_count)            // make space for...
             WRITE_ASCIIE base_fx_add ~%bin_effects_copied%~                     // transferred effects, binary
