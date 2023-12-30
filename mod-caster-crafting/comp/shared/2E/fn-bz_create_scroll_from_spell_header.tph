@@ -240,7 +240,7 @@ DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
                         charges = 1
                         depletion = 1           // vanishes
                         flags = 0               // no flags set
-                        projectile = %abil_projectile%
+                        projectile = 1          // None for learning spell
                         //Animation %s
                         overhand = 34
                         backhand = 33
