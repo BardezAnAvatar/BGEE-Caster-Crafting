@@ -67,7 +67,8 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
         ability_target_count = %spl_abil_target_count%          //targets affected
         transfer_effects_count = %spl_transfer_effects_count%   //number of affects being added
         target_type = %spl_abil_target%                         //Type of target for ability
-        learn_spell   = 1                                       //flag for if the spell can be learnt
+        spell_type = 1                                          //Wizard (1)
+        learn_spell = 1                                         //flag for if the spell can be learnt
         usability_mage      = 1
         usability_bard      = 1
         usability_ranger    = 0
