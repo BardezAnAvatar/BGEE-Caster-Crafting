@@ -1,4 +1,4 @@
-INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_copy_spell_header_to_scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_read_spell_header_for_derived_item.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_spell_header.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_render_item_text.tph~
 
