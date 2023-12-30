@@ -2,6 +2,7 @@
 *   Source: Based on `cd_items_casting_spells` provided by CamDawg
 *   https://github.com/Gibberlings3/iwdfixpack/blob/master/iwdfixpack/lib/functions.tpa#L218
 ***********************************************************************************************/
+INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
 
 
 DEFINE_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
