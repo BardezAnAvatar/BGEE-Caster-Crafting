@@ -149,7 +149,7 @@ DEFINE_ACTION_FUNCTION fn-bz_read_spell_header_for_derived_item
 
     END
     ELSE BEGIN
-        WARN ~WARN: fn_bz_read_spell_header_for_potion: file %spell%.SPL` not found~
+        WARN ~WARN: fn-bz_read_spell_header_for_derived_item: file %spell%.SPL` not found~
     END
 
 END
