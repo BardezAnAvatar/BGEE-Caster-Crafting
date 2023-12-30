@@ -23,6 +23,7 @@ DEFINE_ACTION_FUNCTION fn-bz_read_spell_header_for_derived_item
         ~magnitude2~
         ~ability_projectile~
         ~ability_range~
+        ~ability_target~
         ~ability_target_count~
         ~transfer_effects_count~
         ~transfer_effects~
@@ -141,6 +142,7 @@ DEFINE_ACTION_FUNCTION fn-bz_read_spell_header_for_derived_item
         //Set output variables
         OUTER_SET ability_projectile = %abil_projectile%
         OUTER_SET ability_range = %abil_range%
+        OUTER_SET ability_target = %abil_target%
         OUTER_SET ability_target_count = %abil_target_count%
         OUTER_SET transfer_effects_count = %transfer_fx_num%
 
