@@ -6,10 +6,10 @@ DEFINE_ACTION_FUNCTION ~fn-bz_render_item_text~
     INT_VAR
         caster_level = 0
         spl_duration = 0
-        strref_name = -1
-        strref_desc = -1
-        tra_name = -1
-        tra_desc = -1
+        strref_name = "-1"
+        strref_desc = "-1"
+        tra_name = "-1"
+        tra_desc = "-1"
     STR_VAR
         magnitude = null
         magnitude2 = null
@@ -70,8 +70,8 @@ BEGIN
     OUTER_SPRINT identified_name ""
     OUTER_SPRINT identified_description ""
 
-    ACTION_IF (strref_name > -1) THEN BEGIN READ_STRREF strref_name identified_name END
-    ACTION_IF (strref_desc > -1) THEN BEGIN READ_STRREF strref_desc identified_description END
+    ACTION_IF (strref_name > "-1") THEN BEGIN ACTION_GET_STRREF strref_name identified_name END
+    ACTION_IF (strref_desc > "-1") THEN BEGIN ACTION_GET_STRREF strref_desc identified_description END
 
     /*
         these strings can expect:
@@ -85,8 +85,8 @@ BEGIN
         %duration%
         %caster_level%
     */
-    ACTION_IF (tra_name > -1) THEN BEGIN OUTER_SPRINT identified_name (AT ~tra_name~) END
-    ACTION_IF (tra_desc > -1) THEN BEGIN OUTER_SPRINT identified_description (AT ~tra_description~) END
+    ACTION_IF (tra_name > "-1") THEN BEGIN OUTER_SPRINT identified_name (AT ~tra_name~) END
+    ACTION_IF (tra_desc > "-1") THEN BEGIN OUTER_SPRINT identified_description (AT ~tra_description~) END
     /*********************************************
     *   END: Calculate strings for description   *
     *********************************************/
