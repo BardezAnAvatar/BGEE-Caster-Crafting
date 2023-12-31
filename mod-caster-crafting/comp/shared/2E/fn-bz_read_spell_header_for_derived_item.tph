@@ -22,6 +22,8 @@ DEFINE_ACTION_FUNCTION fn-bz_read_spell_header_for_derived_item
         ~magnitude~
         ~magnitude2~
         ~spell_type~
+        ~spell_name~
+        ~spell_desc~
         ~ability_projectile~
         ~ability_range~
         ~ability_target~
@@ -97,6 +99,8 @@ DEFINE_ACTION_FUNCTION fn-bz_read_spell_header_for_derived_item
             READ_SHORT (base_off + 0x26) ~abil_projectile~
 
             READ_SHORT (0x1C) ~spell_type~      //Innate/Wizard/Priest/etc.
+            READ_LONG  (0x08) ~spell_name~
+            READ_LONG  (0x50) ~spell_desc~
 
             // read all effects in a massive block
             READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_fx_num)
