@@ -29,12 +29,10 @@ Furthermore, the basic ability to cast spells of the specified level:
 |   8   | 16 |
 |   9   | 18 |
 
-There are a bunch of ways I could try to make this work for 2E, but it keeps falling short. I suspect
-that the best bet would be: { base scroll level cost } + { { Excess Caster Level } * 50 * Spell level}
 
 Based from this pattern, a level 10 scroll should be 20k.
 
-Existing PRiest scrolls in-game:
+Existing Priest scrolls in-game:
 
 | Spell                     | Level | Cost |
 | ------------------------- | ----- | ---- |
@@ -81,3 +79,22 @@ As such, the costs vary wildly. My estimate table is as follows:
 |   6   | 2000 |
 |   7   | 3000 |
 | Quest | 5000 |
+
+
+## Levelled scrolls
+OK, so with established costs for the scrolls, now I have to determine the cost of variable-level scrolls having higher caster levels.
+
+There are a bunch of ways I could try to make this work for 2E, but it keeps falling short. I suspect
+that the best bet would be: { base scroll level cost } + { { Excess Caster Level } * 50 * Spell level}
+
+### Examples
+- Fireball (level 3, base caster level 5) at caster level 10 would be:
+base cost: 900
+excess caster level = 5
+900 + (5 * 50 * 3) = 1650
+... seems legit
+- Stoneskin (level 4, base caster level 7) at CL 20
+Base cost: 500
+Excess CL: 13
+500 + (13 *50 *4) = 3100
+... seems legit
