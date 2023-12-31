@@ -9,5 +9,5 @@ DEFINE_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_name~
     RET
         ~name~
 BEGIN
-    OUTER_TEXT_SPRINT name (~%name%~ ^ ~ (CL %caster_level%)~)
+    OUTER_TEXT_SPRINT name ~%name% (CL %caster_level%)~
 END
