@@ -1,0 +1,13 @@
+/*******************************************************************************
+*   This function will take an item's name and append the caster level to it   *
+*******************************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_name~
+    INT_VAR
+        caster_level = 0
+    STR_VAR
+        name = null
+    RET
+        ~name~
+BEGIN
+    OUTER_TEXT_SPRINT name (~%name%~ ^ ~ (CL %caster_level%)~)
+END
