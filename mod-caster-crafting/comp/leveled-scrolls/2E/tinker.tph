@@ -41,9 +41,8 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
     INT_VAR
         caster_level = 10
         spl_duration = spl_duration
-        existing_name =
-        tra_name = 50000
-        tra_description = 50001
+        strref_name = spl_name
+        strref_desc = spl_desc
     STR_VAR
         magnitude = ~%spl_magnitude%~
         magnitude2 = ~%spl_magnitude2%~
@@ -52,7 +51,7 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
         ~scrl_desc~ = ~identified_description~
 END
 
-
+//TODO: append caster level to the description
 
 OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%scrl_name%~)
 OUTER_SET identified_desc_STRREF = RESOLVE_STR_REF(~%scrl_desc%~)
