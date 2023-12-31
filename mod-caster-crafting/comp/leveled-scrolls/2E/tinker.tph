@@ -2,6 +2,7 @@ INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_read_spell_header_fo
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_spell_header.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_render_item_text.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_name.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
 
 
 
@@ -52,7 +53,25 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
         ~scrl_desc~ = ~identified_description~
 END
 
-//TODO: append caster level to the description
+
+
+//append caster level to the name/description
+LAUNCH_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_name~
+    INT_VAR
+        caster_level = 10
+    STR_VAR
+        name = ~%scrl_name%~
+    RET
+        scrl_name = name
+END
+LAUNCH_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_description~
+    INT_VAR
+        caster_level = 10
+    STR_VAR
+        desc = ~%scrl_desc%~
+    RET
+        scrl_desc = desc
+END
 
 OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%scrl_name%~)
 OUTER_SET identified_desc_STRREF = RESOLVE_STR_REF(~%scrl_desc%~)
