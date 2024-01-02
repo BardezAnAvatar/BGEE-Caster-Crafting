@@ -40,6 +40,8 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_read_spell_header_for_derived_item~
 END
 
 
+
+
 LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
     INT_VAR
         caster_level = 10
@@ -53,6 +55,7 @@ LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
         ~scrl_name~ = ~identified_name~
         ~scrl_desc~ = ~identified_description~
 END
+
 
 
 
@@ -78,6 +81,8 @@ OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%scrl_name%~)
 OUTER_SET identified_desc_STRREF = RESOLVE_STR_REF(~%scrl_desc%~)
 
 
+
+
 //calculate cost of scroll
 LAUNCH_ACTION_FUNCTION ~fn-calculate_leveled_scroll_price~
     INT_VAR
@@ -88,6 +93,7 @@ LAUNCH_ACTION_FUNCTION ~fn-calculate_leveled_scroll_price~
     RET
         scrl_gold_cost = gold_cost
 END
+
 
 
 
