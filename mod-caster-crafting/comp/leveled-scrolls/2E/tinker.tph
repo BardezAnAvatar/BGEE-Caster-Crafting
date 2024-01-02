@@ -3,6 +3,7 @@ INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_s
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_render_item_text.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_name.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-calculate_leveled_scroll_price.tph~
 
 
 
@@ -77,11 +78,23 @@ OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%scrl_name%~)
 OUTER_SET identified_desc_STRREF = RESOLVE_STR_REF(~%scrl_desc%~)
 
 
+//calculate cost of scroll
+LAUNCH_ACTION_FUNCTION ~fn-calculate_leveled_scroll_price~
+    INT_VAR
+        spell_level = 3
+        caster_level = 10
+        base_scroll_cost = 900
+        base_caster_level = 5
+    RET
+        scrl_gold_cost = gold_cost
+END
+
+
 
 //write fireball scroll
 LAUNCH_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
     INT_VAR
-        price = 600                                             //price of the scroll
+        price = scrl_gold_cost                                  //price of the scroll
         lore = 0                                                //lore to identify the scroll
         STRREF_identified_name = identified_name_STRREF         //STRREF for identified name
         STRREF_identified_desc = identified_desc_STRREF         //STRREF for identified description
