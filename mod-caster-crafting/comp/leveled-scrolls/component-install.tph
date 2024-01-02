@@ -1,16 +1,24 @@
 //TODO: iterate through spell list; check for multiple headers (excluding whacky mod headers)
 
 //IFF multiple headers with level < 51:
-    // read the scroll name
-    //read the scroll description
-    //add a dynamic caster level text to the description
-    //append caster level to the identified name
-    // siterate through each header
-    //read the minimum caster level
+    //1. read the spell name
+    //1. read the scroll description
+    //1. add a dynamic caster level text to the description
+    //1. append caster level to the identified name
+    //1. iterate through each header
+    //1. read the minimum caster level
     //IFF the minimum caster level > the required min. caster level to cast the spell:
-        //evaluate the identified name
-        //evaluate the descrition
+        //1. evaluate the identified name
+        //1. evaluate the descrition
         //create a scroll using the current header, name, desc
+
+// Data I will need, then, for each spell:
+// 1. Spell RESREF
+// 2. Spell level
+// 3. Base Scroll price (take from existing scrolls or missing scrolls calc)
+// 4. Base spell caster level
+// 5. Spell Usability flags? something for that fucking shaman. Join to Missing scrolls?
+
 
 
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/tinker.tph~
