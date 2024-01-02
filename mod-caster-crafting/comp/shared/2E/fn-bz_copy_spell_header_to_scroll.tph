@@ -5,6 +5,7 @@
 INCLUDE ~./%MOD_FOLDER%/lib/macros.tph~
 
 
+/* DEPRECATED */
 DEFINE_ACTION_FUNCTION ~fn-bz_copy_spell_header_to_scroll~
     INT_VAR
         cast_at_level = 1               //caster level to search on; read headers looking a header with this cast at min level
