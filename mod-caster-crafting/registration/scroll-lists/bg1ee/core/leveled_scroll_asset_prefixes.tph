@@ -1,0 +1,115 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~leveled_scroll_asset_prefixes~
+BEGIN
+
+    /*
+    [Spell]                 // 0
+    [Levelled BAM subpath]  // 1
+    */
+
+    ~SPWI101~, ~arcane/1/grease~                            => ~SPWI101~    //Grease
+    ~SPWI103~, ~arcane/1/burning_hands~                     => ~SPWI103~    //Burning Hands
+    ~SPWI104~, ~arcane/1/charm_person~                      => ~SPWI104~    //Charm Person
+    ~SPWI105~, ~arcane/1/color_spray~                       => ~SPWI105~    //Color Spray
+    ~SPWI106~, ~arcane/1/blindness~                         => ~SPWI106~    //Blindness
+    ~SPWI107~, ~arcane/1/friends~                           => ~SPWI107~    //Friends
+    ~SPWI112~, ~arcane/1/magic_missile~                     => ~SPWI112~    //Magic Missile
+    ~SPWI113~, ~arcane/1/protection_from_evil~              => ~SPWI113~    //Protection from Evil
+    ~SPWI115~, ~arcane/1/shocking_grasp~                    => ~SPWI115~    //Shocking Grasp
+    ~SPWI116~, ~arcane/1/sleep~                             => ~SPWI116~    //Sleep
+    ~SPWI117~, ~arcane/1/chill_touch~                       => ~SPWI117~    //Chill Touch
+    ~SPWI118~, ~arcane/1/chromatic_orb~                     => ~SPWI118~    //Chromatic Orb
+    ~SPWI120~, ~arcane/1/reflected_image~                   => ~SPWI120~    //Reflected Image
+    ~SPWI125~, ~arcane/1/spook~                             => ~SPWI125~    //Spook
+    ~SPWI126~, ~arcane/1/dancing_lights~                    => ~SPWI126~    //Dancing Lights
+
+    ~SPWI201~, ~arcane/2/blur~                              => ~SPWI201~    //Blur
+    ~SPWI205~, ~arcane/2/horror~                            => ~SPWI205~    //Horror
+    ~SPWI211~, ~arcane/2/melf's_acid_arrow~                 => ~SPWI211~    //Melf's Acid Arrow
+    ~SPWI212~, ~arcane/2/mirror_image~                      => ~SPWI212~    //Mirror Image
+    ~SPWI213~, ~arcane/2/stinking_cloud~                    => ~SPWI213~    //Stinking Cloud
+    ~SPWI214~, ~arcane/2/strength~                          => ~SPWI214~    //Strength
+    ~SPWI215~, ~arcane/2/web~                               => ~SPWI215~    //Web
+    ~SPWI217~, ~arcane/2/agannazar's_scorcher~              => ~SPWI217~    //Agannazar's Scorcher
+    ~SPWI218~, ~arcane/2/ghoul_touch~                       => ~SPWI218~    //Ghoul Touch
+    ~SPWI221~, ~arcane/2/ray_of_enfeeblement~               => ~SPWI221~    //Ray of Enfeeblement
+    ~SPWI222~, ~arcane/2/chaos_shield~                      => ~SPWI222~    //Chaos Shield*
+    ~SPWI223~, ~arcane/2/deafness~                          => ~SPWI223~    //Deafness
+    ~SPWI224~, ~arcane/2/glitterdust~                       => ~SPWI224~    //Glitterdust
+
+    ~SPWI303~, ~arcane/3/flame_arrow~                       => ~SPWI303~    //Flame Arrow
+    ~SPWI304~, ~arcane/3/fireball~                          => ~SPWI304~    //Fireball
+    ~SPWI305~, ~arcane/3/haste~                             => ~SPWI305~    //Haste
+    ~SPWI306~, ~arcane/3/hold_person~                       => ~SPWI306~    //Hold Person
+    ~SPWI308~, ~arcane/3/lightning_bolt~                    => ~SPWI308~    //Lightning Bolt
+    ~SPWI309~, ~arcane/3/monster_summoning_1~               => ~SPWI309~    //Monster Summoning 1
+    ~SPWI312~, ~arcane/3/slow~                              => ~SPWI312~    //Slow
+    ~SPWI313~, ~arcane/3/skull_trap~                        => ~SPWI313~    //Skull Trap
+    ~SPWI314~, ~arcane/3/vampiric_touch~                    => ~SPWI314~    //Vampiric Touch
+    ~SPWI315~, ~arcane/3/wraithform~                        => ~SPWI315~    //Wraith Form
+    ~SPWI316~, ~arcane/3/dire_charm~                        => ~SPWI316~    //Dire Charm
+    ~SPWI319~, ~arcane/3/protection_from_fire~              => ~SPWI319~    //Protection from Fire
+    ~SPWI320~, ~arcane/3/protection_from_cold~              => ~SPWI320~    //Protection from Cold
+    ~SPWI321~, ~arcane/3/spell_thrust~                      => ~SPWI321~    //Spell Thrust
+    ~SPWI324~, ~arcane/3/hold_undead~                       => ~SPWI324~    //Hold Undead
+    ~SPWI325~, ~arcane/melf's_minute_meteors~               => ~SPWI325~    //Melf's Minute Meteors
+
+    ~SPWI401~, ~arcane/4/confusion~                         => ~SPWI401~    //Confusion
+    ~SPWI403~, ~arcane/fireshield_blue~                     => ~SPWI403~    //Fire Shield (Blue)
+    ~SPWI404~, ~arcane/4/ice_storm~                         => ~SPWI404~    //Ice Storm
+    ~SPWI405~, ~arcane/4/improved_invisibility~             => ~SPWI405~    //Improved Invisibility
+    ~SPWI406~, ~arcane/4/minor_globe_of_invulnerability~    => ~SPWI406~    //Minor Globe of Invulnerability
+    ~SPWI407~, ~arcane/4/monster_summoning_2~               => ~SPWI407~    //Monster Summoning 2
+    ~SPWI408~, ~arcane/4/stoneskin~                         => ~SPWI408~    //Stone Skin
+    ~SPWI409~, ~arcane/4/contagion~                         => ~SPWI409~    //Contagion
+    ~SPWI411~, ~arcane/4/emotion_hopelessness~              => ~SPWI411~    //Emotion: Hopelessness
+    ~SPWI412~, ~arcane/4/greater_malison~                   => ~SPWI412~    //Greater Malison
+    ~SPWI415~, ~arcane/4/polymorph_other~                   => ~SPWI415~    //Polymorph Other
+    ~SPWI416~, ~arcane/4/polymorph_self~                    => ~SPWI416~    //Polymorph Self
+    ~SPWI417~, ~arcane/4/enchanted_weapon~                  => ~SPWI417~    //Enchanted Weapon
+    ~SPWI418~, ~arcane/4/fireshield_red~                    => ~SPWI418~    //Fire Shield (Red)
+    ~SPWI423~, ~arcane/4/spider_spawn~                      => ~SPWI423~    //Spider Spawn
+    ~SPWI424~, ~arcane/4/farsight~                          => ~SPWI424~    //Farsight
+    ~SPWI425~, ~arcane/4/wizard_eye~                        => ~SPWI425~    //Wizard Eye
+
+    ~SPWI501~, ~arcane/5/animate_dead~                      => ~SPWI501~    //Animate Dead
+    ~SPWI502~, ~arcane/5/cloudkill~                         => ~SPWI502~    //Cloud Kill
+    ~SPWI503~, ~arcane/5/cone_of_cold~                      => ~SPWI503~    //Cone of Cold
+    ~SPWI504~, ~arcane/5/monster_summoning_3~               => ~SPWI504~    //Monster Summoning 3
+    ~SPWI505~, ~arcane/5/shadow_door~                       => ~SPWI505~    //Shadow Door
+    ~SPWI506~, ~arcane/5/domination~                        => ~SPWI506~    //Domination
+    ~SPWI507~, ~arcane/5/hold_monster~                      => ~SPWI507~    //Hold Monster
+    ~SPWI508~, ~arcane/5/chaos~                             => ~SPWI508~    //Chaos
+    ~SPWI509~, ~arcane/5/feeblemind~                        => ~SPWI509~    //Feeblemind
+    ~SPWI511~, ~arcane/5/protection_from_normal_weapons~    => ~SPWI511~    //Protection from Normal Weapons
+    ~SPWI512~, ~arcane/5/protection_from_electricity~       => ~SPWI512~    //Protection from Electricity
+    ~SPWI514~, ~arcane/5/lower_resistance~                  => ~SPWI514~    //Lower Resistance
+    ~SPWI516~, ~arcane/5/conjure_lesser_fire_elemental~     => ~SPWI516~    //Conjure Lesser Fire Elemental
+    ~SPWI517~, ~arcane/5/protection_from_acid~              => ~SPWI517~    //Protection from Acid
+    ~SPWI518~, ~arcane/5/phantom_blade~                     => ~SPWI518~    //Phantom Blade
+    ~SPWI519~, ~arcane/5/spell_shield~                      => ~SPWI519~    //Spell Shield
+    ~SPWI520~, ~arcane/5/conjure_lesser_air_elemental~      => ~SPWI520~    //Conjure Lesser Air Elemental
+    ~SPWI521~, ~arcane/5/conjure_lesser_earth_elemental~    => ~SPWI521~    //Conjure Lesser Earth Elemental
+    ~SPWI522~, ~arcane/5/minor_spell_turning~               => ~SPWI522~    //Minor Spell Turning
+
+    ~SPWI602~, ~arcane/6/globe_of_invulnerability~          => ~SPWI602~    //Globe of Invulnerability
+    ~SPWI603~, ~arcane/6/tenser's_transformation~           => ~SPWI603~    //Tenser's Transformation
+    ~SPWI604~, ~arcane/6/flesh_to_stone~                    => ~SPWI604~    //Flesh to Stone
+    ~SPWI606~, ~arcane/6/protection_from_magic_energy~      => ~SPWI606~    //Protection from Magical Energy
+    ~SPWI607~, ~arcane/6/mislead~                           => ~SPWI607~    //Mislead
+    ~SPWI608~, ~arcane/6/pierce_magic~                      => ~SPWI608~    //Pierce Magic
+    ~SPWI613~, ~arcane/6/improved_haste~                    => ~SPWI613~    //Improved Haste
+    ~SPWI614~, ~arcane/6/death_fog~                         => ~SPWI614~    //Death Fog
+    ~SPWI615~, ~arcane/6/chain_lightning~                   => ~SPWI615~    //Chain Lightning
+    ~SPWI616~, ~arcane/6/disintegrate~                      => ~SPWI616~    //Disintigrate
+    ~SPWI617~, ~arcane/6/contingency~                       => ~SPWI617~    //Contingency
+    ~SPWI618~, ~arcane/6/spell_deflection~                  => ~SPWI618~    //Spell Deflection
+    ~SPWI619~, ~arcane/6/wyvern_call~                       => ~SPWI619~    //Wyvern Call
+    ~SPWI620~, ~arcane/6/conjure_fire_elemental~            => ~SPWI620~    //Conjure Fire Elemental
+    ~SPWI621~, ~arcane/6/conjure_air_elemental~             => ~SPWI621~    //Conjure Air Elemental
+    ~SPWI622~, ~arcane/6/conjure_earth_elemental~           => ~SPWI622~    //Conjure Earth Elemental
+    ~SPWI623~, ~arcane/6/carrion_summons~                   => ~SPWI623~    //Carrion Summons
+    ~SPWI624~, ~arcane/6/summon_nishruu~                    => ~SPWI624~    //Summon Nishruu
+    ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Flesh
+
+END
