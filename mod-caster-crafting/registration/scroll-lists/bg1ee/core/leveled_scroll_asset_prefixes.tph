@@ -112,4 +112,37 @@ BEGIN
     ~SPWI624~, ~arcane/6/summon_nishruu~                    => ~SPWI624~    //Summon Nishruu
     ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Flesh
 
+    ~SPWI701~, ~arcane/7/spell_turning~                     => ~SPWI701~    //Spell Turning
+    ~SPWI702~, ~arcane/7/protection_from_the_elements~      => ~SPWI702~    //Protection From The Elements
+    ~SPWI703~, ~arcane/7/project_image~                     => ~SPWI703~    //Project Image
+    ~SPWI711~, ~arcane/7/sphere_of_chaos~                   => ~SPWI711~    //Sphere of Chaos
+    ~SPWI712~, ~arcane/7/delayed_blast_fireball~            => ~SPWI712~    //Delayed Blast Fireball
+    ~SPWI713~, ~arcane/7/finger_of_death~                   => ~SPWI713~    //Finger of Death
+    ~SPWI714~, ~arcane/7/prismatic_spray~                   => ~SPWI714~    //Prismatic Spray
+    ~SPWI716~, ~arcane/7/mordenkainen's_sword~              => ~SPWI716~    //Mordenkainen's Sword
+    ~SPWI717~, ~arcane/7/summon_efreeti~                    => ~SPWI717~    //Summon Efreeti
+    ~SPWI718~, ~arcane/7/summon_djinni~                     => ~SPWI718~    //Summon Djinni
+    ~SPWI719~, ~arcane/7/summon_hakeashar~                  => ~SPWI719~    //Summon Hakeashar
+    ~SPWI720~, ~arcane/7/control_undead~                    => ~SPWI720~    //Control Undead
+    ~SPWI721~, ~arcane/7/mass_invisibility~                 => ~SPWI721~    //Mass Invisibility
+
+    ~SPWI803~, ~arcane/8/protection_from_energy~            => ~SPWI803~    //Protection from Energy
+    ~SPWI804~, ~arcane/8/simulacrum~                        => ~SPWI804~    //Simulacrum
+    ~SPWI805~, ~arcane/8/pierce_shield~                     => ~SPWI805~    //Pierce Shield
+    ~SPWI811~, ~arcane/8/symbol_fear~                       => ~SPWI811~    //Symbol, Fear
+    ~SPWI812~, ~arcane/8/abi-dalzim's_horrid_wilting~       => ~SPWI812~    //Abi-Dalzim's Horrid Wilting
+    ~SPWI816~, ~arcane/8/symbol_stun~                       => ~SPWI816~    //Symbol, Stun
+    ~SPWI817~, ~arcane/8/symbol_death~                      => ~SPWI817~    //Symbol, Death
+    ~SPWI818~, ~arcane/8/bigby's_clenched_fist~             => ~SPWI818~    //Bigby's Clenched Fist
+
+    ~SPWI913~, ~arcane/9/wail_of_the_banshee~               => ~SPWI913~    //Wail of the Banshee
+    ~SPWI918~, ~arcane/9/bigby's_crushing_fist~             => ~SPWI918~    //Bigby's Crushing Hand
+
+    ~SPWI920~, ~arcana/A/energy_blades~                     => ~SPWI920~    //Energy Blades
+    ~SPWI922~, ~arcane/A/dragon's_breath~                   => ~SPWI922~    //Dragon's Breath
+
+  //Missing
+  //~SPWI923~, ~arcane/A/summon_planetar~                   => ~SPWI923~    //Summon Planetar
+  //~SPWI924~, ~arcane/A/summon_dark_planetar~              => ~SPWI924~    //Summon Dark Planetar
+
 END
