@@ -134,6 +134,7 @@ BEGIN
     ~SPWI816~, ~arcane/8/symbol_stun~                       => ~SPWI816~    //Symbol, Stun
     ~SPWI817~, ~arcane/8/symbol_death~                      => ~SPWI817~    //Symbol, Death
     ~SPWI818~, ~arcane/8/bigby's_clenched_fist~             => ~SPWI818~    //Bigby's Clenched Fist
+    ~SPWI810~, ~arcane/8/incendiary_cloud~                  => ~SPWI810~    //Incendiary Cloud
 
     ~SPWI913~, ~arcane/9/wail_of_the_banshee~               => ~SPWI913~    //Wail of the Banshee
     ~SPWI918~, ~arcane/9/bigby's_crushing_fist~             => ~SPWI918~    //Bigby's Crushing Hand
