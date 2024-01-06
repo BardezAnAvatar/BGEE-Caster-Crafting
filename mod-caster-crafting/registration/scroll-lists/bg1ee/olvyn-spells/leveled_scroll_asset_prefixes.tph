@@ -27,6 +27,8 @@ BEGIN
         ~MEPR558~,      ~priest/5/sphere_of_security~,              => ~BZ!F5809~   //Sphere of Security
 
         ~MEWI651X~,     ~arcane/6/isaac's_greater_missile_storm~    => ~MEWI651X~   //Isaac's Greater Missile Storm
+        ~MEPR654~,      ~priest/6/living_lightning~,                => ~BZ!G5412~   //Living Lightning
+        ~MEPR658~,      ~shared/conjure_earth_elemental~,           => ~BZ!G5812~   //Conjure Earth Elemental
 
         ~MEWI759X~,     ~arcane/7/extraordinary_luck~               => ~MEWI759X~   //Extraordinary Luck
         ~MEWI760X~,     ~arcane/7/lightning_stream~                 => ~MEWI760X~   //Lightning Stream
@@ -81,6 +83,9 @@ BEGIN
         ~MEPR554~,      ~shared/ghostform~                          => ~MEPR554~    //Ghostform
         ~MEPR555~,      ~priest/5/critical_spell~                   => ~BZ!F5509~   //Critical Spell
         ~MEPR556~,      ~priest/5/barrage~                          => ~BZ!F5609~   //Barrage
+
+        ~MEPR660~,      ~priest/6/animal_growth~                    => ~BZ!G6012~   //Animal Growth
+
 
     END
 END
