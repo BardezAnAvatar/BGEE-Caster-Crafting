@@ -23,6 +23,7 @@ BEGIN
     ~CLERIC_SPIKE_GROWTH~,                       ~priest/3/spike_growth~                    => ~CLERIC_SPIKE_GROWTH~                    //Spike Growth
     ~CLERIC_MOLD_TOUCH~,                         ~priest/3/mold_touch~                      => ~CLERIC_MOLD_TOUCH~                      //Mold Touch
     ~CLERIC_CAUSE_MEDIUM_WOUNDS~,                ~priest/3/cause_medium_wounds~             => ~CLERIC_CAUSE_MEDIUM_WOUNDS~             //Cause Medium Wounds
+    ~CLERIC_CLOUDBURST~,                         ~priest/3/cloudburst~                      => ~CLERIC_CLOUDBURST~                      //Cloudburst
 
     ~WIZARD_BELTYNS_BURNING_BLOOD~,              ~arcane/4/beltyn's_burning_blood~          => ~WIZARD_BELTYNS_BURNING_BLOOD~           //Beltyn's Burning Blood
     ~WIZARD_EMOTION_FEAR~,                       ~arcane/4/emotion_fear~                    => ~WIZARD_EMOTION_FEAR~                    //Emotion: Fear
