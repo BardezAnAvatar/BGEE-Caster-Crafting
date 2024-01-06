@@ -11,6 +11,8 @@ BEGIN
         ~MEPR157~,      ~priest/1/searing_smite~,                   => ~BZ!B5701~   //Searing Smite
 
         ~MEWI254X~,     ~arcane/2/intoxicate~                       => ~MEWI254X~   //Intoxicate
+        ~MEWI255X~,     ~shared/null_healing~                       => ~MEWI255X~   //Null Healing
+        ~MEPR253~,      ~shared/null_healing~                       => ~BZ!C5303~   //Null Healing
 
         ~MEWI353X~,     ~arcane/3/displacement~                     => ~MEWI353X~   //Displacement
         ~MEWI356X~,     ~arcane/3/legend_lore~                      => ~MEWI356X~   //Legend Lore
@@ -62,7 +64,8 @@ BEGIN
         ~leveled_scroll_asset_prefixes~
     BEGIN
         ~MEWI257X~,     ~arcane/2/levitate~                         => ~MEWI257X~   //Levitate
-        ~MEWI259X~,     ~arcane/2/detect_magic~                     => ~MEWI259X~   //Detect Magic
+        ~MEWI259X~,     ~shared/detect_magic~                       => ~MEWI259X~   //Detect Magic
+        ~MEPR256~,      ~shared/detect_magic~                       => ~MEWI259X~   //Detect Magic
 
         ~MEWI352X~,     ~arcane/3/fly~                              => ~MEWI352X~   //Fly
         ~MEWI359X~,     ~arcane/3/throw~                            => ~MEWI359X~   //Throw
