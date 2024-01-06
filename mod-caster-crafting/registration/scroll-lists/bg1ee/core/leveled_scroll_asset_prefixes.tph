@@ -159,12 +159,18 @@ BEGIN
     ~SPWI617~, ~arcane/6/contingency~                       => ~SPWI617~    //Contingency
     ~SPWI618~, ~arcane/6/spell_deflection~                  => ~SPWI618~    //Spell Deflection
     ~SPWI619~, ~arcane/6/wyvern_call~                       => ~SPWI619~    //Wyvern Call
-    ~SPWI620~, ~arcane/6/conjure_fire_elemental~            => ~SPWI620~    //Conjure Fire Elemental
+    ~SPWI620~, ~shared/conjure_fire_elemental~              => ~SPWI620~    //Conjure Fire Elemental
     ~SPWI621~, ~arcane/6/conjure_air_elemental~             => ~SPWI621~    //Conjure Air Elemental
     ~SPWI622~, ~arcane/6/conjure_earth_elemental~           => ~SPWI622~    //Conjure Earth Elemental
     ~SPWI623~, ~arcane/6/carrion_summons~                   => ~SPWI623~    //Carrion Summons
     ~SPWI624~, ~arcane/6/summon_nishruu~                    => ~SPWI624~    //Summon Nishruu
     ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Flesh
+    ~SPPR601~, ~priest/6/aerial_servant~,                   => ~SPPR601~    //Aerial Servant
+    ~SPPR602~, ~priest/6/animal_summoning_3~,               => ~SPPR602~    //Animal Summoning 3
+    ~SPPR605~, ~shared/conjure_fire_elemental~,             => ~SPPR605~    //Conjure Fire Elemental
+    ~SPPR610~, ~priest/6/dolorous_decay~,                   => ~SPPR610~    //Dolorous Decay
+    ~SPPR650~, ~priest/6/spiritual_lock~,                   => ~SPPR650~    //Spiritual Lock
+
 
     ~SPWI701~, ~arcane/7/spell_turning~                     => ~SPWI701~    //Spell Turning
     ~SPWI702~, ~arcane/7/protection_from_the_elements~      => ~SPWI702~    //Protection From The Elements
