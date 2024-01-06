@@ -30,6 +30,10 @@ BEGIN
     ~WIZARD_SHOUT~,                              ~arcane/4/shout~                           => ~WIZARD_SHOUT~                           //Shout
     ~WIZARD_VITRIOLIC_SPHERE~,                   ~arcane/4/vitriolic_sphere~                => ~WIZARD_VITRIOLIC_SPHERE~                //Vitriolic Sphere
     ~WIZARD_SHADOW_MONSTERS~,                    ~arcane/4/shadow_monsters~                 => ~WIZARD_SHADOW_MONSTERS~                 //Shadow Monsters
+    ~CLERIC_STATIC_CHARGE~,                      ~priest/4/static_charge~                   => ~CLERIC_STATIC_CHARGE~                   //Static Charge
+    ~CLERIC_CLOUD_OF_PESTILENCE~,                ~priest/4/cloud_of_pestilence~             => ~CLERIC_CLOUD_OF_PESTILENCE~             //Cloud of Pestilance
+    ~CLERIC_SMASHING_WAVE~,                      ~priest/4/smashing_wave~                   => ~CLERIC_SMASHING_WAVE~                   //Smashing Wave
+    ~CLERIC_THORN_SPRAY~,                        ~priest/4/thorn_spray~                     => ~CLERIC_THORN_SPRAY~                     //Thorn Spray
 
     ~WIZARD_SHROUD_OF_FLAME~,                    ~arcane/5/shroud_of_flame~                 => ~WIZARD_SHROUD_OF_FLAME~                 //Shroud of Flame
     ~WIZARD_SUMMON_SHADOW~,                      ~arcane/5/summon_shadow~                   => ~WIZARD_SUMMON_SHADOW~                   //Summon Shadow
