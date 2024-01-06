@@ -185,6 +185,20 @@ BEGIN
     ~SPWI719~, ~arcane/7/summon_hakeashar~                  => ~SPWI719~    //Summon Hakeashar
     ~SPWI720~, ~arcane/7/control_undead~                    => ~SPWI720~    //Control Undead
     ~SPWI721~, ~arcane/7/mass_invisibility~                 => ~SPWI721~    //Mass Invisibility
+    ~SPPR701~, ~priest/7/shield_of_the_archons~,            => ~SPPR701~    //Shield of the Archons
+    ~SPPR702~, ~shared/conjure_earth_elemental~,            => ~SPPR702~    //Conjure Earth Elemental
+    ~SPPR704~, ~priest/7/nature's_beauty~,                  => ~SPPR704~    //Nature's Beauty
+    ~SPPR705~, ~priest/7/fire_storm~,                       => ~SPPR705~    //Fire Storm
+    ~SPPR706~, ~shared/symbol_fear~,                        => ~SPPR706~    //Symbol, Fear
+    ~SPPR707~, ~priest/7/sunray~,                           => ~SPPR707~    //Sunray
+    ~SPPR708~, ~shared/finger_of_death~,                    => ~SPPR708~    //Finger of Death
+    ~SPPR709~, ~shared/confusion~,                          => ~SPPR709~    //Confusion
+    ~SPPR711~, ~priest/7/regeneration~,                     => ~SPPR711~    //Regeneration
+    ~SPPR718~, ~shared/symbol_stun~,                        => ~SPPR718~    //Symbol, Stun
+    ~SPPR719~, ~shared/symbol_death~,                       => ~SPPR719~    //Symbol, Death
+    ~SPPR720~, ~priest/7/earthquake~,                       => ~SPPR720~    //Earthquake
+    ~SPPR729~, ~priest/7/mass_raise_dead~,                  => ~SPPR729~    //Mass Raise Dead
+
 
     ~SPWI803~, ~arcane/8/protection_from_energy~            => ~SPWI803~    //Protection from Energy
     ~SPWI804~, ~arcane/8/simulacrum~                        => ~SPWI804~    //Simulacrum
