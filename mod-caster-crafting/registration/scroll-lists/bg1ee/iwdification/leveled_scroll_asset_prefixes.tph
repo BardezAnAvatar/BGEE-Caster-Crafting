@@ -8,6 +8,8 @@ BEGIN
     */
 
     ~WIZARD_EXPEDITIOUS_RETREAT~,                ~arcane/1/expeditious_retreat~             => ~WIZARD_EXPEDITIOUS_RETREAT~             //Expeditious Retret
+    ~CLERIC_CAUSE_LIGHT_WOUNDS~,                 ~priest/1/cause_light_wounds~              => ~CLERIC_CAUSE_LIGHT_WOUNDS~              //Cause Light Wounds
+    ~CLERIC_SUNSCORCH~,                          ~priest/1/sunscorch~                       => ~CLERIC_SUNSCORCH~                       //Sunscorch
 
     ~WIZARD_SNILLOCS_SNOWBALL_SWARM~,            ~arcane/2/snilloc's_snowball_swarm~        => ~WIZARD_SNILLOCS_SNOWBALL_SWARM~         //Snilloc's Snowball Swarm
     ~WIZARD_DECASTAVE~,                          ~arcane/2/decastave~                       => ~WIZARD_DECASTAVE~                       //Decastave
