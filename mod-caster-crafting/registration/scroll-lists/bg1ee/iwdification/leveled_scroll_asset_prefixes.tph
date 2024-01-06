@@ -14,6 +14,8 @@ BEGIN
     ~WIZARD_SNILLOCS_SNOWBALL_SWARM~,            ~arcane/2/snilloc's_snowball_swarm~        => ~WIZARD_SNILLOCS_SNOWBALL_SWARM~         //Snilloc's Snowball Swarm
     ~WIZARD_DECASTAVE~,                          ~arcane/2/decastave~                       => ~WIZARD_DECASTAVE~                       //Decastave
     ~WIZARD_CATS_GRACE~,                         ~arcane/2/cat's_grace~                     => ~WIZARD_CATS_GRACE~                      //Cat's Grace
+    ~CLERIC_ALICORN_LANCE~,                      ~priest/2/alicorn_lance~                   => ~CLERIC_ALICORN_LANCE~                   //Alicorn Lance
+    ~CLERIC_CAUSE_MODERATE_WOUNDS~,              ~priest/2/cause_moderate_wounds~           => ~CLERIC_CAUSE_MODERATE_WOUNDS~           //Cause Moderate Wounds
 
     ~WIZARD_ICELANCE~,                           ~arcane/3/icelance~                        => ~WIZARD_ICELANCE~                        //Icelance
     ~WIZARD_LANCE_OF_DISRUPTION~,                ~arcane/3/lance_of_disruption~             => ~WIZARD_LANCE_OF_DISRUPTION~             //Lance of Disruption
