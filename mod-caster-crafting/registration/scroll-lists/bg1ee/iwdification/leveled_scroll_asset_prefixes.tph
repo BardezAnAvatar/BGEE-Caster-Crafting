@@ -49,7 +49,10 @@ BEGIN
     ~WIZARD_ANTIMAGIC_SHELL~,                    ~arcane/6/antimagic_shell~                 => ~WIZARD_ANTIMAGIC_SHELL~                 //Antimagic Shell
     ~WIZARD_LICH_TOUCH~,                         ~arcane/6/lich_touch~                      => ~WIZARD_LICH_TOUCH~                      //Lich Touch
     ~WIZARD_SHADES~,                             ~arcane/6/shades~                          => ~WIZARD_SHADES~                          //Shades
-    ~WIZARD_CONJURE_WATER_ELEMENTAL~,            ~arcane/6/conjure_water_elemental~         => ~WIZARD_CONJURE_WATER_ELEMENTAL~         //Conjure Water ElementalTER_ELEMENTAL~         //Conjure Water Elemental
+    ~WIZARD_CONJURE_WATER_ELEMENTAL~,            ~arcane/6/conjure_water_elemental~         => ~WIZARD_CONJURE_WATER_ELEMENTAL~         //Conjure Water Elemental
+    ~CLERIC_ENTROPY_SHIELD~,                     ~priest/6/entropy_shield~                  => ~CLERIC_ENTROPY_SHIELD~                  //Entropy Shield
+    ~CLERIC_WHIRLWIND~,                          ~priest/6/whirlwind~                       => ~CLERIC_WHIRLWIND~                       //Whirlwind
+    ~CLERIC_SPIRITUAL_WRATH~,                    ~priest/6/spiritual_wrath~                 => ~CLERIC_SPIRITUAL_WRATH~                 //Spiritual Wrath
 
     ~WIZARD_ACID_STORM~,                         ~arcane/7/acid_storm~                      => ~WIZARD_ACID_STORM~                      //Acid Storm
     ~WIZARD_SUFFOCATE~,                          ~arcane/7/suffocate~                       => ~WIZARD_SUFFOCATE~                       //Suffocate
