@@ -8,6 +8,7 @@ BEGIN
     */
 
         ~MEWI152X~,     ~arcane/1/inertia~                          => ~MEWI152X~   //Inertia
+        ~MEPR157~,      ~priest/1/searing_smite~,                   => ~BZ!B5701~   //Searing Smite
 
         ~MEWI254X~,     ~arcane/2/intoxicate~                       => ~MEWI254X~   //Intoxicate
 
