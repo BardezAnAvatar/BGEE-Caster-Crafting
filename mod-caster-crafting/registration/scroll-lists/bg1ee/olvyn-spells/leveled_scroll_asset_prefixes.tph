@@ -23,6 +23,8 @@ BEGIN
         ~MEWI554X~,     ~arcane/5/ball_lightning~                   => ~MEWI554X~   //Ball Lightning
         ~MEWI557X~,     ~arcane/5/commando_conjuration~             => ~MEWI557X~   //Commando Conjuration
         ~MEWI566X~,     ~arcane/5/gedlee's_electric_barrier~        => ~MEWI566X~   //Gedlee's Electric Barrier
+        ~MEPR557~,      ~priest/5/expose_to_the_elements~,          => ~BZ!F5709~   //Expose to the Elements
+        ~MEPR558~,      ~priest/5/sphere_of_security~,              => ~BZ!F5809~   //Sphere of Security
 
         ~MEWI651X~,     ~arcane/6/isaac's_greater_missile_storm~    => ~MEWI651X~   //Isaac's Greater Missile Storm
 
@@ -75,6 +77,9 @@ BEGIN
 
         ~MEWI552X~,     ~arcane/5/steal_spells~                     => ~MEWI552X~   //Steal Spells
         ~MEWI559X~,     ~arcane/5/ghostform~                        => ~MEWI559X~   //Ghostform
+        ~MEPR555~,      ~priest/5/critical_spell~                   => ~BZ!F5509~   //Critical Spell
+        ~MEPR556~,      ~priest/5/barrage~                          => ~BZ!F5609~   //Barrage
+
     END
 END
 
