@@ -133,6 +133,18 @@ BEGIN
     ~SPWI520~, ~arcane/5/conjure_lesser_air_elemental~      => ~SPWI520~    //Conjure Lesser Air Elemental
     ~SPWI521~, ~arcane/5/conjure_lesser_earth_elemental~    => ~SPWI521~    //Conjure Lesser Earth Elemental
     ~SPWI522~, ~arcane/5/minor_spell_turning~               => ~SPWI522~    //Minor Spell Turning
+    ~SPPR501~, ~priest/5/animal_summoning_2~,               => ~SPPR501~    //Animal Summoning 2
+    ~SPPR503~, ~priest/5/flame_strike~,                     => ~SPPR503~    //Flame Strike
+    ~SPPR506~, ~priest/5/iron_skins~,                       => ~SPPR506~    //Iron Skins
+    ~SPPR507~, ~priest/5/champion's_strength~               => ~SPPR507~    //Champion's Strength
+    ~SPPR508~, ~priest/5/chaotic_commands~                  => ~SPPR508~    //Chaotic Commands
+    ~SPPR509~, ~priest/5/magic_resistance~,                 => ~SPPR509~    //Magic Resistance
+    ~SPPR510~, ~priest/5/cause_critical_wounds~,            => ~SPPR510~    //Cause Critical Wounds
+    ~SPPR512~, ~priest/5/greater_command~,                  => ~SPPR512~    //Greater Command
+    ~SPPR513~, ~priest/5/righteous_magic~,                  => ~SPPR513~    //Righteous Magic
+    ~SPPR514~, ~priest/5/mass_cure~,                        => ~SPPR514~    //Mass Cure
+    ~SPPR517~, ~priest/5/insect_plague~,                    => ~SPPR517~    //Insect Plague
+
 
     ~SPWI602~, ~arcane/6/globe_of_invulnerability~          => ~SPWI602~    //Globe of Invulnerability
     ~SPWI603~, ~arcane/6/tenser's_transformation~           => ~SPWI603~    //Tenser's Transformation
