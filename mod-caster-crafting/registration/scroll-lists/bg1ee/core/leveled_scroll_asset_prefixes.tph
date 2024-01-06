@@ -84,7 +84,7 @@ BEGIN
     ~SPPR319~, ~priest/3/summon_insects~,                   => ~SPPR319~    //Summon Insects
 
 
-    ~SPWI401~, ~arcane/4/confusion~                         => ~SPWI401~    //Confusion
+    ~SPWI401~, ~shared/confusion~                           => ~SPWI401~    //Confusion
     ~SPWI403~, ~arcane/fireshield_blue~                     => ~SPWI403~    //Fire Shield (Blue)
     ~SPWI404~, ~arcane/4/ice_storm~                         => ~SPWI404~    //Ice Storm
     ~SPWI405~, ~arcane/4/improved_invisibility~             => ~SPWI405~    //Improved Invisibility
@@ -161,7 +161,7 @@ BEGIN
     ~SPWI619~, ~arcane/6/wyvern_call~                       => ~SPWI619~    //Wyvern Call
     ~SPWI620~, ~shared/conjure_fire_elemental~              => ~SPWI620~    //Conjure Fire Elemental
     ~SPWI621~, ~arcane/6/conjure_air_elemental~             => ~SPWI621~    //Conjure Air Elemental
-    ~SPWI622~, ~arcane/6/conjure_earth_elemental~           => ~SPWI622~    //Conjure Earth Elemental
+    ~SPWI622~, ~shared/conjure_earth_elemental~             => ~SPWI622~    //Conjure Earth Elemental
     ~SPWI623~, ~arcane/6/carrion_summons~                   => ~SPWI623~    //Carrion Summons
     ~SPWI624~, ~arcane/6/summon_nishruu~                    => ~SPWI624~    //Summon Nishruu
     ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Flesh
@@ -177,7 +177,7 @@ BEGIN
     ~SPWI703~, ~arcane/7/project_image~                     => ~SPWI703~    //Project Image
     ~SPWI711~, ~arcane/7/sphere_of_chaos~                   => ~SPWI711~    //Sphere of Chaos
     ~SPWI712~, ~arcane/7/delayed_blast_fireball~            => ~SPWI712~    //Delayed Blast Fireball
-    ~SPWI713~, ~arcane/7/finger_of_death~                   => ~SPWI713~    //Finger of Death
+    ~SPWI713~, ~shared/finger_of_death~                     => ~SPWI713~    //Finger of Death
     ~SPWI714~, ~arcane/7/prismatic_spray~                   => ~SPWI714~    //Prismatic Spray
     ~SPWI716~, ~arcane/7/mordenkainen's_sword~              => ~SPWI716~    //Mordenkainen's Sword
     ~SPWI717~, ~arcane/7/summon_efreeti~                    => ~SPWI717~    //Summon Efreeti
@@ -203,10 +203,10 @@ BEGIN
     ~SPWI803~, ~arcane/8/protection_from_energy~            => ~SPWI803~    //Protection from Energy
     ~SPWI804~, ~arcane/8/simulacrum~                        => ~SPWI804~    //Simulacrum
     ~SPWI805~, ~arcane/8/pierce_shield~                     => ~SPWI805~    //Pierce Shield
-    ~SPWI811~, ~arcane/8/symbol_fear~                       => ~SPWI811~    //Symbol, Fear
+    ~SPWI811~, ~shared/symbol_fear~                         => ~SPWI811~    //Symbol, Fear
     ~SPWI812~, ~arcane/8/abi-dalzim's_horrid_wilting~       => ~SPWI812~    //Abi-Dalzim's Horrid Wilting
-    ~SPWI816~, ~arcane/8/symbol_stun~                       => ~SPWI816~    //Symbol, Stun
-    ~SPWI817~, ~arcane/8/symbol_death~                      => ~SPWI817~    //Symbol, Death
+    ~SPWI816~, ~shared/symbol_stun~                         => ~SPWI816~    //Symbol, Stun
+    ~SPWI817~, ~shared/symbol_death~                        => ~SPWI817~    //Symbol, Death
     ~SPWI818~, ~arcane/8/bigby's_clenched_fist~             => ~SPWI818~    //Bigby's Clenched Fist
     ~SPWI810~, ~arcane/8/incendiary_cloud~                  => ~SPWI810~    //Incendiary Cloud
 
