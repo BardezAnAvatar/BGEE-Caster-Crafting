@@ -217,9 +217,15 @@ BEGIN
 
     ~SPWI920~, ~arcana/A/energy_blades~                     => ~SPWI920~    //Energy Blades
     ~SPWI922~, ~arcane/A/dragon's_breath~                   => ~SPWI922~    //Dragon's Breath
-
   //Missing
   //~SPWI923~, ~arcane/A/summon_planetar~                   => ~SPWI923~    //Summon Planetar
   //~SPWI924~, ~arcane/A/summon_dark_planetar~              => ~SPWI924~    //Summon Dark Planetar
+
+
+    ~SPPR721~, ~priest/Q/energy_blades~,                    => ~SPPR721~    //Energy Blades
+    ~SPPR726~, ~priest/Q/summon_deva~,                      => ~SPPR726~    //Summon Deva
+    ~SPPR727~, ~preist/Q/summon_fallen_deva~,               => ~SPPR727~    //Summon Fallen Deva
+    ~SPPR730~, ~priest/Q/aura_of_flaming_death~,            => ~SPPR730~    //Aura of Flaming Death
+
 
 END
