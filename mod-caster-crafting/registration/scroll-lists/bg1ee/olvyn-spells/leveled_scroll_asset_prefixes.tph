@@ -67,8 +67,9 @@ BEGIN
         ~MEWI259X~,     ~shared/detect_magic~                       => ~MEWI259X~   //Detect Magic
         ~MEPR256~,      ~shared/detect_magic~                       => ~MEWI259X~   //Detect Magic
 
-        ~MEWI352X~,     ~arcane/3/fly~                              => ~MEWI352X~   //Fly
+        ~MEWI352X~,     ~shared/fly~                                => ~MEWI352X~   //Fly
         ~MEWI359X~,     ~arcane/3/throw~                            => ~MEWI359X~   //Throw
+        ~MEPR357~,      ~shared/fly~                                => ~MEPR357~   //Fly
 
         ~MEWI552X~,     ~arcane/5/steal_spells~                     => ~MEWI552X~   //Steal Spells
         ~MEWI559X~,     ~arcane/5/ghostform~                        => ~MEWI559X~   //Ghostform
