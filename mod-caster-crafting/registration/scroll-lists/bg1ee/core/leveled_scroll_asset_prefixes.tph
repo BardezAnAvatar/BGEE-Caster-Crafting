@@ -72,7 +72,7 @@ BEGIN
     ~SPWI320~, ~arcane/3/protection_from_cold~              => ~SPWI320~    //Protection from Cold
     ~SPWI321~, ~arcane/3/spell_thrust~                      => ~SPWI321~    //Spell Thrust
     ~SPWI324~, ~arcane/3/hold_undead~                       => ~SPWI324~    //Hold Undead
-    ~SPWI325~, ~arcane/melf's_minute_meteors~               => ~SPWI325~    //Melf's Minute Meteors
+    ~SPWI325~, ~arcane/3/melf's_minute_meteors~             => ~SPWI325~    //Melf's Minute Meteors
     ~SPPR301~, ~shared/animate_dead~                        => ~SPPR301~    //Animate Dead
     ~SPPR302~, ~priest/3/call_lightning~,                   => ~SPPR302~    //Call Lightning
     ~SPPR304~, ~priest/3/glyph_of_warding~,                 => ~SPPR304~    //Glyph of Warding
@@ -86,7 +86,7 @@ BEGIN
 
 
     ~SPWI401~, ~shared/confusion~                           => ~SPWI401~    //Confusion
-    ~SPWI403~, ~arcane/fireshield_blue~                     => ~SPWI403~    //Fire Shield (Blue)
+    ~SPWI403~, ~arcane/4/fireshield_blue~                   => ~SPWI403~    //Fire Shield (Blue)
     ~SPWI404~, ~arcane/4/ice_storm~                         => ~SPWI404~    //Ice Storm
     ~SPWI405~, ~arcane/4/improved_invisibility~             => ~SPWI405~    //Improved Invisibility
     ~SPWI406~, ~arcane/4/minor_globe_of_invulnerability~    => ~SPWI406~    //Minor Globe of Invulnerability
@@ -100,7 +100,7 @@ BEGIN
     ~SPWI417~, ~arcane/4/enchanted_weapon~                  => ~SPWI417~    //Enchanted Weapon
     ~SPWI418~, ~arcane/4/fireshield_red~                    => ~SPWI418~    //Fire Shield (Red)
     ~SPWI423~, ~arcane/4/spider_spawn~                      => ~SPWI423~    //Spider Spawn
-    ~SPWI424~, ~sharedfarsight~                             => ~SPWI424~    //Farsight
+    ~SPWI424~, ~shared/farsight~                            => ~SPWI424~    //Farsight
     ~SPWI425~, ~arcane/4/wizard_eye~                        => ~SPWI425~    //Wizard Eye
     ~SPPR402~, ~priest/4/animal_summoning_1~,               => ~SPPR402~    //Animal Summoning 1
     ~SPPR403~, ~priest/4/free_action~                       => ~SPPR403~    //Free Action
