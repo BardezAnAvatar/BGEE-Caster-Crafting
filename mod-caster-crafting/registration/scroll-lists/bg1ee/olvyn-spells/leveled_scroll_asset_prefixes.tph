@@ -86,6 +86,7 @@ BEGIN
 
         ~MEPR660~,      ~priest/6/animal_growth~                    => ~BZ!G6012~   //Animal Growth
 
+        ~MEPR762~,      ~priest/7/elysium's_tears~                  => ~BZ!H6214~   //Elysium's Tears
 
     END
 END
