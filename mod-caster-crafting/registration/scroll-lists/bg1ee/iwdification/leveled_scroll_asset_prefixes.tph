@@ -40,6 +40,8 @@ BEGIN
     ~WIZARD_SUMMON_SHADOW~,                      ~arcane/5/summon_shadow~                   => ~WIZARD_SUMMON_SHADOW~                   //Summon Shadow
     ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~,     ~arcane/5/conjure_lesser_water_elemental~  => ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~  //Conjure Lesser Water Elemental
     ~WIZARD_DEMI_SHADOW_MONSTERS~,               ~arcane/5/demi-shadow_monsters~            => ~WIZARD_DEMI_SHADOW_MONSTERS~            //Demi-Shadow Monsters
+    ~CLERIC_SPIKE_STONES~,                       ~priest/5/spike_stones~                    => ~CLERIC_SPIKE_STONES~                    //Spike Stones
+    ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~,            ~priest/5/mass_cause_light_wounds~         => ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~         //Mass Cause Light Wounds
 
     ~WIZARD_MONSTER_SUMMONING_4~,                ~arcane/6/monster_summoning_4~             => ~WIZARD_MONSTER_SUMMONING_4~             //Monster Summoning 4
     ~WIZARD_OTILUKES_FREEZING_SPHERE~,           ~arcane/6/otiluke's_freezing_sphere~       => ~WIZARD_OTILUKES_FREEZING_SPHERE~        //Otiluke's Freezing Sphere
