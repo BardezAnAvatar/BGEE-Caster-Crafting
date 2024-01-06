@@ -102,6 +102,10 @@ BEGIN
     ~SPWI424~, ~sharedfarsight~                             => ~SPWI424~    //Farsight
     ~SPWI425~, ~arcane/4/wizard_eye~                        => ~SPWI425~    //Wizard Eye
     ~SPPR402~, ~priest/4/animal_summoning_1~,               => ~SPPR402~    //Animal Summoning 1
+    ~SPPR403~, ~priest/4/free_action~                       => ~SPPR403~    //Free Action
+    ~SPPR405~, ~priest/4/mental_domination~                 => ~SPPR405~    //Mental Domination
+    ~SPPR407~, ~priest/4/protection_from_lightning~         => ~SPPR407~    //Protection from Lightning
+    ~SPPR408~, ~priest/4/protection_from_evil_10ft~         => ~SPPR408~    //Protection from Evil 10' Radius
     ~SPPR409~, ~priest/4/death_ward~,                       => ~SPPR409~    //Death Ward
     ~SPPR411~, ~priest/4/poison~,                           => ~SPPR411~    //Poison
     ~SPPR412~, ~priest/4/holy_power~,                       => ~SPPR412~    //Holy Power
