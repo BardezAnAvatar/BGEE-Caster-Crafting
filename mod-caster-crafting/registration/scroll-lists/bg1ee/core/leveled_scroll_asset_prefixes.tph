@@ -174,7 +174,7 @@ BEGIN
 
 
     ~SPWI701~, ~arcane/7/spell_turning~                     => ~SPWI701~    //Spell Turning
-    ~SPWI702~, ~arcane/7/protection_from_the_elements~      => ~SPWI702~    //Protection From The Elements
+    ~SPWI702~, ~shared/protection_from_the_elements~        => ~SPWI702~    //Protection From The Elements
     ~SPWI703~, ~arcane/7/project_image~                     => ~SPWI703~    //Project Image
     ~SPWI711~, ~arcane/7/sphere_of_chaos~                   => ~SPWI711~    //Sphere of Chaos
     ~SPWI712~, ~arcane/7/delayed_blast_fireball~            => ~SPWI712~    //Delayed Blast Fireball

@@ -76,7 +76,9 @@ BEGIN
         ~MEPR456~,      ~priest/4/pebbles_to_boulders~,             => ~BZ!E5607~   //Pebbles to Boulders
 
         ~MEWI552X~,     ~arcane/5/steal_spells~                     => ~MEWI552X~   //Steal Spells
-        ~MEWI559X~,     ~arcane/5/ghostform~                        => ~MEWI559X~   //Ghostform
+        ~MEWI559X~,     ~shared/ghostform~                          => ~MEWI559X~   //Ghostform
+        ~MEPR553~,      ~shared/protection_from_the_elements~       => ~BZ!F5309~   //Protection from the Elements
+        ~MEPR554~,      ~shared/ghostform~                          => ~MEPR554~    //Ghostform
         ~MEPR555~,      ~priest/5/critical_spell~                   => ~BZ!F5509~   //Critical Spell
         ~MEPR556~,      ~priest/5/barrage~                          => ~BZ!F5609~   //Barrage
 
