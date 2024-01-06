@@ -67,11 +67,21 @@ BEGIN
     ~SPWI314~, ~arcane/3/vampiric_touch~                    => ~SPWI314~    //Vampiric Touch
     ~SPWI315~, ~arcane/3/wraithform~                        => ~SPWI315~    //Wraith Form
     ~SPWI316~, ~arcane/3/dire_charm~                        => ~SPWI316~    //Dire Charm
-    ~SPWI319~, ~arcane/3/protection_from_fire~              => ~SPWI319~    //Protection from Fire
+    ~SPWI319~, ~shared/protection_from_fire~                => ~SPWI319~    //Protection from Fire
     ~SPWI320~, ~arcane/3/protection_from_cold~              => ~SPWI320~    //Protection from Cold
     ~SPWI321~, ~arcane/3/spell_thrust~                      => ~SPWI321~    //Spell Thrust
     ~SPWI324~, ~arcane/3/hold_undead~                       => ~SPWI324~    //Hold Undead
     ~SPWI325~, ~arcane/melf's_minute_meteors~               => ~SPWI325~    //Melf's Minute Meteors
+    ~SPPR302~, ~priest/3/call_lightning~,                   => ~SPPR302~    //Call Lightning
+    ~SPPR304~, ~priest/3/glyph_of_warding~,                 => ~SPPR304~    //Glyph of Warding
+    ~SPPR305~, ~priest/3/hold_animal~,                      => ~SPPR305~    //Hold Animal
+    ~SPPR306~, ~shared/protection_from_fire~,               => ~SPPR306~    //Protection from Fire
+    ~SPPR310~, ~priest/3/miscast_magic~,                    => ~SPPR310~    //Miscast Magic
+    ~SPPR311~, ~priest/3/rigid_thinking~,                   => ~SPPR311~    //Rigid Thinking
+    ~SPPR313~, ~priest/3/holy_smite~,                       => ~SPPR313~    //Holy Smite
+    ~SPPR314~, ~priest/3/unholy_blight~,                    => ~SPPR314~    //Unholy Blight
+    ~SPPR319~, ~priest/3/summon_insects~,                   => ~SPPR319~    //Summon Insects
+
 
     ~SPWI401~, ~arcane/4/confusion~                         => ~SPWI401~    //Confusion
     ~SPWI403~, ~arcane/fireshield_blue~                     => ~SPWI403~    //Fire Shield (Blue)
