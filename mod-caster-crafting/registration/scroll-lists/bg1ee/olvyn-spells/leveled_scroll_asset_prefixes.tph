@@ -88,6 +88,9 @@ BEGIN
 
         ~MEPR762~,      ~priest/7/elysium's_tears~                  => ~BZ!H6214~   //Elysium's Tears
 
+        ~MEPR761~,      ~priest/Q/volcanic_eruption~                => ~BZ!I6115~   //Volcanic Eruption
+        ~MEPR763~,      ~priest/Q/greater_living_lightning~         => ~BZ!I6315~   //Greater Living Lightning
+
     END
 END
 
