@@ -69,7 +69,9 @@ BEGIN
 
         ~MEWI352X~,     ~shared/fly~                                => ~MEWI352X~   //Fly
         ~MEWI359X~,     ~arcane/3/throw~                            => ~MEWI359X~   //Throw
-        ~MEPR357~,      ~shared/fly~                                => ~MEPR357~   //Fly
+        ~MEPR357~,      ~shared/fly~                                => ~MEPR357~    //Fly
+
+        ~MEPR456~,      ~priest/4/pebbles_to_boulders~,             => ~BZ!E5607~   //Pebbles to Boulders
 
         ~MEWI552X~,     ~arcane/5/steal_spells~                     => ~MEWI552X~   //Steal Spells
         ~MEWI559X~,     ~arcane/5/ghostform~                        => ~MEWI559X~   //Ghostform
