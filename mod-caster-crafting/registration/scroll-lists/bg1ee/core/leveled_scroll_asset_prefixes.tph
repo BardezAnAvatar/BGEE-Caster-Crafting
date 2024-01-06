@@ -22,6 +22,13 @@ BEGIN
     ~SPWI120~, ~arcane/1/reflected_image~                   => ~SPWI120~    //Reflected Image
     ~SPWI125~, ~arcane/1/spook~                             => ~SPWI125~    //Spook
     ~SPWI126~, ~arcane/1/dancing_lights~                    => ~SPWI126~    //Dancing Lights
+    ~SPPR102~, ~priest/1/command~,                          => ~SPPR102~    //Command
+    ~SPPR105~, ~priest/1/entangle~,                         => ~SPPR105~    //Entangle
+    ~SPPR107~, ~shared/protection_from_evil~,               => ~SPPR107~    //Protection From Evil
+    ~SPPR110~, ~priest/1/shillelagh~,                       => ~SPPR110~    //Shillelagh
+    ~SPPR111~, ~priest/1/armor_of_faith~,                   => ~SPPR111~    //Armor of Faith
+    ~SPPR116~, ~priest/1/faerie_fire~,                      => ~SPPR116~    //Faerie Fire
+
 
     ~SPWI201~, ~arcane/2/blur~                              => ~SPWI201~    //Blur
     ~SPWI205~, ~arcane/2/horror~                            => ~SPWI205~    //Horror
@@ -36,6 +43,18 @@ BEGIN
     ~SPWI222~, ~arcane/2/chaos_shield~                      => ~SPWI222~    //Chaos Shield*
     ~SPWI223~, ~arcane/2/deafness~                          => ~SPWI223~    //Deafness
     ~SPWI224~, ~arcane/2/glitterdust~                       => ~SPWI224~    //Glitterdust
+    ~SPPR201~, ~priest/2/aid~,                              => ~SPPR201~    //Aid
+    ~SPPR202~, ~priest/2/barkskin~,                         => ~SPPR202~    //Barkskin
+    ~SPPR204~, ~priest/2/charm_person_or_mammal~,           => ~SPPR204~    //Charm Person or Mammal
+    ~SPPR206~, ~priest/2/flame_blade~,                      => ~SPPR206~    //Flame Blade
+    ~SPPR208~, ~priest/2/hold_person~,                      => ~SPPR208~    //Hold Person
+    ~SPPR209~, ~priest/2/know_alignment~,                   => ~SPPR209~    //Know Alignment
+    ~SPPR210~, ~priest/2/resist_fire_and_cold~,             => ~SPPR210~    //Resist Fire/Cold
+    ~SPPR211~, ~priest/2/silence_15ft_radius~,              => ~SPPR211~    //Silence 15' Radius
+    ~SPPR213~, ~priest/2/spiritual_hammer~,                 => ~SPPR213~    //Spiritual Hammer
+    ~SPPR214~, ~priest/2/draw_upon_holy_might~,             => ~SPPR214~    //Draw Upon Holy Might
+    ~SPPR250~, ~priest/2/writhing_fog~,                     => ~SPPR250~    //Writhing Fog
+
 
     ~SPWI303~, ~arcane/3/flame_arrow~                       => ~SPWI303~    //Flame Arrow
     ~SPWI304~, ~arcane/3/fireball~                          => ~SPWI304~    //Fireball
