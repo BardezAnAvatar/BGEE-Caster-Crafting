@@ -41,6 +41,7 @@ BEGIN
     OUTER_TEXT_SPRINT ~bz_unleveled_scroll_base_gold~ "0"
     OUTER_TEXT_SPRINT ~bz_unleveled_scroll_base_caster_level~ "0"
     OUTER_TEXT_SPRINT ~bz_unleveled_scroll_spell_level~ "0"
+    OUTER_TEXT_SPRINT ~bz_unleveled_scroll_bam_prefix~ ""
 
     ACTION_PHP_EACH ~scroll_list~
         AS ~scroll_keys~ => ~_v~
@@ -86,6 +87,19 @@ BEGIN
 
 
 
+    ACTION_PHP_EACH ~leveled_scroll_asset_prefixes~
+        AS ~prefix_keys~ => ~_v~
+    BEGIN
+        ACTION_IF (~%keys_0%~ STRING_EQUAL ~%prefix_keys_0%~) THEN
+        BEGIN
+            OUTER_TEXT_SPRINT ~bz_unleveled_scroll_bam_prefix~ ~%prefix_keys_1%~
+        END
+    END
+
+
+
+
+
 
     ACTION_IF NOT (~%bz_unleveled_scroll_resref%~ STRING_EQUAL ~~) THEN
     BEGIN
@@ -97,7 +111,7 @@ BEGIN
             ~%bz_unleveled_scroll_spell_level%~,        //spell level
             ~%bz_unleveled_scroll_base_caster_level%~,  //caster level
             ~%bz_unleveled_scroll_base_gold%~,          //cost of the scroll in the *.ITM file
-            ~bogus~                                     //path/filname prefix for leveled BAMs
+            ~%bz_unleveled_scroll_bam_prefix%~          //path/filname prefix for leveled BAMs
                 => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
         END
     END
