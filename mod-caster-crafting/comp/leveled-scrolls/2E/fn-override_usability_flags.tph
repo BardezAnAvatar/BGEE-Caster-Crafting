@@ -1,0 +1,36 @@
+/*****************************************************************************************
+*   This function is for any shennanigans about overriding usability for a scroll/wand   *
+*       based off of an existing spell.                                                  *
+*****************************************************************************************/
+DEFINE_PATCH_FUNCTION ~fn-override_usability_flags~
+    STR_VAR
+        ~spell~ = null
+    RET
+        ~usability_ranger~
+        ~usability_paladin~
+        ~usability_cleric~
+        ~usability_druid~
+        ~usability_shaman~
+BEGIN
+        PATCH_MATCH ~%spell%~
+        WITH
+            //Shaman-only spells
+            ~SPPR150~ ~SPPR250~ ~SPPR350~ ~SPPR450~ ~SPPR550~ ~SPPR650~ ~SPPR750~ ~SPPR751~
+            ~MEPR457~ ~MEPR766~ ~MEPR759~ ~MEPR152~ ~MEPR255~ ~MEPR655~
+            BEGIN
+                SET ~usability_ranger~  = "0"
+                SET ~usability_paladin~ = "0"
+                SET ~usability_cleric~  = "0"
+                SET ~usability_druid~   = "0"
+                SET ~usability_shaman~  = "1"
+            END
+            DEFAULT
+            BEGIN
+                SET ~usability_ranger~  = "-1"
+                SET ~usability_paladin~ = "-1"
+                SET ~usability_cleric~  = "-1"
+                SET ~usability_druid~   = "-1"
+                SET ~usability_shaman~  = "-1"
+            END
+        END
+END
