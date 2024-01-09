@@ -10,7 +10,10 @@ I think I took a wrong turn here...
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/generate_unleveled_scroll_list_data.tph~
 */
 
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-create_leveled_scrolls.tph~
 
+LAUNCH_ACTION_FUNCTION ~fn-create_leveled_scrolls~
+END
 
 //copy inventory BAM
 COPY
