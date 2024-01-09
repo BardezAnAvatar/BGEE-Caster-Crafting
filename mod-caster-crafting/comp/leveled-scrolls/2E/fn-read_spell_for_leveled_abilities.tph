@@ -1,0 +1,53 @@
+/*******************************************************************************************
+*   This function will read an opened spell, read its ability headers, and check for any   *
+*       ability headers which:                                                             *
+*           - have a minimum caster level > 1                                              *
+*           - which is also greater than ~minimum_caster_level~                            *
+*           - which is also less than 51                                                   *
+*       If any such header is found, ~leveled_headers_found~ is set and the ability        *
+*           is appended to ~headers~ array                                                 *
+*******************************************************************************************/
+DEFINE_PATCH_FUNCTION ~fn-read_spell_for_leveled_abilities~
+    INT_VAR
+        minimum_caster_level = "-1"
+    RET
+        ~leveled_headers_found~
+    RET_ARRAY
+        ~headers~
+BEGIN
+    READ_SHORT 0x68 abil_num
+    READ_LONG  0x64 abil_off
+    READ_LONG  0x6a fx_off
+    PATCH_IF (abil_num > 1) THEN
+    BEGIN
+        FOR (index = 1 ; index < abil_num ; ++index)    // skip first ability, which is always 1
+        BEGIN
+            READ_SHORT (abil_off + (index * 0x28) + 0x10) min_lev
+            PATCH_IF (min_lev > 1) AND (min_lev > minimum_caster_level) AND (min_lev < 51) THEN
+            BEGIN
+                SET leveled_headers_found = 1
+
+                SET base_off = (abil_off + (index * 0x28))
+
+                READ_BYTE  (base_off + 0x00) ~abil_type~
+                READ_BYTE  (base_off + 0x0C) ~ability_target~
+                READ_BYTE  (base_off + 0x0D) ~ability_target_count~
+                READ_SHORT (base_off + 0x0E) ~ability_range~
+                READ_SHORT (base_off + 0x1E) ~transfer_effects_count~
+                READ_SHORT (base_off + 0x20) ~abil_fx_idx~
+                READ_SHORT (base_off + 0x26) ~ability_projectile~
+
+                // read all effects in a massive block
+                READ_ASCII (fx_off + (abil_fx_idx * 0x30)) transfer_effects (0x30 * transfer_effects_count)
+
+                //Create an array entry
+                DEFINE_ASSOCIATIVE_ARRAY
+                    ~headers~
+                BEGIN
+                    ~%min_lev%~, ~%ability_projectile%~, ~%ability_range%~, ~%ability_target%~, ~%ability_target_count%~, ~%transfer_effects_count%~, ~%transfer_effects%~
+                        => ~%min_lev%~
+                END //array append
+            END //leveled ability effect
+        END //iterate through abilities
+    END //more than one ability
+END //function definition
