@@ -12,6 +12,7 @@
 
 //includes
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_min_caster_level.tph~
 
 
 DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
@@ -32,6 +33,15 @@ BEGIN
                 ~identifier~ = ~~
             RET
                 ~resref~
+        END
+
+        //lookup the minimum caster level
+        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_min_caster_level~
+            STR_VAR
+                Tradition = ~%keys_1%~
+                Level = ~%keys_2%~
+            RET
+                ~min_caster_level~ = ~minimum_caster_level~
         END
 
         //Open Spell
