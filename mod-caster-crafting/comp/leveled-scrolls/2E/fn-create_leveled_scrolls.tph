@@ -13,7 +13,7 @@
 //includes
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_min_caster_level.tph~
-
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-read_spell_for_leveled_abilities.tph~
 
 DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
 BEGIN
@@ -31,7 +31,7 @@ BEGIN
         //identify RESREF
         LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~
             STR_VAR
-                ~identifier~ = ~~
+                ~identifier~ = ~%keys_0%~
             RET
                 spell = ~resref~
         END
@@ -54,7 +54,13 @@ BEGIN
 
                 //check for headers: { 1 > (any headers > min_level) < 51 }
                     //Function: return bool if there are any, array of headers like my copy shit from that one function for all contents
-                LAUNCH_PATCH_FUNCTION
+                LAUNCH_PATCH_FUNCTION ~fn-read_spell_for_leveled_abilities~
+                    INT_VAR
+                        minimum_caster_level = min_caster_level
+                    RET
+                        any_leveled_abilities = ~leveled_headers_found~
+                    RET_ARRAY
+                        leveled_abilities = ~headers~
                 END
 
                 // IFF found leveled abiliteis, then loop:
@@ -69,6 +75,26 @@ BEGIN
 
                 //Once I have this data, I can exit the copy,
             BUT_ONLY_IF_IT_CHANGES
+
+            /* DEBUG */
+
+            PRINT ~DEBUG: leveled_abilities: %spell%.SPL~
+            ACTION_PHP_EACH ~leveled_abilities~
+                AS ~keys~ => ~value~
+            BEGIN
+                //Debugging Statements
+                PRINT ~-leveled_abilities Record:
+                    Ability Min. Level:     `%keys_0%`
+                    ability_projectile:     `%keys_1%`
+                    ability_range:          `%keys_2%`
+                    ability_target:         `%keys_3%`
+                    ability_target_count:   `%keys_4%`
+                    transfer_effects_count: `%keys_5%`
+                    transfer_effects:       `%keys_6%`
+                    Value:                  `%value%`~
+            END
+
+
 
             //IFF found leveled abilities
                 //loop through the returned array:
