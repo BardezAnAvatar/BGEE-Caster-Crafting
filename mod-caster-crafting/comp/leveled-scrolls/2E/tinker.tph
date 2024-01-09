@@ -17,7 +17,7 @@ END
 
 //copy inventory BAM
 COPY
-    ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/BAM/en_us/number/arcane/fireball-10.bam~
+    ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/BAM/en_us/number/arcane/3/fireball-10.bam~
     ~override/BZ!30410.BAM~
 
 //read fireball spell
