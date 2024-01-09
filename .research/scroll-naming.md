@@ -86,7 +86,6 @@ Thus
 | Class      |   7   |  X   |
 | Class      |   8   |  Y   |
 | Class      |   9   |  Z   |
-| Class      |   10  |  _   |
 | Innate     |   1   |  !   |
 | Innate     |   2   |  #   |
 | Innate     |   3   |  =   |
@@ -96,7 +95,6 @@ Thus
 | Innate     |   7   |  }   |
 | Innate     |   8   |  [   |
 | Innate     |   9   |  ]   |
-| Innate     |   10  |  \`  |
 
 **Switch statement seems to win out.**
 
