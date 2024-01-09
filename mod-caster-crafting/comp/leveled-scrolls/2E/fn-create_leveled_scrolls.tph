@@ -12,4 +12,34 @@
 DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
 BEGIN
 
+
+    ACTION_PHP_EACH ~spell_list~
+        AS ~keys~ => ~value~
+    BEGIN
+        //Open Spell
+
+        //check for headers: { 1 > (any headers > min_level) < 51 }
+            //Function: return bool if there are any, array of headers like my copy shit from that one function for all contents
+
+        // IFF found leveled abiliteis, then loop:
+            //Make this a function call to return:
+
+            //read its restrictions
+            //get usability flags from missing list and/or the base scroll; shaman flag is F'd from item, though.
+            //Read kit exclusion flags
+            //read alignment exclusion flags
+
+            //Oh, and by the way, another function to override specific spells for shit like shamans
+
+        //Once I have this data, I can exit the copy,
+
+        //IFF found leveled abilities
+            //loop through the returned array:
+                //Make an item with the new shit
+
+
+
+    END
+
+
 END
