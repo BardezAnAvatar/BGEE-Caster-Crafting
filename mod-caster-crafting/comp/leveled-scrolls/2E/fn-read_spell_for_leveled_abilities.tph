@@ -15,6 +15,9 @@ DEFINE_PATCH_FUNCTION ~fn-read_spell_for_leveled_abilities~
     RET_ARRAY
         ~headers~
 BEGIN
+    //default value
+    SET leveled_headers_found = 0
+
     READ_SHORT 0x68 abil_num
     READ_LONG  0x64 abil_off
     READ_LONG  0x6a fx_off
