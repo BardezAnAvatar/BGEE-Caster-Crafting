@@ -14,6 +14,7 @@
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_min_caster_level.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-read_spell_for_leveled_abilities.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-read_usability_flags_from_spell.tph~
 
 DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
 BEGIN
@@ -63,15 +64,31 @@ BEGIN
                         leveled_abilities = ~headers~
                 END
 
-                // IFF found leveled abiliteis, then loop:
-                    //Make this a function call to return:
+                // IFF found leveled abilities
+                PATCH_IF (any_leveled_abilities = 1) THEN
+                BEGIN
+                    //read spell restrictions and calc its usability flags
+                    LAUNCH_PATCH_FUNCTION ~fn-read_usability_flags_from_spell~
+                        STR_VAR
+                            ~spell~ = ~%spell%~
+                        RET
+                            ~spl_exclusion_flags~         = ~exclusion_flags~
+                            ~spl_usability_mage~          = ~usability_mage~
+                            ~spl_usability_bard~          = ~usability_bard~
+                            ~spl_usability_ranger~        = ~usability_ranger~
+                            ~spl_usability_paladin~       = ~usability_paladin~
+                            ~spl_usability_cleric~        = ~usability_cleric~
+                            ~spl_usability_druid~         = ~usability_druid~
+                            ~spl_usability_shaman~        = ~usability_shaman~
+                            ~spl_usability_good~          = ~usability_good~
+                            ~spl_usability_neutral_trail~ = ~usability_neutral_trail~         // ...Neutral [Lawful/Chaotic]
+                            ~spl_usability_evil~          = ~usability_evil~
+                            ~spl_usability_lawful~        = ~usability_lawful~
+                            ~spl_usability_neutral_lead~  = ~usability_neutral_lead~          // Neutral... [Evil/Good]
+                            ~spl_usability_chaotic~       = ~usability_chaotic~
+                    END
 
-                    //read its restrictions
-                    //get usability flags from missing list and/or the base scroll; shaman flag is F'd from item, though.
-                    //Read kit exclusion flags
-                    //read alignment exclusion flags
-
-                    //Oh, and by the way, another function to override specific spells for shit like shamans
+                END //check for `any_leveled_abilities` found
 
                 //Once I have this data, I can exit the copy,
             BUT_ONLY_IF_IT_CHANGES
