@@ -1,0 +1,107 @@
+/******************************************************************************************************
+*   This function will generate the appropriate *.ITM RESREF for a scroll that is added by this mod.  *
+******************************************************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-bz_get_mod_item_name_scroll~
+    INT_VAR
+        ~Caster_Level~ = 0
+    STR_VAR
+        ~Spell_ResRef~ = null
+        ~Level~ = null
+        ~Tradition~ = null    //Arcane/Divine (Priest)/Innate/Ranger/Class/Protection
+    RET
+        ~scroll_resref~
+BEGIN
+    OUTER_TEXT_SPRINT prefix ~BZ!~
+
+    /******************************************
+    *   BEGIN: calculate the tradition code   *
+    ******************************************/
+    ACTION_MATCH ~%Tradition%~
+        WITH
+            ~Protection~
+            BEGIN OUTER_TEXT_SPRINT tradition_code ~0~ END
+
+            ~Arcane~
+            BEGIN
+                OUTER_TEXT_SPRINT tradition_code ~%Level%~ END
+            END
+
+            ~Divine~ ~Priest~
+            BEGIN
+                ACTION_IF (~%Level%~ STRING_EQUAL "1") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~B~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "2") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~C~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "3") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~D~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "4") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~E~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "5") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~F~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "6") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~G~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "7") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~H~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "Q") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~I~ END END
+            END
+
+            ~Ranger~
+            BEGIN
+                ACTION_IF (~%Level%~ STRING_EQUAL "1") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~J~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "2") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~K~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "3") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~L~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "4") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~M~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "5") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~N~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "6") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~O~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "7") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~P~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "Q") THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~Q~ END END
+            END
+
+            ~Class~
+            BEGIN
+                ACTION_IF (~%Level%~ STRING_EQUAL "1")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~R~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "2")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~S~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "3")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~T~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "4")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~U~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "5")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~V~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "6")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~W~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "7")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~X~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "8")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~Y~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "9")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~Z~ END END
+            END
+
+            ~Innate~
+            BEGIN
+                ACTION_IF (~%Level%~ STRING_EQUAL "1")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~!~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "2")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~#~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "3")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~=~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "4")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~(~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "5")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~)~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "6")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~{~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "7")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~}~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "8")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~[~ END END
+                ACTION_IF (~%Level%~ STRING_EQUAL "9")  THEN BEGIN OUTER_TEXT_SPRINT tradition_code ~]~ END END
+            END
+
+
+            DEFAULT
+    END
+    /****************************************
+    *   END: calculate the tradition code   *
+    ****************************************/
+
+
+    //SpellNumber
+    LAUNCH_ACTION_FUNCTION ~SUBSTRING~
+        INT_VAR
+            start = 5
+            ~length~ = 2
+        STR_VAR
+            ~string~ = ~%Spell_ResRef%~
+        RET
+            ~spell_number~ = ~substring~
+    END
+
+
+    //Caster Level
+    ACTION_IF ((STRING_LENGTH ~Caster_Level~) = 0) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~00~
+    ACTION_IF ((STRING_LENGTH ~Caster_Level~) = 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~0%Caster_Level%~
+    ACTION_IF ((STRING_LENGTH ~Caster_Level~) > 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~%Caster_Level%~
+
+
+    //calculate result
+    OUTER_TEXT_SPRINT ~scroll_resref~ ~%prefix%%tradition_code%%spell_number%%PaddedCasterLevel%~
+END
