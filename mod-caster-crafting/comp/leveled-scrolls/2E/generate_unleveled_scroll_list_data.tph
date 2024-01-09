@@ -19,7 +19,7 @@
     [Icon: Inventory BAM path/prefix]   // 5
 */
 
-INCLUDE ~./%MOD_FOLDER%/registration/fn_calculate_scroll_cost.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_calculate_scroll_cost.tph~
 
 
 //Include scroll BAM prefix lists
@@ -87,7 +87,7 @@ BEGIN
                 OUTER_TEXT_SPRINT ~bz_unleveled_scroll_spell_level~         ~%missing_scroll_keys_3%~
 
                 //get scroll cost
-                LAUNCH_ACTION_FUNCTION ~bz_calculate_scroll_cost~
+                LAUNCH_ACTION_FUNCTION ~fn-bz_calculate_scroll_cost~
                     INT_VAR
                         ~CasterLevel~ = ~%missing_scroll_keys_3%~
                         ~AdditionalCost~ = ~%missing_scroll_keys_5%~

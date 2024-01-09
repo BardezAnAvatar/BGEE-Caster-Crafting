@@ -4,7 +4,7 @@
 //includes
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_min_caster_level.tph~
 
-DEFINE_ACTION_FUNCTION ~bz_calculate_scroll_cost~
+DEFINE_ACTION_FUNCTION ~fn-bz_calculate_scroll_cost~
     INT_VAR
         ~CasterLevel~ = 0
         ~AdditionalCost~ = 0

@@ -26,6 +26,7 @@
 
 //includes
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_calculate_scroll_cost.tph~
 
 ACTION_PHP_EACH ~scroll_list_missing~
     AS ~keys~ => ~value~
@@ -35,7 +36,7 @@ ACTION_PHP_EACH ~scroll_list_missing~
         LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~ STR_VAR ~identifier~ = ~%keys_1%~ RET ~spell_resref~ = ~resref~ END
 
         //calculate the gold cost
-        LAUNCH_ACTION_FUNCTION ~bz_calculate_scroll_cost~
+        LAUNCH_ACTION_FUNCTION ~fn-bz_calculate_scroll_cost~
             INT_VAR
                 ~CasterLevel~ = %keys_4%
                 ~AdditionalCost~ = %keys_5%
