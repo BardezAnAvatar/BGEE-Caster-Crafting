@@ -116,9 +116,26 @@ BEGIN
                 END //loop for debug
 
 
-                //IFF found leveled abilities
-                    //loop through the returned array:
-                        //Make an item with the new shit
+
+
+                // IFF found leveled abilities
+                ACTION_IF (any_leveled_abilities = 1) THEN
+                BEGIN
+
+                    //identify the BAM prefix
+                    ACTION_PHP_EACH ~leveled_scroll_asset_prefixes~
+                        AS ~prefix_keys~ => ~_v~
+                    BEGIN
+                        ACTION_IF (~%keys_0%~ STRING_EQUAL ~%prefix_keys_0%~) THEN
+                        BEGIN
+                            OUTER_TEXT_SPRINT ~bz_unleveled_scroll_bam_prefix~ ~%prefix_keys_1%~
+                        END
+                    END
+                    ACTION_IF (~%bz_unleveled_scroll_bam_prefix%~ STRING_EQUAL ~~) THEN BEGIN WARN ~WARN: leveled BAM group for %keys_0% not found~ END
+
+                    //TODO: Make an item with the new shit
+
+                END //check for `any_leveled_abilities` found
 
             END //IF for further action
 
