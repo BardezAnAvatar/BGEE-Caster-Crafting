@@ -69,6 +69,34 @@ Thus
 | Divine     |   6   |  G   |
 | Divine     |   7   |  H   |
 | Divine     |   Q   |  I   |
+| Ranger     |   1   |  J   |
+| Ranger     |   2   |  K   |
+| Ranger     |   3   |  L   |
+| Ranger     |   4   |  M   |
+| Ranger     |   5   |  N   |
+| Ranger     |   6   |  O   |
+| Ranger     |   7   |  P   |
+| Ranger     |   Q   |  Q   |
+| Class      |   1   |  R   |
+| Class      |   2   |  S   |
+| Class      |   3   |  T   |
+| Class      |   4   |  U   |
+| Class      |   5   |  V   |
+| Class      |   6   |  W   |
+| Class      |   7   |  X   |
+| Class      |   8   |  Y   |
+| Class      |   9   |  Z   |
+| Class      |   10  |  _   |
+| Innate     |   1   |  !   |
+| Innate     |   2   |  #   |
+| Innate     |   3   |  =   |
+| Innate     |   4   |  (   |
+| Innate     |   5   |  )   |
+| Innate     |   6   |  {   |
+| Innate     |   7   |  }   |
+| Innate     |   8   |  [   |
+| Innate     |   9   |  ]   |
+| Innate     |   10  |  \`  |
 
 **Switch statement seems to win out.**
 
