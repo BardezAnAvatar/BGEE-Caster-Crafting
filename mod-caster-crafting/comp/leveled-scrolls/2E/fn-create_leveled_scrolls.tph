@@ -13,8 +13,14 @@
 //includes
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_min_caster_level.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_calculate_scroll_cost.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-read_spell_for_leveled_abilities.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-read_usability_flags_from_spell.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_spell_header.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_render_item_text.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_get_mod_item_name_scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_name.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
 
 DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
 BEGIN
@@ -52,6 +58,7 @@ BEGIN
 
             //Open Spell
             COPY_EXISTING - ~%spell%.SPL~ ~./leveled/%spell%.SPL~
+                READ_SHORT (0x1C) ~spell_type~      //Innate/Wizard/Priest/etc.
 
                 //check for headers: { 1 > (any headers > min_level) < 51 }
                     //Function: return bool if there are any, array of headers like my copy shit from that one function for all contents
@@ -98,7 +105,7 @@ BEGIN
             BEGIN
 
                 /* DEBUG */
-
+                /*
                 PRINT ~DEBUG: leveled_abilities: %spell%.SPL~
                 ACTION_PHP_EACH ~leveled_abilities~
                     AS ~keys~ => ~value~
@@ -114,8 +121,7 @@ BEGIN
                         transfer_effects:       `%keys_6%`
                         Value:                  `%value%`~
                 END //loop for debug
-
-
+                */
 
 
                 // IFF found leveled abilities
@@ -133,7 +139,144 @@ BEGIN
                     END
                     ACTION_IF (~%bz_unleveled_scroll_bam_prefix%~ STRING_EQUAL ~~) THEN BEGIN WARN ~WARN: leveled BAM group for %keys_0% not found~ END
 
-                    //TODO: Make an item with the new shit
+
+
+                    //... then loop over `leveled_abilities` array
+                    ACTION_PHP_EACH ~leveled_abilities~
+                        AS ~abils~ => ~val~
+                    BEGIN
+
+                        //Get 0-padded caster level
+                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) = 0) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~00~
+                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) = 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~0%abils_0%~
+                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) > 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~%abils_0%~
+
+
+
+                        //Identify new scroll item resref
+                        LAUNCH_ACTION_FUNCTION ~fn-bz_get_mod_item_name_scroll~
+                            STR_VAR
+                                ~Spell_ResRef~ = ~%spell%~
+                                ~Level~ = ~%keys_2%~
+                                ~Tradition~ = ~%keys_1%~    //Arcane/Divine (Priest)/Innate/Ranger/Class/Protection
+                                ~Zero_Padded_Caster_Level~ = ~%PaddedCasterLevel%~
+                            RET
+                                scroll_itm = ~scroll_resref~
+                        END //Identify new scroll item resref
+
+
+
+                        //BEGIN: calculate the scroll cost
+                        LAUNCH_ACTION_FUNCTION ~fn-bz_calculate_scroll_cost~
+                            INT_VAR
+                                ~CasterLevel~ = ~%abils_0%~
+                                ~AdditionalCost~ = 0
+                            STR_VAR
+                                ~Level~ = ~%keys_2%~
+                                ~Tradition~ = ~%keys_1%~
+                            RET
+                                ~scroll_cost~ = ~gold~
+                        END //calculate the scroll cost
+
+
+
+                        /*******************************************
+                        *   BEGIN: Generate name and description   *
+                        *******************************************/
+                        LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
+                            INT_VAR
+                                caster_level = ~%abils_0%~
+                                spl_duration = spl_duration
+                                strref_name = spl_name
+                                strref_desc = spl_desc
+                            STR_VAR
+                                magnitude = ~%spl_magnitude%~
+                                magnitude2 = ~%spl_magnitude2%~
+                            RET
+                                ~scrl_name~ = ~identified_name~
+                                ~scrl_desc~ = ~identified_description~
+                        END
+
+                        //append caster level to the name/description
+                        LAUNCH_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_name~
+                            INT_VAR
+                                caster_level = ~%abils_0%~
+                            STR_VAR
+                                name = ~%scrl_name%~
+                            RET
+                                scrl_name = name
+                        END
+                        LAUNCH_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_description~
+                            INT_VAR
+                                caster_level = ~%abils_0%~
+                            STR_VAR
+                                desc = ~%scrl_desc%~
+                            RET
+                                scrl_desc = desc
+                        END
+
+                        OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%scrl_name%~)
+                        OUTER_SET identified_desc_STRREF = RESOLVE_STR_REF(~%scrl_desc%~)
+                        /*****************************************
+                        *   END: Generate name and description   *
+                        *****************************************/
+
+
+                        //learn spell?
+                        OUTER_SET learn_spell = 0
+                        ACTION_IF (spell_type = 1) THEN BEGIN OUTER_SET learn_spell = 1 END
+
+
+
+                        /**********************
+                        *   BEGIN: Copy BAM   *
+                        **********************/
+                        COPY
+                            ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/BAM/en_us/number/%bz_unleveled_scroll_bam_prefix%-%PaddedCasterLevel%.BAM~
+                            ~override/%scroll_itm%.BAM~
+                        /********************
+                        *   END: Copy BAM   *
+                        ********************/
+
+
+                        //Make an item with the new shit
+                        LAUNCH_ACTION_FUNCTION ~fn-bz_create_scroll_from_spell_header~
+                            INT_VAR
+                                price = scroll_cost                                 //price of the scroll
+                                lore = 0                                            //lore to identify the scroll
+                                STRREF_identified_name = identified_name_STRREF     //STRREF for identified name
+                                STRREF_identified_desc = identified_desc_STRREF     //STRREF for identified description
+                                ability_projectile = ~%abils_1%~        //Which projectile the spell/scroll uses
+                                ability_range = ~%abils_2%~             //range it can be thrown
+                                ability_target_count = ~%abils_4%~      //targets affected
+                                transfer_effects_count = ~%abils_5%~    //number of affects being added
+                                target_type = ~%abils_3%~               //Type of target for ability
+                                spell_type = spell_type                 //type of spell: Special (0); Wizard(1); Priest (2); Psionic (3); Innate(4); Bard Song(5)
+                                learn_spell = learn_spell               //flag for if the spell can be learnt
+                                usability_mage      = ~spl_usability_mage~
+                                usability_bard      = ~spl_usability_bard~
+                                usability_ranger    = ~spl_usability_ranger~
+                                usability_paladin   = ~spl_usability_paladin~
+                                usability_cleric    = ~spl_usability_cleric~
+                                usability_druid     = ~spl_usability_druid~
+                                usability_shaman    = ~spl_usability_shaman~
+                                usability_good      = ~spl_usability_good~
+                                usability_neutral_t = ~spl_usability_neutral_trail~        // ...Neutral [Lawful/Chaotic]
+                                usability_evil      = ~spl_usability_evil~
+                                usability_lawful    = ~spl_usability_lawful~
+                                usability_neutral_l = ~spl_usability_neutral_lead~         /// Neutral... [Evil/Good]
+                                usability_chaotic   = ~spl_usability_chaotic~
+                            STR_VAR
+                                spell = ~%spell%~                   //original spell RESREF tha was read from
+                                item  = ~%scroll_itm%~              //item RESREF to write to
+                                icon_inventory = ~%scroll_itm%~     //BAM RESREF to write for inventory
+                                icon_description = ~CSCRL01~        //BAM RESREF to write for description
+                                bin_effects_copied = ~%abils_6%~    //copied binary of effects read from spell
+                        END
+
+                        //TODO: Add an entry into scroll_list_data so that it can be crafted
+
+                    END //iterate over `leveled_abilities` array
 
                 END //check for `any_leveled_abilities` found
 
