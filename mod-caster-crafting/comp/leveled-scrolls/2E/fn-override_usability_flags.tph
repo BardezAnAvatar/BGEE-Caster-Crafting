@@ -4,7 +4,7 @@
 *****************************************************************************************/
 DEFINE_PATCH_FUNCTION ~fn-override_usability_flags~
     STR_VAR
-        ~spell~ = null
+        ~spell_resref~ = null
     RET
         ~avail_ranger~
         ~avail_paladin~
@@ -12,7 +12,7 @@ DEFINE_PATCH_FUNCTION ~fn-override_usability_flags~
         ~avail_druid~
         ~avail_shaman~
 BEGIN
-        PATCH_MATCH ~%spell%~
+        PATCH_MATCH ~%spell_resref%~
         WITH
             //Shaman-only spells
             ~SPPR150~ ~SPPR250~ ~SPPR350~ ~SPPR450~ ~SPPR550~ ~SPPR650~ ~SPPR750~ ~SPPR751~
