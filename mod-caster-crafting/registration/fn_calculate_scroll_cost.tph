@@ -1,6 +1,8 @@
 /***************************************************************************
 *   Calculates the cost in gold that should be assigned to a scroll item   *
 ***************************************************************************/
+//includes
+INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_min_caster_level.tph~
 
 DEFINE_ACTION_FUNCTION ~bz_calculate_scroll_cost~
     INT_VAR
@@ -15,17 +17,13 @@ DEFINE_ACTION_FUNCTION ~bz_calculate_scroll_cost~
         OUTER_SET ~gold~ = 0
 
         //lookup the minimum caster level
-        OUTER_SET ~min_caster_level~ = "-1"
-        ACTION_PHP_EACH ~spell_min_caster_level~
-            AS ~keys~ => ~_~
-                BEGIN
-                    //if the spell level matches...
-                    ACTION_IF ((~%keys_1%~ STRING_EQUAL ~%Tradition%~) AND (~%keys_2%~ STRING_EQUAL ~%Level%~))
-                    THEN
-                    BEGIN
-                        OUTER_SET ~min_caster_level~ = %keys_3%
-                    END
-                END
+        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_min_caster_level~
+            STR_VAR
+                Tradition = null
+                Level = null
+            RET
+                ~min_caster_level~ = ~minimum_caster_level~
+        END
 
         //lookup the base spell cost by level
         OUTER_SET ~base_gold~ = 0

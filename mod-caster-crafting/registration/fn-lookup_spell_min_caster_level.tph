@@ -1,0 +1,24 @@
+/******************************************************************************************
+*   This function finds the minimum caster level in the registered table and returns it   *
+*                                                                                         *
+*   Prerequisites:                                                                        *
+*       - ~spell_min_caster_level~ array is populated                                     *
+******************************************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-lookup_spell_min_caster_level~
+    STR_VAR
+        Tradition = null
+        Level = null
+    RET
+        ~minimum_caster_level~
+BEGIN
+    OUTER_SET ~minimum_caster_level~ = "-1"
+    ACTION_PHP_EACH ~spell_min_caster_level~
+        AS ~keys~ => ~_~
+    BEGIN
+        //if the spell level matches...
+        ACTION_IF ((~%keys_1%~ STRING_EQUAL ~%Tradition%~) AND (~%keys_2%~ STRING_EQUAL ~%Level%~)) THEN
+        BEGIN
+            OUTER_SET ~minimum_caster_level~ = %keys_3%
+        END
+    END
+END
