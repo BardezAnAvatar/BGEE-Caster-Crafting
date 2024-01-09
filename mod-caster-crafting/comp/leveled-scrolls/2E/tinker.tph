@@ -5,8 +5,10 @@ INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_ca
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-calculate_leveled_scroll_price.tph~
 
+/*
+I think I took a wrong turn here...
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/generate_unleveled_scroll_list_data.tph~
-
+*/
 
 
 
