@@ -27,51 +27,58 @@ BEGIN
     ACTION_PHP_EACH ~spell_list~
         AS ~keys~ => ~value~
     BEGIN
+
         //identify RESREF
         LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_resref~
             STR_VAR
                 ~identifier~ = ~~
             RET
-                ~resref~
+                spell = ~resref~
         END
 
-        //lookup the minimum caster level
-        LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_min_caster_level~
-            STR_VAR
-                Tradition = ~%keys_1%~
-                Level = ~%keys_2%~
-            RET
-                ~min_caster_level~ = ~minimum_caster_level~
-        END
+        ACTION_IF
+            FILE_EXISTS_IN_GAME ~%spell%.SPL~
+        BEGIN
 
-        //Open Spell
-        COPY_EXISTING - ~%resref%.SPL~ ~./leveled/%resref%.SPL~
-
-            //check for headers: { 1 > (any headers > min_level) < 51 }
-                //Function: return bool if there are any, array of headers like my copy shit from that one function for all contents
-            LAUNCH_PATCH_FUNCTION
+            //lookup the minimum caster level
+            LAUNCH_ACTION_FUNCTION ~fn-lookup_spell_min_caster_level~
+                STR_VAR
+                    Tradition = ~%keys_1%~
+                    Level = ~%keys_2%~
+                RET
+                    ~min_caster_level~ = ~minimum_caster_level~
             END
 
-            // IFF found leveled abiliteis, then loop:
-                //Make this a function call to return:
+            //Open Spell
+            COPY_EXISTING - ~%spell%.SPL~ ~./leveled/%spell%.SPL~
 
-                //read its restrictions
-                //get usability flags from missing list and/or the base scroll; shaman flag is F'd from item, though.
-                //Read kit exclusion flags
-                //read alignment exclusion flags
+                //check for headers: { 1 > (any headers > min_level) < 51 }
+                    //Function: return bool if there are any, array of headers like my copy shit from that one function for all contents
+                LAUNCH_PATCH_FUNCTION
+                END
 
-                //Oh, and by the way, another function to override specific spells for shit like shamans
+                // IFF found leveled abiliteis, then loop:
+                    //Make this a function call to return:
 
-            //Once I have this data, I can exit the copy,
-        BUT_ONLY_IF_IT_CHANGES
+                    //read its restrictions
+                    //get usability flags from missing list and/or the base scroll; shaman flag is F'd from item, though.
+                    //Read kit exclusion flags
+                    //read alignment exclusion flags
 
-        //IFF found leveled abilities
-            //loop through the returned array:
-                //Make an item with the new shit
+                    //Oh, and by the way, another function to override specific spells for shit like shamans
+
+                //Once I have this data, I can exit the copy,
+            BUT_ONLY_IF_IT_CHANGES
+
+            //IFF found leveled abilities
+                //loop through the returned array:
+                    //Make an item with the new shit
 
 
 
-    END
-
-
-END
+        END //if spell exists
+        ELSE BEGIN
+            WARN ~WARN: fn-create_leveled_scrolls: file %spell%.SPL` not found~
+        END
+    END //iterate through ~spell_list~
+END //function
