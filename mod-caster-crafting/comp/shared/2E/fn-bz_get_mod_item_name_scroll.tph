@@ -2,12 +2,11 @@
 *   This function will generate the appropriate *.ITM RESREF for a scroll that is added by this mod.  *
 ******************************************************************************************************/
 DEFINE_ACTION_FUNCTION ~fn-bz_get_mod_item_name_scroll~
-    INT_VAR
-        ~Caster_Level~ = 0
     STR_VAR
         ~Spell_ResRef~ = null
         ~Level~ = null
         ~Tradition~ = null    //Arcane/Divine (Priest)/Innate/Ranger/Class/Protection
+        ~Zero_Padded_Caster_Level~ = null
     RET
         ~scroll_resref~
 BEGIN
@@ -96,12 +95,6 @@ BEGIN
     END
 
 
-    //Caster Level
-    ACTION_IF ((STRING_LENGTH ~Caster_Level~) = 0) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~00~
-    ACTION_IF ((STRING_LENGTH ~Caster_Level~) = 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~0%Caster_Level%~
-    ACTION_IF ((STRING_LENGTH ~Caster_Level~) > 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~%Caster_Level%~
-
-
     //calculate result
-    OUTER_TEXT_SPRINT ~scroll_resref~ ~%prefix%%tradition_code%%spell_number%%PaddedCasterLevel%~
+    OUTER_TEXT_SPRINT ~scroll_resref~ ~%prefix%%tradition_code%%spell_number%%Zero_Padded_Caster_Level%~
 END
