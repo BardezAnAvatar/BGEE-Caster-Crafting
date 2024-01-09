@@ -1,5 +1,5 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~leveled_scroll_asset_prefixes_iwd~
+    ~leveled_scroll_asset_prefixes~
 BEGIN
 
     /*
