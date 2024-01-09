@@ -51,9 +51,6 @@ PRINT ~
 ACTION_PHP_EACH ~spell_list~
     AS ~keys~ => ~value~
 BEGIN
-    //get usability flags from missing list and/or the base scroll; shaman flag is F'd from item, though.
-    //Read kit exclusion flags
-    //read alignment exclusion flags
 
     //clear/initialize variable
     OUTER_TEXT_SPRINT ~bz_unleveled_scroll_resref~ ""
@@ -117,9 +114,6 @@ BEGIN
 
 
 
-
-
-
     ACTION_IF NOT (~%bz_unleveled_scroll_resref%~ STRING_EQUAL ~~) THEN
     BEGIN
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
@@ -134,6 +128,7 @@ BEGIN
                 => ~%keys_0%~           //a rather arbitrary value to pick. could be name, scroll, etc.
         END
     END
+    ELSE BEGIN ACTION_IF (~%bz_unleveled_scroll_bam_prefix%~ STRING_EQUAL ~~) THEN BEGIN WARN ~WARN: leveled BAM group for %keys_0% not found~ END END
 
 
 END
