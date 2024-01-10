@@ -1,25 +1,14 @@
-//TODO: iterate through spell list; check for multiple headers (excluding whacky mod headers)
+/******************************************************************
+*   Main installation entrypoint for leveled scrolls component.   *
+******************************************************************/
 
-//IFF multiple headers with level < 51:
-    //1. read the spell name
-    //1. read the scroll description
-    //1. add a dynamic caster level text to the description
-    //1. append caster level to the identified name
-    //1. iterate through each header
-    //1. read the minimum caster level
-    //IFF the minimum caster level > the required min. caster level to cast the spell:
-        //1. evaluate the identified name
-        //1. evaluate the descrition
-        //create a scroll using the current header, name, desc
-
-// Data I will need, then, for each spell:
-// 1. Spell RESREF
-// 2. Spell level
-// 3. Base Scroll price (take from existing scrolls or missing scrolls calc)
-// 4. Base spell caster level
-// 5. Spell Usability flags? something for that fucking shaman. Join to Missing scrolls?
-
-
+//function includesINCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_read_spell_header_for_derived_item.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_spell_header.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_render_item_text.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_name.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-calculate_leveled_scroll_price.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-create_leveled_scrolls.tph~
 
 //Include scroll BAM prefix lists
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/leveled_scroll_asset_prefixes.tph~
@@ -37,36 +26,6 @@ BEGIN
 END
 
 
-/* DEBUG */
-/*
-PRINT ~DEBUG: leveled_scroll_asset_prefixes:~
-ACTION_PHP_EACH ~leveled_scroll_asset_prefixes~
-    AS ~keys~ => ~value~
-BEGIN
-    //Debugging Statements
-    PRINT ~-Spell/Leveled BAM prefix Record:
-        Spell RESREF:               `%keys_0%`
-        BAM Path/Prefix:            `%keys_1%`
-        Value                       `%value%`~
+//perform the install:
+LAUNCH_ACTION_FUNCTION ~fn-create_leveled_scrolls~
 END
-
-PRINT ~DEBUG: spell_list:~
-ACTION_PHP_EACH ~spell_list~
-    AS ~keys~ => ~value~
-BEGIN
-    //Debugging Statements
-    PRINT ~-Spell List Record:
-        Spell RESREF:               `%keys_0%`
-        Tradition:                  `%keys_1%`
-        Level:                      `%keys_2%`
-        Value                       `%value%`~
-END
-*/
-
-
-
-
-
-
-
-INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/tinker.tph~
