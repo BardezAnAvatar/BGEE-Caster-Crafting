@@ -75,6 +75,6 @@ BEGIN
     ~leveled_scroll_asset_prefixes~
     BEGIN
         //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-        ~CLERIC_PRODUCE_FIRE~,                   ~priest/4/produce_fire~                    => ~CLERIC_PRODUCE_FIRE~                      //Produce Fire
+        ~CLERIC_PRODUCE_FIRE~,                   ~priest/4/produce_fire~                    => ~CLERIC_PRODUCE_FIRE~                    //Produce Fire
     END
 END

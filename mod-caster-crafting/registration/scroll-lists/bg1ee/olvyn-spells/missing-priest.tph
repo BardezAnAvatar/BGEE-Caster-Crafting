@@ -157,13 +157,13 @@ END
 /*************************
 *   Special Exceptions   *
 *************************/
-ACTION_IF (%bz_iwdification_installed%) THEN
+ACTION_IF (%bz_iwdification_installed%) AND NOT bz_iwdification_installed_after_OlvynSpells THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~scroll_list_missing~
     BEGIN
         //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-        ~BZ!E1807~, ~SPPR418~, ~Divine~, ~4~, ~1~, ~0~,  ~priest/OlvynSpells/Wall of Fire.BAM~,                         ~BZ!E18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E1807~    //Wall of Fire
+        ~BZ!E1807~, ~CLERIC_PRODUCE_FIRE~, ~Divine~, ~4~, ~1~, ~0~,  ~priest/OlvynSpells/Wall of Fire.BAM~,             ~BZ!E18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E1807~    //Wall of Fire
     END
 END
 ELSE
