@@ -63,9 +63,6 @@ BEGIN
         END //hours
     END //days
 
-    OUTER_SET magnitude = ~%spl_magnitude%~
-    OUTER_SET magnitude2 = ~%spl_magnitude2%~
-
     //defaults
     OUTER_SPRINT identified_name ""
     OUTER_SPRINT identified_description ""
