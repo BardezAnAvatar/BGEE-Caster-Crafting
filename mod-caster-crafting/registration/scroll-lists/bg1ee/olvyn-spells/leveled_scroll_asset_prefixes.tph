@@ -80,9 +80,10 @@ BEGIN
 
         ~MEWI552~,  ~arcane/5/steal_spells~                     => ~MEWI552~    //Steal Spells
         ~MEWI559~,  ~shared/ghostform~                          => ~MEWI559~    //Ghostform
+        ~MEPR562~,  ~shared/critical_spell~                     => ~MEPR562~    //Critical Spell
         ~MEPR553~,  ~shared/protection_from_the_elements~       => ~MEPR553~    //Protection from the Elements
         ~MEPR554~,  ~shared/ghostform~                          => ~MEPR554~    //Ghostform
-        ~MEPR555~,  ~priest/5/critical_spell~                   => ~MEPR555~    //Critical Spell
+        ~MEPR555~,  ~shared/critical_spell~                     => ~MEPR555~    //Critical Spell
         ~MEPR556~,  ~priest/5/barrage~                          => ~MEPR556~    //Barrage
 
         ~MEPR660~,  ~priest/6/animal_growth~                    => ~MEPR660~    //Animal Growth
