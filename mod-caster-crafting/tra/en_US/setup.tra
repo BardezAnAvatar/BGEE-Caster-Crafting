@@ -8,6 +8,9 @@
 @12 = ~Add in missing priest spell scrolls~
 @13 = ~Add in missing arcane and priest spell scrolls~
 
+//levelled scrolls
+@50 = ~Leveled Scrolls: craft scrolls at higher caster levels~
+
 //scribing tools
 @20 = "Caster Crafting: Scribing Tools"
 @21 = ~Copy Spells from Party Member Spellbooks~
@@ -16,6 +19,9 @@
 
 //Missing Potions
 @30 = ~Potions for existing Spells~
+
+//levelled potions
+@60 = ~Leveled Potions: craft potions at higher caster levels~
 
 // Crafting Station
 @40 = ~Caster Crafting: Crafting Station~

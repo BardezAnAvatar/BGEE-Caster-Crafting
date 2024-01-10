@@ -1,0 +1,20 @@
+/**************************************************************************************
+*   This function will take an item's description and append the caster level to it   *
+**************************************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_description~
+    INT_VAR
+        caster_level = 0
+    STR_VAR
+        desc = null
+    RET
+        ~desc~
+BEGIN
+    //initialize strings
+    OUTER_SPRINT search @50000
+    OUTER_SPRINT replace @50001
+
+    OUTER_PATCH_SAVE desc ~%desc%~
+    BEGIN
+        REPLACE_TEXTUALLY ~%search%~ ~%replace%~
+    END
+END

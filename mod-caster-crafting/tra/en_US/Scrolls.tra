@@ -1,0 +1,6 @@
+/* Reserving range 50000-59999 */
+
+//replacements
+@50000 = ~Range: ~
+@50001 = ~Caster Level: %caster_level%
+Range: ~

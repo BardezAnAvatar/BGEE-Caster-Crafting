@@ -29,9 +29,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CDIA431~, ~WIZARD_VITRIOLIC_SPHERE~,                   ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA431~    //Vitriolic Sphere
         ~CDIA432~, ~WIZARD_SHADOW_MONSTERS~,                    ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA432~    //Shadow Monsters
 
-      //~CDIA516~, ~WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL~,      ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA516~    //Conjure Lesser Fire Elemental
-      //~CDIA520~, ~WIZARD_CONJURE_LESSER_AIR_ELEMENTAL~,       ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA520~    //Conjure Lesser Air Elemental
-      //~CDIA521~, ~WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL~,     ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA521~    //Conjure Lesser Earth Elemental
         ~CDIA524~, ~WIZARD_SHROUD_OF_FLAME~,                    ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA524~    //Shroud of Flame
         ~CDIA525~, ~WIZARD_SUMMON_SHADOW~,                      ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA525~    //Summon Shadow
         ~CDIA526~, ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~,     ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA526~    //Conjure Lesser Water Elemental

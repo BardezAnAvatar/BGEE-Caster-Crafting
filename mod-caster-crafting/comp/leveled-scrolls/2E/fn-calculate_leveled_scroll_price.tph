@@ -1,0 +1,17 @@
+DEFINE_ACTION_FUNCTION ~fn-calculate_leveled_scroll_price~
+    INT_VAR
+        spell_level = 0
+        caster_level = 0
+        base_scroll_cost = 0
+        base_caster_level = 0
+    RET
+        ~gold_cost~
+BEGIN
+    /****************************************************************************************
+    *   The formula:                                                                        *
+    *       { base scroll level cost } + { { Excess Caster Level } * 50 * Spell level }     *
+    ****************************************************************************************/
+    OUTER_SET excess_caster_levels = (caster_level - base_caster_level)
+    OUTER_SET additional_cost = (excess_caster_levels * 50 * spell_level)
+    OUTER_SET gold_cost = (additional_cost + base_scroll_cost)
+END

@@ -29,7 +29,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~3-Divine~,     ~Divine~,     ~3~,  ~5~  => ~3-Divine~
         ~4-Divine~,     ~Divine~,     ~4~,  ~7~  => ~4-Divine~
         ~5-Divine~,     ~Divine~,     ~5~,  ~9~  => ~5-Divine~
-        ~6-Divine~,     ~Divine~,     ~6~, ~12~  => ~6-Divine~
+        ~6-Divine~,     ~Divine~,     ~6~, ~11~  => ~6-Divine~
         ~7-Divine~,     ~Divine~,     ~7~, ~14~  => ~7-Divine~
         ~Q-Divine~,     ~Divine~,     ~Q~, ~15~  => ~Q-Divine~  //Druid can get at level 15, cleric 22
 

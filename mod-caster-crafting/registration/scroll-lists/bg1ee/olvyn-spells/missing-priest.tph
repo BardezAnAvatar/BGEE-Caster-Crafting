@@ -5,21 +5,22 @@
 [Tradition]                 // 2
 [Spell Level]               // 3
 [Caster Level]              // 4
-[Icon: Inventory]           // 5
-[Gold: Additional cost]     // 6
-[Usability: Mage]           // 7
-[Usability: Cleric]         // 8
-[Usability: Druid]          // 9
-[Usability: Bard]           // 10
-[Usability: Paladin]        // 11
-[Usability: Ranger]         // 12
-[Usability: Good]           // 13
-[Usability: ... Neutral]    // 14
-[Usability: Evil]           // 15
-[Usability: Lawful]         // 16
-[Usability: Neutral ...]    // 17
-[Usability: Chaotic]        // 18
-[Usability: Shaman]         // 19
+[Gold: Additional cost]     // 5
+[Icon: Source BAM Path]     // 6
+[Icon: Inventory]           // 7
+[Usability: Mage]           // 8
+[Usability: Cleric]         // 9
+[Usability: Druid]          // 10
+[Usability: Bard]           // 11
+[Usability: Paladin]        // 12
+[Usability: Ranger]         // 13
+[Usability: Shaman]         // 14
+[Usability: Good]           // 15
+[Usability: ... Neutral]    // 16
+[Usability: Evil]           // 17
+[Usability: Lawful]         // 18
+[Usability: Neutral ...]    // 19
+[Usability: Chaotic]        // 20
 */
 
 //NOTE: Spell headers have minimum caster level of 1 very often if not always, even if the minimum level is invalid to cast.
@@ -156,13 +157,13 @@ END
 /*************************
 *   Special Exceptions   *
 *************************/
-ACTION_IF (%bz_iwdification_installed%) THEN
+ACTION_IF (%bz_iwdification_installed%) AND NOT bz_iwdification_installed_after_OlvynSpells THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~scroll_list_missing~
     BEGIN
         //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-        ~BZ!E1807~, ~SPPR418~, ~Divine~, ~4~, ~1~, ~0~,  ~priest/OlvynSpells/Wall of Fire.BAM~,                         ~BZ!E18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E1807~    //Wall of Fire
+        ~BZ!E1807~, ~CLERIC_PRODUCE_FIRE~, ~Divine~, ~4~, ~1~, ~0~,  ~priest/OlvynSpells/Wall of Fire.BAM~,             ~BZ!E18I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~BZ!E1807~    //Wall of Fire
     END
 END
 ELSE

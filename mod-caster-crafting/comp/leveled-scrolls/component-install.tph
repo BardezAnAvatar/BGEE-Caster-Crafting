@@ -1,0 +1,31 @@
+/******************************************************************
+*   Main installation entrypoint for leveled scrolls component.   *
+******************************************************************/
+
+//function includesINCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_read_spell_header_for_derived_item.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_spell_header.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_render_item_text.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_name.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-calculate_leveled_scroll_price.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-create_leveled_scrolls.tph~
+
+//Include scroll BAM prefix lists
+INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/leveled_scroll_asset_prefixes.tph~
+
+ACTION_IF (%bz_OlvynSpells_installed%)
+BEGIN
+    PRINT ~DEBUG: Include Olvyn Spells leveled scrolls~
+    INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/leveled_scroll_asset_prefixes.tph~
+END
+
+ACTION_IF (%bz_iwdification_installed%)
+BEGIN
+    PRINT ~DEBUG: Include IWD-ification leveled scrolls~
+    INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/leveled_scroll_asset_prefixes.tph~
+END
+
+
+//perform the install:
+LAUNCH_ACTION_FUNCTION ~fn-create_leveled_scrolls~
+END

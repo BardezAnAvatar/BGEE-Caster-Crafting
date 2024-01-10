@@ -1,0 +1,97 @@
+/***********************************************************************************
+*   This function will read from the spell file and retrueve its exclusion flags   *
+*       as well as calculate its usability flags that are fed into the item        *
+*       creation script.                                                           *
+***********************************************************************************/
+INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-override_usability_flags.tph~
+
+DEFINE_PATCH_FUNCTION ~fn-read_usability_flags_from_spell~
+    STR_VAR
+        ~spell~ = null
+    RET
+        ~exclusion_flags~
+
+        ~usability_mage~
+        ~usability_bard~
+        ~usability_ranger~
+        ~usability_paladin~
+        ~usability_cleric~
+        ~usability_druid~
+        ~usability_shaman~
+
+        ~usability_good~
+        ~usability_neutral_trail~         // ...Neutral [Lawful/Chaotic]
+        ~usability_evil~
+        ~usability_lawful~
+        ~usability_neutral_lead~          // Neutral... [Evil/Good]
+        ~usability_chaotic~
+BEGIN
+    READ_LONG (0x1E) ~exclusion_flags~
+    READ_SHORT (0x1C) ~spell_type~      //Innate/Wizard/Priest/etc.
+
+    //TODO: set the stuff
+    PATCH_IF (spell_type = 1) THEN //Wizard
+    BEGIN
+        SET ~usability_mage~    = 1
+        SET ~usability_bard~    = 1
+
+        SET ~usability_ranger~  = 0
+        SET ~usability_paladin~ = 0
+        SET ~usability_cleric~  = 0
+        SET ~usability_druid~   = 0
+        SET ~usability_shaman~  = 0
+    END //Wizard
+    ELSE
+    BEGIN
+        PATCH_IF (spell_type = 2) THEN //Priest
+        BEGIN
+            SET ~usability_mage~    = 0
+            SET ~usability_bard~    = 0
+
+            SET ~tradition_divine~ = (exclusion_flags OR BIT30)
+            SET ~tradition_nature~ = (exclusion_flags OR BIT31)
+
+            SET ~usability_cleric~  = tradition_divine
+            SET ~usability_paladin~ = tradition_divine
+            SET ~usability_druid~   = tradition_nature
+            SET ~usability_ranger~  = tradition_nature
+            SET ~usability_shaman~  = tradition_nature
+        END //Priest
+        ELSE //innate/special/psionic/bard song
+        BEGIN
+            SET ~usability_mage~    = 0
+            SET ~usability_bard~    = 0
+            SET ~usability_ranger~  = 0
+            SET ~usability_paladin~ = 0
+            SET ~usability_cleric~  = 0
+            SET ~usability_druid~   = 0
+            SET ~usability_shaman~  = 0
+        END
+    END //ELSE
+
+    //Do the alignment flags:
+    SET ~usability_good~            = (exclusion_flags OR BIT2)
+    SET ~usability_neutral_trail~   = (exclusion_flags OR BIT3)
+    SET ~usability_evil~            = (exclusion_flags OR BIT1)
+    SET ~usability_lawful~          = (exclusion_flags OR BIT4)
+    SET ~usability_neutral_lead~    = (exclusion_flags OR BIT5)
+    SET ~usability_chaotic~         = (exclusion_flags OR BIT0)
+
+    //Check overrides:
+    LAUNCH_PATCH_FUNCTION ~fn-override_usability_flags~
+        STR_VAR
+            ~spell_resref~ = ~%spell%~
+        RET
+            override_cleric  = ~avail_cleric~
+            override_paladin = ~avail_paladin~
+            override_druid   = ~avail_druid~
+            override_ranger  = ~avail_ranger~
+            override_shaman  = ~avail_shaman~
+    END
+    PATCH_IF (override_cleric > "-1")   THEN BEGIN SET usability_cleric = override_cleric   END
+    PATCH_IF (override_paladin > "-1")  THEN BEGIN SET usability_paladin = override_paladin END
+    PATCH_IF (override_druid > "-1")    THEN BEGIN SET usability_druid = override_druid     END
+    PATCH_IF (override_ranger > "-1")   THEN BEGIN SET usability_ranger = override_ranger   END
+    PATCH_IF (override_shaman > "-1")   THEN BEGIN SET usability_shaman = override_shaman   END
+
+END

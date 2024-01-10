@@ -1,0 +1,90 @@
+/*****************************************************************
+*   This function will intake various parameters for an item's   *
+*       text description and emit the results as return values   *
+*****************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-bz_render_item_text~
+    INT_VAR
+        caster_level = 0
+        spl_duration = 0
+        strref_name = "-1"
+        strref_desc = "-1"
+        tra_name = "-1"
+        tra_desc = "-1"
+    STR_VAR
+        magnitude = null
+        magnitude2 = null
+    RET
+        ~identified_name~
+        ~identified_description~
+BEGIN
+    /***********************************************
+    *   BEGIN: Calculate strings for description   *
+    ***********************************************/
+
+    //After reading duration, emit a value that does days; hours; turns (rounds);rounds; seconds; instant
+    ACTION_IF (spl_duration = 0) THEN BEGIN OUTER_SPRINT duration @49910 END
+
+    ELSE BEGIN  //days
+        ACTION_IF ((spl_duration MODULO 7200) = 0) THEN
+        BEGIN
+            OUTER_SET duration_days = (spl_duration / 7200)
+            ACTION_IF (duration_days > 1) THEN BEGIN OUTER_SPRINT duration @49901 END
+            ELSE BEGIN OUTER_SPRINT duration @49900 END
+        END
+        ELSE BEGIN  //hours
+            ACTION_IF ((spl_duration MODULO 300) = 0) THEN
+            BEGIN
+                OUTER_SET duration_hours = (spl_duration / 300)
+                ACTION_IF (duration_hours > 1) THEN BEGIN OUTER_SPRINT duration @49903 END
+                ELSE BEGIN OUTER_SPRINT duration @49902 END
+            END
+            ELSE BEGIN  //turns
+                ACTION_IF ((spl_duration MODULO 60) = 0) THEN
+                BEGIN
+                    OUTER_SET duration_turns = (spl_duration / 60)
+                    OUTER_SET duration_rounds = (duration_turns * 10)
+                    ACTION_IF (duration_turns > 1) THEN BEGIN OUTER_SPRINT duration @49905 END
+                    ELSE BEGIN OUTER_SPRINT duration @49904 END
+                END
+                ELSE BEGIN  //rounds
+                    ACTION_IF ((spl_duration MODULO 6) = 0) THEN
+                    BEGIN
+                        OUTER_SET duration_rounds = (spl_duration / 6)
+                        ACTION_IF (duration_rounds > 1) THEN BEGIN OUTER_SPRINT duration @49907 END
+                        ELSE BEGIN OUTER_SPRINT duration @49906 END
+                    END
+                    ELSE BEGIN  //seconds
+                        OUTER_SET duration_seconds = spl_duration
+                        ACTION_IF (duration_seconds > 1) THEN BEGIN OUTER_SPRINT duration @49909 END
+                        ELSE BEGIN OUTER_SPRINT duration @49908 END
+                    END //seconds
+                END //rounds
+            END //turns
+        END //hours
+    END //days
+
+    //defaults
+    OUTER_SPRINT identified_name ""
+    OUTER_SPRINT identified_description ""
+
+    ACTION_IF (strref_name > "-1") THEN BEGIN ACTION_GET_STRREF strref_name identified_name END
+    ACTION_IF (strref_desc > "-1") THEN BEGIN ACTION_GET_STRREF strref_desc identified_description END
+
+    /*
+        these strings can expect:
+        %magnitude%
+        %magnitude2%
+        %duration_seconds%
+        %duration_rounds%
+        %duration_turns%
+        %duration_hours%
+        %duration_days%
+        %duration%
+        %caster_level%
+    */
+    ACTION_IF (tra_name > "-1") THEN BEGIN OUTER_SPRINT identified_name (AT ~tra_name~) END
+    ACTION_IF (tra_desc > "-1") THEN BEGIN OUTER_SPRINT identified_description (AT ~tra_description~) END
+    /*********************************************
+    *   END: Calculate strings for description   *
+    *********************************************/
+END

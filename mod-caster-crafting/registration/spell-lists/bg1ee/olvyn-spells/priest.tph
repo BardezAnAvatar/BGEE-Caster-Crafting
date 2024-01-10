@@ -140,13 +140,13 @@ END
 /*************************
 *   Special Exceptions   *
 *************************/
-ACTION_IF (%bz_iwdification_installed%) THEN
+ACTION_IF (%bz_iwdification_installed%) AND NOT bz_iwdification_installed_after_OlvynSpells THEN
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~spell_list~
     BEGIN
         //looks like IWDification and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
-        ~SPPR418~, ~Divine~, ~4~ => ~SPPR418~    //Wall of Fire
+        ~CLERIC_PRODUCE_FIRE~, ~Divine~, ~4~ => ~CLERIC_PRODUCE_FIRE~    //Wall of Fire
     END
 END
 ELSE
