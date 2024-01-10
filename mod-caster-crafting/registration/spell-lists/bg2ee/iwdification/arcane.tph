@@ -26,9 +26,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~WIZARD_VITRIOLIC_SPHERE~,                  ~Arcane~, ~4~ => ~WIZARD_VITRIOLIC_SPHERE~                  //Vitriolic Sphere
         ~WIZARD_SHADOW_MONSTERS~,                   ~Arcane~, ~4~ => ~WIZARD_SHADOW_MONSTERS~                   //Shadow Monsters
 
-        ~WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL~,     ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_FIRE_ELEMENTAL~     //Conjure Lesser Fire Elemental
-        ~WIZARD_CONJURE_LESSER_AIR_ELEMENTAL~,      ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_AIR_ELEMENTAL~      //Conjure Lesser Air Elemental
-        ~WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL~,    ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_EARTH_ELEMENTAL~    //Conjure Lesser Earth Elemental
         ~WIZARD_SHROUD_OF_FLAME~,                   ~Arcane~, ~5~ => ~WIZARD_SHROUD_OF_FLAME~                   //Shroud of Flame
         ~WIZARD_SUMMON_SHADOW~,                     ~Arcane~, ~5~ => ~WIZARD_SUMMON_SHADOW~                     //Summon Shadow
         ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~,    ~Arcane~, ~5~ => ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~    //Conjure Lesser Water Elemental
