@@ -298,10 +298,12 @@ BEGIN
 
             END //IF for further action
 
-
         END //if spell exists
-        ELSE BEGIN
+        ELSE
+        BEGIN
             WARN ~WARN: fn-create_leveled_scrolls: file %spell%.SPL` not found~
         END //spell DOESN't Exist
+
     END //iterate through ~spell_list~
+
 END //function
