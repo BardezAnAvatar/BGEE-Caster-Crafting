@@ -129,6 +129,8 @@ BEGIN
                 // IFF found leveled abilities
                 ACTION_IF (any_leveled_abilities = 1) THEN
                 BEGIN
+                    //prime the value
+                    OUTER_TEXT_SPRINT ~bz_unleveled_scroll_bam_prefix~ ~~
 
                     //identify the BAM prefix
                     ACTION_PHP_EACH ~leveled_scroll_asset_prefixes~
