@@ -60,6 +60,7 @@ BEGIN
     ~WIZARD_MONSTER_SUMMONING_5~,               ~arcane/7/monster_summoning_5~              => ~WIZARD_MONSTER_SUMMONING_5~             //Monster Summoning 5
     ~WIZARD_MORDENKAINENS_SWORD_IWD~,           ~arcane/7/mordenkainen's_force_sword~       => ~WIZARD_MORDENKAINENS_SWORD_IWD~         //Mordenkainen's Force Blade
     ~WIZARD_MALAVONS_RAGE~,                     ~arcane/7/malavon's_rage~                   => ~WIZARD_MALAVONS_RAGE~                   //Malavon's Rage
+    ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~,       ~priest/7/impervious_sanctity_of_mind~      => ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~     //Impervious Sanctity of Mind
 
     ~WIZARD_GREAT_SHOUT~,                       ~arcane/8/great_shout~                      => ~WIZARD_GREAT_SHOUT~                     //Great Shout
     ~WIZARD_MONSTER_SUMMONING_6~,               ~arcane/8/monster_summoning_6~              => ~WIZARD_MONSTER_SUMMONING_6~             //Monster Summoning 6
