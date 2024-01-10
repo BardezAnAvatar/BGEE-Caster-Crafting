@@ -71,7 +71,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
     END
 
-ACTION_IF (NOT %bz_OlvynSpells_installed%)
+ACTION_IF ((NOT %bz_OlvynSpells_installed%) OR bz_iwdification_installed_after_OlvynSpells)
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~spell_list~

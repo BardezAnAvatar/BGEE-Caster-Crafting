@@ -45,6 +45,15 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
             Skeleton Horde:     `%bz_olvyn_wi556%`;~
     END
 
+ACTION_IF (bz_iwdification_installed AND bz_OlvynSpells_installed) THEN
+BEGIN
+    OUTER_SET ~bz_iwdification_installed_after_OlvynSpells~
+    (
+        INSTALL_ORDER ~SETUP-IWDIFICATION.TP2~ ~1000~ AFTER ~MESpells.tp2~ ~1000~
+        OR INSTALL_ORDER ~SETUP-IWDIFICATION.TP2~ ~1001~ AFTER ~MESpells.tp2~ ~1001~
+    )
+END
+
 
 PRINT ~
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
