@@ -37,4 +37,36 @@ BEGIN
 END
 
 
+/* DEBUG */
+/*
+PRINT ~DEBUG: leveled_scroll_asset_prefixes:~
+ACTION_PHP_EACH ~leveled_scroll_asset_prefixes~
+    AS ~keys~ => ~value~
+BEGIN
+    //Debugging Statements
+    PRINT ~-Spell/Leveled BAM prefix Record:
+        Spell RESREF:               `%keys_0%`
+        BAM Path/Prefix:            `%keys_1%`
+        Value                       `%value%`~
+END
+
+PRINT ~DEBUG: spell_list:~
+ACTION_PHP_EACH ~spell_list~
+    AS ~keys~ => ~value~
+BEGIN
+    //Debugging Statements
+    PRINT ~-Spell List Record:
+        Spell RESREF:               `%keys_0%`
+        Tradition:                  `%keys_1%`
+        Level:                      `%keys_2%`
+        Value                       `%value%`~
+END
+*/
+
+
+
+
+
+
+
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/tinker.tph~
