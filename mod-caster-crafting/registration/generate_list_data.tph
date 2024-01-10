@@ -14,6 +14,7 @@ ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
     END
 
 OUTER_SET ~bz_OlvynSpells_installed~ = 0
+OUTER_SET ~bz_iwdification_installed_after_OlvynSpells~ = 0
 //1000 = powerful spells; 1001 = no powerful spells
 ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpells.tp2~ ~1001~)
     BEGIN
@@ -47,7 +48,7 @@ ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpell
 
 ACTION_IF (bz_iwdification_installed AND bz_OlvynSpells_installed) THEN
 BEGIN
-    OUTER_SET ~bz_iwdification_installed_after_OlvynSpells~
+    OUTER_SET ~bz_iwdification_installed_after_OlvynSpells~ =
     (
         INSTALL_ORDER ~SETUP-IWDIFICATION.TP2~ ~1000~ AFTER ~MESpells.tp2~ ~1000~
         OR INSTALL_ORDER ~SETUP-IWDIFICATION.TP2~ ~1001~ AFTER ~MESpells.tp2~ ~1001~
