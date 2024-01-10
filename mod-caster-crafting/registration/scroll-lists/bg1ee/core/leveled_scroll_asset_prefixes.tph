@@ -218,7 +218,7 @@ BEGIN
     ~SPWI918~, ~arcane/9/bigby's_crushing_fist~             => ~SPWI918~    //Bigby's Crushing Hand
 
 
-    ~SPWI920~, ~arcana/A/energy_blades~                     => ~SPWI920~    //Energy Blades
+    ~SPWI920~, ~arcane/A/energy_blades~                     => ~SPWI920~    //Energy Blades
     ~SPWI922~, ~arcane/A/dragon's_breath~                   => ~SPWI922~    //Dragon's Breath
   //Missing
   //~SPWI923~, ~arcane/A/summon_planetar~                   => ~SPWI923~    //Summon Planetar
