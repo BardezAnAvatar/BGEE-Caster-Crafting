@@ -21,4 +21,20 @@
 
 
 
+//Include scroll BAM prefix lists
+INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/leveled_scroll_asset_prefixes.tph~
+
+ACTION_IF (%bz_OlvynSpells_installed%)
+BEGIN
+    PRINT ~DEBUG: Include Olvyn Spells leveled scrolls~
+    INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/olvyn-spells/leveled_scroll_asset_prefixes.tph~
+END
+
+ACTION_IF (%bz_iwdification_installed%)
+BEGIN
+    PRINT ~DEBUG: Include IWD-ification leveled scrolls~
+    INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/iwdification/leveled_scroll_asset_prefixes.tph~
+END
+
+
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/tinker.tph~
