@@ -136,7 +136,7 @@ BEGIN
                         BEGIN
                             OUTER_TEXT_SPRINT ~bz_unleveled_scroll_bam_prefix~ ~%prefix_keys_1%~
                         END
-                    END
+                    END //iterate through ~leveled_scroll_asset_prefixes~
                     ACTION_IF (~%bz_unleveled_scroll_bam_prefix%~ STRING_EQUAL ~~) THEN BEGIN WARN ~WARN: leveled BAM group for %keys_0% not found~ END
 
 
@@ -195,7 +195,7 @@ BEGIN
                             RET
                                 ~scrl_name~ = ~identified_name~
                                 ~scrl_desc~ = ~identified_description~
-                        END
+                        END //~fn-bz_render_item_text~
 
                         //append caster level to the name/description
                         LAUNCH_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_name~
@@ -205,7 +205,7 @@ BEGIN
                                 name = ~%scrl_name%~
                             RET
                                 scrl_name = name
-                        END
+                        END //~fn-bz_inject_caster_level_into_name~
                         LAUNCH_ACTION_FUNCTION ~fn-bz_inject_caster_level_into_description~
                             INT_VAR
                                 caster_level = ~%abils_0%~
@@ -213,7 +213,7 @@ BEGIN
                                 desc = ~%scrl_desc%~
                             RET
                                 scrl_desc = desc
-                        END
+                        END //~fn-bz_inject_caster_level_into_description~
 
                         OUTER_SET identified_name_STRREF = RESOLVE_STR_REF(~%scrl_name%~)
                         OUTER_SET identified_desc_STRREF = RESOLVE_STR_REF(~%scrl_desc%~)
@@ -272,7 +272,7 @@ BEGIN
                                 icon_inventory = ~%scroll_itm%~     //BAM RESREF to write for inventory
                                 icon_description = ~CSCRL01~        //BAM RESREF to write for description
                                 bin_effects_copied = ~%abils_6%~    //copied binary of effects read from spell
-                        END
+                        END //~fn-bz_create_scroll_from_spell_header~
 
                         //Finally, add an entry into scroll_list_data so that it can be crafted
                         ACTION_DEFINE_ASSOCIATIVE_ARRAY ~scroll_list_data~
@@ -290,7 +290,7 @@ BEGIN
                             ~%scroll_cost_failure%~,    //Chance of failure
                             ~%name%~                    //spell name for display
                                 => ~%keys_2%_%scrl_name%~   //a rather arbitrary value to pick. could be name, scroll, etc.
-                        END
+                        END //Add to ~scroll_list_data~
 
                     END //iterate over `leveled_abilities` array
 
@@ -302,6 +302,6 @@ BEGIN
         END //if spell exists
         ELSE BEGIN
             WARN ~WARN: fn-create_leveled_scrolls: file %spell%.SPL` not found~
-        END
+        END //spell DOESN't Exist
     END //iterate through ~spell_list~
 END //function
