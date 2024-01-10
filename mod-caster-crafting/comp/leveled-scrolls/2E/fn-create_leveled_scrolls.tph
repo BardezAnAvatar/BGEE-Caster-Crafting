@@ -59,6 +59,8 @@ BEGIN
             //Open Spell
             COPY_EXISTING - ~%spell%.SPL~ ~./leveled/%spell%.SPL~
                 READ_SHORT (0x1C) ~spell_type~      //Innate/Wizard/Priest/etc.
+                READ_LONG  (0x08) ~spell_name~
+                READ_LONG  (0x50) ~spell_desc~
 
                 //check for headers: { 1 > (any headers > min_level) < 51 }
                     //Function: return bool if there are any, array of headers like my copy shit from that one function for all contents
@@ -186,12 +188,8 @@ BEGIN
                         LAUNCH_ACTION_FUNCTION ~fn-bz_render_item_text~
                             INT_VAR
                                 caster_level = ~%abils_0%~
-                                spl_duration = spl_duration
-                                strref_name = spl_name
-                                strref_desc = spl_desc
-                            STR_VAR
-                                magnitude = ~%spl_magnitude%~
-                                magnitude2 = ~%spl_magnitude2%~
+                                strref_name = spell_name
+                                strref_desc = spell_desc
                             RET
                                 ~scrl_name~ = ~identified_name~
                                 ~scrl_desc~ = ~identified_description~
