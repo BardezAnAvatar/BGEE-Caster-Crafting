@@ -68,6 +68,7 @@ BEGIN
     ~SPWI314~, ~arcane/3/vampiric_touch~                    => ~SPWI314~    //Vampiric Touch
     ~SPWI315~, ~arcane/3/wraithform~                        => ~SPWI315~    //Wraith Form
     ~SPWI316~, ~arcane/3/dire_charm~                        => ~SPWI316~    //Dire Charm
+    ~SPWI318~, ~arcane/3/minor_spell_deflection~            => ~SPWI318~    //Minor Spell Deflection
     ~SPWI319~, ~shared/protection_from_fire~                => ~SPWI319~    //Protection from Fire
     ~SPWI320~, ~arcane/3/protection_from_cold~              => ~SPWI320~    //Protection from Cold
     ~SPWI321~, ~arcane/3/spell_thrust~                      => ~SPWI321~    //Spell Thrust
