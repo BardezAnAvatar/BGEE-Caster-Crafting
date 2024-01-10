@@ -69,6 +69,7 @@ BEGIN
 
             //cleric-only
             ~MEPR753~ ~MEPR757~ ~MEPR762~ ~MEPR756~ ~MEPR758~ ~MEPR765~
+            ~SPIN103~ ~SPCL233~ ~SPCL721~
             BEGIN
                 SET ~avail_ranger~  = "0"
                 SET ~avail_paladin~ = "0"
