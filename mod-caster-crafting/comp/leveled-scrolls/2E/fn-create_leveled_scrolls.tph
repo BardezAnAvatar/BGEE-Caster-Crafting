@@ -147,9 +147,9 @@ BEGIN
                     BEGIN
 
                         //Get 0-padded caster level
-                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) = 0) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~00~
-                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) = 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~0%abils_0%~
-                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) > 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~%abils_0%~
+                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) = 0) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~00~ END
+                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) = 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~0%abils_0%~ END
+                        ACTION_IF ((STRING_LENGTH ~%abils_0%~) > 1) THEN BEGIN OUTER_TEXT_SPRINT ~PaddedCasterLevel~ ~%abils_0%~ END
 
 
 
@@ -298,7 +298,8 @@ BEGIN
 
             END //IF for further action
 
-        END //if spell exists
+        //if spell exists
+        END
         ELSE
         BEGIN
             WARN ~WARN: fn-create_leveled_scrolls: file %spell%.SPL` not found~
