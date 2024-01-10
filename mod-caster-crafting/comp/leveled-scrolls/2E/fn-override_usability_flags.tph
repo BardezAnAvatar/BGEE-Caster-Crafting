@@ -24,13 +24,85 @@ BEGIN
                 SET ~avail_druid~   = "0"
                 SET ~avail_shaman~  = "1"
             END
-            DEFAULT
+
+            //ranger/paladin only
+            ~MEPR555~
             BEGIN
+                SET ~avail_ranger~  = "1"
+                SET ~avail_paladin~ = "1"
+                SET ~avail_cleric~  = "0"
+                SET ~avail_druid~   = "0"
+                SET ~avail_shaman~  = "0"
+            END
+
+            //Paladin-only spells
+            ~MEPR154~ ~MEPR157~ ~MEPR355~ ~MEPR661~
+            BEGIN
+                SET ~avail_ranger~  = "0"
+                SET ~avail_paladin~ = "1"
+                SET ~avail_cleric~  = "0"
+                SET ~avail_druid~   = "0"
+                SET ~avail_shaman~  = "0"
+            END
+
+            //ranger-only spells
+            ~MEPR153~ ~MEPR356~ ~MEPR357~ ~MEPR361~ ~MEPR455~ ~MEPR556~ ~MEPR659~
+            BEGIN
+                SET ~avail_ranger~  = "1"
+                SET ~avail_paladin~ = "0"
+                SET ~avail_cleric~  = "0"
+                SET ~avail_druid~   = "0"
+                SET ~avail_shaman~  = "0"
+            END
+
+            //druid-only spells
+            ~MEPR358~ /* beastmaster-only */
+            ~MEPR656~ /* shapeshifter-only*/
+            ~MEPR754~ ~MEPR761~ ~MEPR764~
+            BEGIN
+                SET ~avail_ranger~  = "0"
+                SET ~avail_paladin~ = "0"
+                SET ~avail_cleric~  = "0"
+                SET ~avail_druid~   = "1"
+                SET ~avail_shaman~  = "0"
+            END
+
+            //cleric-only
+            ~MEPR753~ ~MEPR757~ ~MEPR762~ ~MEPR756~ ~MEPR758~ ~MEPR765~
+            BEGIN
+                SET ~avail_ranger~  = "0"
+                SET ~avail_paladin~ = "0"
+                SET ~avail_cleric~  = "1"
+                SET ~avail_druid~   = "0"
+                SET ~avail_shaman~  = "0"
+            END
+
+            //druid/shaman only spells
+            ~MEPR763~
+            BEGIN
+                SET ~avail_ranger~  = "0"
+                SET ~avail_paladin~ = "0"
+                SET ~avail_cleric~  = "0"
+                SET ~avail_druid~   = "1"
+                SET ~avail_shaman~  = "1"
+            END
+
+            //cleric/shaman only spells
+            ~MEPR766~
+            BEGIN
+                SET ~avail_ranger~  = "0"
+                SET ~avail_paladin~ = "0"
+                SET ~avail_cleric~  = "1"
+                SET ~avail_druid~   = "0"
+                SET ~avail_shaman~  = "1"
+            END
+
+
+            DEFAULT
                 SET ~avail_ranger~  = "-1"
                 SET ~avail_paladin~ = "-1"
                 SET ~avail_cleric~  = "-1"
                 SET ~avail_druid~   = "-1"
                 SET ~avail_shaman~  = "-1"
-            END
         END
 END
