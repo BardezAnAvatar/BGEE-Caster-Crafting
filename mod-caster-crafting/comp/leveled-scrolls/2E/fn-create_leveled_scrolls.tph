@@ -274,7 +274,23 @@ BEGIN
                                 bin_effects_copied = ~%abils_6%~    //copied binary of effects read from spell
                         END
 
-                        //TODO: Add an entry into scroll_list_data so that it can be crafted
+                        //Finally, add an entry into scroll_list_data so that it can be crafted
+                        ACTION_DEFINE_ASSOCIATIVE_ARRAY ~scroll_list_data~
+                        BEGIN
+                            ~%keys_2%_%scrl_name%~,     //sorting key of level and spell name
+                            ~%scroll_itm%~,             //scroll
+                            ~%spell_resref%~,           //spell
+                            ~%keys_1%~,                 //tradition
+                            ~%keys_2%~,                 //spell level
+                            ~%abil_0%~,                 //caster level
+                            ~%scroll_cost%~,            //cost of the scroll in the *.ITM file
+                            ~0~,                        //any additional cost
+                            ~100~,                      //time to scribe (in hours)
+                            ~0~,                        //XP cost to scribe
+                            ~%scroll_cost_failure%~,    //Chance of failure
+                            ~%name%~                    //spell name for display
+                                => ~%keys_2%_%scrl_name%~   //a rather arbitrary value to pick. could be name, scroll, etc.
+                        END
 
                     END //iterate over `leveled_abilities` array
 
