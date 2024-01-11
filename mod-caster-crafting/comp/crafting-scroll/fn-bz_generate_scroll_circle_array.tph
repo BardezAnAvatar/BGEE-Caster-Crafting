@@ -9,6 +9,15 @@
 *   Preconditions:                                                                         *
 *       ~scroll_list_data~ array exists, fully populated                                   *
 *******************************************************************************************/
+//OUTPUT:
+/*
+    An associative array named "scroll_circle_array" what contains these keys:
+        [sorting Name]          // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
+        [Spell]                 // 3
+        [Spell Display Name]    // 4
+*/
 DEFINE_ACTION_FUNCTION ~fn-bz_generate_scroll_circle_array~
     RET_ARRAY
         ~scroll_circle_array~

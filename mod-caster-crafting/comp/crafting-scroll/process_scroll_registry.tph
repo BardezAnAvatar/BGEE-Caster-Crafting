@@ -1,8 +1,9 @@
 /********************************************************************
 *   Generate the data used to process scrolls during installation   *
 ********************************************************************/
-INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/fn-bz_generate_scroll_circle_array.tph~
 
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/priest.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/protection.tph~
@@ -72,6 +73,20 @@ ACTION_PHP_EACH ~scroll_list~
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 
 
+//OUTPUT:
+/*
+    An associative array named "scroll_crafting_spell_circle_array" what contains these keys:
+        [sorting Name]          // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
+        [Spell]                 // 3
+        [Spell Display Name]    // 4
+*/
+LAUNCH_ACTION_FUNCTION ~fn-bz_generate_scroll_circle_array~
+    RET_ARRAY
+        ~scroll_crafting_spell_circle_array~ = ~scroll_circle_array~
+END
+
 /*************************************************************************
 *   END: Generate the data used to process scrolls during installation   *
 *************************************************************************/
@@ -95,4 +110,23 @@ ACTION_PHP_EACH ~scroll_list_data~
             time cost:      `%scroll_list_data_keys_8%`~
 
     END
+*/
+
+//Emit the data for spells in a spell circle
+/*
+PRINT ~DEBUG: scroll_crafting_spell_circle_array:~
+ACTION_PHP_EACH ~scroll_crafting_spell_circle_array~
+    AS ~keys~ => ~value~
+BEGIN
+
+    //Debugging Statements
+    PRINT ~- `scroll_crafting_spell_circle_array` record:
+        sorting key:        `%keys_0%`
+        tradition:          `%keys_1%`
+        level:              `%keys_2%`
+        spell ResRef:       `%keys_3%`
+        Spell display name: `%keys_4%`
+        value:              `%value%`~
+
+END
 */
