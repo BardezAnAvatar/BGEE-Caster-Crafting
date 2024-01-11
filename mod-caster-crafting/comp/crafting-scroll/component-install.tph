@@ -5,7 +5,7 @@
 
 //DEBUG!
 //Verify that all data I need has been emitted
-
+/*
 PRINT ~DEBUG: `scroll_list_data` array:~
 ACTION_PHP_EACH ~scroll_list_data~
     AS ~scroll_list_data_keys~ => ~value~
@@ -20,7 +20,7 @@ BEGIN
         addtl. cost:    `%scroll_list_data_keys_7%`;
         time cost:      `%scroll_list_data_keys_8%`~
 END
-
+*/
 
 
 

@@ -76,13 +76,13 @@ SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
 
 BEGIN @22 DESIGNATED 22 // Scribe scrolls
 SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
-    INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/scroll-crafting.tph~
+    INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/component-install.tph~
     INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 
 BEGIN @23 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
 SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
     INCLUDE ~./%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
-    INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/scroll-crafting.tph~
+    INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/component-install.tph~
     INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
 //END scribing tools
 
