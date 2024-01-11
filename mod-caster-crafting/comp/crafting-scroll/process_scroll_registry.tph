@@ -25,9 +25,9 @@ ACTION_IF (%bz_OlvynSpells_installed%)
     END
 
 
-//OUTPUT:
+//INPUT:
 /*
-    An associative array named "scroll_list what contains these keys:
+    An associative array named `scroll_list` that contains these keys:
         [Scroll]                // 0
         [Spell]                 // 1
         [Tradition]             // 2
@@ -53,9 +53,7 @@ ACTION_PHP_EACH ~scroll_list~
     END
 */
 
-//Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
-//iterate through the Arcane list to generate the scroll-list data, then sort that data below instead
-//RESULT:
+//OUTPUT:
 /*
     An associative array named "scroll_list_data" what contains these keys:
         [sorting Name]          // 0    --get from spell
@@ -73,8 +71,6 @@ ACTION_PHP_EACH ~scroll_list~
 */
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 
-//Sort the indicies (on first key)
-ACTION_SORT_ARRAY_INDICES ~scroll_list_data~
 
 /*************************************************************************
 *   END: Generate the data used to process scrolls during installation   *

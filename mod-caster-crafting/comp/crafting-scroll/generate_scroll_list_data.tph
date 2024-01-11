@@ -1,3 +1,6 @@
+//Look up the scroll names from the scroll ITM file to retrieve the TLK strings, so they can sort by language.
+//iterate through the scroll list to generate the scroll-list data, then sort that data below
+
 //RESULT:
 /*
     An associative array named "scroll_list_data" what contains these keys:
