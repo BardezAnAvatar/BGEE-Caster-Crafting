@@ -65,4 +65,4 @@ ACTION_PHP_EACH ~scroll_list~
     END
 
 //Sort the indicies, presumably on first key
-ACTION_SORT_ARRAY_INDICES ~spell_list~
+ACTION_SORT_ARRAY_INDICES ~scroll_list_data~
