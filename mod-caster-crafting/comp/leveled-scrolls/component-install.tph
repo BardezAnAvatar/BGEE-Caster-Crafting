@@ -28,4 +28,31 @@ END
 
 //perform the install:
 LAUNCH_ACTION_FUNCTION ~fn-create_leveled_scrolls~
+    RET_ARRAY
+        ~bz_leveled_scroll_list_data_import~ = ~scroll_list_data_export~
+END
+
+
+//Finally, add an entry into scroll_list_data so that it can be crafted
+ACTION_PHP_EACH ~bz_leveled_scroll_list_data_import~
+    AS ~keys~ => ~value~
+BEGIN
+
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY ~scroll_list_data~
+    BEGIN
+        ~%keys_0%~,         //sorting key of level and spell name
+        ~%keys_1%~,         //scroll
+        ~%keys_2%~,         //spell
+        ~%keys_3%~,         //tradition
+        ~%keys_4%~,         //spell level
+        ~%abil_5%~,         //caster level
+        ~%keys_6%~,         //cost of the scroll in the *.ITM file
+        ~%keys_7%~,         //any additional cost
+        ~%keys_8%~,         //time to scribe (in hours)
+        ~%keys_9%~,         //XP cost to scribe
+        ~%keys_10%~,        //Chance of failure
+        ~%keys_11%~         //spell name for display
+            => ~%value%~    //a rather arbitrary value to pick. could be name, scroll, etc.
+    END //Add to ~scroll_list_data~
+
 END

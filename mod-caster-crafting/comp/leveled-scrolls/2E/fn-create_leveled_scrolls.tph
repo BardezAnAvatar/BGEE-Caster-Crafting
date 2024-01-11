@@ -23,6 +23,8 @@ INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_ca
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
 
 DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
+    RET_ARRAY
+        ~scroll_list_data_export~
 BEGIN
 
     PRINT ~
@@ -274,8 +276,9 @@ BEGIN
                                 bin_effects_copied = ~%abils_6%~    //copied binary of effects read from spell
                         END //~fn-bz_create_scroll_from_spell_header~
 
-                        //Finally, add an entry into scroll_list_data so that it can be crafted
-                        ACTION_DEFINE_ASSOCIATIVE_ARRAY ~scroll_list_data~
+                        //Finally, export am arrau emtry for scroll_list_data so that it can be crafted.
+                        //  Note: this is inside a function, so adding to ~scroll_list_import~ would be lost
+                        ACTION_DEFINE_ASSOCIATIVE_ARRAY ~scroll_list_data_export~
                         BEGIN
                             ~%keys_2%_%scrl_name%~,     //sorting key of level and spell name
                             ~%scroll_itm%~,             //scroll
@@ -290,7 +293,7 @@ BEGIN
                             ~%scroll_cost_failure%~,    //Chance of failure
                             ~%name%~                    //spell name for display
                                 => ~%keys_2%_%scrl_name%~   //a rather arbitrary value to pick. could be name, scroll, etc.
-                        END //Add to ~scroll_list_data~
+                        END //export to ~scroll_list_data~
 
                     END //iterate over `leveled_abilities` array
 
