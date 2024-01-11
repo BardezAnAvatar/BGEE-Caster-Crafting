@@ -4,7 +4,7 @@
 
 
 //DEBUG!
-//Verify that all data I need has been emitted
+//Verify that all data I need has been emitted from, i.e.: leveled scrolls component
 /*
 PRINT ~DEBUG: `scroll_list_data` array:~
 ACTION_PHP_EACH ~scroll_list_data~
