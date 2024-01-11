@@ -1,0 +1,44 @@
+/*******************************************************************************************
+*   This function will generate an array of data for the dialog scripts to iterate over.   *
+*   This array will contain:                                                               *
+*       - Tradition                                                                        *
+*       - Level                                                                            *
+*       - Spell RESREF                                                                     *
+*       - Spell Name                                                                       *
+*                                                                                          *
+*   Preconditions:                                                                         *
+*       ~scroll_list_data~ array exists, fully populated                                   *
+*******************************************************************************************/
+DEFINE_ACTION_FUNCTION ~fn-bz_generate_scroll_circle_array~
+    RET_ARRAY
+        ~scroll_circle_array~
+BEGIN
+
+    //iterate through each entry in ~scroll_list_data~; if the SPELL has not been registered, so do.
+    ACTION_PHP_EACH ~scroll_list_data~
+        AS ~keys~ => ~value~
+    BEGIN
+
+        //if the SPELL has not been registered, so do.
+        OUTER_TEXT_SPRINT ~var_check~ ~bz-scroll_circle_array-%keys_3%-%keys_4%-%keys_2%~
+        ACTION_IF (NOT VARIABLE_IS_SET ~%var_check%~) THEN
+        BEGIN
+
+            OUTER_TEXT_SPRINT ~spell_name~ $spell_lookup("%keys_2%")
+
+            ACTION_DEFINE_ASSOCIATIVE_ARRAY
+                ~scroll_circle_array~
+            BEGIN
+                ~%keys_3%-%keys_4%-%keys_2%~,   //sorting key of level and spell name
+                ~%keys_3%~,                     //tradition
+                ~%keys_4%~,                     //spell level
+                ~%keys_2%~,                     //spell RESREF
+                ~%spell_name%~                  //spell name for display
+                    => ~%keys_0%~               //a rather arbitrary value to pick. could be name, scroll, etc.
+            END //scroll_circle_array entry
+
+        END //check if the entry has been made already
+
+    END //iterate over ~scroll_list_data~
+
+END //function definition
