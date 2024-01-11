@@ -71,19 +71,21 @@ BEGIN @50 DESIGNATED 50 //~Leveled Scrolls: craft scrolls at higher caster level
 // Caster Crafting: Scribing Tools subcomponents
 BEGIN @21 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
 SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
-    INCLUDE ~./%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
-    INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
+    OUTER_SET ~bz-scribing_tools-spellbook_copy~ = 1
+    OUTER_SET ~bz-scribing_tools-scribe_scroll~ = 0
+    INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/component-install.tph~
 
 BEGIN @22 DESIGNATED 22 // Scribe scrolls
 SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
-    INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/component-install.tph~
-    INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
+    OUTER_SET ~bz-scribing_tools-spellbook_copy~ = 0
+    OUTER_SET ~bz-scribing_tools-scribe_scroll~ = 1
+    INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/component-install.tph~
 
 BEGIN @23 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
 SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
-    INCLUDE ~./%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
-    INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/component-install.tph~
-    INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
+    OUTER_SET ~bz-scribing_tools-spellbook_copy~ = 1
+    OUTER_SET ~bz-scribing_tools-scribe_scroll~ = 1
+    INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/component-install.tph~
 //END scribing tools
 
 

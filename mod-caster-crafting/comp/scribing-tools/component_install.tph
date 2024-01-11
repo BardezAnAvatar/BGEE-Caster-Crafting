@@ -1,0 +1,19 @@
+/*****************************************************************
+*   Main installation entrypoint for scribing tools component.   *
+*****************************************************************/
+
+//Include the spellbook copying between mages/bards
+ACTION_IF (%bz-scribing_tools-spellbook_copy%) THEN
+BEGIN
+    INCLUDE ~./%MOD_FOLDER%/comp/spellbook-copy/spellbook-copy.tph~
+END
+
+
+//Include the scroll scribing component
+ACTION_IF (%bz-scribing_tools-scribe_scroll%) THEN
+BEGIN
+    INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/component-install.tph~
+END
+
+//tools themselves
+INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/scribing-tools.tph~
