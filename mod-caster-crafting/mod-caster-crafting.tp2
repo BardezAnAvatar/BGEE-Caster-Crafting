@@ -62,27 +62,27 @@ SUBCOMPONENT @10        //  Missing Spell Scrolls
 
 
 // Leveled Scrolls: craft scrolls at higher caster levels
-BEGIN @50 DESIGNATED 50 //~Leveled Scrolls: craft scrolls at higher caster levels~
+BEGIN @20 DESIGNATED 20 //~Leveled Scrolls: craft scrolls at higher caster levels~
     INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/component-install.tph~
 //END missing potions
 
 
 
 // Caster Crafting: Scribing Tools subcomponents
-BEGIN @21 DESIGNATED 21 // Copy Spells from Party Member Spellbooks
-SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
+BEGIN @31 DESIGNATED 31 // Copy Spells from Party Member Spellbooks
+SUBCOMPONENT @30        //  Caster Crafting: Scribing Tools
     OUTER_SET ~bz-scribing_tools-spellbook_copy~ = 1
     OUTER_SET ~bz-scribing_tools-scribe_scroll~ = 0
     INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/component-install.tph~
 
-BEGIN @22 DESIGNATED 22 // Scribe scrolls
-SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
+BEGIN @32 DESIGNATED 32 // Scribe scrolls
+SUBCOMPONENT @30        //  Caster Crafting: Scribing Tools
     OUTER_SET ~bz-scribing_tools-spellbook_copy~ = 0
     OUTER_SET ~bz-scribing_tools-scribe_scroll~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/component-install.tph~
 
-BEGIN @23 DESIGNATED 23 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
-SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
+BEGIN @33 DESIGNATED 33 // Copy Spells from Party Member Spellbooks AND Scribe scrolls
+SUBCOMPONENT @30        //  Caster Crafting: Scribing Tools
     OUTER_SET ~bz-scribing_tools-spellbook_copy~ = 1
     OUTER_SET ~bz-scribing_tools-scribe_scroll~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/scribing-tools/component-install.tph~
@@ -91,29 +91,56 @@ SUBCOMPONENT @20        //  Caster Crafting: Scribing Tools
 
 
 // Caster Crafting: New Potions for Spells
-BEGIN @30 DESIGNATED 30 // Add in missing arcane spell potions
+BEGIN @40 DESIGNATED 40 // Potions for existing Spells
     INCLUDE ~./%MOD_FOLDER%/comp/missing-potions/component-install.tph~
 //END missing potions
 
 
 
+// Leveled Potions: craft potions at higher caster levels
+/*
+BEGIN @50 DESIGNATED 50 //~Leveled Potions: craft potions at higher caster levels~
+    INCLUDE ~./%MOD_FOLDER%/comp/leveled-potions/component-install.tph~
+*/
+//END missing potions
+
+
+
+// Caster Crafting: New Wands for Spells
+/*
+BEGIN @60 DESIGNATED 60 // Wands for existing Spells
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+*/
+//END missing potions
+
+
+
+// Leveled Scrolls: craft scrolls at higher caster levels
+/*
+BEGIN @70 DESIGNATED 70 //~Leveled Wands: craft potions at higher caster levels~
+    INCLUDE ~./%MOD_FOLDER%/comp/leveled-wands/component-install.tph~
+*/
+//END missing potions
+
+
+
+
 // BEGIN Brew Potion subcomponents
-BEGIN @41 DESIGNATED 41 // Brew potions
-SUBCOMPONENT @40        // Caster Crafting: Crafting Station
+BEGIN @81 DESIGNATED 81 // Brew potions
+SUBCOMPONENT @80        // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 1
     OUTER_SET ~bz_install_allow_wands~ = 0
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @42 DESIGNATED 42 // Craft wands
-SUBCOMPONENT @40        // Caster Crafting: Crafting Station
+BEGIN @82 DESIGNATED 82 // Craft wands
+SUBCOMPONENT @80        // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 0
     OUTER_SET ~bz_install_allow_wands~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @43 DESIGNATED 43 // Both brew potions and craft wands
-SUBCOMPONENT @40        // Caster Crafting: Crafting Station
+BEGIN @83 DESIGNATED 83 // Both brew potions and craft wands
+SUBCOMPONENT @80        // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 1
     OUTER_SET ~bz_install_allow_wands~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 // END Brew Potion subcomponents
-
