@@ -14,6 +14,7 @@ BEGIN
     ~SPWI107~, ~arcane/1/friends~                           => ~SPWI107~    //Friends
     ~SPWI112~, ~arcane/1/magic_missile~                     => ~SPWI112~    //Magic Missile
     ~SPWI113~, ~shared/protection_from_evil~                => ~SPWI113~    //Protection from Evil
+    ~SPWI114~, ~arcane/1/shield~                            => ~SPWI114~    //Shield
     ~SPWI115~, ~arcane/1/shocking_grasp~                    => ~SPWI115~    //Shocking Grasp
     ~SPWI116~, ~arcane/1/sleep~                             => ~SPWI116~    //Sleep
     ~SPWI117~, ~arcane/1/chill_touch~                       => ~SPWI117~    //Chill Touch
