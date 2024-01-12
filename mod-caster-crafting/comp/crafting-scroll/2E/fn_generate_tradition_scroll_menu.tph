@@ -26,9 +26,9 @@ BEGIN
         ACTION_IF (i = %LevelMax%) THEN BEGIN OUTER_SPRINT ~spell_circle~ ~%LevelMaxChar%~ END
         ELSE BEGIN OUTER_SPRINT ~spell_circle~ ~%i%~ END
 
-        OUTER_TEXT_SPRINT ~current_buffer_circle_spell_select~  ~ScrollCreation/CircleTransitions/SpellSelect%CircleTradition%%i%~
-        OUTER_TEXT_SPRINT ~current_buffer_circle_scroll_select~ ~ScrollCreation/CircleTransitions/ScrollSelect_%CircleTradition%%i%~
-        OUTER_TEXT_SPRINT ~current_buffer_circle_scroll_craft~  ~ScrollCreation/CircleTransitions/CraftSelected_%CircleTradition%%i%~
+        OUTER_TEXT_SPRINT ~current_buffer_circle_spell_select~  ~ScrollCreation/CircleTransitions/%CircleTradition%%i%_SpellSelect~
+        OUTER_TEXT_SPRINT ~current_buffer_circle_scroll_select~ ~ScrollCreation/CircleTransitions/%CircleTradition%%i%_ScrollSelect~
+        OUTER_TEXT_SPRINT ~current_buffer_circle_scroll_craft~  ~ScrollCreation/CircleTransitions/%CircleTradition%%i%_CraftSelected~
 
 <<<<<<<< %current_buffer_circle_spell_select%
 
