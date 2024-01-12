@@ -7,7 +7,7 @@ BEGIN
     [Levelled BAM subpath]  // 1
     */
 
-    ~WIZARD_EXPEDITIOUS_RETREAT~,               ~arcane/1/expeditious_retreat~              => ~WIZARD_EXPEDITIOUS_RETREAT~             //Expeditious Retret
+    ~WIZARD_EXPEDITIOUS_RETREAT~,               ~arcane/1/expeditious_retreat~              => ~WIZARD_EXPEDITIOUS_RETREAT~             //Expeditious Retreat
     ~CLERIC_CAUSE_LIGHT_WOUNDS~,                ~priest/1/cause_light_wounds~               => ~CLERIC_CAUSE_LIGHT_WOUNDS~              //Cause Light Wounds
     ~CLERIC_SUNSCORCH~,                         ~priest/1/sunscorch~                        => ~CLERIC_SUNSCORCH~                       //Sunscorch
 
