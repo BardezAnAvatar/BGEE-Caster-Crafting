@@ -269,6 +269,7 @@ StartCutScene("BZCTWRIT")~
 END
                 ~~~~~
 
+            //End the .D top-level command, `APPEND`
             APPEND_OUTER -
                 ~%current_buffer_circle_scroll_select%~
                 ~~~~~
@@ -276,6 +277,7 @@ END
 END
                 ~~~~~
 
+            //End the .D top-level command, `APPEND`
             APPEND_OUTER -
                 ~%current_buffer_circle_scroll_craft%~
                 ~~~~~
@@ -296,4 +298,4 @@ END
         /************************************************
         *  END: Generate the transitions dynamicially   *
         ************************************************/
-END
+END //function def
