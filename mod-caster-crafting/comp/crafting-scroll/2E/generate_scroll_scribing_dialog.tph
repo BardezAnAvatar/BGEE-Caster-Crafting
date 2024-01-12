@@ -40,7 +40,7 @@ INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/%bz_edition_code%/fn_generate_tradi
 <<<<<<<< ScrollCreation/CirclesDivine.D
 
 >>>>>>>>
-LAF ~bz_generate_tradition_scroll_menu~
+LAUNCH_ACTION_FUNCTION ~bz_generate_tradition_scroll_menu~
     INT_VAR
         ~LevelMax~ = 8 //maximum number of spell circles
         ~ScrollAnalysisPrompt~ = ~15090~
@@ -55,7 +55,7 @@ END
 <<<<<<<< ScrollCreation/CirclesArcane.D
 
 >>>>>>>>
-LAF ~bz_generate_tradition_scroll_menu~
+LAUNCH_ACTION_FUNCTION ~bz_generate_tradition_scroll_menu~
     INT_VAR
         ~LevelMax~ =10 //maximum number of spell circles
         ~ScrollAnalysisPrompt~ = ~15100~
