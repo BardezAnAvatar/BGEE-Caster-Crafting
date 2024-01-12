@@ -293,7 +293,7 @@ END
 ACTION_IF ((NOT %bz_OlvynSpells_installed%) OR bz_iwdification_installed_after_OlvynSpells)
 BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
-        ~spell_list~
+        ~leveled_scroll_asset_prefixes~
     BEGIN
         //looks like IWD(ification) and Olvynn Fight it out on this. Olvyn specifically looks for it and replaces it.
         ~SPPR419~,  ~priest/4/produce_fire~                 => ~SPPR419~    //Produce Fire
