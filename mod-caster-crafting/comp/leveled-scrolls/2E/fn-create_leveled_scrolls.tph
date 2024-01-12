@@ -189,8 +189,8 @@ BEGIN
                         //Get the costs from the table
                         LAUNCH_ACTION_FUNCTION ~fn-bz_lookup_costs_scroll~
                             STR_VAR
-                                ~Level~ = ~%keys_3%~
-                                ~Tradition~ = ~%keys_2%~
+                                ~Level~ = ~%keys_2%~
+                                ~Tradition~ = ~%keys_1%~
                             RET
                                 ~scroll_cost_time~ = ~time~
                                 ~scroll_cost_xp~ = ~xp~
