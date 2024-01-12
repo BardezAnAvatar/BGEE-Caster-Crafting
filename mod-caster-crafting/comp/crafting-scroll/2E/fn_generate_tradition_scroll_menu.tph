@@ -1,104 +1,69 @@
 DEFINE_ACTION_FUNCTION ~bz_generate_tradition_scroll_menu~
     INT_VAR
-        ~LevelMax~ = 10 //maximum number of spell circles
+        ~LevelMax~ = 10             //maximum number of spell circles
+        ~ScrollAnalysisPrompt~ = 0  //unique string that is used for analyzing a specific spell (differs between divine and arcane)
     STR_VAR
-        ~LevelMaxChar~ = ~~ //A for 10-th level or Q for quest-level
-        ~CircleTradition~ = ~~
-        ~BufferName~ = ~~   //name of file to append to
+        ~LevelMaxChar~ = ~~         //A for 10-th level or Q for quest-level
+        ~CircleTradition~ = ~~      //Arcane or Divine
+        ~BufferName~ = ~~           //name of file to append to
         ~StateTraditionName~ = ~~   //lower case name of tradition to use in state transitions and such
-        ~ScrollAnalysisPrompt~ = ~~ //unique string that is used for analyzing a specific spell (differs between divine and arcane)
+BEGIN
+
+    /********************************************
+    *   Generate the transitions dynamicially   *
+    ********************************************/
+
+    OUTER_FOR (i = 1; i < (%LevelMax% + 1); ++i)
     BEGIN
 
-        /********************************************
-        *   Generate the transitions dynamicially   *
-        ********************************************/
+        PRINT ~
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!   Generating Scroll Crafting Dialog States and Responses for %CircleTradition% level %i% spells scrolls   !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!~
 
-        OUTER_FOR (i = 1; i < (%LevelMax% + 1); ++i)
-        BEGIN
-            //Get the appropriate spell circle variable set up
-            OUTER_SPRINT ~spell_circle~ ~0~
-            ACTION_IF (i = %LevelMax%) THEN BEGIN OUTER_SPRINT ~spell_circle~ ~%LevelMaxChar%~ END
-            ELSE BEGIN OUTER_SPRINT ~spell_circle~ ~%i%~ END
+        //Get the appropriate spell circle variable set up
+        OUTER_SPRINT ~spell_circle~ ~0~
+        ACTION_IF (i = %LevelMax%) THEN BEGIN OUTER_SPRINT ~spell_circle~ ~%LevelMaxChar%~ END
+        ELSE BEGIN OUTER_SPRINT ~spell_circle~ ~%i%~ END
 
-            //Append to the buffer for each circle
-            APPEND_OUTER -
-                ~%BufferName%~
-                ~~~~~
+        OUTER_TEXT_SPRINT ~current_buffer_circle_spell_select~  ~ScrollCreation/CircleTransitions/%CircleTradition%%i%_SpellSelect~
+        OUTER_TEXT_SPRINT ~current_buffer_circle_scroll_select~ ~ScrollCreation/CircleTransitions/%CircleTradition%%i%_ScrollSelect~
+        OUTER_TEXT_SPRINT ~current_buffer_circle_scroll_craft~  ~ScrollCreation/CircleTransitions/%CircleTradition%%i%_CraftSelected~
+
+<<<<<<<< %current_buffer_circle_spell_select%
+
+>>>>>>>>
+<<<<<<<< %current_buffer_circle_scroll_select%
+
+>>>>>>>>
+<<<<<<<< %current_buffer_circle_scroll_craft%
+
+>>>>>>>>
+
+
+        //Append to the buffer for each circle
+        APPEND_OUTER -
+                ~%current_buffer_circle_spell_select%~
+            ~~~~~
 
 EXTEND_TOP ~BZMSCST~
-    bz_caster_craft_scribe_scroll_%StateTraditionName%_circle_%spell_circle% //state number(s)
-                ~~~~~
+    ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%~ //state number(s)
+            ~~~~~
 
-            LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
-                STR_VAR
-                    ~Level~ = ~%spell_circle%~
-                    ~Tradition~ = ~%CircleTradition%~
-                RET
-                    ~bz_scroll_time~ = ~time~
-                    ~bz_scroll_failure~ = ~failure~
-                    ~scribe_time_engine~ = ~time_engine~
-                    ~readable_time~ = ~time_readable~
-            END
-
-            //Generate the transitions and name the states for individual scrolls
-            ACTION_PHP_EACH ~scroll_list_data~
-                AS ~keys~ => ~value~
-                BEGIN
-                    ACTION_IF ((~%keys_4%~ STRING_EQUAL ~%spell_circle%~) AND (~%keys_3%~ STRING_EQUAL ~%CircleTradition%~))  //Spell circle matches
-                        THEN BEGIN
-                            //Get the cost in gold for the scroll
-                            OUTER_TEXT_SPRINT ~spell_name~ $spell_lookup("%keys_2%")
-
-                            OUTER_SPRINT ~scroll_transition_response~ ~%spell_name%~
-
-                            //Give the scroll a dialog option
-                            APPEND_OUTER -
-                                ~%BufferName%~
-                                ~~~~~
-        IF ~HaveKnownSpellRES("%keys_2%")~
-        THEN
-            REPLY ~%scroll_transition_response%~
-            GOTO bz_caster_craft_scribe_scroll_%StateTraditionName%_circle_%spell_circle%_%keys_2%
-                                ~~~~~
-                        END //circle match
-                END //for each
-
-            //End the .D top-level command, `EXTEND_TOP`
-            APPEND_OUTER -
-                ~%BufferName%~
-                ~~~~~
-
-END
-                ~~~~~
-
-        END //OUTER_FOR
-
-        /************************************************
-        *  END: Generate the transitions dynamicially   *
-        ************************************************/
-
-
-
-
-        /******************************************************
-        *   Generate scroll states and transitions to craft   *
-        ******************************************************/
         APPEND_OUTER -
-            ~%BufferName%~
+            ~%current_buffer_circle_scroll_select%~
+            ~~~~~
+
+APPEND ~BZMSCST~
+            ~~~~~
+        APPEND_OUTER -
+            ~%current_buffer_circle_scroll_craft%~
             ~~~~~
 
 APPEND ~BZMSCST~
             ~~~~~
 
-
-        OUTER_FOR (i = 1; i < (%LevelMax% + 1); ++i)
-        BEGIN
-            //Get the appropriate spell circle variable set up
-            OUTER_SPRINT ~spell_circle~ ~0~
-            ACTION_IF (i = %LevelMax%) THEN BEGIN OUTER_SPRINT ~spell_circle~ ~%LevelMaxChar%~ END
-            ELSE BEGIN OUTER_SPRINT ~spell_circle~ ~%i%~ END
-
-            LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
+            LAUNCH_ACTION_FUNCTION ~fn-bz_lookup_costs_scroll~
                 STR_VAR
                     ~Level~ = ~%spell_circle%~
                     ~Tradition~ = ~%CircleTradition%~
@@ -109,43 +74,118 @@ APPEND ~BZMSCST~
                     ~readable_time~ = ~time_readable~
             END
 
-            //Calculate the bounds for failure
-            OUTER_SET ~bz_scroll_failure_bounds_cursed~ = (99 - %bz_scroll_failure%)     //use this for GT(X)
-            OUTER_SET ~bz_scroll_failure_bounds_success~ = (100 - %bz_scroll_failure%)   //use this for LT(X)
-
             //Generate the transitions and name the states for individual scrolls
-            ACTION_PHP_EACH ~scroll_list_data~
+            ACTION_PHP_EACH ~scroll_crafting_spell_circle_array~
                 AS ~keys~ => ~value~
+            BEGIN
+
+                ACTION_IF ((~%keys_2%~ STRING_EQUAL ~%spell_circle%~) AND (~%keys_1%~ STRING_EQUAL ~%CircleTradition%~))  //Spell circle matches
+                    THEN
                 BEGIN
-                    ACTION_IF ((~%keys_4%~ STRING_EQUAL ~%spell_circle%~) AND (~%keys_3%~ STRING_EQUAL ~%CircleTradition%~))  //Spell circle matches
-                        THEN BEGIN
+
+                    OUTER_SPRINT ~scroll_transition_response~ ~%keys_4%~
+
+                    //Give the scroll a dialog option
+                    APPEND_OUTER -
+                        ~%current_buffer_circle_spell_select%~
+                        ~~~~~
+        IF ~HaveKnownSpellRES("%keys_3%")~
+        THEN
+            REPLY ~%scroll_transition_response%~
+            GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%~
+                        ~~~~~
+
+
+                    /******************************************************
+                    *   Generate scroll states and transitions to craft   *
+                    ******************************************************/
+                    //Generate strings
+                    OUTER_TEXT_SPRINT ~spell_name~ ~%keys_4%~
+                    OUTER_SPRINT ~scroll_selection_prompt~ (AT ~ScrollAnalysisPrompt~) // e.g.: ~You meditate over the spell %spell_name% and prepare its power.~
+
+                    //Give the examining spell dialog state
+                    APPEND_OUTER -
+                        ~%current_buffer_circle_scroll_select%~
+                        ~~~~~
+    IF ~~
+    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%~    //spell state
+        SAY ~%scroll_selection_prompt%~
+                        ~~~~~
+
+
+                    //Calculate the bounds for failure
+                    OUTER_SET ~bz_scroll_failure_bounds_cursed~ = (99 - %bz_scroll_failure%)     //use this for GT(X)
+                    OUTER_SET ~bz_scroll_failure_bounds_success~ = (100 - %bz_scroll_failure%)   //use this for LT(X)//Generate the transitions and name the states for individual scrolls
+
+                    ACTION_PHP_EACH ~scroll_list_data~
+                        AS ~scroll_keys~ => ~scroll_val~
+                    BEGIN
+
+                        //Spell circle matches, specific spell Resref as well
+                        ACTION_IF (~%scroll_keys_2%~ STRING_EQUAL ~%keys_3%~) THEN
+                        BEGIN
+
                             //Get the cost in gold for the scroll
-                            COPY_EXISTING - ~%keys_1%.ITM~ ~override~
+                            COPY_EXISTING - ~%scroll_keys_1%.ITM~ ~discard/scroll_crafting~
                                 //Patches
                                 READ_LONG (0x34) ~scroll_gold_cost~
                                 READ_LONG NAME2 ~bz_scroll_name_STRREF~
                             BUT_ONLY_IF_IT_CHANGES
 
+                            //get strings
                             ACTION_GET_STRREF (%bz_scroll_name_STRREF%) ~scroll_name~
-                            OUTER_SPRINT ~spell_name~ ~%keys_11%~
+                            OUTER_SET ~caster_level~ = scroll_keys_5
+                            OUTER_SPRINT ~scroll_craft_sufficient~ @15200   // ~You prepare to scribe a scroll of %spell_name% at caster level %caster_level%.~
+                            OUTER_SPRINT ~scroll_craft_insufficient~ @15201 // ~As you prepare to scribe a scroll of %spell_name% at caster level %caster_level%, you realize that you lack the %scroll_gold_cost% necessary to scribe this scroll.~
 
-                            OUTER_SPRINT ~scroll_prompt~ (AT ~ScrollAnalysisPrompt~) // e.g.: ~You meditate over the spell %spell_name% and prepare its power.~
-                            OUTER_SPRINT ~scroll_response~ @15035 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
-                            OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                            OUTER_SPRINT ~scroll_response~ @15031 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                            OUTER_SPRINT ~elapsed_message~ @15032 // ~%readable_time% have elapsed.~
                             OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                             OUTER_SET gold_minus_one = (scroll_gold_cost - 1)
 
-                            //Give the type of scroll as a dialog option
+                            //Generate the scroll transitions
                             APPEND_OUTER -
-                                ~%BufferName%~
+                                ~%current_buffer_circle_scroll_select%~
+                                ~~~~~
+            IF ~PartyGoldGT(%gold_minus_one%)~
+            THEN REPLY ~%scroll_response%~ // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-sufficient~
+            IF ~PartyGoldLT(%scroll_gold_cost%)~
+            THEN REPLY ~%scroll_response%~ // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-insufficient~
+                                ~~~~~
+
+
+                            //Generate the scroll creation states
+                            APPEND_OUTER -
+                                ~%current_buffer_circle_scroll_craft%~
                                 ~~~~~
     IF ~~
-    THEN BEGIN bz_caster_craft_scribe_scroll_%StateTraditionName%_circle_%spell_circle%_%keys_2%
-        SAY ~%scroll_prompt%~
-            IF ~HaveKnownSpellRES("%keys_2%")
-PartyGoldGT(%gold_minus_one%)
-RandomNumLT(100, %bz_scroll_failure_bounds_success%)~   //created successfully
+    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-insufficient~
+        SAY ~%scroll_craft_insufficient%~
+            IF ~~
+            THEN REPLY @15024 // ~Pick another caster level~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%~
+            IF ~~
+            THEN REPLY @15023 // ~Pick another spell~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%~
+            IF ~~
+            THEN REPLY @15022 // ~Pick another spell circle~
+                GOTO ~scribe_scroll-menu~
+            IF ~~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
+                GOTO ~bz_caster_craft_scribe_main_menu~
+            IF ~~
+            THEN REPLY @15020 // ~Pack up your scribe tools.~
+                EXIT
+    END
+
+
+    IF ~~
+    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-sufficient~
+        SAY ~%scroll_craft_sufficient%~
+            IF ~RandomNumLT(100, %bz_scroll_failure_bounds_success%)~   //created successfully
             THEN
                 REPLY ~%scroll_response%~
                 DO ~
@@ -153,15 +193,13 @@ TakePartyGold(%scroll_gold_cost%)
 DestroyGold(%scroll_gold_cost%)
 AdvanceTime(%scribe_time_engine%)
 DisplayString(Myself, %elapsed_strref%)
-GiveItemCreate("%value%", Myself, 1, 0, 0)
+GiveItemCreate("%scroll_keys_1%", Myself, 1, 0, 0)
 CreateVisualEffectObject("BZSCRIBE", Myself)
 ClearAllActions()
 StartCutSceneMode()
 StartCutScene("BZCTWRIT")~
                 EXIT
-            IF ~HaveKnownSpellRES("%keys_2%")
-PartyGoldGT(%gold_minus_one%)
-RandomNumGT(100, %bz_scroll_failure_bounds_cursed%)~    //failure, create cursed scroll
+            IF ~RandomNumGT(100, %bz_scroll_failure_bounds_cursed%)~    //failure, create cursed scroll
             THEN
                 REPLY ~%scroll_response%~
                 DO ~
@@ -178,32 +216,88 @@ StartCutSceneMode()
 StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~~
-            THEN REPLY @15033 // ~Pick another spell~
-                GOTO bz_caster_craft_scribe_scroll_%StateTraditionName%_circle_%spell_circle%
+            THEN REPLY @15024 // ~Pick another caster level~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%~
             IF ~~
-            THEN REPLY @15032 // ~Pick another spell circle~
-                GOTO bz_caster_craft_scribe_scroll_menu
+            THEN REPLY @15023 // ~Pick another spell~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
-                GOTO bz_caster_craft_scribe_main_menu
+            THEN REPLY @15022 // ~Pick another spell circle~
+                GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15030 // ~Pack up your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
+                GOTO ~bz_caster_craft_scribe_main_menu~
+            IF ~~
+            THEN REPLY @15020 // ~Pack up your scribe tools.~
                 EXIT
     END
                                 ~~~~~
-                        END //if circlers match
-                END //for each spell_list_data
-        END //spell level loop
 
+                        END //scroll matches current spell
 
-        APPEND_OUTER -
-            ~%BufferName%~
-            ~~~~~
+                    END //iterate through ~scroll_list_data~
+                    /***********************************************************
+                    *   END: Generate scroll states and transitions to craft   *
+                    ***********************************************************/
+
+                    //close the examining spell dialog state
+                    APPEND_OUTER -
+                        ~%current_buffer_circle_scroll_select%~
+                        ~~~~~
+            IF ~~
+            THEN REPLY @15023 // ~Pick another spell~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%~
+            IF ~~
+            THEN REPLY @15022 // ~Pick another spell circle~
+                GOTO ~scribe_scroll-menu~
+            IF ~~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
+                GOTO ~bz_caster_craft_scribe_main_menu~
+            IF ~~
+            THEN REPLY @15020 // ~Pack up your scribe tools.~
+                EXIT
+    END
+                        ~~~~~
+
+                END //circle (Tradition/Level) match
+
+            END //for each ~scroll_crafting_spell_circle_array~
+
+            //End the .D top-level command, `EXTEND_TOP`
+            APPEND_OUTER -
+                ~%current_buffer_circle_spell_select%~
+                ~~~~~
 
 END
-            ~~~~~
-        /***********************************************************
-        *   END: Generate scroll states and transitions to craft   *
-        ***********************************************************/
+                ~~~~~
+
+            //End the .D top-level command, `APPEND`
+            APPEND_OUTER -
+                ~%current_buffer_circle_scroll_select%~
+                ~~~~~
 
 END
+                ~~~~~
+
+            //End the .D top-level command, `APPEND`
+            APPEND_OUTER -
+                ~%current_buffer_circle_scroll_craft%~
+                ~~~~~
+
+END
+                ~~~~~
+
+
+            //Now concatenate all files into the buffer that was provided:
+            COPY - ~%BufferName%~ ~%BufferName%~
+                //Patches
+                APPEND_FILE TEXT ~%current_buffer_circle_spell_select%~
+                APPEND_FILE TEXT ~%current_buffer_circle_scroll_select%~
+                APPEND_FILE TEXT ~%current_buffer_circle_scroll_craft%~
+
+        END //OUTER_FOR
+
+        /************************************************
+        *  END: Generate the transitions dynamicially   *
+        ************************************************/
+END //function def

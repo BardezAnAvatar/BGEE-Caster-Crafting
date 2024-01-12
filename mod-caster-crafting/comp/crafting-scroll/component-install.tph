@@ -2,6 +2,28 @@
 *   Scroll scribing stuff   *
 ****************************/
 
+
+//DEBUG!
+//Verify that all data I need has been emitted from, i.e.: leveled scrolls component
+/*
+PRINT ~DEBUG: `scroll_list_data` array:~
+ACTION_PHP_EACH ~scroll_list_data~
+    AS ~scroll_list_data_keys~ => ~value~
+BEGIN
+    //Debugging Statements
+    PRINT ~DEBUG: `scroll_list_data` record:
+        name:           `%scroll_list_data_keys_0%`;
+        scroll code:    `%scroll_list_data_keys_1%`;
+        spell code:     `%scroll_list_data_keys_2%`;
+        tradition:      `%scroll_list_data_keys_3%`;
+        level:          `%scroll_list_data_keys_4%`;
+        addtl. cost:    `%scroll_list_data_keys_7%`;
+        time cost:      `%scroll_list_data_keys_8%`~
+END
+*/
+
+
+
 //Generate the data used to process scrolls during installation   *
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/process_scroll_registry.tph~
 

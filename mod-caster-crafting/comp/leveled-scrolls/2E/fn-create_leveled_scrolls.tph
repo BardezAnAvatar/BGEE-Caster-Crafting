@@ -14,6 +14,7 @@
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_resref.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn-lookup_spell_min_caster_level.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_calculate_scroll_cost.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_lookup_costs_scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-read_spell_for_leveled_abilities.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/leveled-scrolls/%bz_edition_code%/fn-read_usability_flags_from_spell.tph~
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/fn-bz_create_scroll_from_spell_header.tph~
@@ -23,6 +24,8 @@ INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_ca
 INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
 
 DEFINE_ACTION_FUNCTION ~fn-create_leveled_scrolls~
+    RET_ARRAY
+        ~scroll_list_data_export~
 BEGIN
 
     PRINT ~
@@ -183,6 +186,15 @@ BEGIN
                         END //calculate the scroll cost
 
 
+                        //Get the costs from the table
+                        LAUNCH_ACTION_FUNCTION ~fn-bz_lookup_costs_scroll~
+                            STR_VAR
+                                ~Level~ = ~%keys_2%~
+                                ~Tradition~ = ~%keys_1%~
+                            RET
+                                ~scroll_cost_failure~ = ~failure~
+                        END
+
 
                         /*******************************************
                         *   BEGIN: Generate name and description   *
@@ -274,23 +286,24 @@ BEGIN
                                 bin_effects_copied = ~%abils_6%~    //copied binary of effects read from spell
                         END //~fn-bz_create_scroll_from_spell_header~
 
-                        //Finally, add an entry into scroll_list_data so that it can be crafted
-                        ACTION_DEFINE_ASSOCIATIVE_ARRAY ~scroll_list_data~
+                        //Finally, export am arrau emtry for scroll_list_data so that it can be crafted.
+                        //  Note: this is inside a function, so adding to ~scroll_list_import~ would be lost
+                        ACTION_DEFINE_ASSOCIATIVE_ARRAY ~scroll_list_data_export~
                         BEGIN
-                            ~%keys_2%_%scrl_name%~,     //sorting key of level and spell name
+                            ~%keys_1%-%keys_2%-2-%scrl_name%~,     //sorting key of level and spell name
                             ~%scroll_itm%~,             //scroll
-                            ~%spell_resref%~,           //spell
+                            ~%spell%~,                  //spell
                             ~%keys_1%~,                 //tradition
                             ~%keys_2%~,                 //spell level
-                            ~%abil_0%~,                 //caster level
+                            ~%abils_0%~,                //caster level
                             ~%scroll_cost%~,            //cost of the scroll in the *.ITM file
                             ~0~,                        //any additional cost
                             ~100~,                      //time to scribe (in hours)
                             ~0~,                        //XP cost to scribe
                             ~%scroll_cost_failure%~,    //Chance of failure
-                            ~%name%~                    //spell name for display
+                            ~%scrl_name%~               //scroll name for display
                                 => ~%keys_2%_%scrl_name%~   //a rather arbitrary value to pick. could be name, scroll, etc.
-                        END //Add to ~scroll_list_data~
+                        END //export to ~scroll_list_data~
 
                     END //iterate over `leveled_abilities` array
 

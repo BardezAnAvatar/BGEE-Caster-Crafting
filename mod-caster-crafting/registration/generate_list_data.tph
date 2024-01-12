@@ -68,7 +68,7 @@ PRINT ~
 *********************/
 //Include function defs.
 INCLUDE ~./%MOD_FOLDER%/registration/fn_lookup_costs_copy_spell.tph~
-INCLUDE ~./%MOD_FOLDER%/registration/fn_lookup_costs_scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_lookup_costs_scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_calculate_scroll_cost.tph~
 
 //Include spell lists
@@ -99,6 +99,11 @@ INCLUDE ~./%MOD_FOLDER%/registration/generate-Spell_ResRef_Lookup-IWD.tph~
 
 //Include lookup tables
 INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-copy-spell.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/spell-min-caster-level.tph~
+
+
 //OUTPUT:
 /*
     An associative array named "SpellResRefLookup" that contains teh following keys:
@@ -116,6 +121,26 @@ ACTION_PHP_EACH ~SpellResRefLookup~
         //Debugging Statements
         PRINT ~-Spell Lookup Record:
             Unique Key:     `%keys_0%`
+            Value:          `%value%`~
+    END
+*/
+
+
+
+/* DEBUG */
+/*
+PRINT ~DEBUG: scroll_costs:~
+ACTION_PHP_EACH ~scroll_costs~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~-Scroll Costs Record:
+            Unique Key:     `%keys_0%`
+            Spell Level:    `%keys_1%`
+            Tradition:      `%keys_2%`
+            Time Cost:      `%keys_3%`
+            XP Cost:        `%keys_4%`
+            Failure rate:   `%keys_5%`
             Value:          `%value%`~
     END
 */

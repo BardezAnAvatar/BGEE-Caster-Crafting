@@ -1,6 +1,6 @@
 # Caster Crafting
 
-Version: 0.7.0
+Version: 0.7.1
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
@@ -33,6 +33,7 @@ I am using the `BZ` prefix for my items. It is registered at Black Wyrm Lair: ht
 | Bugfix: Gold was not checked before crafting scrolls        |  0.6.2  |
 | Compatibility: check 2DA for minimum class level for spells |  0.6.3  |
 | Introducing leveled scrolls component                       |  0.7.0  |
+| Making leveled scrolls component fully craftable            |  0.7.1  |
 
 
 ## Components

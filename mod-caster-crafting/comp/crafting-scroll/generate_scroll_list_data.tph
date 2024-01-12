@@ -1,3 +1,6 @@
+//Look up the scroll names from the scroll ITM file to retrieve the TLK strings, so they can sort by language.
+//iterate through the scroll list to generate the scroll-list data, then sort that data below
+
 //RESULT:
 /*
     An associative array named "scroll_list_data" what contains these keys:
@@ -32,7 +35,7 @@ ACTION_PHP_EACH ~scroll_list~
         BUT_ONLY_IF_IT_CHANGES
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
+        LAUNCH_ACTION_FUNCTION ~fn-bz_lookup_costs_scroll~
             STR_VAR
                 ~Level~ = ~%keys_3%~
                 ~Tradition~ = ~%keys_2%~
@@ -45,7 +48,7 @@ ACTION_PHP_EACH ~scroll_list~
         ACTION_DEFINE_ASSOCIATIVE_ARRAY
             ~scroll_list_data~
             BEGIN
-                ~%keys_3%_%spell_name%~,    //sorting key of level and spell name
+                ~%keys_2%-%keys_3%-1-%spell_name%~,    //sorting key of level and spell name
                 ~%keys_0%~,                 //scroll
                 ~%spell_resref%~,           //spell
                 ~%keys_2%~,                 //tradition
@@ -62,4 +65,4 @@ ACTION_PHP_EACH ~scroll_list~
     END
 
 //Sort the indicies, presumably on first key
-ACTION_SORT_ARRAY_INDICES ~spell_list~
+ACTION_SORT_ARRAY_INDICES ~scroll_list_data~

@@ -1,8 +1,7 @@
 /********************************************************************
 *   Generate the data used to process scrolls during installation   *
 ********************************************************************/
-INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
-
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/fn-bz_generate_scroll_circle_array.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/priest.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/protection.tph~
@@ -25,9 +24,9 @@ ACTION_IF (%bz_OlvynSpells_installed%)
     END
 
 
-//OUTPUT:
+//INPUT:
 /*
-    An associative array named "scroll_list what contains these keys:
+    An associative array named `scroll_list` that contains these keys:
         [Scroll]                // 0
         [Spell]                 // 1
         [Tradition]             // 2
@@ -53,9 +52,7 @@ ACTION_PHP_EACH ~scroll_list~
     END
 */
 
-//Look up the spell names from the spell file to retrieve the TLK strings, so they can sort by language.
-//iterate through the Arcane list to generate the scroll-list data, then sort that data below instead
-//RESULT:
+//OUTPUT:
 /*
     An associative array named "scroll_list_data" what contains these keys:
         [sorting Name]          // 0    --get from spell
@@ -71,10 +68,22 @@ ACTION_PHP_EACH ~scroll_list~
         [Failure %]             // 10   --lookup from table
         [Spell Display Name]    // 11   --get from spell
 */
-INCLUDE ~./%MOD_FOLDER%/registration/generate_scroll_list_data.tph~
+INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/generate_scroll_list_data.tph~
 
-//Sort the indicies (on first key)
-ACTION_SORT_ARRAY_INDICES ~scroll_list_data~
+
+//OUTPUT:
+/*
+    An associative array named "scroll_crafting_spell_circle_array" what contains these keys:
+        [sorting Name]          // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
+        [Spell]                 // 3
+        [Spell Display Name]    // 4
+*/
+LAUNCH_ACTION_FUNCTION ~fn-bz_generate_scroll_circle_array~
+    RET_ARRAY
+        ~scroll_crafting_spell_circle_array~ = ~scroll_circle_array~
+END
 
 /*************************************************************************
 *   END: Generate the data used to process scrolls during installation   *
@@ -95,8 +104,32 @@ ACTION_PHP_EACH ~scroll_list_data~
             spell code:     `%scroll_list_data_keys_2%`;
             tradition:      `%scroll_list_data_keys_3%`;
             level:          `%scroll_list_data_keys_4%`;
+            caster level:   `%scroll_list_data_keys_5%`;
+            gold cost:      `%scroll_list_data_keys_6%`;
             addtl. cost:    `%scroll_list_data_keys_7%`;
-            time cost:      `%scroll_list_data_keys_8%`~
+            time cost:      `%scroll_list_data_keys_8%`;
+            XP cost:        `%scroll_list_data_keys_9%`;
+            Failure %:      `%scroll_list_data_keys_10%`;
+            Spell Name:     `%scroll_list_data_keys_11%`;~
 
     END
+*/
+
+//Emit the data for spells in a spell circle
+/*
+PRINT ~DEBUG: scroll_crafting_spell_circle_array:~
+ACTION_PHP_EACH ~scroll_crafting_spell_circle_array~
+    AS ~keys~ => ~value~
+BEGIN
+
+    //Debugging Statements
+    PRINT ~- `scroll_crafting_spell_circle_array` record:
+        sorting key:        `%keys_0%`
+        tradition:          `%keys_1%`
+        level:              `%keys_2%`
+        spell ResRef:       `%keys_3%`
+        Spell display name: `%keys_4%`
+        value:              `%value%`~
+
+END
 */

@@ -18,7 +18,7 @@ APPEND_OUTER -
     ~~~~~
 
 EXTEND_TOP ~BZMSCST~
-    bz_caster_craft_scribe_scroll_protection //state number(s)
+    scribe_scroll-protection //state number(s)
     ~~~~~
 
 
@@ -42,12 +42,12 @@ OUTER_SPRINT ~readable_time~ ~~
 ACTION_IF %bz_protection_scroll_time% < 24 THEN
 BEGIN
     OUTER_SET ~hours~ = %bz_protection_scroll_time%
-    OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
+    OUTER_SPRINT ~readable_time~ @15034 // `%keys_5% hours`
 END
 ELSE    //days
 BEGIN
     OUTER_SET ~days~ = %bz_protection_scroll_time% / 24
-    OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
+    OUTER_SPRINT ~readable_time~ @15033 // `(%keys_5% / 24) days`
 END
 
 //Calculate the bounds for failure
@@ -93,7 +93,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
         IF ~~
         THEN
             REPLY ~%protection_scroll_transition_response%~
-            GOTO bz_caster_craft_scribe_scroll_protection_%value%
+            GOTO scribe_scroll-protection_%value%
             ~~~~~
     END
 
@@ -144,7 +144,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
             ~ScrollCreation/CircleProtection.D~
             ~~~~~
     IF ~~
-    THEN BEGIN bz_caster_craft_scribe_scroll_protection_%value%
+    THEN BEGIN scribe_scroll-protection_%value%
         SAY ~%prtection_scroll_prompt%~
             ~~~~~
 
@@ -164,8 +164,8 @@ ACTION_PHP_EACH ~bz_deduped_protection~
 
 	                ACTION_GET_STRREF (%bz_spell_name_STRREF%) ~spell_name~
 
-                    OUTER_SPRINT ~protection_scroll_spell_response~ @15035 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
-                    OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                    OUTER_SPRINT ~protection_scroll_spell_response~ @15031 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                    OUTER_SPRINT ~elapsed_message~ @15032 // ~%readable_time% have elapsed.~
                     OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                     OUTER_SET gold_minus_one = (scroll_gold_cost - 1)
@@ -217,15 +217,15 @@ StartCutScene("BZCTWRIT")~
             ~~~~~
             IF ~~
             THEN REPLY @15081 //~Pick another Protection scroll.~
-                GOTO bz_caster_craft_scribe_scroll_protection
+                GOTO scribe_scroll-protection
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_scribe_scroll_menu
+            THEN REPLY @15022 //~[Pick another spell circle]~
+                GOTO scribe_scroll-menu
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO bz_caster_craft_scribe_main_menu
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
             ~~~~~
