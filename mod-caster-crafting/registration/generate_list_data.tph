@@ -127,6 +127,26 @@ ACTION_PHP_EACH ~SpellResRefLookup~
 
 
 
+/* DEBUG */
+/*
+PRINT ~DEBUG: scroll_costs:~
+ACTION_PHP_EACH ~scroll_costs~
+    AS ~keys~ => ~value~
+    BEGIN
+        //Debugging Statements
+        PRINT ~-Scroll Costs Record:
+            Unique Key:     `%keys_0%`
+            Spell Level:    `%keys_1%`
+            Tradition:      `%keys_2%`
+            Time Cost:      `%keys_3%`
+            XP Cost:        `%keys_4%`
+            Failure rate:   `%keys_5%`
+            Value:          `%value%`~
+    END
+*/
+
+
+
 //OUTPUT:
 /*
     An associative array named "spell_list_data" what contains these keys:
