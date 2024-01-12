@@ -58,7 +58,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-protection~
 
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -67,13 +67,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-protection~
         SAY @15080 //~Which scroll of Protection do you wish to scribe?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -82,13 +82,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_1~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -96,13 +96,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_2~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -110,13 +110,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_3~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -124,13 +124,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_4~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -138,13 +138,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_5~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -152,13 +152,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_6~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -166,13 +166,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_7~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -180,13 +180,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_8~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -194,13 +194,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_9~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -208,13 +208,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-arcane-circle_A~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -224,13 +224,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_1~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -238,13 +238,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_2~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -252,13 +252,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_3~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -266,13 +266,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_4~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -280,13 +280,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_5~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -294,13 +294,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_6~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -308,13 +308,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_7~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 
@@ -322,13 +322,13 @@ APPEND ~BZMSCST~
     THEN BEGIN ~scribe_scroll-divine-circle_Q~
         SAY @15041 // ~Which spell do you examine?~
             IF ~~
-            THEN REPLY @15032 //~[Pick another spell circle]~
+            THEN REPLY @15022 //~[Pick another spell circle]~
                 GOTO ~scribe_scroll-menu~
             IF ~~
-            THEN REPLY @15031 // ~Go back to your scribe tools.~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO ~bz_caster_craft_scribe_main_menu~
             IF ~~
-            THEN REPLY @15030 //~Pack up your scribe tools~
+            THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
 

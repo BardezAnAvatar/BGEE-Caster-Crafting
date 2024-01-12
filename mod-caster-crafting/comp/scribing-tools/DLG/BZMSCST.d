@@ -18,7 +18,7 @@ BEGIN ~BZMSCST~
 
             //Quit
             IF ~~
-                THEN REPLY @15030 //Pack up
+                THEN REPLY @15020 //Pack up
                     EXIT
     END
 
