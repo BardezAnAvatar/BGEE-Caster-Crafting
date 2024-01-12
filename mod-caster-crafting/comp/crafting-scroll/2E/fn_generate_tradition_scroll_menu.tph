@@ -1,11 +1,11 @@
 DEFINE_ACTION_FUNCTION ~bz_generate_tradition_scroll_menu~
     INT_VAR
-        ~LevelMax~ = 10 //maximum number of spell circles
-        ~ScrollAnalysisPrompt~ = 0 //unique string that is used for analyzing a specific spell (differs between divine and arcane)
+        ~LevelMax~ = 10             //maximum number of spell circles
+        ~ScrollAnalysisPrompt~ = 0  //unique string that is used for analyzing a specific spell (differs between divine and arcane)
     STR_VAR
-        ~LevelMaxChar~ = ~~ //A for 10-th level or Q for quest-level
-        ~CircleTradition~ = ~~
-        ~BufferName~ = ~~   //name of file to append to
+        ~LevelMaxChar~ = ~~         //A for 10-th level or Q for quest-level
+        ~CircleTradition~ = ~~      //Arcane or Divine
+        ~BufferName~ = ~~           //name of file to append to
         ~StateTraditionName~ = ~~   //lower case name of tradition to use in state transitions and such
 BEGIN
 
@@ -230,14 +230,13 @@ StartCutScene("BZCTWRIT")~
                 EXIT
     END
                                 ~~~~~
-                        /***********************************************************
-                        *   END: Generate scroll states and transitions to craft   *
-                        ***********************************************************/
-
 
                         END //scroll matches current spell
 
                     END //iterate through ~scroll_list_data~
+                    /***********************************************************
+                    *   END: Generate scroll states and transitions to craft   *
+                    ***********************************************************/
 
                     //close the examining spell dialog state
                     APPEND_OUTER -
