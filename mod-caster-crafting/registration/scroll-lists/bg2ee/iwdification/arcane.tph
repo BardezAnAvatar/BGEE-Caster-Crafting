@@ -1,61 +1,60 @@
 ACTION_DEFINE_ASSOCIATIVE_ARRAY
-    ~scroll_list~
+    ~scroll_list_iwd~
     BEGIN
 
         /*
-        [Scroll]                // 0
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
-        [Caster Level]          // 4
-        [Additional Cost]       // 5
+        [Spell]                 // 0
+        [Tradition]             // 1
+        [Spell Level]           // 2
+        [Caster Level]          // 3
+        [Additional Cost]       // 4
         */
 
-        ~CDIA126~, ~WIZARD_EXPEDITIOUS_RETREAT~,                ~Arcane~, ~1~, ~1~, ~0~ => ~CDIA126~    //Expeditious Retret
+        ~WIZARD_EXPEDITIOUS_RETREAT~,                ~Arcane~, ~1~,  ~1~, ~0~ => ~WIZARD_EXPEDITIOUS_RETREAT~             //Expeditious Retret
 
-        ~CDIA225~, ~WIZARD_SNILLOCS_SNOWBALL_SWARM~,            ~Arcane~, ~2~, ~3~, ~0~ => ~CDIA225~    //Snilloc's Snowball Swarm
-        ~CDIA226~, ~WIZARD_DECASTAVE~,                          ~Arcane~, ~2~, ~3~, ~0~ => ~CDIA226~    //Decastave
-        ~CDIA227~, ~WIZARD_CATS_GRACE~,                         ~Arcane~, ~2~, ~3~, ~0~ => ~CDIA227~    //Cat's Grace
+        ~WIZARD_SNILLOCS_SNOWBALL_SWARM~,            ~Arcane~, ~2~,  ~3~, ~0~ => ~WIZARD_SNILLOCS_SNOWBALL_SWARM~         //Snilloc's Snowball Swarm
+        ~WIZARD_DECASTAVE~,                          ~Arcane~, ~2~,  ~3~, ~0~ => ~WIZARD_DECASTAVE~                       //Decastave
+        ~WIZARD_CATS_GRACE~,                         ~Arcane~, ~2~,  ~3~, ~0~ => ~WIZARD_CATS_GRACE~                      //Cat's Grace
 
-        ~CDIA323~, ~WIZARD_ICELANCE~,                           ~Arcane~, ~3~, ~5~, ~0~ => ~CDIA323~    //Icelance
-        ~CDIA327~, ~WIZARD_LANCE_OF_DISRUPTION~,                ~Arcane~, ~3~, ~5~, ~0~ => ~CDIA327~    //Lance of Disruption
+        ~WIZARD_ICELANCE~,                           ~Arcane~, ~3~,  ~5~, ~0~ => ~WIZARD_ICELANCE~                        //Icelance
+        ~WIZARD_LANCE_OF_DISRUPTION~,                ~Arcane~, ~3~,  ~5~, ~0~ => ~WIZARD_LANCE_OF_DISRUPTION~             //Lance of Disruption
 
-        ~CDIA422~, ~WIZARD_BELTYNS_BURNING_BLOOD~,              ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA422~    //Beltyn's Burning Blood
-        ~CDIA426~, ~WIZARD_EMOTION_COURAGE~,                    ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA426~    //Emotion: Courage
-        ~CDIA427~, ~WIZARD_EMOTION_HOPE~,                       ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA427~    //Emotion: Hope
-        ~CDIA428~, ~WIZARD_EMOTION_FEAR~,                       ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA428~    //Emotion: Fear
-        ~CDIA429~, ~WIZARD_MORDENKAINENS_FORCE_MISSILES~,       ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA429~    //Mordenkainen's Force Missiles
-        ~CDIA430~, ~WIZARD_SHOUT~,                              ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA430~    //Shout
-        ~CDIA431~, ~WIZARD_VITRIOLIC_SPHERE~,                   ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA431~    //Vitriolic Sphere
-        ~CDIA432~, ~WIZARD_SHADOW_MONSTERS~,                    ~Arcane~, ~4~, ~7~, ~0~ => ~CDIA432~    //Shadow Monsters
+        ~WIZARD_BELTYNS_BURNING_BLOOD~,              ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_BELTYNS_BURNING_BLOOD~           //Beltyn's Burning Blood
+        ~WIZARD_EMOTION_COURAGE~,                    ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_EMOTION_COURAGE~                 //Emotion: Courage
+        ~WIZARD_EMOTION_HOPE~,                       ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_EMOTION_HOPE~                    //Emotion: Hope
+        ~WIZARD_EMOTION_FEAR~,                       ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_EMOTION_FEAR~                    //Emotion: Fear
+        ~WIZARD_MORDENKAINENS_FORCE_MISSILES~,       ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_MORDENKAINENS_FORCE_MISSILES~    //Mordenkainen's Force Missiles
+        ~WIZARD_SHOUT~,                              ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_SHOUT~                           //Shout
+        ~WIZARD_VITRIOLIC_SPHERE~,                   ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_VITRIOLIC_SPHERE~                //Vitriolic Sphere
+        ~WIZARD_SHADOW_MONSTERS~,                    ~Arcane~, ~4~,  ~7~, ~0~ => ~WIZARD_SHADOW_MONSTERS~                 //Shadow Monsters
 
-        ~CDIA524~, ~WIZARD_SHROUD_OF_FLAME~,                    ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA524~    //Shroud of Flame
-        ~CDIA525~, ~WIZARD_SUMMON_SHADOW~,                      ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA525~    //Summon Shadow
-        ~CDIA526~, ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~,     ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA526~    //Conjure Lesser Water Elemental
-        ~CDIA527~, ~WIZARD_DEMI_SHADOW_MONSTERS~,               ~Arcane~, ~5~, ~9~, ~0~ => ~CDIA527~    //Demi-Shadow Monsters
+        ~WIZARD_SHROUD_OF_FLAME~,                    ~Arcane~, ~5~,  ~9~, ~0~ => ~WIZARD_SHROUD_OF_FLAME~                 //Shroud of Flame
+        ~WIZARD_SUMMON_SHADOW~,                      ~Arcane~, ~5~,  ~9~, ~0~ => ~WIZARD_SUMMON_SHADOW~                   //Summon Shadow
+        ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~,     ~Arcane~, ~5~,  ~9~, ~0~ => ~WIZARD_CONJURE_LESSER_WATER_ELEMENTAL~  //Conjure Lesser Water Elemental
+        ~WIZARD_DEMI_SHADOW_MONSTERS~,               ~Arcane~, ~5~,  ~9~, ~0~ => ~WIZARD_DEMI_SHADOW_MONSTERS~            //Demi-Shadow Monsters
 
-        ~CDIA610~, ~WIZARD_MONSTER_SUMMONING_4~,                ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA610~    //Monster Summoning 4
-        ~CDIA626~, ~WIZARD_OTILUKES_FREEZING_SPHERE~,           ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA626~    //Otiluke's Freezing Sphere
-        ~CDIA627~, ~WIZARD_DARTS_OF_BONE~,                      ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA627~    //Darts of Bone
-        ~CDIA628~, ~WIZARD_SOUL_EATER~,                         ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA628~    //Soul Eater
-        ~CDIA629~, ~WIZARD_TROLLISH_FORTITUDE~,                 ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA629~    //Trollish Fortitude
-        ~CDIA630~, ~WIZARD_ANTIMAGIC_SHELL~,                    ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA630~    //Antimagic Shell
-        ~CDIA631~, ~WIZARD_LICH_TOUCH~,                         ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA631~    //Lich Touch
-        ~CDIA632~, ~WIZARD_SHADES~,                             ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA632~    //Shades
-        ~CDIA633~, ~WIZARD_CONJURE_WATER_ELEMENTAL~,            ~Arcane~, ~6~, ~12~, ~0~ => ~CDIA633~    //Conjure Water Elemental
+        ~WIZARD_MONSTER_SUMMONING_4~,                ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_MONSTER_SUMMONING_4~             //Monster Summoning 4
+        ~WIZARD_OTILUKES_FREEZING_SPHERE~,           ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_OTILUKES_FREEZING_SPHERE~        //Otiluke's Freezing Sphere
+        ~WIZARD_DARTS_OF_BONE~,                      ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_DARTS_OF_BONE~                   //Darts of Bone
+        ~WIZARD_SOUL_EATER~,                         ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_SOUL_EATER~                      //Soul Eater
+        ~WIZARD_TROLLISH_FORTITUDE~,                 ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_TROLLISH_FORTITUDE~              //Trollish Fortitude
+        ~WIZARD_ANTIMAGIC_SHELL~,                    ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_ANTIMAGIC_SHELL~                 //Antimagic Shell
+        ~WIZARD_LICH_TOUCH~,                         ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_LICH_TOUCH~                      //Lich Touch
+        ~WIZARD_SHADES~,                             ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_SHADES~                          //Shades
+        ~WIZARD_CONJURE_WATER_ELEMENTAL~,            ~Arcane~, ~6~, ~12~, ~0~ => ~WIZARD_CONJURE_WATER_ELEMENTAL~         //Conjure Water Elemental
 
-        ~CDIA706~, ~WIZARD_ACID_STORM~,                         ~Arcane~, ~7~, ~14~, ~0~ => ~CDIA706~    //Acid Storm
-        ~CDIA724~, ~WIZARD_SUFFOCATE~,                          ~Arcane~, ~7~, ~14~, ~0~ => ~CDIA724~    //Suffocate
-        ~CDIA725~, ~WIZARD_MONSTER_SUMMONING_5~,                ~Arcane~, ~7~, ~14~, ~0~ => ~CDIA725~    //Monster Summoning 5
-        ~CDIA726~, ~WIZARD_MORDENKAINENS_SWORD_IWD~,            ~Arcane~, ~7~, ~14~, ~0~ => ~CDIA726~    //Mordenkainen's Force Blade
-        ~CDIA727~, ~WIZARD_MALAVONS_RAGE~,                      ~Arcane~, ~7~, ~14~, ~0~ => ~CDIA727~    //Malavon's Rage
-        ~CDIA728~, ~WIZARD_SEVEN_EYES~,                         ~Arcane~, ~7~, ~14~, ~0~ => ~CDIA728~    //Seven Eyes
+        ~WIZARD_ACID_STORM~,                         ~Arcane~, ~7~, ~14~, ~0~ => ~WIZARD_ACID_STORM~                      //Acid Storm
+        ~WIZARD_SUFFOCATE~,                          ~Arcane~, ~7~, ~14~, ~0~ => ~WIZARD_SUFFOCATE~                       //Suffocate
+        ~WIZARD_MONSTER_SUMMONING_5~,                ~Arcane~, ~7~, ~14~, ~0~ => ~WIZARD_MONSTER_SUMMONING_5~             //Monster Summoning 5
+        ~WIZARD_MORDENKAINENS_SWORD_IWD~,            ~Arcane~, ~7~, ~14~, ~0~ => ~WIZARD_MORDENKAINENS_SWORD_IWD~         //Mordenkainen's Force Blade
+        ~WIZARD_MALAVONS_RAGE~,                      ~Arcane~, ~7~, ~14~, ~0~ => ~WIZARD_MALAVONS_RAGE~                   //Malavon's Rage
+        ~WIZARD_SEVEN_EYES~,                         ~Arcane~, ~7~, ~14~, ~0~ => ~WIZARD_SEVEN_EYES~                      //Seven Eyes
 
-        ~CDIA806~, ~WIZARD_MIND_BLANK~,                         ~Arcane~, ~8~, ~16~, ~0~ => ~CDIA806~    //Mind Blank
-        ~CDIA819~, ~WIZARD_GREAT_SHOUT~,                        ~Arcane~, ~8~, ~16~, ~0~ => ~CDIA819~    //Great Shout
-        ~CDIA820~, ~WIZARD_IRON_BODY~,                          ~Arcane~, ~8~, ~16~, ~0~ => ~CDIA820~    //Iron Body
-        ~CDIA821~, ~WIZARD_MONSTER_SUMMONING_6~,                ~Arcane~, ~8~, ~16~, ~0~ => ~CDIA821~    //Monster Summoning 6
+        ~WIZARD_MIND_BLANK~,                         ~Arcane~, ~8~, ~16~, ~0~ => ~WIZARD_MIND_BLANK~                      //Mind Blank
+        ~WIZARD_GREAT_SHOUT~,                        ~Arcane~, ~8~, ~16~, ~0~ => ~WIZARD_GREAT_SHOUT~                     //Great Shout
+        ~WIZARD_IRON_BODY~,                          ~Arcane~, ~8~, ~16~, ~0~ => ~WIZARD_IRON_BODY~                       //Iron Body
+        ~WIZARD_MONSTER_SUMMONING_6~,                ~Arcane~, ~8~, ~16~, ~0~ => ~WIZARD_MONSTER_SUMMONING_6~             //Monster Summoning 6
 
-        ~CDIA901~, ~WIZARD_MONSTER_SUMMONING_7~,                ~Arcane~, ~9~, ~18~, ~0~ => ~CDIA901~    //Monster Summoning 7
+        ~WIZARD_MONSTER_SUMMONING_7~,                ~Arcane~, ~9~, ~18~, ~0~ => ~WIZARD_MONSTER_SUMMONING_7~             //Monster Summoning 7
 
     END
