@@ -50,4 +50,7 @@ BEGIN
 
     END //iterate over ~scroll_list_data~
 
+    //Sort the indicies
+    ACTION_SORT_ARRAY_INDICES ~scroll_circle_array~
+
 END //function definition
