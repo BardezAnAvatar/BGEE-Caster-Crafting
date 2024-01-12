@@ -54,6 +54,7 @@ BEGIN
     ~CLERIC_ENTROPY_SHIELD~,                    ~priest/6/entropy_shield~                   => ~CLERIC_ENTROPY_SHIELD~                  //Entropy Shield
     ~CLERIC_WHIRLWIND~,                         ~priest/6/whirlwind~                        => ~CLERIC_WHIRLWIND~                       //Whirlwind
     ~CLERIC_SPIRITUAL_WRATH~,                   ~priest/6/spiritual_wrath~                  => ~CLERIC_SPIRITUAL_WRATH~                 //Spiritual Wrath
+    ~CLERIC_ENERGY_DRAIN~,                      ~shared/energy_drain~                       => ~CLERIC_ENERGY_DRAIN~                    //Energy Drain
 
     ~WIZARD_ACID_STORM~,                        ~arcane/7/acid_storm~                       => ~WIZARD_ACID_STORM~                      //Acid Storm
     ~WIZARD_SUFFOCATE~,                         ~arcane/7/suffocate~                        => ~WIZARD_SUFFOCATE~                       //Suffocate
