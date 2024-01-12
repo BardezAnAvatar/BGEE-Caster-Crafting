@@ -35,7 +35,7 @@ ACTION_PHP_EACH ~scroll_list~
         BUT_ONLY_IF_IT_CHANGES
 
         //Get the costs from the table
-        LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
+        LAUNCH_ACTION_FUNCTION ~fn-bz_lookup_costs_scroll~
             STR_VAR
                 ~Level~ = ~%keys_3%~
                 ~Tradition~ = ~%keys_2%~

@@ -63,7 +63,7 @@ APPEND ~BZMSCST~
 APPEND ~BZMSCST~
             ~~~~~
 
-            LAUNCH_ACTION_FUNCTION ~bz_lookup_costs_scroll~
+            LAUNCH_ACTION_FUNCTION ~fn-bz_lookup_costs_scroll~
                 STR_VAR
                     ~Level~ = ~%spell_circle%~
                     ~Tradition~ = ~%CircleTradition%~

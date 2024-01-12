@@ -68,7 +68,7 @@ PRINT ~
 *********************/
 //Include function defs.
 INCLUDE ~./%MOD_FOLDER%/registration/fn_lookup_costs_copy_spell.tph~
-INCLUDE ~./%MOD_FOLDER%/registration/fn_lookup_costs_scroll.tph~
+INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_lookup_costs_scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/fn-bz_calculate_scroll_cost.tph~
 
 //Include spell lists

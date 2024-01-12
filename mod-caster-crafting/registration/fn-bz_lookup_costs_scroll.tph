@@ -1,4 +1,4 @@
-DEFINE_ACTION_FUNCTION ~bz_lookup_costs_scroll~
+DEFINE_ACTION_FUNCTION ~fn-bz_lookup_costs_scroll~
     STR_VAR
         ~Level~ = ~~
         ~Tradition~ = ~~
