@@ -9,17 +9,17 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         */
 
 
-        ~SPIN101~, ~Innate~, ~1~ => ~SPIN101~   //Cure Light Wounds
-        ~SPIN102~, ~Innate~, ~1~ => ~SPIN102~   //Slow Poison
-        ~SPIN103~, ~Innate~, ~1~ => ~SPIN103~   //Draw Upon Holy Might
-        ~SPIN112~, ~Innate~, ~1~ => ~SPIN112~   //Dispel Magic
-        ~SPCL213~, ~Class~,  ~1~ => ~SPCL213~   //Protection From Evil
-        ~SPCL222~, ~Class~,  ~1~ => ~SPCL222~   //Remove Fear
-        ~SPCL233~, ~Class~,  ~1~ => ~SPCL233~   //Protection From Evil, 10' Radius
-        ~SPCL721~, ~Class~,  ~1~ => ~SPCL721~   //Storm Shield
-        ~SPCL941~, ~Class~,  ~1~ => ~SPCL941~   //Favored of the Spirits
-        ~BHAAL1A~, ~Innate~, ~1~ => ~BHAAL1A~   //Mass Healing
-        ~BHAAL1B~, ~Innate~, ~1~ => ~BHAAL1B~   //Regeneration
-        ~BHAAL2A~, ~Innate~, ~1~ => ~BHAAL2A~   //Draw Upon Holy Might
+        ~SPIN101~, /*~Innate~,*/ ~Divine~, ~1~ => ~SPIN101~     //Cure Light Wounds
+        ~SPIN102~, /*~Innate~,*/ ~Divine~, ~1~ => ~SPIN102~     //Slow Poison
+        ~SPIN103~, /*~Innate~,*/ ~Divine~, ~1~ => ~SPIN103~     //Draw Upon Holy Might
+        ~SPIN112~, /*~Innate~,*/ ~Divine~, ~1~ => ~SPIN112~     //Dispel Magic
+        ~SPCL213~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL213~     //Protection From Evil
+        ~SPCL222~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL222~     //Remove Fear
+        ~SPCL233~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL233~     //Protection From Evil, 10' Radius
+        ~SPCL721~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL721~     //Storm Shield
+        ~SPCL941~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL941~     //Favored of the Spirits
+        ~BHAAL1A~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL1A~     //Mass Healing
+        ~BHAAL1B~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL1B~     //Regeneration
+        ~BHAAL2A~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL2A~     //Draw Upon Holy Might
 
     END
