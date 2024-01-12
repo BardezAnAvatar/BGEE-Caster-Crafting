@@ -294,7 +294,7 @@ BEGIN
                         BEGIN
                             ~%keys_2%_%scrl_name%~,     //sorting key of level and spell name
                             ~%scroll_itm%~,             //scroll
-                            ~%spell_resref%~,           //spell
+                            ~%spell%~,                  //spell
                             ~%keys_1%~,                 //tradition
                             ~%keys_2%~,                 //spell level
                             ~%abil_0%~,                 //caster level
@@ -303,7 +303,7 @@ BEGIN
                             ~100~,                      //time to scribe (in hours)
                             ~0~,                        //XP cost to scribe
                             ~%scroll_cost_failure%~,    //Chance of failure
-                            ~%name%~                    //spell name for display
+                            ~%scrl_name%~               //scroll name for display
                                 => ~%keys_2%_%scrl_name%~   //a rather arbitrary value to pick. could be name, scroll, etc.
                         END //export to ~scroll_list_data~
 

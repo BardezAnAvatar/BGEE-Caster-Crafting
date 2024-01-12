@@ -45,7 +45,7 @@ BEGIN
         ~%keys_2%~,         //spell
         ~%keys_3%~,         //tradition
         ~%keys_4%~,         //spell level
-        ~%abil_5%~,         //caster level
+        ~%keys_5%~,         //caster level
         ~%keys_6%~,         //cost of the scroll in the *.ITM file
         ~%keys_7%~,         //any additional cost
         ~%keys_8%~,         //time to scribe (in hours)
