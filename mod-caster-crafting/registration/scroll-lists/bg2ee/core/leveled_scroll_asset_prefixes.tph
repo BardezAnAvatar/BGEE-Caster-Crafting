@@ -226,7 +226,7 @@ BEGIN
 
     ~SPPR721~, ~priest/Q/energy_blades~                     => ~SPPR721~    //Energy Blades
     ~SPPR726~, ~priest/Q/summon_deva~                       => ~SPPR726~    //Summon Deva
-    ~SPPR727~, ~preist/Q/summon_fallen_deva~                => ~SPPR727~    //Summon Fallen Deva
+    ~SPPR727~, ~priest/Q/summon_fallen_deva~                => ~SPPR727~    //Summon Fallen Deva
     ~SPPR730~, ~priest/Q/aura_of_flaming_death~             => ~SPPR730~    //Aura of Flaming Death
 
 
