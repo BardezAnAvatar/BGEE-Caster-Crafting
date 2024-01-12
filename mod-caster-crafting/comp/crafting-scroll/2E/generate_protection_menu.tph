@@ -18,7 +18,7 @@ APPEND_OUTER -
     ~~~~~
 
 EXTEND_TOP ~BZMSCST~
-    bz_caster_craft_scribe_scroll_protection //state number(s)
+    scribe_scroll-protection //state number(s)
     ~~~~~
 
 
@@ -93,7 +93,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
         IF ~~
         THEN
             REPLY ~%protection_scroll_transition_response%~
-            GOTO bz_caster_craft_scribe_scroll_protection_%value%
+            GOTO scribe_scroll-protection_%value%
             ~~~~~
     END
 
@@ -144,7 +144,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
             ~ScrollCreation/CircleProtection.D~
             ~~~~~
     IF ~~
-    THEN BEGIN bz_caster_craft_scribe_scroll_protection_%value%
+    THEN BEGIN scribe_scroll-protection_%value%
         SAY ~%prtection_scroll_prompt%~
             ~~~~~
 
@@ -217,10 +217,10 @@ StartCutScene("BZCTWRIT")~
             ~~~~~
             IF ~~
             THEN REPLY @15081 //~Pick another Protection scroll.~
-                GOTO bz_caster_craft_scribe_scroll_protection
+                GOTO scribe_scroll-protection
             IF ~~
             THEN REPLY @15022 //~[Pick another spell circle]~
-                GOTO bz_caster_craft_scribe_scroll_menu
+                GOTO scribe_scroll-menu
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
                 GOTO bz_caster_craft_scribe_main_menu

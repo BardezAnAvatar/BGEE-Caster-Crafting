@@ -47,7 +47,7 @@ BEGIN
             ~~~~~
 
 EXTEND_TOP ~BZMSCST~
-    bz_caster_craft_scribe_scroll_%StateTraditionName%_circle_%spell_circle% //state number(s)
+    scribe_scroll-%StateTraditionName%_circle_%spell_circle% //state number(s)
             ~~~~~
 
         APPEND_OUTER -
