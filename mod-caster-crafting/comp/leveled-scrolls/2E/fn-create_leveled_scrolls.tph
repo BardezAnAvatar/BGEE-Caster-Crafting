@@ -192,8 +192,6 @@ BEGIN
                                 ~Level~ = ~%keys_2%~
                                 ~Tradition~ = ~%keys_1%~
                             RET
-                                ~scroll_cost_time~ = ~time~
-                                ~scroll_cost_xp~ = ~xp~
                                 ~scroll_cost_failure~ = ~failure~
                         END
 
