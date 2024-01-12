@@ -38,12 +38,12 @@ BEGIN
             ACTION_DEFINE_ASSOCIATIVE_ARRAY
                 ~scroll_circle_array~
             BEGIN
-                ~%keys_3%-%keys_4%-%keys_2%~,   //sorting key of level and spell name
-                ~%keys_3%~,                     //tradition
-                ~%keys_4%~,                     //spell level
-                ~%keys_2%~,                     //spell RESREF
-                ~%spell_name%~                  //spell name for display
-                    => ~%keys_0%~               //a rather arbitrary value to pick. could be name, scroll, etc.
+                ~%keys_3%-%keys_4%-%spell_name%~,   //sorting key of level and spell name
+                ~%keys_3%~,                         //tradition
+                ~%keys_4%~,                         //spell level
+                ~%keys_2%~,                         //spell RESREF
+                ~%spell_name%~                      //spell name for display
+                    => ~%keys_0%~                   //a rather arbitrary value to pick. could be name, scroll, etc.
             END //scroll_circle_array entry
 
         END //check if the entry has been made already
