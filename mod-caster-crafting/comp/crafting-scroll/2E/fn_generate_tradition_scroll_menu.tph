@@ -99,7 +99,7 @@ APPEND ~BZMSCST~
                     *   Generate scroll states and transitions to craft   *
                     ******************************************************/
                     //Generate strings
-                    OUTER_TEXT_SPRINT ~spell_name~ ~%keys_11%~
+                    OUTER_TEXT_SPRINT ~spell_name~ ~%keys_4%~
                     OUTER_SPRINT ~scroll_selection_prompt~ (AT ~ScrollAnalysisPrompt~) // e.g.: ~You meditate over the spell %spell_name% and prepare its power.~
 
                     //Give the examining spell dialog state
@@ -133,6 +133,7 @@ APPEND ~BZMSCST~
 
                             //get strings
                             ACTION_GET_STRREF (%bz_scroll_name_STRREF%) ~scroll_name~
+                            OUTER_SET ~caster_level~ = scroll_keys_5
                             OUTER_SPRINT ~scroll_craft_sufficient~ @15200   // ~You prepare to scribe a scroll of %spell_name% at caster level %caster_level%.~
                             OUTER_SPRINT ~scroll_craft_insufficient~ @15201 // ~As you prepare to scribe a scroll of %spell_name% at caster level %caster_level%, you realize that you lack the %scroll_gold_cost% necessary to scribe this scroll.~
 
