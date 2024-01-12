@@ -295,7 +295,7 @@ BEGIN
                             ~%spell%~,                  //spell
                             ~%keys_1%~,                 //tradition
                             ~%keys_2%~,                 //spell level
-                            ~%abil_0%~,                 //caster level
+                            ~%abils_0%~,                //caster level
                             ~%scroll_cost%~,            //cost of the scroll in the *.ITM file
                             ~0~,                        //any additional cost
                             ~100~,                      //time to scribe (in hours)
