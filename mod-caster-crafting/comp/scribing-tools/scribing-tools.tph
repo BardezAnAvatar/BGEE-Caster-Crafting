@@ -23,8 +23,10 @@ COPY
     ~./%MOD_FOLDER%/comp/scribing-tools/DLG/BZMSCST.DEBUG.d~
 
 //DEBUG Pause so I can open the file before it errors during compile
+/*
 PRINT ~Pause so developer can read the debug file. Press [ENTER] to continue.~
 ACTION_READLN ~nobody_cares~
+*/
 
 //compile the new dialog (with huge mutated edits)
 COMPILE ~Generated/BZMSCST.d~
