@@ -78,6 +78,7 @@ APPEND ~BZMSCST~
             ACTION_PHP_EACH ~scroll_crafting_spell_circle_array~
                 AS ~keys~ => ~value~
             BEGIN
+
                 ACTION_IF ((~%keys_2%~ STRING_EQUAL ~%spell_circle%~) AND (~%keys_1%~ STRING_EQUAL ~%CircleTradition%~))  //Spell circle matches
                     THEN
                 BEGIN
