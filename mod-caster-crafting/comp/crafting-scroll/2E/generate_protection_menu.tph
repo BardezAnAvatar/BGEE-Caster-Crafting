@@ -42,12 +42,12 @@ OUTER_SPRINT ~readable_time~ ~~
 ACTION_IF %bz_protection_scroll_time% < 24 THEN
 BEGIN
     OUTER_SET ~hours~ = %bz_protection_scroll_time%
-    OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
+    OUTER_SPRINT ~readable_time~ @15034 // `%keys_5% hours`
 END
 ELSE    //days
 BEGIN
     OUTER_SET ~days~ = %bz_protection_scroll_time% / 24
-    OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
+    OUTER_SPRINT ~readable_time~ @15033 // `(%keys_5% / 24) days`
 END
 
 //Calculate the bounds for failure
@@ -164,8 +164,8 @@ ACTION_PHP_EACH ~bz_deduped_protection~
 
 	                ACTION_GET_STRREF (%bz_spell_name_STRREF%) ~spell_name~
 
-                    OUTER_SPRINT ~protection_scroll_spell_response~ @15035 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
-                    OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                    OUTER_SPRINT ~protection_scroll_spell_response~ @15031 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                    OUTER_SPRINT ~elapsed_message~ @15032 // ~%readable_time% have elapsed.~
                     OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                     OUTER_SET gold_minus_one = (scroll_gold_cost - 1)

@@ -32,12 +32,12 @@ DEFINE_ACTION_FUNCTION ~bz_lookup_costs_scroll~
         ACTION_IF %time% < 24 THEN
         BEGIN
             OUTER_SET ~hours~ = %time%
-            OUTER_SPRINT ~time_readable~ @15038 // `%keys_5% hours`
+            OUTER_SPRINT ~time_readable~ @15034 // `%keys_5% hours`
         END
         ELSE    //days
         BEGIN
             OUTER_SET ~days~ = %time% / 24
-            OUTER_SPRINT ~time_readable~ @15037 // `(%keys_5% / 24) days`
+            OUTER_SPRINT ~time_readable~ @15033 // `(%keys_5% / 24) days`
         END
 
         //calculate the in-engine time in engine clock ticks

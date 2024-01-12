@@ -130,8 +130,8 @@ APPEND ~BZMSCST~
                             OUTER_SPRINT ~spell_name~ ~%keys_11%~
 
                             OUTER_SPRINT ~scroll_prompt~ (AT ~ScrollAnalysisPrompt~) // e.g.: ~You meditate over the spell %spell_name% and prepare its power.~
-                            OUTER_SPRINT ~scroll_response~ @15035 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
-                            OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                            OUTER_SPRINT ~scroll_response~ @15031 // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
+                            OUTER_SPRINT ~elapsed_message~ @15032 // ~%readable_time% have elapsed.~
                             OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                             OUTER_SET gold_minus_one = (scroll_gold_cost - 1)

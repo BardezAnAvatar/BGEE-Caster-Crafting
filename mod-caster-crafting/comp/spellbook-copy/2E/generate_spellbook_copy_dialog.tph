@@ -292,19 +292,19 @@ APPEND ~BZMSCST~
                     ACTION_IF %keys_5% < 24 THEN
                     BEGIN
                         OUTER_SET ~hours~ = %keys_5%
-                        OUTER_SPRINT ~readable_time~ @15038 // `%keys_5% hours`
+                        OUTER_SPRINT ~readable_time~ @15034 // `%keys_5% hours`
                     END
                     ELSE    //days
                     BEGIN
                         OUTER_SET ~days~ = %keys_5% / 24
-                        OUTER_SPRINT ~readable_time~ @15037 // `(%keys_5% / 24) days`
+                        OUTER_SPRINT ~readable_time~ @15033 // `(%keys_5% / 24) days`
                     END
 
 
                     OUTER_SPRINT ~player-circle-spell-prompt~ @15073 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook.
                     OUTER_SPRINT ~player-circle-spell-prompt-no-gold~ @15074 //You look over the spell %keys_6% and inspect its entry in %tag_PlayerN%'s spellbook. You realize that you lack the %copy_gold_cost% necessary to copy this spell.~
-                    OUTER_SPRINT ~player-circle-spell-action~ @15034 //[%copy_gold_cost% gold; %readable_time%] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.
-                    OUTER_SPRINT ~elapsed_message~ @15036 // ~%readable_time% have elapsed.~
+                    OUTER_SPRINT ~player-circle-spell-action~ @15030 //[%copy_gold_cost% gold; %readable_time%] Copy the spell %keys_6% into your spellbook with %tag_PlayerN%'s help.
+                    OUTER_SPRINT ~elapsed_message~ @15032 // ~%readable_time% have elapsed.~
                     OUTER_SET ~elapsed_strref~ = RESOLVE_STR_REF(~%elapsed_message%~)
 
                     APPEND_OUTER -
