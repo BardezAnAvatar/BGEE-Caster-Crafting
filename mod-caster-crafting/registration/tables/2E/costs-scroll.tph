@@ -31,4 +31,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~7-Divine~,     ~Divine~,     ~7~, ~3000~  => ~7-Divine~
         ~Q-Divine~,     ~Divine~,     ~Q~, ~5000~  => ~Q-Divine~
 
+        ~1-Innate~,     ~Innate~,     ~1~,   ~100~ => ~1-Arcane~
+        ~1-Class~,      ~Class~,      ~1~,   ~100~ => ~1-Arcane~
+
     END
