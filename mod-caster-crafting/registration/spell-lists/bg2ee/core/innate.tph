@@ -21,5 +21,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BHAAL1A~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL1A~     //Mass Healing
         ~BHAAL1B~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL1B~     //Regeneration
         ~BHAAL2A~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL2A~     //Draw Upon Holy Might
+        ~BHAAL3B~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL3B~     //Hand of Murder
+        ~BHAAL4A~, /*~Innate~,*/ ~Divine~, ~1~ => ~BHAAL4A~     //Resurrection
 
     END

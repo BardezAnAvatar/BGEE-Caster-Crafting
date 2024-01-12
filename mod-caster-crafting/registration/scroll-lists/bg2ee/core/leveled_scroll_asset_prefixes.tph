@@ -233,6 +233,10 @@ BEGIN
     ~SPIN103~, ~shared/draw_upon_holy_might~                => ~SPIN103~    //Draw Upon Holy Might
     ~SPCL233~, ~shared/protection_from_evil_10ft~           => ~SPCL233~    //Protection from Evil 10' Radius
     ~SPCL721~, ~innate/storm_shield~                        => ~SPCL721~    //Storm Shield
-
+    ~BHAAL1A~, ~priest/5/mass_cure~                         => ~BHAAL1A~    //Mass Healing
+    ~BHAAL1B~, ~priest/7/regeneration~                      => ~BHAAL1B~    //Regeneration
+    ~BHAAL2A~, ~shared/draw_upon_holy_might~                => ~BHAAL2A~    //Draw Upon Holy Might
+    ~BHAAL2B~, ~priest/4/poison~                            => ~BHAAL2B~    //Dark Taint
+    ~BHAAL3B~, ~shared/draw_upon_holy_might~                => ~BHAAL3B~    //Hand of Murder
 
 END
