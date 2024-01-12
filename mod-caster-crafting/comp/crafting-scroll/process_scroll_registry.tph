@@ -3,7 +3,6 @@
 ********************************************************************/
 INCLUDE ~./%MOD_FOLDER%/comp/crafting-scroll/fn-bz_generate_scroll_circle_array.tph~
 
-INCLUDE ~./%MOD_FOLDER%/registration/tables/%bz_edition_code%/costs-scribe-scroll.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/arcane.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/priest.tph~
 INCLUDE ~./%MOD_FOLDER%/registration/scroll-lists/%bz_game_code%/core/protection.tph~
