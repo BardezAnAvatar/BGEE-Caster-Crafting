@@ -104,8 +104,13 @@ ACTION_PHP_EACH ~scroll_list_data~
             spell code:     `%scroll_list_data_keys_2%`;
             tradition:      `%scroll_list_data_keys_3%`;
             level:          `%scroll_list_data_keys_4%`;
+            caster level:   `%scroll_list_data_keys_5%`;
+            gold cost:      `%scroll_list_data_keys_6%`;
             addtl. cost:    `%scroll_list_data_keys_7%`;
-            time cost:      `%scroll_list_data_keys_8%`~
+            time cost:      `%scroll_list_data_keys_8%`;
+            XP cost:        `%scroll_list_data_keys_9%`;
+            Failure %:      `%scroll_list_data_keys_10%`;
+            Spell Name:     `%scroll_list_data_keys_11%`;~
 
     END
 */
