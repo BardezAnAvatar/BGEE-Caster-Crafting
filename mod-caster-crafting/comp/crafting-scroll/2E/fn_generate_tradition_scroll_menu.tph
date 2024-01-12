@@ -107,7 +107,7 @@ APPEND ~BZMSCST~
                         ~%current_buffer_circle_scroll_select%~
                         ~~~~~
     IF ~~
-    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_2%~    //spell state
+    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%~    //spell state
         SAY ~%scroll_selection_prompt%~
                         ~~~~~
 
@@ -148,10 +148,10 @@ APPEND ~BZMSCST~
                                 ~~~~~
             IF ~PartyGoldGT(%gold_minus_one%)~
             THEN REPLY ~%scroll_response%~ // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
-                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_2%-%scroll_keys_1%-sufficient~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-sufficient~
             IF ~PartyGoldLT(%scroll_gold_cost%)~
             THEN REPLY ~%scroll_response%~ // ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name%.~
-                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_2%-%scroll_keys_1%-insufficient~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-insufficient~
                                 ~~~~~
 
 
@@ -160,11 +160,11 @@ APPEND ~BZMSCST~
                                 ~%current_buffer_circle_scroll_craft%~
                                 ~~~~~
     IF ~~
-    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_2%-%scroll_keys_1%-insufficient~
+    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-insufficient~
         SAY ~%scroll_craft_insufficient%~
             IF ~~
             THEN REPLY @15024 // ~Pick another caster level~
-                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_2%~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%~
             IF ~~
             THEN REPLY @15023 // ~Pick another spell~
                 GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%~
@@ -181,7 +181,7 @@ APPEND ~BZMSCST~
 
 
     IF ~~
-    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_2%-%scroll_keys_1%-sufficient~
+    THEN BEGIN ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%-%scroll_keys_1%-sufficient~
         SAY ~%scroll_craft_sufficient%~
             IF ~RandomNumLT(100, %bz_scroll_failure_bounds_success%)~   //created successfully
             THEN
@@ -215,7 +215,7 @@ StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~~
             THEN REPLY @15024 // ~Pick another caster level~
-                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_2%~
+                GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%-%keys_3%~
             IF ~~
             THEN REPLY @15023 // ~Pick another spell~
                 GOTO ~scribe_scroll-%StateTraditionName%-circle_%spell_circle%~
