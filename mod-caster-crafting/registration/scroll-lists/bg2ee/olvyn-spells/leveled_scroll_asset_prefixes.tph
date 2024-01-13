@@ -28,6 +28,7 @@ BEGIN
         ~MEPR558~,  ~priest/5/sphere_of_security~               => ~MEPR558~    //Sphere of Security
 
         ~MEWI651~,  ~arcane/6/isaac's_greater_missile_storm~    => ~MEWI651~    //Isaac's Greater Missile Storm
+        ~MEWI652~,  ~arcane/6/freeze_inanimates~                => ~MEWI652~    //Freeze Inanimates
         ~MEPR654~,  ~priest/6/living_lightning~                 => ~MEPR654~    //Living Lightning
         ~MEPR658~,  ~shared/conjure_earth_elemental~            => ~MEPR658~    //Conjure Earth Elemental
 
