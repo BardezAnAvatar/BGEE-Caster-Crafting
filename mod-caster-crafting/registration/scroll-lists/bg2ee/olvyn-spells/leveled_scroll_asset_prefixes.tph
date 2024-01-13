@@ -40,6 +40,7 @@ BEGIN
 
         ~MEWI859~,  ~arcane/8/false_life~                       => ~MEWI859~    //False Life
         ~MEWI860~,  ~arcane/8/enslave~                          => ~MEWI860~    //Enslave
+        ~MEWI861~,  ~arcane/8/polar_ray~                        => ~MEWI861~    //Polar Ray
         ~MEWI862~,  ~arcane/8/clone_other~                      => ~MEWI862~    //Clone Other
 
         ~MEWI960~,  ~arcane/A/eclectic_recall~                  => ~MEWI960~    //Eclectic Recall
