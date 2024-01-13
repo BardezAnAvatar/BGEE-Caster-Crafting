@@ -257,6 +257,7 @@ BEGIN
     ~SPPR720~, ~priest/7/earthquake~                        => ~SPPR720~    //Earthquake
     ~SPPR729~, ~priest/7/mass_raise_dead~                   => ~SPPR729~    //Mass Raise Dead
     ~SPPR733~, ~priest/7/impervious_sanctity_of_mind~       => ~SPPR733~    //Impervious Sanctity of Mind
+    ~SPPR739~, ~shared/energy_drain~                        => ~SPPR739~    //Energy Drain
     ~SPPR740~, ~priest/7/wither~                            => ~SPPR740~    //Wither
 
 
