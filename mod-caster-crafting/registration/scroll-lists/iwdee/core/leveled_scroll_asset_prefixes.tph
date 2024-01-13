@@ -218,6 +218,7 @@ BEGIN
     ~SPPR601~, ~priest/6/aerial_servant~                    => ~SPPR601~    //Aerial Servant
     ~SPPR602~, ~priest/6/animal_summoning_3~                => ~SPPR602~    //Animal Summoning 3
     ~SPPR605~, ~shared/conjure_fire_elemental~              => ~SPPR605~    //Conjure Fire Elemental
+    ~SPPR606~, ~priest/6/fire_seeds~                        => ~SPPR606~    //Fire Seeds
     ~SPPR610~, ~priest/6/dolorous_decay~                    => ~SPPR610~    //Dolorous Decay
     ~SPPR615~, ~priest/6/entropy_shield~                    => ~SPPR615~    //Entropy Shield
     ~SPPR616~, ~priest/6/spiritual_wrath~                   => ~SPPR616~    //Spiritual Wrath
