@@ -135,7 +135,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPWI513~,  ~Arcane~, ~5~ => ~SPWI513~      //Breach
         ~SPWI514~,  ~Arcane~, ~5~ => ~SPWI514~      //Lower Resistance
         ~SPWI515~,  ~Arcane~, ~5~ => ~SPWI515~      //Oracle
-        ~SPWI516~,  ~Arcane~, ~5~ => ~SPWI516~      //Conjure Lesser Fire Elemental
+      //~SPWI516~,  ~Arcane~, ~5~ => ~SPWI516~      //Conjure Lesser Fire Elemental
         ~SPWI517~,  ~Arcane~, ~5~ => ~SPWI517~      //Protection from Acid
         ~SPWI518~,  ~Arcane~, ~5~ => ~SPWI518~      //Phantom Blade
         ~SPWI519~,  ~Arcane~, ~5~ => ~SPWI519~      //Spell Shield
