@@ -79,6 +79,7 @@ BEGIN
     ~SPWI314~, ~arcane/3/vampiric_touch~                    => ~SPWI314~    //Vampiric Touch
     ~SPWI315~, ~arcane/3/wraithform~                        => ~SPWI315~    //Wraith Form
     ~SPWI316~, ~arcane/3/dire_charm~                        => ~SPWI316~    //Dire Charm
+    ~SPWI317~, ~arcane/3/ghost_armor~                       => ~SPWI317~    //Ghost Armor
     ~SPWI318~, ~arcane/3/minor_spell_deflection~            => ~SPWI318~    //Minor Spell Deflection
     ~SPWI319~, ~shared/protection_from_fire~                => ~SPWI319~    //Protection from Fire
     ~SPWI320~, ~arcane/3/protection_from_cold~              => ~SPWI320~    //Protection from Cold
@@ -166,9 +167,9 @@ BEGIN
     ~SPWI524~, ~arcane/5/shroud_of_flame~                   => ~SPWI524~    //Shroud of Flame
     ~SPWI525~, ~arcane/5/demi-shadow_monsters~              => ~SPWI525~    //Demi-Shadow Monsters
     ~SPWI526~, ~arcane/5/summon_shadow~                     => ~SPWI526~    //Summon Shadow
+  //~SPWI527~, ~arcane/5/conjure_lesser_water_elemental~    => ~SPWI527~    //Conjure Lesser Water Elemental
     ~SPWI531~, ~shared/conjure_fire_elemental~              => ~SPWI531~    //Conjure Fire Elemental
     ~SPWI532~, ~shared/conjure_earth_elemental~             => ~SPWI532~    //Conjure Earth Elemental
-  //~SPWI533~, ~arcane/5/conjure_lesser_water_elemental~    => ~SPWI533~    //Conjure Lesser Water Elemental
     ~SPWI533~, ~arcane/6/conjure_water_elemental~           => ~SPWI533~    //Conjure Water Elemental
     ~SPWI534~, ~arcane/6/conjure_air_elemental~             => ~SPWI534~    //Conjure Air Elemental
     ~SPPR501~, ~priest/5/animal_summoning_2~                => ~SPPR501~    //Animal Summoning 2
