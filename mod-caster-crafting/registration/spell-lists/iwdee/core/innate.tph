@@ -8,10 +8,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Spell Level]           // 2
         */
 
-        ~SPCL213~, ~Class~,  ~1~ => ~SPCL213~    //Protection From Evil
-        ~SPCL222~, ~Class~,  ~1~ => ~SPCL222~    //Remove Fear
-        ~SPCL233~, ~Class~,  ~1~ => ~SPCL233~    //Protection From Evil, 10' Radius
-        ~SPCL721~, ~Class~,  ~1~ => ~SPCL721~    //Storm Shield
-        ~SPCL941~, ~Class~,  ~1~ => ~SPCL941~    //Favored of the Spirits
+
+        ~SPCL213~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL213~    //Protection From Evil
+        ~SPCL222~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL222~    //Remove Fear
+        ~SPCL233~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL233~    //Protection From Evil, 10' Radius
+        ~SPCL721~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL721~    //Storm Shield
+        ~SPCL941~, /*~Class~, */ ~Divine~, ~1~ => ~SPCL941~    //Favored of the Spirits
 
     END
