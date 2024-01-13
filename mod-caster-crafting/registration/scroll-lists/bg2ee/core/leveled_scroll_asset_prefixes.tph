@@ -222,6 +222,7 @@ BEGIN
     ~SPWI922~, ~arcane/A/dragon's_breath~                   => ~SPWI922~    //Dragon's Breath
     ~SPWI923~, ~arcane/A/summon_planetar~                   => ~SPWI923~    //Summon Planetar
     ~SPWI924~, ~arcane/A/summon_dark_planetar~              => ~SPWI924~    //Summon Dark Planetar
+    ~SPWI925~, ~arcane/A/comet~                             => ~SPWI925~    //Comet
 
 
     ~SPPR721~, ~priest/Q/energy_blades~                     => ~SPPR721~    //Energy Blades
