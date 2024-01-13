@@ -58,11 +58,12 @@ BEGIN
     ~SPPR206~, ~priest/2/flame_blade~                       => ~SPPR206~    //Flame Blade
     ~SPPR208~, ~priest/2/hold_person~                       => ~SPPR208~    //Hold Person
     ~SPPR209~, ~priest/2/know_alignment~                    => ~SPPR209~    //Know Alignment
-    ~SPPR210~, ~priest/2/resist_fire_and_cold~              => ~SPPR210~    //Resist Fire/Cold
+  //~SPPR210~, ~priest/2/resist_fire_and_cold~              => ~SPPR210~    //Resist Fire/Cold
     ~SPPR211~, ~priest/2/silence_15ft_radius~               => ~SPPR211~    //Silence 15' Radius
     ~SPPR213~, ~priest/2/spiritual_hammer~                  => ~SPPR213~    //Spiritual Hammer
     ~SPPR214~, ~shared/draw_upon_holy_might~                => ~SPPR214~    //Draw Upon Holy Might
     ~SPPR215~, ~priest/2/goodberry~                         => ~SPPR215~    //Goodberry
+    ~SPPR216~, ~priest/2/resist_fire_and_cold~              => ~SPPR216~    //Resist Fire/Cold
     ~SPPR218~, ~priest/2/alicorn_lance~                     => ~SPPR218~    //Alicorn Lance
     ~SPPR220~, ~priest/2/cause_moderate_wounds~             => ~SPPR220~    //Cause Moderate Wounds
     ~SPPR250~, ~priest/2/writhing_fog~                      => ~SPPR250~    //Writhing Fog
