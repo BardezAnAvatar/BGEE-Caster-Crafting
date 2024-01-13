@@ -15,6 +15,7 @@ BEGIN
         ~MEPR253~,  ~shared/null_healing~                       => ~MEPR253~    //Null Healing
 
         ~MEWI353~,  ~arcane/3/displacement~                     => ~MEWI353~    //Displacement
+        ~MEWI354~,  ~arcane/3/terror~                           => ~MEWI354~    //Terror
         ~MEWI356~,  ~arcane/3/legend_lore~                      => ~MEWI356~    //Legend Lore
         ~MEWI361~,  ~arcane/3/mestil's_acid_breath~             => ~MEWI361~    //Mestil's Acid Breath
 
