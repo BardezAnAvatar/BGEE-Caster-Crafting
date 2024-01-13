@@ -25,6 +25,7 @@ BEGIN
     ~SPPR102~, ~priest/1/command~                           => ~SPPR102~    //Command
     ~SPPR105~, ~priest/1/entangle~                          => ~SPPR105~    //Entangle
     ~SPPR107~, ~shared/protection_from_evil~                => ~SPPR107~    //Protection From Evil
+    ~SPPR109~, ~priest/1/sanctuary~                         => ~SPPR109~    //Sanctuary
     ~SPPR110~, ~priest/1/shillelagh~                        => ~SPPR110~    //Shillelagh
     ~SPPR111~, ~priest/1/armor_of_faith~                    => ~SPPR111~    //Armor of Faith
     ~SPPR114~, ~priest/1/cause_light_wounds~                => ~SPPR114~    //Cause Light Wounds
