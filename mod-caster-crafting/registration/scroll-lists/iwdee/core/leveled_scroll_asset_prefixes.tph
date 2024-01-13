@@ -72,6 +72,7 @@ BEGIN
     ~SPWI306~, ~arcane/3/hold_person~                       => ~SPWI306~    //Hold Person
     ~SPWI308~, ~arcane/3/lightning_bolt~                    => ~SPWI308~    //Lightning Bolt
     ~SPWI309~, ~arcane/3/monster_summoning_1~               => ~SPWI309~    //Monster Summoning 1
+    ~SPWI310~, ~arcane/3/non_detection~                     => ~SPWI310~    //Non-Detection
     ~SPWI312~, ~arcane/3/slow~                              => ~SPWI312~    //Slow
     ~SPWI313~, ~arcane/3/skull_trap~                        => ~SPWI313~    //Skull Trap
     ~SPWI314~, ~arcane/3/vampiric_touch~                    => ~SPWI314~    //Vampiric Touch
