@@ -205,12 +205,12 @@ BEGIN
     ~SPWI803~, ~arcane/8/protection_from_energy~            => ~SPWI803~    //Protection from Energy
     ~SPWI804~, ~arcane/8/simulacrum~                        => ~SPWI804~    //Simulacrum
     ~SPWI805~, ~arcane/8/pierce_shield~                     => ~SPWI805~    //Pierce Shield
+    ~SPWI810~, ~arcane/8/incendiary_cloud~                  => ~SPWI810~    //Incendiary Cloud
     ~SPWI811~, ~shared/symbol_fear~                         => ~SPWI811~    //Symbol, Fear
     ~SPWI812~, ~arcane/8/abi-dalzim's_horrid_wilting~       => ~SPWI812~    //Abi-Dalzim's Horrid Wilting
     ~SPWI816~, ~shared/symbol_stun~                         => ~SPWI816~    //Symbol, Stun
     ~SPWI817~, ~shared/symbol_death~                        => ~SPWI817~    //Symbol, Death
     ~SPWI818~, ~arcane/8/bigby's_clenched_fist~             => ~SPWI818~    //Bigby's Clenched Fist
-    ~SPWI810~, ~arcane/8/incendiary_cloud~                  => ~SPWI810~    //Incendiary Cloud
 
 
     ~SPWI913~, ~arcane/9/wail_of_the_banshee~               => ~SPWI913~    //Wail of the Banshee
