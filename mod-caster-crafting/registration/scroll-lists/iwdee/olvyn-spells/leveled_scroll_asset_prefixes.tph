@@ -33,9 +33,10 @@ BEGIN
         ~MEPR654~,  ~priest/6/living_lightning~                 => ~MEPR654~    //Living Lightning
         ~MEPR658~,  ~shared/conjure_earth_elemental~            => ~MEPR658~    //Conjure Earth Elemental
 
+        ~MEWI754~,  ~arcane/7/stygian_ice_storm~                => ~MEWI754~    //Stygian Ice Storm
+        ~MEWI756~,  ~arcane/7/critical_sequencer~               => ~MEWI756~    //Critical Sequencer
         ~MEWI759~,  ~arcane/7/extraordinary_luck~               => ~MEWI759~    //Extraordinary Luck
         ~MEWI760~,  ~arcane/7/lightning_stream~                 => ~MEWI760~    //Lightning Stream
-        ~MEWI756~,  ~arcane/7/critical_sequencer~               => ~MEWI756~    //Critical Sequencer
 
         ~MEWI859~,  ~arcane/8/false_life~                       => ~MEWI859~    //False Life
         ~MEWI862~,  ~arcane/8/clone_other~                      => ~MEWI862~    //Clone Other
