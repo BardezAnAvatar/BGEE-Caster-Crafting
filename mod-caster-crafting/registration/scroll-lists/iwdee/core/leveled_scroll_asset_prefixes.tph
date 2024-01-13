@@ -272,7 +272,7 @@ BEGIN
     ~SPWI901~, ~arcane/9/monster_summoning_7~               => ~SPWI901~    //Monster Summoning 7
     ~SPWI913~, ~arcane/9/wail_of_the_banshee~               => ~SPWI913~    //Wail of the Banshee
     ~SPWI914~, ~shared/energy_drain~                        => ~SPWI914~    //Energy Drain
-    ~SPWI918~, ~arcane/9/bigby's_crushing_fist~             => ~SPWI918~    //Bigby's Crushing Hand
+    ~SPWI918~, ~arcane/9/bigby's_crushing_hand~             => ~SPWI918~    //Bigby's Crushing Hand
 
 
     ~SPWI920~, ~arcane/A/energy_blades~                     => ~SPWI920~    //Energy Blades
