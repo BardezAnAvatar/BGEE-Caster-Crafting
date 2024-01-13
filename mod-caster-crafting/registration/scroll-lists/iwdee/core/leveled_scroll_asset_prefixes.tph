@@ -291,6 +291,7 @@ BEGIN
     ~SPPR726~, ~priest/Q/summon_deva~                       => ~SPPR726~    //Summon Deva
     ~SPPR727~, ~priest/Q/summon_fallen_deva~                => ~SPPR727~    //Summon Fallen Deva
     ~SPPR730~, ~priest/Q/aura_of_flaming_death~             => ~SPPR730~    //Aura of Flaming Death
+    ~SPPR751~, ~priest/Q/ethereal_retribution~              => ~SPPR751~    //Ethereal Retribution
 
 
     ~SPCL233~, ~shared/protection_from_evil_10ft~           => ~SPCL233~    //Protection from Evil 10' Radius
