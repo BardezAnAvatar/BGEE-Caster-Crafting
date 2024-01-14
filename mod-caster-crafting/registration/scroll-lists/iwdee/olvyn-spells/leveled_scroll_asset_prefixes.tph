@@ -60,6 +60,8 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~leveled_scroll_asset_prefixes~
     BEGIN
+        ~MEWI551~,  ~arcane/5/life_transfer~                    => ~MEWI551~    //Life Transfer
+
         ~MEWI955~,  ~arcane/9/mass_sequencer~                   => ~MEWI955~    //Mass Sequencer
 
         ~MEWI968~,  ~arcane/A/sphere_of_annihilation~           => ~MEWI968~    //Sphere of Annihilation
