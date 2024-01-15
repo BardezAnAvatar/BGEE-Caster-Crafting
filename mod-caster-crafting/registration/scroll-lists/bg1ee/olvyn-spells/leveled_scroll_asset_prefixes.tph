@@ -81,6 +81,7 @@ BEGIN
         ~leveled_scroll_asset_prefixes~
     BEGIN
         ~MEWI157~,  ~arcane/1/hex~                              => ~MEWI157~    //Hex
+        ~MEWI158~,  ~arcane/1/reflect_attack~                   => ~MEWI158~    //Reflect Attack
 
         ~MEWI257~,  ~arcane/2/levitate~                         => ~MEWI257~    //Levitate
         ~MEWI259~,  ~shared/detect_magic~                       => ~MEWI259~    //Detect Magic
