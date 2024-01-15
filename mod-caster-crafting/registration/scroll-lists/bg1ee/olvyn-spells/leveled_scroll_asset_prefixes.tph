@@ -61,6 +61,7 @@ BEGIN
         ~leveled_scroll_asset_prefixes~
     BEGIN
         ~MEWI551~,  ~arcane/5/life_transfer~                    => ~MEWI551~    //Life Transfer
+        ~MEWI558~,  ~arcane/5/missile_of_patience~              => ~MEWI558~    //Missile of Patience
 
         ~MEWI863~,  ~arcane/8/metafireball~                     => ~MEWI863~    //Metafireball
 
