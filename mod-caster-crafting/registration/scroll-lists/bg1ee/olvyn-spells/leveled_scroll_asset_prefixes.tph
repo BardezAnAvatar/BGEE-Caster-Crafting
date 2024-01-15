@@ -90,6 +90,7 @@ BEGIN
         ~MEWI359~,  ~arcane/3/throw~                            => ~MEWI359~    //Throw
         ~MEPR357~,  ~shared/fly~                                => ~MEPR357~    //Fly
 
+        ~MEWI455~,  ~arcane/4/redirect_spell~                   => ~MEWI455~    //Redirect Spell
         ~MEPR455~,  ~priest/4/piercing_shots~                   => ~MEPR455~    //Piercing Shots
         ~MEPR456~,  ~priest/4/pebbles_to_boulders~              => ~MEPR456~    //Pebbles to Boulders
 
