@@ -62,6 +62,8 @@ BEGIN
     BEGIN
         ~MEWI551~,  ~arcane/5/life_transfer~                    => ~MEWI551~    //Life Transfer
 
+        ~MEWI863~,  ~arcane/8/metafireball~                     => ~MEWI863~    //Metafireball
+
         ~MEWI955~,  ~arcane/9/mass_sequencer~                   => ~MEWI955~    //Mass Sequencer
 
         ~MEWI968~,  ~arcane/A/sphere_of_annihilation~           => ~MEWI968~    //Sphere of Annihilation
