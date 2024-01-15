@@ -77,6 +77,8 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~leveled_scroll_asset_prefixes~
     BEGIN
+        ~MEWI157~,  ~arcane/1/hex~                              => ~MEWI157~    //Hex
+
         ~MEWI257~,  ~arcane/2/levitate~                         => ~MEWI257~    //Levitate
         ~MEWI259~,  ~shared/detect_magic~                       => ~MEWI259~    //Detect Magic
         ~MEPR256~,  ~shared/detect_magic~                       => ~MEPR256~    //Detect Magic
