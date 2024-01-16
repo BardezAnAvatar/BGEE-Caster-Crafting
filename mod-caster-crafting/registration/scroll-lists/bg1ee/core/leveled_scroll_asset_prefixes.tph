@@ -107,7 +107,7 @@ BEGIN
     ~SPPR403~, ~priest/4/free_action~                       => ~SPPR403~    //Free Action
     ~SPPR405~, ~priest/4/mental_domination~                 => ~SPPR405~    //Mental Domination
     ~SPPR407~, ~priest/4/protection_from_lightning~         => ~SPPR407~    //Protection from Lightning
-    ~SPPR408~, ~shared/protection_from_evil_10ft~           => ~SPPR408~    //Protection from Evil 10' Radius
+    ~SPPR408~, ~priest/4/protection_from_evil_10ft~         => ~SPPR408~    //Protection from Evil 10' Radius
     ~SPPR409~, ~priest/4/death_ward~                        => ~SPPR409~    //Death Ward
     ~SPPR411~, ~priest/4/poison~                            => ~SPPR411~    //Poison
     ~SPPR412~, ~priest/4/holy_power~                        => ~SPPR412~    //Holy Power
@@ -233,7 +233,7 @@ BEGIN
 
 
     ~SPIN103~, ~priest/2/draw_upon_holy_might~              => ~SPIN103~    //Draw Upon Holy Might
-    ~SPCL233~, ~shared/protection_from_evil_10ft~           => ~SPCL233~    //Protection from Evil 10' Radius
+    ~SPCL233~, ~priest/4/protection_from_evil_10ft~         => ~SPCL233~    //Protection from Evil 10' Radius
     ~SPCL721~, ~innate/storm_shield~                        => ~SPCL721~    //Storm Shield
 
 
