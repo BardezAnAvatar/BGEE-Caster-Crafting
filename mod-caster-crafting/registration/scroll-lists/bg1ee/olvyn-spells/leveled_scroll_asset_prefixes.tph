@@ -55,6 +55,8 @@ BEGIN
         ~MEWI965~,  ~arcane/A/rampant_lightning~                => ~MEWI965~    //Rampant Lightning
         ~MEWI964~,  ~arcane/A/freezing_wave~                    => ~MEWI964~    //Freezing Wave
 
+        ~MEPR766~,  ~priest/Q/contagious_fear~                  => ~MEPR766~    //Contagious Fear
+
 END
 
 
