@@ -107,7 +107,7 @@ BEGIN
         ~MEWI559~,  ~shared/ghostform~                          => ~MEWI559~    //Ghostform
         ~MEWI562~,  ~arcane/5/critical_spell~                   => ~MEWI562~    //Critical Spell
         ~MEPR554~,  ~shared/ghostform~                          => ~MEPR554~    //Ghostform
-        ~MEPR555~,  ~shared/critical_spell~                     => ~MEPR555~    //Critical Spell
+        ~MEPR555~,  ~priest/5/critical_spell~                   => ~MEPR555~    //Critical Spell
         ~MEPR556~,  ~priest/5/barrage~                          => ~MEPR556~    //Barrage
 
         ~MEPR660~,  ~priest/6/animal_growth~                    => ~MEPR660~    //Animal Growth
