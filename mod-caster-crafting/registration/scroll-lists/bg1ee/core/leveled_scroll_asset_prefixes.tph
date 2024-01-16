@@ -161,7 +161,7 @@ BEGIN
     ~SPWI617~, ~arcane/6/contingency~                       => ~SPWI617~    //Contingency
     ~SPWI618~, ~arcane/6/spell_deflection~                  => ~SPWI618~    //Spell Deflection
     ~SPWI619~, ~arcane/6/wyvern_call~                       => ~SPWI619~    //Wyvern Call
-    ~SPWI620~, ~shared/conjure_fire_elemental~              => ~SPWI620~    //Conjure Fire Elemental
+    ~SPWI620~, ~arcane/6/conjure_fire_elemental~            => ~SPWI620~    //Conjure Fire Elemental
     ~SPWI621~, ~arcane/6/conjure_air_elemental~             => ~SPWI621~    //Conjure Air Elemental
     ~SPWI622~, ~arcane/6/conjure_earth_elemental~           => ~SPWI622~    //Conjure Earth Elemental
     ~SPWI623~, ~arcane/6/carrion_summons~                   => ~SPWI623~    //Carrion Summons
