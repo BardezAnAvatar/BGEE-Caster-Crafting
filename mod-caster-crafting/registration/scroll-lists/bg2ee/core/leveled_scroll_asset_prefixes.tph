@@ -179,7 +179,7 @@ BEGIN
     ~SPWI703~, ~arcane/7/project_image~                     => ~SPWI703~    //Project Image
     ~SPWI711~, ~arcane/7/sphere_of_chaos~                   => ~SPWI711~    //Sphere of Chaos
     ~SPWI712~, ~arcane/7/delayed_blast_fireball~            => ~SPWI712~    //Delayed Blast Fireball
-    ~SPWI713~, ~shared/finger_of_death~                     => ~SPWI713~    //Finger of Death
+    ~SPWI713~, ~arcane/7/finger_of_death~                   => ~SPWI713~    //Finger of Death
     ~SPWI714~, ~arcane/7/prismatic_spray~                   => ~SPWI714~    //Prismatic Spray
     ~SPWI716~, ~arcane/7/mordenkainen's_sword~              => ~SPWI716~    //Mordenkainen's Sword
     ~SPWI717~, ~arcane/7/summon_efreeti~                    => ~SPWI717~    //Summon Efreeti
