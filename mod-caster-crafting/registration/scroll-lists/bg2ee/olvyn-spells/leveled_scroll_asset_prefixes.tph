@@ -28,7 +28,7 @@ BEGIN
         ~MEWI554~,  ~arcane/5/ball_lightning~                   => ~MEWI554~    //Ball Lightning
         ~MEWI557~,  ~arcane/5/commando_conjuration~             => ~MEWI557~    //Commando Conjuration
         ~MEWI566~,  ~arcane/5/gedlee's_electric_barrier~        => ~MEWI566~    //Gedlee's Electric Barrier
-        ~MEPR553~,  ~shared/protection_from_the_elements~       => ~MEPR553~    //Protection from the Elements
+        ~MEPR553~,  ~priest/5/protection_from_the_elements~     => ~MEPR553~    //Protection from the Elements
         ~MEPR557~,  ~priest/5/expose_to_the_elements~           => ~MEPR557~    //Expose to the Elements
         ~MEPR558~,  ~priest/5/sphere_of_security~               => ~MEPR558~    //Sphere of Security
 

@@ -227,7 +227,7 @@ BEGIN
 
 
     ~SPWI701~, ~arcane/7/spell_turning~                     => ~SPWI701~    //Spell Turning
-    ~SPWI702~, ~shared/protection_from_the_elements~        => ~SPWI702~    //Protection From The Elements
+    ~SPWI702~, ~arcane/7/protection_from_the_elements~      => ~SPWI702~    //Protection From The Elements
     ~SPWI703~, ~arcane/7/project_image~                     => ~SPWI703~    //Project Image
     ~SPWI706~, ~arcane/7/monster_summoning_5~               => ~SPWI706~    //Monster Summoning 5
     ~SPWI709~, ~arcane/7/malavon's_rage~                    => ~SPWI709~    //Malavon's Rage
