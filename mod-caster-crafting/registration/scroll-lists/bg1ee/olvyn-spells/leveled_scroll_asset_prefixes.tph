@@ -92,8 +92,8 @@ BEGIN
         ~MEWI158~,  ~arcane/1/reflect_attack~                   => ~MEWI158~    //Reflect Attack
 
         ~MEWI257~,  ~arcane/2/levitate~                         => ~MEWI257~    //Levitate
-        ~MEWI259~,  ~shared/detect_magic~                       => ~MEWI259~    //Detect Magic
-        ~MEPR256~,  ~shared/detect_magic~                       => ~MEPR256~    //Detect Magic
+        ~MEWI259~,  ~arcane/2/detect_magic~                     => ~MEWI259~    //Detect Magic
+        ~MEPR256~,  ~priest/2/detect_magic~                     => ~MEPR256~    //Detect Magic
 
         ~MEWI352~,  ~shared/fly~                                => ~MEWI352~    //Fly
         ~MEWI359~,  ~arcane/3/throw~                            => ~MEWI359~    //Throw
