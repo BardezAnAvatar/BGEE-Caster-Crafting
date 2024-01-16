@@ -84,7 +84,7 @@ BEGIN
     ~SPWI316~, ~arcane/3/dire_charm~                        => ~SPWI316~    //Dire Charm
     ~SPWI317~, ~arcane/3/ghost_armor~                       => ~SPWI317~    //Ghost Armor
     ~SPWI318~, ~arcane/3/minor_spell_deflection~            => ~SPWI318~    //Minor Spell Deflection
-    ~SPWI319~, ~shared/protection_from_fire~                => ~SPWI319~    //Protection from Fire
+    ~SPWI319~, ~arcane/3/protection_from_fire~              => ~SPWI319~    //Protection from Fire
     ~SPWI320~, ~arcane/3/protection_from_cold~              => ~SPWI320~    //Protection from Cold
     ~SPWI321~, ~arcane/3/spell_thrust~                      => ~SPWI321~    //Spell Thrust
     ~SPWI324~, ~arcane/3/hold_undead~                       => ~SPWI324~    //Hold Undead
@@ -95,7 +95,7 @@ BEGIN
     ~SPPR302~, ~priest/3/call_lightning~                    => ~SPPR302~    //Call Lightning
     ~SPPR304~, ~priest/3/glyph_of_warding~                  => ~SPPR304~    //Glyph of Warding
     ~SPPR305~, ~priest/3/hold_animal~                       => ~SPPR305~    //Hold Animal
-    ~SPPR306~, ~shared/protection_from_fire~                => ~SPPR306~    //Protection from Fire
+    ~SPPR306~, ~priest/3/protection_from_fire~              => ~SPPR306~    //Protection from Fire
     ~SPPR310~, ~priest/3/miscast_magic~                     => ~SPPR310~    //Miscast Magic
     ~SPPR311~, ~priest/3/rigid_thinking~                    => ~SPPR311~    //Rigid Thinking
     ~SPPR313~, ~priest/3/holy_smite~                        => ~SPPR313~    //Holy Smite
