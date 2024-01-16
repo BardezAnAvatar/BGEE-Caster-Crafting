@@ -36,6 +36,7 @@ BEGIN
     ~CLERIC_SMASHING_WAVE~,                     ~priest/4/smashing_wave~                    => ~CLERIC_SMASHING_WAVE~                   //Smashing Wave
     ~CLERIC_THORN_SPRAY~,                       ~priest/4/thorn_spray~                      => ~CLERIC_THORN_SPRAY~                     //Thorn Spray
     ~CLERIC_PRODUCE_FIRE~,                      ~priest/4/produce_fire~                     => ~CLERIC_PRODUCE_FIRE~                    //Produce Fire
+    ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~,          ~priest/4/cause_serious_wounds~             => ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~        //Cause Serious Wounds
 
     ~WIZARD_SHROUD_OF_FLAME~,                   ~arcane/5/shroud_of_flame~                  => ~WIZARD_SHROUD_OF_FLAME~                 //Shroud of Flame
     ~WIZARD_SUMMON_SHADOW~,                     ~arcane/5/summon_shadow~                    => ~WIZARD_SUMMON_SHADOW~                   //Summon Shadow
