@@ -86,7 +86,7 @@ BEGIN
     ~SPPR319~, ~priest/3/summon_insects~                    => ~SPPR319~    //Summon Insects
 
 
-    ~SPWI401~, ~shared/confusion~                           => ~SPWI401~    //Confusion
+    ~SPWI401~, ~arcane/4/confusion~                         => ~SPWI401~    //Confusion
     ~SPWI403~, ~arcane/4/fireshield_blue~                   => ~SPWI403~    //Fire Shield (Blue)
     ~SPWI404~, ~arcane/4/ice_storm~                         => ~SPWI404~    //Ice Storm
     ~SPWI405~, ~arcane/4/improved_invisibility~             => ~SPWI405~    //Improved Invisibility
@@ -194,7 +194,7 @@ BEGIN
     ~SPPR706~, ~shared/symbol_fear~                         => ~SPPR706~    //Symbol, Fear
     ~SPPR707~, ~priest/7/sunray~                            => ~SPPR707~    //Sunray
     ~SPPR708~, ~shared/finger_of_death~                     => ~SPPR708~    //Finger of Death
-    ~SPPR709~, ~shared/confusion~                           => ~SPPR709~    //Confusion
+    ~SPPR709~, ~priest/7/confusion~                         => ~SPPR709~    //Confusion
     ~SPPR711~, ~priest/7/regeneration~                      => ~SPPR711~    //Regeneration
     ~SPPR718~, ~shared/symbol_stun~                         => ~SPPR718~    //Symbol, Stun
     ~SPPR719~, ~shared/symbol_death~                        => ~SPPR719~    //Symbol, Death
