@@ -247,7 +247,7 @@ BEGIN
     ~SPPR702~, ~priest/7/conjure_earth_elemental~           => ~SPPR702~    //Conjure Earth Elemental
     ~SPPR704~, ~priest/7/nature's_beauty~                   => ~SPPR704~    //Nature's Beauty
     ~SPPR705~, ~priest/7/fire_storm~                        => ~SPPR705~    //Fire Storm
-    ~SPPR706~, ~shared/symbol_fear~                         => ~SPPR706~    //Symbol, Fear
+    ~SPPR706~, ~priest/7/symbol_fear~                       => ~SPPR706~    //Symbol, Fear
     ~SPPR707~, ~priest/7/sunray~                            => ~SPPR707~    //Sunray
     ~SPPR708~, ~shared/finger_of_death~                     => ~SPPR708~    //Finger of Death
     ~SPPR709~, ~priest/7/confusion~                         => ~SPPR709~    //Confusion
@@ -267,7 +267,7 @@ BEGIN
     ~SPWI805~, ~arcane/8/pierce_shield~                     => ~SPWI805~    //Pierce Shield
     ~SPWI806~, ~arcane/8/great_shout~                       => ~SPWI806~    //Great Shout
     ~SPWI810~, ~arcane/8/incendiary_cloud~                  => ~SPWI810~    //Incendiary Cloud
-    ~SPWI811~, ~shared/symbol_fear~                         => ~SPWI811~    //Symbol, Fear
+    ~SPWI811~, ~arcane/8/symbol_fear~                       => ~SPWI811~    //Symbol, Fear
     ~SPWI812~, ~arcane/8/abi-dalzim's_horrid_wilting~       => ~SPWI812~    //Abi-Dalzim's Horrid Wilting
     ~SPWI816~, ~shared/symbol_stun~                         => ~SPWI816~    //Symbol, Stun
     ~SPWI817~, ~arcane/8/symbol_death~                      => ~SPWI817~    //Symbol, Death
