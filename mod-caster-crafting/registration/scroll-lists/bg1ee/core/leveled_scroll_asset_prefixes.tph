@@ -169,7 +169,7 @@ BEGIN
     ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Flesh
     ~SPPR601~, ~priest/6/aerial_servant~                    => ~SPPR601~    //Aerial Servant
     ~SPPR602~, ~priest/6/animal_summoning_3~                => ~SPPR602~    //Animal Summoning 3
-    ~SPPR605~, ~shared/conjure_fire_elemental~              => ~SPPR605~    //Conjure Fire Elemental
+    ~SPPR605~, ~priest/6/conjure_fire_elemental~            => ~SPPR605~    //Conjure Fire Elemental
     ~SPPR610~, ~priest/6/dolorous_decay~                    => ~SPPR610~    //Dolorous Decay
     ~SPPR650~, ~priest/6/spiritual_lock~                    => ~SPPR650~    //Spiritual Lock
 
