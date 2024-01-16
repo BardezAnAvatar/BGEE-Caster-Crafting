@@ -126,6 +126,8 @@ BEGIN
         ~leveled_scroll_asset_prefixes~
     BEGIN
         ~MEWI456~,  ~arcane/4/copy_spell~                       => ~MEWI456~    //Copy Spell
+
+        ~MEPR655~,  ~priest/6/linked_spirit~                    => ~MEPR655~    //Linked Spirit
     END
 END
 
