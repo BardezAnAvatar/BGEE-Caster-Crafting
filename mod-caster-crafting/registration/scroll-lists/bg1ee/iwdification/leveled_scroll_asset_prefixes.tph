@@ -67,6 +67,7 @@ BEGIN
     ~CLERIC_ENERGY_DRAIN~,                      ~shared/energy_drain~                       => ~CLERIC_ENERGY_DRAIN~                    //Energy Drain
     ~CLERIC_SYMBOL_PAIN~,                       ~priest/7/symbol_pain~                      => ~CLERIC_SYMBOL_PAIN~                     //Symbol, Pain
     ~CLERIC_SYMBOL_HOPELESSNESS~,               ~priest/7/symbol_hopelessness~              => ~CLERIC_SYMBOL_HOPELESSNESS~             //Symbol, Hopelessness
+    ~CLERIC_DESTRUCTION~,                       ~priest/7/destruction~                      => ~CLERIC_DESTRUCTION~                     //Destruction
 
     ~WIZARD_GREAT_SHOUT~,                       ~arcane/8/great_shout~                      => ~WIZARD_GREAT_SHOUT~                     //Great Shout
     ~WIZARD_MONSTER_SUMMONING_6~,               ~arcane/8/monster_summoning_6~              => ~WIZARD_MONSTER_SUMMONING_6~             //Monster Summoning 6
