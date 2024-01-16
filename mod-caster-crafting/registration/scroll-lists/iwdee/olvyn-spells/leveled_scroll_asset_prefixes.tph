@@ -11,9 +11,9 @@ BEGIN
         ~MEPR157~,  ~priest/1/searing_smite~                    => ~MEPR157~    //Searing Smite
 
         ~MEWI254~,  ~arcane/2/intoxicate~                       => ~MEWI254~    //Intoxicate
-        ~MEWI255~,  ~shared/null_healing~                       => ~MEWI255~    //Null Healing
+        ~MEWI255~,  ~arcane/2/null_healing~                     => ~MEWI255~    //Null Healing
         ~MEPR252~,  ~priest/2/fiery_link~                       => ~MEPR252~    //Fiery Link
-        ~MEPR253~,  ~shared/null_healing~                       => ~MEPR253~    //Null Healing
+        ~MEPR253~,  ~priest/2/null_healing~                     => ~MEPR253~    //Null Healing
         ~MEPR254~,  ~priest/2/critical_boon~                    => ~MEPR254~    //Critical Boon
 
         ~MEWI353~,  ~arcane/3/displacement~                     => ~MEWI353~    //Displacement
