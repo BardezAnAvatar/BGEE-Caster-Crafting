@@ -14,7 +14,7 @@ BEGIN
     ~SPWI106~, ~arcane/1/blindness~                         => ~SPWI106~    //Blindness
     ~SPWI107~, ~arcane/1/friends~                           => ~SPWI107~    //Friends
     ~SPWI112~, ~arcane/1/magic_missile~                     => ~SPWI112~    //Magic Missile
-    ~SPWI113~, ~shared/protection_from_evil~                => ~SPWI113~    //Protection from Evil
+    ~SPWI113~, ~arcane/1/protection_from_evil~              => ~SPWI113~    //Protection from Evil
     ~SPWI115~, ~arcane/1/shocking_grasp~                    => ~SPWI115~    //Shocking Grasp
     ~SPWI116~, ~arcane/1/sleep~                             => ~SPWI116~    //Sleep
     ~SPWI117~, ~arcane/1/chill_touch~                       => ~SPWI117~    //Chill Touch
@@ -24,7 +24,7 @@ BEGIN
     ~SPWI126~, ~arcane/1/dancing_lights~                    => ~SPWI126~    //Dancing Lights
     ~SPPR102~, ~priest/1/command~                           => ~SPPR102~    //Command
     ~SPPR105~, ~priest/1/entangle~                          => ~SPPR105~    //Entangle
-    ~SPPR107~, ~shared/protection_from_evil~                => ~SPPR107~    //Protection From Evil
+    ~SPPR107~, ~priest/1/protection_from_evil~              => ~SPPR107~    //Protection From Evil
     ~SPPR110~, ~priest/1/shillelagh~                        => ~SPPR110~    //Shillelagh
     ~SPPR111~, ~priest/1/armor_of_faith~                    => ~SPPR111~    //Armor of Faith
     ~SPPR116~, ~priest/1/faerie_fire~                       => ~SPPR116~    //Faerie Fire
