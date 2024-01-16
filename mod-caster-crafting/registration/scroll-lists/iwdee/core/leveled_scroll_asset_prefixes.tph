@@ -124,7 +124,7 @@ BEGIN
     ~SPWI418~, ~arcane/4/fireshield_red~                    => ~SPWI418~    //Fire Shield (Red)
     ~SPWI422~, ~arcane/4/beltyn's_burning_blood~            => ~SPWI422~    //Beltyn's Burning Blood
     ~SPWI423~, ~arcane/4/spider_spawn~                      => ~SPWI423~    //Spider Spawn
-    ~SPWI424~, ~shared/farsight~                            => ~SPWI424~    //Farsight
+    ~SPWI424~, ~arcane/4/farsight~                          => ~SPWI424~    //Farsight
     ~SPWI425~, ~arcane/4/wizard_eye~                        => ~SPWI425~    //Wizard Eye
     ~SPWI426~, ~arcane/4/shadow_monsters~                   => ~SPWI426~    //Shadow Monsters
     ~SPWI428~, ~arcane/4/emotion_fear~                      => ~SPWI428~    //Emotion: Fear
@@ -140,7 +140,7 @@ BEGIN
     ~SPPR411~, ~priest/4/poison~                            => ~SPPR411~    //Poison
     ~SPPR412~, ~priest/4/holy_power~                        => ~SPPR412~    //Holy Power
     ~SPPR414~, ~priest/4/cause_serious_wounds~              => ~SPPR414~    //Cause Serious Wounds
-    ~SPPR415~, ~shared/farsight~                            => ~SPPR415~    //Farsight
+    ~SPPR415~, ~priest/4/farsight~                          => ~SPPR415~    //Farsight
     ~SPPR420~, ~priest/4/static_charge~                     => ~SPPR420~    //Static Charge
     ~SPPR423~, ~priest/4/cloud_of_pestilence~               => ~SPPR423~    //Cloud of Pestilance
     ~SPPR426~, ~priest/4/smashing_wave~                     => ~SPPR426~    //Smashing Wave
