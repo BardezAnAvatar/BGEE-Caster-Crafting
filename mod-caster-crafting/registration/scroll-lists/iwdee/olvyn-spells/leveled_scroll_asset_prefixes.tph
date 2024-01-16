@@ -21,6 +21,7 @@ BEGIN
         ~MEWI361~,  ~arcane/3/mestil's_acid_breath~             => ~MEWI361~    //Mestil's Acid Breath
 
         ~MEWI451~,  ~arcane/4/wall_of_fire~                     => ~MEWI451~    //Wall of Fire
+        ~MEPR451~,  ~priest/4/disarm~                           => ~MEPR451~    //Disarm
 
         ~MEWI554~,  ~arcane/5/ball_lightning~                   => ~MEWI554~    //Ball Lightning
         ~MEWI557~,  ~arcane/5/commando_conjuration~             => ~MEWI557~    //Commando Conjuration
