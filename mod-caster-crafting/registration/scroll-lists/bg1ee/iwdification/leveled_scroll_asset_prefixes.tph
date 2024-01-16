@@ -7,7 +7,7 @@ BEGIN
     [Levelled BAM subpath]  // 1
     */
 
-    ~WIZARD_EXPEDITIOUS_RETREAT~,               ~arcane/1/expeditious_retreat~              => ~WIZARD_EXPEDITIOUS_RETREAT~             //Expeditious Retret
+    ~WIZARD_EXPEDITIOUS_RETREAT~,               ~arcane/1/expeditious_retreat~              => ~WIZARD_EXPEDITIOUS_RETREAT~             //Expeditious Retreat
     ~CLERIC_CAUSE_LIGHT_WOUNDS~,                ~priest/1/cause_light_wounds~               => ~CLERIC_CAUSE_LIGHT_WOUNDS~              //Cause Light Wounds
     ~CLERIC_SUNSCORCH~,                         ~priest/1/sunscorch~                        => ~CLERIC_SUNSCORCH~                       //Sunscorch
 
@@ -36,6 +36,7 @@ BEGIN
     ~CLERIC_SMASHING_WAVE~,                     ~priest/4/smashing_wave~                    => ~CLERIC_SMASHING_WAVE~                   //Smashing Wave
     ~CLERIC_THORN_SPRAY~,                       ~priest/4/thorn_spray~                      => ~CLERIC_THORN_SPRAY~                     //Thorn Spray
     ~CLERIC_PRODUCE_FIRE~,                      ~priest/4/produce_fire~                     => ~CLERIC_PRODUCE_FIRE~                    //Produce Fire
+    ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~,          ~priest/4/cause_serious_wounds~             => ~CLERIC_CAUSE_SERIOUS_WOUNDS_IWD~        //Cause Serious Wounds
 
     ~WIZARD_SHROUD_OF_FLAME~,                   ~arcane/5/shroud_of_flame~                  => ~WIZARD_SHROUD_OF_FLAME~                 //Shroud of Flame
     ~WIZARD_SUMMON_SHADOW~,                     ~arcane/5/summon_shadow~                    => ~WIZARD_SUMMON_SHADOW~                   //Summon Shadow
@@ -43,6 +44,7 @@ BEGIN
     ~WIZARD_DEMI_SHADOW_MONSTERS~,              ~arcane/5/demi-shadow_monsters~             => ~WIZARD_DEMI_SHADOW_MONSTERS~            //Demi-Shadow Monsters
     ~CLERIC_SPIKE_STONES~,                      ~priest/5/spike_stones~                     => ~CLERIC_SPIKE_STONES~                    //Spike Stones
     ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~,           ~priest/5/mass_cause_light_wounds~          => ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~         //Mass Cause Light Wounds
+    ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~,         ~priest/5/cause_critical_wounds~            => ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~       //Cause Critical Wounds
 
     ~WIZARD_MONSTER_SUMMONING_4~,               ~arcane/6/monster_summoning_4~              => ~WIZARD_MONSTER_SUMMONING_4~             //Monster Summoning 4
     ~WIZARD_OTILUKES_FREEZING_SPHERE~,          ~arcane/6/otiluke's_freezing_sphere~        => ~WIZARD_OTILUKES_FREEZING_SPHERE~        //Otiluke's Freezing Sphere
@@ -62,6 +64,10 @@ BEGIN
     ~WIZARD_MALAVONS_RAGE~,                     ~arcane/7/malavon's_rage~                   => ~WIZARD_MALAVONS_RAGE~                   //Malavon's Rage
     ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~,       ~priest/7/impervious_sanctity_of_mind~      => ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~     //Impervious Sanctity of Mind
     ~CLERIC_WITHER~,                            ~priest/7/wither~                           => ~CLERIC_WITHER~                          //Wither
+    ~CLERIC_ENERGY_DRAIN~,                      ~shared/energy_drain~                       => ~CLERIC_ENERGY_DRAIN~                    //Energy Drain
+    ~CLERIC_SYMBOL_PAIN~,                       ~priest/7/symbol_pain~                      => ~CLERIC_SYMBOL_PAIN~                     //Symbol, Pain
+    ~CLERIC_SYMBOL_HOPELESSNESS~,               ~priest/7/symbol_hopelessness~              => ~CLERIC_SYMBOL_HOPELESSNESS~             //Symbol, Hopelessness
+    ~CLERIC_DESTRUCTION~,                       ~priest/7/destruction~                      => ~CLERIC_DESTRUCTION~                     //Destruction
 
     ~WIZARD_GREAT_SHOUT~,                       ~arcane/8/great_shout~                      => ~WIZARD_GREAT_SHOUT~                     //Great Shout
     ~WIZARD_MONSTER_SUMMONING_6~,               ~arcane/8/monster_summoning_6~              => ~WIZARD_MONSTER_SUMMONING_6~             //Monster Summoning 6

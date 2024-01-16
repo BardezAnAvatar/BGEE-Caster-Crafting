@@ -170,10 +170,10 @@ BEGIN
 
             ~MEWI654~, ~Arcane~, ~6~ => ~MEWI654~   //Spellshaping: Fireball
 
-            ~MEWI758~, ~Arcane~, ~7~ => ~MEWI758~   //Skip Time
             ~MEWI753~, ~Arcane~, ~7~ => ~MEWI753~   //Forcecage
             ~MEWI755~, ~Arcane~, ~7~ => ~MEWI755~   //Death Trigger
             ~MEWI757~, ~Arcane~, ~7~ => ~MEWI757~   //Reanimate
+            ~MEWI758~, ~Arcane~, ~7~ => ~MEWI758~   //Skip Time
 
             ~MEWI853~, ~Arcane~, ~8~ => ~MEWI853~   //Otto's Irresistible Spin
             ~MEWI858~, ~Arcane~, ~8~ => ~MEWI858~   //Sphere of Reversed Gravity
