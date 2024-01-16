@@ -13,6 +13,7 @@ BEGIN
         ~MEWI254~,  ~arcane/2/intoxicate~                       => ~MEWI254~    //Intoxicate
         ~MEWI255~,  ~shared/null_healing~                       => ~MEWI255~    //Null Healing
         ~MEPR253~,  ~shared/null_healing~                       => ~MEPR253~    //Null Healing
+        ~MEPR254~,  ~priest/2/critical_boon~                    => ~MEPR254~    //Critical Boon
 
         ~MEWI353~,  ~arcane/3/displacement~                     => ~MEWI353~    //Displacement
         ~MEWI354~,  ~arcane/3/terror~                           => ~MEWI354~    //Terror
