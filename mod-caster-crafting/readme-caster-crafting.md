@@ -35,6 +35,7 @@ I am using the `BZ` prefix for my items. It is registered at Black Wyrm Lair: ht
 | Introducing leveled scrolls component                       |  0.7.0  |
 | Making leveled scrolls component fully craftable            |  0.7.1  |
 | Expanding craftable leveled scrolls to BG2, IWD             |  0.7.2  |
+| Splitting out shared BAMs into Arcane and Priest variants   |  0.7.3  |
 
 
 ## Components
