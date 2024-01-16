@@ -253,7 +253,7 @@ BEGIN
     ~SPPR709~, ~priest/7/confusion~                         => ~SPPR709~    //Confusion
     ~SPPR711~, ~priest/7/regeneration~                      => ~SPPR711~    //Regeneration
     ~SPPR718~, ~shared/symbol_stun~                         => ~SPPR718~    //Symbol, Stun
-    ~SPPR719~, ~shared/symbol_death~                        => ~SPPR719~    //Symbol, Death
+    ~SPPR719~, ~priest/7/symbol_death~                      => ~SPPR719~    //Symbol, Death
     ~SPPR720~, ~priest/7/earthquake~                        => ~SPPR720~    //Earthquake
     ~SPPR729~, ~priest/7/mass_raise_dead~                   => ~SPPR729~    //Mass Raise Dead
     ~SPPR733~, ~priest/7/impervious_sanctity_of_mind~       => ~SPPR733~    //Impervious Sanctity of Mind
@@ -270,7 +270,7 @@ BEGIN
     ~SPWI811~, ~shared/symbol_fear~                         => ~SPWI811~    //Symbol, Fear
     ~SPWI812~, ~arcane/8/abi-dalzim's_horrid_wilting~       => ~SPWI812~    //Abi-Dalzim's Horrid Wilting
     ~SPWI816~, ~shared/symbol_stun~                         => ~SPWI816~    //Symbol, Stun
-    ~SPWI817~, ~shared/symbol_death~                        => ~SPWI817~    //Symbol, Death
+    ~SPWI817~, ~arcane/8/symbol_death~                      => ~SPWI817~    //Symbol, Death
     ~SPWI818~, ~arcane/8/bigby's_clenched_fist~             => ~SPWI818~    //Bigby's Clenched Fist
 
 
