@@ -13,7 +13,7 @@ BEGIN
     ~SPWI105~, ~arcane/1/color_spray~                       => ~SPWI105~    //Color Spray
     ~SPWI107~, ~arcane/1/friends~                           => ~SPWI107~    //Friends
     ~SPWI112~, ~arcane/1/magic_missile~                     => ~SPWI112~    //Magic Missile
-    ~SPWI113~, ~shared/protection_from_evil~                => ~SPWI113~    //Protection from Evil
+    ~SPWI113~, ~arcane/1/protection_from_evil~              => ~SPWI113~    //Protection from Evil
     ~SPWI114~, ~arcane/1/shield~                            => ~SPWI114~    //Shield
     ~SPWI115~, ~arcane/1/shocking_grasp~                    => ~SPWI115~    //Shocking Grasp
     ~SPWI116~, ~arcane/1/sleep~                             => ~SPWI116~    //Sleep
@@ -24,7 +24,7 @@ BEGIN
     ~SPWI126~, ~arcane/1/expeditious_retreat~               => ~SPWI126~    //Expeditious Retreat
     ~SPPR102~, ~priest/1/command~                           => ~SPPR102~    //Command
     ~SPPR105~, ~priest/1/entangle~                          => ~SPPR105~    //Entangle
-    ~SPPR107~, ~shared/protection_from_evil~                => ~SPPR107~    //Protection From Evil
+    ~SPPR107~, ~priest/1/protection_from_evil~              => ~SPPR107~    //Protection From Evil
     ~SPPR109~, ~priest/1/sanctuary~                         => ~SPPR109~    //Sanctuary
     ~SPPR110~, ~priest/1/shillelagh~                        => ~SPPR110~    //Shillelagh
     ~SPPR111~, ~priest/1/armor_of_faith~                    => ~SPPR111~    //Armor of Faith
@@ -51,7 +51,7 @@ BEGIN
     ~SPWI224~, ~arcane/2/glitterdust~                       => ~SPWI224~    //Glitterdust
     ~SPWI225~, ~arcane/2/cat's_grace~                       => ~SPWI225~    //Cat's Grace
     ~SPWI226~, ~arcane/1/blindness~                         => ~SPWI226~    //Blindness
-    ~SPWI227~, ~shared/protection_from_petrification~       => ~SPWI227~    //Protection from Petrification
+    ~SPWI227~, ~arcane/1/protection_from_petrification~     => ~SPWI227~    //Protection from Petrification
     ~SPPR201~, ~priest/2/aid~                               => ~SPPR201~    //Aid
     ~SPPR202~, ~priest/2/barkskin~                          => ~SPPR202~    //Barkskin
     ~SPPR204~, ~priest/2/charm_person_or_mammal~            => ~SPPR204~    //Charm Person or Mammal
@@ -61,7 +61,7 @@ BEGIN
   //~SPPR210~, ~priest/2/resist_fire_and_cold~              => ~SPPR210~    //Resist Fire/Cold
     ~SPPR211~, ~priest/2/silence_15ft_radius~               => ~SPPR211~    //Silence 15' Radius
     ~SPPR213~, ~priest/2/spiritual_hammer~                  => ~SPPR213~    //Spiritual Hammer
-    ~SPPR214~, ~shared/draw_upon_holy_might~                => ~SPPR214~    //Draw Upon Holy Might
+    ~SPPR214~, ~priest/2/draw_upon_holy_might~              => ~SPPR214~    //Draw Upon Holy Might
     ~SPPR215~, ~priest/2/goodberry~                         => ~SPPR215~    //Goodberry
     ~SPPR216~, ~priest/2/resist_fire_and_cold~              => ~SPPR216~    //Resist Fire/Cold
     ~SPPR218~, ~priest/2/alicorn_lance~                     => ~SPPR218~    //Alicorn Lance
@@ -84,18 +84,18 @@ BEGIN
     ~SPWI316~, ~arcane/3/dire_charm~                        => ~SPWI316~    //Dire Charm
     ~SPWI317~, ~arcane/3/ghost_armor~                       => ~SPWI317~    //Ghost Armor
     ~SPWI318~, ~arcane/3/minor_spell_deflection~            => ~SPWI318~    //Minor Spell Deflection
-    ~SPWI319~, ~shared/protection_from_fire~                => ~SPWI319~    //Protection from Fire
+    ~SPWI319~, ~arcane/3/protection_from_fire~              => ~SPWI319~    //Protection from Fire
     ~SPWI320~, ~arcane/3/protection_from_cold~              => ~SPWI320~    //Protection from Cold
     ~SPWI321~, ~arcane/3/spell_thrust~                      => ~SPWI321~    //Spell Thrust
     ~SPWI324~, ~arcane/3/hold_undead~                       => ~SPWI324~    //Hold Undead
     ~SPWI325~, ~arcane/3/melf's_minute_meteors~             => ~SPWI325~    //Melf's Minute Meteors
     ~SPWI327~, ~arcane/3/icelance~                          => ~SPWI327~    //Icelance
     ~SPWI328~, ~arcane/3/lance_of_disruption~               => ~SPWI328~    //Lance of Disruption
-    ~SPPR301~, ~shared/animate_dead~                        => ~SPPR301~    //Animate Dead
+    ~SPPR301~, ~priest/3/animate_dead~                      => ~SPPR301~    //Animate Dead
     ~SPPR302~, ~priest/3/call_lightning~                    => ~SPPR302~    //Call Lightning
     ~SPPR304~, ~priest/3/glyph_of_warding~                  => ~SPPR304~    //Glyph of Warding
     ~SPPR305~, ~priest/3/hold_animal~                       => ~SPPR305~    //Hold Animal
-    ~SPPR306~, ~shared/protection_from_fire~                => ~SPPR306~    //Protection from Fire
+    ~SPPR306~, ~priest/3/protection_from_fire~              => ~SPPR306~    //Protection from Fire
     ~SPPR310~, ~priest/3/miscast_magic~                     => ~SPPR310~    //Miscast Magic
     ~SPPR311~, ~priest/3/rigid_thinking~                    => ~SPPR311~    //Rigid Thinking
     ~SPPR313~, ~priest/3/holy_smite~                        => ~SPPR313~    //Holy Smite
@@ -108,7 +108,7 @@ BEGIN
     ~SPPR330~, ~priest/3/cause_medium_wounds~               => ~SPPR330~    //Cause Medium Wounds
 
 
-    ~SPWI401~, ~shared/confusion~                           => ~SPWI401~    //Confusion
+    ~SPWI401~, ~arcane/4/confusion~                         => ~SPWI401~    //Confusion
     ~SPWI403~, ~arcane/4/fireshield_blue~                   => ~SPWI403~    //Fire Shield (Blue)
     ~SPWI404~, ~arcane/4/ice_storm~                         => ~SPWI404~    //Ice Storm
     ~SPWI405~, ~arcane/4/improved_invisibility~             => ~SPWI405~    //Improved Invisibility
@@ -124,7 +124,7 @@ BEGIN
     ~SPWI418~, ~arcane/4/fireshield_red~                    => ~SPWI418~    //Fire Shield (Red)
     ~SPWI422~, ~arcane/4/beltyn's_burning_blood~            => ~SPWI422~    //Beltyn's Burning Blood
     ~SPWI423~, ~arcane/4/spider_spawn~                      => ~SPWI423~    //Spider Spawn
-    ~SPWI424~, ~shared/farsight~                            => ~SPWI424~    //Farsight
+    ~SPWI424~, ~arcane/4/farsight~                          => ~SPWI424~    //Farsight
     ~SPWI425~, ~arcane/4/wizard_eye~                        => ~SPWI425~    //Wizard Eye
     ~SPWI426~, ~arcane/4/shadow_monsters~                   => ~SPWI426~    //Shadow Monsters
     ~SPWI428~, ~arcane/4/emotion_fear~                      => ~SPWI428~    //Emotion: Fear
@@ -135,12 +135,12 @@ BEGIN
     ~SPPR403~, ~priest/4/free_action~                       => ~SPPR403~    //Free Action
     ~SPPR405~, ~priest/4/mental_domination~                 => ~SPPR405~    //Mental Domination
     ~SPPR407~, ~priest/4/protection_from_lightning~         => ~SPPR407~    //Protection from Lightning
-    ~SPPR408~, ~shared/protection_from_evil_10ft~           => ~SPPR408~    //Protection from Evil 10' Radius
+    ~SPPR408~, ~priest/4/protection_from_evil_10ft~         => ~SPPR408~    //Protection from Evil 10' Radius
     ~SPPR409~, ~priest/4/death_ward~                        => ~SPPR409~    //Death Ward
     ~SPPR411~, ~priest/4/poison~                            => ~SPPR411~    //Poison
     ~SPPR412~, ~priest/4/holy_power~                        => ~SPPR412~    //Holy Power
     ~SPPR414~, ~priest/4/cause_serious_wounds~              => ~SPPR414~    //Cause Serious Wounds
-    ~SPPR415~, ~shared/farsight~                            => ~SPPR415~    //Farsight
+    ~SPPR415~, ~priest/4/farsight~                          => ~SPPR415~    //Farsight
     ~SPPR420~, ~priest/4/static_charge~                     => ~SPPR420~    //Static Charge
     ~SPPR423~, ~priest/4/cloud_of_pestilence~               => ~SPPR423~    //Cloud of Pestilance
     ~SPPR426~, ~priest/4/smashing_wave~                     => ~SPPR426~    //Smashing Wave
@@ -148,7 +148,7 @@ BEGIN
     ~SPPR450~, ~priest/4/spirit_fire~                       => ~SPPR450~    //Spirit Fire
 
 
-    ~SPWI501~, ~shared/animate_dead~                        => ~SPWI501~    //Animate Dead
+    ~SPWI501~, ~arcane/5/animate_dead~                      => ~SPWI501~    //Animate Dead
     ~SPWI502~, ~arcane/5/cloudkill~                         => ~SPWI502~    //Cloud Kill
     ~SPWI503~, ~arcane/5/cone_of_cold~                      => ~SPWI503~    //Cone of Cold
     ~SPWI504~, ~arcane/5/monster_summoning_3~               => ~SPWI504~    //Monster Summoning 3
@@ -171,8 +171,8 @@ BEGIN
     ~SPWI525~, ~arcane/5/demi-shadow_monsters~              => ~SPWI525~    //Demi-Shadow Monsters
     ~SPWI526~, ~arcane/5/summon_shadow~                     => ~SPWI526~    //Summon Shadow
   //~SPWI527~, ~arcane/5/conjure_lesser_water_elemental~    => ~SPWI527~    //Conjure Lesser Water Elemental
-    ~SPWI531~, ~shared/conjure_fire_elemental~              => ~SPWI531~    //Conjure Fire Elemental
-    ~SPWI532~, ~shared/conjure_earth_elemental~             => ~SPWI532~    //Conjure Earth Elemental
+    ~SPWI531~, ~arcane/6/conjure_fire_elemental~            => ~SPWI531~    //Conjure Fire Elemental
+    ~SPWI532~, ~arcane/6/conjure_earth_elemental~           => ~SPWI532~    //Conjure Earth Elemental
     ~SPWI533~, ~arcane/6/conjure_water_elemental~           => ~SPWI533~    //Conjure Water Elemental
     ~SPWI534~, ~arcane/6/conjure_air_elemental~             => ~SPWI534~    //Conjure Air Elemental
     ~SPPR501~, ~priest/5/animal_summoning_2~                => ~SPPR501~    //Animal Summoning 2
@@ -204,9 +204,9 @@ BEGIN
     ~SPWI617~, ~arcane/6/contingency~                       => ~SPWI617~    //Contingency
     ~SPWI618~, ~arcane/6/spell_deflection~                  => ~SPWI618~    //Spell Deflection
     ~SPWI619~, ~arcane/6/wyvern_call~                       => ~SPWI619~    //Wyvern Call
-  //~SPWI620~, ~shared/conjure_fire_elemental~              => ~SPWI620~    //Conjure Fire Elemental
+  //~SPWI620~, ~arcane/6/conjure_fire_elemental~            => ~SPWI620~    //Conjure Fire Elemental
   //~SPWI621~, ~arcane/6/conjure_air_elemental~             => ~SPWI621~    //Conjure Air Elemental
-  //~SPWI622~, ~shared/conjure_earth_elemental~             => ~SPWI622~    //Conjure Earth Elemental
+  //~SPWI622~, ~arcane/6/conjure_earth_elemental~           => ~SPWI622~    //Conjure Earth Elemental
     ~SPWI623~, ~arcane/6/carrion_summons~                   => ~SPWI623~    //Carrion Summons
     ~SPWI624~, ~arcane/6/summon_nishruu~                    => ~SPWI624~    //Summon Nishruu
     ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Fleshs
@@ -217,7 +217,7 @@ BEGIN
     ~SPWI631~, ~arcane/6/soul_eater~                        => ~SPWI631~    //Soul Eater
     ~SPPR601~, ~priest/6/aerial_servant~                    => ~SPPR601~    //Aerial Servant
     ~SPPR602~, ~priest/6/animal_summoning_3~                => ~SPPR602~    //Animal Summoning 3
-    ~SPPR605~, ~shared/conjure_fire_elemental~              => ~SPPR605~    //Conjure Fire Elemental
+    ~SPPR605~, ~priest/6/conjure_fire_elemental~            => ~SPPR605~    //Conjure Fire Elemental
     ~SPPR606~, ~priest/6/fire_seeds~                        => ~SPPR606~    //Fire Seeds
     ~SPPR610~, ~priest/6/dolorous_decay~                    => ~SPPR610~    //Dolorous Decay
     ~SPPR615~, ~priest/6/entropy_shield~                    => ~SPPR615~    //Entropy Shield
@@ -227,13 +227,13 @@ BEGIN
 
 
     ~SPWI701~, ~arcane/7/spell_turning~                     => ~SPWI701~    //Spell Turning
-    ~SPWI702~, ~shared/protection_from_the_elements~        => ~SPWI702~    //Protection From The Elements
+    ~SPWI702~, ~arcane/7/protection_from_the_elements~      => ~SPWI702~    //Protection From The Elements
     ~SPWI703~, ~arcane/7/project_image~                     => ~SPWI703~    //Project Image
     ~SPWI706~, ~arcane/7/monster_summoning_5~               => ~SPWI706~    //Monster Summoning 5
     ~SPWI709~, ~arcane/7/malavon's_rage~                    => ~SPWI709~    //Malavon's Rage
     ~SPWI711~, ~arcane/7/sphere_of_chaos~                   => ~SPWI711~    //Sphere of Chaos
     ~SPWI712~, ~arcane/7/delayed_blast_fireball~            => ~SPWI712~    //Delayed Blast Fireball
-    ~SPWI713~, ~shared/finger_of_death~                     => ~SPWI713~    //Finger of Death
+    ~SPWI713~, ~arcane/7/finger_of_death~                   => ~SPWI713~    //Finger of Death
     ~SPWI714~, ~arcane/7/prismatic_spray~                   => ~SPWI714~    //Prismatic Spray
     ~SPWI716~, ~arcane/7/mordenkainen's_sword~              => ~SPWI716~    //Mordenkainen's Sword
     ~SPWI717~, ~arcane/7/summon_efreeti~                    => ~SPWI717~    //Summon Efreeti
@@ -244,20 +244,20 @@ BEGIN
     ~SPWI724~, ~arcane/7/acid_storm~                        => ~SPWI724~    //Acid Storm
     ~SPWI726~, ~arcane/7/suffocate~                         => ~SPWI726~    //Suffocate
     ~SPPR701~, ~priest/7/shield_of_the_archons~             => ~SPPR701~    //Shield of the Archons
-    ~SPPR702~, ~shared/conjure_earth_elemental~             => ~SPPR702~    //Conjure Earth Elemental
+    ~SPPR702~, ~priest/7/conjure_earth_elemental~           => ~SPPR702~    //Conjure Earth Elemental
     ~SPPR704~, ~priest/7/nature's_beauty~                   => ~SPPR704~    //Nature's Beauty
     ~SPPR705~, ~priest/7/fire_storm~                        => ~SPPR705~    //Fire Storm
-    ~SPPR706~, ~shared/symbol_fear~                         => ~SPPR706~    //Symbol, Fear
+    ~SPPR706~, ~priest/7/symbol_fear~                       => ~SPPR706~    //Symbol, Fear
     ~SPPR707~, ~priest/7/sunray~                            => ~SPPR707~    //Sunray
-    ~SPPR708~, ~shared/finger_of_death~                     => ~SPPR708~    //Finger of Death
-    ~SPPR709~, ~shared/confusion~                           => ~SPPR709~    //Confusion
+    ~SPPR708~, ~priest/7/finger_of_death~                   => ~SPPR708~    //Finger of Death
+    ~SPPR709~, ~priest/7/confusion~                         => ~SPPR709~    //Confusion
     ~SPPR711~, ~priest/7/regeneration~                      => ~SPPR711~    //Regeneration
-    ~SPPR718~, ~shared/symbol_stun~                         => ~SPPR718~    //Symbol, Stun
-    ~SPPR719~, ~shared/symbol_death~                        => ~SPPR719~    //Symbol, Death
+    ~SPPR718~, ~priest/7/symbol_stun~                       => ~SPPR718~    //Symbol, Stun
+    ~SPPR719~, ~priest/7/symbol_death~                      => ~SPPR719~    //Symbol, Death
     ~SPPR720~, ~priest/7/earthquake~                        => ~SPPR720~    //Earthquake
     ~SPPR729~, ~priest/7/mass_raise_dead~                   => ~SPPR729~    //Mass Raise Dead
     ~SPPR733~, ~priest/7/impervious_sanctity_of_mind~       => ~SPPR733~    //Impervious Sanctity of Mind
-    ~SPPR739~, ~shared/energy_drain~                        => ~SPPR739~    //Energy Drain
+    ~SPPR739~, ~priest/7/energy_drain~                      => ~SPPR739~    //Energy Drain
     ~SPPR740~, ~priest/7/wither~                            => ~SPPR740~    //Wither
 
 
@@ -267,16 +267,16 @@ BEGIN
     ~SPWI805~, ~arcane/8/pierce_shield~                     => ~SPWI805~    //Pierce Shield
     ~SPWI806~, ~arcane/8/great_shout~                       => ~SPWI806~    //Great Shout
     ~SPWI810~, ~arcane/8/incendiary_cloud~                  => ~SPWI810~    //Incendiary Cloud
-    ~SPWI811~, ~shared/symbol_fear~                         => ~SPWI811~    //Symbol, Fear
+    ~SPWI811~, ~arcane/8/symbol_fear~                       => ~SPWI811~    //Symbol, Fear
     ~SPWI812~, ~arcane/8/abi-dalzim's_horrid_wilting~       => ~SPWI812~    //Abi-Dalzim's Horrid Wilting
-    ~SPWI816~, ~shared/symbol_stun~                         => ~SPWI816~    //Symbol, Stun
-    ~SPWI817~, ~shared/symbol_death~                        => ~SPWI817~    //Symbol, Death
+    ~SPWI816~, ~arcane/8/symbol_stun~                       => ~SPWI816~    //Symbol, Stun
+    ~SPWI817~, ~arcane/8/symbol_death~                      => ~SPWI817~    //Symbol, Death
     ~SPWI818~, ~arcane/8/bigby's_clenched_fist~             => ~SPWI818~    //Bigby's Clenched Fist
 
 
     ~SPWI901~, ~arcane/9/monster_summoning_7~               => ~SPWI901~    //Monster Summoning 7
     ~SPWI913~, ~arcane/9/wail_of_the_banshee~               => ~SPWI913~    //Wail of the Banshee
-    ~SPWI914~, ~shared/energy_drain~                        => ~SPWI914~    //Energy Drain
+    ~SPWI914~, ~arcane/9/energy_drain~                      => ~SPWI914~    //Energy Drain
     ~SPWI918~, ~arcane/9/bigby's_crushing_hand~             => ~SPWI918~    //Bigby's Crushing Hand
 
 
@@ -294,7 +294,7 @@ BEGIN
     ~SPPR751~, ~priest/Q/ethereal_retribution~              => ~SPPR751~    //Ethereal Retribution
 
 
-    ~SPCL233~, ~shared/protection_from_evil_10ft~           => ~SPCL233~    //Protection from Evil 10' Radius
+    ~SPCL233~, ~priest/4/protection_from_evil_10ft~         => ~SPCL233~    //Protection from Evil 10' Radius
     ~SPCL721~, ~innate/storm_shield~                        => ~SPCL721~    //Storm Shield
 
 
