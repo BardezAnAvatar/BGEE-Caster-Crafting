@@ -51,7 +51,7 @@ BEGIN
     ~SPWI224~, ~arcane/2/glitterdust~                       => ~SPWI224~    //Glitterdust
     ~SPWI225~, ~arcane/2/cat's_grace~                       => ~SPWI225~    //Cat's Grace
     ~SPWI226~, ~arcane/1/blindness~                         => ~SPWI226~    //Blindness
-    ~SPWI227~, ~shared/protection_from_petrification~       => ~SPWI227~    //Protection from Petrification
+    ~SPWI227~, ~arcane/1/protection_from_petrification~     => ~SPWI227~    //Protection from Petrification
     ~SPPR201~, ~priest/2/aid~                               => ~SPPR201~    //Aid
     ~SPPR202~, ~priest/2/barkskin~                          => ~SPPR202~    //Barkskin
     ~SPPR204~, ~priest/2/charm_person_or_mammal~            => ~SPPR204~    //Charm Person or Mammal
