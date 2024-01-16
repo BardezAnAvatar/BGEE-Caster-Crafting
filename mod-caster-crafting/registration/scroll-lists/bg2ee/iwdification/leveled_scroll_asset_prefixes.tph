@@ -65,6 +65,7 @@ BEGIN
     ~WIZARD_MALAVONS_RAGE~,                     ~arcane/7/malavon's_rage~                   => ~WIZARD_MALAVONS_RAGE~                   //Malavon's Rage
     ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~,       ~priest/7/impervious_sanctity_of_mind~      => ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~     //Impervious Sanctity of Mind
     ~CLERIC_WITHER~,                            ~priest/7/wither~                           => ~CLERIC_WITHER~                          //Wither
+    ~CLERIC_SYMBOL_PAIN~,                       ~priest/7/symbol_pain~                      => ~CLERIC_SYMBOL_PAIN~                     //Symbol, Pain
 
     ~WIZARD_GREAT_SHOUT~,                       ~arcane/8/great_shout~                      => ~WIZARD_GREAT_SHOUT~                     //Great Shout
     ~WIZARD_MONSTER_SUMMONING_6~,               ~arcane/8/monster_summoning_6~              => ~WIZARD_MONSTER_SUMMONING_6~             //Monster Summoning 6
