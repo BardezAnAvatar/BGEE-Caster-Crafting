@@ -44,6 +44,7 @@ BEGIN
     ~WIZARD_DEMI_SHADOW_MONSTERS~,              ~arcane/5/demi-shadow_monsters~             => ~WIZARD_DEMI_SHADOW_MONSTERS~            //Demi-Shadow Monsters
     ~CLERIC_SPIKE_STONES~,                      ~priest/5/spike_stones~                     => ~CLERIC_SPIKE_STONES~                    //Spike Stones
     ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~,           ~priest/5/mass_cause_light_wounds~          => ~CLERIC_MASS_CAUSE_LIGHT_WOUNDS~         //Mass Cause Light Wounds
+    ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~,         ~priest/5/cause_critical_wounds~            => ~CLERIC_CAUSE_CRITICAL_WOUNDS_IWD~       //Cause Critical Wounds
 
     ~WIZARD_MONSTER_SUMMONING_4~,               ~arcane/6/monster_summoning_4~              => ~WIZARD_MONSTER_SUMMONING_4~             //Monster Summoning 4
     ~WIZARD_OTILUKES_FREEZING_SPHERE~,          ~arcane/6/otiluke's_freezing_sphere~        => ~WIZARD_OTILUKES_FREEZING_SPHERE~        //Otiluke's Freezing Sphere
