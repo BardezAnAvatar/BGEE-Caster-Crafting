@@ -91,7 +91,7 @@ BEGIN
     ~SPWI325~, ~arcane/3/melf's_minute_meteors~             => ~SPWI325~    //Melf's Minute Meteors
     ~SPWI327~, ~arcane/3/icelance~                          => ~SPWI327~    //Icelance
     ~SPWI328~, ~arcane/3/lance_of_disruption~               => ~SPWI328~    //Lance of Disruption
-    ~SPPR301~, ~shared/animate_dead~                        => ~SPPR301~    //Animate Dead
+    ~SPPR301~, ~priest/3/animate_dead~                      => ~SPPR301~    //Animate Dead
     ~SPPR302~, ~priest/3/call_lightning~                    => ~SPPR302~    //Call Lightning
     ~SPPR304~, ~priest/3/glyph_of_warding~                  => ~SPPR304~    //Glyph of Warding
     ~SPPR305~, ~priest/3/hold_animal~                       => ~SPPR305~    //Hold Animal
@@ -148,7 +148,7 @@ BEGIN
     ~SPPR450~, ~priest/4/spirit_fire~                       => ~SPPR450~    //Spirit Fire
 
 
-    ~SPWI501~, ~shared/animate_dead~                        => ~SPWI501~    //Animate Dead
+    ~SPWI501~, ~arcane/5/animate_dead~                      => ~SPWI501~    //Animate Dead
     ~SPWI502~, ~arcane/5/cloudkill~                         => ~SPWI502~    //Cloud Kill
     ~SPWI503~, ~arcane/5/cone_of_cold~                      => ~SPWI503~    //Cone of Cold
     ~SPWI504~, ~arcane/5/monster_summoning_3~               => ~SPWI504~    //Monster Summoning 3
