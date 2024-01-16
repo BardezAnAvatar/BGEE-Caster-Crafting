@@ -163,7 +163,7 @@ BEGIN
     ~SPWI619~, ~arcane/6/wyvern_call~                       => ~SPWI619~    //Wyvern Call
     ~SPWI620~, ~shared/conjure_fire_elemental~              => ~SPWI620~    //Conjure Fire Elemental
     ~SPWI621~, ~arcane/6/conjure_air_elemental~             => ~SPWI621~    //Conjure Air Elemental
-    ~SPWI622~, ~shared/conjure_earth_elemental~             => ~SPWI622~    //Conjure Earth Elemental
+    ~SPWI622~, ~arcane/6/conjure_earth_elemental~           => ~SPWI622~    //Conjure Earth Elemental
     ~SPWI623~, ~arcane/6/carrion_summons~                   => ~SPWI623~    //Carrion Summons
     ~SPWI624~, ~arcane/6/summon_nishruu~                    => ~SPWI624~    //Summon Nishruu
     ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Flesh
@@ -188,7 +188,7 @@ BEGIN
     ~SPWI720~, ~arcane/7/control_undead~                    => ~SPWI720~    //Control Undead
     ~SPWI721~, ~arcane/7/mass_invisibility~                 => ~SPWI721~    //Mass Invisibility
     ~SPPR701~, ~priest/7/shield_of_the_archons~             => ~SPPR701~    //Shield of the Archons
-    ~SPPR702~, ~shared/conjure_earth_elemental~             => ~SPPR702~    //Conjure Earth Elemental
+    ~SPPR702~, ~priest/7/conjure_earth_elemental~           => ~SPPR702~    //Conjure Earth Elemental
     ~SPPR704~, ~priest/7/nature's_beauty~                   => ~SPPR704~    //Nature's Beauty
     ~SPPR705~, ~priest/7/fire_storm~                        => ~SPPR705~    //Fire Storm
     ~SPPR706~, ~shared/symbol_fear~                         => ~SPPR706~    //Symbol, Fear

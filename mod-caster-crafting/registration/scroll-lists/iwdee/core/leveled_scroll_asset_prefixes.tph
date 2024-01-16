@@ -172,7 +172,7 @@ BEGIN
     ~SPWI526~, ~arcane/5/summon_shadow~                     => ~SPWI526~    //Summon Shadow
   //~SPWI527~, ~arcane/5/conjure_lesser_water_elemental~    => ~SPWI527~    //Conjure Lesser Water Elemental
     ~SPWI531~, ~shared/conjure_fire_elemental~              => ~SPWI531~    //Conjure Fire Elemental
-    ~SPWI532~, ~shared/conjure_earth_elemental~             => ~SPWI532~    //Conjure Earth Elemental
+    ~SPWI532~, ~arcane/6/conjure_earth_elemental~           => ~SPWI532~    //Conjure Earth Elemental
     ~SPWI533~, ~arcane/6/conjure_water_elemental~           => ~SPWI533~    //Conjure Water Elemental
     ~SPWI534~, ~arcane/6/conjure_air_elemental~             => ~SPWI534~    //Conjure Air Elemental
     ~SPPR501~, ~priest/5/animal_summoning_2~                => ~SPPR501~    //Animal Summoning 2
@@ -206,7 +206,7 @@ BEGIN
     ~SPWI619~, ~arcane/6/wyvern_call~                       => ~SPWI619~    //Wyvern Call
   //~SPWI620~, ~shared/conjure_fire_elemental~              => ~SPWI620~    //Conjure Fire Elemental
   //~SPWI621~, ~arcane/6/conjure_air_elemental~             => ~SPWI621~    //Conjure Air Elemental
-  //~SPWI622~, ~shared/conjure_earth_elemental~             => ~SPWI622~    //Conjure Earth Elemental
+  //~SPWI622~, ~priest/6/conjure_earth_elemental~           => ~SPWI622~    //Conjure Earth Elemental
     ~SPWI623~, ~arcane/6/carrion_summons~                   => ~SPWI623~    //Carrion Summons
     ~SPWI624~, ~arcane/6/summon_nishruu~                    => ~SPWI624~    //Summon Nishruu
     ~SPWI625~, ~arcane/6/stone_to_flesh~                    => ~SPWI625~    //Stone to Fleshs
@@ -244,7 +244,7 @@ BEGIN
     ~SPWI724~, ~arcane/7/acid_storm~                        => ~SPWI724~    //Acid Storm
     ~SPWI726~, ~arcane/7/suffocate~                         => ~SPWI726~    //Suffocate
     ~SPPR701~, ~priest/7/shield_of_the_archons~             => ~SPPR701~    //Shield of the Archons
-    ~SPPR702~, ~shared/conjure_earth_elemental~             => ~SPPR702~    //Conjure Earth Elemental
+    ~SPPR702~, ~priest/7/conjure_earth_elemental~           => ~SPPR702~    //Conjure Earth Elemental
     ~SPPR704~, ~priest/7/nature's_beauty~                   => ~SPPR704~    //Nature's Beauty
     ~SPPR705~, ~priest/7/fire_storm~                        => ~SPPR705~    //Fire Storm
     ~SPPR706~, ~shared/symbol_fear~                         => ~SPPR706~    //Symbol, Fear

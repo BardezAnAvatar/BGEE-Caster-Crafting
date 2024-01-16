@@ -37,7 +37,7 @@ BEGIN
         ~MEWI656~,  ~arcane/6/mass_charm~                       => ~MEWI656~    //Mass Charm
         ~MEPR652~,  ~priest/6/drown~                            => ~MEPR652~    //Drown
         ~MEPR654~,  ~priest/6/living_lightning~                 => ~MEPR654~    //Living Lightning
-        ~MEPR658~,  ~shared/conjure_earth_elemental~            => ~MEPR658~    //Conjure Earth Elemental
+        ~MEPR658~,  ~priest/6/conjure_earth_elemental~          => ~MEPR658~    //Conjure Earth Elemental
 
         ~MEWI754~,  ~arcane/7/stygian_ice_storm~                => ~MEWI754~    //Stygian Ice Storm
         ~MEWI756~,  ~arcane/7/critical_sequencer~               => ~MEWI756~    //Critical Sequencer
