@@ -249,7 +249,7 @@ BEGIN
     ~SPPR705~, ~priest/7/fire_storm~                        => ~SPPR705~    //Fire Storm
     ~SPPR706~, ~priest/7/symbol_fear~                       => ~SPPR706~    //Symbol, Fear
     ~SPPR707~, ~priest/7/sunray~                            => ~SPPR707~    //Sunray
-    ~SPPR708~, ~shared/finger_of_death~                     => ~SPPR708~    //Finger of Death
+    ~SPPR708~, ~priest/7/finger_of_death~                   => ~SPPR708~    //Finger of Death
     ~SPPR709~, ~priest/7/confusion~                         => ~SPPR709~    //Confusion
     ~SPPR711~, ~priest/7/regeneration~                      => ~SPPR711~    //Regeneration
     ~SPPR718~, ~priest/7/symbol_stun~                       => ~SPPR718~    //Symbol, Stun
