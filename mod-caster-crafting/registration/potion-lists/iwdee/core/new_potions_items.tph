@@ -159,10 +159,9 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ#2N18~, ~1~, ~Defense~,      ~Spell Defense~,        ~9~, ~Caster~,  ~40390~, ~40391~, ~SPWI902~,  ~1~, ~18~, ~spell-trap.BAM~,                            ~BZ#2N18I~, ~BZPN080D~, ~~,       ~282~, ~0xE~,    ~~,     ~~,   ~~,    ~~ => "Spell Trap"
         ~BZ#2O18~, ~1~, ~Defense~,      ~Physical Immunity~,    ~9~, ~Caster~,  ~40392~, ~40393~, ~SPWI907~,  ~1~, ~20~, ~absolute-immunity.BAM~,                     ~BZ#2O18I~, ~BZPN070D~, ~~,       ~142~, ~0xE~,    ~~,     ~~,   ~~,    ~~ => "Absolute Immunity"
 
-      //BG1 lacks HLAs sometimes
-      //~BZ#2P18~, ~1~, ~Enhancement~,  ~Casting Boost~,        ~A~, ~Caster~,  ~40394~, ~40395~, ~SPWI921~,  ~1~, ~20~, ~improved-alacrity.BAM~,                     ~BZ#2P18I~, ~BZPN110D~, ~~,       ~142~, ~0xE~,    ~~,     ~~,   ~~,    ~~ => "Improved Alacrity"
+        ~BZ#2P18~, ~1~, ~Enhancement~,  ~Casting Boost~,        ~A~, ~Caster~,  ~40394~, ~40395~, ~SPWI921~,  ~1~, ~20~, ~improved-alacrity.BAM~,                     ~BZ#2P18I~, ~BZPN110D~, ~~,       ~142~, ~0xE~,    ~~,     ~~,   ~~,    ~~ => "Improved Alacrity"
 
-      //~BZ#2Q15~, ~1~, ~Defense~,      ~Damaging Shield~,      ~Q~, ~Caster~,  ~40396~, ~40397~, ~SPPR730~,  ~1~, ~16~, ~aura-of-flaming-death.BAM~,                 ~BZ#2Q15I~, ~BZPN090D~, ~~,       ~142~, ~0xE~,    ~~,     ~~,   ~~,    ~~ => "Aura of Flaming Death"
+        ~BZ#2Q15~, ~1~, ~Defense~,      ~Damaging Shield~,      ~Q~, ~Caster~,  ~40396~, ~40397~, ~SPPR730~,  ~1~, ~16~, ~aura-of-flaming-death.BAM~,                 ~BZ#2Q15I~, ~BZPN090D~, ~~,       ~142~, ~0xE~,    ~~,     ~~,   ~~,    ~~ => "Aura of Flaming Death"
 
 
     END
