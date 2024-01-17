@@ -115,3 +115,8 @@ See [the license file](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/bl
 I _prefer_ that this mod does not get sucked into larger mods, like caster overhauls and the ilk.
 
 tl;dr: do what you will with it, credit me (Bardez) for starting the mod.
+
+
+
+## Support
+Have mod integration that is broken? Feel free to [open an issue on GitHub](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues).
