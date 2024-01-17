@@ -27,7 +27,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Strength (18)	               | `Draw Upon Holy Might` Priest spell	                                            |             21    |    4  |	  8 |
 | BG1, BG2, IWD |	Potion of Strength (18)	               | `Righteous Magic` Priest spell	                                                    |             21    |    4  |	  8 |
 | BG1, BG2, IWD |	Potion of Strength (18)	               | `Animal Rage` Priest spell	                                                        |             21    |    4  |	  8 |
-| BG1, BG2, IWD |	Potion of Strength (18)	               | `Champion's Strength` Priest spell	                                                |             21    |    4  |	  8 |
+| IWD(ification)|	Potion of Strength (18)	               | `Iron Body` Wizard spell	                                                        |             16    |    4  |	  8 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Hill Giant Strength (19)	   | `Draw Upon Holy Might` Priest spell	                                            |              6    |    1  |	 10 |
 | BG1, BG2, IWD |	Potion of Hill Giant Strength (19)	   | `Righteous Magic` Priest spell	                                                    |              6    |    1  |	 10 |
@@ -37,30 +37,36 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Hill Giant Strength (19)	   | `Righteous Magic` Priest spell	                                                    |             24    |    3  |	 10 |
 | BG1, BG2, IWD |	Potion of Hill Giant Strength (19)	   | `Animal Rage` Priest spell	                                                        |             21    |    4  |	  8 |
 | BG1, BG2, IWD |	Potion of Hill Giant Strength (19)	   | `Champion's Strength` Priest spell	                                                |              9    |    4  |	  8 |
+| IWD(ification)|	Potion of Hill Giant Strength (19)	   | `Iron Body` Wizard spell	                                                        |             16    |    3  |	  8 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Stone Giant Strength (20)	   | `Draw Upon Holy Might` Priest spell	                                            |              9    |    1  |	 12 |
 | BG1, BG2, IWD |	Potion of Stone Giant Strength (20)	   | `Righteous Magic` Priest spell	                                                    |              9    |    1  |	 12 |
 | BG1, BG2, IWD |	Potion of Stone Giant Strength (20)	   | `Draw Upon Holy Might` Priest spell	                                            |             18    |    2  |	 12 |
 | BG1, BG2, IWD |	Potion of Stone Giant Strength (20)	   | `Righteous Magic` Priest spell	                                                    |             18    |    2  |	 12 |
 | BG1, BG2, IWD |	Potion of Stone Giant Strength (20)	   | `Champion's Strength` Priest spell	                                                |              9    |    2  |	 12 |
+| IWD(ification)|	Potion of Stone Giant Strength (20)	   | `Iron Body` Wizard spell	                                                        |             16    |    2  |	 12 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Frost Giant Strength (21)	   | `Draw Upon Holy Might` Priest spell	                                            |             12    |    1  |	 14 |
 | BG1, BG2, IWD |	Potion of Frost Giant Strength (21)	   | `Righteous Magic` Priest spell	                                                    |             12    |    1  |	 14 |
 | BG1, BG2, IWD |	Potion of Frost Giant Strength (21)	   | `Draw Upon Holy Might` Priest spell	                                            |             24    |    2  |	 14 |
 | BG1, BG2, IWD |	Potion of Frost Giant Strength (21)	   | `Righteous Magic` Priest spell	                                                    |             24    |    2  |	 14 |
 | BG1, BG2, IWD |	Potion of Frost Giant Strength (21)	   | `Champion's Strength` Priest spell	                                                |              9    |    2  |	 14 |
+| IWD(ification)|	Potion of Frost Giant Strength (21)	   | `Iron Body` Wizard spell	                                                        |             16    |    2  |	 14 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Fire Giant Strength (22)	   | `Draw Upon Holy Might` Priest spell	                                            |             15    |    1  |	 16 |
 | BG1, BG2, IWD |	Potion of Fire Giant Strength (22)	   | `Righteous Magic` Priest spell	                                                    |             15    |    1  |	 16 |
 | BG1, BG2, IWD |	Potion of Fire Giant Strength (22)	   | `Champion's Strength` Priest spell	                                                |              9    |    1  |	 16 |
+| IWD(ification)|	Potion of Fire Giant Strength (21)	   | `Iron Body` Wizard spell	                                                        |             16    |    1  |	 16 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Cloud Giant Strength (23)	   | `Draw Upon Holy Might` Priest spell	                                            |             18    |    1  |	 18 |
 | BG1, BG2, IWD |	Potion of Cloud Giant Strength (23)	   | `Righteous Magic` Priest spell	                                                    |             18    |    1  |	 18 |
 | BG1, BG2, IWD |	Potion of Cloud Giant Strength (23)	   | `Champion's Strength` Priest spell	                                                |              9    |    1  |	 18 |
+| IWD(ification)|	Potion of Cloud Giant Strength (23)	   | `Iron Body` Wizard spell	                                                        |             16    |    1  |	 18 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Storm Giant Strength (24)	   | `Draw Upon Holy Might` Priest spell	                                            |             21    |    1  |	 24 |
 | BG1, BG2, IWD |	Potion of Storm Giant Strength (24)	   | `Righteous Magic` Priest spell	                                                    |             21    |    1  |	 24 |
 | BG1, BG2, IWD |	Potion of Storm Giant Strength (24)	   | `Champion's Strength` Priest spell	                                                |              9    |    1  |	 24 |
+| IWD(ification)|	Potion of Storm Giant Strength (23)	   | `Iron Body` Wizard spell	                                                        |             16    |    1  |	 24 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Healing	                   | `Cure Light Wounds` Priest Spell	                                                |              1    |    1  |	  2 |
 | BG1, BG2, IWD |	Potion of Healing	                   | `Cure Medium Wounds` Priest Spell	                                                |              5    |    2  |	  2 |
@@ -69,7 +75,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Healing	                   | `Heal` Priest Spell	                                                            |             11    |    6  |	  2 |
 | BG1, BG2, IWD |	Potion of Healing	                   | `Greater Restoration` Priest Spell	                                                |             14    |    6  |	  2 |
 | BG1, BG2, IWD |	Potion of Healing	                   | `Cure Light Wounds` Innate ability	                                                |              0    |    1  |	  2 |
-| BG1, BG2, IWD |	Potion of Healing	                   | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
+| BG2           |	Potion of Healing	                   | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Heroism	                   | `Tenser's Transformation` Wizard Spell	                                            |             12    |    1  |	 48 |
 | BG1, BG2, IWD |	Potion of Heroism	                   | `Holy Power` Priest Spell	                                                        |              7    |    1  |	 48 |
@@ -95,7 +101,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Elixer of Health	                   | `Neutralize Poison` Priest spell	                                                |              7    |    1  |	  4 |
 | BG1, BG2, IWD |	Elixer of Health	                   | `Heal` Priest spell	                                                            |             11    |    3  |	  4 |
 | BG1, BG2, IWD |	Elixer of Health	                   | `Greater Restoration` Priest spell	                                                |             14    |    4  |	  4 |
-| BG1, BG2, IWD |	Elixer of Health	                   | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
+| BG2           |	Elixer of Health	                   | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Absorption	               | `Protection from Electricity` and `Protection from Normal Weapons` Wizard spells   |              9    |    1  |	  8 |
 | BG1, BG2, IWD |	Potion of Absorption	               | `Protection from the Elements` and `Protection from Normal Weapons` Wizard spells	|             14    |    1  |	  8 |
@@ -106,13 +112,14 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Agility (18)	               | `Draw Upon Holy Might` Priest spell	                                            |              9    |    2  |	 10 |
 | BG1, BG2, IWD |	Potion of Agility (18)	               | `Draw Upon Holy Might` Priest spell	                                            |             15    |    3  |	 10 |
 | BG1, BG2, IWD |	Potion of Agility (18)	               | `Draw Upon Holy Might` Priest spell	                                            |             21    |    4  |	 10 |
+| IWD(ification)|	Potion of Agility (18)	        	   | `Cat's Grace` Wizard spell	                                                        |             16    |    1  |	 10 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Andidote	                           | `Neutralize Poison` Priest spell	                                                |              7    |    1  |	  4 |
 | BG1, BG2, IWD |	Andidote	                           | `Heal` Priest spell	                                                            |             11    |    2  |	  4 |
 | BG1, BG2, IWD |	Andidote	                           | `Greater Restoration` Priest spell	                                                |             14    |    4  |	  4 |
 | BG1, BG2, IWD |	Andidote	                           | `Slow Poison` Priest spell	                                                        |              3    |    1  |	  4 |
 | BG1, BG2, IWD |	Andidote	                           | `Slow Poison` Innate ability	                                                    |              0    |    1  |	  4 |
-| BG1, BG2, IWD |	Andidote	                           | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
+| BG2           |	Andidote	                           | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Clarity	                   | `Spiritual Clarity` Priest spell	                                                |              5    |    2  |	  6 |
 | BG1, BG2, IWD |	Potion of Clarity	                   | `Chaotic Commands` Priest spell	                                                |              9    |    1  |	  6 |
@@ -138,6 +145,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Fortitude (18)	           | `Draw Upon Holy Might` Priest spell	                                            |              9    |    2  |	 10 |
 | BG1, BG2, IWD |	Potion of Fortitude (18)	           | `Draw Upon Holy Might` Priest spell	                                            |             15    |    3  |	 10 |
 | BG1, BG2, IWD |	Potion of Fortitude (18)	           | `Draw Upon Holy Might` Priest spell	                                            |             21    |    4  |	 10 |
+| IWD(ification)|	Potion of Fortitude (18)	           | `Trollish Fortitude` Wizard spell	                                                |             16    |    1  |	 10 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Genius (18)	               | `Limited Wish` Wizard spell	                                                    |             14    |    1  |	 10 |
 | BG1, BG2, IWD |	Potion of Genius (18)	               | `Wish` Wizard spell	                                                            |             18    |    3  |	 10 |
@@ -152,6 +160,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Magic Protection	           | `Protection From Magic Energy` Wizard spell	                                    |             12    |    2  |	 24 |
 | BG1, BG2, IWD |	Potion of Magic Protection	           | `Protection From Energy` Wizard spell	                                            |             16    |    1  |	 24 |
 | BG1, BG2, IWD |	Potion of Magic Protection	           | `Magic Resistance` Priest spell	                                                |             20    |    2  |	 24 |
+| IWD(ification)|	Potion of Magic Protection             | `Greater Shield of Lathander` Priest spell	                                        |             20    |    2  |	 24 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Magic Shielding	           | `Limited Wish` Wizard spell	                                                    |             14    |    1  |	 24 |
 | BG1, BG2, IWD |	Potion of Magic Shielding	           | `Wish` Wizard spell	                                                            |             18    |    3  |	 24 |
@@ -174,6 +183,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Power	                       | `Aid` and `Find Traps` Priest Spells and `Luck` Wizard Spell	                    |              3    |    1  |	 24 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Regeneration	               | `Regeneration` Priest spell	                                                    |             14    |    2  |	 10 |
+| IWD(ification)|	Potion of Regeneration  	           | `Trollish Fortitude` Wizard spell	                                                |             16    |    1  |	 10 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Insight (18)	               | `Limited Wish` Wizard spell	                                                    |             14    |    1  |	 10 |
 | BG1, BG2, IWD |	Potion of Insight (18)	               | `Wish` Wizard spell	                                                            |             18    |    3  |	 10 |
