@@ -78,7 +78,7 @@ This gives casters a bit more utility, having a repertoire of spells at their fi
 Just The Right Spells™ at any given time. It also will allow scrolls to be used for more than just scribbling into a spellbook
 due to making any given spell more available.
 
-### Potions for existing Spells
+### [Potions for existing Spells](./documentation/new_potions.md)
 This component will be similar to `Missing Spell Scrolls`, in that it will generate _potions_ that copy the effects of existing spells.
 There are _many_ new potions for crafting. This component does not add any such items to in-game stores.
 
