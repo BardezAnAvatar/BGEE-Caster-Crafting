@@ -1,58 +1,87 @@
 # Brew Potions
 This component will allow any class-based caster to brew the magic they memorize into potions.
 
-## Base Game potions
+
+
+## Table of Contents
+1. [Base Game Potions](#base-game-potions)
+   1. [Base Game Categories](#base-game-categories)
+   1. [Base Game Recipes](#base-game-recipes)
+1. [New Potions](#new-potions)
+
+
+
+## Base Game Potions
 The default state of the mod with no other options, you will be able to brew potions that exist in the base game.
 
+
 ### Base Game Categories
-|                   Potion                 |   Category  |     Sub-Category     |
-| ---------------------------------------- | ----------- | -------------------- |
-| Oil of Fiery Burning                     | Bomb        | Damage               |
-| Potion of Explosions                     | Bomb        | Damage               |
-| Potion of Fire Breath                    | Bomb        | Damage               |
-|                                          |             |                      |
-| Potion of Healing                        | Cure        | Healing              |
-| Potion of Extra Healing                  | Cure        | Healing              |
-| Potion of Superior Healing               | Cure        | Healing              |
-| Elixer of Health                         | Cure        | Restorative          |
-| Andidote                                 | Cure        | Restorative          |
-| Potion of Regeneration                   | Cure        | Regeneration         |
-|                                          |             |                      |
-| Potion of Invulnerability                | Defense     | Armor                |
-| Potion of Defense                        | Defense     | Armor                |
-| Potion of Stone Form                     | Defense     | Armor                |
-| Potion of Magic Shielding                | Defense     | Damage Resistance    |
-| Potion of Fire Resistance                | Defense     | Energy Resistance    |
-| Potion of Absorption                     | Defense     | Energy Resistance    |
-| Protection from Cold                     | Defense     | Energy Resistance    |
-| Potion of Insulation                     | Defense     | Energy Resistance    |
-| Potion of Magic Protection               | Defense     | Magic Resistance     |
-| Potion of Clarity                        | Defense     | Mental Defense       |
-| Potion of Magic Blocking                 | Defense     | Spell Immunity       |
-| Potion of Mirrored Eyes                  | Defense     | Status Immunity      |
-| Potion of Free Action                    | Defense     | Status Immunity      |
-|                                          |             |                      |
-| Potion of Infravision                    | Enhancement | Detection            |
-| Potion of Invisibility                   | Enhancement | Invisibility         |
-| Potion of Master Thievery                | Enhancement | Skill Boost          |
-| Potion of Perception                     | Enhancement | Skill Boost          |
-| Potion of Power                          | Enhancement | Skill Boost          |
-| Potion of Mind Focusing                  | Enhancement | Stat Boost           |
-| Potion of Agility (18)                   | Enhancement | Stat Boost           |
-| Potion of Fortitude (18)                 | Enhancement | Stat Boost           |
-| Potion of Genius (18)                    | Enhancement | Stat Boost           |
-| Potion of Insight (18)                   | Enhancement | Stat Boost           |
-| Potion of Persuasiveness                 | Enhancement | Stat Boost           |
-| Potion of Strength (18)                  | Enhancement | Stat Boost: Strength |
-| Potion of Hill Giant Strength (19)       | Enhancement | Stat Boost: Strength |
-| Potion of Stone Giant Strength (20)      | Enhancement | Stat Boost: Strength |
-| Potion of Frost Giant Strength (21)      | Enhancement | Stat Boost: Strength |
-| Potion of Fire Giant Strength (22)       | Enhancement | Stat Boost: Strength |
-| Potion of Cloud Giant Strength (23)      | Enhancement | Stat Boost: Strength |
-| Potion of Storm Giant Strength (24)      | Enhancement | Stat Boost: Strength |
-|                                          |             |                      |
-| Potion of Heroism                        | Offense     | Attack Bonus         |
-| Oil of Speed                             | Offense     | Haste                |
+|  Game(s)/Mods  |                   Potion                 |   Category  |     Sub-Category     |
+| -------------- | ---------------------------------------- | ----------- | -------------------- |
+|  BG1, BG2, IWD | Oil of Fiery Burning                     | Bomb        | Damage               |
+|  BG1, BG2, IWD | Potion of Explosions                     | Bomb        | Damage               |
+|  BG1, BG2, IWD | Potion of Fire Breath                    | Bomb        | Damage               |
+|  IWD           | Flaming Oil                              | Bomb        | Damage               |
+|                |                                          |             |                      |
+|  BG1, BG2, IWD | Potion of Healing                        | Cure        | Healing              |
+|  BG1, BG2, IWD | Potion of Extra Healing                  | Cure        | Healing              |
+|  IWD           | Potion of Extra Healing                  | Cure        | Healing              |
+|  IWD           | Spirit Essence                           | Cure        | Healing              |
+|  BG1, BG2, IWD | Potion of Superior Healing               | Cure        | Healing              |
+|  BG1, BG2, IWD | Elixer of Health                         | Cure        | Restorative          |
+|  BG1, BG2, IWD | Andidote                                 | Cure        | Restorative          |
+|  IWD           | Mummy's Tea                              | Cure        | Restorative          |
+|  IWD           | Oil of Null Effect                       | Cure        | Restorative          |
+|  BG1, BG2, IWD | Potion of Regeneration                   | Cure        | Regeneration         |
+|                |                                          |             |                      |
+|  BG1, BG2, IWD | Potion of Invulnerability                | Defense     | Armor                |
+|  BG1, BG2, IWD | Potion of Defense                        | Defense     | Armor                |
+|  BG1, BG2, IWD | Potion of Stone Form                     | Defense     | Armor                |
+|  IWD           | Oil of the Serpent's Scales              | Defense     | Armor                |
+|  BG1, BG2, IWD | Potion of Magic Shielding                | Defense     | Damage Resistance    |
+|  BG1, BG2, IWD | Potion of Fire Resistance                | Defense     | Energy Resistance    |
+|  BG1, BG2, IWD | Potion of Absorption                     | Defense     | Energy Resistance    |
+|  BG1, BG2, IWD | Protection from Cold                     | Defense     | Energy Resistance    |
+|  BG1, BG2, IWD | Potion of Insulation                     | Defense     | Energy Resistance    |
+|  BG1, BG2, IWD | Potion of Magic Protection               | Defense     | Magic Resistance     |
+|  BG1, BG2, IWD | Potion of Clarity                        | Defense     | Mental Defense       |
+|  BG1, BG2, IWD | Potion of Magic Blocking                 | Defense     | Spell Immunity       |
+|  BG1, BG2, IWD | Potion of Mirrored Eyes                  | Defense     | Status Immunity      |
+|  BG1, BG2, IWD | Potion of Free Action                    | Defense     | Status Immunity      |
+|                |                                          |             |                      |
+|  BG1, BG2, IWD | Potion of Infravision                    | Enhancement | Detection            |
+|  BG1, BG2, IWD | Potion of Invisibility                   | Enhancement | Invisibility         |
+|  BG1, BG2, IWD | Potion of Master Thievery                | Enhancement | Skill Boost          |
+|  BG1, BG2, IWD | Potion of Perception                     | Enhancement | Skill Boost          |
+|  BG1, BG2, IWD | Potion of Power                          | Enhancement | Skill Boost          |
+|  BG1, BG2, IWD | Potion of Mind Focusing                  | Enhancement | Stat Boost           |
+|  BG1, BG2, IWD | Potion of Agility (18)                   | Enhancement | Stat Boost           |
+|  BG1, BG2, IWD | Potion of Fortitude (18)                 | Enhancement | Stat Boost           |
+|  BG1, BG2, IWD | Potion of Genius (18)                    | Enhancement | Stat Boost           |
+|  BG1, BG2, IWD | Potion of Insight (18)                   | Enhancement | Stat Boost           |
+|  BG1, BG2, IWD | Potion of Persuasiveness                 | Enhancement | Stat Boost           |
+|  BG1, BG2, IWD | Potion of Strength (18)                  | Enhancement | Stat Boost: Strength |
+|  BG1, BG2, IWD | Potion of Hill Giant Strength (19)       | Enhancement | Stat Boost: Strength |
+|  BG1, BG2, IWD | Potion of Stone Giant Strength (20)      | Enhancement | Stat Boost: Strength |
+|  BG1, BG2, IWD | Potion of Frost Giant Strength (21)      | Enhancement | Stat Boost: Strength |
+|  BG1, BG2, IWD | Potion of Fire Giant Strength (22)       | Enhancement | Stat Boost: Strength |
+|  BG1, BG2, IWD | Potion of Cloud Giant Strength (23)      | Enhancement | Stat Boost: Strength |
+|  BG1, BG2, IWD | Potion of Storm Giant Strength (24)      | Enhancement | Stat Boost: Strength |
+|  IWD           | Potion of Action Transferenc             | Enhancement | Stat Transfer        |
+|  IWD           | Potion of Resistance                     | Enhancement | Stat Increase        |
+|  IWD           | Potion of Greater Resistance             | Enhancement | Stat Increase        |
+|  IWD           | Potion of Magical Resistance             | Enhancement | Stat Increase        |
+|  IWD           | Potion of Constitution                   | Enhancement | Stat Increase        |
+|  IWD           | Potion of Strength Transference          | Enhancement | Stat Transfer        |
+|  IWD           | Potion of Arcane Absorption              | Enhancement | Stat Increase        |
+|  IWD           | Potion of Life Transference              | Enhancement | Stat Transfer        |
+|  IWD           | Potion of Aura Enhancement               | Enhancement | Stat Increase        |
+|  IWD           | Potion of Dissipation                    | Enhancement | Stat Increase        |
+|  IWD           | Potion of Holy Transference              | Enhancement | Stat Transfer        |
+|                |                                          |             |                      |
+|  BG1, BG2, IWD | Potion of Heroism                        | Offense     | Attack Bonus         |
+|  IWD           | Oil of Second Chances                    | Offense     | Damage Boost         |
+|  BG1, BG2, IWD | Oil of Speed                             | Offense     | Haste                |
 
 
 ### Base Game Recipes
@@ -321,3 +350,6 @@ The default state of the mod with no other options, you will be able to brew pot
 |               |                                          |                                                                                    |                   |       |       |
 | IWD           | Potion of Holy Transference              | `Wish` Wizard spell                                                                |             18    |    1  |    24 |
 
+
+
+## New Potions
