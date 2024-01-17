@@ -4,3 +4,9 @@
 @50000 = ~Range: ~
 @50001 = ~Caster Level: %caster_level%
 Range: ~
+
+//NOTE: See: The following are functions to clarify an item's caster level in item name and description:
+// INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_name.tph~
+// INCLUDE ~./%MOD_FOLDER%/comp/shared/%bz_edition_code%/%LANGUAGE%/fn-bz_inject_caster_level_into_description.tph~
+// %bz_edition_code% = 2E
+// %LANGUAGE% = en_US
