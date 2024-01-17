@@ -7,3 +7,25 @@ This component _should_ honor the spell levels of each class; Bards can copy lev
 level 6 or lower spells from Bards, level 10 or less from other Mages.
 
 Sorcerers cannot copy spells, since they use magic innately.
+
+Spells to not need to be memorized; they only need to be in a party member's spellbook to be copied.
+
+Cost for copying spells is as follows:
+
+
+
+## Process
+1. Purchase scribing tools from a spell shop.
+1. Identify the item
+1. Begin dialog with the scribe tools
+1. Select the option to copy spells:
+   ![Scribe Tools Main Menu](.images/copy_spell_main_menu.png)
+1. Select the party member to copy arcane spells from:
+   ![Party member selection](.images/copy_spell_party_menu.png)
+1. Select the circle of spell to copy from:
+   ![Select Spell Circle](.images/copy_spell_levels.png)
+1. Select which spell to copy:
+   ![Select Which Spell](.images/copy_spell_select_spell.PNG)
+1. Confirm you want to spend time and gold to copy the spell:
+   ![Spell Copy Confirmation](.images/copy_spell_confirmation.png)
+1. Watch the small cutscene similar to Cespenar and Cromwell
