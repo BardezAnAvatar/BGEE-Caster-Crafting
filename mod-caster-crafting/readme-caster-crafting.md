@@ -72,7 +72,7 @@ This component will allow any spellbook-based caster to copy spells from another
 that would be bards and wizards in 2E. Spells' exclusion flags are honored, so Bards shouldn't get wild mage spells,
 and opposition schools should not be copyable to forbidden kits.
 
-##### Scribe Scrolls
+##### [Scribe Scrolls](./documentation/scribe_scrolls.md)
 This component will allow any caster to write spell scrolls for spells that they know (and exist in the game).
 This gives casters a bit more utility, having a repertoire of spells at their fingertips rather than having to memorize
 Just The Right Spells™ at any given time. It also will allow scrolls to be used for more than just scribbling into a spellbook
