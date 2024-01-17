@@ -5,7 +5,7 @@ This component will allow any class-based caster to brew the magic they memorize
 The default state of the mod with no other options, you will be able to brew potions that exist in the base game.
 
 ### Base Game Recipes
-|    Game(s)    |                   Potion                 |                                         Recipe                                     | Req. Caster Level | Yield | Hours |
+| Game(s)/Mods  |                   Potion                 |                                         Recipe                                     | Req. Caster Level | Yield | Hours |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Fire Resistance	           | `Protection from Fire` Wizard spell	                                            |              5    |    1  |	  8 |
 | BG1, BG2, IWD |	Potion of Fire Resistance	           | `Fireshield (Red) Wizard` spell	                                                |              7    |    1  |	  8 |
@@ -102,6 +102,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Elixer of Health	                   | `Heal` Priest spell	                                                            |             11    |    3  |	  4 |
 | BG1, BG2, IWD |	Elixer of Health	                   | `Greater Restoration` Priest spell	                                                |             14    |    4  |	  4 |
 | BG2           |	Elixer of Health	                   | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
+| OlvynSpells   |	Elixer of Health	                   | `Mass Heal` Priest spell	                                                        |             15    |    5  |	  4 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Absorption	               | `Protection from Electricity` and `Protection from Normal Weapons` Wizard spells   |              9    |    1  |	  8 |
 | BG1, BG2, IWD |	Potion of Absorption	               | `Protection from the Elements` and `Protection from Normal Weapons` Wizard spells	|             14    |    1  |	  8 |
@@ -120,6 +121,7 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Andidote	                           | `Slow Poison` Priest spell	                                                        |              3    |    1  |	  4 |
 | BG1, BG2, IWD |	Andidote	                           | `Slow Poison` Innate ability	                                                    |              0    |    1  |	  4 |
 | BG2           |	Andidote	                           | `Mass Healing` Bhaalspawn ability	                                                |              0    |    5  |	  4 |
+| OlvynSpells   |	Andidote	                           | `Mass Heal` Priest spell	                                                        |             15    |    6  |	  4 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Clarity	                   | `Spiritual Clarity` Priest spell	                                                |              5    |    2  |	  6 |
 | BG1, BG2, IWD |	Potion of Clarity	                   | `Chaotic Commands` Priest spell	                                                |              9    |    1  |	  6 |
@@ -199,10 +201,12 @@ The default state of the mod with no other options, you will be able to brew pot
 | BG1, BG2, IWD |	Potion of Extra Healing	               | `Cure Critical Wounds` Priest Spell	                                            |              9    |    1  |	  6 |
 | BG1, BG2, IWD |	Potion of Extra Healing	               | `Heal` Priest Spell	                                                            |             11    |    3  |	  6 |
 | BG1, BG2, IWD |	Potion of Extra Healing	               | `Greater Restoration` Priest Spell	                                                |             14    |    4  |	  6 |
+| OlvynSpells   |	Potion of Extra Healing                | `Mass Heal` Priest spell	                                                        |             15    |    4  |	  6 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1, BG2, IWD |	Potion of Superior Healing	           | `Cure Serious Wounds` and `Cure Critical Wounds` Priest Spells	                    |              9    |    1  |	 12 |
 | BG1, BG2, IWD |	Potion of Superior Healing	           | `Heal` Priest Spell	                                                            |             11    |    2  |	 12 |
 | BG1, BG2, IWD |	Potion of Superior Healing	           | `Greater Restoration` Priest Spell	                                                |             14    |    3  |	 12 |
+| OlvynSpells   |	Potion of Superior Healing	           | `Mass Heal` Priest spell	                                                        |             15    |    3  |	 12 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1 (SoD)     |   Potion of Persuasiveness	           | `Friends` Wizard Spell	                                                            |              1    |    1  |	 10 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
