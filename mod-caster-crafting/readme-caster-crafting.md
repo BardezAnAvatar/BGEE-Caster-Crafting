@@ -1,6 +1,6 @@
 # Caster Crafting
 
-Version: 0.7.2
+Version: 0.7.3
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
