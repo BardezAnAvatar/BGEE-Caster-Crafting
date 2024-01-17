@@ -52,7 +52,7 @@ In BG1:EE, there are some spells that were included back from BG2 but lack scrol
 Quest-level spells. These new scrolls get registered in with existing scrolls for crafting. Options are given to generate missing Priest spells,
 missing Wizard spells, or both. This component does not add any such items to in-game stores.
 
-### Leveled Scrolls: craft scrolls at higher caster levels
+### [Leveled Scrolls: craft scrolls at higher caster levels](./documentation/leveled_scrolls.md)
 What it says on the tin. This component generates scrolls from existing spells that are leveled (have slightly different effects based off of level),
 up to level 50. So Fireball up to level 12, Magic Missile levels 3, 5, 7, and 9, for example. These new scrolls get registered in with existing scrolls
 for crafting. This component does not add any such items to in-game stores.
