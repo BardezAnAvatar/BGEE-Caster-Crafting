@@ -61,6 +61,9 @@ system of retrieving the blood of magical enemies or quills made from feathers o
 support that level of detail. So, crafting these gets abstracted to spending the gold necessary to obtain the materials and time spent researching and
 attempting to move _memorized_ spells onto paper.
 
+The cost to scribe any given scroll varies; it is based off of the cost of the in-game `*.itm` file without store markup. Thus, Lesser Restoration
+might be cheap, or Protection Scrolls might vary wildly in price.
+
 | Level        |  Gold | Hours |
 | ------------ |  ---- | ----- |
 | Protection   |   750 |  144  |
