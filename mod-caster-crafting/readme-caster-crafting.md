@@ -1,4 +1,8 @@
 # Caster Crafting
+![I have done nothing but scribe scrolls for 3 days.](https://preview.redd.it/byqieqv95yw81.png?width=640&crop=smart&auto=webp&s=26f3d08366adfc06d193281cbfcd6c562d6a9fdf "The Do It Yourself (DIY) Magic Shop")
+*Yes, you can make scrolls of arcane AND divine spells with this mod among other things!*
+*Linked image by medli20.*
+
 
 Version: 0.7.3
 
@@ -108,6 +112,13 @@ I _prefer_ that this mod does not get sucked into larger mods, like caster overh
 
 tl;dr: Do what you will with it, credit me (Bardez) for starting the mod.  If you have any bugs or suggestions about
 this mod, post them on [the Caster Crafting GitHub Repository's Issues page](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues)!
+
+-This mod is based off the work of [GrammarSalad](https://github.com/Grammarsalad?tab=repositories) with his permission.
+
+-[Endarire](https://github.com/Endarire) provided moral support, proofreading, and suggestions.  He also brought GrammarSalad and bardez in contact with
+each other to facilitate the creation of this mod.
+
+-Medli20 authored [this thread](https://www.reddit.com/r/DnD/comments/ugce5i/oc_so_what_have_you_been_doing_during_our/) and its associated images.
 
 ## Support
 Have a mod integration that's broken?  Feel free to [open an issue on GitHub](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues).
