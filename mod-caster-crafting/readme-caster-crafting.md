@@ -71,8 +71,8 @@ This is a dialog-able item, through which the party member holding the item can 
 stores around magic, libraries, and the ilk.
 
 #### Options
-##### Brew Potion
-This component will allow any spellbook-based caster to brew the magic they memorize into potions; this component is less of a 1:1
+##### [Brew Potion](./documentation/brew_potions.md)
+This component will allow any class-based caster to brew the magic they memorize into potions; this component is less of a 1:1
 match of spell to scroll, and more recipe-based, allowing more powerful spells of similar effects to yield a larger number of potions. For example:
 `Cure Light Wounds` would generate a single potion of healing; `Heal` would yield several.
 

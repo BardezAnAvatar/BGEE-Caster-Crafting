@@ -210,14 +210,14 @@ The default state of the mod with no other options, you will be able to brew pot
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | BG1 (SoD)     |   Potion of Persuasiveness               | `Friends` Wizard Spell                                                             |              1    |    1  |    10 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
-| BG2            |   Potion of Clairvoyance                | `Detect Invisibility` Wizard Spell                                                 |              3    |    1  |     8 |
-| BG2            |   Potion of Clairvoyance                | `Detect Illusion` Wizard Spell                                                     |              5    |    2  |     8 |
-| BG2            |   Potion of Clairvoyance                | `Oracle` Wizard Spell                                                              |              9    |    3  |     8 |
-| BG2            |   Potion of Clairvoyance                | `True Sight` Wizard Spell                                                          |             12    |    4  |     8 |
-| BG2            |   Potion of Clairvoyance                | `Invisibility Purge` Priest Spell                                                  |              5    |    1  |     8 |
-| BG2            |   Potion of Clairvoyance                | `True Seeing` Priest Spell                                                         |              9    |    3  |     8 |
+| BG2           |   Potion of Clairvoyance                 | `Detect Invisibility` Wizard Spell                                                 |              3    |    1  |     8 |
+| BG2           |   Potion of Clairvoyance                 | `Detect Illusion` Wizard Spell                                                     |              5    |    2  |     8 |
+| BG2           |   Potion of Clairvoyance                 | `Oracle` Wizard Spell                                                              |              9    |    3  |     8 |
+| BG2           |   Potion of Clairvoyance                 | `True Sight` Wizard Spell                                                          |             12    |    4  |     8 |
+| BG2           |   Potion of Clairvoyance                 | `Invisibility Purge` Priest Spell                                                  |              5    |    1  |     8 |
+| BG2           |   Potion of Clairvoyance                 | `True Seeing` Priest Spell                                                         |              9    |    3  |     8 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
-| BG1, BG2, IWD    |   Potion of Infravision               | `Infravision` Wizard Spell                                                         |              1    |    1  |     4 |
+| BG1, BG2, IWD |   Potion of Infravision                  | `Infravision` Wizard Spell                                                         |              1    |    1  |     4 |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
 | IWD           | Mummy's Tea                              | `Curse Disease` Priest Spell                                                       |              5    |    1  |    12 |
 | IWD           | Mummy's Tea                              | `Heal` Priest Spell                                                                |             11    |    3  |    12 |
