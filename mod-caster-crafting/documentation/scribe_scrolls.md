@@ -91,3 +91,35 @@ might be cheap, or Protection Scrolls might vary wildly in price.
 | Priest Quest |  192  |
 
 
+
+## Scribing Protection Scrolls
+AD&D 2E guidebooks were pretty clear on these: it takes 6 days to scribe a Protection Scroll. There is a chance of failure. But, since the effects of each
+of these protection scrolls doesn't necessarily match a spell one-to-one, I use the recipe system for Protection Scrolls:
+
+|               Scroll          |                   Source Spell              |
+| ----------------------------- | ------------------------------------------- |
+| Protection from Acid          | Protection from Acid Wizard spell           |
+| Protection from Acid          | Protection from Energy Wizard spell         |
+| Protection from Cold          | Protection from Cold Wizard spell           |
+| Protection from Cold          | Fireshield (Blue) Wizard spell              |
+| Protection from Cold          | Protection from the Elements Wizard spell   |
+| Protection from Cold          | Protection from Energy Wizard spell         |
+| Protection from Cold          | Protection from Fire and Cold Priest spell  |
+| Protection from Electricity   | Protection from Electricity Wizard spell    |
+| Protection from Electricity   | Protection from the Elements Wizard spell   |
+| Protection from Electricity   | Protection from Energy Wizard spell         |
+| Protection from Electricity   | Protection from Lightning Priest spell      |
+| Protection from Fire          | Protection from Fire Wizard spell           |
+| Protection from Fire          | Fireshield (Red) Wizard spell               |
+| Protection from Fire          | Protection from the Elements Wizard spell   |
+| Protection from Fire          | Protection from Energy Wizard spell         |
+| Protection from Fire          | Protection from Fire and Cold Priest spell  |
+| Protection from Fire          | Protection from Fire Priest spell           |
+| Protection from Magic         | Protection From Magic Energy Wizard spell   |
+| Protection from Magic         | Protection From Energy Wizard spell         |
+| Protection from Magic         | Magic Resistance Priest spell               |
+| Protection from Poison        | Neutralize Poison Priest spell              |
+| Protection from Undead        | Negative Plane Protection Priest spell      |
+| Protection from Undead        | Repulse Undead Priest spell                 |
+| Protection from Petrification | Protection from Petrification Wizard spell  |
+| Protection from Petrification | Stone to Flesh Wizard spell                 |
