@@ -66,24 +66,28 @@ attempting to move _memorized_ spells onto paper.
 The cost to scribe any given scroll varies; it is based off of the cost of the in-game `*.itm` file without store markup. Thus, Lesser Restoration
 might be cheap, or Protection Scrolls might vary wildly in price.
 
-| Level        |  Gold | Hours |
-| ------------ |  ---- | ----- |
-| Protection   |   750 |  144  |
-| Arcane  1    |   100 |   24  |
-| Arcane  2    |   200 |   48  |
-| Arcane  3    |   300 |   72  |
-| Arcane  4    |   500 |   96  |
-| Arcane  5    |  1000 |  120  |
-| Arcane  6    |  2000 |  144  |
-| Arcane  7    |  3000 |  168  |
-| Arcane  8    |  4000 |  192  |
-| Arcane  9    |  5000 |  216  |
-| Arcane 10    | 20000 |  240  |
-| Priest 1     |   100 |   24  |
-| Priest 2     |   200 |   48  |
-| Priest 3     |   300 |   72  |
-| Priest 4     |   500 |   96  |
-| Priest 5     |  1000 |  120  |
-| Priest 6     |  2000 |  144  |
-| Priest 7     |  3000 |  168  |
-| Priest Quest |  5000 |  192  |
+| Level        | Hours |
+| ------------ | ----- |
+| Protection   |  144  |
+| ------------ | ----- |
+| Arcane  1    |   24  |
+| Arcane  2    |   48  |
+| Arcane  3    |   72  |
+| Arcane  4    |   96  |
+| Arcane  5    |  120  |
+| Arcane  6    |  144  |
+| Arcane  7    |  168  |
+| Arcane  8    |  192  |
+| Arcane  9    |  216  |
+| Arcane 10    |  240  |
+| ------------ | ----- |
+| Priest 1     |   24  |
+| Priest 2     |   48  |
+| Priest 3     |   72  |
+| Priest 4     |   96  |
+| Priest 5     |  120  |
+| Priest 6     |  144  |
+| Priest 7     |  168  |
+| Priest Quest |  192  |
+
+
