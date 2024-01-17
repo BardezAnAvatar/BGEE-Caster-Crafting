@@ -38,6 +38,12 @@ I am using the `BZ` prefix for my items. It is registered at Black Wyrm Lair: ht
 | Splitting out shared BAMs into Arcane and Priest variants   |  0.7.3  |
 
 
+
+## Supported Games
+Currently BG1:EE, BG2:EE, and IWD:EE. I am interested in exploring PST:EE and IWD2, but those are future interests.
+
+
+
 ## Components
 
 ### Missing Spell Scrolls
