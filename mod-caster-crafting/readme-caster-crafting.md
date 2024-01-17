@@ -46,7 +46,7 @@ Currently BG1:EE, BG2:EE, and IWD:EE. I am interested in exploring PST:EE and IW
 
 ## Components
 
-### Missing Spell Scrolls
+### [Missing Spell Scrolls](./documentation/missing_scrolls.md)
 This component adds in scrolls that otherwise do not exist in the base game and supported mods. Typically this is Wild Magic and most Priest spells.
 In BG1:EE, there are some spells that were included back from BG2 but lack scrolls for them. This component also generates scrolls for level 10 and
 Quest-level spells. These new scrolls get registered in with existing scrolls for crafting. Options are given to generate missing Priest spells,
