@@ -357,503 +357,161 @@ The default state of the mod with no other options, you will be able to brew pot
 All new potions will be pulled in for crafting if that component is installed.
 
 ### Base Game Categories
-|  Game(s)/Mods  |                   Potion                 |   Category  |     Sub-Category     |
-| -------------- | ---------------------------------------- | ----------- | -------------------- |
-| BG1, BG2, IWD  | Entangle                                 | Bomb        | Restrictive          |
-| BG1, BG2, IWD  | Grease                                   | Bomb        | Restrictive          |
-| BG1, BG2, IWD  | Sleep                                    | Bomb        | Restrictive          |
-| BG1, BG2, IWD  | Writhing Fog                             | Bomb        | Damage               |
-| BG1, BG2, IWD  | Knock                                    | Bomb        | Utility              |
-| BG1, BG2, IWD  | Web                                      | Bomb        | Restrictive          |
-| BG1, BG2, IWD  | Stinking Cloud                           | Bomb        | Restrictive          |
-| IWD(ification) | Snilloc's Snowball Swarm                 | Bomb        | Damage               |
-| BG1, BG2, IWD  | Dispel Magic                             | Bomb        | Utility              |
-| IWD(ification) | Spike Growth                             | Bomb        | Damage               |
-| IWD(ification) | Cloud of Pestilence                      | Bomb        | Status Attack        |
-| BG1, BG2, IWD  | Spirit Fire                              | Bomb        | Damage               |
-| BG1, BG2, IWD  | Greater Malison                          | Bomb        | Lower Defenses       |
-| BG1, BG2, IWD  | Otiluke's Resilient Sphere               | Bomb        | Restrictive          |
-| IWD(ification) | Spike Stones                             | Bomb        | Damage               |
-| BG1, BG2, IWD  | Death Fog                                | Bomb        | Damage               |
-| BG1, BG2, IWD  | Chain Lightning                          | Bomb        | Damage               |
-| IWD(ification) | Mist of Eldath                           | Bomb        | Restorative          |
-|                |                                          |             |                      |
-| IWD(ification) | Cure Moderate Wounds                     | Cure        | Healing              |
-| BG1, BG2, IWD  | Remove Curse                             | Cure        | Restorative          |
-| BG1, BG2, IWD  | Cure Medium Wounds                       | Cure        | Healing              |
-| BG1, BG2, IWD  | Cure Disease                             | Cure        | Restorative          |
-| BG1, BG2, IWD  | Zone of Sweet Air                        | Cure        | Restorative          |
-| BG1, BG2, IWD  | Cure Serious Wounds                      | Cure        | Healing              |
-| BG1, BG2, IWD  | Lesser Restoration                       | Cure        | Restorative          |
-| IWD(ification) | Unfailing Endurance                      | Cure        | Restorative          |
-| BG1, BG2, IWD  | Heal                                     | Cure        | Healing              |
-| IWD(ification) | Trollish Fortitude                       | Cure        | Regeneration         |
-| BG1, BG2, IWD  | Greater Restoration                      | Cure        | Restorative          |
-|                |                                          |             |                      |
-| BG1, BG2, IWD  | Resist Fear                              | Defense     | Mental Defense       |
-| BG1, BG2, IWD  | Sanctuary                                | Defense     | Avoidance            |
-| BG1, BG2, IWD  | Armor of Faith                           | Defense     | Damage Resistance    |
-| BG1, BG2, IWD  | Spirit Ward                              | Defense     | Avoidance            |
-| BG1, BG2, IWD  | Armor                                    | Defense     | Armor                |
-| BG1, BG2, IWD  | Barkskin                                 | Defense     | Armor                |
-| BG1, BG2, IWD  | Protection From Petrification            | Defense     | Status Immunity      |
-| BG1, BG2, IWD  | Protection From Evil                     | Defense     | Avoidance            |
-| BG1, BG2, IWD  | Shield                                   | Defense     | Armor                |
-| BG1, BG2, IWD  | Resist Fire and Cold                     | Defense     | Energy Resistance    |
-| BG1, BG2, IWD  | Blur                                     | Defense     | Avoidance            |
-| BG1, BG2, IWD  | Mirror Image                             | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Protection From Fire                     | Defense     | Energy Resistance    |
-| IWD(ification) | Exaltation                               | Defense     | Mental Defense       |
-| BG1, BG2, IWD  | Protection From Normal Missiles          | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Wraithform                               | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Ghost Armor                              | Defense     | Armor                |
-| BG1, BG2, IWD  | Protection From Cold                     | Defense     | Energy Resistance    |
-| BG1, BG2, IWD  | Free Action                              | Defense     | Status Immunity      |
-| BG1, BG2, IWD  | Death Ward                               | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Negative Plane Protection                | Defense     | Status Immunity      |
-| BG1, BG2, IWD  | Fireshield (Blue)                        | Defense     | Damaging Shield      |
-| BG1, BG2, IWD  | Minor Globe of Invulnerability           | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Stoneskin                                | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Spirit Armor                             | Defense     | Armor                |
-| BG1, BG2, IWD  | Fireshield (Red)                         | Defense     | Damaging Shield      |
-| BG1, BG2, IWD  | Chaotic Commands                         | Defense     | Mental Defense       |
-| IWD(ification) | Shield of Lathander                      | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Spell Immunity: Abjuration               | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Spell Immunity: Alteration               | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Spell Immunity: Conjuration              | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Spell Immunity: Divination               | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Spell Immunity: Enchantment              | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Spell Immunity: Evocation                | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Spell Immunity: Illusion                 | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Spell Immunity: Necromancy               | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Protection From Normal Weapons           | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Protection From Electricity              | Defense     | Energy Resistance    |
-| BG1, BG2, IWD  | Protection From Acid                     | Defense     | Energy Resistance    |
-| BG1, BG2, IWD  | Minor Spell Turning                      | Defense     | Spell Defense        |
-| BG1, BG2, IWD  | Entropy Shield                           | Defense     | Armor                |
-| BG1, BG2, IWD  | Globe of Invulnerability                 | Defense     | Spell Immunity       |
-| BG1, BG2, IWD  | Protection From Magic Energy             | Defense     | Magic Resistance     |
-| BG1, BG2, IWD  | Protection From Magical Weapons          | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Spell Deflection                         | Defense     | Spell Defense        |
-| IWD(ification) | Antimagic Shell                          | Defense     | Spell Defense        |
-| IWD(ification) | Impervious Sanctity of Mind              | Defense     | Mental Defense       |
-| IWD(ification) | Greater Shield of Lathander              | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Spell Turning                            | Defense     | Spell Defense        |
-| BG1, BG2, IWD  | Protection From The Elements             | Defense     | Energy Resistance    |
-| BG1, BG2, IWD  | Mantle                                   | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Protection From Energy                   | Defense     | Energy Resistance    |
-| BG1, BG2, IWD  | Improved Mantle                          | Defense     | Physical Immunity    |
-| BG1, BG2, IWD  | Spell Trap                               | Defense     | Spell Defense        |
-| BG1, BG2, IWD  | Absolute Immunity                        | Defense     | Physical Immunity    |
-| BG2, IWD       | Aura of Flaming Death                    | Defense     | Damaging Shield      |
-|                |                                          |             |                      |
-| BG1, BG2, IWD  | Friends                                  | Enhancement | Stat Boost           |
-| IWD(ification) | Expeditious Retreat                      | Enhancement | Movement             |
-| BG1, BG2, IWD  | Find Traps                               | Enhancement | Detection            |
-| BG1, BG2, IWD  | Draw Upon Holy Might                     | Enhancement | Stat Boost           |
-| BG1, BG2, IWD  | Detect Invisibility                      | Enhancement | Detection            |
-| BG1, BG2, IWD  | Luck                                     | Enhancement | Skill Boost          |
-| BG1, BG2, IWD  | Strength                                 | Enhancement | Stat Boost: Strength |
-| BG1, BG2, IWD  | Vocalize                                 | Enhancement | Casting Boost        |
-| IWD(ification) | Cat's Grace                              | Enhancement | Stat Boost           |
-| BG1, BG2, IWD  | Strength of One                          | Enhancement | Stat Boost: Strength |
-| BG1, BG2, IWD  | Non-Detection                            | Enhancement | Invisibility         |
-| BG1, BG2, IWD  | Improved Invisibility                    | Enhancement | Invisibility         |
-| BG1, BG2, IWD  | True Sight                               | Enhancement | Detection            |
-| BG1, BG2, IWD  | Shadow Door                              | Enhancement | Invisibility         |
-| BG1, BG2, IWD  | Wondrous Recall                          | Enhancement | Recall               |
-| BG1, BG2, IWD  | Wondrous Recall                          | Enhancement | Recall               |
-| BG2, IWD       | Improved Alacrity                        | Enhancement | Casting Boost        |
-|                |                                          |             |                      |
-| BG1, BG2, IWD  | Bless                                    | Offense     | Damage Boost         |
-| BG1, BG2, IWD  | Aid                                      | Offense     | Damage Boost         |
-| BG1, BG2, IWD  | Chant                                    | Offense     | Damage Boost         |
-| IWD(ification) | Beast Claw                               | Offense     | Magic Weapon         |
-| IWD(ification) | Decastave                                | Offense     | Magic Weapon         |
-| IWD(ification) | Moonblade                                | Offense     | Magic Weapon         |
-| BG1, BG2, IWD  | Holy Power                               | Offense     | Attack Bonus         |
-| BG1, BG2, IWD  | Cloak of Fear                            | Offense     | Mental Attack        |
-| BG1, BG2, IWD  | Recitation                               | Offense     | Attack Bonus         |
-| IWD(ification) | Blood Rage                               | Offense     | Damage Boost         |
-| BG1, BG2, IWD  | Enchanted Weapon                         | Offense     | Magic Weapon         |
-| IWD(ification) | Emotion: Courage                         | Offense     | Damage Boost         |
-| IWD(ification) | Emotion: Hope                            | Offense     | Damage Boost         |
-| BG1, BG2, IWD  | Champion's Strength                      | Offense     | Attack Bonus         |
-| BG1, BG2, IWD  | Righteous Magic                          | Offense     | Damage Boost         |
-| IWD(ification) | Animal Rage                              | Offense     | Extra Effects        |
-| BG1, BG2, IWD  | Righteous Wrath of the Faithful          | Offense     | Attack Bonus         |
-| BG1, BG2, IWD  | Phantom Blade                            | Offense     | Magic Weapon         |
-| BG1, BG2, IWD  | Tenser's Transformation                  | Offense     | Damage Boost         |
-| BG1, BG2, IWD  | Improved Haste                           | Offense     | Haste                |
-| BG1, BG2, IWD  | Nature's Beauty                          | Offense     | Mental Attack        |
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+|  Game(s)/Mods  |                        Potion                     |   Category  |     Sub-Category     |
+| -------------- | ------------------------------------------------- | ----------- | -------------------- |
+| BG1, BG2, IWD  | Entangle                                          | Bomb        | Restrictive          |
+| BG1, BG2, IWD  | Grease                                            | Bomb        | Restrictive          |
+| BG1, BG2, IWD  | Sleep                                             | Bomb        | Restrictive          |
+| BG1, BG2, IWD  | Writhing Fog                                      | Bomb        | Damage               |
+| BG1, BG2, IWD  | Knock                                             | Bomb        | Utility              |
+| BG1, BG2, IWD  | Web                                               | Bomb        | Restrictive          |
+| BG1, BG2, IWD  | Stinking Cloud                                    | Bomb        | Restrictive          |
+| IWD(ification) | Snilloc's Snowball Swarm                          | Bomb        | Damage               |
+| BG1, BG2, IWD  | Dispel Magic                                      | Bomb        | Utility              |
+| IWD(ification) | Spike Growth                                      | Bomb        | Damage               |
+| IWD(ification) | Cloud of Pestilence                               | Bomb        | Status Attack        |
+| BG1, BG2, IWD  | Spirit Fire                                       | Bomb        | Damage               |
+| BG1, BG2, IWD  | Greater Malison                                   | Bomb        | Lower Defenses       |
+| BG1, BG2, IWD  | Otiluke's Resilient Sphere                        | Bomb        | Restrictive          |
+| IWD(ification) | Spike Stones                                      | Bomb        | Damage               |
+| BG1, BG2, IWD  | Death Fog                                         | Bomb        | Damage               |
+| BG1, BG2, IWD  | Chain Lightning                                   | Bomb        | Damage               |
+| IWD(ification) | Mist of Eldath                                    | Bomb        | Restorative          |
+| OlvynSpells    | Expose to the Elements                            | Bomb        | Lower Defenses       |
+| OlvynSpells    | Colossal Growth                                   | Bomb        | Damage               |
+|                |                                                   |             |                      |
+| IWD(ification) | Cure Moderate Wounds                              | Cure        | Healing              |
+| BG1, BG2, IWD  | Remove Curse                                      | Cure        | Restorative          |
+| BG1, BG2, IWD  | Cure Medium Wounds                                | Cure        | Healing              |
+| BG1, BG2, IWD  | Cure Disease                                      | Cure        | Restorative          |
+| BG1, BG2, IWD  | Zone of Sweet Air                                 | Cure        | Restorative          |
+| BG1, BG2, IWD  | Cure Serious Wounds                               | Cure        | Healing              |
+| BG1, BG2, IWD  | Lesser Restoration                                | Cure        | Restorative          |
+| IWD(ification) | Unfailing Endurance                               | Cure        | Restorative          |
+| BG1, BG2, IWD  | Heal                                              | Cure        | Healing              |
+| IWD(ification) | Trollish Fortitude                                | Cure        | Regeneration         |
+| BG1, BG2, IWD  | Greater Restoration                               | Cure        | Restorative          |
+|                |                                                   |             |                      |
+| BG1, BG2, IWD  | Resist Fear                                       | Defense     | Mental Defense       |
+| BG1, BG2, IWD  | Sanctuary                                         | Defense     | Avoidance            |
+| BG1, BG2, IWD  | Armor of Faith                                    | Defense     | Damage Resistance    |
+| BG1, BG2, IWD  | Spirit Ward                                       | Defense     | Avoidance            |
+| BG1, BG2, IWD  | Armor                                             | Defense     | Armor                |
+| BG1, BG2, IWD  | Barkskin                                          | Defense     | Armor                |
+| BG1, BG2, IWD  | Protection From Petrification                     | Defense     | Status Immunity      |
+| BG1, BG2, IWD  | Protection From Evil                              | Defense     | Avoidance            |
+| BG1, BG2, IWD  | Shield                                            | Defense     | Armor                |
+| BG1, BG2, IWD  | Resist Fire and Cold                              | Defense     | Energy Resistance    |
+| BG1, BG2, IWD  | Blur                                              | Defense     | Avoidance            |
+| BG1, BG2, IWD  | Mirror Image                                      | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Protection From Fire                              | Defense     | Energy Resistance    |
+| IWD(ification) | Exaltation                                        | Defense     | Mental Defense       |
+| BG1, BG2, IWD  | Protection From Normal Missiles                   | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Wraithform                                        | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Ghost Armor                                       | Defense     | Armor                |
+| BG1, BG2, IWD  | Protection From Cold                              | Defense     | Energy Resistance    |
+| BG1, BG2, IWD  | Free Action                                       | Defense     | Status Immunity      |
+| BG1, BG2, IWD  | Death Ward                                        | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Negative Plane Protection                         | Defense     | Status Immunity      |
+| BG1, BG2, IWD  | Fireshield (Blue)                                 | Defense     | Damaging Shield      |
+| BG1, BG2, IWD  | Minor Globe of Invulnerability                    | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Stoneskin                                         | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Spirit Armor                                      | Defense     | Armor                |
+| BG1, BG2, IWD  | Fireshield (Red)                                  | Defense     | Damaging Shield      |
+| BG1, BG2, IWD  | Chaotic Commands                                  | Defense     | Mental Defense       |
+| IWD(ification) | Shield of Lathander                               | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Spell Immunity: Abjuration                        | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Spell Immunity: Alteration                        | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Spell Immunity: Conjuration                       | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Spell Immunity: Divination                        | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Spell Immunity: Enchantment                       | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Spell Immunity: Evocation                         | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Spell Immunity: Illusion                          | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Spell Immunity: Necromancy                        | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Protection From Normal Weapons                    | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Protection From Electricity                       | Defense     | Energy Resistance    |
+| BG1, BG2, IWD  | Protection From Acid                              | Defense     | Energy Resistance    |
+| BG1, BG2, IWD  | Minor Spell Turning                               | Defense     | Spell Defense        |
+| BG1, BG2, IWD  | Entropy Shield                                    | Defense     | Armor                |
+| BG1, BG2, IWD  | Globe of Invulnerability                          | Defense     | Spell Immunity       |
+| BG1, BG2, IWD  | Protection From Magic Energy                      | Defense     | Magic Resistance     |
+| BG1, BG2, IWD  | Protection From Magical Weapons                   | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Spell Deflection                                  | Defense     | Spell Defense        |
+| IWD(ification) | Antimagic Shell                                   | Defense     | Spell Defense        |
+| IWD(ification) | Impervious Sanctity of Mind                       | Defense     | Mental Defense       |
+| IWD(ification) | Greater Shield of Lathander                       | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Spell Turning                                     | Defense     | Spell Defense        |
+| BG1, BG2, IWD  | Protection From The Elements                      | Defense     | Energy Resistance    |
+| BG1, BG2, IWD  | Mantle                                            | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Protection From Energy                            | Defense     | Energy Resistance    |
+| BG1, BG2, IWD  | Improved Mantle                                   | Defense     | Physical Immunity    |
+| BG1, BG2, IWD  | Spell Trap                                        | Defense     | Spell Defense        |
+| BG1, BG2, IWD  | Absolute Immunity                                 | Defense     | Physical Immunity    |
+| BG2, IWD       | Aura of Flaming Death                             | Defense     | Damaging Shield      |
+| OlvynSpells    | Displacement                                      | Defense     | Avoidance            |
+| OlvynSpells    | Sphere of Security: Protection from Acid          | Defense     | Protection           |
+| OlvynSpells    | Sphere of Security: Protection from Cold          | Defense     | Protection           |
+| OlvynSpells    | Sphere of Security: Protection from Electricity   | Defense     | Protection           |
+| OlvynSpells    | Sphere of Security: Protection from Fire          | Defense     | Protection           |
+| OlvynSpells    | Sphere of Security: Protection from Petrification | Defense     | Protection           |
+| OlvynSpells    | Sphere of Security: Protection from Poison        | Defense     | Protection           |
+| OlvynSpells    | Gedlee's Electric Barrier                         | Defense     | Damaging Shield      |
+| OlvynSpells    | Protection From Non-Silver Weapons                | Defense     | Physical Immunity    |
+| OlvynSpells    | Antiharm Shell                                    | Defense     | Physical Immunity    |
+| OlvynSpells    | Reflect Attack                                    | Defense     | Physical Immunity    |
+| OlvynSpells    | Ghostform                                         | Defense     | Avoidance            |
+|                |                                                   |             |                      |
+| BG1, BG2, IWD  | Friends                                           | Enhancement | Stat Boost           |
+| IWD(ification) | Expeditious Retreat                               | Enhancement | Movement             |
+| BG1, BG2, IWD  | Find Traps                                        | Enhancement | Detection            |
+| BG1, BG2, IWD  | Draw Upon Holy Might                              | Enhancement | Stat Boost           |
+| BG1, BG2, IWD  | Detect Invisibility                               | Enhancement | Detection            |
+| BG1, BG2, IWD  | Luck                                              | Enhancement | Skill Boost          |
+| BG1, BG2, IWD  | Strength                                          | Enhancement | Stat Boost: Strength |
+| BG1, BG2, IWD  | Vocalize                                          | Enhancement | Casting Boost        |
+| IWD(ification) | Cat's Grace                                       | Enhancement | Stat Boost           |
+| BG1, BG2, IWD  | Strength of One                                   | Enhancement | Stat Boost: Strength |
+| BG1, BG2, IWD  | Non-Detection                                     | Enhancement | Invisibility         |
+| BG1, BG2, IWD  | Improved Invisibility                             | Enhancement | Invisibility         |
+| BG1, BG2, IWD  | True Sight                                        | Enhancement | Detection            |
+| BG1, BG2, IWD  | Shadow Door                                       | Enhancement | Invisibility         |
+| BG1, BG2, IWD  | Wondrous Recall                                   | Enhancement | Recall               |
+| BG1, BG2, IWD  | Wondrous Recall                                   | Enhancement | Recall               |
+| BG2, IWD       | Improved Alacrity                                 | Enhancement | Casting Boost        |
+| OlvynSpells    | Camoflauge                                        | Enhancement | Invisibility         |
+| OlvynSpells    | Legend Lore                                       | Enhancement | Skill Boost          |
+| OlvynSpells    | Extend Vision                                     | Enhancement | Detection            |
+| OlvynSpells    | Perfect Invisibility                              | Enhancement | Invisibility         |
+| OlvynSpells    | Attain Perfection                                 | Enhancement | Stat Boost           |
+| OlvynSpells    | Eclectic Recall                                   | Enhancement | Recall               |
+| OlvynSpells    | Mental Agility                                    | Enhancement | Casting Boost        |
+| OlvynSpells    | Ghostwalk                                         | Enhancement | Movement             |
+| OlvynSpells    | Fly                                               | Enhancement | Movement             |
+|                |                                                   |             |                      |
+| BG1, BG2, IWD  | Bless                                             | Offense     | Damage Boost         |
+| BG1, BG2, IWD  | Aid                                               | Offense     | Damage Boost         |
+| BG1, BG2, IWD  | Chant                                             | Offense     | Damage Boost         |
+| IWD(ification) | Beast Claw                                        | Offense     | Magic Weapon         |
+| IWD(ification) | Decastave                                         | Offense     | Magic Weapon         |
+| IWD(ification) | Moonblade                                         | Offense     | Magic Weapon         |
+| BG1, BG2, IWD  | Holy Power                                        | Offense     | Attack Bonus         |
+| BG1, BG2, IWD  | Cloak of Fear                                     | Offense     | Mental Attack        |
+| BG1, BG2, IWD  | Recitation                                        | Offense     | Attack Bonus         |
+| IWD(ification) | Blood Rage                                        | Offense     | Damage Boost         |
+| BG1, BG2, IWD  | Enchanted Weapon                                  | Offense     | Magic Weapon         |
+| IWD(ification) | Emotion: Courage                                  | Offense     | Damage Boost         |
+| IWD(ification) | Emotion: Hope                                     | Offense     | Damage Boost         |
+| BG1, BG2, IWD  | Champion's Strength                               | Offense     | Attack Bonus         |
+| BG1, BG2, IWD  | Righteous Magic                                   | Offense     | Damage Boost         |
+| IWD(ification) | Animal Rage                                       | Offense     | Extra Effects        |
+| BG1, BG2, IWD  | Righteous Wrath of the Faithful                   | Offense     | Attack Bonus         |
+| BG1, BG2, IWD  | Phantom Blade                                     | Offense     | Magic Weapon         |
+| BG1, BG2, IWD  | Tenser's Transformation                           | Offense     | Damage Boost         |
+| BG1, BG2, IWD  | Improved Haste                                    | Offense     | Haste                |
+| BG1, BG2, IWD  | Nature's Beauty                                   | Offense     | Mental Attack        |
+| OlvynSpells    | Snake's Swiftness                                 | Offense     | Haste                |
+| OlvynSpells    | Searing Smite                                     | Offense     | Extra Effects        |
+| OlvynSpells    | Turning Weapon                                    | Offense     | Extra Effects        |
+| OlvynSpells    | Wind Shots                                        | Offense     | Extra Effects        |
+| OlvynSpells    | Piercing Shots                                    | Offense     | Extra Effects        |
+| OlvynSpells    | True Strike                                       | Offense     | Attack Bonus         |
