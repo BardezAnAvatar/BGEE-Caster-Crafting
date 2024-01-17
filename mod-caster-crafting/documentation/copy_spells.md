@@ -10,11 +10,11 @@ Sorcerers cannot copy spells, since they use magic innately.
 
 Spells to not need to be memorized; they only need to be in a party member's spellbook to be copied.
 
-Cost for copying spells is as follows:
-
 
 
 ## Costs for copying spells
+Cost for copying spells is as follows:
+
 | Level | Gold | Hours |
 | ----- | ---- | ----- |
 | 1     |  25  | 1     |
