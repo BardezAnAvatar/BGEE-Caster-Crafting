@@ -4,6 +4,7 @@
 *Yes, you can make scrolls of arcane AND divine spells with this mod among other things!*
 *Linked image by medli20.*
 
+# Basic Mod Info
 Version: 0.7.3
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
