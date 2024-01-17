@@ -4,6 +4,58 @@ This component will allow any class-based caster to brew the magic they memorize
 ## Base Game potions
 The default state of the mod with no other options, you will be able to brew potions that exist in the base game.
 
+### Base Game Categories
+|                   Potion                 |   Category  |     Sub-Category     |
+| ---------------------------------------- | ----------- | -------------------- |
+| Oil of Fiery Burning                     | Bomb        | Damage               |
+| Potion of Explosions                     | Bomb        | Damage               |
+| Potion of Fire Breath                    | Bomb        | Damage               |
+| ---------------------------------------- | ----------- | -------------------- |
+| Potion of Healing                        | Cure        | Healing              |
+| Potion of Extra Healing                  | Cure        | Healing              |
+| Potion of Superior Healing               | Cure        | Healing              |
+| Elixer of Health                         | Cure        | Restorative          |
+| Andidote                                 | Cure        | Restorative          |
+| Potion of Regeneration                   | Cure        | Regeneration         |
+| ---------------------------------------- | ----------- | -------------------- |
+| Potion of Invulnerability                | Defense     | Armor                |
+| Potion of Defense                        | Defense     | Armor                |
+| Potion of Stone Form                     | Defense     | Armor                |
+| Potion of Magic Shielding                | Defense     | Damage Resistance    |
+| Potion of Fire Resistance                | Defense     | Energy Resistance    |
+| Potion of Absorption                     | Defense     | Energy Resistance    |
+| Protection from Cold                     | Defense     | Energy Resistance    |
+| Potion of Insulation                     | Defense     | Energy Resistance    |
+| Potion of Magic Protection               | Defense     | Magic Resistance     |
+| Potion of Clarity                        | Defense     | Mental Defense       |
+| Potion of Magic Blocking                 | Defense     | Spell Immunity       |
+| Potion of Mirrored Eyes                  | Defense     | Status Immunity      |
+| Potion of Free Action                    | Defense     | Status Immunity      |
+| ---------------------------------------- | ----------- | -------------------- |
+| Potion of Infravision                    | Enhancement | Detection            |
+| Potion of Invisibility                   | Enhancement | Invisibility         |
+| Potion of Master Thievery                | Enhancement | Skill Boost          |
+| Potion of Perception                     | Enhancement | Skill Boost          |
+| Potion of Power                          | Enhancement | Skill Boost          |
+| Potion of Mind Focusing                  | Enhancement | Stat Boost           |
+| Potion of Agility (18)                   | Enhancement | Stat Boost           |
+| Potion of Fortitude (18)                 | Enhancement | Stat Boost           |
+| Potion of Genius (18)                    | Enhancement | Stat Boost           |
+| Potion of Insight (18)                   | Enhancement | Stat Boost           |
+| Potion of Persuasiveness                 | Enhancement | Stat Boost           |
+| Potion of Strength (18)                  | Enhancement | Stat Boost: Strength |
+| Potion of Hill Giant Strength (19)       | Enhancement | Stat Boost: Strength |
+| Potion of Stone Giant Strength (20)      | Enhancement | Stat Boost: Strength |
+| Potion of Frost Giant Strength (21)      | Enhancement | Stat Boost: Strength |
+| Potion of Fire Giant Strength (22)       | Enhancement | Stat Boost: Strength |
+| Potion of Cloud Giant Strength (23)      | Enhancement | Stat Boost: Strength |
+| Potion of Storm Giant Strength (24)      | Enhancement | Stat Boost: Strength |
+| ---------------------------------------- | ----------- | -------------------- |
+| Potion of Heroism                        | Offense     | Attack Bonus         |
+| Oil of Speed                             | Offense     | Haste                |
+| ---------------------------------------- | ----------- | -------------------- |
+
+
 ### Base Game Recipes
 | Game(s)/Mods  |                   Potion                 |                                         Recipe                                     | Req. Caster Level | Yield | Hours |
 | ------------- | ---------------------------------------- | ---------------------------------------------------------------------------------- | ----------------- | ----- | ----- |
