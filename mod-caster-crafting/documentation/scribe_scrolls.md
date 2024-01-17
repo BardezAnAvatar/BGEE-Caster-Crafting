@@ -32,6 +32,7 @@ powerful spell circle, that you will fail and receive a cursed scroll instead:
 | Level        |  Failure % |
 | ------------ |  --------- |
 | Protection   |     20     |
+| ------------ |  --------- |
 | Arcane  1    |      5     |
 | Arcane  2    |     10     |
 | Arcane  3    |     15     |
@@ -42,6 +43,7 @@ powerful spell circle, that you will fail and receive a cursed scroll instead:
 | Arcane  8    |     40     |
 | Arcane  9    |     45     |
 | Arcane 10    |     50     |
+| ------------ |  --------- |
 | Priest  1    |      5     |
 | Priest  2    |     10     |
 | Priest  3    |     15     |
