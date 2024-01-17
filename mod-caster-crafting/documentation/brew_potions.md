@@ -50,6 +50,7 @@ The default state of the mod with no other options, you will be able to brew pot
 |  BG1, BG2, IWD | Potion of Free Action                    | Defense     | Status Immunity      |
 |                |                                          |             |                      |
 |  BG1, BG2, IWD | Potion of Infravision                    | Enhancement | Detection            |
+|  BG2           | Potion of Clairvoyance                   | Enhancement | Detection            |
 |  BG1, BG2, IWD | Potion of Invisibility                   | Enhancement | Invisibility         |
 |  BG1, BG2, IWD | Potion of Master Thievery                | Enhancement | Skill Boost          |
 |  BG1, BG2, IWD | Potion of Perception                     | Enhancement | Skill Boost          |
@@ -59,7 +60,7 @@ The default state of the mod with no other options, you will be able to brew pot
 |  BG1, BG2, IWD | Potion of Fortitude (18)                 | Enhancement | Stat Boost           |
 |  BG1, BG2, IWD | Potion of Genius (18)                    | Enhancement | Stat Boost           |
 |  BG1, BG2, IWD | Potion of Insight (18)                   | Enhancement | Stat Boost           |
-|  BG1, BG2, IWD | Potion of Persuasiveness                 | Enhancement | Stat Boost           |
+|  BG1           | Potion of Persuasiveness                 | Enhancement | Stat Boost           |
 |  BG1, BG2, IWD | Potion of Strength (18)                  | Enhancement | Stat Boost: Strength |
 |  BG1, BG2, IWD | Potion of Hill Giant Strength (19)       | Enhancement | Stat Boost: Strength |
 |  BG1, BG2, IWD | Potion of Stone Giant Strength (20)      | Enhancement | Stat Boost: Strength |
