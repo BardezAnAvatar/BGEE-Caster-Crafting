@@ -14,6 +14,22 @@ Cost for copying spells is as follows:
 
 
 
+## Costs for copying spells
+| Level | Gold | Hours |
+| ----- | ---- | ----- |
+| 1     |  25  | 1     |
+| 2     |  50  | 2     |
+| 3     |  75  | 3     |
+| 4     | 125  | 4     |
+| 5     | 250  | 8     |
+| 6     | 500  | 12    |
+| 7     | 750  | 24    |
+| 8     |1000  | 48    |
+| 9     |1250  | 72    |
+| 10    |5000  | 144   |
+
+
+
 ## Process
 1. Purchase scribing tools from a spell shop.
 1. Identify the item
