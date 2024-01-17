@@ -75,7 +75,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN08-4~,         ~POTN08~,   ~11~,  ~SPPR607~,                   ~6~, ~0~,  ~2~ => ~POTN08~   //Potion of Healing;                      `Heal` Priest Spell
         ~POTN08-5~,         ~POTN08~,   ~14~,  ~SPPR713~,                   ~6~, ~0~,  ~2~ => ~POTN08~   //Potion of Healing;                      `Greater Restoration` Priest Spell
         ~POTN08-6~,         ~POTN08~,    ~0~,  ~SPIN101~,                   ~1~, ~0~,  ~2~ => ~POTN08~   //Potion of Healing;                      `Cure Light Wounds` Innate ability
-      //~POTN08-BHAAL~,     ~POTN17~,    ~0~,  ~BHAAL1A~,                   ~5~, ~0~,  ~4~ => ~POTN08~   //Potion of Healing;                      `Mass Healing` Bhaalspawn ability
+        ~POTN08-BHAAL~,     ~POTN17~,    ~0~,  ~BHAAL1A~,                   ~5~, ~0~,  ~4~ => ~POTN08~   //Potion of Healing;                      `Mass Healing` Bhaalspawn ability
 
         ~POTN09-0~,         ~POTN09~,   ~12~,  ~SPWI603~,                   ~1~, ~0~, ~48~ => ~POTN09~   //Potion of Heroism;                      `Tenser's Transformation` Wizard Spell
         ~POTN09-1~,         ~POTN09~,    ~7~,  ~SPPR412~,                   ~1~, ~0~, ~48~ => ~POTN09~   //Potion of Heroism;                      `Holy Power` Priest Spell
@@ -101,7 +101,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN17-P404~,      ~POTN17~,    ~7~,  ~SPPR404~,                   ~1~, ~0~,  ~4~ => ~POTN17~   //Elixer of Health;                       `Neutralize Poison` Priest spell
         ~POTN17-1~,         ~POTN17~,   ~11~,  ~SPPR607~,                   ~3~, ~0~,  ~4~ => ~POTN17~   //Elixer of Health;                       `Heal` Priest spell
         ~POTN17-2~,         ~POTN17~,   ~14~,  ~SPPR713~,                   ~4~, ~0~,  ~4~ => ~POTN17~   //Elixer of Health;                       `Greater Restoration` Priest spell
-      //~POTN17-BHAAL~,     ~POTN17~,    ~0~,  ~BHAAL1A~,                   ~5~, ~0~,  ~4~ => ~POTN17~   //Elixer of Health;                       `Mass Healing` Bhaalspawn ability
+        ~POTN17-BHAAL~,     ~POTN17~,    ~0~,  ~BHAAL1A~,                   ~5~, ~0~,  ~4~ => ~POTN17~   //Elixer of Health;                       `Mass Healing` Bhaalspawn ability
 
         ~POTN18-0~,         ~POTN18~,    ~9~,  ~SPWI512,SPWI511~,           ~1~, ~0~,  ~8~ => ~POTN18~   //Potion of Absorption;                   `Protection from Electricity` and `Protection from Normal Weapons` Wizard spells
         ~POTN18-1~,         ~POTN18~,   ~14~,  ~SPWI702,SPWI511~,           ~1~, ~0~,  ~8~ => ~POTN18~   //Potion of Absorption;                   `Protection from the Elements` and `Protection from Normal Weapons` Wizard spells
@@ -118,7 +118,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~POTN20-2~,         ~POTN20~,   ~14~,  ~SPPR713~,                   ~4~, ~0~,  ~4~ => ~POTN20~   //Andidote;                               `Greater Restoration` Priest spell
         ~POTN20-3~,         ~POTN20~,    ~3~,  ~SPPR212~,                   ~1~, ~0~,  ~4~ => ~POTN20~   //Andidote;                               `Slow Poison` Priest spell
         ~POTN20-4~,         ~POTN20~,    ~0~,  ~SPIN102~,                   ~1~, ~0~,  ~4~ => ~POTN20~   //Andidote;                               `Slow Poison` Innate ability
-      //~POTN20-BHAAL~,     ~POTN20~,    ~0~,  ~BHAAL1A~,                   ~5~, ~0~,  ~4~ => ~POTN20~   //Andidote;                               `Mass Healing` Bhaalspawn ability
+        ~POTN20-BHAAL~,     ~POTN20~,    ~0~,  ~BHAAL1A~,                   ~5~, ~0~,  ~4~ => ~POTN20~   //Andidote;                               `Mass Healing` Bhaalspawn ability
 
         ~POTN21-0~,         ~POTN21~,    ~5~,  ~SPPR350~,                   ~2~, ~0~,  ~6~ => ~POTN21~   //Potion of Clarity;                      `Spiritual Clarity` Priest spell
         ~POTN21-1~,         ~POTN21~,    ~9~,  ~SPPR508~,                   ~1~, ~0~,  ~6~ => ~POTN21~   //Potion of Clarity;                      `Chaotic Commands` Priest spell
