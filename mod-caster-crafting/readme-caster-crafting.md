@@ -67,7 +67,7 @@ This is a dialog-able item, through which the party member holding the item can 
 and/or scribe scrolls. It is added to varrious stores around magic, libraries, and the ilk.
 
 #### Options
-##### Copy Spells
+##### [Copy Spells](./documentation/copy_spells.md)
 This component will allow any spellbook-based caster to copy spells from another spellbook-based caster;
 that would be bards and wizards in 2E. Spells' exclusion flags are honored, so Bards shouldn't get wild mage spells,
 and opposition schools should not be copyable to forbidden kits.
