@@ -95,7 +95,7 @@ I am using the `BZ` prefix for my items.  It is registered at [Black Wyrm Lair](
 | Splitting out shared BAMs into Arcane and Priest variants   |  0.7.3  |
 
 ## Dedication
-This mod is dedicated to my wife, Shannon; my daughters Evelyn, Madelyn, and Elliana. These are my support in my daily life.
+This mod is dedicated to my wife, Shannon, and to my daughters Evelyn, Madelyn, and Elliana. These are my support in my daily life.
 I'm up after hours working on this while they all sleep, and _maybe_ doing fewer chores than I otherwise should, so I thank
 them for tolerating my hobby.
 
