@@ -8,6 +8,8 @@ This component will allow any class-based caster to brew the magic they memorize
    1. [Base Game Categories](#base-game-categories)
    1. [Base Game Recipes](#base-game-recipes)
 1. [New Potions](#new-potions)
+   1. [New Potions Categories](#new-potions-categories)
+   1. [New Potions Recipes](#new-potions-recipes)
 
 
 
