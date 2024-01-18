@@ -118,7 +118,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPIKE_GROWTH~,                             ~BZ#I805~, ~SPPR324~,  ~5~,  ~1~ => "Spike Growth"
 
         ~CURE_SERIOUS_WOUNDS~,                      ~BZ#1607~, ~SPPR401~,  ~7~,  ~1~ => "Cure Serious Wounds"
-        ~CURE_SERIOUS_WOUNDS_SPPR507~,              ~BZ#1607~, ~SPPR507~,  ~9~,  ~2~ => "Cure Serious Wounds"
+        ~CURE_SERIOUS_WOUNDS_SPPR507~,              ~BZ#1607~, ~SPPR502~,  ~9~,  ~2~ => "Cure Serious Wounds"
         ~CURE_SERIOUS_WOUNDS_SPPR607~,              ~BZ#1607~, ~SPP6507~, ~11~,  ~3~ => "Cure Serious Wounds"
         ~CURE_SERIOUS_WOUNDS_SPPR713~,              ~BZ#1607~, ~SPPR713~, ~14~,  ~3~ => "Cure Serious Wounds"
         ~FREE_ACTION~,                              ~BZ#1707~, ~SPPR403~,  ~7~,  ~1~ => "Free Action"
@@ -188,8 +188,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPELL_DEFLECTION~,                         ~BZ#2F12~, ~SPWI618~, ~12~,  ~1~ => "Spell Deflection"
         ~SPELL_DEFLECTION_SPPR701~,                 ~BZ#2F12~, ~SPPR701~, ~14~,  ~1~ => "Spell Deflection"
         ~ENTROPY_SHIELD~,                           ~BZ#IJ11~, ~SPPR615~, ~11~,  ~1~ => "Entropy Shield"
-        ~ANTIMAGIC_SHELL~,                          ~BZ#IK11~, ~SPWI610~, ~12~,  ~1~ => "Antimagic Shell"
-        ~TROLLISH_FORTITUDE~,                       ~BZ#IL11~, ~SPWI632~, ~12~,  ~1~ => "Trollish Fortitude"
+        ~ANTIMAGIC_SHELL~,                          ~BZ#IK12~, ~SPWI610~, ~12~,  ~1~ => "Antimagic Shell"
+        ~TROLLISH_FORTITUDE~,                       ~BZ#IL12~, ~SPWI632~, ~12~,  ~1~ => "Trollish Fortitude"
 
         ~NATURE'S_BEAUTY~,                          ~BZ#2G14~, ~SPPR704~, ~14~,  ~1~ => "Nature's Beauty"
         ~GREATER_RESTORATION~,                      ~BZ#2H14~, ~SPPR713~, ~14~,  ~1~ => "Greater Restoration"

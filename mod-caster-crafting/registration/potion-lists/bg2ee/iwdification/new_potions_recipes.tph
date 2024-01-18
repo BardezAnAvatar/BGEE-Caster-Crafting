@@ -43,8 +43,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~ENTROPY_SHIELD~,                           ~BZ#IJ11~, ~CLERIC_ENTROPY_SHIELD~,                     ~11~,  ~1~ => "Entropy Shield"
-        ~ANTIMAGIC_SHELL~,                          ~BZ#IK11~, ~WIZARD_ANTIMAGIC_SHELL~,                    ~12~,  ~1~ => "Antimagic Shell"
-        ~TROLLISH_FORTITUDE~,                       ~BZ#IL11~, ~WIZARD_TROLLISH_FORTITUDE~,                 ~12~,  ~1~ => "Trollish Fortitude"
+        ~ANTIMAGIC_SHELL~,                          ~BZ#IK12~, ~WIZARD_ANTIMAGIC_SHELL~,                    ~12~,  ~1~ => "Antimagic Shell"
+        ~TROLLISH_FORTITUDE~,                       ~BZ#IL12~, ~WIZARD_TROLLISH_FORTITUDE~,                 ~12~,  ~1~ => "Trollish Fortitude"
 
 
         ~IMPERVIOUS_SANCTITY_OF_THE_MIND~,          ~BZ#IM14~, ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~,        ~14~,  ~1~ => "Impervious Sanctity of Mind"
