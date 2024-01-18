@@ -210,7 +210,7 @@ ClearAllActions()
 StartCutSceneMode()
 StartCutScene("BZCTWRIT")~
                 EXIT
-                    ~~~~~
+                        ~~~~~
                 END
             END
 
