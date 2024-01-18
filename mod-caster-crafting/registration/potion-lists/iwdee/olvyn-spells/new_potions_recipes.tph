@@ -48,7 +48,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CHAIN_LIGHTNING_MEWI965~,                  ~BZ#2E12~, ~MEWI965~, ~18~,  ~3~ => "Chain Lightning"
 
 
-        ~COLOSSAL_GROWTH~,                          ~BZ#OR18~, ~MEPR754~, ~15~,  ~1~ => "Colossal Growth"
+        ~COLOSSAL_GROWTH~,                          ~BZ#OR15~, ~MEPR754~, ~15~,  ~1~ => "Colossal Growth"
     END
 
 
