@@ -515,3 +515,335 @@ All new potions will be pulled in for crafting if that component is installed.
 | BG1, BG2, IWD  | Phantom Blade                                     | Offense     | Magic Weapon         |
 | BG1, BG2, IWD  | Cloak of Fear                                     | Offense     | Mental Attack        |
 | BG1, BG2, IWD  | Nature's Beauty                                   | Offense     | Mental Attack        |
+
+
+
+### New Potions Recipes
+|  Game(s)/Mods  |                     Potion                     |                        Recipe                     | Req. Caster Level | Yield | Hours |
+| -------------- |  --------------------------------------------- | ------------------------------------------------- | ----------------- | ----- | ----- |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Bless                                | Bless                                             |               1   |    1  |    4  |
+| BG1, BG2, IWD  | Potion of Bless                                | Aid                                               |               1   |    1  |    4  |
+| BG1, BG2, IWD  | Potion of Bless                                | Prayer                                            |               1   |    2  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Bomb of Entangle                               | Entangle                                          |               1   |    1  |    6  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Philter of Resist Fear                         | Resist Fear                                       |               3   |    1  |    8  |
+| BG1, BG2, IWD  | Philter of Resist Fear                         | Remove Fear                                       |               1   |    1  |    8  |
+| BG1, BG2, IWD  | Philter of Resist Fear                         | Remove Fear (SPCL222)                             |               1   |    1  |    8  |
+| IWD(ification) | Philter of Resist Fear                         | Impervious Sanctity of Mind                       |               1   |    3  |    8  |
+| BG1, BG2, IWD  | Philter of Resist Fear                         | Mind Blank                                        |               3   |    5  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Sanctuary                            | Sanctuary                                         |               1   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Armor of Faith                          | Armor of Faith                                    |               1   |    1  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Spirit Ward                          | Spirit Ward                                       |               1   |    1  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Grease Bomb                                    | Grease                                            |               1   |    1  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Potion of Armor                                | Spirit Armor (Shaman)                             |               7   |    3  |    4  |
+| BG1, BG2, IWD  | Potion of Armor                                | Armor                                             |               1   |    1  |    4  |
+| BG1, BG2, IWD  | Potion of Armor                                | Ghost Armor                                       |               5   |    2  |    4  |
+| BG1, BG2, IWD  | Potion of Armor                                | Spirit Armor                                      |               7   |    3  |    4  |
+| IWD(ification) | Potion of Armor                                | Entropy Shield                                    |              11   |    4  |    4  |
+| BG1, BG2, IWD  | Potion of Armor                                | Barkskin                                          |               1   |    1  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Friends                              | Friends                                           |               1   |    1  |    4  |
+| OlvynSpells    | Potion of Friends                              | Attain Perfection                                 |              18   |    5  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Protection From Petrification        | Protection From Petrification                     |               1   |    1  |    4  |
+| BG1, BG2, IWD  | Potion of Protection From Petrification        | Favored of the Spirits                            |              14   |    1  |    4  |
+| BG1, BG2, IWD  | Potion of Protection From Petrification        | Mind Blank                                        |              16   |    5  |    4  |
+| BG1, BG2, IWD  | Potion of Protection From Petrification        | Iron Body                                         |              16   |    3  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Protection From Evil                 | Protection From Evil (Arcane)                     |               1   |    1  |    2  |
+| BG1, BG2, IWD  | Potion of Protection From Evil                 | Protection From Evil (Priest)                     |               1   |    1  |    2  |
+| BG1, BG2, IWD  | Potion of Protection From Evil                 | Protection From Evil (SPCL213)                    |               1   |    1  |    2  |
+| BG1, BG2, IWD  | Potion of Protection From Evil                 | Protection From Evil, 10' Radius (SPCL233)        |               1   |    4  |    2  |
+| BG1, BG2, IWD  | Potion of Protection From Evil                 | Protection From Evil, 10' Radius                  |               7   |    4  |    2  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Shield                                  | Shield                                            |               1   |    1  |    4  |
+| IWD(ification) | Oil of Shield                                  | Entropy Shield                                    |               1   |    3  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Sleep Bomb                                     | Sleep                                             |               1   |    1  |    4  |
+| BG1, BG2, IWD  | Sleep Bomb                                     | Stinking Cloud                                    |               3   |    2  |    4  |
+| BG1, BG2, IWD  | Sleep Bomb                                     | Emotion, Hopelessness                             |               7   |    3  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Aid                                  | Aid                                               |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Barkskin                                | Barkskin                                          |               3   |    1  |    8  |
+| IWD(ification) | Oil of Barkskin                                | Entropy Shield                                    |               3   |    2  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Chant                                | Chant                                             |               3   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Philter of Find Traps                          | Find Traps                                        |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Resist Fire and Cold                 | Resist Fire and Cold                              |               3   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Draught of Draw Upon Holy Might                | Draw Upon Holy Might                              |               3   |    1  |   10  |
+| BG1, BG2, IWD  | Draught of Draw Upon Holy Might                | Draw Upon Holy Might (SPIN103)                    |               1   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Writhing Fog Bomb                              | Writhing Fog                                      |               3   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Blur                                    | Blur                                              |               3   |    1  |    8  |
+| BG1, BG2, IWD  | Oil of Blur                                    | Blur (SPDM103)                                    |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Detect Invisibility                  | Detect Invisibility                               |               3   |    1  |    6  |
+| BG1, BG2, IWD  | Potion of Detect Invisibility                  | True Seeing                                       |               3   |    3  |    6  |
+| BG1, BG2, IWD  | Potion of Detect Invisibility                  | True Sight                                        |               3   |    3  |    6  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Knock                                   | Knock                                             |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Luck                                 | Luck                                              |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Mirror Image                            | Mirror Image                                      |               3   |    1  |    8  |
+| BG1, BG2, IWD  | Oil of Mirror Image                            | Mirror Image (SPDM106)                            |               1   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Bomb of Stinking Cloud                         | Stinking Cloud                                    |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Potion of Strength                             | Attain Perfection                                 |              18   |    3  |    8  |
+| BG1, BG2, IWD  | Potion of Strength                             | Strength                                          |               3   |    1  |    8  |
+| BG1, BG2, IWD  | Potion of Strength                             | Holy Power                                        |               7   |    1  |    8  |
+| BG1, BG2, IWD  | Potion of Strength                             | Champion's Strength                               |               9   |    2  |    8  |
+| BG1, BG2, IWD  | Potion of Strength                             | Righteous Magic                                   |               9   |    2  |    8  |
+| BG1, BG2, IWD  | Potion of Strength                             | Iron Body                                         |              16   |    3  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Web Bomb                                       | Web                                               |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Draught of Vocalize                            | Vocalize                                          |               3   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Dispelling Grenade                             | True Dispel                                       |              14   |    3  |   24  |
+| BG1, BG2, IWD  | Dispelling Grenade                             | Dispel Magic (Priest)                             |               5   |    1  |   24  |
+| BG1, BG2, IWD  | Dispelling Grenade                             | Dispel Magic (Arcane)                             |               5   |    1  |   24  |
+| BG1, BG2, IWD  | Dispelling Grenade                             | Dispel Magic (SPCL231)                            |               1   |    1  |   24  |
+| BG1, BG2, IWD  | Dispelling Grenade                             | Dispel Magic (SPIN112)                            |               1   |    1  |   24  |
+| BG1, BG2, IWD  | Dispelling Grenade                             | Remove Magic                                      |               1   |    1  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Potion of Protection From Fire                 | Protection From The Elements (Priest)             |               9   |    2  |   24  |
+| BG1, BG2, IWD  | Potion of Protection From Fire                 | Protection From Fire (Arcane)                     |               5   |    1  |   10  |
+| BG1, BG2, IWD  | Potion of Protection From Fire                 | Protection From Fire (Priest)                     |               5   |    1  |   10  |
+| BG1, BG2, IWD  | Potion of Protection From Fire                 | Storm Shield                                      |               1   |    1  |   10  |
+| BG1, BG2, IWD  | Potion of Protection From Fire                 | Protection From The Elements                      |              14   |    3  |   10  |
+| BG1, BG2, IWD  | Potion of Protection From Fire                 | Protection From Energy                            |              16   |    3  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Draught of Remove Curse                        | Remove Curse (Priest)                             |               5   |    1  |   10  |
+| BG1, BG2, IWD  | Draught of Remove Curse                        | Remove Curse (Arcane)                             |               7   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Phial of Strength of One                       | Strength of One                                   |               5   |    1  |   12  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Medium Healing                       | Cure Medium Wounds                                |               5   |    1  |   10  |
+| BG1, BG2, IWD  | Potion of Medium Healing                       | Cure Critical Wounds                              |               9   |    2  |   10  |
+| BG1, BG2, IWD  | Potion of Medium Healing                       | Heal                                              |              11   |    4  |   10  |
+| BG1, BG2, IWD  | Potion of Medium Healing                       | Greater Restoration                               |              14   |    4  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Cure Disease                         | Cure Disease                                      |               5   |    1  |   12  |
+| BG1, BG2, IWD  | Potion of Cure Disease                         | Heal                                              |              11   |    2  |   12  |
+| BG1, BG2, IWD  | Potion of Cure Disease                         | Greater Restoration                               |              14   |    2  |   12  |
+| BG2            | Potion of Cure Disease                         | Mass Healing (BHAAL1A)                            |               1   |    2  |   12  |
+| BG1, BG2, IWD  | Potion of Cure Disease                         | Neutralize Poison                                 |               7   |    2  |   12  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Bottled Sweet Air                              | Zone of Sweet Air                                 |               5   |    1  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Non-Detection                        | Non-Detection                                     |               5   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Protection From Normal Missiles         | Protection From Normal Missiles                   |               5   |    1  |   10  |
+| BG1, BG2, IWD  | Oil of Protection From Normal Missiles         | Protection From Normal Missiles (Ranger)          |               5   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Wraithform                           | Wraithform                                        |               5   |    1  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Ghost Armor                             | Ghost Armor                                       |               5   |    1  |   10  |
+| BG1, BG2, IWD  | Oil of Ghost Armor                             | Spirit Armor                                      |               7   |    2  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Protection From Cold                 | Protection From Cold                              |               5   |    1  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Modest Healing                       | Cure Serious Wounds                               |               7   |    1  |   24  |
+| BG1, BG2, IWD  | Potion of Modest Healing                       | Cure Critical Wounds                              |               9   |    2  |   24  |
+| BG1, BG2, IWD  | Potion of Modest Healing                       | Heal                                              |              11   |    3  |   24  |
+| BG1, BG2, IWD  | Potion of Modest Healing                       | Greater Restoration                               |              14   |    3  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Philter of Free Action                         | Free Action                                       |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Draught of Death Ward                          | Death Ward                                        |               7   |    1  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Holy Power                           | Holy Power                                        |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Philter of Negative Plane Protection           | Negative Plane Protection                         |               7   |    1  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Phial of Fear                                  | Cloak of Fear                                     |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Lesser Restoration                   | Lesser Restoration                                |               7   |    1  |   24  |
+| BG1, BG2, IWD  | Potion of Lesser Restoration                   | Greater Restoration                               |              14   |    2  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Bomb of Spirit Fire                            | Spirit Fire                                       |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Blue Fireshield                         | Fireshield (Blue)                                 |               7   |    1  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Improved Invisibility                | Improved Invisibility                             |               7   |    1  |   48  |
+| BG1, BG2, IWD  | Potion of Improved Invisibility                | Shadow Door                                       |               9   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Minor Invulnerability Globe             | Minor Globe of Invulnerability                    |               7   |    1  |   48  |
+| BG1, BG2, IWD  | Oil of Minor Invulnerability Globe             | Globe of Invulnerability                          |              12   |    2  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Stoneskin                            | Stoneskin                                         |               7   |    1  |   48  |
+| BG1, BG2, IWD  | Potion of Stoneskin                            | Iron Skins                                        |               9   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Bomb of Greater Malison                        | Greater Malison                                   |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Flask of Otiluke's Resilient Sphere            | Otiluke's Resilient Sphere                        |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Oil of Spirit Armor                            | Spirit Armor (Shaman)                             |               7   |    1  |   24  |
+| BG1, BG2, IWD  | Oil of Spirit Armor                            | Spirit Armor                                      |               7   |    1  |   24  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Enchanted Weapon                        | Enchanted Weapon                                  |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Red Fireshield                          | Fireshield (Red)                                  |               7   |    1  |   48  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Philter of True Sight                          | True Sight (Priest)                               |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Philter of True Sight                          | True Sight (Arcane)                               |              12   |    1  |   96  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Champion's Strength                  | Champion's Strength                               |               9   |    1  |  168  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Concotion of Chaotic Commands                  | Chaotic Commands                                  |               9   |    1  |   72  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Righteous Magic                      | Righteous Magic                                   |               9   |    1  |   96  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Shadow Door                          | Shadow Door                                       |               9   |    1  |   72  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Immunity to Abjuration               | Spell Immunity: Abjuration                        |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Potion of Immunity to Alteration               | Spell Immunity: Alteration                        |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Potion of Immunity to Conjuration              | Spell Immunity: Conjuration                       |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Potion of Immunity to Divination               | Spell Immunity: Divination                        |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Potion of Immunity to Enchantment              | Spell Immunity: Enchantment                       |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Potion of Immunity to Evocation                | Spell Immunity: Evocation                         |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Potion of Immunity to Illusion                 | Spell Immunity: Illusion                          |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Potion of Immunity to Necromancy               | Spell Immunity: Necromancy                        |               9   |    1  |   96  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Protection From Normal Weapons       | Protection From Normal Weapons                    |               9   |    1  |   96  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Protection From Electricity          | Protection From Electricity                       |               9   |    1  |   72  |
+| BG1, BG2, IWD  | Potion of Protection From Electricity          | Protection From Lightning                         |               7   |    1  |   72  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Protection From Acid                 | Protection From Acid                              |               9   |    1  |   72  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Phantom Blade                           | Phantom Blade                                     |               9   |    1  |   96  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Minor Spell Turning                     | Minor Spell Turning                               |               9   |    1  |   96  |
+| BG1, BG2, IWD  | Oil of Minor Spell Turning                     | Spell Turning                                     |              14   |    2  |   96  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Tonic of Heal                                  | Heal                                              |              11   |    1  |  144  |
+| BG1, BG2, IWD  | Tonic of Heal                                  | Greater Restoration                               |              14   |    2  |  144  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Wondrous Divine Recall               | Wondrous Recall                                   |              11   |    1  |  144  |
+| BG1, BG2, IWD  | Potion of Wondrous Arcane Recall               | Wondrous Recall                                   |              11   |    1  |  144  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Invulnerability Globe                   | Globe of Invulnerability                          |              12   |    1  |  144  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Tincture of Tenser's Transformation            | Tenser's Transformation                           |              12   |    1  |  240  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Philter of Protection From Magic Energy        | Antiharm Shell                                    |              11   |    1  |  156  |
+| BG1, BG2, IWD  | Philter of Protection From Magic Energy        | Protection From Magic Energy                      |              12   |    1  |  156  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Potion of Protection From Magical Weapons      | Protection From Magical Weapons                   |              12   |    1  |  144  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Elixir of Improved Haste                       | Improved Haste                                    |              12   |    1  |  144  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Death Fog Bomb                                 | Death Fog                                         |              12   |    1  |  144  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Bottled Lightning                              | Rampant Lightning                                 |              18   |    3  |  144  |
+| BG1, BG2, IWD  | Bottled Lightning                              | Chain Lightning                                   |              12   |    1  |  144  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Oil of Spell Deflection                        | Spell Deflection                                  |              12   |    1  |  156  |
+| BG1, BG2, IWD  | Oil of Spell Deflection                        | Shield of the Archons                             |              14   |    1  |  156  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Balm of Nature's Beauty                        | Nature's Beauty                                   |              14   |    1  |  168  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Phial of Greater Restoration                   | Greater Restoration                               |              14   |    1  |  168  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Draught of Spell Turning                       | Spell Turning                                     |              14   |    1  |  168  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Philter of Protection From The Elements        | Protection From The Elements (Priest)             |               9   |    1  |  156  |
+| BG1, BG2, IWD  | Philter of Protection From The Elements        | Protection From The Elements                      |              14   |    1  |  156  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Mixture of Mantle                              | Mantle                                            |              14   |    1  |  168  |
+| BG1, BG2, IWD  | Mixture of Mantle                              | Improved Mantle                                   |              16   |    2  |  168  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Elixir of Protection From Energy               | Protection From Energy                            |              16   |    1  |  180  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Mixture of Improved Mantle                     | Improved Mantle                                   |              16   |    1  |  192  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Draught of Spell Trap                          | Spell Trap                                        |              18   |    1  |  216  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Tincture of Absolute Immunity                  | Absolute Immunity                                 |              18   |    1  |  240  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Philter of Improved Alacrity                   | Improved Alacrity                                 |              18   |    1  |  240  |
+|                |                                                |                                                   |                   |       |       |
+| BG1, BG2, IWD  | Aura of Flaming Death Mixture                  | Aura of Flaming Death                             |              15   |    1  |  192  |
+|                |                                                |                                                   |                   |       |       |
+| IWD(ification) | Oil of Expeditious Retreat                     | Expeditious Retreat                               |               1   |    1  |    4  |
+|                |                                                |                                                   |                   |       |       |
+| IWD(ification) | Potion of Beast Claw                           | Beast Claw                                        |               3   |    1  |   10  |
+| IWD(ification) | Potion of Cat's Grace                          | Cat's Grace                                       |               3   |    1  |    8  |
+| IWD(ification) | Potion of Moderate Healing                     | Cure Moderate Wounds                              |               3   |    1  |    6  |
+| IWD(ification) | Oil of Decastave                               | Decastave                                         |               3   |    1  |    6  |
+| IWD(ification) | Bomb of Snilloc's Snowball Swarm               | Snilloc's Snowball Swarm                          |               3   |    1  |    6  |
+|                |                                                |                                                   |                   |       |       |
+| IWD(ification) | Potion of Exaltation                           | Exaltation                                        |               5   |    1  |   10  |
+| IWD(ification) | Potion of Exaltation                           | Impervious Sanctity of Mind                       |               5   |    3  |   10  |
+|                |                                                |                                                   |                   |       |       |
+| IWD(ification) | Oil of Moonblade                               | Moonblade                                         |               5   |    1  |   24  |
+| IWD(ification) | Bomb of Spike Growth                           | Spike Growth                                      |               5   |    1  |   12  |
+| IWD(ification) | Potion of Recitation                           | Recitation                                        |               7   |    1  |   48  |
+| IWD(ification) | Potion of Blood Rage                           | Blood Rage                                        |               7   |    1  |   48  |
+| IWD(ification) | Bomb of Pestilence                             | Cloud of Pestilence                               |               7   |    1  |   48  |
+| IWD(ification) | Potion of Courage                              | Emotion: Courage                                  |               7   |    1  |   48  |
+| IWD(ification) | Potion of Hope                                 | Emotion: Hope                                     |               7   |    1  |   48  |
+| IWD(ification) | Tonic of Unfailing Endurance                   | Unfailing Endurance                               |               7   |    1  |   48  |
+| IWD(ification) | Potion of Animal Rage                          | Animal Rage                                       |               9   |    1  |   72  |
+| IWD(ification) | Potion of Righteous Wrath of the Faithful      | Righteous Wrath of the Faithful                   |               9   |    1  |   72  |
+| IWD(ification) | Potion of Shield of Lathander                  | Shield of Lathander                               |               9   |    1  |   72  |
+| IWD(ification) | Bomb of Spike Stones                           | Spike Stones                                      |               9   |    1  |   96  |
+| IWD(ification) | Extract of Entropy Shield                      | Entropy Shield                                    |              11   |    1  |  144  |
+| IWD(ification) | Potion of Antimagic Shell                      | Antimagic Shell                                   |              12   |    1  |  144  |
+| IWD(ification) | Potion of Trollish Fortitude                   | Trollish Fortitude                                |              12   |    1  |   96  |
+| IWD(ification) | Potion of Impervious Sanctity of Mind          | Impervious Sanctity of Mind                       |              14   |    1  |   96  |
+| IWD(ification) | Potion of Greater Shield of Lathander          | Greater Shield of Lathander                       |              14   |    1  |  168  |
+| IWD(ification) | Bottle of Eldath's Mist                        | Mist of Eldath                                    |              14   |    1  |  156  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Oil of Snake's Swiftness                       | Snake's Swiftness                                 |               1   |    1  |    6  |
+| OlvynSpells    | Oil of Searing Smite                           | Searing Smite                                     |               1   |    1  |    8  |
+| OlvynSpells    | Oil of Turning Weapon                          | Turning Weapon                                    |               1   |    1  |    4  |
+| OlvynSpells    | Oil of Camouflage                              | Camoflauge                                        |               1   |    1  |    8  |
+| OlvynSpells    | Oil of Reflect Attack                          | Reflect Attack                                    |               1   |    1  |    8  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Potion of Ghostwalk                            | Ghostwalk                                         |               3   |    1  |    6  |
+| OlvynSpells    | Potion of Ghostwalk                            | Ghostwalk                                         |               3   |    1  |    6  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Oil of Wind Shots                              | Wind Shots                                        |               3   |    1  |   12  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Potion of Fly                                  | Fly                                               |               5   |    1  |   12  |
+| OlvynSpells    | Potion of Fly                                  | Fly                                               |               5   |    1  |   12  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Oil of Displacement                            | Displacement                                      |               5   |    1  |   10  |
+| OlvynSpells    | Draught of Lengendary Lore                     | Legend Lore                                       |               5   |    1  |   10  |
+| OlvynSpells    | Oil of Piercing Shots                          | Piercing Shots                                    |               7   |    1  |   48  |
+| OlvynSpells    | Bomb of Elemental Exposure                     | Expose to the Elements                            |               9   |    1  |   96  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Oil of Security: Protection from Acid          | Sphere of Security: Protection from Acid          |               9   |    1  |   72  |
+| OlvynSpells    | Oil of Security: Protection from Cold          | Sphere of Security: Protection from Cold          |               9   |    1  |   72  |
+| OlvynSpells    | Oil of Security: Protection from Electricity   | Sphere of Security: Protection from Electricity   |               9   |    1  |   72  |
+| OlvynSpells    | Oil of Security: Protection from Fire          | Sphere of Security: Protection from Fire          |               9   |    1  |   72  |
+| OlvynSpells    | Oil of Security: Protection from Petrification | Sphere of Security: Protection from Petrification |               9   |    1  |   72  |
+| OlvynSpells    | Oil of Security: Protection from Poison        | Sphere of Security: Protection from Poison        |               9   |    1  |   72  |
+|                |                                                |                                                   |                   |       |       |
+| OlvynSpells    | Potion of Ghostform                            | Ghostform                                         |               9   |    1  |   96  |
+| OlvynSpells    | Potion of Electric Barrier                     | Gedlee's Electric Barrier                         |               9   |    1  |   72  |
+| OlvynSpells    | Potion of Antiharm                             | Antiharm Shell                                    |              11   |    1  |  144  |
+| OlvynSpells    | Oil of Protection From Non-Silver Weapons      | Protection From Non-Silver Weapons                |              11   |    1  |  168  |
+| OlvynSpells    | Exilir of Extend Vision                        | Extend Vision                                     |              16   |    1  |  180  |
+| OlvynSpells    | Potion of Perfect Invisibility                 | Perfect Invisibility                              |              18   |    1  |  216  |
+| OlvynSpells    | Potion of Attained Perfection                  | Attain Perfection                                 |              18   |    1  |  216  |
+| OlvynSpells    | Draught of Eclectic Recall                     | Eclectic Recall                                   |              18   |    1  |  240  |
+| OlvynSpells    | Potion of Mental Agility                       | Mental Agility                                    |              18   |    1  |  240  |
+| OlvynSpells    | Bomb of Colossal Growth                        | Colossal Growth                                   |              15   |    1  |  240  |
+| OlvynSpells    | Potion of True Strike                          | True Strike                                       |               1   |    1  |    4  |
