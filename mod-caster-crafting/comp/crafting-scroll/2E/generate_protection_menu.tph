@@ -179,7 +179,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
                     APPEND_OUTER -
                         ~ScrollCreation/CircleProtection.D~
                         ~~~~~
-            IF ~HaveKnownSpellRES("%prot_keys_2%")
+            IF ~HaveKnownSpellRES("%prot_keys_2%")~
             THEN
                 REPLY ~%spell_name%~
                 GOTO ~scribe_scroll-protection-%value%-%prot_keys_2%~
