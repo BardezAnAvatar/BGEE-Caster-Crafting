@@ -231,6 +231,18 @@ StartCutScene("BZCTWRIT")~
             THEN
                 REPLY ~%protection_scroll_spell_response%~
                 GOTO ~scribe_scroll-protection-%value%-%prot_keys_2%-NotEnoughGold~
+            IF ~~
+            THEN REPLY @15081 // ~Pick another Protection scroll.~
+                GOTO ~scribe_scroll-protection~
+            IF ~~
+            THEN REPLY @15022 // ~Pick another spell circle.~
+                GOTO ~scribe_scroll-menu~
+            IF ~~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
+                GOTO ~bz_caster_craft-scribe-main_menu~
+            IF ~~
+            THEN REPLY @15020 // ~Pack up your scribe tools~
+                EXIT
     END
 
 
