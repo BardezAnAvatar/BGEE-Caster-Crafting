@@ -106,7 +106,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
       //~FIREBALL_SPWI712~,                         ~BZ#1005~, ~SPWI712~, ~14~,  ~5~ => "Fireball"
       //~FIREBALL_SPWI922~,                         ~BZ#1005~, ~SPWI712~, ~18~, ~10~ => "Fireball"
         ~NON_DETECTION~,                            ~BZ#1105~, ~SPWI310~,  ~5~,  ~1~ => "Non-Detection"
-        ~PROTECTION_FROM_NORMAL_MISSILES~,          ~BZ#1205~, ~SPWI310~,  ~5~,  ~1~ => "Protection From Normal Missiles"
+        ~PROTECTION_FROM_NORMAL_MISSILES~,          ~BZ#1205~, ~SPWI311~,  ~5~,  ~1~ => "Protection From Normal Missiles"
         ~PROTECTION_FROM_NORMAL_MISSILES_SPRA303~,  ~BZ#1205~, ~SPRA303~,  ~5~,  ~1~ => "Protection From Normal Missiles"
         ~WRAITHFORM~,                               ~BZ#1305~, ~SPWI315~,  ~5~,  ~1~ => "Wraithform"
         ~GHOST_ARMOR~,                              ~BZ#1405~, ~SPWI317~,  ~5~,  ~1~ => "Ghost Armor"
