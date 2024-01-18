@@ -198,12 +198,34 @@ PartyGoldGT(%gold_minus_one%)
 RandomNumLT(100, %bz_protection_failure_bounds_success%)~   //created successfully
             THEN
                 REPLY ~%protection_scroll_spell_response%~
+                DO ~
+TakePartyGold(%scroll_gold_cost%)
+DestroyGold(%scroll_gold_cost%)
+AdvanceTime(%copy_time_engine%)
+DisplayString(Myself, %elapsed_strref%)
+GiveItemCreate("%value%", Myself, 1, 0, 0)
+CreateVisualEffectObject("BZSCRIBE", Myself)
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~
 PartyGoldGT(%gold_minus_one%)
 RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cursed scroll
             THEN
                 REPLY ~%protection_scroll_spell_response%~
+                DO ~
+TakePartyGold(%scroll_gold_cost%)
+DestroyGold(%scroll_gold_cost%)
+AdvanceTime(%copy_time_engine%)
+DisplayString(Myself, %elapsed_strref%)
+CreateCreature("BZCSCRL", [-1.-1], S)
+CreateVisualEffectObject("BZSCRIBE", Myself)
+ActionOverride("BZ_CursedScrollGiver", GivePartyAllEquipment())
+ActionOverride("BZ_CursedScrollGiver", DestroySelf())
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("BZCTWRIT")~
                 EXIT
             IF ~PartyGoldLT(%scroll_gold_cost%)~            //not enough gold
             THEN
@@ -228,77 +250,12 @@ RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cu
             THEN REPLY @15020 // ~Pack up your scribe tools~
                 EXIT
     END
-
-    IF ~~
-    THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%-Success~
-        SAY ~%protection_scroll_confirm_prompt%~
-            IF ~~
-            THEN
-                REPLY ~%protection_scroll_spell_response%~
-                DO ~
-TakePartyGold(%scroll_gold_cost%)
-DestroyGold(%scroll_gold_cost%)
-AdvanceTime(%copy_time_engine%)
-DisplayString(Myself, %elapsed_strref%)
-GiveItemCreate("%value%", Myself, 1, 0, 0)
-CreateVisualEffectObject("BZSCRIBE", Myself)
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("BZCTWRIT")~
-                EXIT
-            IF ~~
-            THEN REPLY @15081 // ~Pick another Protection scroll.~
-                GOTO ~scribe_scroll-protection~
-            IF ~~
-            THEN REPLY @15022 // ~Pick another spell circle.~
-                GOTO ~scribe_scroll-menu~
-            IF ~~
-            THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft-scribe-main_menu~
-            IF ~~
-            THEN REPLY @15020 // ~Pack up your scribe tools~
-                EXIT
-    END
-
-    IF ~~
-    THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%-Failure~
-        SAY ~%protection_scroll_confirm_prompt%~
-            IF ~~
-            THEN
-                REPLY ~%protection_scroll_spell_response%~
-                DO ~
-TakePartyGold(%scroll_gold_cost%)
-DestroyGold(%scroll_gold_cost%)
-AdvanceTime(%copy_time_engine%)
-DisplayString(Myself, %elapsed_strref%)
-CreateCreature("BZCSCRL", [-1.-1], S)
-CreateVisualEffectObject("BZSCRIBE", Myself)
-ActionOverride("BZ_CursedScrollGiver", GivePartyAllEquipment())
-ActionOverride("BZ_CursedScrollGiver", DestroySelf())
-ClearAllActions()
-StartCutSceneMode()
-StartCutScene("BZCTWRIT")~
-                EXIT
-            IF ~~
-            THEN REPLY @15081 // ~Pick another Protection scroll.~
-                GOTO ~scribe_scroll-protection~
-            IF ~~
-            THEN REPLY @15022 // ~Pick another spell circle.~
-                GOTO ~scribe_scroll-menu~
-            IF ~~
-            THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft-scribe-main_menu~
-            IF ~~
-            THEN REPLY @15020 // ~Pack up your scribe tools~
-                EXIT
-    END
                         ~~~~~
                 END
             END
 
 
-        APPEND_OUTER -
-            ~ScrollCreation/CircleProtection.D~
+        APPEND_OUTER - ~ScrollCreation/CircleProtection.D~
             ~~~~~
             IF ~~
             THEN REPLY @15081 // ~Pick another Protection scroll.~
