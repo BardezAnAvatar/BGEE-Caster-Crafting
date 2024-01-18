@@ -205,6 +205,12 @@ RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cu
             THEN
                 REPLY ~%protection_scroll_spell_response%~
                 EXIT
+            IF ~PartyGoldLT(%scroll_gold_cost%)~            //not enough gold
+            THEN
+                REPLY ~%protection_scroll_spell_response%~
+                GOTO ~scribe_scroll-protection-%value%-%prot_keys_2%-NotEnoughGold~
+    END
+
 
     IF ~~
     THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%-NotEnoughGold~
