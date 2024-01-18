@@ -227,6 +227,7 @@ RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cu
             IF ~~
             THEN REPLY @15020 // ~Pack up your scribe tools~
                 EXIT
+    END
 
     IF ~~
     THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%-Success~
@@ -257,6 +258,7 @@ StartCutScene("BZCTWRIT")~
             IF ~~
             THEN REPLY @15020 // ~Pack up your scribe tools~
                 EXIT
+    END
 
     IF ~~
     THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%-Failure~
@@ -289,6 +291,7 @@ StartCutScene("BZCTWRIT")~
             IF ~~
             THEN REPLY @15020 // ~Pack up your scribe tools~
                 EXIT
+    END
                         ~~~~~
                 END
             END
