@@ -31,7 +31,7 @@ ACTION_PHP_EACH ~scroll_list~
         OUTER_TEXT_SPRINT ~spell_name~ $spell_lookup("%spell_resref%")
 
         COPY_EXISTING - ~%keys_0%.itm~ ~override~   //inline only, just to read from scroll
-            READ_LONG 0x34 ~scroll_price~           //since this is a spell file, NAME1 should be all there is
+            READ_LONG 0x34 ~scroll_price~           //read the price
         BUT_ONLY_IF_IT_CHANGES
 
         //Get the costs from the table
