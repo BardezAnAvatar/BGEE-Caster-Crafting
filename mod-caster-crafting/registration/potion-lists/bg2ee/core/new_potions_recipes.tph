@@ -11,12 +11,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 
         ~BLESS~,                                    ~BZ#0001~, ~SPPR101~,  ~1~,  ~1~ => "Bless"
-        ~BLESS_SPPR201~,                            ~BZ#0001~, ~SPPR101~,  ~1~,  ~1~ => "Bless"
+        ~BLESS_SPPR201~,                            ~BZ#0001~, ~SPPR201~,  ~1~,  ~1~ => "Bless"
         ~ENTANGLE~,                                 ~BZ#0101~, ~SPPR105~,  ~1~,  ~1~ => "Entangle"
         ~RESIST_FEAR~,                              ~BZ#0201~, ~SPWI210~,  ~3~,  ~1~ => "Resist Fear"
         ~RESIST_FEAR_SPPR108~,                      ~BZ#0201~, ~SPPR108~,  ~1~,  ~1~ => "Resist Fear"
         ~RESIST_FEAR_SPCL222~,                      ~BZ#0201~, ~SPCL222~,  ~1~,  ~1~ => "Resist Fear"
-        ~RESIST_FEAR_SPWI806~,                      ~BZ#0201~, ~SPWI210~,  ~3~,  ~5~ => "Resist Fear"
+        ~RESIST_FEAR_SPWI806~,                      ~BZ#0201~, ~SPWI806~,  ~3~,  ~5~ => "Resist Fear"
         ~SANCTUARY~,                                ~BZ#0301~, ~SPPR109~,  ~1~,  ~1~ => "Sanctuary"
         ~ARMOR_OF_FAITH~,                           ~BZ#0401~, ~SPPR111~,  ~1~,  ~1~ => "Armor of Faith"
         ~SPIRIT_WARD~,                              ~BZ#0501~, ~SPPR150~,  ~1~,  ~1~ => "Spirit Ward"
