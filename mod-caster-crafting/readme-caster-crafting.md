@@ -110,14 +110,14 @@ tl;dr: Creative Commons Attribution-NonCommercial 4.0 International Public Licen
 
 See [the license file](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/blob/main/LICENSE.md).
 
-I _prefer_ that this mod does not get sucked into larger mods, like caster overhauls and the like. 
+I _prefer_ that this mod does not get sucked into larger mods, like caster overhauls and the like.
 
 tl;dr: Do what you will with it, credit me (Bardez) for starting the mod.  If you have any bugs or suggestions about
 this mod, post them on [the Caster Crafting GitHub Repository's Issues page](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues)!
 
 -This mod is based off the work of [GrammarSalad](https://github.com/Grammarsalad?tab=repositories) with his permission.
 
--[Endarire](https://github.com/Endarire) provided moral support, proofreading, and suggestions.  He also brought GrammarSalad and bardez in contact with
+-[Endarire](https://github.com/Endarire) provided moral support, proofreading, and suggestions.  He also brought GrammarSalad and Bardez in contact with
 each other to facilitate the creation of this mod.
 
 -Medli20 authored [this thread](https://www.reddit.com/r/DnD/comments/ugce5i/oc_so_what_have_you_been_doing_during_our/) and its associated images.
