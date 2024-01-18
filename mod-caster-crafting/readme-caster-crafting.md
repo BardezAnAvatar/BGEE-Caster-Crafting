@@ -128,10 +128,10 @@ is both annoying and harmful to the modding community.
 tl;dr: Do what you will with it, credit me (Bardez) for starting the mod.  If you have any bugs or suggestions about
 this mod, post them on [the Caster Crafting GitHub Repository's Issues page](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues)!
 
--This mod is based off the work of [GrammarSalad](https://github.com/Grammarsalad?tab=repositories) with his permission.
+- This mod is based off the work of [GrammarSalad](https://github.com/Grammarsalad?tab=repositories) with his permission.
 
--[Endarire](https://github.com/Endarire) provided moral support, proofreading, and suggestions.  He also brought GrammarSalad and Bardez in contact with
-each other to facilitate the creation of this mod.
+- [Endarire](https://github.com/Endarire) provided moral support, proofreading, and suggestions.  He also introduced GrammarSalad and Bardez
+to facilitate the creation of this mod.
 
 -Medli20 authored [this thread](https://www.reddit.com/r/DnD/comments/ugce5i/oc_so_what_have_you_been_doing_during_our/) and its associated images.
 
