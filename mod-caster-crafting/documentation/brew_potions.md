@@ -358,7 +358,7 @@ The default state of the mod with no other options, you will be able to brew pot
 ## New Potions
 All new potions will be pulled in for crafting if that component is installed.
 
-### Base Game Categories
+### New Potions Categories
 |  Game(s)/Mods  |                        Potion                     |   Category  |     Sub-Category     |
 | -------------- | ------------------------------------------------- | ----------- | -------------------- |
 | BG1, BG2, IWD  | Writhing Fog                                      | Bomb        | Damage               |
