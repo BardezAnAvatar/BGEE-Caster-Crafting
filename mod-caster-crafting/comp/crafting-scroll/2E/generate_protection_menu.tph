@@ -192,7 +192,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
 
     IF ~~
     THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%~
-        SAY ~%protection_scroll_prompt%~
+        SAY ~%protection_scroll_confirm_prompt%~
             IF ~
 PartyGoldGT(%gold_minus_one%)
 RandomNumLT(100, %bz_protection_failure_bounds_success%)~   //created successfully
