@@ -96,7 +96,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
         IF ~~
         THEN
             REPLY ~%protection_scroll_transition_response%~
-            GOTO scribe_scroll-protection_%value%
+            GOTO scribe_scroll-protection-%value%
             ~~~~~
     END
 
@@ -140,15 +140,15 @@ ACTION_PHP_EACH ~bz_deduped_protection~
 
 	    ACTION_GET_STRREF (%bz_scroll_name_STRREF%) ~scroll_name~
 
-        OUTER_SPRINT ~prtection_scroll_prompt~ @15082 // ~Which spell should be used to create the scroll of %scroll_name%?~
+        OUTER_SPRINT ~protection_scroll_prompt~ @15082 // ~Which spell should be used to create the scroll of %scroll_name%?~
 
         //Give the type of scroll as a dialog option
         APPEND_OUTER -
             ~ScrollCreation/CircleProtection.D~
             ~~~~~
     IF ~~
-    THEN BEGIN scribe_scroll-protection_%value%
-        SAY ~%prtection_scroll_prompt%~
+    THEN BEGIN scribe_scroll-protection-%value%
+        SAY ~%protection_scroll_prompt%~
             ~~~~~
 
         //Now iterate through the ORIGINAL protection scroll registry and find all spell options to create the scroll!
