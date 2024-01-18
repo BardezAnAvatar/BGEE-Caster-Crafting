@@ -24,13 +24,6 @@ EXTEND_TOP ~BZMSCST~
     ~scribe_scroll-protection~ //state number(s)
     ~~~~~
 
-APPEND_OUTER -
-    ~ScrollCreation/CircleProtection/States.D~
-    ~~~~~
-
-APPEND ~BZMSCST~
-    ~~~~~
-
 
 //Get the time needed for a protection spell. Global for all of them.
 OUTER_SET ~bz_protection_scroll_time~ = 144
@@ -316,31 +309,22 @@ StartCutScene("BZCTWRIT")~
     END
 
 
-//Close out the append dialog operation
-APPEND_OUTER -
-    ~ScrollCreation/CircleProtection.D~
-    ~~~~~
-
-END
-    ~~~~~
-
-
-//Close out the append dialog operation
-APPEND_OUTER -
-    ~ScrollCreation/CircleProtection/States.D~
-    ~~~~~
-
-END
-    ~~~~~
-
-
-
 //Copy the dialog content for states into the main dialog chunk
 COPY -
     ~ScrollCreation/CircleProtection.D~
     ~ScrollCreation/CircleProtection.D~
         //Patches
         APPEND_FILE TEXT ~ScrollCreation/CircleProtection/States.D~
+
+
+//Close out the append dialog operation
+APPEND_OUTER -
+    ~ScrollCreation/CircleProtection.D~
+    ~~~~~
+
+END
+    ~~~~~
+
 /**********************************************************************
 *   END: Generate Protection scroll states and transitions to craft   *
 **********************************************************************/
