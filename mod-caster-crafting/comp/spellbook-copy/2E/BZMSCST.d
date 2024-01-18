@@ -1,4 +1,4 @@
-EXTEND_TOP ~BZMSCST~ bz_caster_craft_scribe_main_menu    //Your scribing kit is open before you. How do you wish to use it?
+EXTEND_TOP ~BZMSCST~ ~bz_caster_craft-scribe-main_menu~    //Your scribing kit is open before you. How do you wish to use it?
 
             //Copy Spell: non-sorcerer mages
             IF ~!Class(MYSELF, SORCERER)

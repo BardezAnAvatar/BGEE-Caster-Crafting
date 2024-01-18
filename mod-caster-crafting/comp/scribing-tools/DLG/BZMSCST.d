@@ -13,7 +13,7 @@ BEGIN ~BZMSCST~
     IF
         ~!ActuallyInCombat()
 !Detect([ENEMY])~
-    THEN BEGIN bz_caster_craft_scribe_main_menu
+    THEN BEGIN ~bz_caster_craft-scribe-main_menu~
         SAY @15000  //Your scribing kit is open before you. How do you wish to use it?
 
             //Quit

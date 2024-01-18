@@ -1,4 +1,4 @@
-EXTEND_TOP ~BZMSCST~ ~bz_caster_craft_scribe_main_menu~    //Your scribing kit is open before you. How do you wish to use it?
+EXTEND_TOP ~BZMSCST~ ~bz_caster_craft-scribe-main_menu~    //Your scribing kit is open before you. How do you wish to use it?
 
             //Scribe scroll: Cleric/Druid
             IF ~OR(2)
@@ -71,7 +71,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -86,7 +86,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -100,7 +100,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -114,7 +114,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -128,7 +128,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -142,7 +142,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -156,7 +156,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -170,7 +170,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -184,7 +184,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -198,7 +198,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -212,7 +212,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -228,7 +228,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -242,7 +242,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -256,7 +256,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -270,7 +270,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -284,7 +284,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -298,7 +298,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -312,7 +312,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
@@ -326,7 +326,7 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-menu~
             IF ~~
             THEN REPLY @15021 // ~Go back to your scribe tools.~
-                GOTO ~bz_caster_craft_scribe_main_menu~
+                GOTO ~bz_caster_craft-scribe-main_menu~
             IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
