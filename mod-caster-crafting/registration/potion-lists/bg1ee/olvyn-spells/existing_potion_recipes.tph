@@ -12,12 +12,12 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Time Cost (hours)]     // 6
         */
 
-        ~POTN17-4~,    ~POTN20~, ~0~,  ~MEPR758~,                   ~5~, ~0~,  ~4~  => ~POTN20~   //Elixer of Health;                       `Mass Heal` Priest spell
+        ~POTN17-4~,    ~POTN20~, ~15~,  ~MEPR758~,                   ~5~, ~0~,  ~4~  => ~POTN20~   //Elixer of Health;                       `Mass Heal` Priest spell
 
-        ~POTN20-6~,    ~POTN20~, ~0~,  ~MEPR758~,                   ~6~, ~0~,  ~4~  => ~POTN20~   //Andidote;                               `Mass Heal` Priest spell
+        ~POTN20-6~,    ~POTN20~, ~15~,  ~MEPR758~,                   ~6~, ~0~,  ~4~  => ~POTN20~   //Andidote;                               `Mass Heal` Priest spell
 
-        ~POTN52-3~,    ~POTN52~, ~0~,  ~MEPR758~,                   ~4~, ~0~,  ~6~  => ~POTN52~   //Potion of Extra Healing;                `Mass Heal` Priest spell
+        ~POTN52-3~,    ~POTN52~, ~15~,  ~MEPR758~,                   ~4~, ~0~,  ~6~  => ~POTN52~   //Potion of Extra Healing;                `Mass Heal` Priest spell
 
-        ~POTN55-3~,    ~POTN55~, ~0~,  ~MEPR758~,                   ~3~, ~0~, ~12~  => ~POTN55~   //Potion of Superior Healing;             `Mass Heal` Priest spell
+        ~POTN55-3~,    ~POTN55~, ~15~,  ~MEPR758~,                   ~3~, ~0~, ~12~  => ~POTN55~   //Potion of Superior Healing;             `Mass Heal` Priest spell
 
     END

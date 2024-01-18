@@ -35,8 +35,8 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL09-SPPR413~, ~SCRL09~, ~SPPR413~, ~Protection~ => ~SCRL09~    //Protection from Undead;           Negative Plane Protection Priest spell
         ~SCRL09-SPPR515~, ~SCRL09~, ~SPPR515~, ~Protection~ => ~SCRL09~    //Protection from Undead;           Repulse Undead Priest spell
 
-        //Missing from IWD:EE
-        //~SCRL15~, ~SPWI108~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Protection from Petrification Wizard spell
-        //~SCRL15~, ~SPWI625~, ~Protection~, ~1~, ~1~, ~0~ => ~SCRL15~    //Protection from Petrification;    Stone to Flesh Wizard spell
+      //Scroll missing from IWD:EE
+      //~SCRL15-SPWI227~, ~SCRL15~, ~SPWI227~, ~Protection~ => ~SCRL15~    //Protection from Petrification;    Protection from Petrification Wizard spell
+      //~SCRL15-SPWI625~, ~SCRL15~, ~SPWI625~, ~Protection~ => ~SCRL15~    //Protection from Petrification;    Stone to Flesh Wizard spell
 
     END

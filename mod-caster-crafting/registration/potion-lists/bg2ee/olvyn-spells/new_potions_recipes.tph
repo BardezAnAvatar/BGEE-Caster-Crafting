@@ -31,7 +31,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SPHERE_OF_SECURITY_PETRIFICATION~,         ~BZ#OG09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Petrification"
         ~SPHERE_OF_SECURITY_POISON~,                ~BZ#OH09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Poison"
         ~GEDLEE'S_ELECTRIC_BARRIER~,                ~BZ#OJ09~, ~MEWI566~,  ~9~,  ~1~ => "Gedlee's Electric Barrier"
-        ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ#0T05~, ~MEPR553~,  ~9~,  ~2~ => "Protection From Fire"
+        ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ#0U05~, ~MEPR553~,  ~9~,  ~2~ => "Protection From Fire"
         ~PROTECTION_FROM_THE_ELEMENTS_MEPR553~,     ~BZ#2J14~, ~MEPR553~,  ~9~,  ~1~ => "Protection From The Elements"
 
         ~PROTECTION_FROM_NONSILVER_WEAPONS~,        ~BZ#OL11~, ~MEPR656~, ~11~,  ~1~ => "Protection From Non-Silver Weapons"
@@ -40,7 +40,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~PERFECT_INVISIBILITY~,                     ~BZ#ON18~, ~MEWI951~, ~18~,  ~1~ => "Perfect Invisibility"
         ~ATTAIN_PERFECTION~,                        ~BZ#OO18~, ~MEWI953~, ~18~,  ~1~ => "Attain Perfection"
-        ~FRIENDS_MEWI953~,                          ~BZ#0701~, ~MEWI953~, ~18~,  ~5~ => "Friends"
+        ~FRIENDS_MEWI953~,                          ~BZ#0801~, ~MEWI953~, ~18~,  ~5~ => "Friends"
         ~STRENGTH_MEWI953~,                         ~BZ#0Q03~, ~MEWI953~, ~18~,  ~3~ => "Strength"
 
         ~ECLECTIC_RECALL~,                          ~BZ#OP18~, ~MEWI960~, ~18~,  ~1~ => "Eclectic Recall"
@@ -48,7 +48,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~CHAIN_LIGHTNING_MEWI965~,                  ~BZ#2E12~, ~MEWI965~, ~18~,  ~3~ => "Chain Lightning"
 
 
-        ~COLOSSAL_GROWTH~,                          ~BZ#OR18~, ~MEPR754~, ~15~,  ~1~ => "Colossal Growth"
+        ~COLOSSAL_GROWTH~,                          ~BZ#OR15~, ~MEPR754~, ~15~,  ~1~ => "Colossal Growth"
     END
 
 
@@ -63,7 +63,7 @@ BEGIN
         ~ANTIHARM_SHELL~,                           ~BZ#OK11~, ~MEPR653~, ~11~,  ~1~ => "Antiharm Shell"
         ~PROTECTION_FROM_MAGIC_ENERGY_MEPR653~,     ~BZ#2A12~, ~MEPR653~, ~11~,  ~1~ => "Protection From Magic Energy"
 
-        ~DISPEL_MAGIC_MEWI760~,                     ~BZ#0T05~, ~MEWI760~, ~14~,  ~3~ => "Dispel Magic"
+        ~DISPEL_MAGIC_MEPR760~,                     ~BZ#0T05~, ~MEPR760~, ~14~,  ~3~ => "Dispel Magic"
     END
 END
 

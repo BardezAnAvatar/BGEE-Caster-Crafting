@@ -61,7 +61,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ#OQ18~, ~1~, ~Enhancement~,   ~Casting Boost~,       ~A~, ~Caster~,  ~40052~, ~40053~, ~MEWI963~,  ~1~, ~20~, ~mental-agility.BAM~,                           ~BZ#OP18I~, ~BZPN140D~, ~~, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Mental Agility"
 
 
-        ~BZ#OR15~, ~1~, ~Bomb~,          ~Damage~,              ~Q~, ~Point~,   ~40054~, ~40055~, ~MEPR754~,  ~1~, ~20~, ~colossal-growth.BAM~,                          ~BZ#OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
+        ~BZ#OR15~, ~1~, ~Bomb~,          ~Restrictive~,         ~Q~, ~Point~,   ~40054~, ~40055~, ~MEPR754~,  ~1~, ~20~, ~colossal-growth.BAM~,                          ~BZ#OQ15I~, ~BZPN120D~, ~~,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Colossal Growth"
 
     END
 
