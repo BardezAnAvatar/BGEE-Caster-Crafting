@@ -78,6 +78,15 @@ This component will allow any class-based caster to brew the magic they memorize
 match of spell to scroll, and more recipe-based, allowing more powerful spells of similar effects to yield a larger number of potions.  For example,
 `Cure Light Wounds` would generate a single potion of healing; `Heal` would yield several.
 
+
+### Future Plans
+- Wands
+- Leveled Wands
+- 3E weapon oils/salves (cheap, one-time buffs)
+- Staves
+
+
+
 ## Remarks
 I am using the `BZ` prefix for my items.  It is registered at [Black Wyrm Lair](http://www.blackwyrmlair.net/prefixes/).
 
