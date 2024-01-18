@@ -17,7 +17,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~RESIST_FEAR~,                              ~BZ#0201~, ~SPWI210~,  ~3~,  ~1~ => "Resist Fear"
         ~RESIST_FEAR_SPPR108~,                      ~BZ#0201~, ~SPPR108~,  ~1~,  ~1~ => "Resist Fear"
         ~RESIST_FEAR_SPCL222~,                      ~BZ#0201~, ~SPCL222~,  ~1~,  ~1~ => "Resist Fear"
-        ~RESIST_FEAR_SPPR735~,                      ~BZ#0N01~, ~SPPR733~,  ~1~,  ~3~ => "Resist Fear"
+        ~RESIST_FEAR_SPPR735~,                      ~BZ#0201~, ~SPPR733~,  ~1~,  ~3~ => "Resist Fear"
         ~RESIST_FEAR_SPWI806~,                      ~BZ#0201~, ~SPWI210~,  ~3~,  ~5~ => "Resist Fear"
         ~SANCTUARY~,                                ~BZ#0301~, ~SPPR109~,  ~1~,  ~1~ => "Sanctuary"
         ~ARMOR_OF_FAITH~,                           ~BZ#0401~, ~SPPR111~,  ~1~,  ~1~ => "Armor of Faith"
