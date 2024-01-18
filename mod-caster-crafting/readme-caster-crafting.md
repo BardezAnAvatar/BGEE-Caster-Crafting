@@ -119,7 +119,11 @@ tl;dr: Creative Commons Attribution-NonCommercial 4.0 International Public Licen
 
 See [the license file](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/blob/main/LICENSE.md).
 
-I _prefer_ that this mod does not get sucked into larger mods, like caster overhauls and the like.
+Two non-binding requested exceptions:
+1. Don't use the wands/potion images contained in this repo for in your mod(s) for Infinity Engine games that _THIS_ mod works on. Why?
+I don't want the art assets to be used in two places and get confusing. Other engines/games? Go nuts!
+1. Don't suck my code into your own mega-overhaul mod. Finding 3 versions of the same feature from the same code base in 3 different mods
+is both annoying and harmful to the modding community.
 
 tl;dr: Do what you will with it, credit me (Bardez) for starting the mod.  If you have any bugs or suggestions about
 this mod, post them on [the Caster Crafting GitHub Repository's Issues page](https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues)!
