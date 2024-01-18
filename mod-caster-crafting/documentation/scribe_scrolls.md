@@ -130,3 +130,21 @@ of these protection scrolls doesn't necessarily match a spell one-to-one, I use 
 |                               |                                             |
 | Protection from Petrification | Protection from Petrification Wizard spell  |
 | Protection from Petrification | Stone to Flesh Wizard spell                 |
+
+
+
+## Process
+1. Purchase scribing tools from a spell shop.
+1. Identify the item
+1. Begin dialog with the scribe tools
+1. Select the option to scribe scrolls:
+   ![Scribe Tools Main Menu](.images/scribe_scroll_main_menu.png)
+1. Select the circle of spell to scribe from:
+   ![Select Spell Circle](.images/scribe_scroll_circle_selection.png)
+1. Select which spell to scribe:
+   ![Select Which Spell](.images/scribe_scroll_select_spell.png)
+1. Select the scroll level you want to scribe:
+   ![Select Which Spell](.images/scribe_scroll-scroll_options.png)
+1. Confirm you want to spend time and gold to scribe the scroll:
+   ![Spell Copy Confirmation](.images/scribe_scroll-confirmation.png)
+1. Watch the small cutscene similar to Cespenar and Cromwell
