@@ -1,5 +1,5 @@
 # Caster Crafting for BGEE, BG2EE, and IWDEE
-![I have done nothing but scribe scrolls for 3 days.](https://preview.redd.it/byqieqv95yw81.png?width=640&crop=smart&auto=webp&s=26f3d08366adfc06d193281cbfcd6c562d6a9fdf "The Do It Yourself (DIY) Magic Shop")
+![I have done nothing but scribe scrolls for 3 days.](https://preview.redd.it/byqieqv95yw81.png?width=640&crop=smart&auto=webp&s=26f3d08366adfc06d193281cbfcd6c562d6a9fdf)
 
 *Yes, you can make scrolls of arcane AND divine spells with this mod among other things!*
 
