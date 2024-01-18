@@ -28,7 +28,7 @@ circle and tradition of magic:
 | Arcane  8    |  4000 |
 | Arcane  9    |  5000 |
 | Arcane 10    | 20000 |
-| ------------ |  ---- |
+|              |       |
 | Priest 1     |   100 |
 | Priest 2     |   200 |
 | Priest 3     |   300 |

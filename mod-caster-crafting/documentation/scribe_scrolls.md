@@ -32,7 +32,7 @@ powerful spell circle, that you will fail and receive a cursed scroll instead:
 | Level        |  Failure % |
 | ------------ |  --------- |
 | Protection   |     20     |
-| ------------ |  --------- |
+|              |            |
 | Arcane  1    |      5     |
 | Arcane  2    |     10     |
 | Arcane  3    |     15     |
@@ -43,7 +43,7 @@ powerful spell circle, that you will fail and receive a cursed scroll instead:
 | Arcane  8    |     40     |
 | Arcane  9    |     45     |
 | Arcane 10    |     50     |
-| ------------ |  --------- |
+|              |            |
 | Priest  1    |      5     |
 | Priest  2    |     10     |
 | Priest  3    |     15     |
@@ -69,7 +69,7 @@ might be cheap, or Protection Scrolls might vary wildly in price.
 | Level        | Hours |
 | ------------ | ----- |
 | Protection   |  144  |
-| ------------ | ----- |
+|              |       |
 | Arcane  1    |   24  |
 | Arcane  2    |   48  |
 | Arcane  3    |   72  |
@@ -80,7 +80,7 @@ might be cheap, or Protection Scrolls might vary wildly in price.
 | Arcane  8    |  192  |
 | Arcane  9    |  216  |
 | Arcane 10    |  240  |
-| ------------ | ----- |
+|              |       |
 | Priest 1     |   24  |
 | Priest 2     |   48  |
 | Priest 3     |   72  |
@@ -100,26 +100,33 @@ of these protection scrolls doesn't necessarily match a spell one-to-one, I use 
 | ----------------------------- | ------------------------------------------- |
 | Protection from Acid          | Protection from Acid Wizard spell           |
 | Protection from Acid          | Protection from Energy Wizard spell         |
+|                               |                                             |
 | Protection from Cold          | Protection from Cold Wizard spell           |
 | Protection from Cold          | Fireshield (Blue) Wizard spell              |
 | Protection from Cold          | Protection from the Elements Wizard spell   |
 | Protection from Cold          | Protection from Energy Wizard spell         |
 | Protection from Cold          | Protection from Fire and Cold Priest spell  |
+|                               |                                             |
 | Protection from Electricity   | Protection from Electricity Wizard spell    |
 | Protection from Electricity   | Protection from the Elements Wizard spell   |
 | Protection from Electricity   | Protection from Energy Wizard spell         |
 | Protection from Electricity   | Protection from Lightning Priest spell      |
+|                               |                                             |
 | Protection from Fire          | Protection from Fire Wizard spell           |
 | Protection from Fire          | Fireshield (Red) Wizard spell               |
 | Protection from Fire          | Protection from the Elements Wizard spell   |
 | Protection from Fire          | Protection from Energy Wizard spell         |
 | Protection from Fire          | Protection from Fire and Cold Priest spell  |
 | Protection from Fire          | Protection from Fire Priest spell           |
+|                               |                                             |
 | Protection from Magic         | Protection From Magic Energy Wizard spell   |
 | Protection from Magic         | Protection From Energy Wizard spell         |
 | Protection from Magic         | Magic Resistance Priest spell               |
+|                               |                                             |
 | Protection from Poison        | Neutralize Poison Priest spell              |
+|                               |                                             |
 | Protection from Undead        | Negative Plane Protection Priest spell      |
 | Protection from Undead        | Repulse Undead Priest spell                 |
+|                               |                                             |
 | Protection from Petrification | Protection from Petrification Wizard spell  |
 | Protection from Petrification | Stone to Flesh Wizard spell                 |
