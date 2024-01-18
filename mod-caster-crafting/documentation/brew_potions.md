@@ -4,12 +4,33 @@ This component will allow any class-based caster to brew the magic they memorize
 
 
 ## Table of Contents
+1. [Process](#process)
 1. [Base Game Potions](#base-game-potions)
    1. [Base Game Categories](#base-game-categories)
    1. [Base Game Recipes](#base-game-recipes)
 1. [New Potions](#new-potions)
    1. [New Potions Categories](#new-potions-categories)
    1. [New Potions Recipes](#new-potions-recipes)
+
+
+
+## Process
+1. Purchase alchemy kit from a spell shop.
+1. Identify the item
+1. Begin dialog with the alchemy kit
+1. Select the option to brew a potion:
+   ![Scribe Tools Main Menu](.images/brew_potion-main_menu.png)
+1. Select the category of potion to brew:
+   ![Select Spell Circle](.images/brew_potion-category.png)
+1. Select the subcategory of potion to brew (many potions; had to separate them to make dialog menu usable):
+   ![Select Spell Circle](.images/brew_potion-subcategory.png)
+1. Select which potion to brew:
+   ![Select Which Spell](.images/brew_potion-select_potion.png)
+1. Select the potion recipe you want to use:
+   ![Select Which Spell](.images/brew_potion-select_recipe.png)
+1. Confirm you want to spend time and gold to brew the potion:
+   ![Spell Copy Confirmation](.images/brew_potion-confirmation.png)
+1. Watch the small cutscene similar to Cespenar and Cromwell
 
 
 
