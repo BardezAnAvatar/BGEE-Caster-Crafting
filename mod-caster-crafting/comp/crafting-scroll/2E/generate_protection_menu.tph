@@ -200,7 +200,7 @@ ACTION_PHP_EACH ~bz_deduped_protection~
     IF ~~
     THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%~
         SAY ~%prtection_scroll_prompt%~
-            IF ~PartyGoldGT(%gold_minus_one%)
+            IF ~PartyGoldGT(%gold_minus_one%)~
 RandomNumLT(100, %bz_protection_failure_bounds_success%)~   //created successfully
             THEN
                 REPLY ~%protection_scroll_spell_response%~
@@ -214,7 +214,7 @@ RandomNumGT(100, %bz_protection_failure_bounds_cursed%)~    //failure, create cu
     IF ~~
     THEN BEGIN ~scribe_scroll-protection-%value%-%prot_keys_2%-NotEnoughGold~
         SAY ~%protection_scroll_not_enough_gold%~
-            IF ~PartyGoldLT(%scroll_gold_cost%)
+            IF ~PartyGoldLT(%scroll_gold_cost%)~
             THEN
                 REPLY ~%protection_scroll_spell_response%~
             IF ~~
