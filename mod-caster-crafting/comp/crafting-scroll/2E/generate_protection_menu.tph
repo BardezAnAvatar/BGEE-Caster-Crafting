@@ -21,7 +21,14 @@ APPEND_OUTER -
     ~~~~~
 
 EXTEND_TOP ~BZMSCST~
-    scribe_scroll-protection //state number(s)
+    ~scribe_scroll-protection~ //state number(s)
+    ~~~~~
+
+APPEND_OUTER -
+    ~ScrollCreation/CircleProtection/States.D~
+    ~~~~~
+
+APPEND ~BZMSCST~
     ~~~~~
 
 
@@ -309,13 +316,31 @@ StartCutScene("BZCTWRIT")~
     END
 
 
-
+//Close out the append dialog operation
 APPEND_OUTER -
     ~ScrollCreation/CircleProtection.D~
     ~~~~~
 
 END
     ~~~~~
+
+
+//Close out the append dialog operation
+APPEND_OUTER -
+    ~ScrollCreation/CircleProtection/States.D~
+    ~~~~~
+
+END
+    ~~~~~
+
+
+
+//Copy the dialog content for states into the main dialog chunk
+COPY -
+    ~ScrollCreation/CircleProtection.D~
+    ~ScrollCreation/CircleProtection.D~
+        //Patches
+        APPEND_FILE TEXT ~ScrollCreation/CircleProtection/States.D~
 /**********************************************************************
 *   END: Generate Protection scroll states and transitions to craft   *
 **********************************************************************/
