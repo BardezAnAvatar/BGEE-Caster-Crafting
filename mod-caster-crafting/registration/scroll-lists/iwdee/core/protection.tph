@@ -3,12 +3,11 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     BEGIN
 
         /*
-        [Scroll]                // 0
-        [Spell]                 // 1
-        [Tradition]             // 2
-        [Spell Level]           // 3
-        [Caster Level]          // 4
-        [Additional Cost]       // 5
+        [Unique Key]            // 0
+        [Scroll]                // 1
+        [Spell]                 // 2
+        [Tradition]             // 3
+        [Scroll]                // Value
         */
 
         ~SCRL03-SPWI517~, ~SCRL03~, ~SPWI517~, ~Protection~ => ~SCRL03~    //Protection from Acid;             Protection from Acid Wizard spell
