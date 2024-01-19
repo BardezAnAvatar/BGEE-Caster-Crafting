@@ -8,7 +8,7 @@
 
 
 # Basic Mod Info
-Version: 0.7.3
+Version: 0.7.4
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
@@ -110,6 +110,7 @@ I am using the `BZ` prefix for my items.  It is registered at [Black Wyrm Lair](
 | Making leveled scrolls component fully craftable            |  0.7.1  |
 | Expanding craftable leveled scrolls to BG2, IWD             |  0.7.2  |
 | Splitting out shared BAMs into Arcane and Priest variants   |  0.7.3  |
+| Fixing Protection scroll crafting dialog                    |  0.7.4  |
 
 ## Dedication
 This mod is dedicated to my wife, Shannon, and to my daughters Evelyn, Madelyn, and Elliana. These are my support in my daily life.

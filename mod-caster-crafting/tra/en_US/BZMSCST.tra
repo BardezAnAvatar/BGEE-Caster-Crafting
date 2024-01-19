@@ -58,6 +58,9 @@
 @15080 = ~Which scroll of Protection do you wish to scribe?~
 @15081 = ~Pick another Protection scroll.~
 @15082 = ~Which memorized spell should be used to create the scroll of %scroll_name%?~
+@15083 = ~\[%scroll_gold_cost% gold; %readable_time%\] Scribe a scroll of %scroll_name% using %spell_name%.~
+@15084 = ~You lack the %scroll_gold_cost% gold necessary to scribe this scroll.~
+@15085 = ~You prepare to scribe a scroll of %scroll_name% using %spell_name%.~
 
 //Divine scrolls
 @15090 = ~You meditate over the spell %spell_name% and prepare its power.~
