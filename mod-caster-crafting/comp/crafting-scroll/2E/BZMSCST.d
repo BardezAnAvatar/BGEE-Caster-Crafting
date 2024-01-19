@@ -58,6 +58,9 @@ APPEND ~BZMSCST~
                 GOTO ~scribe_scroll-protection~
 
             IF ~~
+            THEN REPLY @15021 // ~Go back to your scribe tools.~
+                GOTO ~bz_caster_craft-scribe-main_menu~
+            IF ~~
             THEN REPLY @15020 //~Pack up your scribe tools~
                 EXIT
     END
