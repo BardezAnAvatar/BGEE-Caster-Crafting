@@ -21,9 +21,8 @@ BEGIN
         ELSE BEGIN ACTION_IF GAME_IS ~iwdee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~iwdee~ END
             ELSE BEGIN ACTION_IF GAME_IS ~pstee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~pstee~ END
                 ELSE BEGIN ACTION_IF GAME_IS ~iwd2~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~iwd2~ END
-                    //is this necessary? I need to figure this out...
-                    //ELSE BEGIN ACTION_IF GAME_IS ~eet~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~eet~ END
-                    //  END
+                    ELSE BEGIN ACTION_IF GAME_IS ~eet~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~eet~ END
+                      END
                     END
                 END
             END
