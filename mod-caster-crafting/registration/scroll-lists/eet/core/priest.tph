@@ -11,7 +11,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Additional Cost]       // 5
         */
 
-        ~BDSCRL1B~, ~SPPR116~, ~Divine~, ~1~,  ~1~, ~0~ => ~BDSCRL1A~   //Dancing Lights
+        ~BDSCRL1B~, ~SPPR100~, ~Divine~, ~1~,  ~1~, ~0~ => ~BDSCRL1A~   //Dancing Lights
 
         ~SCRL56~,   ~SPPR401~, ~Divine~, ~4~,  ~7~, ~0~ => ~SCRL56~     //Cure Serious Wounds
         ~SCRL58~,   ~SPPR403~, ~Divine~, ~4~,  ~7~, ~0~ => ~SCRL58~     //Free Action
@@ -24,5 +24,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
         ~SCRL5E~,   ~SPPR507~, ~Divine~, ~5~,  ~9~, ~0~ => ~SCRL5E~     //Champion's Strength
         ~SCRL5F~,   ~SPPR508~, ~Divine~, ~5~,  ~9~, ~0~ => ~SCRL5F~     //Chaotic Commands
+
+        ~SCRLSD~,   ~SPPR713~, ~Divine~, ~7~,  ~14~ ~0~ => ~SCRLSD~     //Greater Restoration
 
     END

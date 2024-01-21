@@ -1,0 +1,101 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_recipes~
+    BEGIN
+        /*
+        [Unique Key]                                // 0
+        [resulting potion RESREF]                   // 1
+        [recipe: Source Spell]                      // 2
+        [recipe: Caster Level]                      // 3
+        [recipe: Result Count]                      // 4
+        */
+
+
+        ~SNAKE_SWIFTNESS~,                          ~BZ#O001~, ~MEPR151~,  ~1~,  ~1~ => "Snake's Swiftness"
+        ~SEARING_SMITE~,                            ~BZ#O101~, ~MEPR157~,  ~1~,  ~1~ => "Searing Smite"
+        ~TURNING_WEAPON~,                           ~BZ#O201~, ~MEPR154~,  ~1~,  ~1~ => "Turning Weapon"
+        ~CAMOFLAUGE~,                               ~BZ#O301~, ~MEPR156~,  ~1~,  ~1~ => "Camoflauge"
+
+        ~WIND_SHOTS~,                               ~BZ#O605~, ~MEWI252~,  ~3~,  ~1~ => "Wind Shots"
+
+        ~DISPLACEMENT~,                             ~BZ#O805~, ~MEWI353~,  ~5~,  ~1~ => ~Displacement~
+        ~LEGEND_LORE~,                              ~BZ#O905~, ~MEWI356~,  ~5~,  ~1~ => ~Legend Lore~
+
+        ~ARMOR_MEPR457~,                            ~BZ#0701~, ~MEPR457~,  ~7~,  ~3~ => "Armor"
+        ~SPIRIT_ARMOR_MEPR457~,                     ~BZ#1K07~, ~MEPR457~,  ~7~,  ~1~ => "Spirit Armor"
+
+        ~EXPOSE_TO_THE_ELEMENTS~,                   ~BZ#OB09~, ~MEPR557~,  ~9~,  ~1~ => "Expose to the Elements"
+        ~SPHERE_OF_SECURITY_ACID~,                  ~BZ#OC09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Acid"
+        ~SPHERE_OF_SECURITY_COLD~,                  ~BZ#OD09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Cold"
+        ~SPHERE_OF_SECURITY_ELECTRICITY~,           ~BZ#OE09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Electricity"
+        ~SPHERE_OF_SECURITY_FIRE~,                  ~BZ#OF09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Fire"
+        ~SPHERE_OF_SECURITY_PETRIFICATION~,         ~BZ#OG09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Petrification"
+        ~SPHERE_OF_SECURITY_POISON~,                ~BZ#OH09~, ~MEPR558~,  ~9~,  ~1~ => "Sphere of Security: Protection from Poison"
+        ~GEDLEE'S_ELECTRIC_BARRIER~,                ~BZ#OJ09~, ~MEWI566~,  ~9~,  ~1~ => "Gedlee's Electric Barrier"
+        ~PROTECTION_FROM_FIRE_MEPR553~,             ~BZ#0U05~, ~MEPR553~,  ~9~,  ~2~ => "Protection From Fire"
+        ~PROTECTION_FROM_THE_ELEMENTS_MEPR553~,     ~BZ#2J14~, ~MEPR553~,  ~9~,  ~1~ => "Protection From The Elements"
+
+        ~PROTECTION_FROM_NONSILVER_WEAPONS~,        ~BZ#OL11~, ~MEPR656~, ~11~,  ~1~ => "Protection From Non-Silver Weapons"
+
+        ~EXTEND_VISION~,                            ~BZ#OM16~, ~MEWI857~, ~16~,  ~1~ => "Extend Vision"
+
+        ~PERFECT_INVISIBILITY~,                     ~BZ#ON18~, ~MEWI951~, ~18~,  ~1~ => "Perfect Invisibility"
+        ~ATTAIN_PERFECTION~,                        ~BZ#OO18~, ~MEWI953~, ~18~,  ~1~ => "Attain Perfection"
+        ~FRIENDS_MEWI953~,                          ~BZ#0801~, ~MEWI953~, ~18~,  ~5~ => "Friends"
+        ~STRENGTH_MEWI953~,                         ~BZ#0Q03~, ~MEWI953~, ~18~,  ~3~ => "Strength"
+
+        ~ECLECTIC_RECALL~,                          ~BZ#OP18~, ~MEWI960~, ~18~,  ~1~ => "Eclectic Recall"
+        ~MENTAL_AGILITY~,                           ~BZ#OQ18~, ~MEWI963~, ~18~,  ~1~ => "Mental Agility"
+        ~CHAIN_LIGHTNING_MEWI965~,                  ~BZ#2E12~, ~MEWI965~, ~18~,  ~3~ => "Chain Lightning"
+
+
+        ~COLOSSAL_GROWTH~,                          ~BZ#OR15~, ~MEPR754~, ~15~,  ~1~ => "Colossal Growth"
+    END
+
+
+/**********************
+*   Powerful Spells   *
+**********************/
+ACTION_IF %bz_olvyn_powerful% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_recipes~
+    BEGIN
+        ~ANTIHARM_SHELL~,                           ~BZ#OK11~, ~MEPR653~, ~11~,  ~1~ => "Antiharm Shell"
+        ~PROTECTION_FROM_MAGIC_ENERGY_MEPR653~,     ~BZ#2A12~, ~MEPR653~, ~11~,  ~1~ => "Protection From Magic Energy"
+
+        ~DISPEL_MAGIC_MEPR760~,                     ~BZ#0T05~, ~MEPR760~, ~14~,  ~3~ => "Dispel Magic"
+    END
+END
+
+
+/******************
+*   EEex Spells   *
+******************/
+ACTION_IF %bz_olvyn_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_recipes~
+    BEGIN
+        ~REFLECT_ATTTACK~,                          ~BZ#O401~, ~MEWI158~,  ~1~,  ~1~ => "Reflect Attack"
+
+        ~GHOST_WALK_PR~,                            ~BZ#O503~, ~MEPR255~,  ~3~,  ~1~ => "Ghostwalk"
+        ~GHOST_WALK_WI~,                            ~BZ#O503~, ~MEWI252~,  ~3~,  ~1~ => "Ghostwalk"
+
+        ~FLY_PR~,                                   ~BZ#O705~, ~MEPR357~,  ~5~,  ~1~ => ~Fly~
+        ~FLY_WI~,                                   ~BZ#O705~, ~MEWI352~,  ~5~,  ~1~ => ~Fly~
+
+        ~PIERCING_SHOTS~,                           ~BZ#OA07~, ~MEPR455~,  ~7~,  ~1~ => "Piercing Shots"
+
+        ~GHOSTFORM~,                                ~BZ#OI09~, ~MEWI559~,  ~9~,  ~1~ => "Ghostform"
+    END
+END
+
+
+ACTION_IF (~bz_olvyn_true_strike~)
+THEN BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_recipes~
+    BEGIN
+        ~TRUE_STRIKE~,                              ~BZ#OS01~, ~SPWI111~,  ~1~,  ~1~ => "True Strike"
+    END
+END

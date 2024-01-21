@@ -1,0 +1,68 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~new_potions_items~
+    BEGIN
+        /*
+        [resulting potion RESREF]                   // 0
+        [Create Automatically]                      // 1
+        [Category]                                  // 2
+        [SubCategory]                               // 3
+        [Original Spell Level (for sorting/org.)    // 4
+        [Target Type]                               // 5
+        [TRA: Identified Name]                      // 6
+        [TRA: Identified Descripton]                // 7
+        [effect: source spell]                      // 8
+        [effect: Caster Level (NI: minimum level)]  // 9
+        [Cost: gold tier]                           // 10
+        [Icon: Source inventory BAM path]           // 11
+        [Icon: Destination inventory BAM RESREF]    // 12
+        [Icon: Description RESREF]                  // 13
+        [Unusability flags]                         // 14 special case for one or two potions; usually `~~`
+        [Opcode: Duration]                          // 15
+        [Offset: Duration]                          // 16
+        [Opcode: Magnitude]                         // 17
+        [Offset: Magnitude]                         // 18
+        [Opcode: Magnitude2]                        // 19
+        [Offset: Magnitude2]                        // 20
+        */
+
+
+        ~BZ#I001~, ~1~, ~Enhancement~,  ~Movement~,             ~1~, ~Actor~,   ~40100~, ~40101~, ~WIZARD_EXPEDITIOUS_RETREAT~,         ~1~,  ~2~, ~expeditious-retreat.BAM~,               ~BZ#I001I~, ~BZPN120D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Expeditious Retreat"
+
+
+        ~BZ#I103~, ~1~, ~Offense~,      ~Magic Weapon~,         ~2~, ~Caster~,  ~40102~, ~40103~, ~CLERIC_BEAST_CLAW~,                  ~1~,  ~5~, ~beast-claw.BAM~,                        ~BZ#I103I~, ~BZPN026D~, ~~     , ~111~, ~0xE~, ~~, ~~, ~~, ~~ => "Beast Claw"
+        ~BZ#I203~, ~1~, ~Enhancement~,  ~Stat Boost~,           ~2~, ~Caster~,  ~40104~, ~40105~, ~WIZARD_CATS_GRACE~,                  ~1~,  ~4~, ~cat's-grace.BAM~,                       ~BZ#I203I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Cat's Grace"
+        ~BZ#I303~, ~1~, ~Cure~,         ~Healing~,              ~2~, ~Caster~,  ~40106~, ~40107~, ~CLERIC_CURE_MODERATE_WOUNDS~,        ~1~,  ~3~, ~cure-moderate-wounds.BAM~,              ~BZ#I303I~, ~BZPN070D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Cure Moderate Wounds"
+        ~BZ#I403~, ~1~, ~Offense~,      ~Magic Weapon~,         ~2~, ~Actor~,   ~40108~, ~40109~, ~WIZARD_DECASTAVE~,                   ~1~,  ~3~, ~decastave.BAM~,                         ~BZ#I403I~, ~BZPN019D~, ~~     , ~111~, ~0xE~, ~~, ~~, ~~, ~~ => "Decastave"
+        ~BZ#I503~, ~1~, ~Bomb~,         ~Damage~,               ~2~, ~Point~,   ~40110~, ~40111~, ~WIZARD_SNILLOCS_SNOWBALL_SWARM~,     ~1~,  ~3~, ~snilloc's-snowball-swarm.BAM~,          ~BZ#I503I~, ~BZPN013D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Snilloc's Snowball Swarm"
+
+
+        ~BZ#I605~, ~1~, ~Defense~,      ~Mental Defense~,       ~3~, ~Caster~,  ~40146~, ~40147~, ~CLERIC_EXALTATION~,                  ~1~,  ~5~, ~exaltation.BAM~,                        ~BZ#I605I~, ~BZPN032D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Exaltation"
+        ~BZ#I705~, ~1~, ~Offense~,      ~Magic Weapon~,         ~3~, ~Actor~,   ~40112~, ~40113~, ~CLERIC_MOONBLADE~,                   ~1~,  ~7~, ~moonblade.BAM~,                         ~BZ#I705I~, ~BZPN058D~, ~~     , ~111~, ~0xE~, ~~, ~~, ~~, ~~ => "Moonblade"
+        ~BZ#I805~, ~1~, ~Bomb~,         ~Damage~,               ~3~, ~Point~,   ~40114~, ~40115~, ~CLERIC_SPIKE_GROWTH~,                ~1~,  ~6~, ~spike-growth.BAM~,                      ~BZ#I805I~, ~BZPN049D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Spike Growth"
+
+
+        ~BZ#I907~, ~1~, ~Offense~,      ~Attack Bonus~,         ~4~, ~Caster~,  ~40116~, ~40117~, ~#RECITEG~,                           ~1~,  ~8~, ~recitation.BAM~,                        ~BZ#I907I~, ~BZPN070D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Recitation"
+        ~BZ#IA07~, ~1~, ~Offense~,      ~Damage Boost~,         ~4~, ~Caster~,  ~40118~, ~40119~, ~CLERIC_BLOOD_RAGE~,                  ~1~,  ~8~, ~blood-rage.BAM~,                        ~BZ#IA07I~, ~BZPN032D~, 0b10000, ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Blood Rage"
+        ~BZ#IB07~, ~1~, ~Bomb~,         ~Status Attack~,        ~4~, ~Point~,   ~40120~, ~40121~, ~CLERIC_CLOUD_OF_PESTILENCE~,         ~1~,  ~8~, ~cloud-of-pestilence.BAM~,               ~BZ#IB07I~, ~BZPN013D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Cloud of Pestilence"
+        ~BZ#IC07~, ~1~, ~Offense~,      ~Damage Boost~,         ~4~, ~Caster~,  ~40122~, ~40123~, ~WIZARD_EMOTION_COURAGE~,             ~1~,  ~8~, ~emotion-courage.BAM~,                   ~BZ#IC07I~, ~BZPN040D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Emotion: Courage"
+        ~BZ#ID07~, ~1~, ~Offense~,      ~Damage Boost~,         ~4~, ~Caster~,  ~40124~, ~40125~, ~WIZARD_EMOTION_HOPE~,                ~1~,  ~8~, ~emotion-hope.BAM~,                      ~BZ#ID07I~, ~BZPN049D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Emotion: Hope"
+        ~BZ#IE07~, ~1~, ~Cure~,         ~Restorative~,          ~4~, ~Caster~,  ~40126~, ~40127~, ~CLERIC_UNFAILING_ENDURANCE~,         ~1~,  ~8~, ~unfailing-endurance.BAM~,               ~BZ#IE07I~, ~BZPN001D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Unfailing Endurance"
+
+
+        ~BZ#IF09~, ~1~, ~Offense~,      ~Extra Effects~,        ~5~, ~Caster~,  ~40128~, ~40129~, ~CLERIC_ANIMAL_RAGE~,                 ~1~,  ~9~, ~animal-rage.BAM~,                       ~BZ#IF09I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Animal Rage"
+        ~BZ#IG09~, ~1~, ~Offense~,      ~Attack Bonus~,         ~5~, ~Caster~,  ~40130~, ~40131~, ~SPPR518A~,                           ~1~,  ~9~, ~righteous-wrath-of-the-faithful.BAM~,   ~BZ#IG09I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Righteous Wrath of the Faithful"
+        ~BZ#IH09~, ~1~, ~Defense~,      ~Physical Immunity~,    ~5~, ~Caster~,  ~40132~, ~40133~, ~CLERIC_SHIELD_OF_LATHANDER~,         ~1~,  ~9~, ~shield-of-lathander.BAM~,               ~BZ#IH09I~, ~BZPN019D~, 0b10   , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Shield of Lathander"
+        ~BZ#II09~, ~1~, ~Bomb~,         ~Damage~,               ~5~, ~Point~,   ~40134~, ~40135~, ~CLERIC_SPIKE_STONES~,                ~1~, ~10~, ~spike-stones.BAM~,                      ~BZ#II09I~, ~BZPN013D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Spike Stones"
+
+
+        ~BZ#IJ11~, ~1~, ~Defense~,      ~Armor~,                ~6~, ~Actor~,   ~40148~, ~40149~, ~CLERIC_ENTROPY_SHIELD~,              ~1~, ~12~, ~entropy-shield.BAM~,                    ~BZ#IJ11I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Entropy Shield"
+        ~BZ#IK12~, ~1~, ~Defense~,      ~Spell Defense~,        ~6~, ~Caster~,  ~40136~, ~40137~, ~WIZARD_ANTIMAGIC_SHELL~,             ~1~, ~12~, ~antimagic-shell.BAM~,                   ~BZ#IK12I~, ~BZPN100D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Antimagic Shell"
+        ~BZ#IL12~, ~1~, ~Cure~,         ~Regeneration~,         ~6~, ~Caster~,  ~40138~, ~40139~, ~WIZARD_TROLLISH_FORTITUDE~,          ~1~, ~10~, ~trollish-fortitude.BAM~,                ~BZ#IL12I~, ~BZPN005D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Trollish Fortitude"
+
+
+        ~BZ#IM14~, ~1~, ~Defense~,      ~Mental Defense~,       ~7~, ~Caster~,  ~40140~, ~40141~, ~CLERIC_IMPERVIOUS_SANCTITY_OF_MIND~, ~1~, ~10~, ~impervious-sanctity-of-the-mind.BAM~,   ~BZ#IM14I~, ~BZPN110D~, ~~     , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Impervious Sanctity of Mind"
+        ~BZ#IN14~, ~1~, ~Defense~,      ~Physical Immunity~,    ~7~, ~Caster~,  ~40142~, ~40143~, ~CLERIC_GREATER_SHIELD_OF_LATHANDER~, ~1~, ~14~, ~greater-shield-of-lathander.BAM~,       ~BZ#IN14I~, ~BZPN140D~, 0b10   , ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Greater Shield of Lathander"
+        ~BZ#IO14~, ~1~, ~Bomb~,         ~Restorative~,          ~7~, ~Point~,   ~40144~, ~40145~, ~CLERIC_MIST_OF_ELDATH~,              ~1~, ~13~, ~mist-of-eldath.BAM~,                    ~BZ#IO14I~, ~BZPN090D~, ~~     ,    ~~,    ~~, ~~, ~~, ~~, ~~ => "Mist of Eldath"
+
+
+    END
