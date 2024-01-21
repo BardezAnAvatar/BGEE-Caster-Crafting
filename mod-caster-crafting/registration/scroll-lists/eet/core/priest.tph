@@ -25,6 +25,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~SCRL5E~,   ~SPPR507~, ~Divine~, ~5~,  ~9~, ~0~ => ~SCRL5E~     //Champion's Strength
         ~SCRL5F~,   ~SPPR508~, ~Divine~, ~5~,  ~9~, ~0~ => ~SCRL5F~     //Chaotic Commands
 
-        ~SCRLSD~,   ~SPPR713~, ~Divine~, ~7~,  ~14~ ~0~ => ~SCRLSD~     //Greater Restoration
+        ~SCRLSD~,   ~SPPR713~, ~Divine~, ~7~, ~14~, ~0~ => ~SCRLSD~     //Greater Restoration
 
     END
