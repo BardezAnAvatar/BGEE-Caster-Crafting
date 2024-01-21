@@ -1,0 +1,149 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~leveled_scroll_asset_prefixes~
+BEGIN
+
+    /*
+    [Spell]                 // 0
+    [Levelled BAM subpath]  // 1
+    */
+
+        ~MEWI152~,  ~arcane/1/inertia~                          => ~MEWI152~    //Inertia
+        ~MEPR157~,  ~priest/1/searing_smite~                    => ~MEPR157~    //Searing Smite
+
+        ~MEWI254~,  ~arcane/2/intoxicate~                       => ~MEWI254~    //Intoxicate
+        ~MEWI255~,  ~arcane/2/null_healing~                     => ~MEWI255~    //Null Healing
+        ~MEPR252~,  ~priest/2/fiery_link~                       => ~MEPR252~    //Fiery Link
+        ~MEPR253~,  ~priest/2/null_healing~                     => ~MEPR253~    //Null Healing
+        ~MEPR254~,  ~priest/2/critical_boon~                    => ~MEPR254~    //Critical Boon
+
+        ~MEWI353~,  ~arcane/3/displacement~                     => ~MEWI353~    //Displacement
+        ~MEWI354~,  ~arcane/3/terror~                           => ~MEWI354~    //Terror
+        ~MEWI356~,  ~arcane/3/legend_lore~                      => ~MEWI356~    //Legend Lore
+        ~MEWI361~,  ~arcane/3/mestil's_acid_breath~             => ~MEWI361~    //Mestil's Acid Breath
+
+        ~MEWI451~,  ~arcane/4/wall_of_fire~                     => ~MEWI451~    //Wall of Fire
+        ~MEPR451~,  ~priest/4/disarm~                           => ~MEPR451~    //Disarm
+        ~MEPR453~,  ~priest/4/turn_creature~                    => ~MEPR453~    //Turn Creature
+
+        ~MEWI554~,  ~arcane/5/ball_lightning~                   => ~MEWI554~    //Ball Lightning
+        ~MEWI557~,  ~arcane/5/commando_conjuration~             => ~MEWI557~    //Commando Conjuration
+        ~MEWI566~,  ~arcane/5/gedlee's_electric_barrier~        => ~MEWI566~    //Gedlee's Electric Barrier
+        ~MEPR553~,  ~priest/5/protection_from_the_elements~     => ~MEPR553~    //Protection from the Elements
+        ~MEPR557~,  ~priest/5/expose_to_the_elements~           => ~MEPR557~    //Expose to the Elements
+        ~MEPR558~,  ~priest/5/sphere_of_security~               => ~MEPR558~    //Sphere of Security
+
+        ~MEWI651~,  ~arcane/6/isaac's_greater_missile_storm~    => ~MEWI651~    //Isaac's Greater Missile Storm
+        ~MEWI652~,  ~arcane/6/freeze_inanimates~                => ~MEWI652~    //Freeze Inanimates
+        ~MEWI656~,  ~arcane/6/mass_charm~                       => ~MEWI656~    //Mass Charm
+        ~MEPR652~,  ~priest/6/drown~                            => ~MEPR652~    //Drown
+        ~MEPR654~,  ~priest/6/living_lightning~                 => ~MEPR654~    //Living Lightning
+        ~MEPR658~,  ~priest/7/conjure_earth_elemental~          => ~MEPR658~    //Conjure Earth Elemental
+
+        ~MEWI754~,  ~arcane/7/stygian_ice_storm~                => ~MEWI754~    //Stygian Ice Storm
+        ~MEWI756~,  ~arcane/7/critical_sequencer~               => ~MEWI756~    //Critical Sequencer
+        ~MEWI759~,  ~arcane/7/extraordinary_luck~               => ~MEWI759~    //Extraordinary Luck
+        ~MEWI760~,  ~arcane/7/lightning_stream~                 => ~MEWI760~    //Lightning Stream
+
+        ~MEWI859~,  ~arcane/8/false_life~                       => ~MEWI859~    //False Life
+        ~MEWI860~,  ~arcane/8/enslave~                          => ~MEWI860~    //Enslave
+        ~MEWI861~,  ~arcane/8/polar_ray~                        => ~MEWI861~    //Polar Ray
+        ~MEWI862~,  ~arcane/8/clone_other~                      => ~MEWI862~    //Clone Other
+
+        ~MEWI952~,  ~arcane/9/mass_domination~                  => ~MEWI952~    //Mass Domination
+
+        ~MEWI960~,  ~arcane/A/eclectic_recall~                  => ~MEWI960~    //Eclectic Recall
+        ~MEWI965~,  ~arcane/A/rampant_lightning~                => ~MEWI965~    //Rampant Lightning
+        ~MEWI964~,  ~arcane/A/freezing_wave~                    => ~MEWI964~    //Freezing Wave
+
+        ~MEPR766~,  ~priest/Q/contagious_fear~                  => ~MEPR766~    //Contagious Fear
+
+END
+
+
+/**********************
+*   Powerful Spells   *
+**********************/
+ACTION_IF %bz_olvyn_powerful% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~leveled_scroll_asset_prefixes~
+    BEGIN
+        ~MEWI551~,  ~arcane/5/life_transfer~                    => ~MEWI551~    //Life Transfer
+        ~MEWI558~,  ~arcane/5/missile_of_patience~              => ~MEWI558~    //Missile of Patience
+
+        ~MEWI863~,  ~arcane/8/metafireball~                     => ~MEWI863~    //Metafireball
+
+        ~MEWI955~,  ~arcane/9/mass_sequencer~                   => ~MEWI955~    //Mass Sequencer
+
+        ~MEWI968~,  ~arcane/A/sphere_of_annihilation~           => ~MEWI968~    //Sphere of Annihilation
+    END
+END
+
+
+/******************
+*   EEex Spells   *
+******************/
+ACTION_IF %bz_olvyn_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~leveled_scroll_asset_prefixes~
+    BEGIN
+        ~MEWI157~,  ~arcane/1/hex~                              => ~MEWI157~    //Hex
+        ~MEWI158~,  ~arcane/1/reflect_attack~                   => ~MEWI158~    //Reflect Attack
+
+        ~MEWI257~,  ~arcane/2/levitate~                         => ~MEWI257~    //Levitate
+        ~MEWI259~,  ~arcane/2/detect_magic~                     => ~MEWI259~    //Detect Magic
+        ~MEPR256~,  ~priest/2/detect_magic~                     => ~MEPR256~    //Detect Magic
+
+        ~MEWI352~,  ~arcane/3/fly~                              => ~MEWI352~    //Fly
+        ~MEWI359~,  ~arcane/3/throw~                            => ~MEWI359~    //Throw
+        ~MEPR357~,  ~priest/3/fly~                              => ~MEPR357~    //Fly
+
+        ~MEWI455~,  ~arcane/4/redirect_spell~                   => ~MEWI455~    //Redirect Spell
+        ~MEPR455~,  ~priest/4/piercing_shots~                   => ~MEPR455~    //Piercing Shots
+        ~MEPR456~,  ~priest/4/pebbles_to_boulders~              => ~MEPR456~    //Pebbles to Boulders
+
+        ~MEWI552~,  ~arcane/5/steal_spells~                     => ~MEWI552~    //Steal Spells
+        ~MEWI559~,  ~arcane/5/ghostform~                        => ~MEWI559~    //Ghostform
+        ~MEWI562~,  ~arcane/5/critical_spell~                   => ~MEWI562~    //Critical Spell
+        ~MEPR554~,  ~priest/5/ghostform~                        => ~MEPR554~    //Ghostform
+        ~MEPR555~,  ~priest/5/critical_spell~                   => ~MEPR555~    //Critical Spell
+        ~MEPR556~,  ~priest/5/barrage~                          => ~MEPR556~    //Barrage
+
+        ~MEPR660~,  ~priest/6/animal_growth~                    => ~MEPR660~    //Animal Growth
+
+        ~MEPR762~,  ~priest/7/elysium's_tears~                  => ~MEPR762~    //Elysium's Tears
+
+        ~MEPR761~,  ~priest/Q/volcanic_eruption~                => ~MEPR761~    //Volcanic Eruption
+        ~MEPR763~,  ~priest/Q/greater_living_lightning~         => ~MEPR763~    //Greater Living Lightning
+
+    END
+END
+
+
+/***************************
+*   Powerful EEex Spells   *
+***************************/
+ACTION_IF %bz_olvyn_powerful_eeex% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~leveled_scroll_asset_prefixes~
+    BEGIN
+        ~MEWI456~,  ~arcane/4/copy_spell~                       => ~MEWI456~    //Copy Spell
+
+        ~MEPR655~,  ~priest/6/linked_spirit~                    => ~MEPR655~    //Linked Spirit
+    END
+END
+
+
+/***************************
+*   Other exceptions   *
+***************************/
+ACTION_IF %bz_olvyn_wi556% THEN
+BEGIN
+    ACTION_DEFINE_ASSOCIATIVE_ARRAY
+        ~leveled_scroll_asset_prefixes~
+    BEGIN
+        ~MEWI556~,  ~arcane/5/skeleton_horde~                   => ~MEWI556~    //Skeleton Horde
+    END
+END

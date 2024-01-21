@@ -42,7 +42,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ!B1001~, ~SPPR110~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Shillelagh.BAM~,                      ~BZ!B10I~, ~0~, ~0~, ~1~, ~0~, ~0~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Shillelagh
         ~BZ!B1101~, ~SPPR111~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Armor of Faith.BAM~,                  ~BZ!B11I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Armor of Faith
         ~BZ!B1301~, ~SPPR113~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Doom.BAM~,                            ~BZ!B13I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Doom
-        ~BZ!B1601~, ~SPPR116~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Faerie Fire.BAM~,                     ~BZ!B16I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Faerie Fire
+      //~BZ!B1601~, ~SPPR116~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Faerie Fire.BAM~,                     ~BZ!B16I~, ~0~, ~1~, ~1~, ~0~, ~1~, ~1~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Faerie Fire
         ~BZ!B5001~, ~SPPR150~, ~Divine~, ~1~, ~1~,  ~0~, ~priest/core/Spirit Ward.BAM~,                     ~BZ!B50I~, ~0~, ~0~, ~0~, ~0~, ~0~, ~0~, ~1~,   ~1~, ~1~, ~1~, ~1~, ~1~, ~1~ => ~~    //Spirit Ward
 
 

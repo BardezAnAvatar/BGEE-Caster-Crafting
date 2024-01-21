@@ -15,6 +15,7 @@ ACTION_IF (MOD_IS_INSTALLED ~SETUP-IWDIFICATION.TP2~ ~30~)
 
 OUTER_SET ~bz_OlvynSpells_installed~ = 0
 OUTER_SET ~bz_iwdification_installed_after_OlvynSpells~ = 0
+OUTER_SET ~bz_olvyn_true_strike~ = 0
 //1000 = powerful spells; 1001 = no powerful spells
 ACTION_IF (MOD_IS_INSTALLED ~MESpells.tp2~ ~1000~) OR (MOD_IS_INSTALLED ~MESpells.tp2~ ~1001~)
     BEGIN
