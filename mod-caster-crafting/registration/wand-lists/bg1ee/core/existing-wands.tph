@@ -1,0 +1,25 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~wand_list~
+    BEGIN
+
+        /*
+        [Item ResRef]                 // 0
+        */
+
+        ~WAND02~    =>  ~WAND02~    //Wand of Fear
+        ~WAND03~    =>  ~WAND02~    //Wand of Magic Missiles
+        ~WAND04~    =>  ~WAND02~    //Wand of Paralyzation
+        ~WAND05~    =>  ~WAND02~    //Wand of Fire
+        ~WAND06~    =>  ~WAND02~    //Wand of Frost
+        ~WAND07~    =>  ~WAND02~    //Wand of Lighting
+        ~WAND08~    =>  ~WAND02~    //Wand of Sleep
+        ~WAND09~    =>  ~WAND02~    //Wand of Polymorphing
+        ~WAND10~    =>  ~WAND02~    //Wand of Monster Summoning
+        ~WAND11~    =>  ~WAND02~    //Wand of the Heavens
+        ~WAND12~    =>  ~WAND02~    //Wand of Magic Missiles
+        ~WAND13~    =>  ~WAND02~    //Wand of Cloudkill
+        ~WAND18~    =>  ~WAND02~    //Wand of Spell Striking
+        ~WAND19~    =>  ~WAND02~    //Wand of Cursing
+        ~BDWAND01~  =>  ~WAND02~    //Wand of Water Elemental Summoning
+
+    END
