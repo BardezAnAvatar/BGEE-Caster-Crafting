@@ -111,3 +111,8 @@ Notable: DMG says wands cost 7500 to 50k gold:
 | ----- | ----- |
 |     1 |  7500 |
 |    10 | 50000 |
+
+The formula given in 3.5e, wand price = spell level * caster level * 750.
+So the Wand of Fire would cost 3 * 6 * 750 = 13500 before shop markup.
+
+price = 10 * 18 * 750 = 135000 _whistle_ nearly 3x the 50 max amount
