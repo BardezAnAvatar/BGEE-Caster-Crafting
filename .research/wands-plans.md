@@ -59,7 +59,7 @@ Soooo
 | Fear              | 10000 | 20    | 100
 | Sleep             |  7500 | 20    | 100
 
-{ Cost(fear) } = 10000 x (20/100) * 150% * 85%
+{ Cost(fear) } = 10000 x (20/100) * 150% * 85% ... yeah, lines up.
 
 
 The formula given in 3.5e, wand price = spell level * caster level * 750.
@@ -67,3 +67,47 @@ So the Wand of Fire would cost 3 * 6 * 750 = 13500 before shop markup.
 
 
 Wands have a price in the ITM file that is for 100 charges (I think), but realistically "100%"
+
+
+What does not have a matching spell? Frost. Water Elemental if we ignore IWDification.
+
+
+
+Part of me wants to do that Arcane/Divine/Nature split for the menu split; those menus can have redundant entries, but
+Menu would be:
+Wands > Arcane  > level 10 > dragon's Breath
+Wands > Arcane  > 4 > Spirit Armor
+Wands > Natural > 4 > Spirit Armor
+
+
+Prices for a fully-charged wand range from 7,500 to 50,000 gold pieces!
+
+> the most rare of the wands being the wand of conjuration, and the most common being the wand of magic detection. There are 16 wands listed on the table in the DUNGEON MASTERS GUIDE. Of these wands, half can be used by any class, the remainder require a magic-user to use (with the wand of fear being the sole exception, also usable by clerics). Oddly enough, the wand of magic missiles, which seems as if it should be usable only by magic-users, is actually usable by any character (so long as they are permitted to use wands at all). Illusionists are more limited in the types of wands they are permitted to use as they are not fully magic-users - they may only use wands of enemy detection, fear, illusion, magic detection, metal & mineral detection, secret door & trap detection, and wonder. Monks are prohibited from using wands of any kind.
+
+So one of the keys here is that some wands are usable by everyone (even fighters).
+
+So quirks of wands:
+Menu setup
+Who can use which spells
+
+I don't _want_ to have arcane/divine/nature/other split for wand effects; if there's a wand of it, it's usable for all classes like PFS scrolls/wands
+
+Interesting notes: Staves are supposed to be CL 8 (8d6 damage), and wands CL 6 (6d6 damage). Wand of Frost, for example, is more like a staff than
+a wand.
+
+
+One of the things that the DMG and such call out is that wands should be, at least partially, usable by non-magic-user classes. I think that a big
+takeaway will thusly be that many wands should be usable by everyone, some by mages, some by priests.
+
+The above would generate another potential categorization approach:
+
+-Wands usable by cleric
+-Wands usable by mage
+-Wands usable by all
+
+Notable: DMG says wands cost 7500 to 50k gold:
+
+| Level | Cost  |
+| ----- | ----- |
+|     1 |  7500 |
+|    10 | 50000 |
