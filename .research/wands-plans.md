@@ -116,3 +116,19 @@ The formula given in 3.5e, wand price = spell level * caster level * 750.
 So the Wand of Fire would cost 3 * 6 * 750 = 13500 before shop markup.
 
 price = 10 * 18 * 750 = 135000 _whistle_ nearly 3x the 50k max amount
+
+
+## Colors
+DnD beyond colors:
+- Abjuration: Blue
+- Conjuration: Yellow
+- Divination: Gray
+- Enchantment: Pink
+- Evocation: Red
+- Illusion: Purple
+- Necromancy: Green
+- Transmutation: Orange
+
+Conversely:
+https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F8vhbvvfrn5t61.png
+This is gorgeous and I kinda feel like it reflects good color association
