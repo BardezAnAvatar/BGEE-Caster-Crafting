@@ -154,7 +154,7 @@ BEGIN
     ACTION_DEFINE_ASSOCIATIVE_ARRAY
     ~scroll_list_missing~
     BEGIN
-        ~MEPR454~, ~Divine~, ~4~ => ~MEPR454~    //Wall of Fire
+        ~MEPR454~, ~Divine~, ~4~ => ~MEPR454~   //Wall of Fire
     END
 END
 
