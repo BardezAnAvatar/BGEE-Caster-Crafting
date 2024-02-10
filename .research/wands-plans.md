@@ -115,7 +115,8 @@ Notable: DMG says wands cost 7500 to 50k gold:
 The formula given in 3.5e, wand price = spell level * caster level * 750.
 So the Wand of Fire would cost 3 * 6 * 750 = 13500 before shop markup.
 
-price = 10 * 18 * 750 = 135000 _whistle_ nearly 3x the 50k max amount
+Expanding this out, a level 10 wand would be:
+price = 10 * 18 * 750 = 135000; _whistle_ nearly 3x the 50k max amount specified by AD&D 2E DMGs
 
 
 ## Colors
@@ -132,3 +133,29 @@ DnD beyond colors:
 Conversely:
 https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F8vhbvvfrn5t61.png
 This is gorgeous and I kinda feel like it reflects good color association
+
+
+
+
+## Crafting Dialog
+Now that I'm a little bit into the depths of this, I need to think through how we should present crafting.
+I want each experience to be a little bit different; Scrolls go by spell level; potions by category and sub.
+
+I think for Wands I wand to go by School.
+
+Conjuration hits the hardest with approx 100 spells.
+
+Since this is absolutely batshit, I think that it doesn't make a ton of sense to put all 98 or 100 or whatever spells into the menu;
+I think this will go off of what is memorized, so the menus won't be visually overloaded.
+
+Craft > Wands > Conjuration > Sort by what exactly? Probably Alphabetical wand name. Mix the existing wands into the new wands list.
+
+select a wand, confirm gold, craft!
+
+For failure % ... I kind of want to ignore it. Backfiring wands would be lame, but _very_ on-point.
+- Wand that polymorphs you into squirrel
+- Wand that blinds you
+- Wand that flesh to stones you
+- etc.
+
+It's up for consideration, but I kind of don't want to. I'm getting "done" with this mod emotionally and running out of drive.
