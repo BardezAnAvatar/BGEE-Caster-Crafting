@@ -10,3 +10,15 @@ staves should be ice/fire/armor/etc.
 They would refill on sleep. Not really charges per se.
 
 A smaller set of staves, really.
+
+- Fire
+- Frost
+- Acid
+- Electricity
+- Armor
+- Utility (Knock/Luck/etc.)
+- Deflection (stoneskin/blue/mirror image)
+- Protection (Fire Cold Acid Elec)
+- Weapons (Mordenkainens / black blade / etc.)
+- nature (entangle / summon animals / X)
+- etc.
