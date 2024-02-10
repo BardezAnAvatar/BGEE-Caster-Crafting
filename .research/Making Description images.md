@@ -26,3 +26,6 @@ On the Sketchify layer:
     Magic tool WITH Antialiasing and WITH feathering to remove white areas
 
 NOTE: Screen is for the darker parts of the image. MAYBE if the target is that lighter color, I should... not? ... invert colors?
+
+
+Looks like we have a max size of 256 x 256 ?
