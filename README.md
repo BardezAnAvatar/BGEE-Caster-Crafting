@@ -18,17 +18,19 @@ This mod is an implementation of crafting for casters:
         - wands
 
 
-## Legal
-Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0)
+## Copyright
+This mod is copyright (c) 2024 by Erik "Bardez" Frantz.
 
-See the [canonical URL](https://creativecommons.org/licenses/by-nc/4.0/) for this license OR [the repo's local license file](LICENSE.md)
-- The canonical URL takes precedence over the local file, which is included as markdown for purposes of distribution best practices on GitHub.
+You are allowed to submit [maintenance updates](./MAINTENANCE-NOTICE.md) for this mod. This mod is licensed under Creative Commons Attribution-NonCommercial 4.0 International Public License (CC BY-NC 4.0)
+- See the [canonical URL](https://creativecommons.org/licenses/by-nc/4.0/) for this license OR [the repo's local license file](LICENSE.md)
+    - The canonical URL takes precedence over the local file, which is included as markdown for purposes of distribution best practices on GitHub.
 
 tl;dr: do what you will with it, credit me (Bardez) for my work on the mod.
 
-Two non-binding requested exceptions:
+A few non-binding requested exceptions:
 1. Don't use the wands/potion images contained in this repo for in your mod(s) for Infinity Engine games that _THIS_ mod works on. Why? I don't want the art assets to be used in two places and get confusing. Other engines/games? Go nuts!
 1. Don't suck my code into your own mega-overhaul mod. Finding 3 versions of the same feature from the same code base in 3 different mods is both annoying and harmful to the modding community.
+1. Don't just fork this and take it over. Ask first. Try to keep the repo in its original location.
 
 
 ## Credit/license for prior work
