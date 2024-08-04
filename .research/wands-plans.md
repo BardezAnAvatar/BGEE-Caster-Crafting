@@ -159,3 +159,10 @@ For failure % ... I kind of want to ignore it. Backfiring wands would be lame, b
 - etc.
 
 It's up for consideration, but I kind of don't want to. I'm getting "done" with this mod emotionally and running out of drive.
+
+
+## Components:
+Install Wands options:
+- Level 4
+- Level 6
+- Level 9
