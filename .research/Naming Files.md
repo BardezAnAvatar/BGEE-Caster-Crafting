@@ -23,11 +23,12 @@ This indicates that `+`, `~`, `` ` ``, `'`, `@`, `$`, `^`, `&` are invalid chara
 1. characters that work fine:
     - `!`
     - `{`
-    - `` ` ``
     - `}`
     - `[`
     - `]`
     - `=`
+    - `-`
+    - `_`
 1. Characters that work fine from console and seem to be OK, but run into errors with scripts:
     - `@` (creating via dialog scripts errors out)
     - `+` (from IESDP)
