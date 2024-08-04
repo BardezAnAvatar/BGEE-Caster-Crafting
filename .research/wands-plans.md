@@ -9,21 +9,21 @@ Extent
 Wands in 3E are 4th level or lower.
 
 Compare to BG base game:
-| Wand              |  Effects      | Matching Spells   | Level | Magnitude |
-| ---------         | ---------     | ---------------   | ----- | --------  |
-| Fear              |  Fear         | Horror            | 2     | 15 rnd    |
-| Magic Missiles    | MM            | Magic Missile     | 1     | 1 proj.   |
-| Paralysis         | Stun          | Hold PErson       | 3     | 1 trn.    |
-| Fire              | FB, AS        | FB, AS            | 2, 3  | 6d6       |
-| Frost             | AS Cold       | n/a               | 2-ish | 8d6       |
-| Lightning         | bolt          | Lightning Bolt    | 3     | 6d6       |
-| Sleep             | sleep         | Sleep             | 1     | 2 trn.    |
-| Polymorphing      | poly          | Polymorph Other   | 4     | squirrel  |
-| Summon Monster    | SM            | SM2, I think      | 4     | 12 HD, 2 trn |
-| Heavens           | Fire pillar   | Flamestrike       | 5     | 8d6       |
-| Cloudkill         | CC            | Cloudkill         | 5     |           |
-| Spell Striking    | Breach, SS    | Breach, SS        | 5x 6  |           |
-| Cursing           | Blind/deaf/silence | blind / silecne | 1/2/3 | 1 turn |
+| Wand              |  Effects           | Matching Spells | Level | Magnitude    |
+| ---------         | ---------          | --------------- | ----- | --------     |
+| Fear              | Fear               | Horror          | 2     | 15 rnd       |
+| Magic Missiles    | MM                 | Magic Missile   | 1     | 1 proj.      |
+| Paralysis         | Stun               | Hold PErson     | 3     | 1 trn.       |
+| Fire              | FB, AS             | FB, AS          | 2, 3  | 6d6          |
+| Frost             | AS Cold            | n/a             | 2-ish | 8d6          |
+| Lightning         | bolt               | Lightning Bolt  | 3     | 6d6          |
+| Sleep             | sleep              | Sleep           | 1     | 2 trn.       |
+| Polymorphing      | poly               | Polymorph Other | 4     | squirrel     |
+| Summon Monster    | SM                 | SM2, I think    | 4     | 12 HD, 2 trn |
+| Heavens           | Fire pillar        | Flamestrike     | 5     | 8d6          |
+| Cloudkill         | CC                 | Cloudkill       | 5     |              |
+| Spell Striking    | Breach, SS         | Breach, SS      | 5x 6  |              |
+| Cursing           | Blind/deaf/silence | blind / silecne | 1/2/3 | 1 turn       |
 
 
 So in BG2, wands go up to 5 or 6 in power. I could cap them at level 6 or lower for EEs, 4 or lower for IWD2.
