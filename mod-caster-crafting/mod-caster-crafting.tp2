@@ -115,9 +115,9 @@ BEGIN @60 DESIGNATED 60 // Wands for existing Spells
 
 
 
-// Leveled Scrolls: craft scrolls at higher caster levels
+// Leveled Wands: craft wands at higher caster levels
 /*
-BEGIN @70 DESIGNATED 70 //~Leveled Wands: craft potions at higher caster levels~
+BEGIN @70 DESIGNATED 70 //~Leveled Wands: craft wands at higher caster levels~
     INCLUDE ~./%MOD_FOLDER%/comp/leveled-wands/component-install.tph~
 */
 //END missing potions
