@@ -3,7 +3,7 @@ from gimpfu import *
 
 #this script will crop the image to the top-left 75% of the image (so focusing on the head of the wands) and then resize
 
-def ie_inventory_resize(file, outputFolder):
+def ie_inventory_resize(file, outputFolder, cropScale):
     #Open the file; size to 64x64; duplicate layer; make black; offset 4, 5; set opacity to 50%; save to output
 
     print "Opening '" + file + "' ..."
@@ -24,8 +24,8 @@ def ie_inventory_resize(file, outputFolder):
         #crop to 75%
         width = pdb.gimp_image_width(fileImage)
         height = pdb.gimp_image_height(fileImage)
-        newWidth = width * .75
-        newHeight = height * .75
+        newWidth = width * cropScale
+        newHeight = height * cropScale
         cropWidth = int(newWidth)
         cropHeight = int(newHeight)
         croppedImage = pdb.gimp_image_crop(fileImage, cropWidth, cropHeight, 0, 0)
@@ -48,9 +48,10 @@ def ie_inventory_resize(file, outputFolder):
 
 
 
-def run(directoryIn, directoryOut):
+def run(directoryIn, directoryOut, cropScale):
         print "Run: directoryIn : %s" % directoryIn
         print "Run: directoryOut : %s" % directoryOut
+        print "Run: cropScale : %s" % cropScale
 
         start=time.time()
         print "Run: Running on directory \"%s\"" % directoryIn
