@@ -61,7 +61,7 @@ def run(directoryIn, directoryOut, cropScale):
 
         for infile in glob.glob(globPath):
                 print "Run: found file : %s" % infile
-                ie_inventory_resize(infile, directoryOut)
+                ie_inventory_resize(infile, directoryOut, cropScale)
         end=time.time()
         print "Finished, total processing time: %.2f seconds" % (end-start)
 
