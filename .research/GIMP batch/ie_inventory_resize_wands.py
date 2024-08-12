@@ -28,19 +28,19 @@ def ie_inventory_resize(file, outputFolder, cropScale):
         newHeight = height * cropScale
         cropWidth = int(newWidth)
         cropHeight = int(newHeight)
-        croppedImage = pdb.gimp_image_crop(fileImage, cropWidth, cropHeight, 0, 0)
+        pdb.gimp_image_crop(fileImage, cropWidth, cropHeight, 0, 0)
 
         #resize
         pdb.gimp_context_set_interpolation(2) #INTERPOLATION-CUBIC (2)
-        pdb.gimp_image_scale(croppedImage, 64, 64)
-        layer = croppedImage.layers[0]
+        pdb.gimp_image_scale(fileImage, 64, 64)
+        layer = fileImage.layers[0]
         print "Resized '" + filename_without_ext + "' ..."
 
         # Export flattened image
         target = outputFolder + "/" + filename_without_ext + "-i.png"
         print "Saving '" + target + "' ..."
-        pdb.file_png_save_defaults(croppedImage, layer, target, target, run_mode=RUN_NONINTERACTIVE)
-        #pdb.file_png_save2(croppedImage, flattened, target, target, False, 9, True, False, False, True, True, False, False, run_mode=RUN_NONINTERACTIVE)
+        pdb.file_png_save_defaults(fileImage, layer, target, target, run_mode=RUN_NONINTERACTIVE)
+        #pdb.file_png_save2(fileImage, flattened, target, target, False, 9, True, False, False, True, True, False, False, run_mode=RUN_NONINTERACTIVE)
         print "Saved '" + target + "'!"
 
     except Exception as err:
