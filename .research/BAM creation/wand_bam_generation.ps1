@@ -148,22 +148,22 @@ Function Main
         GenerateBamD $RolledFrame $SpellFrame 20 15e
     }
 
-    Write-Host "Optimizing BAMs ..." -ForegroundColor red
-
-    #iterate through all temp dir BAMDs
-    $bamdFiles = Get-ChildItem $DirOutputTemp | Where-Object { $_.Name -like "*.BAMD" }
-    foreach($file in $bamdFiles)
-    {
-        $bamName = ($file.Basename).Replace('.BAMD', '.BAM')
-
-        Write-Host "Generating $bamName ..." -ForegroundColor Magenta
-
-        #Generate BAM
-        CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
-
-        #this locked up my processor and OS, so... WAIT
-        Start-Sleep -Milliseconds 20
-    }
+#    Write-Host "Optimizing BAMs ..." -ForegroundColor red
+#
+#    #iterate through all temp dir BAMDs
+#    $bamdFiles = Get-ChildItem $DirOutputTemp | Where-Object { $_.Name -like "*.BAMD" }
+#    foreach($file in $bamdFiles)
+#    {
+#        $bamName = ($file.Basename).Replace('.BAMD', '.BAM')
+#
+#        Write-Host "Generating $bamName ..." -ForegroundColor Magenta
+#
+#        #Generate BAM
+#        CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
+#
+#        #this locked up my processor and OS, so... WAIT
+#        Start-Sleep -Milliseconds 20
+#    }
 
     $end = Get-Date
 
