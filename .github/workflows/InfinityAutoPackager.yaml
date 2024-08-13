@@ -25,13 +25,6 @@ jobs:
         with:
           submodules: true
 
-      #- name: Remove items from release
-      #  run: |
-      #    rm -r mod-thalantyr-ex/craftable-items/assets
-      #    rm mod-thalantyr-ex/craftable-items/LICENSE.md
-      #    rm mod-thalantyr-ex/craftable-items/README.md
-      #    rm mod-thalantyr-ex/craftable-items/reserved_strings.md
-
       - name: Create Infinity Engine Mod Packages (.iemod and .zip)
         uses: ALIENQuake/CreateIEModZipPackage@master
         id: CreateIEModZipPackage
