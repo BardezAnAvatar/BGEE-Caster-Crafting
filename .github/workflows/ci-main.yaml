@@ -64,7 +64,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     needs: bump-tag-version
-    if: ${{ needs.bump-tag-version.outputs.semver_skipped == "false" }}
+    if: needs.bump-tag-version.outputs.semver_skipped == 'false'
     steps:
 
       - name: Debug bump-tag-version output
