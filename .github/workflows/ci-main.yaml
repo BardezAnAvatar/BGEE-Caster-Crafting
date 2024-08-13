@@ -64,8 +64,19 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     needs: bump-tag-version
-    if: ${{ needs.bump-tag-version.outputs.semver_skipped }} == "false"
+    if: ${{ needs.bump-tag-version.outputs.semver_skipped == "false" }}
     steps:
+
+      - name: Debug bump-tag-version output
+        run: |
+          echo "${{ toJson(needs.bump-tag-version) }}"
+
+      - name: Debug the Output another way
+        run: |
+          echo "old-version   - ${{ needs.bump-tag-version.outputs.old-version }}"
+          echo "version       - ${{ needs.bump-tag-version.outputs.version }}"
+          echo "skipped       - ${{ needs.bump-tag-version.outputs.skipped }}"
+          echo "release-notes - ${{ needs.bump-tag-version.outputs.release-notes }}"
 
       - name: Initial setup
         run: |
