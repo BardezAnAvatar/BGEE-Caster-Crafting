@@ -122,10 +122,10 @@ Function GenerateBam
 
     $arguments = $params -join " "
 
+    #debug
+    #Write-Host $arguments
 
-    Write-Host $arguments
-
-    #Invoke-Command -program $PathPsBam -argumentString $arguments -waitForExit true
+    Invoke-Command -program $PathPsBam -argumentString $arguments -waitForExit true
 }
 
 Function Main
