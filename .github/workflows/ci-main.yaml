@@ -48,10 +48,10 @@ jobs:
         echo "semver_release-notes - ${{ steps.semver.outputs.release-notes }}"
 
     outputs:
-      semver_old: ${{ steps.semver.outputs.old-version }}
-      semver_next: ${{ steps.semver.outputs.version }}
-      semver_skipped: ${{ steps.semver.outputs.skipped }}
-      semver_release-notes: ${{ steps.semver.outputs.release-notes }}
+      semver_old: '${{ steps.semver.outputs.old-version }}'
+      semver_next: '${{ steps.semver.outputs.version }}'
+      semver_skipped: '${{ steps.semver.outputs.skipped }}'
+      semver_release-notes: '${{ steps.semver.outputs.release-notes }}'
 
   debug:
     needs: bump-tag-version
