@@ -27,7 +27,7 @@ jobs:
       name: Bump and Tag Version
       id: semver
       with:
-        mode: bump
+        mode: validate
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         major-label: SemVer Major
         minor-label: SemVer Minor
