@@ -11,10 +11,6 @@ on:
     - ready_for_review
     - review_requested
     - synchronize
-    # - edited #updating PR title, body, state or base?
-  pull_request_review:
-    types:
-    - dismissed
 
 permissions:
   contents: read
@@ -48,10 +44,10 @@ jobs:
 
       - name: Debug the Output
         run: |
-          echo "old-version          - ${{ steps.semver.outputs.old-version }}"
-          echo "version              - ${{ steps.semver.outputs.version }}"
-          echo "skipped              - ${{ steps.semver.outputs.skipped }}"
-          echo "semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}"
+          echo "old-version   - ${{ steps.semver.outputs.old-version }}"
+          echo "version       - ${{ steps.semver.outputs.version }}"
+          echo "skipped       - ${{ steps.semver.outputs.skipped }}"
+          echo "release-notes - ${{ steps.semver.outputs.release-notes }}"
 
   build:
     name: Package Mod

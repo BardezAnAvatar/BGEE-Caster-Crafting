@@ -19,11 +19,11 @@ jobs:
     permissions: write-all
 
     steps:
-    - uses: actions/checkout@v4
-      name: Checkout
+    - name: Checkout
+      uses: actions/checkout@v4
 
-    - uses: jefflinse/pr-semver-bump@v1.7.0
-      name: Bump and Tag Version
+    - name: Bump and Tag Version
+      uses: jefflinse/pr-semver-bump@v1.7.0
       id: semver
       with:
         mode: bump
@@ -40,17 +40,24 @@ jobs:
 
     - name: Debug the Output
       run: |
-
-        echo "old-version          - ${{ steps.semver.outputs.old-version }}"
-        echo "version              - ${{ steps.semver.outputs.version }}"
-        echo "skipped              - ${{ steps.semver.outputs.skipped }}"
-        echo "semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}"
+        echo "old-version   - ${{ steps.semver.outputs.old-version }}"
+        echo "version       - ${{ steps.semver.outputs.version }}"
+        echo "skipped       - ${{ steps.semver.outputs.skipped }}"
+        echo "release-notes - ${{ steps.semver.outputs.release-notes }}"
 
     outputs:
-      semver_old: ${{ steps.semver.outputs.old-version }}
-      semver_next: ${{ steps.semver.outputs.version }}
-      semver_skipped: ${{ steps.semver.outputs.skipped }}
-      semver_release-notes: ${{ steps.semver.outputs.release-notes }}
+      semver_old: '${{ steps.semver.outputs.old-version }}'
+      semver_next: '${{ steps.semver.outputs.version }}'
+      semver_skipped: '${{ steps.semver.outputs.skipped }}'
+      semver_release-notes: '${{ steps.semver.outputs.release-notes }}'
+
+  debug:
+    needs: bump-tag-version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug output
+        run: |
+          echo "${{ toJson(needs.bump-tag-version) }}"
 
   InfinityAutoPackager:
     name: Publish Mod
