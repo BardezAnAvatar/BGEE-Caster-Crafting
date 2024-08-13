@@ -22,7 +22,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-
     - name: Bump and Tag Version
       uses: jefflinse/pr-semver-bump@v1.7.0
       id: semver
