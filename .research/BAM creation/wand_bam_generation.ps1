@@ -59,18 +59,12 @@ Function GenerateBamD
         [string]$InventoryFrame,
 
         [Parameter(Mandatory)]
-        [string]$FloatingFrame,
-
-        [Parameter(Mandatory)]
-        [string]$RolledCenterX,
-
-        [Parameter(Mandatory)]
-        [string]$RolledCenterY
+        [string]$FloatingFrame
     )
 
     $bamd =@"
-frame f00000 `"$InventoryFrame`" $RolledCenterX $RolledCenterY
-frame f00001 `"$FloatingFrame`" 0 0
+frame f00000 `"$DirInputPng/$InventoryFrame`" 0 0
+frame f00001 `"$DirInputPng/$FloatingFrame`" 0 0
 
 sequence f00000 f00001
 "@
@@ -135,17 +129,23 @@ Function Main
     Write-Host "Generating BAM-Ds ..." -ForegroundColor red
 
     #iterate through all of the input DIR PNGs
-    $pngFiles = Get-ChildItem $DirInputPng -Filter '*' + $PostfixInventory
+    $filter = '*' + $PostfixInventory
+    $pngFiles = Get-ChildItem $DirInputPng -Filter $filter
     foreach ($file in $pngFiles)
     {
-        $baseName = ($file.Basename).Replace($PostfixInventory, '')
+        $baseName = ($file.Name).Replace($PostfixInventory, '')
+        $floatingFile = ($file.Name).Replace($PostfixInventory, $PostfixFloating)
 
         $bamdName = "$($baseName).BAMD"
 
         Write-Host "Generating $bamdName from $file ..." -ForegroundColor blue
 
         #generate BAMD
-        GenerateBamD $RolledFrame $SpellFrame 20 15e
+        $bamdContent = GenerateBamD $file $floatingFile
+        $bamdContent = $bamdContent.Replace("\", "/") #apparently Bammer needs this syntax?
+
+        #Write the file
+        Set-Content -Path "$($DirOutputTemp)\$($bamdName)" -Value $bamdContent
     }
 
 #    Write-Host "Optimizing BAMs ..." -ForegroundColor red
