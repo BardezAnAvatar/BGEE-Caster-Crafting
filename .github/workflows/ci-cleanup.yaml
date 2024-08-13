@@ -1,0 +1,44 @@
+name: Delete old workflow runs
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: 'Number of days.'
+        required: true
+        default: 0
+      minimum_runs:
+        description: 'The minimum runs to keep for each workflow.'
+        required: true
+        default: 0
+      delete_run_by_conclusion_pattern:
+        description: 'Remove workflow by conclusion: action_required, cancelled, failure, skipped, success'
+        required: true
+        default: "skipped"
+        type: choice
+        options:
+          - cancelled
+          - failure
+          - skipped
+      dry_run:
+        description: 'Only log actions, do not perform any delete operations.'
+        required: false
+        type: choice
+        default: ""
+        options:
+          - "true"
+          - ""
+
+jobs:
+  del_runs:
+    name: Delete Undesirable Runs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ github.token }}
+          repository: ${{ github.repository }}
+          retain_days: ${{ github.event.inputs.days }}
+          keep_minimum_runs: ${{ github.event.inputs.minimum_runs }}
+          delete_run_by_conclusion_pattern: ${{ github.event.inputs.delete_run_by_conclusion_pattern }}
+          dry_run: ${{ github.event.inputs.dry_run }}
