@@ -36,8 +36,6 @@ jobs:
         require-release-notes: true
         release-notes-prefix: "# Release Notes:"
         release-notes-suffix: "<sub>_End Release Notes_</sub>"
-        with-v: true
-        base-branch: false
 
     - name: Debug the Output
       run: |
