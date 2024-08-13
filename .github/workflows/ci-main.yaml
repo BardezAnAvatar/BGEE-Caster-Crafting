@@ -41,7 +41,6 @@ jobs:
 
     - name: Debug the Output
       run: |
-
         echo "old-version          - ${{ steps.semver.outputs.old-version }}"
         echo "version              - ${{ steps.semver.outputs.version }}"
         echo "skipped              - ${{ steps.semver.outputs.skipped }}"
