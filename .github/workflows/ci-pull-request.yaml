@@ -1,0 +1,65 @@
+name: "Continuous Integration: PR SemVer Validation"
+
+on:
+  pull_request:
+    types:
+    - labeled
+    - unlabeled
+    - edited
+    - opened
+    - reopened
+    - ready_for_review
+    - review_requested
+    - synchronize
+    # - edited #updating PR title, body, state or base?
+
+concurrency:
+  group: PR-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  check-pr:
+    name: Validate Release Label and Notes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout
+
+      - uses: jefflinse/pr-semver-bump@v1.7.0
+        id: semver
+        name: Validate Pull Request Metadata
+        with:
+          mode: validate
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          major-label: SemVer Major
+          minor-label: SemVer Minor
+          patch-label: SemVer Patch
+          noop-labels: SemVer Skip
+          require-release-notes: true
+          release-notes-prefix: "# Release Notes:"
+          release-notes-suffix: "<sub>_End Release Notes_</sub>"
+
+      - name: Debug the Output
+        run: |
+          echo "old-version          - ${{ steps.semver.outputs.old-version }}"
+          echo "version              - ${{ steps.semver.outputs.version }}"
+          echo "skipped              - ${{ steps.semver.outputs.skipped }}"
+          echo "semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}"
+
+  build:
+    name: Build Solution
+    runs-on: windows-latest
+    needs: check-pr
+
+    steps:
+    - uses: actions/checkout@v4
+      name: Checkout Source
+      with:
+        fetch-depth: 0
+        fetch-tags: true
+
+    - uses: ./.github/actions/build/
+      name: Build Application
+
+    - uses: ./.github/actions/publish-artifact-pr/
+      name: Publish Artifact
