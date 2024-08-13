@@ -92,7 +92,7 @@ function Invoke-Command()
 }
 
 #this function will take a file in the temp dir and compress it using PS-BAM
-Function CompressBam
+Function GenerateBam
 {
     param(
         [Parameter(Mandatory)]
@@ -148,6 +148,7 @@ Function Main
         Set-Content -Path "$($DirOutputTemp)\$($bamdName)" -Value $bamdContent
     }
 
+
 #    Write-Host "Optimizing BAMs ..." -ForegroundColor red
 #
 #    #iterate through all temp dir BAMDs
@@ -159,7 +160,8 @@ Function Main
 #        Write-Host "Generating $bamName ..." -ForegroundColor Magenta
 #
 #        #Generate BAM
-#        CompressBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
+#        GenerateBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
+#        GenerateBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamdName $file
 #
 #        #this locked up my processor and OS, so... WAIT
 #        Start-Sleep -Milliseconds 20
