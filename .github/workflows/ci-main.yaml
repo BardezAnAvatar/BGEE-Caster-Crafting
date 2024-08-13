@@ -39,10 +39,10 @@ jobs:
 
     - name: Debug the Output
       run: |
-        echo "old-version          - ${{ steps.semver.outputs.old-version }}"
-        echo "version              - ${{ steps.semver.outputs.version }}"
-        echo "skipped              - ${{ steps.semver.outputs.skipped }}"
-        echo "semver_release-notes - ${{ steps.semver.outputs.release-notes }}"
+        echo "old-version   - ${{ steps.semver.outputs.old-version }}"
+        echo "version       - ${{ steps.semver.outputs.version }}"
+        echo "skipped       - ${{ steps.semver.outputs.skipped }}"
+        echo "release-notes - ${{ steps.semver.outputs.release-notes }}"
 
     outputs:
       semver_old: '${{ steps.semver.outputs.old-version }}'
