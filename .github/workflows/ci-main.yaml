@@ -7,7 +7,6 @@ on:
   push:
     branches:
     - main
-    - ContinuousIntegration
 
 concurrency:
   group: ${{ github.ref_name }}
@@ -20,14 +19,15 @@ jobs:
     permissions: write-all
 
     steps:
-    - uses: actions/checkout@v4
-      name: Checkout
+    - name: Checkout
+      uses: actions/checkout@v4
 
-    - uses: jefflinse/pr-semver-bump@v1.7.0
-      name: Bump and Tag Version
+
+    - name: Bump and Tag Version
+      uses: jefflinse/pr-semver-bump@v1.7.0
       id: semver
       with:
-        mode: validate
+        mode: bump
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         major-label: SemVer Major
         minor-label: SemVer Minor
@@ -36,6 +36,8 @@ jobs:
         require-release-notes: true
         release-notes-prefix: "# Release Notes:"
         release-notes-suffix: "<sub>_End Release Notes_</sub>"
+        with-v: true
+        base-branch: false
 
     - name: Debug the Output
       run: |
