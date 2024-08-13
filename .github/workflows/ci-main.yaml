@@ -1,0 +1,105 @@
+# Infinity Auto Packager by AL|EN (alienquake@hotmail.com)
+# A tool that automatically generates Infinity Engine mod packages when you publish a release.
+
+name: "Continuous Integration: Releases"
+
+on:
+  push:
+    branches:
+    - main
+
+concurrency:
+  group: ${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  bump-tag-version:
+    name: Bump and Tag Version
+    runs-on: ubuntu-latest
+    permissions: write-all
+
+    steps:
+    - uses: actions/checkout@v4
+      name: Checkout
+
+    - uses: jefflinse/pr-semver-bump@v1.7.0
+      name: Bump and Tag Version
+      id: semver
+      with:
+        mode: bump
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        major-label: SemVer Major
+        minor-label: SemVer Minor
+        patch-label: SemVer Patch
+        noop-labels: SemVer Skip
+        require-release-notes: true
+        release-notes-prefix: "# Release Notes:"
+        release-notes-suffix: "<sub>_End Release Notes_</sub>"
+        with-v: true
+        base-branch: false
+
+    - name: Debug the Output
+      run: |
+
+        echo "old-version          - ${{ steps.semver.outputs.old-version }}"
+        echo "version              - ${{ steps.semver.outputs.version }}"
+        echo "skipped              - ${{ steps.semver.outputs.skipped }}"
+        echo "semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}"
+
+    outputs:
+      semver_old: ${{ steps.semver.outputs.old-version }}
+      semver_next: ${{ steps.semver.outputs.version }}
+      semver_skipped: ${{ steps.semver.outputs.skipped }}
+      semver_release-notes: ${{ steps.semver.outputs.release-notes }}
+
+  InfinityAutoPackager:
+    name: Publish Mod
+    runs-on: ubuntu-latest
+    permissions: write-all
+    needs: bump-tag-version
+    if: ${{ needs.bump-tag-version.outputs.skipped }} == false
+    steps:
+
+      - name: Initial setup
+        run: |
+          git lfs uninstall
+          git config --global core.autocrlf false
+          git config --global core.ignorecase true
+
+      - name: Clone repository using 'github.ref' from release
+        uses: actions/checkout@master
+        with:
+          submodules: true
+
+      - name: Create Infinity Engine Mod Packages (.iemod and .zip)
+        uses: ALIENQuake/CreateIEModZipPackage@master
+        id: CreateIEModZipPackage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Release
+        id: create_release
+        uses: ncipollo/release-action@v1
+        with:
+          body: "${{ needs.bump-tag-version.outputs.semver_release-notes }}"
+          makeLatest: true
+          tag: ${{ needs.bump-tag-version.outputs.semver_next }}
+          name: Release ${{ needs.bump-tag-version.outputs.semver_next }}
+
+      - name: Upload iemod package to latest release
+        uses: svenstaro/upload-release-action@2.5.0
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
+          asset_name: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
+          tag: ${{ github.ref }}
+          overwrite: true
+
+      - name: Upload zip package to latest release
+        uses: svenstaro/upload-release-action@2.5.0
+        with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.zip
+          asset_name: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.zip
+          tag: ${{ github.ref }}
+          overwrite: true

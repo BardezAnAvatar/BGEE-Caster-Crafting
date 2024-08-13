@@ -1,0 +1,80 @@
+name: "Continuous Integration: Auto-Approve PRs"
+
+on:
+  pull_request:
+    types:
+    - labeled
+    - unlabeled
+    - edited
+    - opened
+    - reopened
+    - ready_for_review
+    - review_requested
+    - synchronize
+    # - edited #updating PR title, body, state or base?
+  pull_request_review:
+    types:
+    - dismissed
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: Auto-Approve-${{ github.ref_name }}
+  cancel-in-progress: true
+
+jobs:
+  check-pr:
+    name: Validate Release Label and Notes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout
+
+      - uses: jefflinse/pr-semver-bump@v1.7.0
+        id: semver
+        name: Validate Pull Request Metadata
+        with:
+          mode: validate
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          major-label: SemVer Major
+          minor-label: SemVer Minor
+          patch-label: SemVer Patch
+          noop-labels: SemVer Skip
+          require-release-notes: true
+          release-notes-prefix: "# Release Notes:"
+          release-notes-suffix: "<sub>_End Release Notes_</sub>"
+
+      - name: Debug the Output
+        run: |
+          echo "old-version          - ${{ steps.semver.outputs.old-version }}"
+          echo "version              - ${{ steps.semver.outputs.version }}"
+          echo "skipped              - ${{ steps.semver.outputs.skipped }}"
+          echo "semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}"
+
+  build:
+    name: Package Mod
+    runs-on: ubuntu-latest
+    if: ${{ needs.check-pr.outputs.semver_skipped == 'false' }} && (github.actor == 'dependabot[bot]' || github.actor == 'BardezAnAvatar')
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Infinity Engine Mod Packages (.iemod and .zip)
+        uses: ALIENQuake/CreateIEModZipPackage@master
+        id: CreateIEModZipPackage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  auto-approval:
+    name: Pull Request Auto-Approval
+    runs-on: ubuntu-latest
+    needs: [check-pr, build]
+    if: ${{ needs.check-pr.outputs.semver_skipped == 'false' }} && (github.actor == 'dependabot[bot]' || github.actor == 'BardezAnAvatar')
+    steps:
+      - uses: hmarr/auto-approve-action@v4
+        name: Auto-Approval
+        env:
+          review-message: "Bot auto-approved PR"
