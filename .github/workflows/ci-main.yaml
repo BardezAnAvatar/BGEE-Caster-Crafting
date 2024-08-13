@@ -17,6 +17,7 @@ jobs:
     name: Bump and Tag Version
     runs-on: ubuntu-latest
     permissions: write-all
+
     steps:
     - uses: actions/checkout@v4
       name: Checkout
@@ -56,6 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     needs: bump-tag-version
+    if: ${{ needs.bump-tag-version.outputs.skipped }} == false
     steps:
 
       - name: Initial setup
