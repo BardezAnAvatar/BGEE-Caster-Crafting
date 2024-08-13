@@ -57,7 +57,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions: write-all
     needs: bump-tag-version
-    if: ${{ needs.bump-tag-version.outputs.skipped }} == false
+    if: ${{ needs.bump-tag-version.outputs.skipped }} == "false"
     steps:
 
       - name: Initial setup
