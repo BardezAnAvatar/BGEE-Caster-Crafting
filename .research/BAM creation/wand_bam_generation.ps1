@@ -105,21 +105,27 @@ Function GenerateBam
         [string]$DirOutput,
 
         [Parameter(Mandatory)]
-        [string]$BamName
+        [string]$BamdName
     )
 
     #invoke PS-BAM
-    $params =
-          "--CompressionProfile `"Recommended`""
-        + "--DebugLevelL 1"
-        + "--DebugLevelP 2"
-        + "--DebugLevelS 1"
-        + "--LogFile `"$DirOutput\$BamName.log`""
-        + "--OutPath `"$DirOutput`""
-        + "--Save `"BAM`""
-        + "`"$DirInput\$BamName`""
+    $params = @(
+        "--CompressionProfile", "`"Recommended`"",
+        "--DebugLevelL", "1",
+        "--DebugLevelP", "2",
+        "--DebugLevelS", "1",
+        "--LogFile", "`"$DirOutput\$BamdName.log`"",
+        "--OutPath", "`"$DirOutput`"",
+        "--Save", "`"BAM`"",
+        "`"$DirOutputTemp\$BamdName`""
+        )
 
-    Invoke-Command -program $PathPsBam -argumentString $params -waitForExit true
+    $arguments = $params -join " "
+
+
+    Write-Host $arguments
+
+    #Invoke-Command -program $PathPsBam -argumentString $arguments -waitForExit true
 }
 
 Function Main
@@ -148,24 +154,22 @@ Function Main
         Set-Content -Path "$($DirOutputTemp)\$($bamdName)" -Value $bamdContent
     }
 
+    Write-Host "Optimizing BAMs ..." -ForegroundColor red
 
-#    Write-Host "Optimizing BAMs ..." -ForegroundColor red
-#
-#    #iterate through all temp dir BAMDs
-#    $bamdFiles = Get-ChildItem $DirOutputTemp | Where-Object { $_.Name -like "*.BAMD" }
-#    foreach($file in $bamdFiles)
-#    {
-#        $bamName = ($file.Basename).Replace('.BAMD', '.BAM')
-#
-#        Write-Host "Generating $bamName ..." -ForegroundColor Magenta
-#
-#        #Generate BAM
-#        GenerateBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamName $file.Name
-#        GenerateBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamdName $file
-#
-#        #this locked up my processor and OS, so... WAIT
-#        Start-Sleep -Milliseconds 20
-#    }
+    #iterate through all temp dir BAMDs
+    $bamdFiles = Get-ChildItem $DirOutputTemp | Where-Object { $_.Name -like "*.BAMD" }
+    foreach($file in $bamdFiles)
+    {
+        $bamName = ($file.Name).Replace('.BAMD', '.BAM')
+
+        Write-Host "Generating $bamName ..." -ForegroundColor Magenta
+
+        #Generate BAM
+        GenerateBam -PathPsBam $PsBam -DirInput $DirOutputTemp -DirOutput $DirOutputBam -BamdName $file
+
+        #this locked up my processor and OS, so... WAIT
+        Start-Sleep -Milliseconds 20
+    }
 
     $end = Get-Date
 
