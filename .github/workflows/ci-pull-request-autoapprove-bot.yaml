@@ -11,10 +11,6 @@ on:
     - ready_for_review
     - review_requested
     - synchronize
-    # - edited #updating PR title, body, state or base?
-  pull_request_review:
-    types:
-    - dismissed
 
 permissions:
   contents: read
