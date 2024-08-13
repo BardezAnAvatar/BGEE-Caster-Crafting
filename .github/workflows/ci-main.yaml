@@ -45,7 +45,7 @@ jobs:
         echo "old-version          - ${{ steps.semver.outputs.old-version }}"
         echo "version              - ${{ steps.semver.outputs.version }}"
         echo "skipped              - ${{ steps.semver.outputs.skipped }}"
-        echo "semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}"
+        echo "semver_release-notes - ${{ steps.semver.outputs.release-notes }}"
 
     outputs:
       semver_old: ${{ steps.semver.outputs.old-version }}
