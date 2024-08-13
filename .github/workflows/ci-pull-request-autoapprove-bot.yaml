@@ -53,10 +53,25 @@ jobs:
           echo "skipped              - ${{ steps.semver.outputs.skipped }}"
           echo "semver_release-notes - ${{ steps.semver.outputs.semver_release-notes }}"
 
+  build:
+    name: Package Mod
+    runs-on: ubuntu-latest
+    if: ${{ needs.check-pr.outputs.semver_skipped == 'false' }} && (github.actor == 'dependabot[bot]' || github.actor == 'BardezAnAvatar')
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create Infinity Engine Mod Packages (.iemod and .zip)
+        uses: ALIENQuake/CreateIEModZipPackage@master
+        id: CreateIEModZipPackage
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   auto-approval:
     name: Pull Request Auto-Approval
     runs-on: ubuntu-latest
-    needs: check-pr
+    needs: [check-pr, build]
     if: ${{ needs.check-pr.outputs.semver_skipped == 'false' }} && (github.actor == 'dependabot[bot]' || github.actor == 'BardezAnAvatar')
     steps:
       - uses: hmarr/auto-approve-action@v4
