@@ -52,6 +52,14 @@ jobs:
       semver_skipped: ${{ steps.semver.outputs.skipped }}
       semver_release-notes: ${{ steps.semver.outputs.release-notes }}
 
+  debug:
+    needs: bump-tag-version
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug output
+        run: |
+          echo "${{ toJson(needs.bump-tag-version) }}"
+
   InfinityAutoPackager:
     name: Publish Mod
     runs-on: ubuntu-latest
