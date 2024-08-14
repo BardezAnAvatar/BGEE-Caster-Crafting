@@ -1,0 +1,68 @@
+
+
+/*
+*   PoC
+*/
+//description image
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_240.bam~    ~override/BZWD240D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_240_AB.bam~   ~override/BZWD240I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_240_CO.bam~   ~override/BZWD241I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_240_DI.bam~   ~override/BZWD242I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_240_EV.bam~   ~override/BZWD243I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_240_NE.bam~   ~override/BZWD244I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_240_TR.bam~   ~override/BZWD245I.BAM~
+
+
+COPY_EXISTING ~WAND02.ITM~ ~override/BZWNDPC0.ITM~
+    //Patches
+    SAY NAME1 ~PoC wand~                                       //identified name
+    SAY NAME2 ~PoC wand~                                       //identified name
+    SAY IDENTIFIED_DESC   ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZWD240I~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZWD240D~   //update the item description icon
+
+COPY_EXISTING ~WAND02.ITM~ ~override/BZWNDPC1.ITM~
+    //Patches
+    SAY NAME1 ~PoC wand~                                       //identified name
+    SAY NAME2 ~PoC wand~                                       //identified name
+    SAY IDENTIFIED_DESC   ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZWD241I~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZWD240D~   //update the item description icon
+
+COPY_EXISTING ~WAND02.ITM~ ~override/BZWNDPC2.ITM~
+    //Patches
+    SAY NAME1 ~PoC wand~                                       //identified name
+    SAY NAME2 ~PoC wand~                                       //identified name
+    SAY IDENTIFIED_DESC   ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZWD242I~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZWD240D~   //update the item description icon
+
+COPY_EXISTING ~WAND02.ITM~ ~override/BZWNDPC3.ITM~
+    //Patches
+    SAY NAME1 ~PoC wand~                                       //identified name
+    SAY NAME2 ~PoC wand~                                       //identified name
+    SAY IDENTIFIED_DESC   ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZWD243I~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZWD240D~   //update the item description icon
+
+COPY_EXISTING ~WAND02.ITM~ ~override/BZWNDPC4.ITM~
+    //Patches
+    SAY NAME1 ~PoC wand~                                       //identified name
+    SAY NAME2 ~PoC wand~                                       //identified name
+    SAY IDENTIFIED_DESC   ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZWD244I~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZWD240D~   //update the item description icon
+
+COPY_EXISTING ~WAND02.ITM~ ~override/BZWNDPC5.ITM~
+    //Patches
+    SAY NAME1 ~PoC wand~                                       //identified name
+    SAY NAME2 ~PoC wand~                                       //identified name
+    SAY IDENTIFIED_DESC   ~This is a Proof of concept to see art in-engine~  //identified description
+    SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+    WRITE_ASCII_TERMINATE (0x3A) ~BZWD245I~     //update the item inventory icon
+    WRITE_ASCII_TERMINATE (0x58) ~BZWD240D~   //update the item description icon
