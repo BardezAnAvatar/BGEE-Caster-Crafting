@@ -29,12 +29,6 @@ param(
     [string]$PsBam,
 
     [Parameter(Mandatory)]
-    [string]$PostfixInventory,
-
-    [Parameter(Mandatory)]
-    [string]$PostfixFloating,
-
-    [Parameter(Mandatory)]
     [string]$DirInputPng,
 
     [Parameter(Mandatory)]
