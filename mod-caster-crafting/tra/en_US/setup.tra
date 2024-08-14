@@ -25,22 +25,35 @@
 //Leveled potions
 @50 = ~Leveled Potions: craft potions at higher caster levels~
 
-//Missing Wands
-@60 = ~Wands for existing Spells~
-@61 = ~Add in wands for spell levels 1-3~
-@62 = ~Add in wands for spell levels 1-4~
-@63 = ~Add in wands for spell levels 1-5~
-@64 = ~Add in wands for spell levels 1-6~
-@65 = ~Add in wands for spell levels 1-7~
-@66 = ~Add in wands for spell levels 1-8~
-@67 = ~Add in wands for spell levels 1-9~
-@68 = ~Add in wands for spell levels 1-10 (Include Quest-level Priest Spells)~
+//Missing Wands: Priest
+@60 = ~Missing priest wands~
+@61 = ~Add in wands for priest spell level 1~
+@62 = ~Add in wands for priest spell levels 1-2~
+@63 = ~Add in wands for priest spell levels 1-3~
+@64 = ~Add in wands for priest spell levels 1-4~
+@65 = ~Add in wands for priest spell levels 1-5~
+@66 = ~Add in wands for priest spell levels 1-6~
+@67 = ~Add in wands for priest spell levels 1-7~
+@68 = ~Add in wands for priest spell levels 1-Quest~
+
+//Missing Wands: Priest
+@69 = ~Missing arcane wands~
+@70 = ~Add in wands for arcane spell levels 1~
+@71 = ~Add in wands for arcane spell levels 1-2~
+@72 = ~Add in wands for arcane spell levels 1-3~
+@73 = ~Add in wands for arcane spell levels 1-4~
+@74 = ~Add in wands for arcane spell levels 1-5~
+@75 = ~Add in wands for arcane spell levels 1-6~
+@76 = ~Add in wands for arcane spell levels 1-7~
+@77 = ~Add in wands for arcane spell levels 1-8~
+@78 = ~Add in wands for arcane spell levels 1-9~
+@79 = ~Add in wands for arcane spell levels 1-10~
 
 //Leveled Wands
-@70 = ~Leveled Wands: craft wands at higher caster levels~
+@80 = ~Leveled Wands: craft wands at higher caster levels~
 
 // Crafting Station
-@80 = ~Caster Crafting: Crafting Station~
-@81 = ~Brew potions~
-@82 = ~Craft wands (Not yet implemented)~
-@83 = ~Both brew potions and craft wands (Not yet implemented)~
+@90 = ~Caster Crafting: Crafting Station~
+@91 = ~Brew potions~
+@92 = ~Craft wands (Not yet implemented)~
+@93 = ~Both brew potions and craft wands (Not yet implemented)~
