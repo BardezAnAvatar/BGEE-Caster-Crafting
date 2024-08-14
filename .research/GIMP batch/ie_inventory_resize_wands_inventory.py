@@ -16,7 +16,7 @@ def ie_inventory_resize(file, outputFolder):
     try:
         filename = os.path.basename(file)
         # Use slicing to remove the extension
-        filename_without_ext = filename[:filename.rindex('.')]
+        filename_without_ext = filename[:filename.rindex('-')] #instead of .png, chop off -f.png
 
         # Open file.
         fileImage = None
@@ -26,7 +26,6 @@ def ie_inventory_resize(file, outputFolder):
         #resize canvas
         pdb.gimp_image_resize(fileImage, 96, 96, 16, 16)
         print "Resized canvas '" + filename_without_ext + "' ..."
-        layer = fileImage.layers[0]
 
         #crop to inventory size
         pdb.gimp_image_crop(fileImage, 64, 64, 0, 0)

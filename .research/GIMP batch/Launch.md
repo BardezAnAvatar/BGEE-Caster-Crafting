@@ -10,9 +10,13 @@ Resize:
 - `ie_inventory_resize.run('C:/Projects/Game Mods/Baldur\'s Gate/Caster Crafting/.assets/potions/separated/exported', 'C:/temp/BAM/out')`
 
 
-Enter: `import sys;sys.path=[gimp.directory+'/plug-ins']+sys.path;import ie_inventory_resize_wands;`
+Enter: `import sys;sys.path=[gimp.directory+'/plug-ins']+sys.path;import ie_inventory_resize_wands_full;`
 Resize:
-- `ie_inventory_resize_wands.run('C:/Projects/Game Mods/Baldur\'s Gate/Caster Crafting/.assets/wands/output/inventory', 'C:/temp/BAM/out', 0.75)`
+- `ie_inventory_resize_wands_full.run('C:/Projects/Game Mods/Baldur\'s Gate/Caster Crafting/.assets/wands/output/inventory', 'C:/temp/BAM/out')`
+
+Enter: `import sys;sys.path=[gimp.directory+'/plug-ins']+sys.path;import ie_inventory_resize_wands_inventory;`
+Resize:
+- `ie_inventory_resize_wands_inventory.run('C:/Projects/Game Mods/Baldur\'s Gate/Caster Crafting/.assets/wands/output/inventory', 'C:/temp/BAM/out')`
 
 
 Enter: `import sys;sys.path=[gimp.directory+'/plug-ins']+sys.path;import ie_inventory_shadow;`
