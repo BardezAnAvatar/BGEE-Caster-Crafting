@@ -25,7 +25,10 @@ def ie_inventory_resize(file, outputFolder):
 
         #resize canvas
         pdb.gimp_image_resize(fileImage, 96, 96, 16, 16)
-        print "Resized canvas '" + filename_without_ext + "' ..."
+        print "Resized canvas for '" + filename_without_ext + "' ..."
+        layer = fileImage.layers[0]
+        pdb.gimp_layer_resize(layer, dimension, 96, 96, 16, 16)
+        print "Resized layer for '" + filename_without_ext + "' ..."
 
         #crop to inventory size
         pdb.gimp_image_crop(fileImage, 64, 64, 0, 0)
