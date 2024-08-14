@@ -22,7 +22,8 @@ def ie_inventory_resize(file, outputFolder):
         print "Opened '" + filename_without_ext + "' ..."
 
         #crop image
-        pdb.plug_in_autocrop(1, fileImage, fileImage) #1 = Non-interactive
+        drawable=fileImage.layers[0]
+        pdb.plug_in_autocrop(fileImage, drawable) #ignore first parameter, mode
         width = pdb.gimp_image_width(fileImage)
         height = pdb.gimp_image_height(fileImage)
         dimension = max(width, height)
