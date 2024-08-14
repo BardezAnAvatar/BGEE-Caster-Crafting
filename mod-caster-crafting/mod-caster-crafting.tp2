@@ -211,7 +211,7 @@ SUBCOMPONENT @69        //   Missing arcane wands
 BEGIN @80 DESIGNATED 80 // Missing wands (with selected options)
 INSTALL_BY_DEFAULT
  //Include if either wand selection is made:
-REQUIRE_PREDICATE  ((~bz-missing_wands-arcane~ = 1) OR (~bz-missing_wands-priest~ = 1)) ~Must have chosen to install either Priest or Arcane wands~
+REQUIRE_PREDICATE  ( (VARIABLE_IS_SET ~bz-missing_wands-arcane~ AND (~bz-missing_wands-arcane~ = 1)) OR (VARIABLE_IS_SET ~bz-missing_wands-priest~ AND (~bz-missing_wands-priest~ = 1)) ) ~Must have chosen to install either Priest or Arcane wands~
 
     //Debug
     PRINT ~DEBUG: missing wands:
