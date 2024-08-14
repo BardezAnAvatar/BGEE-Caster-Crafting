@@ -32,6 +32,9 @@ def ie_inventory_resize(file, outputFolder):
         dimension = max(width, height)
         print "Attempting canvas resize to  '" + dimension + "x" + dimension + "' ..."
         pdb.gimp_image_resize(fileImage, dimension, dimension, dimension-width, dimension-height)
+        layer = fileImage.layers[0]
+        print "Attempting layer resize to  '" + dimension + "x" + dimension + "' ..."
+        pdb.gimp_layer_resize(layer, dimension, dimension, dimension-width, dimension-height)
 
         #scale
         pdb.gimp_context_set_interpolation(2) #INTERPOLATION-CUBIC (2)
