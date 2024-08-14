@@ -110,6 +110,8 @@ BEGIN @50 DESIGNATED 50 //~Leveled Potions: craft potions at higher caster level
 // Caster Crafting: New Wands for Spells
 OUTER_SET ~bz-missing_wands-priest~ = 0
 OUTER_SET ~bz-missing_wands-arcane~ = 0
+OUTER_SET ~bz-missing_wands-priest-max_level~ = 0
+OUTER_SET ~bz-missing_wands-arcane-max_level~ = 0
 
 BEGIN @61 DESIGNATED 61 // Add in wands for priest spell level 1
 SUBCOMPONENT @60        //   Missing priest wands
