@@ -36,7 +36,7 @@ def ie_inventory_resize(file, outputFolder):
         layer = fileImage.layers[0]
 
         # Export flattened image
-        target = outputFolder + "/" + filename_without_ext + "-i.png"
+        target = outputFolder + "/" + filename_without_ext + "-f.png"
         print "Saving '" + target + "' ..."
         pdb.file_png_save_defaults(fileImage, layer, target, target, run_mode=RUN_NONINTERACTIVE)
         print "Saved '" + target + "'!"
