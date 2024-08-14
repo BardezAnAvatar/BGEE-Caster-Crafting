@@ -208,7 +208,8 @@ SUBCOMPONENT @69        //   Missing arcane wands
 
 
 //Include if either wand selection is made
-IF ((~bz-missing_wands-arcane~ = 1) OR (~bz-missing_wands-priest~ = 1))
+ACTION_IF ((~bz-missing_wands-arcane~ = 1) OR (~bz-missing_wands-priest~ = 1))
+THEN
 BEGIN
     INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
 END
