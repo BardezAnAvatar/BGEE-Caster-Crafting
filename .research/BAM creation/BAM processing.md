@@ -22,5 +22,13 @@ cd "C:\Projects\Game Mods\Baldur's Gate\Caster Crafting\.research\BAM creation"
 ```
 
 ```
-.\wand_bam_generation.ps1 -PsBam "C:\Projects\Game Mods\Baldur's Gate\Tools\PS-BAM\PS BAM_x64.exe" -PostfixInventory "-i.png" -PostfixFloating "-f.png" -DirInputPng "C:\temp\BAM\in" -DirOutputTemp "C:\temp\BAM\intermediate" -DirOutputBam "C:\temp\BAM\out"
+.\wand_inventory_bam_generation.ps1 -PsBam "C:\Projects\Game Mods\Baldur's Gate\Tools\PS-BAM\PS BAM_x64.exe" -PostfixInventory "-i.png" -PostfixFloating "-f.png" -DirInputPng "C:\temp\BAM\in" -DirOutputTemp "C:\temp\BAM\intermediate" -DirOutputBam "C:\temp\BAM\out"
+```
+
+```
+cd "C:\Projects\Game Mods\Baldur's Gate\Caster Crafting\.research\BAM creation"
+```
+
+```
+.\wand_description_bam_generation.ps1 -PsBam "C:\Projects\Game Mods\Baldur's Gate\Tools\PS-BAM\PS BAM_x64.exe" -DirInputPng "C:\Projects\Game Mods\Baldur's Gate\Caster Crafting\.assets\wands\output\render\description" -DirOutputTemp "C:\temp\BAM\intermediate" -DirOutputBam "C:\temp\BAM\out"
 ```
