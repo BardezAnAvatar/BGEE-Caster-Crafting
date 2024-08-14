@@ -24,15 +24,19 @@ def ie_inventory_resize(file, outputFolder):
         #crop image
         drawable=fileImage.layers[0]
         pdb.plug_in_autocrop(fileImage, drawable) #ignore first parameter, mode
+        print "Cropped '" + filename_without_ext + "' ..."
+
+        #resize canvas
         width = pdb.gimp_image_width(fileImage)
         height = pdb.gimp_image_height(fileImage)
         dimension = max(width, height)
+        print "Attempting canvas resize to  '" + dimension + "x" + dimension + "' ..."
         pdb.gimp_image_resize(fileImage, dimension, dimension, dimension-width, dimension-height)
 
-        #resize
+        #scale
         pdb.gimp_context_set_interpolation(2) #INTERPOLATION-CUBIC (2)
         pdb.gimp_image_scale(fileImage, 80, 80)
-        print "Resized '" + filename_without_ext + "' ..."
+        print "Scaled '" + filename_without_ext + "' ..."
         layer = fileImage.layers[0]
 
         # Export flattened image
