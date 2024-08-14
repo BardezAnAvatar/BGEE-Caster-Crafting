@@ -117,7 +117,8 @@ Function GenerateBam
         "--LogFile", "`"$DirOutput\$BamdName.log`"",
         "--OutPath", "`"$DirOutput`"",
         "--Save", "`"BAM`"",
-        "--BAMProfile", "`"ItemIcon`""
+        "--BAMProfile", "`"ItemIcon`"",
+        "--TrimFrameData", "0"
         "`"$DirOutputTemp\$BamdName`""
         )
 
