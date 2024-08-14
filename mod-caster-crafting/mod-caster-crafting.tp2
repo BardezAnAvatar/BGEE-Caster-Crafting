@@ -107,10 +107,47 @@ BEGIN @50 DESIGNATED 50 //~Leveled Potions: craft potions at higher caster level
 
 
 // Caster Crafting: New Wands for Spells
-/*
-BEGIN @60 DESIGNATED 60 // Wands for existing Spells
+
+BEGIN @61 DESIGNATED 61 // Add in wands for spell levels 1-3
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 3
     INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
-*/
+
+BEGIN @62 DESIGNATED 62 // Add in wands for spell levels 1-4
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 4
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+
+BEGIN @63 DESIGNATED 63 // Add in wands for spell levels 1-5
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 5
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+
+BEGIN @64 DESIGNATED 64 // Add in wands for spell levels 1-6
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 6
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+
+BEGIN @65 DESIGNATED 65 // Add in wands for spell levels 1-7
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 7
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+
+BEGIN @66 DESIGNATED 66 // Add in wands for spell levels 1-8
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 8
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+
+BEGIN @67 DESIGNATED 67 // Add in wands for spell levels 1-9
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 9
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+
+BEGIN @68 DESIGNATED 68 // Add in wands for spell levels 1-10
+SUBCOMPONENT @60        //   Wands for existing Spells
+    OUTER_SET ~bz-missing_wands-max_level~ = 10
+    INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
+
 //END missing potions
 
 
