@@ -66,7 +66,7 @@ Function GenerateBamD
 frame f00000 `"$DirInputPng/$FloatingFrame`" 32 32
 frame f00001 `"$DirInputPng/$InventoryFrame`" 0 0
 
-sequence f00001 f00000
+sequence f00000 f00001
 "@
 
     return $bamd
