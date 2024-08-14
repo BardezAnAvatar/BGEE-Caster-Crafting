@@ -61,3 +61,13 @@ A few non-binding requested exceptions:
 - Brewing sound: [Bubbles 003](https://pixabay.com/sound-effects/bubbles-003-6397/).
     - licensed from Pixabay under its [Content License Summary](https://pixabay.com/service/license-summary/)
     - This sound was given a multi-layered mix effect
+
+- Wand crafting sound:
+    - This sound was given a multi-layered mix effect
+        - [peeling wood](https://pixabay.com/sound-effects/peeling-wood-42634/)
+            - licensed from Pixabay under its [Content License Summary](https://pixabay.com/service/license-summary/)
+        - [chisels-on-wood](https://pixabay.com/sound-effects/chisels-on-wood-85335//)
+            - licensed from Pixabay under its [Content License Summary](https://pixabay.com/service/license-summary/)
+        - [Wood Sound Effects All Sounds](https://www.youtube.com/watch?v=9AAA9_n3U7k)
+            - licensed under [Creative Commons Attribution](https://creativecommons.org/licenses/by/4.0/)
+            - 0:25? 2:39? 3:00?
