@@ -89,6 +89,7 @@ Function Main
             "-gravity", "SouthEast",
             "-extent", "64x64",
             "+repage",  #re-set the virtual canvas to the trimmed area
+            "-colors", "255",
             "`"$DirOutput\$($file.Name)`""
         )
 
