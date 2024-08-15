@@ -70,6 +70,8 @@ Function Main
         #invoke PS-BAM
         $params = @(
             "`"$($file.FullName)`""
+            "-strip"    #try to get rid of the "RGB color space not permitted on grayscale PNG" warning
+            "-type", "TrueColorAlpha",  #Set back to RGB because
             "-background", "none",
             "-trim",
             "-resize", "$($Dimension)x$($Dimension)",
