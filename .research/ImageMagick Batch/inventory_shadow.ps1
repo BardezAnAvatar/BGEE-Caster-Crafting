@@ -98,6 +98,8 @@ Function Main
             #        "-evaluate", "subtract", "50%",
             #"')'",
 
+            "-colors", "255", #trim the colors because PS Bam runs into issues
+
             "`"$DirOutput\$($file.Name)`""
         )
 
