@@ -45,6 +45,9 @@ def ie_inventory_shadow(file, x_offset, y_offset, outputFolder):
         merged = pdb.gimp_image_merge_visible_layers(fileImage, 0) #EXPAND-AS-NECESSARY (0)
         print "Merged '" + filename_without_ext + "' ..."
 
+        #Dither to minimize the color count
+
+
         # Export flattened image
         target = outputFolder + "/" + filename_without_ext + "-s.png"
         print "Saving '" + target + "' ..."
