@@ -100,7 +100,7 @@ Function Main
 
             "-colors", "255", #trim the colors because PS Bam runs into issues
 
-            "`"$DirOutput\$($file.Name)`""
+            "`"$DirOutput\$($file.BaseName)-s.png`""
         )
 
         Invoke-Command -program $magickExe.Path -arguments $params -waitForExit $true
