@@ -74,16 +74,29 @@ Function Main
 
         #invoke PS-BAM
         $params = @(
-            "`"$($file.FullName)`""
+            "`"$($file.FullName)`"",
+
+            "(",
+                "+clone",
+                "-shadow", "50x0+$($OffsetX)+$($OffsetY)",
+            ")",
+            "+swap",
             "-background", "none",
-            "-alpha", "extract",
-            "-threshold", "0",
-            "-negate",
-            "-strip"    #try to get rid of the "RGB color space not permitted on grayscale PNG" warning
-            "-type", "TrueColorAlpha",  #Set back to RGB because
-            "-transparent", "white",
-            "-channel", "Alpha",    #This will set my Alpha transparency on all of it to 50%
-                "-evaluate", "subtract", "50%",
+            "-layers", "merge",
+            "+repage",
+
+            #"'('",
+            #    "+clone",
+            #    "-background", "none",
+            #    "-alpha", "extract",
+            #    "-threshold", "0",
+            #    "-negate",
+            #    "-strip"    #try to get rid of the "RGB color space not permitted on grayscale PNG" warning
+            #    "-type", "TrueColorAlpha",  #Set back to RGB because
+            #    "-transparent", "white",
+            #    "-channel", "Alpha",    #This will set my Alpha transparency on all of it to 50%
+            #        "-evaluate", "subtract", "50%",
+            #"')'",
 
             "`"$DirOutput\$($file.Name)`""
         )
