@@ -80,10 +80,10 @@ Function Main
                 "+clone",
                 "-shadow", "50x0+$($OffsetX)+$($OffsetY)",
             ")",
-            "+swap",
+            "+swap", #move my parenthetical to the back
             "-background", "none",
             "-layers", "merge",
-            "+repage",
+            "+repage",  #resize my canvas viewport to my layers
 
             #"'('",
             #    "+clone",
