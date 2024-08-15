@@ -75,15 +75,19 @@ Function Main
         #invoke PS-BAM
         $params = @(
             "`"$($file.FullName)`"",
+            "-background", "none",
 
             "(",
                 "+clone",
+                "-background", "black", #Set the color to shadow with
                 "-shadow", "50x0+$($OffsetX)+$($OffsetY)",
+                "-background", "none",  #reset to transparency
             ")",
             "+swap", #move my parenthetical to the back
             "-background", "none",
             "-layers", "merge",
             "+repage",  #resize my canvas viewport to my layers
+            "-trim",
 
             #"'('",
             #    "+clone",
