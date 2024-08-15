@@ -80,6 +80,8 @@ Function Main
 
         $params = @(
             "`"$($file.FullName)`""
+            "-strip"    #try to get rid of the "RGB color space not permitted on grayscale PNG" warning
+            "-type", "TrueColorAlpha",  #Set back to RGB because
             "-background", "none",
             "-trim",    #crop away whitespace
             "+repage",  #re-set the virtual canvas to the trimmed area
