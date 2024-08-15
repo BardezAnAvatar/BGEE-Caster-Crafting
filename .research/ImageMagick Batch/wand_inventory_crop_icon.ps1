@@ -65,6 +65,8 @@ Function Main
     $magickExe = Get-Command "magick"
     $size = 80 + $Padding
     $dimensions = "$($size)x$($size)"
+    $cropSquare = 64 - $Padding
+    $sourceCropSquare = "$($cropSquare)x$($cropSquare)"
 
     Write-Host "Padding:           $($Padding)" -ForegroundColor Yellow
     Write-Host "Target Dimensions: $($dimensions)" -ForegroundColor Yellow
@@ -79,10 +81,14 @@ Function Main
         $params = @(
             "`"$($file.FullName)`""
             "-background", "none",
-            "-gravity", "SouthEast",
-            "-extent", "$($dimensions)",
+            "-trim",    #crop away whitespace
+            "+repage",  #re-set the virtual canvas to the trimmed area
             "-gravity", "NorthWest",
-            "-crop", "64x64+0+0",
+            "-crop", "$($sourceCropSquare)+0+0",
+            "+repage",  #re-set the virtual canvas to the cropped area
+            "-gravity", "SouthEast",
+            "-extent", "64x64",
+            "+repage",  #re-set the virtual canvas to the trimmed area
             "`"$DirOutput\$($file.Name)`""
         )
 
