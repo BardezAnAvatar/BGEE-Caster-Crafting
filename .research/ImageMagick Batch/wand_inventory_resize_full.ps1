@@ -3,6 +3,10 @@
     This script will crop and resize an image of a magic wand intended for display in an Infinity Engine inventory
 .DESCRIPTION
     This script will open *.png files in `DirInput`, cropping and resizing images in the directory intending to yield an image suitable for full display in inventory screen (without a shadow) and emit them into the `DirOutputBam` directory
+.INPUTS
+    The inputs are expected to be *.png files
+.OUTPUTS
+    The outputs will be 80x80 resolution *.png files (no shadows)
 .PARAMETER DirInput
     The path to the directory containing all of the PNG files to convert into BAMs
 .PARAMETER DirOutput
