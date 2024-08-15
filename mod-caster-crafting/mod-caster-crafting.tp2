@@ -39,6 +39,14 @@ LANGUAGE
 /*********************
 *   Mod Components   *
 *********************/
+BEGIN @1 DESIGNATED 1   //"Running pre-processing of registered data"
+INSTALL_BY_DEFAULT
+    PRINT ~
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !   Initializing registered data   !
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ~
+
 
 // Caster Crafting: Missing scrolls subcomponents
 BEGIN @11 DESIGNATED 11 // Add in missing arcane spell scrolls
