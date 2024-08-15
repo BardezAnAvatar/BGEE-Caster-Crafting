@@ -92,7 +92,7 @@ Function Main
             "-extent", "64x64",
             "+repage",  #re-set the virtual canvas to the trimmed area
             "-colors", "255",
-            "`"$DirOutput\$($file.Name)`""
+            "`"$DirOutput\$($file.BaseName)-i.png`""
         )
 
         Invoke-Command -program $magickExe.Path -arguments $params -waitForExit $true
