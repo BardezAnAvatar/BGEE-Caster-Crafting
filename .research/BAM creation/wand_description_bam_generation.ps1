@@ -100,6 +100,7 @@ Function GenerateBam
         "--LogFile", "`"$DirOutput/$BamdName.log`"",
         "--OutPath", "`"$DirOutput`"",
         "--Save", "`"BAM`"",
+        "--BAMProfile", "`"DescriptionIcon`"",
         "`"$DirOutputTemp\$BamdName`""
     )
 
