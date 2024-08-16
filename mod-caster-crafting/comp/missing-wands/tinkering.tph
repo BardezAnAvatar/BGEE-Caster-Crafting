@@ -282,3 +282,221 @@ LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
 /*
 *   BEGIN: Art PoC *.ITM
 */
+
+
+
+/*
+*   BEGIN: Art PoC: ALL *.ITM
+*/
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD000I~ icon_description = ~BZWD000D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND000~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD010I~ icon_description = ~BZWD010D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND010~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD020I~ icon_description = ~BZWD020D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND020~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD030I~ icon_description = ~BZWD030D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND030~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD040I~ icon_description = ~BZWD040D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND040~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD050I~ icon_description = ~BZWD050D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND050~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD060I~ icon_description = ~BZWD060D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND060~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD070I~ icon_description = ~BZWD070D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND070~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD080I~ icon_description = ~BZWD080D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND080~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD090I~ icon_description = ~BZWD090D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND090~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD100I~ icon_description = ~BZWD100D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND100~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD110I~ icon_description = ~BZWD110D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND110~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD120I~ icon_description = ~BZWD120D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND120~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD130I~ icon_description = ~BZWD130D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND130~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD140I~ icon_description = ~BZWD140D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND140~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD150I~ icon_description = ~BZWD150D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND150~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD160I~ icon_description = ~BZWD160D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND160~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD170I~ icon_description = ~BZWD170D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND170~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD180I~ icon_description = ~BZWD180D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND180~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD190I~ icon_description = ~BZWD190D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND190~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD200I~ icon_description = ~BZWD200D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND200~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD210I~ icon_description = ~BZWD210D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND210~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD220I~ icon_description = ~BZWD220D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND220~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD230I~ icon_description = ~BZWD230D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND230~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD240I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND240~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD250I~ icon_description = ~BZWD250D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND250~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD260I~ icon_description = ~BZWD260D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND260~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD270I~ icon_description = ~BZWD270D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND270~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD280I~ icon_description = ~BZWD280D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND280~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD290I~ icon_description = ~BZWD290D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND290~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD300I~ icon_description = ~BZWD300D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND300~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD310I~ icon_description = ~BZWD310D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND310~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD320I~ icon_description = ~BZWD320D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND320~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD330I~ icon_description = ~BZWD330D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND330~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD340I~ icon_description = ~BZWD340D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND340~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD350I~ icon_description = ~BZWD350D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND350~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD360I~ icon_description = ~BZWD360D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND360~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD370I~ icon_description = ~BZWD370D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND370~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD380I~ icon_description = ~BZWD380D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND380~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD390I~ icon_description = ~BZWD390D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND390~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD400I~ icon_description = ~BZWD400D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND400~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD410I~ icon_description = ~BZWD410D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND410~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD420I~ icon_description = ~BZWD420D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND420~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD430I~ icon_description = ~BZWD430D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND430~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD440I~ icon_description = ~BZWD440D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND440~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD450I~ icon_description = ~BZWD450D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND450~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD460I~ icon_description = ~BZWD460D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND460~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD470I~ icon_description = ~BZWD470D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND470~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD480I~ icon_description = ~BZWD480D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND480~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD490I~ icon_description = ~BZWD490D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND490~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD500I~ icon_description = ~BZWD500D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND500~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD510I~ icon_description = ~BZWD510D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND510~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD520I~ icon_description = ~BZWD520D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND520~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD530I~ icon_description = ~BZWD530D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND530~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD540I~ icon_description = ~BZWD540D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND540~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD550I~ icon_description = ~BZWD550D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND550~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD560I~ icon_description = ~BZWD560D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND560~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD570I~ icon_description = ~BZWD570D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND570~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD580I~ icon_description = ~BZWD580D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND580~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD590I~ icon_description = ~BZWD590D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND590~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD600I~ icon_description = ~BZWD600D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND600~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD610I~ icon_description = ~BZWD610D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND610~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD620I~ icon_description = ~BZWD620D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND620~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD630I~ icon_description = ~BZWD630D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND630~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD640I~ icon_description = ~BZWD640D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND640~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD650I~ icon_description = ~BZWD650D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND650~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD660I~ icon_description = ~BZWD660D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND660~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD670I~ icon_description = ~BZWD670D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND670~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD680I~ icon_description = ~BZWD680D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND680~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD690I~ icon_description = ~BZWD690D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND690~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD700I~ icon_description = ~BZWD700D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND700~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD710I~ icon_description = ~BZWD710D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND710~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD720I~ icon_description = ~BZWD720D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND720~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD730I~ icon_description = ~BZWD730D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND730~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD740I~ icon_description = ~BZWD740D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND740~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD750I~ icon_description = ~BZWD750D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND750~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD760I~ icon_description = ~BZWD760D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND760~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD770I~ icon_description = ~BZWD770D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND770~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD780I~ icon_description = ~BZWD780D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND780~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD790I~ icon_description = ~BZWD790D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND790~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD800I~ icon_description = ~BZWD800D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND800~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD810I~ icon_description = ~BZWD810D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND810~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD820I~ icon_description = ~BZWD820D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND820~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD830I~ icon_description = ~BZWD830D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND830~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD840I~ icon_description = ~BZWD840D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND840~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD850I~ icon_description = ~BZWD850D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND850~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD860I~ icon_description = ~BZWD860D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND860~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD870I~ icon_description = ~BZWD870D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND870~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD880I~ icon_description = ~BZWD880D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND880~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD890I~ icon_description = ~BZWD890D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND890~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD900I~ icon_description = ~BZWD900D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND900~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD910I~ icon_description = ~BZWD910D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND910~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD920I~ icon_description = ~BZWD920D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND920~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD930I~ icon_description = ~BZWD930D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND930~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD940I~ icon_description = ~BZWD940D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND940~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD950I~ icon_description = ~BZWD950D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND950~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD960I~ icon_description = ~BZWD960D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND960~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD970I~ icon_description = ~BZWD970D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND970~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD980I~ icon_description = ~BZWD980D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND980~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD990I~ icon_description = ~BZWD990D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND990~ END
+/*
+*   END: Art PoC: ALL *.ITM
+*/
