@@ -57,13 +57,6 @@ Function Main
     #iterate through all of the input DIR PNGs
     $pngFiles = Get-ChildItem $DirInput -Filter *.png
     $magickExe = Get-Command "magick"
-    $size = 80 + $Padding
-    $dimensions = "$($size)x$($size)"
-    $cropSquare = 64 - $Padding
-    $sourceCropSquare = "$($cropSquare)x$($cropSquare)"
-
-    Write-Host "Padding:           $($Padding)" -ForegroundColor Yellow
-    Write-Host "Target Dimensions: $($dimensions)" -ForegroundColor Yellow
 
     foreach ($file in $pngFiles)
     {
