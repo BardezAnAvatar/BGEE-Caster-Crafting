@@ -62,9 +62,7 @@ Function Main
     {
         Write-Host "Working on file: $file ..." -ForegroundColor Green
 
-        #invoke PS-BAM
-
-
+        #invoke ImageMagick
         $params = @(
             "`"$($file.FullName)`""
             "-strip"    #try to get rid of the "RGB color space not permitted on grayscale PNG" warning
