@@ -70,6 +70,7 @@ Function Main
             "-resize", "240x240",
             "-trim",    #crop away whitespace
             "+repage",  #re-set the virtual canvas to the trimmed area
+            "-colors", "255",
             "`"$DirOutput\$($file.BaseName)-d.png`""
         )
 
