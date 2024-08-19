@@ -16,7 +16,7 @@ COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_240_AB.bam~   ~ove
 *   BEGIN: Art -- All
 */
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_000.bam~    ~override/BZWD000D.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_000_NE.bam~   ~override/BZWD000I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_000_EV.bam~   ~override/BZWD000I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_010.bam~    ~override/BZWD010D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_010_NE.bam~   ~override/BZWD010I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_020.bam~    ~override/BZWD020D.BAM~
@@ -26,7 +26,7 @@ COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_030_NE.bam~   ~ove
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_040.bam~    ~override/BZWD040D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_040_DI.bam~   ~override/BZWD040I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_050.bam~    ~override/BZWD050D.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_050_NE.bam~   ~override/BZWD050I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_050_CO.bam~   ~override/BZWD050I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_060.bam~    ~override/BZWD060D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_060_EN.bam~   ~override/BZWD060I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_070.bam~    ~override/BZWD070D.BAM~
@@ -34,7 +34,7 @@ COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_070_WM.bam~   ~ove
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_080.bam~    ~override/BZWD080D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_080_IL.bam~   ~override/BZWD080I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_090.bam~    ~override/BZWD090D.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_090_NE.bam~   ~override/BZWD090I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_090_EV.bam~   ~override/BZWD090I.BAM~
 
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_100.bam~    ~override/BZWD100D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_100_DI.bam~   ~override/BZWD100I.BAM~
@@ -43,7 +43,7 @@ COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_110_NE.bam~   ~ove
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_120.bam~    ~override/BZWD120D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_120_DI.bam~   ~override/BZWD120I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_130.bam~    ~override/BZWD130D.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_130_NE.bam~   ~override/BZWD130I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_130_TR.bam~   ~override/BZWD130I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_140.bam~    ~override/BZWD140D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_140_NE.bam~   ~override/BZWD140I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_150.bam~    ~override/BZWD150D.BAM~
