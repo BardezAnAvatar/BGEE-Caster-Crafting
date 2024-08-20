@@ -11,13 +11,16 @@
     The path to the directory containing all of the PNG files to convert into BAMs
 .PARAMETER DirOutput
     The path to the directory where final output should reside
-.PARAMETER Padding
-    The target dimension for the canvas of the image after it is cropped and resized. e.g.: target 64x64 using 64, 80x80 using 80, etc.
+.PARAMETER PaddingTopLeft
+    The padding to be added to the upper-left corner of the image
+.PARAMETER PaddingBottomRight
+    The padding to be added to the bottom-right corner of the image
 .EXAMPLE
     C:\Work\BAM>'.\wand_inventory_crop_icon.ps1'
     >>> -DirInput 'C:\Work\Bam\Input\Todo\'
     >>> -DirOutput 'C:\Work\Bam\Output\'
-    >>> -Dimension 64
+    >>> -PaddingTopLeft 8
+    >>> -PaddingBottomRight 4
     <This will open up all the *.png files in -DirInputPng, create a BAM-D for them then convert/compress that BAM
     using PS BAM>
 .NOTES
@@ -36,7 +39,10 @@ param(
     [string]$DirOutput,
 
     [Parameter(Mandatory)]
-    [string]$Padding
+    [string]$PaddingTopLeft,
+
+    [Parameter(Mandatory)]
+    [string]$PaddingBottomRight
 )
 
 
@@ -63,13 +69,16 @@ Function Main
     #iterate through all of the input DIR PNGs
     $pngFiles = Get-ChildItem $DirInput -Filter *.png
     $magickExe = Get-Command "magick"
-    $size = 80 + $Padding
-    $dimensions = "$($size)x$($size)"
-    $cropSquare = 64 - $Padding
-    $sourceCropSquare = "$($cropSquare)x$($cropSquare)"
 
-    Write-Host "Padding:           $($Padding)" -ForegroundColor Yellow
-    Write-Host "Target Dimensions: $($dimensions)" -ForegroundColor Yellow
+    $cropBeforePadding = (64 - $PaddingTopLeft) - $PaddingBottomRight
+    $canvasUpperLeft = "$($cropBeforePadding)x$($cropBeforePadding)"
+    $cropAfterPadding = 64 - $PaddingBottomRight
+    $canvasBottomRight = "$($cropAfterPadding)x$($cropAfterPadding)"
+
+    Write-Host "Padding (Upper-Left):    $PaddingTopLeft" -ForegroundColor Yellow
+    Write-Host "Padding (Bottom-Right):  $PaddingBottomRight" -ForegroundColor Yellow
+    Write-Host "First Canvas:            $canvasUpperLeft" -ForegroundColor Yellow
+    Write-Host "Second Canvas:           $canvasBottomRight" -ForegroundColor Yellow
 
     foreach ($file in $pngFiles)
     {
@@ -86,9 +95,12 @@ Function Main
             "-trim",    #crop away whitespace
             "+repage",  #re-set the virtual canvas to the trimmed area
             "-gravity", "NorthWest",
-            "-crop", "$($sourceCropSquare)+0+0",
+            "-crop", "$canvasUpperLeft+0+0",
             "+repage",  #re-set the virtual canvas to the cropped area
             "-gravity", "SouthEast",
+            "-extent", "$canvasBottomRight",
+            "+repage",  #re-set the virtual canvas to the trimmed area
+            "-gravity", "NorthWest",
             "-extent", "64x64",
             "+repage",  #re-set the virtual canvas to the trimmed area
             "-colors", "255",
