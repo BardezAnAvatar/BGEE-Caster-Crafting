@@ -10,8 +10,10 @@
     The string post-fix of a filename indicating an inventory *.png file
 .PARAMETER PostfixFloating
     The string post-fix of a filename indicating an carried/picked up/floating *.png file
-.PARAMETER DirInputPng
-    The path to the directory containing all of the PNG files to convert into BAMs
+.PARAMETER DirInputInventory
+    The path to the directory containing all of the PNG files to display in inventory slots intended to convert into BAMs
+.PARAMETER DirInputShadow
+    The path to the directory containing all of the PNG files to display when dragged intended to convert into BAMs
 .PARAMETER DirOutputTemp
     The path to the directory where intermediate uncompressed BAMs can be stored
 .PARAMETER DirOutputBam
@@ -21,7 +23,8 @@
     >>> -PsBam 'C:\bin\psbam\psbam.exe'
     >>> -PostfixInventory '-i.png'
     >>> -PostfixFloating '-f.png'
-    >>> -DirInputPng 'C:\Work\Bam\Input\Todo\'
+    >>> -DirInputInventory 'C:\Work\Bam\Input\Todo1\'
+    >>> -DirInputShadow 'C:\Work\Bam\Input\Todo2\'
     >>> -DirOutputTemp 'C:\Work\Bam\Temp\'
     >>> -DirOutputBam 'C:\Work\Bam\Output\'
     <This will open up all the *.png files in -DirInputPng, create a BAM-D for them then convert/compress that BAM
@@ -41,7 +44,10 @@ param(
     [string]$PostfixFloating,
 
     [Parameter(Mandatory)]
-    [string]$DirInputPng,
+    [string]$DirInputInventory,
+
+    [Parameter(Mandatory)]
+    [string]$DirInputShadow,
 
     [Parameter(Mandatory)]
     [string]$DirOutputTemp,
@@ -63,8 +69,8 @@ Function GenerateBamD
     )
 
     $bamd =@"
-frame f00000 `"$DirInputPng/$FloatingFrame`" 32 32
-frame f00001 `"$DirInputPng/$InventoryFrame`" 0 0
+frame f00000 `"$FloatingFrame`" 32 32
+frame f00001 `"$InventoryFrame`" 0 0
 
 sequence f00000 f00001
 "@
@@ -117,7 +123,7 @@ Function GenerateBam
         "--LogFile", "`"$DirOutput\$BamdName.log`"",
         "--OutPath", "`"$DirOutput`"",
         "--Save", "`"BAM`"",
-        "--BAMProfile", "`"ItemIcon`"",
+        #"--BAMProfile", "`"ItemIcon`"",    #this seems to mess up the rendering in-game, now
         "--TrimFrameData", "0"
         "`"$DirOutputTemp\$BamdName`""
         )
@@ -138,18 +144,18 @@ Function Main
 
     #iterate through all of the input DIR PNGs
     $filter = '*' + $PostfixInventory
-    $pngFiles = Get-ChildItem $DirInputPng -Filter $filter
+    $pngFiles = Get-ChildItem $DirInputInventory -Filter $filter
     foreach ($file in $pngFiles)
     {
         $baseName = ($file.Name).Replace($PostfixInventory, '')
-        $floatingFile = ($file.Name).Replace($PostfixInventory, $PostfixFloating)
+        $floatingFile = ($file.FullName).Replace($PostfixInventory, $PostfixFloating).Replace($DirInputInventory, $DirInputShadow)
 
         $bamdName = "$($baseName).BAMD"
 
         Write-Host "Generating $bamdName from $file ..." -ForegroundColor blue
 
         #generate BAMD
-        $bamdContent = GenerateBamD $file $floatingFile
+        $bamdContent = GenerateBamD $file.FullName $floatingFile
         $bamdContent = $bamdContent.Replace("\", "/") #apparently Bammer needs this syntax?
 
         #Write the file
