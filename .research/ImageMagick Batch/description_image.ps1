@@ -67,8 +67,9 @@ Function Main
             "`"$($file.FullName)`""
             "-strip"    #try to get rid of the "RGB color space not permitted on grayscale PNG" warning
             "-type", "TrueColorAlpha",  #Set back to RGB because
-            "-resize", "240x240",
             "-trim",    #crop away whitespace
+            "+repage",  #re-set the virtual canvas to the trimmed area
+            "-resize", "240x240",
             "+repage",  #re-set the virtual canvas to the trimmed area
             "-colors", "255",
             "`"$DirOutput\$($file.BaseName)-d.png`""
