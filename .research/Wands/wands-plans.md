@@ -24,7 +24,7 @@ Compare to BG base game:
 | Cloudkill         | CC                 | Cloudkill       | 5     |              |
 | Spell Striking    | Breach, SS         | Breach, SS      | 5x 6  |              |
 | Cursing           | Blind/deaf/silence | blind / silecne | 1/2/3 | 1 turn       |
-
+| Water Eleemental  | Summon Water Elem. | Water Elem IWD  |        |           |
 
 So in BG2, wands go up to 5 or 6 in power. I could cap them at level 6 or lower for EEs, 4 or lower for IWD2.
 
@@ -166,3 +166,12 @@ Install Wands options:
 - Level 4
 - Level 6
 - Level 9
+
+
+## Component idea: fix prices of BG2 wands
+| Cloudkill         |  9000 |
+| Spell Striking    |  9000 |
+| Cursing           |  5000 |
+| Water Eleemental  |  9000 |
+
+WTF those are cheap. Fix them.
