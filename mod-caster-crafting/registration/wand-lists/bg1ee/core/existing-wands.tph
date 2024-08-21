@@ -3,7 +3,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
     BEGIN
 
         /*
-        [Item ResRef]                 // 0
+        [Item ResRef]               // 0
         */
 
         ~WAND02~    =>  ~WAND02~    //Wand of Fear
