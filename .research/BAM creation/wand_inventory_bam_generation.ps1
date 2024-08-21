@@ -123,7 +123,7 @@ Function GenerateBam
         "--LogFile", "`"$DirOutput\$BamdName.log`"",
         "--OutPath", "`"$DirOutput`"",
         "--Save", "`"BAM`"",
-        #"--BAMProfile", "`"ItemIcon`"",    #this seems to mess up the rendering in-game, now
+        "--BAMProfile", "`"ItemIcon`"",    #this seems to mess up the rendering in-game, now
         "--TrimFrameData", "0"
         "`"$DirOutputTemp\$BamdName`""
         )
