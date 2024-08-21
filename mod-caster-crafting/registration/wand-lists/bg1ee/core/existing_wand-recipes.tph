@@ -1,0 +1,58 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~existing_wand-recipes~
+    BEGIN
+
+        /*
+        [Unique Key]            // 0
+        [Wand Item Code]        // 1
+        [Required Caster Level] // 2
+        [Recipe]                // 3; these will be comma-delimited spell RESREFs/identifiers
+        [XP cost]               // 4
+        [Time Cost (hours)]     // 5
+        */
+
+        ~WAND02~  , ~WAND02~  ,  ~3~, ~SPWI205~,                        ~0~,  ~80~ =>  ~WAND02~    //Wand of Fear
+
+        ~WAND03~  , ~WAND03~  ,  ~1~, ~SPWI112~,                        ~0~,  ~40~ =>  ~WAND03~    //Wand of Magic Missiles
+        ~WAND12~  , ~WAND12~  ,  ~1~, ~SPWI112~,                        ~0~,  ~40~ =>  ~WAND12~    //Wand of Magic Missiles
+
+        ~WAND04~  , ~WAND04~  ,  ~3~, ~SPPR208~,                        ~0~,  ~96~ =>  ~WAND04~    //Wand of Paralyzation
+        ~WAND04~  , ~WAND04~  ,  ~5~, ~SPWI306~,                        ~0~,  ~80~ =>  ~WAND04~    //Wand of Paralyzation
+        ~WAND04~  , ~WAND04~  ,  ~9~, ~SPWI507~,                        ~0~,  ~60~ =>  ~WAND04~    //Wand of Paralyzation
+
+        ~WAND05~  , ~WAND05~  ,  ~3~, ~SPWI304,SPWI217~,                ~0~, ~176~ =>  ~WAND05~    //Wand of Fire
+        ~WAND05~  , ~WAND05~  ,  ~3~, ~SPWI712,SPWI217~,                ~0~,  ~96~ =>  ~WAND05~    //Wand of Fire
+
+        ~WAND06~  , ~WAND06~  ,  ~7~, ~SPWI217,SPWI404~,                ~0~, ~120~ =>  ~WAND06~    //Wand of Frost
+
+        ~WAND07~  , ~WAND07~  ,  ~3~, ~SPWI308~,                        ~0~, ~160~ =>  ~WAND07~    //Wand of Lighting
+        ~WAND07~  , ~WAND07~  , ~12~, ~SPWI615~,                        ~0~,  ~80~ =>  ~WAND07~    //Wand of Lighting
+        ~WAND07~  , ~WAND07~  ,  ~1~, ~SPCL722~,                        ~0~, ~160~ =>  ~WAND07~    //Wand of Lighting
+
+        ~WAND08~  , ~WAND08~  ,  ~1~, ~SPWI116~,                        ~0~,  ~56~ =>  ~WAND08~    //Wand of Sleep
+        ~WAND08~  , ~WAND08~  ,  ~3~, ~SPWI220~,                        ~0~,  ~36~ =>  ~WAND08~    //Wand of Sleep
+
+        ~WAND09~  , ~WAND09~  ,  ~7~, ~SPWI415~,                        ~0~, ~120~ =>  ~WAND09~    //Wand of Polymorphing
+
+        ~WAND10~  , ~WAND10~  ,  ~7~, ~SPWI407~,                        ~0~, ~200~ =>  ~WAND10~    //Wand of Monster Summoning
+        ~WAND10~  , ~WAND10~  ,  ~9~, ~SPWI504~,                        ~0~, ~175~ =>  ~WAND10~    //Wand of Monster Summoning
+        ~WAND10~  , ~WAND10~  , ~12~, ~SPWI610~,                        ~0~, ~150~ =>  ~WAND10~    //Wand of Monster Summoning
+        ~WAND10~  , ~WAND10~  , ~14~, ~SPWI725~,                        ~0~, ~100~ =>  ~WAND10~    //Wand of Monster Summoning
+        ~WAND10~  , ~WAND10~  , ~16~, ~SPWI821~,                        ~0~,  ~75~ =>  ~WAND10~    //Wand of Monster Summoning
+        ~WAND10~  , ~WAND10~  , ~18~, ~SPWI901~,                        ~0~,  ~40~ =>  ~WAND10~    //Wand of Monster Summoning
+
+        ~WAND11~  , ~WAND11~  ,  ~9~, ~SPPR503~,                        ~0~, ~120~ =>  ~WAND11~    //Wand of the Heavens
+
+        ~WAND13~  , ~WAND13~  ,  ~9~, ~SPWI502~,                        ~0~, ~200~ =>  ~WAND13~    //Wand of Cloudkill
+
+        ~WAND18~  , ~WAND18~  ,  ~9~, ~SPWI513~,                        ~0~, ~200~ =>  ~WAND18~    //Wand of Spell Striking
+        ~WAND18~  , ~WAND18~  , ~18~, ~SPWI903~,                        ~0~, ~200~ =>  ~WAND18~    //Wand of Spell Striking
+
+        ~WAND19~  , ~WAND19~  ,  ~3~, ~SPWI223~,                        ~0~, ~100~ =>  ~WAND19~    //Wand of Cursing
+        ~WAND19~  , ~WAND19~  , ~16~, ~SPWI815~,                        ~0~,  ~24~ =>  ~WAND19~    //Wand of Cursing
+
+// IN BG2, not BG1
+/*
+*/
+
+    END
