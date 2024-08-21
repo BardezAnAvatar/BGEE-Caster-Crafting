@@ -1,0 +1,16 @@
+ACTION_DEFINE_ASSOCIATIVE_ARRAY
+    ~existing_wand-recipes~
+    BEGIN
+
+        /*
+        [Unique Key]            // 0
+        [Wand Item Code]        // 1
+        [Required Caster Level] // 2
+        [Recipe]                // 3; these will be comma-delimited spell RESREFs/identifiers
+        [XP cost]               // 4
+        [Time Cost (hours)]     // 5
+        */
+
+        ~BDWAND01~, ~BDWAND01~, ~12~, ~WIZARD_CONJURE_WATER_ELEMENTAL~, ~0~, ~100~ =>  ~BDWAND01~  //Wand of Water Elemental Summoning
+
+    END
