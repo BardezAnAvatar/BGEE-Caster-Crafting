@@ -55,6 +55,9 @@
 @82 = ~AD&D2E Loose     | 5,000 to  60,000 gold |  y = 500(x² + x + 10)~
 @83 = ~D&D 3.X Crafting |   750 to 135,000 gold |  y = 750(x + z)~
 
+//Existing Wands
+@90 = ~Re-price base game wands with Costs for Wands component prices (recommended)~
+
 //Missing Wands
 @100 = ~Missing wands (with selected options)~
 
