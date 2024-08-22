@@ -257,3 +257,12 @@ Go level
 So:
 Wands > Abjuration > Level 1
 Wands > Evocation >  Level 5
+
+
+### Costs
+Option AD&D 2E Strict: (base cost 7500 -  50000 gold); base cost = 430 × {spell level}² + 7070
+Option AD&D 2E Loose:  (base cost 5000 -  60000 gold); base cost = 500 × ({spell level}² + {spell level} + 10)
+Option D&D 3.X Pricing (base cost  750 - 135000 gold); base cost = {spell level} × {min caster level} × 750
+
+strict: y = 432x² - 32x + 7100  (7500 to 49980)
+loose:  y = 500(x² + x + 10)    (5000 to 60000)
