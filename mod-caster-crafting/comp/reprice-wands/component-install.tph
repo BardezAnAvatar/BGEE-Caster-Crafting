@@ -1,0 +1,12 @@
+/*******************************************************************
+*   Main installation entrypoint for repricing of wands component. *
+*                                                                  *
+*   Expected variables populated:                                  *
+*       - ~bz-missing_wands-arcane~                                *
+*       - ~bz-missing_wands-priest~                                *
+*       - ~bz-missing_wands-priest-max_level~                      *
+*       - ~bz-missing_wands-arcane-max_level~                      *
+*******************************************************************/
+
+
+INCLUDE ~./%MOD_FOLDER%/comp/reprice-wands/tinkering.tph~

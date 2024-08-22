@@ -208,6 +208,12 @@ SUBCOMPONENT @69        //   Missing arcane wands
 
 
 
+BEGIN @90 DESIGNATED 90 // Re-price base game wands
+REQUIRE_PREDICATE  (VARIABLE_IS_SET ~bz-wand_cost-rule~) ~Must have chosen to install either Priest or Arcane wands~
+    INCLUDE ~./%MOD_FOLDER%/comp/reprice-wands/component-install.tph~
+
+
+
 BEGIN @100 DESIGNATED 100 // Missing wands (with selected options)
 INSTALL_BY_DEFAULT
  //Include if either wand selection is made:

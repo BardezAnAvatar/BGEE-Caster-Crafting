@@ -49,6 +49,9 @@
 @78 = ~Add in wands for arcane spell levels 1-9~
 @79 = ~Add in wands for arcane spell levels 1-10~
 
+//Existing Wands
+@90 = ~Re-price base game wands with Costs for Wands component prices (recommended)~
+
 //Missing Wands
 @100 = ~Missing wands (with selected options)~
 
