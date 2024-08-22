@@ -215,10 +215,20 @@ SUBCOMPONENT @69        //   Missing arcane wands
 
 
 
+BEGIN @80 DESIGNATED 80 // Cost for Wands
+SUBCOMPONENT @81        //   AD&D2E Strict
+    OUTER_SET ~bz-wand_cost-rule~ 1
+SUBCOMPONENT @82        //   AD&D2E Loose
+    OUTER_SET ~bz-wand_cost-rule~ 2
+SUBCOMPONENT @83        //   D&D 3.x
+    OUTER_SET ~bz-wand_cost-rule~ 3
+
+
+
 BEGIN @100 DESIGNATED 100 // Missing wands (with selected options)
 INSTALL_BY_DEFAULT
  //Include if either wand selection is made:
-REQUIRE_PREDICATE  ( (VARIABLE_IS_SET ~bz-missing_wands-arcane~ AND (~bz-missing_wands-arcane~ = 1)) OR (VARIABLE_IS_SET ~bz-missing_wands-priest~ AND (~bz-missing_wands-priest~ = 1)) ) ~Must have chosen to install either Priest or Arcane wands~
+REQUIRE_PREDICATE  (VARIABLE_IS_SET ~bz-wand_cost-rule~) AND ( (VARIABLE_IS_SET ~bz-missing_wands-arcane~ AND (~bz-missing_wands-arcane~ = 1)) OR (VARIABLE_IS_SET ~bz-missing_wands-priest~ AND (~bz-missing_wands-priest~ = 1)) ) ~Must have chosen a wand pricing AND to install either: Priest OR Arcane wands~
 
     //Debug
     PRINT ~DEBUG: missing wands:
