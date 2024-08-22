@@ -24,11 +24,11 @@ Compare to BG base game:
 | Cloudkill         | CC                 | Cloudkill       | 5     |              |
 | Spell Striking    | Breach, SS         | Breach, SS      | 5x 6  |              |
 | Cursing           | Blind/deaf/silence | blind / silecne | 1/2/3 | 1 turn       |
-| Water Eleemental  | Summon Water Elem. | Water Elem IWD  |        |           |
+| Water Elemental   | Summon Water Elem. | Water Elem IWD  |       |              |
 
 So in BG2, wands go up to 5 or 6 in power. I could cap them at level 6 or lower for EEs, 4 or lower for IWD2.
 
-Or I could say Fuck It and we have wands to Time Stop.
+Or I could say Fuck It and we have wands of Time Stop.
 
 
 Pricing Wands
@@ -76,8 +76,8 @@ What does not have a matching spell? Frost. Water Elemental if we ignore IWDific
 Part of me wants to do that Arcane/Divine/Nature split for the menu split; those menus can have redundant entries, but
 Menu would be:
 Wands > Arcane  > level 10 > dragon's Breath
-Wands > Arcane  > 4 > Spirit Armor
-Wands > Natural > 4 > Spirit Armor
+Wands > Divine  > 4 > Spirit Armor
+Wands > Natural > 2 > Barkskin
 
 
 Prices for a fully-charged wand range from 7,500 to 50,000 gold pieces!
@@ -117,6 +117,68 @@ So the Wand of Fire would cost 3 * 6 * 750 = 13500 before shop markup.
 
 Expanding this out, a level 10 wand would be:
 price = 10 * 18 * 750 = 135000; _whistle_ nearly 3x the 50k max amount specified by AD&D 2E DMGs
+
+let me backpedal a bit: that's for insanity like Dragon's Breath; what about for something capped at level 7 or 8?
+
+| Level |  Calculation  |  Cost  |
+| ----- | ------------- | ------ |
+|     1 |  1 × 1  × 750 |    750 |
+|     2 |  2 × 3  × 750 |   4500 |
+|     3 |  3 × 5  × 750 |  11250 |
+|     4 |  4 × 7  × 750 |  21000 |
+|     5 |  5 × 9  × 750 |  33750 |
+|     6 |  6 × 12 × 750 |  54000 |
+|     7 |  7 × 14 × 750 |  73500 |
+|     8 |  8 × 16 × 750 |  96000 |
+|     9 |  9 × 18 × 750 | 121500 |
+|    10 | 10 × 18 × 750 | 135000 |
+
+I'm totally find with level 10 super wands of 50 or 100 charges costing 135,000 -- it's the level 1s that don't fit the data. For example, in BG1, the cheapest wand is Magic Missile for 5000 (2500 less than the stated cost, but when Purchased at 50% markup, it fits perfectly)
+
+So right around level 6 is the "maximum" spell calculation cost, but that's not quite fair, either. BG1's most expensive wand is
+the wand of monster summoning at level 4 / 25000 (close to the level 4 cost)
+
+Further price fuckery:
+
+| Wand              | Matching Spells | Level | Price |
+| ---------         | --------------- | ----- | ----- |
+| Magic Missiles    | Magic Missile   | 1     |  5000 |
+| Sleep             | Sleep           | 1     |  7500 |
+| Fear              | Horror          | 2     | 10000 |
+| Paralysis         | Hold PErson     | 3     | 12500 |
+| Frost             | n/a             | 2-ish | 15000 |
+| Polymorphing      | Polymorph Other | 4     | 15000 |
+| Heavens           | Flamestrike     | 5     | 15000 |
+| Lightning         | Lightning Bolt  | 3     | 20000 |
+| Fire              | FB, AS          | 2, 3  | 22000 |
+| Summon Monster    | SM2, I think    | 4     | 25000 |
+| Cloudkill         | Cloudkill       | 5     |  9000 |
+| Spell Striking    | Breach, SS      | 5x 6  |  9000 |
+| Cursing           | blind / silecne | 1/2/3 |  5000 |
+| Water Elemental   | Water Elem IWD  |       |  9000 |
+
+
+
+
+Calculation Crap
+https://www.desmos.com/calculator
+y = a(x-1)^3 + b(x-1)^2 + c(x-1) + d
+
+To maximize at 33,333 (50k markup)
+a = 10
+b = 250
+c = 0
+d = 5000
+    or
+a = 20
+b = 0
+c = 1550
+d = 5000
+To maximize at 135k
+a =   50
+b=   810
+c = 1550
+d = 5k
 
 
 ## Colors
@@ -175,3 +237,23 @@ Install Wands options:
 | Water Eleemental  |  9000 |
 
 WTF those are cheap. Fix them.
+
+
+# Charges
+So if I sell a wand of fear (WAND02, basegold of 10000) with 50 charges for 2500, I can buy it back at 100 charges for 12700, which would sell for 5000
+10000 × 50% markdown × 100% charge = 5000 for a full wand
+10000 × 50% markdown ×  50% charge = 2500 for a 50% wand
+
+- Wands recharge in BG1 to 100 charges
+- Wands in BG2 refill to 50 charges, I think
+- 3E/PF max charges is 50.
+
+
+## Dialog
+For Crafting Wands I would like to...
+Go spell school
+Go level
+
+So:
+Wands > Abjuration > Level 1
+Wands > Evocation >  Level 5
