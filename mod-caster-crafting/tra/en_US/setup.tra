@@ -50,14 +50,14 @@
 @79 = ~Add in wands for arcane spell levels 1-10~
 
 //Missing Wands
-@80 = ~Missing wands (with selected options)~
+@100 = ~Missing wands (with selected options)~
 
 
 //Leveled Wands
-@90 = ~Leveled Wands: craft wands at higher caster levels~
+@110 = ~Leveled Wands: craft wands at higher caster levels~
 
 // Crafting Station
-@100 = ~Caster Crafting: Crafting Station~
-@101 = ~Brew potions~
-@102 = ~Craft wands (Not yet implemented)~
-@103 = ~Both brew potions and craft wands (Not yet implemented)~
+@120 = ~Caster Crafting: Crafting Station~
+@121 = ~Brew potions~
+@122 = ~Craft wands (Not yet implemented)~
+@123 = ~Both brew potions and craft wands (Not yet implemented)~
