@@ -215,7 +215,7 @@ SUBCOMPONENT @69        //   Missing arcane wands
 
 
 
-BEGIN @80 DESIGNATED 80 // Missing wands (with selected options)
+BEGIN @100 DESIGNATED 100 // Missing wands (with selected options)
 INSTALL_BY_DEFAULT
  //Include if either wand selection is made:
 REQUIRE_PREDICATE  ( (VARIABLE_IS_SET ~bz-missing_wands-arcane~ AND (~bz-missing_wands-arcane~ = 1)) OR (VARIABLE_IS_SET ~bz-missing_wands-priest~ AND (~bz-missing_wands-priest~ = 1)) ) ~Must have chosen to install either Priest or Arcane wands~
@@ -236,7 +236,7 @@ REQUIRE_PREDICATE  ( (VARIABLE_IS_SET ~bz-missing_wands-arcane~ AND (~bz-missing
 
 // Leveled Wands: craft wands at higher caster levels
 /*
-BEGIN @90 DESIGNATED 90 //~Leveled Wands: craft wands at higher caster levels~
+BEGIN @110 DESIGNATED 110 //~Leveled Wands: craft wands at higher caster levels~
     INCLUDE ~./%MOD_FOLDER%/comp/leveled-wands/component-install.tph~
 */
 //END leveled wands
@@ -245,20 +245,20 @@ BEGIN @90 DESIGNATED 90 //~Leveled Wands: craft wands at higher caster levels~
 
 
 // BEGIN Brew Potion subcomponents
-BEGIN @101 DESIGNATED 101 // Brew potions
-SUBCOMPONENT @100        // Caster Crafting: Crafting Station
+BEGIN @121 DESIGNATED 121   // Brew potions
+SUBCOMPONENT @120           // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 1
     OUTER_SET ~bz_install_allow_wands~ = 0
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @102 DESIGNATED 102 // Craft wands
-SUBCOMPONENT @100        // Caster Crafting: Crafting Station
+BEGIN @122 DESIGNATED 122   // Craft wands
+SUBCOMPONENT @120           // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 0
     OUTER_SET ~bz_install_allow_wands~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @103 DESIGNATED 103 // Both brew potions and craft wands
-SUBCOMPONENT @100        // Caster Crafting: Crafting Station
+BEGIN @123 DESIGNATED 123   // Both brew potions and craft wands
+SUBCOMPONENT @120           // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 1
     OUTER_SET ~bz_install_allow_wands~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
