@@ -265,4 +265,4 @@ Option AD&D 2E Loose:  (base cost 5000 -  60000 gold); base cost = 500 × ({spel
 Option D&D 3.X Pricing (base cost  750 - 135000 gold); base cost = {spell level} × {min caster level} × 750
 
 strict: y = 432x² - 32x + 7100  (7500 to 49980)
-loose:  y = 500(x² + x + 10)    (5000 to 60000)
+loose:  y = 500(x² + x + 10)    (6000 to 60000)
