@@ -226,7 +226,7 @@ COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_990.bam~    ~ove
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_990_IL.bam~   ~override/BZWD990I.BAM~
 
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_A00.bam~    ~override/BZWDA00D.BAM~
-COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_A00_IL.bam~   ~override/BZWDA00I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_A00_CO.bam~   ~override/BZWDA00I.BAM~
 /*
 *   END: Art -- All
 */
