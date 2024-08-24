@@ -208,13 +208,15 @@ SUBCOMPONENT @69        //   Missing arcane wands
 
 
 
-BEGIN @80 DESIGNATED 80 // Cost for Wands
-SUBCOMPONENT @81        //   AD&D2E Strict
-    OUTER_SET ~bz-wand_cost-rule~ 1
-SUBCOMPONENT @82        //   AD&D2E Loose
-    OUTER_SET ~bz-wand_cost-rule~ 2
-SUBCOMPONENT @83        //   D&D 3.x
-    OUTER_SET ~bz-wand_cost-rule~ 3
+BEGIN @81 DESIGNATED 81 // Cost for Wands
+SUBCOMPONENT @80        //   AD&D2E Strict
+    OUTER_SET ~bz-wand_cost-rule~ = 1
+BEGIN @82 DESIGNATED 82 // Cost for Wands
+SUBCOMPONENT @80        //   AD&D2E Loose
+    OUTER_SET ~bz-wand_cost-rule~ = 2
+BEGIN @83 DESIGNATED 83 // Cost for Wands
+SUBCOMPONENT @80        //   D&D 3.x
+    OUTER_SET ~bz-wand_cost-rule~ = 3
 
 
 
