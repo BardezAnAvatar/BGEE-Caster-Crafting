@@ -224,6 +224,9 @@ COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_980.bam~    ~ove
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_980_EN.bam~   ~override/BZWD980I.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_990.bam~    ~override/BZWD990D.BAM~
 COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_990_IL.bam~   ~override/BZWD990I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_ai_A00.bam~    ~override/BZWDA00D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_ai_A00_IL.bam~   ~override/BZWDA00I.BAM~
 /*
 *   END: Art -- All
 */
@@ -497,6 +500,9 @@ LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
     STR_VAR icon_inventory = ~BZWD980I~ icon_description = ~BZWD980D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND980~ END
 LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
     STR_VAR icon_inventory = ~BZWD990I~ icon_description = ~BZWD990D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND990~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWDA00I~ icon_description = ~BZWDA00D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDA00~ END
 /*
 *   END: Art PoC: ALL *.ITM
 */
