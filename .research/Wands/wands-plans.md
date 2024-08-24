@@ -85,7 +85,7 @@ Wands > Divine  > 4 > Spirit Armor
 Wands > Natural > 2 > Barkskin
 
 
-Prices for a fully-charged wand range from 7,500 to 50,000 gold pieces!
+Per 2E sourcebooks, prices for a fully-charged wand range from 7,500 to 50,000 gold pieces!
 
 > the most rare of the wands being the wand of conjuration, and the most common being the wand of magic detection. There are 16 wands listed on the table in the DUNGEON MASTERS GUIDE. Of these wands, half can be used by any class, the remainder require a magic-user to use (with the wand of fear being the sole exception, also usable by clerics). Oddly enough, the wand of magic missiles, which seems as if it should be usable only by magic-users, is actually usable by any character (so long as they are permitted to use wands at all). Illusionists are more limited in the types of wands they are permitted to use as they are not fully magic-users - they may only use wands of enemy detection, fear, illusion, magic detection, metal & mineral detection, secret door & trap detection, and wonder. Monks are prohibited from using wands of any kind.
 
