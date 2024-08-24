@@ -19,12 +19,17 @@ Compare to BG base game:
 | Lightning         | bolt               | Lightning Bolt       | 3     | 6d6          |
 | Sleep             | sleep              | Sleep                | 1     | 2 trn.       |
 | Polymorphing      | poly               | Polymorph Other      | 4     | squirrel     |
-| Summon Monster    | SM                 | SM2, I think         | 4     | 12 HD, 2 trn |
+| Summon Monster    | SM                 | Monster Summoning II | 4     | 12 HD, 2 trn |
 | Heavens           | Fire pillar        | Flamestrike          | 5     | 8d6          |
 | Cloudkill         | CC                 | Cloudkill            | 5     |              |
 | Spell Striking    | Breach, SS         | Breach, Pierce Magic | 5x 6  |              |
 | Cursing           | Blind/deaf/silence | blind / silence      | 1/2/3 | 1 turn       |
 | Water Elemental   | Summon Water Elem. | Water Elem IWD       |       |              |
+
+NOTE: I had to go back to oBG1 for wand of monster summoning -- it _is_ exactly like Monster Summoning II, but it appears that the wand
+was never updated, while the spell itself has gone through numerous changes in BG2, EEs and later OlvynSpells. Really, I should just
+recreate the wand to copy from whatever is installed.
+
 
 So in BG2, wands go up to 5 or 6 in power. I could cap them at level 6 or lower for EEs, 4 or lower for IWD2.
 
