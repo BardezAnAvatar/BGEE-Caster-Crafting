@@ -242,6 +242,47 @@ The above would generate another potential categorization approach:
 -Wands usable by mage
 -Wands usable by all
 
+### Approach
+There are some specific wands called out in the DMG, and I respect those.
+
+I also really wand "basic utility" wands to be usable by anyone. Something that seems like a nice clean metric is cantrips.
+If there is a cantrip of it in a later edition, make it a global use wand.
+
+Things like out-of-combat also feel wand-y to me.
+
+The ones I have identified thus far:
+- Armor
+- Bless
+- Cat's Grace
+- Chill Touch
+- Cure Light Wounds
+- Detect Invisibility
+- Dimensional Chest
+- Dispel Magic
+- Find Traps
+- Friends
+- Goodberry
+- Grease
+- Haste
+- Identify
+- Infravision
+- Invisibility
+- Knock
+- Luck
+- Magic Missile (DMG)
+- Magic Stone
+- Protection from Evil
+- Protection From Petrification
+- Reflected Image
+- Remove Fear
+- Shield
+- Shillelagh
+- Shocking Grasp
+- Strength
+
+- Jump
+- Fly
+
 
 ## Colors
 
@@ -310,6 +351,8 @@ Install Wands options:
 - Level 6
 - Level 9
 
+F it, just make it ask what the maximum is for each magic type (divine/arcane) give choice, easy enough to implement, etc.
+
 
 ### Component idea: fix prices of BG2 wands
 | Cloudkill         |  9000 |
@@ -327,3 +370,9 @@ Option D&D 3.X Pricing (base cost  750 - 135000 gold); base cost = {spell level}
 
 strict: y = 432x² - 32x + 7100  (7500 to 49980)
 loose:  y = 500(x² + x + 10)    (6000 to 60000)
+
+
+## Usability Flags
+It's easy enough to ask the user what they want to do"
+- Option: Let casters only use wands
+- Option: Let certain wands be usable by any class
