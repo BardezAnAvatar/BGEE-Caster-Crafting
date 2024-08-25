@@ -255,10 +255,17 @@ The ones I have identified thus far:
 - Bless
 - Cat's Grace
 - Chill Touch
+- Color Spray
 - Cure Light Wounds
+- Dancing Lights
+- Detect Evil
+- Detect Illusion
 - Detect Invisibility
+- Detect Magic
 - Dimensional Chest
 - Dispel Magic
+- Expeditious Retreat
+- Faerie Fire
 - Find Traps
 - Friends
 - Goodberry
@@ -268,6 +275,8 @@ The ones I have identified thus far:
 - Infravision
 - Invisibility
 - Knock
+- Know Alignment
+- Levitate
 - Luck
 - Magic Missile (DMG)
 - Magic Stone
