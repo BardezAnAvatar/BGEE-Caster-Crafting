@@ -302,7 +302,7 @@ Weight: 1~
 
 //Sleep
 @60029 = ~Wand of Sleep~
-@60030 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 80 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for 2 turns.
+@60030 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 80 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for %duration%.
 
 STATISTICS:
 (Enchantment/Charm)
@@ -311,7 +311,7 @@ Charge abilities:
 – Sleep
   Range: 80 ft.
   Area of Effect: 15-ft. radius
-  Duration: 2 turns
+  Duration: %duration%
   Saving Throw: Save vs. Wand negates
 
 Requires:
