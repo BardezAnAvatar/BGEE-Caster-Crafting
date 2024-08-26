@@ -576,3 +576,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Reflected Image
+@60051 = ~Wand of Reflected Image~
+@60052 = ~When activated, a single image of the wielder is created that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wielder does so that if any enemies are trying to attack, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the wielder. The image will disappear with a successful Dispel Magic, when attacked, or when the effect expires.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Reflected Image
+  creates 1 image of wielder that will travel alongside <PRO_HIMHER>
+  Area of Effect: Self
+  Duration: %duration%
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
