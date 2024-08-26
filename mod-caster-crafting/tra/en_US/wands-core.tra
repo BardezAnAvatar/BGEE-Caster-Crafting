@@ -318,3 +318,31 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chill Touch
+@60029 = ~Wand of Chill Touch~
+@60030 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of an adjacent creature. No attack roll is needed. The touched creature takes 5d4 magic cold damage and must save or lose 3 points of Strength for 5 rounds. The Strength loss is cumulative; if the creature is reduced to 0 Strength, it dies instantly.
+
+An undead creature suffers no damage or Strength loss, but will be affected by panic for 2 turns unless it successfully makes a Save vs. Wand.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Chill Touch
+    Living:
+      5d4 magic cold damage; lose 3 points of Strength for 5 rounds.
+    Undead:
+     Suffers panic for 2 turns
+  Range: Touch
+  Area of Effect: 15-ft. radius
+  Duration: Special
+  Saving Throw:
+    Save vs. Death negates strength damage
+    Save vs. Wand negates panic (if undead)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
