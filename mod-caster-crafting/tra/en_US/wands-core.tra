@@ -258,3 +258,22 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shield
+@60025 = ~Wand of Shield~
+@60026 = ~When activated, the wand generates an invisible barrier in front of the wielder, granting a +4 AC bonus for the shield against melee and +2 against ranged, also granting immunity from the spell Magic Missile.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Shield
+  +4 shield AC vs. melee; +2 shield AC vs. ranged; immunity to Magic Missile
+  Duration: 1 hour
+  Area of Effect: Self
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
