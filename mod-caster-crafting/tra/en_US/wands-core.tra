@@ -346,3 +346,210 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chromatic Orb: 1st
+@60031 = ~Wand of Chromatic Orb~
+@60032 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d4 magic damage and blinds the target for 1 round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d4 magic damage
+  – Blinds the target for 1 round.
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 1 round
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Blindness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 2nd
+@60033 = ~Wand of Chromatic Orb~
+@60034 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d4 magic damage and inflicts pain (-1 penalty to Strength, Dexterity, AC, and THAC0) upon the victim.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d4 magic damage
+  – Pain (-1 penalty to Strength, Dexterity, AC, and THAC0) inflicted upon the victim.
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 10 seconds
+  Saving Throw: Save vs. Wand (+6 bonus) to negate pain
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 3rd
+@60035 = ~Wand of Chromatic Orb~
+@60036 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d6 magic damage and burns the victim for an additional 1d8 damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d6 magic damage
+  – 1d8 fire damage.
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: Instant
+  Saving Throw: Save vs. Wand (+6 bonus) to negate fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 4th
+@60037 = ~Wand of Chromatic Orb~
+@60038 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d6 magic damage and blinds the target for 1 turn.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d6 magic damage
+  – Blinds the target for 1 turn.
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 1 turn
+  Saving Throw: Save vs. Wand (+6 bonus) to negate blindness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 5th
+@60039 = ~Wand of Chromatic Orb~
+@60040 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d8 magic damage and stuns the target for 3 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d8 magic damage
+  – Stuns the target for 3 rounds.
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 3 rounds
+  Saving Throw: Save vs. Wand (+6 bonus) to negate stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 6th
+@60041 = ~Wand of Chromatic Orb~
+@60042 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d8 magic damage and causes weakness (-4 penalty to THAC0) in the victim.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d8 magic damage
+  – Weakness (-4 penalty to THAC0) in the victim
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 6 rounds
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Weakness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 7th
+@60043 = ~Wand of Chromatic Orb~
+@60044 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d10 damage and paralyzes the victim for 2 turns.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d10 magic damage
+  – Paralyzes the victim for 2 turns.
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 2 turns
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Paralysis
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 10th
+@60045 = ~Wand of Chromatic Orb~
+@60046 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d12 acid damage and turns the victim to stone.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 1d12 acid damage
+  – Petrifies victim
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 2 turns
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Petrification
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 12th
+@60047 = ~Wand of Chromatic Orb~
+@60048 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+2d8 acid damage and instantly kills the victim.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – 2d8 acid damage
+  – Instantly kills the victim
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: Instant
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Death
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
