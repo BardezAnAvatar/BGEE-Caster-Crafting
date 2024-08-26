@@ -1,0 +1,24 @@
+/* Reserving range 70000-79999 */
+
+
+/******************
+*   True Strike   *
+******************/
+//True Strike
+@70000 = ~Wand of True Strike~
+@70001 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– True Strike
+  +20 bonus to THAC0.
+  Duration: 9 seconds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
