@@ -386,3 +386,12 @@ It's easy enough to ask the user what they want to do"
 - Option: Let matching casters only use wands
 - Option: Let certain wands be usable by any class
 - Option: Let anyone use wands
+
+
+## Creating the Item
+1. Copy an empty wand item
+1. Copy the spell effects and write them to the wand
+1. Update the saves from spell to wand
+1. Set the gold for the caster level
+1. Update the usability flags
+1. Set the lore for identify
