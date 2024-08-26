@@ -383,5 +383,6 @@ loose:  y = 500(x² + x + 10)    (6000 to 60000)
 
 ## Usability Flags
 It's easy enough to ask the user what they want to do"
-- Option: Let casters only use wands
+- Option: Let matching casters only use wands
 - Option: Let certain wands be usable by any class
+- Option: Let anyone use wands
