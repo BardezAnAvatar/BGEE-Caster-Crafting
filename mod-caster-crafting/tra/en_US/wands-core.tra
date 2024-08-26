@@ -136,3 +136,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Friends
+@60013 = ~Wand of Friends~
+@60014 = ~This wand will temporarily grant 6 points of Charisma to the wielder. Those who view the affected tend to be very impressed with <PRO_HIMHER> and make an effort to be <PRO_HISHER> friends and help <PRO_HIMHER>, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax informative; attacking orcs might spare the caster's life, taking <PRO_HIMHER> captive instead.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Friends
+  TEmorarily grants 6 points of Charisma
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
