@@ -198,3 +198,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Infravision
+@60019 = ~Wand of Infravision~
+@60020 = ~This wand will grant the ability to see with infravision, just as an elf or dwarf can.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Infravision
+  Ability to see with infravision
+  Range: Touch
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
