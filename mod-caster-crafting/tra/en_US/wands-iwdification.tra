@@ -68,3 +68,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Sunscorch
+@80006 = ~Wand of Sunscorch~
+@80007 = ~When activated, the wand pulls a brilliant ray of scorching heat that slants down from the sky and strikes one target of the caster's choice. Any creature struck by the ray takes 1d6+%magnitude% points of fire damage; however, if the target is an undead creature or a monster vulnerable to bright light, the damage is 1d6+%magnitude2%. In addition to sustaining damage, victims are also blinded for 3 rounds. The victim is allowed a Save vs. Wand for half damage and to avoid the blindness.
+
+STATISTICS:
+(Invocation)
+
+Charge abilities:
+– Sunscorch
+  – Fire from sky
+  – Blindness
+  Damage:
+  – Undead: 1d6+%magnitude2% points of fire damage
+  – Living: 1d6+%magnitude% points of fire damage
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage, negate Blindness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
