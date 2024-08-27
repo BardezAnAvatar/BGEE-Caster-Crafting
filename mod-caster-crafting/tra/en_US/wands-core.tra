@@ -85,7 +85,7 @@ STATISTICS:
 Charge abilities:
 – Charm Person
   Charms the target to regard the caster as a trusted friend and ally to be heeded and protected.
-  Range: Visual range of the wielder
+  Range: Visual range
   Duration: 5 rounds
   Area of Effect: 1 person
   Saving Throw: Save vs. Spell (at +3) negates
@@ -769,6 +769,28 @@ Charge abilities:
   Area of Effect: Self, 30-ft. radius
   Duration: Instant
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Entangle (Olvyn?)
+@60069 = ~Wand of Entangle~
+@60070 = ~When used, this wand causes plants in the area of effect to entangle enemies within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration if they fail a Save vs. Wand. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Entangle
+  – Reduce movement speed to 5%
+  – Armor class -2 penalty
+  Range: Visual range
+  Area of Effect: 15-ft. radius
+  Duration: 1 turn
+  Saving Throw: Save vs. Wand
 
 Requires:
  9 Intelligence
