@@ -775,6 +775,26 @@ Requires:
 Weight: 1~
 
 
+//Detect Evil
+@60067 = ~Wand of Detect Evil~
+@60068 = ~Upon activation, this wand reveals emanations of evil from any creature. Any evil creature within the range of the spell will glow red briefly.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Evil
+  Causes Evil creatures in range to glow red briefly
+  Area of Effect: Self, 30-ft. radius
+  Duration: Instant
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 
 /****************
 *   2nd Level   *
