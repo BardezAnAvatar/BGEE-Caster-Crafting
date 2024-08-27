@@ -924,7 +924,7 @@ Requires:
 Weight: 1~
 
 
-//Armor of Doom
+//Doom
 @60081 = ~Wand of Doom~
 @60082 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -2 penalty to all <PRO_HISHER> rolls, including THAC0 and Saving Throws. There is no Saving Throw for this spell.
 
@@ -946,7 +946,7 @@ Requires:
 Weight: 1~
 
 
-//Armor of Faerie Fire
+//Faerie Fire
 @60083 = ~Wand of Faerie Fire~
 @60084 = ~Upon uttering the activation phrase, this wand outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2.
 
