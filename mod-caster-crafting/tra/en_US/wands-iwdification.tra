@@ -46,3 +46,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Light Wounds
+@80004 = ~Wand of Cause Light Wounds~
+@80005 = ~When activated, the wand charges the wielder's hand; upon touching a creature, the wielder deals 8 points of damage (save vs. Wand for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Light Wounds
+  – Create charge to deal 8 magic damage to touched target
+  – No effect on undead, constructs, or extraplanar
+  Damage: 8 magic damage
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
