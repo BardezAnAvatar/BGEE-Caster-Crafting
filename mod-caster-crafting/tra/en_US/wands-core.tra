@@ -729,6 +729,29 @@ Requires:
 Weight: 1~
 
 
+//Command (Olvyn?)
+@60063 = ~Wand of Command~
+@60064 = ~Upon activation, this wand allows the wielder to command another creature for a single round. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Command
+  Charm target for 1 round
+  Range: 90 ft.
+  Area of Effect: 1 creature
+  Duration: 1 round
+  Saving Throw:
+  – Save vs. Wand to negate (if target has > 5 HD)
+  – Otherwise: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 
 /****************
 *   2nd Level   *
