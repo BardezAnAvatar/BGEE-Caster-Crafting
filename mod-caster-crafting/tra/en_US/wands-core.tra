@@ -719,8 +719,8 @@ Charge abilities:
   – Attack rolls +1
   – Damage rolls +1
   Range: 40 ft.
-  Area of Effect: 15-ft. radius
   Duration: 1 turn
+  Area of Effect: 15-ft. radius
   Saving Throw: None
 
 Requires:
@@ -740,8 +740,8 @@ Charge abilities:
 – Command
   – Charm target for 1 round
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 1 round
+  Area of Effect: 1 creature
   Saving Throw:
   – Save vs. Wand to negate (if target has > 5 HD)
   – Otherwise: None
@@ -765,8 +765,8 @@ Charge abilities:
 – Cure Light Wounds
   – Healed for 8 hit points
   Range: Touch
-  Area of Effect: 1 creature
   Duration: Permanent
+  Area of Effect: 1 creature
   Saving Throw: None
 
 Requires:
@@ -785,8 +785,8 @@ STATISTICS:
 Charge abilities:
 – Detect Evil
   – Causes Evil creatures in range to glow red briefly
-  Area of Effect: Self, 30-ft. radius
   Duration: Instant
+  Area of Effect: Self, 30-ft. radius
   Saving Throw: None
 
 Requires:
@@ -807,8 +807,8 @@ Charge abilities:
   – Reduce movement speed to 5%
   – Armor class -2 penalty
   Range: Visual range
-  Area of Effect: 15-ft. radius
   Duration: 1 turn
+  Area of Effect: 15-ft. radius
   Saving Throw: Save vs. Wand
 
 Requires:
@@ -829,8 +829,8 @@ Charge abilities:
   – 3d4 points of magic damage
   – 3d4 points of magic damage additional vs. Undead
   Range: Visual range
-  Area of Effect: 1 creature
   Duration: Instant
+  Area of Effect: 1 creature
   Saving Throw: None
 
 Requires:
@@ -852,8 +852,8 @@ Charge abilities:
   – Dispels fear effects
   – Immunity to fear effects
   Range: 30 ft.
-  Area of Effect: 15-ft. radius
   Duration: 1 hour
+  Area of Effect: 15-ft. radius
   Saving Throw: None
 
 Requires:
@@ -873,8 +873,8 @@ Charge abilities:
 – Sanctuary
   – Ignored as if invisible
   – Can move, use thief skills, and heal/buff self
-  Area of Effect: Self
   Duration: 1 turn
+  Area of Effect: Self
   Saving Throw: None
 
 Requires:
@@ -895,8 +895,8 @@ Charge abilities:
   – Creates weightless magical club
     – Deals 2d4 crushing damage
     – +1 bonus to THAC0
-  Area of Effect: Self
   Duration: %duration%
+  Area of Effect: Self
   Saving Throw: None
 
 Requires:
@@ -914,8 +914,8 @@ STATISTICS:
 Charge abilities:
 – Armor of Faith
   – Absorbs %magnitude%% of incoming damage
-  Area of Effect: Self
   Duration: %duration%
+  Area of Effect: Self
   Saving Throw: None
 
 Requires:
