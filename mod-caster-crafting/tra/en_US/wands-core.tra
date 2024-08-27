@@ -738,7 +738,7 @@ STATISTICS:
 
 Charge abilities:
 – Command
-  Charm target for 1 round
+  – Charm target for 1 round
   Range: 90 ft.
   Area of Effect: 1 creature
   Duration: 1 round
@@ -763,7 +763,7 @@ STATISTICS:
 
 Charge abilities:
 – Cure Light Wounds
-  Healed for 8 hit points
+  – Healed for 8 hit points
   Range: Touch
   Area of Effect: 1 creature
   Duration: Permanent
@@ -784,7 +784,7 @@ STATISTICS:
 
 Charge abilities:
 – Detect Evil
-  Causes Evil creatures in range to glow red briefly
+  – Causes Evil creatures in range to glow red briefly
   Area of Effect: Self, 30-ft. radius
   Duration: Instant
   Saving Throw: None
