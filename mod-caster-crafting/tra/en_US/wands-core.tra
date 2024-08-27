@@ -706,6 +706,29 @@ Requires:
 Weight: 1~
 
 
+//Bless
+@60061 = ~Wand of Bless~
+@60062 = ~With activation, this wand releases the power of a prayerful blessing, raising the morale of friendly creatures by +1. Furthermore, it raises their attack and damage rolls by +1. The wielder determines a point (up to 40 ft. away) where the effect will occur, affecting all creatures in a 15-ft. radius centered on the point selected by the wielder (thus, affected creatures leaving the area are still subject to the effects; those entering the area after are not).
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Bless
+  – Morale +1
+  – Attack rolls +1
+  – Damage rolls +1
+  Range: 40 ft.
+  Area of Effect: 15-ft. radius
+  Duration: 1 turn
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 
 /****************
 *   2nd Level   *
