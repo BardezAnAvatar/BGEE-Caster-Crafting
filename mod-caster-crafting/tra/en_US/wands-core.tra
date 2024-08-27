@@ -234,6 +234,7 @@ Charge abilities:
   – %magnitude% magic missiles will strike the target
   Damage: 1d4+1 per missile
   Range: 100 ft.
+  Duration: Instant
   Area of Effect: 1 creature
 
 Requires:
@@ -317,8 +318,8 @@ Charge abilities:
 – Sleep
   – Causes creatures in affected area to fall asleep
   Range: 80 ft.
-  Area of Effect: 15-ft. radius
   Duration: %duration%
+  Area of Effect: 15-ft. radius
   Saving Throw: Save vs. Wand negates
 
 Requires:
@@ -344,8 +345,8 @@ Charge abilities:
   – Undead:
     – Suffer panic for 2 turns
   Range: Touch
-  Area of Effect: 15-ft. radius
   Duration: Special
+  Area of Effect: 15-ft. radius
   Saving Throw:
   – Save vs. Death negates strength damage
   – Save vs. Wand negates panic (if undead)
@@ -370,8 +371,8 @@ Charge abilities:
   – Blinds the target for 1 round
   Damage: 1d4 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 1 round
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Blindness
 
 Requires:
@@ -394,8 +395,8 @@ Charge abilities:
   – Pain (-1 penalty to Strength, Dexterity, AC, and THAC0) inflicted upon the victim.
   Damage: 1d4 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 10 seconds
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate pain
 
 Requires:
@@ -418,8 +419,8 @@ Charge abilities:
   – Fire damage
   Damage: 1d4 magic damage + 1d8 fire damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: Instant
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate fire damage
 
 Requires:
@@ -442,8 +443,8 @@ Charge abilities:
   – Blinds the target for 1 turn
   Damage: 1d6 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 1 turn
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate blindness
 
 Requires:
@@ -466,8 +467,8 @@ Charge abilities:
   – Stuns the target for 3 rounds
   Damage: 1d8 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 3 rounds
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate stun
 
 Requires:
@@ -490,8 +491,8 @@ Charge abilities:
   – Weakness (-4 penalty to THAC0) in the victim
   Damage: 1d8 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 6 rounds
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Weakness
 
 Requires:
@@ -514,8 +515,8 @@ Charge abilities:
   – Paralyzes the victim for 2 turns.
   Damage: 1d10 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 2 turns
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Paralysis
 
 Requires:
@@ -538,8 +539,8 @@ Charge abilities:
   – Petrifies victim
   Damage: 1d12 acid damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 2 turns
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Petrification
 
 Requires:
@@ -562,8 +563,8 @@ Charge abilities:
   – Instantly kills the victim
   Damage: 2d8 acid damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: Instant
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Death
 
 Requires:
@@ -583,10 +584,10 @@ Charge abilities:
 – Larloch's Minor Drain
   – Transfers 12 hit points from target to wielder
   Range: Visual range
-  Area of Effect: 1 creature
   Duration:
   – Drain: Instant
   – Excess Hit Points: 1 hour
+  Area of Effect: 1 creature
   Saving Throw: None
 
 Requires:
@@ -605,8 +606,8 @@ STATISTICS:
 Charge abilities:
 – Reflected Image
   – Creates 1 image of wielder that will travel alongside <PRO_HIMHER>
-  Area of Effect: Self
   Duration: %duration%
+  Area of Effect: Self
   Saving Throw: None
 
 Requires:
@@ -631,8 +632,8 @@ Charge abilities:
   – Pick a known spell
   – Wild surge occurs that attempts to cast the selected spell
   Range: Special
-  Area of Effect: Special
   Duration: Special
+  Area of Effect: Special
   Saving Throw: Special
 
 Requires:
@@ -652,8 +653,8 @@ Charge abilities:
 – Spook
   – Target flees at maximum speed as far from the wielder as possible
   Range: 30 ft.
-  Area of Effect: 1 creature
   Duration: 3 rounds
+  Area of Effect: 1 creature
   Saving Throw: Saving vs. Wand negates
 
 Requires:
@@ -673,8 +674,8 @@ Charge abilities:
 – Spook
   – Target flees at maximum speed as far from the wielder as possible
   Range: 30 ft.
-  Area of Effect: 1 creature
   Duration: 3 rounds
+  Area of Effect: 1 creature
   Saving Throw: Saving vs. Wand (-%magnitude% penalty) negates
 
 Requires:
@@ -695,8 +696,8 @@ Charge abilities:
   – 50% chance to summon 4 distracting lights
   – 50% chance to summon 1 distracting humanoid light
   Range: Sight
-  Area of Effect: 1 creature
   Duration: %duration%
+  Area of Effect: 1 creature
   Saving Throw: None
 
 Requires:
