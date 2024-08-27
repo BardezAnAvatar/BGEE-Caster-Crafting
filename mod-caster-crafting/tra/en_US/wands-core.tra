@@ -946,6 +946,28 @@ Requires:
 Weight: 1~
 
 
+//Armor of Faerie Fire
+@60083 = ~Wand of Faerie Fire~
+@60084 = ~Upon uttering the activation phrase, this wand outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Faerie Fire
+  – Purple flame outline
+  – -2 penalty to Armor Class
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 10-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 
 /****************
 *   2nd Level   *
