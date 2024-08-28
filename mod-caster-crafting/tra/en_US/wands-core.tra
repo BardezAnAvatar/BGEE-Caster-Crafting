@@ -1251,3 +1251,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Agannazar's Scorcher
+@60124 = ~Wand of Agannazar's Scorcher~
+@60125 = ~With this wand, the wielder unleashed a jet of flame that shoots toward a target of the wielders's choice. The flame causes 3d6 points of fire damage to the target, no Saving Throw allowed—anyone in the flame's path takes 2d8, but they are allowed a Save vs. Spell for half damage. The flame jet strikes a second time halfway through its duration.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Agannazar's Scorcher
+  – 3d6 points of fire damage to the target
+  – 2d8 points of fire damage to anyone in line of fire
+  Range: Sight
+  Duration: 1 round (damaging twice)
+  Area of Effect: 2-ft. by 40-ft. jet.
+  Saving Throw: Save vs. Wand for half damage (not target)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
