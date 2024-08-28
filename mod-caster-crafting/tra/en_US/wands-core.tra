@@ -1167,3 +1167,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mirror Image
+@60116 = ~Wand of Mirror Image~
+@60117 = ~This wand causes two to eight duplicates of the wielder to come into being around <PRO_HIMHER> when activated. These images do exactly what the wielder does. Since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which ones are the illusions and which is the actual wizard. When an image is struck by a melee or missile attack, magical or otherwise, it disappears, but any other existing images remain intact until struck. The images shift from round to round so that an enemy must first hit every image before being able to hit the wielder.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Mirror Image
+  – %magnitude% duplicate images
+  Range: Self
+  Duration: %duration%
+  Area of Effect: 6-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
