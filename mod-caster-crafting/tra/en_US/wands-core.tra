@@ -1195,7 +1195,7 @@ Weight: 1~
 @60119 = ~Upon activation, this wand emits a billowing mass of nauseous vapors up to 40 ft. away from the wielder. Any creature caught within the cloud must roll a successful Save vs. Poison or be reeling and fall unconscious for the next round; unconscious creatures do not awaken when struck. Those who make successful Saving Throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save every round.
 
 STATISTICS:
-(Illusion/Phantasm)
+(Evocation)
 
 Charge abilities:
 – Stinking Cloud
@@ -1204,6 +1204,27 @@ Charge abilities:
   Duration: %duration%
   Area of Effect: 15-ft. radius
   Saving Throw: Save vs. Poison to avoid sleep
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Strength
+@60120 = ~Wand of Strength~
+@60121 = ~Upon activation, the target's Strength is magically increased by an amount depending on its class. Warriors gain 1d8 points, priests and rogues gain 1d6 points, and wizards gain 1d4 points. For warriors only, all points above a Strength of 18 are converted into a 10% bonus for each extra point, to a maximum of 18/00. For other classes, 18 Strength is the maximum.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Strength
+  – Strength is magically increased
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
 
 Requires:
  9 Intelligence
