@@ -1037,3 +1037,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Horror
+@60104 = ~Wand of Horror~
+@60105 = ~Once triggered, the wand causes all enemies within the area of effect to save vs. Wand or flee in terror. Certain creatures, such as undead, are immune to this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Horror
+  – Enemies flee in terror
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
