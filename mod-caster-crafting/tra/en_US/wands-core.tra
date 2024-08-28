@@ -1079,3 +1079,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Knock
+@60108 = ~Wand of Knock~
+@60109 = ~Activating this wand causes a locked, held, or wizard-locked container, chest or door to open. It does not raise barred gates or similar impediments.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Knock
+  – Unlocks target door or container
+  Range: Sight
+  Duration: Instant
+  Area of Effect: Locked door or chest
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
