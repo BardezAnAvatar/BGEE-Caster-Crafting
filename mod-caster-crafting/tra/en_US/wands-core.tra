@@ -1100,3 +1100,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Know Alignment
+@60110 = ~Wand of Know Alignment~
+@60111 = ~Activating this wand allows the wielder to read a creature's aura. Evil creatures will glow red, neutrals blue, and good creatures will glow green for a brief period. Certain magical devices negate the power of the Know Alignment spell.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Know Alignment
+  – Reveals target's alignment
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
