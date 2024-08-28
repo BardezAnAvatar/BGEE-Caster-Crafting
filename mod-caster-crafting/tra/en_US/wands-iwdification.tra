@@ -92,3 +92,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/****************
+*   2nd Level   *
+****************/
+//Decastave
+@80008 = ~Wand of Decastave~
+@80009 = ~Upon activation, the wand creates a staff of force in the wielder's hand. It is treated as a magical weapon, doing 1d6 Hit Points of damage per hit, and it can hit creatures that require +1 weapons to hit. It is a staff, however, so if the caster does not have a proficiency in staff weapons, then the Decastave is used at a penalty. The staff also has the power to drain a target of 1d2 Hit Points on every strike. These Hit Points are added to the wielder's, but they can only heal damage the caster has taken; they will not raise <PRO_HISHER> Hit Points beyond <PRO_HISHER> normal maximum.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Decastave
+  – Creates magical +1 staff
+    – Drain a target of 1d2 Hit Points each hit
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
