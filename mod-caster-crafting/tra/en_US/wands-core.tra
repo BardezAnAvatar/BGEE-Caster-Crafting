@@ -997,7 +997,7 @@ Weight: 1~
 ****************/
 //Blur
 @60100 = ~Wand of Blur~
-@60100 = ~When activated, the outline of the wielder's form becomes blurred, shifting and wavering. This distortion causes all missile and melee attacks against the wielder to be made with a -3 penalty. The wielder also gains a +1 bonus to all of <PRO_HISHER> Saving Throws.
+@60101 = ~When activated, the outline of the wielder's form becomes blurred, shifting and wavering. This distortion causes all missile and melee attacks against the wielder to be made with a -3 penalty. The wielder also gains a +1 bonus to all of <PRO_HISHER> Saving Throws.
 
 STATISTICS:
 (Illusion/Phantasm)
@@ -1008,6 +1008,29 @@ Charge abilities:
   – +1 bonus to all saving throws
   Duration: %duration%
   Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Invisibility
+@60102 = ~Wand of Detect Invisibility~
+@60103 = ~Once used, the recipient is able to see clearly any objects or beings that are invisible, hidden, concealed, astral, ethereal, or out of phase.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Invisibility
+  – See invisible creatures
+  – Able to attack invisible creatures
+  – Able to cast spells on invisible creatures
+  Range: Sight
+  Duration: 4 turns
+  Area of Effect: 1 creature
   Saving Throw: None
 
 Requires:
