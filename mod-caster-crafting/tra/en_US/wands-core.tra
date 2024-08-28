@@ -1121,3 +1121,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Luck
+@60112 = ~Wand of Luck~
+@60113 = ~This wand embues the recipient with extraordinary luck for the next 3 rounds, receiving a +1 bonus to <PRO_HISHER> Saving Throws, attack rolls, and minimum damage/healing rolls as well as +5% to all thieving skills. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1. For example, a 6d6 fireball will do 6d5 damage, and a flaming long sword that deals 1d8+2 slashing plus 1d3 fire damage will deal 1d8+2 slashing plus 1d2 fire damage instead.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Luck
+  – +1 bonus to saving throws
+  – +1 bonus to attack rolls
+  – +1 bonus to minimum damage/healing rolls
+  – +5% bonus to all thieving skills
+  – Damage dice for non-weapons reduced by 1
+  Range: 15 ft.
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
