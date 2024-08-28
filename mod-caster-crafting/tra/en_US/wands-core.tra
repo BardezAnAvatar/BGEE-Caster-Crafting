@@ -1058,3 +1058,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Invisibility
+@60106 = ~Wand of Invisibility~
+@60107 = ~This wand causes a creature touched to vanish from sight and be undetectable by normal vision or even infravision.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Invisibility
+  – Turns target creature invisible
+  Range: Touch
+  Duration: 24 hours or until taking visible action
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
