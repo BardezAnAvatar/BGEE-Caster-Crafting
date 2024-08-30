@@ -95,6 +95,26 @@ function ParseSpellDescription {
     Write-Host "Saving Throw:       $($saving_throw)"
     Write-Host "Description:        $($description)"
 
+    $obj = [PSCustomObject]@{
+        SpellRevisions  = $spellRevisions
+        Name            = $spellName
+        School          = $school
+        Level           = $level
+        Sphere          = $sphere
+        Range           = $range
+        Duration        = $duration
+        CastingTime     = $casting_time
+        AreaOfEffect    = $aoe
+        SavingThrow     = $saving_throw
+        Description     = $description
+    }
+
+    # Convert the PowerShell object to a JSON string
+    $json = $obj | ConvertTo-Json -Depth 3
+
+    # Output the JSON string
+    Write-Output $json
+
 }
 
 
