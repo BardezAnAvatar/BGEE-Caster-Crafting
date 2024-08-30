@@ -115,6 +115,7 @@ function ParseSpellDescription {
     # Output the JSON string
     Write-Output $json
 
+    return $json
 }
 
 
