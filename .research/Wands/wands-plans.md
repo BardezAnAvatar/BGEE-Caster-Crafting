@@ -395,3 +395,11 @@ It's easy enough to ask the user what they want to do"
 1. Set the gold for the caster level
 1. Update the usability flags
 1. Set the lore for identify
+
+
+## Descriptions
+FML
+
+So Olvyn Seems to modify... everything. Which is inane. Same with Spell Revisions. Probably several other mods which I'll not be happy about.
+
+Anyway, I'm going to offer an override approach for wands, shipping base game, maybe Revisions and Olvyn, and just do those.
