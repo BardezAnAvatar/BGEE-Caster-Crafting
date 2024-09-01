@@ -66,3 +66,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Charm Person
+@100007 = ~Wand of Charm Person~
+@100008 = ~This wand will charm any single person† when activated; if the recipient fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The caster may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
+
+If the caster harms, or attempts to harm, the charmed creature by some overt action, or if a dispel magic spell is successfully cast upon the charmed creature, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence.
+
+†: Person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Charm Person
+  – Charms the target to be ordered or spoken to
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 person
+  Saving Throw: Save vs. Wand (at +2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
