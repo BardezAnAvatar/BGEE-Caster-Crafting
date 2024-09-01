@@ -56,3 +56,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Burning Hands
+@60005 = ~Wand of Burning Hands~
+@60006 = ~When activated, a jet of searing flame shoots forward in a horizontal arc of about 120 degrees, with a 5 ft. length. Any creature in the area of the flames suffers 1d3 +%magnitude%  points of fire damage. Those successfully saving vs. Wand receive half damage.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Burning Hands
+  – Creates a fan-line cone of fire 5 ft. from the wielder
+  Damage: 1d3 +%magnitude% points of fire damage
+  Duration: Instant
+  Area of Effect: 5-ft. cone with 120-deg. arc
+  Saving Throw: Save vs. Wand for 1/2 damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
