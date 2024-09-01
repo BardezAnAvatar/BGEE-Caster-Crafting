@@ -24,3 +24,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+//Armor
+@100003 = ~Wand of Mage Armor~
+@100004 = ~When activated, the wand creates a magical field of force that sets its base armor class to %magnitude%. This armor does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Armor
+  – Applies a field of magical force of armor around the wielder (AC %magnitude%).
+  – Does not affect spellcasting or thieving skills
+  Range: Personal
+  Duration: 8 hours
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
