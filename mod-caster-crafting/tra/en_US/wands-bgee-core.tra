@@ -36,3 +36,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+//Armor
+@60003 = ~Wand of Armor~
+@60004 = ~When activated, the wand generates a magical field of force that serves as if it were scale mail armor. This does not hinder movement, adds no weight or encumbrance, and doesn't prevent spellcasting.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Armor
+  – Applies a field of magical force of armor around the wielder (AC 6).
+  – Does not affect spellcasting or thieving skills
+  Duration: 9 hours
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
