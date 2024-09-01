@@ -1,2 +1,27 @@
 /* Reserving range 70000-79999 */
 
+
+
+/****************
+*   1st Level   *
+****************/
+//Grease
+@70001 = ~Wand of Grease~
+@70002 = ~Upon activation, this wand covers the ground with a slippery layer of a fatty, greasy nature. Any creature entering the area or caught in it when the spell is cast must save vs. Wand every round or have their movement rate slowed to a crawl as long as they are in the area of effect. Those who successfully save can move normally.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Grease
+  – Covers a surface with a slippery layer
+  – Any creature within the area must save each round or slowed
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 6-ft. radius
+  Saving Throw: Save vs. Wand
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
