@@ -45,3 +45,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Burning Hands
+@100005 = ~Wand of Burning Hands~
+@100006 = ~When activated, a fan-like cone of searing flames jets shoots from this wand towards a designated point. This sends out 10-foot-long jets of flame in a horizontal arc of about 60 degrees in front of the wielder. All creatures caught in the flames suffe%r %magnitude%d6 points of fire damage.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Burning Hands
+  – Creates a fan-line cone of fire 10' from the wielder
+  Damage: %magnitude%d6 + points of fire damage
+  Duration: Instant
+  Area of Effect: 10' cone with 60-deg. arc
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
