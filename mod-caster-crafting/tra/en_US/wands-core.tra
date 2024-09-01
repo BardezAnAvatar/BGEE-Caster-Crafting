@@ -11,30 +11,6 @@ STATISTICS:
 
 Weight: 1~
 
-
-/****************
-*   1st Level   *
-****************/
-//Grease
-@60001 = ~Wand of Grease~
-@60002 = ~When activated, the wand will create a slippery layer of a fatty, greasy nature to cover a material surface. Any creature entering the area or caught in it when the spell is cast must save or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Spell again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
-
-STATISTICS:
-(Conjuration/Summoning)
-
-Charge abilities:
-– Grease
-  – Covers a material surface with a slippery layer of a fatty, greasy nature. Any creature entering the area or caught in it when the spell is cast must save or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Spell again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
-  Range: 30 ft.
-  Duration: %duration%
-  Area of Effect: 15-ft. radius
-  Saving Throw: Save vs. Spell at +2
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
 //Armor
 @60003 = ~Wand of Armor~
 @60004 = ~When activated, the wand generates a magical field of force that serves as if it were scale mail armor. This does not hinder movement, adds no weight or encumbrance, and doesn't prevent spellcasting.

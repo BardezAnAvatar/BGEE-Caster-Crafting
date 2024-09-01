@@ -1,2 +1,38 @@
 /* Reserving range 60000-69999 */
 
+/***************
+*   Defaults   *
+***************/
+@60000 = ~Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
+
+Wands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.
+
+STATISTICS:
+
+Weight: 1~
+
+
+/****************
+*   1st Level   *
+****************/
+//Grease
+@60001 = ~Wand of Grease~
+@60002 = ~When activated, the wand will create a slippery layer of a fatty, greasy nature to cover a material surface. Any creature entering the area or caught in it when the spell is cast must save or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Wand again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Grease
+  – Covers a surface with a slippery layer
+  – Any creature within the area must save or slip and slide, each round
+  – Saving creatures can move slowly for the rest of the round
+  Range: 30 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand at +2
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
