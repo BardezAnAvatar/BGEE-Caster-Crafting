@@ -12,47 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Burning Hands
-@60005 = ~Wand of Burning Hands~
-@60006 = ~When activated, a jet of searing flame shoots forward in a horizontal arc of about 120 degrees, with a 5 ft. length. Any creature in the area of the flames suffers 1d3 +%magnitude%  points of fire damage. Those successfully saving vs. Spell receive half damage.
-
-STATISTICS:
-(Alteration)
-
-Charge abilities:
-– Burning Hands
-  – Creates a fan-line cone of fire 5 ft from the wielder, dealing 1d3 +%magnitude%  points of fire damage
-  Duration: Instant
-  Area of Effect: 5-ft. cone with 120-deg. arc
-  Saving Throw: Save vs. Spell for 1/2 damage
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Charm Person
-@60007 = ~Wand of Charm Person~
-@60008 = ~This wand will charm its target when activated; any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. The charmed individual may be given orders, and they will carry them out as quickly as possible. They will also gladly provide valuable information to their new ally.
-
-STATISTICS:
-(Enchantment/Charm)
-
-Charge abilities:
-– Charm Person
-  – Charms the target to regard the caster as a trusted friend and ally to be heeded and protected.
-  Range: Visual range
-  Duration: 5 rounds
-  Area of Effect: 1 person
-  Saving Throw: Save vs. Spell (at +3) negates
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Color Spray
 @60009 = ~Wand of Color Spray~
 @60010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself, causing 1d6 creatures within the area to be affected in order of increasing distance. All creatures affected that have 4 Hit Dice or less must make a successful Saving Throw or be rendered unconscious for 5 rounds.
