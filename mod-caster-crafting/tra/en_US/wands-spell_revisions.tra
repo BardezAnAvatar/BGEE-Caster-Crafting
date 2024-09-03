@@ -280,3 +280,24 @@ Requires:
 
 Weight: 1~
 
+
+//Sleep
+@100029 = ~Wand of Sleep~
+@100030 = ~This wand will emit a gold beam of energy at its targets, causing a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a saving throw vs. Wand or fall asleep. Any further attempts to harm the targets will waken them. Opponents with more Hit Dice/levels than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically induced sleep.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Sleep
+  – Causes creatures in affected area to fall asleep
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+

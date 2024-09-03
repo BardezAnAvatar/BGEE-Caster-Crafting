@@ -12,27 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Sleep
-@60029 = ~Wand of Sleep~
-@60030 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 80 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for %duration%.
-
-STATISTICS:
-(Enchantment/Charm)
-
-Charge abilities:
-– Sleep
-  – Causes creatures in affected area to fall asleep
-  Range: 80 ft.
-  Duration: %duration%
-  Area of Effect: 15-ft. radius
-  Saving Throw: Save vs. Wand negates
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Chill Touch
 @60029 = ~Wand of Chill Touch~
 @60030 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of an adjacent creature. No attack roll is needed. The touched creature takes 5d4 magic cold damage and must save or lose 3 points of Strength for 5 rounds. The Strength loss is cumulative; if the creature is reduced to 0 Strength, it dies instantly.

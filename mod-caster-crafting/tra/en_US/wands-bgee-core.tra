@@ -320,3 +320,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Sleep
+@60029 = ~Wand of Sleep~
+@60030 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 60 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Death (with -3 penalty), they will fall into a deep, comatose sleep for %duration%. Monsters with 5 Hit Dice or more are unaffected. Attacks against sleeping opponents never miss.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Sleep
+  – Causes creatures in affected area to fall asleep
+  Range: 60 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Death (-3 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
