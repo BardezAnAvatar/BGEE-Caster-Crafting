@@ -227,3 +227,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chill Touch
+@60031 = ~Wand of Chill Touch~
+@60032 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of of any creature upon which the wielder makes a successful melee attack. The touched creature must make a Save vs. Wand or suffer 1d4 points of cold damage and receive a -1 THAC0 penalty for 1 turn after being struck.
+
+An undead creature suffers no damage or to-hit penalty from Chill Touch, but will be affected by panic for 2 turns unless it successfully makes a Save vs. Spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Chill Touch
+  – Living:
+    – Cold energy attack
+    – -1 penalty to THAC0 to target for 1 turn
+  – Undead:
+    – Suffer panic for 2 turns
+  Damage:
+    – 1d4 cold damage
+  Range: Touch
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

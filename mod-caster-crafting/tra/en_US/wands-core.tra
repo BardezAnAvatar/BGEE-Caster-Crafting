@@ -12,35 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Chill Touch
-@60029 = ~Wand of Chill Touch~
-@60030 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of an adjacent creature. No attack roll is needed. The touched creature takes 5d4 magic cold damage and must save or lose 3 points of Strength for 5 rounds. The Strength loss is cumulative; if the creature is reduced to 0 Strength, it dies instantly.
-
-An undead creature suffers no damage or Strength loss, but will be affected by panic for 2 turns unless it successfully makes a Save vs. Wand.
-
-STATISTICS:
-(Necromancy)
-
-Charge abilities:
-– Chill Touch
-  – Living:
-    – 5d4 magic cold damage
-    – Lose 3 points of Strength for 5 rounds
-  – Undead:
-    – Suffer panic for 2 turns
-  Range: Touch
-  Duration: Special
-  Area of Effect: 15-ft. radius
-  Saving Throw:
-  – Save vs. Death negates strength damage
-  – Save vs. Wand negates panic (if undead)
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Chromatic Orb: 1st
 @60031 = ~Wand of Chromatic Orb~
 @60032 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:

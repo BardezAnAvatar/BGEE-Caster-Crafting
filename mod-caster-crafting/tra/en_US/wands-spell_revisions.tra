@@ -301,3 +301,27 @@ Requires:
 
 Weight: 1~
 
+
+//Chill Touch
+@100031 = ~Wand of Chill Touch~
+@100032 = ~When activated, a blue glow encompasses the wielder's hand. This energy attacks the life force of any living creature upon which the wielder makes a successful melee attack. The touched creature suffers 1d6 points of cold damage and loses one point of strength for 1 hour (no ability drain if the victim saves vs. death). The wielder gains a +4 bonus to hit the target and his touch is considered to be of +1 enchantment to determine what it can hit.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Chill Touch
+  – 1d6 cold damage
+    – +4 THAC0 bonus to hit
+    – Attacks as a +1 enchantment
+  – Lose 1 points of Strength for 1 hour
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Death negates strength damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
