@@ -236,3 +236,25 @@ Requires:
 
 Weight: 1~
 
+
+//Shield
+@100025 = ~Wand of Shield~
+@100026 = ~When activated, the wand generates an an invisible barrier comes into being in front of the wielder, granting <PRO_HIMHER> immunity to the spell Magic Missile. Furthermore, the fluctuating force shield around the wielder acts similarly to a regular shield, effectively increasing AC by 2 points (+4 vs. missile weapons). This effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Shield
+  – +4 shield AC vs. melee
+  – +2 shield AC vs. ranged
+  – Immunity to Magic Missile
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+

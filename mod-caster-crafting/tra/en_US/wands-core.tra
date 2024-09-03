@@ -12,27 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Protection from Evil
-@60023 = ~Wand of Protection from Evil~
-@60024 = ~When activated, the wand creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has two major effects: First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Second, summoned demons cannot target the protected creature.
-
-STATISTICS:
-(Abjuration)
-
-Charge abilities:
-– Protection from Evil
-  – Protected from summoned demons.
-  – Evil creatures attacking target incur a -2 attack roll penalty.
-  Range: Touch
-  Duration: %duration%
-  Area of Effect: 1 creature
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Shield
 @60025 = ~Wand of Shield~
 @60026 = ~When activated, the wand generates an invisible barrier in front of the wielder, granting a +4 AC bonus for the shield against melee and +2 against ranged, also granting immunity from the spell Magic Missile.

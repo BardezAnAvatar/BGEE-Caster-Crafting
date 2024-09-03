@@ -252,3 +252,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection from Evil
+@60023 = ~Wand of Protection from Evil~
+@60024 = ~When activated, the wand creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has two major effects: First, the protected creature gets a +2 bonus to AC and saving throws against attacks made by evil or evilly enchanted creatures. Second, summoned demons cannot target the protected creature.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection from Evil
+  – +2 AC bonus against attacks from Evil creatures
+  – +2 Saving Throw bonus against attacks from Evil creatures
+  – Protected from summoned demons
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
