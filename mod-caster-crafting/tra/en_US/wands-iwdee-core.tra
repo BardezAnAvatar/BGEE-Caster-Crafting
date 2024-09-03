@@ -75,3 +75,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Blindness
+@70011 = ~Wand of Blindness~
+@70012 = ~This wand will flash, temporarily blinding its target. If a victim is blinded, <PRO_HESHE> receives a -4 penalty to <PRO_HISHER> attack rolls and Armor Class. Blind creatures are immune to gaze attacks.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Blindness
+  – Temporarily blinds its target
+    – -4 penalty to AC
+    – -4 penalty to attack rolls
+    – Immune to gaze attacks
+  Range: Sight
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

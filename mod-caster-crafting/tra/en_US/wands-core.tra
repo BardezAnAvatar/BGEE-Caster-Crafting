@@ -12,49 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Color Spray
-@60009 = ~Wand of Color Spray~
-@60010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself, causing 1d6 creatures within the area to be affected in order of increasing distance. All creatures affected that have 4 Hit Dice or less must make a successful Saving Throw or be rendered unconscious for 5 rounds.
-
-STATISTICS:
-(Alteration)
-
-Charge abilities:
-– Color Spray
-  – Renders 1d6 creatures unconsious (in order of increasing distance)
-  – Only creatures with < 5 HD affected
-  Range: 50 ft.
-  Duration: Instant
-  Area of Effect: 90-degree arc
-  Saving Throw: Save vs. Spell negates
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Blindness
-@60011 = ~Wand of Blindness~
-@60012 = ~This wand will flash, temporarily blinding its target. If a victim is blinded, <PRO_HESHE> receives a -4 penalty to <PRO_HISHER> attack rolls and Armor Class.
-
-STATISTICS:
-(Illusion/Phantasm)
-
-Charge abilities:
-– Blindness
-  – Temporarily blinds its target
-  Range: 40 ft.
-  Duration: 2 hours
-  Area of Effect: 1 creature
-  Saving Throw: Save vs. Spell negates
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Friends
 @60013 = ~Wand of Friends~
 @60014 = ~This wand will temporarily grant 6 points of Charisma to the wielder. Those who view the affected tend to be very impressed with <PRO_HIMHER> and make an effort to be <PRO_HISHER> friends and help <PRO_HIMHER>, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax informative; attacking orcs might spare the caster's life, taking <PRO_HIMHER> captive instead.
