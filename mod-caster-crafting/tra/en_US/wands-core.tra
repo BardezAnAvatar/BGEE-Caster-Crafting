@@ -12,28 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Dancing Lights
-@60059 = ~Wand of Dancing Lights~
-@60060 = ~This wand creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wielder. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.
-
-STATISTICS:
-(Alteration)
-
-Charge abilities:
-– Dancing Lights
-  – 50% chance to summon 4 distracting lights
-  – 50% chance to summon 1 distracting humanoid light
-  Range: Sight
-  Duration: %duration%
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Bless
 @60061 = ~Wand of Bless~
 @60062 = ~With activation, this wand releases the power of a prayerful blessing, raising the morale of friendly creatures by +1. Furthermore, it raises their attack and damage rolls by +1. The wielder determines a point (up to 40 ft. away) where the effect will occur, affecting all creatures in a 15-ft. radius centered on the point selected by the wielder (thus, affected creatures leaving the area are still subject to the effects; those entering the area after are not).
