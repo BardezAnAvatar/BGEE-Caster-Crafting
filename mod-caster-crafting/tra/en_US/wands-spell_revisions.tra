@@ -598,3 +598,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spook
+@100057 = ~Wand of Spook~
+@100058 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. The creature suffers a Saving Throw penalty of %magnitude%. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion, such as dragons, and those with no intelligence score are unaffected by this spell, as are creatures under the effect of a True Seeing spell.
+
+STATISTICS:
+(Illusion)
+
+Charge abilities:
+– Spook
+  Target flees at maximum speed as far from the wielder as possible
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Saving vs. Wand (%magnitude% penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

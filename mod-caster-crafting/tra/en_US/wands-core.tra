@@ -12,48 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Spook
-@60055 = ~Wand of Spook~
-@60056 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. Undead are completely unaffected.
-
-STATISTICS:
-(Invocation/Evocation)
-
-Charge abilities:
-– Spook
-  – Target flees at maximum speed as far from the wielder as possible
-  Range: 30 ft.
-  Duration: 3 rounds
-  Area of Effect: 1 creature
-  Saving Throw: Saving vs. Wand negates
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Spook (CL > 1)
-@60057 = ~Wand of Spook~
-@60058 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. The creature suffers a Saving Throw penalty of %magnitude%. Undead are completely unaffected.
-
-STATISTICS:
-(Invocation/Evocation)
-
-Charge abilities:
-– Spook
-  – Target flees at maximum speed as far from the wielder as possible
-  Range: 30 ft.
-  Duration: 3 rounds
-  Area of Effect: 1 creature
-  Saving Throw: Saving vs. Wand (-%magnitude% penalty) negates
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Dancing Lights
 @60059 = ~Wand of Dancing Lights~
 @60060 = ~This wand creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wielder. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.
