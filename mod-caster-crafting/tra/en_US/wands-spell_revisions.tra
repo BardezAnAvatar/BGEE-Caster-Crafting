@@ -171,6 +171,27 @@ Requires:
 Weight: 1~
 
 
+//Identify
+@100017 = ~Wand of Identify~
+@100018 = ~This wand will use 1 charge to identify the name and enchantments (including curses) of one item subsequently touched by the wielder. Much like a scroll of Identify, in that to identify an item you right-click on that item; a menu will appear and from here you choose the "Scroll" option. The details are revealed without fail. Many unidentified items can still be used, but at great risk.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Identify
+  – Identify an item by using 1 charge
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 1 item
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Infravision -> True Strike
 @100019 = ~Wand of True Strike~
 @100020 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
