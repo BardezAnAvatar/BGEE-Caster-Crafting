@@ -12,27 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Identify
-@60017 = ~Wand of Identify~
-@60018 = ~This wand will use 1 charge to identify an item, much like a scroll of Identify, in that to identify an item you right-click on that item. A menu will appear and from here you choose the "Scroll" option. The chance of identifying the item is 100%. The charge will identify the item's name, what it does, and if it is cursed.
-
-STATISTICS:
-(Divination)
-
-Charge abilities:
-– Identify
-  – Identify an item by using 1 charge
-  Range: Touch
-  Duration: Instant
-  Area of Effect: 1 item
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Infravision
 @60019 = ~Wand of Infravision~
 @60020 = ~This wand will grant the ability to see with infravision, just as an elf or dwarf can.
