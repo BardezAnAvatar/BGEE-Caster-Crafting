@@ -258,3 +258,25 @@ Requires:
 
 Weight: 1~
 
+
+//Shocking Grasp
+@100027 = ~Wand of Shocking Grasp~
+@100028 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal %magnitude%d6 points of damage and stun the target for 1 round. If the target makes a successful saving throw vs. Wand (%magnitude2% penalty), he is not stunned. The spell expires once the caster makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Shocking Grasp
+  – Creates an electric charge damaging target
+  Damage: %magnitude%d6 points of electrical damage and Stuns target
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (%magnitude2% penalty) negates Stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
