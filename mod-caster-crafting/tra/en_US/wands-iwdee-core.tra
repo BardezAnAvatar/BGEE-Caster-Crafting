@@ -99,3 +99,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Friends
+@70013 = ~Wand of Friends~
+@70014 = ~This wand will temporarily grant 5 points of Charisma to the wielder. While cast, those who view the wielder tend to be very impressed and will generally make an effort to help <PRO_HIMHER>.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Friends
+  – Temorarily gain 5 points of Charisma
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
