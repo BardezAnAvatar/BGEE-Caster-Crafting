@@ -625,3 +625,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Nahal's Reckless Dweomer
+@60055 = ~Wand of Nahal's Reckless Dweomer~
+@60056 = ~The Wild Mage's ultimate last-resort, a wild surge is purposefully invoked; the result might be beneficial to the wielder, or it might be completely disastrous: this is the risk taken in casting Nahal's Reckless Dweomer.
+
+When activated, select a known spell to attempt to cast; the wand releases a sudden flood of wild magical energy. The Wild Mage hopes to seize and shape that energy into a desired spell effect. The attempt usually fails, but something almost always occurs in the process -- the actual effect of the wand is determined randomly by a dice roll on the Wild Surge Table (see the manual for more details).
+
+Because the release of energy is planned, the wand's caster level (%magnitude%) is added to the dice roll. If the result indicates success, then the magical energy is shaped into the desired effect. More often than not, the effect is completely unexpected.
+
+STATISTICS:
+(Wild Magic)
+
+Charge abilities:
+– Nahal's Reckless Dweomer
+  – Pick a known spell
+  – Wild surge occurs that attempts to cast the selected spell
+  Range: Special
+  Duration: Special
+  Area of Effect: Special
+  Saving Throw: Special
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
