@@ -230,8 +230,8 @@ Weight: 1~
 
 
 //Chill Touch
-@60031 = ~Wand of Chill Touch~
-@60032 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of of any creature upon which the wielder makes a successful melee attack. The touched creature must make a Save vs. Wand or suffer 1d4 points of cold damage and receive a -1 THAC0 penalty for 1 turn after being struck.
+@70031 = ~Wand of Chill Touch~
+@70032 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of of any creature upon which the wielder makes a successful melee attack. The touched creature must make a Save vs. Wand or suffer 1d4 points of cold damage and receive a -1 THAC0 penalty for 1 turn after being struck.
 
 An undead creature suffers no damage or to-hit penalty from Chill Touch, but will be affected by panic for 2 turns unless it successfully makes a Save vs. Spell.
 
@@ -251,6 +251,144 @@ Charge abilities:
   Duration: 1 turn
   Area of Effect: 1 creature
   Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 1st
+@70033 = ~Wand of Chromatic Orb~
+@70034 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d4 magic damage and blinds the target for 1 round. A successful Save vs. Wand negates all effects.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Blinds the target for 1 round
+  Damage: 1d4 magic damage
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 2nd
+@70035 = ~Wand of Chromatic Orb~
+@70036 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d4 magic damage and inflicts pain (-1 penalty to AC, and THAC0) upon the victim.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Pain (-1 penalty to Strength, Dexterity, AC, and THAC0) inflicted upon the victim.
+  Damage: 1d4 magic damage
+  Range: 90 ft.
+  Duration: 10 seconds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate pain
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 3rd
+@70037 = ~Wand of Chromatic Orb~
+@70038 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d8 magic damage and burns the victim for an additional 1d3 fire damage. A successful Save vs. Wand negates all effects.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Fire damage
+  Damage: 1d4 magic damage + 1d8 fire damage
+  Range: 90 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 4th
+@70039 = ~Wand of Chromatic Orb~
+@70040 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d10 magic damage and blinds the target for 4 rounds. A successful Save vs. Wand negates all effects.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Blinds the target for 1 turn
+  Damage: 1d6 magic damage
+  Range: 90 ft.
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate blindness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 5th
+@70041 = ~Wand of Chromatic Orb~
+@70042 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d12 magic damage and stuns the target for 3 rounds. A successful Save vs. Wand negates all effects.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Stuns the target for 3 rounds
+  Damage: 1d8 magic damage
+  Range: 90 ft.
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 7th
+@70045 = ~Wand of Chromatic Orb~
+@70046 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 2d8 damage and paralyzes the victim for 13 rounds. A successful Save vs. Wand negates all effects.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Paralyzes the victim for 2 turns.
+  Damage: 1d10 magic damage
+  Range: 90 ft.
+  Duration: 2 turns
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Paralysis
 
 Requires:
  9 Intelligence
