@@ -184,3 +184,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shocking Grasp
+@70027 = ~Wand of Shocking Grasp~
+@70028 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal 1d8+%magnitude% points of electrical damage to a targeted creature. The spell always hits unless the wielder is disrupted.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Shocking Grasp
+  – Creates an electric charge damaging target
+  Damage: 1d8+%magnitude% points of electrical damage
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

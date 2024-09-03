@@ -296,3 +296,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shocking Grasp
+@60027 = ~Wand of Shocking Grasp~
+@60028 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal 1d2 fist damage and 1d8+%magnitude% points of electrical damage to a targeted creature. <PRO_HESHE> has 1 round per level to touch the target creature; if the wielder misses, the spell is wasted.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Shocking Grasp
+  – Creates an electric charge damaging target
+  Damage:
+  – 1d2 fist damage
+  – 1d8+%magnitude% points of electrical damage
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
