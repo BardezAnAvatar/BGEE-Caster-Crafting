@@ -146,6 +146,31 @@ Requires:
 Weight: 1~
 
 
+//Friends -> Monster Summoning I
+@100013 = ~Wand of Monster Summoning I~
+@100014 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Monster Summoning I
+  – Summon gibberlings: %magnitude%
+    Gibberling (1 Hit Dice):
+    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
+    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
+    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Point
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Infravision -> True Strike
 @100019 = ~Wand of True Strike~
 @100020 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
