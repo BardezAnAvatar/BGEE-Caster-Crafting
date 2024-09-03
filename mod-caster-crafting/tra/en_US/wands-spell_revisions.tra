@@ -578,3 +578,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Reflected Image
+@100053 = ~Wand of Reflected Image~
+@100054 = ~When activated, this wand creates one illusory image of the wielder that will travel alongside <PRO_HIMHER>. The image performs all of the actions that the wielder does, and seems to react normally to both physical and magical damage (such as appearing to be burned when hit by a fireball) so that if any enemies are trying to attack the wielder they will not know which one is real. There is a 50% chance that an attacker will attack the image and a 50% chance that he will attack the wielder. The image is immune to all forms of damage, but will disappear if a dispel magic or a detect illusion spell is cast upon it, or when the spell duration runs out. This spell cannot be cast on anyone who is under the effects of a Mirror Image spell, and multiple castings of this spell will not create additional images.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Reflected Image
+  – Creates 1 image of wielder that will travel alongside <PRO_HIMHER>
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
