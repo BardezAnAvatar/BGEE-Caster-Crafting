@@ -12,29 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Larloch's Minor Drain
-@60049 = ~Wand of Larloch's Minor Drain~
-@60050 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 12 damage, while the wielder gains 12 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
-
-STATISTICS:
-(Necromancy)
-
-Charge abilities:
-– Larloch's Minor Drain
-  – Transfers 12 hit points from target to wielder
-  Range: Visual range
-  Duration:
-  – Drain: Instant
-  – Excess Hit Points: 1 hour
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Reflected Image
 @60051 = ~Wand of Reflected Image~
 @60052 = ~When activated, a single image of the wielder is created that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wielder does so that if any enemies are trying to attack, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that he will attack the wielder. The image will disappear with a successful Dispel Magic, when attacked, or when the effect expires.
