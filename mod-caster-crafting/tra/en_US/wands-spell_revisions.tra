@@ -167,3 +167,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Missile
+@100021 = ~Wand of Magic Missiles~
+@100022 = ~When activated, the wand creates %magnitude% missiles of magical energy that dart forth from the wielder's fingertip and unerringly strike their target, which must be a creature of some sort. Each missile inflicts 1d4+1 points of damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Magic Missile
+  – %magnitude% magic missiles will strike the target
+  Damage: 1d4+1 per missile
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
