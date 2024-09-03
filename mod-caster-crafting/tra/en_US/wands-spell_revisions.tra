@@ -91,3 +91,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Color Spray
+@100009 = ~Wand of Color Spray~
+@100010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to the wielder are slowed for 5 rounds, those with Hit Dice/levels one or two greater than the wielder are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Color Spray
+  – Confusion 1 round
+    – HD > %caster_level% + 2
+    OR
+    – HD > 22
+  Otherwise
+  – Blindness 3 rounds
+    – %caster_level% + 3 > HD > %caster_level%
+  Otherwise
+  – Slow 5 rounds
+  Range: 15'
+  Duration: Special
+  Area of Effect: 60-degree arc
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -46,3 +46,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Color Spray
+@70009 = ~Wand of Color Spray~
+@70010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; all creatures in the area above the level of the caster or ones that have greater than 6 Hit Dice must make a Save vs. Wand. The spell's effects depend on the caster—creatures with Hit Dice/levels fewer than or equal to the caster are knocked unconscious (do not awaken when struck) for 5 rounds, those with Hit Dice/levels one or two greater than the wizard are blinded for 3 rounds, and any other creatures are stunned for 1 round.
+
+Blind creatures are unaffected by the color spray.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Color Spray
+  – Deep Sleep 5 rounds
+    – HD <= %caster_level%
+  Otherwise
+  – Blindness 3 rounds
+    – %caster_level% + 3 > HD > %caster_level%
+  Otherwise
+  – Stun 1 round
+  Range: 12 ft.
+  Duration: Special
+  Area of Effect: 29-ft. cone with 90-deg. arc
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

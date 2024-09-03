@@ -102,3 +102,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Color Spray
+@60009 = ~Wand of Color Spray~
+@60010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself, causing 1d6 creatures within the area to be affected in order of increasing distance. All creatures affected that have 4 Hit Dice or less must make a successful Saving Throw or be rendered unconscious for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Color Spray
+  – Renders 1d6 creatures unconsious (in order of increasing distance)
+  – Only creatures with < 5 HD affected
+  Range: 50 ft.
+  Duration: Instant
+  Area of Effect: 90-degree arc
+  Saving Throw: Save vs. Wand negates (if HD > %caster_level% or > HD 6)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
