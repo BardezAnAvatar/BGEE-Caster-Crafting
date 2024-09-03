@@ -206,3 +206,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Sleep
+@70029 = ~Wand of Sleep~
+@70030 = ~This wand will emit a gold beam of energy at its targets, affecting 2d4 Hit Dice of creatures within a 9-ft. radius. Monsters with 5 or more Hit Dice are unaffected. Though it's not the stuff of which legends are made, attacks against magically sleeping opponents never miss—although they will awaken after the first hit.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Sleep
+  – Causes creatures in affected area to fall asleep
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 9-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
