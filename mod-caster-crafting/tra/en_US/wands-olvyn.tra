@@ -5,8 +5,8 @@
 *   True Strike   *
 ******************/
 //True Strike
-@70000 = ~Wand of True Strike~
-@70001 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
+@90019 = ~Wand of True Strike~
+@90020 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
 
 STATISTICS:
 (Divination)
@@ -27,8 +27,8 @@ Weight: 1~
 /************************
 *   Identify Creature   *
 ************************/
-@70002 = ~Wand of Identify Creature~
-@70003 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
+@90002 = ~Wand of Identify Creature~
+@90003 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
 
 STATISTICS:
 (Divination)
