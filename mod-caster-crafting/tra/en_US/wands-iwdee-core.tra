@@ -161,3 +161,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection from Evil
+@70023 = ~Wand of Protection from Evil~
+@70024 = ~When activated, the wand creates a magical barrier around the recipient at a distance of one foot. The barrier has three effects: First, it bestows a +2 bonus to the recipient's Armor Class and Saving Throws against attacks from evil-aligned opponents; second, it prevents summoned fiends from attacking the recipient; third, it makes the recipient immune to charm-based spells or effects (e.g. Charm Person, Charm Person or Mammal, Domination, and so on).
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection from Evil
+  – +2 AC bonus against attacks from Evil creatures
+  – +2 Saving Throw bonus against attacks from Evil creatures
+  – Protected from summoned demons
+  – Immune to Charm effects
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
