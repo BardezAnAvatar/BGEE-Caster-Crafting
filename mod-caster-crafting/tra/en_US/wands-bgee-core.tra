@@ -167,3 +167,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection from Petrification
+@60015 = ~Wand of Protection from Petrification~
+@60016 = ~This wand will grant the recipient immunity to all petrification attacks; this includes basilisk and medusa gaze, cursed scrolls of petrification, etc.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection from Petrification
+  – Immunity to all petrification attacks
+  Range: Touch
+  Duration: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
