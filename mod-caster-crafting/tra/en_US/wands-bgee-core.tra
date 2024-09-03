@@ -230,3 +230,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Missile
+@60021 = ~Wand of Magic Missiles~
+@60022 = ~When activated, the wand will eject a missiles of magical energy that dart forth and unerringly strikes its target. This includes enemy creatures in a melee. The target creature must be seen or otherwise detected to be hit, however, so near-total concealment, such as that offered by arrow slits, can render the spell ineffective. Each missile will inflict 1d4+1 points of damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Magic Missile
+  – %magnitude% magic missiles will strike the target
+  Damage: 1d4+1 per missile
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
