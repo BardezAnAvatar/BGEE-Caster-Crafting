@@ -144,3 +144,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Infravision -> True Strike
+@100019 = ~Wand of True Strike~
+@100020 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
+
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– True Strike
+  – +4 bonus to THAC0
+  – +5% bonus to Critical Hit chance
+  Range: Personal
+  Duration: 3 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
