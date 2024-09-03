@@ -25,7 +25,7 @@ Requires:
 
 Weight: 1~
 
-//Armor
+//Armor -> Mage Armor
 @100003 = ~Wand of Mage Armor~
 @100004 = ~When activated, the wand creates a magical field of force that sets its base armor class to %magnitude%. This armor does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.
 
@@ -115,6 +115,30 @@ Charge abilities:
   Duration: Special
   Area of Effect: 60-degree arc
   Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Blindness -> Obscuring Mist
+@100011 = ~Wand of Obscuring Mist~
+@100012 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Obscuring Mist
+  – Misty fog
+    – Sight halved
+    – -2 penalty to attack rolls for creatures inside
+    – -4 penalty to attack creatures inside with ranged attacks
+  Range: Long
+  Duration: 6 rounds
+  Area of Effect: 20' radius
+  Saving Throw: None
 
 Requires:
  9 Intelligence
