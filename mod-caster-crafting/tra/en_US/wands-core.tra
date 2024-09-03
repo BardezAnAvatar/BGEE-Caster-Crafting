@@ -12,27 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Protection from Petrification
-@60015 = ~Wand of Protection from Petrification~
-@60016 = ~This wand will grant the recipient immunity to all petrification attacks; this includes basilisk and medusa gaze, cursed scrolls of petrification, etc.
-
-STATISTICS:
-(Abjuration)
-
-Charge abilities:
-– Protection from Petrification
-  – Immunity to all petrification attacks
-  Range: Touch
-  Duration: 1 hour
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Identify
 @60017 = ~Wand of Identify~
 @60018 = ~This wand will use 1 charge to identify an item, much like a scroll of Identify, in that to identify an item you right-click on that item. A menu will appear and from here you choose the "Scroll" option. The chance of identifying the item is 100%. The charge will identify the item's name, what it does, and if it is cursed.
