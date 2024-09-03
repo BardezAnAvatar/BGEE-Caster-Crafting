@@ -582,3 +582,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Larloch's Minor Drain
+@60051 = ~Wand of Larloch's Minor Drain~
+@60052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Larloch's Minor Drain
+  – Transfers 4 hit points from target to wielder
+  Range: 30 ft.
+  Duration:
+  – Drain: Instant
+  – Excess Hit Points: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
