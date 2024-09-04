@@ -417,3 +417,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Expeditious Retreat
+@70061 = ~Wand of Expeditious Retreat~
+@70062 = ~Upon activation, the wand doubles the wielder's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects (such as Haste and Slow) cannot affect the wielder while under this effect. While Expeditious Retreat is active, the wielder cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Expeditious Retreat
+  – Move Speed doubled
+  – Attacks, spell casting, special abilities and item use are disabled
+  Duration: 3 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
