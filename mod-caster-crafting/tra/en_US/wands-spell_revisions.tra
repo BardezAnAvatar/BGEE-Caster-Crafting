@@ -668,3 +668,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Light Wounds
+@100104 = ~Wand of Cure Light Wounds~
+@100105 = ~Upon activation, this wand causes wounds and other injuries to the creature's body to be healed. The wielder can restore 1d8 + %magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Light Wounds
+  – Healed for 1d8 + %magnitude% hit points
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

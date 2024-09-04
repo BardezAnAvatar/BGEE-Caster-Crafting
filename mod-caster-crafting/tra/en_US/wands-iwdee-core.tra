@@ -462,3 +462,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Light Wounds
+@70104 = ~Wand of Cure Light Wounds~
+@70105 = ~Upon activation, this wand heals 8 Hit Points to the creature's body and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Light Wounds
+  – Healed for 8 hit points
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
