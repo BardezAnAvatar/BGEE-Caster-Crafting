@@ -12,9 +12,9 @@ STATISTICS:
 Weight: 1~
 
 
-/****************
-*   1st Level   *
-****************/
+/*************************
+*   1st Level - Arcane   *
+*************************/
 //Grease
 @60001 = ~Wand of Grease~
 @60002 = ~When activated, the wand will create a slippery layer of a fatty, greasy nature to cover a material surface. Any creature entering the area or caught in it when the spell is cast must save or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Wand again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
@@ -688,6 +688,32 @@ Charge abilities:
   Range: Sight
   Duration: %duration%
   Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+/*************************
+*   1st Level - Priest   *
+*************************/
+//Bless
+@60100 = ~Wand of Bless~
+@60101 = ~With activation, this wand releases the power of a prayerful blessing, raising the morale of friendly creatures by +1. Furthermore, it raises their attack and damage rolls by +1. The wielder determines a point (up to 40 ft. away) where the effect will occur, affecting all creatures in a 15-ft. radius centered on the point selected by the wielder (thus, affected creatures leaving the area are still subject to the effects; those entering the area after are not).
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Bless
+  – Morale +1
+  – Attack rolls +1
+  – Damage rolls +1
+  Range: 40 ft.
+  Duration: 6 rounds
+  Area of Effect: 15-ft. radius
   Saving Throw: None
 
 Requires:
