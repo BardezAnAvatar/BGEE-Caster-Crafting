@@ -636,6 +636,7 @@ Charge abilities:
   – Attack rolls +1
   – Damage rolls +1
   School: Enchantment
+  Sphere: All
   Range: Long
   Duration: 5 turns
   Area of Effect: 30' radius
@@ -657,6 +658,7 @@ Charge abilities:
 – Command
   – Sleep for 1 round
   School: Enchantment
+  Sphere: Charm, Combat, Law
   Range: Long
   Duration: 1 round
   Area of Effect: 1 creature
