@@ -1,9 +1,9 @@
 /* Reserving range 90000-99999 */
 
 
-/******************
-*   True Strike   *
-******************/
+/*************************
+*   1st Level - Arcane   *
+*************************/
 //True Strike
 @90019 = ~Wand of True Strike~
 @90020 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
@@ -90,6 +90,32 @@ Charge abilities:
   – Excess Hit Points: 1 hour
   Area of Effect: 1 creature
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+/*************************
+*   1st Level - Priest   *
+*************************/
+//Command
+@90102 = ~Wand of Command~
+@90103 = ~Upon activation, this wand allows the wielder to command another creature for a single round. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Command
+  – Charm target for 1 round
+  Range: 90 ft.
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw:
+  – Save vs. Wand to negate (if target has > 5 HD)
+  – Otherwise: None
 
 Requires:
  9 Intelligence
