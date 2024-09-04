@@ -645,3 +645,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Command
+@100102 = ~Wand of Command~
+@100103 = ~This wand enables the wielder to command another creature to sleep for a single round. At the end of the round, the creature awakens and is unharmed. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+
+STATISTICS:
+
+Charge abilities:
+– Command
+  – Sleep for 1 round
+  School: Enchantment
+  Range: Long
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand to negate (if target has > 5 HD)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
