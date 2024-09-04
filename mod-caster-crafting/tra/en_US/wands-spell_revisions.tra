@@ -691,3 +691,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Detect Evil -> Detect Alignment
+@100106 = ~Wand of Detect Alignment~
+@100107 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Alignment
+  – Causes Good creatures in range to briefly glow green
+  – Causes Neutral creatures in range to briefly glow white
+  – Causes Evil creatures in range to briefly glow red
+  School: Divination
+  Sphere: Divination
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Instant
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
