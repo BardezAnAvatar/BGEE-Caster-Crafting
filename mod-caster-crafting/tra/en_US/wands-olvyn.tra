@@ -1,9 +1,9 @@
 /* Reserving range 90000-99999 */
 
 
-/******************
-*   True Strike   *
-******************/
+/*************************
+*   1st Level - Arcane   *
+*************************/
 //True Strike
 @90019 = ~Wand of True Strike~
 @90020 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
