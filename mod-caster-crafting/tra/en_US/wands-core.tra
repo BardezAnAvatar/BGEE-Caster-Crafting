@@ -12,28 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Magic Stone (Olvyn?)
-@60071 = ~Wand of Magical Stone~
-@60072 = ~When activated, this wand causes a pebble to be temporarily enchanted, which is then hurled or slung at an opponent. The stone automatically hits, dealing 3d4 damage to the target (+3d4 more if target undead).
-
-STATISTICS:
-(Enchantment)
-
-Charge abilities:
-– Magical Stone
-  – 3d4 points of magic damage
-  – 3d4 points of magic damage additional vs. Undead
-  Range: Visual range
-  Duration: Instant
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Remove Fear
 @60073 = ~Wand of Remove Fear~
 @60074 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. The recipients' morale will gradually reset to normal as the duration runs out. If the recipients are affected by magical fear, this is negated.

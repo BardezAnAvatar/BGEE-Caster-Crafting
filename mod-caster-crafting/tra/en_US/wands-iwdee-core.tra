@@ -526,3 +526,27 @@ Requires:
 
 Weight: 1~
 
+
+//Magic Stone
+@70110 = ~Wand of Magical Stone~
+@70111 = ~When activated, this wand can temporarily enchant a small pebble, which is then hurled or slung at an opponent. The stone deals 3d4 points of crushing damage to whomever it hits except undead creatures, who take 6d4 points of crushing damage instead. The stone is considered a magical weapon, although it does not have an attack or damage bonus.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Magical Stone
+  – Flings a stone at target creature
+  Damage:
+  – 3d4 points of crushing damage
+  – 3d4 points of crushing damage additional vs. Undead
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
