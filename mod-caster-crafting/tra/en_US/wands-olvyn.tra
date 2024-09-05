@@ -204,6 +204,28 @@ Requires:
 Weight: 1~
 
 
+//Hex
+@90073 = ~Wand of Hex~
+@90074 = ~This wand can curse the target to take more magical and elemental damage. The target must make a Save vs. Polymorph. On a failure, the target is cursed for 6 rounds. During that time, whenever the target would be dealt fire, cold, electricity, acid, or magic damage, it takes an additional 6 damage of that type. Hex is especially effective when combined with spells that deal damage multiple times, such as Magic Missile or Melf's Acid Arrow.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Hex
+  Target takes additional energy damage
+  Damage: Bolsters energy damage by +6
+  Range: 60 ft.
+  Duration: 6 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /*************************
 *   1st Level - Priest   *
 *************************/
