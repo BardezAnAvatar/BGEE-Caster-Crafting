@@ -97,6 +97,27 @@ Requires:
 Weight: 1~
 
 
+//Dimension Door
+@90063 = ~Wand of Dimension Door~
+@90064 = ~This wand transports the caster to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination. Dimension Door can be cast at a point too far away to see, as long as the party has seen it.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Dimension Door
+  Target steps through a doorway to a new, nearby location
+  Range: Entire Area
+  Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /*************************
 *   1st Level - Priest   *
 *************************/
