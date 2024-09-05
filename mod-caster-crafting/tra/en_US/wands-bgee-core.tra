@@ -915,3 +915,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Doom
+@60120 = ~Wand of Doom~
+@60121 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -2 penalty to <PRO_HISHER> THAC0 and Saving Throws. There is no Saving Throw for this spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Doom
+  – -2 penalty to THAC0
+  – -2 penalty to saving throws
+  Range: 25 ft.
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

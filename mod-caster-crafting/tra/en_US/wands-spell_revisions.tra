@@ -899,3 +899,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Doom
+@100120 = ~Wand of Doom~
+@100121 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -%magnitude% penalty to attack rolls, damage rolls, and saving throws, unless a save vs. Wand is made. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Doom
+  – -%magnitude% penalty to THAC0
+  – -%magnitude% penalty to damage
+  – -%magnitude% penalty to saving throws
+  School: Enchantment
+  Sphere: Charm
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
