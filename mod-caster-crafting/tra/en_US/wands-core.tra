@@ -12,28 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Doom
-@60081 = ~Wand of Doom~
-@60082 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -2 penalty to all <PRO_HISHER> rolls, including THAC0 and Saving Throws. There is no Saving Throw for this spell.
-
-STATISTICS:
-(Alteration)
-
-Charge abilities:
-– Doom
-  – -2 penalty to THAC0
-  – -2 penalty to saving throws
-  Range: 25 ft.
-  Duration: 1 turn
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Faerie Fire
 @60083 = ~Wand of Faerie Fire~
 @60084 = ~Upon uttering the activation phrase, this wand outlines one or more creatures with a pale violet glow, making positions and movements easily visible. Outlined creatures are easier to strike, giving them an Armor Class penalty of -2.
