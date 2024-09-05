@@ -877,3 +877,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Armor of Faith
+@100118 = ~Wand of Armor of Faith~
+@100119 = ~When activated, the wielder receives significant protection against physical and magic damage. This magical armor is a force of energy that absorbs a portion of the damage intended for the caster, effectively reducing the damage sustained by 10%. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Armor of Faith
+  – Absorbs 10% of incoming damage
+  School: Abjuration
+  Sphere: Protection
+  Range: Personal
+  Duration: 5 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
