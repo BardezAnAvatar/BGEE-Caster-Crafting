@@ -269,6 +269,29 @@ Requires:
 Weight: 1~
 
 
+//Dimensional Chest
+@90079 = ~Wand of Dimensional Chest~
+@90080 = ~When activated, this wand summons a chest containing an extradimensional storage space similar to a Bag of Holding. The chest can store up to 60000 of the party's items. It stays in the spot where it was summoned for 8 hours. Any party member can store or retrieve items from the chest by interacting with it. Non-allied creatures cannot see or interact with the chest.
+
+All chests summoned with this spell link to the same extradimensional space, even if multiple chests were to be summoned at the same time.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Dimensional Chest
+  Summons a extra-dimensional chest for storage
+  Range: Sight
+  Duration: 8 hours
+  Area of Effect: Point
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /*************************
 *   1st Level - Priest   *
 *************************/
