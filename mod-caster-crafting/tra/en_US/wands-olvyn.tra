@@ -99,7 +99,7 @@ Weight: 1~
 
 //Dimension Door
 @90063 = ~Wand of Dimension Door~
-@90064 = ~This wand transports the caster to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination. Dimension Door can be cast at a point too far away to see, as long as the party has seen it.
+@90064 = ~This wand transports the wielder to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination. Dimension Door can be cast at a point too far away to see, as long as the party has seen it.
 
 STATISTICS:
 (Alteration)
@@ -143,7 +143,7 @@ Weight: 1~
 @90067 = ~Wand of Inertia~
 @90068 = ~At activation, this wand drastically increases the inertia of the target, locking its movement in the direction it is currently moving. The effect of this spell depends on whether or not the target was moving when it was hit by the spell. If it was moving, it will continue hurtling nonstop in that direction against its will for 4 rounds. If it was standing in place, it will be immobilized for 4 rounds. A successful Saving Throw vs. Polymorph at -6 negates the effects of this spell.
 
-Creatures lower level than the caster have no save against this spell.
+Creatures lower level than the wand's caster level have no save against this spell.
 
 STATISTICS:
 (Alteration)
