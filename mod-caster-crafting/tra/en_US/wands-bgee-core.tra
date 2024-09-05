@@ -785,3 +785,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Entangle
+@60108 = ~Wand of Entangle~
+@60109 = ~When used, this wand causes plants in the area of effect to entangle creatures within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast. Once per round, a creature can attempt to save vs. Wand with a +3 bonus to avoid entanglement. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Entangle
+  – Movement prevented
+  – Armor class -2 penalty
+  Range: Visual range
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (+3 bonus) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

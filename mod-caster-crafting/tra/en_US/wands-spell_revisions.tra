@@ -715,3 +715,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Entangle
+@100108 = ~Wand of Entangle~
+@100109 = ~When used, this wand causes plants to entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration of the spell. Those held receive a -2 penalty to attack rolls and a +2 penalty to AC. Creatures that make a successful saving throw vs. Breath temporarily avoid entanglement and can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.
+
+STATISTICS:
+
+Charge abilities:
+– Entangle
+  – Reduce movement speed to 5%
+  – Armor class -2 penalty
+  School: Alteration
+  Sphere: Plant
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Breath for half speed
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
