@@ -608,12 +608,33 @@ STATISTICS:
 
 Charge abilities:
 – Spook
-  School: Illusion
   Target flees at maximum speed as far from the wielder as possible
+  School: Illusion
   Range: Long
   Duration: 5 rounds
   Area of Effect: 1 creature
   Saving Throw: Saving vs. Wand (%magnitude% penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dimension Jump
+@100063 = ~Wand of Dimension Jump~
+@100064 = ~This wand transports the wielder to any place within sight. When the spell is cast, a dimensional portal opens up in front of the wielder, which <PRO_HESHE> immediately steps through. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at his chosen destination. The wielder always arrives at exactly the spot desired, and the dimensional door doesn't allow anyone or anything else to pass through. Spells about to be cast upon the wielder will fail, and missiles about to hit <PRO_HIMHER> will instead hit thin air.
+
+STATISTICS:
+
+Charge abilities:
+– Dimension Jump
+  Target steps through a doorway to a new, nearby location
+  School: Conjuration
+  Range: Personal
+  Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
 
 Requires:
  9 Intelligence
