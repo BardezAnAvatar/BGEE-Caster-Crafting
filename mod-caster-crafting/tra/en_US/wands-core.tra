@@ -12,29 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Spirit Ward
-@60085 = ~Wand of Spirit Ward~
-@60086 = ~Upon activation, the recipient is surrounded with a magical barrier at a distance of one foot. Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking the protected creature. In addition, the recipient gains a +3 bonus to Saving Throws against all spells that belong to the Enchantment school. This spell cannot be cast on spirits, fey creatures, elementals, or spectral undead.
-
-STATISTICS:
-(Abjuration)
-
-Charge abilities:
-– Spirit Ward
-  – Spirits, fey creatures, elementals, and spectral undead
-    – -2 penalty to THAC0 to attack recipient
-  – +3 bonus to Saving Throws against Enchantment spells
-  Range: Touch
-  Duration: %duration%
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 
 /****************
 *   2nd Level   *
