@@ -12,27 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Sanctuary
-@60075 = ~Wand of Sanctuary~
-@60076 = ~This wand causes all of the wielder's opponents to ignore <PRO_HISHER> existence as if <PRO_HESHE> were invisible. While protected by this spell, the subject cannot take direct offensive action without breaking the spell, but may use non-attack spells or otherwise act in any way that does not violate the prohibition against offensive action. This allows a warded person to heal wounds, for example, or to Bless <PRO_HIMHER>self. The wielder cannot cast spells on other creatures without ending the spell.
-
-STATISTICS:
-(Abjuration)
-
-Charge abilities:
-– Sanctuary
-  – Ignored as if invisible
-  – Can move, use thief skills, and heal/buff self
-  Duration: 1 turn
-  Area of Effect: Self
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Shillelagh
 @60077 = ~Wand of Shillelagh~
 @60078 = ~When activated, this wand creates a magical cudgel that has a +1 bonus to its attack roll and inflicts 2d4 points of damage on opponents.
