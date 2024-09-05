@@ -873,3 +873,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shillelagh
+@60116 = ~Wand of Shillelagh~
+@60117 = ~When activated, this wand creates a magical cudgel that has a +1 bonus to its attack roll and inflicts 2d4 points of damage on opponents.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Shillelagh
+  – Creates weightless magical club
+    – Deals 2d4 crushing damage
+    – +1 bonus to THAC0
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
