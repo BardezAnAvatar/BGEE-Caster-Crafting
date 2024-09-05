@@ -852,3 +852,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shillelagh
+@100116 = ~Wand of Shillelagh~
+@100117 = ~When activated, this wand creates a magical cudgel. The shillelagh inflicts 2d4+%magnitude% points of damage on a successful hit and causes tendrils to wrap around and hold the victim in place for one round unless a save vs. Breath is made. The shillelagh is weilded as if proficient with the weapon, at the wielder's normal THAC0. The shillelagh can be used only by the wand wielder, and remains in <PRO_HISHER> hand for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Shillelagh
+  – Creates weightless magical club
+    – Deals 2d4+%magnitude% crushing damage
+    – Successful hits entangle victim
+    – +%magnitude% bonus to THAC0
+  School: Alteration
+  Sphere: Combat, Plant
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: Save vs. Breath negates entaglement
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
