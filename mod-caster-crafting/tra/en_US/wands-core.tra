@@ -12,28 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Entangle (Olvyn?)
-@60069 = ~Wand of Entangle~
-@60070 = ~When used, this wand causes plants in the area of effect to entangle enemies within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration if they fail a Save vs. Wand. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
-
-STATISTICS:
-(Alteration)
-
-Charge abilities:
-– Entangle
-  – Reduce movement speed to 5%
-  – Armor class -2 penalty
-  Range: Visual range
-  Duration: 1 turn
-  Area of Effect: 15-ft. radius
-  Saving Throw: Save vs. Wand
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Magic Stone (Olvyn?)
 @60071 = ~Wand of Magical Stone~
 @60072 = ~When activated, this wand causes a pebble to be temporarily enchanted, which is then hurled or slung at an opponent. The stone automatically hits, dealing 3d4 damage to the target (+3d4 more if target undead).
