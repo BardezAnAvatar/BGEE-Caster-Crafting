@@ -226,6 +226,27 @@ Requires:
 Weight: 1~
 
 
+//Reflect Attack
+@90075 = ~Wand of Reflect Attack~
+@90076 = ~This wand will protect the wielder; once activated, the next instance of physical damage the wielder would receive is reflected back at the attacker, damaging <PRO_HIMHER> instead. If the physical damage came from a weapon, any on-hit effects of the weapon will also be reflected back at the attacker.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Reflect Attack
+  Reflects next immediate damage to the attacker
+  – Weapon on-hit effects also reflected
+  Duration: 8 hours or until hit
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /*************************
 *   1st Level - Priest   *
 *************************/
