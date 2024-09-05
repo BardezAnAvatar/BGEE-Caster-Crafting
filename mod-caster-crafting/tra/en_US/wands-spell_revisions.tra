@@ -763,3 +763,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Remove Fear -> Resist Fear
+@100112 = ~Wand of Resist Fear~
+@100113 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. If the recipients are affected by magical fear, this is negated. In addition, the recipients are protected from magical fear for the duration of the spell. At the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster (thus, affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not).
+
+STATISTICS:
+
+Charge abilities:
+– Remove Fear
+  – Morale set to maximum (gradually reset to normal)
+  – Dispels fear effects
+  – Immunity to fear effects
+  School: Abjuration
+  Sphere: Charm
+  Range: Sight
+  Duration: 5 turns
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
