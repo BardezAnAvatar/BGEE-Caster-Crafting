@@ -787,3 +787,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Sanctuary
+@100114 = ~Wand of Sanctuary~
+@100115 = ~This wandcauses all of <PRO_HISHER> opponents to ignore <PRO_HISHER> existence, as if <PRO_HESHE> were invisible. While protected by this spell, the subject cannot take direct offensive action without breaking the spell, but may use non-attack spells focused on <PRO_HIMHER>self or otherwise act in any way that does not violate the prohibition against offensive action. This allows a warded individual to heal <PRO_HISHER> wounds, for example, or to cast a Chant spell. <PRO_HESHE> cannot cast spells on other targets without ending the spell.
+
+STATISTICS:
+
+Charge abilities:
+– Sanctuary
+  – Ignored as if invisible
+  – Can move, use thief skills, and heal/buff self
+  School: Abjuration
+  Sphere: Charm, Protection
+  Duration: 6 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
