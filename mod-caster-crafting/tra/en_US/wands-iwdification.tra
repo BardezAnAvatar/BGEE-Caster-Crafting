@@ -4,31 +4,6 @@
 /****************
 *   1st Level   *
 ****************/
-
-
-//Curse
-@80002 = ~Wand of Curse~
-@80003 = ~When used, the wand lowers the morale of enemy creatures and any Saving Throws and attack rolls they make by 1. At the instant the spell is completed, it affects all creatures in a 15-ft. radius centered on the point selected by the caster. Affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.
-
-STATISTICS:
-(Conjuration/Summoning)
-
-Charge abilities:
-– Curse
-  – Lowered morale
-  – -1 penalty to THAC0
-  – -1 penalty to saving throws
-  Range: Sight
-  Duration: 1 turn
-  Area of Effect: 15-ft. radius
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Cause Light Wounds
 @80004 = ~Wand of Cause Light Wounds~
 @80005 = ~When activated, the wand charges the wielder's hand; upon touching a creature, the wielder deals 8 points of damage (save vs. Wand for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures.

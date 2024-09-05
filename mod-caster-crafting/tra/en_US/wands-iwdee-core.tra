@@ -572,3 +572,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Curse
+@70126 = ~Wand of Curse~
+@70127 = ~When used, the wand lowers the morale of enemy creatures and any Saving Throws and attack rolls they make by 1. At the instant the spell is completed, it affects all creatures in a 15-ft. radius centered on the point selected by the caster. Affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Curse
+  – Lowered morale
+  – -1 penalty to THAC0
+  – -1 penalty to saving throws
+  Range: Sight
+  Duration: 6 rounds
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
