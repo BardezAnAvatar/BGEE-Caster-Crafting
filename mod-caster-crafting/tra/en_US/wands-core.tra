@@ -12,25 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Armor of Faith
-@60079 = ~Wand of Armor of Faith~
-@60080 = ~When activated, the wielder receives significant protection against melee and magical attacks. This magical armor is a force of energy that absorbs %magnitude%% of the damage intended for the wielder.
-STATISTICS:
-(Abjuration)
-
-Charge abilities:
-– Armor of Faith
-  – Absorbs %magnitude%% of incoming damage
-  Duration: %duration%
-  Area of Effect: Self
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Doom
 @60081 = ~Wand of Doom~
 @60082 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -2 penalty to all <PRO_HISHER> rolls, including THAC0 and Saving Throws. There is no Saving Throw for this spell.

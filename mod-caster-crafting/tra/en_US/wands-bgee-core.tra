@@ -895,3 +895,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Armor of Faith
+@60118 = ~Wand of Armor of Faith~
+@60119 = ~When activated, the wielder receives significant protection against melee, ranged, and magical attacks. This magical armor is a force of energy that absorbs %magnitude%% of the damage intended for the wielder.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Armor of Faith
+  – Absorbs %magnitude%% of incoming damage
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
