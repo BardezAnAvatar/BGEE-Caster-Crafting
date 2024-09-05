@@ -118,6 +118,27 @@ Requires:
 Weight: 1~
 
 
+//Disruptive Surge
+@90065 = ~Wand of Disruptive Surge~
+@90066 = ~This wand employs wild magic to deliberately disrupt another creature's spell. The wielder chooses a creature, which should be a spellcaster (arcane or divine). The next spell that creature casts within 5 rounds will trigger a wild surge. This surge will often cause the spell to fail, though it could have other, unpredictable effects.
+
+STATISTICS:
+(Wild Magic)
+
+Charge abilities:
+– Disruptive Surge
+  Spellcasting by target results in wild surges
+  Range: Sight
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /*************************
 *   1st Level - Priest   *
 *************************/
