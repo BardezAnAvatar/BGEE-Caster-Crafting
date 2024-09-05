@@ -172,9 +172,29 @@ STATISTICS:
 Charge abilities:
 – Summon Kobold
   Summon 1 Kobold
-  Target immobilized or continues in current direction
   Range: Sight
   Duration: 8 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Jump
+@90071 = ~Wand of Jump~
+@90072 = ~Once activated, this wand allows a creature to jump higher and farther. Until the duration ends, the creature gains an ability they can use at will, which lets the creature jump up to 26 feet away. The creature is able to jump over normally impassable obstacles like fences or walls, as long as they are narrow enough to jump over. While in the air, the creature is unaffected by certain ground-based spells like Entangle, Web, and Earthquake.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Jump
+  Target can jump around at will
+  Range: Touch
+  Duration: 1 hour
   Area of Effect: 1 creature
   Saving Throw: None
 
