@@ -807,3 +807,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Stone
+@60110 = ~Wand of Magical Stone~
+@60111 = ~When activated, this wand creates a small magical pebble, which then flies out and hits a target opponent. The stone deals 1d4 points of damage to whomever it hits. The stones are considered +1 weapons for determining if a creature can be struck (those struck only by magical weapons, for instance), although they do not have an attack or damage bonus.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Magical Stone
+  – Flings a stone at target creature
+  Damage: 1d4 magic damage (+1 enchantment)
+  Range: 50 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
