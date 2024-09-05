@@ -247,6 +247,28 @@ Requires:
 Weight: 1~
 
 
+//Taunt
+@90077 = ~Wand of Taunt~
+@90078 = ~When activated, this wand provokes an enemy into attacking the wielder. If the target fails a Save vs. Breath, it is driven berserk and will attack the wielder if possible rather than do any other action. If the target is a warrior (a fighter, ranger, paladin, or monk, including multiclassed warriors), it makes the save at a -6 penalty. Creatures immune to charm effects are immune to Taunt. The effects of Taunt end early if the wielder dies.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Taunt
+  Compells target to berserkly attack wielder
+  Range: Sight
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Breath negates
+  – Warriors recieve a -6 save penalty
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /*************************
 *   1st Level - Priest   *
 *************************/
