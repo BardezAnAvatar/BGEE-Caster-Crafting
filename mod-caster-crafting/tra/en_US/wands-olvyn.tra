@@ -139,6 +139,51 @@ Requires:
 Weight: 1~
 
 
+//Inertia
+@90067 = ~Wand of Inertia~
+@90068 = ~At activation, this wand drastically increases the inertia of the target, locking its movement in the direction it is currently moving. The effect of this spell depends on whether or not the target was moving when it was hit by the spell. If it was moving, it will continue hurtling nonstop in that direction against its will for 4 rounds. If it was standing in place, it will be immobilized for 4 rounds. A successful Saving Throw vs. Polymorph at -6 negates the effects of this spell.
+
+Creatures lower level than the caster have no save against this spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Inertia
+  Target immobilized or continues in current direction
+  Range: Sight
+  Duration: 4 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs Polymorph (-6 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Summon Kobold
+@90069 = ~Wand of Summon Kobold~
+@90070 = ~This wand summons a kobold with no special abilities. The kobold remains a faithful servant of the wielder for 8 rounds, at which point it is unsummoned. The kobold summoned by this spell ignores the summoning limit.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Summon Kobold
+  Summon 1 Kobold
+  Target immobilized or continues in current direction
+  Range: Sight
+  Duration: 8 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /*************************
 *   1st Level - Priest   *
 *************************/
