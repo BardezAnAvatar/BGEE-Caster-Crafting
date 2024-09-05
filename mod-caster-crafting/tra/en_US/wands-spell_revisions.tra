@@ -970,3 +970,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Light Wounds
+@100128 = ~Wand of Cause Light Wounds~
+@100129 = ~When activated, the wand charges the wielder's hand; upon successfully touching a creature, the wielder inflicts 1d8 + %magnitude% points of magic damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does no affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Cause Light Wounds
+  – Create charge to deal magic damage to touched target
+  – +4 THAC0 bonus
+  – No effect on undead, constructs, or extraplanar
+  School: Necromancy
+  Sphere: Necromantic
+  Damage: 1d8+%magnitude% magic damage
+  Duration: 1 turn, until displled, or successful hit
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
