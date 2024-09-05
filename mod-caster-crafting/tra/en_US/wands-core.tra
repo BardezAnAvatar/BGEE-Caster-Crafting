@@ -12,29 +12,6 @@ STATISTICS:
 Weight: 1~
 
 
-//Remove Fear
-@60073 = ~Wand of Remove Fear~
-@60074 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. The recipients' morale will gradually reset to normal as the duration runs out. If the recipients are affected by magical fear, this is negated.
-
-STATISTICS:
-(Abjuration)
-
-Charge abilities:
-– Remove Fear
-  – Morale set to maximum (gradually reset to normal)
-  – Dispels fear effects
-  – Immunity to fear effects
-  Range: 30 ft.
-  Duration: 1 hour
-  Area of Effect: 15-ft. radius
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Sanctuary
 @60075 = ~Wand of Sanctuary~
 @60076 = ~This wand causes all of the wielder's opponents to ignore <PRO_HISHER> existence as if <PRO_HESHE> were invisible. While protected by this spell, the subject cannot take direct offensive action without breaking the spell, but may use non-attack spells or otherwise act in any way that does not violate the prohibition against offensive action. This allows a warded person to heal wounds, for example, or to Bless <PRO_HIMHER>self. The wielder cannot cast spells on other creatures without ending the spell.

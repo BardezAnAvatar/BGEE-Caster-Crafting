@@ -550,3 +550,25 @@ Requires:
 
 Weight: 1~
 
+
+//Remove Fear
+@70112 = ~Wand of Remove Fear~
+@70113 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. The recipients' morale will gradually reset to normal as the duration runs out. If the recipients are affected by magical fear, this is negated.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Remove Fear
+  – Morale set to maximum (gradually reset to normal)
+  – Dispels fear effects
+  – Immunity to fear effects
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
