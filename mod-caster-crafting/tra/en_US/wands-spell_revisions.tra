@@ -923,3 +923,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Faerie Fire
+@100122 = ~Wand of Faerie Fire~
+@100123 = ~Upon uttering the activation phrase, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Outlined creatures do not benefit from the concealment normally provided by darkness, invisibility, or similar effects, and suffer a -2 penalty to AC. Those who succeed at a saving throw vs. Wand are totally unaffected by the spell. The light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light. The faerie fire does not cause any harm to the objects or creatures thus outlined.
+
+STATISTICS:
+
+Charge abilities:
+– Faerie Fire
+  – Illusory flame outline
+  – -2 penalty to Armor Class
+  School: Evocation
+  Sphere: Weather
+  Range: Long
+  Duration: 4 rounds
+  Area of Effect: 5' radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
