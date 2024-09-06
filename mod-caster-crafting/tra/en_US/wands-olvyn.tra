@@ -364,7 +364,7 @@ Weight: 1~
 
 //Snake's Swiftness
 @90138 = ~Wand of Snake's Swiftness~
-@90139 = ~Upon activating this wand, the weidler gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes him away (e.g. wing buffets, gusts of wind, telekinesis, etc.), but will move at a reduced speed.
+@90139 = ~Upon activating this wand, the wielder gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes him away (e.g. wing buffets, gusts of wind, telekinesis, etc.), but will move at a reduced speed.
 
 STATISTICS:
 (Alteration)
@@ -373,6 +373,28 @@ Charge abilities:
 – Snake's Swiftness
   – Movement rate doubled
   – Attacks per round doubled
+  Range: Visual range
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hunter's Mark
+@90140 = ~Wand of Hunter's Mark~
+@90141 = ~When activated, the wand magically marks a non-allied creature to be hunted. For the duration, the wielder's attacks against the marked target deal an additional %magnitude%d6 damage. In addition, when the target is out of sight, the spell greatly enhances the wielder's ability to track the target, sufficient for the wielder to know the target's exact location and direction. Hunter's Mark can be cast on any creature the party sees, even if the wielder does not see them.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Hunter's Mark
+  – Magically reveals target's location
+  Damage: attacks deal an additional %magnitude%d6 damage
   Range: Visual range
   Duration: 1 round
   Area of Effect: 1 creature
