@@ -395,9 +395,49 @@ Charge abilities:
 – Hunter's Mark
   – Magically reveals target's location
   Damage: attacks deal an additional %magnitude%d6 magic damage
-  Range: Visual range
-  Duration: 1 round
+  Range: Area
+  Duration: 1 hour
   Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Turning Weapon
+@90142 = ~Wand of Turning Weapon~
+@90143 = ~When activated, this wand imbues weapons with the power to turn undead. For the duration, whenever the wielder hits an undead creature with a melee or ranged attack, the undead is turned as if the a paladin had used Turn Undead on it.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Turning Weapon
+  – Undead hit are affected as it by Turn Undead
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Repulse
+@90144 = ~Wand of Repulse~
+@90145 = ~This wand releases a wave of force that blows back creatures. All non-allied creatures within 15 feet of the caster are knocked back for 1 second. There is no Saving Throw.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Repulse
+  – Pushes enemies away
+  Duration: Instant
+  Area of Effect: 15-ft. radius
   Saving Throw: None
 
 Requires:
