@@ -1020,3 +1020,37 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Animal Summoning I
+@100132 = ~Wand of Animal Summoning I~
+@100133 = ~Upon activation, the wand calls forth %magnitude% large bats, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+Bat (1 Hit Dice):
+STR 9, DEX 14, CON 11, INT 4, WIS 11, CHA 4; AL Neutral
+HP 4, AC 8, THAC0 20, Saving Throws 20/20/20/20/20
+1 Attack Per Round, 1d2 Piercing Damage (Bite)
+
+Combat Abilities:
+– Disease: target must save vs. Death or suffer -1 penalty to DEX and CON
+– Swarm: each bat within 5 feet grants additional +2 bonus to attack rolls
+
+Special Qualities:
+– Blindsense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning I
+  – Summons %magnitude% bats
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
