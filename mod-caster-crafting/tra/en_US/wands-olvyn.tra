@@ -75,8 +75,8 @@ Weight: 1~
 
 
 //Larloch's Minor Drain
-@90051 = ~Wand of Larloch's Minor Drain~
-@90052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 12 damage, while the wielder gains 12 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
+@90053 = ~Wand of Larloch's Minor Drain~
+@90054 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 12 damage, while the wielder gains 12 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
 
 STATISTICS:
 (Necromancy)
@@ -98,8 +98,8 @@ Weight: 1~
 
 
 //Dimension Door
-@90063 = ~Wand of Dimension Door~
-@90064 = ~This wand transports the wielder to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination. Dimension Door can be cast at a point too far away to see, as long as the party has seen it.
+@90065 = ~Wand of Dimension Door~
+@90066 = ~This wand transports the wielder to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination. Dimension Door can be cast at a point too far away to see, as long as the party has seen it.
 
 STATISTICS:
 (Alteration)
@@ -119,8 +119,8 @@ Weight: 1~
 
 
 //Disruptive Surge
-@90065 = ~Wand of Disruptive Surge~
-@90066 = ~This wand employs wild magic to deliberately disrupt another creature's spell. The wielder chooses a creature, which should be a spellcaster (arcane or divine). The next spell that creature casts within 5 rounds will trigger a wild surge. This surge will often cause the spell to fail, though it could have other, unpredictable effects.
+@90067 = ~Wand of Disruptive Surge~
+@90068 = ~This wand employs wild magic to deliberately disrupt another creature's spell. The wielder chooses a creature, which should be a spellcaster (arcane or divine). The next spell that creature casts within 5 rounds will trigger a wild surge. This surge will often cause the spell to fail, though it could have other, unpredictable effects.
 
 STATISTICS:
 (Wild Magic)
@@ -140,8 +140,8 @@ Weight: 1~
 
 
 //Inertia
-@90067 = ~Wand of Inertia~
-@90068 = ~At activation, this wand drastically increases the inertia of the target, locking its movement in the direction it is currently moving. The effect of this spell depends on whether or not the target was moving when it was hit by the spell. If it was moving, it will continue hurtling nonstop in that direction against its will for 4 rounds. If it was standing in place, it will be immobilized for 4 rounds. A successful Saving Throw vs. Polymorph at -6 negates the effects of this spell.
+@90069 = ~Wand of Inertia~
+@90070 = ~At activation, this wand drastically increases the inertia of the target, locking its movement in the direction it is currently moving. The effect of this spell depends on whether or not the target was moving when it was hit by the spell. If it was moving, it will continue hurtling nonstop in that direction against its will for 4 rounds. If it was standing in place, it will be immobilized for 4 rounds. A successful Saving Throw vs. Polymorph at -6 negates the effects of this spell.
 
 Creatures lower level than the wand's caster level have no save against this spell.
 
@@ -163,8 +163,8 @@ Weight: 1~
 
 
 //Summon Kobold
-@90069 = ~Wand of Summon Kobold~
-@90070 = ~This wand summons a kobold with no special abilities. The kobold remains a faithful servant of the wielder for 8 rounds, at which point it is unsummoned. The kobold summoned by this spell ignores the summoning limit.
+@90071 = ~Wand of Summon Kobold~
+@90072 = ~This wand summons a kobold with no special abilities. The kobold remains a faithful servant of the wielder for 8 rounds, at which point it is unsummoned. The kobold summoned by this spell ignores the summoning limit.
 
 STATISTICS:
 (Conjuration/Summoning)
@@ -184,8 +184,8 @@ Weight: 1~
 
 
 //Jump
-@90071 = ~Wand of Jump~
-@90072 = ~Once activated, this wand allows a creature to jump higher and farther. Until the duration ends, the creature gains an ability they can use at will, which lets the creature jump up to 26 feet away. The creature is able to jump over normally impassable obstacles like fences or walls, as long as they are narrow enough to jump over. While in the air, the creature is unaffected by certain ground-based spells like Entangle, Web, and Earthquake.
+@90073 = ~Wand of Jump~
+@90074 = ~Once activated, this wand allows a creature to jump higher and farther. Until the duration ends, the creature gains an ability they can use at will, which lets the creature jump up to 26 feet away. The creature is able to jump over normally impassable obstacles like fences or walls, as long as they are narrow enough to jump over. While in the air, the creature is unaffected by certain ground-based spells like Entangle, Web, and Earthquake.
 
 STATISTICS:
 (Alteration)
@@ -205,8 +205,8 @@ Weight: 1~
 
 
 //Hex
-@90073 = ~Wand of Hex~
-@90074 = ~This wand can curse the target to take more magical and elemental damage. The target must make a Save vs. Polymorph. On a failure, the target is cursed for 6 rounds. During that time, whenever the target would be dealt fire, cold, electricity, acid, or magic damage, it takes an additional 6 damage of that type. Hex is especially effective when combined with spells that deal damage multiple times, such as Magic Missile or Melf's Acid Arrow.
+@90075 = ~Wand of Hex~
+@90076 = ~This wand can curse the target to take more magical and elemental damage. The target must make a Save vs. Polymorph. On a failure, the target is cursed for 6 rounds. During that time, whenever the target would be dealt fire, cold, electricity, acid, or magic damage, it takes an additional 6 damage of that type. Hex is especially effective when combined with spells that deal damage multiple times, such as Magic Missile or Melf's Acid Arrow.
 
 STATISTICS:
 (Enchantment)
@@ -227,8 +227,8 @@ Weight: 1~
 
 
 //Reflect Attack
-@90075 = ~Wand of Reflect Attack~
-@90076 = ~This wand will protect the wielder; once activated, the next instance of physical damage the wielder would receive is reflected back at the attacker, damaging <PRO_HIMHER> instead. If the physical damage came from a weapon, any on-hit effects of the weapon will also be reflected back at the attacker.
+@90077 = ~Wand of Reflect Attack~
+@90078 = ~This wand will protect the wielder; once activated, the next instance of physical damage the wielder would receive is reflected back at the attacker, damaging <PRO_HIMHER> instead. If the physical damage came from a weapon, any on-hit effects of the weapon will also be reflected back at the attacker.
 
 STATISTICS:
 (Abjuration)
@@ -248,8 +248,8 @@ Weight: 1~
 
 
 //Taunt
-@90077 = ~Wand of Taunt~
-@90078 = ~When activated, this wand provokes an enemy into attacking the wielder. If the target fails a Save vs. Breath, it is driven berserk and will attack the wielder if possible rather than do any other action. If the target is a warrior (a fighter, ranger, paladin, or monk, including multiclassed warriors), it makes the save at a -6 penalty. Creatures immune to charm effects are immune to Taunt. The effects of Taunt end early if the wielder dies.
+@90079 = ~Wand of Taunt~
+@90080 = ~When activated, this wand provokes an enemy into attacking the wielder. If the target fails a Save vs. Breath, it is driven berserk and will attack the wielder if possible rather than do any other action. If the target is a warrior (a fighter, ranger, paladin, or monk, including multiclassed warriors), it makes the save at a -6 penalty. Creatures immune to charm effects are immune to Taunt. The effects of Taunt end early if the wielder dies.
 
 STATISTICS:
 (Enchantment)
@@ -270,8 +270,8 @@ Weight: 1~
 
 
 //Dimensional Chest
-@90079 = ~Wand of Dimensional Chest~
-@90080 = ~When activated, this wand summons a chest containing an extradimensional storage space similar to a Bag of Holding. The chest can store up to 60000 of the party's items. It stays in the spot where it was summoned for 8 hours. Any party member can store or retrieve items from the chest by interacting with it. Non-allied creatures cannot see or interact with the chest.
+@90081 = ~Wand of Dimensional Chest~
+@90082 = ~When activated, this wand summons a chest containing an extradimensional storage space similar to a Bag of Holding. The chest can store up to 60000 of the party's items. It stays in the spot where it was summoned for 8 hours. Any party member can store or retrieve items from the chest by interacting with it. Non-allied creatures cannot see or interact with the chest.
 
 All chests summoned with this spell link to the same extradimensional space, even if multiple chests were to be summoned at the same time.
 

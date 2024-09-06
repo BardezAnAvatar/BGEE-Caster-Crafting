@@ -397,8 +397,8 @@ Weight: 1~
 
 
 //Larloch's Minor Drain
-@70051 = ~Wand of Larloch's Minor Drain~
-@70052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn. This spell has no effect on constructs or undead.
+@70053 = ~Wand of Larloch's Minor Drain~
+@70054 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn. This spell has no effect on constructs or undead.
 
 STATISTICS:
 (Necromancy)
@@ -420,8 +420,8 @@ Weight: 1~
 
 
 //Expeditious Retreat
-@70061 = ~Wand of Expeditious Retreat~
-@70062 = ~Upon activation, the wand doubles the wielder's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects (such as Haste and Slow) cannot affect the wielder while under this effect. While Expeditious Retreat is active, the wielder cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
+@70063 = ~Wand of Expeditious Retreat~
+@70064 = ~Upon activation, the wand doubles the wielder's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects (such as Haste and Slow) cannot affect the wielder while under this effect. While Expeditious Retreat is active, the wielder cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
 
 STATISTICS:
 (Alteration)
