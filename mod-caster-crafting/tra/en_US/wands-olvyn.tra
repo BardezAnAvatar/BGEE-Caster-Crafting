@@ -340,7 +340,7 @@ Requires:
 Weight: 1~
 
 
-//Magic Stone (Olvyn?)
+//Magical Stone
 @90110 = ~Wand of Magical Stone~
 @90111 = ~When activated, this wand causes a pebble to be temporarily enchanted, which is then hurled or slung at an opponent. The stone automatically hits, dealing 3d4 damage to the target (+3d4 more if target undead).
 
