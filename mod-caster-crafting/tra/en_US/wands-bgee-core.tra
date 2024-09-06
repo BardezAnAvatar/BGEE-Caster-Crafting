@@ -537,8 +537,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 10th
-@60047 = ~Wand of Chromatic Orb~
-@60048 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+@60049 = ~Wand of Chromatic Orb~
+@60050 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
 1d12 acid damage and turns the victim to stone.
 
 STATISTICS:
@@ -561,8 +561,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 12th
-@60049 = ~Wand of Chromatic Orb~
-@60050 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+@60051 = ~Wand of Chromatic Orb~
+@60052 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
 2d8 acid damage and instantly kills the victim.
 
 STATISTICS:
@@ -585,8 +585,8 @@ Weight: 1~
 
 
 //Larloch's Minor Drain
-@60051 = ~Wand of Larloch's Minor Drain~
-@60052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
+@60053 = ~Wand of Larloch's Minor Drain~
+@60054 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
 
 STATISTICS:
 (Necromancy)
@@ -608,8 +608,8 @@ Weight: 1~
 
 
 //Reflected Image
-@60053 = ~Wand of Reflected Image~
-@60054 = ~When activated, a single image of the wielder is created that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wielder does so that if any enemies are trying to attack, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that <PRO_HESHE> will attack the wielder. The image will disappear with a successful Dispel Magic, when attacked, or when the effect expires.
+@60055 = ~Wand of Reflected Image~
+@60056 = ~When activated, a single image of the wielder is created that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wielder does so that if any enemies are trying to attack, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that <PRO_HESHE> will attack the wielder. The image will disappear with a successful Dispel Magic, when attacked, or when the effect expires.
 
 STATISTICS:
 (Illusion/Phantasm)
@@ -628,8 +628,8 @@ Weight: 1~
 
 
 //Nahal's Reckless Dweomer
-@60055 = ~Wand of Nahal's Reckless Dweomer~
-@60056 = ~The Wild Mage's ultimate last-resort, a wild surge is purposefully invoked; the result might be beneficial to the wielder, or it might be completely disastrous: this is the risk taken in casting Nahal's Reckless Dweomer.
+@60057 = ~Wand of Nahal's Reckless Dweomer~
+@60058 = ~The Wild Mage's ultimate last-resort, a wild surge is purposefully invoked; the result might be beneficial to the wielder, or it might be completely disastrous: this is the risk taken in casting Nahal's Reckless Dweomer.
 
 When activated, select a known spell to attempt to cast; the wand releases a sudden flood of wild magical energy. The Wild Mage hopes to seize and shape that energy into a desired spell effect. The attempt usually fails, but something almost always occurs in the process -- the actual effect of the wand is determined randomly by a dice roll on the Wild Surge Table (see the manual for more details).
 
@@ -654,8 +654,8 @@ Weight: 1~
 
 
 //Spook
-@60057 = ~Wand of Spook~
-@60058 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand (with a penalty of %magnitude%), it turns and flees at maximum speed as far from the wielder as possible. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead are completely unaffected.
+@60059 = ~Wand of Spook~
+@60060 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand (with a penalty of %magnitude%), it turns and flees at maximum speed as far from the wielder as possible. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead are completely unaffected.
 
 STATISTICS:
 (Illusion/Phantasm)
@@ -675,8 +675,8 @@ Weight: 1~
 
 
 //Dancing Lights
-@60059 = ~Wand of Dancing Lights~
-@60060 = ~This wand creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wielder. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.
+@60061 = ~Wand of Dancing Lights~
+@60062 = ~This wand creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wielder. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.
 
 STATISTICS:
 (Alteration)
