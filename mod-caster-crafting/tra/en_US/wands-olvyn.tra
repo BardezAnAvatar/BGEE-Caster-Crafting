@@ -467,6 +467,28 @@ Requires:
 Weight: 1~
 
 
+//Searing Smite
+@90148 = ~Wand of Searing Smite~
+@90149 = ~Upon activation, this wand imbues the wielder's weapon with holy/unhell fire. The next successful melee attack made on a creature within 5 rounds deals an additional %magnitude%d6 magic fire damage.
+
+STATISTICS:
+(Illusion)
+
+Charge abilities:
+– Searing Smite
+  – Enflames weapon for next attack
+  Damage: Next hit gets + %magnitude%d6 magic fire damage
+  Range: Melee
+  Duration: 5 rounds or until triggered
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /************************
 *   Identify Creature   *
 ************************/
