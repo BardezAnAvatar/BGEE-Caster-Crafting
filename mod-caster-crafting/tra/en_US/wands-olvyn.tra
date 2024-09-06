@@ -5,8 +5,8 @@
 *   1st Level - Arcane   *
 *************************/
 //True Strike
-@90019 = ~Wand of True Strike~
-@90020 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
+@90087 = ~Wand of True Strike~
+@90088 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
 
 STATISTICS:
 (Divination)

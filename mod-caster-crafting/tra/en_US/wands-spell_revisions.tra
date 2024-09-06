@@ -122,55 +122,6 @@ Requires:
 Weight: 1~
 
 
-//Blindness -> Obscuring Mist
-@100011 = ~Wand of Obscuring Mist~
-@100012 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
-
-STATISTICS:
-
-Charge abilities:
-– Obscuring Mist
-  – Misty fog
-    – Sight halved
-    – -2 penalty to attack rolls for creatures inside
-    – -4 penalty to attack creatures inside with ranged attacks
-  School: Conjuration
-  Range: Long
-  Duration: 6 rounds
-  Area of Effect: 20' radius
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Friends -> Monster Summoning I
-@100013 = ~Wand of Monster Summoning I~
-@100014 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
-
-STATISTICS:
-
-Charge abilities:
-– Monster Summoning I
-  – Summon gibberlings: %magnitude%
-    Gibberling (1 Hit Dice):
-    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
-    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
-    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
-  School: Conjuration
-  Range: Medium
-  Duration: 3 turns
-  Area of Effect: Point
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Identify
 @100017 = ~Wand of Identify~
 @100018 = ~This wand will use 1 charge to identify the name and enchantments (including curses) of one item subsequently touched by the wielder. Much like a scroll of Identify, in that to identify an item you right-click on that item; a menu will appear and from here you choose the "Scroll" option. The details are revealed without fail. Many unidentified items can still be used, but at great risk.
@@ -184,29 +135,6 @@ Charge abilities:
   Range: Personal
   Duration: Instant
   Area of Effect: 1 item
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Infravision -> True Strike
-@100019 = ~Wand of True Strike~
-@100020 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
-
-
-STATISTICS:
-
-Charge abilities:
-– True Strike
-  – +4 bonus to THAC0
-  – +5% bonus to Critical Hit chance
-  School: Divination
-  Range: Personal
-  Duration: 3 rounds
-  Area of Effect: Self
   Saving Throw: None
 
 Requires:
@@ -655,6 +583,78 @@ Charge abilities:
   School: Conjuration
   Range: Personal
   Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Obscuring Mist
+@100083 = ~Wand of Obscuring Mist~
+@100084 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
+
+STATISTICS:
+
+Charge abilities:
+– Obscuring Mist
+  – Misty fog
+    – Sight halved
+    – -2 penalty to attack rolls for creatures inside
+    – -4 penalty to attack creatures inside with ranged attacks
+  School: Conjuration
+  Range: Long
+  Duration: 6 rounds
+  Area of Effect: 20' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning I
+@100085 = ~Wand of Monster Summoning I~
+@100086 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning I
+  – Summon gibberlings: %magnitude%
+    Gibberling (1 Hit Dice):
+    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
+    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
+    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
+  School: Conjuration
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Point
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//True Strike
+@100087 = ~Wand of True Strike~
+@100088 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
+
+
+STATISTICS:
+
+Charge abilities:
+– True Strike
+  – +4 bonus to THAC0
+  – +5% bonus to Critical Hit chance
+  School: Divination
+  Range: Personal
+  Duration: 3 rounds
   Area of Effect: Self
   Saving Throw: None
 
