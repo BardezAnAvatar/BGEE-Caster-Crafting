@@ -394,7 +394,7 @@ STATISTICS:
 Charge abilities:
 – Hunter's Mark
   – Magically reveals target's location
-  Damage: attacks deal an additional %magnitude%d6 damage
+  Damage: attacks deal an additional %magnitude%d6 magic damage
   Range: Visual range
   Duration: 1 round
   Area of Effect: 1 creature
