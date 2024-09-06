@@ -1054,3 +1054,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Regenerate Light Wounds
+@100134 = ~Wand of Regenerate Light Wounds~
+@100135 = ~When activating the wand, it imbues a creature with the ability to regenerate. The creature affected will regain 1 hit point per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Regenerate Light Wounds
+  – Regain 1 hit point per round
+  School: Alteration
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
