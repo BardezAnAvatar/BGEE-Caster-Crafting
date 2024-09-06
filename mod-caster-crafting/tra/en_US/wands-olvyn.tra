@@ -446,6 +446,27 @@ Requires:
 Weight: 1~
 
 
+//Camouflage
+@90146 = ~Wand of Camouflage~
+@90147 = ~Upon activation, this wand gives the recipient the ability to blend into the environment with camouflage. Whenever the creature stands still for 2 seconds, they become effectively invisible through camouflage.
+
+STATISTICS:
+(Illusion)
+
+Charge abilities:
+– Camouflage
+  – Be still for 2 seconds to turn invisible
+  Range: Touch
+  Duration: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /************************
 *   Identify Creature   *
 ************************/
