@@ -686,3 +686,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Invisibility
+@72006 = ~Wand of Invisibility~
+@72007 = ~This wand turns a creature invisible and makes it undetectable by normal vision or infravision. Of course, the invisible creature is not magically silenced, and certain other conditions can render the creature detectable. Items dropped or put down by the invisible creature become visible, items picked up disappear if tucked into the clothing or pouches worn by the creature. The spell remains in effect until it is magically broken or dispelled, until the recipient talks to or attacks any creature, or until 24 hours have passed. Thus, the invisible being can open doors, eat, climb stairs, etc., but if <PRO_HESHE> attacks or casts a spell, <PRO_HESHE> immediately becomes visible (although the invisibility enables <PRO_HIMHER> to attack first).
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Invisibility
+  – Turns target creature invisible
+  Range: Touch
+  Duration: 24 hours or until taking visible action
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
