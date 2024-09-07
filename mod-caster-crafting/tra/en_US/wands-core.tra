@@ -18,27 +18,6 @@ Weight: 1~
 ****************/
 
 
-//Know Alignment
-@60110 = ~Wand of Know Alignment~
-@60111 = ~Activating this wand allows the wielder to read a creature's aura. Evil creatures will glow red, neutrals blue, and good creatures will glow green for a brief period. Certain magical devices negate the power of the Know Alignment spell.
-
-STATISTICS:
-(Divination)
-
-Charge abilities:
-– Know Alignment
-  – Reveals target's alignment
-  Range: Sight
-  Duration: Instant
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Luck
 @60112 = ~Wand of Luck~
 @60113 = ~This wand embues the recipient with extraordinary luck for the next 3 rounds, receiving a +1 bonus to <PRO_HISHER> Saving Throws, attack rolls, and minimum damage/healing rolls as well as +5% to all thieving skills. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1. For example, a 6d6 fireball will do 6d5 damage, and a flaming long sword that deals 1d8+2 slashing plus 1d3 fire damage will deal 1d8+2 slashing plus 1d2 fire damage instead.
