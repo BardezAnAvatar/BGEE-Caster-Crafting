@@ -1269,3 +1269,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ghoul Touch
+@82026 = ~Wand of Ghoul Touch~
+@82027 = ~When the wielder activates this wand, a green glow encompasses <PRO_HISHER> hand. If the wielder makes a successful melee attack against a creature (1d2 fist damage + Strength bonuses), the creature must make a Save vs. Wand or be paralyzed for 5 rounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Ghoul Touch
+  – Paralysis
+  Damage: 1d2 fist damage
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

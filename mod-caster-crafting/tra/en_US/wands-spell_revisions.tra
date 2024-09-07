@@ -1346,3 +1346,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ghoul Touch
+@92026 = ~Wand of Ghoul Touch~
+@92027 = ~When the wielder activates this wand, a red glow encompasses <PRO_HISHER> hand. On a successful touch from the wielder, the spell inflicts 1d8 points of magic damage and paralyzes the target for 5 rounds unless a successful save vs. death at a -1 penalty is made. The wizard gains a +4 bonus to hit the target and his touch is considered to be of +1 enchantment to determine what it can hit.
+
+STATISTICS:
+
+Charge abilities:
+– Ghoul Touch
+  – Hand becomes charged with ghoulish energy
+    – +4 bonus to THAC0
+    – +1 enchantment
+  – Paralysis
+  Damage: 1d8 magic damage
+  School: Necromancy
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Death (-1 penalty) negates paralysis
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

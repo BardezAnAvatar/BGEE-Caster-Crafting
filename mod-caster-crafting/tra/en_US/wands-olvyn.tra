@@ -514,6 +514,27 @@ Requires:
 Weight: 1~
 
 
+//Ghoul Touch
+@82026 = ~Wand of Ghoul Touch~
+@82027 = ~When the wielder activates this wand, a green glow encompasses <PRO_HISHER> hand. If the wielder then touches a creature (no attack roll required), and the creature must make a Save vs. Death at -2 or be paralyzed for 6 rounds. Elves and undead are immune to the ghoul touch.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Ghoul Touch
+  – Paralysis
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Death (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /************************
 *   Identify Creature   *
 ************************/
