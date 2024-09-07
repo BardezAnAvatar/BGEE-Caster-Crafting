@@ -1146,3 +1146,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Horror
+@92004 = ~Wand of Horror~
+@92005 = ~Once triggered, the wand causes all enemies within the area of effect to save vs. Wand or flee in terror. Certain creaturesare immune to the effects of fear, including all undead.
+
+STATISTICS:
+
+Charge abilities:
+– Horror
+  – Enemies flee in terror
+  School: Necromancy
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
