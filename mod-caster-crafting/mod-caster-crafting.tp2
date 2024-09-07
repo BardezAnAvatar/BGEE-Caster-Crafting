@@ -34,6 +34,10 @@ LANGUAGE
         ~./mod-caster-crafting/tra/en_US/Potions.tra~
         ~./mod-caster-crafting/tra/en_US/duration.tra~
         ~./mod-caster-crafting/tra/en_US/Scrolls.tra~
+        ~./mod-caster-crafting/tra/en_US/wands-bgee-core.tra~
+        ~./mod-caster-crafting/tra/en_US/wands-iwdee-core.tra~
+        ~./mod-caster-crafting/tra/en_US/wands-olvyn.tra~
+        ~./mod-caster-crafting/tra/en_US/wands-spell_revisions.tra~
 
 
 /*********************
