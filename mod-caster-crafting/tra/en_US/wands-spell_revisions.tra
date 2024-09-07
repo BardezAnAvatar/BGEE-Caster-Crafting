@@ -1213,3 +1213,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Melf's Acid Arrow
+@92014 = ~Wand of Melf's Acid Arrow~
+@92015 = ~The wand creates a magical arrow that speeds to its target unerringly. The arrow inflicts 1d6 points of missile damage, and 2d4 points of acid damage. The acid lasts for %duration%, unless somehow dispelled, inflicting another 2d4 points of damage each round.
+
+STATISTICS:
+
+Charge abilities:
+– Melf's Acid Arrow
+  – Acidic projectile
+  Damage:
+  – 1d6 points of missile damage
+  – 2d4 points of acid damage per round
+  School: Conjuration
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
