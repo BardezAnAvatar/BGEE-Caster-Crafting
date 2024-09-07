@@ -1,11 +1,11 @@
-/* Reserving range 100000-109999 */
+/* Reserving range 90000-99999 */
 
-/****************
-*   1st Level   *
-****************/
+/***************************************
+*   1st Level - Arcane - 91000-91499   *
+***************************************/
 //Grease
-@100001 = ~Wand of Grease~
-@100002 = ~Upon activation, this wand covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a save each round until they reach the nearest non-greased surface. A creature that succeeds on their saving throw can walk within or through the area of grease but will have their movements slowed considerably. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.
+@91000 = ~Wand of Grease~
+@91001 = ~Upon activation, this wand covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a save each round until they reach the nearest non-greased surface. A creature that succeeds on their saving throw can walk within or through the area of grease but will have their movements slowed considerably. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.
 
 STATISTICS:
 
@@ -26,8 +26,8 @@ Requires:
 Weight: 1~
 
 //Armor -> Mage Armor
-@100003 = ~Wand of Mage Armor~
-@100004 = ~When activated, the wand creates a magical field of force that sets its base armor class to %magnitude%. This armor does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.
+@91002 = ~Wand of Mage Armor~
+@91003 = ~When activated, the wand creates a magical field of force that sets its base armor class to %magnitude%. This armor does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.
 
 STATISTICS:
 
@@ -48,8 +48,8 @@ Weight: 1~
 
 
 //Burning Hands
-@100005 = ~Wand of Burning Hands~
-@100006 = ~When activated, a fan-like cone of searing flames jets shoots from this wand towards a designated point. This sends out 10-foot-long jets of flame in a horizontal arc of about 60 degrees in front of the wielder. All creatures caught in the flames suffe%r %magnitude%d6 points of fire damage.
+@91004 = ~Wand of Burning Hands~
+@91005 = ~When activated, a fan-like cone of searing flames jets shoots from this wand towards a designated point. This sends out 10-foot-long jets of flame in a horizontal arc of about 60 degrees in front of the wielder. All creatures caught in the flames suffe%r %magnitude%d6 points of fire damage.
 
 STATISTICS:
 
@@ -69,8 +69,8 @@ Weight: 1~
 
 
 //Charm Person
-@100007 = ~Wand of Charm Person~
-@100008 = ~This wand will charm any single person† when activated; if the recipient fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The caster may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
+@91006 = ~Wand of Charm Person~
+@91007 = ~This wand will charm any single person† when activated; if the recipient fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The caster may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
 
 If the caster harms, or attempts to harm, the charmed creature by some overt action, or if a dispel magic spell is successfully cast upon the charmed creature, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence.
 
@@ -94,8 +94,8 @@ Weight: 1~
 
 
 //Color Spray
-@100009 = ~Wand of Color Spray~
-@100010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to the wielder are slowed for 5 rounds, those with Hit Dice/levels one or two greater than the wielder are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
+@91008 = ~Wand of Color Spray~
+@91009 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to the wielder are slowed for 5 rounds, those with Hit Dice/levels one or two greater than the wielder are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
 
 STATISTICS:
 
@@ -123,8 +123,8 @@ Weight: 1~
 
 
 //Identify
-@100017 = ~Wand of Identify~
-@100018 = ~This wand will use 1 charge to identify the name and enchantments (including curses) of one item subsequently touched by the wielder. Much like a scroll of Identify, in that to identify an item you right-click on that item; a menu will appear and from here you choose the "Scroll" option. The details are revealed without fail. Many unidentified items can still be used, but at great risk.
+@91016 = ~Wand of Identify~
+@91017 = ~This wand will use 1 charge to identify the name and enchantments (including curses) of one item subsequently touched by the wielder. Much like a scroll of Identify, in that to identify an item you right-click on that item; a menu will appear and from here you choose the "Scroll" option. The details are revealed without fail. Many unidentified items can still be used, but at great risk.
 
 STATISTICS:
 
@@ -144,8 +144,8 @@ Weight: 1~
 
 
 //Magic Missile
-@100021 = ~Wand of Magic Missiles~
-@100022 = ~When activated, the wand creates %magnitude% missiles of magical energy that dart forth from the wielder's fingertip and unerringly strike their target, which must be a creature of some sort. Each missile inflicts 1d4+1 points of damage.
+@91020 = ~Wand of Magic Missiles~
+@91021 = ~When activated, the wand creates %magnitude% missiles of magical energy that dart forth from the wielder's fingertip and unerringly strike their target, which must be a creature of some sort. Each missile inflicts 1d4+1 points of damage.
 
 STATISTICS:
 
@@ -166,8 +166,8 @@ Weight: 1~
 
 
 //Shield
-@100025 = ~Wand of Shield~
-@100026 = ~When activated, the wand generates an an invisible barrier comes into being in front of the wielder, granting <PRO_HIMHER> immunity to the spell Magic Missile. Furthermore, the fluctuating force shield around the wielder acts similarly to a regular shield, effectively increasing AC by 2 points (+4 vs. missile weapons). This effect lasts for the duration of the spell or until dispelled.
+@91024 = ~Wand of Shield~
+@91025 = ~When activated, the wand generates an an invisible barrier comes into being in front of the wielder, granting <PRO_HIMHER> immunity to the spell Magic Missile. Furthermore, the fluctuating force shield around the wielder acts similarly to a regular shield, effectively increasing AC by 2 points (+4 vs. missile weapons). This effect lasts for the duration of the spell or until dispelled.
 
 STATISTICS:
 
@@ -188,8 +188,8 @@ Weight: 1~
 
 
 //Shocking Grasp
-@100027 = ~Wand of Shocking Grasp~
-@100028 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal %magnitude%d6 points of damage and stun the target for 1 round. If the target makes a successful saving throw vs. Wand (%magnitude2% penalty), he is not stunned. The spell expires once the caster makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target.
+@91026 = ~Wand of Shocking Grasp~
+@91027 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal %magnitude%d6 points of damage and stun the target for 1 round. If the target makes a successful saving throw vs. Wand (%magnitude2% penalty), he is not stunned. The spell expires once the caster makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target.
 
 STATISTICS:
 
@@ -210,8 +210,8 @@ Weight: 1~
 
 
 //Sleep
-@100029 = ~Wand of Sleep~
-@100030 = ~This wand will emit a gold beam of energy at its targets, causing a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a saving throw vs. Wand or fall asleep. Any further attempts to harm the targets will waken them. Opponents with more Hit Dice/levels than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically induced sleep.
+@91028 = ~Wand of Sleep~
+@91029 = ~This wand will emit a gold beam of energy at its targets, causing a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a saving throw vs. Wand or fall asleep. Any further attempts to harm the targets will waken them. Opponents with more Hit Dice/levels than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically induced sleep.
 
 STATISTICS:
 (Enchantment)
@@ -232,8 +232,8 @@ Weight: 1~
 
 
 //Chill Touch
-@100031 = ~Wand of Chill Touch~
-@100032 = ~When activated, a blue glow encompasses the wielder's hand. This energy attacks the life force of any living creature upon which the wielder makes a successful melee attack. The touched creature suffers 1d6 points of cold damage and loses one point of strength for 1 hour (no ability drain if the victim saves vs. death). The wielder gains a +4 bonus to hit the target and his touch is considered to be of +1 enchantment to determine what it can hit.
+@91030 = ~Wand of Chill Touch~
+@91031 = ~When activated, a blue glow encompasses the wielder's hand. This energy attacks the life force of any living creature upon which the wielder makes a successful melee attack. The touched creature suffers 1d6 points of cold damage and loses one point of strength for 1 hour (no ability drain if the victim saves vs. death). The wielder gains a +4 bonus to hit the target and his touch is considered to be of +1 enchantment to determine what it can hit.
 
 STATISTICS:
 
@@ -256,8 +256,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 1st
-@100033 = ~Wand of Chromatic Orb~
-@100034 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@91032 = ~Wand of Chromatic Orb~
+@91033 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -279,8 +279,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 2nd
-@100035 = ~Wand of Chromatic Orb~
-@100036 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@91034 = ~Wand of Chromatic Orb~
+@91035 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -306,8 +306,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 4th
-@100039 = ~Wand of Chromatic Orb~
-@100040 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@91038 = ~Wand of Chromatic Orb~
+@91039 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -336,8 +336,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 6th
-@100043 = ~Wand of Chromatic Orb~
-@100044 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@91042 = ~Wand of Chromatic Orb~
+@91043 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -369,8 +369,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 8th
-@100047 = ~Wand of Chromatic Orb~
-@100048 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@91046 = ~Wand of Chromatic Orb~
+@91047 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -405,8 +405,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 10th
-@100049 = ~Wand of Chromatic Orb~
-@100050 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@91048 = ~Wand of Chromatic Orb~
+@91049 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -444,8 +444,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 12th
-@100051 = ~Wand of Chromatic Orb~
-@100052 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@91050 = ~Wand of Chromatic Orb~
+@91051 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -486,8 +486,8 @@ Weight: 1~
 
 
 //Larloch's Minor Drain
-@100053 = ~Wand of Larloch's Minor Drain~
-@100054 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers %magnitude% damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn.
+@91052 = ~Wand of Larloch's Minor Drain~
+@91053 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers %magnitude% damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn.
 
 STATISTICS:
 
@@ -509,8 +509,8 @@ Weight: 1~
 
 
 //Reflected Image
-@100055 = ~Wand of Reflected Image~
-@100056 = ~When activated, this wand creates one illusory image of the wielder that will travel alongside <PRO_HIMHER>. The image performs all of the actions that the wielder does, and seems to react normally to both physical and magical damage (such as appearing to be burned when hit by a fireball) so that if any enemies are trying to attack the wielder they will not know which one is real. There is a 50% chance that an attacker will attack the image and a 50% chance that he will attack the wielder. The image is immune to all forms of damage, but will disappear if a dispel magic or a detect illusion spell is cast upon it, or when the spell duration runs out. This spell cannot be cast on anyone who is under the effects of a Mirror Image spell, and multiple castings of this spell will not create additional images.
+@91054 = ~Wand of Reflected Image~
+@91055 = ~When activated, this wand creates one illusory image of the wielder that will travel alongside <PRO_HIMHER>. The image performs all of the actions that the wielder does, and seems to react normally to both physical and magical damage (such as appearing to be burned when hit by a fireball) so that if any enemies are trying to attack the wielder they will not know which one is real. There is a 50% chance that an attacker will attack the image and a 50% chance that he will attack the wielder. The image is immune to all forms of damage, but will disappear if a dispel magic or a detect illusion spell is cast upon it, or when the spell duration runs out. This spell cannot be cast on anyone who is under the effects of a Mirror Image spell, and multiple castings of this spell will not create additional images.
 
 STATISTICS:
 
@@ -529,8 +529,8 @@ Weight: 1~
 
 
 //Spook
-@100059 = ~Wand of Spook~
-@100060 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. The creature suffers a Saving Throw penalty of %magnitude%. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion, such as dragons, and those with no intelligence score are unaffected by this spell, as are creatures under the effect of a True Seeing spell.
+@91058 = ~Wand of Spook~
+@91059 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. The creature suffers a Saving Throw penalty of %magnitude%. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion, such as dragons, and those with no intelligence score are unaffected by this spell, as are creatures under the effect of a True Seeing spell.
 
 STATISTICS:
 
@@ -550,8 +550,8 @@ Weight: 1~
 
 
 //Expeditious Retreat
-@100063 = ~Wand of Expeditious Retreat~
-@100064 = ~Upon activation, the wand provides all friendly creatures in the area with an amazing fleetness of foot. The affected creatures movement rate is almost tripled for the duration of the spell, but the excessively unnatural speed prevents them from taking almost any other actions except for running.
+@91062 = ~Wand of Expeditious Retreat~
+@91063 = ~Upon activation, the wand provides all friendly creatures in the area with an amazing fleetness of foot. The affected creatures movement rate is almost tripled for the duration of the spell, but the excessively unnatural speed prevents them from taking almost any other actions except for running.
 
 STATISTICS:
 
@@ -572,8 +572,8 @@ Weight: 1~
 
 
 //Dimension Jump
-@100065 = ~Wand of Dimension Jump~
-@100066 = ~This wand transports the wielder to any place within sight. When the spell is cast, a dimensional portal opens up in front of the wielder, which <PRO_HESHE> immediately steps through. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at his chosen destination. The wielder always arrives at exactly the spot desired, and the dimensional door doesn't allow anyone or anything else to pass through. Spells about to be cast upon the wielder will fail, and missiles about to hit <PRO_HIMHER> will instead hit thin air.
+@91064 = ~Wand of Dimension Jump~
+@91065 = ~This wand transports the wielder to any place within sight. When the spell is cast, a dimensional portal opens up in front of the wielder, which <PRO_HESHE> immediately steps through. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at his chosen destination. The wielder always arrives at exactly the spot desired, and the dimensional door doesn't allow anyone or anything else to pass through. Spells about to be cast upon the wielder will fail, and missiles about to hit <PRO_HIMHER> will instead hit thin air.
 
 STATISTICS:
 
@@ -593,8 +593,8 @@ Weight: 1~
 
 
 //Obscuring Mist
-@100083 = ~Wand of Obscuring Mist~
-@100084 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
+@91082 = ~Wand of Obscuring Mist~
+@91083 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
 
 STATISTICS:
 
@@ -617,8 +617,8 @@ Weight: 1~
 
 
 //Monster Summoning I
-@100085 = ~Wand of Monster Summoning I~
-@100086 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+@91084 = ~Wand of Monster Summoning I~
+@91085 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
 
 STATISTICS:
 
@@ -642,8 +642,8 @@ Weight: 1~
 
 
 //True Strike
-@100087 = ~Wand of True Strike~
-@100088 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
+@91086 = ~Wand of True Strike~
+@91087 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
 
 
 STATISTICS:
@@ -664,12 +664,12 @@ Requires:
 Weight: 1~
 
 
-/*************************
-*   1st Level - Priest   *
-*************************/
+/***************************************
+*   1st Level - Priest - 91500-91999   *
+***************************************/
 //Bless
-@100100 = ~Wand of Bless~
-@100101 = ~With activation, this wand raises the morale of friendly creatures by +1. Furthermore, it raises their attack and damage dice rolls by +1. The wielder determines at what range he will cast the spell. At the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster (thus, affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not).
+@91500 = ~Wand of Bless~
+@91501 = ~With activation, this wand raises the morale of friendly creatures by +1. Furthermore, it raises their attack and damage dice rolls by +1. The wielder determines at what range he will cast the spell. At the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster (thus, affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not).
 
 STATISTICS:
 
@@ -692,8 +692,8 @@ Weight: 1~
 
 
 //Command
-@100102 = ~Wand of Command~
-@100103 = ~This wand enables the wielder to command another creature to sleep for a single round. At the end of the round, the creature awakens and is unharmed. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+@91502 = ~Wand of Command~
+@91503 = ~This wand enables the wielder to command another creature to sleep for a single round. At the end of the round, the creature awakens and is unharmed. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
 
 STATISTICS:
 
@@ -714,8 +714,8 @@ Weight: 1~
 
 
 //Cure Light Wounds
-@100104 = ~Wand of Cure Light Wounds~
-@100105 = ~Upon activation, this wand causes wounds and other injuries to the creature's body to be healed. The wielder can restore 1d8 + %magnitude% points of damage sustained by the target creature.
+@91504 = ~Wand of Cure Light Wounds~
+@91505 = ~Upon activation, this wand causes wounds and other injuries to the creature's body to be healed. The wielder can restore 1d8 + %magnitude% points of damage sustained by the target creature.
 
 STATISTICS:
 (Necromancy)
@@ -737,8 +737,8 @@ Weight: 1~
 
 
 //Detect Evil -> Detect Alignment
-@100106 = ~Wand of Detect Alignment~
-@100107 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
+@91506 = ~Wand of Detect Alignment~
+@91507 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
 
 STATISTICS:
 
@@ -761,8 +761,8 @@ Weight: 1~
 
 
 //Entangle
-@100108 = ~Wand of Entangle~
-@100109 = ~When used, this wand causes plants to entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration of the spell. Those held receive a -2 penalty to attack rolls and a +2 penalty to AC. Creatures that make a successful saving throw vs. Breath temporarily avoid entanglement and can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.
+@91508 = ~Wand of Entangle~
+@91509 = ~When used, this wand causes plants to entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration of the spell. Those held receive a -2 penalty to attack rolls and a +2 penalty to AC. Creatures that make a successful saving throw vs. Breath temporarily avoid entanglement and can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.
 
 STATISTICS:
 
@@ -784,8 +784,8 @@ Weight: 1~
 
 
 //Magic Stone
-@100110 = ~Wand of Magical Stone~
-@100111 = ~When activated, this wand will temporarily enchant ten small stones, no larger than sling bullets. The character using them can then hurl up to three stones per round at an opponent, with a +1 bonus to attack rolls. Each stone that hits inflicts 1d4+2 points of damage (1d4+5 against undead), and is considered to be of +1 enchantment to determine what it can hit. The magic in each stone expires after 2 turns or when used.
+@91510 = ~Wand of Magical Stone~
+@91511 = ~When activated, this wand will temporarily enchant ten small stones, no larger than sling bullets. The character using them can then hurl up to three stones per round at an opponent, with a +1 bonus to attack rolls. Each stone that hits inflicts 1d4+2 points of damage (1d4+5 against undead), and is considered to be of +1 enchantment to determine what it can hit. The magic in each stone expires after 2 turns or when used.
 
 STATISTICS:
 
@@ -809,8 +809,8 @@ Weight: 1~
 
 
 //Remove Fear -> Resist Fear
-@100112 = ~Wand of Resist Fear~
-@100113 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. If the recipients are affected by magical fear, this is negated. In addition, the recipients are protected from magical fear for the duration of the spell. At the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster (thus, affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not).
+@91512 = ~Wand of Resist Fear~
+@91513 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. If the recipients are affected by magical fear, this is negated. In addition, the recipients are protected from magical fear for the duration of the spell. At the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster (thus, affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not).
 
 STATISTICS:
 
@@ -833,8 +833,8 @@ Weight: 1~
 
 
 //Sanctuary
-@100114 = ~Wand of Sanctuary~
-@100115 = ~This wandcauses all of <PRO_HISHER> opponents to ignore <PRO_HISHER> existence, as if <PRO_HESHE> were invisible. While protected by this spell, the subject cannot take direct offensive action without breaking the spell, but may use non-attack spells focused on <PRO_HIMHER>self or otherwise act in any way that does not violate the prohibition against offensive action. This allows a warded individual to heal <PRO_HISHER> wounds, for example, or to cast a Chant spell. <PRO_HESHE> cannot cast spells on other targets without ending the spell.
+@91514 = ~Wand of Sanctuary~
+@91515 = ~This wand causes all of the wielder's opponents to ignore <PRO_HISHER> existence, as if <PRO_HESHE> were invisible. While protected by this spell, the subject cannot take direct offensive action without breaking the spell, but may use non-attack spells focused on <PRO_HIMHER>self or otherwise act in any way that does not violate the prohibition against offensive action. This allows a warded individual to heal <PRO_HISHER> wounds, for example, or to cast a Chant spell. <PRO_HESHE> cannot cast spells on other targets without ending the spell.
 
 STATISTICS:
 
@@ -855,8 +855,8 @@ Weight: 1~
 
 
 //Shillelagh
-@100116 = ~Wand of Shillelagh~
-@100117 = ~When activated, this wand creates a magical cudgel. The shillelagh inflicts 2d4+%magnitude% points of damage on a successful hit and causes tendrils to wrap around and hold the victim in place for one round unless a save vs. Breath is made. The shillelagh is weilded as if proficient with the weapon, at the wielder's normal THAC0. The shillelagh can be used only by the wand wielder, and remains in <PRO_HISHER> hand for the duration of the spell or until dispelled.
+@91516 = ~Wand of Shillelagh~
+@91517 = ~When activated, this wand creates a magical cudgel. The shillelagh inflicts 2d4+%magnitude% points of damage on a successful hit and causes tendrils to wrap around and hold the victim in place for one round unless a save vs. Breath is made. The shillelagh is weilded as if proficient with the weapon, at the wielder's normal THAC0. The shillelagh can be used only by the wand wielder, and remains in <PRO_HISHER> hand for the duration of the spell or until dispelled.
 
 STATISTICS:
 
@@ -880,8 +880,8 @@ Weight: 1~
 
 
 //Armor of Faith
-@100118 = ~Wand of Armor of Faith~
-@100119 = ~When activated, the wielder receives significant protection against physical and magic damage. This magical armor is a force of energy that absorbs a portion of the damage intended for the caster, effectively reducing the damage sustained by 10%. Multiple castings of this spell are not cumulative.
+@91518 = ~Wand of Armor of Faith~
+@91519 = ~When activated, the wielder receives significant protection against physical and magic damage. This magical armor is a force of energy that absorbs a portion of the damage intended for the caster, effectively reducing the damage sustained by 10%. Multiple castings of this spell are not cumulative.
 
 STATISTICS:
 
@@ -902,8 +902,8 @@ Weight: 1~
 
 
 //Doom
-@100120 = ~Wand of Doom~
-@100121 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -%magnitude% penalty to attack rolls, damage rolls, and saving throws, unless a save vs. Wand is made. Multiple castings of this spell are not cumulative.
+@91520 = ~Wand of Doom~
+@91521 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -%magnitude% penalty to attack rolls, damage rolls, and saving throws, unless a save vs. Wand is made. Multiple castings of this spell are not cumulative.
 
 STATISTICS:
 
@@ -926,8 +926,8 @@ Weight: 1~
 
 
 //Faerie Fire
-@100122 = ~Wand of Faerie Fire~
-@100123 = ~Upon uttering the activation phrase, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Outlined creatures do not benefit from the concealment normally provided by darkness, invisibility, or similar effects, and suffer a -2 penalty to AC. Those who succeed at a saving throw vs. Wand are totally unaffected by the spell. The light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light. The faerie fire does not cause any harm to the objects or creatures thus outlined.
+@91522 = ~Wand of Faerie Fire~
+@91523 = ~Upon uttering the activation phrase, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Outlined creatures do not benefit from the concealment normally provided by darkness, invisibility, or similar effects, and suffer a -2 penalty to AC. Those who succeed at a saving throw vs. Wand are totally unaffected by the spell. The light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light. The faerie fire does not cause any harm to the objects or creatures thus outlined.
 
 STATISTICS:
 
@@ -949,8 +949,8 @@ Weight: 1~
 
 
 //Spirit Ward
-@100124 = ~Wand of Spirit Ward~
-@100125 = ~Upon activation, the recipient is surrounded with a magical barrier at a distance of one foot. Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking the protected creature. In addition, the recipient gains a +3 bonus to Saving Throws against all spells that belong to the Enchantment school. This spell cannot be cast on spirits, fey creatures, elementals, or spectral undead.
+@91524 = ~Wand of Spirit Ward~
+@91525 = ~Upon activation, the recipient is surrounded with a magical barrier at a distance of one foot. Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking the protected creature. In addition, the recipient gains a +3 bonus to Saving Throws against all spells that belong to the Enchantment school. This spell cannot be cast on spirits, fey creatures, elementals, or spectral undead.
 
 STATISTICS:
 
@@ -973,8 +973,8 @@ Weight: 1~
 
 
 //Cause Light Wounds
-@100128 = ~Wand of Cause Light Wounds~
-@100129 = ~When activated, the wand charges the wielder's hand; upon successfully touching a creature, the wielder inflicts 1d8 + %magnitude% points of magic damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does no affect this spell.
+@91528 = ~Wand of Cause Light Wounds~
+@91529 = ~When activated, the wand charges the wielder's hand; upon successfully touching a creature, the wielder inflicts 1d8 + %magnitude% points of magic damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does no affect this spell.
 
 STATISTICS:
 
@@ -997,8 +997,8 @@ Weight: 1~
 
 
 //Sunscorch
-@100130 = ~Wand of Sunscorch~
-@100131 = ~When activated, the wand pulls a brilliant ray of scorching heat that slants down from the sky and strikes one target of the wielder's choice. The creature struck by the ray sustains %magnitude%d6 points of fire damage. Undead creatures and monsters vulnerable to bright light suffer double damage. If the target successfully rolls a saving throw vs. Breath he will receive only half damage. In addition to sustaining damage, victims who fail their saves are blinded for 1 round.
+@91530 = ~Wand of Sunscorch~
+@91531 = ~When activated, the wand pulls a brilliant ray of scorching heat that slants down from the sky and strikes one target of the wielder's choice. The creature struck by the ray sustains %magnitude%d6 points of fire damage. Undead creatures and monsters vulnerable to bright light suffer double damage. If the target successfully rolls a saving throw vs. Breath he will receive only half damage. In addition to sustaining damage, victims who fail their saves are blinded for 1 round.
 
 STATISTICS:
 
@@ -1023,8 +1023,8 @@ Weight: 1~
 
 
 //Animal Summoning I
-@100132 = ~Wand of Animal Summoning I~
-@100133 = ~Upon activation, the wand calls forth %magnitude% large bats, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+@91532 = ~Wand of Animal Summoning I~
+@91533 = ~Upon activation, the wand calls forth %magnitude% large bats, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
 
 Bat (1 Hit Dice):
 STR 9, DEX 14, CON 11, INT 4, WIS 11, CHA 4; AL Neutral
@@ -1057,8 +1057,8 @@ Weight: 1~
 
 
 //Regenerate Light Wounds
-@100134 = ~Wand of Regenerate Light Wounds~
-@100135 = ~When activating the wand, it imbues a creature with the ability to regenerate. The creature affected will regain 1 hit point per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+@91534 = ~Wand of Regenerate Light Wounds~
+@91535 = ~When activating the wand, it imbues a creature with the ability to regenerate. The creature affected will regain 1 hit point per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
 
 STATISTICS:
 
@@ -1079,8 +1079,8 @@ Weight: 1~
 
 
 //Strength of Stone
-@100136 = ~Wand of Strength of Stone~
-@100137 = ~Upon activating this wand, the wielder gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes him away (e.g. wing buffets, gusts of wind, telekinesis, etc.), but will move at a reduced speed.
+@91536 = ~Wand of Strength of Stone~
+@91537 = ~Upon activating this wand, the wielder gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes him away (e.g. wing buffets, gusts of wind, telekinesis, etc.), but will move at a reduced speed.
 
 STATISTICS:
 
