@@ -18,27 +18,6 @@ Weight: 1~
 ****************/
 
 
-//Web
-@60122 = ~Wand of Web~
-@60123 = ~With this wand, the wielder creates a many-layered mass of strong, sticky strands, similar to spider webs but much larger and tougher. Anyone in the area when the spell is cast must roll a Save vs. Wand every round. If failed, the creature is paralyzed for one round. If the Saving Throw is successful, then the creature can move normally.
-
-STATISTICS:
-(Evocation)
-
-Charge abilities:
-– Web
-  – Strength is magically increased
-  Range: Sight
-  Duration: %duration%
-  Area of Effect: 8-ft. radius
-  Saving Throw: Save vs. Wand negates
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Agannazar's Scorcher
 @60124 = ~Wand of Agannazar's Scorcher~
 @60125 = ~With this wand, the wielder unleashed a jet of flame that shoots toward a target of the wielders's choice. The flame causes 3d6 points of fire damage to the target, no Saving Throw allowed—anyone in the flame's path takes 2d8, but they are allowed a Save vs. Spell for half damage. The flame jet strikes a second time halfway through its duration.

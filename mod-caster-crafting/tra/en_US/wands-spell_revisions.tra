@@ -1300,3 +1300,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Web
+@92022 = ~Wand of Web~
+@92023 = ~With this wand, the wielder creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. This mass covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that make a successful saving throw vs. breath can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.
+
+STATISTICS:
+
+Charge abilities:
+– Web
+  – Affected creatures stuck in place
+    – Cannot attack, cast spells, etc.
+  School: Conjuration
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath each round move half speed
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
