@@ -12,6 +12,7 @@ This mod is an implementation of crafting for casters:
     - brewing potions
 - Planned:
     - crafting wands
+    - crafting staves
     - levelled versions of
         - scrolls
         - potions
