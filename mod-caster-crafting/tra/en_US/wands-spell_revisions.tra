@@ -1237,3 +1237,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mirror Image
+@92016 = ~Wand of Mirror Image~
+@92017 = ~This wand causes a number of illusory duplicates of the wielder to come into being around <PRO_HIMHER>. The spell creates %magnitude% images. These images do exactly what the wielder does, and since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which are the illusions and which is the actual wielder. When an image is directly struck by a melee or missile attack, magical or otherwise, it disappears, while other existing images remain intact. It is important to note that this will not protect the caster against all attacks, as it is possible for an enemy to choose the real caster amongst all the images. This spell cannot be cast on anyone who is under the effects of a Reflected Image spell, and casting the spell multiple times will not multiply the number of images created.
+STATISTICS:
+
+Charge abilities:
+– Mirror Image
+  – %magnitude% duplicate images
+  School: Illusion
+  Range: Personal
+  Duration: 5 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
