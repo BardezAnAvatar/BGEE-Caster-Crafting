@@ -1092,3 +1092,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Know Alignment
+@62010 = ~Wand of Know Alignment~
+@62011 = ~Activating this wand enables the wielder to exactly read the aura of a creature. If the creature rolls a successful Saving Throw vs. Wand, the caster learns nothing about that particular creature from the casting. When a character is hit by this spell, he will glow red if evil, green if good, and white if neutral. Certain magical devices negate the power of the Know Alignment spell.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Know Alignment
+  – Reveals target's alignment
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

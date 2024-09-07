@@ -736,30 +736,6 @@ Requires:
 Weight: 1~
 
 
-//Detect Evil -> Detect Alignment
-@91506 = ~Wand of Detect Alignment~
-@91507 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
-
-STATISTICS:
-
-Charge abilities:
-– Detect Alignment
-  – Causes Good creatures in range to briefly glow green
-  – Causes Neutral creatures in range to briefly glow white
-  – Causes Evil creatures in range to briefly glow red
-  School: Divination
-  Sphere: Divination
-  Range: Personal
-  Duration: 1 turn
-  Area of Effect: Instant
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Entangle
 @91508 = ~Wand of Entangle~
 @91509 = ~When used, this wand causes plants to entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration of the spell. Those held receive a -2 penalty to attack rolls and a +2 penalty to AC. Creatures that make a successful saving throw vs. Breath temporarily avoid entanglement and can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.
@@ -1182,6 +1158,30 @@ Charge abilities:
   Range: Touch
   Duration: 8 hours or until taking visible action
   Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Alignment
+@92010 = ~Wand of Detect Alignment~
+@92011 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Alignment
+  – Causes Good creatures in range to briefly glow green
+  – Causes Neutral creatures in range to briefly glow white
+  – Causes Evil creatures in range to briefly glow red
+  School: Divination
+  Sphere: Divination
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Instant
   Saving Throw: None
 
 Requires:
