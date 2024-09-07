@@ -1,9 +1,9 @@
-/* Reserving range 60000-69999 */
+/* Reserving range 59999-69999 */
 
 /***************
 *   Defaults   *
 ***************/
-@60000 = ~Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
+@59999 = ~Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
 
 Wands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.
 

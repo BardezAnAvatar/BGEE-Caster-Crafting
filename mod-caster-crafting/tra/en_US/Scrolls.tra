@@ -1,4 +1,4 @@
-/* Reserving range 50000-59999 */
+/* Reserving range 50000-59998 */
 
 //replacements
 @50000 = ~Range: ~
