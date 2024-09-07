@@ -982,3 +982,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   2nd Level - Arcane - 62000-62499   *
+***************************************/
+//Blur
+@62000 = ~Wand of Blur~
+@62001 = ~As this wand is triggered, it causes the outline of the wielder's form to become blurred, shifting and wavering. This distortion causes all missile and melee attacks against the wielder to be made with a -3 penalty. The wielder also gains a +1 bonus to all of <PRO_HISHER> Saving Throws.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Blur
+  – +1 bonus to saving throws
+  – +3 bonus to Armor Class
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
