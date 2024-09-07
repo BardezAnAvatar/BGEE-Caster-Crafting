@@ -1,13 +1,11 @@
 /* Reserving range 70000-79999 */
 
-
-
-/****************
-*   1st Level   *
-****************/
+/***************************************
+*   1st Level - Arcane - 71000-71499   *
+***************************************/
 //Grease
-@70001 = ~Wand of Grease~
-@70002 = ~Upon activation, this wand covers the ground with a slippery layer of a fatty, greasy nature. Any creature entering the area or caught in it when the spell is cast must save vs. Wand every round or have their movement rate slowed to a crawl as long as they are in the area of effect. Those who successfully save can move normally.
+@71000 = ~Wand of Grease~
+@71001 = ~Upon activation, this wand covers the ground with a slippery layer of a fatty, greasy nature. Any creature entering the area or caught in it when the spell is cast must save vs. Wand every round or have their movement rate slowed to a crawl as long as they are in the area of effect. Those who successfully save can move normally.
 
 STATISTICS:
 (Conjuration/Summoning)
@@ -28,8 +26,8 @@ Weight: 1~
 
 
 //Burning Hands
-@70005 = ~Wand of Burning Hands~
-@70006 = ~When activated, a jet of searing flame shoots forward in a horizontal arc of about 90 degrees, with a 7 ft. length. Any creature in the area of the flames suffers 1d3 +%magnitude%  points of fire damage. Those successfully saving vs. Wand receive half damage.
+@71004 = ~Wand of Burning Hands~
+@71005 = ~When activated, a jet of searing flame shoots forward in a horizontal arc of about 90 degrees, with a 7 ft. length. Any creature in the area of the flames suffers 1d3 +%magnitude%  points of fire damage. Those successfully saving vs. Wand receive half damage.
 
 STATISTICS:
 (Alteration)
@@ -49,8 +47,8 @@ Weight: 1~
 
 
 //Color Spray
-@70009 = ~Wand of Color Spray~
-@70010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; all creatures in the area above the level of the caster or ones that have greater than 6 Hit Dice must make a Save vs. Wand. The spell's effects depend on the caster—creatures with Hit Dice/levels fewer than or equal to the caster are knocked unconscious (do not awaken when struck) for 5 rounds, those with Hit Dice/levels one or two greater than the wizard are blinded for 3 rounds, and any other creatures are stunned for 1 round.
+@71008 = ~Wand of Color Spray~
+@71009 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; all creatures in the area above the level of the caster or ones that have greater than 6 Hit Dice must make a Save vs. Wand. The spell's effects depend on the caster—creatures with Hit Dice/levels fewer than or equal to the caster are knocked unconscious (do not awaken when struck) for 5 rounds, those with Hit Dice/levels one or two greater than the wizard are blinded for 3 rounds, and any other creatures are stunned for 1 round.
 
 Blind creatures are unaffected by the color spray.
 
@@ -78,8 +76,8 @@ Weight: 1~
 
 
 //Blindness
-@70011 = ~Wand of Blindness~
-@70012 = ~This wand will flash, temporarily blinding its target. If a victim is blinded, <PRO_HESHE> receives a -4 penalty to <PRO_HISHER> attack rolls and Armor Class. Blind creatures are immune to gaze attacks.
+@71010 = ~Wand of Blindness~
+@71011 = ~This wand will flash, temporarily blinding its target. If a victim is blinded, <PRO_HESHE> receives a -4 penalty to <PRO_HISHER> attack rolls and Armor Class. Blind creatures are immune to gaze attacks.
 
 STATISTICS:
 (Illusion/Phantasm)
@@ -102,8 +100,8 @@ Weight: 1~
 
 
 //Friends
-@70013 = ~Wand of Friends~
-@70014 = ~This wand will temporarily grant 5 points of Charisma to the wielder. While cast, those who view the wielder tend to be very impressed and will generally make an effort to help <PRO_HIMHER>.
+@71012 = ~Wand of Friends~
+@71013 = ~This wand will temporarily grant 5 points of Charisma to the wielder. While cast, those who view the wielder tend to be very impressed and will generally make an effort to help <PRO_HIMHER>.
 
 STATISTICS:
 (Enchantment/Charm)
@@ -122,8 +120,8 @@ Weight: 1~
 
 
 //Protection from Petrification
-@70015 = ~Wand of Protection from Petrification~
-@70016 = ~This wand will grant the recipient immunity to all petrification attacks; this includes basilisk and medusa gaze, cursed scrolls of petrification, etc.
+@71014 = ~Wand of Protection from Petrification~
+@71015 = ~This wand will grant the recipient immunity to all petrification attacks; this includes basilisk and medusa gaze, cursed scrolls of petrification, etc.
 
 STATISTICS:
 (Abjuration)
@@ -143,8 +141,8 @@ Weight: 1~
 
 
 //Infravision
-@70019 = ~Wand of Infravision~
-@70020 = ~This wand will grant the ability to see with infravision, just as an elf or dwarf can.
+@71018 = ~Wand of Infravision~
+@71019 = ~This wand will grant the ability to see with infravision, just as an elf or dwarf can.
 
 STATISTICS:
 (Divination)
@@ -164,8 +162,8 @@ Weight: 1~
 
 
 //Protection from Evil
-@70023 = ~Wand of Protection from Evil~
-@70024 = ~When activated, the wand creates a magical barrier around the recipient at a distance of one foot. The barrier has three effects: First, it bestows a +2 bonus to the recipient's Armor Class and Saving Throws against attacks from evil-aligned opponents; second, it prevents summoned fiends from attacking the recipient; third, it makes the recipient immune to charm-based spells or effects (e.g. Charm Person, Charm Person or Mammal, Domination, and so on).
+@71022 = ~Wand of Protection from Evil~
+@71023 = ~When activated, the wand creates a magical barrier around the recipient at a distance of one foot. The barrier has three effects: First, it bestows a +2 bonus to the recipient's Armor Class and Saving Throws against attacks from evil-aligned opponents; second, it prevents summoned fiends from attacking the recipient; third, it makes the recipient immune to charm-based spells or effects (e.g. Charm Person, Charm Person or Mammal, Domination, and so on).
 
 STATISTICS:
 (Abjuration)
@@ -187,8 +185,8 @@ Weight: 1~
 
 
 //Shocking Grasp
-@70027 = ~Wand of Shocking Grasp~
-@70028 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal 1d8+%magnitude% points of electrical damage to a targeted creature. The spell always hits unless the wielder is disrupted.
+@71026 = ~Wand of Shocking Grasp~
+@71027 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal 1d8+%magnitude% points of electrical damage to a targeted creature. The spell always hits unless the wielder is disrupted.
 
 STATISTICS:
 (Alteration)
@@ -209,8 +207,8 @@ Weight: 1~
 
 
 //Sleep
-@70029 = ~Wand of Sleep~
-@70030 = ~This wand will emit a gold beam of energy at its targets, affecting 2d4 Hit Dice of creatures within a 9-ft. radius. Monsters with 5 or more Hit Dice are unaffected. Though it's not the stuff of which legends are made, attacks against magically sleeping opponents never miss—although they will awaken after the first hit.
+@71028 = ~Wand of Sleep~
+@71029 = ~This wand will emit a gold beam of energy at its targets, affecting 2d4 Hit Dice of creatures within a 9-ft. radius. Monsters with 5 or more Hit Dice are unaffected. Though it's not the stuff of which legends are made, attacks against magically sleeping opponents never miss—although they will awaken after the first hit.
 
 STATISTICS:
 (Enchantment/Charm)
@@ -230,8 +228,8 @@ Weight: 1~
 
 
 //Chill Touch
-@70031 = ~Wand of Chill Touch~
-@70032 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of of any creature upon which the wielder makes a successful melee attack. The touched creature must make a Save vs. Wand or suffer 1d4 points of cold damage and receive a -1 THAC0 penalty for 1 turn after being struck.
+@71030 = ~Wand of Chill Touch~
+@71031 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of of any creature upon which the wielder makes a successful melee attack. The touched creature must make a Save vs. Wand or suffer 1d4 points of cold damage and receive a -1 THAC0 penalty for 1 turn after being struck.
 
 An undead creature suffers no damage or to-hit penalty from Chill Touch, but will be affected by panic for 2 turns unless it successfully makes a Save vs. Spell.
 
@@ -259,8 +257,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 1st
-@70033 = ~Wand of Chromatic Orb~
-@70034 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d4 magic damage and blinds the target for 1 round. A successful Save vs. Wand negates all effects.
+@71032 = ~Wand of Chromatic Orb~
+@71033 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d4 magic damage and blinds the target for 1 round. A successful Save vs. Wand negates all effects.
 
 STATISTICS:
 (Evocation)
@@ -282,8 +280,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 2nd
-@70035 = ~Wand of Chromatic Orb~
-@70036 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d4 magic damage and inflicts pain (-1 penalty to AC, and THAC0) upon the victim.
+@71034 = ~Wand of Chromatic Orb~
+@71035 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d4 magic damage and inflicts pain (-1 penalty to AC, and THAC0) upon the victim.
 
 STATISTICS:
 (Evocation)
@@ -305,8 +303,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 3rd
-@70037 = ~Wand of Chromatic Orb~
-@70038 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d8 magic damage and burns the victim for an additional 1d3 fire damage. A successful Save vs. Wand negates all effects.
+@71036 = ~Wand of Chromatic Orb~
+@71037 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d8 magic damage and burns the victim for an additional 1d3 fire damage. A successful Save vs. Wand negates all effects.
 
 STATISTICS:
 (Evocation)
@@ -328,8 +326,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 4th
-@70039 = ~Wand of Chromatic Orb~
-@70040 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d10 magic damage and blinds the target for 4 rounds. A successful Save vs. Wand negates all effects.
+@71038 = ~Wand of Chromatic Orb~
+@71039 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d10 magic damage and blinds the target for 4 rounds. A successful Save vs. Wand negates all effects.
 
 STATISTICS:
 (Evocation)
@@ -351,8 +349,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 5th
-@70041 = ~Wand of Chromatic Orb~
-@70042 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d12 magic damage and stuns the target for 3 rounds. A successful Save vs. Wand negates all effects.
+@71040 = ~Wand of Chromatic Orb~
+@71041 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 1d12 magic damage and stuns the target for 3 rounds. A successful Save vs. Wand negates all effects.
 
 STATISTICS:
 (Evocation)
@@ -374,8 +372,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 7th
-@70045 = ~Wand of Chromatic Orb~
-@70046 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 2d8 damage and paralyzes the victim for 13 rounds. A successful Save vs. Wand negates all effects.
+@71044 = ~Wand of Chromatic Orb~
+@71045 = ~When activated, a 4-inch-diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will deal 2d8 damage and paralyzes the victim for 13 rounds. A successful Save vs. Wand negates all effects.
 
 STATISTICS:
 (Evocation)
@@ -397,8 +395,8 @@ Weight: 1~
 
 
 //Larloch's Minor Drain
-@70053 = ~Wand of Larloch's Minor Drain~
-@70054 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn. This spell has no effect on constructs or undead.
+@71052 = ~Wand of Larloch's Minor Drain~
+@71053 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn. This spell has no effect on constructs or undead.
 
 STATISTICS:
 (Necromancy)
@@ -420,8 +418,8 @@ Weight: 1~
 
 
 //Expeditious Retreat
-@70063 = ~Wand of Expeditious Retreat~
-@70064 = ~Upon activation, the wand doubles the wielder's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects (such as Haste and Slow) cannot affect the wielder while under this effect. While Expeditious Retreat is active, the wielder cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
+@71062 = ~Wand of Expeditious Retreat~
+@71063 = ~Upon activation, the wand doubles the wielder's normal speed for a short period of time... usually long enough to escape. Other movement-altering effects (such as Haste and Slow) cannot affect the wielder while under this effect. While Expeditious Retreat is active, the wielder cannot attack, cast spells, or use any items or special abilities... <PRO_HESHE> can only run.
 
 STATISTICS:
 (Alteration)
@@ -440,12 +438,12 @@ Requires:
 Weight: 1~
 
 
-/*************************
-*   1st Level - Priest   *
-*************************/
+/***************************************
+*   1st Level - Priest - 71500-71999   *
+***************************************/
 //Command
-@70102 = ~Wand of Command~
-@70103 = ~This wand enables the wielder to command another creature to sleep for a single round. At the end of the round, the creature awakens and is unharmed. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+@71502 = ~Wand of Command~
+@71503 = ~This wand enables the wielder to command another creature to sleep for a single round. At the end of the round, the creature awakens and is unharmed. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
 
 STATISTICS:
 (Enchantment/Charm)
@@ -465,8 +463,8 @@ Weight: 1~
 
 
 //Cure Light Wounds
-@70104 = ~Wand of Cure Light Wounds~
-@70105 = ~Upon activation, this wand heals 8 Hit Points to the creature's body and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
+@71504 = ~Wand of Cure Light Wounds~
+@71505 = ~Upon activation, this wand heals 8 Hit Points to the creature's body and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
 
 STATISTICS:
 (Necromancy)
@@ -486,8 +484,8 @@ Weight: 1~
 
 
 //Detect Evil
-@70106 = ~Wand of Detect Evil~
-@70107 = ~Upon activation, this wand reveals emanations of evil from any creature. Any evil creature within the range of the spell will glow red briefly.
+@71506 = ~Wand of Detect Evil~
+@71507 = ~Upon activation, this wand reveals emanations of evil from any creature. Any evil creature within the range of the spell will glow red briefly.
 
 STATISTICS:
 (Divination)
@@ -507,8 +505,8 @@ Weight: 1~
 
 
 //Entangle
-@70108 = ~Wand of Entangle~
-@70109 = ~When used, this wand causes the grasses, weeds, bushes, and even trees wrap, twist, and entwine about creatures within the area of effect, holding them fast. Once per round, a creature can attempt to save vs. Wand with a +3 bonus to avoid entanglement. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+@71508 = ~Wand of Entangle~
+@71509 = ~When used, this wand causes the grasses, weeds, bushes, and even trees wrap, twist, and entwine about creatures within the area of effect, holding them fast. Once per round, a creature can attempt to save vs. Wand with a +3 bonus to avoid entanglement. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
 
 STATISTICS:
 (Alteration)
@@ -527,9 +525,9 @@ Requires:
 Weight: 1~
 
 
-//Magic Stone
-@70110 = ~Wand of Magical Stone~
-@70111 = ~When activated, this wand can temporarily enchant a small pebble, which is then hurled or slung at an opponent. The stone deals 3d4 points of crushing damage to whomever it hits except undead creatures, who take 6d4 points of crushing damage instead. The stone is considered a magical weapon, although it does not have an attack or damage bonus.
+//Magical Stone
+@71510 = ~Wand of Magical Stone~
+@71511 = ~When activated, this wand can temporarily enchant a small pebble, which is then hurled or slung at an opponent. The stone deals 3d4 points of crushing damage to whomever it hits except undead creatures, who take 6d4 points of crushing damage instead. The stone is considered a magical weapon, although it does not have an attack or damage bonus.
 
 STATISTICS:
 (Enchantment)
@@ -552,8 +550,8 @@ Weight: 1~
 
 
 //Remove Fear
-@70112 = ~Wand of Remove Fear~
-@70113 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. The recipients' morale will gradually reset to normal as the duration runs out. If the recipients are affected by magical fear, this is negated.
+@71512 = ~Wand of Remove Fear~
+@71513 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. The recipients' morale will gradually reset to normal as the duration runs out. If the recipients are affected by magical fear, this is negated.
 
 STATISTICS:
 (Abjuration)
@@ -575,8 +573,8 @@ Weight: 1~
 
 
 //Curse
-@70126 = ~Wand of Curse~
-@70127 = ~When used, the wand lowers the morale of enemy creatures and any Saving Throws and attack rolls they make by 1. At the instant the spell is completed, it affects all creatures in a 15-ft. radius centered on the point selected by the caster. Affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.
+@71526 = ~Wand of Curse~
+@71527 = ~When used, the wand lowers the morale of enemy creatures and any Saving Throws and attack rolls they make by 1. At the instant the spell is completed, it affects all creatures in a 15-ft. radius centered on the point selected by the caster. Affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.
 
 STATISTICS:
 (Conjuration/Summoning)
@@ -598,8 +596,8 @@ Weight: 1~
 
 
 //Cause Light Wounds
-@70128 = ~Wand of Cause Light Wounds~
-@70129 = ~When activated, the wand charges the wielder's hand; upon touching a creature, the wielder deals 8 points of damage (save vs. Wand for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures.
+@71528 = ~Wand of Cause Light Wounds~
+@71529 = ~When activated, the wand charges the wielder's hand; upon touching a creature, the wielder deals 8 points of damage (save vs. Wand for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures.
 
 STATISTICS:
 (Necromancy)
@@ -620,8 +618,8 @@ Weight: 1~
 
 
 //Sunscorch
-@70130 = ~Wand of Sunscorch~
-@70131 = ~When activated, the wand pulls a brilliant ray of scorching heat that slants down from the sky and strikes one target of the caster's choice. Any creature struck by the ray takes 1d6+%magnitude% points of fire damage; however, if the target is an undead creature or a monster vulnerable to bright light, the damage is 1d6+%magnitude2%. In addition to sustaining damage, victims are also blinded for 3 rounds. The victim is allowed a Save vs. Wand for half damage and to avoid the blindness.
+@71530 = ~Wand of Sunscorch~
+@71531 = ~When activated, the wand pulls a brilliant ray of scorching heat that slants down from the sky and strikes one target of the caster's choice. Any creature struck by the ray takes 1d6+%magnitude% points of fire damage; however, if the target is an undead creature or a monster vulnerable to bright light, the damage is 1d6+%magnitude2%. In addition to sustaining damage, victims are also blinded for 3 rounds. The victim is allowed a Save vs. Wand for half damage and to avoid the blindness.
 
 STATISTICS:
 (Evocation)
