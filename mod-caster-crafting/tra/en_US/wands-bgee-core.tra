@@ -1202,3 +1202,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Strength
+@62020 = ~Wand of Strength~
+@62021 = ~Upon activation, the target's Strength is magically set to 18 and then adds a +50% bonus to exceptional strength in addition to this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 Strength, then <PRO_HISHER> Strength will just be set to 18/00. If a character has a Strength between 18/01 and 18/50, then <PRO_HISHER> Strength will become 18/50 + original percentage. If <PRO_HISHER> Strength is less than 18, then it will just become 18/50. However, this spell will actually lower a character's Strength if it is already 19 or more.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Strength
+  – Strength is magically increased
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
