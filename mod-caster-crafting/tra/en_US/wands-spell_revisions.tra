@@ -1371,3 +1371,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Vocalize
+@92028 = ~Wand of Vocalize~
+@92029 = ~When the wielder activates this wand, <PRO_HESHE> can cast spells with a verbal component without having to make any noise. Effectively, this spell cancels the effects of Silence and makes the wielder immune to it for the spell's duration. This spell has no effect on other noises or speech; it simply removes a spell's verbal component.
+
+STATISTICS:
+
+Charge abilities:
+– Vocalize
+  – Can cast spells while silenced
+  School: Alteration
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
