@@ -1006,3 +1006,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Detect Invisibility
+@62002 = ~Wand of Detect Invisibility~
+@62003 = ~Once used, this wand allows the wielder to see clearly any objects or beings that are invisible, as well as any that are astral, ethereal, or out of phase. In addition, this spell enables the wielder to detect hidden or concealed creatures (e.g., Thieves hiding in shadows, halflings in underbrush, and so on). It does not reveal the method of concealment or invisibility, except in the case of astral travelers (where the silver cord can be seen). It does not reveal illusions or enable the caster to see through physical objects.
+
+Note: If an invisible creature enters the area of effect after the spell has already been cast, the creature will remain invisible.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Invisibility
+  – See invisible creatures within 120 ft.
+  Range: Self
+  Duration: Instant
+  Area of Effect: 120-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

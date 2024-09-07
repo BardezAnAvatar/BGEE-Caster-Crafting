@@ -663,3 +663,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Detect Invisibility
+@72002 = ~Wand of Detect Invisibility~
+@72003 = ~Once used, this wand dispels enemy invisibility and reveals any hidden foes in the area of effect (i.e. Thieves using Stealth).
+
+Note: If an invisible enemy enters the area of effect after the spell has already been cast, the creature will remain invisible.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Invisibility
+  – See invisible creatures within 15 ft.
+  Range: Self
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
