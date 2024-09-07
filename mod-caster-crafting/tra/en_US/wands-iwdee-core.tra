@@ -792,3 +792,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Strength
+@72020 = ~Wand of Strength~
+@72021 = ~Upon activation, the target's Strength is magically increased by an amount depending on its class. Warriors gain 1d8 points, priests and rogues gain 1d6 points, and wizards gain 1d4 points. For warriors only, all points above a Strength of 18 are converted into a 10% bonus for each extra point, to a maximum of 18/00. For other classes, 18 Strength is the maximum.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Strength
+  – Strength is magically increased
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
