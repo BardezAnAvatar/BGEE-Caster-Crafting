@@ -1,6 +1,6 @@
 # Caster Crafting
 Author: [Bardez](https://github.com/BardezAnAvatar)
-- Based off of work by:
+- Based loosely off of work by:
     - [Grammarsalad](https://github.com/Grammarsalad)
 
 
@@ -36,7 +36,11 @@ A few non-binding requested exceptions:
 ## Credit/license for prior work
 ![image](./.markdown-assets/license-allowed.png)
 
-- Endarire: Vested interest in the mod, and muse for Grammarsalad's prior work that this was based upon.
+
+## Special Thanks
+- Endarire: Vested interest in the mod, moral support, and limited muse
+- Grammarsalad: Moral support and co-conspirator for bouncing ideas around. Review of work in progress, etc.
+- CamDawg: Basically being a chad whenever anyone asks modding questions, jumping in with samples and thoughtful engagement
 
 
 ## Credit/License for art
