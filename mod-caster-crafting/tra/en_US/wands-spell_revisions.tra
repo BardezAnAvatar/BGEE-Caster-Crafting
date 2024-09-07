@@ -1189,3 +1189,27 @@ Requires:
 
 Weight: 1~
 
+
+//Luck
+@92012 = ~Wand of Luck~
+@92013 = ~This wand empowers the recipient to be lucky in everything that <PRO_HESHE> does for the next hour. The affected character receives a 5% or +1 bonus to all of his actions. This includes saving throws, to hit chances, damage rolls, thieving skills, etc. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Luck
+  – +1 bonus to saving throws
+  – +1 bonus to attack rolls
+  – +1 bonus to minimum damage/healing rolls
+  – +5% bonus to all thieving skills
+  – Damage dice for non-weapons reduced by 1
+  School: Enchantment
+  Range: Medium
+  Duration: 5 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
