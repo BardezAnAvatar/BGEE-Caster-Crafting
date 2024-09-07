@@ -1098,3 +1098,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   2nd Level - Arcane - 92000-92499   *
+***************************************/
+//Blur
+@92000 = ~Wand of Blur~
+@92001 = ~As this wand is triggered, it causes the wielder's form and spirit to become blurred, shifting and wavering. This distortion causes all melee and missile attacks against the wielder to be made with -3 penalties, whereas all saves vs. spell are made by the caster with a +3 bonus. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Blur
+  – +3 bonus to saves vs. spell
+  – +3 bonus to Armor Class
+  School: Illusion
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
