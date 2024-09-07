@@ -18,27 +18,6 @@ Weight: 1~
 ****************/
 
 
-//Melf's Acid Arrow
-@60114 = ~Wand of Melf's Acid Arrow~
-@60115 = ~The wand creates a magical arrow that speeds to its target unerringly. The arrow has no attack or damage bonus, but inflicts 2d4 points of acid damage (there is no splash damage). For every 3 levels of the caster, the acid lasts for another round, unless somehow dispelled, inflicting another 2d4 points of damage each round. So at 3rd-5th level, the acid lasts 2 rounds, at 6th-8th level, the acid lasts for 3 rounds, and so on.
-
-STATISTICS:
-(Conjuration/Summoning)
-
-Charge abilities:
-– Melf's Acid Arrow
-  – 2d4 points of acid damage per round
-  Range: 60 ft.
-  Duration: %duration%
-  Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Mirror Image
 @60116 = ~Wand of Mirror Image~
 @60117 = ~This wand causes two to eight duplicates of the wielder to come into being around <PRO_HIMHER> when activated. These images do exactly what the wielder does. Since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which ones are the illusions and which is the actual wizard. When an image is struck by a melee or missile attack, magical or otherwise, it disappears, but any other existing images remain intact until struck. The images shift from round to round so that an enemy must first hit every image before being able to hit the wielder.
