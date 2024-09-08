@@ -621,3 +621,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Power Word, Pull
+@82050 = ~Wand of Power Word, Pull~
+@82051 = ~This wand, when activated, magically pulls another creature to the wielder. For one round, the creature will be unable to move of its own will and will be pulled toward the wielder at great speed. During that round, if the wielder moves, the creature will be dragged along with <PRO_HIMHER>. There is no Saving Throw, though Magic Resistance can prevent the effects. Power Word, Pull can target a creature even if the wielder cannot see it; however, the wielder must be aware of the creature's existence and they must be on the same plane. Power Word, Pull is technically a summoning spell, as it summons the target of the spell.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Power Word, Pull
+  – Drags target to the wielder
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: None
+Requires:
+ 9 Intelligence
+
+Weight: 1~
