@@ -637,6 +637,28 @@ Charge abilities:
   Duration: 1 round
   Area of Effect: 1 creature
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Ghostwalk
+@82052 = ~Wand of Ghostwalk~
+@82053 = ~Upon activation, this wand makes multiple allies incorporeal for 1 round. While incorporeal, creatures are immune to normal weapons and can move through walls. Ghostwalk could be used to move the party through a wall, eluding enemies. When the spell ends, if a character is inside a wall, they will be pushed to the nearest inhabitable space.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Ghostwalk
+  – Move through walls
+  – Immune to normal weapons
+  Duration: 1 round
+  Area of Effect: 15-ft. radius centered on caster
+  Saving Throw: None
+
 Requires:
  9 Intelligence
 
