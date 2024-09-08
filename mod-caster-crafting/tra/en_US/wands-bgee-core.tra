@@ -1311,3 +1311,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Power Word, Sleep
+@62030 = ~Wand of Power Word, Sleep~
+@62031 = ~When activated, this wand causes a comatose slumber to come upon 1 creature (other than undead and certain other creatures specifically excluded from the spell's effects). The creature targeted must have less than 20 Hit Points and gets no Saving Throw. Magically sleeping opponents can be attacked with substantial bonuses. The Sleep effect will last for 5 rounds. This spell has no effect on creatures with more than 20 Hit Points.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Power Word, Sleep
+  – Sleep
+  Range: Sight
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
