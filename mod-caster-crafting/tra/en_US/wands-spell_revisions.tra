@@ -95,7 +95,7 @@ Weight: 1~
 
 //Color Spray
 @91008 = ~Wand of Color Spray~
-@91009 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to the wielder are slowed for 5 rounds, those with Hit Dice/levels one or two greater than the wielder are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
+@91009 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to %caster_level% are slowed for 5 rounds, those with Hit Dice/levels one or two greater than %caster_level% are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
 
 STATISTICS:
 
