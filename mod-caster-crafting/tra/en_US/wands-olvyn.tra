@@ -753,3 +753,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Levitate
+@82062 = ~Wand of Levitate~
+@82063 = ~This wand will suspend a creature in midair. For the duration, the target is stuck in midair and cannot move unless it can fly. While levitating, it is almost impossible for the target to hit or be hit by other creatures with melee weapons. The target is also unaffected by ground-based spells such as Grease, Entangle, Web and Earthquake. If the target is an ally, there is no Saving Throw necessary; otherwise, the target may make a Save vs. Polymorph at -3 to avoid the effects.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Levitate
+  – Target suspended in midair
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (-3 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
