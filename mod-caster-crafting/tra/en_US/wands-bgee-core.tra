@@ -1353,3 +1353,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chaos Shield
+@62034 = ~Wand of Chaos Shield~
+@62035 = ~When activated, this wand increases the probability of a favorable result when a Wild Surge occurs. Every time a roll is made on the Wild Surge chart, an extra 15 is added to the dice roll. When Nahal's Reckless Dweomer is cast, the bonus from Chaos Shield stacks with the Wild Mage's level bonus. It does not stack with Improved Chaos Shield.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Chaos Shield
+  – Adds 15 to Wild Surge rolls
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
