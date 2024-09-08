@@ -663,3 +663,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Power Word, Push
+@82054 = ~Wand of Power Word, Push~
+@82055 = ~Once activated, the wand magically pushes another creature away from the wielder. For one round, the creature will be unable to move of its own will and will be pushed away from the wielder at great speed. There is no Saving Throw, though Magic Resistance can prevent the effects. The wand can be used on a creature even if the wielder cannot see the creature; however, <PRO_HESHE> must be aware of the creature's existence and they must be on the same plane.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Power Word, Push
+  – Pushes a creature away
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
