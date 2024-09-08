@@ -1392,3 +1392,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Power Word Sleep
+@92030 = ~Wand of Power Word Sleep~
+@92031 = ~When activated, this wand causes a comatose slumber to come upon one creature. Creatures who currently have 20 or more hit points can save vs. Wand to avoid the effects, but those with 1 to 19 hit points are powerless to resist. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically induced sleep.
+
+STATISTICS:
+
+Charge abilities:
+– Power Word Sleep
+  – Sleep
+  School: Enchantment
+  Range: Long
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates (if HP > 19)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
