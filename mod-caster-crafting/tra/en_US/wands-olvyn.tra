@@ -579,6 +579,29 @@ Requires:
 Weight: 1~
 
 
+//Deafness
+@82036 = ~Wand of Deafness~
+@82037 = ~Upon activation, this wand causes the recipient to become totally unable to hear any sounds. The victim is allowed a Saving Throw vs. Wand to negate the effect. Deafened spellcasters have a 50% chance to miscast any spells. This deafness can be done away with by means of a Dispel Magic spell or a Cure Disease spell.
+
+Creatures lower level than %magnitude% have no save against this spell.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Deafness
+  – 50% Change to miscast spells
+  Range 180 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /************************
 *   Identify Creature   *
 ************************/
