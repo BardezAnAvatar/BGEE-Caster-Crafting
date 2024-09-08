@@ -1456,3 +1456,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Battering Ram
+@92068 = ~Wand of Battering Ram~
+@92069 = ~Once activated, this wand creates a ram-like force that can strike with considerable power. The force can be used to open or smash locked, held, or wizard-locked doors, as well as locked boxes or chests, but it does not raise barred gates or similar impediments. If used against a creature, the target suffers 2d6 points of crushing damage, and must save vs. breath to avoid being knocked unconscious for 1 round.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Battering Ram
+  – Unlocks doors/containers
+  OR
+  – Strikes with force
+  – Renders target unconscious
+  Damage: 2d6 crushing damage
+  School: Evocation
+  Range: Medium
+  Duration: Instant
+  Area of Effect: 1 creature or object
+  Saving Throw: Save vs. Breath to avoid sleep
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
