@@ -1332,3 +1332,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ray of Enfeeblement
+@62032 = ~Wand of Ray of Enfeeblement~
+@62033 = ~This wand weakens an opponent, reducing its Strength score and thereby the attacks that rely upon it. The victim is reduced to a Strength score of 5 for the duration of the spell, unless a Saving Throw vs. Wand is made. This spell does not affect combat bonuses due to magical items, and those conferring increased Strength function normally. However, the target receives all the penalties for a Strength score of 5 such as attack and damage penalties as well as lower weight allowance.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Ray of Enfeeblement
+  – Strength set to 5
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
