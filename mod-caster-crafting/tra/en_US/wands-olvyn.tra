@@ -732,3 +732,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Specific Spell Immunity
+@82060 = ~Wand of Specific Spell Immunity~
+@82061 = ~Upon activation, this wand channels the wielder's magic to shield the party from those same spells. The wielder may choose up to three spells <PRO_HESHE> has memorized. Those spells are then consumed (expending one of each spell), giving allies immunity to each of those spells for 8 hours. The spell affects all allied creatures in the current area, including party members and summoned creatures.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Specific Spell Immunity
+  – Select 3 spells memorized
+    – Allies get immunity to these spells for 8 hours
+  Duration: 8 hours
+  Area of Effect: All allies
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
