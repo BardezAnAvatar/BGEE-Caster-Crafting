@@ -774,3 +774,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Bounce Spell
+@82064 = ~Wand of Bounce Spell~
+@82065 = ~This wand provides a magical shield; if the wielder would be hit by a spell within 2 rounds of casting, <PRO_HESHE> will be unaffected, and the incoming spell will be reflected back at its caster. Bounce Spell expires if it reflects a spell, or after 2 rounds have passed. Bounce Spell will not protect the caster from a Dispel Magic. However, it will not be affected by a Dispel Magic, either.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Bounce Spell
+  – Next spell targeting wielder is reflected to caster
+  Duration: 2 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
