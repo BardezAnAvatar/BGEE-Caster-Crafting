@@ -1385,7 +1385,7 @@ STATISTICS:
 Charge abilities:
 – Deafness
   – 50% Change to miscast spells
-  Range 180 ft.
+  Range: 180 ft.
   Duration: Permanent
   Area of Effect: 1 creature
   Saving Throw: Save vs. Wand negates
@@ -1409,7 +1409,7 @@ Charge abilities:
     – -4 penalty to THAC0
     – -4 penalty to  Armor Class
   – Invisibility disabled
-  Range 30 ft.
+  Range: 30 ft.
   Duration: 4 rounds
   Area of Effect: 15-ft. radius
   Saving Throw: Save vs. Wand negates
@@ -1433,7 +1433,7 @@ Charge abilities:
     – Blindness
       – -4 penalty to THAC0
       – -4 penalty to  Armor Class
-  Range 30 ft.
+  Range: 30 ft.
   Duration: 1 turn
   Area of Effect: 8-ft. radius
   Saving Throw: None
