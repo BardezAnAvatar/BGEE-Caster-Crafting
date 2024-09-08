@@ -709,3 +709,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Null Healing
+@82058 = ~Wand of Null Healing~
+@82059 = ~This wand emits a curse which prevents the target from healing. Once cast, the target must save vs. Wand at -8 or be cursed for 1 day. While cursed, the target cannot regain Hit Points via spells, abilities, items, regeneration, or resting. The curse can be removed early using a Remove Curse spell.
+
+Creatures lower level than %caster_level% have no save against this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Null Healing
+  – Prevents healing
+  Range: Sight
+  Duration: 1 day
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (-8 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
