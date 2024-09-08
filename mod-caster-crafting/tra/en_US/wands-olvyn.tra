@@ -794,3 +794,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Detect Magic
+@82064 = ~Wand of Detect Magic~
+@82065 = ~This wand lets the wielder see the magical effects on other creatures. While the spell is active, if you hover the cursor over a creature and press Left Shift, a list of all the spell effects on the creature (such as Stoneskin or Protection from Magical Weapons) will be displayed. If the creature has Non-Detection, nothing will be displayed.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Magic
+  – Detects the magical effects active on other creatures
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
