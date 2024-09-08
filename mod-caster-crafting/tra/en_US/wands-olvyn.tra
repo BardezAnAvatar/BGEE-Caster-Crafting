@@ -814,3 +814,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Far Cast
+@82066 = ~Wand of Far Cast~
+@82067 = ~This wand modifies the next spell or ability used by the wielder in the next 2 rounds. That spell or ability gains unlimited range and can target any creature the party sees, even if the wielder does not see it.
+
+The next spell can be cast immediately, as if the caster had Aura Cleansing.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Far Cast
+  – Detects the magical effects active on other creatures
+  Range: Anywhere visible
+  Duration: 2 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
