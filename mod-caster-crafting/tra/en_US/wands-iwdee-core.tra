@@ -922,3 +922,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Snilloc's Snowball Swarm
+@72042 = ~Wand of Snilloc's Snowball Swarm~
+@72043 = ~This wand causes a flurry of snowballs to erupt from a single point within range. These snowballs will hit everything within the area of effect, doing %magnitude%d3 points of cold damage. Against fire-using or fire-dwelling creatures, it instead inflicts %magnitude%d6 points of cold damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Snilloc's Snowball Swarm
+  – Throws a magical snowball
+  Damage:
+  – Fire creatures: %magnitude%d6 cold damage
+  – Other creatures: %magnitude%d3 cold damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
