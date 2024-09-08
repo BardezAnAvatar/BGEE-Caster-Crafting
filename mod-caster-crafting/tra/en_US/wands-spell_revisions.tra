@@ -1413,3 +1413,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ray of Enfeeblement
+@92032 = ~Wand of Ray of Enfeeblement~
+@92033 = ~This wand weakens an opponent, reducing its strength and thereby the attacks that rely upon it. The victim suffers a -3 penalty to attack and damage rolls and has its movement speed reduced by 50% unless they make a successful saving throw vs. spell at a -2 penalty.
+
+STATISTICS:
+
+Charge abilities:
+– Ray of Enfeeblement
+  – -3 penalty to THAC0
+  – -3 penalty to damage
+  – Movement rate halved
+  School: Necromancy
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
