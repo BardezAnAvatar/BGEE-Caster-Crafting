@@ -684,3 +684,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Intoxicate
+@82056 = ~Wand of Intoxicate~
+@82057 = ~This wand can instantly cause a target to become dangerously drunk, far more than is pleasurable. The target gains four intoxication points for every Constitution point they have less than 25. For example, if the target has 10 Constitution, they will gain 60 intoxication points. Like normal drunkenness, this magical intoxication will wear off over time. A successful Save vs. Wand at -5 negates the effect. Intoxicate has no effect on undead or constructs. Multiple uses of this spell are cumulative.
+
+Creatures lower level than %caster_level% have no save against this spell.
+
+Note: High levels of intoxication give luck penalties and morale boosts. See manual or wiki for details.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Intoxicate
+  – Intoxicates a creature
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (-5 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
