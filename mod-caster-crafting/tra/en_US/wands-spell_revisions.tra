@@ -1536,3 +1536,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Sound Burst
+@92074 = ~Wand of Sound Burst~
+@92075 = ~Upon activation, this wand blasts an area with a tremendous cacophony. Enemies within the area suffer 4d4 points of crushing damage, and are deafened for 1 turn. A successful save vs. breath at -2 penalty halves the damage and negates the deafness. This deafness can be done away with by means of a Dispel Magic spell or a Cure Disease spell.
+
+Deafened spellcasters have a 50% chance to miscast any spell.
+
+STATISTICS:
+
+Charge abilities:
+– Sound Burst
+  – Loud sonic blast
+  – Deafness
+  Damage: 4d4 crushing damage
+  School: Evocation
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: Target, and enemies within 10'
+  Saving Throw: Save vs. Breath (-2 penalty) for half; negate Deafness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
