@@ -1482,3 +1482,34 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Monster Summoning II
+@92070 = ~Wand of Monster Summoning II~
+@92071 = ~Once activated, this wand summons %magnitude% green slimes, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning II
+  – Summons green slimes: %magnitude%
+  School: Conjuration
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Green Slime (2 Hit Dice):
+    STR 14, DEX 9, CON -, INT 3, WIS 3, CHA 3; AL Neutral
+    HP 16, AC 10, THAC0 15, Saving Throws 13/15/13/17/15
+    1 Attack Per Round, 2d4 Acid Damage (Pseudopod)
+    Special Qualities:
+    – Immune to backstab
+    – Immune to charm, confusion, disease, hold, poison, sleep & stun, effects
+    – Electrical Resistance 100%, Acid Resistance 50%
+    – Missile Resistance 90%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
