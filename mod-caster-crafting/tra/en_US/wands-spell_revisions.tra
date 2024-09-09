@@ -1514,3 +1514,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+// Resist Elements
+@92072 = ~Wand of Resist Elements~
+@92073 = ~This wand bolsters the recipient's resistance to all forms of elemental damage by 25%. This effect will last for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Resist Elements
+  – Elemental resistances all +25%
+  School: Abjuration
+  Sphere: Protection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
