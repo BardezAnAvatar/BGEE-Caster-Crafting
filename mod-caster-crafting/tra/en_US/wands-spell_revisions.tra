@@ -1588,3 +1588,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Barkskin
+@92502 = ~Wand of Barkskin~
+@92503 = ~Once activated, the target's skin becomes as tough as bark, improving its Armor Class by %magnitude%. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Barkskin
+  – + %magnitude% bonus to Armor Class
+  School: Alteration
+  Sphere: Plant
+  Range: Touch
+  Duration: 5 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
