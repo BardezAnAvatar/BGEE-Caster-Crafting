@@ -1447,3 +1447,24 @@ Weight: 1~
 /***************************************
 *   2nd Level - Priest - 62500-62999   *
 ***************************************/
+//Aid
+@62500 = ~Wand of Aid~
+@62501 = ~After activation, this wand gives the recipient of this spell gains the benefits of a Bless spell (+1 to attack rolls and Saving Throws) and a special bonus of 1d8 additional Hit Points for the duration of the spell. The Aid spell enables the recipient to actually have more Hit Points than <PRO_HISHER> current maximum. The bonus Hit Points are lost first when the recipient takes damage and may not be regained by curative magic.
+
+STATISTICS:
+(Necromancy, Conjuration)
+
+Charge abilities:
+– Aid
+  – +1 bonus to THAC0
+  – +1 bonus to saving throws
+  – +1d8 temporary maximum HP
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
