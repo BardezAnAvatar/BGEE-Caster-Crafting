@@ -1551,3 +1551,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Find Traps
+@62508 = ~Wand of Find Traps~
+@62509 = ~Once the wielder activates this wand, all traps—concealed normally or magically—of magical or mechanical nature become apparent to <PRO_HIMHER>. Due to the nature of the spell, the wielder must stop to concentrate once per round which will effectively interrupt any action, but all of the traps within a 15-ft. radius of <PRO_HIMHER> will be revealed. This however will not affect spellcasting.
+
+A trap is any device or magical ward that meets three criteria: it can inflict a sudden or unexpected result; the spellcaster would view the result as undesirable or harmful; and the creator specifically intended the harmful or undesirable result as such. Thus traps include glyphs and similar spells or devices.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Find Traps
+  – Reveals traps
+  Duration: 3 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
