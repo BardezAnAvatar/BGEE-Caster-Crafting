@@ -993,3 +993,36 @@ Weight: 1~
 /***************************************
 *   2nd Level - Priest - 72500-72999   *
 ***************************************/
+//Chant
+@72504 = ~Wand of Chant~
+@72505 = ~This wand will bring special favor upon allies and cause harm to enemies. When the Chant spell is completed, all the wielder's allies within the area of effect gain a +1 bonus to attack rolls, minimum damage/healing rolls, and Saving Throws. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1†.  The wielder's enemies suffer the opposite effects. Multiple chants are not cumulative. This requires a moderate amount of concentration by the wielder, so the wielder cannot cast any spells for the chant's duration, and <PRO_HISHER> movement is slowed by half.
+
+†: For example, a 6d6 fireball will do 6d5 damage, and an arrow of fire that deals 1d6+2 piercing plus 1d6 fire damage will deal 1d6+2 piercing plus 1d5 fire damage instead.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Chant
+  – Wielder
+    – Cannot cast spells
+    – Movement speed cut by half
+  – Allies
+    – +1 bonus to THAC0
+    – +1 bonus to damage/healing
+    – +1 bonus to saving throws
+    – -1 penalty to non-weapon damage taken dice size
+  – Enemies
+    – -1 penalty to THAC0
+    – -1 penalty to damage/healing
+    – -1 penalty to saving throws
+    – +1 bonus to non-weapon damage taken dice size
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 60-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

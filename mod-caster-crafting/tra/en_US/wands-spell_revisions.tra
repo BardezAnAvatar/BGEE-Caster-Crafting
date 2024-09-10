@@ -1610,3 +1610,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chant
+@92504 = ~Wand of Chant~
+@92505 = ~This wand will bring special favor upon allies, and causes harm to enemies. When the chant is completed, all attack rolls, damage rolls, and saving throws made by those in the area of effect who are friendly to the wielder gain +1 bonuses, while those of the wielder's enemies suffer -1 penalties. Multiple Chant spells are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Chant
+  – Allies
+    – +1 bonus to THAC0
+    – +1 bonus to damage/healing
+    – +1 bonus to saving throws
+  – Enemies
+    – -1 penalty to THAC0
+    – -1 penalty to damage/healing
+    – -1 penalty to saving throws
+  School: Conjuration
+  Sphere: Combat
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
