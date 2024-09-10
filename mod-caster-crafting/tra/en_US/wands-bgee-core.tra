@@ -1468,3 +1468,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Barkskin
+@62502 = ~Wand of Barkskin~
+@62503 = ~Once activated, the target's skin becomes as tough as bark, increasing its base Armor Class to %magnitude%. In addition, Saving Throws vs. all attack forms except magic gain a +1 bonus. This spell can be placed on the wielder or on any other creature <PRO_HESHE> touches.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Barkskin
+  – base AC set to %magnitude%
+  – +1 bonus to saving throws:
+    – Death
+    – Wand
+    – Polymorph
+    – Breath
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
