@@ -1073,3 +1073,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Slow Poison
+@72520 = ~Wand of Slow Poison~
+@72521 = ~This wand allows the wielder to treat a poisoned individual; it slows the effects of venom. This spell does not neutralize the poison; instead, it just slows it down enough for the recipient to get real healing at a temple or from <PRO_HISHER> party's priest.
+
+This spell also cures intoxication.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Slow Poison
+  – Slows poisons in target
+  – Cures intoxication
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
