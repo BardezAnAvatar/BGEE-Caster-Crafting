@@ -1789,3 +1789,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spiritual Hammer
+@92522 = ~Wand of Spiritual Hammer~
+@92523 = ~This wand brings into existence a field of force shaped vaguely like a hammer. The spiritual hammer is wielded as if proficient with the weapon, at the wielder's normal THAC0. As long as the wielder concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, but the wielder does not receive the standard penalty for holding a ranged weapon when engaged in close combat. It functions as a magical weapon, dealing 1d8+1 points of magic damage, with an enchantment bonus of +%magnitude%. Due to its ethereal nature, strength modifiers do not apply to attack rolls or damage, and attacks with the spiritual weapon are considered melee touch attacks (+4 attack roll bonus).
+
+STATISTICS:
+
+Charge abilities:
+– Spiritual Hammer
+  – Manifests a magical hammer
+  Damage:
+  – 1d8+%magnitude2% magic damage
+  – +%magnitude% bonus to THAC0
+  – Melee touch (+4 bonus to THAC0)
+  School: Evocation
+  Sphere: Combat
+  Range: Medium
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
