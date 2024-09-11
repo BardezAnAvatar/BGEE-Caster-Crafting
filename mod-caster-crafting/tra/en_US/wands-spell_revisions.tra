@@ -1715,3 +1715,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Goodberry
+@92512 = ~Wand of Goodberry~
+@92513 = ~This wand creates 5 magical berries that the wielder can carry with him or give to others. These berries initially cure %magnitude% points of physical damage for each one eaten. The berries last for 8 hours, or until eaten.
+
+STATISTICS:
+
+Charge abilities:
+– Goodberry
+  – Creates magical healing berriesSchool: Alteration
+  Sphere: Plant
+  Range: Personal
+  Healing: Each berry heals %magnitude% HP
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
