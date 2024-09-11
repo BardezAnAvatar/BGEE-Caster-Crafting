@@ -1689,3 +1689,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Flame Blade
+@92510 = ~Wand of Flame Blade~
+@92511 = ~Upon activation, a blazing ray of red-hot fire to spring forth from the wielder's hand. This blade-like ray is wielded as if proficient with the weapon, at the wielder's normal THAC0. It functions as a magical weapon, dealing 2d6+1 points of fire damage, with an enchantment bonus of +%magnitude%. Since the blade is immaterial, strength modifiers do not apply to attack rolls or damage, and attacks with the flame blade are considered melee touch attacks (+4 attack roll bonus).
+
+STATISTICS:
+
+Charge abilities:
+– Flame Blade
+  – Flaming +%magnitude% blade
+  School: Evocation
+  Sphere: Elemental (Fire)
+  Damage:
+  – 2d6+%magnitude% points of fire damage
+  – +%magnitude% bonus to THAC0
+  – Melee touch (+4 bonus to THAC0)
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
