@@ -1048,3 +1048,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Hold Person
+@72514 = ~Wand of Hold Person~
+@72515 = ~This wand will hold its humanoid† target and those surrounding <PRO_HIMHER> when activated; the effect is centered on the victim selected by the wielder and it affects the targeted enemy and up to 3 hostile creatures within 20 ft. of it. Those who succeed on their save vs. Wand are totally unaffected by the spell.
+
+Paralyzed creatures are helpless and cannot dodge or defend themselves from attacks. Being held does not prevent the worsening of the subject's condition due to wounds, disease, or poison.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Person
+  – Paralyzes 1d4 targets
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1d4 creatures
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
