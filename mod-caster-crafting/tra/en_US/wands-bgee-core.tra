@@ -1595,3 +1595,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Goodberry
+@62512 = ~Wand of Goodberry~
+@62513 = ~This wand creates 5 magical berries that the wielder can carry with <PRO_HIMHER>. Each berry restores 1 Hit Point when eaten.
+
+STATISTICS:
+(Alteration, Evocation)
+
+Charge abilities:
+– Goodberry
+  – Creates magical healing berries
+  Healing: Each berry heals 1 HP
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
