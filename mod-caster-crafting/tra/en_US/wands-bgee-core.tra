@@ -1573,3 +1573,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Flame Blade
+@62510 = ~Wand of Flame Blade~
+@62511 = ~Upon activation, a blazing ray of red-hot fire to spring forth from the wielder's hand. This blade-like ray is wielded as if it were a sword that the wielder already knows how to use, hence there are no bonuses or penalties. If the wielder successfully hits with the flame blade in melee combat, the creature struck suffers 1d4 points of slashing damage, plus an additional 1d2+4 points of fire damage. However, it is not a magical weapon in the normal sense of the term, so creatures struck only by magical weapons are not harmed by it.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Flame Blade
+  – Flaming sword
+  Damage: 1d4 slashing, 1d2+4 fire damange per hit
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
