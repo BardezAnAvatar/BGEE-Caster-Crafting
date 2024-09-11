@@ -1666,3 +1666,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Silence, 15' Radius
+@62518 = ~Wand of Silence, 15' Radius~
+@62519 = ~Once activated, this wand causes complete silence to prevail in the affected area. All sound is stopped: Conversation is impossible and spells cannot be cast. Each creature in the area must make a Saving Throw vs. Wand with a -5 penalty; if the save is failed, then they are silenced for the duration of the spell. Note that this spell does not continue to affect the area after being cast; only those in the area at the time of the casting are affected by the silence.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Silence, 15' Radius
+  – Silences everyone within a 15' radius
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius sphere
+  Saving Throw: Save vs. Wand (-5 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
