@@ -1764,3 +1764,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Slow Poison
+@92520 = ~Wand of Slow Poison~
+@92521 = ~This wand allows the wielder to cure a poisoned individual; it greatly slows the effects of venom, actually neutralizing all but the most deadly poisons.
+
+This spell also cures intoxication.
+
+STATISTICS:
+
+Charge abilities:
+– Slow Poison
+  – Slows poisons in target
+  – Cures intoxication
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
