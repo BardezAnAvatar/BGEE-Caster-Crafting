@@ -1731,3 +1731,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Draw Upon Holy Might
+@62524 = ~Wand of Draw Upon Holy Might~
+@62525 = ~This wand channels divine power to grant the wielder physical greatness for a short period. When <PRO_HESHE> does this, <PRO_HISHER> Strength, Constitution, and Dexterity are all raised by %magnitude%.
+
+STATISTICS:
+(Invocation)
+
+Charge abilities:
+– Draw Upon Holy Might
+  – Strength raised by %magnitude%.
+  – Constitution raised by %magnitude%.
+  – Dexterity raised by %magnitude%.
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

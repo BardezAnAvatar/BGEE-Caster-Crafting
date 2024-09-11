@@ -1815,3 +1815,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Draw Upon Holy Might
+@92524 = ~Wand of Draw Upon Holy Might~
+@92525 = ~This wand causes the wielder's body to shudder and glow with a shimmering aura as it becomes a vessel for divine power. When <PRO_HESHE> does this, <PRO_HISHER> strength, dexterity, and constitution scores are raised by %magnitude%. This spell is not cumulative with itself or with other similar spells.
+
+STATISTICS:
+
+Charge abilities:
+– Draw Upon Holy Might
+  – Strength raised by %magnitude%.
+  – Constitution raised by %magnitude%.
+  – Dexterity raised by %magnitude%.
+  School: Evocation
+  Sphere: Combat
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
