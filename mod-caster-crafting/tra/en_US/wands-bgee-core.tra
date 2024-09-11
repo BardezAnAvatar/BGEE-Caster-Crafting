@@ -1753,3 +1753,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Writhing Fog
+@62526 = ~Wand of Writhing Fog~
+@62527 = ~Once activated, this wand conjures a cloud of writhing fog that chills and hinders anyone within its area other than the wielder. Creatures in the fog take 1d3 points of cold damage per round. In addition, there is a 20% chance that they must save vs. Death or be slowed for 1 round. Creatures immune to cold damage do not suffer any adverse effects from this spell.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Writhing Fog
+  – Emits chilling fog
+  – 20% chance to be slowed for 1 round.
+  Damage: 1d3 cold damage per round
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Death negates Slow
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
