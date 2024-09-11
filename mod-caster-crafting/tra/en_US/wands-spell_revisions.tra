@@ -1737,3 +1737,30 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Hold Person
+@92514 = ~Wand of Hold Person~
+@92515 = ~This wand will hold one or more humanoid† creatures rigidly immobile and in place for one turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at a saving throw vs. Wand are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+
+Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+
+Charge abilities:
+– Hold Person
+  – Holds target
+  – Holds enemies nearby target
+  School: Enchantment
+  Sphere: Charm, Law
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: Target, and enemies within 5'
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
