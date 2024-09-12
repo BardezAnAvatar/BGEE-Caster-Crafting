@@ -1121,3 +1121,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Moderate Wounds
+@62528 = ~Wand of Cure Moderate Wounds~
+@62529 = ~Once activated, this wand heals 11 Hit Points and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Moderate Wounds
+  – Healed for 11 hit points
+  – Cures intoxication
+  Range: Touch
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
