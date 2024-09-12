@@ -1143,3 +1143,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Alicorn Lance
+@62530 = ~Wand of Alicorn Lance~
+@62531 = ~Upon activation, this wand creates a silver-hued, partially ethereal lance shaped in the form of an alicorn (a unicorn horn). The wielder chooses a target, and the alicorn lance instantaneously fires at it, inflicting 3d6 points of piercing damage with a Save vs. Wand for half. Although the alicorn lance dissipates after it strikes, it always leaves a silvery radiance around the target that makes it easier to see and hit, giving <PRO_HIMHER> a -2 penalty to <PRO_HISHER> Armor Class for 3 rounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Alicorn Lance
+  – Materializes an etherial silver lance
+  – Silvery radiance
+    – -2 penalty to AC
+  Damage: 3d6 piercing damage
+  Range: Touch
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
