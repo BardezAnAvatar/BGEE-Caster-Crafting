@@ -1959,3 +1959,50 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Fire Trap
+@92538 = ~Wand of Fire Trap~
+@92539 = ~Once activated, the wielder can weave a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 15 feet of the trap, it is triggered and explodes, damaging every enemy within a 20 foot radius. The damage inflicted is equal to %magnitude%d4 points of fire damage. Those who a roll successful saving throw vs. breath will receive only half damage. This spell will not harm party members.
+
+STATISTICS:
+
+Charge abilities:
+– Fire Trap
+  – Sets a fire trap
+  School: Abjuration
+  Sphere: Elemental (Fire)
+  Damage: %magnitude%d4 fire damage
+  Range: Short
+  Duration: Permanent
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Gust of Wind
+@92540 = ~Wand of Gust of Wind~
+@92541 = ~This wand can create a severe blast of air that originates from the wielder, affecting all enemies in its path. Those within 6 feet must save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) in the wielder's current area.
+
+STATISTICS:
+
+Charge abilities:
+– Gust of Wind
+  – Knock down
+  – Clears cloud effects
+  School: Evocation
+  Sphere: Elemental (Air)
+  Damage: %magnitude%d4 fire damage
+  Range: Short
+  Duration: Permanent
+  Area of Effect: Within 6' of a line
+  Saving Throw: Save vs. Breath negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
