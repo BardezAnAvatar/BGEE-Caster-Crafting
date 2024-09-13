@@ -1936,3 +1936,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Fire Trap
+@92538 = ~Wand of Fire Trap~
+@92539 = ~Once activated, the wielder can weave a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 15 feet of the trap, it is triggered and explodes, damaging every enemy within a 20 foot radius. The damage inflicted is equal to %magnitude%d4 points of fire damage. Those who a roll successful saving throw vs. breath will receive only half damage. This spell will not harm party members.
+
+STATISTICS:
+
+Charge abilities:
+– Fire Trap
+  – Sets a fire trap
+  School: Abjuration
+  Sphere: Elemental (Fire)
+  Damage: %magnitude%d4 fire damage
+  Range: Short
+  Duration: Permanent
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
