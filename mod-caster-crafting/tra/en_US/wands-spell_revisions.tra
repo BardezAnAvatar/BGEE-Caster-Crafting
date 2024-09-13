@@ -1280,6 +1280,28 @@ Requires:
 Weight: 1~
 
 
+//Silence
+@92518 = ~Wand of Silence~
+@92519 = ~Once activated, this wand causes complete silence to prevail in the affected area. All sound is stopped: conversation is impossible and spells cannot be cast unless an affected spellcaster then casts Vocalize. All enemies in the area must make a saving throw vs. spell at -4; if the save is failed, then they are silenced for the duration of the spell. At the instant the spell is completed, it affects all creatures in a 15 foot radius centered on the point selected by the wielder (thus, affected creatures leaving the area are still subject to the spell’s effect; those entering the area after the casting is completed are not).
+
+STATISTICS:
+
+Charge abilities:
+– Silence
+  – Silences everyone within a 15' radius
+  School: Alteration
+  Sphere: Guardian
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius sphere
+  Saving Throw: Save vs. Wand (-4 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Strength
 @92020 = ~Wand of Strength~
 @92021 = ~Upon activation, the target's Strength is magically set to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then <PRO_HISHER> strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then <PRO_HISHER> strength will become 18/50 + original percentage. If <PRO_HISHER> strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more.
