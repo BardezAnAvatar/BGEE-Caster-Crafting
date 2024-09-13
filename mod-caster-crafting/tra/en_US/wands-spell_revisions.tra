@@ -1815,14 +1815,14 @@ Requires:
 Weight: 1~
 
 
-//Draw Upon Holy Might
-@92524 = ~Wand of Draw Upon Holy Might~
+//Draw Upon Divine Might
+@92524 = ~Wand of Draw Upon Divine Might~
 @92525 = ~This wand causes the wielder's body to shudder and glow with a shimmering aura as it becomes a vessel for divine power. When <PRO_HESHE> does this, <PRO_HISHER> strength, dexterity, and constitution scores are raised by %magnitude%. This spell is not cumulative with itself or with other similar spells.
 
 STATISTICS:
 
 Charge abilities:
-– Draw Upon Holy Might
+– Draw Upon Divine Might
   – Strength raised by %magnitude%.
   – Constitution raised by %magnitude%.
   – Dexterity raised by %magnitude%.
@@ -1855,6 +1855,29 @@ Charge abilities:
   Duration: 1 turn
   Area of Effect: 15-ft. radius
   Saving Throw: Save vs. Death negates Slow
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Moderate Wounds
+@92528 = ~Wand of Cure Moderate Wounds~
+@92529 = ~Once activated, this wand causes wounds and other injuries to the creature' body to be healed. The wielder can restore 2d8 +%magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+
+Charge abilities:
+– Cure Moderate Wounds
+  – Healed for 2d8 +%magnitude% hit points
+  – Cures intoxication
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
 
 Requires:
  9 Intelligence
