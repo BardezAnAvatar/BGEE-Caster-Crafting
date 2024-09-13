@@ -1862,3 +1862,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Moderate Wounds
+@92534 = ~Wand of Cause Moderate Wounds~
+@92535 = ~This wand charges the wielder's hands; upon a successful touch from the wielder, the spell inflicts 2d8 +%magnitude% damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Cause Moderate Wounds
+  – Charges hands with magical damaging energy
+  – +4 bonus to THAC0
+  School: Necromancy
+  Sphere: Necromantic
+  Damage: 2d8 +%magnitude% magic damage
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
