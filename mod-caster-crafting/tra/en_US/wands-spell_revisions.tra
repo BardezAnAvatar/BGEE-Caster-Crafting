@@ -1003,8 +1003,6 @@ Weight: 1~
 @91532 = ~Wand of Animal Summoning I~
 @91533 = ~Upon activation, the wand calls forth %magnitude% large bats, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
 
-
-
 STATISTICS:
 
 Charge abilities:
@@ -1881,6 +1879,35 @@ Charge abilities:
   Duration: 1 turn
   Area of Effect: 1 creature
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animal Summoning II
+@92536 = ~Wand of Animal Summoning II~
+@92537 = ~Upon activation, the wand calls forth %magnitude% war dogs, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning II
+  – Summons %magnitude% bats
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – War Dog (2 Hit Dice):
+  STR 15, DEX 15, CON 15, INT 4, WIS 12, CHA 6; AL Neutral
+  HP 18, AC 4, THAC0 18, Saving Throws 13/17/13/15/17
+  1 Attack Per Round, 1d6 Piercing Damage (Bite)
+  Combat Abilities:
+  – Scent: detect invisible creatures within 10 feet
 
 Requires:
  9 Intelligence
