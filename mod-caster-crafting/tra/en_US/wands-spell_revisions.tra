@@ -2030,3 +2030,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Regenerate Moderate Wounds
+@92544 = ~Wand of Regenerate Moderate Wounds~
+@92545 = ~When activating the wand, it imbues a creature with the ability to regenerate. The creature affected will regain 2 hit points per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Regenerate Moderate Wounds
+  – Regain 2 hit point per round
+  School: Alteration
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
