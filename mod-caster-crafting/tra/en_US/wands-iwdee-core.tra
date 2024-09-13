@@ -1124,8 +1124,8 @@ Weight: 1~
 
 
 //Cure Moderate Wounds
-@62528 = ~Wand of Cure Moderate Wounds~
-@62529 = ~Once activated, this wand heals 11 Hit Points and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
+@72528 = ~Wand of Cure Moderate Wounds~
+@72529 = ~Once activated, this wand heals 11 Hit Points and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
 
 STATISTICS:
 (Necromancy)
@@ -1146,8 +1146,8 @@ Weight: 1~
 
 
 //Alicorn Lance
-@62530 = ~Wand of Alicorn Lance~
-@62531 = ~Upon activation, this wand creates a silver-hued, partially ethereal lance shaped in the form of an alicorn (a unicorn horn). The wielder chooses a target, and the alicorn lance instantaneously fires at it, inflicting 3d6 points of piercing damage with a Save vs. Wand for half. Although the alicorn lance dissipates after it strikes, it always leaves a silvery radiance around the target that makes it easier to see and hit, giving <PRO_HIMHER> a -2 penalty to <PRO_HISHER> Armor Class for 3 rounds.
+@72530 = ~Wand of Alicorn Lance~
+@72531 = ~Upon activation, this wand creates a silver-hued, partially ethereal lance shaped in the form of an alicorn (a unicorn horn). The wielder chooses a target, and the alicorn lance instantaneously fires at it, inflicting 3d6 points of piercing damage with a Save vs. Wand for half. Although the alicorn lance dissipates after it strikes, it always leaves a silvery radiance around the target that makes it easier to see and hit, giving <PRO_HIMHER> a -2 penalty to <PRO_HISHER> Armor Class for 3 rounds.
 
 STATISTICS:
 (Necromancy)
@@ -1162,6 +1162,30 @@ Charge abilities:
   Duration: 3 rounds
   Area of Effect: 1 creature
   Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Beast Claw
+@72532 = ~Wand of Beast Claw~
+@72533 = ~This wand transforms the caster's arms into the claws of a mighty beast, giving the wielder 18/72 Strength and the ability to rake an opponent for 2d4 (plus Strength bonus) points of slashing damage. The wielder can attack twice per round with the beast claws, with a +2 bonus to hit.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Beast Claw
+  – Stength set to 18/72
+  – Given claws
+    – 2d4 (plus Strength bonus) slashing damage
+    – Can attack twice per round
+    – +2 bonus to THAC0
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
 
 Requires:
  9 Intelligence
