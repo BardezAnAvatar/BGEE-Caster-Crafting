@@ -2006,3 +2006,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Know Opponent
+@92542 = ~Wand of Know Opponent~
+@92543 = ~Once activated, this wand causes the wielder's eyes to glow with magical energy, enabling <PRO_HIMHER> to read the aura of a creature, and determine the creature's strengths and weaknesses. For the duration of the spell, the target's physical resistances are lowered by 10% and all attacks against the target creature are made with a +2 bonus to the attack roll. Certain magical devices negate the power of the Know Opponent spell, and the spell has no effect on creatures who don't emanate auras, such as constructs. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Know Opponent
+  – Physical resistances are lowered by 10%
+  – +2 bonus to THAC0 vs. target
+  School: Divination
+  Sphere: Divination
+  Damage: %magnitude%d4 fire damage
+  Range: Long
+  Duration: 2 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
