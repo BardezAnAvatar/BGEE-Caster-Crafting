@@ -1191,3 +1191,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Moderate Wounds
+@72534 = ~Wand of Cause Moderate Wounds~
+@72535 = ~This wand charges the wielder's hands which deals 11 points of damage (save vs. Spell for half) to the target's body. This spell has no effect on undead, constructs, or extraplanar creatures. It cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Moderate Wounds
+  – Charges hands with magical damaging energy
+  Damage: 11 magic damage
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
