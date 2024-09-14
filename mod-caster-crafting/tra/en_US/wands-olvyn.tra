@@ -847,3 +847,21 @@ Weight: 1~
 /***************************************
 *   3rd Level - Arcane - 83000-83499   *
 ***************************************/
+//Clairvoyance
+@83000 = ~Wand of Clairvoyance~
+@83001 = ~Once activated, this wand empowers the wizard to see in <PRO_HISHER> mind the geographical features and buildings of the region <PRO_HESHE> is currently exploring. It extends to a great range, but cannot reveal creatures or their movements.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Clairvoyance
+  – Reveals area
+  Duration: Instant
+  Area of Effect: Entire area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
