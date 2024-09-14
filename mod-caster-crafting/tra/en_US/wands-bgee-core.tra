@@ -1781,3 +1781,21 @@ Weight: 1~
 /***************************************
 *   3rd Level - Arcane - 63000-63499   *
 ***************************************/
+//Clairvoyance
+@63000 = ~Wand of Clairvoyance~
+@63001 = ~Once activated, this wand empowers the wizard to see in <PRO_HISHER> mind the geographical features and buildings of the region <PRO_HESHE> is currently exploring. It extends to a great range, but cannot reveal creatures or their movements. This spell does not function indoors or underground.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Clairvoyance
+  – Reveals outdoor area
+  Duration: Instant
+  Area of Effect: Entire area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -2079,3 +2079,22 @@ Weight: 1~
 /***************************************
 *   3rd Level - Arcane - 93000-93499   *
 ***************************************/
+//Clairvoyance
+@93000 = ~Wand of Clairvoyance~
+@93001 = ~Once activated, this wand unnatural perception of things to come. Once Clairvoyance is cast, the wielder receives instantaneous warnings of impending danger or harm. <PRO_HESHE> becomes impossible to surprise and cannot be backstabbed. In addition, the spell gives a general idea of what action might be taken to best protect oneself, granting a +2 insight bonus to AC and saves vs. breath. The effects last for the duration of the spell, and cannot be dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Clairvoyance
+  – +2 bonus to Armor Class
+  – +2 bonus to Breath saving throws
+  – Immunity to backstab
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
