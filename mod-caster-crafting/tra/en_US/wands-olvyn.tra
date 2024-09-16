@@ -865,3 +865,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Monster Summoning I
+@83014 = ~Wand of Monster Summoning I~
+@83015 = ~This wand summons a horde of monsters, each of which are worth between 7 and 35 experience points. The monsters appearing are randomly determined and ignore the summoning limit. They will remain under the wielder's control until slain or the spell duration expires. The monsters summoned are worth a total of around 20 XP per caster level.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning I
+  – Summons monsters
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
