@@ -2235,3 +2235,65 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Monster Summoning III
+@93014 = ~Wand of Monster Summoning III~
+@93015 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning III
+  – Summons %magnitude% hobgoblins
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hobgoblin Archer (3 Hit Dice):
+  STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
+  HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
+  2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
+  or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning III
+@93016 = ~Wand of Monster Summoning III~
+@93017 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning III
+  – Summons %magnitude% hobgoblins
+  – Summons 1 hobgoblin shaman
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hobgoblin Archer (3 Hit Dice):
+  STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
+  HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
+  2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
+  or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
+  – Hobgoblin Shaman (4 Hit Dice):
+  STR 13, DEX 11, CON 15, INT 9, WIS 14, CHA 9; AL Lawful Evil
+  HP 36, AC 5, THAC0 16, Saving Throws 9/13/12/15/14
+  1 Attack Per Round, 1d8+1 Slashing Damage (Long Sword +1)
+  Memorized Spells:
+    – 1º Armor of Faith, Bless, Cure Light Wounds (x2), Resist Fear
+    – 2º Chant, Hold Person, Silence
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
