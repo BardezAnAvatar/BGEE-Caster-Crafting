@@ -1871,3 +1871,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Haste
+@63008 = ~Wand of Haste~
+@63009 = ~Upon activation, this wand causes all creatures affected to function at double their normal movement rate, gain a -2 initiative bonus, and receive an extra attack per round. Spellcasting and spell effects are not affected. Note that this spell negates the effects of a Slow spell. At the instant the spell is completed, it affects all allied creatures in a 15-ft. radius centered on a point selected by the caster (thus, creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not). This spell is not cumulative with itself or with other similar magic.
+
+Thus, a creature moving at 6 and attacking once per round would move at 12 and attack twice per round.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Haste
+  – Doubles movement speed
+  – -2 bonus to initiative
+  – +1 attack per round
+  Range: 15 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
