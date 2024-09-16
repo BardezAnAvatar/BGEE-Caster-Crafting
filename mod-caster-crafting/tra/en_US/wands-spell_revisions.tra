@@ -2297,3 +2297,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Non-Detection
+@93018 = ~Wand of Non-Detection~
+@93019 = ~Once activated, this wand makes the creature touched undetectable by divination spells such as Detect Invisibility, Oracle, and True Seeing, or by a thief's Detect Illusion ability, though an invisible person may still be audible when moving and his presence may still be sensed. Non-Detection wards the creature's gear as well as the creature itself.
+
+STATISTICS:
+
+Charge abilities:
+– Non-Detection
+  – Avoid invisibility detection
+  School: Abjuration
+  Range: Touch
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

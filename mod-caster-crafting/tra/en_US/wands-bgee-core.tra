@@ -1959,3 +1959,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Non-Detection
+@93018 = ~Wand of Non-Detection~
+@93019 = ~Once activated, this wand makes the creature touched undetectable by divination spells such as Clairaudience, Clairvoyance, Locate Object, ESP, and detect spells including Invisibility Purge. It also prevents location by such magical items as crystal balls and ESP medallions. It does not affect the Know Alignment spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Non-Detection
+  – Avoid invisibility detection
+  Range: Touch
+  Duration: 4 hours
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
