@@ -1916,3 +1916,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Lightning Bolt
+@63012 = ~Wand of Lightning Bolt~
+@63013 = ~The possessor of the wand can discharge a bolt of lightning. As it passes through a creature, it does %magnitude%d6 points of electrical damage with a Save vs. Wand for half. The bolt will continue through the target and proceed to "rebound" until expended.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Lightning Bolt
+  – Launches a bolt of lightning
+  Damage: %magnitide%d6 electrical damage
+  Range: %range%
+  Duration: Instant
+  Area of Effect: Path of bolt
+  Saving Throw: Save vs. Wand for half
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
