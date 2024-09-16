@@ -1329,3 +1329,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Non-Detection
+@73018 = ~Wand of Non-Detection~
+@73019 = ~Once activated, this wand makes the creature touched undetectable by divination magics such as Clairvoyance and the Detect spells. It also prevents spells that reveal hidden or invisible creatures, such as Invisibility Purge, from working on the target.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Non-Detection
+  – Avoid invisibility detection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
