@@ -1240,3 +1240,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Fireball
+@73006 = ~Wand of Fireball~
+@73007 = ~This wand hurls an explosive burst of flame that detonates with a low roar. The wielder points <PRO_HISHER> finger and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the wand and blossoms into a fireball, delivering %magnitude%d6 points of fire damage. Those who roll successful a Save vs. Wand manage to dodge, fall flat, or roll aside, taking only half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireball
+  – Hurls a fireball
+  Damage:
+  – %magnitude%d6 fire damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
