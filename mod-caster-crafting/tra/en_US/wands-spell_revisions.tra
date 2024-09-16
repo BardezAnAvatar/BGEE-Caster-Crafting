@@ -2121,3 +2121,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Flame Arrow
+@93004 = ~Wand of Flame Arrow~
+@93005 = ~This wand hurls flaming arrows at his enemies. The wand creates %magnitude% bolt(s) and each arror inflicts 1d6 points of missile damage plus 1d6 points of fire damage. Upon completion of the spell, the first arrow will streak towards the creature targeted by the wizard, while additional arrows will randomly target opponents within range.
+
+STATISTICS:
+
+Charge abilities:
+– Flame Arrow
+  – Hurls fiery arrow(s) at enemies
+  Damage:
+  – 1d6 missile damage
+  – 1d6 fire damage
+  School: Conjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: Special
+  Saving Throw: Save vs. Breath for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

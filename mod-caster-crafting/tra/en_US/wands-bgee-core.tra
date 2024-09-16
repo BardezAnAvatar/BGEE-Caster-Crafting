@@ -1824,3 +1824,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Flame Arrow
+@63004 = ~Wand of Flame Arrow~
+@63005 = ~This wand hurls fiery bolts at an opponent within range. Each bolt inflicts 1d6 points of piercing damage plus 4d6 points of fire damage. Only half of the fire damage is inflicted if the creature struck saves vs. Spell. The wand creates %magnitude% bolt(s); all of the bolts will streak toward the target of the spell.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Flame Arrow
+  – Hurls fiery arrow(s) at target
+  Damage:
+  – 1d6 piercing damage
+  – 4d6 fire damage
+  Range: 60 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
