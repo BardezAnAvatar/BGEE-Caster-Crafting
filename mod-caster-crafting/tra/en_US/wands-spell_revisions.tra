@@ -2339,3 +2339,31 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Slow
+@93022 = ~Wand of Slow~
+@93023 = ~This wand causes creatures to move and attack at half of their normal rates unless a save vs. polymorph at -2 is made. Slowed creatures also suffer a -2 penalty to attack rolls, AC, and saves vs. breath. Spellcasting time is doubled, though spell effects are not affected. Furthermore, the rate at which these creatures regenerate or suffer damage from poison is halved. At the instant the spell is completed, all hostile creatures in 30 foot radius of a point selected by the caster will be affected (thus, creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not). It negates the effects of a Haste spell, but does not otherwise affect magically speeded or slowed creatures. This spell is not cumulative with itself or with other similar magic.
+
+STATISTICS:
+
+Charge abilities:
+– Slow
+  – Attacks per round halved
+  – Movement speed halved
+  – Dispells Haste
+  – -2 penalty to THAC0
+  – -2 penalty to Armor Class
+  – -2 penalty to Breath saves
+  – Spellcasting time doubled
+  – Regeneration and poison frequency halved
+  School: Alteration
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Polymorph (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
