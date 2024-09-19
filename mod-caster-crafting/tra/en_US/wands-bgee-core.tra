@@ -1962,8 +1962,8 @@ Weight: 1~
 
 
 //Non-Detection
-@93018 = ~Wand of Non-Detection~
-@93019 = ~Once activated, this wand makes the creature touched undetectable by divination spells such as Clairaudience, Clairvoyance, Locate Object, ESP, and detect spells including Invisibility Purge. It also prevents location by such magical items as crystal balls and ESP medallions. It does not affect the Know Alignment spell.
+@63018 = ~Wand of Non-Detection~
+@63019 = ~Once activated, this wand makes the creature touched undetectable by divination spells such as Clairaudience, Clairvoyance, Locate Object, ESP, and detect spells including Invisibility Purge. It also prevents location by such magical items as crystal balls and ESP medallions. It does not affect the Know Alignment spell.
 
 STATISTICS:
 (Abjuration)
@@ -1973,6 +1973,28 @@ Charge abilities:
   – Avoid invisibility detection
   Range: Touch
   Duration: 4 hours
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Normal Missiles
+@63020 = ~Wand of Protection From Normal Missiles~
+@63021 = ~Upon activation, this wand bestows total invulnerability to non-magical hurled and launched missiles such as arrows, bolts, bullets, darts, throwing axes, and throwing daggers. Note, however, that this spell does not convey any protection from such magical attacks as Fireball, Lightning Bolt, or Magic Missile, nor does it protect against magical missiles such as arrows +1.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Normal Missiles
+  – Protected from non-magical missile damage
+  – Avoid invisibility detection
+  Range: Touch
+  Duration: %duration%
   Area of Effect: 1 creature
   Saving Throw: None
 
