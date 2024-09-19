@@ -2367,3 +2367,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Skull Trap
+@93024 = ~Wand of Skull Trap~
+@93025 = ~Upon activation, this wand generates a skull at the target area. The skull floats in the area until a creature comes within 15 feet of it. When this happens, the skull is triggered and explodes damaging everyone within a 20 foot radius. The damage inflicted is equal to %magnitude%d6, with a save vs. breath at -2 allowed for half damage. When casting this spell, it is wise to set it far away from the party lest they set it off accidentally. Undead creatures are not affected by this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Skull Trap
+  – Skull that detonates if creature nearby
+  Damage: %magnitude%d6 magic damage
+  School: Necromancy
+  Range: Medium
+  Duration: Permanent
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath (-2 penalty) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
