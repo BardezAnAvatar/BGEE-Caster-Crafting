@@ -2318,3 +2318,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Missiles
+@93020 = ~Wand of Protection From Missiles~
+@93021 = ~Upon activation, this wand bestows upon a creature total invulnerability to hurled and projected missiles such as arrows, axes, bolts, javelins, and sling stones. This spell does not convey any protection from magical attacks such as Fireballs, Lightning Bolts, or Magic Missiles, but magically created missiles such as Melf’s Acid Arrows, Melf’s Minute Meteors, and Flame Arrows will be harmlessly deflected.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Normal Missiles
+  – Protected from missile damage
+  School: Abjuration
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
