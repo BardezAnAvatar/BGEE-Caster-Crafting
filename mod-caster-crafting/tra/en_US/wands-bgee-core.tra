@@ -1992,11 +1992,34 @@ STATISTICS:
 Charge abilities:
 – Protection From Normal Missiles
   – Protected from non-magical missile damage
-  – Avoid invisibility detection
   Range: Touch
   Duration: %duration%
   Area of Effect: 1 creature
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Slow
+@63022 = ~Wand of Slow~
+@63023 = ~This wand causes creatures to move and attack at half of their normal rates. Once activated, it negates Haste, but does not otherwise affect magically hasted or slowed creatures. Slowed creatures have an Armor Class and attack penalty of -4. Creatures save at -4 vs. Spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Slow
+  – Attacks per round halved
+  – Movement speed halved
+  – Dispells Haste
+  – -4 penalty to Armor Class
+  Range: 25 ft.
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (-4 penalty) negates
 
 Requires:
  9 Intelligence
