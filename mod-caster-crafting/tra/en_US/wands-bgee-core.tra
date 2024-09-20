@@ -2047,3 +2047,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Vampiric Touch
+@63026 = ~Wand of Vampiric Touch~
+@63027 = ~Once activated, this wand drains the target who loses %magnitude%d6 Hit Points; these Hit Points are added to the wielder's current Hit Points, with any Hit Points over the wielder's normal maximum treated as temporary additional Hit Points. The temporary Hit Points last for 1 hour.
+
+Note: This spell may not be cast multiple times to radically increase the caster's maximum Hit Points.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Vampiric Touch
+  – Drains target
+  – Wielder gains temporary Hit Points
+  Damage: %magnitude%d6 magic damage
+  Range: Touch
+  Duration: Instant, 1 hour for temporary Hit Points
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
