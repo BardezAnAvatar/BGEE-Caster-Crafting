@@ -2389,3 +2389,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Vampiric Touch
+@93026 = ~Wand of Vampiric Touch~
+@93027 = ~Once activated, this wand drains the target of %magnitude2% Hit Points; these Hit Points are added to the wielder's current Hit Points, with any Hit Points over the wielder's normal maximum treated as temporary additional Hit Points. The temporary Hit Points last for 5 turns.
+
+Note that this spell may not be cast multiple times to radically increase the wielder's hit points. The wielder must wait for the first Vampiric Touch spell to run its course before casting another.
+
+STATISTICS:
+
+Charge abilities:
+– Vampiric Touch
+  – Drains target
+  – Wielder gains temporary Hit Points
+  Damage: %magnitude2% magic damage
+  School: Necromancy
+  Range: Touch
+  Duration: Instant, 5 turns for temporary Hit Points
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

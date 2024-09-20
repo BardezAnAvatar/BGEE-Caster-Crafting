@@ -1396,3 +1396,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Vampiric Touch
+@73026 = ~Wand of Vampiric Touch~
+@73027 = ~Once activated, if the wielder successfully touches an opponent in melee, the target loses %magnitude%d6 Hit Points; these Hit Points are added to the wielder's total, with any Hit Points over the caster's normal maximum total treated as temporary bonus Hit Points. The temporary Hit Points last for 1 hour. This spell has no effect on constructs or undead.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Vampiric Touch
+  – Drains target
+  – Wielder gains temporary Hit Points
+  Damage: %magnitude%d6 magic damage
+  Range: Touch
+  Duration: Instant, 1 hour for temporary Hit Points
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
