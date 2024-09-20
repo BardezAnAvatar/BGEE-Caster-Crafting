@@ -1444,3 +1444,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ghost Armor
+@73032 = ~Wand of Ghost Armor~
+@73033 = ~When activated, the wand generates a magical field of force that serves as if it were field plate armor. This does not hinder movement, adds no weight or encumbrance, and doesn't prevent spellcasting.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Ghost Armor
+  – Applies a field of magical force armor around the wielder (AC 2).
+  – Does not affect spellcasting or thieving skills
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
