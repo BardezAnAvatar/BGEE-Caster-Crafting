@@ -2414,3 +2414,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Wraithform
+@93028 = ~Wand of Wraithform~
+@93029 = ~Once activated, the wielder and all of <PRO_HISHER> gear become insubstantial. The wielder is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wielder also gains 25% resistance to magic damage. While in wraithform, the wielder cannot cast either arcane or divine spells.
+
+STATISTICS:
+
+Charge abilities:
+– Wraithform
+  – Immune to normal weapons
+  – 25% resistance to magic damage
+  – Spellcasting disabled
+  School: Alteration, Illusion
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
