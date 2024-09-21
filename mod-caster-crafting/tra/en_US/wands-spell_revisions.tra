@@ -2505,3 +2505,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spell Thrust
+@93040 = ~Wand of Spell Thrust~
+@93041 = ~This wand, once activated, will dispel one spell protection of 5th level or lower on all enemies within the area of effect. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
+
+The spell protections dispelled by Spell Thrust are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen and Spell Shield.
+
+STATISTICS:
+
+Charge abilities:
+– Spell Thrust
+  – Dispels protective spell
+  School: Abjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: 15' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
