@@ -2140,3 +2140,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Minor Spell Deflection
+@63034 = ~Wand of Minor Spell Deflection~
+@63035 = ~This wand causes the spells cast against the wielder to be absorbed and consumed. This spell affects a total of 4 spell levels, including spells cast from scrolls and innate spell-like abilities, but excludes the following: area effects that are not centered directly upon the wielder, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud. As long as the spell is cast directly at the wielder, it will be absorbed. This spell will only affect up to 7th-level spells, but if it tries to absorb a spell that goes over its limit, the spell will fail and the spell deflection will be canceled. For example, if there is only 1 level left and a 3rd-level spell is cast at the wizard, the spell will be absorbed while canceling the Spell Deflection.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Minor Spell Deflection
+  – Absorbs 4 levels of spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
