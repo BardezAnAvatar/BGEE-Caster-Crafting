@@ -2251,3 +2251,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Hold Undead
+@63044 = ~Wand of Hold Undead~
+@63045 = ~Upon activation, this wand holds 1d4 undead creatures rigidly immobile and in place. The effect is centered on the victim selected by the wielder. Any enemies within 4 ft. of the target are also affected. Those who succeed a Save vs. Wand are totally unaffected by the spell. Held creatures cannot move or speak, but they remain aware of events around them and can use abilities not requiring motion or speech. Being held does not prevent the worsening of the subject's condition due to wounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Hold Undead
+  – Holds undead
+  Range: 35 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature and any enemies within 4 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
