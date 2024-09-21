@@ -2209,3 +2209,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spell Thrust
+@63040 = ~Wand of Spell Thrust~
+@63041 = ~This wand, once activated, will dispel all of the spell protections of 5th level and lower affecting it. This includes the following spells: Minor Spell Deflection, Minor Globe of Invulnerability, Spell Immunity, and Minor Spell Turning. The target's Magic Resistance, if any, does not affect this spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Spell Thrust
+  – Dispels protective spells
+  Range: 25 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
