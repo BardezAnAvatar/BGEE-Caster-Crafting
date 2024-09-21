@@ -2185,3 +2185,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Cold
+@63038 = ~Wand of Protection From Cold~
+@63039 = ~Once activated, this wand confers complete invulnerability to normal cold attacks and partial protection from exposure to magical cold†, absorbing 50% of all the damage dealt by such magical sources.
+
+†: an icy dragon's breath, spells such as Cone of Cold, a wand of frost's column of ice, etc.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Cold
+  – 100% cold absorption
+  – 50% magical cold absorption
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
