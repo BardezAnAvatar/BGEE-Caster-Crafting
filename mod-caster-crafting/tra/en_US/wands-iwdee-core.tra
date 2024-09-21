@@ -1489,3 +1489,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Detect Illusion
+@73042 = ~Wand of Detect Illusion~
+@73043 = ~Upon activation, this wand cancels all Illusion/Phantasm spells of 3rd level and lower in the area. The spells affected are Blur, Reflected Image, Invisibility, Mirror Image, and Non-Detection. The wielder can control whom this spell affects; thus, it will affect only creatures that are not in the wielder's party. A target's Magic Resistance, if any, does not affect this spell.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Illusion
+  – Dispels illusions
+  Range: Self
+  Duration: Instant
+  Area of Effect: 25-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -2528,3 +2528,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Detect Illusion
+@93042 = ~Wand of Detect Illusion~
+@93043 = ~Upon activation, this wand will affect an area roughly 30 feet in radius from the targeted point. All hostile illusion spells of 4th level and lower in this area will be dispelled. Magic resistance does not affect this spell.
+
+The illusion spells dispelled by Detect Illusion are: Reflected Image, Blur, Invisibility, Mirror Image, Ghost Armor, Invisibility Sphere, and Improved Invisibility.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Illusion
+  – Dispels illusions
+  School: Divination
+  Range: Long
+  Duration: Instant
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
