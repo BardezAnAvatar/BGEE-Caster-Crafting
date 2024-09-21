@@ -931,3 +931,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Dispel Illusions
+@83042 = ~Wand of Dispel Illusions~
+@83043 = ~Upon activation, this wand will cancel all illusionary protections on enemies in the area of effect. In addition it will dispel all forms of Invisibility and Mirror Image, even if originating from an innate ability instead of a spell. The area of effect is roughly a 120-ft. radius around the wielder. The targets' Magic Resistance, if any, does not affect this spell.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Dispel Illusions
+  – Dispels illusions
+  Range: Self
+  Duration: Instant
+  Area of Effect: 120-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
