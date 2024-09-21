@@ -2574,3 +2574,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Melf's Minute Meteors
+@93046 = ~Wand of Melf's Minute Meteors~
+@93047 = ~Upon activation, this wand creates %magnitude% small globes of fire, which, when thrown, burst upon impact and inflict 1d4 points of piercing damage plus 2d4 points of fire damage to the creature struck. The wielder gains a +5 bonus to hit with the missiles, and each meteor is considered to be of +2 enchantment to determine what it can hit. The wielder may discharge up to five missiles per round.
+
+STATISTICS:
+
+Charge abilities:
+– Melf's Minute Meteors
+  – Creates fiery globes
+  – +5 bonus to THAC0/+2 enchantment
+  – +2 enchantment
+  – 5 attacks per round
+  School: Conjuration
+  Damage: 1d4 piercing damage, 2d4 fire damage each
+  Range: Sight
+  Duration: Permanent until thrown or dispelled
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

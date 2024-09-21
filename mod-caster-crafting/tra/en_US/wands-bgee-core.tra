@@ -2272,3 +2272,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Melf's Minute Meteors
+@63046 = ~Wand of Melf's Minute Meteors~
+@63047 = ~Upon activation, this wand creates %magnitude% small globes of fire which are held in the wielder's hands in place of <PRO_HISHER> usual weapons. The meteors can be hurled at targets up to 270 feet away and are treated as missiles with a +5 bonus to the attack rolls. Each meteor bursts into a 1-ft. diameter sphere upon impact, inflicting 1d4+3 points of damage plus an additional 3 points of fire damage to any creature struck. The wielder may hurl up to five missiles per round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Melf's Minute Meteors
+  – Creates fiery globes
+  – +5 bonus to THAC0
+  – 5 attacks per round
+  Damage: 1d4+3 missile damage, 3 fire damage each
+  Range: 270 ft.
+  Duration: Permanent until thrown or dispelled
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
