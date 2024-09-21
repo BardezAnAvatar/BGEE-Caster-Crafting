@@ -2160,3 +2160,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Fire
+@63036 = ~Wand of Protection From Fire~
+@63037 = ~Once activated, this wand confers complete invulnerability to normal fires† and to exposure to magical fires‡, absorbing 50% of all the damage dealt by such magical sources.
+
+†: torches, bonfires, oil fires, and the like
+‡: fiery dragon breath, hell hound or pyrohydra breath, spells such as Burning Hands, Fireball, Fire Seeds, Fire Storm, Flame Strike, Meteor Swarm, and so on
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Fire
+  – 100% fire absorption
+  – 50% magical fire absorption
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
