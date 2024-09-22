@@ -1008,9 +1008,9 @@ STATISTICS:
 
 Charge abilities:
 – Displacement
-  – Aility to fly
-  – Flying speed: %magnitude%
-  Duration: %duration%
+  – Visually displaces wielder
+  – 50% chance incoming attacks miss
+  Duration: %duration%D
   Area of Effect: Self
   Saving Throw: None
 
