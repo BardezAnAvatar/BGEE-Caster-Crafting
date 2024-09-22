@@ -975,3 +975,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Fly
+@83056 = ~Wand of Fly~
+@83057 = ~With this wand, the wielder gives a creature the power to fly. For the duration, the creature can fly over normally impassable objects such as houses, walls, and rivers, but only as long as the creature is outdoors. The creature is also unaffected by ground-based spells such as Grease, Web, Entangle, and Earthquake.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Fly
+  – Aility to fly
+  – Flying speed: %magnitude%
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
