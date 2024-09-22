@@ -952,3 +952,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Absorb Spell
+@83054 = ~Wand of Absorb Spell~
+@83055 = ~Upon activation, this wand blocks the first spell (of any level) that hits the wielder within the next 2 rounds. If a spell is blocked this way, the wielder absorbs its power, regaining a previously cast spell whose level is less than or equal to the level of the spell absorbed.
+
+For example, if the wielder is hit by a Finger of Death (7th-level spell), <PRO_HESHE> gets seven spell levels back: <PRO_HESHE> will regain one spell up to 7th level in power.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Absorb Spell
+  – Absorbs next spell targeting wielder
+  – Restores a memorized spell of incoming level or lower
+  Duration: 2 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
