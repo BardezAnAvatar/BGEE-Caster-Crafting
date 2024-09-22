@@ -1039,3 +1039,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Control Slime
+@83062 = ~Wand of Control Slime~
+@83063 = ~This wand allows the wielder to take control of a single slime creature for one turn. Since Control Slime is a particularly specialized spell, it is very effective: the slime gets no Saving Throw, and its Magic Resistance is no help. Control Slime has no effect on non-slimes.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Control Slime
+  – Charms 1 slime
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
