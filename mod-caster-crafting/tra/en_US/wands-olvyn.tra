@@ -997,3 +997,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Displacement
+@83058 = ~Wand of Displacement~
+@83059 = ~Upon activation, this wand shifts the apparent position of the wielder, such that <PRO_HESHE> appears to be several feet away from where <PRO_HESHE> actually is. Attacks against the displaced wielder have a 50% chance of missing. Any effect that dispels illusions can dispel Displacement.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Displacement
+  – Aility to fly
+  – Flying speed: %magnitude%
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
