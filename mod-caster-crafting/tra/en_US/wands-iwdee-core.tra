@@ -1557,3 +1557,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Icelance
+@73050 = ~Wand of Icelance~
+@73051 = ~This wand will hurl a magical lance of ice at a target of the wielder's choosing. It automatically hits, inflicting 5d6 points of cold damage and forcing the target to make a Save vs. Wand or be stunned for 3 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Icelance
+  – Hurls a lance of ice
+  – Stuns opponent 3 rounds
+  Damage: 5d6 cold damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
