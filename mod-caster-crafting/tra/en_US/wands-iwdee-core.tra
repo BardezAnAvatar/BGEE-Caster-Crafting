@@ -1580,3 +1580,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Lance of Disruption
+@73052 = ~Wand of Lance of Disruption~
+@73053 = ~When activated, shoots a lance of force, which travels from the wand to a specified point 100 ft. in the distance. Any creatures in the lance's path take 5d4+%magnitude% points of crushing damage. Victims can save vs. Wand for half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Lance of Disruption
+  – Hurls a lance of force
+  Damage: 5d4+%magnitude% crushing damage
+  Range: 100 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
