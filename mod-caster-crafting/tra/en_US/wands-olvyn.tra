@@ -1018,3 +1018,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Terror
+@83060 = ~Wand of Terror~
+@83061 = ~The wielder of this wand may choose an area; all creatures in the area of effect, friend or foe, must save vs. wands at -4 or run away in fear for 1 turn. Unlike the spell Horror, Terror actually physically harms targets' minds. Although this spell affects allies, this does not bother the necromancer, for <PRO_HISHER> allies are undead.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Terror
+  – Causes everyone to flee in fear
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs Wand (-4 penalty) to negate
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
