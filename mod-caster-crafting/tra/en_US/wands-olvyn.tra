@@ -1080,3 +1080,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Glyph of Spell Storing
+@83066 = ~Wand of Glyph of Spell Storing~
+@83067 = ~Upon activation, this wand wards a point which stores a spell and releases it upon each hostile creature that enters the warded area. When this spell is cast, the caster stores a single 1st-level spell in the glyph, which is placed on a circular, 9-ft. radius area of the wielder's choice. When a hostile creature passes within 9 feet of the glyph, it explodes, releasing a copy of the stored spell on each hostile creature within 12 feet.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Glyph of Spell Storing
+  – Wards a point with a spell
+  Range: 60 ft.
+  Duration: Permanent until discharged
+  Area of Effect: 12-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
