@@ -1060,3 +1060,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Legend Lore
+@83064 = ~Wand of Legend Lore~
+@83065 = ~Once activated, this wand temporarily increases the lore of the wielder, allowing <PRO_HIMHER> to identify multiple magical items. For the duration, the wielder's lore is increased by 100.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Legend Lore
+  – Lore increased by 100
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
