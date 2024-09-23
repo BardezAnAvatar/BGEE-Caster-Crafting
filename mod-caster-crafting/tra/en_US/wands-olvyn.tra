@@ -1101,3 +1101,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Familiar Spell
+@83068 = ~Wand of Familiar Spell~
+@83069 = ~Once activated, this wand imbues the wielder's familiar with a spell. The wielder chooses one of their 1st-level spells, consuming one use of that spell. For the next 8 hours, each time <PRO_HISHER> familiar hits a creature with an attack, it instantly casts a copy of the chosen spell on the target. The spell is cast at caster level %magnitude%, not at the level of the familiar. The familiar must be owned by the wielder, and it must be in the same area as the wielder when Familiar Spell is cast (and not in the wielder's inventory).
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Familiar Spell
+  – Familiar's attacks cast selected spell
+  Range: Familiar (in same area)
+  Duration: 8 hours
+  Area of Effect: Familiar
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
