@@ -1122,3 +1122,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Throw
+@83070 = ~Wand of Throw~
+@83071 = ~This wand throws the target into the air with incredible force. The target is knocked back as it is sent hurtling through the air. When it lands or hits the ceiling, it takes crushing damage based on how fast it was moving right before the collision, up to %magnitude%d6. If the target succeeds on a Save vs. Polymorph at -2, it is thrown with less force and will only take about half damage.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Throw
+  – throws the target with force
+  Damage: %magnitude%d6
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (-2 penalty) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
