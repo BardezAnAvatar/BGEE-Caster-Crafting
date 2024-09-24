@@ -1164,3 +1164,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mestil's Acid Breath
+@83074 = ~Wand of Mestil's Acid Breath~
+@83075 = ~Upon uttering the activation phrase, this wand spews acid in a cone. All creatures in the area of effect take %magnitude%d6 acid damage, with a Save vs. Breath for half.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Mestil's Acid Breath
+  – Increases caster level of wielder by 5
+  Damage: %magnitude%d6 acid damage
+  Duration: Instant
+  Area of Effect: 22-ft. cone with 90-deg. arc
+  Saving Throw: Save vs. Breath for half
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
