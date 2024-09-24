@@ -2326,3 +2326,89 @@ Weight: 1~
 /***************************************
 *   3rd Level - Priest - 63500-63999   *
 ***************************************/
+//Animate Dead: Skeleton Warrior, Longsword
+@63506 = ~Wand of Animate Dead~
+@63507 = ~With targeting this wand, it causes a %magnitude% HD skeleton warrior (wielding a long sword) to rise and serve the wielder under any conditions. The skeleton warrior can follow the wielder, remain in an area and attack any creature entering the place, etc. It remains animated until it is destroyed in combat, 8 hours pass, or it is turned. This spell cannot be dispelled.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Animate Dead
+  – Summons a %magnitude% HD skeleton warrior
+    – Longsword
+  Range: 30 ft.
+  Duration: 8 hours
+  Area of Effect: Summon
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animate Dead: Skeleton Warrior, Longsword +1
+@63508 = ~Wand of Animate Dead~
+@63509 = ~With targeting this wand, it causes a %magnitude% HD skeleton warrior (wielding a long sword +1) to rise and serve the wielder under any conditions. The skeleton warrior can follow the wielder, remain in an area and attack any creature entering the place, etc. It remains animated until it is destroyed in combat, 8 hours pass, or it is turned. This spell cannot be dispelled.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Animate Dead
+  – Summons a %magnitude% HD skeleton warrior
+    – Longsword +1
+  Range: 30 ft.
+  Duration: 8 hours
+  Area of Effect: Summon
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animate Dead: Skeleton Warrior, Bastard Sword +1
+@63510 = ~Wand of Animate Dead~
+@63511 = ~With targeting this wand, it causes a %magnitude% HD skeleton warrior (wielding a bastard sword +1) to rise and serve the wielder under any conditions. The skeleton warrior can follow the wielder, remain in an area and attack any creature entering the place, etc. It remains animated until it is destroyed in combat, 8 hours pass, or it is turned. This spell cannot be dispelled.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Animate Dead
+  – Summons a %magnitude% HD skeleton warrior
+    – Bastard Sword +1
+  Range: 30 ft.
+  Duration: 8 hours
+  Area of Effect: Summon
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animate Dead: Skeleton Warrior, Two-handed Sword +1
+@63512 = ~Wand of Animate Dead~
+@63513 = ~With targeting this wand, it causes a %magnitude% HD skeleton warrior (wielding a two-handed sword +1) to rise and serve the wielder under any conditions. The skeleton warrior can follow the wielder, remain in an area and attack any creature entering the place, etc. It remains animated until it is destroyed in combat, 8 hours pass, or it is turned. This spell cannot be dispelled.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Animate Dead
+  – Summons a %magnitude% HD skeleton warrior
+    – Two-handed Sword +1
+  Range: 30 ft.
+  Duration: 8 hours
+  Area of Effect: Summon
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

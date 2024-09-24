@@ -1607,3 +1607,22 @@ Weight: 1~
 /***************************************
 *   3rd Level - Priest - 73500-73999   *
 ***************************************/
+//Animate Dead
+@73500 = ~Wand of Animate Dead~
+@73501 = ~With targeting this wand, it summons the lowest of the undead monsters, skeletons or zombies, usually from the bones or bodies of dead humans, demihumans, or humanoids. The spell causes these remains to become animated and obey the simple verbal commands of the wielder. The undead remain animated until they are destroyed in combat or are turned; they cannot be dispelled. The priest can animate 1d6 skeletons or zombies in this manner.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Animate Dead
+  – Summons 1d6 skeletons or zombies
+  Range: Sight
+  Duration: 8 hours
+  Area of Effect: Summon
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

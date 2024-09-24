@@ -2650,3 +2650,63 @@ Weight: 1~
 /***************************************
 *   3rd Level - Priest - 93500-93999   *
 ***************************************/
+//Animate Dead: Skeleton
+@93502 = ~Wand of Animate Dead~
+@93503 = ~With targeting this wand, it causes %magnitude% animated skeletons to rise up and serve the wielder. The undead creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animate Dead
+  – Summons %magnitude% skeletons
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Medium
+  Duration: 8 hours
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Skeleton (2 Hit Dice):
+    STR 15, DEX 14, CON -, INT -, WIS 10, CHA 1;  AL Chaotic Evil
+    HP 24, AC 6, THAC0 18, Saving Throws 10/12/11/13/13
+    1 Attack Per Round, 1d6+2 Crushing Damage (Mace +1)
+    Special Qualities:
+    – Immune to charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%
+    – Slashing & Piercing Resistance 20%; Missile Resistance 40%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animate Dead: Greater Skeleton
+@93504 = ~Wand of Animate Dead~
+@93505 = ~With targeting this wand, it causes %magnitude% animated skeletons to rise up and serve the wielder. The undead creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animate Dead
+  – Summons %magnitude% skeletons
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Medium
+  Duration: 8 hours
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Greater Skeleton (5 Hit Dice):
+    STR 16, DEX 14, CON -, INT -, WIS 10, CHA 1;  AL Chaotic Evil
+    HP 60, AC 4, THAC0 16, Saving Throws 9/11/10/12/12
+    1 Attack Per Round, 2d6+2 Slashing Damage (Two-Handed Sword +1)
+    Special Qualities:
+    – Immune to charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%
+    – Slashing & Piercing Resistance 40%; Missile Resistance 60%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
