@@ -2435,3 +2435,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Glyph of Warding
+@63516 = ~Wand of Glyph of Warding~
+@63517 = ~Upon activating this wand, the wielder weaves a tracery of faintly glowing lines in a warding sigil. This incription prevents unauthorized or hostile creatures from passing, entering, or opening. It can be used to guard a small bridge, to ward an entry, or as a trap on a chest or box. Any creature violating the warded area is subject to the magic it stores, although a successful Saving Throw vs. Wand enables the creature to escape the effects of the glyph. When the glyph is activated, it deals %magnitude%d4 points of electrical damage.
+
+STATISTICS:
+(Abjuration, Evocation)
+
+Charge abilities:
+– Glyph of Warding
+  – Magical electrical trap
+  Damage: %magnitude%d4 points of electrical damage
+  Range: 60 ft.
+  Duration: Permanent until discharged
+  Area of Effect: 12-ft. radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
