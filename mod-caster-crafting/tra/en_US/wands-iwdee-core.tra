@@ -1626,3 +1626,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Call Lightning
+@73514 = ~Wand of Call Lightning~
+@73515 = ~When this wand is activated in an outdoor area, it will call down one bolt of lightning per round. Each bolt causes %magnitude%d8 points of electrical damage. The bolt of lightning flashes down in a vertical stroke at any of the wielder's enemies. The first enemy struck by the lightning will be the enemy targeted. After that, any enemy (but no allies) may be struck by the ensuing lightning storm.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Call Lightning
+  – Lightning storm in area
+  – Hits target and other enemies
+  Damage: %magnitude%d8 points of electrical damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Sight
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

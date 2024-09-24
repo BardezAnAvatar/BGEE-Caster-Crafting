@@ -2710,3 +2710,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Call Lightning
+@93514 = ~Wand of Call Lightning~
+@93515 = ~When this wand is activated in an outdoor area, it will call down one 30-foot-long vertical bolt of lightning per round. The lightning will strike first at the target of the spell, dealing 6d6 points of electrical damage, with a successful save vs. breath at -2 reducing this to half. For the remainder of the storm's duration, the bolts will strike out randomly at the enemies of the wielder.
+
+STATISTICS:
+
+Charge abilities:
+– Call Lightning
+  – Lightning storm in area
+  – Hits target and other enemies
+  Damage: 6d6 points of electrical damage
+  School: Alteration
+  Sphere: Weather
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 360' radius
+  Saving Throw: Save vs. Breath (-2 penalty) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
