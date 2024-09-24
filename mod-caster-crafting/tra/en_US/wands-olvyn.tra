@@ -1190,3 +1190,22 @@ Weight: 1~
 /***************************************
 *   3rd Level - Priest - 83500-83999   *
 ***************************************/
+//Animate Dead
+@83500 = ~Wand of Animate Dead~
+@83501 = ~With targeting this wand, it summons %magnitude% skeletons (usually from the bones of dead humans, demihumans, or humanoids). The spell causes these remains to become animated and obey the simple verbal commands of the wielder, regardless of how they communicated in life. The undead remain animated until they are destroyed in combat, 8 hours pass, or are turned; the magic cannot be dispelled.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Animate Dead
+  – Summons %magnitude% skeletons skeletons
+  Range: 30 ft.
+  Duration: 8 hours
+  Area of Effect: Summon
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
