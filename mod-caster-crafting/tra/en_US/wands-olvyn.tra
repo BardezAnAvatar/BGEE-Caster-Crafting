@@ -1144,3 +1144,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Heightening
+@83072 = ~Wand of Heightening~
+@83073 = ~This wand increases the level of the wielder's other spells. For the duration, the wielder's spells count as five spell levels higher for purposes of overcoming Globe of Invulnerability and other spell level immunities like those of a rakshasa or lich.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Heightening
+  – Increases caster level of wielder by 5
+  Duration: 1 hour
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
