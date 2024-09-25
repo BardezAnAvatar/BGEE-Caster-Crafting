@@ -2478,3 +2478,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Remove Curse
+@63522 = ~Wand of Remove Curse~
+@63523 = ~Once activated, this wand is able to remove a curse on a person. Certain special curses may not be countered by this spell, or may be countered only by a caster of a certain level or higher.
+
+Note that the Remove Curse spell does not remove the curse from a cursed shield, weapon, or suit of armor, although the spell typically enables the person afflicted with any such cursed item to get rid of it.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Remove Curse
+  – Removes a curse affecting target, dispelling its effects
+    OR
+  – Allows target to remove a cursed object
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
