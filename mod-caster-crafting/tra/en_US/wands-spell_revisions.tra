@@ -2787,3 +2787,30 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Break Enchantment
+@63524 = ~Wand of Break Enchantment~
+@63525 = ~Once activated, this wand is able to free a victim from enchantments and curses. The spell can reverse the effects of confusion and feeblemindedness, free a victim from petrification, magical sleep or charm, and break the effects of a curse. Note that Break Enchantment cannot remove the curse from a cursed shield, weapon, or suit of armor, for example, but allows those afflicted with any such cursed item to get rid of it. Certain special curses may not be countered by this spell, or may be countered only by a caster of a certain level or through a particular ritual.
+
+STATISTICS:
+
+Charge abilities:
+– Break Enchantment
+  – Dispells confusion and feeblemindedness, petrification, sleep, and charm
+    AND
+  – Breaks one curse
+    – Removes a curse affecting target, dispelling its effects
+      OR
+    – Allows target to remove a cursed object
+  School: Abjuration
+  Sphere: All
+  Range: Short
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
