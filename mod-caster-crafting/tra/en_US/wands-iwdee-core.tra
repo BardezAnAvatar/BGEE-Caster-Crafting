@@ -1671,3 +1671,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Hold Animal
+@73518 = ~Wand of Hold Animal~
+@73519 = ~This wand, when activated, holds 1d4 hostile animals rigidly immobile. Specifically, it affects the targeted enemy and up to 3 hostile creatures within 20 ft. of it. Only normal and giant-sized animals are affected by this spell. Strange monsters such as wyverns and carrion crawlers do not count as animals. A successful Save vs. Wand negates the effect.
+
+Paralyzed creatures are helpless and cannot dodge or defend themselves from attacks. Being held does not prevent the worsening of the subject's condition due to wounds, disease, or poison.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Animal
+  – Holds animals in place
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature and any enemies within 20 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
