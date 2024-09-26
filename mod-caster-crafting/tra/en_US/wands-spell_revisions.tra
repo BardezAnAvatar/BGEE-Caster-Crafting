@@ -2859,3 +2859,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Miscast Magic
+@93530 = ~Wand of Miscast Magic~
+@93531 = ~This wand will afflict the target with miscast magic. This causes spells cast by the affected creature to take on an effect different from what they intend, similar to what happens during a wild surge. There is a chance that the result will be beneficial to the spellcaster, but generally, the effects are undesirable. The target must make save vs. wand at -2 to negate the spell's effects. Those who fail the save will miscast any spells cast in the next round, and each round after the first must make another save to avoid miscasting for one further round. The effects of the spell last for 5 rounds, or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Miscast Magic
+  – Causes wild magic surges when target casts magic
+  School: Enchantment
+  Sphere: Chaos
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 target
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -2544,3 +2544,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Miscast Magic
+@63530 = ~Wand of Miscast Magic~
+@63531 = ~This wand will afflict the target with miscast magic. Any spellcasting creature that is affected by this spell has its casting ability severely disabled. When the creature attempts to cast a spell, it suffers an 80% chance of failure. Creatures can save vs. Wand to avoid the effect, but do so with a -2 penalty.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Miscast Magic
+  – 80% chance of magic casting failure
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 1 target
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
