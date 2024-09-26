@@ -2503,3 +2503,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Remove Paralysis
+@63526 = ~Wand of Remove Paralysis~
+@63527 = ~Upon activation, this wand can free all allied creatures within the area from the effects of any paralyzation or related magic (such as a ghoul's touch or a Hold spell).
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Remove Paralysis
+  – Removes paralysis, stun, and hold
+  Range: 150 ft.
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
