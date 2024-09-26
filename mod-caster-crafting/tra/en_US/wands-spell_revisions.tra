@@ -2836,3 +2836,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Invisibility Purge
+@93528 = ~Wand of Invisibility Purge~
+@93529 = ~Once activated, this wand instantly (and once each round for 5 rounds after this spell is cast) purges invisibility from all concealed enemies within the area of effect. Invisible objects carried into the warded area will also become visible. This spell does not reveal illusions or enable the wielder to see through physical objects. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Invisibility Purge
+  – Dispells nearby invisibility
+  – Prevents invisibility for 4 rounds
+  School: Abjuration
+  Sphere: Wards
+  Range: Personal
+  Duration: 5 rounds
+  Area of Effect: 30' radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
