@@ -2925,3 +2925,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Holy Smite
+@93536 = ~Wand of Holy Smite~
+@93537 = ~Once activated, this wand calls upon energy from the Positive Energy Plane in order to open a channel between it and the targets. The result is that any evil creatures within the spell's area of effect take %magnitude%d4 points of magic damage, or half damage upon a successful Saving Throw vs. Spell. If the victims fail their Saving Throw, they are also blinded for 1 round.
+
+STATISTICS:
+
+Charge abilities:
+– Holy Smite
+  – Positive energy damages evil beings
+  – Blindness for 1 round
+  Damage: %magnitude%d4 magic damage
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Long
+  Duration: Instant
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
