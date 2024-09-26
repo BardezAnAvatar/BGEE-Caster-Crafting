@@ -2903,3 +2903,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Strength of One
+@93534 = ~Wand of Strength of One~
+@93535 = ~Using this wand, all party members within 30 feet of the caster gain a +2 bonus to strength. If a party member ends up with a strength value of 18, then her strength will be set to 18/75. The spell lasts for 10 rounds, whereafter everyone's strength returns to normal.
+
+STATISTICS:
+
+Charge abilities:
+– Strength of One
+  – +2 Strength bonus (18/75 if boosted to 18)
+  School: Alteration
+  Sphere: Law
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -2586,3 +2586,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Strength of One
+@63534 = ~Wand of Strength of One~
+@63535 = ~Using this wand, party members within the area of effect are given a Strength score of 18/75. If a party member has a Strength score higher than this (either naturally, or through a magical item), then <PRO_HISHER> Strength is lowered to 18/75. The spell lasts for 1 turn, whereupon everyone's Strength returns to normal.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Strength of One
+  – Sets nearby allies' Strength to 18/75
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius centered on wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
