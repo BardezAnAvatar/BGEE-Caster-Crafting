@@ -1715,3 +1715,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Invisibility Purge
+@73528 = ~Wand of Invisibility Purge~
+@73529 = ~Once activated, this wand dispels invisibility from any enemy creatures within the area of effect. This includes creatures under the effects of Improved Invisibility, Shadow Door, Invisibility, Mislead, and so on.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Invisibility Purge
+  – Dispells nearby invisibility
+  Duration: Instant
+  Area of Effect: 15-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
