@@ -2881,3 +2881,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Rigid Thinking
+@93532 = ~Wand of Rigid Thinking~
+@93533 = ~Once triggered, the target must make a Saving Throw vs. Wand or come under its effects. When under the effects of the Rigid Thinking spell, the victim will randomly wander, attack the nearest person, or stand confused.
+
+STATISTICS:
+
+Charge abilities:
+– Rigid Thinking
+  – Wanders, stands confused, or attacks without direction
+  School: Enchantment
+  Sphere: Law
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 person or mammal
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
