@@ -2949,3 +2949,31 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Unholy Blight
+@93538 = ~Wand of Unholy Blight~
+@93539 = ~Once activated, this wand calls up unholy power to smite his enemies. The power takes the form of a chilling, cloying miasma of darkness. Opponents within the spell's area of effect take %magnitude%d4 points of magic damage, with a successful saving throw vs. wand for half. If the victim fails his save, then he will also receive a -2 penalty on his attack rolls and saving throws for 4 rounds.
+
+STATISTICS:
+
+Charge abilities:
+– Unholy Blight
+  – Negative energy damages good beings
+  – -2 penalty to rolls for 4 rounds
+    – Saving throws
+    – THAC0
+  Damage: %magnitude%d4 magic damage
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Long
+  Duration: Instant
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Wand
+    – Half damage
+    – No roll penalties
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

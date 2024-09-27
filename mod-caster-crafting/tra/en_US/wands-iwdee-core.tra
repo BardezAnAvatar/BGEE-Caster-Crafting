@@ -1778,3 +1778,31 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Unholy Blight
+@73538 = ~Wand of Unholy Blight~
+@73539 = ~Once activated, this wand calls upon energy from the Negative Material Plane and opens a channel between it and the targets. Any creatures of good alignment within the area of effect take %magnitude%d6 magic damage; a successful Save vs. Wand halves the damage. In addition, if the victims fail their Save, they suffer a -2 penalty to hit, damage, and Saving Throws for 3 rounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Unholy Blight
+  – Negative energy damages good beings
+  – -2 penalty to all rolls for 3 rounds
+    – Saving throws
+    – THAC0
+    – Damage
+  Damage: %magnitude%d4 magic damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand
+    – Half damage
+    – No roll penalties
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
