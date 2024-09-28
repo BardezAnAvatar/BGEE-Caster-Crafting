@@ -2678,3 +2678,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Disease
+@63542 = ~Wand of Cure Disease~
+@63543 = ~Touching this wand to the target and activating it, the wielder can cure almost any disease with this spell. The cure is permanent, but does not grant the recipient of the spell immunity from further afflictions. Blindness, deafness, and feeblemind are also cured with this spell. Some magically created diseases may not be curable by this spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Cure Disease
+  – Removes disease, blindess, deafness, and feeblemind
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
