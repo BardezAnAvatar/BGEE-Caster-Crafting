@@ -2977,3 +2977,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Medium Wounds
+@93540 = ~Wand of Cure Medium Wounds~
+@93541 = ~Upon touching this wand to the target and activating it, the wand causes wounds and other injuries to the creature's body to be healed. The wielder can restore 3d8 + %magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+
+Charge abilities:
+– Cure Medium Wounds
+  – Heals 3d8 + %magnitude% Hit Points to target
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -2657,3 +2657,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Medium Wounds
+@63540 = ~Wand of Cure Medium Wounds~
+@63541 = ~Upon touching this wand to the target and activating it, the target is healed 14 points of wound or other injury damage from the its body. This healing cannot affect creatures without corporeal bodies, nor can it cure wounds of creatures not living or of extraplanar origin. Curing is permanent only insofar as the creature does not sustain further damage; caused wounds will heal—or can be cured—just as any normal injury.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Medium Wounds
+  – Heals 14 Hit Points to target
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
