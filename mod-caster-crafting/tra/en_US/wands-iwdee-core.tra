@@ -1975,3 +1975,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Circle of Bones
+@73560 = ~Wand of Circle of Bones~
+@73561 = ~Once activated, this wand conjures forth a barrier of floating bones that spin rapidly around the wielder, who cannot move for the duration of the spell. Anyone entering the path of the bones takes 1d6 crushing damage and 1d6 slashing damage per round. Circle of Bones cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Circle of Bones
+  – Conjures a rotating circle of bones
+  – Disables movement
+  Damage:
+  – 1d6 crushing damage / round
+  – 1d6 slashing damage / round
+  Duration: 3 rounds
+  Area of Effect: 3-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
