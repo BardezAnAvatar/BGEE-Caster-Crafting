@@ -2023,3 +2023,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cloudburst
+@73564 = ~Wand of Cloudburst~
+@73565 = ~Once activated, this wand brings forth a magical rain that saturates the area of effect. All cold- and fire-dwelling creatures take 2d3 points of magic damage per round. In addition, all creatures in the area have a 50% chance per round of being struck by bolts of lightning that deal 2d6 electrical damage, with a Save vs. Wand for half. Flame Blade, Shroud of Flame, and salamander auras are extinguished by Cloudburst.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cloudburst
+  – Magical rain
+    – Damages cold- and fire- elemental creatures
+    – 50% chance of electrical damage
+    – Extinguishes flame
+  Damage:
+  – Cold- and Fire-dwelling creatures:
+    – 2d3 points of magic damage per round
+  – 50% chance of lightning
+    – 2d6 electrical damage
+  Range: Sight
+  Duration: 2 rounds
+  Area of Effect: 17-ft. radius
+  Saving Throw: Save vs. Wand for half lightning damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
