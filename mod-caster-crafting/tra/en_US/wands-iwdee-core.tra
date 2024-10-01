@@ -2084,3 +2084,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Storm Shell
+@73568 = ~Wand of Storm Shell~
+@73569 = ~This wand surrounds the wielder with a bright sphere of disruptive energy that moves with <PRO_HIMHER>. The storm shell increases the wielder's resistance to fire, cold, and electrical damage by 50%.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Storm Shell
+  – +50% bonus to Fire resistance
+  – +50% bonus to Col  resistance
+  – +50% bonus to Electrical resistance
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
