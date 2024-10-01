@@ -632,9 +632,9 @@ Charge abilities:
   Saving Throw: None
   Summons:
   – Gibberling (1 Hit Dice):
-    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
-    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
-    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
+    – STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
+    – HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
+    – 1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
 
 Requires:
  9 Intelligence
@@ -1016,14 +1016,14 @@ Charge abilities:
   Saving Throw: None
   Summons:
   – Bat (1 Hit Dice):
-    STR 9, DEX 14, CON 11, INT 4, WIS 11, CHA 4; AL Neutral
-    HP 4, AC 8, THAC0 20, Saving Throws 20/20/20/20/20
-    1 Attack Per Round, 1d2 Piercing Damage (Bite)
-    Combat Abilities:
-    – Disease: target must save vs. Death or suffer -1 penalty to DEX and CON
-    – Swarm: each bat within 5 feet grants additional +2 bonus to attack rolls
-    Special Qualities:
-    – Blindsense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
+    – STR 9, DEX 14, CON 11, INT 4, WIS 11, CHA 4; AL Neutral
+    – HP 4, AC 8, THAC0 20, Saving Throws 20/20/20/20/20
+    – 1 Attack Per Round, 1d2 Piercing Damage (Bite)
+    – Combat Abilities:
+      – Disease: target must save vs. Death or suffer -1 penalty to DEX and CON
+      – Swarm: each bat within 5 feet grants additional +2 bonus to attack rolls
+    – Special Qualities:
+      – Blindsense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
 
 Requires:
  9 Intelligence
@@ -1521,14 +1521,14 @@ Charge abilities:
   Saving Throw: None
   Summons:
   – Green Slime (2 Hit Dice):
-    STR 14, DEX 9, CON -, INT 3, WIS 3, CHA 3; AL Neutral
-    HP 16, AC 10, THAC0 15, Saving Throws 13/15/13/17/15
-    1 Attack Per Round, 2d4 Acid Damage (Pseudopod)
-    Special Qualities:
-    – Immune to backstab
-    – Immune to charm, confusion, disease, hold, poison, sleep & stun, effects
-    – Electrical Resistance 100%, Acid Resistance 50%
-    – Missile Resistance 90%
+    – STR 14, DEX 9, CON -, INT 3, WIS 3, CHA 3; AL Neutral
+    – HP 16, AC 10, THAC0 15, Saving Throws 13/15/13/17/15
+    – 1 Attack Per Round, 2d4 Acid Damage (Pseudopod)
+    – Special Qualities:
+      – Immune to backstab
+      – Immune to charm, confusion, disease, hold, poison, sleep & stun, effects
+      – Electrical Resistance 100%, Acid Resistance 50%
+      – Missile Resistance 90%
 
 Requires:
  9 Intelligence
@@ -1939,7 +1939,7 @@ STATISTICS:
 
 Charge abilities:
 – Animal Summoning II
-  – Summons %magnitude% bats
+  – Summons %magnitude% war dogs
   School: Conjuration
   Sphere: Animal
   Range: Long
@@ -1948,11 +1948,11 @@ Charge abilities:
   Saving Throw: None
   Summons:
   – War Dog (2 Hit Dice):
-  STR 15, DEX 15, CON 15, INT 4, WIS 12, CHA 6; AL Neutral
-  HP 18, AC 4, THAC0 18, Saving Throws 13/17/13/15/17
-  1 Attack Per Round, 1d6 Piercing Damage (Bite)
-  Combat Abilities:
-  – Scent: detect invisible creatures within 10 feet
+    – STR 15, DEX 15, CON 15, INT 4, WIS 12, CHA 6; AL Neutral
+    – HP 18, AC 4, THAC0 18, Saving Throws 13/17/13/15/17
+    – 1 Attack Per Round, 1d6 Piercing Damage (Bite)
+    – Combat Abilities:
+      – Scent: detect invisible creatures within 10 feet
 
 Requires:
  9 Intelligence
@@ -2253,10 +2253,10 @@ Charge abilities:
   Saving Throw: None
   Summons:
   – Hobgoblin Archer (3 Hit Dice):
-  STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
-  HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
-  2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
-  or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
+    – STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
+    – HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
+    – 2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
+    – or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
 
 Requires:
  9 Intelligence
@@ -2281,17 +2281,17 @@ Charge abilities:
   Saving Throw: None
   Summons:
   – Hobgoblin Archer (3 Hit Dice):
-  STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
-  HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
-  2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
-  or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
+    – STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
+    – HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
+    – 2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
+    – or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
   – Hobgoblin Shaman (4 Hit Dice):
-  STR 13, DEX 11, CON 15, INT 9, WIS 14, CHA 9; AL Lawful Evil
-  HP 36, AC 5, THAC0 16, Saving Throws 9/13/12/15/14
-  1 Attack Per Round, 1d8+1 Slashing Damage (Long Sword +1)
-  Memorized Spells:
-    – 1º Armor of Faith, Bless, Cure Light Wounds (x2), Resist Fear
-    – 2º Chant, Hold Person, Silence
+    – STR 13, DEX 11, CON 15, INT 9, WIS 14, CHA 9; AL Lawful Evil
+    – HP 36, AC 5, THAC0 16, Saving Throws 9/13/12/15/14
+    – 1 Attack Per Round, 1d8+1 Slashing Damage (Long Sword +1)
+    – Memorized Spells:
+      – 1º Armor of Faith, Bless, Cure Light Wounds (x2), Resist Fear
+      – 2º Chant, Hold Person, Silence
 
 Requires:
  9 Intelligence
