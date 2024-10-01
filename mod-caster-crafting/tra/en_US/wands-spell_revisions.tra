@@ -3044,3 +3044,33 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Summon Insects
+@93548 = ~Wand of Summon Insects~
+@93549 = ~With activating this wand, it attracts a cloud or swarm of normal insects to attack one enemy of the wielder. This swarm gathers at a point chosen by the wielder, within the spell's range, and attacks a single creature the wielder points to.
+
+For the duration of the spell, the affected creature fights with a -2 penalty to attack rolls and armor class. In addition, each round the victim suffers 2d3 points of damage from insect bites, has a 100% chance of spell failure and it if fails a save vs. poison at +2 it panics and flees from the wielder. If a successful save vs. breath at -2 is made, the target manages to avoid most of the swarm, reducing damage from bites by half and completely negating the spell failure penalty. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Insects
+  – -2 penalty to THAC0
+  – -2 penalty to Armor Class
+  – 100% casting failure
+  – Flees in fear
+  Damage: 2d3 piercing damage / round
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 6 rounds
+  Area of Effect: 1 creature
+  Saving Throw:
+  – Save vs. Poison (+2 bonus) negates fear
+  – Save vs. Breath (-2 penalty) negates casting failure, halves damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
