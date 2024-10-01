@@ -1335,3 +1335,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Wind Shots
+@83590 = ~Wand of Wind Shots~
+@83591 = ~This wand imbues the wielder's ranged weapons with the power of wind. Whenever the wielder hits a creature with a missile attack, that creature must Save vs. Breath at -2 or be blown back for several seconds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Wind Shots
+  – Blows creatures back when hit by misile weapons
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: Save vs. Breath (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
