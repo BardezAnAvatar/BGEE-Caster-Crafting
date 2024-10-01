@@ -1313,3 +1313,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Guardian Magic
+@83588 = ~Wand of Guardian Magic~
+@83589 = ~When this wand is activated, it grants magical protection to any creature the wielder guards with the Guard action. For the duration, as long as the wielder is guarding another creature within 15 feet, that creature gains a +6 Armor Class bonus and +30% Magic Resistance.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Guardian Magic
+  – +6 bonus to Armor Class
+  – +30% bonus to Magic Resistance
+  Range: 15 ft.
+  Duration: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
