@@ -3099,3 +3099,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Animal Summoning III
+@93574 = ~Wand of Animal Summoning III~
+@93575 = ~Upon activation, the wand calls forth %magnitude% wolves, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning III
+  – Summons %magnitude% wolves
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Wolf (3 Hit Dice):
+    – STR 13, DEX 15, CON 15, INT 4, WIS 12, CHA 6; AL Neutral
+    – HP 21, AC 6, THAC0 18, Saving Throws 15/17/15/13/17
+    – 1 Attack Per Round, 1d6 Piercing Damage (Bite)
+    – Combat Abilities:
+      – Pack Attack: each wolf within 10 feet grants additional +1 bonus to attack rolls
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
