@@ -1662,8 +1662,8 @@ Weight: 1~
 
 
 //Charm Person or Mammal
-@62506 = ~Wand of Charm Person or Mammal~
-@62507 = ~This wand will charm any single person† or animal‡ when activated; if the target fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The wielder may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
+@92506 = ~Wand of Charm Person or Mammal~
+@92507 = ~This wand will charm any single person† or animal‡ when activated; if the target fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The wielder may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
 
 If the wielder harms, or attempts to harm, the charmed person by some overt action, or if Dispel Magic is successfully cast upon the charmed person, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. Note that the subject has full memory of the events that took place while <PRO_HESHE> was charmed. Also note that you cannot have a charmed creature leave the area where <PRO_HESHE> was charmed.
 
