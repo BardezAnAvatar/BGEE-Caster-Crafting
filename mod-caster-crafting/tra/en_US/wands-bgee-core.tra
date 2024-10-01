@@ -2699,3 +2699,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Zone of Sweet Air
+@63544 = ~Wand of Zone of Sweet Air~
+@63545 = ~Once activated, this wand repels all noxious elements from poisonous vapors (including magically created vapors such as Cloudkill); this spell will dismiss all clouds in the entire area that the wielder is currently in. The spell offers no protection against poisonous vapors created by a dragon's breath weapon (such as the chlorine gas of a green dragon).
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Zone of Sweet Air
+  – Removes cloud-based area of effect spells
+  Duration: Instant
+  Area of Effect: Current area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
