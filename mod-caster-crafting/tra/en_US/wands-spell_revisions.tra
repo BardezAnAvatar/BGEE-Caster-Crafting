@@ -3178,3 +3178,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Regenerate Serious Wounds
+@93578 = ~Wand of Regenerate Serious Wounds~
+@93579 = ~Once activated, this wand imbues a creature with the ability to regenerate. The creature affected will regain 3 hit points per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Regenerate Serious Wounds
+  – Regenerate 3 Hit Points / round
+  School: Alteration
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
