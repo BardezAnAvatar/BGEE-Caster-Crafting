@@ -3156,3 +3156,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Fang
+@93576 = ~Wand of Magic Fang~
+@93577 = ~Once activated, this wand turns natural weapons (such as teeth, claws, etc.) of friendly animals within range into magical weapons, effectively granting a +%magnitude% enhancement bonus on attack and damage rolls. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Magic Fang
+  – Makes natural attacks into +%magnitude% attacks
+  School: Alteration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
