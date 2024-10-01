@@ -1292,3 +1292,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Healing Curse
+@83586 = ~Wand of Healing Curse~
+@83587 = ~This wand, once activated, causes the target creature's attacks to heal rather than harm. If the recipient is an ally, there is no Saving Throw necessary; otherwise, the recipient may make a Save vs. Polymorph at -2 to avoid the effects. While affected by Healing Curse, any damage the creature would deal through attacks, spells or abilities is negated, and the creature that would have been damaged is instead healed by the amount of damage they would have taken.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Healing Curse
+  – Converts all damage to healing instead
+  Range: Sight
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
