@@ -1950,3 +1950,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Moonblade
+@73558 = ~Wand of Moonblade~
+@73559 = ~Upon activation, this wand summons forth a silent, weightless sword-like construct made of moonlight that extends four feet from the wielder's hand. The moonblade is considered a +4 weapon for determining what creatures it can hit, though the bonus does not apply to attack rolls made with it. In addition, due to the insubstantial nature of the moonblade, melee bonuses from Strength do not apply.
+
+The strike of a moonblade drains a target's vitality, inflicting 1d12+4 points of magic damage, plus an additional 1d12 points to undead, who are particularly susceptible. A successful strike also temporarily scrambles magic, causing any spells the target casts in the next round to fail.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Moonblade
+  – Conjures a moonblade for personal use
+    – +4 enchantment to hit (No THAC0 bonus)
+    – 1d12+4 points of magic damage
+    – 100% casting failure for 1 round
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
