@@ -2128,3 +2128,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Favor of Ilmater
+@73572 = ~Wand of Favor of Ilmater~
+@73573 = ~Once activated, this wand the switches the wielder's own life force with that of the recipient, exchanging all physical injuries. The spell will only function if the wielder has more Hit Points than the target before the switch is attempted. This switch is permanent; the wielder may use normal methods to heal any damage. The exchange can be done from a distance so long as the spell range is not exceeded. Only the Hit Points are exchanged; the wielder cannot take on other conditions from the target such as disease, poison, intoxication, and similar afflictions.
+
+This spell cannot be cast by evil-aligned characters. It has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Favor of Ilmater
+  – Swaps hit points with target creature having fewer hit points
+  Range: 30 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
