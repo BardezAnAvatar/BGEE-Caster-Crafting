@@ -1875,3 +1875,30 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Prayer
+@73552 = ~Wand of Prayer~
+@73553 = ~Activating this wand bestows favor on the wielder and <PRO_HISHER> allies, and curses their enemies. All attacks, damage, and Saving Throws by friendly characters gain a +1 bonus, while enemy attacks, damage rolls, and saves get a -1 penalty. Any creatures within the area of effect when the spell is cast will continue to be affected by the spell when they leave the area, so if the warriors want to chase down that fleeing goblin, the effects of the Prayer will follow them.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Prayer
+  – Allies
+    – +1 bonus to THAC0
+    – +1 bonus to damage
+    – +1 bonus to all saving throws
+  – Enemies
+    – -1 penalty to THAC0
+    – -1 penalty to damage
+    – -1 penalty to all saving throws
+  Duration: %duration%
+  Area of Effect: 30-ft. radius centered on wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
