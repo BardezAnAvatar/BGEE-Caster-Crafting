@@ -2790,8 +2790,8 @@ Weight: 1~
 
 
 //Break Enchantment
-@63524 = ~Wand of Break Enchantment~
-@63525 = ~Once activated, this wand is able to free a victim from enchantments and curses. The spell can reverse the effects of confusion and feeblemindedness, free a victim from petrification, magical sleep or charm, and break the effects of a curse. Note that Break Enchantment cannot remove the curse from a cursed shield, weapon, or suit of armor, for example, but allows those afflicted with any such cursed item to get rid of it. Certain special curses may not be countered by this spell, or may be countered only by a caster of a certain level or through a particular ritual.
+@93524 = ~Wand of Break Enchantment~
+@93525 = ~Once activated, this wand is able to free a victim from enchantments and curses. The spell can reverse the effects of confusion and feeblemindedness, free a victim from petrification, magical sleep or charm, and break the effects of a curse. Note that Break Enchantment cannot remove the curse from a cursed shield, weapon, or suit of armor, for example, but allows those afflicted with any such cursed item to get rid of it. Certain special curses may not be countered by this spell, or may be countered only by a caster of a certain level or through a particular ritual.
 
 STATISTICS:
 
@@ -3015,6 +3015,30 @@ Charge abilities:
   Duration: Instant
   Area of Effect: 1 creature
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Gust of Wind
+@93546 = ~Wand of Gust of Wind~
+@93547 = ~Once activated, this wand creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 6 feet must save vs. breath at -2 or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) in the caster’s current area.
+
+STATISTICS:
+
+Charge abilities:
+– Gust of Wind
+  – Pushes enemies away
+    – Rendered unconscious for 1 round
+  – Removes cloud-based area of effect spells
+  School: Abjuration
+  Sphere: Wards, Elemental (Air)
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 6' radius
+  Saving Throw: Save vs. Breath (-2 penalty) to avoid blast
 
 Requires:
  9 Intelligence
