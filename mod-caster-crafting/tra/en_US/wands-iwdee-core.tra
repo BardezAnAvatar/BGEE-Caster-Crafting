@@ -1902,3 +1902,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Disease
+@73554 = ~Wand of Cause Disease~
+@73555 = ~Once this wand is activated, it afflicts one creature the wielder touches with a disease that saps the target of 5d4 points of Strength. A successful Save vs. Wand negates the effects. This spell has no effect on undead, constructs, or extraplanar creatures. It cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Disease
+  – 5d4 points of Strength drained
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
