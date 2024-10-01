@@ -2052,3 +2052,35 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mold Touch
+@73566 = ~Wand of Mold Touch~
+@73567 = ~Upon activation, this wand infects the creature the wielder touches with a rapidly spreading brown mold. If the infected creature fails a Save vs. Spell, the infection is severe; if the Saving Throw is successful, the damage is reduced.
+
+Each round after the first, the nearest creature within 10 ft. of the victim must make a Save vs. Wand or be infected by the mold at full strength. This process continues until the mold fails to infect a suitable host in time. Creatures already under the effects of the mold cannot contract it again. The brown mold quickly dies once the spell expires.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Mold Touch
+  – Infects with brown mold
+  Damage:
+  – 1st round: 4d6 magic damage
+  – 2nd round: 3d6 magic damage
+  – 3rd round: 2d6 magic damage
+  – 4th round: 1d6 magic damage
+  Range: Touch
+  Duration: Special
+  Area of Effect: 10-ft. radius
+  Saving Throw:
+  – Save vs. Wand reduces damage
+    – 1st round: 2d6 magic damage
+    – 2nd round: 1d6 magic damage
+    – 3rd round: 1d6 magic damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
