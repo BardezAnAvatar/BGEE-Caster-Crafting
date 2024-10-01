@@ -3074,3 +3074,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spiritual Clarity
+@93550 = ~Wand of Spiritual Clarity~
+@93551 = ~This wand trengthens a creature's spiritual resolve and purges the creature's mind of negative influences. The spell removes the effects of fear, charm, confusion and feeblemind from a single creature.
+
+STATISTICS:
+
+Charge abilities:
+– Spiritual Clarity
+  – Removes fear
+  – Removes charm
+  – Removes confusion
+  – Removes feeblemind
+  School: Abjuration
+  Sphere: Protection
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
