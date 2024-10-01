@@ -1230,3 +1230,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Call Water Weirds
+@93580 = ~Wand of Call Water Weirds~
+@93581 = ~Once activated, this wand temporarily calls water weirds into existence in bodies of water in the current area. These water weirds will fight on the side of whoever cast this spell most recently - if an enemy casts this spell, the water weirds will be hostile, but will switch to the party's side if a party member then casts this spell as well. Unlike other summoning spells, this spell does not summon creatures directly to the wielder's side; instead, it spawns water weirds in specific bodies of water in the current area. If the current area does not have any bodies of water large enough for a water weird, the spell does nothing.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Call Water Weirds
+  – Summons water weirds inside bodies of water
+  Duration: 1 turn
+  Area of Effect: Entire area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
