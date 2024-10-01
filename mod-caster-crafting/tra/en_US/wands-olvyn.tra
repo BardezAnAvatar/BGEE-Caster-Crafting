@@ -1271,3 +1271,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Fire Curse
+@83584 = ~Wand of Fire Curse~
+@83585 = ~By targeting an enemy and activating this wand, all damage dealt to the target is converted to fire damage, regardless of the original damage type. The creature will be dealt damage based on its fire resistance, not its resistance to the original damage type. Physical damage converted to fire damage will bypass Stoneskin. There is no saving throw, though magic resistance can still block the spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Fire Curse
+  – Converts all damage types to fire damage
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
