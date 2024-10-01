@@ -2096,11 +2096,33 @@ STATISTICS:
 Charge abilities:
 – Storm Shell
   – +50% bonus to Fire resistance
-  – +50% bonus to Col  resistance
+  – +50% bonus to Cold resistance
   – +50% bonus to Electrical resistance
   Duration: 1 turn
   Area of Effect: Self
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Medium Wounds
+@73570 = ~Wand of Cause Medium Wounds~
+@73571 = ~Upon activating this wand and touching a creature, this wand deals 14 points of damage (save vs. Wand for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures. Cause Medium Wounds cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Medium Wounds
+  – Causes medium wounds in 1 living creature
+  Damage: 14 magic damage
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
 
 Requires:
  9 Intelligence
