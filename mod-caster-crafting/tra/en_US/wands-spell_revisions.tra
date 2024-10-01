@@ -3101,6 +3101,34 @@ Requires:
 Weight: 1~
 
 
+//Spike Growth
+@93562 = ~Wand of Spike Growth~
+@93563 = ~This wand transforms the ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. Any creature will suffer 1d4 points of piercing damage each round that they remain within the affected area. The spikes can damage the victim's legs, so that even once they are free of the spike growth their movement rate is halved for 3 rounds unless a successful save vs. breath is made. Those failing the save also suffer 1 point of bleeding damage each round for 3 rounds. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Spike Growth
+  – Grows spiky plants from terrain
+  – Halves movement (3 rounds)
+  Damage:
+  – 1d4 piercing damage / round
+  – 1 bleeding damage / round (3 rounds)
+  School: Alteration
+  Sphere: Plant
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 20' radius
+  Saving Throw:
+  – Save vs. Breath negates movement penalty and bleed damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Animal Summoning III
 @93574 = ~Wand of Animal Summoning III~
 @93575 = ~Upon activation, the wand calls forth %magnitude% wolves, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
