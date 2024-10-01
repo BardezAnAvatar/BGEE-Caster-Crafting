@@ -1999,3 +1999,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spike Growth
+@73562 = ~Wand of Spike Growth~
+@73563 = ~This wand transforms the surrounding terrain into spiky plants. Any creature entering the area takes 1d4 points of piercing damage and 1d4 points of slashing damage every round until the spell expires.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Spike Growth
+  – Grows spiky plants from terrain
+  Damage:
+  – 1d4 piercing damage / round
+  – 1d4 slashing damage / round
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
