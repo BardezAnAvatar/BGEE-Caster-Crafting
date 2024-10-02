@@ -2155,3 +2155,22 @@ Weight: 1~
 /***************************************
 *   4th Level - Arcane - 74000-74499   *
 ***************************************/
+//Confusion
+@74000 = ~Wand of Confusion~
+@74001 = ~Once activated, this wand causes confusion in enemy creatures within the area, creating indecision and the inability to take effective action. Enemy creatures within the area of effect are allowed Saving Throws vs. Wand with a -2 penalty. Those who succeed are unaffected; those who fail either go berserk, stand confused, or wander about for the duration of the spell. Any confused creature that is attacked perceives the attacker as an enemy and reacts accordingly.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Confusion
+  – go berserk, stand confused, or wander about
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
