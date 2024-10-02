@@ -1376,3 +1376,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Steel Wind Strike
+@83594 = ~Wand of Steel Wind Strike~
+@83595 = ~With this wand, the wielder is able to zoom between each enemy in the area of effect, making attacks against each enemy with each equipped weapon. The wielder must have one or more melee weapons equipped for this spell to function; ranged weapons won't work. Attacks made this way can critically hit and will apply any on-hit effects of the weapons.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Steel Wind Strike
+  – Teleports party to wielder
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
