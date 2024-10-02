@@ -1355,3 +1355,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Recall Party
+@83592 = ~Wand of Recall Party~
+@83593 = ~With this wand, the wielder is able to teleport all party members to the wielder's side. The range is unlimited, and party members can be drawn from a different area, so long as they are on the same plane as the wielder.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Recall Party
+  – Teleports party to wielder
+  Range: Infinite
+  Duration: Instant
+  Area of Effect: All party members
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
