@@ -3200,3 +3200,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Storm Shield
+@93596 = ~Wand of Storm Shield~
+@93597 = ~This wand will surround the wielder with an invisible curtain of stormy winds that moves with <PRO_HIMHER>. The wind wall grants the wielder +4 bonus to saves vs. breath and AC against missiles for the duration of the spell. Non-magical missile weapons are deflected away, while gases cannot penetrate the barrier. Tiny and small flying creatures cannot pass through.
+
+STATISTICS:
+
+Charge abilities:
+– Storm Shield
+  – +2 bonus to Breath save
+  – +2 bonus to AC vs. missiles
+  – Immunity to non-magical missiles
+  – Immunity to cloud area effects
+  School: Abjuration
+  Sphere: Weather, Elemental (Air)
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
