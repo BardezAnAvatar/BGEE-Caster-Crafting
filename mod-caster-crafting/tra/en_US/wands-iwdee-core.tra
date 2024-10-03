@@ -2174,3 +2174,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ice Storm
+@74006 = ~Wand of Ice Storm~
+@74007 = ~This wand summons great hail stones pound down for four rounds in a 30-ft. diameter area and inflict 2d8 points of cold damage to any creatures within the area of effect. Also, anyone that remains within the area of effect takes 2d8 cold damage each round for 4 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Ice Storm
+  – Conjures a storm of ice
+  Damage: 3d10 cold damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
