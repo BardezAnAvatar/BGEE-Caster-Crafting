@@ -2836,3 +2836,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Fireshield (Blue)
+@64004 = ~Wand of Fireshield (Blue)~
+@64005 = ~Once activated, this wand will evoke a blue shield of ice flame. This shield not only grants the user 50% Cold Resistance, but also protects the wielder from attacks made within a 5-ft. radius around the wielder. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 cold damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireshield (Blue)
+  – 50% Cold Resistance
+  Damage: 1d8+2 cold damage to melee attackers
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
