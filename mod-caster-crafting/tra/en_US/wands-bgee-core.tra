@@ -2815,3 +2815,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Dimension Door
+@64002 = ~Wand of Dimension Door~
+@64003 = ~This wand transports the wielder to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Dimension Door
+  – Target steps through a doorway to a new, nearby location
+  Range: Sight
+  Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
