@@ -1401,3 +1401,23 @@ Weight: 1~
 /***************************************
 *   4th Level - Arcane - 84000-84499   *
 ***************************************/
+//Ice Storm
+@84006 = ~Wand of Ice Storm~
+@84007 = ~This wand summons great hail stones pound down for four rounds in a 30-ft. diameter area and inflict 2d10 points of cold damage to any creatures within the area of effect. Also, anyone that remains within the area of effect takes 2d10 cold damage each round for 4 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Ice Storm
+  – Conjures a storm of ice
+  Damage: 2d10 cold damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
