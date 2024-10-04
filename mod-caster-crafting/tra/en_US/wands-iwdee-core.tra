@@ -2219,3 +2219,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Monster Summoning II
+@74012 = ~Wand of Monster Summoning II~
+@74013 = ~This wand summons 1d6 2nd-level monsters. These appear within spell range and can be commanded to attack the caster's opponents until the spell duration expires or the monsters are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning II
+  – Summons 1d6 2nd-level monsters
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

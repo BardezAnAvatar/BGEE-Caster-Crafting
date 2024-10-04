@@ -3325,3 +3325,72 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Monster Summoning IV
+@94014 = ~Wand of Monster Summoning IV~
+@94015 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning IV
+  – Summons %magnitude% giant spiders
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Giant Spider (4 Hit Dice):
+    STR 15, DEX 17, CON 12, INT -, WIS 10, CHA 2;  AL Neutral
+    HP 32, AC 6, THAC0 16, Saving Throws 10/13/10/13/13
+    1 Attack Per Round, 1d8 Piercing Damage (Bite +1)
+    Combat Abilities:
+    – Poison: spiders' bites inject a venom which inflicts 3hp/round for 1 turn (save vs. poison negates)
+    Special Qualities:
+    – Immune to poison & web effects
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning IV
+@94016 = ~Wand of Monster Summoning IV~
+@94017 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning IV
+  – Summons %magnitude% giant spiders
+  – Summons 1 sword spider
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Giant Spider (4 Hit Dice):
+    STR 15, DEX 17, CON 12, INT -, WIS 10, CHA 2;  AL Neutral
+    HP 32, AC 6, THAC0 16, Saving Throws 10/13/10/13/13
+    1 Attack Per Round, 1d8 Piercing Damage (Bite +1)
+    Combat Abilities:
+    – Poison: spiders' bites inject a venom which inflicts 3hp/round for 1 turn (save vs. poison negates)
+    Special Qualities:
+    – Immune to poison & web effects
+  – Sword Spider (5 Hit Dice):
+    STR 17, DEX 10, CON 15, INT -, WIS 11, CHA 3;  AL Neutral
+    HP 45, AC 3, THAC0 14, Saving Throws 9/12/9/12/12
+    4 Attacks Per Round, 1d8+2 Piercing Damage (Legs & Bite +1)
+    Combat Abilities:
+    – Poison: spiders' bites inject a venom which inflicts 3hp/round for 1 turn (save vs. poison negates)
+    Special Qualities:
+    – Immune to poison & web effects
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
