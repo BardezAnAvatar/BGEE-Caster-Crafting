@@ -3273,3 +3273,31 @@ Requires:
 
 Weight: 1~
 
+
+//Improved Invisibility
+@94008 = ~Wand of Improved Invisibility~
+@94009 = ~This wand causes a creature touched to vanish from sight and be undetectable by normal vision or even infravision. Even allies cannot see the invisible creature or its gear, unless these allies can normally see invisible things or employ magic to do so. Items dropped or put down by the invisible creature become visible, items picked up disappear if tucked into the clothing or pouches worn by the creature. Of course, the invisible creature is not magically silenced, and certain other conditions can render the creature detectable.
+
+The invisibility remains in effect until it is magically broken or dispelled. Subtle hints —a shimmering— allow an observant opponent to attack the invisible spell recipient; these traces are only noticeable when specifically looked for (after the invisible character has made <PRO_HISHER> presence known†). The caster can, however, cast defensive spells on <PRO_HIMHER>self and fellow party members.
+
+Note: After taking revealing action, the wielder is no longer completely invisible. Once the character has revealed himself, opponents can attempt to attack <PRO_HIMHER> with conventional weapons, though they do so with a -4 penalty to the attack roll, or they may cast area of effect spells near <PRO_HISHER> position. Opponents remain unable to directly target the invisible creature with spells, scrolls, or abilities until the spell duration expires or the invisibility is dispelled.
+
+†: missile discharge, melee combat, opening doors, disarming a trap, opening a chest, or spellcasting.
+
+STATISTICS:
+
+Charge abilities:
+– Improved Invisibility
+  – Applies a lasting invisibility to target
+    – +4 bonus to Armor Class
+    – +4 bonus to Saving throws
+  School: Illusion
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
