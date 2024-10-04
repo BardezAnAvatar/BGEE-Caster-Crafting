@@ -3301,3 +3301,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Minor Globe of Invulnerability
+@94010 = ~Wand of Minor Globe of Invulnerability~
+@94011 = ~Once activated, this wand creates a faintly shimmering magical sphere around the caster that prevents any 1st-, 2nd-, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the Minor Globe of Invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. The globe can be brought down by a successful Dispel Magic spell. Spells of 4th level or higher are not affected by the globe.
+
+STATISTICS:
+
+Charge abilities:
+– Minor Globe of Invulnerability
+  – Globe that prevents any spell effects from penetrating
+    – 1st level
+    – 2nd level
+    – 3rd level
+  School: Abjuration
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
