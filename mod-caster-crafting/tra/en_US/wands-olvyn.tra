@@ -1442,3 +1442,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Contagion
+@84020 = ~Wand of Contagion~
+@84021 = ~Once activated, this wand causes a major disease and weakness in a creature. The afflicted individual is immediately stricken with painful and distracting symptoms: boils, blotches, lesions, seeping abscesses, and so on. Strength, Dexterity, and Charisma scores are reduced by 6. The afflicted character is also Slowed. The creature can negate these effects with a Save vs. Death at -8. These effects persist until the character receives a Cure Disease spell.
+
+Creatures lower level than %caster_level% have no save against this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Contagion
+  – -6 penalty to Strength
+  – -6 penalty to Dexterity
+  – -6 penalty to Charisma
+  – Slowed
+  Range: 90 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Death (-8 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

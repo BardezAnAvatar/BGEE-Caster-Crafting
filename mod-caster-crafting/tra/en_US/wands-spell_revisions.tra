@@ -3417,3 +3417,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Contagion
+@94020 = ~Wand of Contagion~
+@94021 = ~Once activated, this wand causes a major disease and weakness in a creature. Four times, every 2 rounds, the afflicted individual must make a saving throw vs. poison at -2 or suffer a cumulative -2 penalty to strength, dexterity, constitution, and charisma (up to -8 penalty total). The effects of this spell will persist until the creature receives a Cure Disease spell, or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Contagion
+  – Each round disease progresses
+    – Cumulative -2 penalty to Strength
+    – Cumulative -2 penalty to Dexterity
+    – Cumulative -2 penalty to Constituion
+    – Cumulative -2 penalty to Charisma
+  School: Necromancy
+  Range: Short
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. poison (-2 penalty) negates individual penalty
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
