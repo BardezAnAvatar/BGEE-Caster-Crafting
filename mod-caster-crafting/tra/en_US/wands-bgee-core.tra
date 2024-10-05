@@ -2952,3 +2952,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Stoneskin
+@64018 = ~Wand of Stoneskin~
+@64019 = ~Upon activating this wand, an outer skin of stone will move up from the ground, completely covering the wielder. This skin is of course magical and will hinder the wielder in no way. The effect of this is to protect <PRO_HIMHER> from physical attacks such as melee weapons and projectiles. For each of the %magnitude% skins the wielder possesses, the spell will stop one attack. The skins will remain on the wielder until <PRO_HESHE> is affected by a Dispel Magic, all of the skins are removed due to physical attacks, or the spell duration expires.
+
+It is important to note that this will not protect the wielder from any magical attacks, such as Fireball.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Stoneskin
+  – Conjures %magnitude% layers of protective skins
+  Duration: 12 hours
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
