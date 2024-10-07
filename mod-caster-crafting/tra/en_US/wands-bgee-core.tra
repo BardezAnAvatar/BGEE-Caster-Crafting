@@ -3066,3 +3066,30 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spirit Armor
+@64028 = ~Wand of Spirit Armor~
+@64029 = ~Upon activating this wand, it taps in to the target's life force in order to create an incorporeal barrier around the target's body for the duration of the spell. The armor itself is weightless and does not hinder movement or spellcasting at all.
+
+The spirit armor does not work cumulatively with any other armor; however, Dexterity bonuses still apply as well as magic rings and shields. While in effect, the Armor Class of the recipient will be set to 1, as if <PRO_HESHE> were wearing full plate. Also, due to the magical nature of the spell, <PRO_HESHE> will also receive a +3 bonus to Save vs. Spell.
+
+When the spell runs out, the external portion of the spirit is temporarily lost, inflicting 2d4 points of damage upon the target unless the creature makes a Saving Throw vs. Spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Spirit Armor
+  – Base armor class of 1
+  – +3 bonus to Save vs. Spell
+  Damage: 2d4 magic damage when spell expires
+  Range: Touch
+  Duration: 2 hours
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
