@@ -3653,3 +3653,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Minor Sequencer -> Simbul's Spell Matrix
+@94042 = ~Wand of Simbul's Spell Matrix~
+@94043 = ~Once activated, this wand takes the magical energy of the wielder and prepares a magical matrix that can store spells to be used later in a single swift action. The matrix can store two spells to be released simultaneously, all of which must be of 2nd level or lower. A character can only possess one spell matrix at a time, and the matrix will remain active until the spells contained within it are released.
+
+STATISTICS:
+
+Charge abilities:
+– Simbul's Spell Matrix
+  – Stores two spells of 2nd level or lower for later casting
+  School: Universal
+  Range: Personal
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
