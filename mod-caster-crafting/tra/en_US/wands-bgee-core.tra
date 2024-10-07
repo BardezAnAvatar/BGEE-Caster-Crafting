@@ -3144,3 +3144,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Enchanted Weapon
+@64034 = ~Wand of Enchanted Weapon~
+@64035 = ~This wand enchants any weapons that the wielder currently holds. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Enchanted Weapon
+  – Weapons hit as +3 enchantment
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
