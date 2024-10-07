@@ -2286,3 +2286,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Emotion, Hopelessness
+@74022 = ~Wand of Emotion, Hopelessness~
+@74023 = ~Upon activation, this wand creates the emotion of hopelessness within the area of effect. All enemies who fail to save vs. Wand just stand and do nothing for 1 turn. This spell nullifies Emotion, Hope within the area of effect at the time of casting.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Emotion, Hopelessness
+  – Enemies stand still in defeat
+  – Negates Emotion, Hope
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 7-ft. radius
+  Saving Throw: Save vs. Wand negates prone effect
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
