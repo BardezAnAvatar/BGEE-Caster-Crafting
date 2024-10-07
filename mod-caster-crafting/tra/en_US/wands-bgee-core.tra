@@ -3164,3 +3164,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Fireshield (Red)
+@64036 = ~Wand of Fireshield (Red)~
+@64037 = ~Upon activation, this wand protects the user from fire damage by surrounding the caster with a shield of flame. This shield does not only grant the user +50% Fire Resistance, it also protects <PRO_HIMHER> from attacks made from within a 5-ft. radius around <PRO_HIMHER>. An opponent that damages the wielder within this radius suffers 1d8+2 points of fire damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireshield (Red)
+  – +50% bonus to Fire Resistance
+  – Flame shield to deter melee attacks
+  Damage: 1d8+2 fire damage (if attacked within radius of shield)
+  Range: 5-ft. radius around wielder
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
