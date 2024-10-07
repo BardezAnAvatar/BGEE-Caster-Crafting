@@ -3187,3 +3187,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Secret Word
+@64040 = ~Wand of Secret Word~
+@64041 = ~Once activated, this wand dispels one spell protection† of 8th level or lower. The target's Magic Resistance, if any, does not affect this spell.
+
+†: Spells affected by this are Minor Spell Turning, Minor Globe of Invulnerability, Spell Immunity, Spell Deflection, Spell Turning, and Spell Shield.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Secret Word
+  – Dispels one protection of 8th level or lower
+  Range: 40-ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
