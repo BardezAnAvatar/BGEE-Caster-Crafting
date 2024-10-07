@@ -2998,3 +2998,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Emotion, Hopelessness
+@64022 = ~Wand of Emotion, Hopelessness~
+@64023 = ~Upon activation, this wand can disturb the emotional state of those around the target location. The effect of this is to inflict a feeling of hopelessness upon the enemies within the visual range of the wielder. Upon a failed Saving Throw vs. Wand, the affected creature will lie down where they stand and give over all their will to a higher power. Sometimes they can be heard to exclaim things such as "I lay down and die," or "I'm going home." This will last for the duration of the spell, upon which they will return to normal.
+
+The secondary effect of this spell is to instill upon the wielder the feeling of courage. This will remove any effects of panic and restore <PRO_HISHER> morale, as well as prevent the above from creeping forth into <PRO_HISHER> psyche. There is no Saving Throw vs. this and it will last for the duration of the spell. It will, however, be affected by Magic Resistance and other such things.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Emotion, Hopelessness
+  – Enemies:
+    Lay down in defeat
+  – Wielder:
+    Protection from Fear
+  Range: 50 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand negates prone effect
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
