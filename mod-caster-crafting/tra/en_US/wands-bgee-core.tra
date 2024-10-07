@@ -3024,3 +3024,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Greater Malison
+@64024 = ~Wand of Greater Malison~
+@64025 = ~Activating this wand, the wielder may adversely affect all the Saving Throws of <PRO_HISHER> enemies. The effect is applied to all hostile creatures within the area of effect. Opponents under the influence of this spell make all Saving Throws at a penalty of -4.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Greater Malison
+  – -4 penalty to all saving throws
+  Range: 50 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
