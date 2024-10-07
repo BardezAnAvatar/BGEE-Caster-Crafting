@@ -2308,3 +2308,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Greater Malison
+@74024 = ~Wand of Greater Malison~
+@74025 = ~Activating this wand, it causes all enemies in the area of effect to suffer a -2 penalty on all their Saving Throws as long as the spell is in effect.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Greater Malison
+  – -2 penalty to all saving throws
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

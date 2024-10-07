@@ -3458,8 +3458,30 @@ Charge abilities:
   School: Enchantment
   Range: Long
   Duration: %duration%
-  Area of Effect: 7-ft. radius
+  Area of Effect: 30' radius
   Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Greater Malison
+@94024 = ~Wand of Greater Malison~
+@94025 = ~Activating this wand, the wielder may adversely affect the dice rolls of <PRO_HISHER> enemies. The effect is applied to all hostile creatures within the area of effect. Those under the influence of this spell make all their saving throws at a penalty of -2 and also suffer a -1 penalty to luck. Magic resistance does not affect this spell, and multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Greater Malison
+  – -2 penalty to all saving throws
+  – -1 penalty to luck
+  School: Enchantment
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 30' radius
+  Saving Throw: None
 
 Requires:
  9 Intelligence
