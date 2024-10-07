@@ -2350,3 +2350,33 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Polymorph Self
+@74032 = ~Wand of Polymorph Self~
+@74033 = ~Upon activating this wand, the wielder can transform into any of several new forms (at any time and as many times as <PRO_HESHE> wishes). The wielder gains the natural attacks of the new form in some cases and may use weapons in others. The mental attributes of the wielder remain the same, but all physical attributes are obtained from the new form. Also, any natural protections that the new form offers are conferred to the wielder, such as the resistance to missile and crushing weapons possessed by the slime form.
+
+The wielder also gains the physical mode of locomotion and breathing as well. This spell does not give the new form's other abilities, such as special attacks and magic, nor does it run the risk of the wielder changing personality and mentality.
+
+The possible forms given by Polymorph Self are:
+– Flind: wields a magical halberd (+1 fire damage and strikes as a +3 weapon)
+– Mustard Jelly: capable of poisoning or slowing opponents (if they fail a Save vs. Death when hit)
+– Ogre: Capable of causing massive damage
+– Spider: Causes poison damage when it hits an opponent
+
+In addition, the wielder may choose the form of brown bear, black bear, wolf, boring beetle, polar bear, or winter wolf.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Polymorph Self
+  – Gain ability to polymorph self
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
