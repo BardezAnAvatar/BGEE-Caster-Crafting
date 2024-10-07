@@ -3674,3 +3674,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Teleport Field
+@94044 = ~Wand of Teleport Field~
+@94045 = ~Upon activation, this wand instigates a teleportation effect that randomly teleports all enemies in this area for the duration of the spell. Teleport Field is best used against multiple enemies, throwing them into disarray and allowing the wielder to concentrate on activating <PRO_HISHER> defenses.
+
+STATISTICS:
+
+Charge abilities:
+– Teleport Field
+  – Stores two spells of 2nd level or lower for later casting
+  School: Alteration
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Wand (-4 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
