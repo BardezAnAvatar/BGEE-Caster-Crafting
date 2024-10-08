@@ -2561,3 +2561,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Emotion, Hope
+@74064 = ~Wand of Emotion, Hope~
+@74065 = ~Once activated, this wand creates the emotion of hope within the area of effect. All creatures affected by the spell gain a morale boost and +2 on their Saving Throws, attack rolls, and damage rolls. This spell nullifies all hopelessness effects within the area of effect at the time of casting.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Emotion, Hope
+  – Hope swells in allies
+    – +2 bonus to all saving throws
+    – +2 bonus to THAC0
+    – +2 bonus to damage
+    – Dispels hopelessness
+  Range: Sight
+  Duration: 1 hour
+  Area of Effect: 7-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
