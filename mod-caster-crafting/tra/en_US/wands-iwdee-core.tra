@@ -2513,3 +2513,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Emotion, Courage
+@74060 = ~Wand of Emotion, Courage~
+@74061 = ~Once activated, this wand creates the emotion of courage within the area of effect. All creatures affected by the spell gain +1 to hit, +3 to their damage rolls, and +5 temporary Hit Points (which can put them above their maximum Hit Points). This spell nullifies all fear effects within the area of effect at the time of casting.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Emotion, Courage
+  – Bolsters courage in allies
+    – +1 bonus to THAC0
+    – +3 bonus to damage
+    – +3 bonus Hit Points
+    – Dispels fear
+  Range: Sight
+  Duration: 1 hour
+  Area of Effect: 7-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
