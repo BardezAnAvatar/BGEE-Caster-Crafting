@@ -2492,3 +2492,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shadow Monsters
+@74058 = ~Wand of Shadow Monsters~
+@74059 = ~With activating, this wand shapes material from the Demiplane of Shadow into illusionary monsters. Up to six shadowy creatures can be summoned at once, but their total Hit Dice will normally not exceed %caster_level%.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Shadow Monsters
+  – Summons shadow plane monsters to serve the wielder
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
