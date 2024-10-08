@@ -1667,3 +1667,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Vampiric Link
+@84086 = ~Wand of Vampiric Link~
+@84087 = ~This wand lets the caster absorb any life energy the target loses. For the duration, whenever the target creature takes damage, the caster regains that many Hit Points. The caster can cast Vampiric Link on allies or enemies, but not on <PRO_HIMHER>self. A single caster can establish Vampiric Links on multiple creatures, but no one creature can be affected by more than one Vampiric Link at once. Undead and constructs cannot be the target of this spell, but they can still cast it on other creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Vampiric Link
+  – Heals wielder an amount equal to damage inflicted on linked creature
+  Range: Sight
+  Duration: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
