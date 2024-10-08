@@ -1542,3 +1542,26 @@ Requires:
 
 Weight: 1~
 
+
+//Phantasmal Killer
+@84074 = ~Wand of Phantasmal Killer~
+@84075 = ~By activating this wand, the wielder causes the target to be struck by an embodiment of its worst fears. If the target was panicking when it got hit by the spell, it must Save vs. Death at -4 or die instantly. If it makes the save or it wasn't panicking, it takes 8d6 magic damage. A Death Ward will prevent the instant death but not the damage. Phantasmal Killer has no effect on undead, constructs, or oozes.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Phantasmal Killer
+  – Strikes target with embodiment of its worst fears
+  Damage:
+  – 8d6 magic damage
+  – Death if panicked
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Death (at -4) to avoid death effect
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
