@@ -3716,3 +3716,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Wizard Eye
+@94054 = ~Wand of Wizard Eye~
+@94055 = ~Once activated, this wand creates an invisible sensory organ that sends the wielder visual information. This eye can see with normal vision up to 60 ft. away in brightly lit areas. The eye can travel in any direction as long as the spell lasts. It has substance and a form that can be detected (by a Detect Invisibility spell, for instance). Solid barriers prevent the passage of the eye. The powers of the eye cannot be enhanced by other spells or items. The wielder is subject to any gaze attack met by the eye. A successful Dispel Magic cast on the wielder or eye ends the spell.
+
+STATISTICS:
+
+Charge abilities:
+– Wizard Eye
+  – Summons invisible eye
+  School: Divination
+  Range: Short
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
