@@ -2470,3 +2470,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Beltyn's Burning Blood
+@74056 = ~Wand of Beltyn's Burning Blood~
+@74057 = ~Upon activation, this wand turns a target's blood to flame, doing 3d4 Hit Points of damage every round and driving the victim berserk with pain. The target gets to save vs. Wand every round; if successful, the damage and berserk state are negated. This spell does not work against undead or extraplanar creatures that do not have blood (such as elementals). If the creature is resistant to fire, this resistance will lower or nullify the damage from this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Beltyn's Burning Blood
+  – Causes searing pain in blood
+  Damage: 3d4 fire damage / round
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
