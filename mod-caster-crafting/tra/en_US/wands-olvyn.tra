@@ -1565,3 +1565,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ghoulish Feast
+@84076 = ~Wand of Ghoulish Feast~
+@84077 = ~With activation of this wand, it lets the wielder summon undead by killing other creatures. During the duration of this spell, whenever the wielder kills a creature, a ghoul rises to feast upon the remains. That ghoul will serve the wielder for 8 hours. A ghoul will only be summoned if the wielder dealt the killing damage to the creature; if the caster damaged the creature but another party member finished it off, the caster will not get a ghoul.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Ghoulish Feast
+  – Summons a ghoul for every creature killed by wielder
+  Duration: 1 hour
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
