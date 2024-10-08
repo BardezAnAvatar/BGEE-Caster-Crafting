@@ -1585,3 +1585,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Backstab Sequencer
+@84078 = ~Wand of Backstab Sequencer~
+@84079 = ~This wand allows the wielder to store a single spell of 2nd-level or lower. The next time the wielder backstabs a creature, that spell is released on the creature. The released spell is cast on the creature a number of times equal to the wielder's backstab multiplier. If the wielder does not have a backstab multiplier, <PRO_HESHE> gains a x2 multipier until the spell is released.
+
+STATISTICS:
+(Illusion)
+
+Charge abilities:
+– Backstab Sequencer
+  – Stores a spell to release multiple times on successful backstab
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
