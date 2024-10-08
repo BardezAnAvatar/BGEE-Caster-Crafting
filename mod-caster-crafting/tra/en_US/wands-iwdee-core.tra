@@ -2612,3 +2612,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shout
+@74068 = ~Wand of Shout~
+@74069 = ~Upon activating this wand, it grants the wielder tremendous vocal powers, allowing <PRO_HIMHER> to emit an earsplitting roar from <PRO_HISHER> mouth in a cone-shaped area of effect. Any creature within this area is deafened for 9 rounds and suffers 4d6 points of magic damage. A successful Save vs. Wand negates the deafness and reduces the damage by half.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Shout
+  – Shouting damage
+  – Deafness
+  Damage: 4d6 magic damage
+  Range: Wielder
+  Duration: Instant
+  Area of Effect: 17-ft. cone with 15-deg. arc
+  Saving Throw: Save vs. Wand
+  – Half damage
+  – Negate deafness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
