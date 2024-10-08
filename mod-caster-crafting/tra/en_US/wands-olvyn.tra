@@ -1625,3 +1625,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Linked Portals
+@84084 = ~Wand of Linked Portals~
+@84085 = ~Upon activation, this wand creates two portals that creatures can teleport between. In casting this spell, the wielder chooses two points anywhere in the current area. A portal is created at each location. Any creature that comes within 5 feet of a portal is sucked in and instantly appears at the other portal. That creature won't teleport back unless it leaves and re-enters the area of the portal. Creatures immune to pushing and pulling effects cannot use the portals. Up to five pairs of portals can be active in one area at a time.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Linked Portals
+  – Conjures two portals that teleport nearby creatures to the linked portal
+  Range: 10000 ft.
+  Duration: 1 turn
+  Area of Effect: 5-ft. radius for each portal
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
