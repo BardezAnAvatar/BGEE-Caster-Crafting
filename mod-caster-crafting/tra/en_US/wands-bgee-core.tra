@@ -3322,3 +3322,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Farsight
+@64052 = ~Wand of Farsight~
+@64053 = ~Upon touching this wand to a map of the area, the wielder is able to scry upon that area of the map (even if unexplored). After casting the spell, simply click on a section of the map that you want to view. For the duration of the spell, the wielder can spy on that area, noting creatures and fortifications.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Farsight
+  – Scry upon a point in the area
+  Range: Entire area
+  Duration: %duration%
+  Area of Effect: Point on map
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
