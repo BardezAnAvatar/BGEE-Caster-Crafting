@@ -1519,3 +1519,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Wall of Fire
+@84072 = ~Wand of Wall of Fire~
+@84073 = ~Once activated, this wand creates a wall of raging flames. Any creature who attempts to pass through the wall takes %magnitude%d4 fire damage. There is no Saving Throw, since the flames cannot be dodged except by going around the wall. A creature that has passed through a Wall of Fire cannot take damage from passing through a Wall of Fire again for 1 round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Wall of Fire
+  – Produces a wall of flame
+  Damage: %magnitude%d4 fire damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 8 ft. long, 2 ft. wide wall
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
