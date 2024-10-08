@@ -1605,3 +1605,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Redirect Spell
+@84080 = ~Wand of Redirect Spell~
+@84081 = ~This wand changes the target of a spell another creature is casting to a target of one's choice. In using this spell, the wielder selects two creatures, the first of whom must be casting a spell. That creature's spell is then altered to target the second creature. The redirected spell is cast instantly, preventing the creature from stopping the casting.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Redirect Spell
+  – Redirects a spell to a different target
+  Duration: Instant
+  Area of Effect: 2 creatures
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
