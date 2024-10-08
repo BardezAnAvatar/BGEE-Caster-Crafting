@@ -2637,3 +2637,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Vitriolic Sphere
+@74070 = ~Wand of Vitriolic Sphere~
+@74071 = ~Once activated, this wand conjures a sphere of glowing emerald acid that the wielder can direct to strike any target within range. When it reaches its target, the sphere explodes and drenches the victim in potent acid. The victim suffers %magnitude%d4 points of acid damage. After the initial damage, the victim must save vs. Wand to avoid more damage. If unsuccessful, the victim continues to suffer acid damage in the following rounds, sustaining two less dice of damage each round. Each round after the first, the victim is entitled to a Save vs. Wand to avoid further damage.
+
+The vitriolic sphere also splashes acid in a 5-ft. radius around the primary target. Any creatures within the splash radius must save vs. Petrification/Polymorph or suffer a splash hit that inflicts %magnitude2%d4 points of acid damage. Splash hits do not cause continuing damage.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Vitriolic Sphere
+  – Acid sphere explodes on target
+  Damage: %magnitude%d4 acid damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 5-ft. radius splash
+  Saving Throw: Save vs. Wand negates recurring and splash damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
