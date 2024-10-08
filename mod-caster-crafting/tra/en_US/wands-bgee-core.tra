@@ -3253,3 +3253,72 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spider Spawn: giant spider
+@64046 = ~Wand of Giant Spider Spawn~
+@64047 = ~By throwing spider eggs into the air and uttering this wand's activation phrase, the eggs morph into a fully grown giant spider that will remain under the wielder's telepathic control.
+
+When the spell is cast, there is a 20% chance that two spiders of the proper type will appear instead of just one. These spiders will remain under the wielder's control until they are slain, or until the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Spider Spawn
+  – Summons giant spider(s)
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spider Spawn: phase spider
+@64048 = ~Wand of Phase Spider Spawn~
+@64049 = ~By throwing spider eggs into the air and uttering this wand's activation phrase, the eggs morph into a fully grown phase spider that will remain under the wielder's telepathic control.
+
+When the spell is cast, there is a 20% chance that two spiders of the proper type will appear instead of just one. These spiders will remain under the wielder's control until they are slain, or until the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Spider Spawn
+  – Summons phase spider(s)
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spider Spawn: sword spider
+@64050 = ~Wand of Sword Spider Spawn~
+@64051 = ~By throwing spider eggs into the air and uttering this wand's activation phrase, the eggs morph into a fully grown sword spider that will remain under the wielder's telepathic control.
+
+When the spell is cast, there is a 20% chance that two spiders of the proper type will appear instead of just one. These spiders will remain under the wielder's control until they are slain, or until the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Spider Spawn
+  – Summons sword spider(s)
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
