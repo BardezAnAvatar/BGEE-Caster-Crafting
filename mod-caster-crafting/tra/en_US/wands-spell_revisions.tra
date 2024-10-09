@@ -3886,3 +3886,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mental Domination
+@94508 = ~Wand of Mental Domination~
+@94509 = ~Upon targeting a creature with this wand, the subject must make a save vs. wand at -2 in order to avoid the wielder entering his mind. The effects of this spell are similar to the 5th level wizard spell Domination, with a few minor differences. Most notably, this spell gives the wielder no access to the subject's thoughts, memory, or sensory apparatus. The wielder simply is able to command the subject to perform certain tasks or functions during the spell duration. To control the subject, the wielder must be within range and must be able to see the subject. This control will last until dispelled or for the duration of the spell.
+
+STATISTICS:
+
+Charge abilities:
+– Mental Domination
+  – Charms target
+  School: Enchantment
+  Sphere: Thought
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
