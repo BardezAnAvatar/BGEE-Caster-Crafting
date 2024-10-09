@@ -3739,6 +3739,31 @@ Requires:
 Weight: 1~
 
 
+//Protection from Elemental Energy
+@94088 = ~Wand of Protection from Elemental Energy~
+@94089 = ~With activating this wand, the recipient receives complete protection from one damage type: acid, cold, fire, or lightning. 100% of the damage from the selected source of energy will be absorbed, and the target creature will become completely immune to the effects of spells based on that element. Multiple castings of this spell are not cumulative, but each time a different damage type can be selected.
+
+STATISTICS:
+
+Charge abilities:
+– Protection from Elemental Energy
+  – Choose 100% damage resistance from list
+    – Acid
+    – Cold
+    – Fire
+    – Lightning
+  School: Abjuration
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /***************************************
 *   4th Level - Priest - 94500-94999   *
 ***************************************/
