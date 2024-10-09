@@ -2685,3 +2685,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Free Action
+@74504 = ~Wand of Free Action~
+@74505 = ~By activating this wand and choosing a target, it gives the affected creature an immunity to magic that impedes movement (such as the Grease, Web, or Slow spells) and negates the effects of paralysis, hold, and stun spells. The recipient of the spell can still be hasted and receive beneficial movement effects such as those granted by the boots of speed.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Free Action
+  – Immune to effects hampering movement
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
