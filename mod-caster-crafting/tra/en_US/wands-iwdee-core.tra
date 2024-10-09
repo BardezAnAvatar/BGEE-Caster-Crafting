@@ -2706,3 +2706,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Neutralize Poison
+@74506 = ~Wand of Neutralize Poison~
+@74507 = ~Once this wand is activated, it immediately neutralizes any poison and restores 10 lost Hit Points.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Neutralize Poison
+  – Cures poisons
+  – Heals 10 Hit Points
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
