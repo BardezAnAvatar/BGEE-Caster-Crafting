@@ -3863,3 +3863,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Neutralize Poison
+@94506 = ~Wand of Neutralize Poison~
+@94507 = ~Once this wand is activated, it removes all toxins from the body, both natural and magical in nature. When this spell is cast upon a poisoned individual, it immediately neutralizes any poison. In addition, for the duration of the spell, the recipient is immune to any poison it is exposed to, and spells like Poison and Cloudkill won't affect the protected creature.
+
+STATISTICS:
+
+Charge abilities:
+– Neutralize Poison
+  – Cures poisons
+  – 100% poison resistance
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -3431,3 +3431,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Neutralize Poison
+@64506 = ~Wand of Neutralize Poison~
+@64507 = ~Once this wand is activated, this wand removes all toxins from the body, both natural and magical in nature. When this spell is cast upon a poisoned individual, it immediately neutralizes any poison and restores 10 lost Hit Points. This spell will also cure any diseases that the target might be suffering from, as well as blindness and deafness.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Neutralize Poison
+  – Cures poisons
+  – Cures diseases
+  – Cures deafness
+  – Cures blindness
+  – Heals 10 Hit Points
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
