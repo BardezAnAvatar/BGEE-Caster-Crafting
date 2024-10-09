@@ -3812,3 +3812,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Animal Summoning IV
+@94502 = ~Wand of Animal Summoning IV~
+@94503 = ~Upon activation, the wand calls forth %magnitude% leopards, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning IV
+  – Summons %magnitude% leopards
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Leopard (4 Hit Dice):
+    STR 16, DEX 18, CON 15, INT 6, WIS 13, CHA 6;  AL Neutral
+    HP 36, AC 5, THAC0 16, Saving Throws 12/16/12/14/16
+    2 Attacks Per Round, 1d6+1 Piercing Damage (Claws & Bite)
+    Combat Abilities:
+    – Pounce: can charge a target if at least 6 feet away. During that round the leopard moves at double speed, attacks with a +2 bonus to hit and damage rolls, but suffers a -2 penalty to AC
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -3389,3 +3389,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Animal Summoning I
+@64502 = ~Wand of Animal Summoning I~
+@64503 = ~Upon activting this wand, it calls between 2 and 3 animals that have 4 Hit Dice or less. The animals appearing are randomly determined. They will remain under the wielder's control until slain or the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Animal Summoning I
+  – Summons animals
+  Range: 30 ft.
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
