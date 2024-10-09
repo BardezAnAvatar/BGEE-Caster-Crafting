@@ -3841,3 +3841,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Free Action
+@94504 = ~Wand of Free Action~
+@94505 = ~By activating this wand and choosing a target, the recipient becomes immune to everything, magical or otherwise, that limits his mobility in any way. This includes (but is not limited to) Entangle, Grease, Web, Hold, Slow, and Stun. This effect will last for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Free Action
+  – Immune to effects hampering movement
+  School: Abjuration
+  Sphere: Charm
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

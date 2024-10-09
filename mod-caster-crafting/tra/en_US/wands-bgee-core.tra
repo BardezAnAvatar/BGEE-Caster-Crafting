@@ -3410,3 +3410,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Free Action
+@64504 = ~Wand of Free Action~
+@64505 = ~By activating this wand and choosing a target, the recipient becomes immune to anything that affects <PRO_HISHER> movement. This includes the effects of Web, Hold Person, Grease, and Entangle.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Free Action
+  – Immune to effects altering movement
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
