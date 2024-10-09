@@ -3791,3 +3791,24 @@ Weight: 1~
 /***************************************
 *   4th Level - Priest - 94500-94999   *
 ***************************************/
+//Cure Serious Wounds
+@94500 = ~Wand of Cure Serious Wounds~
+@94501 = ~Upon activating this wand and touching the target, it causes wounds and other injuries to the creature's body to be healed 4d8 + %magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+
+Charge abilities:
+– Cure Serious Wounds
+  – Heals 4d8+%magnitude% Hit Points
+  – Cures intoxication
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
