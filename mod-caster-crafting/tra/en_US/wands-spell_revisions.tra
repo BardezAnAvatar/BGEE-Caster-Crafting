@@ -3739,6 +3739,30 @@ Requires:
 Weight: 1~
 
 
+//Vitriolic Sphere
+@94070 = ~Wand of Vitriolic Sphere~
+@94071 = ~Once activated, this wand conjures a glowing orb of emerald acid that streaks to the target and explodes in a 10-foot radius. Each creature in the area must make a save vs. breath. On a failed save, a creature takes 10d4 acid damage and 4d4 acid damage at the end of its next 2 rounds. On a successful save, a creature takes half the initial damage and half damage at the end of each round.
+
+STATISTICS:
+
+Charge abilities:
+– Vitriolic Sphere
+  – Acid sphere explodes on target
+  Damage:
+  – 10d4 acid damage
+  – 4d4 acid damage for 2 rounds
+  School: Conjuration
+  Range: Medium
+  Duration: Instant
+  Area of Effect: Target, and anyone within 10'
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Protection from Elemental Energy
 @94088 = ~Wand of Protection from Elemental Energy~
 @94089 = ~With activating this wand, the recipient receives complete protection from one damage type: acid, cold, fire, or lightning. 100% of the damage from the selected source of energy will be absorbed, and the target creature will become completely immune to the effects of spells based on that element. Multiple castings of this spell are not cumulative, but each time a different damage type can be selected.
