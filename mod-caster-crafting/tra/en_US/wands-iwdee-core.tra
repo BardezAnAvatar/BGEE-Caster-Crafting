@@ -2728,3 +2728,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mental Domination
+@74508 = ~Wand of Mental Domination~
+@74509 = ~Upon targeting a creature with this wand, the subject must make a Save vs. Spell with a -2 penalty in order to prevent the wielder from entering <PRO_HISHER> mind. Elves and half-elves have no innate resistance to this spell. The wielder can force the subject into combat, but the subject's attack rolls suffer a -2 penalty. The wielder cannot force the subject to cast spells or use any innate magical or spell-like abilities.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Mental Domination
+  – Charms target
+  – -2 penalty to THAC0
+  – Disables spellcasting in target
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

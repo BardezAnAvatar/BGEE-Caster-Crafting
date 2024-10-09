@@ -3456,3 +3456,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mental Domination
+@64508 = ~Wand of Mental Domination~
+@64509 = ~Upon targeting a creature with this wand, the subject must make a Saving Throw vs. Wand with a -2 penalty in order to avoid the wielder entering <PRO_HISHER> mind. The effects of this spell are similar to those of the spell Domination, with a few minor differences. Most notably, this spell gives the wielder no access to the subject's thoughts, memory, or sensory apparatus. The wielder simply is able to command the subject to perform certain tasks or functions during the spell's duration. To control the subject, the wielder must be within range and must be able to see the subject. This control will last until dispelled or for the duration of the spell.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Mental Domination
+  – Charms target
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
