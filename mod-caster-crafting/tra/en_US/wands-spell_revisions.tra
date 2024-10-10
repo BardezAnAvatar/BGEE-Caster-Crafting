@@ -4151,3 +4151,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Serious Wounds
+@94530 = ~Wand of Cause Serious Wounds~
+@94531 = ~When this wand successfully touches the target, the spell inflicts 4d8 + %magnitude% points of damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does not affect this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Serious Wounds
+  – Causes magical wounds
+  – +4 bonus to THAC0
+  Damage: 4d8 + %magnitude% magic damage
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

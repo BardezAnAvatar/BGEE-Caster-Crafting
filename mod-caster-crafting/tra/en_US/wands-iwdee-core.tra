@@ -2817,3 +2817,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Serious Wounds
+@74530 = ~Wand of Cause Serious Wounds~
+@74531 = ~When this wand successfully touches the target, the spell deals 17 points of damage (save vs. Spell for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures. It cannot be used by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Serious Wounds
+  – Causes magical wounds
+  Damage: 17 magic damage
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
