@@ -3477,3 +3477,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Defensive Harmony
+@64510 = ~Wand of Defensive Harmony~
+@64511 = ~Once activated, this wand grants affected creatures a defensive bonus by bestowing an enchanted coordination on their attacks and defenses. This allows a group of creatures to act as a single unit for a single battle or encounter. The effect is always centered on the wielder, but affects all allies within a 15-ft. radius. Those affected can move outside of this area after the spell is cast and still enjoy the benefits of the harmony. While the spell is in effect, each affected creature gains a +2 bonus to <PRO_HISHER> Armor Class. This lasts for 6 rounds or until dispelled.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Defensive Harmony
+  – +2 bonus to Armor Class
+  Range: Sight
+  Duration: 6 rounds
+  Area of Effect: 15-ft. radius around caster
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
