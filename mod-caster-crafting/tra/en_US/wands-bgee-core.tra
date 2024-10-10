@@ -3543,3 +3543,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Death Ward
+@64516 = ~Wand of Death Ward~
+@64517 = ~Upon activation and touching this wand to a target, it protects the target from all forms of death magic† for the duration of the spell.
+
+†: This includes, but is not limited to, Disintegrate; Power Word, Kill; Death Spell; and Finger of Death.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Death Ward
+  – Protected from death magic
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
