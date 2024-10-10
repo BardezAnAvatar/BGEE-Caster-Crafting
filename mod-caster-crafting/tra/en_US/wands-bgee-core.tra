@@ -3609,3 +3609,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Holy Power
+@64526 = ~Wand of Holy Power~
+@64527 = ~Once activated, this wand imbues the wielder with the strength and skill of a Fighter of the same level. The wielder's Strength score is set to 18/00—even if it is normally higher—<PRO_HISHER> THAC0 becomes that of a Fighter of the same level, and <PRO_HESHE> gains %caster_level% temporary Hit Points. This will last for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Holy Power
+  – Take form of Fighter of level %caster_level%
+  – %caster_level% temporary Hit Points
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
