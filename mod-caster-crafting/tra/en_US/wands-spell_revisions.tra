@@ -4101,3 +4101,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Holy Power
+@94526 = ~Wand of Holy Power~
+@94527 = ~Once activated, this wand imbues the wielder with the strength and skill of a fighter of the same level. The wielder's strength is set to 18/00, even if it is normally higher, his THAC0 becomes that of a fighter of the same level, and he gains %caster_level% temporary hit points. The wielder gains extra attacks as a fighter of the same level, thus an extra half an attack per round at 7th level and another half attack per round at 13th level. This lasts for the duration of the spell or until successfully dispelled. Multiple castings of this spell are not cumulative.
+
+Note: this spell does not give any extra attacks to multiclassed or dual-classed fighter/clerics or ranger/clerics, as they normally gain additional attacks per round due to their fighter or ranger levels.
+
+STATISTICS:
+
+Charge abilities:
+– Holy Power
+  – Take form of Fighter of level %caster_level%
+  – %caster_level% temporary Hit Points
+  School: Evocation
+  Sphere: Combat
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
