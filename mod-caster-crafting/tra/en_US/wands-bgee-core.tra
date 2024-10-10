@@ -3566,3 +3566,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Call Woodland Beings
+@64518 = ~Wand of Call Woodland Beings~
+@64519 = ~Once activated, this wand summons forth a nymph to assist the party. The nymph has several priest spells at her disposal and will use them in the best interests of the party (these include Mental Domination, Confusion, and Mass Cure). She will remain under the caster's control until slain or the spell's duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Call Woodland Beings
+  – Summons a nymph
+  Range: 25 ft.
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
