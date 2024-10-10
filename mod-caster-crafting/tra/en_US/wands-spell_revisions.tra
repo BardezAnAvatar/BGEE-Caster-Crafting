@@ -3987,7 +3987,6 @@ Weight: 1~
 †: This includes, but is not limited to, Death Spell, Disintegrate, Power Word Kill, Finger of Death, and Wail of the Banshee.
 
 STATISTICS:
-(Necromancy)
 
 Charge abilities:
 – Death Ward
@@ -4074,6 +4073,29 @@ Charge abilities:
     – 2º Barkskin, Charm Person or Animal (x2), Resist Elements, Slow Poison
     – 3º Call Lightning, Hold Person or Animal, Summon Insects
     – 4º Animal Summoning IV
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Poison
+@94524 = ~Wand of Poison~
+@94525 = ~Upon activation, this wand can poison victims who fail their Saving Throw vs. Poison. Those who make their Saving Throws are unaffected. The victim suffers %magnitude%d%magnitude2%+1 poison damage every %magnutude3% seconds
+
+STATISTICS:
+
+Charge abilities:
+– Poison
+  – Poisons target creature
+  Damage: %magnitude%d%magnitude2%+1 poison damage every %magnutude3% seconds
+  School: Necromancy
+  Sphere: Healing
+  Range: Short
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Poison negates
 
 Requires:
  9 Intelligence
