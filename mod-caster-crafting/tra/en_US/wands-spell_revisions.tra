@@ -3954,3 +3954,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Evil, 10' Radius -> Magic Circle against Evil
+@94514 = ~Wand of Magic Circle against Evil~
+@94515 = ~Once this wand is activated, it causes all friendly creatures within the area of effect to be affected by the spell Protection from Evil. Creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.
+
+STATISTICS:
+
+Charge abilities:
+– Magic Circle against Evil
+  – +2 AC bonus against attacks from Evil creatures
+  – +2 Saving Throw bonus against attacks from Evil creatures
+  – Protected from summoned demons
+  School: Abjuration
+  Sphere: Protection
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: 30' radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
