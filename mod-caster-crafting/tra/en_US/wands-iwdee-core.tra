@@ -2795,3 +2795,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Poison
+@74524 = ~Wand of Poison~
+@74525 = ~Upon activation, this wand can instantly poison a touched target unless it makes a successful Save vs. Poison. The poison deals 20 points of damage over 20 seconds and then dissipates from the target's body. Poison can only be cast by evil-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Poison
+  – Poisons target creature
+  Damage: 1 poison damage per second
+  Range:Touch
+  Duration: 20 seconds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Poison negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
