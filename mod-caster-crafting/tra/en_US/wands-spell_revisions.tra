@@ -3930,3 +3930,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Electricity
+@94512 = ~Wand of Protection From Electricity~
+@94513 = ~Upon activating this wand and touching it to a target, the recipient receives complete protection from all electrical-based attacks†, whether magical or non-magical in origin; 100% of the damage from these attacks will be absorbed. Multiple castings of this spell are not cumulative.
+
+†: A blue dragon's breath, Lightning Bolt, Shocking Grasp, Glyph of Warding, Call Lightning, Chain Lightning and so on.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Electricity
+  – +100% bonus to resist electricity
+  School: Abjuration
+  Sphere: Elemental, Protection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
