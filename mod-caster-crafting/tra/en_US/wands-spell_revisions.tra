@@ -4003,3 +4003,79 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Call Woodland Beings: 7th - 10th
+@94520 = ~Wand of Call Woodland Beings~
+@94521 = ~Upon activation, the wand calls forth %magnitude% hamadryad(s), which will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Call Woodland Beings
+  – Summons %magnitude% hamadryad(s)
+  School: Conjuration
+  Sphere: Animal
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hamadryad (4 Hit Dice):
+    STR 10, DEX 18, CON 12, INT 14, WIS 14, CHA 18; AL Neutral
+    HP 32, AC 3, THAC0 14, Saving Throws 12/16/12/14/16
+    2 Attacks Per Round, 1d6+1 missile (Short Bow & arrows +1)
+    Special Qualities:
+    – Magic Resistance 75%
+    Memorized Spells:
+    – 1º Cure Light Wounds (x2), Entangle (x2), Shillelagh, Doom
+    – 2º Barkskin, Charm Person or Animal (x2), Resist Elements, Slow Poison
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Call Woodland Beings: 7th - 10th
+@94522 = ~Wand of Call Woodland Beings~
+@94523 = ~Upon activation, the wand calls a number of magical woodland beings, which will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Call Woodland Beings
+  – Summons 2 hamadryad(s)
+  – Summons 1 nymph
+  School: Conjuration
+  Sphere: Animal
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hamadryad (4 Hit Dice):
+    STR 10, DEX 18, CON 12, INT 14, WIS 14, CHA 18; AL Neutral
+    HP 32, AC 3, THAC0 14, Saving Throws 12/16/12/14/16
+    2 Attacks Per Round, 1d6+1 missile (Short Bow & arrows +1)
+    Special Qualities:
+    – Magic Resistance 75%
+    Memorized Spells:
+    – 1º Cure Light Wounds (x2), Entangle (x2), Shillelagh, Doom
+    – 2º Barkskin, Charm Person or Animal (x2), Resist Elements, Slow Poison
+  – Nymph (7 Hit Dice):
+    STR 10, DEX 17, CON 12, INT 16, WIS 17, CHA 19; AL Neutral Good
+    HP 42, AC 3, THAC0 15, Saving Throws 12/10/12/14/10
+    1 Attack Per Round, 1d4 Crushing (Touch +0)
+    Special Qualities:
+    – Magic Resistance 50%
+    Memorized Spells:
+    – 1º Cure Light Wounds (x2), Entangle (x2), Shillelagh, Doom
+    – 2º Barkskin, Charm Person or Animal (x2), Resist Elements, Slow Poison
+    – 3º Call Lightning, Hold Person or Animal, Summon Insects
+    – 4º Animal Summoning IV
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
