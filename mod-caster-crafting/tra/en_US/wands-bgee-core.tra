@@ -3652,3 +3652,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Serious Wounds
+@64530 = ~Wand of Cause Serious Wounds~
+@64531 = ~When this wand successfully touches the target, the spell inflicts 17 points of damage upon them. The next attack that the wielder makes will inflict this effect, however, <PRO_HESHE> only has 2 rounds to make the attack before the spell fizzles. If the wielder misses the target creature, the spell is wasted. There is no Saving Throw.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Serious Wounds
+  – Causes magical wounds
+  – +2 bonus to THAC0
+  Damage: 17 magic damage
+  Duration: 2 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
