@@ -3978,3 +3978,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Death Ward
+@94516 = ~Wand of Death Ward~
+@94517 = ~Upon activation and touching this wand to a target, the recipient is immune to all forms of death magic†. This effect will last for the duration of the spell or until dispelled.
+
+†: This includes, but is not limited to, Death Spell, Disintegrate, Power Word Kill, Finger of Death, and Wail of the Banshee.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Death Ward
+  – Protected from death magic
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
