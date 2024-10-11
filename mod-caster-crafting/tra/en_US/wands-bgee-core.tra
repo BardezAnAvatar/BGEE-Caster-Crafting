@@ -3694,3 +3694,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Lesser Restoration
+@64534 = ~Wand of Lesser Restoration~
+@64535 = ~With this wand, the life energy level of the recipient is raised. This reverses any previous life energy level drain of the creature by a force or monster. The casting of this spell is very draining on the wielder and <PRO_HESHE> will likely require rest immediately after the casting, as it will cause days' worth of fatigue almost instantaneously. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Lesser Restoration
+  – Restores life energy of recipient
+  – Causes fatigue in wielder
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

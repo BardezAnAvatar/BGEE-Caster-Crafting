@@ -4196,3 +4196,32 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Lesser Restoration
+@94534 = ~Wand of Lesser Restoration~
+@94535 = ~With this wand, the life energy level of the recipient is raised. This reverses any previous life energy level drain of the creature by a force or monster.
+
+The casting of this spell is very draining on the wielder, leaving <PRO_HIMHER> physically and mentally exhausted. For 5 rounds after the spell is cast, the priest will suffer a -2 penalty to hit, damage, armor class, and casting speed factor.
+
+STATISTICS:
+
+Charge abilities:
+– Lesser Restoration
+  – Restores life energy of recipient
+  – Causes fatigue in wielder
+    – -2 penalty to THAC0
+    – -2 penalty to damage
+    – -2 penalty to armor class
+    – -2 penalty to casting speed factor
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
