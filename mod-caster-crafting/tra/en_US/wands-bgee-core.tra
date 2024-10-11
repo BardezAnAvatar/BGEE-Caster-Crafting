@@ -3674,3 +3674,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cloak of Fear
+@64532 = ~Wand of Cloak of Fear~
+@64533 = ~This wand radiates an aura of fear out to a 15-ft. radius from the wielder. All other characters and creatures within this aura must roll a successful Save vs. Wand or run away in panic for 4 rounds. Party members are immune to the effects, although the aura of fear may still disturb them.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Cloak of Fear
+  – Aura of fear around wielder
+  Duration: Instant
+  Area of Effect: 15-ft. radius around wielder
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
