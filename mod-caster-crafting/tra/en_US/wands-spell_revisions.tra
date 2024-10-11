@@ -4146,17 +4146,20 @@ Requires:
 Weight: 1~
 
 
-//Cause Serious Wounds
-@94530 = ~Wand of Cause Serious Wounds~
+//Cause Serious Wounds -> Cause Critical Wounds
+@94530 = ~Wand of Cause Critical Wounds~
 @94531 = ~When this wand successfully touches the target, the spell inflicts 4d8 + %magnitude% points of damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does not affect this spell.
 
 STATISTICS:
 
 Charge abilities:
-– Cause Serious Wounds
+– Cause Critical Wounds
   – Causes magical wounds
   – +4 bonus to THAC0
   Damage: 4d8 + %magnitude% magic damage
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Touch
   Duration: 1 turn
   Area of Effect: 1 creature
   Saving Throw: None
@@ -4212,6 +4215,35 @@ Charge abilities:
   Duration: Instant
   Area of Effect: 1 creature
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spirit Fire
+@94536 = ~Wand of Spirit Fire~
+@94537 = ~Once this wand is activated, energies gather together from the spirit world and form a pale blue sphere. The wielder can throw the sphere so that it explodes into a burst of ghostly, azure flames, which deliver %magnitude%d4 points of magic damage. There is also a 33% chance that every enemy within the area of effect will be afflicted by the Doom spell (-2 penalty to Saving Throws and attack rolls for 1 turn). A successful Save vs. Wand halves the damage and negates the Doom effect. Spirits, fey creatures, elementals, and spectral undead take double damage.
+
+STATISTICS:
+
+Charge abilities:
+– Spirit Fire
+  – Flames burn victims
+    – 2x damage to spirits, fey, elementals, and spectral undead
+  – 33% chance of Doom for 1 turn
+    – -2 penalty to all Saving Throws
+    – -2 penalty to THAC0
+  Damage: %magnitude%d4 magic damage
+  School: Conjuration
+  Sphere: Summoning
+  Range: 40 ft.
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand
+  – Halves damage
+  – Negates Doom
 
 Requires:
  9 Intelligence
