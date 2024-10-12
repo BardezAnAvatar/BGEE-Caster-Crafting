@@ -2947,3 +2947,35 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Blood Rage
+@74546 = ~Wand of Blood Rage~
+@74547 = ~Upon targeting an ally and activating this wand, the target of this spell goes berserk, attacking the nearest creature until that creature is dead, then moving on to the next target. While under Blood Rage, the target is immune to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, and related effects. In addition, the target gains +2 to hit, +3 to damage, +2 to Strength, +10 to maximum Hit Points, and +2 to <PRO_HISHER> movement rate. The spell has several disadvantages, however: The Hit Points of the target are masked for the duration of the spell, and the target cannot benefit from any effect that heals Hit Points. At the end of the spell's duration, the target becomes fatigued and <PRO_HISHER> Strength drops to 3 for 2 turns. Blood Rage cannot affect—and cannot be cast by—creatures of lawful alignment.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Blood Rage
+  – Berserk
+    – Immunity to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, etc.
+    – +2 bonus to THAC0
+    – +2 bonus to Strength
+    – +2 bonus to Movement rate
+    – +3 bonus to damage
+    – +10 Hit Points
+    – Hit Points of the target are masked
+    – Cannot be healed
+  – Upon spell expiration:
+    – Fatigued after expiration
+    – Strength drops to 3 for 2 turns.
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
