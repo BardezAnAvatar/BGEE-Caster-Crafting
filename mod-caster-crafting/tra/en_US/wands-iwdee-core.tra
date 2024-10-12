@@ -2900,3 +2900,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Static Charge
+@74542 = ~Wand of Static Charge~
+@74543 = ~Upon activating this wand, it allows the wielder to generate a static charge around any creature within the area of effect, dealing %magnitude%d8 points of electrical damage (save vs. Wand for half). The charge keeps going off once every turn for the duration of the spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Static Charge
+  – Produces flame for 1 round
+  Damage: %magnitude%d8 electrical damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Visual range of the wielder
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
