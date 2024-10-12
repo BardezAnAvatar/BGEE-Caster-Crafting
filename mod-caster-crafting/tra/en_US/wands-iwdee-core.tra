@@ -2879,3 +2879,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Produce Fire
+@74540 = ~Wand of Produce Fire~
+@74541 = ~When pointing this wand and speaking the activation phrase, flames erupt from the target point, dealing 1d4 + %magnitude% points of fire damage to all creatures within the spell's radius. Creatures will take damage once per round regardless of when they enter the area of effect.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Produce Fire
+  – Produces flame for 1 round
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 4-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
