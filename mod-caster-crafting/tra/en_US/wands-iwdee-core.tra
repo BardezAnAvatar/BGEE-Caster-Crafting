@@ -2922,3 +2922,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Recitation
+@74544 = ~Wand of Recitation~
+@74545 = ~This wand, when activated, bestows divine blessing upon the wielder and <PRO_HISHER> allies while sowing confusion and weakness among <PRO_HISHER> enemies. The wielder's allies gain a +2 bonus to their attack rolls and Saving Throws, and the priest's enemies receive a -2 penalty to the same. Recitation does not nullify a Prayer spell—the two can be cast in tandem, and the effects are cumulative.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Recitation
+  – Allies
+    – +2 bonus to THAC0
+    – +2 bonus to Saving Throws
+  – Enemies
+    – -2 penalty to THAC0
+    – -2 penalty to Saving Throws
+  Duration: %duration%
+  Area of Effect: 25-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
