@@ -2858,3 +2858,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Giant Insect
+@74538 = ~Wand of Giant Insect~
+@74539 = ~With this wand, the wielder can summon 2-3 boring beetles or bombardier beetles to the caster's side. The beetles will obey the caster until the spell expires or they are slain.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Giant Insect
+  – Summons 2-3 boring beetles or bombardier beetles
+  Range: Sight
+  Duration: 8 hours
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
