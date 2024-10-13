@@ -2979,3 +2979,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cloud of Pestilence
+@74548 = ~Wand of Cloud of Pestilence~
+@74549 = ~With activating this wand, the targeted area transforms the air in a 12-ft. radius into sickening, grayish mists. The wielder and non-living creatures are immune to the effects of the cloud. For every round of exposure to the disease-ridden air, a creature must save vs. Breath or suffer 3 points of magic damage, blindness, and the loss of 3 points of Strength and Dexterity. The blindness and ability score penalties last 1 turn. Cloud of Pestilence can only be cast by evil-aligned characters.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Cloud of Pestilence
+  – Sickening, grayish mists
+  – Blindness
+  Damage:
+  – 3 magic damage per round
+  – 3 points of Strength and Dexterity damage per round
+  Range: Sight
+  Duration: 4 rounds
+  Area of Effect: 12-ft. radius
+  Saving Throw: Save vs. Breath negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
