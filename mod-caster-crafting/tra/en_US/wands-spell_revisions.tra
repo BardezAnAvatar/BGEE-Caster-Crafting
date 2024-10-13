@@ -4249,3 +4249,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Regenerate Critical Wounds
+@94570 = ~Wand of Regenerate Critical Wounds~
+@94571 = ~Upon activation, this wand enables the wielder to imbue a creature with the ability to regenerate. The creature affected will regain 4 hit points per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Regenerate Critical Wounds
+  – Heal 4 hit points per round
+  School: Alteration
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
