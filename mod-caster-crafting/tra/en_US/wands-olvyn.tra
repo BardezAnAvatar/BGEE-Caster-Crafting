@@ -1786,10 +1786,29 @@ Charge abilities:
 – Turn Creature
   – Turns one non-undead creature
   Range: Sight
-  Duration: 1 hour
   Duration: Special
   Area of Effect: 1 creature
   Saving Throw: Save vs. Polymorph (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Piercing Shots
+@84566 = ~Wand of Piercing Shots~
+@84567 = ~Upon activation, this wand allows the wielder's missile attacks to pierce through creatures. For the duration, any arrow, bolt, bullet, dart, dagger, or axe launched or thrown by the wielder will pierce through creatures in a line, dealing the attack's damage (as well as any on-hit effects) to each creature.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Piercing Shots
+  – Missile attacks to pierce through creatures
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
 
 Requires:
  9 Intelligence
