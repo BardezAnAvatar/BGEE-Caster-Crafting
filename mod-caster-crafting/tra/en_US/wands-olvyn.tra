@@ -1814,3 +1814,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Pebbles to Boulders
+@84568 = ~Wand of Pebbles to Boulders~
+@84569 = ~With activating this wand, the wielder's sling bullets transmute into boulders. While the spell is active, if the wielder launches a bullet, it instantly turns into a large boulder that retains the speed of the original bullet. The boulder inflicts an additional 3d6+8 damage if it hits (on top of the former damage of the bullet). Pebbles to Boulders also synergizes with the Magic Stone spell, letting one launch a Magic Boulder. Only a limited number of bullets or Magic Stones can be turned into boulders before the spell ends: up to %magnitude%.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Pebbles to Boulders
+  – Sling bullets transmute into boulders upon launch
+  Damage: additional 3d6+8 crushing damage to bullets
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
