@@ -3025,3 +3025,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Star Metal Cudgel
+@74552 = ~Wand of Star Metal Cudgel~
+@74553 = ~Once activated, this wand creates a meteoric iron magical club that deals 1d6+2 points of crushing damage, confers a +2 bonus to attack rolls, and is treated as a +4 weapon for purposes of what it can hit. Strength, proficiency, and specialization bonuses and penalties apply normally. The club deals an additional 2d6 points of crushing damage against unnatural creatures (undead, elementals, golems, outer-planar creatures, etc.).
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Star Metal Cudgel
+  – Conjures +4 magical club
+    – +2 bonus to THAC0
+    – +2 bonus to damage
+    – Additional 2d6 crushing damage vs. unnatural creatures
+  Duration: 3 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
