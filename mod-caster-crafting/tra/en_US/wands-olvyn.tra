@@ -1773,3 +1773,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Turn Creature
+@84564 = ~Wand of Turn Creature~
+@84565 = ~This wand turns a non-undead creature. Once the spell is cast, the target creature must Save vs. Polymorph at -4. On a failure, the creature is turned as if it was an undead creature affected by the wielder's Turn Undead ability. Depending on the level of the target, the level of the priest, the alignment of the priest, and random chance, the target may either be forced to run away from the priest temporarily, controlled by the priest temporarily, or killed instantly.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Turn Creature
+  – Turns one non-undead creature
+  Range: Sight
+  Duration: 1 hour
+  Duration: Special
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
