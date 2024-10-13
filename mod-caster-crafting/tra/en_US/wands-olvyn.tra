@@ -1753,3 +1753,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Forest's Blessing
+@84562 = ~Wand of Forest's Blessing~
+@84563 = ~When activated, this wand calls the forest the wielder is currently in for aid in casting spells. For the duration, the wielder casts spells as if 10 levels higher. Forest's Blessing has no effect if not cast outside in a forest.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Forest's Blessing
+  – +10 bonus to wielder's caster level in forests
+  Duration: 1 hour
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
