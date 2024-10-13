@@ -1732,3 +1732,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Disarm
+@84560 = ~Wand of Disarm~
+@84561 = ~This wand causes creatures' weapons to disappear. Upon activation, each enemy in the area of effect must make a Save vs. Wands at -2. On a failure, that creature's weapon vanishes temporarily, and the creature is forced to fight with its fists. For the duration, the creature cannot equip another weapon - if it does so, that weapon vanishes as well. The creature's weapons reappear if it dies before the duration expires. Disarm has no effect if the target is using a natural weapon or does not have a weapon in any of its quickslots.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Disarm
+  – Causes weapons to disappear
+  Range: Sight
+  Duration: 8 rounds
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wands (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
