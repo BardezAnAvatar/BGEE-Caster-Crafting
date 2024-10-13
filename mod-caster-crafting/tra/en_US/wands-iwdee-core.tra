@@ -3004,3 +3004,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Unfailing Endurance
+@74550 = ~Wand of Unfailing Endurance~
+@74551 = ~Upon activation, this wand restores the stamina of the creature touched, eliminating any fatigue.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Unfailing Endurance
+  – Eliminates fatigue
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
