@@ -3048,3 +3048,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Smashing Wave
+@74554 = ~Wand of Smashing Wave~
+@74555 = ~Once activated, this wand creates a meteoric iron magical club that deals 1d6+2 points of crushing damage, confers a +2 bonus to attack rolls, and is treated as a +4 weapon for purposes of what it can hit. Strength, proficiency, and specialization bonuses and penalties apply normally. The club deals an additional 2d6 points of crushing damage against unnatural creatures (undead, elementals, golems, outer-planar creatures, etc.).
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Smashing Wave
+  – Emits a wave of force
+    – Stun (25% chance) 2 rounds
+    – Unconscious (5% chance) 2 rounds
+  Damage: 4d10 crushing damage
+  Range: 100 ft.
+  Duration: Instant
+  Area of Effect: Wave towards target
+  Saving Throw: Save vs. Breath for half damage, no status
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
