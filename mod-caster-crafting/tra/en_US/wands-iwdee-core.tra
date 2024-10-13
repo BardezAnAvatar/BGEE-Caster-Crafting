@@ -3072,3 +3072,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Thorn Spray
+@74556 = ~Wand of Thorn Spray~
+@74557 = ~Upon activation, this wand causes a spray of barbs, spikes, thorns, and spines to spring forth from the wand. The thorn spray covers a 17-ft.-long cone, inflicting 2d10 points of piercing damage to all creatures within the area of effect, or 1d10 points of damage if a Save vs. Death is successful.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Thorn Spray
+  – Sprays thorns in an arc
+  Damage: 2d10 piercing damage
+  Range: 30 ft.
+  Duration: Instant
+  Area of Effect: 17-ft. cone with 90-deg. arc
+  Saving Throw: Save vs. Death for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
