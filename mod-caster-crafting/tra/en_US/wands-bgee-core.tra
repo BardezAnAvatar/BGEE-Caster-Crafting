@@ -3814,3 +3814,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shadow Door
+@65010 = ~Wand of Shadow Door~
+@65011 = ~By uttering the activation phrase, this wand creates the illusion of a door. The illusion also permits the wielder to appear to step through this "door" and disappear. In reality, <PRO_HESHE> has darted aside and can flee, totally invisible (as per the Improved Invisibility spell), for the spell's duration. A True Seeing spell, a Gem of Seeing, or similar magical means can reveal the consealed party.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Shadow Door
+  – Improved Invisibility
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
