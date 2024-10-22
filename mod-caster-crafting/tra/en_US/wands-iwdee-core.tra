@@ -3123,3 +3123,23 @@ Weight: 1~
 /***************************************
 *   5th Level - Arcane - 75000-75499   *
 ***************************************/
+//Cone of Cold
+@75002 = ~Wand of Cone of Cold~
+@75003 = ~Upon picking a direction and activating this wand, it releases a cone-shaped blast of extreme cold from the caster, doing %magnitude%d4+%magnitude% points of cold damage. Creatures caught in the area of effect are allowed a Save vs. Wand for half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cone of Cold
+  – Blast of cold in arc
+  Damage: %magnitude%d4+%magnitude% cold damage
+  Range: 0 ft.
+  Duration: Instant
+  Area of Effect: 20-ft. cone with 60-deg. arc
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

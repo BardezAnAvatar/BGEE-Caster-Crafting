@@ -3771,3 +3771,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cone of Cold
+@65002 = ~Wand of Cone of Cold~
+@65003 = ~Upon picking a direction and activating this wand, it generates a cone-shaped area of extreme cold originating at the wielder's hand and extending outward in a cone 17 ft. long with a 90-deg. arc. It drains heat and causes %magnitude%d4+%magnitude% cold damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cone of Cold
+  – Blast of cold in arc
+  Damage: %magnitude%d4+%magnitude% cold damage
+  Range: 0 ft.
+  Duration: Instant
+  Area of Effect: 17-ft. cone with 90-deg. arc
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
