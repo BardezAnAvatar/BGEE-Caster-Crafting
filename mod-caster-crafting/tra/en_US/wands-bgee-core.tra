@@ -3749,3 +3749,25 @@ Weight: 1~
 /***************************************
 *   5th Level - Arcane - 65000-65499   *
 ***************************************/
+//Cloudkill
+@65000 = ~Wand of Cloudkill~
+@65001 = ~Upon activating this wand, it generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with 4 or fewer Hit Dice, and causes creatures with 5 to 6 Hit Dice to roll Saving Throws vs. Poison with a -4 penalty or be slain. Holding one's breath has no effect on the lethality of the spell. Those above 6th level (or 6 Hit Dice) must leave the cloud immediately or suffer 1d10 points of poison damage each round while in the area of effect.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cloudkill
+  – Toxic cloud
+    – Instantly slays any creature with 4 or fewer Hit Dice
+    – Instantly slays any creature with 5-6 Hit Dice (save possible)
+  Damage: 1d10 points of poison damage each round in cloud
+  Range: 40 ft.
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Poison (-4 penalty) avoids instant death
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
