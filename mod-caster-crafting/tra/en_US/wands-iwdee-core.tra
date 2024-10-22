@@ -3143,3 +3143,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Monster Summoning III
+@75004 = ~Wand of Monster Summoning III~
+@75005 = ~This wand summons 1d4 3rd-level monsters. These appear within spell range and can be commanded to attack the caster's opponents until the spell duration expires or the monsters are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning III
+  – Summons 1d4 3rd-level monsters
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

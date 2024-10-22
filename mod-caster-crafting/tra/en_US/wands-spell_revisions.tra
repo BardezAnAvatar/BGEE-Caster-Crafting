@@ -4320,3 +4320,71 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Monster Summoning V
+@95006 = ~Wand of Monster Summoning V~
+@95007 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning V
+  – Summons 2 Ogre Berserker
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Ogre Berserker (5 Hit Dice):
+    STR 18/00, DEX 9, CON 18, INT 8, WIS 10, CHA 7; AL Chaotic Evil
+    HP 60, AC 3, THAC0 11, Saving Throws 11/13/12/13/14
+    1 Attack Per Round, 1d10+9 Crushing Damage (Morning Star +1)
+    Special Qualities:
+      – Enrage (once per day)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning V
+@95008 = ~Wand of Monster Summoning V~
+@95009 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning V
+  – Summons 2 Ogre Berserker
+  – Summons 1 Ogre Mage
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Ogre Berserker (5 Hit Dice):
+    STR 18/00, DEX 9, CON 18, INT 8, WIS 10, CHA 7; AL Chaotic Evil
+    HP 60, AC 3, THAC0 11, Saving Throws 11/13/12/13/14
+    1 Attack Per Round, 1d10+9 Crushing Damage (Morning Star +1)
+    Special Qualities:
+      – Enrage (once per day)
+  – Ogre Mage (6 Hit Dice):
+    STR 18/00, DEX 9, CON 17, INT 15, WIS 11, CHA 13; AL Lawful Evil
+    HP 56, AC 2, THAC0 11, Saving Throws 11/13/12/13/14
+    1 Attack Per Round, 1d10+9 Slashing Damage (Katana +1)
+    Special Qualities:
+    – Invisibility (at will)
+    – Regeneration: 1 hp/round
+    Memorized Spells:
+      – 1º Obscuring Mist, Magic Missile (x2), Shield
+      – 2º Horror, Mirror Image
+      – 3º Dire Charm, Slow
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
