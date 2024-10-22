@@ -4298,3 +4298,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cone of Cold
+@95002 = ~Wand of Cone of Cold~
+@95003 = ~Upon picking a direction and activating this wand, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of 60 degrees in front of the wielder. It drains heat and causes  %magnitude%d4+%magnitude% cold damage, with a save vs. breath at -4 allowed for half damage.
+
+STATISTICS:
+
+Charge abilities:
+– Cone of Cold
+  – Blast of cold in arc
+  Damage: %magnitude%d4+%magnitude% cold damage
+  School: Evocation
+  Range: 0 ft.
+  Duration: Instant
+  Area of Effect: 30' cone with 60-deg. arc
+  Saving Throw: Save vs. Breath (at -4) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
