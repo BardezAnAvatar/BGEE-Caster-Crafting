@@ -3185,3 +3185,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Hold Monster
+@75014 = ~Wand of Hold Monster~
+@75015 = ~Once activated, this wand holds 1d4 creatures of any type (except for undead) rigidly immobile. Specifically, it affects the targeted enemy and up to 3 hostile creatures within 10 ft. of it. A successful Save vs. Wand negates the effect.
+
+Paralyzed creatures are helpless and cannot dodge or defend themselves from attacks. Being held does not prevent the worsening of the subject's condition due to wounds, disease, or poison.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Monster
+  – Holds monster and nearby enemies
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature and any enemies within 10 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
