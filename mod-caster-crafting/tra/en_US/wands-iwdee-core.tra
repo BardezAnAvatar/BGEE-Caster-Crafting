@@ -3250,3 +3250,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Lower Resistance
+@75026 = ~Wand of Lower Resistance~
+@75027 = ~Once activated, this wand this spell will lower the Magic Resistance of this creature by %magnitude%%. There is no Saving Throw, and the target's Magic Resistance, if any, does not affect this spell. This effect is cumulative for each casting of this spell: If Lower Resistance was cast upon the same creature again, the creature's Magic Resistance would be further diminished. This spell will last until its duration expires and cannot be dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Lower Resistance
+  – Dispels all listed protections on target
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
