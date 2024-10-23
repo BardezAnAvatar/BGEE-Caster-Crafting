@@ -3940,3 +3940,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Normal Weapons
+@65022 = ~Wand of Protection From Normal Weapons~
+@65023 = ~Once activated, this wand confers complete invulnerability to all non-magical weapons. This does not include weapons that are blessed or enchanted. This spell may not be cast on someone who is protected from magical weapons. This effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Normal Weapons
+  – Protection from one school of spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
