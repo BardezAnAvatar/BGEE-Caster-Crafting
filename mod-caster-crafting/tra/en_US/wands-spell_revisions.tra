@@ -4410,3 +4410,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Domination
+@95012 = ~Wand of Domination~
+@95013 = ~Upon activation, this wand enables the wielder to control the actions of any creature while the spell is in effect. This control is maintained through a telepathic link between the wielder and the victim. Unlike the 4th-level priest spell Mental Domination, the target has no option for release, even if made to do something against his morals. The target is allowed a Saving Throw vs. Wand with a -2 penalty to negate the effect.
+
+STATISTICS:
+
+Charge abilities:
+– Domination
+  – Charms target
+  School: Enchantment
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
