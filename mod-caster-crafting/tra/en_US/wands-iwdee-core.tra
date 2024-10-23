@@ -3208,3 +3208,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chaos
+@75016 = ~Wand of Chaos~
+@75017 = ~Upon activation, this wand causes victims wander around as if in a daze, sometimes wandering away, sometimes attacking either friend or foe. If the victim is 4th level or lower, <PRO_HESHE> does not receive a Saving Throw vs. the effects. However, if the victim is 5th level or higher, <PRO_HESHE> receives a Save vs. Wand with a -4 penalty. The spell lasts for the duration or until a successful Dispel Magic is cast.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Chaos
+  – Causes confusion
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
