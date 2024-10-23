@@ -4475,3 +4475,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Normal Weapons
+@95022 = ~Wand of Protection From Normal Weapons~
+@95023 = ~Once activated, this wand creates an immobile, faintly shimmering magical sphere around the wielder that cannot be penetrated by non-magical weapons; all such weapons are harmlessly deflected (missile weapons strike the sphere, then immediately fall to the ground). This does not include weapons that are blessed or enchanted. The effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Normal Weapons
+  – Protection from one school of spells
+  School: Abjuration
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
