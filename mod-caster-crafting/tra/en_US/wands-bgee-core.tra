@@ -3899,3 +3899,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Feeblemind
+@65018 = ~Wand of Feeblemind~
+@65019 = ~This wand causes the subject's intellect to degenerate into that of a simple beast of burden unless a Saving Throw vs. Wand is made with a -2 penalty. Upon a failed Saving Throw, the subject remains in this state until a successful Dispel Magic is cast upon <PRO_HIMHER>.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Feeblemind
+  – Minimal Intelligence score
+  Range: 40 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

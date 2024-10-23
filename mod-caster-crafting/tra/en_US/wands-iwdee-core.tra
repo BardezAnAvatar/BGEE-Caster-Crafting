@@ -3229,3 +3229,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Feeblemind
+@75018 = ~Wand of Feeblemind~
+@75019 = ~This wand causes the target into a gibbering idiot, which lasts until Dispel Magic is cast upon <PRO_HIMHER>. The victim is allowed a Save vs. Wand at -2 to resist being stupefied. Feebleminded individuals cannot cast spells. The priest spell Heal will remove feeblemindedness from an afflicted character.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Feeblemind
+  – Minimal Intelligence score
+  Range: Sight
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
