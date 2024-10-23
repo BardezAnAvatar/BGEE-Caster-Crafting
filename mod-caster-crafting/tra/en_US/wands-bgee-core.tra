@@ -3920,3 +3920,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spell Immunity
+@65020 = ~Wand of Spell Immunity~
+@65021 = ~Upon activating this wand, it grants the wielder protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wielder must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the wielder for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the wielder.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Spell Immunity
+  – Protection from one school of spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
