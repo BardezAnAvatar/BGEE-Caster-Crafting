@@ -4496,3 +4496,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Breach
+@95024 = ~Wand of Breach~
+@95025 = ~Upon activation, this wand it breaches and dispels all of the specific† and combat‡ protections on the target creature. The target's Magic Resistance, if any, does not affect this spell.
+
+†: The specific protection spells dispelled by Breach are: Resist Fear, Resist Elements, Death Ward, Free Action, Protection from Acid, Protection from Cold, Protection from Electricity, Protection from Fire, Chaotic Commands, Protection from Magic Energy, Protection from the Elements, Protection from Energy and Mind Blank.
+
+‡: The combat protection spells dispelled by Breach are: Mage Armor, Shield, Armor of Faith, Barkskin, Protection from Missiles, Spirit Armor, Stoneskin, Protection from Normal Weapons, Protection from Magical Weapons, Physical Mirror, Prismatic Mantle, Moment of Prescience and Absolute Immunity.
+
+STATISTICS:
+
+Charge abilities:
+– Breach
+  – Dispels all listed protections on target
+  School: Abjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
