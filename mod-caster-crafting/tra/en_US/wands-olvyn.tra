@@ -1881,3 +1881,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Oracle
+@85028 = ~Wand of Oracle~
+@85029 = ~Upon activation, this wand allows the caster to predict enemies' spells. For the duration, whenever a non-allied creature in the current area begins casting a spell, the caster will immediately be informed of the name of the spell being cast.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Oracle
+  – Reveals spells being cast
+  Duration: 4 hours
+  Area of Effect: Entire area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

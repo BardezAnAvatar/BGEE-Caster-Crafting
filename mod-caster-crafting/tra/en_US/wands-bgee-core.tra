@@ -4006,3 +4006,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Oracle
+@65028 = ~Wand of Oracle~
+@65029 = ~Upon activation, this wand will cancel all Illusion/Phantasm spells† of 5th level and lower within its area of effect. The wielder can control just who this spell affects: Therefore, it will affect only creatures that are not in the wielder's party. The area of effect is a 120-ft. radius around the wielder.
+
+†: The spells affected are Reflected Image, Invisibility, Mirror Image, Non-Detection, Improved Invisibility, and Shadow Door.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Oracle
+  – Dispels nearby illusions
+  Duration: Instant
+  Area of Effect: 120-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -4542,3 +4542,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Oracle
+@95028 = ~Wand of Oracle~
+@95029 = ~Upon activation, this wand affects an area roughly 30 feet in radius around the wielder will be affected. All hostile illusion/phantasm spells in this area will be dispelled. This spell only affects one's enemies.
+
+The spells that are affected by this are: Reflected Image, Invisibility, Blur, Mirror Image, Ghost Armor, Invisibility Sphere, Improved Invisibility, Shadow Door, Pixie Dust, Mislead, Project Image, and Mass Invisibility.
+
+STATISTICS:
+
+Charge abilities:
+– Oracle
+  – Dispels nearby illusions
+  School: Divination
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
