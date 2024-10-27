@@ -4028,3 +4028,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Conjure Lesser Fire Elemental
+@65030 = ~Wand of Conjure Lesser Fire Elemental~
+@65031 = ~Once activated, this wand summons a fire elemental to do the wielder's bidding. The elemental has 8 Hit Dice and is locked into a psychic contest with the summoner for 3 rounds after being summoned. At the end of this time, if the summoner has won, <PRO_HESHE> has control of the elemental; however, if <PRO_HESHE> has lost, the elemental goes berserk and tries to kill <PRO_HIMHER>. This does not prevent the use of other charm-type spells after the contest was lost. If charm spells are used before the contest is over, they will have no effect on the outcome.
+
+If successful, the elemental and will serve the wielder's every whim until banished back to its home plane, the spell's duration expires, or the elemental dies.
+
+However, every time this spell is cast, there is a 15% chance that the elemental will escape the instructions of the wielder, go berserk, and attack who dared summoning it. If it can't reach the summoner, it will fight its way toward <PRO_HIMHER>. This berserking elemental will also remain until slain or the spell's duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Conjure Lesser Fire Elemental
+  – Summons a lesser Fire Elemental
+  Range: 45 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
