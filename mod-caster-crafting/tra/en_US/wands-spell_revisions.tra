@@ -4596,3 +4596,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Acid
+@95032 = ~Wand of Protection From Acid~
+@95033 = ~Upon touching this wand to a target, the recipient receives complete protection from all acid-based attacks, whether magical or non-magical in origin. 100% of the damage from attacks like acidic dragon breath will be absorbed, and the target creature will become completely immune to the effects of spells such as Melf's Acid Arrow and Acid Fog. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Acid
+  – 100% acid resistance
+  School: Abjuration
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
