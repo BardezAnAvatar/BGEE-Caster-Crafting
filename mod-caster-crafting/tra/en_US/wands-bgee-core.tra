@@ -4053,3 +4053,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection From Acid
+@65032 = ~Wand of Protection From Acid~
+@65033 = ~Upon touching this wand to a target, it confers complete invulnerability to all acid-based attacks, whether magical or non-magical, such as Acid Arrow or a creature's special attacks. This effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Acid
+  – 100% acid resistance
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
