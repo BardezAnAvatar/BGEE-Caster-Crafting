@@ -4074,3 +4074,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Phantom Blade
+@65034 = ~Wand of Phantom Blade~
+@65035 = ~Upon activation, this wand creates a translucent, shadow-like, weightless area of magical force extending from the fingers of one of the wielder's hands. The silent, blade-shaped construct's cutting edges inflict slashing damage just as those of a real sword do. The phantom blade is wielded as if the wielder is proficient with it, at <PRO_HISHER> normal THAC0.
+
+The phantom blade acts as a +3 magical sword in terms of to-hit and damage bonuses as well as the type of creatures it can hit. However, due to its etheric nature, it causes an extra +10 damage against undead creatures. This sword can only be used by the wielder and remains in <PRO_HISHER> hand for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Phantom Blade
+  – Conjures a 1d10 long sword (slashing)
+    – +3 bonus to THAC0
+    – +3 bonus to damage
+    – +10 bonus to damage to undead
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
