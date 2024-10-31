@@ -4193,3 +4193,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Sunfire
+@65044 = ~Wand of Sunfire~
+@65045 = ~By gesturing with this wand, the entire area around the wielder erupts in flames, striking everyone except the wielder <PRO_HIMHER>self. This explosive burst of flame detonates with a low roar and delivers %magnitude%d6 points of fire damage. Creatures failing their Saving Throws take full damage from the blast; those who roll successful Saving Throws manage to dodge, fall flat, or roll aside, each taking half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Sunfire
+  – Fire erupts around wielder
+  Damage: %magnitude%d6 fire damage
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
