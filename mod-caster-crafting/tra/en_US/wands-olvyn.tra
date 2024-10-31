@@ -1905,7 +1905,7 @@ Weight: 1~
 
 //Conjure Lesser Fire Elemental
 @85030 = ~Wand of Conjure Lesser Fire Elemental~
-@85031 = ~Once activated, this wand summon an 8-HD elemental from the Elemental Plane of Fire and bind it to the wielder's will. This elemental will fight on behalf of the caster until the spell duration expires or the elemental is destroyed.
+@85031 = ~Once activated, this wand summon an 8-HD elemental from the Elemental Plane of Fire and bind it to the wielder's will. This elemental will fight on behalf of the wielder until the spell duration expires or the elemental is destroyed.
 
 STATISTICS:
 (Conjuration/Summoning)
@@ -1913,6 +1913,27 @@ STATISTICS:
 Charge abilities:
 – Conjure Lesser Fire Elemental
   – Summons a lesser Fire Elemental
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Lesser Air Elemental
+@85038 = ~Wand of Conjure Lesser Air Elemental~
+@85039 = ~Once activated, this wand summon an 8-HD elemental from the Elemental Plane of Air and bind it to the wielder's will. This elemental will fight on behalf of the wielder until the spell duration expires or the elemental is destroyed.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Conjure Lesser Air Elemental
+  – Summons a lesser Air Elemental
   Range: Sight
   Duration: %duration%
   Area of Effect: Summons

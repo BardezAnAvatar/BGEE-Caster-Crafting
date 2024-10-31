@@ -4665,3 +4665,33 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Conjure Lesser Air Elemental
+@95038 = ~Wand of Conjure Lesser Air Elemental~
+@95039 = ~Once activated, this wand opens a special gate to the Elemental Plane of Air, and a air elemental is summoned to the vicinity of the wielder. The elemental has 8 Hit Dice and will serve the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death. It is particularly difficult to maintain a gate to the Inner Planes - there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
+
+STATISTICS:
+
+Charge abilities:
+– Conjure Lesser Air Elemental
+  – Summons a lesser Air Elemental
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Lesser Air Elemental (8 Hit Dice):
+    STR 14, DEX 17, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+    HP 80, AC 0, THAC0 8, Saving Throws 10/12/11/11/13
+    3 Attacks Per Round, 1d6+2 Piercing Damage (Fist +2)
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to hold, poison, sleep, & stun effects
+    – Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
