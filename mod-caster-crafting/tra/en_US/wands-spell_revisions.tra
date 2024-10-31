@@ -4750,3 +4750,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Sunfire -> Fireburst
+@95044 = ~Wand of Sunfire~
+@95045 = ~By gesturing with this wand, the entire area around the wielder erupts in flames, striking all except the caster for %magnitude%d6 points of fire damage. Creatures who fail their saving throw vs. breath at -4 suffer full damage from the blast. Those who roll successful saving throws manage to dodge, fall flat, or roll aside, each receiving half damage.
+
+STATISTICS:
+
+Charge abilities:
+– Sunfire
+  – Fire erupts around wielder
+  Damage: %magnitude%d6 fire damage
+  School: Evocation
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 15' radius
+  Saving Throw: Save vs. Breath (at -4) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
