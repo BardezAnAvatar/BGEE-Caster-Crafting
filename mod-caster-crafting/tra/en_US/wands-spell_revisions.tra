@@ -4617,3 +4617,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Phantom Blade
+@95034 = ~Wand of Phantom Blade~
+@95035 = ~Upon activation, this wand creates a translucent, weightless, shadowlike sword made of material from the Plane of Shadow that extends 3 feet from the wielder's hand. The phantom blade is wielded as if it was a long sword but the wielder suffers no penalty for non-proficiency. The sword deals 1d12+4 points of magic damage to its victims, and an additional 10 points of damage against undead creatures. Due to its ethereal nature, strength bonuses do not apply, but attacks with the phantom blade are considered melee touch attacks, and thus gain a +4 bonus to hit. Furthermore, a successful strike temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. wand at a -4 penalty negates). The blade is considered to be of +4 enchantment when determining what it can hit, but it cannot harm inorganic things because it has no solid existence. The phantom blade can only be used by the wielder, and remains in his hand for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Phantom Blade
+  – Conjures a 1d12 long sword (slashing)
+    – +4 bonus to THAC0
+    – +4 bonus to damage
+    – +10 bonus to damage to undead
+    – Miscast Magic
+  School: Illusion
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Wand (-4 penalty) negates Miscast Magic
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
