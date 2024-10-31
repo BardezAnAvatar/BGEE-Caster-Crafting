@@ -4171,3 +4171,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Minor Spell Turning
+@65042 = ~Wand of Minor Spell Turning~
+@65043 = ~Once activated, this wand causes the spells cast against the wielder to rebound upon the original caster. This affects a total of 4 spell levels—including spells cast from scrolls and innate spell-like abilities -— but excludes the following: area effects that are not centered directly upon the wizard, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud. As long as the spell is cast directly at the wizard, it will be reflected back upon the caster. This spell will only affect up to 4th-level spells, but as long as there are levels remaining, a spell will be reflected. For example, if there is only 1 level left and a 3rd-level spell is cast at the wizard, the spell will be reflected while canceling the Spell Turning.
+
+This spell will not protect the caster from Dispel Magic, but will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Minor Spell Turning
+  – Deflects spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
