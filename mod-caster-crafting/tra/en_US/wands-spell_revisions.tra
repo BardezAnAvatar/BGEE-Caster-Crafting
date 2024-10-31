@@ -4642,3 +4642,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spell Shield
+@95036 = ~Wand of Spell Shield~
+@95037 = ~Once activated, this wand protects the wielder from the next magical attack against him. If one of those spells is cast at the wizard this spell activates and absorbs the attack. However, this only works once as this spell is consumed in the process.
+
+The spells that Spell Shield protects the wizard from are: Spell Thrust, Secret Word, Pierce Magic, Ruby Ray, Warding Whip, Pierce Shield, and Spellstrike.
+
+STATISTICS:
+
+Charge abilities:
+– Spell Shield
+  – Shielded from a magical protection dispell attack
+  School: Abjuration
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
