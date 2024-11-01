@@ -1964,3 +1964,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Life Transfer
+@85056 = ~Wand of Life Transfer~
+@85057 = ~Once activated, this wand exchanges the life force of the wielder with that of another creature, even if that creature is unwilling. If the target fails a Save vs. Polymorph at -4, its current HP is swapped with the caster's current HP. This exchange will not bring the wielder above <PRO_HISHER> maximum HP total.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Life Transfer
+  – Swaps Hit Points with target
+  Range: Visual range of the caster
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
