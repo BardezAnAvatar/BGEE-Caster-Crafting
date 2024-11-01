@@ -3362,3 +3362,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Summon Shadow
+@75050 = ~Wand of Summon Shadow~
+@75051 = ~This wand summons three 4-HD shadows. The shadows will obey the orders of the wielder, attacking <PRO_HISHER> enemies or performing tasks until the spell expires or the shadows are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Summon Shadow
+  – Summons shadows
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
