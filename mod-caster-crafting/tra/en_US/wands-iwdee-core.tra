@@ -3404,3 +3404,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Contact Other Plane
+@75054 = ~Wand of Contact Other Plane~
+@75055 = ~When activating this wand, allows the wielder to contact powers from other planes of existence in order to receive advice and information. The nature of the divination is oriented around knowledge of powerful foes, magic items, and spells.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Contact Other Plane
+  – Contacts another plane of existence to receive advice and information
+  Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
