@@ -3341,3 +3341,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Demi-Shadow Monsters
+@75048 = ~Wand of Demi-Shadow Monsters~
+@75049 = ~With activating, this wand shapes material from the Demiplane of Shadow into illusionary monsters. Up to six shadowy creatures can be summoned at once, but their total Hit Dice will normally not exceed %caster_level%. The monsters created with an additional 40% of normal hit points.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Demi-Shadow Monsters
+  – Summons stronger shadow-plane monsters
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
