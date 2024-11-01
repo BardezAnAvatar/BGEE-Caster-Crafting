@@ -3317,3 +3317,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shroud of Flame
+@75046 = ~Wand of Shroud of Flame~
+@75047 = ~Once this wand is activated, it causes a creature to burst into flames if it fails a Save vs. Wand. The creature will burn for 2d6 points of fire damage every round, and gouts of flame erupt from the burning target, causing any creatures within 5 ft. to take 1d4 points of fire damage from the flames. Anyone hit by the victim's flames must also make a Save vs. Wand to avoid contracting the shroud themselves. The shroud of flame dissipates if the caster and target are no longer in the same area. This spell is particularly useful in dispersing packs of trolls and frost salamanders.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Shroud of Flame
+  – Fire engulfs target
+  Damage:
+  – 2d6 fire damage per round
+  – 1d4 fire damage splash damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 5-ft. radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
