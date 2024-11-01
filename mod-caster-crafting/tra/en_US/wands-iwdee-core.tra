@@ -3383,3 +3383,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Conjure Water Elemental
+@75052 = ~Wand of Conjure Water Elemental~
+@75053 = ~Upon picking a location and activating this wand, it summons an 8-HD elemental from the Elemental Plane of Water and bind it to the wielder's will. This elemental will fight on behalf of the caster until the spell duration expires or the elemental is destroyed.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Conjure Water Elemental
+  – Summons a water elemental
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
