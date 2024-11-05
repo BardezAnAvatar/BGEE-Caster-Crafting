@@ -2030,3 +2030,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Major Mirror Image
+@85062 = ~Wand of Major Mirror Image~
+@85063 = ~Upon activation, this wand conjures %magnitude% illusory mirror images, giving the wielder the ability to control the images directly. When cast, it %caster_level% multiple illusory images of the wielder. Each image can be controlled independently of the others. Like the images created by Mirror Image, these images will vanish when struck by an attack or a hostile spell, though they have the same Armor Class as the wielder. Images summoned with this spell ignore the summoning limit.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Major Mirror Image
+  – Conjures an illusion of controllable mirror images
+  Range: Self
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
