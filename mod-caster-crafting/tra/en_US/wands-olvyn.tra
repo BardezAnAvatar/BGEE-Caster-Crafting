@@ -2008,3 +2008,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Ball Lightning
+@85060 = ~Wand of Ball Lightning~
+@85061 = ~By selecting a target and activating this wand, it throws %magnitude% balls of lightning at a single enemy. Each ball of lightning deals 1d6 electricity damage with no saving throw.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Ball Lightning
+  – Throw multiple balls of lighting at a single enemy
+  Range: Sight
+  Damage: %magnitude%d6 electical damage per ball
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
