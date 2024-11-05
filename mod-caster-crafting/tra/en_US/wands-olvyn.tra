@@ -1985,3 +1985,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Steal Spells
+@85058 = ~Wand of Life Transfer~
+@85059 = ~Upon activation, this wand steals memorized spells from the target and grants their spell slots to the caster. The target loses %magnitude% memorized spells of the highest level possible. For each spell drained this way, the caster regains a previously-cast spell of a level less than or equal to the level of the stolen spell (though Steal Spells itself cannot be regained this way). There is no Saving Throw, though Magic Resistance may prevent the theft.
+
+If the caster has a Pick Pockets skill, they may steal an additional spell for every 50 Pick Pockets they have.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Steal Spells
+  – Steals spell slots from victim
+  Range: Visual range of the caster
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
