@@ -4772,3 +4772,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mestil's Acid Sheath
+@95086 = ~Wand of Mestil's Acid Sheath~
+@95087 = ~This wand conjures an acid shield around the caster. This shield not only grants the user 50% acid resistance, but also protects the caster from attacks made within a 5' radius. Opponents that hit the caster with a weapon or spell from within this radius will suffer 4d4 points of acid damage. Multiple castings of this spell are not cumulative, but it can be used in conjunction with similar spells. Tiny and small flying creatures cannot pass through the caustic barrier. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Mestil's Acid Sheath
+  – Protective acid barrier
+  – +50% acid resistance
+  – Damages attackers
+  Damage: 4d4 acid damage
+  School: Conjuration
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
