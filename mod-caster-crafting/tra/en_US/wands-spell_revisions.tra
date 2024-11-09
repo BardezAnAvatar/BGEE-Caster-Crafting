@@ -4774,6 +4774,74 @@ Requires:
 Weight: 1~
 
 
+//Summon Shadow: Shadows
+@95050 = ~Wand of Summon Shadow~
+@95051 = ~This wand summons a number of shadows, undead monsters which serve the wielder under any conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell.
+
+The undead creatures will remain under the wizard's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Shadow
+  – Summons 3 shadows
+  School: Necromancy
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Shadow (3 Hit Dice):
+    STR -, DEX 14, CON -, INT 6, WIS 12, CHA 11;  AL Chaotic Evil
+    HP 36, AC 5, THAC0 13, Saving Throws 11/13/11/13/13
+    1 Attack Per Round, 1d6+1 Cold Damage (Touch +1)
+    Combat Abilities:
+    – Chill Touch: creatures struck must save vs. death or lose 1 point of strength for 1 hour
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to backstab, charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%; Physical Damage Resistance 50%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Summon Shadow: Wraiths
+@95090 = ~Wand of Summon Shadow~
+@95091 = ~This wand summons a number of shadows, undead monsters which serve the wielder under any conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell.
+
+The undead creatures will remain under the wizard's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Shadow
+  – Summons 2 wraiths
+  School: Necromancy
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Wraith (5 Hit Dice):
+    STR -, DEX 15, CON -, INT 11, WIS 13, CHA 12;  AL Lawful Evil
+    HP 60, AC 4, THAC0 12, Saving Throws 10/13/10/13/13
+    1 Attack Per Round, 1d8+1 Cold Damage (Touch +1)
+    Combat Abilities:
+    – Life Drain: each successful hit raises the wraith's hit points by 5 for 1 turn and causes the target to save vs. death or lose 1 level
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to backstab, blindness, charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%; Physical Damage Resistance 50%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Mestil's Acid Sheath
 @95086 = ~Wand of Mestil's Acid Sheath~
 @95087 = ~This wand conjures an acid shield around the caster. This shield not only grants the user 50% acid resistance, but also protects the caster from attacks made within a 5' radius. Opponents that hit the caster with a weapon or spell from within this radius will suffer 4d4 points of acid damage. Multiple castings of this spell are not cumulative, but it can be used in conjunction with similar spells. Tiny and small flying creatures cannot pass through the caustic barrier. Magic resistance does not affect this spell.
