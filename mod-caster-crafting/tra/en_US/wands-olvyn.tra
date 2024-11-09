@@ -2114,3 +2114,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Slime Drop
+@85070 = ~Wand of Slime Drop~
+@85071 = ~Once a target is selected and this wand is activated, it drops an enormous mass of acidic slime on top of a creature. The target and all other creatures within 10 feet take 12d6 acid damage (Save vs. Wand for half) and are stunned for 4 rounds if they fail the save. Targets immune to acid are not stunned.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Slime Drop
+  – Drops acid on target area
+  – Stuns
+  Damage: 12d6 acid damage
+  Range: Sight
+  Duration: %suration%
+  Area of Effect: 10-ft. radius
+  Saving Throw: Save vs. Wand for half damage and to negate stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
