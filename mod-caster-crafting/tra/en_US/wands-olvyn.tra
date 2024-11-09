@@ -2247,3 +2247,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Rewind Time
+@85082 = ~Wand of Rewind Time~
+@85083 = ~This wand briefly reverses time for the caster, reverting them to the state they were in two rounds ago. The caster's HP is restored to what it was two rounds ago, as is their location in the area. The caster also regains the magical effects they had two rounds ago, while losing effects gained in the past two rounds (including harmful status effects). Rewind Time does not restore memorized spells expended in the last two rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Rewind Time
+  – Rewinds time for wielder
+  Duration: -2 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
