@@ -2159,3 +2159,23 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Warrior Simulacrum
+@85074 = ~Wand of Warrior Simulacrum~
+@85075 = ~This wand will creates an illusionary copy of the caster which is under the caster's control. The simulacrum cannot cast spells or use special abilities of items or innate abilities. It is 60% the level of the caster and has 60% of the caster's Hit Points. This spell is most useful for fighter/mages and other spellcasters with decent fighting skills.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Warrior Simulacrum
+  – Conjures an illusory simulacrum for combat
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
