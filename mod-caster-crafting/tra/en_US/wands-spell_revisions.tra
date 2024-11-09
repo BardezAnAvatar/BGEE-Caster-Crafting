@@ -4885,3 +4885,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//95090 -- See: Summon Shadow: Wraiths
+
+
+//Waves of Fatigue
+@95092 = ~Wand of Summon Shadow~
+@95093 = ~Once activated, surges of negative energy render all hostile living creatures in the spell's area fatigued, as if they haven't rested in a day. Multiple castings of this spell are cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Shadow
+  – Fatigue (cumulative)
+  School: Necromancy
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
