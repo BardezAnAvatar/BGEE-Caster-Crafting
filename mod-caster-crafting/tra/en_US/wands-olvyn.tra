@@ -2179,3 +2179,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Wall of Force
+@85076 = ~Wand of Wall of Force~
+@85077 = ~Once activated, this wand creates a wall of magical force, which stays for 5 rounds. Creatures cannot pass through the wall, though they can still fly over it, teleport past it, or float past it while incorporeal. The wall cannot be dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Wall of Force
+  – Conjures an impassible wall
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 8 ft. long, 2 ft. wide wall
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
