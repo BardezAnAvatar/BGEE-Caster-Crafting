@@ -2222,3 +2222,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Gedlee's Electric Barrier
+@85080 = ~Wand of Gedlee's Electric Barrier~
+@85081 = ~This wand protects the caster with a shield of electricity. The caster gains +50% Electricity Resistance, and creatures that hit the caster with an attack or spell in melee take 1d10+3 electricity damage and must Save vs. Polymorph or be stunned for 1 round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Gedlee's Electric Barrier
+  – Protective electric barrier
+  – +50% Electricity Resistance
+  – Damages attackers
+  Damage:
+  – 1d10+3 electricity damage
+  – stunned for 1 round
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Polymorph negates stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
