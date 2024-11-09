@@ -4796,3 +4796,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Dispelling Screen
+@95088 = ~Wand of Dispelling Screen~
+@95089 = ~By activating this wand, it creates a transparent, permeable barrier that shields the wielder and allies from Dispel Magic and Breach spells. The barrier dissipates after one instance of Dispel Magic or Breach. Spells higher in power that remove specific protections like Pierce Shield and Spellstrike remove Dispelling Screen from target without getting absorbed by it.
+
+STATISTICS:
+
+Charge abilities:
+– Dispelling Screen
+  – Shields allies from Dispel Magic and Breach spells
+  School: Abjuration
+  Range: Personal
+  Duration: 5 turns
+  Area of Effect: Caster and nearby allies
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
