@@ -2072,3 +2072,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Missile of Patience
+@85066 = ~Wand of Missile of Patience~
+@85067 = ~Once a target is selected and this wand is activated, the wand fires a slow magical projectile at the target, which will deal enormous damage once it hits. Although the missile travels slowly, it pursues the target unstoppably, even going through walls in its path. When it hits the target, it strikes with far more force than its speed would imply, dealing 20d6 crushing damage. The target is allowed a Save vs. Wand at -4 for half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Missile of Patience
+  – A slow magical missile creeps towards target
+  Damage: 20d6 crushing damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -4) for half damange
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
