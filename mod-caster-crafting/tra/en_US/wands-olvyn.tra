@@ -2106,7 +2106,7 @@ STATISTICS:
 Charge abilities:
 – Ghostform
   – Turn incorporeal
-  Duration: %suration%
+  Duration: %duration%
   Area of Effect: Self
   Saving Throw: None
 
@@ -2129,9 +2129,31 @@ Charge abilities:
   – Stuns
   Damage: 12d6 acid damage
   Range: Sight
-  Duration: %suration%
+  Duration: %duration%
   Area of Effect: 10-ft. radius
   Saving Throw: Save vs. Wand for half damage and to negate stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Critical Spell
+@85072 = ~Wand of Critical Spell~
+@85073 = ~Once activated, this wand lets the caster repeatedly cast a spell via critical hits. The caster is prompted to store a single 1st-level spell, and the caster's weapons are temporarily imbued with that spell. For the duration, whenever the caster gets a critical hit on a creature, <PRO_HESHE> instantly casts a copy of the stored spell. This will not happen if the critical hit is averted. The caster can also store a 2nd-level spell if they are level 20 or higher, and an additional spell level higher for every ten levels after 20.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Critical Spell
+  – Store a single 1st-level spell
+  – Casts stored spell on critical hits
+  Range: Sight
+  Duration: 2 hours
+  Area of Effect: Self
+  Saving Throw: None
 
 Requires:
  9 Intelligence
