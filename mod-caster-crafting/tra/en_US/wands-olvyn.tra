@@ -2267,3 +2267,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Teleportation Circle
+@85084 = ~Wand of Teleportation Circle~
+@85085 = ~Upon activation, this wand creates a magic circle that the party can use to teleport to another such circle. In casting this spell, the caster chooses one of seven sigil sequences for the teleportation circle. The circle is then created, and any other circle with the same sigil sequence is destroyed. The circle can be interacted with; by doing so the party can teleport to another circle with a different sigil sequence. Non-allied creatures cannot use these teleportation circles unless they are familiar with the sigil sequences.
+
+There are certain areas that bar teleportation. Attempting to teleport into or out of these areas will fail.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Teleportation Circle
+  – Marks target area for teleportation between circles
+  Range: Sight
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
