@@ -2200,3 +2200,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Sacrificial Explosion
+@85078 = ~Wand of Sacrificial Explosion~
+@85079 = ~By targeting a summoned minion, this wand sacrifices that creature to produce a damaging, poisonous explosion. When the spell is cast on an allied summoned creature or animated undead, that creature explodes, dealing%magnitude%d8 poison damage to all creatures within the area of effect. Creatures can Save vs. Death for half damage.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Sacrificial Explosion
+  – Causes summoned creature to explode
+  Damage: %magnitude%d8 poison damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Death for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
