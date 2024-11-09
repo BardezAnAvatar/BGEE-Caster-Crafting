@@ -2051,3 +2051,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Commando Conjuration
+@85064 = ~Wand of Commando Conjuration~
+@85065 = ~Once activated, this wand summons five Kobold Commandos to serve the caster for the duration. Like regular Kobold Commandos, they will shoot flaming arrows at enemies.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Commando Conjuration
+  – Conjures a kobold commando
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
