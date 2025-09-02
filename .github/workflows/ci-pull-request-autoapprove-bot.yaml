@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
         name: Checkout
 
-      - uses: jefflinse/pr-semver-bump@v1.7.1
+      - uses: jefflinse/pr-semver-bump@v1.7.3
         id: semver
         name: Validate Pull Request Metadata
         with:
