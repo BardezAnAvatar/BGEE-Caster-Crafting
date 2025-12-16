@@ -8,7 +8,7 @@
 
 
 # Basic Mod Info
-Version: 0.7.5
+Version: 0.7.6
 
 Author: [Bardez](https://github.com/BardezAnAvatar)
 
@@ -112,6 +112,7 @@ I am using the `BZ` prefix for my items.  It is registered at [Black Wyrm Lair](
 | Splitting out shared BAMs into Arcane and Priest variants   |  0.7.3  |
 | Fixing Protection scroll crafting dialog                    |  0.7.4  |
 | Continuous integration packaging updates                    |  0.7.5  |
+| Non-impactful changes that were lingering from 0.7.4        |  0.7.6  |
 
 ## Dedication
 This mod is dedicated to my wife, Shannon, and to my daughters Evelyn, Madelyn, and Elliana. These are my support in my daily life.
