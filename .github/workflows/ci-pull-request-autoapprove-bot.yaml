@@ -49,11 +49,25 @@ jobs:
           echo "skipped       - ${{ steps.semver.outputs.skipped }}"
           echo "release-notes - ${{ steps.semver.outputs.release-notes }}"
 
+    outputs:
+      semver_old: '${{ steps.semver.outputs.old-version }}'
+      semver_next: '${{ steps.semver.outputs.version }}'
+      semver_skipped: '${{ steps.semver.outputs.skipped }}'
+      semver_release-notes: '${{ steps.semver.outputs.release-notes }}'
+
   build:
     name: Package Mod
     runs-on: ubuntu-latest
+    needs: check-pr
     if: ${{ needs.check-pr.outputs.semver_skipped == 'false' }} && (github.actor == 'dependabot[bot]' || github.actor == 'BardezAnAvatar')
     steps:
+
+      - name: Debug the Output
+        run: |
+          echo "semver_old            - ${{ needs.check-pr.outputs.semver_old }}"
+          echo "semver_next           - ${{ needs.check-pr.outputs.semver_next }}"
+          echo "semver_skipped        - ${{ needs.check-pr.outputs.semver_skipped }}"
+          echo "semver_release-notes  - ${{ needs.check-pr.outputs.semver_release-notes }}"
 
       - name: Checkout
         uses: actions/checkout@v6
