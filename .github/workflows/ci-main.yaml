@@ -98,7 +98,7 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
           asset_name: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
-          tag: ${{ github.ref }}
+          tag: ${{ needs.bump-tag-version.outputs.semver_next }}
           overwrite: true
 
       - name: Upload zip package to latest release
@@ -107,5 +107,5 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.zip
           asset_name: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.zip
-          tag: ${{ github.ref }}
+          tag: ${{ needs.bump-tag-version.outputs.semver_next }}
           overwrite: true
