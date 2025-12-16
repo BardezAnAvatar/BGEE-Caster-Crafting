@@ -31,6 +31,8 @@ on:
 jobs:
   del_runs:
     name: Delete Undesirable Runs
+    permissions:
+      actions: write
     runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
