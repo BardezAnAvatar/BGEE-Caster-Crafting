@@ -42,7 +42,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         [Offset: Magnitude2]                        // 21
         */
 
-
+        /* Examples from Potions
         ~BZ-0001~, ~Offense~,      ~1~, ~40200~, ~40201~, ~SPPR101~,  ~1~,  ~2~, ~bless.BAM~,                                 ~BZ#0001I~, ~BZPN001D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Bless"
         ~BZ-0101~, ~Bomb~,         ~1~, ~40202~, ~40203~, ~SPPR105~,  ~1~,  ~3~, ~entangle.BAM~,                              ~BZ#0101I~, ~BZPN013D~, ~~,        ~~,    ~~, ~~, ~~, ~~, ~~ => "Entangle"
         ~BZ-0201~, ~Defense~,      ~1~, ~40246~, ~40247~, ~SPWI210~,  ~1~,  ~4~, ~resist-fear.BAM~,                           ~BZ#0201I~, ~BZPN110D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Resist Fear"
@@ -56,7 +56,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~BZ-0A01~, ~Defense~,      ~1~, ~40218~, ~40219~, ~SPWI113~,  ~1~,  ~1~, ~protection-from-evil.BAM~,                  ~BZ#0A01I~, ~BZPN080D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Protection From Evil"
         ~BZ-0B01~, ~Defense~,      ~1~, ~40220~, ~40221~, ~SPWI114~,  ~1~,  ~2~, ~shield.BAM~,                                ~BZ#0B01I~, ~BZPN070D~, ~~,     ~142~, ~0xE~, ~~, ~~, ~~, ~~ => "Shield"
         ~BZ-0C01~, ~Bomb~,         ~1~, ~40222~, ~40223~, ~SPWI116~,  ~1~,  ~2~, ~sleep.BAM~,                                 ~BZ#0C01I~, ~BZPN013D~, ~~,      ~39~, ~0xE~, ~~, ~~, ~~, ~~ => "Sleep"
-
+        */
 
 
         ~SPWI101~,  ~Arcane~, ~1~ => ~SPWI101~      //Grease
