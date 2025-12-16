@@ -51,7 +51,7 @@ jobs:
       semver_skipped: '${{ steps.semver.outputs.skipped }}'
       semver_release-notes: '${{ steps.semver.outputs.release-notes }}'
 
-  InfinityAutoPackager:
+  PackageMod:
     name: Publish Mod
     runs-on: ubuntu-latest
     permissions: write-all
@@ -59,16 +59,12 @@ jobs:
     if: needs.bump-tag-version.outputs.semver_skipped == 'false'
     steps:
 
-      - name: Debug bump-tag-version output
+      - name: Debug the Output
         run: |
-          echo "${{ toJson(needs.bump-tag-version) }}"
-
-      - name: Debug the Output another way
-        run: |
-          echo "old-version   - ${{ needs.bump-tag-version.outputs.old-version }}"
-          echo "version       - ${{ needs.bump-tag-version.outputs.version }}"
-          echo "skipped       - ${{ needs.bump-tag-version.outputs.skipped }}"
-          echo "release-notes - ${{ needs.bump-tag-version.outputs.release-notes }}"
+          echo "semver_old            - ${{ needs.bump-tag-version.outputs.semver_old }}"
+          echo "semver_next           - ${{ needs.bump-tag-version.outputs.semver_next }}"
+          echo "semver_skipped        - ${{ needs.bump-tag-version.outputs.semver_skipped }}"
+          echo "semver_release-notes  - ${{ needs.bump-tag-version.outputs.semver_release-notes }}"
 
       - name: Initial setup
         run: |
