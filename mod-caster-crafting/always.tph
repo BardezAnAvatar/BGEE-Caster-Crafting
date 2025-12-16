@@ -16,17 +16,16 @@ BEGIN
 
     //game code
     ACTION_IF GAME_IS ~bgee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~bg1ee~ END
-    ELSE
-        BEGIN ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~bg2ee~ END
+    ELSE BEGIN ACTION_IF GAME_IS ~bg2ee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~bg2ee~ END
         ELSE BEGIN ACTION_IF GAME_IS ~iwdee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~iwdee~ END
             ELSE BEGIN ACTION_IF GAME_IS ~pstee~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~pstee~ END
                 ELSE BEGIN ACTION_IF GAME_IS ~iwd2~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~iwd2~ END
                     ELSE BEGIN ACTION_IF GAME_IS ~eet~ THEN BEGIN OUTER_TEXT_SPRINT ~bz_game_code~ ~eet~ END
-                      END
                     END
                 END
             END
         END
+    END
     /*************************
     *   END: Set Game Dirs   *
     *************************/
