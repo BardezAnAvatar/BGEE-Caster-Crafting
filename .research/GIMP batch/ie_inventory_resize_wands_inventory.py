@@ -24,10 +24,10 @@ def ie_inventory_resize(file, outputFolder):
         print "Opened '" + filename_without_ext + "' ..."
 
         #resize canvas
-        pdb.gimp_image_resize(fileImage, 96, 96, 16, 16)
+        pdb.gimp_image_resize(fileImage, 88, 88, 8, 8)
         print "Resized canvas for '" + filename_without_ext + "' ..."
         layer = fileImage.layers[0]
-        pdb.gimp_layer_resize(layer, dimension, 96, 96, 16, 16)
+        pdb.gimp_layer_resize(layer, 88, 88, 8, 8)
         print "Resized layer for '" + filename_without_ext + "' ..."
 
         #crop to inventory size
@@ -35,7 +35,7 @@ def ie_inventory_resize(file, outputFolder):
         layer = fileImage.layers[0]
 
         # Export flattened image
-        target = outputFolder + "/" + filename_without_ext + "-f.png"
+        target = outputFolder + "/" + filename_without_ext + "-i.png"
         print "Saving '" + target + "' ..."
         pdb.file_png_save_defaults(fileImage, layer, target, target, run_mode=RUN_NONINTERACTIVE)
         print "Saved '" + target + "'!"
