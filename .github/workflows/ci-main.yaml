@@ -19,8 +19,6 @@ jobs:
     permissions: write-all
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v6
 
     - name: Bump and Tag Version
       uses: jefflinse/pr-semver-bump@v1.7.4
@@ -76,6 +74,14 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            *
+            !.assets
+            !.research
+            !.markdown-assets
+            !.vs
+            !.vscode
 
       - name: Create Infinity Engine Mod Packages (.iemod and .zip)
         uses: ALIENQuake/CreateIEModZipPackage@master

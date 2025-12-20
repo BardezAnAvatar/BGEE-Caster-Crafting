@@ -25,8 +25,6 @@ jobs:
     name: Validate Release Label and Notes
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v6
-        name: Checkout
 
       - uses: jefflinse/pr-semver-bump@v1.7.4
         id: semver
@@ -71,6 +69,15 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            *
+            !.assets
+            !.research
+            !.markdown-assets
+            !.vs
+            !.vscode
 
       - name: Create Infinity Engine Mod Packages (.iemod and .zip)
         uses: ALIENQuake/CreateIEModZipPackage@master
