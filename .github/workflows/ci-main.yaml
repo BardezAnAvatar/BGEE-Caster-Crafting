@@ -19,16 +19,6 @@ jobs:
     permissions: write-all
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v6
-      with:
-        sparse-checkout: |
-          /*
-          !.assets
-          !.research
-          !.markdown-assets
-          !.vs
-          !.vscode
 
     - name: Bump and Tag Version
       uses: jefflinse/pr-semver-bump@v1.7.4
