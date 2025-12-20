@@ -71,7 +71,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           sparse-checkout: |
-            /*
+            *
             !.assets
             !.research
             !.markdown-assets

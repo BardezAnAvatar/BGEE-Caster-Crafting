@@ -75,7 +75,7 @@ jobs:
         with:
           submodules: true
           sparse-checkout: |
-            /*
+            *
             !.assets
             !.research
             !.markdown-assets
