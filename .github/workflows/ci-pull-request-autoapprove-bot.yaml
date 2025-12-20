@@ -27,6 +27,14 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         name: Checkout
+        with:
+          sparse-checkout: |
+            /*
+            !.assets
+            !.research
+            !.markdown-assets
+            !.vs
+            !.vscode
 
       - uses: jefflinse/pr-semver-bump@v1.7.4
         id: semver
@@ -71,6 +79,15 @@ jobs:
 
       - name: Checkout
         uses: actions/checkout@v6
+        with:
+          sparse-checkout: |
+            /*
+            !.assets
+            !.research
+            !.markdown-assets
+            !.vs
+            !.vscode
+
 
       - name: Create Infinity Engine Mod Packages (.iemod and .zip)
         uses: ALIENQuake/CreateIEModZipPackage@master
