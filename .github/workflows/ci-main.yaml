@@ -74,6 +74,7 @@ jobs:
         uses: actions/checkout@master
         with:
           submodules: true
+          sparse-checkout-cone-mode: false
           sparse-checkout: |
             *
             !.assets

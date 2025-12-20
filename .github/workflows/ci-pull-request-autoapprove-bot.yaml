@@ -70,6 +70,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
         with:
+          sparse-checkout-cone-mode: false
           sparse-checkout: |
             *
             !.assets
