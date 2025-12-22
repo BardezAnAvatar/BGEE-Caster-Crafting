@@ -14,7 +14,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~WAND02~  , ~WAND02~  ,  ~3~, ~SPWI205~,                        ~0~,  ~80~ =>  ~WAND02~    //Wand of Fear
 
         ~WAND03~  , ~WAND03~  ,  ~1~, ~SPWI112~,                        ~0~,  ~40~ =>  ~WAND03~    //Wand of Magic Missiles
-        ~WAND12~  , ~WAND12~  ,  ~1~, ~SPWI112~,                        ~0~,  ~40~ =>  ~WAND12~    //Wand of Magic Missiles
 
         ~WAND04~  , ~WAND04~  ,  ~3~, ~SPPR208~,                        ~0~,  ~96~ =>  ~WAND04~    //Wand of Paralyzation
         ~WAND04~  , ~WAND04~  ,  ~5~, ~SPWI306~,                        ~0~,  ~80~ =>  ~WAND04~    //Wand of Paralyzation
@@ -53,6 +52,7 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
 
 // IN BG2, not BG1
 /*
+      //~WAND12~  , ~WAND12~  ,  ~1~, ~SPWI112~,                        ~0~,  ~40~ =>  ~WAND12~    //Wand of Wonder (Magic Missiles in BG1EE)
 */
 
     END
