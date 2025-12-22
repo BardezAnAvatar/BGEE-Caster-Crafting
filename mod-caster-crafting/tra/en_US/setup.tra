@@ -49,6 +49,13 @@
 @78 = ~Add in wands for arcane spell levels 1-9~
 @79 = ~Add in wands for arcane spell levels 1-10~
 
+//Missing Wands: Cost table
+@80 = ~Cost for Wands
+(y = gold, x = spell level, z = min. caster level)~
+@81 = ~AD&D2E Strict    | 7,500 to  50,000 gold |  y = 432x² - 32x + 7100~
+@82 = ~AD&D2E Loose     | 5,000 to  60,000 gold |  y = 500(x² + x + 10)~
+@83 = ~D&D 3.X Crafting |   750 to 135,000 gold |  y = 750(x × z)~
+
 //Missing Wands
 @100 = ~Missing wands (with selected options)~
 
