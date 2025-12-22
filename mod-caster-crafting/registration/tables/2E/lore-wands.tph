@@ -17,5 +17,6 @@ ACTION_DEFINE_ASSOCIATIVE_ARRAY
         ~8~,   ~80~,  =>  ~8~
         ~9~,   ~90~,  =>  ~9~
         ~A~,  ~100~,  =>  ~A~
+        ~Q~,  ~100~,  =>  ~Q~
 
     END
