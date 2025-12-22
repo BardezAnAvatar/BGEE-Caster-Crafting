@@ -103,44 +103,155 @@ BEGIN @40 DESIGNATED 40 // Potions for existing Spells
 BEGIN @50 DESIGNATED 50 //~Leveled Potions: craft potions at higher caster levels~
     INCLUDE ~./%MOD_FOLDER%/comp/leveled-potions/component-install.tph~
 */
-//END missing potions
+//END Leveled Potions
 
 
 
 // Caster Crafting: New Wands for Spells
-/*
-BEGIN @60 DESIGNATED 60 // Wands for existing Spells
+OUTER_SET ~bz-missing_wands-priest~ = 0
+OUTER_SET ~bz-missing_wands-arcane~ = 0
+OUTER_SET ~bz-missing_wands-priest-max_level~ = 0
+OUTER_SET ~bz-missing_wands-arcane-max_level~ = 0
+
+BEGIN @61 DESIGNATED 61 // Add in wands for priest spell level 1
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 1
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+BEGIN @62 DESIGNATED 62 // Add in wands for priest spell levels 1-2
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 2
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+BEGIN @63 DESIGNATED 63 // Add in wands for priest spell levels 1-3
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 3
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+BEGIN @64 DESIGNATED 64 // Add in wands for priest spell levels 1-4
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 4
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+BEGIN @65 DESIGNATED 65 // Add in wands for priest spell levels 1-5
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 5
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+BEGIN @66 DESIGNATED 66 // Add in wands for priest spell levels 1-6
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 6
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+BEGIN @67 DESIGNATED 67 // Add in wands for priest spell levels 1-7
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 7
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+BEGIN @68 DESIGNATED 68 // Add in wands for priest spell levels 1-Quest
+SUBCOMPONENT @60        //   Missing priest wands
+    OUTER_TEXT_SPRINT ~bz-missing_wands-priest-max_level~ ~Q~
+    OUTER_SET ~bz-missing_wands-priest~ = 1
+
+
+
+
+BEGIN @70 DESIGNATED 70 // Add in wands for arcane spell level 1
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 1
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @71 DESIGNATED 71 // Add in wands for arcane spell levels 1-2
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 2
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @72 DESIGNATED 72 // Add in wands for arcane spell levels 1-3
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 3
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @73 DESIGNATED 73 // Add in wands for arcane spell levels 1-4
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 4
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @74 DESIGNATED 74 // Add in wands for arcane spell levels 1-5
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 5
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @75 DESIGNATED 75 // Add in wands for arcane spell levels 1-6
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 6
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @76 DESIGNATED 76 // Add in wands for arcane spell levels 1-7
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 7
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @77 DESIGNATED 77 // Add in wands for arcane spell levels 1-8
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 8
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @78 DESIGNATED 78 // Add in wands for arcane spell levels 1-9
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 9
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+BEGIN @79 DESIGNATED 79 // Add in wands for arcane spell levels 1-10
+SUBCOMPONENT @69        //   Missing arcane wands
+    OUTER_TEXT_SPRINT ~bz-missing_wands-arcane-max_level~ ~A~
+    OUTER_SET ~bz-missing_wands-arcane~ = 1
+
+
+
+BEGIN @100 DESIGNATED 100 // Missing wands (with selected options)
+INSTALL_BY_DEFAULT
+ //Include if either wand selection is made:
+REQUIRE_PREDICATE  ( (VARIABLE_IS_SET ~bz-missing_wands-arcane~ AND (~bz-missing_wands-arcane~ = 1)) OR (VARIABLE_IS_SET ~bz-missing_wands-priest~ AND (~bz-missing_wands-priest~ = 1)) ) ~Must have chosen to install either Priest or Arcane wands~
+
+    //Debug
+    PRINT ~DEBUG: missing wands:
+    bz-missing_wands-arcane:            %bz-missing_wands-arcane%
+    bz-missing_wands-priest:            %bz-missing_wands-priest%
+    bz-missing_wands-arcane-max_level:  %bz-missing_wands-arcane-max_level%
+    bz-missing_wands-priest-max_level:  %bz-missing_wands-priest-max_level%
+    ~
+
     INCLUDE ~./%MOD_FOLDER%/comp/missing-wands/component-install.tph~
-*/
-//END missing potions
+
+//END Missing Wands
 
 
 
-// Leveled Scrolls: craft scrolls at higher caster levels
+// Leveled Wands: craft wands at higher caster levels
 /*
-BEGIN @70 DESIGNATED 70 //~Leveled Wands: craft potions at higher caster levels~
+BEGIN @110 DESIGNATED 110 //~Leveled Wands: craft wands at higher caster levels~
     INCLUDE ~./%MOD_FOLDER%/comp/leveled-wands/component-install.tph~
 */
-//END missing potions
+//END Leveled Wands
 
 
 
 
 // BEGIN Brew Potion subcomponents
-BEGIN @81 DESIGNATED 81 // Brew potions
-SUBCOMPONENT @80        // Caster Crafting: Crafting Station
+BEGIN @121 DESIGNATED 121   // Brew potions
+SUBCOMPONENT @120           // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 1
     OUTER_SET ~bz_install_allow_wands~ = 0
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @82 DESIGNATED 82 // Craft wands
-SUBCOMPONENT @80        // Caster Crafting: Crafting Station
+BEGIN @122 DESIGNATED 122   // Craft wands
+SUBCOMPONENT @120           // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 0
     OUTER_SET ~bz_install_allow_wands~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
 
-BEGIN @83 DESIGNATED 83 // Both brew potions and craft wands
-SUBCOMPONENT @80        // Caster Crafting: Crafting Station
+BEGIN @123 DESIGNATED 123   // Both brew potions and craft wands
+SUBCOMPONENT @120           // Caster Crafting: Crafting Station
     OUTER_SET ~bz_install_allow_potions~ = 1
     OUTER_SET ~bz_install_allow_wands~ = 1
     INCLUDE ~./%MOD_FOLDER%/comp/crafting-potion/component-install.tph~
