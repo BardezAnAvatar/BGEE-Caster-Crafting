@@ -24,7 +24,7 @@ STATISTICS:
 
 Charge abilities:
 – Grease
-  Covers a material surface with a slippery layer of a fatty, greasy nature. Any creature entering the area or caught in it when the spell is cast must save or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Spell again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
+  – Covers a material surface with a slippery layer of a fatty, greasy nature. Any creature entering the area or caught in it when the spell is cast must save or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Spell again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
   Range: 30 ft.
   Duration: %duration%
   Area of Effect: 15-ft. radius
@@ -44,7 +44,7 @@ STATISTICS:
 
 Charge abilities:
 – Armor
-  Applies a field of magical force around the wielder (AC 6). It is cumulative with Dexterity bonuses to Armor Class and with any shield bonus.
+  – Applies a field of magical force around the wielder (AC 6). It is cumulative with Dexterity bonuses to Armor Class and with any shield bonus.
   Duration: 9 hours
   Area of Effect: Self
   Saving Throw: None
@@ -64,7 +64,7 @@ STATISTICS:
 
 Charge abilities:
 – Burning Hands
-  Creates a fan-line cone of fire 5 ft from the wielder, dealing 1d3 +%magnitude%  points of fire damage
+  – Creates a fan-line cone of fire 5 ft from the wielder, dealing 1d3 +%magnitude%  points of fire damage
   Duration: Instant
   Area of Effect: 5-ft. cone with 120-deg. arc
   Saving Throw: Save vs. Spell for 1/2 damage
@@ -84,8 +84,8 @@ STATISTICS:
 
 Charge abilities:
 – Charm Person
-  Charms the target to regard the caster as a trusted friend and ally to be heeded and protected.
-  Range: Visual range of the wielder
+  – Charms the target to regard the caster as a trusted friend and ally to be heeded and protected.
+  Range: Visual range
   Duration: 5 rounds
   Area of Effect: 1 person
   Saving Throw: Save vs. Spell (at +3) negates
@@ -105,7 +105,8 @@ STATISTICS:
 
 Charge abilities:
 – Color Spray
-  1d6 creatures within the area affected (in order of increasing distance) which have 4 Hit Dice or less must save vs Spell or be rendered unconscious for 5 rounds.
+  – Renders 1d6 creatures unconsious (in order of increasing distance)
+  – Only creatures with < 5 HD affected
   Range: 50 ft.
   Duration: Instant
   Area of Effect: 90-degree arc
@@ -126,7 +127,7 @@ STATISTICS:
 
 Charge abilities:
 – Blindness
-  Temporarily blinds its target
+  – Temporarily blinds its target
   Range: 40 ft.
   Duration: 2 hours
   Area of Effect: 1 creature
@@ -167,7 +168,7 @@ STATISTICS:
 
 Charge abilities:
 – Protection from Petrification
-  Immunity to all petrification attacks
+  – Immunity to all petrification attacks
   Range: Touch
   Duration: 1 hour
   Area of Effect: 1 creature
@@ -188,7 +189,7 @@ STATISTICS:
 
 Charge abilities:
 – Identify
-  Identify an item by using 1 charge
+  – Identify an item by using 1 charge
   Range: Touch
   Duration: Instant
   Area of Effect: 1 item
@@ -209,7 +210,7 @@ STATISTICS:
 
 Charge abilities:
 – Infravision
-  Ability to see with infravision
+  – Ability to see with infravision
   Range: Touch
   Duration: 8 hours
   Area of Effect: 1 creature
@@ -229,9 +230,11 @@ STATISTICS:
 (Evocation)
 
 Charge abilities:
-– %magnitude% magic missiles will strike the target
+– Magic Missile
+  – %magnitude% magic missiles will strike the target
   Damage: 1d4+1 per missile
   Range: 100 ft.
+  Duration: Instant
   Area of Effect: 1 creature
 
 Requires:
@@ -249,7 +252,8 @@ STATISTICS:
 
 Charge abilities:
 – Protection from Evil
-  Protected from summoned demons. Evil creatures attacking target incur a -2 attack roll penalty.
+  – Protected from summoned demons.
+  – Evil creatures attacking target incur a -2 attack roll penalty.
   Range: Touch
   Duration: %duration%
   Area of Effect: 1 creature
@@ -269,7 +273,9 @@ STATISTICS:
 
 Charge abilities:
 – Shield
-  +4 shield AC vs. melee; +2 shield AC vs. ranged; immunity to Magic Missile
+  – +4 shield AC vs. melee
+  – +2 shield AC vs. ranged
+  – Immunity to Magic Missile
   Duration: 1 hour
   Area of Effect: Self
 
@@ -288,7 +294,8 @@ STATISTICS:
 
 Charge abilities:
 – Shocking Grasp
-  Creates an electric charge causing 1d8+%magnitude% points of electrical damage.
+  – Creates an electric charge damaging target
+  Damage: 1d8+%magnitude% points of electrical damage
   Range: Touch
   Duration: Instant
   Area of Effect: 1 creature
@@ -309,9 +316,10 @@ STATISTICS:
 
 Charge abilities:
 – Sleep
+  – Causes creatures in affected area to fall asleep
   Range: 80 ft.
-  Area of Effect: 15-ft. radius
   Duration: %duration%
+  Area of Effect: 15-ft. radius
   Saving Throw: Save vs. Wand negates
 
 Requires:
@@ -331,16 +339,17 @@ STATISTICS:
 
 Charge abilities:
 – Chill Touch
-    Living:
-      5d4 magic cold damage; lose 3 points of Strength for 5 rounds.
-    Undead:
-     Suffers panic for 2 turns
+  – Living:
+    – 5d4 magic cold damage
+    – Lose 3 points of Strength for 5 rounds
+  – Undead:
+    – Suffer panic for 2 turns
   Range: Touch
-  Area of Effect: 15-ft. radius
   Duration: Special
+  Area of Effect: 15-ft. radius
   Saving Throw:
-    Save vs. Death negates strength damage
-    Save vs. Wand negates panic (if undead)
+  – Save vs. Death negates strength damage
+  – Save vs. Wand negates panic (if undead)
 
 Requires:
  9 Intelligence
@@ -358,11 +367,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d4 magic damage
-  – Blinds the target for 1 round.
+  – Magic damage
+  – Blinds the target for 1 round
+  Damage: 1d4 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 1 round
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Blindness
 
 Requires:
@@ -381,11 +391,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d4 magic damage
+  – Magic damage
   – Pain (-1 penalty to Strength, Dexterity, AC, and THAC0) inflicted upon the victim.
+  Damage: 1d4 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 10 seconds
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate pain
 
 Requires:
@@ -404,11 +415,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d6 magic damage
-  – 1d8 fire damage.
+  – Magic damage
+  – Fire damage
+  Damage: 1d4 magic damage + 1d8 fire damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: Instant
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate fire damage
 
 Requires:
@@ -427,11 +439,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d6 magic damage
-  – Blinds the target for 1 turn.
+  – Magic damage
+  – Blinds the target for 1 turn
+  Damage: 1d6 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 1 turn
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate blindness
 
 Requires:
@@ -450,11 +463,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d8 magic damage
-  – Stuns the target for 3 rounds.
+  – Magic damage
+  – Stuns the target for 3 rounds
+  Damage: 1d8 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 3 rounds
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate stun
 
 Requires:
@@ -473,11 +487,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d8 magic damage
+  – Magic damage
   – Weakness (-4 penalty to THAC0) in the victim
+  Damage: 1d8 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 6 rounds
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Weakness
 
 Requires:
@@ -496,11 +511,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d10 magic damage
+  – Magic damage
   – Paralyzes the victim for 2 turns.
+  Damage: 1d10 magic damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 2 turns
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Paralysis
 
 Requires:
@@ -519,11 +535,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 1d12 acid damage
+  – Acid damage
   – Petrifies victim
+  Damage: 1d12 acid damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: 2 turns
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Petrification
 
 Requires:
@@ -542,11 +559,12 @@ STATISTICS:
 
 Charge abilities:
 – Chromatic Orb
-  – 2d8 acid damage
+  – Acid damage
   – Instantly kills the victim
+  Damage: 2d8 acid damage
   Range: 90 ft.
-  Area of Effect: 1 creature
   Duration: Instant
+  Area of Effect: 1 creature
   Saving Throw: Save vs. Wand (+6 bonus) to negate Death
 
 Requires:
@@ -564,12 +582,12 @@ STATISTICS:
 
 Charge abilities:
 – Larloch's Minor Drain
-  Transfers 12 hit points from target to wielder
+  – Transfers 12 hit points from target to wielder
   Range: Visual range
-  Area of Effect: 1 creature
   Duration:
   – Drain: Instant
   – Excess Hit Points: 1 hour
+  Area of Effect: 1 creature
   Saving Throw: None
 
 Requires:
@@ -587,9 +605,9 @@ STATISTICS:
 
 Charge abilities:
 – Reflected Image
-  creates 1 image of wielder that will travel alongside <PRO_HIMHER>
-  Area of Effect: Self
+  – Creates 1 image of wielder that will travel alongside <PRO_HIMHER>
   Duration: %duration%
+  Area of Effect: Self
   Saving Throw: None
 
 Requires:
@@ -611,10 +629,11 @@ STATISTICS:
 
 Charge abilities:
 – Nahal's Reckless Dweomer
-  Pick a known spell; wild surge occurs that attempts to cast the selected spell
+  – Pick a known spell
+  – Wild surge occurs that attempts to cast the selected spell
   Range: Special
-  Area of Effect: Special
   Duration: Special
+  Area of Effect: Special
   Saving Throw: Special
 
 Requires:
@@ -632,10 +651,10 @@ STATISTICS:
 
 Charge abilities:
 – Spook
-  Target flees at maximum speed as far from the wielder as possible
+  – Target flees at maximum speed as far from the wielder as possible
   Range: 30 ft.
-  Area of Effect: 1 creature
   Duration: 3 rounds
+  Area of Effect: 1 creature
   Saving Throw: Saving vs. Wand negates
 
 Requires:
@@ -653,10 +672,10 @@ STATISTICS:
 
 Charge abilities:
 – Spook
-  Target flees at maximum speed as far from the wielder as possible
+  – Target flees at maximum speed as far from the wielder as possible
   Range: 30 ft.
-  Area of Effect: 1 creature
   Duration: 3 rounds
+  Area of Effect: 1 creature
   Saving Throw: Saving vs. Wand (-%magnitude% penalty) negates
 
 Requires:
@@ -677,8 +696,8 @@ Charge abilities:
   – 50% chance to summon 4 distracting lights
   – 50% chance to summon 1 distracting humanoid light
   Range: Sight
-  Area of Effect: 1 creature
   Duration: %duration%
+  Area of Effect: 1 creature
   Saving Throw: None
 
 Requires:
