@@ -1,0 +1,696 @@
+/* Reserving range 60000-69999 */
+
+/***************
+*   Defaults   *
+***************/
+@60000 = ~Wands are 1 1/4 ft. long and slender. They are made of ivory, bone, or wood and are usually tipped with something—metal, crystal, stone, and so on. They are fragile and tend to break easily. Because of this, they are often kept in cases.
+
+Wands are powered by charges, each use costing one or more charges (depending on the item). When a wand runs out of charges, it is consumed and destroyed.
+
+STATISTICS:
+
+Weight: 1~
+
+
+/****************
+*   1st Level   *
+****************/
+//Grease
+@60001 = ~Wand of Grease~
+@60002 = ~When activated, the wand will create a slippery layer of a fatty, greasy nature to cover a material surface. Any creature entering the area or caught in it when the spell is cast must save or slip and slide, unable to move effectively. Those who successfully save can move, albeit slowly, for the rest of the round (but will need to save vs. Wand again the following round). Those who remain in the area are allowed a Saving Throw each round until they escape the area.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Grease
+  – Covers a surface with a slippery layer
+  – Any creature within the area must save or slip and slide, each round
+  – Saving creatures can move slowly for the rest of the round
+  Range: 30 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand at +2
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+//Armor
+@60003 = ~Wand of Armor~
+@60004 = ~When activated, the wand generates a magical field of force that serves as if it were scale mail armor. This does not hinder movement, adds no weight or encumbrance, and doesn't prevent spellcasting.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Armor
+  – Applies a field of magical force of armor around the wielder (AC 6).
+  – Does not affect spellcasting or thieving skills
+  Duration: 9 hours
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Burning Hands
+@60005 = ~Wand of Burning Hands~
+@60006 = ~When activated, a jet of searing flame shoots forward in a horizontal arc of about 120 degrees, with a 5 ft. length. Any creature in the area of the flames suffers 1d3 +%magnitude%  points of fire damage. Those successfully saving vs. Wand receive half damage.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Burning Hands
+  – Creates a fan-line cone of fire 5 ft. from the wielder
+  Damage: 1d3 +%magnitude% points of fire damage
+  Duration: Instant
+  Area of Effect: 5-ft. cone with 120-deg. arc
+  Saving Throw: Save vs. Wand for 1/2 damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Charm Person
+@60007 = ~Wand of Charm Person~
+@60008 = ~This wand will charm its humanoid† target when activated; the charmed individual may be given orders, and they will carry them out as quickly as possible. They will also gladly provide valuable information to their new ally.
+
+If the caster harms, or attempts to harm, the charmed person by some overt action, or if Dispel Magic is successfully cast upon the charmed person, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. Note that the subject has full memory of the events that took place while <PRO_HESHE> was charmed. Also note that you cannot have a charmed creature leave the area where <PRO_HESHE> was charmed.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Charm Person
+  – Charms the target to be ordered or spoken to
+  Range: Visual range
+  Duration: 5 rounds
+  Area of Effect: 1 person
+  Saving Throw: Save vs. Wand (at +3) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Color Spray
+@60009 = ~Wand of Color Spray~
+@60010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself, causing 1d6 creatures within the area to be affected in order of increasing distance. All creatures affected that have 4 Hit Dice or less must make a successful Saving Throw or be rendered unconscious for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Color Spray
+  – Renders 1d6 creatures unconsious (in order of increasing distance)
+  – Only creatures with < 5 HD affected
+  Range: 50 ft.
+  Duration: Instant
+  Area of Effect: 90-degree arc
+  Saving Throw: Save vs. Wand negates (if HD > %caster_level% or > HD 6)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Blindness
+@60011 = ~Wand of Blindness~
+@60012 = ~This wand will flash, temporarily blinding its target. If a victim is blinded, <PRO_HESHE> receives a -4 penalty to <PRO_HISHER> attack rolls and Armor Class.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Blindness
+  – Temporarily blinds its target
+    – -4 penalty to AC
+    – -4 penalty to attack rolls
+  Range: 40 ft.
+  Duration: 2 hours
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Friends
+@60013 = ~Wand of Friends~
+@60014 = ~This wand will temporarily grant 6 points of Charisma to the wielder. Those who view the affected tend to be very impressed with <PRO_HIMHER> and make an effort to be <PRO_HISHER> friends and help <PRO_HIMHER>, as appropriate to the situation. Officious bureaucrats might decide to become helpful; surly gate guards might wax informative; attacking orcs might spare the caster's life, taking <PRO_HIMHER> captive instead.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Friends
+  – Temporarily gain 6 points of Charisma
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection from Petrification
+@60015 = ~Wand of Protection from Petrification~
+@60016 = ~This wand will grant the recipient immunity to all petrification attacks; this includes basilisk and medusa gaze, cursed scrolls of petrification, etc.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection from Petrification
+  – Immunity to all petrification attacks
+  Range: Touch
+  Duration: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Identify
+@60017 = ~Wand of Identify~
+@60018 = ~This wand will use 1 charge to identify an item, much like a scroll of Identify, in that to identify an item you right-click on that item. A menu will appear and from here you choose the "Scroll" option. The chance of identifying the item is 100%. The charge will identify the item's name, what it does, and if it is cursed.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Identify
+  – Identify an item by using 1 charge
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 item
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Infravision
+@60019 = ~Wand of Infravision~
+@60020 = ~This wand will grant the ability to see with infravision, just as an elf or dwarf can.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Infravision
+  – Ability to see with infravision
+  Range: 30 ft.
+  Duration: 2 hours
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Magic Missile
+@60021 = ~Wand of Magic Missiles~
+@60022 = ~When activated, the wand will eject a missiles of magical energy that dart forth and unerringly strikes its target. This includes enemy creatures in a melee. The target creature must be seen or otherwise detected to be hit, however, so near-total concealment, such as that offered by arrow slits, can render the spell ineffective. Each missile will inflict 1d4+1 points of damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Magic Missile
+  – %magnitude% magic missiles will strike the target
+  Damage: 1d4+1 per missile
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection from Evil
+@60023 = ~Wand of Protection from Evil~
+@60024 = ~When activated, the wand creates a magical barrier around the recipient at a distance of one foot. The barrier moves with the recipient and has two major effects: First, the protected creature gets a +2 bonus to AC and saving throws against attacks made by evil or evilly enchanted creatures. Second, summoned demons cannot target the protected creature.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection from Evil
+  – +2 AC bonus against attacks from Evil creatures
+  – +2 Saving Throw bonus against attacks from Evil creatures
+  – Protected from summoned demons
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shield
+@60025 = ~Wand of Shield~
+@60026 = ~When activated, the wand generates an invisible barrier in front of the wielder, granting a +4 AC bonus for the shield against melee and +2 against ranged, also granting immunity from the spell Magic Missile.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Shield
+  – +4 shield AC vs. melee
+  – +2 shield AC vs. ranged
+  – Immunity to Magic Missile
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shocking Grasp
+@60027 = ~Wand of Shocking Grasp~
+@60028 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal 1d2 fist damage and 1d8+%magnitude% points of electrical damage to a targeted creature. <PRO_HESHE> has 1 round per level to touch the target creature; if the wielder misses, the spell is wasted.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Shocking Grasp
+  – Creates an electric charge damaging target
+  Damage:
+  – 1d2 fist damage
+  – 1d8+%magnitude% points of electrical damage
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Sleep
+@60029 = ~Wand of Sleep~
+@60030 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 60 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Death (with -3 penalty), they will fall into a deep, comatose sleep for %duration%. Monsters with 5 Hit Dice or more are unaffected. Attacks against sleeping opponents never miss.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Sleep
+  – Causes creatures in affected area to fall asleep
+  Range: 60 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Death (-3 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chill Touch
+@60031 = ~Wand of Chill Touch~
+@60032 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of an adjacent creature. The creature is punched for 1d2 fist damage (Strength bonuses apply) and must make a Saving Throw vs. Wand or suffer 1d8 points of cold damage and receive a -2 THAC0 penalty for 5 rounds. Nonliving creatures such as golems and undead are unaffected by this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Chill Touch
+  – Cold energy attack
+  – -2 penalty to THAC0 to target for 5 rounds
+  Damage:
+    – 1d2 fist
+    – 1d8 cold damage
+  Range: Touch
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates panic (if undead)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 1st
+@60033 = ~Wand of Chromatic Orb~
+@60034 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d4 magic damage and blinds the target for 1 round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Blinds the target for 1 round
+  Damage: 1d4 magic damage
+  Range: 90 ft.
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Blindness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 2nd
+@60035 = ~Wand of Chromatic Orb~
+@60036 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d4 magic damage and inflicts pain (-1 penalty to Strength, Dexterity, AC, and THAC0) upon the victim.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Pain (-1 penalty to Strength, Dexterity, AC, and THAC0) inflicted upon the victim.
+  Damage: 1d4 magic damage
+  Range: 90 ft.
+  Duration: 10 seconds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate pain
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 3rd
+@60037 = ~Wand of Chromatic Orb~
+@60038 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d6 magic damage and burns the victim for an additional 1d8 damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Fire damage
+  Damage: 1d4 magic damage + 1d8 fire damage
+  Range: 90 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 4th
+@60039 = ~Wand of Chromatic Orb~
+@60040 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d6 magic damage and blinds the target for 1 turn.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Blinds the target for 1 turn
+  Damage: 1d6 magic damage
+  Range: 90 ft.
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate blindness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 5th
+@60041 = ~Wand of Chromatic Orb~
+@60042 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d8 magic damage and stuns the target for 3 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Stuns the target for 3 rounds
+  Damage: 1d8 magic damage
+  Range: 90 ft.
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 6th
+@60043 = ~Wand of Chromatic Orb~
+@60044 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d8 magic damage and causes weakness (-4 penalty to THAC0) in the victim.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Weakness (-4 penalty to THAC0) in the victim
+  Damage: 1d8 magic damage
+  Range: 90 ft.
+  Duration: 6 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Weakness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 7th
+@60045 = ~Wand of Chromatic Orb~
+@60046 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d10 damage and paralyzes the victim for 2 turns.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Magic damage
+  – Paralyzes the victim for 2 turns.
+  Damage: 1d10 magic damage
+  Range: 90 ft.
+  Duration: 2 turns
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Paralysis
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 10th
+@60047 = ~Wand of Chromatic Orb~
+@60048 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+1d12 acid damage and turns the victim to stone.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Acid damage
+  – Petrifies victim
+  Damage: 1d12 acid damage
+  Range: 90 ft.
+  Duration: 2 turns
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Petrification
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 12th
+@60049 = ~Wand of Chromatic Orb~
+@60050 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. Each orb will do damage to the target against which there is no save and an effect against which the target must save vs. Spell with a +6 bonus:
+2d8 acid damage and instantly kills the victim.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Chromatic Orb
+  – Acid damage
+  – Instantly kills the victim
+  Damage: 2d8 acid damage
+  Range: 90 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (+6 bonus) to negate Death
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Larloch's Minor Drain
+@60051 = ~Wand of Larloch's Minor Drain~
+@60052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 4 damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Larloch's Minor Drain
+  – Transfers 4 hit points from target to wielder
+  Range: 30 ft.
+  Duration:
+  – Drain: Instant
+  – Excess Hit Points: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Reflected Image
+@60053 = ~Wand of Reflected Image~
+@60054 = ~When activated, a single image of the wielder is created that will travel alongside <PRO_HIMHER>. The image will perform all of the actions that the wielder does so that if any enemies are trying to attack, they will not know which one is real. There is a 50% chance that the attacker will attack the image and a 50% chance that <PRO_HESHE> will attack the wielder. The image will disappear with a successful Dispel Magic, when attacked, or when the effect expires.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Reflected Image
+  – Creates 1 image of wielder that will travel alongside <PRO_HIMHER>
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Nahal's Reckless Dweomer
+@60055 = ~Wand of Nahal's Reckless Dweomer~
+@60056 = ~The Wild Mage's ultimate last-resort, a wild surge is purposefully invoked; the result might be beneficial to the wielder, or it might be completely disastrous: this is the risk taken in casting Nahal's Reckless Dweomer.
+
+When activated, select a known spell to attempt to cast; the wand releases a sudden flood of wild magical energy. The Wild Mage hopes to seize and shape that energy into a desired spell effect. The attempt usually fails, but something almost always occurs in the process -- the actual effect of the wand is determined randomly by a dice roll on the Wild Surge Table (see the manual for more details).
+
+Because the release of energy is planned, the wand's caster level (%magnitude%) is added to the dice roll. If the result indicates success, then the magical energy is shaped into the desired effect. More often than not, the effect is completely unexpected.
+
+STATISTICS:
+(Wild Magic)
+
+Charge abilities:
+– Nahal's Reckless Dweomer
+  – Pick a known spell
+  – Wild surge occurs that attempts to cast the selected spell
+  Range: Special
+  Duration: Special
+  Area of Effect: Special
+  Saving Throw: Special
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spook
+@60057 = ~Wand of Spook~
+@60058 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand (with a penalty of %magnitude%), it turns and flees at maximum speed as far from the wielder as possible. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead are completely unaffected.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Spook
+  – Target flees at maximum speed as far from the wielder as possible
+  Range: 30 ft.
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Saving vs. Wand (%magnitude% penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dancing Lights
+@60059 = ~Wand of Dancing Lights~
+@60060 = ~This wand creates up to four glowing spheres of light (such as evidenced by will-o-wisps) or one faintly glowing, vaguely humanoid shape, somewhat similar to a fire elemental. The dancing lights move randomly without concentration upon such movement by the wielder. Although the lights cause no physical harm, they can distract enemies until either their duration expires or dispersed by weapon or magic.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Dancing Lights
+  – 50% chance to summon 4 distracting lights
+  – 50% chance to summon 1 distracting humanoid light
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

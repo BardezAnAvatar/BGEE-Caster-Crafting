@@ -1,12 +1,12 @@
-/* Reserving range 70000-79999 */
+/* Reserving range 90000-99999 */
 
 
 /******************
 *   True Strike   *
 ******************/
 //True Strike
-@70000 = ~Wand of True Strike~
-@70001 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
+@90019 = ~Wand of True Strike~
+@90020 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
 
 STATISTICS:
 (Divination)
@@ -24,11 +24,84 @@ Requires:
 Weight: 1~
 
 
+//Sleep
+@90029 = ~Wand of Sleep~
+@90030 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 60 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for %duration%. Attacks against sleeping opponents never miss.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Sleep
+  – Causes creatures in affected area to fall asleep
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chill Touch
+@90031 = ~Wand of Chill Touch~
+@90032 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of an adjacent creature. No attack roll is needed. The touched creature takes 5d4 magic cold damage and must save or lose 3 points of Strength for 5 rounds. The Strength loss is cumulative; if the creature is reduced to 0 Strength, it dies instantly.
+
+An undead creature suffers no damage or Strength loss, but will be affected by panic for 2 turns unless it successfully makes a Save vs. Wand.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Chill Touch
+  – Living:
+    – 5d4 magic cold damage
+    – Lose 3 points of Strength for 5 rounds
+  – Undead:
+    – Suffer panic for 2 turns
+  Range: Touch
+  Duration: Special
+  Area of Effect: 1 creature
+  Saving Throw:
+  – Save vs. Death negates strength damage
+  – Save vs. Wand negates panic (if undead)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Larloch's Minor Drain
+@90051 = ~Wand of Larloch's Minor Drain~
+@90052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 12 damage, while the wielder gains 12 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Larloch's Minor Drain
+  – Transfers 12 hit points from target to wielder
+  Range: Visual range
+  Duration:
+  – Drain: Instant
+  – Excess Hit Points: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /************************
 *   Identify Creature   *
 ************************/
-@70002 = ~Wand of Identify Creature~
-@70003 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
+@90002 = ~Wand of Identify Creature~
+@90003 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
 
 STATISTICS:
 (Divination)

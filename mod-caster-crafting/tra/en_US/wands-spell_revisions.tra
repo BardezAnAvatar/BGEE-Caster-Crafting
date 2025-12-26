@@ -1,0 +1,621 @@
+/* Reserving range 100000-109999 */
+
+/****************
+*   1st Level   *
+****************/
+//Grease
+@100001 = ~Wand of Grease~
+@100002 = ~Upon activation, this wand covers a material surface with a slippery layer of a fatty, greasy nature. Any creature caught in it when the spell is cast must save vs. breath at +2 bonus or fall to the ground for one round. Those who enter the area or remain within it must make a save each round until they reach the nearest non-greased surface. A creature that succeeds on their saving throw can walk within or through the area of grease but will have their movements slowed considerably. Incorporeal and flying creatures are unaffected by this spell, as are exceptionally large creatures who suffer little to no distress from the greasy coating.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Grease
+  – Covers a surface with a slippery layer
+  – Any creature within the area must save each round or fall prone
+  – Saving creatures can move slowly for the rest of the round
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: 10' radius
+  Saving Throw: Save vs. Breath at +2 (partial)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+//Armor -> Mage Armor
+@100003 = ~Wand of Mage Armor~
+@100004 = ~When activated, the wand creates a magical field of force that sets its base armor class to %magnitude%. This armor does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. It lasts until successfully dispelled or until the duration runs out.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Armor
+  – Applies a field of magical force of armor around the wielder (AC %magnitude%).
+  – Does not affect spellcasting or thieving skills
+  Range: Personal
+  Duration: 8 hours
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Burning Hands
+@100005 = ~Wand of Burning Hands~
+@100006 = ~When activated, a fan-like cone of searing flames jets shoots from this wand towards a designated point. This sends out 10-foot-long jets of flame in a horizontal arc of about 60 degrees in front of the wielder. All creatures caught in the flames suffe%r %magnitude%d6 points of fire damage.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Burning Hands
+  – Creates a fan-line cone of fire 10' from the wielder
+  Damage: %magnitude%d6 + points of fire damage
+  Duration: Instant
+  Area of Effect: 10' cone with 60-deg. arc
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Charm Person
+@100007 = ~Wand of Charm Person~
+@100008 = ~This wand will charm any single person† when activated; if the recipient fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The caster may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
+
+If the caster harms, or attempts to harm, the charmed creature by some overt action, or if a dispel magic spell is successfully cast upon the charmed creature, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence.
+
+†: Person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Charm Person
+  – Charms the target to be ordered or spoken to
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 person
+  Saving Throw: Save vs. Wand (at +2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Color Spray
+@100009 = ~Wand of Color Spray~
+@100010 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to the wielder are slowed for 5 rounds, those with Hit Dice/levels one or two greater than the wielder are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Color Spray
+  – Confusion 1 round
+    – HD > %caster_level% + 2
+    OR
+    – HD > 22
+  Otherwise
+  – Blindness 3 rounds
+    – %caster_level% + 3 > HD > %caster_level%
+  Otherwise
+  – Slow 5 rounds
+  Range: 15'
+  Duration: Special
+  Area of Effect: 60-degree arc
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Blindness -> Obscuring Mist
+@100011 = ~Wand of Obscuring Mist~
+@100012 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Obscuring Mist
+  – Misty fog
+    – Sight halved
+    – -2 penalty to attack rolls for creatures inside
+    – -4 penalty to attack creatures inside with ranged attacks
+  Range: Long
+  Duration: 6 rounds
+  Area of Effect: 20' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Friends -> Monster Summoning I
+@100013 = ~Wand of Monster Summoning I~
+@100014 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Monster Summoning I
+  – Summon gibberlings: %magnitude%
+    Gibberling (1 Hit Dice):
+    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
+    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
+    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Point
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Identify
+@100017 = ~Wand of Identify~
+@100018 = ~This wand will use 1 charge to identify the name and enchantments (including curses) of one item subsequently touched by the wielder. Much like a scroll of Identify, in that to identify an item you right-click on that item; a menu will appear and from here you choose the "Scroll" option. The details are revealed without fail. Many unidentified items can still be used, but at great risk.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Identify
+  – Identify an item by using 1 charge
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 1 item
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Infravision -> True Strike
+@100019 = ~Wand of True Strike~
+@100020 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
+
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– True Strike
+  – +4 bonus to THAC0
+  – +5% bonus to Critical Hit chance
+  Range: Personal
+  Duration: 3 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Magic Missile
+@100021 = ~Wand of Magic Missiles~
+@100022 = ~When activated, the wand creates %magnitude% missiles of magical energy that dart forth from the wielder's fingertip and unerringly strike their target, which must be a creature of some sort. Each missile inflicts 1d4+1 points of damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Magic Missile
+  – %magnitude% magic missiles will strike the target
+  Damage: 1d4+1 per missile
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shield
+@100025 = ~Wand of Shield~
+@100026 = ~When activated, the wand generates an an invisible barrier comes into being in front of the wielder, granting <PRO_HIMHER> immunity to the spell Magic Missile. Furthermore, the fluctuating force shield around the wielder acts similarly to a regular shield, effectively increasing AC by 2 points (+4 vs. missile weapons). This effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Shield
+  – +4 shield AC vs. melee
+  – +2 shield AC vs. ranged
+  – Immunity to Magic Missile
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shocking Grasp
+@100027 = ~Wand of Shocking Grasp~
+@100028 = ~When activated, the wand electrically charges the wielder's hands; this charge will deal %magnitude%d6 points of damage and stun the target for 1 round. If the target makes a successful saving throw vs. Wand (%magnitude2% penalty), he is not stunned. The spell expires once the caster makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Shocking Grasp
+  – Creates an electric charge damaging target
+  Damage: %magnitude%d6 points of electrical damage and Stuns target
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (%magnitude2% penalty) negates Stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Sleep
+@100029 = ~Wand of Sleep~
+@100030 = ~This wand will emit a gold beam of energy at its targets, causing a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a saving throw vs. Wand or fall asleep. Any further attempts to harm the targets will waken them. Opponents with more Hit Dice/levels than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically induced sleep.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Sleep
+  – Causes creatures in affected area to fall asleep
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chill Touch
+@100031 = ~Wand of Chill Touch~
+@100032 = ~When activated, a blue glow encompasses the wielder's hand. This energy attacks the life force of any living creature upon which the wielder makes a successful melee attack. The touched creature suffers 1d6 points of cold damage and loses one point of strength for 1 hour (no ability drain if the victim saves vs. death). The wielder gains a +4 bonus to hit the target and his touch is considered to be of +1 enchantment to determine what it can hit.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Chill Touch
+  – 1d6 cold damage
+    – +4 THAC0 bonus to hit
+    – Attacks as a +1 enchantment
+  – Lose 1 points of Strength for 1 hour
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Death negates strength damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 1st
+@100033 = ~Wand of Chromatic Orb~
+@100034 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Chromatic Orb
+  – White
+    – 1d3 magic damage
+    – Light (-4 penalty to saving throws)
+  Damage: Special
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 2nd
+@100035 = ~Wand of Chromatic Orb~
+@100036 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Chromatic Orb
+  – White
+    – 1d3 magic damage
+    – Light (-4 penalty to saving throws)
+  – Aquamarine
+    – 1d4 magic damage
+    – Magnetism (-4 penalty to AC)
+  Damage: Special
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 4th
+@100039 = ~Wand of Chromatic Orb~
+@100040 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Chromatic Orb
+  – White
+    – 1d3 magic damage
+    – Light (-4 penalty to saving throws)
+  – Aquamarine
+    – 1d4 magic damage
+    – Magnetism (-4 penalty to AC)
+  – Red
+    – 1d6 magic damage
+    – Pain (-1 to strength and dexterity)
+  Damage: Special
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 6th
+@100043 = ~Wand of Chromatic Orb~
+@100044 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Chromatic Orb
+  – White
+    – 1d3 magic damage
+    – Light (-4 penalty to saving throws)
+  – Aquamarine
+    – 1d4 magic damage
+    – Magnetism (-4 penalty to AC)
+  – Red
+    – 1d6 magic damage
+    – Pain (-1 to strength and dexterity)
+  – Green
+    – 1d8 magic damage
+    – Poison (2hp/round)
+  Damage: Special
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 8th
+@100045 = ~Wand of Chromatic Orb~
+@100046 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Chromatic Orb
+  – White
+    – 1d3 magic damage
+    – Light (-4 penalty to saving throws)
+  – Aquamarine
+    – 1d4 magic damage
+    – Magnetism (-4 penalty to AC)
+  – Red
+    – 1d6 magic damage
+    – Pain (-1 to strength and dexterity)
+  – Green
+    – 1d8 magic damage
+    – Poison (2hp/round)
+  – Yellow
+    – 1d10 magic damage
+    – Blindness
+  Damage: Special
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 10th
+@100047 = ~Wand of Chromatic Orb~
+@100048 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Chromatic Orb
+  – White
+    – 1d3 magic damage
+    – Light (-4 penalty to saving throws)
+  – Aquamarine
+    – 1d4 magic damage
+    – Magnetism (-4 penalty to AC)
+  – Red
+    – 1d6 magic damage
+    – Pain (-1 to strength and dexterity)
+  – Green
+    – 1d8 magic damage
+    – Poison (2hp/round)
+  – Yellow
+    – 1d10 magic damage
+    – Blindness
+  – Violet
+    – 2d6 magic damage
+    – Slow
+  Damage: Special
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chromatic Orb: 12th
+@100049 = ~Wand of Chromatic Orb~
+@100050 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Chromatic Orb
+  – White
+    – 1d3 magic damage
+    – Light (-4 penalty to saving throws)
+  – Aquamarine
+    – 1d4 magic damage
+    – Magnetism (-4 penalty to AC)
+  – Red
+    – 1d6 magic damage
+    – Pain (-1 to strength and dexterity)
+  – Green
+    – 1d8 magic damage
+    – Poison (2hp/round)
+  – Yellow
+    – 1d10 magic damage
+    – Blindness
+  – Violet
+    – 2d6 magic damage
+    – Slow
+  – Blue
+    – 2d8 magic damage
+    – Paralysis
+  Damage: Special
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Larloch's Minor Drain
+@100051 = ~Wand of Larloch's Minor Drain~
+@100052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers %magnitude% damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Larloch's Minor Drain
+  – Transfers %magnitude% hit points from target to wielder
+  Range: Long
+  Duration:
+  – Drain: Instant
+  – Excess Hit Points: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Reflected Image
+@100053 = ~Wand of Reflected Image~
+@100054 = ~When activated, this wand creates one illusory image of the wielder that will travel alongside <PRO_HIMHER>. The image performs all of the actions that the wielder does, and seems to react normally to both physical and magical damage (such as appearing to be burned when hit by a fireball) so that if any enemies are trying to attack the wielder they will not know which one is real. There is a 50% chance that an attacker will attack the image and a 50% chance that he will attack the wielder. The image is immune to all forms of damage, but will disappear if a dispel magic or a detect illusion spell is cast upon it, or when the spell duration runs out. This spell cannot be cast on anyone who is under the effects of a Mirror Image spell, and multiple castings of this spell will not create additional images.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Reflected Image
+  – Creates 1 image of wielder that will travel alongside <PRO_HIMHER>
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spook
+@100057 = ~Wand of Spook~
+@100058 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. The creature suffers a Saving Throw penalty of %magnitude%. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion, such as dragons, and those with no intelligence score are unaffected by this spell, as are creatures under the effect of a True Seeing spell.
+
+STATISTICS:
+(Illusion)
+
+Charge abilities:
+– Spook
+  Target flees at maximum speed as far from the wielder as possible
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Saving vs. Wand (%magnitude% penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
