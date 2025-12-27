@@ -852,3 +852,249 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shillelagh
+@100116 = ~Wand of Shillelagh~
+@100117 = ~When activated, this wand creates a magical cudgel. The shillelagh inflicts 2d4+%magnitude% points of damage on a successful hit and causes tendrils to wrap around and hold the victim in place for one round unless a save vs. Breath is made. The shillelagh is weilded as if proficient with the weapon, at the wielder's normal THAC0. The shillelagh can be used only by the wand wielder, and remains in <PRO_HISHER> hand for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Shillelagh
+  – Creates weightless magical club
+    – Deals 2d4+%magnitude% crushing damage
+    – Successful hits entangle victim
+    – +%magnitude% bonus to THAC0
+  School: Alteration
+  Sphere: Combat, Plant
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: Save vs. Breath negates entaglement
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Armor of Faith
+@100118 = ~Wand of Armor of Faith~
+@100119 = ~When activated, the wielder receives significant protection against physical and magic damage. This magical armor is a force of energy that absorbs a portion of the damage intended for the caster, effectively reducing the damage sustained by 10%. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Armor of Faith
+  – Absorbs 10% of incoming damage
+  School: Abjuration
+  Sphere: Protection
+  Range: Personal
+  Duration: 5 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Doom
+@100120 = ~Wand of Doom~
+@100121 = ~When activated, this wand causes a feeling of doom to overwhelm the target. For the duration of the spell, the target receives a -%magnitude% penalty to attack rolls, damage rolls, and saving throws, unless a save vs. Wand is made. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Doom
+  – -%magnitude% penalty to THAC0
+  – -%magnitude% penalty to damage
+  – -%magnitude% penalty to saving throws
+  School: Enchantment
+  Sphere: Charm
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Faerie Fire
+@100122 = ~Wand of Faerie Fire~
+@100123 = ~Upon uttering the activation phrase, a pale glow surrounds and outlines all enemies within the area of effect, making their position and movements easily visible. Outlined creatures do not benefit from the concealment normally provided by darkness, invisibility, or similar effects, and suffer a -2 penalty to AC. Those who succeed at a saving throw vs. Wand are totally unaffected by the spell. The light is too dim to have any special effect on undead or dark-dwelling creatures vulnerable to light. The faerie fire does not cause any harm to the objects or creatures thus outlined.
+
+STATISTICS:
+
+Charge abilities:
+– Faerie Fire
+  – Illusory flame outline
+  – -2 penalty to Armor Class
+  School: Evocation
+  Sphere: Weather
+  Range: Long
+  Duration: 4 rounds
+  Area of Effect: 5' radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spirit Ward
+@100124 = ~Wand of Spirit Ward~
+@100125 = ~Upon activation, the recipient is surrounded with a magical barrier at a distance of one foot. Spirits, fey creatures, elementals, and spectral undead receive a penalty of -2 to hit when attacking the protected creature. In addition, the recipient gains a +3 bonus to Saving Throws against all spells that belong to the Enchantment school. This spell cannot be cast on spirits, fey creatures, elementals, or spectral undead.
+
+STATISTICS:
+
+Charge abilities:
+– Spirit Ward
+  – Spirits, fey creatures, elementals, and spectral undead
+    – -2 penalty to THAC0 to attack recipient
+  – +3 bonus to Saving Throws against Enchantment spells
+  School: Abjuration
+  Sphere: Wards
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Light Wounds
+@100128 = ~Wand of Cause Light Wounds~
+@100129 = ~When activated, the wand charges the wielder's hand; upon successfully touching a creature, the wielder inflicts 1d8 + %magnitude% points of magic damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does no affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Cause Light Wounds
+  – Create charge to deal magic damage to touched target
+  – +4 THAC0 bonus
+  – No effect on undead, constructs, or extraplanar
+  School: Necromancy
+  Sphere: Necromantic
+  Damage: 1d8+%magnitude% magic damage
+  Duration: 1 turn, until displled, or successful hit
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Sunscorch
+@100130 = ~Wand of Sunscorch~
+@100131 = ~When activated, the wand pulls a brilliant ray of scorching heat that slants down from the sky and strikes one target of the wielder's choice. The creature struck by the ray sustains %magnitude%d6 points of fire damage. Undead creatures and monsters vulnerable to bright light suffer double damage. If the target successfully rolls a saving throw vs. Breath he will receive only half damage. In addition to sustaining damage, victims who fail their saves are blinded for 1 round.
+
+STATISTICS:
+
+Charge abilities:
+– Sunscorch
+  – Fire from sky
+  – Blindness
+  Damage:
+  – Living: %magnitude%d6 points of fire damage
+  – Undead: %magnitude%d6 additional points of fire damage
+  School: Evocation
+  Sphere: Sun
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Breath for half damage, negate Blindness
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animal Summoning I
+@100132 = ~Wand of Animal Summoning I~
+@100133 = ~Upon activation, the wand calls forth %magnitude% large bats, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+Bat (1 Hit Dice):
+STR 9, DEX 14, CON 11, INT 4, WIS 11, CHA 4; AL Neutral
+HP 4, AC 8, THAC0 20, Saving Throws 20/20/20/20/20
+1 Attack Per Round, 1d2 Piercing Damage (Bite)
+
+Combat Abilities:
+– Disease: target must save vs. Death or suffer -1 penalty to DEX and CON
+– Swarm: each bat within 5 feet grants additional +2 bonus to attack rolls
+
+Special Qualities:
+– Blindsense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning I
+  – Summons %magnitude% bats
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Regenerate Light Wounds
+@100134 = ~Wand of Regenerate Light Wounds~
+@100135 = ~When activating the wand, it imbues a creature with the ability to regenerate. The creature affected will regain 1 hit point per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Regenerate Light Wounds
+  – Regain 1 hit point per round
+  School: Alteration
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Strength of Stone
+@100136 = ~Wand of Strength of Stone~
+@100137 = ~Upon activating this wand, the wielder gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes him away (e.g. wing buffets, gusts of wind, telekinesis, etc.), but will move at a reduced speed.
+
+STATISTICS:
+
+Charge abilities:
+– Strength of Stone
+  – Strength set to 18
+  – Exceptional strength +50
+  School: Alteration
+  Sphere: Elemental (Earth)
+  Duration: 5 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
