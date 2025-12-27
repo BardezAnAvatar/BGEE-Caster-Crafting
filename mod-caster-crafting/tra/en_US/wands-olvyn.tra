@@ -97,6 +97,76 @@ Requires:
 Weight: 1~
 
 
+/*************************
+*   1st Level - Priest   *
+*************************/
+//Command
+@90102 = ~Wand of Command~
+@90103 = ~Upon activation, this wand allows the wielder to command another creature for a single round. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Command
+  – Charm target for 1 round
+  Range: 90 ft.
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw:
+  – Save vs. Wand to negate (if target has > 5 HD)
+  – Otherwise: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Entangle
+@90108 = ~Wand of Entangle~
+@90109 = ~When used, this wand causes plants in the area of effect to entangle enemies within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration if they fail a Save vs. Wand. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Entangle
+  – Reduce movement speed to 5%
+  – Armor class -2 penalty
+  Range: Visual range
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Magic Stone (Olvyn?)
+@90110 = ~Wand of Magical Stone~
+@90111 = ~When activated, this wand causes a pebble to be temporarily enchanted, which is then hurled or slung at an opponent. The stone automatically hits, dealing 3d4 damage to the target (+3d4 more if target undead).
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Magical Stone
+  – 3d4 points of magic damage
+  – 3d4 points of magic damage additional vs. Undead
+  Range: Visual range
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 /************************
 *   Identify Creature   *
 ************************/

@@ -438,3 +438,137 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/*************************
+*   1st Level - Priest   *
+*************************/
+//Command
+@70102 = ~Wand of Command~
+@70103 = ~This wand enables the wielder to command another creature to sleep for a single round. At the end of the round, the creature awakens and is unharmed. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Command
+  – Sleep for 1 round
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand to negate (if target has > 5 HD)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Light Wounds
+@70104 = ~Wand of Cure Light Wounds~
+@70105 = ~Upon activation, this wand heals 8 Hit Points to the creature's body and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Light Wounds
+  – Healed for 8 hit points
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Evil
+@70106 = ~Wand of Detect Evil~
+@70107 = ~Upon activation, this wand reveals emanations of evil from any creature. Any evil creature within the range of the spell will glow red briefly.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Evil
+  – Causes Evil creatures in range to glow red briefly
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 30-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Entangle
+@70108 = ~Wand of Entangle~
+@70109 = ~When used, this wand causes the grasses, weeds, bushes, and even trees wrap, twist, and entwine about creatures within the area of effect, holding them fast. Once per round, a creature can attempt to save vs. Wand with a +3 bonus to avoid entanglement. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Entangle
+  – Reduce movement speed to 5%
+  Range: Visual range
+  Duration: 1 turn
+  Area of Effect: 12-ft. radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Magic Stone
+@70110 = ~Wand of Magical Stone~
+@70111 = ~When activated, this wand can temporarily enchant a small pebble, which is then hurled or slung at an opponent. The stone deals 3d4 points of crushing damage to whomever it hits except undead creatures, who take 6d4 points of crushing damage instead. The stone is considered a magical weapon, although it does not have an attack or damage bonus.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Magical Stone
+  – Flings a stone at target creature
+  Damage:
+  – 3d4 points of crushing damage
+  – 3d4 points of crushing damage additional vs. Undead
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Remove Fear
+@70112 = ~Wand of Remove Fear~
+@70113 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. The recipients' morale will gradually reset to normal as the duration runs out. If the recipients are affected by magical fear, this is negated.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Remove Fear
+  – Morale set to maximum (gradually reset to normal)
+  – Dispels fear effects
+  – Immunity to fear effects
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -629,16 +629,180 @@ Weight: 1~
 @100101 = ~With activation, this wand raises the morale of friendly creatures by +1. Furthermore, it raises their attack and damage dice rolls by +1. The wielder determines at what range he will cast the spell. At the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster (thus, affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not).
 
 STATISTICS:
-(Enchantment)
 
 Charge abilities:
 – Bless
   – Morale +1
   – Attack rolls +1
   – Damage rolls +1
+  School: Enchantment
+  Sphere: All
   Range: Long
   Duration: 5 turns
   Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Command
+@100102 = ~Wand of Command~
+@100103 = ~This wand enables the wielder to command another creature to sleep for a single round. At the end of the round, the creature awakens and is unharmed. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+
+STATISTICS:
+
+Charge abilities:
+– Command
+  – Sleep for 1 round
+  School: Enchantment
+  Sphere: Charm, Combat, Law
+  Range: Long
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand to negate (if target has > 5 HD)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Light Wounds
+@100104 = ~Wand of Cure Light Wounds~
+@100105 = ~Upon activation, this wand causes wounds and other injuries to the creature's body to be healed. The wielder can restore 1d8 + %magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Light Wounds
+  – Healed for 1d8 + %magnitude% hit points
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Evil -> Detect Alignment
+@100106 = ~Wand of Detect Alignment~
+@100107 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Alignment
+  – Causes Good creatures in range to briefly glow green
+  – Causes Neutral creatures in range to briefly glow white
+  – Causes Evil creatures in range to briefly glow red
+  School: Divination
+  Sphere: Divination
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Instant
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Entangle
+@100108 = ~Wand of Entangle~
+@100109 = ~When used, this wand causes plants to entangle all creatures in the area of effect. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration of the spell. Those held receive a -2 penalty to attack rolls and a +2 penalty to AC. Creatures that make a successful saving throw vs. Breath temporarily avoid entanglement and can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. An entangled creature can attack, provided it does not have to move to reach an opponent. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large and strong creatures who suffer little to no distress from the entangling plants.
+
+STATISTICS:
+
+Charge abilities:
+– Entangle
+  – Reduce movement speed to 5%
+  – Armor class -2 penalty
+  School: Alteration
+  Sphere: Plant
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Breath for half speed
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Magic Stone
+@100110 = ~Wand of Magical Stone~
+@100111 = ~When activated, this wand will temporarily enchant ten small stones, no larger than sling bullets. The character using them can then hurl up to three stones per round at an opponent, with a +1 bonus to attack rolls. Each stone that hits inflicts 1d4+2 points of damage (1d4+5 against undead), and is considered to be of +1 enchantment to determine what it can hit. The magic in each stone expires after 2 turns or when used.
+
+STATISTICS:
+
+Charge abilities:
+– Magical Stone
+  – Creates magical bullets to throw
+  Damage:
+  – 1d4+2 points of damage
+  – 1d4+5 against undead
+  School: Enchantment
+  Sphere: Combat
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Special
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Remove Fear -> Resist Fear
+@100112 = ~Wand of Resist Fear~
+@100113 = ~This wand instills courage in the recipients when activated, raising their morale to its highest. If the recipients are affected by magical fear, this is negated. In addition, the recipients are protected from magical fear for the duration of the spell. At the instant the spell is completed, it affects all creatures in a 30 foot radius centered on the point selected by the caster (thus, affected creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not).
+
+STATISTICS:
+
+Charge abilities:
+– Remove Fear
+  – Morale set to maximum (gradually reset to normal)
+  – Dispels fear effects
+  – Immunity to fear effects
+  School: Abjuration
+  Sphere: Charm
+  Range: Sight
+  Duration: 5 turns
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Sanctuary
+@100114 = ~Wand of Sanctuary~
+@100115 = ~This wandcauses all of <PRO_HISHER> opponents to ignore <PRO_HISHER> existence, as if <PRO_HESHE> were invisible. While protected by this spell, the subject cannot take direct offensive action without breaking the spell, but may use non-attack spells focused on <PRO_HIMHER>self or otherwise act in any way that does not violate the prohibition against offensive action. This allows a warded individual to heal <PRO_HISHER> wounds, for example, or to cast a Chant spell. <PRO_HESHE> cannot cast spells on other targets without ending the spell.
+
+STATISTICS:
+
+Charge abilities:
+– Sanctuary
+  – Ignored as if invisible
+  – Can move, use thief skills, and heal/buff self
+  School: Abjuration
+  Sphere: Charm, Protection
+  Duration: 6 rounds
+  Area of Effect: Self
   Saving Throw: None
 
 Requires:
