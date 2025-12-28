@@ -122,55 +122,6 @@ Requires:
 Weight: 1~
 
 
-//Blindness -> Obscuring Mist
-@100011 = ~Wand of Obscuring Mist~
-@100012 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
-
-STATISTICS:
-
-Charge abilities:
-– Obscuring Mist
-  – Misty fog
-    – Sight halved
-    – -2 penalty to attack rolls for creatures inside
-    – -4 penalty to attack creatures inside with ranged attacks
-  School: Conjuration
-  Range: Long
-  Duration: 6 rounds
-  Area of Effect: 20' radius
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Friends -> Monster Summoning I
-@100013 = ~Wand of Monster Summoning I~
-@100014 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
-
-STATISTICS:
-
-Charge abilities:
-– Monster Summoning I
-  – Summon gibberlings: %magnitude%
-    Gibberling (1 Hit Dice):
-    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
-    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
-    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
-  School: Conjuration
-  Range: Medium
-  Duration: 3 turns
-  Area of Effect: Point
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
 //Identify
 @100017 = ~Wand of Identify~
 @100018 = ~This wand will use 1 charge to identify the name and enchantments (including curses) of one item subsequently touched by the wielder. Much like a scroll of Identify, in that to identify an item you right-click on that item; a menu will appear and from here you choose the "Scroll" option. The details are revealed without fail. Many unidentified items can still be used, but at great risk.
@@ -184,29 +135,6 @@ Charge abilities:
   Range: Personal
   Duration: Instant
   Area of Effect: 1 item
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Infravision -> True Strike
-@100019 = ~Wand of True Strike~
-@100020 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
-
-
-STATISTICS:
-
-Charge abilities:
-– True Strike
-  – +4 bonus to THAC0
-  – +5% bonus to Critical Hit chance
-  School: Divination
-  Range: Personal
-  Duration: 3 rounds
-  Area of Effect: Self
   Saving Throw: None
 
 Requires:
@@ -441,8 +369,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 8th
-@100045 = ~Wand of Chromatic Orb~
-@100046 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@100047 = ~Wand of Chromatic Orb~
+@100048 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -477,8 +405,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 10th
-@100047 = ~Wand of Chromatic Orb~
-@100048 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@100049 = ~Wand of Chromatic Orb~
+@100050 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -516,8 +444,8 @@ Weight: 1~
 
 
 //Chromatic Orb: 12th
-@100049 = ~Wand of Chromatic Orb~
-@100050 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
+@100051 = ~Wand of Chromatic Orb~
+@100052 = ~When activated, a 2-ft. diameter sphere appears in the wielder's hand. When thrown, the sphere heads unerringly to its target. The sphere inflicts magic damage and causes different effects depending upon its color. The color of any given orb is chosen randomly from the colors below. The orb is occasionally even multicolored, causing multiple effects. The victim can save vs. Wand against all special effects but gets no save against the damage. All special effects last for 5 rounds.
 
 STATISTICS:
 
@@ -558,8 +486,8 @@ Weight: 1~
 
 
 //Larloch's Minor Drain
-@100051 = ~Wand of Larloch's Minor Drain~
-@100052 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers %magnitude% damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn.
+@100053 = ~Wand of Larloch's Minor Drain~
+@100054 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers %magnitude% damage, while the wielder gains 4 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 turn.
 
 STATISTICS:
 
@@ -581,8 +509,8 @@ Weight: 1~
 
 
 //Reflected Image
-@100053 = ~Wand of Reflected Image~
-@100054 = ~When activated, this wand creates one illusory image of the wielder that will travel alongside <PRO_HIMHER>. The image performs all of the actions that the wielder does, and seems to react normally to both physical and magical damage (such as appearing to be burned when hit by a fireball) so that if any enemies are trying to attack the wielder they will not know which one is real. There is a 50% chance that an attacker will attack the image and a 50% chance that he will attack the wielder. The image is immune to all forms of damage, but will disappear if a dispel magic or a detect illusion spell is cast upon it, or when the spell duration runs out. This spell cannot be cast on anyone who is under the effects of a Mirror Image spell, and multiple castings of this spell will not create additional images.
+@100055 = ~Wand of Reflected Image~
+@100056 = ~When activated, this wand creates one illusory image of the wielder that will travel alongside <PRO_HIMHER>. The image performs all of the actions that the wielder does, and seems to react normally to both physical and magical damage (such as appearing to be burned when hit by a fireball) so that if any enemies are trying to attack the wielder they will not know which one is real. There is a 50% chance that an attacker will attack the image and a 50% chance that he will attack the wielder. The image is immune to all forms of damage, but will disappear if a dispel magic or a detect illusion spell is cast upon it, or when the spell duration runs out. This spell cannot be cast on anyone who is under the effects of a Mirror Image spell, and multiple castings of this spell will not create additional images.
 
 STATISTICS:
 
@@ -601,8 +529,8 @@ Weight: 1~
 
 
 //Spook
-@100057 = ~Wand of Spook~
-@100058 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. The creature suffers a Saving Throw penalty of %magnitude%. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion, such as dragons, and those with no intelligence score are unaffected by this spell, as are creatures under the effect of a True Seeing spell.
+@100059 = ~Wand of Spook~
+@100060 = ~This wand's effect plays upon natural fears to cause the target creature to perceive the wielder as someone or something inimical, which then appears to advance upon it in a threatening manner. If the creature does not make a successful save vs. Wand, it turns and flees at maximum speed as far from the wielder as possible. The creature suffers a Saving Throw penalty of %magnitude%. Although the caster does not actually pursue the fleeing creature, a phantasm from its own mind does. Undead creatures, certain powerful creatures who can easily discern the illusion, such as dragons, and those with no intelligence score are unaffected by this spell, as are creatures under the effect of a True Seeing spell.
 
 STATISTICS:
 
@@ -622,8 +550,8 @@ Weight: 1~
 
 
 //Expeditious Retreat
-@100061 = ~Wand of Expeditious Retreat~
-@100062 = ~Upon activation, the wand provides all friendly creatures in the area with an amazing fleetness of foot. The affected creatures movement rate is almost tripled for the duration of the spell, but the excessively unnatural speed prevents them from taking almost any other actions except for running.
+@100063 = ~Wand of Expeditious Retreat~
+@100064 = ~Upon activation, the wand provides all friendly creatures in the area with an amazing fleetness of foot. The affected creatures movement rate is almost tripled for the duration of the spell, but the excessively unnatural speed prevents them from taking almost any other actions except for running.
 
 STATISTICS:
 
@@ -644,8 +572,8 @@ Weight: 1~
 
 
 //Dimension Jump
-@100063 = ~Wand of Dimension Jump~
-@100064 = ~This wand transports the wielder to any place within sight. When the spell is cast, a dimensional portal opens up in front of the wielder, which <PRO_HESHE> immediately steps through. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at his chosen destination. The wielder always arrives at exactly the spot desired, and the dimensional door doesn't allow anyone or anything else to pass through. Spells about to be cast upon the wielder will fail, and missiles about to hit <PRO_HIMHER> will instead hit thin air.
+@100065 = ~Wand of Dimension Jump~
+@100066 = ~This wand transports the wielder to any place within sight. When the spell is cast, a dimensional portal opens up in front of the wielder, which <PRO_HESHE> immediately steps through. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at his chosen destination. The wielder always arrives at exactly the spot desired, and the dimensional door doesn't allow anyone or anything else to pass through. Spells about to be cast upon the wielder will fail, and missiles about to hit <PRO_HIMHER> will instead hit thin air.
 
 STATISTICS:
 
@@ -655,6 +583,78 @@ Charge abilities:
   School: Conjuration
   Range: Personal
   Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Obscuring Mist
+@100083 = ~Wand of Obscuring Mist~
+@100084 = ~Upon activation, a misty bank of fog billows out from the designated point obscuring all sight. Everyone within the cloud suffer -2 penalty to attack rolls, and have their line of sight halved. Anyone, inside or outside the cloud, trying to attack a creature concealed by the fog with ranged weapons will do so with a -4 penalty to attack rolls. Creatures with blindsight, or that do not rely on sight can fight within the cloud without penalties.
+
+STATISTICS:
+
+Charge abilities:
+– Obscuring Mist
+  – Misty fog
+    – Sight halved
+    – -2 penalty to attack rolls for creatures inside
+    – -4 penalty to attack creatures inside with ranged attacks
+  School: Conjuration
+  Range: Long
+  Duration: 6 rounds
+  Area of Effect: 20' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning I
+@100085 = ~Wand of Monster Summoning I~
+@100086 = ~This wand will summon a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning I
+  – Summon gibberlings: %magnitude%
+    Gibberling (1 Hit Dice):
+    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
+    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
+    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
+  School: Conjuration
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Point
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//True Strike
+@100087 = ~Wand of True Strike~
+@100088 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
+
+
+STATISTICS:
+
+Charge abilities:
+– True Strike
+  – +4 bonus to THAC0
+  – +5% bonus to Critical Hit chance
+  School: Divination
+  Range: Personal
+  Duration: 3 rounds
   Area of Effect: Self
   Saving Throw: None
 
