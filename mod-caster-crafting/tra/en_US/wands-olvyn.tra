@@ -1,32 +1,11 @@
-/* Reserving range 90000-99999 */
+/* Reserving range 80000-89999 */
 
-
-/*************************
-*   1st Level - Arcane   *
-*************************/
-//True Strike
-@90087 = ~Wand of True Strike~
-@90088 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
-
-STATISTICS:
-(Divination)
-
-Charge abilities:
-– True Strike
-  +20 bonus to THAC0.
-  Duration: 9 seconds
-  Area of Effect: Self
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
+/***************************************
+*   1st Level - Arcane - 81000-81499   *
+***************************************/
 //Sleep
-@90029 = ~Wand of Sleep~
-@90030 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 60 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for %duration%. Attacks against sleeping opponents never miss.
+@81028 = ~Wand of Sleep~
+@81029 = ~This wand will emit a gold beam of energy at its targets up to a maximum range of 60 ft., affecting a 15-ft. radius. If the target creatures fail their Save vs. Wand, they will fall into a deep, comatose sleep for %duration%. Attacks against sleeping opponents never miss.
 
 STATISTICS:
 (Enchantment/Charm)
@@ -46,8 +25,8 @@ Weight: 1~
 
 
 //Chill Touch
-@90031 = ~Wand of Chill Touch~
-@90032 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of an adjacent creature. No attack roll is needed. The touched creature takes 5d4 magic cold damage and must save or lose 3 points of Strength for 5 rounds. The Strength loss is cumulative; if the creature is reduced to 0 Strength, it dies instantly.
+@81030 = ~Wand of Chill Touch~
+@81031 = ~When activated, a blue glow encompasses the wielder's hand, and <PRO_HESHE> uses this energy to attack the life force of an adjacent creature. No attack roll is needed. The touched creature takes 5d4 magic cold damage and must save or lose 3 points of Strength for 5 rounds. The Strength loss is cumulative; if the creature is reduced to 0 Strength, it dies instantly.
 
 An undead creature suffers no damage or Strength loss, but will be affected by panic for 2 turns unless it successfully makes a Save vs. Wand.
 
@@ -75,8 +54,8 @@ Weight: 1~
 
 
 //Larloch's Minor Drain
-@90053 = ~Wand of Larloch's Minor Drain~
-@90054 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 12 damage, while the wielder gains 12 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
+@81052 = ~Wand of Larloch's Minor Drain~
+@81053 = ~When activated, a small amount of the life force is drained from the target and adds it to the wielder's own. The target creature suffers 12 damage, while the wielder gains 12 Hit Points. If the wielder goes over <PRO_HISHER> maximum Hit Point total with this spell, <PRO_HESHE> loses any extra Hit Points after 1 hour.
 
 STATISTICS:
 (Necromancy)
@@ -98,8 +77,8 @@ Weight: 1~
 
 
 //Dimension Door
-@90065 = ~Wand of Dimension Door~
-@90066 = ~This wand transports the wielder to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination. Dimension Door can be cast at a point too far away to see, as long as the party has seen it.
+@81064 = ~Wand of Dimension Door~
+@81065 = ~This wand transports the wielder to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination. Dimension Door can be cast at a point too far away to see, as long as the party has seen it.
 
 STATISTICS:
 (Alteration)
@@ -119,8 +98,8 @@ Weight: 1~
 
 
 //Disruptive Surge
-@90067 = ~Wand of Disruptive Surge~
-@90068 = ~This wand employs wild magic to deliberately disrupt another creature's spell. The wielder chooses a creature, which should be a spellcaster (arcane or divine). The next spell that creature casts within 5 rounds will trigger a wild surge. This surge will often cause the spell to fail, though it could have other, unpredictable effects.
+@81066 = ~Wand of Disruptive Surge~
+@81067 = ~This wand employs wild magic to deliberately disrupt another creature's spell. The wielder chooses a creature, which should be a spellcaster (arcane or divine). The next spell that creature casts within 5 rounds will trigger a wild surge. This surge will often cause the spell to fail, though it could have other, unpredictable effects.
 
 STATISTICS:
 (Wild Magic)
@@ -140,8 +119,8 @@ Weight: 1~
 
 
 //Inertia
-@90069 = ~Wand of Inertia~
-@90070 = ~At activation, this wand drastically increases the inertia of the target, locking its movement in the direction it is currently moving. The effect of this spell depends on whether or not the target was moving when it was hit by the spell. If it was moving, it will continue hurtling nonstop in that direction against its will for 4 rounds. If it was standing in place, it will be immobilized for 4 rounds. A successful Saving Throw vs. Polymorph at -6 negates the effects of this spell.
+@81068 = ~Wand of Inertia~
+@81069 = ~At activation, this wand drastically increases the inertia of the target, locking its movement in the direction it is currently moving. The effect of this spell depends on whether or not the target was moving when it was hit by the spell. If it was moving, it will continue hurtling nonstop in that direction against its will for 4 rounds. If it was standing in place, it will be immobilized for 4 rounds. A successful Saving Throw vs. Polymorph at -6 negates the effects of this spell.
 
 Creatures lower level than the wand's caster level have no save against this spell.
 
@@ -163,8 +142,8 @@ Weight: 1~
 
 
 //Summon Kobold
-@90071 = ~Wand of Summon Kobold~
-@90072 = ~This wand summons a kobold with no special abilities. The kobold remains a faithful servant of the wielder for 8 rounds, at which point it is unsummoned. The kobold summoned by this spell ignores the summoning limit.
+@81070 = ~Wand of Summon Kobold~
+@81071 = ~This wand summons a kobold with no special abilities. The kobold remains a faithful servant of the wielder for 8 rounds, at which point it is unsummoned. The kobold summoned by this spell ignores the summoning limit.
 
 STATISTICS:
 (Conjuration/Summoning)
@@ -184,8 +163,8 @@ Weight: 1~
 
 
 //Jump
-@90073 = ~Wand of Jump~
-@90074 = ~Once activated, this wand allows a creature to jump higher and farther. Until the duration ends, the creature gains an ability they can use at will, which lets the creature jump up to 26 feet away. The creature is able to jump over normally impassable obstacles like fences or walls, as long as they are narrow enough to jump over. While in the air, the creature is unaffected by certain ground-based spells like Entangle, Web, and Earthquake.
+@81072 = ~Wand of Jump~
+@81073 = ~Once activated, this wand allows a creature to jump higher and farther. Until the duration ends, the creature gains an ability they can use at will, which lets the creature jump up to 26 feet away. The creature is able to jump over normally impassable obstacles like fences or walls, as long as they are narrow enough to jump over. While in the air, the creature is unaffected by certain ground-based spells like Entangle, Web, and Earthquake.
 
 STATISTICS:
 (Alteration)
@@ -205,8 +184,8 @@ Weight: 1~
 
 
 //Hex
-@90075 = ~Wand of Hex~
-@90076 = ~This wand can curse the target to take more magical and elemental damage. The target must make a Save vs. Polymorph. On a failure, the target is cursed for 6 rounds. During that time, whenever the target would be dealt fire, cold, electricity, acid, or magic damage, it takes an additional 6 damage of that type. Hex is especially effective when combined with spells that deal damage multiple times, such as Magic Missile or Melf's Acid Arrow.
+@81074 = ~Wand of Hex~
+@81075 = ~This wand can curse the target to take more magical and elemental damage. The target must make a Save vs. Polymorph. On a failure, the target is cursed for 6 rounds. During that time, whenever the target would be dealt fire, cold, electricity, acid, or magic damage, it takes an additional 6 damage of that type. Hex is especially effective when combined with spells that deal damage multiple times, such as Magic Missile or Melf's Acid Arrow.
 
 STATISTICS:
 (Enchantment)
@@ -227,8 +206,8 @@ Weight: 1~
 
 
 //Reflect Attack
-@90077 = ~Wand of Reflect Attack~
-@90078 = ~This wand will protect the wielder; once activated, the next instance of physical damage the wielder would receive is reflected back at the attacker, damaging <PRO_HIMHER> instead. If the physical damage came from a weapon, any on-hit effects of the weapon will also be reflected back at the attacker.
+@81076 = ~Wand of Reflect Attack~
+@81077 = ~This wand will protect the wielder; once activated, the next instance of physical damage the wielder would receive is reflected back at the attacker, damaging <PRO_HIMHER> instead. If the physical damage came from a weapon, any on-hit effects of the weapon will also be reflected back at the attacker.
 
 STATISTICS:
 (Abjuration)
@@ -248,8 +227,8 @@ Weight: 1~
 
 
 //Taunt
-@90079 = ~Wand of Taunt~
-@90080 = ~When activated, this wand provokes an enemy into attacking the wielder. If the target fails a Save vs. Breath, it is driven berserk and will attack the wielder if possible rather than do any other action. If the target is a warrior (a fighter, ranger, paladin, or monk, including multiclassed warriors), it makes the save at a -6 penalty. Creatures immune to charm effects are immune to Taunt. The effects of Taunt end early if the wielder dies.
+@81078 = ~Wand of Taunt~
+@81079 = ~When activated, this wand provokes an enemy into attacking the wielder. If the target fails a Save vs. Breath, it is driven berserk and will attack the wielder if possible rather than do any other action. If the target is a warrior (a fighter, ranger, paladin, or monk, including multiclassed warriors), it makes the save at a -6 penalty. Creatures immune to charm effects are immune to Taunt. The effects of Taunt end early if the wielder dies.
 
 STATISTICS:
 (Enchantment)
@@ -270,8 +249,8 @@ Weight: 1~
 
 
 //Dimensional Chest
-@90081 = ~Wand of Dimensional Chest~
-@90082 = ~When activated, this wand summons a chest containing an extradimensional storage space similar to a Bag of Holding. The chest can store up to 60000 of the party's items. It stays in the spot where it was summoned for 8 hours. Any party member can store or retrieve items from the chest by interacting with it. Non-allied creatures cannot see or interact with the chest.
+@81080 = ~Wand of Dimensional Chest~
+@81081 = ~When activated, this wand summons a chest containing an extradimensional storage space similar to a Bag of Holding. The chest can store up to 60000 of the party's items. It stays in the spot where it was summoned for 8 hours. Any party member can store or retrieve items from the chest by interacting with it. Non-allied creatures cannot see or interact with the chest.
 
 All chests summoned with this spell link to the same extradimensional space, even if multiple chests were to be summoned at the same time.
 
@@ -292,12 +271,32 @@ Requires:
 Weight: 1~
 
 
-/*************************
-*   1st Level - Priest   *
-*************************/
+//True Strike
+@81086 = ~Wand of True Strike~
+@81087 = ~This wand will grant incredible insights into <PRO_HISHER> enemies' weaknesses, but only for an extremely short duration.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– True Strike
+  +20 bonus to THAC0.
+  Duration: 9 seconds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+/***************************************
+*   1st Level - Priest - 81500-81999   *
+***************************************/
 //Command
-@90102 = ~Wand of Command~
-@90103 = ~Upon activation, this wand allows the wielder to command another creature for a single round. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
+@81502 = ~Wand of Command~
+@81503 = ~Upon activation, this wand allows the wielder to command another creature for a single round. Creatures with 6 or more Hit Dice (or experience levels) are entitled to a Saving Throw vs. Wand to ignore the command.
 
 STATISTICS:
 (Enchantment/Charm)
@@ -319,8 +318,8 @@ Weight: 1~
 
 
 //Entangle
-@90108 = ~Wand of Entangle~
-@90109 = ~When used, this wand causes plants in the area of effect to entangle enemies within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration if they fail a Save vs. Wand. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
+@81508 = ~Wand of Entangle~
+@81509 = ~When used, this wand causes plants in the area of effect to entangle enemies within the area. The grasses, weeds, bushes, and even trees wrap, twist, and entwine about the creatures, holding them fast for the duration if they fail a Save vs. Wand. An entangled creature can still attack, but receives a -2 penalty to its Armor Class.
 
 STATISTICS:
 (Alteration)
@@ -341,8 +340,8 @@ Weight: 1~
 
 
 //Magical Stone
-@90110 = ~Wand of Magical Stone~
-@90111 = ~When activated, this wand causes a pebble to be temporarily enchanted, which is then hurled or slung at an opponent. The stone automatically hits, dealing 3d4 damage to the target (+3d4 more if target undead).
+@81510 = ~Wand of Magical Stone~
+@81511 = ~When activated, this wand causes a pebble to be temporarily enchanted, which is then hurled or slung at an opponent. The stone automatically hits, dealing 3d4 damage to the target (+3d4 more if target undead).
 
 STATISTICS:
 (Enchantment)
@@ -363,8 +362,8 @@ Weight: 1~
 
 
 //Snake's Swiftness
-@90138 = ~Wand of Snake's Swiftness~
-@90139 = ~Upon activating this wand, the wielder gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes him away (e.g. wing buffets, gusts of wind, telekinesis, etc.), but will move at a reduced speed.
+@81538 = ~Wand of Snake's Swiftness~
+@81539 = ~Upon activating this wand, the wielder gains some of the solidity and strength of stone. This spell sets the strength of the character to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then his strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then his strength will become 18/50 + original percentage. If his strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more. For the duration of the spell, the caster also becomes immune to everything, magical or otherwise, that pushes him away (e.g. wing buffets, gusts of wind, telekinesis, etc.), but will move at a reduced speed.
 
 STATISTICS:
 (Alteration)
@@ -385,8 +384,8 @@ Weight: 1~
 
 
 //Hunter's Mark
-@90140 = ~Wand of Hunter's Mark~
-@90141 = ~When activated, the wand magically marks a non-allied creature to be hunted. For the duration, the wielder's attacks against the marked target deal an additional %magnitude%d6 damage. In addition, when the target is out of sight, the spell greatly enhances the wielder's ability to track the target, sufficient for the wielder to know the target's exact location and direction. Hunter's Mark can be cast on any creature the party sees, even if the wielder does not see them.
+@81540 = ~Wand of Hunter's Mark~
+@81541 = ~When activated, the wand magically marks a non-allied creature to be hunted. For the duration, the wielder's attacks against the marked target deal an additional %magnitude%d6 damage. In addition, when the target is out of sight, the spell greatly enhances the wielder's ability to track the target, sufficient for the wielder to know the target's exact location and direction. Hunter's Mark can be cast on any creature the party sees, even if the wielder does not see them.
 
 STATISTICS:
 (Divination)
@@ -407,8 +406,8 @@ Weight: 1~
 
 
 //Turning Weapon
-@90142 = ~Wand of Turning Weapon~
-@90143 = ~When activated, this wand imbues weapons with the power to turn undead. For the duration, whenever the wielder hits an undead creature with a melee or ranged attack, the undead is turned as if the a paladin had used Turn Undead on it.
+@81542 = ~Wand of Turning Weapon~
+@81543 = ~When activated, this wand imbues weapons with the power to turn undead. For the duration, whenever the wielder hits an undead creature with a melee or ranged attack, the undead is turned as if the a paladin had used Turn Undead on it.
 
 STATISTICS:
 (Enchantment)
@@ -427,8 +426,8 @@ Weight: 1~
 
 
 //Repulse
-@90144 = ~Wand of Repulse~
-@90145 = ~This wand releases a wave of force that blows back creatures. All non-allied creatures within 15 feet of the caster are knocked back for 1 second. There is no Saving Throw.
+@81544 = ~Wand of Repulse~
+@81545 = ~This wand releases a wave of force that blows back creatures. All non-allied creatures within 15 feet of the caster are knocked back for 1 second. There is no Saving Throw.
 
 STATISTICS:
 (Abjuration)
@@ -447,8 +446,8 @@ Weight: 1~
 
 
 //Camouflage
-@90146 = ~Wand of Camouflage~
-@90147 = ~Upon activation, this wand gives the recipient the ability to blend into the environment with camouflage. Whenever the creature stands still for 2 seconds, they become effectively invisible through camouflage.
+@81546 = ~Wand of Camouflage~
+@81547 = ~Upon activation, this wand gives the recipient the ability to blend into the environment with camouflage. Whenever the creature stands still for 2 seconds, they become effectively invisible through camouflage.
 
 STATISTICS:
 (Illusion)
@@ -468,8 +467,8 @@ Weight: 1~
 
 
 //Searing Smite
-@90148 = ~Wand of Searing Smite~
-@90149 = ~Upon activation, this wand imbues the wielder's weapon with holy/unhell fire. The next successful melee attack made on a creature within 5 rounds deals an additional %magnitude%d6 magic fire damage.
+@81548 = ~Wand of Searing Smite~
+@81549 = ~Upon activation, this wand imbues the wielder's weapon with holy/unhell fire. The next successful melee attack made on a creature within 5 rounds deals an additional %magnitude%d6 magic fire damage.
 
 STATISTICS:
 (Illusion)
@@ -492,8 +491,8 @@ Weight: 1~
 /************************
 *   Identify Creature   *
 ************************/
-@90002 = ~Wand of Identify Creature~
-@90003 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
+@81002 = ~Wand of Identify Creature~
+@81003 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
 
 STATISTICS:
 (Divination)
