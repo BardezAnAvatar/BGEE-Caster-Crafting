@@ -488,11 +488,123 @@ Requires:
 Weight: 1~
 
 
-/************************
-*   Identify Creature   *
-************************/
-@81002 = ~Wand of Identify Creature~
-@81003 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
+/***************************************
+*   2nd Level - Arcane - 62000-62499   *
+***************************************/
+//Detect Invisibility
+@82002 = ~Wand of Detect Invisibility~
+@82003 = ~Once used, the recipient is able to see clearly any objects or beings that are invisible, hidden, concealed, astral, ethereal, or out of phase.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Invisibility
+  – See invisible creatures
+  – Able to attack invisible creatures
+  – Able to cast spells on invisible creatures
+  Range: Sight
+  Duration: 4 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ghoul Touch
+@82026 = ~Wand of Ghoul Touch~
+@82027 = ~When the wielder activates this wand, a green glow encompasses <PRO_HISHER> hand. If the wielder then touches a creature (no attack roll required), and the creature must make a Save vs. Death at -2 or be paralyzed for 6 rounds. Elves and undead are immune to the ghoul touch.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Ghoul Touch
+  – Paralysis
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Death (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Power Word, Sleep
+@82030 = ~Wand of Power Word, Sleep~
+@82031 = ~When activated, this wand causes a comatose slumber to come upon 1 creature (other than undead and certain other creatures specifically excluded from the spell's effects). The creature gets no Saving Throw. Magically sleeping opponents can be attacked with substantial bonuses but will wake up when damaged. The Sleep effect will last for 3 rounds.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Power Word, Sleep
+  – Sleep
+  Range: 90 ft.
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ray of Enfeeblement
+@82032 = ~Wand of Ray of Enfeeblement~
+@82033 = ~This wand weakens an opponent, reducing its Strength score and thereby the attacks that rely upon it. The victim is reduced to a Strength score of 5 for the duration of the spell, unless a Saving Throw vs. Wand is made with a -6 penalty. This spell does not affect combat bonuses due to magical items, and those conferring increased Strength function normally. However, the target receives all the penalties for a Strength score of 5 such as attack and damage penalties as well as lower weight allowance.
+
+Creatures lower level than the caster have no save against this spell.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Ray of Enfeeblement
+  – Strength set to 5
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (-6 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Deafness
+@82036 = ~Wand of Deafness~
+@82037 = ~Upon activation, this wand causes the recipient to become totally unable to hear any sounds. The victim is allowed a Saving Throw vs. Wand to negate the effect. Deafened spellcasters have a 50% chance to miscast any spells. This deafness can be done away with by means of a Dispel Magic spell or a Cure Disease spell.
+
+Creatures lower level than %caster_level% have no save against this spell.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Deafness
+  – 50% Change to miscast spells
+  Range: 180 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Identify Creature
+@82048 = ~Wand of Identify Creature~
+@82049 = ~Activating this wand allows the wielder to learn useful information about a creature. The information will include the creature's level, class, Hit Points, Armor Class, base THAC0 (excluding THAC0 bonuses), attacks per round, attributes, resistances, saving throws, and various other effects. Some specific creatures will also display additional information.
 
 STATISTICS:
 (Divination)
@@ -503,6 +615,222 @@ Charge abilities:
   Range: Sight
   Duration: Instant
   Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Power Word, Pull
+@82050 = ~Wand of Power Word, Pull~
+@82051 = ~This wand, when activated, magically pulls another creature to the wielder. For one round, the creature will be unable to move of its own will and will be pulled toward the wielder at great speed. During that round, if the wielder moves, the creature will be dragged along with <PRO_HIMHER>. There is no Saving Throw, though Magic Resistance can prevent the effects. Power Word, Pull can target a creature even if the wielder cannot see it; however, the wielder must be aware of the creature's existence and they must be on the same plane. Power Word, Pull is technically a summoning spell, as it summons the target of the spell.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Power Word, Pull
+  – Drags target to the wielder
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Ghostwalk
+@82052 = ~Wand of Ghostwalk~
+@82053 = ~Upon activation, this wand makes multiple allies incorporeal for 1 round. While incorporeal, creatures are immune to normal weapons and can move through walls. Ghostwalk could be used to move the party through a wall, eluding enemies. When the spell ends, if a character is inside a wall, they will be pushed to the nearest inhabitable space.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Ghostwalk
+  – Move through walls
+  – Immune to normal weapons
+  Duration: 1 round
+  Area of Effect: 15-ft. radius centered on caster
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Power Word, Push
+@82054 = ~Wand of Power Word, Push~
+@82055 = ~Once activated, the wand magically pushes another creature away from the wielder. For one round, the creature will be unable to move of its own will and will be pushed away from the wielder at great speed. There is no Saving Throw, though Magic Resistance can prevent the effects. The wand can be used on a creature even if the wielder cannot see the creature; however, <PRO_HESHE> must be aware of the creature's existence and they must be on the same plane.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Power Word, Push
+  – Pushes a creature away
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Intoxicate
+@82056 = ~Wand of Intoxicate~
+@82057 = ~This wand can instantly cause a target to become dangerously drunk, far more than is pleasurable. The target gains four intoxication points for every Constitution point they have less than 25. For example, if the target has 10 Constitution, they will gain 60 intoxication points. Like normal drunkenness, this magical intoxication will wear off over time. A successful Save vs. Wand at -5 negates the effect. Intoxicate has no effect on undead or constructs. Multiple uses of this spell are cumulative.
+
+Creatures lower level than %caster_level% have no save against this spell.
+
+Note: High levels of intoxication give luck penalties and morale boosts. See manual or wiki for details.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Intoxicate
+  – Intoxicates a creature
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (-5 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Null Healing
+@82058 = ~Wand of Null Healing~
+@82059 = ~This wand emits a curse which prevents the target from healing. Once cast, the target must save vs. Wand at -8 or be cursed for 1 day. While cursed, the target cannot regain Hit Points via spells, abilities, items, regeneration, or resting. The curse can be removed early using a Remove Curse spell.
+
+Creatures lower level than %caster_level% have no save against this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Null Healing
+  – Prevents healing
+  Range: Sight
+  Duration: 1 day
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (-8 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Specific Spell Immunity
+@82060 = ~Wand of Specific Spell Immunity~
+@82061 = ~Upon activation, this wand channels the wielder's magic to shield the party from those same spells. The wielder may choose up to three spells <PRO_HESHE> has memorized. Those spells are then consumed (expending one of each spell), giving allies immunity to each of those spells for 8 hours. The spell affects all allied creatures in the current area, including party members and summoned creatures.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Specific Spell Immunity
+  – Select 3 spells memorized
+    – Allies get immunity to these spells for 8 hours
+  Duration: 8 hours
+  Area of Effect: All allies
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Levitate
+@82062 = ~Wand of Levitate~
+@82063 = ~This wand will suspend a creature in midair. For the duration, the target is stuck in midair and cannot move unless it can fly. While levitating, it is almost impossible for the target to hit or be hit by other creatures with melee weapons. The target is also unaffected by ground-based spells such as Grease, Entangle, Web and Earthquake. If the target is an ally, there is no Saving Throw necessary; otherwise, the target may make a Save vs. Polymorph at -3 to avoid the effects.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Levitate
+  – Target suspended in midair
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (-3 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Bounce Spell
+@82064 = ~Wand of Bounce Spell~
+@82065 = ~This wand provides a magical shield; if the wielder would be hit by a spell within 2 rounds of casting, <PRO_HESHE> will be unaffected, and the incoming spell will be reflected back at its caster. Bounce Spell expires if it reflects a spell, or after 2 rounds have passed. Bounce Spell will not protect the caster from a Dispel Magic. However, it will not be affected by a Dispel Magic, either.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Bounce Spell
+  – Next spell targeting wielder is reflected to caster
+  Duration: 2 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Detect Magic
+@82064 = ~Wand of Detect Magic~
+@82065 = ~This wand lets the wielder see the magical effects on other creatures. While the spell is active, if you hover the cursor over a creature and press Left Shift, a list of all the spell effects on the creature (such as Stoneskin or Protection from Magical Weapons) will be displayed. If the creature has Non-Detection, nothing will be displayed.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Magic
+  – Detects the magical effects active on other creatures
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Far Cast
+@82066 = ~Wand of Far Cast~
+@82067 = ~This wand modifies the next spell or ability used by the wielder in the next 2 rounds. That spell or ability gains unlimited range and can target any creature the party sees, even if the wielder does not see it.
+
+The next spell can be cast immediately, as if the caster had Aura Cleansing.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Far Cast
+  – Detects the magical effects active on other creatures
+  Range: Anywhere visible
+  Duration: 2 rounds
+  Area of Effect: Self
   Saving Throw: None
 
 Requires:

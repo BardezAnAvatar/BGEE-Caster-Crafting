@@ -95,7 +95,7 @@ Weight: 1~
 
 //Color Spray
 @91008 = ~Wand of Color Spray~
-@91009 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to the wielder are slowed for 5 rounds, those with Hit Dice/levels one or two greater than the wielder are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
+@91009 = ~This wand will project a vivid, fan-shaped spray of clashing colors to spring forth from itself; the spray is 15 feet in length and spread out in a horizontal arc of about 60 degrees in front of the wizard. The spell's effects depend upon the wielder's level - creatures with Hit Dice/levels less than or equal to %caster_level% are slowed for 5 rounds, those with Hit Dice/levels one or two greater than %caster_level% are blinded for 3 rounds, and all others are confused for 1 round. Creatures with more than 22 Hit Dice/levels will have to save only against the confusion effect, regardless of the wielder's level.
 
 STATISTICS:
 
@@ -625,15 +625,16 @@ STATISTICS:
 Charge abilities:
 – Monster Summoning I
   – Summon gibberlings: %magnitude%
-    Gibberling (1 Hit Dice):
-    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
-    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
-    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
   School: Conjuration
   Range: Medium
   Duration: 3 turns
   Area of Effect: Point
   Saving Throw: None
+  Summons:
+  – Gibberling (1 Hit Dice):
+    STR 10, DEX 10, CON 10, INT 6, WIS 7, CHA 4; AL Chaotic Neutral
+    HP 8, AC 10, THAC0 19, Saving Throws 13/17/15/13/17
+    1 Attack Per Round, 1d6 Piercing Damage (Short Sword)
 
 Requires:
  9 Intelligence
@@ -728,30 +729,6 @@ Charge abilities:
   Range: Touch
   Duration: Permanent
   Area of Effect: 1 creature
-  Saving Throw: None
-
-Requires:
- 9 Intelligence
-
-Weight: 1~
-
-
-//Detect Evil -> Detect Alignment
-@91506 = ~Wand of Detect Alignment~
-@91507 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
-
-STATISTICS:
-
-Charge abilities:
-– Detect Alignment
-  – Causes Good creatures in range to briefly glow green
-  – Causes Neutral creatures in range to briefly glow white
-  – Causes Evil creatures in range to briefly glow red
-  School: Divination
-  Sphere: Divination
-  Range: Personal
-  Duration: 1 turn
-  Area of Effect: Instant
   Saving Throw: None
 
 Requires:
@@ -1026,17 +1003,7 @@ Weight: 1~
 @91532 = ~Wand of Animal Summoning I~
 @91533 = ~Upon activation, the wand calls forth %magnitude% large bats, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
 
-Bat (1 Hit Dice):
-STR 9, DEX 14, CON 11, INT 4, WIS 11, CHA 4; AL Neutral
-HP 4, AC 8, THAC0 20, Saving Throws 20/20/20/20/20
-1 Attack Per Round, 1d2 Piercing Damage (Bite)
 
-Combat Abilities:
-– Disease: target must save vs. Death or suffer -1 penalty to DEX and CON
-– Swarm: each bat within 5 feet grants additional +2 bonus to attack rolls
-
-Special Qualities:
-– Blindsense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
 
 STATISTICS:
 
@@ -1049,6 +1016,16 @@ Charge abilities:
   Duration: 3 turns
   Area of Effect: Summons
   Saving Throw: None
+  Summons:
+  – Bat (1 Hit Dice):
+    STR 9, DEX 14, CON 11, INT 4, WIS 11, CHA 4; AL Neutral
+    HP 4, AC 8, THAC0 20, Saving Throws 20/20/20/20/20
+    1 Attack Per Round, 1d2 Piercing Damage (Bite)
+    Combat Abilities:
+    – Disease: target must save vs. Death or suffer -1 penalty to DEX and CON
+    – Swarm: each bat within 5 feet grants additional +2 bonus to attack rolls
+    Special Qualities:
+    – Blindsense: relies on echolocation to fight in conditions of poor light or total darkness, ignoring the penalties associated with blindness
 
 Requires:
  9 Intelligence
@@ -1093,6 +1070,492 @@ Charge abilities:
   Duration: 5 turns
   Area of Effect: Self
   Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+/***************************************
+*   2nd Level - Arcane - 92000-92499   *
+***************************************/
+//Blur
+@92000 = ~Wand of Blur~
+@92001 = ~As this wand is triggered, it causes the wielder's form and spirit to become blurred, shifting and wavering. This distortion causes all melee and missile attacks against the wielder to be made with -3 penalties, whereas all saves vs. spell are made by the caster with a +3 bonus. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Blur
+  – +3 bonus to saves vs. spell
+  – +3 bonus to Armor Class
+  School: Illusion
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Invisibility
+@92002 = ~Wand of Detect Invisibility~
+@92003 = ~Once used, the wielder becomes able to see clearly any objects or beings that are invisible within a 50 foot radius, as well as any that are astral, ethereal, or out of phase. Instantly and once each round for 5 rounds after the spell is cast, all concealed enemies within the area of effect will become visible to the caster and <PRO_HISHER> allies. Invisible objects carried into the warded area will also become visible. This spell does not reveal illusions or enable the wielder to see through physical objects. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Invisibility
+  – See invisible creatures
+  – Able to attack invisible creatures
+  – Able to cast spells on invisible creatures
+  School: Divination
+  Range: Personal
+  Duration: 5 rounds
+  Area of Effect: 50' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Horror
+@92004 = ~Wand of Horror~
+@92005 = ~Once triggered, the wand causes all enemies within the area of effect to save vs. Wand or flee in terror. Certain creaturesare immune to the effects of fear, including all undead.
+
+STATISTICS:
+
+Charge abilities:
+– Horror
+  – Enemies flee in terror
+  School: Necromancy
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Invisibility
+@92006 = ~Wand of Invisibility~
+@92007 = ~This wand causes the creature touched to vanish from sight and be undetectable by normal vision or even infravision. Of course, the invisible creature is not magically silenced, and certain other conditions can render the creature detectable. Items dropped or put down by the invisible creature become visible, items picked up disappear if tucked into the clothing or pouches worn by the creature. <PRO_HESHE> cannot perform any actions that manipulate the environment around him such as opening doors, disarming traps, or opening chests. An invisible creature can drink a potion, or cast non-attack spells centered on himself and remain invisible, but he cannot attack nor cast spells on other targets without ending the spell. The spell remains in effect until it is magically broken or dispelled, until the recipient attacks any creature, or until 8 hours have passed.
+
+STATISTICS:
+
+Charge abilities:
+– Invisibility
+  – Turns target creature invisible
+  School: Illusion
+  Range: Touch
+  Duration: 8 hours or until taking visible action
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Alignment
+@92010 = ~Wand of Detect Alignment~
+@92011 = ~Upon activation, this wand reveals the feelings of all creatures within the current area. When affected by this spell, a target will briefly glow red if <PRO_HESHE>'s evil, green if <PRO_HESHE>'s good, and white if <PRO_HESHE>'s neutral. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Alignment
+  – Causes Good creatures in range to briefly glow green
+  – Causes Neutral creatures in range to briefly glow white
+  – Causes Evil creatures in range to briefly glow red
+  School: Divination
+  Sphere: Divination
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Instant
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Luck
+@92012 = ~Wand of Luck~
+@92013 = ~This wand empowers the recipient to be lucky in everything that <PRO_HESHE> does for the next hour. The affected character receives a 5% or +1 bonus to all of his actions. This includes saving throws, to hit chances, damage rolls, thieving skills, etc. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Luck
+  – +1 bonus to saving throws
+  – +1 bonus to attack rolls
+  – +1 bonus to minimum damage/healing rolls
+  – +5% bonus to all thieving skills
+  – Damage dice for non-weapons reduced by 1
+  School: Enchantment
+  Range: Medium
+  Duration: 5 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Melf's Acid Arrow
+@92014 = ~Wand of Melf's Acid Arrow~
+@92015 = ~The wand creates a magical arrow that speeds to its target unerringly. The arrow inflicts 1d6 points of missile damage, and 2d4 points of acid damage. The acid lasts for %duration%, unless somehow dispelled, inflicting another 2d4 points of damage each round.
+
+STATISTICS:
+
+Charge abilities:
+– Melf's Acid Arrow
+  – Acidic projectile
+  Damage:
+  – 1d6 points of missile damage
+  – 2d4 points of acid damage per round
+  School: Conjuration
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mirror Image
+@92016 = ~Wand of Mirror Image~
+@92017 = ~This wand causes a number of illusory duplicates of the wielder to come into being around <PRO_HIMHER>. The spell creates %magnitude% images. These images do exactly what the wielder does, and since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which are the illusions and which is the actual wielder. When an image is directly struck by a melee or missile attack, magical or otherwise, it disappears, while other existing images remain intact. It is important to note that this will not protect the caster against all attacks, as it is possible for an enemy to choose the real caster amongst all the images. This spell cannot be cast on anyone who is under the effects of a Reflected Image spell, and casting the spell multiple times will not multiply the number of images created.
+STATISTICS:
+
+Charge abilities:
+– Mirror Image
+  – %magnitude% duplicate images
+  School: Illusion
+  Range: Personal
+  Duration: 5 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Stinking Cloud
+@92018 = ~Wand of Stinking Cloud~
+@92019 = ~Upon activation, this wand emits a billowing mass of nauseous vapors appears centered on a point selected by the caster. Any creature caught within the cloud must roll a successful saving throw vs. poison or be nauseated for 1 round. Nauseated characters are unable to attack or cast spells, but can still move. Those who make successful saving throws can leave the cloud without suffering any ill effects, although those remaining in the cloud must continue to save each round. A dispel magic will temporarily remove the nausea from a particular character, but they will continue to be subjected to the spell’s effects so long as they remain within the cloud. Certain creatures are immune to the effects of the cloud, including all undead, and creatures who don’t need to breathe, such as elementals.
+
+STATISTICS:
+
+Charge abilities:
+– Stinking Cloud
+  – Noxious fumes make creatures nautious
+    – Cannot attack or cast spells
+  School: Conjuration
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Poison each round to avoid sleep
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Strength
+@92020 = ~Wand of Strength~
+@92021 = ~Upon activation, the target's Strength is magically set to 18 and then adds 50 exceptional strength on top of this. The character receives any strength bonuses appropriate. For example, if a character has between 18/50 and 18/00 strength, then <PRO_HISHER> strength will just be set to 18/00. If a character has a strength between 18/01 and 18/50, then <PRO_HISHER> strength will become 18/50 + original percentage. If <PRO_HISHER> strength is less then 18, then it will just become 18/50. However, this spell will actually lower a character's strength if it is already 19 or more.
+
+STATISTICS:
+
+Charge abilities:
+– Strength
+  – Strength is magically increased
+  School: Alteration
+  Range: Short
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Web
+@92022 = ~Wand of Web~
+@92023 = ~With this wand, the wielder creates a many-layered mass of strong, sticky strands similar to spider webs but far larger and tougher. This mass covers a maximum area of about 20 feet in radius. Creatures caught within webs, or simply touching them, become stuck among the gluey fibers. Creatures that make a successful saving throw vs. breath can move at half speed through the area, but must make additional saving throws each round they remain in the area of effect. A failed saving throw means the creature is stuck in the webs, unable to move for that round. Incorporeal and flying creatures are unaffected by this spell, as are spiders and exceptionally large and strong creatures who suffer little to no distress from the webs.
+
+STATISTICS:
+
+Charge abilities:
+– Web
+  – Affected creatures stuck in place
+    – Cannot attack, cast spells, etc.
+  School: Conjuration
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath each round move half speed
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Agannazar's Scorcher
+@92024 = ~Wand of Agannazar's Scorcher~
+@92025 = ~With this wand, the wielder unleashed a jet of flame that shoots toward a target of the wielders's choice. That target will be hit by this flame for 3d6 points of damage. The fiery ray will persist for one further round, burning the victim for another 3d6 points of fire damage. Other creatures who cross the path of the flame jet will also take damage as long as they stand in the flame. There is no saving throw against this spell, though anti-fire capabilities such as fire resistance will apply and may reduce or eliminate the damage.
+
+STATISTICS:
+
+Charge abilities:
+– Agannazar's Scorcher
+  – Fire jet strikes target
+  Damage:
+  – 3d6 points of fire damage to the target
+  – 3d6 points of fire damage to anyone in line of fire
+  School: Evocation
+  Range: Medium
+  Duration: 1 round (damaging twice)
+  Area of Effect: fire jet.
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ghoul Touch
+@92026 = ~Wand of Ghoul Touch~
+@92027 = ~When the wielder activates this wand, a red glow encompasses <PRO_HISHER> hand. On a successful touch from the wielder, the spell inflicts 1d8 points of magic damage and paralyzes the target for 5 rounds unless a successful save vs. death at a -1 penalty is made. The wizard gains a +4 bonus to hit the target and his touch is considered to be of +1 enchantment to determine what it can hit.
+
+STATISTICS:
+
+Charge abilities:
+– Ghoul Touch
+  – Hand becomes charged with ghoulish energy
+    – +4 bonus to THAC0
+    – +1 enchantment
+  – Paralysis
+  Damage: 1d8 magic damage
+  School: Necromancy
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Death (-1 penalty) negates paralysis
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Vocalize
+@92028 = ~Wand of Vocalize~
+@92029 = ~When the wielder activates this wand, <PRO_HESHE> can cast spells with a verbal component without having to make any noise. Effectively, this spell cancels the effects of Silence and makes the wielder immune to it for the spell's duration. This spell has no effect on other noises or speech; it simply removes a spell's verbal component.
+
+STATISTICS:
+
+Charge abilities:
+– Vocalize
+  – Can cast spells while silenced
+  School: Alteration
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Power Word Sleep
+@92030 = ~Wand of Power Word Sleep~
+@92031 = ~When activated, this wand causes a comatose slumber to come upon one creature. Creatures who currently have 20 or more hit points can save vs. Wand to avoid the effects, but those with 1 to 19 hit points are powerless to resist. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically induced sleep.
+
+STATISTICS:
+
+Charge abilities:
+– Power Word Sleep
+  – Sleep
+  School: Enchantment
+  Range: Long
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates (if HP > 19)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ray of Enfeeblement
+@92032 = ~Wand of Ray of Enfeeblement~
+@92033 = ~This wand weakens an opponent, reducing its strength and thereby the attacks that rely upon it. The victim suffers a -3 penalty to attack and damage rolls and has its movement speed reduced by 50% unless they make a successful saving throw vs. spell at a -2 penalty.
+
+STATISTICS:
+
+Charge abilities:
+– Ray of Enfeeblement
+  – -3 penalty to THAC0
+  – -3 penalty to damage
+  – Movement rate halved
+  School: Necromancy
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chaos Shield
+@92034 = ~Wand of Chaos Shield~
+@92035 = ~When activated, this wand increases the probability of a favorable result when a wild surge occurs. Every time a roll is made on the wild surge chart, an extra 15 is added to the dice roll. When Nahal's Reckless Dweomer is cast, the bonus from Chaos Shield stacks with the wild mage's level bonus.
+
+STATISTICS:
+
+Charge abilities:
+– Chaos Shield
+  – Adds 15 to Wild Surge rolls
+  School: None
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Battering Ram
+@92068 = ~Wand of Battering Ram~
+@92069 = ~Once activated, this wand creates a ram-like force that can strike with considerable power. The force can be used to open or smash locked, held, or wizard-locked doors, as well as locked boxes or chests, but it does not raise barred gates or similar impediments. If used against a creature, the target suffers 2d6 points of crushing damage, and must save vs. breath to avoid being knocked unconscious for 1 round.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Battering Ram
+  – Unlocks doors/containers
+  OR
+  – Strikes with force
+  – Renders target unconscious
+  Damage: 2d6 crushing damage
+  School: Evocation
+  Range: Medium
+  Duration: Instant
+  Area of Effect: 1 creature or object
+  Saving Throw: Save vs. Breath to avoid sleep
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Monster Summoning II
+@92070 = ~Wand of Monster Summoning II~
+@92071 = ~Once activated, this wand summons %magnitude% green slimes, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning II
+  – Summons green slimes: %magnitude%
+  School: Conjuration
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Green Slime (2 Hit Dice):
+    STR 14, DEX 9, CON -, INT 3, WIS 3, CHA 3; AL Neutral
+    HP 16, AC 10, THAC0 15, Saving Throws 13/15/13/17/15
+    1 Attack Per Round, 2d4 Acid Damage (Pseudopod)
+    Special Qualities:
+    – Immune to backstab
+    – Immune to charm, confusion, disease, hold, poison, sleep & stun, effects
+    – Electrical Resistance 100%, Acid Resistance 50%
+    – Missile Resistance 90%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Resist Elements
+@92072 = ~Wand of Resist Elements~
+@92073 = ~This wand bolsters the recipient's resistance to all forms of elemental damage by 25%. This effect will last for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Resist Elements
+  – Elemental resistances all +25%
+  School: Abjuration
+  Sphere: Protection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+// Sound Burst
+@92074 = ~Wand of Sound Burst~
+@92075 = ~Upon activation, this wand blasts an area with a tremendous cacophony. Enemies within the area suffer 4d4 points of crushing damage, and are deafened for 1 turn. A successful save vs. breath at -2 penalty halves the damage and negates the deafness. This deafness can be done away with by means of a Dispel Magic spell or a Cure Disease spell.
+
+Deafened spellcasters have a 50% chance to miscast any spell.
+
+STATISTICS:
+
+Charge abilities:
+– Sound Burst
+  – Loud sonic blast
+  – Deafness
+  Damage: 4d4 crushing damage
+  School: Evocation
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: Target, and enemies within 10'
+  Saving Throw: Save vs. Breath (-2 penalty) for half; negate Deafness
 
 Requires:
  9 Intelligence
