@@ -3156,3 +3156,72 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Fang
+@93576 = ~Wand of Magic Fang~
+@93577 = ~Once activated, this wand turns natural weapons (such as teeth, claws, etc.) of friendly animals within range into magical weapons, effectively granting a +%magnitude% enhancement bonus on attack and damage rolls. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Magic Fang
+  – Makes natural attacks into +%magnitude% attacks
+  School: Alteration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Regenerate Serious Wounds
+@93578 = ~Wand of Regenerate Serious Wounds~
+@93579 = ~Once activated, this wand imbues a creature with the ability to regenerate. The creature affected will regain 3 hit points per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Regenerate Serious Wounds
+  – Regenerate 3 Hit Points / round
+  School: Alteration
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Storm Shield
+@93596 = ~Wand of Storm Shield~
+@93597 = ~This wand will surround the wielder with an invisible curtain of stormy winds that moves with <PRO_HIMHER>. The wind wall grants the wielder +4 bonus to saves vs. breath and AC against missiles for the duration of the spell. Non-magical missile weapons are deflected away, while gases cannot penetrate the barrier. Tiny and small flying creatures cannot pass through.
+
+STATISTICS:
+
+Charge abilities:
+– Storm Shield
+  – +2 bonus to Breath save
+  – +2 bonus to AC vs. missiles
+  – Immunity to non-magical missiles
+  – Immunity to cloud area effects
+  School: Abjuration
+  Sphere: Weather, Elemental (Air)
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

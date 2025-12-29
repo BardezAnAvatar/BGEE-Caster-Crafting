@@ -1230,3 +1230,170 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Call Water Weirds
+@83580 = ~Wand of Call Water Weirds~
+@83581 = ~Once activated, this wand temporarily calls water weirds into existence in bodies of water in the current area. These water weirds will fight on the side of whoever cast this spell most recently - if an enemy casts this spell, the water weirds will be hostile, but will switch to the party's side if a party member then casts this spell as well. Unlike other summoning spells, this spell does not summon creatures directly to the wielder's side; instead, it spawns water weirds in specific bodies of water in the current area. If the current area does not have any bodies of water large enough for a water weird, the spell does nothing.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Call Water Weirds
+  – Summons water weirds inside bodies of water
+  Duration: 1 turn
+  Area of Effect: Entire area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shortening
+@83582 = ~Wand of Shortening~
+@83583 = ~Upon activation, this wand halves the duration of certain effects on the target creature. If the target is an enemy, then all non-harmful effects on the target will have their duration halved. If the target is not an enemy, then all harmful effects on the target will have their duration halved. A "harmful effect" is any effect from a spell or ability that turns a non-hostile creature hostile. The duration is halved from the total duration of the effect, not the remaining duration. An effect can only be shortened once.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Shortening
+  – Shortens the duration of magical effects
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fire Curse
+@83584 = ~Wand of Fire Curse~
+@83585 = ~By targeting an enemy and activating this wand, all damage dealt to the target is converted to fire damage, regardless of the original damage type. The creature will be dealt damage based on its fire resistance, not its resistance to the original damage type. Physical damage converted to fire damage will bypass Stoneskin. There is no saving throw, though magic resistance can still block the spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Fire Curse
+  – Converts all damage types to fire damage
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Healing Curse
+@83586 = ~Wand of Healing Curse~
+@83587 = ~This wand, once activated, causes the target creature's attacks to heal rather than harm. If the recipient is an ally, there is no Saving Throw necessary; otherwise, the recipient may make a Save vs. Polymorph at -2 to avoid the effects. While affected by Healing Curse, any damage the creature would deal through attacks, spells or abilities is negated, and the creature that would have been damaged is instead healed by the amount of damage they would have taken.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Healing Curse
+  – Converts all damage to healing instead
+  Range: Sight
+  Duration: 5 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Guardian Magic
+@83588 = ~Wand of Guardian Magic~
+@83589 = ~When this wand is activated, it grants magical protection to any creature the wielder guards with the Guard action. For the duration, as long as the wielder is guarding another creature within 15 feet, that creature gains a +6 Armor Class bonus and +30% Magic Resistance.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Guardian Magic
+  – +6 bonus to Armor Class
+  – +30% bonus to Magic Resistance
+  Range: 15 ft.
+  Duration: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Wind Shots
+@83590 = ~Wand of Wind Shots~
+@83591 = ~This wand imbues the wielder's ranged weapons with the power of wind. Whenever the wielder hits a creature with a missile attack, that creature must Save vs. Breath at -2 or be blown back for several seconds.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Wind Shots
+  – Blows creatures back when hit by misile weapons
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: Save vs. Breath (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Recall Party
+@83592 = ~Wand of Recall Party~
+@83593 = ~With this wand, the wielder is able to teleport all party members to the wielder's side. The range is unlimited, and party members can be drawn from a different area, so long as they are on the same plane as the wielder.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Recall Party
+  – Teleports party to wielder
+  Range: Infinite
+  Duration: Instant
+  Area of Effect: All party members
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Steel Wind Strike
+@83594 = ~Wand of Steel Wind Strike~
+@83595 = ~With this wand, the wielder is able to zoom between each enemy in the area of effect, making attacks against each enemy with each equipped weapon. The wielder must have one or more melee weapons equipped for this spell to function; ranged weapons won't work. Attacks made this way can critically hit and will apply any on-hit effects of the weapons.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Steel Wind Strike
+  – Teleports party to wielder
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
