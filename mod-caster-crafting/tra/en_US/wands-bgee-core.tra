@@ -1776,3 +1776,548 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   3rd Level - Arcane - 63000-63499   *
+***************************************/
+//Clairvoyance
+@63000 = ~Wand of Clairvoyance~
+@63001 = ~Once activated, this wand empowers the wizard to see in <PRO_HISHER> mind the geographical features and buildings of the region <PRO_HESHE> is currently exploring. It extends to a great range, but cannot reveal creatures or their movements. This spell does not function indoors or underground.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Clairvoyance
+  – Reveals outdoor area
+  Duration: Instant
+  Area of Effect: Entire area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Remove Magic
+@63002 = ~Wand of Remove Magic~
+@63003 = ~Intended for use during combat, this wand dispels the magical effects upon any enemies within the area. This includes effects given from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items. The chance of the dispel succeeding is determined by this wand's caster level (%caster_level%) and the level of the magic being dispelled. The base chance of successfully dispelling is 50%. For every level that this wand's caster level (%caster_level%) exceeds the original protection's caster level, the chance of success increases by 5%; conversely, for every level that it falls below, the chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Intuitively, this spell is almost useless if the target is 5 or more levels higher than the caster.
+
+Thus, a difference of +10 levels higher than the magic it is trying to dispel, there is only a 1% chance of failure. Similarly, if the caster level is 4 levels lower than the magic the wielder is trying to dispel, there is only a 10% chance of success.
+
+Note: While this spell dispels the individual effects of Grease, Web, Stinking Cloud and other such spells, it does not dispel the area of effect.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Remove Magic
+  – Dispels magical effects on opponents
+  Range: 40 ft.
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Flame Arrow
+@63004 = ~Wand of Flame Arrow~
+@63005 = ~This wand hurls fiery bolts at an opponent within range. Each bolt inflicts 1d6 points of piercing damage plus 4d6 points of fire damage. Only half of the fire damage is inflicted if the creature struck saves vs. Spell. The wand creates %magnitude% bolt(s); all of the bolts will streak toward the target of the spell.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Flame Arrow
+  – Hurls fiery arrow(s) at target
+  Damage:
+  – 1d6 piercing damage
+  – 4d6 fire damage
+  Range: 60 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fireball
+@63006 = ~Wand of Fireball~
+@63007 = ~This wand hurls an explosive burst of flame that detonates with a low roar and delivers %magnitude%d6 points of fire damage. The wielder points <PRO_HISHER> finger and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the wand and, unless it impacts upon a material body or solid barrier prior to attaining the prescribed range, blossoms into the fireball (an early impact results in an early detonation). Creatures failing their Saves vs. Wand each suffer full damage from the blast. Those who roll successful Saving Throws manage to dodge, fall flat, or roll aside, each receiving half.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireball
+  – Hurls a fireball
+  Damage:
+  – %magnitude%d6 fire damage
+  Range: 40 ft.
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Haste
+@63008 = ~Wand of Haste~
+@63009 = ~Upon activation, this wand causes all creatures affected to function at double their normal movement rate, gain a -2 initiative bonus, and receive an extra attack per round. Spellcasting and spell effects are not affected. Note that this spell negates the effects of a Slow spell. At the instant the spell is completed, it affects all allied creatures in a 15-ft. radius centered on a point selected by the caster (thus, creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not). This spell is not cumulative with itself or with other similar magic.
+
+Thus, a creature moving at 6 and attacking once per round would move at 12 and attack twice per round.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Haste
+  – Doubles movement speed
+  – -2 bonus to initiative
+  – +1 attack per round
+  Range: 15 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Invisibility, 10' Radius
+@63010 = ~Wand of Invisibility, 10' Radius~
+@63011 = ~Upon activation, this wand causes all friendly creatures within 10 ft. of the caster to vanish from sight and be undetectable by normal vision or even infravision. Of course, the invisible creature(s) are not magically silenced, and certain other conditions can render the creature(s) detectable. Even allies cannot see the invisible creature(s) or their gear, unless these allies can normally see invisible things or employ magic to do so. Items dropped or put down by the invisible creature(s) become visible; items picked up disappear if tucked into the clothing or pouches worn by the creature(s). The spell remains in effect until it is magically broken or dispelled, until the wielder or recipient cancels it, until the recipient attacks any creature, or until 24 hours have passed. The invisible being(s) cannot open doors, talk, eat, climb stairs, etc. If they attack, they immediately become visible, although the invisibility enables them to attack first.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Invisibility, 10' Radius
+  – Invisibility for allies
+  Duration: 24 hours
+  Area of Effect: 10-ft. radius centered on wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lightning Bolt
+@63012 = ~Wand of Lightning Bolt~
+@63013 = ~The possessor of the wand can discharge a bolt of lightning. As it passes through a creature, it does %magnitude%d6 points of electrical damage with a Save vs. Wand for half. The bolt will continue through the target and proceed to "rebound" until expended.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Lightning Bolt
+  – Launches a bolt of lightning
+  Damage: %magnitide%d6 electrical damage
+  Range: %range%
+  Duration: Instant
+  Area of Effect: Path of bolt
+  Saving Throw: Save vs. Wand for half
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning I
+@63014 = ~Wand of Monster Summoning I~
+@63015 = ~This wand summons a random selection of 3-HD monsters. There is a 60% chance of receiving one monster and a 40% chance of receiving two monsters. The monster(s) appear within spell range and attack the wielder's opponents until the spell duration expires or until they are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning I
+  – Summons 1 or 2 monsters of 3 HD
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Non-Detection
+@63018 = ~Wand of Non-Detection~
+@63019 = ~Once activated, this wand makes the creature touched undetectable by divination spells such as Clairaudience, Clairvoyance, Locate Object, ESP, and detect spells including Invisibility Purge. It also prevents location by such magical items as crystal balls and ESP medallions. It does not affect the Know Alignment spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Non-Detection
+  – Avoid invisibility detection
+  Range: Touch
+  Duration: 4 hours
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Normal Missiles
+@63020 = ~Wand of Protection From Normal Missiles~
+@63021 = ~Upon activation, this wand bestows total invulnerability to non-magical hurled and launched missiles such as arrows, bolts, bullets, darts, throwing axes, and throwing daggers. Note, however, that this spell does not convey any protection from such magical attacks as Fireball, Lightning Bolt, or Magic Missile, nor does it protect against magical missiles such as arrows +1.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Normal Missiles
+  – Protected from non-magical missile damage
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Slow
+@63022 = ~Wand of Slow~
+@63023 = ~This wand causes creatures to move and attack at half of their normal rates. Once activated, it negates Haste, but does not otherwise affect magically hasted or slowed creatures. Slowed creatures have an Armor Class and attack penalty of -4. Creatures save at -4 vs. Spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Slow
+  – Attacks per round halved
+  – Movement speed halved
+  – Dispells Haste
+  – -4 penalty to Armor Class
+  Range: 25 ft.
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (-4 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Skull Trap
+@63024 = ~Wand of Skull Trap~
+@63025 = ~Upon activation, this wand generates a skull at the target area. The skull floats in the area until a creature comes within 8 ft. of it. When this happens, the skull is triggered and explodes damaging everyone within a 12-ft. radius. The damage inflicted is equal to %magnitude%d6, or half with a successful Saving Throw vs. Wand. When casting this spell, it is wise to set it far away from the party lest they set it off accidentally.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Skull Trap
+  – Skull that detonates if creature nearby
+  Damage: %magnitude%d6 magic damage
+  Range: 60 ft.
+  Duration: Permanent
+  Area of Effect: 12-ft. radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Vampiric Touch
+@63026 = ~Wand of Vampiric Touch~
+@63027 = ~Once activated, this wand drains the target who loses %magnitude%d6 Hit Points; these Hit Points are added to the wielder's current Hit Points, with any Hit Points over the wielder's normal maximum treated as temporary additional Hit Points. The temporary Hit Points last for 1 hour.
+
+Note: This spell may not be cast multiple times to radically increase the caster's maximum Hit Points.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Vampiric Touch
+  – Drains target
+  – Wielder gains temporary Hit Points
+  Damage: %magnitude%d6 magic damage
+  Range: Touch
+  Duration: Instant, 1 hour for temporary Hit Points
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Wraithform
+@63028 = ~Wand of Wraithform~
+@63029 = ~Once activated, the wielder and all of <PRO_HISHER> gear become insubstantial. The wielder is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wielder also gains 25% resistance to magic damage. While in wraithform, the wielder cannot cast either arcane or divine spells.
+
+STATISTICS:
+(Alteration, Illusion)
+
+Charge abilities:
+– Wraithform
+  – Immune to normal weapons
+  – 25% resistance to magic damage
+  – Spellcasting disabled
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dire Charm
+@63030 = ~Wand of Dire Charm~
+@63031 = ~This wand will charm its humanoid† target when activated; the charmed individual may be given orders, and they will carry them out as quickly as possible. They will also gladly provide valuable information to their new ally.
+
+If the caster harms, or attempts to harm, the charmed person by some overt action, or if Dispel Magic is successfully cast upon the charmed person, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. Note that the subject has full memory of the events that took place while <PRO_HESHE> was charmed. Also note that you cannot have a charmed creature leave the area where <PRO_HESHE> was charmed.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Charm Person
+  – Charms the target to be ordered or spoken to
+  Range: 60 ft.
+  Duration: 5 rounds
+  Area of Effect: 1 person
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ghost Armor
+@63032 = ~Wand of Ghost Armor~
+@63033 = ~When activated, the wand generates a magical field of force that serves as if it were field plate armor. This does not hinder movement, adds no weight or encumbrance, and doesn't prevent spellcasting.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Ghost Armor
+  – Applies a field of magical force armor around the wielder (AC 2).
+  – Does not affect spellcasting or thieving skills
+  Duration: 1 hour
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Spell Deflection
+@63034 = ~Wand of Minor Spell Deflection~
+@63035 = ~This wand causes the spells cast against the wielder to be absorbed and consumed. This spell affects a total of 4 spell levels, including spells cast from scrolls and innate spell-like abilities, but excludes the following: area effects that are not centered directly upon the wielder, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud. As long as the spell is cast directly at the wielder, it will be absorbed. This spell will only affect up to 7th-level spells, but if it tries to absorb a spell that goes over its limit, the spell will fail and the spell deflection will be canceled. For example, if there is only 1 level left and a 3rd-level spell is cast at the wizard, the spell will be absorbed while canceling the Spell Deflection.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Minor Spell Deflection
+  – Absorbs 4 levels of spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Fire
+@63036 = ~Wand of Protection From Fire~
+@63037 = ~Once activated, this wand confers complete invulnerability to normal fires† and to exposure to magical fires‡, absorbing 50% of all the damage dealt by such magical sources.
+
+†: torches, bonfires, oil fires, and the like
+‡: fiery dragon breath, hell hound or pyrohydra breath, spells such as Burning Hands, Fireball, Fire Seeds, Fire Storm, Flame Strike, Meteor Swarm, and so on
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Fire
+  – 100% fire absorption
+  – 50% magical fire absorption
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Cold
+@63038 = ~Wand of Protection From Cold~
+@63039 = ~Once activated, this wand confers complete invulnerability to normal cold attacks and partial protection from exposure to magical cold†, absorbing 50% of all the damage dealt by such magical sources.
+
+†: an icy dragon's breath, spells such as Cone of Cold, a wand of frost's column of ice, etc.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Cold
+  – 100% cold absorption
+  – 50% magical cold absorption
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spell Thrust
+@63040 = ~Wand of Spell Thrust~
+@63041 = ~This wand, once activated, will dispel all of the spell protections of 5th level and lower affecting it. This includes the following spells: Minor Spell Deflection, Minor Globe of Invulnerability, Spell Immunity, and Minor Spell Turning. The target's Magic Resistance, if any, does not affect this spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Spell Thrust
+  – Dispels protective spells
+  Range: 25 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Illusion
+@63042 = ~Wand of Detect Illusion~
+@63043 = ~Upon activation, this wand will cancel all Illusion/Phantasm spells of 3rd level and lower in the area. Spells that are affected by this are Reflected Image, Invisibility, Mirror Image, and Non-Detection. It is important to note that the wielder can control just who this spell affects. Therefore, it will affect only enemies of the wielder. The area of effect is roughly a 15-ft. radius around the target. The target's Magic Resistance, if any, does not affect this spell.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Illusion
+  – Dispels illusions
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Undead
+@63044 = ~Wand of Hold Undead~
+@63045 = ~Upon activation, this wand holds 1d4 undead creatures rigidly immobile and in place. The effect is centered on the victim selected by the wielder. Any enemies within 4 ft. of the target are also affected. Those who succeed a Save vs. Wand are totally unaffected by the spell. Held creatures cannot move or speak, but they remain aware of events around them and can use abilities not requiring motion or speech. Being held does not prevent the worsening of the subject's condition due to wounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Hold Undead
+  – Holds undead
+  Range: 35 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature and any enemies within 4 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Melf's Minute Meteors
+@63046 = ~Wand of Melf's Minute Meteors~
+@63047 = ~Upon activation, this wand creates %magnitude% small globes of fire which are held in the wielder's hands in place of <PRO_HISHER> usual weapons. The meteors can be hurled at targets up to 270 feet away and are treated as missiles with a +5 bonus to the attack rolls. Each meteor bursts into a 1-ft. diameter sphere upon impact, inflicting 1d4+3 points of damage plus an additional 3 points of fire damage to any creature struck. The wielder may hurl up to five missiles per round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Melf's Minute Meteors
+  – Creates fiery globes
+  – +5 bonus to THAC0
+  – 5 attacks per round
+  Damage: 1d4+3 missile damage, 3 fire damage each
+  Range: 270 ft.
+  Duration: Permanent until thrown or dispelled
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dispel Magic
+@63048 = ~Wand of Dispel Magic~
+@63049 = ~With targeting this wand, it removes magical effects upon anyone within the area. This includes effects given from spells, potions and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Turning and Spell Deflection.
+
+The chance of the dispel succeeding is determined by the level of this wand (%caster_level%) and the level of the magic being dispelled. The base chance of successfully dispelling is 50%. For every level that Dispel Magic's caster level (%caster_level%) is above the original caster, its chance of success increases by 5%. For every caster level that Dispel Magic is below the original caster, its chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 5% chance of success or failure. Thus, if Dispel Magic is 10 caster levels higher than the magic it is trying to dispel, there is only a 5% chance of failure. Similarly if Dispel Magic is 4 levels lower than the magic it is trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the target is 5 or more levels higher than the caster.
+
+Note: While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Dispel Magic
+  – Dispells magical effects
+  Range: 40 ft.
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

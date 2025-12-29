@@ -1213,3 +1213,392 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   3rd Level - Arcane - 73000-73499   *
+***************************************/
+//Flame Arrow
+@73004 = ~Wand of Flame Arrow~
+@73005 = ~This wand hurls fiery bolts at an opponent within range. Each bolt inflicts 1d6 points of piercing damage plus 4d6 points of fire damage. Only half of the fire damage is inflicted if the creature struck saves vs. Spell. The wand creates %magnitude% bolt(s); all of the bolts will streak toward the target of the spell.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Flame Arrow
+  – Hurls fiery arrow(s) at target
+  Damage:
+  – 1d6 piercing damage
+  – 4d6 fire damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fireball
+@73006 = ~Wand of Fireball~
+@73007 = ~This wand hurls an explosive burst of flame that detonates with a low roar. The wielder points <PRO_HISHER> finger and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the wand and blossoms into a fireball, delivering %magnitude%d6 points of fire damage. Those who roll successful a Save vs. Wand manage to dodge, fall flat, or roll aside, taking only half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireball
+  – Hurls a fireball
+  Damage:
+  – %magnitude%d6 fire damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Haste
+@73008 = ~Wand of Haste~
+@73009 = ~Upon activation, this wand doubles the base movement rate of all friendly creatures within the area of effect and grants them each an extra attack per round (spellcasting and spell effects are not sped up.) All affected by the Haste spell must be in the designated area of effect. Note that this spell negates the effects of a Slow spell. This spell is not cumulative with itself or with other similar magic. Anyone affected by Haste will suffer fatigue when the spell wears off.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Haste
+  – Doubles movement speed
+  – -2 bonus to initiative
+  – +1 attack per round
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Invisibility, 10' Radius
+@73010 = ~Wand of Invisibility, 10' Radius~
+@73011 = ~Upon activation, this wand causes all friendly creatures within 10 ft. of the wielder to vanish from sight and be undetectable by normal vision or even infravision. Of course, the invisible creature(s) are not magically silenced, and certain other conditions can render the creature(s) detectable. Even allies cannot see the invisible creature(s) or their gear, unless these allies can normally see invisible things or employ magic to do so. Items dropped or put down by the invisible creature(s) become visible; items picked up disappear if tucked into the clothing or pouches worn by the creature(s).
+
+The spell remains in effect until it is magically broken or dispelled, until the wielder or recipient cancels it, until the recipient attacks any creature, or until 24 hours have passed. The invisible being(s) cannot open doors, talk, eat, climb stairs, etc. If they attack, they immediately become visible, although the invisibility enables them to attack first.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Invisibility, 10' Radius
+  – Invisibility for allies
+  Duration: 24 hours
+  Area of Effect: 10-ft. radius centered on wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning I
+@73014 = ~Wand of Monster Summoning I~
+@73015 = ~This wand summons 2d3 1st-level monsters. These appear within spell range and can be commanded to attack the caster's opponents until the spell duration expires or the monsters are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning I
+  – Summons 2d3 1st-level monsters
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Non-Detection
+@73018 = ~Wand of Non-Detection~
+@73019 = ~Once activated, this wand makes the creature touched undetectable by divination magics such as Clairvoyance and the Detect spells. It also prevents spells that reveal hidden or invisible creatures, such as Invisibility Purge, from working on the target.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Non-Detection
+  – Avoid invisibility detection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Slow
+@73022 = ~Wand of Slow~
+@73023 = ~This wand causes creatures to move and attack at half of their normal rates. Once activated, it negates Haste, but does not otherwise affect magically hasted or slowed creatures. Slowed creatures have an Armor Class and attack penalty of -4. Creatures save at -4 vs. Spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Slow
+  – Attacks per round halved
+  – Movement speed halved
+  – Dispells Haste
+  – -4 penalty to Armor Class
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (-4 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Skull Trap
+@73024 = ~Wand of Skull Trap~
+@73025 = ~Upon activation, this wand generates a skull at the target area. The skull floats in the area until a creature comes within 8 ft. of it. When this happens, the skull is triggered and explodes, damaging everyone within an 12-ft. radius. The magic damage inflicted is equal to %magnitude%d6 Hit Points (save vs. Breath for half). When casting this spell, it is wise to set it far away from the party lest they set it off accidentally. Resting or leaving the area the skull trap is in will make it disappear harmlessly.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Skull Trap
+  – Skull that detonates if creature nearby
+  Damage: %magnitude%d6 magic damage
+  Range: Sight
+  Duration: Permanent until rest or leaving area
+  Area of Effect: 12-ft. radius
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Vampiric Touch
+@73026 = ~Wand of Vampiric Touch~
+@73027 = ~Once activated, if the wielder successfully touches an opponent in melee, the target loses %magnitude%d6 Hit Points; these Hit Points are added to the wielder's total, with any Hit Points over the caster's normal maximum total treated as temporary bonus Hit Points. The temporary Hit Points last for 1 hour. This spell has no effect on constructs or undead.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Vampiric Touch
+  – Drains target
+  – Wielder gains temporary Hit Points
+  Damage: %magnitude%d6 magic damage
+  Range: Touch
+  Duration: Instant, 1 hour for temporary Hit Points
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dire Charm
+@73030 = ~Wand of Dire Charm~
+@73031 = ~This wand will charm its humanoid† target when activated; the charmed individual may be given orders, and they will carry them out as quickly as possible. They will also gladly provide valuable information to their new ally. The affected creature will attack anyone <PRO_HESHE> perceives as hostile without being commanded to.
+
+If the caster harms, or attempts to harm, the charmed person by some overt action, or if Dispel Magic is successfully cast upon the charmed person, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. Note that the subject has full memory of the events that took place while <PRO_HESHE> was charmed. Also note that you cannot have a charmed creature leave the area where <PRO_HESHE> was charmed.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Charm Person
+  – Charms the target to be ordered or spoken to
+  Range: Sight
+  Duration: 2 turns
+  Area of Effect: 1 person
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ghost Armor
+@73032 = ~Wand of Ghost Armor~
+@73033 = ~When activated, the wand generates a magical field of force that serves as if it were field plate armor. This does not hinder movement, adds no weight or encumbrance, and doesn't prevent spellcasting.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Ghost Armor
+  – Applies a field of magical force armor around the wielder (AC 2).
+  – Does not affect spellcasting or thieving skills
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Spell Deflection
+@73034 = ~Wand of Minor Spell Deflection~
+@73035 = ~This wand causes the spells cast against the wielder to be absorbed and consumed. This spell affects a total of 4 spell levels, including spells cast from scrolls and innate spell-like abilities, but excludes the following: area effects that are not centered directly upon the wielder, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud. As long as the spell is cast directly at the wielder, it will be absorbed.
+
+This spell will only affect up to 7th-level spells, but if it tries to absorb a spell that goes over its limit, the spell will fail and the spell deflection will be canceled. For example, if there is only 1 level left and a 3rd-level spell is cast at the wizard, the spell will be absorbed while canceling the Spell Deflection.
+
+This spell will not protect the caster from Dispel Magic, but it will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Minor Spell Deflection
+  – Absorbs 4 levels of spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Illusion
+@73042 = ~Wand of Detect Illusion~
+@73043 = ~Upon activation, this wand cancels all Illusion/Phantasm spells of 3rd level and lower in the area. The spells affected are Blur, Reflected Image, Invisibility, Mirror Image, and Non-Detection. The wielder can control whom this spell affects; thus, it will affect only creatures that are not in the wielder's party. A target's Magic Resistance, if any, does not affect this spell.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Detect Illusion
+  – Dispels illusions
+  Range: Self
+  Duration: Instant
+  Area of Effect: 25-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Undead
+@73044 = ~Wand of Hold Undead~
+@73045 = ~Upon activation, this wand holds 1d4 enemy undead creatures rigidly immobile. Specifically, it affects the targeted enemy and up to 3 hostile creatures within 10 ft. of it. A successful Save vs. Wand negates the effect.
+
+Paralyzed creatures are helpless and cannot dodge or defend themselves from attacks. Being held does not prevent the worsening of the subject's condition due to wounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Hold Undead
+  – Holds undead
+  Range: 35 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature and any enemies within 10 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Melf's Minute Meteors
+@73046 = ~Wand of Melf's Minute Meteors~
+@73047 = ~Upon activation, this wand creates %magnitude% small globes of fire which are held in the wielder's hands in place of <PRO_HISHER> usual weapons. The meteors can be hurled at targets up to 270 feet away and are treated as missiles with a +5 bonus to the attack rolls. Each meteor bursts into a 1-ft. diameter sphere upon impact, inflicting 1d4+3 points of damage plus an additional 3 points of fire damage to any creature struck. The wielder may hurl up to five missiles per round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Melf's Minute Meteors
+  – Creates fiery globes
+  – +5 bonus to THAC0
+  – 5 attacks per round
+  Damage: 1d4+3 missile damage, 3 fire damage each
+  Range: Sight
+  Duration: Permanent until thrown or dispelled
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Icelance
+@73050 = ~Wand of Icelance~
+@73051 = ~This wand will hurl a magical lance of ice at a target of the wielder's choosing. It automatically hits, inflicting 5d6 points of cold damage and forcing the target to make a Save vs. Wand or be stunned for 3 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Icelance
+  – Hurls a lance of ice
+  – Stuns opponent 3 rounds
+  Damage: 5d6 cold damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lance of Disruption
+@73052 = ~Wand of Lance of Disruption~
+@73053 = ~When activated, shoots a lance of force, which travels from the wand to a specified point 100 ft. in the distance. Any creatures in the lance's path take 5d4+%magnitude% points of crushing damage. Victims can save vs. Wand for half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Lance of Disruption
+  – Hurls a lance of force
+  Damage: 5d4+%magnitude% crushing damage
+  Range: 100 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

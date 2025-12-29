@@ -2074,3 +2074,574 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   3rd Level - Arcane - 93000-93499   *
+***************************************/
+//Clairvoyance
+@93000 = ~Wand of Clairvoyance~
+@93001 = ~Once activated, this wand unnatural perception of things to come. Once Clairvoyance is cast, the wielder receives instantaneous warnings of impending danger or harm. <PRO_HESHE> becomes impossible to surprise and cannot be backstabbed. In addition, the spell gives a general idea of what action might be taken to best protect oneself, granting a +2 insight bonus to AC and saves vs. breath. The effects last for the duration of the spell, and cannot be dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Clairvoyance
+  – +2 bonus to Armor Class
+  – +2 bonus to Breath saving throws
+  – Immunity to backstab
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dispel Magic -> Remove Magic (poorly renamed)
+@93002 = ~Wand of Dispel Magic~
+@93003 = ~Intended for use during combat, this wand dispels the magical effects upon any enemies within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
+
+The chance of the dispel succeeding is determined by this wand's caster level (%caster_level%) and the level of the magic being dispelled. The base chance of successfully dispelling is 50%. For every level that this wand's caster level (%caster_level%) exceeds the original protection's caster level, the chance of success increases by 5%; conversely, for every level that it falls below, the chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Intuitively, this spell is almost useless if the target is 5 or more levels higher than the caster.
+
+STATISTICS:
+
+Charge abilities:
+– Dispel Magic
+  – Dispels magical effects on opponents
+  School: Abjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: 20' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Flame Arrow
+@93004 = ~Wand of Flame Arrow~
+@93005 = ~This wand hurls flaming arrows at his enemies. The wand creates %magnitude% bolt(s) and each arror inflicts 1d6 points of missile damage plus 1d6 points of fire damage. Upon completion of the spell, the first arrow will streak towards the creature targeted by the wizard, while additional arrows will randomly target opponents within range.
+
+STATISTICS:
+
+Charge abilities:
+– Flame Arrow
+  – Hurls fiery arrow(s) at enemies
+  Damage:
+  – 1d6 missile damage
+  – 1d6 fire damage
+  School: Conjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: Special
+  Saving Throw: Save vs. Breath for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fireball
+@93006 = ~Wand of Fireball~
+@93007 = ~This wand hurls an explosive burst of flame that detonates with a low roar, delivering %magnitude%d6 fire damage. The wielder points the wand and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the wand and, unless it impacts upon a material body or solid barrier prior to attaining the prescribed range, blossoms into the fireball (an early impact results in an early detonation). Creatures who fail their saving throw vs. breath at -2 suffer full damage from the blast. Those who roll successful saving throws manage to dodge, fall flat, or roll aside, each receiving half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireball
+  – Hurls a fireball
+  Damage:
+  – %magnitude%d6 fire damage
+  School: Evocation
+  Range: Long
+  Duration: Instant
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Breath (-2 penalty) for half fire damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Haste
+@93008 = ~Wand of Haste~
+@93009 = ~Upon activation, this wand causes affected creatures gain +6 to movement rate and make an extra half attack each round. Spellcasting and spell effects are not affected. Haste negates and counters the effects of a Slow spell. When the spell ends, affected creatures become winded for 3 rounds. While winded they receive penalties of -2 to hit, damage, and armor class. This spell is not cumulative with itself or with other similar magic.
+
+STATISTICS:
+
+Charge abilities:
+– Haste
+  – +6 bonus to movement speed
+  – +1/2 attack per round
+  – -2 bonus to initiative
+  School: Alteration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: 20' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Invisibility Sphere
+@93010 = ~Wand of Invisibility Sphere~
+@93011 = ~Upon activation, this wand confers invisibility upon all friendly creatures within 10 feet of the caster. Creatures leaving the area are still subject to the spell’s effect; those entering the area after the casting is completed are not. If an affected creature makes an attack, they will negate the invisibility only for themselves. The spell otherwise lasts for 1 turn.
+
+STATISTICS:
+
+Charge abilities:
+– Invisibility Sphere
+  – Invisibility for allies
+  School: Illusion
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 10' radius centered on wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lightning Bolt
+@93012 = ~Wand of Lightning Bolt~
+@93013 = ~The possessor of the wand can discharge a bolt of lightning. As it passes through a creature, it does %magnitude%d6 points of electrical damage with a Save vs. Breath for half.
+
+STATISTICS:
+
+Charge abilities:
+– Lightning Bolt
+  – Launches a bolt of lightning
+  Damage: %magnitide%d6 electrical damage
+  School: Evocation
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Breath (-4 penalty) for half
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning III
+@93014 = ~Wand of Monster Summoning III~
+@93015 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning III
+  – Summons %magnitude% hobgoblins
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hobgoblin Archer (3 Hit Dice):
+  STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
+  HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
+  2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
+  or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning III
+@93016 = ~Wand of Monster Summoning III~
+@93017 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning III
+  – Summons %magnitude% hobgoblins
+  – Summons 1 hobgoblin shaman
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hobgoblin Archer (3 Hit Dice):
+  STR 11, DEX 14, CON 13, INT 8, WIS 10, CHA 8; AL Lawful Evil
+  HP 24, AC 5, THAC0 17, Saving Throws 13/15/14/16/16
+  2 Attacks Per Round, 1d6+3 Piercing Damage (Arrows)
+  or 1 Attack Per Round, 1d10+2 Slashing Damage (Bastard Sword)
+  – Hobgoblin Shaman (4 Hit Dice):
+  STR 13, DEX 11, CON 15, INT 9, WIS 14, CHA 9; AL Lawful Evil
+  HP 36, AC 5, THAC0 16, Saving Throws 9/13/12/15/14
+  1 Attack Per Round, 1d8+1 Slashing Damage (Long Sword +1)
+  Memorized Spells:
+    – 1º Armor of Faith, Bless, Cure Light Wounds (x2), Resist Fear
+    – 2º Chant, Hold Person, Silence
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Non-Detection
+@93018 = ~Wand of Non-Detection~
+@93019 = ~Once activated, this wand makes the creature touched undetectable by divination spells such as Detect Invisibility, Oracle, and True Seeing, or by a thief's Detect Illusion ability, though an invisible person may still be audible when moving and his presence may still be sensed. Non-Detection wards the creature's gear as well as the creature itself.
+
+STATISTICS:
+
+Charge abilities:
+– Non-Detection
+  – Avoid invisibility detection
+  School: Abjuration
+  Range: Touch
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Missiles
+@93020 = ~Wand of Protection From Missiles~
+@93021 = ~Upon activation, this wand bestows upon a creature total invulnerability to hurled and projected missiles such as arrows, axes, bolts, javelins, and sling stones. This spell does not convey any protection from magical attacks such as Fireballs, Lightning Bolts, or Magic Missiles, but magically created missiles such as Melf’s Acid Arrows, Melf’s Minute Meteors, and Flame Arrows will be harmlessly deflected.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Normal Missiles
+  – Protected from missile damage
+  School: Abjuration
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Slow
+@93022 = ~Wand of Slow~
+@93023 = ~This wand causes creatures to move and attack at half of their normal rates unless a save vs. polymorph at -2 is made. Slowed creatures also suffer a -2 penalty to attack rolls, AC, and saves vs. breath. Spellcasting time is doubled, though spell effects are not affected. Furthermore, the rate at which these creatures regenerate or suffer damage from poison is halved. At the instant the spell is completed, all hostile creatures in 30 foot radius of a point selected by the caster will be affected (thus, creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not). It negates the effects of a Haste spell, but does not otherwise affect magically speeded or slowed creatures. This spell is not cumulative with itself or with other similar magic.
+
+STATISTICS:
+
+Charge abilities:
+– Slow
+  – Attacks per round halved
+  – Movement speed halved
+  – Dispells Haste
+  – -2 penalty to THAC0
+  – -2 penalty to Armor Class
+  – -2 penalty to Breath saves
+  – Spellcasting time doubled
+  – Regeneration and poison frequency halved
+  School: Alteration
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Polymorph (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Skull Trap
+@93024 = ~Wand of Skull Trap~
+@93025 = ~Upon activation, this wand generates a skull at the target area. The skull floats in the area until a creature comes within 15 feet of it. When this happens, the skull is triggered and explodes damaging everyone within a 20 foot radius. The damage inflicted is equal to %magnitude%d6, with a save vs. breath at -2 allowed for half damage. When casting this spell, it is wise to set it far away from the party lest they set it off accidentally. Undead creatures are not affected by this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Skull Trap
+  – Skull that detonates if creature nearby
+  Damage: %magnitude%d6 magic damage
+  School: Necromancy
+  Range: Medium
+  Duration: Permanent
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath (-2 penalty) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Vampiric Touch
+@93026 = ~Wand of Vampiric Touch~
+@93027 = ~Once activated, this wand drains the target of %magnitude2% Hit Points; these Hit Points are added to the wielder's current Hit Points, with any Hit Points over the wielder's normal maximum treated as temporary additional Hit Points. The temporary Hit Points last for 5 turns.
+
+Note that this spell may not be cast multiple times to radically increase the wielder's hit points. The wielder must wait for the first Vampiric Touch spell to run its course before casting another.
+
+STATISTICS:
+
+Charge abilities:
+– Vampiric Touch
+  – Drains target
+  – Wielder gains temporary Hit Points
+  Damage: %magnitude2% magic damage
+  School: Necromancy
+  Range: Touch
+  Duration: Instant, 5 turns for temporary Hit Points
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Wraithform
+@93028 = ~Wand of Wraithform~
+@93029 = ~Once activated, the wielder and all of <PRO_HISHER> gear become insubstantial. The wielder is subject only to magical or special attacks, including those by weapons of +1 or better enchantment, or by creatures otherwise able to affect those struck only by magical weapons. The wielder also gains 25% resistance to magic damage. While in wraithform, the wielder cannot cast either arcane or divine spells.
+
+STATISTICS:
+
+Charge abilities:
+– Wraithform
+  – Immune to normal weapons
+  – 25% resistance to magic damage
+  – Spellcasting disabled
+  School: Alteration, Illusion
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dire Charm
+@93030 = ~Wand of Dire Charm~
+@93031 = ~This wand will charm any single person† when activated; if the recipient fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The caster may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
+
+If the caster harms, or attempts to harm, the charmed creature by some overt action, or if a dispel magic spell is successfully cast upon the charmed creature, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence.
+
+†: Person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+
+Charge abilities:
+– Charm Person
+  – Charms the target to be ordered or spoken to
+  School: Enchantment
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 1 person
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ghost Armor
+@93032 = ~Wand of Ghost Armor~
+@93033 = ~When activated, the wand creates an insubstantial but quasi-real suit of armor. This semi-illusory material covers the subject and actually gives some real protection provided that opponents don't actively disbelieve in the armor (detecting the illusion) and neither a dispel magic nor detect illusion spell is cast upon it. Until dispelled or disbelieved, the armor sets the recipient's base armor class to 2. This spell will not function with any other form of magical armor, but it is cumulative with dexterity bonuses and, in the case of fighter/mages, with the shield bonus. The ghost armor does not hinder movement, adds no weight or encumbrance, nor does it prevent spellcasting. A favourite among mage/thieves, the ghostly nimbus of light which surrounds the recipient grants +20% bonus to Hide in Shadows.
+
+STATISTICS:
+
+Charge abilities:
+– Ghost Armor
+  – Applies a field of magical force armor around the wielder (AC 2).
+  – +20% bonus to hide in shadows
+  School: Illusion
+  Range: Touch
+  Duration: 10 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Spell Deflection
+@93034 = ~Wand of Minor Spell Deflection~
+@93035 = ~This wand causes any spells cast against the wielder to be absorbed and consumed. This affects a total of 6 spell levels, but having 1 level left of protection means a 1st level spell would get absorbed, as well as a 4th level spell. Spells greater than 4th level will not be affected. This spell will not protect the wielder from a dispel magic. However, it will not be affected by a dispel magic, either.
+
+This spell absorbs spells cast from scrolls and innate spell-like abilities, but will not protect against area effect spells that are not centered directly upon the wielder (such as Fireball), or stationary area effect spells (such as Cloudkill and Stinking Cloud).
+
+STATISTICS:
+
+Charge abilities:
+– Minor Spell Deflection
+  – Absorbs 6 levels of spells
+  School: Abjuration
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spell Thrust
+@93040 = ~Wand of Spell Thrust~
+@93041 = ~This wand, once activated, will dispel one spell protection of 5th level or lower on all enemies within the area of effect. This will always dispel the highest level of spell protection on a target first. If a target has two or more protections tied for the highest level, the choice will be random. Magic resistance does not affect this spell.
+
+The spell protections dispelled by Spell Thrust are: Minor Spell Deflection, Non-Detection, Minor Globe of Invulnerability, Spell Deflection, Dispelling Screen and Spell Shield.
+
+STATISTICS:
+
+Charge abilities:
+– Spell Thrust
+  – Dispels protective spell
+  School: Abjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: 15' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Detect Illusion
+@93042 = ~Wand of Detect Illusion~
+@93043 = ~Upon activation, this wand will affect an area roughly 30 feet in radius from the targeted point. All hostile illusion spells of 4th level and lower in this area will be dispelled. Magic resistance does not affect this spell.
+
+The illusion spells dispelled by Detect Illusion are: Reflected Image, Blur, Invisibility, Mirror Image, Ghost Armor, Invisibility Sphere, and Improved Invisibility.
+
+STATISTICS:
+
+Charge abilities:
+– Detect Illusion
+  – Dispels illusions
+  School: Divination
+  Range: Long
+  Duration: Instant
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Halt Undead
+@93044 = ~Wand of Halt Undead~
+@93045 = ~Upon activation, this wand stops undead creatures in their place for the duration of the spell. The effect is centered on the victim selected by the wielder. Any undead creatures within 5 feet of the target are also affected. Those who succeed at a saving throw vs. wand at -2 are totally unaffected by the spell.
+
+Those affected become unable move or groan, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence the effect does not stop any worsening of their condition due to injury or rot.
+
+STATISTICS:
+
+Charge abilities:
+– Halt Undead
+  – Holds undead
+  School: Necromancy
+  Range: Long
+  Duration: %duration%
+  Area of Effect: Target, and enemies within 5'
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Melf's Minute Meteors
+@93046 = ~Wand of Melf's Minute Meteors~
+@93047 = ~Upon activation, this wand creates %magnitude% small globes of fire, which, when thrown, burst upon impact and inflict 1d4 points of piercing damage plus 2d4 points of fire damage to the creature struck. The wielder gains a +5 bonus to hit with the missiles, and each meteor is considered to be of +2 enchantment to determine what it can hit. The wielder may discharge up to five missiles per round.
+
+STATISTICS:
+
+Charge abilities:
+– Melf's Minute Meteors
+  – Creates fiery globes
+  – +5 bonus to THAC0/+2 enchantment
+  – +2 enchantment
+  – 5 attacks per round
+  School: Conjuration
+  Damage: 1d4 piercing damage, 2d4 fire damage each
+  Range: Sight
+  Duration: Permanent until thrown or dispelled
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dispel Magic
+@93048 = ~Wand of Dispel Magic~
+@93049 = ~With targeting this wand, it removes magical effects upon any enemies within the area of effect. This includes effects from spells, potions, and certain magical items such as wands. It does not, however, affect enchanted magical items or spell protections such as Spell Deflection. While this spell dispels the individual effects of Grease, Web, Stinking Cloud, and other such spells, it does not dispel the area of effect. Magic resistance does not affect this spell.
+
+The chance of the dispel succeeding is determined by the caster level of wand (%caster_level%) and the level of the magic being dispelled. The base chance of successfully dispelling is 50%. For every caster level that Dispel Magic is above the level of the magic it is trying to dispel, its chance of success increases by 5%. For every caster level that Dispel Magic is below the level of the magic it attempts to dispel, its chance of success decreases by 10%. However, despite the difference in levels, there is always at least a 1% chance of success or failure. Thus, if Dispel Magic is 10 caster levels higher than the magic it is trying to dispel, there is only a 1% chance of failure. Similarly if the caster level is 4 levels lower than the magic it is trying to dispel, there is only a 10% chance of success. Intuitively, this spell is almost useless if the level of the magic attempted to dispel is 5 or more levels higher than the wand's caster level.
+
+STATISTICS:
+
+Charge abilities:
+– Dispel Magic
+  – Dispells magical effects
+  School: Abjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: 20' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Icelance
+@93050 = ~Wand of Icelance~
+@93051 = ~This wand will hurl a magical lance of ice at a target of the wielder's choosing. The sharp spear of ice impales the target, inflicting 5d6 points of damage. The target must make a save vs. paralyzation or be held for three rounds.
+
+STATISTICS:
+
+Charge abilities:
+– Icelance
+  – Hurls a lance of ice
+  – Hold opponent 3 rounds
+  Damage: 5d6 cold damage
+  School: Evocation
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Paralyzation negates stun
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

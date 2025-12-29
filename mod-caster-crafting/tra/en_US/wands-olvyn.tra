@@ -842,3 +842,346 @@ Weight: 1~
 /***************************************
 *   2nd Level - Priest - 82500-82999   *
 ***************************************/
+
+
+/***************************************
+*   3rd Level - Arcane - 83000-83499   *
+***************************************/
+//Clairvoyance
+@83000 = ~Wand of Clairvoyance~
+@83001 = ~Once activated, this wand empowers the wizard to see in <PRO_HISHER> mind the geographical features and buildings of the region <PRO_HESHE> is currently exploring. It extends to a great range, but cannot reveal creatures or their movements.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Clairvoyance
+  – Reveals area
+  Duration: Instant
+  Area of Effect: Entire area
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning I
+@83014 = ~Wand of Monster Summoning I~
+@83015 = ~This wand summons a horde of monsters, each of which are worth between 7 and 35 experience points. The monsters appearing are randomly determined and ignore the summoning limit. They will remain under the wielder's control until slain or the spell duration expires. The monsters summoned are worth a total of around 20 XP per caster level.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning I
+  – Summons monsters
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Skull Trap
+@83024 = ~Wand of Skull Trap~
+@83025 = ~Upon activation, this wand generates a skull at the target area. The skull floats in the area until a creature comes within 10 ft. of it. When this happens, the skull is triggered and explodes damaging everyone within a 12-ft. radius. The damage inflicted is equal to %magnitude%d6, or half with a successful Saving Throw vs. Wand. When casting this spell, it is wise to set it far away from the party lest they set it off accidentally.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Skull Trap
+  – Skull that detonates if creature nearby
+  Damage: %magnitude%d6 magic damage
+  Range: Sight
+  Duration: Permanent
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Vampiric Touch
+@83026 = ~Wand of Vampiric Touch~
+@83027 = ~Once activated, this wand drains the target of %magnitude2% Hit Points; these Hit Points are added to the wielder's current Hit Points, with any Hit Points over the wielder's normal maximum treated as temporary additional Hit Points. The temporary Hit Points last for 2 hours. Casting Vampiric Touch again will allow the caster to gain even more Hit Points.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Vampiric Touch
+  – Drains target
+  – Wielder gains temporary Hit Points
+  Damage: %magnitude2% magic damage
+  Range: Touch
+  Duration: Instant, 2 hours for temporary Hit Points
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dispel Illusions
+@83042 = ~Wand of Dispel Illusions~
+@83043 = ~Upon activation, this wand will cancel all illusionary protections on enemies in the area of effect. In addition it will dispel all forms of Invisibility and Mirror Image, even if originating from an innate ability instead of a spell. The area of effect is roughly a 120-ft. radius around the wielder. The targets' Magic Resistance, if any, does not affect this spell.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Dispel Illusions
+  – Dispels illusions
+  Range: Self
+  Duration: Instant
+  Area of Effect: 120-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Absorb Spell
+@83054 = ~Wand of Absorb Spell~
+@83055 = ~Upon activation, this wand blocks the first spell (of any level) that hits the wielder within the next 2 rounds. If a spell is blocked this way, the wielder absorbs its power, regaining a previously cast spell whose level is less than or equal to the level of the spell absorbed.
+
+For example, if the wielder is hit by a Finger of Death (7th-level spell), <PRO_HESHE> gets seven spell levels back: <PRO_HESHE> will regain one spell up to 7th level in power.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Absorb Spell
+  – Absorbs next spell targeting wielder
+  – Restores a memorized spell of incoming level or lower
+  Duration: 2 rounds
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fly
+@83056 = ~Wand of Fly~
+@83057 = ~With this wand, the wielder gives a creature the power to fly. For the duration, the creature can fly over normally impassable objects such as houses, walls, and rivers, but only as long as the creature is outdoors. The creature is also unaffected by ground-based spells such as Grease, Web, Entangle, and Earthquake.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Fly
+  – Ability to fly
+  – Flying speed: %magnitude%
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Displacement
+@83058 = ~Wand of Displacement~
+@83059 = ~Upon activation, this wand shifts the apparent position of the wielder, such that <PRO_HESHE> appears to be several feet away from where <PRO_HESHE> actually is. Attacks against the displaced wielder have a 50% chance of missing. Any effect that dispels illusions can dispel Displacement.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Displacement
+  – Visually displaces wielder
+  – 50% chance incoming attacks miss
+  Duration: %duration%D
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Terror
+@83060 = ~Wand of Terror~
+@83061 = ~The wielder of this wand may choose an area; all creatures in the area of effect, friend or foe, must save vs. wands at -4 or run away in fear for 1 turn. Unlike the spell Horror, Terror actually physically harms targets' minds. Although this spell affects allies, this does not bother the necromancer, for <PRO_HISHER> allies are undead.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Terror
+  – Causes everyone to flee in fear
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs Wand (-4 penalty) to negate
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Control Slime
+@83062 = ~Wand of Control Slime~
+@83063 = ~This wand allows the wielder to take control of a single slime creature for one turn. Since Control Slime is a particularly specialized spell, it is very effective: the slime gets no Saving Throw, and its Magic Resistance is no help. Control Slime has no effect on non-slimes.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Control Slime
+  – Charms 1 slime
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Legend Lore
+@83064 = ~Wand of Legend Lore~
+@83065 = ~Once activated, this wand temporarily increases the lore of the wielder, allowing <PRO_HIMHER> to identify multiple magical items. For the duration, the wielder's lore is increased by 100.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Legend Lore
+  – Lore increased by 100
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Glyph of Spell Storing
+@83066 = ~Wand of Glyph of Spell Storing~
+@83067 = ~Upon activation, this wand wards a point which stores a spell and releases it upon each hostile creature that enters the warded area. When this spell is cast, the caster stores a single 1st-level spell in the glyph, which is placed on a circular, 9-ft. radius area of the wielder's choice. When a hostile creature passes within 9 feet of the glyph, it explodes, releasing a copy of the stored spell on each hostile creature within 12 feet.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Glyph of Spell Storing
+  – Wards a point with a spell
+  Range: 60 ft.
+  Duration: Permanent until discharged
+  Area of Effect: 12-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Familiar Spell
+@83068 = ~Wand of Familiar Spell~
+@83069 = ~Once activated, this wand imbues the wielder's familiar with a spell. The wielder chooses one of their 1st-level spells, consuming one use of that spell. For the next 8 hours, each time <PRO_HISHER> familiar hits a creature with an attack, it instantly casts a copy of the chosen spell on the target. The spell is cast at caster level %magnitude%, not at the level of the familiar. The familiar must be owned by the wielder, and it must be in the same area as the wielder when Familiar Spell is cast (and not in the wielder's inventory).
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Familiar Spell
+  – Familiar's attacks cast selected spell
+  Range: Familiar (in same area)
+  Duration: 8 hours
+  Area of Effect: Familiar
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Throw
+@83070 = ~Wand of Throw~
+@83071 = ~This wand throws the target into the air with incredible force. The target is knocked back as it is sent hurtling through the air. When it lands or hits the ceiling, it takes crushing damage based on how fast it was moving right before the collision, up to %magnitude%d6. If the target succeeds on a Save vs. Polymorph at -2, it is thrown with less force and will only take about half damage.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Throw
+  – throws the target with force
+  Damage: %magnitude%d6
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (-2 penalty) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Heightening
+@83072 = ~Wand of Heightening~
+@83073 = ~This wand increases the level of the wielder's other spells. For the duration, the wielder's spells count as five spell levels higher for purposes of overcoming Globe of Invulnerability and other spell level immunities like those of a rakshasa or lich.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Heightening
+  – Increases caster level of wielder by 5
+  Duration: 1 hour
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mestil's Acid Breath
+@83074 = ~Wand of Mestil's Acid Breath~
+@83075 = ~Upon uttering the activation phrase, this wand spews acid in a cone. All creatures in the area of effect take %magnitude%d6 acid damage, with a Save vs. Breath for half.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Mestil's Acid Breath
+  – Increases caster level of wielder by 5
+  Damage: %magnitude%d6 acid damage
+  Duration: Instant
+  Area of Effect: 22-ft. cone with 90-deg. arc
+  Saving Throw: Save vs. Breath for half
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
