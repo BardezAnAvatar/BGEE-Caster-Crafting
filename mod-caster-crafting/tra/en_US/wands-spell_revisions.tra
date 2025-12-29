@@ -3044,3 +3044,115 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Summon Insects
+@93548 = ~Wand of Summon Insects~
+@93549 = ~With activating this wand, it attracts a cloud or swarm of normal insects to attack one enemy of the wielder. This swarm gathers at a point chosen by the wielder, within the spell's range, and attacks a single creature the wielder points to.
+
+For the duration of the spell, the affected creature fights with a -2 penalty to attack rolls and armor class. In addition, each round the victim suffers 2d3 points of damage from insect bites, has a 100% chance of spell failure and it if fails a save vs. poison at +2 it panics and flees from the wielder. If a successful save vs. breath at -2 is made, the target manages to avoid most of the swarm, reducing damage from bites by half and completely negating the spell failure penalty. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Insects
+  – -2 penalty to THAC0
+  – -2 penalty to Armor Class
+  – 100% casting failure
+  – Flees in fear
+  Damage: 2d3 piercing damage / round
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 6 rounds
+  Area of Effect: 1 creature
+  Saving Throw:
+  – Save vs. Poison (+2 bonus) negates fear
+  – Save vs. Breath (-2 penalty) negates casting failure, halves damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spiritual Clarity
+@93550 = ~Wand of Spiritual Clarity~
+@93551 = ~This wand trengthens a creature's spiritual resolve and purges the creature's mind of negative influences. The spell removes the effects of fear, charm, confusion and feeblemind from a single creature.
+
+STATISTICS:
+
+Charge abilities:
+– Spiritual Clarity
+  – Removes fear
+  – Removes charm
+  – Removes confusion
+  – Removes feeblemind
+  School: Abjuration
+  Sphere: Protection
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spike Growth
+@93562 = ~Wand of Spike Growth~
+@93563 = ~This wand transforms the ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. Any creature will suffer 1d4 points of piercing damage each round that they remain within the affected area. The spikes can damage the victim's legs, so that even once they are free of the spike growth their movement rate is halved for 3 rounds unless a successful save vs. breath is made. Those failing the save also suffer 1 point of bleeding damage each round for 3 rounds. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Spike Growth
+  – Grows spiky plants from terrain
+  – Halves movement (3 rounds)
+  Damage:
+  – 1d4 piercing damage / round
+  – 1 bleeding damage / round (3 rounds)
+  School: Alteration
+  Sphere: Plant
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 20' radius
+  Saving Throw:
+  – Save vs. Breath negates movement penalty and bleed damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animal Summoning III
+@93574 = ~Wand of Animal Summoning III~
+@93575 = ~Upon activation, the wand calls forth %magnitude% wolves, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning III
+  – Summons %magnitude% wolves
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Wolf (3 Hit Dice):
+    – STR 13, DEX 15, CON 15, INT 4, WIS 12, CHA 6; AL Neutral
+    – HP 21, AC 6, THAC0 18, Saving Throws 15/17/15/13/17
+    – 1 Attack Per Round, 1d6 Piercing Damage (Bite)
+    – Combat Abilities:
+      – Pack Attack: each wolf within 10 feet grants additional +1 bonus to attack rolls
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

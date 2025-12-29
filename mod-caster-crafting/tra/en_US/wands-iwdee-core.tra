@@ -1849,3 +1849,305 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Summon Insects
+@73548 = ~Wand of Summon Insects~
+@73549 = ~With activating this wand, it attracts a cloud or swarm of normal insects to attack one enemy of the wielder. This swarm gathers at a point chosen by the wielder within the spell's range and attacks any single creature the wielder points to. The victim may make a Saving Throw vs. Breath Weapon with a -4 penalty to escape the swarm; otherwise, the victim receives 1 point of damage every 2 seconds for the duration of the spell. Moreover, the victim fights with a -2 penalty to <PRO_HISHER> attack roll and a -2 penalty to <PRO_HISHER> Armor Class. The swarm will repeatedly bite the target, making it very difficult to cast spells (50% chance of spell failure).
+
+Undead, constructs, and elementals are unaffected by the swarm.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Summon Insects
+  – -2 penalty to THAC0
+  – -2 penalty to Armor Class
+  – 50% casting failure
+  Damage: 1 piercing damage / 2 sec.
+  Range: 60 ft.
+  Duration: 7 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Breath (-4 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Prayer
+@73552 = ~Wand of Prayer~
+@73553 = ~Activating this wand bestows favor on the wielder and <PRO_HISHER> allies, and curses their enemies. All attacks, damage, and Saving Throws by friendly characters gain a +1 bonus, while enemy attacks, damage rolls, and saves get a -1 penalty. Any creatures within the area of effect when the spell is cast will continue to be affected by the spell when they leave the area, so if the warriors want to chase down that fleeing goblin, the effects of the Prayer will follow them.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Prayer
+  – Allies
+    – +1 bonus to THAC0
+    – +1 bonus to damage
+    – +1 bonus to all saving throws
+  – Enemies
+    – -1 penalty to THAC0
+    – -1 penalty to damage
+    – -1 penalty to all saving throws
+  Duration: %duration%
+  Area of Effect: 30-ft. radius centered on wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Disease
+@73554 = ~Wand of Cause Disease~
+@73555 = ~Once this wand is activated, it afflicts one creature the wielder touches with a disease that saps the target of 5d4 points of Strength. A successful Save vs. Wand negates the effects. This spell has no effect on undead, constructs, or extraplanar creatures. It cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Disease
+  – 5d4 points of Strength drained
+  Duration: 8 hours
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Exaltation
+@73556 = ~Wand of Exaltation~
+@73557 = ~Once activated, this wand enables the wielder to aid and protect any one other being; by touch, the wielder removes the effects of fear, sleep, feeblemindedness, unconsciousness, and intoxication, as well as berserk and confused states of mind. In addition, the recipient is protected against spells and other attacks that cause these effects for the duration of the spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Exaltation
+  – Dispels and prevents statuses:
+    – Fear
+    – Sleep
+    – Feeblemindedness
+    – Unconsciousness
+    – Intoxication
+    – Berserk
+    – Confused
+  Range: Touch
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Moonblade
+@73558 = ~Wand of Moonblade~
+@73559 = ~Upon activation, this wand summons forth a silent, weightless sword-like construct made of moonlight that extends four feet from the wielder's hand. The moonblade is considered a +4 weapon for determining what creatures it can hit, though the bonus does not apply to attack rolls made with it. In addition, due to the insubstantial nature of the moonblade, melee bonuses from Strength do not apply.
+
+The strike of a moonblade drains a target's vitality, inflicting 1d12+4 points of magic damage, plus an additional 1d12 points to undead, who are particularly susceptible. A successful strike also temporarily scrambles magic, causing any spells the target casts in the next round to fail.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Moonblade
+  – Conjures a moonblade for personal use
+    – +4 enchantment to hit (No THAC0 bonus)
+    – 1d12+4 points of magic damage
+    – 100% casting failure for 1 round
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Circle of Bones
+@73560 = ~Wand of Circle of Bones~
+@73561 = ~Once activated, this wand conjures forth a barrier of floating bones that spin rapidly around the wielder, who cannot move for the duration of the spell. Anyone entering the path of the bones takes 1d6 crushing damage and 1d6 slashing damage per round. Circle of Bones cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Circle of Bones
+  – Conjures a rotating circle of bones
+  – Disables movement
+  Damage:
+  – 1d6 crushing damage / round
+  – 1d6 slashing damage / round
+  Duration: 3 rounds
+  Area of Effect: 3-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spike Growth
+@73562 = ~Wand of Spike Growth~
+@73563 = ~This wand transforms the surrounding terrain into spiky plants. Any creature entering the area takes 1d4 points of piercing damage and 1d4 points of slashing damage every round until the spell expires.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Spike Growth
+  – Grows spiky plants from terrain
+  Damage:
+  – 1d4 piercing damage / round
+  – 1d4 slashing damage / round
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cloudburst
+@73564 = ~Wand of Cloudburst~
+@73565 = ~Once activated, this wand brings forth a magical rain that saturates the area of effect. All cold- and fire-dwelling creatures take 2d3 points of magic damage per round. In addition, all creatures in the area have a 50% chance per round of being struck by bolts of lightning that deal 2d6 electrical damage, with a Save vs. Wand for half. Flame Blade, Shroud of Flame, and salamander auras are extinguished by Cloudburst.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cloudburst
+  – Magical rain
+    – Damages cold- and fire- elemental creatures
+    – 50% chance of electrical damage
+    – Extinguishes flame
+  Damage:
+  – Cold- and Fire-dwelling creatures:
+    – 2d3 points of magic damage per round
+  – 50% chance of lightning
+    – 2d6 electrical damage
+  Range: Sight
+  Duration: 2 rounds
+  Area of Effect: 17-ft. radius
+  Saving Throw: Save vs. Wand for half lightning damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mold Touch
+@73566 = ~Wand of Mold Touch~
+@73567 = ~Upon activation, this wand infects the creature the wielder touches with a rapidly spreading brown mold. If the infected creature fails a Save vs. Spell, the infection is severe; if the Saving Throw is successful, the damage is reduced.
+
+Each round after the first, the nearest creature within 10 ft. of the victim must make a Save vs. Wand or be infected by the mold at full strength. This process continues until the mold fails to infect a suitable host in time. Creatures already under the effects of the mold cannot contract it again. The brown mold quickly dies once the spell expires.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Mold Touch
+  – Infects with brown mold
+  Damage:
+  – 1st round: 4d6 magic damage
+  – 2nd round: 3d6 magic damage
+  – 3rd round: 2d6 magic damage
+  – 4th round: 1d6 magic damage
+  Range: Touch
+  Duration: Special
+  Area of Effect: 10-ft. radius
+  Saving Throw:
+  – Save vs. Wand reduces damage
+    – 1st round: 2d6 magic damage
+    – 2nd round: 1d6 magic damage
+    – 3rd round: 1d6 magic damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Storm Shell
+@73568 = ~Wand of Storm Shell~
+@73569 = ~This wand surrounds the wielder with a bright sphere of disruptive energy that moves with <PRO_HIMHER>. The storm shell increases the wielder's resistance to fire, cold, and electrical damage by 50%.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Storm Shell
+  – +50% bonus to Fire resistance
+  – +50% bonus to Cold resistance
+  – +50% bonus to Electrical resistance
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Medium Wounds
+@73570 = ~Wand of Cause Medium Wounds~
+@73571 = ~Upon activating this wand and touching a creature, this wand deals 14 points of damage (save vs. Wand for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures. Cause Medium Wounds cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Medium Wounds
+  – Causes medium wounds in 1 living creature
+  Damage: 14 magic damage
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Favor of Ilmater
+@73572 = ~Wand of Favor of Ilmater~
+@73573 = ~Once activated, this wand the switches the wielder's own life force with that of the recipient, exchanging all physical injuries. The spell will only function if the wielder has more Hit Points than the target before the switch is attempted. This switch is permanent; the wielder may use normal methods to heal any damage. The exchange can be done from a distance so long as the spell range is not exceeded. Only the Hit Points are exchanged; the wielder cannot take on other conditions from the target such as disease, poison, intoxication, and similar afflictions.
+
+This spell cannot be cast by evil-aligned characters. It has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Favor of Ilmater
+  – Swaps hit points with target creature having fewer hit points
+  Range: 30 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
