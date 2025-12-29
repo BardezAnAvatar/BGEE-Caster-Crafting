@@ -1073,3 +1073,143 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Slow Poison
+@72520 = ~Wand of Slow Poison~
+@72521 = ~This wand allows the wielder to treat a poisoned individual; it slows the effects of venom. This spell does not neutralize the poison; instead, it just slows it down enough for the recipient to get real healing at a temple or from <PRO_HISHER> party's priest.
+
+This spell also cures intoxication.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Slow Poison
+  – Slows poisons in target
+  – Cures intoxication
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spiritual Hammer
+@72522 = ~Wand of Spiritual Hammer~
+@72523 = ~This wand brings into existence a magical hammer, which the wielder can use for the duration of the spell. It strikes as a magical weapon with a bonus of +%magnitude%, (with +%magnitude% to the attack roll and +%magnitude% to the damage roll). The base damage inflicted when it scores a hit is exactly the same as a normal war hammer (1d4+1 vs. opponents of man-size or smaller and 1d4 upon larger opponents, plus the magical bonus).
+
+Unlike a normal war hammer, it can strike any target within its wielder's visual range.
+
+STATISTICS:
+(Invocation)
+
+Charge abilities:
+– Spiritual Hammer
+  – Manifests a magical hammer
+  Damage: 1d4+%magnitude2% crushing damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Moderate Wounds
+@72528 = ~Wand of Cure Moderate Wounds~
+@72529 = ~Once activated, this wand heals 11 Hit Points and cures intoxication. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Moderate Wounds
+  – Healed for 11 hit points
+  – Cures intoxication
+  Range: Touch
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Alicorn Lance
+@72530 = ~Wand of Alicorn Lance~
+@72531 = ~Upon activation, this wand creates a silver-hued, partially ethereal lance shaped in the form of an alicorn (a unicorn horn). The wielder chooses a target, and the alicorn lance instantaneously fires at it, inflicting 3d6 points of piercing damage with a Save vs. Wand for half. Although the alicorn lance dissipates after it strikes, it always leaves a silvery radiance around the target that makes it easier to see and hit, giving <PRO_HIMHER> a -2 penalty to <PRO_HISHER> Armor Class for 3 rounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Alicorn Lance
+  – Materializes an etherial silver lance
+  – Silvery radiance
+    – -2 penalty to AC
+  Damage: 3d6 piercing damage
+  Range: Touch
+  Duration: 3 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Beast Claw
+@72532 = ~Wand of Beast Claw~
+@72533 = ~This wand transforms the caster's arms into the claws of a mighty beast, giving the wielder 18/72 Strength and the ability to rake an opponent for 2d4 (plus Strength bonus) points of slashing damage. The wielder can attack twice per round with the beast claws, with a +2 bonus to hit.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Beast Claw
+  – Stength set to 18/72
+  – Given claws
+    – 2d4 (plus Strength bonus) slashing damage
+    – Can attack twice per round
+    – +2 bonus to THAC0
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Moderate Wounds
+@72534 = ~Wand of Cause Moderate Wounds~
+@72535 = ~This wand charges the wielder's hands which deals 11 points of damage (save vs. Spell for half) to the target's body. This spell has no effect on undead, constructs, or extraplanar creatures. It cannot be cast by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Moderate Wounds
+  – Charges hands with magical damaging energy
+  Damage: 11 magic damage
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

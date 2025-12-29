@@ -1642,3 +1642,137 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Resist Fire and Cold
+@62516 = ~Wand of Resist Fire and Cold~
+@62517 = ~Once activated, the target creature's body is toughened to withstand heat and cold. Complete immunity to mild conditions (standing naked in the snow or reaching into an ordinary fire to pluck out a note) is gained. The recipient can somewhat resist intense heat or cold† (whether natural or magical in origin). The recipient has all damage sustained by fire or cold reduced by 50%.
+
+†: Examples such as: red-hot charcoal, a large amount of burning oil, flametongue swords, fire storms, fireballs, meteor swarms, red dragon's breath, frostbrand swords, ice storms, wands of frost, or white dragon's breath. In all of these cases, the temperature affects the creature to some extent.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Resist Fire and Cold
+  – 50% cold resistance
+  – 50% fire resistance
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Silence, 15' Radius
+@62518 = ~Wand of Silence, 15' Radius~
+@62519 = ~Once activated, this wand causes complete silence to prevail in the affected area. All sound is stopped: Conversation is impossible and spells cannot be cast. Each creature in the area must make a Saving Throw vs. Wand with a -5 penalty; if the save is failed, then they are silenced for the duration of the spell. Note that this spell does not continue to affect the area after being cast; only those in the area at the time of the casting are affected by the silence.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Silence, 15' Radius
+  – Silences everyone within a 15' radius
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius sphere
+  Saving Throw: Save vs. Wand (-5 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Slow Poison
+@62520 = ~Wand of Slow Poison~
+@62521 = ~This wand allows the wielder to cure a poisoned individual; it greatly slows the effects of venom, actually neutralizing all but the most deadly poisons.
+
+This spell also cures intoxication.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Slow Poison
+  – Neutralizes poisons in target
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spiritual Hammer
+@62522 = ~Wand of Spiritual Hammer~
+@62523 = ~This wand brings into existence a magical hammer, which the wielder can use for the duration of the spell. It strikes as a magical weapon with a bonus of +%magnitude%, (with +%magnitude% to the attack roll and +%magnitude% to the damage roll). The base damage inflicted when it scores a hit is exactly the same as a normal war hammer (1d4+1 vs. opponents of man-size or smaller and 1d4 upon larger opponents, plus the magical bonus).
+
+STATISTICS:
+(Invocation)
+
+Charge abilities:
+– Spiritual Hammer
+  – Manifests a magical hammer
+  Damage: 1d4+%magnitude2% crushing damage
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Draw Upon Holy Might
+@62524 = ~Wand of Draw Upon Holy Might~
+@62525 = ~This wand channels divine power to grant the wielder physical greatness for a short period. When <PRO_HESHE> does this, <PRO_HISHER> Strength, Constitution, and Dexterity are all raised by %magnitude%.
+
+STATISTICS:
+(Invocation)
+
+Charge abilities:
+– Draw Upon Holy Might
+  – Strength raised by %magnitude%.
+  – Constitution raised by %magnitude%.
+  – Dexterity raised by %magnitude%.
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Writhing Fog
+@62526 = ~Wand of Writhing Fog~
+@62527 = ~Once activated, this wand conjures a cloud of writhing fog that chills and hinders anyone within its area other than the wielder. Creatures in the fog take 1d3 points of cold damage per round. In addition, there is a 20% chance that they must save vs. Death or be slowed for 1 round. Creatures immune to cold damage do not suffer any adverse effects from this spell.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Writhing Fog
+  – Emits chilling fog
+  – 20% chance to be slowed for 1 round.
+  Damage: 1d3 cold damage per round
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Death negates Slow
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

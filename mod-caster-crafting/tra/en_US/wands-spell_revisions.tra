@@ -1762,3 +1762,293 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Slow Poison
+@92520 = ~Wand of Slow Poison~
+@92521 = ~This wand allows the wielder to cure a poisoned individual; it greatly slows the effects of venom, actually neutralizing all but the most deadly poisons.
+
+This spell also cures intoxication.
+
+STATISTICS:
+
+Charge abilities:
+– Slow Poison
+  – Slows poisons in target
+  – Cures intoxication
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spiritual Hammer
+@92522 = ~Wand of Spiritual Hammer~
+@92523 = ~This wand brings into existence a field of force shaped vaguely like a hammer. The spiritual hammer is wielded as if proficient with the weapon, at the wielder's normal THAC0. As long as the wielder concentrates upon the hammer, it can be used to strike at any opponents within 20 feet, but the wielder does not receive the standard penalty for holding a ranged weapon when engaged in close combat. It functions as a magical weapon, dealing 1d8+1 points of magic damage, with an enchantment bonus of +%magnitude%. Due to its ethereal nature, strength modifiers do not apply to attack rolls or damage, and attacks with the spiritual weapon are considered melee touch attacks (+4 attack roll bonus).
+
+STATISTICS:
+
+Charge abilities:
+– Spiritual Hammer
+  – Manifests a magical hammer
+  Damage:
+  – 1d8+%magnitude2% magic damage
+  – +%magnitude% bonus to THAC0
+  – Melee touch (+4 bonus to THAC0)
+  School: Evocation
+  Sphere: Combat
+  Range: Medium
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Draw Upon Divine Might
+@92524 = ~Wand of Draw Upon Divine Might~
+@92525 = ~This wand causes the wielder's body to shudder and glow with a shimmering aura as it becomes a vessel for divine power. When <PRO_HESHE> does this, <PRO_HISHER> strength, dexterity, and constitution scores are raised by %magnitude%. This spell is not cumulative with itself or with other similar spells.
+
+STATISTICS:
+
+Charge abilities:
+– Draw Upon Divine Might
+  – Strength raised by %magnitude%.
+  – Constitution raised by %magnitude%.
+  – Dexterity raised by %magnitude%.
+  School: Evocation
+  Sphere: Combat
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Writhing Fog
+@92526 = ~Wand of Writhing Fog~
+@92527 = ~Once activated, this wand conjures a cloud of writhing fog that chills and hinders anyone within its area other than the wielder. Creatures in the fog take 1d3 points of cold damage per round. In addition, there is a 20% chance that they must save vs. Death or be slowed for 1 round. Creatures immune to cold damage do not suffer any adverse effects from this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Writhing Fog
+  – Emits chilling fog
+  – 20% chance to be slowed for 1 round.
+  School: Conjuration
+  Sphere: Summoning
+  Damage: 1d3 cold damage per round
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Death negates Slow
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Moderate Wounds
+@92528 = ~Wand of Cure Moderate Wounds~
+@92529 = ~Once activated, this wand causes wounds and other injuries to the creature' body to be healed. The wielder can restore 2d8 +%magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+
+Charge abilities:
+– Cure Moderate Wounds
+  – Healed for 2d8 +%magnitude% hit points
+  – Cures intoxication
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Moderate Wounds
+@92534 = ~Wand of Cause Moderate Wounds~
+@92535 = ~This wand charges the wielder's hands; upon a successful touch from the wielder, the spell inflicts 2d8 +%magnitude% damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Cause Moderate Wounds
+  – Charges hands with magical damaging energy
+  – +4 bonus to THAC0
+  School: Necromancy
+  Sphere: Necromantic
+  Damage: 2d8 +%magnitude% magic damage
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animal Summoning II
+@92536 = ~Wand of Animal Summoning II~
+@92537 = ~Upon activation, the wand calls forth %magnitude% war dogs, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning II
+  – Summons %magnitude% bats
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – War Dog (2 Hit Dice):
+  STR 15, DEX 15, CON 15, INT 4, WIS 12, CHA 6; AL Neutral
+  HP 18, AC 4, THAC0 18, Saving Throws 13/17/13/15/17
+  1 Attack Per Round, 1d6 Piercing Damage (Bite)
+  Combat Abilities:
+  – Scent: detect invisible creatures within 10 feet
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fire Trap
+@92538 = ~Wand of Fire Trap~
+@92539 = ~Once activated, the wielder can weave a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 15 feet of the trap, it is triggered and explodes, damaging every enemy within a 20 foot radius. The damage inflicted is equal to %magnitude%d4 points of fire damage. Those who a roll successful saving throw vs. breath will receive only half damage. This spell will not harm party members.
+
+STATISTICS:
+
+Charge abilities:
+– Fire Trap
+  – Sets a fire trap
+  School: Abjuration
+  Sphere: Elemental (Fire)
+  Damage: %magnitude%d4 fire damage
+  Range: Short
+  Duration: Permanent
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fire Trap
+@92538 = ~Wand of Fire Trap~
+@92539 = ~Once activated, the wielder can weave a tracery of faintly glowing lines around the warding sigil. When a hostile creature comes within 15 feet of the trap, it is triggered and explodes, damaging every enemy within a 20 foot radius. The damage inflicted is equal to %magnitude%d4 points of fire damage. Those who a roll successful saving throw vs. breath will receive only half damage. This spell will not harm party members.
+
+STATISTICS:
+
+Charge abilities:
+– Fire Trap
+  – Sets a fire trap
+  School: Abjuration
+  Sphere: Elemental (Fire)
+  Damage: %magnitude%d4 fire damage
+  Range: Short
+  Duration: Permanent
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Gust of Wind
+@92540 = ~Wand of Gust of Wind~
+@92541 = ~This wand can create a severe blast of air that originates from the wielder, affecting all enemies in its path. Those within 6 feet must save vs. breath or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) in the wielder's current area.
+
+STATISTICS:
+
+Charge abilities:
+– Gust of Wind
+  – Knock down
+  – Clears cloud effects
+  School: Evocation
+  Sphere: Elemental (Air)
+  Damage: %magnitude%d4 fire damage
+  Range: Short
+  Duration: Permanent
+  Area of Effect: Within 6' of a line
+  Saving Throw: Save vs. Breath negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Know Opponent
+@92542 = ~Wand of Know Opponent~
+@92543 = ~Once activated, this wand causes the wielder's eyes to glow with magical energy, enabling <PRO_HIMHER> to read the aura of a creature, and determine the creature's strengths and weaknesses. For the duration of the spell, the target's physical resistances are lowered by 10% and all attacks against the target creature are made with a +2 bonus to the attack roll. Certain magical devices negate the power of the Know Opponent spell, and the spell has no effect on creatures who don't emanate auras, such as constructs. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Know Opponent
+  – Physical resistances are lowered by 10%
+  – +2 bonus to THAC0 vs. target
+  School: Divination
+  Sphere: Divination
+  Damage: %magnitude%d4 fire damage
+  Range: Long
+  Duration: 2 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Regenerate Moderate Wounds
+@92544 = ~Wand of Regenerate Moderate Wounds~
+@92545 = ~When activating the wand, it imbues a creature with the ability to regenerate. The creature affected will regain 2 hit points per round. The effect lasts for the duration of the spell or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Regenerate Moderate Wounds
+  – Regain 2 hit point per round
+  School: Alteration
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
