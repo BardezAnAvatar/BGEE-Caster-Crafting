@@ -989,3 +989,87 @@ Requires:
 
 Weight: 1~
 
+
+/***************************************
+*   2nd Level - Priest - 72500-72999   *
+***************************************/
+//Chant
+@72504 = ~Wand of Chant~
+@72505 = ~This wand will bring special favor upon allies and cause harm to enemies. When the Chant spell is completed, all the wielder's allies within the area of effect gain a +1 bonus to attack rolls, minimum damage/healing rolls, and Saving Throws. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1†.  The wielder's enemies suffer the opposite effects. Multiple chants are not cumulative. This requires a moderate amount of concentration by the wielder, so the wielder cannot cast any spells for the chant's duration, and <PRO_HISHER> movement is slowed by half.
+
+†: For example, a 6d6 fireball will do 6d5 damage, and an arrow of fire that deals 1d6+2 piercing plus 1d6 fire damage will deal 1d6+2 piercing plus 1d5 fire damage instead.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Chant
+  – Wielder
+    – Cannot cast spells
+    – Movement speed cut by half
+  – Allies
+    – +1 bonus to THAC0
+    – +1 bonus to damage/healing
+    – +1 bonus to saving throws
+    – -1 penalty to non-weapon damage taken dice size
+  – Enemies
+    – -1 penalty to THAC0
+    – -1 penalty to damage/healing
+    – -1 penalty to saving throws
+    – +1 bonus to non-weapon damage taken dice size
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 60-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Flame Blade
+@72510 = ~Wand of Flame Blade~
+@72511 = ~Upon activation, a blazing ray of red-hot fire to spring forth from the wielder's hand. This blade-like ray is wielded as if it were a scimitar (i.e. it uses the Scimitar proficiency). If the wielder successfully hits with the flame blade in melee combat, the creature struck suffers 1d4 points of slashing damage, plus an additional 1d2+4 points of fire damage. However, it is not a magical weapon in the normal sense of the term, so creatures struck only by magical weapons are not harmed by it.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Flame Blade
+  – Flaming scimitar
+  Damage: 1d4 slashing, 1d2+4 fire damange per hit
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Person
+@72514 = ~Wand of Hold Person~
+@72515 = ~This wand will hold its humanoid† target and those surrounding <PRO_HIMHER> when activated; the effect is centered on the victim selected by the wielder and it affects the targeted enemy and up to 3 hostile creatures within 20 ft. of it. Those who succeed on their save vs. Wand are totally unaffected by the spell.
+
+Paralyzed creatures are helpless and cannot dodge or defend themselves from attacks. Being held does not prevent the worsening of the subject's condition due to wounds, disease, or poison.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Person
+  – Paralyzes 1d4 targets
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1d4 creatures
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

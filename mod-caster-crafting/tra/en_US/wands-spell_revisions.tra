@@ -1559,3 +1559,206 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   2nd Level - Priest - 92500-92999   *
+***************************************/
+//Aid
+@92500 = ~Wand of Aid~
+@92501 = ~After activation, this wand gives the recipient of this spell a +1 bonus to attack rolls, damage rolls, and saving throws, plus 1d8 + %magnitude% additional hit points. The Aid spell allows the recipient to temporarily have more hit points than his full normal total. The bonus hit points are lost first when the recipient takes damage. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Aid
+  – +1 bonus to THAC0
+  – +1 bonus to saving throws
+  – 1d8+%magnitude% temporary maximum HP
+  School: Necromancy
+  Sphere: Combat, Necromantic
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Barkskin
+@92502 = ~Wand of Barkskin~
+@92503 = ~Once activated, the target's skin becomes as tough as bark, improving its Armor Class by %magnitude%. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Barkskin
+  – + %magnitude% bonus to Armor Class
+  School: Alteration
+  Sphere: Plant
+  Range: Touch
+  Duration: 5 turns
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chant
+@92504 = ~Wand of Chant~
+@92505 = ~This wand will bring special favor upon allies, and causes harm to enemies. When the chant is completed, all attack rolls, damage rolls, and saving throws made by those in the area of effect who are friendly to the wielder gain +1 bonuses, while those of the wielder's enemies suffer -1 penalties. Multiple Chant spells are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Chant
+  – Allies
+    – +1 bonus to THAC0
+    – +1 bonus to damage/healing
+    – +1 bonus to saving throws
+  – Enemies
+    – -1 penalty to THAC0
+    – -1 penalty to damage/healing
+    – -1 penalty to saving throws
+  School: Conjuration
+  Sphere: Combat
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Charm Person or Mammal
+@62506 = ~Wand of Charm Person or Mammal~
+@62507 = ~This wand will charm any single person† or animal‡ when activated; if the target fails <PRO_HISHER> saving throw vs. Wand at +2 bonus, <PRO_HESHE> regards the caster as a trusted friend and ally to be heeded and protected. The wielder may give <PRO_HIMHER> orders, and the charmed creature will carry them out as quickly as possible. <PRO_HESHE> will also gladly provide valuable information to <PRO_HISHER> new ally.
+
+If the wielder harms, or attempts to harm, the charmed person by some overt action, or if Dispel Magic is successfully cast upon the charmed person, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. Note that the subject has full memory of the events that took place while <PRO_HESHE> was charmed. Also note that you cannot have a charmed creature leave the area where <PRO_HESHE> was charmed.
+
+†: Person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as dwarves, elves, gnolls, gnomes, half-elves, halflings, half-orcs, hobgoblins, kobolds, and others.
+
+‡: Only normal and giant sized animals are affected by this spell. Monsters such as wyverns, ankhegs, and carrion crawlers do not count as animals.
+
+STATISTICS:
+
+Charge abilities:
+– Charm Person or Mammal
+  – Charms the target to be ordered or spoken to
+  School: Enchantment
+  Sphere: Animal
+  Range: Medium
+  Duration: 1 turn
+  Area of Effect: 1 person or mammal
+  Saving Throw: Save vs. Wand (at +2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Find Traps
+@92508 = ~Wand of Find Traps~
+@92509 = ~Once the wielder activates this wand, all traps - concealed normally or magically - of magical or mechanical nature become apparent to <PRO_HIMHER>. Once per round, all traps within a 30 foot radius of the caster will be revealed. A trap is any device or magical ward that meets three criteria: it can inflict a sudden or unexpected result, the spellcaster would view the result as undesirable or harmful, and the creator specifically intended the harmful or undesirable result as such. Thus, traps include glyphs and similar spells or devices.
+
+STATISTICS:
+
+Charge abilities:
+– Find Traps
+  – Reveals traps
+  School: Divination
+  Sphere: Divination
+  Range: Personal
+  Duration: 3 turns
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Flame Blade
+@92510 = ~Wand of Flame Blade~
+@92511 = ~Upon activation, a blazing ray of red-hot fire to spring forth from the wielder's hand. This blade-like ray is wielded as if proficient with the weapon, at the wielder's normal THAC0. It functions as a magical weapon, dealing 2d6+1 points of fire damage, with an enchantment bonus of +%magnitude%. Since the blade is immaterial, strength modifiers do not apply to attack rolls or damage, and attacks with the flame blade are considered melee touch attacks (+4 attack roll bonus).
+
+STATISTICS:
+
+Charge abilities:
+– Flame Blade
+  – Flaming +%magnitude% blade
+  School: Evocation
+  Sphere: Elemental (Fire)
+  Damage:
+  – 2d6+%magnitude% points of fire damage
+  – +%magnitude% bonus to THAC0
+  – Melee touch (+4 bonus to THAC0)
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Goodberry
+@92512 = ~Wand of Goodberry~
+@92513 = ~This wand creates 5 magical berries that the wielder can carry with him or give to others. These berries initially cure %magnitude% points of physical damage for each one eaten. The berries last for 8 hours, or until eaten.
+
+STATISTICS:
+
+Charge abilities:
+– Goodberry
+  – Creates magical healing berriesSchool: Alteration
+  Sphere: Plant
+  Range: Personal
+  Healing: Each berry heals %magnitude% HP
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Person
+@92514 = ~Wand of Hold Person~
+@92515 = ~This wand will hold one or more humanoid† creatures rigidly immobile and in place for one turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at a saving throw vs. Wand are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+
+Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+
+Charge abilities:
+– Hold Person
+  – Holds target
+  – Holds enemies nearby target
+  School: Enchantment
+  Sphere: Charm, Law
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: Target, and enemies within 5'
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

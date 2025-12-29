@@ -1442,3 +1442,203 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   2nd Level - Priest - 62500-62999   *
+***************************************/
+//Aid
+@62500 = ~Wand of Aid~
+@62501 = ~After activation, this wand gives the recipient of this spell gains the benefits of a Bless spell (+1 to attack rolls and Saving Throws) and a special bonus of 1d8 additional Hit Points for the duration of the spell. The Aid spell enables the recipient to actually have more Hit Points than <PRO_HISHER> current maximum. The bonus Hit Points are lost first when the recipient takes damage and may not be regained by curative magic.
+
+STATISTICS:
+(Necromancy, Conjuration)
+
+Charge abilities:
+– Aid
+  – +1 bonus to THAC0
+  – +1 bonus to saving throws
+  – +1d8 temporary maximum HP
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Barkskin
+@62502 = ~Wand of Barkskin~
+@62503 = ~Once activated, the target's skin becomes as tough as bark, increasing its base Armor Class to %magnitude%. In addition, Saving Throws vs. all attack forms except magic gain a +1 bonus. This spell can be placed on the wielder or on any other creature <PRO_HESHE> touches.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Barkskin
+  – base AC set to %magnitude%
+  – +1 bonus to saving throws:
+    – Death
+    – Wand
+    – Polymorph
+    – Breath
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chant
+@62504 = ~Wand of Chant~
+@62505 = ~This wand will bring special favor upon allies and cause harm to enemies. When the Chant spell is completed, all the wielder's allies within the area of effect gain a +1 bonus to attack rolls, minimum damage/healing rolls, and Saving Throws. Furthermore, damage dice for all effects outside a weapon's base damage is reduced by 1†.  The wielder's enemies suffer the opposite effects. Multiple chants are not cumulative.
+
+†: For example, a 6d6 fireball will do 6d5 damage, and an arrow of fire that deals 1d6+2 piercing plus 1d6 fire damage will deal 1d6+2 piercing plus 1d5 fire damage instead.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Chant
+  – Allies
+    – +1 bonus to THAC0
+    – +1 bonus to damage/healing
+    – +1 bonus to saving throws
+    – -1 penalty to non-weapon damage taken dice size
+  – Enemies
+    – -1 penalty to THAC0
+    – -1 penalty to damage/healing
+    – -1 penalty to saving throws
+    – +1 bonus to non-weapon damage taken dice size
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 60-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Charm Person or Mammal
+@62506 = ~Wand of Charm Person or Mammal~
+@62507 = ~This wand will charm its humanoid† or animal target when activated; the charmed individual may be given orders, and they will carry them out as quickly as possible. They will also gladly provide valuable information to their new ally.
+
+If the caster harms, or attempts to harm, the charmed person by some overt action, or if Dispel Magic is successfully cast upon the charmed person, the charm spell is broken. If two or more charm effects simultaneously affect a creature, the most recent charm takes precedence. Note that the subject has full memory of the events that took place while <PRO_HESHE> was charmed. Also note that you cannot have a charmed creature leave the area where <PRO_HESHE> was charmed.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Charm Person or Mammal
+  – Charms the target to be ordered or spoken to
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 1 person or mammal
+  Saving Throw: Save vs. Wand (+3 bonus) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Find Traps
+@62508 = ~Wand of Find Traps~
+@62509 = ~Once the wielder activates this wand, all traps—concealed normally or magically—of magical or mechanical nature become apparent to <PRO_HIMHER>. Due to the nature of the spell, the wielder must stop to concentrate once per round which will effectively interrupt any action, but all of the traps within a 15-ft. radius of <PRO_HIMHER> will be revealed. This however will not affect spellcasting.
+
+A trap is any device or magical ward that meets three criteria: it can inflict a sudden or unexpected result; the spellcaster would view the result as undesirable or harmful; and the creator specifically intended the harmful or undesirable result as such. Thus traps include glyphs and similar spells or devices.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Find Traps
+  – Reveals traps
+  Duration: 3 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Flame Blade
+@62510 = ~Wand of Flame Blade~
+@62511 = ~Upon activation, a blazing ray of red-hot fire to spring forth from the wielder's hand. This blade-like ray is wielded as if it were a sword that the wielder already knows how to use, hence there are no bonuses or penalties. If the wielder successfully hits with the flame blade in melee combat, the creature struck suffers 1d4 points of slashing damage, plus an additional 1d2+4 points of fire damage. However, it is not a magical weapon in the normal sense of the term, so creatures struck only by magical weapons are not harmed by it.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Flame Blade
+  – Flaming sword
+  Damage: 1d4 slashing, 1d2+4 fire damange per hit
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Goodberry
+@62512 = ~Wand of Goodberry~
+@62513 = ~This wand creates 5 magical berries that the wielder can carry with <PRO_HIMHER>. Each berry restores 1 Hit Point when eaten.
+
+STATISTICS:
+(Alteration, Evocation)
+
+Charge abilities:
+– Goodberry
+  – Creates magical healing berries
+  Healing: Each berry heals 1 HP
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Person
+@62514 = ~Wand of Hold Person~
+@62515 = ~This wand will hold its humanoid† target and those surrounding <PRO_HIMHER> when activated; the effect is centered on the victim selected by the wielder. Every enemy within 4 ft. of the target is also affected. Those who succeed on their save vs. Wand are totally unaffected by the spell. Undead creatures cannot be held.
+
+Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.
+
+†: Humanoids are any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Person
+  – Holds target
+  – Holds enemies nearby target
+  Range: 35 ft.
+  Duration: 1 turn
+  Area of Effect: 1 creature and any enemy within 4 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
