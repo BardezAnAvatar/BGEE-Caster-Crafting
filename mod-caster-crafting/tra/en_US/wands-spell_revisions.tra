@@ -2645,3 +2645,402 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   3rd Level - Priest - 93500-93999   *
+***************************************/
+//Animate Dead: Skeleton
+@93502 = ~Wand of Animate Dead~
+@93503 = ~With targeting this wand, it causes %magnitude% animated skeletons to rise up and serve the wielder. The undead creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animate Dead
+  – Summons %magnitude% skeletons
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Medium
+  Duration: 8 hours
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Skeleton (2 Hit Dice):
+    STR 15, DEX 14, CON -, INT -, WIS 10, CHA 1;  AL Chaotic Evil
+    HP 24, AC 6, THAC0 18, Saving Throws 10/12/11/13/13
+    1 Attack Per Round, 1d6+2 Crushing Damage (Mace +1)
+    Special Qualities:
+    – Immune to charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%
+    – Slashing & Piercing Resistance 20%; Missile Resistance 40%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animate Dead: Greater Skeleton
+@93504 = ~Wand of Animate Dead~
+@93505 = ~With targeting this wand, it causes %magnitude% animated skeletons to rise up and serve the wielder. The undead creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animate Dead
+  – Summons %magnitude% skeletons
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Medium
+  Duration: 8 hours
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Greater Skeleton (5 Hit Dice):
+    STR 16, DEX 14, CON -, INT -, WIS 10, CHA 1;  AL Chaotic Evil
+    HP 60, AC 4, THAC0 16, Saving Throws 9/11/10/12/12
+    1 Attack Per Round, 2d6+2 Slashing Damage (Two-Handed Sword +1)
+    Special Qualities:
+    – Immune to charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%
+    – Slashing & Piercing Resistance 40%; Missile Resistance 60%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Call Lightning
+@93514 = ~Wand of Call Lightning~
+@93515 = ~When this wand is activated in an outdoor area, it will call down one 30-foot-long vertical bolt of lightning per round. The lightning will strike first at the target of the spell, dealing 6d6 points of electrical damage, with a successful save vs. breath at -2 reducing this to half. For the remainder of the storm's duration, the bolts will strike out randomly at the enemies of the wielder.
+
+STATISTICS:
+
+Charge abilities:
+– Call Lightning
+  – Lightning storm in area
+  – Hits target and other enemies
+  Damage: 6d6 points of electrical damage
+  School: Alteration
+  Sphere: Weather
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 360' radius
+  Saving Throw: Save vs. Breath (-2 penalty) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Glyph of Warding
+@93516 = ~Wand of Glyph of Warding~
+@93517 = ~Upon activating this wand, the wielder weaves a tracery of faintly glowing lines in a warding sigil. When a hostile creature comes within 15 feet of the glyph, it is triggered and explodes, damaging every enemy within a 20 foot radius. The damage inflicted is %magnitude%d4 points of electrical damage. Those who a roll successful saving throw vs. breath will receive only half damage. This spell will not harm party members.
+
+A glyph of warding is a powerful inscription magically drawn to prevent unauthorized or hostile creatures from passing, entering, or opening. It can be used to guard a small bridge, to ward an entry, or as a trap on a chest or box. Any enemy violating the warded area will trigger the trap.
+
+STATISTICS:
+
+Charge abilities:
+– Glyph of Warding
+  – Magical electrical trap
+  Damage: %magnitude%d4 points of electrical damage
+  School: Abjuration
+  Sphere: Guardian
+  Range: Short
+  Duration: Permanent until discharged
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Person or Animal
+@93520 = ~Wand of Hold Person or Animal~
+@93521 = ~This wand, when activated, holds persons† and animals rigidly immobile and in place. The effect is centered on the victim selected by the caster. Every hostile person or animal within 5 feet of the target is also affected. Those who succeed on a save vs. wand at -2 are totally unaffected.
+
+Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.
+
+†: Person includes any bipedal human, demihuman, or humanoid of man-size or smaller, such as brownies, dryads, dwarves, elves, gnolls, gnomes, goblins, half-elves, halflings, half-orcs, hobgoblins, humans, kobolds, lizard men, nixies, orcs, pixies, sprites, troglodytes, and others. Thus, a 10th-level fighter could be charmed, but an ogre could not.
+‡: Only normal and giant sized animals are affected by this spell. Monsters such as wyverns, ankhegs, and carrion crawlers do not count as animals.
+
+STATISTICS:
+
+Charge abilities:
+– Hold Person or Animal
+  – Holds animals or persons in place
+  Damage: %magnitude%d4 points of electrical damage
+  School: Enchantment
+  Sphere: Animal
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 1 creature and any enemies within 5 ft.
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Break Enchantment
+@93524 = ~Wand of Break Enchantment~
+@93525 = ~Once activated, this wand is able to free a victim from enchantments and curses. The spell can reverse the effects of confusion and feeblemindedness, free a victim from petrification, magical sleep or charm, and break the effects of a curse. Note that Break Enchantment cannot remove the curse from a cursed shield, weapon, or suit of armor, for example, but allows those afflicted with any such cursed item to get rid of it. Certain special curses may not be countered by this spell, or may be countered only by a caster of a certain level or through a particular ritual.
+
+STATISTICS:
+
+Charge abilities:
+– Break Enchantment
+  – Dispells confusion and feeblemindedness, petrification, sleep, and charm
+    AND
+  – Breaks one curse
+    – Removes a curse affecting target, dispelling its effects
+      OR
+    – Allows target to remove a cursed object
+  School: Abjuration
+  Sphere: All
+  Range: Short
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Remove Paralysis
+@93526 = ~Wand of Remove Paralysis~
+@93527 = ~Upon activation, this wand can free several creatures from the effects of any paralyzation or related magic (such as a ghoul's touch, Hold spell, or Power Word Stun).
+
+STATISTICS:
+
+Charge abilities:
+– Remove Paralysis
+  – Removes paralysis, stun, and hold
+  School: Abjuration
+  Sphere: Necromantic, Protection
+  Range: Long
+  Duration: Instant
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Invisibility Purge
+@93528 = ~Wand of Invisibility Purge~
+@93529 = ~Once activated, this wand instantly (and once each round for 5 rounds after this spell is cast) purges invisibility from all concealed enemies within the area of effect. Invisible objects carried into the warded area will also become visible. This spell does not reveal illusions or enable the wielder to see through physical objects. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Invisibility Purge
+  – Dispells nearby invisibility
+  – Prevents invisibility for 4 rounds
+  School: Abjuration
+  Sphere: Wards
+  Range: Personal
+  Duration: 5 rounds
+  Area of Effect: 30' radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Miscast Magic
+@93530 = ~Wand of Miscast Magic~
+@93531 = ~This wand will afflict the target with miscast magic. This causes spells cast by the affected creature to take on an effect different from what they intend, similar to what happens during a wild surge. There is a chance that the result will be beneficial to the spellcaster, but generally, the effects are undesirable. The target must make save vs. wand at -2 to negate the spell's effects. Those who fail the save will miscast any spells cast in the next round, and each round after the first must make another save to avoid miscasting for one further round. The effects of the spell last for 5 rounds, or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Miscast Magic
+  – Causes wild magic surges when target casts magic
+  School: Enchantment
+  Sphere: Chaos
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 1 target
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Rigid Thinking
+@93532 = ~Wand of Rigid Thinking~
+@93533 = ~Once triggered, the target must make a Saving Throw vs. Wand or come under its effects. When under the effects of the Rigid Thinking spell, the victim will randomly wander, attack the nearest person, or stand confused.
+
+STATISTICS:
+
+Charge abilities:
+– Rigid Thinking
+  – Wanders, stands confused, or attacks without direction
+  School: Enchantment
+  Sphere: Law
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 person or mammal
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Strength of One
+@93534 = ~Wand of Strength of One~
+@93535 = ~Using this wand, all party members within 30 feet of the caster gain a +2 bonus to strength. If a party member ends up with a strength value of 18, then her strength will be set to 18/75. The spell lasts for 10 rounds, whereafter everyone's strength returns to normal.
+
+STATISTICS:
+
+Charge abilities:
+– Strength of One
+  – +2 Strength bonus (18/75 if boosted to 18)
+  School: Alteration
+  Sphere: Law
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Holy Smite
+@93536 = ~Wand of Holy Smite~
+@93537 = ~Once activated, this wand calls upon energy from the Positive Energy Plane in order to open a channel between it and the targets. The result is that any evil creatures within the spell's area of effect take %magnitude%d4 points of magic damage, or half damage upon a successful Saving Throw vs. Spell. If the victims fail their Saving Throw, they are also blinded for 1 round.
+
+STATISTICS:
+
+Charge abilities:
+– Holy Smite
+  – Positive energy damages evil beings
+  – Blindness for 1 round
+  Damage: %magnitude%d4 magic damage
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Long
+  Duration: Instant
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Unholy Blight
+@93538 = ~Wand of Unholy Blight~
+@93539 = ~Once activated, this wand calls up unholy power to smite his enemies. The power takes the form of a chilling, cloying miasma of darkness. Opponents within the spell's area of effect take %magnitude%d4 points of magic damage, with a successful saving throw vs. wand for half. If the victim fails his save, then he will also receive a -2 penalty on his attack rolls and saving throws for 4 rounds.
+
+STATISTICS:
+
+Charge abilities:
+– Unholy Blight
+  – Negative energy damages good beings
+  – -2 penalty to rolls for 4 rounds
+    – Saving throws
+    – THAC0
+  Damage: %magnitude%d4 magic damage
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Long
+  Duration: Instant
+  Area of Effect: 20' radius
+  Saving Throw: Save vs. Wand
+    – Half damage
+    – No roll penalties
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Medium Wounds
+@93540 = ~Wand of Cure Medium Wounds~
+@93541 = ~Upon touching this wand to the target and activating it, the wand causes wounds and other injuries to the creature's body to be healed. The wielder can restore 3d8 + %magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+
+Charge abilities:
+– Cure Medium Wounds
+  – Heals 3d8 + %magnitude% Hit Points to target
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Disease
+@93542 = ~Wand of Cure Disease~
+@93543 = ~Touching this wand to the target and activating it, the wielder can cure almost any disease with this spell. The cure is permanent, but this does not grant the recipient of the spell immunity from further afflictions. Blindness and deafness are also cured with this spell, but some powerful magically created diseases may not be curable by this spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Cure Disease
+  – Removes disease, blindess, and deafness
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Gust of Wind
+@93546 = ~Wand of Gust of Wind~
+@93547 = ~Once activated, this wand creates a severe blast of air that originates from the caster, affecting all enemies in its path. Those within 6 feet must save vs. breath at -2 or be blown back by the force of the gust and knocked unconscious for 1 round. In addition, this spell will disperse all clouds (including magically created vapors such as Cloudkill) in the caster’s current area.
+
+STATISTICS:
+
+Charge abilities:
+– Gust of Wind
+  – Pushes enemies away
+    – Rendered unconscious for 1 round
+  – Removes cloud-based area of effect spells
+  School: Abjuration
+  Sphere: Wards, Elemental (Air)
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 6' radius
+  Saving Throw: Save vs. Breath (-2 penalty) to avoid blast
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

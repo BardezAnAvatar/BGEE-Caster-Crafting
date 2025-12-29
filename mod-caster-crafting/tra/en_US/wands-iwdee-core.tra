@@ -1602,3 +1602,250 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   3rd Level - Priest - 73500-73999   *
+***************************************/
+//Animate Dead
+@73500 = ~Wand of Animate Dead~
+@73501 = ~With targeting this wand, it summons the lowest of the undead monsters, skeletons or zombies, usually from the bones or bodies of dead humans, demihumans, or humanoids. The spell causes these remains to become animated and obey the simple verbal commands of the wielder. The undead remain animated until they are destroyed in combat or are turned; they cannot be dispelled. The priest can animate 1d6 skeletons or zombies in this manner.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Animate Dead
+  – Summons 1d6 skeletons or zombies
+  Range: Sight
+  Duration: 8 hours
+  Area of Effect: Summon
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Call Lightning
+@73514 = ~Wand of Call Lightning~
+@73515 = ~When this wand is activated in an outdoor area, it will call down one bolt of lightning per round. Each bolt causes %magnitude%d8 points of electrical damage. The bolt of lightning flashes down in a vertical stroke at any of the wielder's enemies. The first enemy struck by the lightning will be the enemy targeted. After that, any enemy (but no allies) may be struck by the ensuing lightning storm.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Call Lightning
+  – Lightning storm in area
+  – Hits target and other enemies
+  Damage: %magnitude%d8 points of electrical damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Sight
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Glyph of Warding
+@73516 = ~Wand of Glyph of Warding~
+@73517 = ~Upon activating this wand, the wielder weaves a tracery of faintly glowing lines in a warding sigil. This incription prevents unauthorized or hostile creatures from passing, entering, or opening. It can be used to guard a small bridge, to ward an entry, or as a trap on a chest or box. Any creature violating the warded area is subject to the magic it stores, although a successful Saving Throw vs. Wand enables the creature to escape the effects of the glyph. When the glyph is activated, it deals %magnitude%d4 points of electrical damage. Leaving the area the glyph of warding is in will make it disappear harmlessly.
+
+STATISTICS:
+(Abjuration, Evocation)
+
+Charge abilities:
+– Glyph of Warding
+  – Magical electrical trap
+  Damage: %magnitude%d4 points of electrical damage
+  Range: Sight
+  Duration: Permanent until discharged or area is left
+  Area of Effect: 12-ft. radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Animal
+@73518 = ~Wand of Hold Animal~
+@73519 = ~This wand, when activated, holds 1d4 hostile animals rigidly immobile. Specifically, it affects the targeted enemy and up to 3 hostile creatures within 20 ft. of it. Only normal and giant-sized animals are affected by this spell. Strange monsters such as wyverns and carrion crawlers do not count as animals. A successful Save vs. Wand negates the effect.
+
+Paralyzed creatures are helpless and cannot dodge or defend themselves from attacks. Being held does not prevent the worsening of the subject's condition due to wounds, disease, or poison.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Animal
+  – Holds animals in place
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature and up to 3 enemies within 20 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Remove Paralysis
+@73526 = ~Wand of Remove Paralysis~
+@73527 = ~Upon activation, this wand can free allied creatures from the effects of any paralysis or related magic, such as a Ghoul Touch or Hold Person spell.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Remove Paralysis
+  – Removes paralysis, stun, and hold
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Invisibility Purge
+@73528 = ~Wand of Invisibility Purge~
+@73529 = ~Once activated, this wand dispels invisibility from any enemy creatures within the area of effect. This includes creatures under the effects of Improved Invisibility, Shadow Door, Invisibility, Mislead, and so on.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Invisibility Purge
+  – Dispells nearby invisibility
+  Duration: Instant
+  Area of Effect: 15-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Strength of One
+@73534 = ~Wand of Strength of One~
+@73535 = ~Using this wand, party members within the area of effect are given a Strength score of 18/76. If a party member has a Strength score higher than this (either naturally, or through a magical item), then <PRO_HISHER> Strength is lowered to 18/75. The spell lasts for 7 rounds, whereupon everyone's Strength returns to normal.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Strength of One
+  – Sets nearby allies' Strength to 18/76
+  Duration: 7 rounds
+  Area of Effect: 15-ft. radius centered on wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Holy Smite
+@73536 = ~Wand of Holy Smite~
+@73537 = ~Once activated, this wand calls upon energy from the Positive Energy Plane in order to open a channel between it and the targets. The result is that any evil creatures within the spell's area of effect take %magnitude%d4 points of magic damage, or half damage upon a successful Saving Throw vs. Wand. If the victims fail their Saving Throw, they are also blinded for 1 round.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Holy Smite
+  – Positive energy damages evil beings
+  – Blindness for 1 round
+  Damage: %magnitude%d6 magic damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Unholy Blight
+@73538 = ~Wand of Unholy Blight~
+@73539 = ~Once activated, this wand calls upon energy from the Negative Material Plane and opens a channel between it and the targets. Any creatures of good alignment within the area of effect take %magnitude%d6 magic damage; a successful Save vs. Wand halves the damage. In addition, if the victims fail their Save, they suffer a -2 penalty to hit, damage, and Saving Throws for 3 rounds.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Unholy Blight
+  – Negative energy damages good beings
+  – -2 penalty to all rolls for 3 rounds
+    – Saving throws
+    – THAC0
+    – Damage
+  Damage: %magnitude%d4 magic damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand
+    – Half damage
+    – No roll penalties
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Medium Wounds
+@73540 = ~Wand of Cure Medium Wounds~
+@73541 = ~Upon touching this wand to the target and activating it, the target is healed 14 points of wound or other injury damage from the its body. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Medium Wounds
+  – Heals 14 Hit Points to target
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cure Disease
+@73542 = ~Wand of Cure Disease~
+@73543 = ~Touching this wand to the target and activating it, it immediately cures them and restores 5 lost Hit Points. The cure is permanent, but does not grant the recipient of the spell immunity from further afflictions. Blindness and deafness are also cured with this spell. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Cure Disease
+  – Removes disease, blindess, deafness, and feeblemind
+  – Heals 5 Hit Points
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
