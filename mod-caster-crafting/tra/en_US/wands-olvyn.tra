@@ -1732,3 +1732,106 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Disarm
+@84560 = ~Wand of Disarm~
+@84561 = ~This wand causes creatures' weapons to disappear. Upon activation, each enemy in the area of effect must make a Save vs. Wands at -2. On a failure, that creature's weapon vanishes temporarily, and the creature is forced to fight with its fists. For the duration, the creature cannot equip another weapon - if it does so, that weapon vanishes as well. The creature's weapons reappear if it dies before the duration expires. Disarm has no effect if the target is using a natural weapon or does not have a weapon in any of its quickslots.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Disarm
+  – Causes weapons to disappear
+  Range: Sight
+  Duration: 8 rounds
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wands (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Forest's Blessing
+@84562 = ~Wand of Forest's Blessing~
+@84563 = ~When activated, this wand calls the forest the wielder is currently in for aid in casting spells. For the duration, the wielder casts spells as if 10 levels higher. Forest's Blessing has no effect if not cast outside in a forest.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Forest's Blessing
+  – +10 bonus to wielder's caster level in forests
+  Duration: 1 hour
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Turn Creature
+@84564 = ~Wand of Turn Creature~
+@84565 = ~This wand turns a non-undead creature. Once the spell is cast, the target creature must Save vs. Polymorph at -4. On a failure, the creature is turned as if it was an undead creature affected by the wielder's Turn Undead ability. Depending on the level of the target, the level of the priest, the alignment of the priest, and random chance, the target may either be forced to run away from the priest temporarily, controlled by the priest temporarily, or killed instantly.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Turn Creature
+  – Turns one non-undead creature
+  Range: Sight
+  Duration: Special
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Polymorph (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Piercing Shots
+@84566 = ~Wand of Piercing Shots~
+@84567 = ~Upon activation, this wand allows the wielder's missile attacks to pierce through creatures. For the duration, any arrow, bolt, bullet, dart, dagger, or axe launched or thrown by the wielder will pierce through creatures in a line, dealing the attack's damage (as well as any on-hit effects) to each creature.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Piercing Shots
+  – Missile attacks to pierce through creatures
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Pebbles to Boulders
+@84568 = ~Wand of Pebbles to Boulders~
+@84569 = ~With activating this wand, the wielder's sling bullets transmute into boulders. While the spell is active, if the wielder launches a bullet, it instantly turns into a large boulder that retains the speed of the original bullet. The boulder inflicts an additional 3d6+8 damage if it hits (on top of the former damage of the bullet). Pebbles to Boulders also synergizes with the Magic Stone spell, letting one launch a Magic Boulder. Only a limited number of bullets or Magic Stones can be turned into boulders before the spell ends: up to %magnitude%.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Pebbles to Boulders
+  – Sling bullets transmute into boulders upon launch
+  Damage: additional 3d6+8 crushing damage to bullets
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

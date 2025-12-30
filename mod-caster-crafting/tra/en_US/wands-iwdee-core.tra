@@ -2858,3 +2858,263 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Giant Insect
+@74538 = ~Wand of Giant Insect~
+@74539 = ~With this wand, the wielder can summon 2-3 boring beetles or bombardier beetles to the caster's side. The beetles will obey the caster until the spell expires or they are slain.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Giant Insect
+  – Summons 2-3 boring beetles or bombardier beetles
+  Range: Sight
+  Duration: 8 hours
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Produce Fire
+@74540 = ~Wand of Produce Fire~
+@74541 = ~When pointing this wand and speaking the activation phrase, flames erupt from the target point, dealing 1d4 + %magnitude% points of fire damage to all creatures within the spell's radius. Creatures will take damage once per round regardless of when they enter the area of effect.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Produce Fire
+  – Produces flame for 1 round
+  Range: Sight
+  Duration: 1 round
+  Area of Effect: 4-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Static Charge
+@74542 = ~Wand of Static Charge~
+@74543 = ~Upon activating this wand, it allows the wielder to generate a static charge around any creature within the area of effect, dealing %magnitude%d8 points of electrical damage (save vs. Wand for half). The charge keeps going off once every turn for the duration of the spell.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Static Charge
+  – Produces flame for 1 round
+  Damage: %magnitude%d8 electrical damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Visual range of the wielder
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Recitation
+@74544 = ~Wand of Recitation~
+@74545 = ~This wand, when activated, bestows divine blessing upon the wielder and <PRO_HISHER> allies while sowing confusion and weakness among <PRO_HISHER> enemies. The wielder's allies gain a +2 bonus to their attack rolls and Saving Throws, and the priest's enemies receive a -2 penalty to the same. Recitation does not nullify a Prayer spell—the two can be cast in tandem, and the effects are cumulative.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Recitation
+  – Allies
+    – +2 bonus to THAC0
+    – +2 bonus to Saving Throws
+  – Enemies
+    – -2 penalty to THAC0
+    – -2 penalty to Saving Throws
+  Duration: %duration%
+  Area of Effect: 25-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Blood Rage
+@74546 = ~Wand of Blood Rage~
+@74547 = ~Upon targeting an ally and activating this wand, the target of this spell goes berserk, attacking the nearest creature until that creature is dead, then moving on to the next target. While under Blood Rage, the target is immune to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, and related effects. In addition, the target gains +2 to hit, +3 to damage, +2 to Strength, +10 to maximum Hit Points, and +2 to <PRO_HISHER> movement rate. The spell has several disadvantages, however: The Hit Points of the target are masked for the duration of the spell, and the target cannot benefit from any effect that heals Hit Points. At the end of the spell's duration, the target becomes fatigued and <PRO_HISHER> Strength drops to 3 for 2 turns. Blood Rage cannot affect—and cannot be cast by—creatures of lawful alignment.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Blood Rage
+  – Berserk
+    – Immunity to charm, sleep, fear, hold, stunning, confusion, emotion, symbol spells, etc.
+    – +2 bonus to THAC0
+    – +2 bonus to Strength
+    – +2 bonus to Movement rate
+    – +3 bonus to damage
+    – +10 Hit Points
+    – Hit Points of the target are masked
+    – Cannot be healed
+  – Upon spell expiration:
+    – Fatigued after expiration
+    – Strength drops to 3 for 2 turns.
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cloud of Pestilence
+@74548 = ~Wand of Cloud of Pestilence~
+@74549 = ~With activating this wand, the targeted area transforms the air in a 12-ft. radius into sickening, grayish mists. The wielder and non-living creatures are immune to the effects of the cloud. For every round of exposure to the disease-ridden air, a creature must save vs. Breath or suffer 3 points of magic damage, blindness, and the loss of 3 points of Strength and Dexterity. The blindness and ability score penalties last 1 turn. Cloud of Pestilence can only be cast by evil-aligned characters.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Cloud of Pestilence
+  – Sickening, grayish mists
+  – Blindness
+  Damage:
+  – 3 magic damage per round
+  – 3 points of Strength and Dexterity damage per round
+  Range: Sight
+  Duration: 4 rounds
+  Area of Effect: 12-ft. radius
+  Saving Throw: Save vs. Breath negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Unfailing Endurance
+@74550 = ~Wand of Unfailing Endurance~
+@74551 = ~Upon activation, this wand restores the stamina of the creature touched, eliminating any fatigue.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Unfailing Endurance
+  – Eliminates fatigue
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Star Metal Cudgel
+@74552 = ~Wand of Star Metal Cudgel~
+@74553 = ~Once activated, this wand creates a meteoric iron magical club that deals 1d6+2 points of crushing damage, confers a +2 bonus to attack rolls, and is treated as a +4 weapon for purposes of what it can hit. Strength, proficiency, and specialization bonuses and penalties apply normally. The club deals an additional 2d6 points of crushing damage against unnatural creatures (undead, elementals, golems, outer-planar creatures, etc.).
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Star Metal Cudgel
+  – Conjures +4 magical club
+    – +2 bonus to THAC0
+    – +2 bonus to damage
+    – Additional 2d6 crushing damage vs. unnatural creatures
+  Duration: 3 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Smashing Wave
+@74554 = ~Wand of Smashing Wave~
+@74555 = ~This wand summons a 5-ft. wide wave of water that moves in the direction willed by the wielder, striking all in its path with massive force. The wave deals 4d10 points of crushing damage; in addition, struck creatures may be either stunned (25% chance) or knocked unconscious (5% chance) for 2 rounds. If the creature struck makes a successful Save vs. Breath Weapon, the damage is reduced by half and the creature avoids being stunned or knocked unconscious.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Smashing Wave
+  – Emits a wave of force
+    – Stun (25% chance) 2 rounds
+    – Unconscious (5% chance) 2 rounds
+  Damage: 4d10 crushing damage
+  Range: 100 ft.
+  Duration: Instant
+  Area of Effect: Wave towards target
+  Saving Throw: Save vs. Breath for half damage, no status
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Thorn Spray
+@74556 = ~Wand of Thorn Spray~
+@74557 = ~Upon activation, this wand causes a spray of barbs, spikes, thorns, and spines to spring forth from the wand. The thorn spray covers a 17-ft.-long cone, inflicting 2d10 points of piercing damage to all creatures within the area of effect, or 1d10 points of damage if a Save vs. Death is successful.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Thorn Spray
+  – Sprays thorns in an arc
+  Damage: 2d10 piercing damage
+  Range: 30 ft.
+  Duration: Instant
+  Area of Effect: 17-ft. cone with 90-deg. arc
+  Saving Throw: Save vs. Death for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Wall of Moonlight
+@74558 = ~Wand of Wall of Moonlight~
+@74559 = ~Upon selecting a target, this wand invokes a shimmering tapestry of blue-white force. This wall is intangible, requiring no physical anchor, and can easily be passed through. Evil creatures passing through the wall take 2d10 magic damage; evil undead creatures take 5d10. A creature that has passed through the wall can only take damage from it once.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Wall of Moonlight
+  – Wall of solid moon light
+  Damage:
+  – Evil: 2d10 magic damage
+  – Evil undead: additional 3d10 magic damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 8 ft. long, 2 ft. wide wall
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
