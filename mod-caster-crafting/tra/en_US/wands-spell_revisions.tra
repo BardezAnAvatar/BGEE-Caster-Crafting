@@ -3737,3 +3737,491 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Vitriolic Sphere
+@94070 = ~Wand of Vitriolic Sphere~
+@94071 = ~Once activated, this wand conjures a glowing orb of emerald acid that streaks to the target and explodes in a 10-foot radius. Each creature in the area must make a save vs. breath. On a failed save, a creature takes 10d4 acid damage and 4d4 acid damage at the end of its next 2 rounds. On a successful save, a creature takes half the initial damage and half damage at the end of each round.
+
+STATISTICS:
+
+Charge abilities:
+– Vitriolic Sphere
+  – Acid sphere explodes on target
+  Damage:
+  – 10d4 acid damage
+  – 4d4 acid damage for 2 rounds
+  School: Conjuration
+  Range: Medium
+  Duration: Instant
+  Area of Effect: Target, and anyone within 10'
+  Saving Throw: Save vs. Breath for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection from Elemental Energy
+@94088 = ~Wand of Protection from Elemental Energy~
+@94089 = ~With activating this wand, the recipient receives complete protection from one damage type: acid, cold, fire, or lightning. 100% of the damage from the selected source of energy will be absorbed, and the target creature will become completely immune to the effects of spells based on that element. Multiple castings of this spell are not cumulative, but each time a different damage type can be selected.
+
+STATISTICS:
+
+Charge abilities:
+– Protection from Elemental Energy
+  – Choose 100% damage resistance from list
+    – Acid
+    – Cold
+    – Fire
+    – Lightning
+  School: Abjuration
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+/***************************************
+*   4th Level - Priest - 94500-94999   *
+***************************************/
+//Cure Serious Wounds
+@94500 = ~Wand of Cure Serious Wounds~
+@94501 = ~Upon activating this wand and touching the target, it causes wounds and other injuries to the creature's body to be healed 4d8 + %magnitude% points of damage sustained by the target creature.
+
+STATISTICS:
+
+Charge abilities:
+– Cure Serious Wounds
+  – Heals 4d8+%magnitude% Hit Points
+  – Cures intoxication
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animal Summoning IV
+@94502 = ~Wand of Animal Summoning IV~
+@94503 = ~Upon activation, the wand calls forth %magnitude% leopards, which serve the summoner under any conditions. The summoned animals will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Animal Summoning IV
+  – Summons %magnitude% leopards
+  School: Conjuration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Leopard (4 Hit Dice):
+    STR 16, DEX 18, CON 15, INT 6, WIS 13, CHA 6;  AL Neutral
+    HP 36, AC 5, THAC0 16, Saving Throws 12/16/12/14/16
+    2 Attacks Per Round, 1d6+1 Piercing Damage (Claws & Bite)
+    Combat Abilities:
+    – Pounce: can charge a target if at least 6 feet away. During that round the leopard moves at double speed, attacks with a +2 bonus to hit and damage rolls, but suffers a -2 penalty to AC
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Free Action
+@94504 = ~Wand of Free Action~
+@94505 = ~By activating this wand and choosing a target, the recipient becomes immune to everything, magical or otherwise, that limits his mobility in any way. This includes (but is not limited to) Entangle, Grease, Web, Hold, Slow, and Stun. This effect will last for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Free Action
+  – Immune to effects hampering movement
+  School: Abjuration
+  Sphere: Charm
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Neutralize Poison
+@94506 = ~Wand of Neutralize Poison~
+@94507 = ~Once this wand is activated, it removes all toxins from the body, both natural and magical in nature. When this spell is cast upon a poisoned individual, it immediately neutralizes any poison. In addition, for the duration of the spell, the recipient is immune to any poison it is exposed to, and spells like Poison and Cloudkill won't affect the protected creature.
+
+STATISTICS:
+
+Charge abilities:
+– Neutralize Poison
+  – Cures poisons
+  – 100% poison resistance
+  School: Necromancy
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mental Domination
+@94508 = ~Wand of Mental Domination~
+@94509 = ~Upon targeting a creature with this wand, the subject must make a save vs. wand at -2 in order to avoid the wielder entering his mind. The effects of this spell are similar to the 5th level wizard spell Domination, with a few minor differences. Most notably, this spell gives the wielder no access to the subject's thoughts, memory, or sensory apparatus. The wielder simply is able to command the subject to perform certain tasks or functions during the spell duration. To control the subject, the wielder must be within range and must be able to see the subject. This control will last until dispelled or for the duration of the spell.
+
+STATISTICS:
+
+Charge abilities:
+– Mental Domination
+  – Charms target
+  School: Enchantment
+  Sphere: Thought
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Defensive Harmony
+@94510 = ~Wand of Defensive Harmony~
+@94511 = ~Once activated, this wand grants affected creatures a defensive bonus by enhancing the coordination of their attacks and defenses. This allows a group of creatures to act as a cohesive unit for a single battle or encounter. The effect is always centered on the wielder, but affects all those within a 10 foot radius. The affected creatures can move outside of this radius after the spell is cast and still enjoy the benefits of the Harmony. While the spell is in effect, each affected creature gains a +4 bonus to her armor class. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Defensive Harmony
+  – +4 bonus to Armor Class
+  School: Enchantment
+  Sphere: Law
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 10' radius around caster
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Electricity
+@94512 = ~Wand of Protection From Electricity~
+@94513 = ~Upon activating this wand and touching it to a target, the recipient receives complete protection from all electrical-based attacks†, whether magical or non-magical in origin; 100% of the damage from these attacks will be absorbed. Multiple castings of this spell are not cumulative.
+
+†: A blue dragon's breath, Lightning Bolt, Shocking Grasp, Glyph of Warding, Call Lightning, Chain Lightning and so on.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Electricity
+  – +100% bonus to resist electricity
+  School: Abjuration
+  Sphere: Elemental, Protection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Evil, 10' Radius -> Magic Circle against Evil
+@94514 = ~Wand of Magic Circle against Evil~
+@94515 = ~Once this wand is activated, it causes all friendly creatures within the area of effect to be affected by the spell Protection from Evil. Creatures leaving the area are still subject to the spell's effect; those entering the area after the casting is completed are not.
+
+STATISTICS:
+
+Charge abilities:
+– Magic Circle against Evil
+  – +2 AC bonus against attacks from Evil creatures
+  – +2 Saving Throw bonus against attacks from Evil creatures
+  – Protected from summoned demons
+  School: Abjuration
+  Sphere: Protection
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: 30' radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Death Ward
+@94516 = ~Wand of Death Ward~
+@94517 = ~Upon activation and touching this wand to a target, the recipient is immune to all forms of death magic†. This effect will last for the duration of the spell or until dispelled.
+
+†: This includes, but is not limited to, Death Spell, Disintegrate, Power Word Kill, Finger of Death, and Wail of the Banshee.
+
+STATISTICS:
+
+Charge abilities:
+– Death Ward
+  – Protected from death magic
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Call Woodland Beings: 7th - 10th
+@94520 = ~Wand of Call Woodland Beings~
+@94521 = ~Upon activation, the wand calls forth %magnitude% hamadryad(s), which will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Call Woodland Beings
+  – Summons %magnitude% hamadryad(s)
+  School: Conjuration
+  Sphere: Animal
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hamadryad (4 Hit Dice):
+    STR 10, DEX 18, CON 12, INT 14, WIS 14, CHA 18; AL Neutral
+    HP 32, AC 3, THAC0 14, Saving Throws 12/16/12/14/16
+    2 Attacks Per Round, 1d6+1 missile (Short Bow & arrows +1)
+    Special Qualities:
+    – Magic Resistance 75%
+    Memorized Spells:
+    – 1º Cure Light Wounds (x2), Entangle (x2), Shillelagh, Doom
+    – 2º Barkskin, Charm Person or Animal (x2), Resist Elements, Slow Poison
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Call Woodland Beings: 7th - 10th
+@94522 = ~Wand of Call Woodland Beings~
+@94523 = ~Upon activation, the wand calls a number of magical woodland beings, which will aid the caster by whatever means they possess, staying until the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Call Woodland Beings
+  – Summons 2 hamadryad(s)
+  – Summons 1 nymph
+  School: Conjuration
+  Sphere: Animal
+  Range: Medium
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Hamadryad (4 Hit Dice):
+    STR 10, DEX 18, CON 12, INT 14, WIS 14, CHA 18; AL Neutral
+    HP 32, AC 3, THAC0 14, Saving Throws 12/16/12/14/16
+    2 Attacks Per Round, 1d6+1 missile (Short Bow & arrows +1)
+    Special Qualities:
+    – Magic Resistance 75%
+    Memorized Spells:
+    – 1º Cure Light Wounds (x2), Entangle (x2), Shillelagh, Doom
+    – 2º Barkskin, Charm Person or Animal (x2), Resist Elements, Slow Poison
+  – Nymph (7 Hit Dice):
+    STR 10, DEX 17, CON 12, INT 16, WIS 17, CHA 19; AL Neutral Good
+    HP 42, AC 3, THAC0 15, Saving Throws 12/10/12/14/10
+    1 Attack Per Round, 1d4 Crushing (Touch +0)
+    Special Qualities:
+    – Magic Resistance 50%
+    Memorized Spells:
+    – 1º Cure Light Wounds (x2), Entangle (x2), Shillelagh, Doom
+    – 2º Barkskin, Charm Person or Animal (x2), Resist Elements, Slow Poison
+    – 3º Call Lightning, Hold Person or Animal, Summon Insects
+    – 4º Animal Summoning IV
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Poison
+@94524 = ~Wand of Poison~
+@94525 = ~Upon activation, this wand can poison victims who fail their Saving Throw vs. Poison. Those who make their Saving Throws are unaffected. The victim suffers %magnitude%d%magnitude2%+1 poison damage every %magnutude3% seconds
+
+STATISTICS:
+
+Charge abilities:
+– Poison
+  – Poisons target creature
+  Damage: %magnitude%d%magnitude2%+1 poison damage every %magnutude3% seconds
+  School: Necromancy
+  Sphere: Healing
+  Range: Short
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Poison negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Holy Power
+@94526 = ~Wand of Holy Power~
+@94527 = ~Once activated, this wand imbues the wielder with the strength and skill of a fighter of the same level. The wielder's strength is set to 18/00, even if it is normally higher, his THAC0 becomes that of a fighter of the same level, and he gains %caster_level% temporary hit points. The wielder gains extra attacks as a fighter of the same level, thus an extra half an attack per round at 7th level and another half attack per round at 13th level. This lasts for the duration of the spell or until successfully dispelled. Multiple castings of this spell are not cumulative.
+
+Note: this spell does not give any extra attacks to multiclassed or dual-classed fighter/clerics or ranger/clerics, as they normally gain additional attacks per round due to their fighter or ranger levels.
+
+STATISTICS:
+
+Charge abilities:
+– Holy Power
+  – Take form of Fighter of level %caster_level%
+  – %caster_level% temporary Hit Points
+  School: Evocation
+  Sphere: Combat
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Negative Plane Protection
+@94528 = ~Wand of Negative Plane Protection~
+@94529 = ~Once activated, this wand imbues the wielder with the strength and skill of a fighter of the same level. The wielder's strength is set to 18/00, even if it is normally higher, his THAC0 becomes that of a fighter of the same level, and he gains %caster_level% temporary hit points. The wielder gains extra attacks as a fighter of the same level, thus an extra half an attack per round at 7th level and another half attack per round at 13th level. This lasts for the duration of the spell or until successfully dispelled. Multiple castings of this spell are not cumulative.
+
+Note: this spell does not give any extra attacks to multiclassed or dual-classed fighter/clerics or ranger/clerics, as they normally gain additional attacks per round due to their fighter or ranger levels.
+
+STATISTICS:
+
+Charge abilities:
+– Negative Plane Protection
+  – Take form of Fighter of level %caster_level%
+  – %caster_level% temporary Hit Points
+  School: Evocation
+  Sphere: Combat
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Serious Wounds
+@94530 = ~Wand of Cause Serious Wounds~
+@94531 = ~When this wand successfully touches the target, the spell inflicts 4d8 + %magnitude% points of damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does not affect this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Serious Wounds
+  – Causes magical wounds
+  – +4 bonus to THAC0
+  Damage: 4d8 + %magnitude% magic damage
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cloak of Fear
+@94532 = ~Wand of Cloak of Fear~
+@94533 = ~This wand empowers the wielder to radiate a personal aura of fear out to a 6' radius. All enemies not immune to fear within this aura suffer -2 penalty to attack rolls, and each round they must roll a successful saving throw vs. wand or run away in panic for 1 round. Party members are immune to the effects of the aura.
+
+STATISTICS:
+
+Charge abilities:
+– Cloak of Fear
+  – -2 penalty to THAC0
+  – Panic
+  School: Conjuration
+  Sphere: Charm
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 6' radius around wielder
+  Saving Throw: Save vs. Wand negates panic
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lesser Restoration
+@94534 = ~Wand of Lesser Restoration~
+@94535 = ~With this wand, the life energy level of the recipient is raised. This reverses any previous life energy level drain of the creature by a force or monster.
+
+The casting of this spell is very draining on the wielder, leaving <PRO_HIMHER> physically and mentally exhausted. For 5 rounds after the spell is cast, the priest will suffer a -2 penalty to hit, damage, armor class, and casting speed factor.
+
+STATISTICS:
+
+Charge abilities:
+– Lesser Restoration
+  – Restores life energy of recipient
+  – Causes fatigue in wielder
+    – -2 penalty to THAC0
+    – -2 penalty to damage
+    – -2 penalty to armor class
+    – -2 penalty to casting speed factor
+  School: Necromancy
+  Sphere: Necromantic
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -2661,3 +2661,200 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   4th Level - Priest - 74500-74999   *
+***************************************/
+//Animal Summoning I
+@74502 = ~Wand of Animal Summoning I~
+@74503 = ~Upon activting this wand, it calls between 2 and 3 animals that have 4 Hit Dice or less. The animals appearing are randomly determined. They will remain under the wielder's control until slain or the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Animal Summoning I
+  – Summons animals
+  Range: Sight
+  Duration: 1 hour
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Free Action
+@74504 = ~Wand of Free Action~
+@74505 = ~By activating this wand and choosing a target, it gives the affected creature an immunity to magic that impedes movement (such as the Grease, Web, or Slow spells) and negates the effects of paralysis, hold, and stun spells. The recipient of the spell can still be hasted and receive beneficial movement effects such as those granted by the boots of speed.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Free Action
+  – Immune to effects hampering movement
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Neutralize Poison
+@74506 = ~Wand of Neutralize Poison~
+@74507 = ~Once this wand is activated, it immediately neutralizes any poison and restores 10 lost Hit Points.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Neutralize Poison
+  – Cures poisons
+  – Heals 10 Hit Points
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mental Domination
+@74508 = ~Wand of Mental Domination~
+@74509 = ~Upon targeting a creature with this wand, the subject must make a Save vs. Spell with a -2 penalty in order to prevent the wielder from entering <PRO_HISHER> mind. Elves and half-elves have no innate resistance to this spell. The wielder can force the subject into combat, but the subject's attack rolls suffer a -2 penalty. The wielder cannot force the subject to cast spells or use any innate magical or spell-like abilities.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Mental Domination
+  – Charms target
+  – -2 penalty to THAC0
+  – Disables spellcasting in target
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Defensive Harmony
+@74510 = ~Wand of Defensive Harmony~
+@74511 = ~Once activated, this wand allows a group of creatures to act as a single unit for a single battle or encounter, enhancing the coordination of their attacks and tactics. This effect is always centered on the caster but affects all those within a 15-ft. radius. The affected can move outside of this area after the spell is cast and still enjoy the benefits of harmony. While the spell is in effect, each affected creature gains a +4 bonus to their Armor Class. This lasts for 6 rounds or until successfully dispelled.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Defensive Harmony
+  – +4 bonus to Armor Class
+  Range: Sight
+  Duration: 6 rounds
+  Area of Effect: 15-ft. radius around caster
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Evil, 10' Radius
+@74514 = ~Wand of Protection From Evil, 10' Radius~
+@74515 = ~Once this wand is activated, all allied creatures within a 15-ft. radius are affected individually by Protection From Evil. It creates a magical barrier around the recipients at a distance of one foot. The barrier moves with the recipient and has two major effects: First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Second, summoned demons cannot target protected creatures.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Evil, 10' Radius
+  – +2 AC bonus against attacks from Evil creatures
+  – +2 Saving Throw bonus against attacks from Evil creatures
+  – Protected from summoned demons
+  – Immune to Charm effects
+  Duration: %duration%
+  Area of Effect: 15-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Poison
+@74524 = ~Wand of Poison~
+@74525 = ~Upon activation, this wand can instantly poison a touched target unless it makes a successful Save vs. Poison. The poison deals 20 points of damage over 20 seconds and then dissipates from the target's body. Poison can only be cast by evil-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Poison
+  – Poisons target creature
+  Damage: 1 poison damage per second
+  Range:Touch
+  Duration: 20 seconds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Poison negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Serious Wounds
+@74530 = ~Wand of Cause Serious Wounds~
+@74531 = ~When this wand successfully touches the target, the spell deals 17 points of damage (save vs. Spell for half) to the creature's body. This spell has no effect on undead, constructs, or extraplanar creatures. It cannot be used by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Serious Wounds
+  – Causes magical wounds
+  Damage: 17 magic damage
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cloak of Fear
+@74532 = ~Wand of Cloak of Fear~
+@74533 = ~This wand bestows the wielder with an aura of fear in a 5-ft. radius. All creatures that enter the cloak's area of effect must make a Save vs. Wand or flee in panic for 3 rounds. The aura does not affect undead creatures.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Cloak of Fear
+  – Aura of fear around wielder
+  Duration: 3 rounds
+  Area of Effect: 5-ft. radius around wielder
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -3339,3 +3339,355 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   4th Level - Priest - 64500-64999   *
+***************************************/
+//Cure Serious Wounds
+@64500 = ~Wand of Cure Serious Wounds~
+@64501 = ~Upon activating this wand and touching the target, it heals 17 points of wound or other injury damage to the creature's body and cures intoxication. This healing cannot affect noncorporeal, nonliving, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Serious Wounds
+  – Heals 17 Hit Points
+  – Cures intoxication
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Animal Summoning I
+@64502 = ~Wand of Animal Summoning I~
+@64503 = ~Upon activting this wand, it calls between 2 and 3 animals that have 4 Hit Dice or less. The animals appearing are randomly determined. They will remain under the wielder's control until slain or the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Animal Summoning I
+  – Summons animals
+  Range: 30 ft.
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Free Action
+@64504 = ~Wand of Free Action~
+@64505 = ~By activating this wand and choosing a target, the recipient becomes immune to anything that affects <PRO_HISHER> movement. This includes the effects of Web, Hold Person, Grease, and Entangle.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Free Action
+  – Immune to effects altering movement
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Neutralize Poison
+@64506 = ~Wand of Neutralize Poison~
+@64507 = ~Once this wand is activated, this wand removes all toxins from the body, both natural and magical in nature. When this spell is cast upon a poisoned individual, it immediately neutralizes any poison and restores 10 lost Hit Points. This spell will also cure any diseases that the target might be suffering from, as well as blindness and deafness.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Neutralize Poison
+  – Cures poisons
+  – Cures diseases
+  – Cures deafness
+  – Cures blindness
+  – Heals 10 Hit Points
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mental Domination
+@64508 = ~Wand of Mental Domination~
+@64509 = ~Upon targeting a creature with this wand, the subject must make a Saving Throw vs. Wand with a -2 penalty in order to avoid the wielder entering <PRO_HISHER> mind. The effects of this spell are similar to those of the spell Domination, with a few minor differences. Most notably, this spell gives the wielder no access to the subject's thoughts, memory, or sensory apparatus. The wielder simply is able to command the subject to perform certain tasks or functions during the spell's duration. To control the subject, the wielder must be within range and must be able to see the subject. This control will last until dispelled or for the duration of the spell.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Mental Domination
+  – Charms target
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Defensive Harmony
+@64510 = ~Wand of Defensive Harmony~
+@64511 = ~Once activated, this wand grants affected creatures a defensive bonus by bestowing an enchanted coordination on their attacks and defenses. This allows a group of creatures to act as a single unit for a single battle or encounter. The effect is always centered on the wielder, but affects all allies within a 15-ft. radius. Those affected can move outside of this area after the spell is cast and still enjoy the benefits of the harmony. While the spell is in effect, each affected creature gains a +2 bonus to <PRO_HISHER> Armor Class. This lasts for 6 rounds or until dispelled.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Defensive Harmony
+  – +2 bonus to Armor Class
+  Range: Sight
+  Duration: 6 rounds
+  Area of Effect: 15-ft. radius around caster
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Electricity
+@64512 = ~Wand of Protection From Electricity~
+@64513 = ~Upon activating this wand and touching it to a target, it confers complete invulnerability to electrical attacks†. The protection will last for the duration of the spell or until successfully dispelled.
+
+†: A blue dragon's breath, Lightning Bolt, Shocking Grasp, and so on.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Electricity
+  – +100% bonus to resist electricity
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Evil, 10' Radius
+@64514 = ~Wand of Protection From Evil, 10' Radius~
+@64515 = ~Once this wand is activated, all allied creatures within a 15-ft. radius are affected individually by Protection From Evil. It creates a magical barrier around the recipients at a distance of one foot. The barrier moves with the recipient and has two major effects: First, all attacks made by evil or evilly enchanted creatures against the protected creature receive a penalty of -2 to each attack roll. Second, summoned demons cannot target protected creatures.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Evil, 10' Radius
+  – +2 AC bonus against attacks from Evil creatures
+  – +2 Saving Throw bonus against attacks from Evil creatures
+  – Protected from summoned demons
+  Duration: %duration%
+  Area of Effect: 15-ft. radius around wielder
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Death Ward
+@64516 = ~Wand of Death Ward~
+@64517 = ~Upon activation and touching this wand to a target, it protects the target from all forms of death magic† for the duration of the spell.
+
+†: This includes, but is not limited to, Disintegrate; Power Word, Kill; Death Spell; and Finger of Death.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Death Ward
+  – Protected from death magic
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Call Woodland Beings
+@64518 = ~Wand of Call Woodland Beings~
+@64519 = ~Once activated, this wand summons forth a nymph to assist the party. The nymph has several priest spells at her disposal and will use them in the best interests of the party (these include Mental Domination, Confusion, and Mass Cure). She will remain under the caster's control until slain or the spell's duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Call Woodland Beings
+  – Summons a nymph
+  Range: 25 ft.
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Poison
+@64524 = ~Wand of Poison~
+@64525 = ~Upon activation, this wand can poison victims who fail their Saving Throw vs. Poison. Those who make their Saving Throws are unaffected. The victim suffers %magnitude%d8+%magnitude2% poison damage
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Poison
+  – Poisons target creature
+  Damage: %magnitude%d8+%magnitude2% poison damage per round
+  Range: 15 ft.
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Poison negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Holy Power
+@64526 = ~Wand of Holy Power~
+@64527 = ~Once activated, this wand imbues the wielder with the strength and skill of a Fighter of the same level. The wielder's Strength score is set to 18/00—even if it is normally higher—<PRO_HISHER> THAC0 becomes that of a Fighter of the same level, and <PRO_HESHE> gains %caster_level% temporary Hit Points. This will last for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Holy Power
+  – Take form of Fighter of level %caster_level%
+  – %caster_level% temporary Hit Points
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Negative Plane Protection
+@64528 = ~Wand of Negative Plane Protection~
+@64529 = ~This wand will grant the touched creature partial protection from undead monsters with Negative Energy Plane connections (such as vampires), and certain weapons and spells that drain energy levels. The Negative Plane Protection spell opens a channel to the Positive Energy Plane, possibly x the effects of the negative energy attack. A protected creature struck by a negative energy attack is protected against any form of level draining for the duration of the spell. The protected creature suffers only normal Hit Point damage from the attack and does not suffer any drain of experience. This spell cannot be cast on the Negative Energy Plane.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Negative Plane Protection
+  – Take form of Fighter of level %caster_level%
+  – %caster_level% temporary Hit Points
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cause Serious Wounds
+@64530 = ~Wand of Cause Serious Wounds~
+@64531 = ~When this wand successfully touches the target, the spell inflicts 17 points of damage upon them. The next attack that the wielder makes will inflict this effect, however, <PRO_HESHE> only has 2 rounds to make the attack before the spell fizzles. If the wielder misses the target creature, the spell is wasted. There is no Saving Throw.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Serious Wounds
+  – Causes magical wounds
+  – +2 bonus to THAC0
+  Damage: 17 magic damage
+  Duration: 2 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cloak of Fear
+@64532 = ~Wand of Cloak of Fear~
+@64533 = ~This wand radiates an aura of fear out to a 15-ft. radius from the wielder. All other characters and creatures within this aura must roll a successful Save vs. Wand or run away in panic for 4 rounds. Party members are immune to the effects, although the aura of fear may still disturb them.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Cloak of Fear
+  – Aura of fear around wielder
+  Duration: Instant
+  Area of Effect: 15-ft. radius around wielder
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lesser Restoration
+@64534 = ~Wand of Lesser Restoration~
+@64535 = ~With this wand, the life energy level of the recipient is raised. This reverses any previous life energy level drain of the creature by a force or monster. The casting of this spell is very draining on the wielder and <PRO_HESHE> will likely require rest immediately after the casting, as it will cause days' worth of fatigue almost instantaneously. This spell has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Lesser Restoration
+  – Restores life energy of recipient
+  – Causes fatigue in wielder
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
