@@ -214,7 +214,6 @@ Weight: 1~
 @91029 = ~This wand will emit a gold beam of energy at its targets, causing a comatose slumber to come upon one or more creatures. Creatures in the area of effect must make a saving throw vs. Wand or fall asleep. Any further attempts to harm the targets will waken them. Opponents with more Hit Dice/levels than the caster are unaffected by this spell. Elves and half-elves are particularly resistant to sleep effects, while the undead and certain other creatures such as dragons and elementals are completely immune to magically induced sleep.
 
 STATISTICS:
-(Enchantment)
 
 Charge abilities:
 – Sleep
@@ -646,7 +645,6 @@ Weight: 1~
 @91086 = ~Wand of True Strike~
 @91087 = ~This wand will grant otherworldly sight, resulting in preternatural accuracy for a short period. While the spell is in effect attack rolls are made with a +4 perception bonus and the chance to score critical hits is increased by 5%.
 
-
 STATISTICS:
 
 Charge abilities:
@@ -719,7 +717,6 @@ Weight: 1~
 @91505 = ~Upon activation, this wand causes wounds and other injuries to the creature's body to be healed. The wielder can restore 1d8 + %magnitude% points of damage sustained by the target creature.
 
 STATISTICS:
-(Necromancy)
 
 Charge abilities:
 – Cure Light Wounds
@@ -1241,6 +1238,7 @@ Weight: 1~
 //Mirror Image
 @92016 = ~Wand of Mirror Image~
 @92017 = ~This wand causes a number of illusory duplicates of the wielder to come into being around <PRO_HIMHER>. The spell creates %magnitude% images. These images do exactly what the wielder does, and since the spell causes a blurring and slight distortion when it is cast, it is impossible for opponents to be certain which are the illusions and which is the actual wielder. When an image is directly struck by a melee or missile attack, magical or otherwise, it disappears, while other existing images remain intact. It is important to note that this will not protect the caster against all attacks, as it is possible for an enemy to choose the real caster amongst all the images. This spell cannot be cast on anyone who is under the effects of a Reflected Image spell, and casting the spell multiple times will not multiply the number of images created.
+
 STATISTICS:
 
 Charge abilities:
@@ -1484,7 +1482,6 @@ Weight: 1~
 @92071 = ~Once activated, this wand creates a ram-like force that can strike with considerable power. The force can be used to open or smash locked, held, or wizard-locked doors, as well as locked boxes or chests, but it does not raise barred gates or similar impediments. If used against a creature, the target suffers 2d6 points of crushing damage, and must save vs. breath to avoid being knocked unconscious for 1 round.
 
 STATISTICS:
-(Divination)
 
 Charge abilities:
 – Battering Ram
@@ -2152,7 +2149,6 @@ Weight: 1~
 @93007 = ~This wand hurls an explosive burst of flame that detonates with a low roar, delivering %magnitude%d6 fire damage. The wielder points the wand and speaks the range (distance and height) at which the fireball is to burst. A streak flashes from the wand and, unless it impacts upon a material body or solid barrier prior to attaining the prescribed range, blossoms into the fireball (an early impact results in an early detonation). Creatures who fail their saving throw vs. breath at -2 suffer full damage from the blast. Those who roll successful saving throws manage to dodge, fall flat, or roll aside, each receiving half damage.
 
 STATISTICS:
-(Evocation)
 
 Charge abilities:
 – Fireball
@@ -3006,7 +3002,6 @@ Weight: 1~
 @93543 = ~Touching this wand to the target and activating it, the wielder can cure almost any disease with this spell. The cure is permanent, but this does not grant the recipient of the spell immunity from further afflictions. Blindness and deafness are also cured with this spell, but some powerful magically created diseases may not be curable by this spell.
 
 STATISTICS:
-(Abjuration)
 
 Charge abilities:
 – Cure Disease
@@ -3106,7 +3101,6 @@ Weight: 1~
 @93563 = ~This wand transforms the ground in a 20-foot radius centered on a point within range twists and sprouts hard spikes and thorns. Any creature will suffer 1d4 points of piercing damage each round that they remain within the affected area. The spikes can damage the victim's legs, so that even once they are free of the spike growth their movement rate is halved for 3 rounds unless a successful save vs. breath is made. Those failing the save also suffer 1 point of bleeding damage each round for 3 rounds. Incorporeal and flying creatures are unaffected by this spell, as are elementals and exceptionally large creatures who suffer little to no distress from the small spikes.
 
 STATISTICS:
-(Alteration)
 
 Charge abilities:
 – Spike Growth
@@ -3255,7 +3249,6 @@ Weight: 1~
 @94007 = ~This wand summons great magical hailstones which pound down for 4 rounds within a 30 foot radius of a point selected by the wielder. Creatures within the area of effect have their movement speed reduced by 50%, and receive 2d8 points of cold damage for each round they remain inside the storm.
 
 STATISTICS:
-(Evocation)
 
 Charge abilities:
 – Ice Storm
@@ -4158,7 +4151,6 @@ Weight: 1~
 @94531 = ~When this wand successfully touches the target, the spell inflicts 4d8 + %magnitude% points of damage upon the target. The spell expires once the wielder makes a successful melee attack or after 1 turn has passed. The wielder gains a +4 bonus to hit the target. Magic resistance does not affect this spell.
 
 STATISTICS:
-(Necromancy)
 
 Charge abilities:
 – Cause Serious Wounds
