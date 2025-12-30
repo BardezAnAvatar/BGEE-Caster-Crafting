@@ -1397,3 +1397,294 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+/***************************************
+*   4th Level - Arcane - 84000-84499   *
+***************************************/
+//Ice Storm
+@84006 = ~Wand of Ice Storm~
+@84007 = ~This wand summons great hail stones pound down for four rounds in a 30-ft. diameter area and inflict 2d10 points of cold damage to any creatures within the area of effect. Also, anyone that remains within the area of effect takes 2d10 cold damage each round for 4 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Ice Storm
+  – Conjures a storm of ice
+  Damage: 2d10 cold damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning II
+@84012 = ~Wand of Monster Summoning II~
+@84013 = ~This wand summons a horde of monsters, each of which are worth between 35 and 95 experience points. The monsters appearing are randomly determined and ignore the summoning limit. They will remain under the wielder's control until slain or the spell duration expires. The monsters summoned are worth a total of around 40 XP per caster level.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning II
+  – Summons monsters
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Contagion
+@84020 = ~Wand of Contagion~
+@84021 = ~Once activated, this wand causes a major disease and weakness in a creature. The afflicted individual is immediately stricken with painful and distracting symptoms: boils, blotches, lesions, seeping abscesses, and so on. Strength, Dexterity, and Charisma scores are reduced by 6. The afflicted character is also Slowed. The creature can negate these effects with a Save vs. Death at -8. These effects persist until the character receives a Cure Disease spell.
+
+Creatures lower level than %caster_level% have no save against this spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Contagion
+  – -6 penalty to Strength
+  – -6 penalty to Dexterity
+  – -6 penalty to Charisma
+  – Slowed
+  Range: 90 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Death (-8 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Polymorph Other
+@84030 = ~Wand of Polymorph Other~
+@84031 = ~Once activated, this wand permanently alters the form of the creature affected. Mental attributes are not affected, and the target does not receive the special abilities of the new form. However all physical attributes are changed to adhere to the new form. This is a specific version of the spell in that the recipient will be transformed into a squirrel unless a Save vs. Petrification/Polymorph is made successfully. The transformation is instant and permanent until a Dispel Magic is cast successfully upon the affected creature. The natural attacks of the new form also become available and all clothes and equipment that the target was wearing will mold into the new form.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Polymorph Other
+  – Turns target into a squirrel
+  Range: 40 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Petrification negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Polymorph Self
+@84032 = ~Wand of Polymorph Self~
+@84033 = ~Upon activating this wand, the wielder can transform into any of several new forms (at any time and as many times as <PRO_HESHE> wishes). The wielder gains the natural attacks of the new form in some cases and may use weapons in others. The mental attributes of the wielder remain the same, but all physical attributes are obtained from the new form. Also, any natural protections that the new form offers are conferred to the wielder, such as the resistance to missile and crushing weapons possessed by the slime form.
+
+The wielder also gains the physical mode of locomotion and breathing as well. This spell does not give the new form's other abilities, such as special attacks and magic, nor does it run the risk of the wielder changing personality and mentality.
+
+The possible forms given by Polymorph Self are:
+– Flind: wields a magical halberd (+1 fire damage and strikes as a +3 weapon)
+– Mustard Jelly: capable of poisoning or slowing opponents (if they fail a Save vs. Death when hit)
+– Ogre: Capable of causing massive damage
+– Spider: Causes poison damage when it hits an opponent
+
+In addition, the wielder may choose the form of brown bear, black bear, wolf, boring beetle, polar bear, or winter wolf.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Polymorph Self
+  – Gain ability to polymorph self
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Wall of Fire
+@84072 = ~Wand of Wall of Fire~
+@84073 = ~Once activated, this wand creates a wall of raging flames. Any creature who attempts to pass through the wall takes %magnitude%d4 fire damage. There is no Saving Throw, since the flames cannot be dodged except by going around the wall. A creature that has passed through a Wall of Fire cannot take damage from passing through a Wall of Fire again for 1 round.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Wall of Fire
+  – Produces a wall of flame
+  Damage: %magnitude%d4 fire damage
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 8 ft. long, 2 ft. wide wall
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Phantasmal Killer
+@84074 = ~Wand of Phantasmal Killer~
+@84075 = ~By activating this wand, the wielder causes the target to be struck by an embodiment of its worst fears. If the target was panicking when it got hit by the spell, it must Save vs. Death at -4 or die instantly. If it makes the save or it wasn't panicking, it takes 8d6 magic damage. A Death Ward will prevent the instant death but not the damage. Phantasmal Killer has no effect on undead, constructs, or oozes.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Phantasmal Killer
+  – Strikes target with embodiment of its worst fears
+  Damage:
+  – 8d6 magic damage
+  – Death if panicked
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Death (at -4) to avoid death effect
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ghoulish Feast
+@84076 = ~Wand of Ghoulish Feast~
+@84077 = ~With activation of this wand, it lets the wielder summon undead by killing other creatures. During the duration of this spell, whenever the wielder kills a creature, a ghoul rises to feast upon the remains. That ghoul will serve the wielder for 8 hours. A ghoul will only be summoned if the wielder dealt the killing damage to the creature; if the caster damaged the creature but another party member finished it off, the caster will not get a ghoul.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Ghoulish Feast
+  – Summons a ghoul for every creature killed by wielder
+  Duration: 1 hour
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Backstab Sequencer
+@84078 = ~Wand of Backstab Sequencer~
+@84079 = ~This wand allows the wielder to store a single spell of 2nd-level or lower. The next time the wielder backstabs a creature, that spell is released on the creature. The released spell is cast on the creature a number of times equal to the wielder's backstab multiplier. If the wielder does not have a backstab multiplier, <PRO_HESHE> gains a x2 multipier until the spell is released.
+
+STATISTICS:
+(Illusion)
+
+Charge abilities:
+– Backstab Sequencer
+  – Stores a spell to release multiple times on successful backstab
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Redirect Spell
+@84080 = ~Wand of Redirect Spell~
+@84081 = ~This wand changes the target of a spell another creature is casting to a target of one's choice. In using this spell, the wielder selects two creatures, the first of whom must be casting a spell. That creature's spell is then altered to target the second creature. The redirected spell is cast instantly, preventing the creature from stopping the casting.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Redirect Spell
+  – Redirects a spell to a different target
+  Duration: Instant
+  Area of Effect: 2 creatures
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Copy Spell
+@84082 = ~Wand of Copy Spell~
+@84083 = ~This wand allows the wielder to cast a copy of a spell another creature is casting. In using this spell, the wielder selects two creatures, the first of whom must be casting a spell. That spell is then replicated by the wielder, who casts the spell instantly on the second creature. Copy Spell can be used either to double an ally's spell or to turn an enemy's spells against them.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Copy Spell
+  – Copies a spell to a different target
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 2 creatures
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Linked Portals
+@84084 = ~Wand of Linked Portals~
+@84085 = ~Upon activation, this wand creates two portals that creatures can teleport between. In casting this spell, the wielder chooses two points anywhere in the current area. A portal is created at each location. Any creature that comes within 5 feet of a portal is sucked in and instantly appears at the other portal. That creature won't teleport back unless it leaves and re-enters the area of the portal. Creatures immune to pushing and pulling effects cannot use the portals. Up to five pairs of portals can be active in one area at a time.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Linked Portals
+  – Conjures two portals that teleport nearby creatures to the linked portal
+  Range: 10000 ft.
+  Duration: 1 turn
+  Area of Effect: 5-ft. radius for each portal
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Vampiric Link
+@84086 = ~Wand of Vampiric Link~
+@84087 = ~This wand lets the caster absorb any life energy the target loses. For the duration, whenever the target creature takes damage, the caster regains that many Hit Points. The caster can cast Vampiric Link on allies or enemies, but not on <PRO_HIMHER>self. A single caster can establish Vampiric Links on multiple creatures, but no one creature can be affected by more than one Vampiric Link at once. Undead and constructs cannot be the target of this spell, but they can still cast it on other creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Vampiric Link
+  – Heals wielder an amount equal to damage inflicted on linked creature
+  Range: Sight
+  Duration: 1 hour
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

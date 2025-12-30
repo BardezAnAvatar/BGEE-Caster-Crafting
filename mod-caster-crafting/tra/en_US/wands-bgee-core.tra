@@ -2767,3 +2767,575 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+/***************************************
+*   4th Level - Arcane - 64000-64499   *
+***************************************/
+//Confusion
+@64000 = ~Wand of Confusion~
+@64001 = ~Once activated, this wand causes confusion in one or more enemy creatures within the area, creating indecision and the inability to take effective action. All enemy creatures within the area of effect are allowed Saving Throw vs. Wand with a -2 penalty. Those successfully saving are unaffected by the spell, whereas those who fail their Saving Throws will either go berserk, stand confused, or wander about for the duration of the spell. Wandering creatures move as far from the wielder as possible, according to their most typical mode of movement (characters walk, fish swim, bats fly, etc.). Any confused creature that is attacked perceives the attacker as an enemy and acts according to its basic nature.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Confusion
+  – go berserk, stand confused, or wander about
+  Range: 35 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (-2 penalty) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dimension Door
+@64002 = ~Wand of Dimension Door~
+@64003 = ~This wand transports the wielder to any point within the current area. When the spell is cast, a dimensional portal opens up in front of the wielder, who immediately steps through it. Upon passing through the portal, the wielder finds <PRO_HIMHER>self at <PRO_HISHER> chosen destination.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Dimension Door
+  – Target steps through a doorway to a new, nearby location
+  Range: Sight
+  Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fireshield (Blue)
+@64004 = ~Wand of Fireshield (Blue)~
+@64005 = ~Once activated, this wand will evoke a blue shield of ice flame. This shield not only grants the user 50% Cold Resistance, but also protects the wielder from attacks made within a 5-ft. radius around the wielder. An opponent that hits the caster with any weapons or spells within this radius suffers 1d8+2 cold damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireshield (Blue)
+  – 50% Cold Resistance
+  Damage: 1d8+2 cold damage to melee attackers
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Ice Storm
+@64006 = ~Wand of Ice Storm~
+@64007 = ~This wand summons great hail stones pound down for four rounds in a 30-ft. diameter area and inflict 2d8 points of cold damage to any creatures within the area of effect. Also, anyone that remains within the area of effect takes 2d8 cold damage each round for 4 rounds.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Ice Storm
+  – Conjures a storm of ice
+  Damage: 2d8 cold damage / round
+  Range: Sight
+  Duration: 4 rounds
+  Area of Effect: 30-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Improved Invisibility
+@64008 = ~Wand of Improved Invisibility~
+@64009 = ~This wand causes a creature touched to vanish from sight and be undetectable by normal vision or even infravision. Even allies cannot see the invisible creature or its gear, unless these allies can normally see invisible things or employ magic to do so. Items dropped or put down by the invisible creature become visible, items picked up disappear if tucked into the clothing or pouches worn by the creature. Of course, the invisible creature is not magically silenced, and certain other conditions can render the creature detectable.
+
+The invisibility remains in effect until it is magically broken or dispelled. Subtle hints —a shimmering— allow an observant opponent to attack the invisible spell recipient; these traces are only noticeable when specifically looked for (after the invisible character has made <PRO_HISHER> presence known†). The caster can, however, cast defensive spells on <PRO_HIMHER>self and fellow party members.
+
+Note: After taking revealing action, the wielder is no longer completely invisible. Opponents can target the target (but not target them with spells).
+
+†: missile discharge, melee combat, opening doors, disarming a trap, opening a chest, or spellcasting.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Improved Invisibility
+  – Applies a lasting invisibility to target
+    – +4 bonus to Armor Class
+    – +4 bonus to Saving throws
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Globe of Invulnerability
+@64010 = ~Wand of Minor Globe of Invulnerability~
+@64011 = ~Once activated, this wand creates a faintly shimmering magical sphere around the caster that prevents any 1st-, 2nd-, or 3rd-level spell effects from penetrating (i.e., the area of effect of any such spells does not include the area of the Minor Globe of Invulnerability). This includes innate abilities and effects from devices. However, any type of spell can be cast out of the magical sphere, and these pass from the caster of the globe to their subject without affecting the globe. Spells of 4th level or higher are not affected by the globe.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Minor Globe of Invulnerability
+  – Globe that prevents any spell effects from penetrating
+    – 1st level
+    – 2nd level
+    – 3rd level
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning II
+@64012 = ~Wand of Monster Summoning II~
+@64013 = ~This wand summons a random selection of 4-HD monsters. There is a 60% chance of receiving one monster and a 40% chance of receiving two monsters. The monster(s) appear within spell range and attack the wielder's opponents until the spell duration expires or until they are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning II
+  – Summons 1 or 2 monsters of 4 HD
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Stoneskin
+@64018 = ~Wand of Stoneskin~
+@64019 = ~Upon activating this wand, an outer skin of stone will move up from the ground, completely covering the wielder. This skin is of course magical and will hinder the wielder in no way. The effect of this is to protect <PRO_HIMHER> from physical attacks such as melee weapons and projectiles. For each of the %magnitude% skins the wielder possesses, the spell will stop one attack. The skins will remain on the wielder until <PRO_HESHE> is affected by a Dispel Magic, all of the skins are removed due to physical attacks, or the spell duration expires.
+
+It is important to note that this will not protect the wielder from any magical attacks, such as Fireball.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Stoneskin
+  – Conjures %magnitude% layers of protective skins
+  Duration: 12 hours
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Contagion
+@64020 = ~Wand of Contagion~
+@64021 = ~Once activated, this wand causes a major disease and weakness in a creature. The afflicted individual is immediately stricken with painful and distracting symptoms: boils, blotches, lesions, seeping abscesses, and so on. Strength, Dexterity, and Charisma scores are reduced by 2. The afflicted character is also Slowed. These effects persist until the character receives a Cure Disease spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Contagion
+  – -2 penalty to Strength
+  – -2 penalty to Dexterity
+  – -2 penalty to Charisma
+  – Slowed
+  Range: 90 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Emotion, Hopelessness
+@64022 = ~Wand of Emotion, Hopelessness~
+@64023 = ~Upon activation, this wand can disturb the emotional state of those around the target location. The effect of this is to inflict a feeling of hopelessness upon the enemies within the visual range of the wielder. Upon a failed Saving Throw vs. Wand, the affected creature will lie down where they stand and give over all their will to a higher power. Sometimes they can be heard to exclaim things such as "I lay down and die," or "I'm going home." This will last for the duration of the spell, upon which they will return to normal.
+
+The secondary effect of this spell is to instill upon the wielder the feeling of courage. This will remove any effects of panic and restore <PRO_HISHER> morale, as well as prevent the above from creeping forth into <PRO_HISHER> psyche. There is no Saving Throw vs. this and it will last for the duration of the spell. It will, however, be affected by Magic Resistance and other such things.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Emotion, Hopelessness
+  – Enemies:
+    Lay down in defeat
+  – Wielder:
+    Protection from Fear
+  Range: 50 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand negates prone effect
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Greater Malison
+@64024 = ~Wand of Greater Malison~
+@64025 = ~Activating this wand, the wielder may adversely affect all the Saving Throws of <PRO_HISHER> enemies. The effect is applied to all hostile creatures within the area of effect. Opponents under the influence of this spell make all Saving Throws at a penalty of -4.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Greater Malison
+  – -4 penalty to all saving throws
+  Range: 50 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Otiluke's Resilient Sphere
+@64026 = ~Wand of Otiluke's Resilient Sphere~
+@64027 = ~After selecting a target and activating this wand, it conjures a globe of shimmering force that encloses the subject creature if it fails to Save vs. Wand. The resilient sphere will contain its subject for the duration of the spell. The sphere is completely immune to all damage; in fact, the only method of removing the sphere is a successful Dispel Magic. Hence, the creature caught inside the globe is completely safe from all attacks, but at the same time completely unable to affect the outside world.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Otiluke's Resilient Sphere
+  – Excludes target from combat
+  Range: 40 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spirit Armor
+@64028 = ~Wand of Spirit Armor~
+@64029 = ~Upon activating this wand, it taps in to the target's life force in order to create an incorporeal barrier around the target's body for the duration of the spell. The armor itself is weightless and does not hinder movement or spellcasting at all.
+
+The spirit armor does not work cumulatively with any other armor; however, Dexterity bonuses still apply as well as magic rings and shields. While in effect, the Armor Class of the recipient will be set to 1, as if <PRO_HESHE> were wearing full plate. Also, due to the magical nature of the spell, <PRO_HESHE> will also receive a +3 bonus to Save vs. Spell.
+
+When the spell runs out, the external portion of the spirit is temporarily lost, inflicting 2d4 points of damage upon the target unless the creature makes a Saving Throw vs. Spell.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Spirit Armor
+  – Base armor class of 1
+  – +3 bonus to Save vs. Spell
+  Damage: 2d4 magic damage when spell expires
+  Range: Touch
+  Duration: 2 hours
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand negates damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Polymorph Other
+@64030 = ~Wand of Polymorph Other~
+@64031 = ~Once activated, this wand permanently alters the form of the creature affected. Mental attributes are not affected, and the target does not receive the special abilities of the new form. However all physical attributes are changed to adhere to the new form. This is a specific version of the spell in that the recipient will be transformed into a squirrel unless a Save vs. Petrification/Polymorph is made successfully. The transformation is instant and permanent until a Dispel Magic is cast successfully upon the affected creature. The natural attacks of the new form also become available and all clothes and equipment that the target was wearing will mold into the new form.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Polymorph Other
+  – Turns target into a squirrel
+  Range: Sight
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Petrification negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Polymorph Self
+@64032 = ~Wand of Polymorph Self~
+@64033 = ~Upon activating this wand, the wielder can transform into any of several new forms (at any time and as many times as <PRO_HESHE> wishes). The wielder gains the natural attacks of the new form in some cases and may use weapons in others. The mental attributes of the wielder remain the same, but all physical attributes are obtained from the new form. Also, any natural protections that the new form offers are conferred to the wielder, such as the resistance to missile and crushing weapons possessed by the slime form.
+
+The wielder also gains the physical mode of locomotion and breathing as well. This spell does not give the new form's other abilities, such as special attacks and magic, nor does it run the risk of the wielder changing personality and mentality.
+
+The possible forms given by Polymorph Self are:
+– Flind: wields a magical halberd (+1 fire damage and strikes as a +3 weapon)
+– Mustard Jelly: capable of poisoning or slowing opponents (if they fail a Save vs. Death when hit)
+– Ogre: Capable of causing massive damage
+– Spider: Causes poison damage when it hits an opponent
+
+In addition, the wielder may choose the form of brown bear, black bear, or wolf.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Polymorph Self
+  – Gain ability to polymorph self
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Enchanted Weapon
+@64034 = ~Wand of Enchanted Weapon~
+@64035 = ~This wand enchants any weapons that the wielder currently holds. For the duration of the spell, those weapons are treated as having a +3 enchantment for the purposes of determining what they can hit.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Enchanted Weapon
+  – Weapons hit as +3 enchantment
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Fireshield (Red)
+@64036 = ~Wand of Fireshield (Red)~
+@64037 = ~Upon activation, this wand protects the user from fire damage by surrounding the caster with a shield of flame. This shield does not only grant the user +50% Fire Resistance, it also protects <PRO_HIMHER> from attacks made from within a 5-ft. radius around <PRO_HIMHER>. An opponent that damages the wielder within this radius suffers 1d8+2 points of fire damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Fireshield (Red)
+  – +50% bonus to Fire Resistance
+  – Flame shield to deter melee attacks
+  Damage: 1d8+2 fire damage (if attacked within radius of shield)
+  Range: 5-ft. radius around wielder
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Secret Word
+@64040 = ~Wand of Secret Word~
+@64041 = ~Once activated, this wand dispels one spell protection† of 8th level or lower. The target's Magic Resistance, if any, does not affect this spell.
+
+†: Spells affected by this are Minor Spell Turning, Minor Globe of Invulnerability, Spell Immunity, Spell Deflection, Spell Turning, and Spell Shield.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Secret Word
+  – Dispels one protection of 8th level or lower
+  Range: 40-ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Sequencer
+@64042 = ~Wand of Minor Sequencer~
+@64043 = ~Once activated, this wand takes the magical energy of the wielder and stores two spells to activate them both at the same time from <PRO_HISHER> Special Ability button. Both spells must be of 2nd level or lower. To create a sequencer, the wielder must memorize the spells <PRO_HESHE> intends to store in it (a Sorcerer can store spells of any level for which <PRO_HESHE> still has spell slots). After casting Minor Sequencer, the player will be prompted to choose the sequenced spells from those <PRO_HESHE> has memorized.
+
+A sequencer lasts until activated and, once used, releases its spells immediately (no casting time). The Special Ability icon also disappears until the next time a sequencer is formed. A character can possess only one Minor Sequencer at a time, and it may not be given to other characters.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Minor Sequencer
+  – Stores two spells of 2nd level or lower for later casting
+  Duration: Permanent
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Teleport Field
+@64044 = ~Wand of Teleport Field~
+@64045 = ~Upon activation, this wand instigates a teleportation effect that randomly teleports all enemies in this area for the duration of the spell. Teleport Field is best used against multiple enemies, throwing them into disarray and allowing the wielder to concentrate on activating <PRO_HISHER> defenses.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Teleport Field
+  – Stores two spells of 2nd level or lower for later casting
+  Range: 40 ft.
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spider Spawn: giant spider
+@64046 = ~Wand of Giant Spider Spawn~
+@64047 = ~By throwing spider eggs into the air and uttering this wand's activation phrase, the eggs morph into a fully grown giant spider that will remain under the wielder's telepathic control.
+
+When the spell is cast, there is a 20% chance that two spiders of the proper type will appear instead of just one. These spiders will remain under the wielder's control until they are slain, or until the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Spider Spawn
+  – Summons giant spider(s)
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spider Spawn: phase spider
+@64048 = ~Wand of Phase Spider Spawn~
+@64049 = ~By throwing spider eggs into the air and uttering this wand's activation phrase, the eggs morph into a fully grown phase spider that will remain under the wielder's telepathic control.
+
+When the spell is cast, there is a 20% chance that two spiders of the proper type will appear instead of just one. These spiders will remain under the wielder's control until they are slain, or until the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Spider Spawn
+  – Summons phase spider(s)
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spider Spawn: sword spider
+@64050 = ~Wand of Sword Spider Spawn~
+@64051 = ~By throwing spider eggs into the air and uttering this wand's activation phrase, the eggs morph into a fully grown sword spider that will remain under the wielder's telepathic control.
+
+When the spell is cast, there is a 20% chance that two spiders of the proper type will appear instead of just one. These spiders will remain under the wielder's control until they are slain, or until the spell duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Spider Spawn
+  – Summons sword spider(s)
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Farsight
+@64052 = ~Wand of Farsight~
+@64053 = ~Upon touching this wand to a map of the area, the wielder is able to scry upon that area of the map (even if unexplored). After casting the spell, simply click on a section of the map that you want to view. For the duration of the spell, the wielder can spy on that area, noting creatures and fortifications.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Farsight
+  – Scry upon a point in the area
+  Range: Entire area
+  Duration: %duration%
+  Area of Effect: Point on map
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Wizard Eye
+@64054 = ~Wand of Wizard Eye~
+@64055 = ~Once activated, this wand creates an invisible sensory organ that sends the wielder visual information. This eye can see with normal vision up to 60 ft. away in brightly lit areas. The eye can travel in any direction as long as the spell lasts. It has substance and a form that can be detected (by a Detect Invisibility spell, for instance). Solid barriers prevent the passage of the eye. The powers of the eye cannot be enhanced by other spells or items. The wielder is subject to any gaze attack met by the eye. A successful Dispel Magic cast on the wielder or eye ends the spell.
+
+STATISTICS:
+(Divination, Alteration)
+
+Charge abilities:
+– Wizard Eye
+  – Summons invisible eye
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
