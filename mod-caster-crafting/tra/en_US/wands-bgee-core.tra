@@ -3719,3 +3719,473 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   5th Level - Arcane - 65000-65499   *
+***************************************/
+//Cloudkill
+@65000 = ~Wand of Cloudkill~
+@65001 = ~Upon activating this wand, it generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with 4 or fewer Hit Dice, and causes creatures with 5 to 6 Hit Dice to roll Saving Throws vs. Poison with a -4 penalty or be slain. Holding one's breath has no effect on the lethality of the spell. Those above 6th level (or 6 Hit Dice) must leave the cloud immediately or suffer 1d10 points of poison damage each round while in the area of effect.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cloudkill
+  – Toxic cloud
+    – Instantly slays any creature with 4 or fewer Hit Dice
+    – Instantly slays any creature with 5-6 Hit Dice (save possible)
+  Damage: 1d10 points of poison damage each round in cloud
+  Range: 40 ft.
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Poison (-4 penalty) avoids instant death
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cone of Cold
+@65002 = ~Wand of Cone of Cold~
+@65003 = ~Upon picking a direction and activating this wand, it generates a cone-shaped area of extreme cold originating at the wielder's hand and extending outward in a cone 17 ft. long with a 90-deg. arc. It drains heat and causes %magnitude%d4+%magnitude% cold damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cone of Cold
+  – Blast of cold in arc
+  Damage: %magnitude%d4+%magnitude% cold damage
+  Range: 0 ft.
+  Duration: Instant
+  Area of Effect: 17-ft. cone with 90-deg. arc
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning III
+@65004 = ~Wand of Monster Summoning III~
+@65005 = ~This wand summons a random selection of 5-HD monsters. There is a 60% chance of receiving one monster and a 40% chance of receiving two monsters. The monster(s) appear within spell range and attack the wielder's opponents until the spell duration expires or until they are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning III
+  – Summons 1 or 2 monsters of 4 HD
+  Range: 120 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shadow Door
+@65010 = ~Wand of Shadow Door~
+@65011 = ~By uttering the activation phrase, this wand creates the illusion of a door. The illusion also permits the wielder to appear to step through this "door" and disappear. In reality, <PRO_HESHE> has darted aside and can flee, totally invisible (as per the Improved Invisibility spell), for the spell's duration. A True Seeing spell, a Gem of Seeing, or similar magical means can reveal the consealed party.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Shadow Door
+  – Improved Invisibility
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Domination
+@65012 = ~Wand of Domination~
+@65013 = ~Upon activation, this wand enables the wielder to control the actions of any creature while the spell is in effect. This control is maintained through a telepathic link between the wielder and the victim. Unlike the 4th-level priest spell Mental Domination, the target has no option for release, even if made to do something against his morals. This effect can only be reversed by Dispel Magic. The target is allowed a Saving Throw vs. Wand with a -2 penalty to negate the effect.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Domination
+  – Charms target
+  Range: Sight
+  Duration: 8 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Monster
+@65014 = ~Wand of Hold Monster~
+@65015 = ~Once activated, this wand holds 1d4 creatures of any type rigidly immobile and in place for 9 or more rounds, unless a Saving Throw vs. Wand is made with a -2 penalty. The effect is centered on the victim selected by the caster. Any enemies within 4 ft. of the target are also affected. Those who succeed on their Saving Throws are totally unaffected by the spell. Undead creatures cannot be held.
+
+Held creatures cannot move or speak, but they remain aware of events around them and can use abilities not requiring motion or speech. Being held does not prevent the worsening of the subject's condition due to wounds, diseases, or poison.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Monster
+  – Holds monster and nearby enemies
+  Range: 40 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature and any enemies within 4 ft.
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chaos
+@65016 = ~Wand of Chaos~
+@65017 = ~Upon activation, this wand causes victims wander around as if in a daze, sometimes wandering away, sometimes attacking either friend or foe. If the victim is 4th level or lower, <PRO_HESHE> does not receive a Saving Throw vs. the effects. However, if the victim is 5th level or higher, <PRO_HESHE> receives a Save vs. Wand with a -4 penalty. The spell lasts for the duration or until a successful Dispel Magic is cast.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Chaos
+  – Causes confusion
+  Range: 35 ft.
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Feeblemind
+@65018 = ~Wand of Feeblemind~
+@65019 = ~This wand causes the subject's intellect to degenerate into that of a simple beast of burden unless a Saving Throw vs. Wand is made with a -2 penalty. Upon a failed Saving Throw, the subject remains in this state until a successful Dispel Magic is cast upon <PRO_HIMHER>.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Feeblemind
+  – Minimal Intelligence score
+  Range: 40 ft.
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spell Immunity
+@65020 = ~Wand of Spell Immunity~
+@65021 = ~Upon activating this wand, it grants the wielder protection from one spell school of <PRO_HISHER> choice. After the spell is cast, the wielder must choose the school <PRO_HESHE> wishes to be protected from. All spells of this school will not be able to harm or aid the wielder for the duration of this spell. This includes all spells from this school, including any priest spells that might benefit the wielder.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Spell Immunity
+  – Protection from one school of spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Normal Weapons
+@65022 = ~Wand of Protection From Normal Weapons~
+@65023 = ~Once activated, this wand confers complete invulnerability to all non-magical weapons. This does not include weapons that are blessed or enchanted. This spell may not be cast on someone who is protected from magical weapons. This effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Normal Weapons
+  – Protection from unenchanted weapons
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Breach
+@65024 = ~Wand of Breach~
+@65025 = ~Upon activation, this wand it breaches and dispels all of the specific† and combat‡ protections on the target creature. The target's Magic Resistance, if any, does not affect this spell.
+
+†: The specific protection spells that are dispelled by Breach: Shield, Protection Circle, Resist Fear, Protection From Fire/Cold, Fireshield, Protection From Acid, Protection From Electricity, Protection From Magic Energy, Protection From The Elements, and Protection From Energy.
+
+‡: The combat protection spells dispelled by Breach are Protection From Normal Missiles, Protection From Normal Weapons, Protection From Magical Weapons, Stoneskin, Armor, Ghost Armor, Spirit Armor, Absolute Immunity, Mantle, and Improved Mantle.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Breach
+  – Dispels all listed protections on target
+  Range: 40 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lower Resistance
+@65026 = ~Wand of Lower Resistance~
+@65027 = ~Once activated, this wand this spell will lower the Magic Resistance of this creature by %magnitude%%. There is no Saving Throw, and the target's Magic Resistance, if any, does not affect this spell. This effect is cumulative for each casting of this spell: If Lower Resistance was cast upon the same creature again, the creature's Magic Resistance would be further diminished. This spell will last until its duration expires and cannot be dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Lower Resistance
+  – Dispels all listed protections on target
+  Range: 40 ft.
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Oracle
+@65028 = ~Wand of Oracle~
+@65029 = ~Upon activation, this wand will cancel all Illusion/Phantasm spells† of 5th level and lower within its area of effect. The wielder can control just who this spell affects: Therefore, it will affect only creatures that are not in the wielder's party. The area of effect is a 120-ft. radius around the wielder.
+
+†: The spells affected are Reflected Image, Invisibility, Mirror Image, Non-Detection, Improved Invisibility, and Shadow Door.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Oracle
+  – Dispels nearby illusions
+  Duration: Instant
+  Area of Effect: 120-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Lesser Fire Elemental
+@65030 = ~Wand of Conjure Lesser Fire Elemental~
+@65031 = ~Once activated, this wand summons a fire elemental to do the wielder's bidding. The elemental has 8 Hit Dice and is locked into a psychic contest with the summoner for 3 rounds after being summoned. At the end of this time, if the summoner has won, <PRO_HESHE> has control of the elemental; however, if <PRO_HESHE> has lost, the elemental goes berserk and tries to kill <PRO_HIMHER>. This does not prevent the use of other charm-type spells after the contest was lost. If charm spells are used before the contest is over, they will have no effect on the outcome.
+
+If successful, the elemental and will serve the wielder's every whim until banished back to its home plane, the spell's duration expires, or the elemental dies.
+
+However, every time this spell is cast, there is a 15% chance that the elemental will escape the instructions of the wielder, go berserk, and attack who dared summoning it. If it can't reach the summoner, it will fight its way toward <PRO_HIMHER>. This berserking elemental will also remain until slain or the spell's duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Conjure Lesser Fire Elemental
+  – Summons a lesser Fire Elemental
+  Range: 45 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Acid
+@65032 = ~Wand of Protection From Acid~
+@65033 = ~Upon touching this wand to a target, it confers complete invulnerability to all acid-based attacks, whether magical or non-magical, such as Acid Arrow or a creature's special attacks. This effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Protection From Acid
+  – 100% acid resistance
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Phantom Blade
+@65034 = ~Wand of Phantom Blade~
+@65035 = ~Upon activation, this wand creates a translucent, shadow-like, weightless area of magical force extending from the fingers of one of the wielder's hands. The silent, blade-shaped construct's cutting edges inflict slashing damage just as those of a real sword do. The phantom blade is wielded as if the wielder is proficient with it, at <PRO_HISHER> normal THAC0.
+
+The phantom blade acts as a +3 magical sword in terms of to-hit and damage bonuses as well as the type of creatures it can hit. However, due to its etheric nature, it causes an extra +10 damage against undead creatures. This sword can only be used by the wielder and remains in <PRO_HISHER> hand for the duration of the spell or until dispelled.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Phantom Blade
+  – Conjures a 1d10 long sword (slashing)
+    – +3 bonus to THAC0
+    – +3 bonus to damage
+    – +10 bonus to damage to undead
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spell Shield
+@65036 = ~Wand of Spell Shield~
+@65037 = ~Once activated, this wand protects the wielder from the next magical attack† against <PRO_HIMHER>. If one of these spells is cast at the wizard, this spell activates and absorbs the attack. However, this only works once and this spell is consumed in the process. Otherwise, it will last for its duration.
+
+†: The spells from which the wielder is protected are Spell Thrust, Secret Word, Breach, Lower Resistance, Pierce Magic, Ruby Ray, Khelben's Warding Whip, Pierce Shield, and Spellstrike.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Spell Shield
+  – Shielded from a magical protection dispell attack
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Lesser Air Elemental
+@65038 = ~Wand of Conjure Lesser Air Elemental~
+@65039 = ~Upon activating this wand, it summons an air elemental to do <PRO_HISHER> bidding. The elemental has 8 Hit Dice and is locked into a psychic contest with the summoner for 3 rounds after being summoned. At the end of this time, if the summoner has won, <PRO_HESHE> has control of the elemental; however, if <PRO_HESHE> has lost, the elemental goes berserk and tries to kill <PRO_HIMHER>. This does not prevent the use of other charm-type spells after the contest was lost. If charm spells are used before the contest is over, they will have no effect on the outcome.
+
+If successful, the elemental and will serve the wielder's every whim until banished back to its home plane, the spell's duration expires, or the elemental dies.
+
+However, every time this spell is cast, there is a 15% chance that the elemental will escape the instructions of the wielder, go berserk, and attack who dared summoning it. If it can't reach the summoner, it will fight its way toward <PRO_HIMHER>. This berserking elemental will also remain until slain or the spell's duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Conjure Lesser Air Elemental
+  – Summons a lesser air elemental
+  Range: 45 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Lesser Earth Elemental
+@65040 = ~Wand of Conjure Lesser Earth Elemental~
+@65041 = ~Upon activating this wand, it summons an earth elemental to do <PRO_HISHER> bidding. The elemental has 8 Hit Dice and is locked into a psychic contest with the summoner for 3 rounds after being summoned. At the end of this time, if the summoner has won, <PRO_HESHE> has control of the elemental; however, if <PRO_HESHE> has lost, the elemental goes berserk and tries to kill <PRO_HIMHER>. This does not prevent the use of other charm-type spells after the contest was lost. If charm spells are used before the contest is over, they will have no effect on the outcome.
+
+If successful, the elemental and will serve the wielder's every whim until banished back to its home plane, the spell's duration expires, or the elemental dies.
+
+However, every time this spell is cast, there is a 15% chance that the elemental will escape the instructions of the wielder, go berserk, and attack who dared summoning it. If it can't reach the summoner, it will fight its way toward <PRO_HIMHER>. This berserking elemental will also remain until slain or the spell's duration expires.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Conjure Lesser Earth Elemental
+  – Summons a lesser earth elemental
+  Range: 45 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Spell Turning
+@65042 = ~Wand of Minor Spell Turning~
+@65043 = ~Once activated, this wand causes the spells cast against the wielder to rebound upon the original caster. This affects a total of 4 spell levels—including spells cast from scrolls and innate spell-like abilities -— but excludes the following: area effects that are not centered directly upon the wizard, as well as area effects that are stationary, such as Cloudkill and Stinking Cloud. As long as the spell is cast directly at the wizard, it will be reflected back upon the caster. This spell will only affect up to 4th-level spells, but as long as there are levels remaining, a spell will be reflected. For example, if there is only 1 level left and a 3rd-level spell is cast at the wizard, the spell will be reflected while canceling the Spell Turning.
+
+This spell will not protect the caster from Dispel Magic, but will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Minor Spell Turning
+  – Deflects spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Sunfire
+@65044 = ~Wand of Sunfire~
+@65045 = ~By gesturing with this wand, the entire area around the wielder erupts in flames, striking everyone except the wielder <PRO_HIMHER>self. This explosive burst of flame detonates with a low roar and delivers %magnitude%d6 points of fire damage. Creatures failing their Saving Throws take full damage from the blast; those who roll successful Saving Throws manage to dodge, fall flat, or roll aside, each taking half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Sunfire
+  – Fire erupts around wielder
+  Damage: %magnitude%d6 fire damage
+  Duration: Instant
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

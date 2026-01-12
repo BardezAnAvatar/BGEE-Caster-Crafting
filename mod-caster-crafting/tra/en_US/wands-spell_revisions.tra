@@ -4271,3 +4271,641 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   5th Level - Arcane - 95000-95499   *
+***************************************/
+//Cloudkill
+@95000 = ~Wand of Cloudkill~
+@95001 = ~Upon activating this wand, it generates a billowing cloud of ghastly, yellowish green vapors that is so toxic as to slay any creature with 4 or fewer Hit Dice, and causes creatures with 5 to 6 Hit Dice to roll Saving Throws vs. Poison with a -4 penalty or be slain. Holding one's breath has no effect on the lethality of the spell. Those above 6th level (or 6 Hit Dice) must leave the cloud immediately or suffer 1d10 points of poison damage each round while in the area of effect. Undead creatures are not affected by the poisonous cloud.
+
+STATISTICS:
+
+Charge abilities:
+– Cloudkill
+  – Toxic cloud
+    – Instantly slays any creature with > 4 Hit Dice
+    – Instantly slays any creature with 4-6 Hit Dice (save possible)
+  Damage: 1d10 points of poison damage each round in cloud
+  School: Conjuration
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: Save vs. Poison (-4 penalty) avoids instant death
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Cone of Cold
+@95002 = ~Wand of Cone of Cold~
+@95003 = ~Upon picking a direction and activating this wand, it causes a cone-shaped spray of extreme cold to spring forth from the wizard's hand. The cone is 30 feet in length and spread out in a horizontal arc of 60 degrees in front of the wielder. It drains heat and causes  %magnitude%d4+%magnitude% cold damage, with a save vs. breath at -4 allowed for half damage.
+
+STATISTICS:
+
+Charge abilities:
+– Cone of Cold
+  – Blast of cold in arc
+  Damage: %magnitude%d4+%magnitude% cold damage
+  School: Evocation
+  Range: 0 ft.
+  Duration: Instant
+  Area of Effect: 30' cone with 60-deg. arc
+  Saving Throw: Save vs. Breath (at -4) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning V
+@95006 = ~Wand of Monster Summoning V~
+@95007 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning V
+  – Summons 2 Ogre Berserker
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Ogre Berserker (5 Hit Dice):
+    STR 18/00, DEX 9, CON 18, INT 8, WIS 10, CHA 7; AL Chaotic Evil
+    HP 60, AC 3, THAC0 11, Saving Throws 11/13/12/13/14
+    1 Attack Per Round, 1d10+9 Crushing Damage (Morning Star +1)
+    Special Qualities:
+      – Enrage (once per day)
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning V
+@95008 = ~Wand of Monster Summoning V~
+@95009 = ~This wand summons a number of monsters, which serve the wielder under any conditions. The summoned creatures will remain under the wielder's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Monster Summoning V
+  – Summons 2 Ogre Berserker
+  – Summons 1 Ogre Mage
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Ogre Berserker (5 Hit Dice):
+    STR 18/00, DEX 9, CON 18, INT 8, WIS 10, CHA 7; AL Chaotic Evil
+    HP 60, AC 3, THAC0 11, Saving Throws 11/13/12/13/14
+    1 Attack Per Round, 1d10+9 Crushing Damage (Morning Star +1)
+    Special Qualities:
+      – Enrage (once per day)
+  – Ogre Mage (6 Hit Dice):
+    STR 18/00, DEX 9, CON 17, INT 15, WIS 11, CHA 13; AL Lawful Evil
+    HP 56, AC 2, THAC0 11, Saving Throws 11/13/12/13/14
+    1 Attack Per Round, 1d10+9 Slashing Damage (Katana +1)
+    Special Qualities:
+    – Invisibility (at will)
+    – Regeneration: 1 hp/round
+    Memorized Spells:
+      – 1º Obscuring Mist, Magic Missile (x2), Shield
+      – 2º Horror, Mirror Image
+      – 3º Dire Charm, Slow
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shadow Door
+@95010 = ~Wand of Shadow Door~
+@95011 = ~By uttering the activation phrase, this wand creates the illusion of a door. The illusion also permits the wielder to appear to step through this "door" and disappear. In reality he has darted aside and can flee, totally invisible, for the spell duration. Opponents within 5 feet of the caster must save vs. wand or be fooled into following the caster through the door, becoming trapped in an extradimensional room for up to 4 rounds. Creatures with exceptional intelligence may escape the illusion faster, while creatures who can see through illusions (e.g. dragons, liches, demons), or are under the effects of a True Seeing spell, are unaffected.
+
+STATISTICS:
+
+Charge abilities:
+– Shadow Door
+  – Improved Invisibility
+  – Nearby opponents trapped in an illusion
+  School: Illusion
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Wand negates being trapped
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Domination
+@95012 = ~Wand of Domination~
+@95013 = ~Upon activation, this wand enables the wielder to control the actions of any creature while the spell is in effect. This control is maintained through a telepathic link between the wielder and the victim. Unlike the 4th-level priest spell Mental Domination, the target has no option for release, even if made to do something against his morals. The target is allowed a Saving Throw vs. Wand with a -2 penalty to negate the effect.
+
+STATISTICS:
+
+Charge abilities:
+– Domination
+  – Charms target
+  School: Enchantment
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Monster
+@95014 = ~Wand of Hold Monster~
+@95015 = ~Once activated, this wand holds 1d4 creatures of any type rigidly immobile and in place for 1 turn. The effect is centered on the victim selected by the caster. Every enemy within 5 feet of the target is also affected. Those who succeed at a saving throw vs. spell at -2 are totally unaffected by the spell. Undead creatures cannot be held with this spell.
+
+Held creatures cannot move or speak, but they remain aware of events around them even though they are helpless to change them. Time passes at a normal rate for the targets and hence being held does not stop any worsening of their condition due to wounds, disease, or poison.
+
+STATISTICS:
+
+Charge abilities:
+– Hold Monster
+  – Holds monster and nearby enemies
+  School: Enchantment
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 1 creature and any enemies within 5'
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Feeblemind
+@95018 = ~Wand of Feeblemind~
+@95019 = ~This wand causes the subject's intellect to degenerate into that of a simple beast of burden, with an intelligence score of 3. The subject remains in this state until a successful dispel magic is cast upon him. The victim must make a save vs. wand at -4 in order to avoid the effect.
+
+STATISTICS:
+
+Charge abilities:
+– Feeblemind
+  – Minimal Intelligence score
+  School: Enchantment
+  Range: Long
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Normal Weapons
+@95022 = ~Wand of Protection From Normal Weapons~
+@95023 = ~Once activated, this wand creates an immobile, faintly shimmering magical sphere around the wielder that cannot be penetrated by non-magical weapons; all such weapons are harmlessly deflected (missile weapons strike the sphere, then immediately fall to the ground). This does not include weapons that are blessed or enchanted. The effect lasts for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Normal Weapons
+  – Protection from unenchanted weapons
+  School: Abjuration
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Breach
+@95024 = ~Wand of Breach~
+@95025 = ~Upon activation, this wand it breaches and dispels all of the specific† and combat‡ protections on the target creature. The target's Magic Resistance, if any, does not affect this spell.
+
+†: The specific protection spells dispelled by Breach are: Resist Fear, Resist Elements, Death Ward, Free Action, Protection from Acid, Protection from Cold, Protection from Electricity, Protection from Fire, Chaotic Commands, Protection from Magic Energy, Protection from the Elements, Protection from Energy and Mind Blank.
+
+‡: The combat protection spells dispelled by Breach are: Mage Armor, Shield, Armor of Faith, Barkskin, Protection from Missiles, Spirit Armor, Stoneskin, Protection from Normal Weapons, Protection from Magical Weapons, Physical Mirror, Prismatic Mantle, Moment of Prescience and Absolute Immunity.
+
+STATISTICS:
+
+Charge abilities:
+– Breach
+  – Dispels all listed protections on target
+  School: Abjuration
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lower Resistance
+@95026 = ~Wand of Lower Resistance~
+@95027 = ~Once activated, this wand this spell will lower the Magic Resistance of this creature by %magnitude%%. There is no Saving Throw, and the target's Magic Resistance, if any, does not affect this spell. This effect is cumulative for each casting of this spell: If Lower Resistance was cast upon the same creature again, the creature's Magic Resistance would be further diminished. This spell will last until its duration expires and cannot be dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Lower Resistance
+  – Dispels all listed protections on target
+  School: Alteration
+  Range: Long
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Oracle
+@95028 = ~Wand of Oracle~
+@95029 = ~Upon activation, this wand affects an area roughly 30 feet in radius around the wielder will be affected. All hostile illusion/phantasm spells in this area will be dispelled. This spell only affects one's enemies.
+
+The spells that are affected by this are: Reflected Image, Invisibility, Blur, Mirror Image, Ghost Armor, Invisibility Sphere, Improved Invisibility, Shadow Door, Pixie Dust, Mislead, Project Image, and Mass Invisibility.
+
+STATISTICS:
+
+Charge abilities:
+– Oracle
+  – Dispels nearby illusions
+  School: Divination
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Lesser Fire Elemental
+@95030 = ~Wand of Conjure Lesser Fire Elemental~
+@95031 = ~Once activated, this wand opens a special gate to the Elemental Plane of Fire, and a fire elemental is summoned to the vicinity of the wielder. The elemental has 8 Hit Dice and will serve the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death. It is particularly difficult to maintain a gate to the Inner Planes - there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
+
+STATISTICS:
+
+Charge abilities:
+– Conjure Lesser Fire Elemental
+  – Summons a lesser Fire Elemental
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Lesser Fire Elemental (8 Hit Dice):
+    STR 14, DEX 16, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+    HP 80, AC 2, THAC0 10, Saving Throws 10/12/11/11/13
+    2 Attacks Per Round, 2d4+2 Slashing +2d4 Fire Damage (Fist +2)
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to hold, poison, polymorph, sleep, & stun effects
+    – Fire Resistance 100%
+    – Slashing, Crushing, Piercing, & Missile Resistance 20%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Protection From Acid
+@95032 = ~Wand of Protection From Acid~
+@95033 = ~Upon touching this wand to a target, the recipient receives complete protection from all acid-based attacks, whether magical or non-magical in origin. 100% of the damage from attacks like acidic dragon breath will be absorbed, and the target creature will become completely immune to the effects of spells such as Melf's Acid Arrow and Acid Fog. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Protection From Acid
+  – 100% acid resistance
+  School: Abjuration
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Phantom Blade
+@95034 = ~Wand of Phantom Blade~
+@95035 = ~Upon activation, this wand creates a translucent, weightless, shadowlike sword made of material from the Plane of Shadow that extends 3 feet from the wielder's hand. The phantom blade is wielded as if it was a long sword but the wielder suffers no penalty for non-proficiency. The sword deals 1d12+4 points of magic damage to its victims, and an additional 10 points of damage against undead creatures. Due to its ethereal nature, strength bonuses do not apply, but attacks with the phantom blade are considered melee touch attacks, and thus gain a +4 bonus to hit. Furthermore, a successful strike temporarily scrambles magic, causing any spells the target casts in the next round to fail (save vs. wand at a -4 penalty negates). The blade is considered to be of +4 enchantment when determining what it can hit, but it cannot harm inorganic things because it has no solid existence. The phantom blade can only be used by the wielder, and remains in his hand for the duration of the spell or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Phantom Blade
+  – Conjures a 1d12 long sword (slashing)
+    – +4 bonus to THAC0
+    – +4 bonus to damage
+    – +10 bonus to damage to undead
+    – Miscast Magic
+  School: Illusion
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: Save vs. Wand (-4 penalty) negates Miscast Magic
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Spell Shield
+@95036 = ~Wand of Spell Shield~
+@95037 = ~Once activated, this wand protects the wielder from the next magical attack against him. If one of those spells is cast at the wizard this spell activates and absorbs the attack. However, this only works once as this spell is consumed in the process.
+
+The spells that Spell Shield protects the wizard from are: Spell Thrust, Secret Word, Pierce Magic, Ruby Ray, Warding Whip, Pierce Shield, and Spellstrike.
+
+STATISTICS:
+
+Charge abilities:
+– Spell Shield
+  – Shielded from a magical protection dispell attack
+  School: Abjuration
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Lesser Air Elemental
+@95038 = ~Wand of Conjure Lesser Air Elemental~
+@95039 = ~Once activated, this wand opens a special gate to the Elemental Plane of Air, and a air elemental is summoned to the vicinity of the wielder. The elemental has 8 Hit Dice and will serve the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death. It is particularly difficult to maintain a gate to the Inner Planes - there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
+
+STATISTICS:
+
+Charge abilities:
+– Conjure Lesser Air Elemental
+  – Summons a lesser Air Elemental
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Lesser Air Elemental (8 Hit Dice):
+    STR 14, DEX 17, CON 16, INT 6, WIS 11, CHA 11;  AL Neutral
+    HP 80, AC 0, THAC0 8, Saving Throws 10/12/11/11/13
+    3 Attacks Per Round, 1d6+2 Piercing Damage (Fist +2)
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to hold, poison, sleep, & stun effects
+    – Slashing, Crushing, & Piercing Resistance 20%; Missile Resistance 60%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Lesser Earth Elemental
+@95040 = ~Wand of Conjure Lesser Earth Elemental~
+@95041 = ~Once activated, this wand opens a special gate to the Elemental Plane of Earth, and a earth elemental is summoned to the vicinity of the wielder. The elemental has 8 Hit Dice and will serve the caster's every whim until banished back to its home plane, the spell duration expires, or upon the elemental's death. It is particularly difficult to maintain a gate to the Inner Planes - there is a 15% chance that the portal opened by the caster will collapse before the elemental enters the Prime Material Plane.
+
+STATISTICS:
+
+Charge abilities:
+– Conjure Lesser Earth Elemental
+  – Summons a lesser Earth Elemental
+  School: Conjuration
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Lesser Earth Elemental (8 Hit Dice):
+    STR 19, DEX 8, CON 18, INT 6, WIS 11, CHA 11;  AL Neutral
+    HP 96, AC 4, THAC0 8, Saving Throws 10/12/11/11/13
+    2 Attacks Per Round, 2d6+9 Crushing Damage (Fist +2)
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to hold, poison, polymorph, sleep, & stun effects
+    – Slashing, Piercing, & Missile Resistance 40%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Spell Turning -> Spell Deflection
+@95042 = ~Wand of Spell Deflection~
+@95043 = ~Once activated, this wand causes the spells cast against the wielder to rebound upon the original caster. This affects a total of 4 spell levels—including spells cast from scrolls and innate spell-like abilities—but excludes area effects that are not centered directly upon the wielder and area effects that are stationary, such as Cloudkill and Stinking Cloud.
+
+This spell will only affect up to 4th-level spells, but as long as there are levels remaining, a spell will be reflected. For example, if there is only 1 level left and a 3rd-level spell is cast at the wielder, the spell will be reflected while canceling the Spell Turning.
+
+This spell will not protect the caster from Dispel Magic, but will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+
+Charge abilities:
+– Spell Deflection
+  – Deflects spells
+  School: Abjuration
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Sunfire -> Fireburst
+@95044 = ~Wand of Sunfire~
+@95045 = ~By gesturing with this wand, the entire area around the wielder erupts in flames, striking all except the caster for %magnitude%d6 points of fire damage. Creatures who fail their saving throw vs. breath at -4 suffer full damage from the blast. Those who roll successful saving throws manage to dodge, fall flat, or roll aside, each receiving half damage.
+
+STATISTICS:
+
+Charge abilities:
+– Sunfire
+  – Fire erupts around wielder
+  Damage: %magnitude%d6 fire damage
+  School: Evocation
+  Range: Personal
+  Duration: Instant
+  Area of Effect: 15' radius
+  Saving Throw: Save vs. Breath (at -4) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Summon Shadow: Shadows
+@95050 = ~Wand of Summon Shadow~
+@95051 = ~This wand summons a number of shadows, undead monsters which serve the wielder under any conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell.
+
+The undead creatures will remain under the wizard's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Shadow
+  – Summons 3 shadows
+  School: Necromancy
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Shadow (3 Hit Dice):
+    STR -, DEX 14, CON -, INT 6, WIS 12, CHA 11;  AL Chaotic Evil
+    HP 36, AC 5, THAC0 13, Saving Throws 11/13/11/13/13
+    1 Attack Per Round, 1d6+1 Cold Damage (Touch +1)
+    Combat Abilities:
+    – Chill Touch: creatures struck must save vs. death or lose 1 point of strength for 1 hour
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to backstab, charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%; Physical Damage Resistance 50%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Summon Shadow: Wraiths
+@95090 = ~Wand of Summon Shadow~
+@95091 = ~This wand summons a number of shadows, undead monsters which serve the wielder under any conditions. The type and number of creatures that appear depend upon the level of the wizard casting the spell.
+
+The undead creatures will remain under the wizard's control until they are slain or the spell duration expires.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Shadow
+  – Summons 2 wraiths
+  School: Necromancy
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+  Summons:
+  – Wraith (5 Hit Dice):
+    STR -, DEX 15, CON -, INT 11, WIS 13, CHA 12;  AL Lawful Evil
+    HP 60, AC 4, THAC0 12, Saving Throws 10/13/10/13/13
+    1 Attack Per Round, 1d8+1 Cold Damage (Touch +1)
+    Combat Abilities:
+    – Life Drain: each successful hit raises the wraith's hit points by 5 for 1 turn and causes the target to save vs. death or lose 1 level
+    Special Qualities:
+    – Immune to normal weapons
+    – Immune to backstab, blindness, charm, confusion, hold, poison, sleep, stun, & death effects
+    – Cold Resistance 100%; Physical Damage Resistance 50%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mestil's Acid Sheath
+@95086 = ~Wand of Mestil's Acid Sheath~
+@95087 = ~This wand conjures an acid shield around the caster. This shield not only grants the user 50% acid resistance, but also protects the caster from attacks made within a 5' radius. Opponents that hit the caster with a weapon or spell from within this radius will suffer 4d4 points of acid damage. Multiple castings of this spell are not cumulative, but it can be used in conjunction with similar spells. Tiny and small flying creatures cannot pass through the caustic barrier. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Mestil's Acid Sheath
+  – Protective acid barrier
+  – +50% acid resistance
+  – Damages attackers
+  Damage: 4d4 acid damage
+  School: Conjuration
+  Range: Personal
+  Duration: 2 turns
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Dispelling Screen
+@95088 = ~Wand of Dispelling Screen~
+@95089 = ~By activating this wand, it creates a transparent, permeable barrier that shields the wielder and allies from Dispel Magic and Breach spells. The barrier dissipates after one instance of Dispel Magic or Breach. Spells higher in power that remove specific protections like Pierce Shield and Spellstrike remove Dispelling Screen from target without getting absorbed by it.
+
+STATISTICS:
+
+Charge abilities:
+– Dispelling Screen
+  – Shields allies from Dispel Magic and Breach spells
+  School: Abjuration
+  Range: Personal
+  Duration: 5 turns
+  Area of Effect: Caster and nearby allies
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//95090 -- See: Summon Shadow: Wraiths
+
+
+//Waves of Fatigue
+@95092 = ~Wand of Summon Shadow~
+@95093 = ~Once activated, surges of negative energy render all hostile living creatures in the spell's area fatigued, as if they haven't rested in a day. Multiple castings of this spell are cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Summon Shadow
+  – Fatigue (cumulative)
+  School: Necromancy
+  Range: Long
+  Duration: 5 rounds
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

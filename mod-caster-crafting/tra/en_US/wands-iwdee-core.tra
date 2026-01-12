@@ -3118,3 +3118,309 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+/***************************************
+*   5th Level - Arcane - 75000-75499   *
+***************************************/
+//Cone of Cold
+@75002 = ~Wand of Cone of Cold~
+@75003 = ~Upon picking a direction and activating this wand, it releases a cone-shaped blast of extreme cold from the caster, doing %magnitude%d4+%magnitude% points of cold damage. Creatures caught in the area of effect are allowed a Save vs. Wand for half damage.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Cone of Cold
+  – Blast of cold in arc
+  Damage: %magnitude%d4+%magnitude% cold damage
+  Range: 0 ft.
+  Duration: Instant
+  Area of Effect: 20-ft. cone with 60-deg. arc
+  Saving Throw: Save vs. Wand for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Monster Summoning III
+@75004 = ~Wand of Monster Summoning III~
+@75005 = ~This wand summons 1d4 3rd-level monsters. These appear within spell range and can be commanded to attack the caster's opponents until the spell duration expires or the monsters are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Monster Summoning III
+  – Summons 1d4 3rd-level monsters
+  Range: 20 ft.
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Domination
+@75012 = ~Wand of Domination~
+@75013 = ~Upon activation, this wand enables the wielder to control the actions of any creature while the spell is in effect. This control is maintained through a telepathic link between the wielder and the victim. Unlike the 4th-level priest spell Mental Domination, the target has no option for release, even if made to do something against his morals. This effect can only be reversed by Dispel Magic. The target is allowed a Saving Throw vs. Wand with a -2 penalty to negate the effect.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Domination
+  – Charms target
+  Range: Sight
+  Duration: 15 rounds
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Hold Monster
+@75014 = ~Wand of Hold Monster~
+@75015 = ~Once activated, this wand holds 1d4 creatures of any type (except for undead) rigidly immobile. Specifically, it affects the targeted enemy and up to 3 hostile creatures within 10 ft. of it. A successful Save vs. Wand negates the effect.
+
+Paralyzed creatures are helpless and cannot dodge or defend themselves from attacks. Being held does not prevent the worsening of the subject's condition due to wounds, disease, or poison.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Hold Monster
+  – Holds monster and nearby enemies
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature and any enemies within 10 ft.
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Chaos
+@75016 = ~Wand of Chaos~
+@75017 = ~Upon activation, this wand causes victims wander around as if in a daze, sometimes wandering away, sometimes attacking either friend or foe. If the victim is 4th level or lower, <PRO_HESHE> does not receive a Saving Throw vs. the effects. However, if the victim is 5th level or higher, <PRO_HESHE> receives a Save vs. Wand with a -4 penalty. The spell lasts for the duration or until a successful Dispel Magic is cast.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Chaos
+  – Causes confusion
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Wand (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Feeblemind
+@75018 = ~Wand of Feeblemind~
+@75019 = ~This wand causes the target into a gibbering idiot, which lasts until Dispel Magic is cast upon <PRO_HIMHER>. The victim is allowed a Save vs. Wand at -2 to resist being stupefied. Feebleminded individuals cannot cast spells. The priest spell Heal will remove feeblemindedness from an afflicted character.
+
+STATISTICS:
+(Enchantment/Charm)
+
+Charge abilities:
+– Feeblemind
+  – Minimal Intelligence score
+  Range: Sight
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Wand (at -2) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Lower Resistance
+@75026 = ~Wand of Lower Resistance~
+@75027 = ~Once activated, this wand this spell will lower the Magic Resistance of this creature by %magnitude%%. There is no Saving Throw, and the target's Magic Resistance, if any, does not affect this spell. This effect is cumulative for each casting of this spell: If Lower Resistance was cast upon the same creature again, the creature's Magic Resistance would be further diminished. This spell will last until its duration expires and cannot be dispelled.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Lower Resistance
+  – Dispels all listed protections on target
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Oracle
+@75028 = ~Wand of Oracle~
+@75029 = ~Upon activation, this wand will cancel all Illusion/Phantasm spells† of 5th level and lower within its area of effect. The wielder can control just who this spell affects: Therefore, it will affect only creatures that are not in the wielder's party. The area of effect is a 120-ft. radius around the wielder. A target's Magic Resistance, if any, does not affect this spell.
+
+†: The spells affected are Blur, Reflected Image, Invisibility, Mirror Image, Non-Detection, Improved Invisibility, and Shadow Door.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Oracle
+  – Dispels nearby illusions
+  Duration: Instant
+  Area of Effect: 120-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Minor Spell Turning
+@75042 = ~Wand of Minor Spell Turning~
+@75043 = ~Once activated, this wand causes the spells cast against the wielder to rebound upon the original caster. This affects a total of 4 spell levels—including spells cast from scrolls and innate spell-like abilities—but excludes area effects that are not centered directly upon the wielder and area effects that are stationary, such as Cloudkill and Stinking Cloud.
+
+This spell will only affect up to 4th-level spells, but as long as there are levels remaining, a spell will be reflected. For example, if there is only 1 level left and a 3rd-level spell is cast at the wielder, the spell will be reflected while canceling the Spell Turning.
+
+This spell will not protect the caster from Dispel Magic, but will not be dispelled by Dispel Magic either.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Minor Spell Turning
+  – Deflects spells
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Shroud of Flame
+@75046 = ~Wand of Shroud of Flame~
+@75047 = ~Once this wand is activated, it causes a creature to burst into flames if it fails a Save vs. Wand. The creature will burn for 2d6 points of fire damage every round, and gouts of flame erupt from the burning target, causing any creatures within 5 ft. to take 1d4 points of fire damage from the flames. Anyone hit by the victim's flames must also make a Save vs. Wand to avoid contracting the shroud themselves. The shroud of flame dissipates if the caster and target are no longer in the same area. This spell is particularly useful in dispersing packs of trolls and frost salamanders.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Shroud of Flame
+  – Fire engulfs target
+  Damage:
+  – 2d6 fire damage per round
+  – 1d4 fire damage splash damage
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 5-ft. radius
+  Saving Throw: Save vs. Wand negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Demi-Shadow Monsters
+@75048 = ~Wand of Demi-Shadow Monsters~
+@75049 = ~With activating, this wand shapes material from the Demiplane of Shadow into illusionary monsters. Up to six shadowy creatures can be summoned at once, but their total Hit Dice will normally not exceed %caster_level%. The monsters created with an additional 40% of normal hit points.
+
+STATISTICS:
+(Illusion/Phantasm)
+
+Charge abilities:
+– Demi-Shadow Monsters
+  – Summons stronger shadow-plane monsters
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Summon Shadow
+@75050 = ~Wand of Summon Shadow~
+@75051 = ~This wand summons three 4-HD shadows. The shadows will obey the orders of the wielder, attacking <PRO_HISHER> enemies or performing tasks until the spell expires or the shadows are slain.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Summon Shadow
+  – Summons shadows
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Conjure Water Elemental
+@75052 = ~Wand of Conjure Water Elemental~
+@75053 = ~Upon picking a location and activating this wand, it summons an 8-HD elemental from the Elemental Plane of Water and bind it to the wielder's will. This elemental will fight on behalf of the caster until the spell duration expires or the elemental is destroyed.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Conjure Water Elemental
+  – Summons a water elemental
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Contact Other Plane
+@75054 = ~Wand of Contact Other Plane~
+@75055 = ~When activating this wand, allows the wielder to contact powers from other planes of existence in order to receive advice and information. The nature of the divination is oriented around knowledge of powerful foes, magic items, and spells.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– Contact Other Plane
+  – Contacts another plane of existence to receive advice and information
+  Duration: Instant
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
