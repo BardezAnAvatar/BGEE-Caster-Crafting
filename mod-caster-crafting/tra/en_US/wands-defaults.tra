@@ -14,11 +14,14 @@ Weight: 1~
 
 
 // Wand of ... prefix
-@100001 = ~Wand of ~
+@100001 = ~Wand of %spell_name%~
 
 
-// Wand weight
-@100002 = ~
+// Shitty, lazy Wand description template
+@100002 = ~%new_name%
+
 STATISTICS:
 
-Weight: 1~
+Weight: 1
+
+%spell_desc%~
