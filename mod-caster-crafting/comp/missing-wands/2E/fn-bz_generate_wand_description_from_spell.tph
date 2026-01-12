@@ -1,0 +1,45 @@
+/***********************************************************************************************
+*   Function to generate the wand description based on the spell's own description.
+***********************************************************************************************/
+
+DEFINE_ACTION_FUNCTION fn-bz_generate_wand_description_from_spell
+    STR_VAR
+        spell = null                    //spell RESREF to read from
+    RET
+        ~new_name~
+        ~new_description~
+        ~new_default_description~
+
+    BEGIN
+        //Initialize return variables
+        OUTER_TEXT_SPRINT ~new_name~ ~~
+        OUTER_TEXT_SPRINT ~new_description~ ~~
+        OUTER_TEXT_SPRINT ~new_default_description~ ~~
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~%spell%.spl~) BEGIN
+            /***********************************************
+            *   BEGIN: Calculate strings for description   *
+            ***********************************************/
+
+            //Get name & description of spell
+            COPY_EXISTING - ~%spell%.spl~ ~override~    //inline only, just to read from potion
+                READ_LONG 0x0C ~identified_name_STRREF~     //identified name
+                READ_LONG 0x54 ~identified_desc_STRREF~     //identified description
+            BUT_ONLY_IF_IT_CHANGES
+
+
+            ACTION_GET_STRREF (%identified_name_STRREF%) ~spell_name~
+            ACTION_GET_STRREF (%identified_desc_STRREF%) ~spell_desc~
+
+            //Create new description
+            OUTER_SET ~new_default_description~ = @100000       //generic wand description
+            OUTER_TEXT_SPRINT ~new_name~ @100001                //Wand of ... prefix, uses %spell_name%
+            OUTER_TEXT_SPRINT ~new_description~ @100002         //Wand description template, uses %new_name% and %spell_desc%
+            /********************************************
+            *   END: Calculate strings for description  *
+            ********************************************/
+        END
+
+    END
+
+END
