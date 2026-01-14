@@ -1,0 +1,508 @@
+
+
+/*
+*   Art PoC
+*/
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_240.bam~    ~override/BZWD240D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_AB.bam~   ~override/BZWD240I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_CO.bam~   ~override/BZWD241I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_DI.bam~   ~override/BZWD242I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_EV.bam~   ~override/BZWD243I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_NE.bam~   ~override/BZWD244I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_TR.bam~   ~override/BZWD245I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_AB.bam~   ~override/BZWD240I.BAM~
+
+/*
+*   BEGIN: Art -- All
+*/
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_000.bam~    ~override/BZWD000D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_000_EV.bam~   ~override/BZWD000I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_010.bam~    ~override/BZWD010D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_010_NE.bam~   ~override/BZWD010I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_020.bam~    ~override/BZWD020D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_020_IL.bam~   ~override/BZWD020I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_030.bam~    ~override/BZWD030D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_030_NE.bam~   ~override/BZWD030I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_040.bam~    ~override/BZWD040D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_040_DI.bam~   ~override/BZWD040I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_050.bam~    ~override/BZWD050D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_050_CO.bam~   ~override/BZWD050I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_060.bam~    ~override/BZWD060D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_060_EN.bam~   ~override/BZWD060I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_070.bam~    ~override/BZWD070D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_070_WM.bam~   ~override/BZWD070I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_080.bam~    ~override/BZWD080D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_080_IL.bam~   ~override/BZWD080I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_090.bam~    ~override/BZWD090D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_090_EV.bam~   ~override/BZWD090I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_100.bam~    ~override/BZWD100D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_100_DI.bam~   ~override/BZWD100I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_110.bam~    ~override/BZWD110D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_110_NE.bam~   ~override/BZWD110I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_120.bam~    ~override/BZWD120D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_120_DI.bam~   ~override/BZWD120I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_130.bam~    ~override/BZWD130D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_130_TR.bam~   ~override/BZWD130I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_140.bam~    ~override/BZWD140D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_140_NE.bam~   ~override/BZWD140I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_150.bam~    ~override/BZWD150D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_150_NE.bam~   ~override/BZWD150I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_160.bam~    ~override/BZWD160D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_160_NE.bam~   ~override/BZWD160I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_170.bam~    ~override/BZWD170D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_170_DI.bam~   ~override/BZWD170I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_180.bam~    ~override/BZWD180D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_180_IL.bam~   ~override/BZWD180I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_190.bam~    ~override/BZWD190D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_190_NE.bam~   ~override/BZWD190I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_200.bam~    ~override/BZWD200D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_200_NE.bam~   ~override/BZWD200I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_210.bam~    ~override/BZWD210D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_210_DI.bam~   ~override/BZWD210I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_220.bam~    ~override/BZWD220D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_220_EN.bam~   ~override/BZWD220I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_230.bam~    ~override/BZWD230D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_230_EV.bam~   ~override/BZWD230I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_240.bam~    ~override/BZWD240D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_240_DI.bam~   ~override/BZWD240I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_250.bam~    ~override/BZWD250D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_250_EN.bam~   ~override/BZWD250I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_260.bam~    ~override/BZWD260D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_260_TR.bam~   ~override/BZWD260I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_270.bam~    ~override/BZWD270D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_270_EN.bam~   ~override/BZWD270I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_280.bam~    ~override/BZWD280D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_280_NE.bam~   ~override/BZWD280I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_290.bam~    ~override/BZWD290D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_290_DI.bam~   ~override/BZWD290I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_300.bam~    ~override/BZWD300D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_300_IL.bam~   ~override/BZWD300I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_310.bam~    ~override/BZWD310D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_310_NE.bam~   ~override/BZWD310I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_320.bam~    ~override/BZWD320D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_320_NE.bam~   ~override/BZWD320I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_330.bam~    ~override/BZWD330D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_330_NE.bam~   ~override/BZWD330I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_340.bam~    ~override/BZWD340D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_340_WM.bam~   ~override/BZWD340I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_350.bam~    ~override/BZWD350D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_350_NE.bam~   ~override/BZWD350I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_360.bam~    ~override/BZWD360D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_360_CO.bam~   ~override/BZWD360I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_370.bam~    ~override/BZWD370D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_370_NE.bam~   ~override/BZWD370I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_380.bam~    ~override/BZWD380D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_380_NE.bam~   ~override/BZWD380I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_390.bam~    ~override/BZWD390D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_390_DI.bam~   ~override/BZWD390I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_400.bam~    ~override/BZWD400D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_400_DI.bam~   ~override/BZWD400I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_410.bam~    ~override/BZWD410D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_410_DI.bam~   ~override/BZWD410I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_420.bam~    ~override/BZWD420D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_420_EN.bam~   ~override/BZWD420I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_430.bam~    ~override/BZWD430D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_430_DI.bam~   ~override/BZWD430I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_440.bam~    ~override/BZWD440D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_440_NE.bam~   ~override/BZWD440I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_450.bam~    ~override/BZWD450D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_450_DI.bam~   ~override/BZWD450I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_460.bam~    ~override/BZWD460D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_460_IL.bam~   ~override/BZWD460I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_470.bam~    ~override/BZWD470D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_470_IL.bam~   ~override/BZWD470I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_480.bam~    ~override/BZWD480D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_480_NE.bam~   ~override/BZWD480I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_490.bam~    ~override/BZWD490D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_490_DI.bam~   ~override/BZWD490I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_500.bam~    ~override/BZWD500D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_500_NE.bam~   ~override/BZWD500I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_510.bam~    ~override/BZWD510D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_510_IL.bam~   ~override/BZWD510I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_520.bam~    ~override/BZWD520D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_520_IL.bam~   ~override/BZWD520I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_530.bam~    ~override/BZWD530D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_530_NE.bam~   ~override/BZWD530I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_540.bam~    ~override/BZWD540D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_540_NE.bam~   ~override/BZWD540I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_550.bam~    ~override/BZWD550D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_550_NE.bam~   ~override/BZWD550I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_560.bam~    ~override/BZWD560D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_560_IL.bam~   ~override/BZWD560I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_570.bam~    ~override/BZWD570D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_570_IL.bam~   ~override/BZWD570I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_580.bam~    ~override/BZWD580D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_580_NE.bam~   ~override/BZWD580I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_590.bam~    ~override/BZWD590D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_590_NE.bam~   ~override/BZWD590I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_600.bam~    ~override/BZWD600D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_600_WM.bam~   ~override/BZWD600I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_610.bam~    ~override/BZWD610D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_610_NE.bam~   ~override/BZWD610I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_620.bam~    ~override/BZWD620D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_620_IL.bam~   ~override/BZWD620I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_630.bam~    ~override/BZWD630D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_630_NE.bam~   ~override/BZWD630I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_640.bam~    ~override/BZWD640D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_640_DI.bam~   ~override/BZWD640I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_650.bam~    ~override/BZWD650D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_650_IL.bam~   ~override/BZWD650I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_660.bam~    ~override/BZWD660D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_660_IL.bam~   ~override/BZWD660I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_670.bam~    ~override/BZWD670D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_670_EN.bam~   ~override/BZWD670I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_680.bam~    ~override/BZWD680D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_680_DI.bam~   ~override/BZWD680I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_690.bam~    ~override/BZWD690D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_690_EN.bam~   ~override/BZWD690I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_700.bam~    ~override/BZWD700D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_700_NE.bam~   ~override/BZWD700I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_710.bam~    ~override/BZWD710D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_710_IL.bam~   ~override/BZWD710I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_720.bam~    ~override/BZWD720D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_720_EN.bam~   ~override/BZWD720I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_730.bam~    ~override/BZWD730D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_730_AB.bam~   ~override/BZWD730I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_740.bam~    ~override/BZWD740D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_740_EN.bam~   ~override/BZWD740I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_750.bam~    ~override/BZWD750D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_750_DI.bam~   ~override/BZWD750I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_760.bam~    ~override/BZWD760D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_760_EN.bam~   ~override/BZWD760I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_770.bam~    ~override/BZWD770D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_770_EN.bam~   ~override/BZWD770I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_780.bam~    ~override/BZWD780D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_780_IL.bam~   ~override/BZWD780I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_790.bam~    ~override/BZWD790D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_790_IL.bam~   ~override/BZWD790I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_800.bam~    ~override/BZWD800D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_800_EN.bam~   ~override/BZWD800I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_810.bam~    ~override/BZWD810D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_810_DI.bam~   ~override/BZWD810I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_820.bam~    ~override/BZWD820D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_820_WM.bam~   ~override/BZWD820I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_830.bam~    ~override/BZWD830D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_830_EN.bam~   ~override/BZWD830I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_840.bam~    ~override/BZWD840D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_840_EV.bam~   ~override/BZWD840I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_850.bam~    ~override/BZWD850D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_850_IL.bam~   ~override/BZWD850I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_860.bam~    ~override/BZWD860D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_860_EN.bam~   ~override/BZWD860I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_870.bam~    ~override/BZWD870D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_870_EN.bam~   ~override/BZWD870I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_880.bam~    ~override/BZWD880D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_880_AB.bam~   ~override/BZWD880I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_890.bam~    ~override/BZWD890D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_890_IL.bam~   ~override/BZWD890I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_900.bam~    ~override/BZWD900D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_900_IL.bam~   ~override/BZWD900I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_910.bam~    ~override/BZWD910D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_910_EN.bam~   ~override/BZWD910I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_920.bam~    ~override/BZWD920D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_920_IL.bam~   ~override/BZWD920I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_930.bam~    ~override/BZWD930D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_930_EN.bam~   ~override/BZWD930I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_940.bam~    ~override/BZWD940D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_940_TR.bam~   ~override/BZWD940I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_950.bam~    ~override/BZWD950D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_950_EN.bam~   ~override/BZWD950I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_960.bam~    ~override/BZWD960D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_960_EN.bam~   ~override/BZWD960I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_970.bam~    ~override/BZWD970D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_970_DI.bam~   ~override/BZWD970I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_980.bam~    ~override/BZWD980D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_980_EN.bam~   ~override/BZWD980I.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_990.bam~    ~override/BZWD990D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_990_IL.bam~   ~override/BZWD990I.BAM~
+
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/description/wand_A00.bam~    ~override/BZWDA00D.BAM~
+COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_A00_CO.bam~   ~override/BZWDA00I.BAM~
+/*
+*   END: Art -- All
+*/
+
+
+/*
+*   BEGIN: Function: Tinkering: Make the PoC Wand art a function
+*/
+DEFINE_ACTION_FUNCTION fn_bz_wands_tinker_poc_copy
+    STR_VAR
+        icon_inventory = null           //BAM RESREF to write for inventory
+        icon_description = null         //BAM RESREF to write for description
+        item_resref_src = null          //RESREF of item to read from
+        item_resref_dest = null         //RESREF of item to create
+    BEGIN
+
+    ACTION_IF
+        NOT FILE_EXISTS_IN_GAME ~%item_resref_dest%.ITM~
+    BEGIN
+        COPY_EXISTING ~%item_resref_src%.ITM~ ~override/%item_resref_dest%.ITM~
+            //Patches
+            SAY NAME1 ~PoC wand~                                       //identified name
+            SAY NAME2 ~PoC wand~                                       //identified name
+            SAY IDENTIFIED_DESC   ~This is a Proof of concept to see art in-engine~  //identified description
+            SAY UNIDENTIFIED_DESC ~This is a Proof of concept to see art in-engine~  //identified description
+            WRITE_ASCII_TERMINATE (0x3A) ~%icon_inventory%~     //update the item inventory icon
+            WRITE_ASCII_TERMINATE (0x58) ~%icon_description%~   //update the item description icon
+            BUT_ONLY
+
+    END
+    ELSE BEGIN
+        WARN ~WARN: fn_bz_wands_tinker_poc_copy: file `%item_resref_dest%.ITM` already exists~
+    END
+
+END
+/*
+*   END: Function: Tinkering: Make the PoC Wand art a function
+*/
+
+
+/*
+*   BEGIN: Art PoC *.ITM
+*/
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD240I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDPC0~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD241I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDPC1~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD242I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDPC2~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD243I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDPC3~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD244I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDPC4~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD245I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDPC5~ END
+/*
+*   BEGIN: Art PoC *.ITM
+*/
+
+
+
+/*
+*   BEGIN: Art PoC: ALL *.ITM
+*/
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD000I~ icon_description = ~BZWD000D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND000~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD010I~ icon_description = ~BZWD010D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND010~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD020I~ icon_description = ~BZWD020D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND020~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD030I~ icon_description = ~BZWD030D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND030~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD040I~ icon_description = ~BZWD040D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND040~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD050I~ icon_description = ~BZWD050D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND050~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD060I~ icon_description = ~BZWD060D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND060~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD070I~ icon_description = ~BZWD070D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND070~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD080I~ icon_description = ~BZWD080D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND080~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD090I~ icon_description = ~BZWD090D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND090~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD100I~ icon_description = ~BZWD100D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND100~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD110I~ icon_description = ~BZWD110D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND110~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD120I~ icon_description = ~BZWD120D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND120~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD130I~ icon_description = ~BZWD130D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND130~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD140I~ icon_description = ~BZWD140D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND140~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD150I~ icon_description = ~BZWD150D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND150~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD160I~ icon_description = ~BZWD160D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND160~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD170I~ icon_description = ~BZWD170D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND170~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD180I~ icon_description = ~BZWD180D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND180~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD190I~ icon_description = ~BZWD190D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND190~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD200I~ icon_description = ~BZWD200D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND200~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD210I~ icon_description = ~BZWD210D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND210~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD220I~ icon_description = ~BZWD220D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND220~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD230I~ icon_description = ~BZWD230D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND230~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD240I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND240~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD250I~ icon_description = ~BZWD250D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND250~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD260I~ icon_description = ~BZWD260D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND260~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD270I~ icon_description = ~BZWD270D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND270~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD280I~ icon_description = ~BZWD280D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND280~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD290I~ icon_description = ~BZWD290D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND290~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD300I~ icon_description = ~BZWD300D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND300~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD310I~ icon_description = ~BZWD310D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND310~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD320I~ icon_description = ~BZWD320D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND320~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD330I~ icon_description = ~BZWD330D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND330~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD340I~ icon_description = ~BZWD340D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND340~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD350I~ icon_description = ~BZWD350D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND350~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD360I~ icon_description = ~BZWD360D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND360~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD370I~ icon_description = ~BZWD370D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND370~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD380I~ icon_description = ~BZWD380D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND380~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD390I~ icon_description = ~BZWD390D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND390~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD400I~ icon_description = ~BZWD400D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND400~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD410I~ icon_description = ~BZWD410D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND410~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD420I~ icon_description = ~BZWD420D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND420~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD430I~ icon_description = ~BZWD430D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND430~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD440I~ icon_description = ~BZWD440D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND440~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD450I~ icon_description = ~BZWD450D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND450~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD460I~ icon_description = ~BZWD460D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND460~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD470I~ icon_description = ~BZWD470D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND470~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD480I~ icon_description = ~BZWD480D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND480~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD490I~ icon_description = ~BZWD490D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND490~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD500I~ icon_description = ~BZWD500D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND500~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD510I~ icon_description = ~BZWD510D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND510~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD520I~ icon_description = ~BZWD520D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND520~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD530I~ icon_description = ~BZWD530D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND530~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD540I~ icon_description = ~BZWD540D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND540~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD550I~ icon_description = ~BZWD550D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND550~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD560I~ icon_description = ~BZWD560D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND560~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD570I~ icon_description = ~BZWD570D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND570~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD580I~ icon_description = ~BZWD580D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND580~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD590I~ icon_description = ~BZWD590D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND590~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD600I~ icon_description = ~BZWD600D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND600~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD610I~ icon_description = ~BZWD610D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND610~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD620I~ icon_description = ~BZWD620D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND620~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD630I~ icon_description = ~BZWD630D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND630~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD640I~ icon_description = ~BZWD640D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND640~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD650I~ icon_description = ~BZWD650D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND650~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD660I~ icon_description = ~BZWD660D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND660~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD670I~ icon_description = ~BZWD670D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND670~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD680I~ icon_description = ~BZWD680D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND680~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD690I~ icon_description = ~BZWD690D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND690~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD700I~ icon_description = ~BZWD700D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND700~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD710I~ icon_description = ~BZWD710D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND710~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD720I~ icon_description = ~BZWD720D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND720~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD730I~ icon_description = ~BZWD730D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND730~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD740I~ icon_description = ~BZWD740D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND740~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD750I~ icon_description = ~BZWD750D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND750~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD760I~ icon_description = ~BZWD760D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND760~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD770I~ icon_description = ~BZWD770D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND770~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD780I~ icon_description = ~BZWD780D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND780~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD790I~ icon_description = ~BZWD790D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND790~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD800I~ icon_description = ~BZWD800D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND800~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD810I~ icon_description = ~BZWD810D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND810~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD820I~ icon_description = ~BZWD820D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND820~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD830I~ icon_description = ~BZWD830D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND830~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD840I~ icon_description = ~BZWD840D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND840~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD850I~ icon_description = ~BZWD850D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND850~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD860I~ icon_description = ~BZWD860D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND860~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD870I~ icon_description = ~BZWD870D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND870~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD880I~ icon_description = ~BZWD880D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND880~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD890I~ icon_description = ~BZWD890D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND890~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD900I~ icon_description = ~BZWD900D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND900~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD910I~ icon_description = ~BZWD910D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND910~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD920I~ icon_description = ~BZWD920D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND920~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD930I~ icon_description = ~BZWD930D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND930~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD940I~ icon_description = ~BZWD940D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND940~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD950I~ icon_description = ~BZWD950D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND950~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD960I~ icon_description = ~BZWD960D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND960~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD970I~ icon_description = ~BZWD970D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND970~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD980I~ icon_description = ~BZWD980D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND980~ END
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWD990I~ icon_description = ~BZWD990D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWND990~ END
+
+LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
+    STR_VAR icon_inventory = ~BZWDA00I~ icon_description = ~BZWDA00D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDA00~ END
+/*
+*   END: Art PoC: ALL *.ITM
+*/

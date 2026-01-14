@@ -5,7 +5,7 @@ BACKUP ~./weidu_external/mod-caster-crafting/backup~ // %MOD_FOLDER% will be a l
 AUTHOR ~Bardez; support at: https://github.com/BardezAnAvatar/BGEE-Caster-Crafting/issues~
 
 /* WeiDU versions newer than v203 allow tp2 level version listing in the .log for troubleshooting  */
-VERSION ~v0.7.6~
+VERSION ~v0.8.0~
 
 //Display the readme?
 README ~./%MOD_FOLDER%/readme-caster-crafting.md~
@@ -43,6 +43,19 @@ LANGUAGE
 /*********************
 *   Mod Components   *
 *********************/
+BEGIN @1 DESIGNATED 1   //"Running pre-processing of registered data"
+INSTALL_BY_DEFAULT
+    PRINT ~
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    !   Initializing registered data   !
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    ~
+
+    OUTER_SET ~bz-missing_wands-priest~ = 0
+    OUTER_SET ~bz-missing_wands-arcane~ = 0
+    OUTER_SET ~bz-missing_wands-priest-max_level~ = 0
+    OUTER_SET ~bz-missing_wands-arcane-max_level~ = 0
+
 
 // Caster Crafting: Missing scrolls subcomponents
 BEGIN @11 DESIGNATED 11 // Add in missing arcane spell scrolls
@@ -112,11 +125,6 @@ BEGIN @50 DESIGNATED 50 //~Leveled Potions: craft potions at higher caster level
 
 
 // Caster Crafting: New Wands for Spells
-OUTER_SET ~bz-missing_wands-priest~ = 0
-OUTER_SET ~bz-missing_wands-arcane~ = 0
-OUTER_SET ~bz-missing_wands-priest-max_level~ = 0
-OUTER_SET ~bz-missing_wands-arcane-max_level~ = 0
-
 BEGIN @61 DESIGNATED 61 // Add in wands for priest spell level 1
 SUBCOMPONENT @60        //   Missing priest wands
     OUTER_SET ~bz-missing_wands-priest-max_level~ = 1
