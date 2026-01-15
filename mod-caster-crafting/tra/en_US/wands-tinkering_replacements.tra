@@ -1,0 +1,40 @@
+/* Reserving range 110000-119999 */
+/*****************************************
+*   5th Level - Arcane - 115500-115999   *
+*****************************************/
+//Animal Summoning II
+@115500 = ~Wand of Animal Summoning II~
+/*
+Animal Summoning II
+(Conjuration/Summoning)
+
+Level: 5
+Sphere: Animal, Summoning
+Range: 30 ft.
+Duration: 3 turns
+Casting Time: 8
+Area of Effect: Special
+Saving Throw: None
+
+By means of this spell, the caster calls from 1 to 3 animals that have 8 Hit Dice or less. The animals summoned aid the caster by whatever means they possess, staying until the spell duration expires. Only normal or giant animals can be summoned; fantastic animals or monsters cannot be summoned by this spell (no chimerae, dragons, gorgons, manticores, etc.).
+*/
+
+// Search and replacement strings for Animal Summoning II wand description, which would yield a desired %flavor_text% for
+//  The template string (@100003 in `wands-defaults.tra`)
+@115502 = ~this spell~   //Search
+@115503 = ~this wand~    //replace
+@115504 = ~the caster~   //Search
+@115505 = ~the wielder~  //replace
+@115506 = ~the spell~    //Search
+@115507 = ~the effect~   //replace
+
+//I would still need to parse the entire spell description to extract the relevant variables for the template
+//  Name, spell school, Level, sphere, range, duration, AoE, and saving throw would be easy to parse.
+//  I could read the description myself and allow overrides for the various stat blocks, I suppose.
+
+// Maybe a function to read the Spell Name, Spell School, Level, Sphere, Damage, Range, Duration, AoE, and Saving Throw from the spell description and return them?
+//  Then I could allow for manual replacements for the stats if duration or range are variable, for example.
+//  I'd then allow a certain number of strings for replacing the flavor text, like above.
+
+// I suppose that could work, but then there would be a huge array of possible STRREFs used for each wand description.
+// "It would be better to just write custom descriptions for each wand, I think." is the LLM suggested text, lol.
