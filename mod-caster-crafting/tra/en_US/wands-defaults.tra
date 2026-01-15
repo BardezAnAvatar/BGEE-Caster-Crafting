@@ -25,3 +25,32 @@ STATISTICS:
 Weight: 1
 
 %spell_desc%~
+
+
+// Template for custom wand descriptions
+//  Note: some of these variables might have more variables contained within (like duration)
+//  Note: %variable_spell_block% is optional and may be omitted if not needed
+//  Note: %variable_spell_block% may contain line breaks and additional indentation
+//  Note: %variable_spell_block% may contain variable array of stat entries
+//      - Damage
+//      - Range
+//  Drawbacks:
+//      - This doesn't work well for summons and their stat blocks
+//      - %variable_spell_block% would be complicated to build out
+@100003 = ~%flavor_text%
+
+STATISTICS:
+%spell_school%
+
+Charge abilities:
+– %spell_name%
+  – %very_short_description%
+  %variable_spell_block%
+  Duration: %wand_duration%
+  Area of Effect: %area_of_effect%
+  Saving Throw: %saving_throw%
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
