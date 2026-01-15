@@ -237,9 +237,9 @@ COPY ~./%MOD_FOLDER%/comp/missing-wands/BAM/inventory/wand_A00_CO.bam~   ~overri
 */
 DEFINE_ACTION_FUNCTION fn_bz_wands_tinker_poc_copy
     STR_VAR
-        icon_inventory = null           //BAM RESREF to write for inventory
+        icon_inventory   = null         //BAM RESREF to write for inventory
         icon_description = null         //BAM RESREF to write for description
-        item_resref_src = null          //RESREF of item to read from
+        item_resref_src  = null         //RESREF of item to read from
         item_resref_dest = null         //RESREF of item to create
     BEGIN
 
@@ -283,7 +283,7 @@ LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
 LAUNCH_ACTION_FUNCTION ~fn_bz_wands_tinker_poc_copy~
     STR_VAR icon_inventory = ~BZWD245I~ icon_description = ~BZWD240D~ item_resref_src = ~WAND02~ item_resref_dest = ~BZWNDPC5~ END
 /*
-*   BEGIN: Art PoC *.ITM
+*   END: Art PoC *.ITM
 */
 
 
