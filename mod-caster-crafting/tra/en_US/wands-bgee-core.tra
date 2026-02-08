@@ -4200,3 +4200,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Critical Wounds
+@65502 = ~Wand of Cure Critical Wounds~
+@65503 = ~Cure Critical Wounds is a very potent version of the Cure Light Wounds effect. The wielder touches the wand to a creature and heals 27 points of damage from wounds or other injuries. The effect does not affect creatures without corporeal bodies, those of extraplanar origin, or those not living.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Critical Wounds
+  – Healed for 27 hit points
+  Range: Touch
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

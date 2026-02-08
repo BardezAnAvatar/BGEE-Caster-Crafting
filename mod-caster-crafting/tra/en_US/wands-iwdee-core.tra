@@ -3449,3 +3449,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cure Critical Wounds
+@75502 = ~Wand of Cure Critical Wounds~
+@75503 = ~By casting this wand to a creature, the wielder heals 27 Hit Points and cures intoxication. There is no effect on undead, constructs, or extraplanar creatures. It cannot be used by evil-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cure Critical Wounds
+  – Healed for 27 hit points
+  – Cures intoxication
+  Range: Touch
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
