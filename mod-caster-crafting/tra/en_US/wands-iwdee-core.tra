@@ -3424,3 +3424,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+
+/***************************************
+*   5th Level - Priest - 75500-75999   *
+***************************************/
+//Animal Summoning II
+@75500 = ~Wand of Animal Summoning II~
+@75501 = ~Upon activting this wand, it up to 6 animals that have 8 or fewer Hit Dice. Only normal or giant animals can be summoned; fantastic animals or monsters cannot be summoned by this wand (i.e. no dragons or elementals). This effect works indoors and outdoors.
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Animal Summoning II
+  – Summons animals
+  Range: Sight
+  Duration: 1 hour
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

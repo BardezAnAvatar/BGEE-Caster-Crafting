@@ -4182,3 +4182,21 @@ Weight: 1~
 /***************************************
 *   5th Level - Priest - 65500-65999   *
 ***************************************/
+//Animal Summoning II
+@65500 = ~Wand of Animal Summoning II~
+@65501 = ~By means of this wand, the wielder calls from 1 to 3 animals that have 8 Hit Dice or less. The animals summoned aid the wielder by whatever means they possess, staying until the duration expires. Only normal or giant animals can be summoned; fantastic animals or monsters cannot be summoned by this spell (no chimerae, dragons, gorgons, manticores, etc.).
+
+STATISTICS:
+(Conjuration/Summoning)
+
+Charge abilities:
+– Animal Summoning II
+  – Summons animals
+  Duration: 3 turns
+  Area of Effect: Summons
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
