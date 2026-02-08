@@ -4945,3 +4945,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Flame Strike
+@95504 = ~Wand of Flame Strike~
+@95505 = ~Upon activating this wand, a vertical column of fire roars downward, striking a victim selected by the wielder, along with every creature within 5 feet of the target. Those who fail on their saving throw vs. breath at -4 sustain %magnitude%d6 points of fire damage (up to a maximum of 15d6), and those who succeed receive half damage. This effect will not harm party members.
+
+STATISTICS:
+
+Charge abilities:
+– Flame Strike
+  – Summons a vertical column of fire
+  School: Evocation
+  Sphere: Combat, Elemental (Fire)
+  Damage:
+  – %magnitude%d8 points of fire damage
+  Range: Long
+  Duration: Instant
+  Area of Effect: 1 creature and enemies within 5’
+  Saving Throw: Save vs. Breath (-4 penalty) for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -4222,3 +4222,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Flame Strike
+@65504 = ~Wand of Flame Strike~
+@65505 = ~This wand calls down a vertical column of fire which roars downward onto a victim chosen by the wielder. The target must roll a Saving Throw vs. Spell. Failure means the creature sustains %magnitude%d8 points of damage; otherwise, the damage is halved.
+
+STATISTICS:
+(Evocation)
+
+Charge abilities:
+– Flame Strike
+  – Summons a vertical column of fire
+  Damage:
+  – %magnitude%d8 points of fire damage
+  Range: 40 ft.
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Spell for half damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
