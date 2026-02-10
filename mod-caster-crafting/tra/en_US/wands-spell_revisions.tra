@@ -4991,3 +4991,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//True Seeing
+@95508 = ~Wand of True Seeing~
+@95509 = ~When this wand is activated, the wielder gains the ability to see the exact locations of creatures or objects under displacement or invisibility effects, and see through illusions. This effectively neutralize spells such as Blur and Mirror Image, allow the wielder to see and target invisible creatures normally, and make <PRO_HIMHER> unaffected by hostile illusion spells such as Spook. The wielder is also cured from any form of blindness and is immune to it for the duration of the spell.
+
+Note: True Seeing does not dispel illusionary clones such as those conjured by Mislead or Simulacrum, but instead clearly highlights them, revealing them as deceptions.
+
+STATISTICS:
+
+Charge abilities:
+– True Seeing
+  – Dispels illusions and invisibility
+  School: Divination
+  Sphere: All
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: Special
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

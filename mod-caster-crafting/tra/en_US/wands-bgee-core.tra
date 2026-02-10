@@ -4268,3 +4268,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//True Seeing
+@65508 = ~Wand of True Seeing~
+@65509 = ~Instantly and once each round for 1 turn after this wand is activated, all hostile Illusion/Phantasm spells in a 120-ft. radius around the wielder will be dispelled. The spells affected are Reflected Image, Invisibility, Mirror Image, Non-Detection, Improved Invisibility, Shadow Door, Mislead, Project Image, and Simulacrum. The target's Magic Resistance, if any, does not affect this.
+
+STATISTICS:
+(Divination)
+
+Charge abilities:
+– True Seeing
+  – Dispels illusions and invisibility
+  Range: Self
+  Duration: 1 turn
+  Area of Effect: 120-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
