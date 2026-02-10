@@ -3494,3 +3494,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Raise Dead
+@75506 = ~Wand of Raise Dead~
+@75507 = ~This wand can can restore life to one of the wielder's companions. Note that this spell does not work on elven characters. The person has but 1 Hit Point when raised and must regain the rest by natural healing or curative magic. Raise Dead will not work on someone killed by Death Spell, Finger of Death, Destruction, or Disintegrate. It cannot be used by evil-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Raise Dead
+  – Raises a dead party member
+  Range: Sight
+  Duration: Instant
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+ Non-Evil alignment
+
+Weight: 1~
