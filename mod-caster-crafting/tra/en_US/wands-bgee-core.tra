@@ -4289,3 +4289,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Iron Skins
+@65510 = ~Wand of Iron Skins~
+@65511 = ~Upon activation, an outer %magnitude% layers of iron skins will move up from the ground, completely covering the wielder. This skin is, of course, magical and will hinder the wielder in no way. The effect of this is to protect the wielder from physical attacks such as melee weapons and projectiles. For each skin the wielder possesses, it will stop one attack, The skins will remain on the wielder until <PRO_HESHE> is affected by a Dispel Magic, all of the skins are removed due to physical attacks, or the spell's duration expires. It is important to note that this will not protect the wielder from any area attacks such as Fireball; however, it will protect <PRO_HIMHER> from physical magical attacks such as Magic Missile.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Iron Skins
+  – %magnitude% iron skins
+  Range: Personal
+  Duration: 12 hours
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
