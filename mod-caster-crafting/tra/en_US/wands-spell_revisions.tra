@@ -5020,4 +5020,26 @@ Weight: 1~
 //Iron Skins -> Stoneskin (@94018)
 
 
+//Champion's Strength
+@95510 = ~Wand of Champion's Strength~
+@95511 = ~Upon activation, this wand transforms the target into a divine champion. The target gains a bonus to strength, dexterity, and constitution scores of %magnitude%. The effect lasts for %duration% or until dispelled. This effect is not cumulative with itself or with other similar spells.
 
+STATISTICS:
+
+Charge abilities:
+– Champion's Strength
+  – Spellcasting disabled
+  – strength +%magnitude% bonus
+  – dexterity +%magnitude% bonus
+  – constitution +%magnitude% bonus
+  School: Alteration
+  Sphere: Law
+  Range: Medium
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

@@ -3538,3 +3538,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Champion's Strength
+@75510 = ~Wand of Champion's Strength~
+@75511 = ~Upon activation, this wand transforms the target into a divine champion. The target's Strength is set to 20 – 23 for 1 turn (25% chance of each value). As soon as the wand is activated, the wielder becomes fatigued, suffering a penalty to all <PRO_HISHER> rolls. The drawback to this wand is that the wielder must concentrate on the divine connection with the target, hence losing the ability to cast any additional spells during this time. The effect lasts for one turn or until dispelled.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Champion's Strength
+  – Spellcasting disabled
+  – Strength score set randomly to 20, 21, 22, or 23
+  Range: Sight
+  Duration: 1 turn
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

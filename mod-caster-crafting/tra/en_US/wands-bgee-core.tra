@@ -4292,3 +4292,28 @@ Weight: 1~
 
 
 //Iron Skins: This is just Stoneskin in effect, so map Iron Skins to crafting of Stoneskin
+
+
+//Champion's Strength
+@65510 = ~Wand of Champion's Strength~
+@65511 = ~Upon activation, this wand transforms the target into a divine champion. The target gains a +%magnitude% bonus to <PRO_HISHER> THAC0. Also the target's Strength is set to 18/00 for the duration of the effect and receives all the bonuses to hit and damage rolls that this Strength confers. Note also that if the target's strength is above 18/00, it will actually be reduced to this value.
+
+The drawback to this is that the wielder must concentrate on the connection between the target and <PRO_HISHER> god for the duration of the spell, hence losing the ability to cast any spells during this time. The effect lasts for %duration% or until dispelled.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Champion's Strength
+  – Spellcasting disabled
+  – THAC0 +%magnitude% bonus
+  – Strength score set to 18/00
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
