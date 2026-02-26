@@ -99,7 +99,7 @@ jobs:
           name: Release ${{ needs.bump-tag-version.outputs.semver_next }}
 
       - name: Upload iemod package to latest release
-        uses: svenstaro/upload-release-action@2.11.3
+        uses: svenstaro/upload-release-action@2.11.4
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.iemod
@@ -108,7 +108,7 @@ jobs:
           overwrite: true
 
       - name: Upload zip package to latest release
-        uses: svenstaro/upload-release-action@2.11.3
+        uses: svenstaro/upload-release-action@2.11.4
         with:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: ${{ steps.CreateIEModZipPackage.outputs.PackageBaseName }}.zip
