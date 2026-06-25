@@ -3560,3 +3560,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chaotic Commands
+@75512 = ~Wand of Chaotic Commands~
+@75513 = ~This wand renders its target immune to magical commands, protecting it against charm, sleep, maze, feeblemind, confusion, hold, and stun.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Chaotic Commands
+  – Immune to magical commands
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

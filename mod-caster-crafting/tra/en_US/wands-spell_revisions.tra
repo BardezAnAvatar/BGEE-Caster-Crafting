@@ -5043,3 +5043,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+
+//Chaotic Commands
+@95512 = ~Wand of Chaotic Commands~
+@95513 = ~Upon activation, the recipient becomes immune to magical commands. Charm, Command, Confusion, Domination, Hold, and Sleep are all spells that fit into this category. This wand also protects from psionic mind attacks such as a mind flayer’s Psionic Blast, but it will not confer complete immunity to psionics. This effect will last for the duration or until dispelled.
+
+STATISTICS:
+
+Charge abilities:
+– Chaotic Commands
+  – Immune to magical commands
+  School: Enchantment
+  Range: Sight
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

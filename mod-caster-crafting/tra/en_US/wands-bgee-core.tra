@@ -4317,3 +4317,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Chaotic Commands
+@65512 = ~Wand of Chaotic Commands~
+@65513 = ~This wand renders its target immune to magical commands. Charm, Command, Confusion, Domination, Sleep, Maze, and Spiritual Lock are all spells that fit into this category. This wand also protects the target from psionic blasts. This spell affects only 1 creature and lasts for the duration or until dispelled.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Chaotic Commands
+  – Immune to magical commands
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
