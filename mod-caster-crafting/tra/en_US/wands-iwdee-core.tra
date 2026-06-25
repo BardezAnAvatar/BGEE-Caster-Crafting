@@ -3581,3 +3581,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Resistance
+@75514 = ~Wand of Magic Resistance~
+@75515 = ~Once activated, the recipient receives a Magic Resistance bonus of %magnitude%%. This effect will last for the duration or, ironically enough, until dispelled.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Magic Resistance
+  – +%magnitude%% Magic Resistance bonus
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

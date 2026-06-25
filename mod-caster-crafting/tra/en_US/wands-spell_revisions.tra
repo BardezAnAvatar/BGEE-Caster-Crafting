@@ -5065,3 +5065,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Resistance
+@95514 = ~Wand of Magic Resistance~
+@95515 = ~Upon activation, the recipient’s resistance to all forms of magic is increased by %magnitude%%. This effect will last for the duration or until dispelled. Multiple castings of this spell are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Magic Resistance
+  – +%magnitude%% Magic Resistance bonus
+  School: Alteration
+  Sphere: Protection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

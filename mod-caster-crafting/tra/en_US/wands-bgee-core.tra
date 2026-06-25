@@ -4338,3 +4338,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Magic Resistance
+@65514 = ~Wand of Magic Resistance~
+@65515 = ~Once activated, the recipient receives a resistance to all magic. The resistance conferred is %magnitude%%. This resistance is set so that if the target already has more Magic Resistance than the wand would confer, it will actually lower it to the set value. This effect will last for the duration or until dispelled.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Magic Resistance
+  – Magic resistance set to %magnitude%%
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
