@@ -3625,3 +3625,28 @@ Requires:
  Evil alignment
 
 Weight: 1~
+
+
+//Slay Living
+@75518 = ~Wand of Slay Living~
+@75519 = ~Upon activating this wand, the wielder receives a charge of negative energy in their hands. The next attack that the wielder makes will inflict 2d8+1 points of magical damage upon the target. Also, <PRO_HESHE> must make a Save vs. Spell or be instantly killed. The wielder only has 1 turn to make the attack before the effect fizzles. Cannot be used by good-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Slay Living
+  – Causes magical wounds
+  Damage:
+  – 2d8+1 magic damage
+  – Death
+  Range: Touch
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Death to survive
+
+Requires:
+ 9 Intelligence
+ Non-good alignment
+
+Weight: 1~

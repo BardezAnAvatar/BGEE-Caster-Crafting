@@ -4382,3 +4382,28 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Slay Living
+@65518 = ~Wand of Slay Living~
+@65519 = ~Upon activating this wand, the wielder receives a charge of negative energy in their hands. The next attack that the wielder makes will inflict 2d6+9 points of magical damage upon the target. Also, <PRO_HESHE> must make a Save vs. Spell or be instantly killed. The wielder only has 3 rounds to make the attack before the effect fizzles. Slay Living can be dispelled if cast between the activating and the necessary attack.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Slay Living
+  – Causes magical wounds
+  – +3 bonus to THAC0
+  Damage:
+  – 2d6+9 magic damage
+  – Death
+  Range: Touch
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Spell to survive
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
