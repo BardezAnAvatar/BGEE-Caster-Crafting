@@ -4360,3 +4360,25 @@ Requires:
 
 Weight: 1~
 
+
+//Cause Critical Wounds
+@65516 = ~Wand of Cause Critical Wounds~
+@65517 = ~Upon activating this wand, the wielder receives a charge of negative energy in their hands. The next attack that the wielder makes will inflict 27 points of damage upon the target; however, <PRO_HESHE> only has 2 rounds to make the attack before the effect fizzles. If the wielder misses the target creature, the spell is wasted. There is no Saving Throw.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Critical Wounds
+  – Causes magical wounds
+  – +2 bonus to THAC0
+  Damage: 27 magic damage
+  Range: Touch
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

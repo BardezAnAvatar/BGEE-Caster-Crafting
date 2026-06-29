@@ -3602,3 +3602,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Critical Wounds
+@75516 = ~Wand of Cause Critical Wounds~
+@75517 = ~Upon activating this wand and touching a creature, the wielder deals 27 points of magic damage (save vs. Spell for half) to the creature's body. This has no effect on undead, constructs, or extraplanar creatures. It can be used only by evil-aligned characters.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Cause Critical Wounds
+  – Causes magical wounds
+  Damage: 27 magic damage
+  Range: Touch
+  Duration: Permanent
+  Area of Effect: 1 creature
+  Saving Throw: Save vs. Spell for half damage
+
+Requires:
+ 9 Intelligence
+ Evil alignment
+
+Weight: 1~

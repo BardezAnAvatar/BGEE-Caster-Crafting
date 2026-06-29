@@ -5087,3 +5087,27 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Cause Mortal Wounds
+@95516 = ~Wand of Cause Mortal Wounds~
+@95517 = ~Upon activating this wand, the wielder receives a charge of negative energy in their hands. A successful touch from the wielder inflicts 5d8+25 points of damage upon the target. The effect expires once the wielder attempts a melee attack or after 5 rounds have passed. The wielder gains a +4 bonus to hit the target.
+
+STATISTICS:
+
+Charge abilities:
+– Cause Mortal Wounds
+  – Causes magical wounds
+  – +4 bonus to THAC0 for this attack
+  School: Necromancy
+  Sphere: Healing
+  Damage: 5d8+25 magic damage
+  Range: Touch
+  Duration: Special
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
