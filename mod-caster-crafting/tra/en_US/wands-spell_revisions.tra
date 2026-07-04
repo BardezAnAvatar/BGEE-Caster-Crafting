@@ -5138,3 +5138,25 @@ Requires:
  Non-good alignment
 
 Weight: 1~
+
+
+//Greater Command
+@95520 = ~Wand of Greater Command~
+@95521 = ~This wand enables the wielder to command other creatures to lie down and take no action (sleep) for 1 turn. Every enemy within 20 feet of the target is affected (save vs. spell at -4 negates). At the start of each round after the first, those affected get another save to attempt to break free from the effect. When the duration expires, any creatures still sleeping will awaken.
+
+STATISTICS:
+
+Charge abilities:
+– Greater Command
+  – Causes sleep
+  School: Enchantment
+  Sphere: Charm, Combat, Law
+  Range: Long
+  Duration: 1 turn
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Spell (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
