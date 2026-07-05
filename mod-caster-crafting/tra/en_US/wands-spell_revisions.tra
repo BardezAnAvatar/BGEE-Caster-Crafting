@@ -5208,3 +5208,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Repulsion
+@95526 = ~Wand of Repulsion~
+@95527 = ~An invisible, mobile field surrounds the wielder and prevents creatures from approaching <PRO_HIMHER>. Any creature within or entering the field must attempt a save vs. spell at -4 penalty. If it fails, it gets pushed away by 10 feet. Repelled creatures' actions are not otherwise restricted. They can fight other creatures and can cast spells and attack you with ranged weapons.
+
+STATISTICS:
+
+Charge abilities:
+– Repulsion
+  – Pushes creatures away from wielder
+  School: Abjuration
+  Sphere: Wards
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 10' radius
+  Saving Throw: Save vs. Spell (at -4) negates
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

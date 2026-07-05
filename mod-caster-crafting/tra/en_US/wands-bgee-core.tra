@@ -4473,3 +4473,24 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Repulse Undead
+@65526 = ~Wand of Repulse Undead~
+@65527 = ~This powerful wand creates waves of anti-negative energy that sweep outward from the wielder. These waves disrupt any undead that attempt to attack the wierlder, pushing them away for several seconds. There is one wave per round for the duration of the effect. All undead are affected with no Saving Throw.
+
+STATISTICS:
+(Abjuration)
+
+Charge abilities:
+– Repulse Undead
+  – Pushes undead away from wielder
+  Range: Self
+  Duration: 1 turn
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
