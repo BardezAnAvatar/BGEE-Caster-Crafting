@@ -5230,3 +5230,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Pixie Dust
+@95528 = ~Wand of Pixie Dust~
+@95529 = ~This wand creates a small handful of pixie dust that the wielder can use to toss into the air. Any ally hit by the dust becomes improved invisible for 1 turn.
+
+STATISTICS:
+
+Charge abilities:
+– Pixie Dust
+  – Invisibility for allies
+  School: Conjuration
+  Sphere: Combat
+  Range: Personal
+  Duration: 1 turn
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
