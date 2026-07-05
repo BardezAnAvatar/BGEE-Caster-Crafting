@@ -5160,3 +5160,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mass Cure
+@95524 = ~Wand of Mass Cure~
+@95525 = ~When activating this wand, the wielder must picture the faces of <PRO_HISHER> fellow party members clearly and focus on the unity of the group. Upon completion, all party members within sight of the wielder are healed 2d8 + %magnitude% Hit Points.
+
+STATISTICS:
+
+Charge abilities:
+– Mass Cure
+  – Heals nearby allies 2d8 + %magnitude% hit points
+  – Removes intoxication
+  School: Necromancy
+  Sphere: Healing
+  Range: Personal
+  Duration: Permanent
+  Area of Effect: Sight
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

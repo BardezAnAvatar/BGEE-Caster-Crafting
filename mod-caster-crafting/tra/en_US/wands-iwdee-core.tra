@@ -3650,3 +3650,26 @@ Requires:
  Non-good alignment
 
 Weight: 1~
+
+
+//Mass Cure Light Wounds
+@75524 = ~Wand of Mass Cure Light Wounds~
+@75525 = ~When activating this wand, the wielder must picture the faces of <PRO_HISHER> fellow party members clearly and focus on the unity of the group. Upon completion, all party members within a 15-ft. radius of the wielder are healed 1d8 + %magnitude% Hit Points. Curing is permanent only insofar as the creature does not sustain further damage; caused wounds will heal —or can be cured— just as any normal injury. This wand has no effect on undead, constructs, or extraplanar creatures.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Mass Cure
+  – Heals nearby allies 1d8 + %magnitude% hit points
+  – Removes intoxication
+  Range: Self
+  Duration: Permanent
+  Area of Effect: 15-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+ Non-evil alignment
+
+Weight: 1~
