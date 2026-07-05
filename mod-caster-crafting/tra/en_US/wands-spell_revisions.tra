@@ -5162,6 +5162,31 @@ Requires:
 Weight: 1~
 
 
+//Righteous Fury
+@95522 = ~Wand of Righteous Fury~
+@95523 = ~This wand contains a powerful combat spell that enhances the wielder's physical prowess, transforming <PRO_HIMHER> into a juggernaut of destruction. The wielder's strength is augmented by 4 points, <PRO_HISHER> armor class is improved by 2 points, and <PRO_HESHE> gains %magnitude% temporary hit points. Furthermore, the wielder deals an additional 1d6 points of magic damage whenever <PRO_HESHE> strikes an opponent with a melee weapon. The effects last for the duration or until dispelled. Multiple castings are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Righteous Fury
+  – +4 Strength
+  – +2 bonus to AC
+  – +%magnitude% temporary Hit Points
+  – +1d6 magic damage with melee attacks
+  School: Alteration
+  Sphere: Combat
+  Range: Personal
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Mass Cure
 @95524 = ~Wand of Mass Cure~
 @95525 = ~When activating this wand, the wielder must picture the faces of <PRO_HISHER> fellow party members clearly and focus on the unity of the group. Upon completion, all party members within sight of the wielder are healed 2d8 + %magnitude% Hit Points.

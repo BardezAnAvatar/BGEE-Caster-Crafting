@@ -4430,6 +4430,29 @@ Requires:
 Weight: 1~
 
 
+//Righteous Magic
+@65522 = ~Wand of Righteous Magic~
+@65523 = ~This wand contains a powerful combat spell that enhances the wielder's physical prowess, transforming <PRO_HIMHER> into a juggernaut of destruction. The effect adds %magnitude% temporary Hit Points, adds %magnitude3% points of Strength (to a maximum of 25), and causes every successful hit to inflict maximum damage. The effects last for the duration or until dispelled.
+
+STATISTICS:
+(Alteration)
+
+Charge abilities:
+– Righteous Magic
+  – +%magnitude% temporary Hit Points
+  – +%magnitude2% Strength
+  – Maximum damage
+  Range: Self
+  Duration: %duration%
+  Area of Effect: Self
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
 //Mass Cure
 @65524 = ~Wand of Mass Cure~
 @65525 = ~When activating this wand, the wielder must picture the faces of <PRO_HISHER> fellow party members clearly and focus on the unity of the group. Upon completion, all party members within a 15-ft. radius of the wielder are healed 1d8 + %magnitude% Hit Points. Curing is permanent only insofar as the creature does not sustain further damage; caused wounds will heal —or can be cured— just as any normal injury.
