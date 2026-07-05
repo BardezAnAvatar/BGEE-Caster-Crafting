@@ -5252,3 +5252,34 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Insect Plague
+@95530 = ~Wand of Insect Plague~
+@95531 = ~When this wand is activated, a mass of creeping, hopping, and flying insects gather and swarm, first attacking the target, and then moving on to all enemies of the caster within the effect's radius.
+
+For the duration of the effect, those affected fight with a -2 penalty to attack rolls and armor class. In addition, each round the victims suffer 2d3 points of damage from insect bites, have a 100% chance of spell failure and on a failed save vs. poison will panic for that round. If a successful save vs. breath at -2 is made, the target manages to avoid most of the swarm, reducing damage from bites by half and completely negating the spell failure penalty. Magic resistance does not affect this spell.
+
+STATISTICS:
+
+Charge abilities:
+– Insect Plague
+  – Summons swarms of insects to attack enemies
+  – -2 THAC0 penalty
+  – -2 AC penalty
+  – Interrupts spellcasting
+  – Panic
+  School: Conjuration
+  Sphere: Animal
+  Damage: 2d3 points of damage every round
+  Range: Long
+  Duration: 6 rounds
+  Area of Effect: Target, and enemies within 30'
+  Saving Throw:
+  – Save vs. Poison negates panic
+  – Save vs. Breath (at -2) negates casting failure, halves damage
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~

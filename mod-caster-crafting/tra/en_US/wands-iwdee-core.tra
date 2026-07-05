@@ -3694,3 +3694,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Insect Plague
+@75530 = ~Wand of Insect Plague~
+@75531 = ~This wand summons a swarm of creeping, hopping, and flying insects. Creatures within the swarm suffer 1 Hit Point of piercing damage every round and a 100% chance of spell failure. Additionally, creatures with 2 or fewer Hit Dice will immediately panic, while creatures with 3 to 5 Hit Dice must save vs. Spell to avoid the same fate.
+
+Undead, constructs, and elementals are unaffected by the swarm.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Insect Plague
+  – Summons swarms of insects to attack enemies
+  – Interrupts spellcasting
+  – Panic
+  Damage: 1 point of damage every round
+  Range: Sight
+  Duration: 15 rounds
+  Area of Effect: 14-ft. radius
+  Saving Throw: Save vs. Spell negates panic
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
