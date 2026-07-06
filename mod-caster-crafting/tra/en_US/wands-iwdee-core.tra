@@ -3746,3 +3746,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Spike Stones
+@75534 = ~Wand of Spike Stones~
+@75535 = ~This wand warps the surrounding rock, reshaping the terrain into spiked projections that blend into the background. Any creature entering the area takes 2d4 Hit Points of piercing damage per round and must make a Save vs. Spell or have its movement rate reduced by 30%.
+
+STATISTICS:
+(Transmutation)
+
+Charge abilities:
+– Spike Stones
+  – Damaging terrain
+  – Slows movement
+  Damage: 2d4 piercing per round
+  Range: Sight
+  Duration: 12 rounds
+  Area of Effect: 8-ft. radius
+  Saving Throw: Save vs. Spell negates movement penalty
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
