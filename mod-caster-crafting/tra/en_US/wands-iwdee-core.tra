@@ -3838,3 +3838,26 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Mass Cause Light Wounds
+@75542 = ~Wand of Mass Cause Light Wounds~
+@75543 = ~By activating this wand, the wielder deals 1d8 + %magnitude% points of damage to nearby enemies. A successful Save vs. Spell halves the damage. This wand has no effect on undead, constructs, or extraplanar creatures. It can only be used by evil-aligned characters.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Mass Cause Light Wounds
+  – Damages nearby enemies
+  Damage: 1d8 + %magnitude% magic damage
+  Range: Self
+  Duration: Permanent
+  Area of Effect: 15-ft. radius
+  Saving Throw: Save vs. Spell for half damage
+
+Requires:
+ 9 Intelligence
+ Evil alignment
+
+Weight: 1~
