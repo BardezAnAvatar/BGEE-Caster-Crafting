@@ -3812,3 +3812,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Animal Rage
+@75540 = ~Wand of Animal Rage~
+@75541 = ~This wand imbues the target creature with animal ferocity. The target creature gains a Strength score of 19, +20 Hit Points, +20% movement rate, and a +2 bonus to all Saving Throws. The target loses the ability to cast spells while Animal Rage is in effect; when enemies are within sight, <PRO_HESHE> immediately attacks in melee, using whatever is in hand. While this spell is in effect, there is a 5% chance per round that the target will go berserk, attacking friend and foe alike.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Animal Rage
+  – 19 Strength
+  – +20 Hit Points
+  – +20% movement rate
+  – +2 bonus to Saving Throws
+  – Disables spellcasting
+  – Chance of berserk
+  Range: Touch
+  Duration: 15 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
