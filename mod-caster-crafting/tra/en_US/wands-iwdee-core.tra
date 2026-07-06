@@ -3769,3 +3769,46 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Shield of Lathander
+@75536 = ~Wand of Shield of Lathander~
+@75537 = ~This wand grants the recipient immunity to damage for the duration of the spell. Evil creatures cannot be protected by a Shield of Lathander. This spell cannot be cast by evil-aligned characters.
+
+STATISTICS:
+(Conjuration)
+
+Charge abilities:
+– Shield of Lathander
+  – Immunity to damage
+  Range: Touch
+  Duration: 2 rounds
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+ Non-evil alignment
+
+Weight: 1~
+
+
+//Undead Ward
+@75538 = ~Wand of Undead Ward~
+@75539 = ~This wand creates an area surrounding the wielder at the moment of its activation and does not move. Any undead creature entering the area of effect is affected as if turned by the wielder. If the turning fails, the undead creature is immune to further turning attempts by the effect unless it leaves and reenters the area of effect.
+
+STATISTICS:
+(Necromancy)
+
+Charge abilities:
+– Righteous Undead Ward
+  – Turns undead
+  Range: Self
+  Duration: 1 turn
+  Area of Effect: 10-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
