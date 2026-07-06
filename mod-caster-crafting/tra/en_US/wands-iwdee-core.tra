@@ -3720,3 +3720,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Righteous Wrath of the Faithful
+@75532 = ~Wand of Righteous Wrath of the Faithful~
+@75533 = ~This wand bestows a form of divine madness upon the wielder's allies, improving their combat skills. All allies in the area of effect gain a +1 to attack rolls and Saving Throws, plus 8 bonus Hit Points for the duration (these Hit Points can take a target beyond <PRO_HISHER> Hit Point maximum). Allies of the same alignment, however, gain an extra attack every round (canceling haste), a +2 bonus to their attack rolls, damage rolls, and Saving Throws, and immunity to charm and hold spells. Anyone affected by Righteous Wrath of the Faithful will suffer fatigue when the spell wears off.
+
+STATISTICS:
+(Enchantment)
+
+Charge abilities:
+– Righteous Wrath of the Faithful
+  – +1 bonus to THAC0
+  – +1 bonus to Saving Throws
+  – +8 bonus Hit Points
+  – Further bonuses for allies of same alignment
+  – Fatigue
+  Damage: 1 point of damage every 2 seconds
+  Range: Self
+  Duration: %duration%
+  Area of Effect: 17-ft. radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
