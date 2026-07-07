@@ -5354,3 +5354,25 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection from Electricity (Priest)
+@95550 = ~Wand of Protection from Electricity~
+@95551 = ~Upon activation, the recipient receives complete protection from electrical-based attacks, whether magical or non-magical in origin. 100% of the damage from attacks like electric dragon breath will be resisted, and the target creature will become completely immune to the effects of spells such as Lightning Bolt, Glyph of Warding, Call Lightning, and Chain Lightning. Multiple castings are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Protection from Electricity
+  – Electricity resistance set to 100%
+  School: Abjuration
+  Sphere: Elemental, Protection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
