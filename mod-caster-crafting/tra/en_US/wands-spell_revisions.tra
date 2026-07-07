@@ -5420,3 +5420,29 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Animal Growth
+@95556 = ~Wand of Animal Growth~
+@95557 = ~When this wand is activated, the wielder causes all friendly animals within range to become tougher, stronger and more tenacious. The alteration grants +2 bonus to attack rolls, damage rolls, armor class and saving throws. It also increases the recipient's hit points by 50%, and these bonus hit points are lost first when the recipient takes damage. Multiple castings are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Animal Growth
+  – +2 bonus to THAC0
+  – +2 bonus to damage rolls
+  – +2 bonus to armor class
+  – +2 bonus to armor class
+  – Increases recipients' hit points by 50%
+  School: Alteration
+  Sphere: Animal
+  Range: Long
+  Duration: 3 turns
+  Area of Effect: 30' radius
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
