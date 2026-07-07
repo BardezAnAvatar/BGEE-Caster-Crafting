@@ -5376,3 +5376,47 @@ Requires:
  9 Intelligence
 
 Weight: 1~
+
+
+//Protection from Fire (Priest)
+@95552 = ~Wand of Protection from Fire~
+@95553 = ~Upon activation, the recipient receives complete protection from fire-based attacks, whether magical or non-magical in origin. 100% of the damage from attacks like fiery dragon breath will be resisted, and the target creature will become completely immune to the effects of spells such as Burning Hands, Fireball, Flame Strike, and Fire Storm. Multiple castings are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Protection from Fire
+  – Fire resistance set to 100%
+  School: Abjuration
+  Sphere: Elemental, Protection
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: 1 creature
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
+
+
+//Mass Regenerate
+@95554 = ~Wand of Mass Regenerate~
+@95555 = ~This wand enables the wielder to imbue all allies within sight with the ability to regenerate. The creatures affected will regain 2 hit points per round. Multiple castings are not cumulative.
+
+STATISTICS:
+
+Charge abilities:
+– Mass Regenerate
+  – Regenerate 2 HP/round
+  School: Transmutation
+  Sphere: Healing
+  Range: Touch
+  Duration: %duration%
+  Area of Effect: Sight
+  Saving Throw: None
+
+Requires:
+ 9 Intelligence
+
+Weight: 1~
