@@ -2292,6 +2292,9 @@ Requires:
 Weight: 1~
 
 
+/***************************************
+*   5th Level - Priest - 85500-85599   *
+***************************************/
 //Greater Command
 @85520 = ~Wand of Greater Command~
 @85521 = ~This wand enables the wielder to command other creatures to "die" (sleep) for 4 rounds. At the end of the effect, the creature(s) awaken and are unharmed. The area of effect is similar to that of a Stinking Cloud or a Fireball.
